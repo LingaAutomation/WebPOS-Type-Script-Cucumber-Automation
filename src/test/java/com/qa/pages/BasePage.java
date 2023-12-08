@@ -109,16 +109,16 @@ public class BasePage extends TGglobalElement {
 //        return txt;
 //    }
 
-    public void closeApp() {
-        ((InteractsWithApps) driver).closeApp();
-    }
+//    public void closeApp() {
+//        ((InteractsWithApps) driver).closeApp();
+//    }
 
-    public void launchApp() {
-        ((InteractsWithApps) driver).launchApp();
-    }
+//    public void launchApp() {
+//        ((InteractsWithApps) driver).launchApp();
+//    }
 
     public WebElement andScrollToElementUsingUiScrollable(String childLocAttr, String childLocValue) {
-        return (WebElement) ((FindsByAndroidUIAutomator) driver).findElementByAndroidUIAutomator(
+        return (WebElement) (driver).findElementByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
                         + "new UiSelector()." + childLocAttr + "(\"" + childLocValue + "\"));");
     }
