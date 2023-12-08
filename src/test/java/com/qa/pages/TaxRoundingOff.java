@@ -2,7 +2,7 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.pagefactory.FindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
@@ -15,198 +15,198 @@ import static com.qa.stepdef.Hooks.driver;
 
 public class TaxRoundingOff extends ClockInScreen{
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name='arrow down'])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name='arrow down'])[2]")
     WebElement downarrow1;
 
-    @iOSXCUITFindBy(accessibility = "FOOD ITEMS")
+    @FindBy(xpath = "FOOD ITEMS")
     WebElement category1;
 
-    @iOSXCUITFindBy(accessibility = "IceCreams")
+    @FindBy(xpath = "IceCreams")
     WebElement category2;
 
-    @iOSXCUITFindBy(accessibility = "PIZZA")
+    @FindBy(xpath = "PIZZA")
     WebElement category3;
 
-    @iOSXCUITFindBy(accessibility = "Sambar")
+    @FindBy(xpath = "Sambar")
     WebElement modifier1;
 
-    @iOSXCUITFindBy(accessibility = "Meals")
+    @FindBy(xpath = "Meals")
     WebElement prefix1;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     WebElement donebtn;
 
-    @iOSXCUITFindBy(accessibility = "testing menu7")
+    @FindBy(xpath = "testing menu7")
     WebElement menu1;
 
-    @iOSXCUITFindBy(accessibility = "testing menu8")
+    @FindBy(xpath = "testing menu8")
     WebElement menu2;
 
-    @iOSXCUITFindBy(accessibility = "testing menu9")
+    @FindBy(xpath = "testing menu9")
     WebElement menu3;
 
-    @iOSXCUITFindBy(accessibility = "testing menu10")
+    @FindBy(xpath = "testing menu10")
     WebElement menu4;
 
-    @iOSXCUITFindBy(accessibility = "testing menu11")
+    @FindBy(xpath = "testing menu11")
     WebElement menu5;
 
-    @iOSXCUITFindBy(accessibility = "testing menu12")
+    @FindBy(xpath = "testing menu12")
     WebElement menu6;
 
-    @iOSXCUITFindBy(accessibility = "testing menu13")
+    @FindBy(xpath = "testing menu13")
     WebElement menu7;
 
-    @iOSXCUITFindBy(accessibility = "testing menu14")
+    @FindBy(xpath = "testing menu14")
     WebElement menu8;
 
-    @iOSXCUITFindBy(accessibility = "pizza supreme")
+    @FindBy(xpath = "pizza supreme")
     WebElement menu9;
 
-    @iOSXCUITFindBy(accessibility = "pizza dominator")
+    @FindBy(xpath = "pizza dominator")
     WebElement menu10;
 
-    @iOSXCUITFindBy(accessibility = "chicken farmhouse pizza")
+    @FindBy(xpath = "chicken farmhouse pizza")
     WebElement menu11;
 
-    @iOSXCUITFindBy(accessibility = "cheesy pasta pizza")
+    @FindBy(xpath = "cheesy pasta pizza")
     WebElement menu12;
 
-    @iOSXCUITFindBy(accessibility = "testing menu15")
+    @FindBy(xpath = "testing menu15")
     WebElement menu13;
 
-    @iOSXCUITFindBy(accessibility = "testing menu16")
+    @FindBy(xpath = "testing menu16")
     WebElement menu14;
 
-    @iOSXCUITFindBy(accessibility = "testing menu17")
+    @FindBy(xpath = "testing menu17")
     WebElement menu15;
 
-    @iOSXCUITFindBy(accessibility = "testing menu18")
+    @FindBy(xpath = "testing menu18")
     WebElement menu16;
 
-    @iOSXCUITFindBy(accessibility = "testing menu19")
+    @FindBy(xpath = "testing menu19")
     WebElement menu17;
 
-    @iOSXCUITFindBy(accessibility = "testing menu20")
+    @FindBy(xpath = "testing menu20")
     WebElement menu18;
 
-    @iOSXCUITFindBy(accessibility = "testing menu21")
+    @FindBy(xpath = "testing menu21")
     WebElement menu19;
 
-    @iOSXCUITFindBy(accessibility = "testing menu22")
+    @FindBy(xpath = "testing menu22")
     WebElement menu20;
 
-    @iOSXCUITFindBy(accessibility = "testing menu23")
+    @FindBy(xpath = "testing menu23")
     WebElement menu21;
 
-    @iOSXCUITFindBy(accessibility = "testing menu24")
+    @FindBy(xpath = "testing menu24")
     WebElement menu22;
-    @iOSXCUITFindBy(accessibility = "1")
+    @FindBy(xpath = "1")
     WebElement press1;
 
-    @iOSXCUITFindBy(accessibility = "2")
+    @FindBy(xpath = "2")
     WebElement press2;
 
-    @iOSXCUITFindBy(accessibility = "3")
+    @FindBy(xpath = "3")
     WebElement press3;
 
-    @iOSXCUITFindBy(accessibility = "4")
+    @FindBy(xpath = "4")
     WebElement press4;
 
-    @iOSXCUITFindBy(accessibility = "5")
+    @FindBy(xpath = "5")
     WebElement press5;
 
-    @iOSXCUITFindBy(accessibility = "5")
+    @FindBy(xpath = "5")
     WebElement AllButton;
 
-    @iOSXCUITFindBy(accessibility = "6")
+    @FindBy(xpath = "6")
     WebElement press6;
 
-    @iOSXCUITFindBy(accessibility = "7")
+    @FindBy(xpath = "7")
     WebElement press7;
 
-    @iOSXCUITFindBy(accessibility = "8")
+    @FindBy(xpath = "8")
     WebElement press8;
 
-    @iOSXCUITFindBy(accessibility = "9")
+    @FindBy(xpath = "9")
     WebElement press9;
 
-    @iOSXCUITFindBy(accessibility = "3")
+    @FindBy(xpath = "3")
     WebElement quantity3;
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     WebElement ContinueBtn;
 
-    @iOSXCUITFindBy(accessibility = "5")
+    @FindBy(xpath = "5")
     WebElement quantity5;
 
-    @iOSXCUITFindBy(xpath = ("//XCUIElementTypeStaticText[@name=\"Payment\"]"))
+    @FindBy(xpath = ("//XCUIElementTypeStaticText[@name=\"Payment\"]"))
     WebElement PaymentBtn;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
     WebElement cashBtn;
     //XCUIElementTypeStaticText[@name=" Submit"]
-    @iOSXCUITFindBy(xpath = ("//XCUIElementTypeStaticText[@name=\"  Submit\"]"))
+    @FindBy(xpath = ("//XCUIElementTypeStaticText[@name=\"  Submit\"]"))
     WebElement SubmitBtn;
 
-    @iOSXCUITFindBy(xpath = ("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]"))
+    @FindBy(xpath = ("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]"))
     WebElement MenuOptionBtn;
 
-    @iOSXCUITFindBy(accessibility = "Discount")
+    @FindBy(xpath = "Discount")
     WebElement DiscountBtn;
 
-    @iOSXCUITFindBy(accessibility = "Open Discount")
+    @FindBy(xpath = "Open Discount")
     WebElement OpenDiscountBtn;
 
-    @iOSXCUITFindBy(accessibility = "Back")
+    @FindBy(xpath = "Back")
     WebElement BackButton;
 
-    @iOSXCUITFindBy(accessibility = " Back ")
+    @FindBy(xpath = " Back ")
     WebElement BackBtn;
 
-    @iOSXCUITFindBy(accessibility = "Option")
+    @FindBy(xpath = "Option")
     WebElement OptionButton;
 
-    @iOSXCUITFindBy(accessibility = "Open Item")
+    @FindBy(xpath = "Open Item")
     WebElement OpenItemOption;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]")
     WebElement CoursingName;
 
-    @iOSXCUITFindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[2]")
+    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[2]")
     WebElement ItemNameTxtFld1;
 
-    @iOSXCUITFindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]")
+    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]")
     WebElement priceTextFld;
 
-    @iOSXCUITFindBy( accessibility = "Default")
+    @FindBy( xpath = "Default")
     WebElement DefaultTax;
 
-    @iOSXCUITFindBy( accessibility = "Quantity")
+    @FindBy( xpath = "Quantity")
     WebElement QuantityTax;
 
-    @iOSXCUITFindBy( accessibility = "Inclusive item")
+    @FindBy( xpath = "Inclusive item")
     WebElement InclusiveTax;
 
-    @iOSXCUITFindBy(accessibility = "exc tax1")
+    @FindBy(xpath = "exc tax1")
     WebElement exclusiveTax;
 
-    @iOSXCUITFindBy(accessibility = "inclusive tax9")
+    @FindBy(xpath = "inclusive tax9")
     WebElement inclusiveTax;
 
-    @iOSXCUITFindBy(accessibility = "Apply")
+    @FindBy(xpath = "Apply")
     WebElement applyBtn;
 
-    @iOSXCUITFindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     WebElement percentageField;
 
-    @iOSXCUITFindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextView")
+    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextView")
     WebElement reasonField;
 
-    @iOSXCUITFindBy(accessibility = "Re-Open Check")
+    @FindBy(xpath = "Re-Open Check")
     WebElement reopenCheckBtn;
 
-    //  @iOSXCUITFindBy(accessibility = "testing menu7")
+    //  @FindBy(xpath = "testing menu7")
     // WebElement menu1;
 
     public void categoryArrowBtn() {
@@ -1253,7 +1253,7 @@ public class TaxRoundingOff extends ClockInScreen{
 
     public void iSelectedTheExclusiveTax() throws Exception {
 
-        //WebElement exclusiveTax = mergeAndFindElement("exc tax1", "", TestUtils.Accessibility);
+        //WebElement exclusiveTax = mergeAndFindElement("exc tax1", "", TestUtils.xpath);
         BasePage c = new BasePage();
         c.scrollToElementPayments(exclusiveTax, "up");
         //    scrollToElement(exclusiveTax, "up");
