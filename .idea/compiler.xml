@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="basicvalidaitonsuite-doller-store-timeclock-3" />
+        <module name="WebPOS TypeScript" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="basicvalidaitonsuite-doller-store-timeclock-3" target="11" />
+      <module name="WebPOS TypeScript" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

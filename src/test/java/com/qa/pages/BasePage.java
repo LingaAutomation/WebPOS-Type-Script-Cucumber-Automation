@@ -287,6 +287,14 @@ public class BasePage extends TGglobalElement {
 //        }
     }
 
+    public void elementName(String e, String msg) {
+
+        // try{
+        utils.log().info(msg);
+        driver.findElement(By.name(e)).click();
+
+    }
+
     public void elementClick(WebElement e, String msg) {
 
         // try{
