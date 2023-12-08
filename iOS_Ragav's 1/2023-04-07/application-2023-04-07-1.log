@@ -1,0 +1,87 @@
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:07.306 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:08.337 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:08.344 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:08.373 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:08.375 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:38.006 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:38.007 Hooks:52 - Start Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:38.144 BasePage:301 - Tapped pin1
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:38.656 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:39.049 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:39.438 BasePage:301 - Tapped pin4
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:39.823 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:41.219 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:49.583 Hooks:70 - Failed Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:52.861 GlobalParams:130 - PORT Number is - 9735
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:52.862 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:53.532 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:53.532 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:15:53.532 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:05.301 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:05.301 Hooks:52 - Start Scenario Name : Refund
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:05.312 BasePage:301 - Tapped pin1
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:05.756 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:06.156 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:06.552 BasePage:301 - Tapped pin4
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:06.942 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:08.336 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:16.821 Hooks:70 - Failed Scenario Name : Refund
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:20.097 GlobalParams:130 - PORT Number is - 7068
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:20.098 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:20.771 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:20.771 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:20.771 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:31.100 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:31.101 Hooks:52 - Start Scenario Name : Global Till ( PAY IN, PAy Out )
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:31.109 BasePage:301 - Tapped pin1
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:31.555 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:31.952 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:32.350 BasePage:301 - Tapped pin4
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:32.744 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:16:34.140 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:06.550 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:08.316 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:08.331 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:08.341 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:08.345 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:23.353 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:23.354 Hooks:52 - Start Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:23.496 BasePage:301 - Tapped pin1
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:24.036 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:24.442 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:24.855 BasePage:301 - Tapped pin4
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:25.241 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:26.659 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:31:35.095 Hooks:70 - Failed Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:36:45.639 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:36:47.036 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:36:47.050 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:36:47.065 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:36:47.066 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:00.531 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:00.532 Hooks:52 - Start Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:00.708 BasePage:301 - Tapped pin1
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:01.212 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:01.609 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:01.996 BasePage:301 - Tapped pin4
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:02.369 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:03.788 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:12.248 Hooks:70 - Failed Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:15.565 GlobalParams:130 - PORT Number is - 7374
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:15.565 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:16.238 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:16.238 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:16.239 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:28.806 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:28.807 Hooks:52 - Start Scenario Name : Refund
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:28.824 BasePage:301 - Tapped pin1
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:29.259 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:29.650 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:30.027 BasePage:301 - Tapped pin4
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:30.403 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:37:31.819 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:38:46.445 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:38:47.500 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:38:47.510 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:38:47.518 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-04-07 22:38:47.519 CapabilitiesManager:18 - getting capabilities...

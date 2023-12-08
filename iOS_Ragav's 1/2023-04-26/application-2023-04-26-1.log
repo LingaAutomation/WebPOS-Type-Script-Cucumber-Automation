@@ -1,0 +1,31 @@
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:36:24.485 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:36:25.852 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:36:25.859 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:36:25.867 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:36:25.868 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:29.418 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:30.821 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:30.835 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:30.856 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:30.858 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:54.218 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:54.219 Hooks:52 - Start Scenario Name : Display group Price Level
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:54.466 BasePage:301 - Tapped pin1
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:55.030 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:55.573 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:56.173 BasePage:301 - Tapped pin4
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:56.805 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:37:59.298 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:00.288 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:01.313 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:02.891 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:06.331 BasePage:301 - T26 selected
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:15.301 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:15.863 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:19.935 OrderManagementScreen:1202 - 45-0112
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:19.946 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:21.569 BasePage:301 -  Selected Category as - Membership
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:23.297 BasePage:301 - lattoos selected
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:24.282 OrderManagementScreen:684 - Subtotal Value is - $ 7.51
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:24.284 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-04-26 11:38:27.050 Hooks:70 - Failed Scenario Name : Display group Price Level

@@ -1,0 +1,201 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-12-07T13:41:45.599Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.ClassCastException: class org.apache.logging.log4j.core.Logger cannot be cast to class java.util.logging.Logger (org.apache.logging.log4j.core.Logger is in unnamed module of loader \u0027app\u0027; java.util.logging.Logger is in module java.logging of loader \u0027bootstrap\u0027)\r\n\tat com.qa.utils.TestUtils.log(TestUtils.java:216)\r\n\tat com.qa.stepdef.Hooks.initialize(Hooks.java:58)\r\n",
+              "duration": 53525951600,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Cashier Out From Till Management Screen",
+        "description": "",
+        "id": "basic-validation;cashier-out-from-till-management-screen",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"currentDriver\" is null\r\n\tat com.qa.stepdef.Hooks.quit(Hooks.java:71)\r\n",
+              "duration": 13609900,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37624000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I\u0027m logged in",
+            "match": {
+              "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998800,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I closed the order type window",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I click counting machine icon",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iClickCountingMachineIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I verify till is available or not if available closed the till",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iVerifyTillIsAvailableOrNotIfAvailableClosedTheTill()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I should see open till management screen",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iShouldSeeOpenTillManagementScreen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I click cancel button in open till popup",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iClickCancelButtonInOpenTillPopup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002200,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I click reports button in the Till management screen",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iClickReportsButtonInTheTillManagementScreen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I click cashier out button in the Till management screen",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iClickCashierOutInTheTillManagementScreen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I should see do you want to print the cashier out popup",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iShouldSeeDoYouWantToPrintTheCashierOutPopup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I click Yes button on the popup for Hold item",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickYesButtonOnThePopupForHoldItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I should see cashier out saved successfully popup",
+            "match": {
+              "location": "com.qa.stepdef.TillManagementStepDef.iShouldSeeCashierOutSavedSuccessfullyPopup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I click Done button on the Popup",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I click power button",
+            "match": {
+              "location": "com.qa.stepdef.ClockInStepDef.iClickPowerButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MainBAsic"
+          }
+        ]
+      }
+    ],
+    "name": "Basic Validation",
+    "description": "",
+    "id": "basic-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/BAasic.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,1690 @@
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:53.813 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:55.179 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:55.187 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:55.214 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:55.215 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:57.734 GlobalParams:130 - PORT Number is - 4825
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:57.734 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:58.405 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:58.406 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:58.406 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:59.008 GlobalParams:130 - PORT Number is - 10484
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:59.009 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:59.682 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:59.683 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:32:59.683 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:00.199 GlobalParams:130 - PORT Number is - 8159
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:00.200 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:00.874 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:00.874 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:00.874 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:01.486 GlobalParams:130 - PORT Number is - 4377
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:01.486 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:11.550 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:12.600 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:12.609 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:12.624 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:12.625 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:42.677 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:42.684 Hooks:52 - Start Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:42.922 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:44.892 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:46.862 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:47.757 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:49.343 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:51.913 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:52.977 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:54.671 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:55.887 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:33:59.481 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:08.260 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:09.375 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:13.585 OrderManagementScreen:1522 - 1-004
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:13.626 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:16.731 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:17.784 BasePage:301 - Burger selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:19.144 OrderManagementScreen:740 - Subtotal Value is - $ 7.58
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:20.349 Hooks:70 - Failed Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:24.071 GlobalParams:130 - PORT Number is - 5884
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:24.072 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:25.445 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:25.448 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:25.448 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:45.441 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:45.443 Hooks:52 - Start Scenario Name : Orders
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:45.476 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:46.315 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:47.045 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:47.762 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:48.592 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:50.959 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:52.017 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:34:55.155 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:03.720 Regression:2466 - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:04.783 Regression:2470 - CAESAR
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:04.784 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:05.805 BasePage:301 - Anchovy - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:11.460 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:16.788 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:17.871 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:20.758 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:26.929 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:27.957 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:28.968 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:31.101 BasePage:301 - Tapped Side CC Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:32.666 BasePage:301 - sappthi selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:34.365 BasePage:301 - EACH selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:36.671 BasePage:301 - None selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:37.107 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:37.923 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:42.174 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:48.645 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:49.663 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:50.676 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:35:53.085 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:03.054 Hooks:70 - Failed Scenario Name : Orders
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:06.337 GlobalParams:130 - PORT Number is - 9049
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:06.338 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:07.711 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:07.712 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:07.713 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:22.046 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:22.047 Hooks:52 - Start Scenario Name : Sale In Service Types
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:22.069 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:24.051 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:25.643 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:27.437 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:29.351 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:35.147 BasePage:301 - Phone To Go order type is selected.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:37.966 BasePage:301 - Order type selection is done.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:39.819 BasePage:293 - Customer profile window is displayed - Customer Profile
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:39.824 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:43.854 BasePage:83 - Customer name is entered - Auto ragav
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:47.735 BasePage:301 - Customer selected 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:49.018 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:53.623 BasePage:293 - Order Type name is - To Go
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:55.439 OrderManagementScreen:1436 - Auto r - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:58.113 OrderManagementScreen:1522 - 1-008
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:36:58.142 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:01.200 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:09.521 Regression:2466 - 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:10.570 Regression:2470 - CAESAR CHIC
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:10.571 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:11.946 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:17.394 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:22.563 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:24.040 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:27.030 BasePage:293 - Phone order Tab is displayed - Driver status
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:32.881 BasePage:301 - Tapped Closed Check in New tab - 1-008
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:33.324 BasePage:301 - Pay check button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:35.408 BasePage:293 - Payment window title is -Select Payment Method
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:36.898 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:48.359 BasePage:301 - Tapped Check Stats Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:49.142 BasePage:301 - Tapped closed Tab button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:57.149 BasePage:301 - Tapped Closed Checks
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:58.111 PhoneOrderScreen:485 - 1-008 - Closed Check is displayed in closed tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:58.146 BasePage:301 - Tapped QSR button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:37:59.057 BasePage:301 - DELIVERY order type is selected.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:00.016 BasePage:301 - Tapped done button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:02.255 BasePage:293 - Customer profile window is displayed - Customer Profile
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:02.261 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:07.167 BasePage:83 - Customer name is entered - auto loyalty
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:09.103 BasePage:301 - Tapped Customer
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:10.693 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:18.267 OrderManagementScreen:1436 - auto l - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:21.206 OrderManagementScreen:1522 - 1-009
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:26.201 TableLayOutScreen:1466 - Total Amount is Not Same- $ 0.00 - Delivery charge as 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:26.203 TableLayOutScreen:1467 - Subtotal Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:26.203 TableLayOutScreen:1468 - Tax Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:26.204 TableLayOutScreen:1469 - Total Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:26.204 TableLayOutScreen:1470 - Paid Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:26.220 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:27.945 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:36.427 Regression:2466 - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:37.525 Regression:2470 - TRATTORIA
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:37.526 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:38.836 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:44.283 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:49.423 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:50.871 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:38:54.070 BasePage:293 - Phone order Tab is displayed - Driver status
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:00.243 BasePage:301 - Tapped Closed Check in New tab - 1-009
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:01.050 BasePage:301 - Pay check button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:03.083 BasePage:293 - Payment window title is -Select Payment Method
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:04.703 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:08.349 BasePage:301 - Exit button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:09.875 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:19.762 BasePage:301 - Tapped Closed Check in New tab - 1-009
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:25.191 Hooks:70 - Failed Scenario Name : Sale In Service Types
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:28.531 GlobalParams:130 - PORT Number is - 10998
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:28.532 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:29.567 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:29.567 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:29.567 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:47.493 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:47.494 Hooks:52 - Start Scenario Name : Verify the sale in Bar Tab Service Type
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:47.506 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:51.670 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:53.483 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:55.345 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:57.171 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:39:59.692 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:00.726 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:02.701 BasePage:301 - Tapped BarTab Layout
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:06.736 BasePage:301 - Tapped Process Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:08.872 BasePage:109 - Device Txt is Displayed as - No Device is connected to this iPad
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:08.883 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:09.860 BasePage:301 - Exit Button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:17.932 OrderManagementScreen:1522 - 1-010
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:17.981 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:21.568 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:30.241 Regression:2466 - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:31.296 Regression:2470 - CAESAR
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:31.297 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:32.321 BasePage:301 - Anchovy - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:37.910 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:43.203 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:45.655 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:49.173 BasePage:109 - BarTab Screen is displayed - BarTab
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:57.810 BasePage:301 - Tapped Closed Check in closed tab - 1-010
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:40:58.367 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:02.092 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:03.998 BasePage:301 - Submit button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:06.537 BasePage:66 - Power button is clicked
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:07.972 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:08.954 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:10.727 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:12.546 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:14.353 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:16.777 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:17.822 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:19.073 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:20.853 BasePage:301 - Onion Rings selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:22.265 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:23.881 BasePage:293 - Menu Option Screen is Displayed - Menu Option - Onion Rings 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:23.888 BasePage:301 - Tapped Fire Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:25.769 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:27.296 BasePage:293 - Menu Option Screen is Displayed - Menu Option - Onion Rings 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:27.300 BasePage:301 - Tapped void button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:28.940 BasePage:293 - void Reason txt is displayed - Void Reason
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:28.950 BasePage:301 - Ordered wrongly is selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:30.064 BasePage:301 - Add (void reason) button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:31.974 BasePage:293 - Receipt Printer is Displayed - Receipt Printer
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:31.988 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:33.038 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:34.697 BasePage:293 - void Reason txt is displayed - Void Reason
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:34.703 BasePage:301 - Ordered wrongly is selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:35.738 BasePage:301 - Add (void reason) button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:37.822 BasePage:293 - Receipt Printer is Displayed - Receipt Printer
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:37.833 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:39.897 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:40.919 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:42.037 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:43.891 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:45.330 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:46.896 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:46.902 BasePage:301 - Tapped Repeat Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:52.496 MenuOptionScreen:160 - Repeated Menu item is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:53.432 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:54.941 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:54.947 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:58.137 BasePage:301 - 3selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:41:59.241 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:02.642 MenuOptionScreen:178 - 3 Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:03.585 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:05.082 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:05.091 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:09.645 BasePage:301 - 1selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:10.742 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:14.621 MenuOptionScreen:178 - 1 Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:15.587 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:17.057 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:17.060 BasePage:301 - Tapped Attach Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:18.806 BasePage:293 - Add Notes Screen Is Displayed - Add Notes
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:20.926 BasePage:301 - Tapped Reason  Spicy
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:22.899 MenuOptionScreen:292 - SpicyAdd Notes Reason is Tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:22.909 BasePage:301 - Add (void reason) button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:25.904 MenuOptionScreen:303 - SpicyAdd reason Is Applied on Order Screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:25.917 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:27.464 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:27.479 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:28.456 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:31.042 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:32.889 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:34.411 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:36.091 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:36.098 BasePage:301 - Tapped Attach Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:39.664 BasePage:301 - selected Discount as - IB-AfterTax-Amount
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:42.407 MenuOptionScreen:199 - Discount is applied - IB-AfterTax-Amount
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:42.417 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:43.977 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:43.986 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:45.641 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:47.091 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:48.553 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:48.559 BasePage:301 - - Tax Exempt is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:54.564 BasePage:293 - Open item Screen txt is Displayed - Open Item
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:42:54.602 BasePage:301 - Tapped Coursing name field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:13.683 BasePage:301 - Price Field selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:17.381 BasePage:301 - 1 is selected 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:21.125 BasePage:301 - 00 is selected - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:23.511 BasePage:301 - 00 is selected - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:25.921 BasePage:301 - Continue button is tapped - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:27.823 BasePage:301 - Done button is tapped - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:34.498 OrderManagementScreen:1257 - Open Item is added
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:34.507 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:36.161 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:36.167 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:37.824 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:40.128 Discount:78 - SubTotal of Menu Item - $ 10.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:41.950 OrderManagementScreen:1226 -  Tax is - $ 1.20
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:43.991 Discount:89 - Total of Menu Item is - $ 11.20
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:46.185 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:49.229 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:49.234 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:52.504 BasePage:301 - 2selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:53.601 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:56.798 MenuOptionScreen:178 - 2 Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:57.709 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:59.117 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:43:59.145 BasePage:301 - Tapped Open Discount Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:01.496 MenuOptionScreen:318 - Open Discount Screen Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:01.508 BasePage:301 - Tapped Percentage Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:02.547 BasePage:301 - Tapped amount field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:03.981 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:05.585 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:07.315 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:09.045 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:10.751 BasePage:301 - Taped continue for open Discount
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:15.903 BasePage:301 - Selected - Hide keyboard
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:18.228 BasePage:301 - Tapped - After
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:19.244 BasePage:301 - Tapped Apply Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:21.024 BasePage:293 - Discount is Added - Open-Item Discount
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:22.870 Discount:78 - SubTotal of Menu Item - $ 20.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:24.754 OrderManagementScreen:1226 -  Tax is - $ 2.40
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:26.687 OrderManagementScreen:1380 -  Discount is - $ 4.46
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:28.743 Discount:89 - Total of Menu Item is - $ 17.94
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:28.748 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:30.199 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:30.203 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:31.811 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:33.198 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:34.627 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:34.630 BasePage:301 - Tapped Open Modifier Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:36.966 BasePage:293 - Open Modifiers Screen is displayed - Open Modifiers
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:44.219 BasePage:301 - Tapped price field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:48.186 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:50.829 BasePage:301 - Tapped pin0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:53.331 BasePage:301 - Tapped pin0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:44:55.893 BasePage:301 - Tapped Continue button.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:03.018 BasePage:301 - Tapped Add Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:09.414 MenuOptionScreen:453 - fruits - Modifiers Added in Open Modifier screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:09.426 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:11.464 BasePage:301 - Back Button selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:17.602 MenuOptionScreen:466 - fruits - Open Modifies is Added
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:17.613 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:19.157 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:19.171 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:20.888 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:22.290 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:23.810 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:23.820 BasePage:301 - Tapped Open Modifier Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:28.157 BasePage:301 - Done button is tapped - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:36.065 MenuOptionScreen:426 - Coursing name is NOT Same - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:36.077 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:37.640 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:37.651 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:38.654 BasePage:301 - Tapped log Off Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:39.753 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:41.558 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:42.322 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:43.042 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:43.802 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:46.154 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:47.197 BasePage:301 - Options button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:48.314 BasePage:301 - Tapped Gift Card Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:50.031 BasePage:293 - Gift card screen is displayed - Gift Card
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:51.874 BasePage:301 - Tapped Card Number Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:52.426 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:54.014 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:55.679 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:45:57.354 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:06.179 BasePage:301 - Tapped Continue 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:06.607 BasePage:301 - Tapped Charge Amount Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:11.164 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:12.798 BasePage:301 - Tapped Pin 00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:14.486 BasePage:301 - Tapped Pin 00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:21.727 BasePage:301 - Tapped 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:22.156 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:23.748 BasePage:293 - Gift Card is Add to Order screen - GC-1111 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:23.763 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:24.773 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:26.495 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:28.640 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:30.685 BasePage:301 - Options button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:31.832 BasePage:301 - Tapped Gift Card Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:33.534 BasePage:293 - Gift card screen is displayed - Gift Card
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:35.417 BasePage:301 - Tapped Card Number Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:35.977 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:37.567 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:39.222 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:40.949 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:46.266 BasePage:301 - Tapped Continue 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:53.701 CheckOptionsScreen:1043 - Beginning Balance - $ 200.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:56.504 CheckOptionsScreen:1047 - Beginning Balance & Recurring Balance Is SAME - $ 200.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:46:59.068 BasePage:301 - Selected Active Account Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:01.405 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:03.323 CheckOptionsScreen:1126 - Done is not selectable
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:04.357 BasePage:301 - Selected Active Account Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:06.448 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:10.204 BasePage:301 - Tapped number field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:11.867 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:15.540 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:19.386 BasePage:301 - Selected - 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:21.681 BasePage:301 - Selected - 5
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:25.403 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:27.614 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:27.961 BasePage:301 - Continue Selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:29.112 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:30.226 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:32.906 BasePage:301 - Tapped Gift Card Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:34.578 PaymentWindow:333 - Should see Total screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:34.584 BasePage:301 - Tapped Continue Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:35.950 BasePage:293 - your order screen is displayed - Your Order
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:35.964 BasePage:301 - Tapped Manual Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:48.160 BasePage:301 - Tapped Process Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:47:49.106 BasePage:301 - Tapped Ok Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:07.403 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:15.855 Hooks:70 - Failed Scenario Name : Gift
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:19.142 GlobalParams:130 - PORT Number is - 6129
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:19.142 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:20.148 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:20.148 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:20.148 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:42.031 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:42.032 Hooks:52 - Start Scenario Name : GiveX
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:42.054 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:42.957 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:43.677 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:44.344 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:45.135 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:47.554 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:48.514 BasePage:301 - Options button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:49.556 BasePage:301 - Tapped Gift Card Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:51.165 BasePage:293 - Gift card screen is displayed - Gift Card
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:51.180 BasePage:301 - Tapped GiveX 
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:53.752 CheckOptionsScreen:1144 - GiveX Screen is Displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:54.740 BasePage:301 - Tapped GiveX Number Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:56.181 BasePage:301 - Selected - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:48:59.810 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:03.599 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:07.348 BasePage:301 - Selected - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:10.753 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:14.478 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:18.316 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:22.154 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:26.058 BasePage:301 - Selected - 7
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:29.925 BasePage:301 - Selected - 9
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:33.765 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:37.525 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:41.362 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:45.191 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:49.129 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:50.959 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:54.801 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:49:56.421 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:00.229 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:03.667 BasePage:301 - Selected - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:07.512 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:08.055 BasePage:301 - Continue Selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:16.244 CheckOptionsScreen:1031 - Beginning Balance - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:19.029 CheckOptionsScreen:1035 - Beginning Balance & Recurring Balance Is SAME - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:21.678 BasePage:301 - Tapped number field
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:23.481 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:27.427 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:31.324 BasePage:301 - Selected - 5
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:35.194 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:39.109 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:40.124 BasePage:301 - Continue Selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:41.308 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:50:58.540 Hooks:70 - Failed Scenario Name : GiveX
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:01.840 GlobalParams:130 - PORT Number is - 8347
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:01.840 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:02.866 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:02.866 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:02.866 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:18.679 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:18.683 Hooks:52 - Start Scenario Name : 86 list
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:18.699 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:19.575 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:20.288 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:21.022 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:21.718 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:24.104 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:25.070 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:26.666 BasePage:301 -  Selected Category as - Applicable time period
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:27.604 BasePage:301 - Pasta applicable time selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:28.870 OrderManagementScreen:1845 - Displayed Popup as - Quantity is not enough.
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:28.878 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:29.679 BasePage:301 - Tapped the settings button
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:31.935 BasePage:301 - Selected - 86 List
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:33.412 OrderManagementScreen:1857 - Displayed window as - 86 List
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:35.267 BasePage:301 - search menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 13:51:36.211 BasePage:301 - Keyboard hidden.
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:42.209 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:43.261 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:43.277 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:43.289 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:43.290 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:45.152 GlobalParams:130 - PORT Number is - 10013
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:45.152 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:45.827 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:45.827 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:45.828 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:46.456 GlobalParams:130 - PORT Number is - 8003
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:46.456 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:47.112 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:47.112 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:47.112 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:47.669 GlobalParams:130 - PORT Number is - 10357
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:47.670 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:48.343 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:48.343 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:48.343 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:59.256 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:59.985 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:58:59.992 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:00.002 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:00.003 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:17.847 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:17.849 Hooks:52 - Start Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:18.003 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:19.681 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:20.477 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:21.232 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:23.068 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:25.671 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:26.762 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:27.677 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:29.956 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:33.569 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:42.913 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:44.074 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:48.534 OrderManagementScreen:1522 - 1-017
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:48.572 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 15:59:56.848 Hooks:70 - Failed Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:00:00.148 GlobalParams:130 - PORT Number is - 4510
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:00:00.148 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:00:01.157 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:00:01.158 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:00:01.158 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:11.665 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:12.701 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:12.708 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:12.732 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:12.736 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:30.398 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:30.399 Hooks:52 - Start Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:30.522 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:31.694 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:32.492 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:33.242 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:34.072 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:36.536 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:37.582 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:39.234 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:40.896 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:44.414 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:53.811 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:54.958 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:59.499 OrderManagementScreen:1522 - 1-019
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:01:59.519 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:01.336 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:02.380 BasePage:301 - Burger selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:04.576 OrderManagementScreen:740 - Subtotal Value is - $ 7.58
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:06.550 OrderManagementScreen:882 - Tax Value is - $ 1.78
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:07.553 OrderManagementScreen:932 - Cash Price Value is SAME - $ 9.36
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:07.558 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:08.302 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:09.973 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:11.301 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:14.648 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:18.213 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:27.398 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:28.502 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:33.030 OrderManagementScreen:1522 - 1-020
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:33.037 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:34.721 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:35.879 BasePage:301 - Default Menu selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:37.191 OrderManagementScreen:740 - Subtotal Value is - $ 4.88
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:38.385 Hooks:70 - Failed Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:41.653 GlobalParams:130 - PORT Number is - 8145
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:41.653 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:42.651 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:42.652 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:02:42.652 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:16.363 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:17.412 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:17.420 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:17.429 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:17.430 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:35.560 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:35.561 Hooks:52 - Start Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:35.700 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:36.666 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:38.502 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:40.228 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:42.238 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:44.821 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:45.874 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:47.499 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:49.307 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:09:52.869 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:02.552 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:03.689 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:08.001 OrderManagementScreen:1522 - 1-023
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:08.023 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:09.692 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:10.741 BasePage:301 - Burger selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:12.130 OrderManagementScreen:740 - Subtotal Value is - $ 7.58
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:12.949 OrderManagementScreen:882 - Tax Value is - $ 1.78
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:13.768 OrderManagementScreen:932 - Cash Price Value is SAME - $ 9.36
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:13.771 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:14.442 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:16.048 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:17.387 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:20.797 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:24.365 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:33.622 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:34.716 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:38.937 OrderManagementScreen:1522 - 1-024
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:38.963 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:40.670 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:41.793 BasePage:301 - Default Menu selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:43.015 OrderManagementScreen:740 - Subtotal Value is - $ 4.88
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:43.824 OrderManagementScreen:882 - Tax Value is - $ 0.37
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:44.595 OrderManagementScreen:932 - Cash Price Value is SAME - $ 5.25
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:44.597 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:45.276 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:46.916 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:48.194 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:51.726 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:10:55.294 BasePage:301 - T7 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:04.598 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:05.713 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:07.126 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:08.834 BasePage:301 -  Selected Category as - Appetizers
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:09.906 BasePage:301 - RAPINI selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:11.994 Discount:78 - SubTotal of Menu Item - $ 13.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:13.674 OrderManagementScreen:1226 -  Tax is - $ 0.65
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:15.446 Discount:89 - Total of Menu Item is - $ 13.65
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:22.073 BasePage:301 - 5 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:22.904 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:25.439 Discount:78 - SubTotal of Menu Item - $ 65.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:26.953 OrderManagementScreen:1226 -  Tax is - $ 6.50
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:28.660 Discount:89 - Total of Menu Item is - $ 71.50
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:37.406 BasePage:301 -  selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:38.214 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:40.776 Discount:78 - SubTotal of Menu Item - $ 104.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:42.329 OrderManagementScreen:1226 -  Tax is - $ 15.60
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:44.055 Discount:89 - Total of Menu Item is - $ 119.60
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:44.062 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:44.914 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:46.538 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:47.592 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:51.159 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:11:54.483 BasePage:301 - T8 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:03.207 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:04.274 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:05.517 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:07.258 BasePage:301 -  Selected Category as - Pasta
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:07.842 BasePage:301 - Tapped Ravioli Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:09.848 BasePage:301 - Butter selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:10.300 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:12.884 Discount:78 - SubTotal of Menu Item - $ 15.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:14.483 OrderManagementScreen:1226 -  Tax is - $ 1.36
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:16.415 Discount:89 - Total of Menu Item is - $ 15.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:16.421 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:17.231 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:19.075 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:20.155 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:23.712 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:27.053 BasePage:301 - T9 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:35.638 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:36.727 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:38.141 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:39.851 BasePage:301 -  Selected Category as - Arab Biriyani
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:40.774 BasePage:301 - sambar selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:43.881 OrderManagementScreen:1353 - i 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:44.734 BasePage:301 - Selected - [[io.appium.java_client.ios.IOSDriver, Capabilities: {automationName=XCUITest, browserName=, bundleId=com.benseron.lingapos, databaseEnabled=false, deviceName=Ragav's 1, iosInstallPause=18000, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=false, noReset=false, platform=MAC, platformName=iOS, sendKeyStrategy=setValue, showXcodeLog=true, takesScreenshot=true, udid=00008020-0015790C26A2402E, wdaLocalPort=9109, wdaStartupRetries=4, wdaStartupRetryInterval=30, webStorageEnabled=false, webkitDebugProxyPort=11000, xcodeOrgId=V23JNQM2Z4, xcodeSigningId=Apple Development}] -> xpath: (//XCUIElementTypeButton[@name="1"])[2]]
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:45.489 OrderManagementScreen:1353 - i 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:47.304 BasePage:301 - Selected - [[io.appium.java_client.ios.IOSDriver, Capabilities: {automationName=XCUITest, browserName=, bundleId=com.benseron.lingapos, databaseEnabled=false, deviceName=Ragav's 1, iosInstallPause=18000, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=false, noReset=false, platform=MAC, platformName=iOS, sendKeyStrategy=setValue, showXcodeLog=true, takesScreenshot=true, udid=00008020-0015790C26A2402E, wdaLocalPort=9109, wdaStartupRetries=4, wdaStartupRetryInterval=30, webStorageEnabled=false, webkitDebugProxyPort=11000, xcodeOrgId=V23JNQM2Z4, xcodeSigningId=Apple Development}] -> xpath: (//XCUIElementTypeButton[@name="1"])[2]]
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:48.251 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:50.462 Discount:78 - SubTotal of Menu Item - $ 1,100.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:12:55.755 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:01.351 Hooks:70 - Failed Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:04.656 GlobalParams:130 - PORT Number is - 8216
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:04.656 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:05.649 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:05.650 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:05.651 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:22.141 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:22.142 Hooks:52 - Start Scenario Name : Orders
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:22.161 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:23.358 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:24.187 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:24.965 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:25.838 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:28.312 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:29.317 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:31.356 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:39.730 Regression:2466 - 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:40.743 Regression:2470 - GARDEN
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:40.744 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:42.087 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:13:47.558 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:16.254 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:17.290 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:17.302 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:17.313 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:17.314 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:34.010 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:34.011 Hooks:52 - Start Scenario Name : Taxes
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:34.162 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:36.019 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:36.816 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:37.630 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:38.374 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:40.778 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:41.828 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:43.437 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:45.025 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:48.673 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:57.902 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:21:58.995 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:03.437 OrderManagementScreen:1522 - 1-031
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:03.456 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:05.120 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:06.139 BasePage:301 - Burger selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:07.347 OrderManagementScreen:740 - Subtotal Value is - $ 7.58
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:08.236 OrderManagementScreen:882 - Tax Value is - $ 1.78
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:09.106 OrderManagementScreen:932 - Cash Price Value is SAME - $ 9.36
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:09.111 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:09.884 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:11.023 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:12.227 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:15.564 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:19.049 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:28.495 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:29.635 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:34.184 OrderManagementScreen:1522 - 1-032
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:34.192 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:35.889 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:36.997 BasePage:301 - Default Menu selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:38.258 OrderManagementScreen:740 - Subtotal Value is - $ 4.88
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:39.182 OrderManagementScreen:882 - Tax Value is - $ 0.37
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:40.009 OrderManagementScreen:932 - Cash Price Value is SAME - $ 5.25
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:40.011 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:41.076 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:42.568 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:43.900 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:47.382 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:22:50.993 BasePage:301 - T7 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:00.418 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:01.576 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:02.863 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:06.342 BasePage:301 -  Selected Category as - Appetizers
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:07.375 BasePage:301 - RAPINI selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:09.534 Discount:78 - SubTotal of Menu Item - $ 13.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:11.186 OrderManagementScreen:1226 -  Tax is - $ 0.65
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:12.976 Discount:89 - Total of Menu Item is - $ 13.65
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:18.812 BasePage:301 - 5 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:19.617 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:22.235 Discount:78 - SubTotal of Menu Item - $ 65.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:23.894 OrderManagementScreen:1226 -  Tax is - $ 6.50
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:25.666 Discount:89 - Total of Menu Item is - $ 71.50
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:31.220 BasePage:301 -  selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:32.053 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:34.552 Discount:78 - SubTotal of Menu Item - $ 104.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:36.115 OrderManagementScreen:1226 -  Tax is - $ 15.60
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:37.825 Discount:89 - Total of Menu Item is - $ 119.60
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:37.846 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:38.921 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:40.385 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:41.457 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:45.035 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:48.659 BasePage:301 - T8 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:57.437 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:58.532 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:23:59.755 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:01.688 BasePage:301 -  Selected Category as - Pasta
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:02.305 BasePage:301 - Tapped Ravioli Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:04.343 BasePage:301 - Butter selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:04.821 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:07.389 Discount:78 - SubTotal of Menu Item - $ 15.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:08.965 OrderManagementScreen:1226 -  Tax is - $ 1.36
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:11.024 Discount:89 - Total of Menu Item is - $ 15.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:11.028 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:11.871 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:13.534 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:14.637 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:18.288 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:21.686 BasePage:301 - T9 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:30.513 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:31.608 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:33.039 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:34.675 BasePage:301 -  Selected Category as - Arab Biriyani
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:35.606 BasePage:301 - sambar selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:38.739 OrderManagementScreen:1353 - i 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:40.582 BasePage:301 - Selected - [[io.appium.java_client.ios.IOSDriver, Capabilities: {automationName=XCUITest, browserName=, bundleId=com.benseron.lingapos, databaseEnabled=false, deviceName=Ragav's 1, iosInstallPause=18000, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=false, noReset=false, platform=MAC, platformName=iOS, sendKeyStrategy=setValue, showXcodeLog=true, takesScreenshot=true, udid=00008020-0015790C26A2402E, wdaLocalPort=5635, wdaStartupRetries=4, wdaStartupRetryInterval=30, webStorageEnabled=false, webkitDebugProxyPort=11000, xcodeOrgId=V23JNQM2Z4, xcodeSigningId=Apple Development}] -> xpath: (//XCUIElementTypeButton[@name="1"])[2]]
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:41.516 OrderManagementScreen:1353 - i 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:43.346 BasePage:301 - Selected - [[io.appium.java_client.ios.IOSDriver, Capabilities: {automationName=XCUITest, browserName=, bundleId=com.benseron.lingapos, databaseEnabled=false, deviceName=Ragav's 1, iosInstallPause=18000, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=false, noReset=false, platform=MAC, platformName=iOS, sendKeyStrategy=setValue, showXcodeLog=true, takesScreenshot=true, udid=00008020-0015790C26A2402E, wdaLocalPort=5635, wdaStartupRetries=4, wdaStartupRetryInterval=30, webStorageEnabled=false, webkitDebugProxyPort=11000, xcodeOrgId=V23JNQM2Z4, xcodeSigningId=Apple Development}] -> xpath: (//XCUIElementTypeButton[@name="1"])[2]]
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:44.231 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:46.608 Discount:78 - SubTotal of Menu Item - $ 1,100.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:47.971 OrderManagementScreen:1226 -  Tax is - $ 96.57
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:49.410 Discount:89 - Total of Menu Item is - $ 1,196.57
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:49.418 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:50.159 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:51.740 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:52.756 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:56.382 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:24:59.841 BasePage:301 - T10 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:08.489 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:09.586 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:10.959 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:12.593 BasePage:301 -  Selected Category as - Arab Biriyani
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:13.662 BasePage:301 - sambar selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:16.707 OrderManagementScreen:1353 - i 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:18.531 BasePage:301 - Selected - [[io.appium.java_client.ios.IOSDriver, Capabilities: {automationName=XCUITest, browserName=, bundleId=com.benseron.lingapos, databaseEnabled=false, deviceName=Ragav's 1, iosInstallPause=18000, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=false, noReset=false, platform=MAC, platformName=iOS, sendKeyStrategy=setValue, showXcodeLog=true, takesScreenshot=true, udid=00008020-0015790C26A2402E, wdaLocalPort=5635, wdaStartupRetries=4, wdaStartupRetryInterval=30, webStorageEnabled=false, webkitDebugProxyPort=11000, xcodeOrgId=V23JNQM2Z4, xcodeSigningId=Apple Development}] -> xpath: (//XCUIElementTypeButton[@name="1"])[2]]
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:19.449 OrderManagementScreen:1353 - i 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:21.305 BasePage:301 - 2 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:22.218 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:24.421 Discount:78 - SubTotal of Menu Item - $ 1,200.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:25.830 OrderManagementScreen:1226 -  Tax is - $ 105.35
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:27.304 Discount:89 - Total of Menu Item is - $ 1,305.35
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:27.312 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:28.016 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:29.584 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:30.590 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:34.150 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:37.601 BasePage:301 - T11 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:46.364 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:47.470 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:48.888 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:50.639 BasePage:301 -  Selected Category as - Pasta
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:51.192 BasePage:301 -  Tapped Ling Meatballs Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:53.278 BasePage:301 - Butter selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:53.746 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:56.005 Discount:78 - SubTotal of Menu Item - $ 4.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:57.572 OrderManagementScreen:1226 -  Tax is - $ 0.44
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:59.281 Discount:89 - Total of Menu Item is - $ 4.44
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:25:59.284 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:00.128 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:01.298 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:02.299 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:05.880 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:09.278 BasePage:301 - T8 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:17.861 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:18.981 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:20.363 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:22.050 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:23.056 BasePage:301 - Halwa selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:30.604 BasePage:301 - 8 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:31.406 BasePage:301 - Tapped Continue
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:33.826 Discount:78 - SubTotal of Menu Item - $ 80.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:35.274 OrderManagementScreen:1226 -  Tax is - $ 8.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:36.940 Discount:89 - Total of Menu Item is - $ 88.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:36.945 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:38.313 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:38.316 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:39.272 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:41.283 BasePage:293 - Table layout screen is displayed - Table Layout
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:42.145 BasePage:66 - Power button is clicked
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:43.492 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:44.472 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:45.179 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:45.884 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:46.609 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:48.950 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:50.018 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:26:53.066 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:01.389 Regression:2466 - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:02.418 Regression:2470 - CAESAR CHIC
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:02.419 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:03.690 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:09.159 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:14.282 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:17.268 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:23.085 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:31.097 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:32.111 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:33.102 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:34.954 BasePage:301 - Tapped Side CC Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:36.509 BasePage:301 - sappthi selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:38.122 BasePage:301 - EACH selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:39.890 BasePage:301 - None selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:40.297 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:40.977 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:45.443 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:55.382 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:56.402 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:27:57.410 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:00.065 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:01.749 BasePage:301 - Tuna Tacos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:03.475 BasePage:301 - Croutons selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:03.952 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:04.889 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:10.056 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:17.600 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:18.617 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:19.565 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:20.705 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:22.476 BasePage:301 - B.I. Wings selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:24.316 BasePage:301 - Spinach selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:26.081 CheckOptionsScreen:813 - Size of the Prefix modifiers - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:27.148 BasePage:301 -  Selected prefix as - No
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:27.512 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:29.431 CheckOptionsScreen:827 - Prefix modifiers is Added with Menu Item - No Spinach
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:29.432 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:32.858 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:40.637 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:41.655 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:42.672 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:43.921 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:45.601 BasePage:301 - Pizza Rucola 12inch selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:28:54.433 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:03.124 Hooks:70 - Failed Scenario Name : Orders
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:06.463 GlobalParams:130 - PORT Number is - 10278
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:06.463 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:07.475 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:07.475 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:07.475 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:24.014 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:24.015 Hooks:52 - Start Scenario Name : Sale In Service Types
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:24.034 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:25.168 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:27.195 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:29.148 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:31.036 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:37.117 BasePage:301 - Phone To Go order type is selected.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:40.038 BasePage:301 - Order type selection is done.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:41.990 BasePage:293 - Customer profile window is displayed - Customer Profile
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:41.995 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:43.753 BasePage:83 - Customer name is entered - Auto ragav
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:45.765 BasePage:301 - Customer selected 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:47.148 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:51.902 BasePage:293 - Order Type name is - To Go
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:53.661 OrderManagementScreen:1436 - Auto r - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:57.094 OrderManagementScreen:1522 - 1-043
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:57.107 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:29:58.748 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:07.051 Regression:2466 - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:08.079 Regression:2470 - CAESAR CHIC
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:08.080 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:09.445 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:14.944 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:20.079 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:21.620 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:24.129 BasePage:293 - Phone order Tab is displayed - Driver status
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:29.244 BasePage:301 - Tapped Closed Check in New tab - 1-043
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:29.549 BasePage:301 - Pay check button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:31.515 BasePage:293 - Payment window title is -Select Payment Method
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:32.989 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:42.589 BasePage:301 - Tapped Check Stats Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:43.374 BasePage:301 - Tapped closed Tab button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:52.232 BasePage:301 - Tapped Closed Checks
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:53.130 PhoneOrderScreen:485 - 1-043 - Closed Check is displayed in closed tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:53.154 BasePage:301 - Tapped QSR button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:54.055 BasePage:301 - DELIVERY order type is selected.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:55.038 BasePage:301 - Tapped done button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:58.702 BasePage:293 - Customer profile window is displayed - Customer Profile
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:30:58.705 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:00.424 BasePage:83 - Customer name is entered - auto loyalty
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:02.496 BasePage:301 - Tapped Customer
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:04.115 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:09.852 OrderManagementScreen:1436 - auto l - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:14.065 OrderManagementScreen:1522 - 1-044
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:19.279 TableLayOutScreen:1466 - Total Amount is Not Same- $ 0.00 - Delivery charge as 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:19.280 TableLayOutScreen:1467 - Subtotal Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:19.280 TableLayOutScreen:1468 - Tax Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:19.280 TableLayOutScreen:1469 - Total Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:19.280 TableLayOutScreen:1470 - Paid Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:19.306 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:22.314 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:30.759 Regression:2466 - 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:31.794 Regression:2470 - RUCOLA
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:31.795 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:33.098 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:38.568 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:43.712 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:45.161 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:47.429 BasePage:293 - Phone order Tab is displayed - Driver status
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:54.655 BasePage:301 - Tapped Closed Check in New tab - 1-044
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:55.070 BasePage:301 - Pay check button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:57.114 BasePage:293 - Payment window title is -Select Payment Method
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:31:58.708 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:00.394 BasePage:301 - Exit button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:01.877 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:11.935 BasePage:301 - Tapped Closed Check in New tab - 1-044
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:14.291 BasePage:301 - Tapped Active Diver as - Auto D
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:16.473 PhoneOrderScreen:152 - Driver Offline Popup is Displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:16.475 BasePage:301 - Tapped No Button in the Driver offline popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:18.449 BasePage:301 - Tapped Active Diver as - Auto D
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:18.900 BasePage:301 - Tapped Departure Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:20.547 BasePage:301 - Tapped Out Tab Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:28.901 BasePage:301 - Tapped Closed Check in Out tab - 1-044
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:29.860 BasePage:301 - Tapped Out Tab Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:30.588 BasePage:301 - Complete tab is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:39.161 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:46.380 Hooks:70 - Failed Scenario Name : Sale In Service Types
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:49.656 GlobalParams:130 - PORT Number is - 9600
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:49.656 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:50.326 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:50.326 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:32:50.326 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:06.621 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:06.622 Hooks:52 - Start Scenario Name : Verify the sale in Bar Tab Service Type
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:06.634 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:08.392 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:09.114 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:09.880 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:10.594 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:13.016 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:13.967 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:15.798 BasePage:301 - Tapped BarTab Layout
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:20.003 BasePage:301 - Tapped Process Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:22.796 BasePage:109 - Device Txt is Displayed as - No Device is connected to this iPad
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:22.800 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:23.852 BasePage:301 - Exit Button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:29.446 OrderManagementScreen:1522 - 1-044
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:29.455 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:31.082 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:38.212 Regression:2466 - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:38.638 Regression:2470 - CAESAR CHIC
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:38.639 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:39.798 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:45.253 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:50.430 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:51.845 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:33:55.381 BasePage:109 - BarTab Screen is displayed - BarTab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:04.101 BasePage:301 - Tapped Closed Check in closed tab - 1-044
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:04.689 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:08.784 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:10.547 BasePage:301 - Submit button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:13.338 BasePage:66 - Power button is clicked
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:14.427 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:15.794 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:16.588 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:18.228 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:19.128 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:21.476 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:22.525 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:23.689 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:25.435 BasePage:301 - Onion Rings selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:26.820 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:28.304 BasePage:293 - Menu Option Screen is Displayed - Menu Option - Onion Rings 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:28.306 BasePage:301 - Tapped Fire Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:31.382 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:33.067 BasePage:293 - Menu Option Screen is Displayed - Menu Option - Onion Rings 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:33.072 BasePage:301 - Tapped void button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:34.821 BasePage:293 - void Reason txt is displayed - Void Reason
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:34.823 BasePage:301 - Ordered wrongly is selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:35.973 BasePage:301 - Add (void reason) button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:37.895 BasePage:293 - Receipt Printer is Displayed - Receipt Printer
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:37.898 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:38.863 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:40.556 BasePage:293 - void Reason txt is displayed - Void Reason
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:40.559 BasePage:301 - Ordered wrongly is selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:41.631 BasePage:301 - Add (void reason) button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:43.749 BasePage:293 - Receipt Printer is Displayed - Receipt Printer
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:43.753 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:45.861 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:46.901 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:48.099 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:49.843 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:52.697 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:54.454 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:54.456 BasePage:301 - Tapped Repeat Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:58.740 MenuOptionScreen:160 - Repeated Menu item is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:34:59.679 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:01.162 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:01.164 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:04.227 BasePage:301 - 3selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:05.314 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:08.505 MenuOptionScreen:178 - 3 Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:10.980 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:12.896 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:12.899 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:17.462 BasePage:301 - 1selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:18.562 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:22.464 MenuOptionScreen:178 - 1 Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:23.585 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:25.277 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:25.280 BasePage:301 - Tapped Attach Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:26.999 BasePage:293 - Add Notes Screen Is Displayed - Add Notes
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:29.070 BasePage:301 - Tapped Reason  Spicy
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:31.064 MenuOptionScreen:292 - SpicyAdd Notes Reason is Tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:31.067 BasePage:301 - Add (void reason) button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:34.114 MenuOptionScreen:303 - SpicyAdd reason Is Applied on Order Screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:34.117 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:35.598 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:35.601 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:36.537 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:39.121 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:40.790 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:42.172 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:43.860 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:43.862 BasePage:301 - Tapped Attach Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:47.417 BasePage:301 - selected Discount as - IB-AfterTax-Amount
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:50.051 MenuOptionScreen:199 - Discount is applied - IB-AfterTax-Amount
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:50.053 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:51.628 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:51.629 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:53.239 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:54.662 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:56.122 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:35:56.125 BasePage:301 - - Tax Exempt is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:02.082 BasePage:293 - Open item Screen txt is Displayed - Open Item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:02.092 BasePage:301 - Tapped Coursing name field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:20.080 BasePage:301 - Price Field selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:23.558 BasePage:301 - 1 is selected 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:27.304 BasePage:301 - 00 is selected - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:29.672 BasePage:301 - 00 is selected - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:32.056 BasePage:301 - Continue button is tapped - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:33.950 BasePage:301 - Done button is tapped - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:39.184 OrderManagementScreen:1257 - Open Item is added
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:39.188 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:40.694 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:40.697 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:42.263 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:44.517 Discount:78 - SubTotal of Menu Item - $ 10.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:46.327 OrderManagementScreen:1226 -  Tax is - $ 1.20
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:48.366 Discount:89 - Total of Menu Item is - $ 11.20
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:49.268 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:50.962 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:50.965 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:54.150 BasePage:301 - 2selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:55.229 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:58.445 MenuOptionScreen:178 - 2 Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:36:59.346 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:00.770 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:00.772 BasePage:301 - Tapped Open Discount Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:03.099 MenuOptionScreen:318 - Open Discount Screen Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:03.103 BasePage:301 - Tapped Percentage Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:04.105 BasePage:301 - Tapped amount field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:05.568 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:07.174 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:08.859 BasePage:301 - Tapped pin3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:10.593 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:12.331 BasePage:301 - Taped continue for open Discount
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:17.131 BasePage:301 - Selected - Hide keyboard
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:21.263 BasePage:301 - Tapped - After
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:22.282 BasePage:301 - Tapped Apply Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:24.091 BasePage:293 - Discount is Added - Open-Item Discount
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:25.915 Discount:78 - SubTotal of Menu Item - $ 20.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:27.813 OrderManagementScreen:1226 -  Tax is - $ 2.40
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:29.688 OrderManagementScreen:1380 -  Discount is - $ 4.46
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:31.780 Discount:89 - Total of Menu Item is - $ 17.94
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:31.783 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:33.230 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:33.232 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:34.877 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:36.283 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:37.689 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:37.694 BasePage:301 - Tapped Open Modifier Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:40.109 BasePage:293 - Open Modifiers Screen is displayed - Open Modifiers
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:47.096 BasePage:301 - Tapped price field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:51.024 BasePage:301 - Tapped pin2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:53.394 BasePage:301 - Tapped pin0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:55.969 BasePage:301 - Tapped pin0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:37:58.519 BasePage:301 - Tapped Continue button.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:05.804 BasePage:301 - Tapped Add Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:12.192 MenuOptionScreen:453 - fruits - Modifiers Added in Open Modifier screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:12.204 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:14.260 BasePage:301 - Back Button selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:19.175 MenuOptionScreen:466 - fruits - Open Modifies is Added
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:19.187 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:20.718 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:20.722 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:22.405 BasePage:301 - mongo test selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:23.814 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:25.238 BasePage:293 - Menu Option Screen is Displayed - Menu Option - mongo test 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:25.244 BasePage:301 - Tapped Open Modifier Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:29.590 BasePage:301 - Done button is tapped - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:33.729 MenuOptionScreen:426 - Coursing name is NOT Same - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:33.731 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:35.294 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:35.295 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:36.250 BasePage:301 - Tapped log Off Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:37.305 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:38.942 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:40.774 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:41.538 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:42.261 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:44.562 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:45.523 BasePage:301 - Options button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:46.654 BasePage:301 - Tapped Gift Card Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:48.299 BasePage:293 - Gift card screen is displayed - Gift Card
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:50.104 BasePage:301 - Tapped Card Number Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:50.686 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:52.296 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:53.952 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:38:55.594 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:01.009 BasePage:301 - Tapped Continue 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:01.451 BasePage:301 - Tapped Charge Amount Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:06.122 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:07.763 BasePage:301 - Tapped Pin 00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:09.468 BasePage:301 - Tapped Pin 00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:18.671 BasePage:301 - Tapped 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:19.090 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:20.572 BasePage:293 - Gift Card is Add to Order screen - GC-1111 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:20.586 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:21.700 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:23.263 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:25.397 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:27.524 BasePage:301 - Options button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:28.574 BasePage:301 - Tapped Gift Card Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:30.258 BasePage:293 - Gift card screen is displayed - Gift Card
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:32.129 BasePage:301 - Tapped Card Number Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:32.754 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:34.330 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:36.023 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:37.711 BasePage:301 - Tapped Pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:48.194 BasePage:301 - Tapped Continue 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:55.598 CheckOptionsScreen:1043 - Beginning Balance - $ 1,380.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:39:58.491 CheckOptionsScreen:1047 - Beginning Balance & Recurring Balance Is SAME - $ 1,380.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:01.010 BasePage:301 - Selected Active Account Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:02.486 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:04.416 CheckOptionsScreen:1126 - Done is not selectable
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:05.917 BasePage:301 - Selected Active Account Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:07.227 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:10.993 BasePage:301 - Tapped number field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:12.685 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:14.768 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:18.590 BasePage:301 - Selected - 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:21.359 BasePage:301 - Selected - 5
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:23.023 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:26.727 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:27.715 BasePage:301 - Continue Selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:28.981 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:30.078 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:32.847 BasePage:301 - Tapped Gift Card Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:34.558 PaymentWindow:333 - Should see Total screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:34.562 BasePage:301 - Tapped Continue Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:35.906 BasePage:293 - your order screen is displayed - Your Order
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:35.910 BasePage:301 - Tapped Manual Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:47.789 BasePage:301 - Tapped Process Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:48.748 BasePage:301 - Tapped Ok Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:51.650 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:52.666 BasePage:301 - Tapped log Off Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:53.561 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:55.304 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:56.028 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:57.696 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:40:59.226 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:01.654 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:02.674 BasePage:301 - Options button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:03.780 BasePage:301 - Tapped Gift Card Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:05.409 BasePage:293 - Gift card screen is displayed - Gift Card
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:05.416 BasePage:301 - Tapped GiveX 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:09.625 CheckOptionsScreen:1144 - GiveX Screen is Displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:10.592 BasePage:301 - Tapped GiveX Number Field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:12.057 BasePage:301 - Selected - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:15.752 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:19.594 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:23.419 BasePage:301 - Selected - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:27.339 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:31.068 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:33.317 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:36.884 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:40.700 BasePage:301 - Selected - 7
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:43.565 BasePage:301 - Selected - 9
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:47.257 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:51.172 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:53.441 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:57.106 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:41:58.892 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:02.601 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:06.387 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:10.151 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:13.940 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:15.611 BasePage:301 - Selected - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:19.300 BasePage:301 - Selected - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:20.287 BasePage:301 - Continue Selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:28.345 CheckOptionsScreen:1031 - Beginning Balance - $ 1,125.80
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:31.087 CheckOptionsScreen:1035 - Beginning Balance & Recurring Balance Is SAME - $ 1,125.80
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:33.642 BasePage:301 - Tapped number field
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:35.247 BasePage:301 - Selected - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:38.918 BasePage:301 - Selected - 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:41.208 BasePage:301 - Selected - 5
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:44.860 BasePage:301 - Selected - 8
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:48.657 BasePage:301 - Selected - 0
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:49.636 BasePage:301 - Continue Selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:50.887 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:54.244 BasePage:293 - Verify text Recharge SuccessRecharge Success
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:54.248 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:56.356 CheckOptionsScreen:1170 - GiveX Card Number is SAME - GCX-603628237912001380863 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:58.256 CheckOptionsScreen:1160 - GiveX value is SAME - 125.80
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:58.259 BasePage:301 - Tapped Cash button for Close Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:42:59.040 BasePage:301 - Tapped Exact button 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:00.764 BasePage:301 - Tapped Enter for Finish Sale
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:02.938 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:05.042 BasePage:301 - Tapped log Off Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:06.028 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:07.559 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:08.342 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:09.068 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:09.820 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:12.125 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:13.169 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:14.845 BasePage:301 -  Selected Category as - Applicable time period
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:15.754 BasePage:301 - Pasta applicable time selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:16.922 OrderManagementScreen:1845 - Displayed Popup as - Quantity is not enough.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:16.926 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:17.713 BasePage:301 - Tapped the settings button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:19.925 BasePage:301 - Selected - 86 List
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:21.612 OrderManagementScreen:1857 - Displayed window as - 86 List
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:24.346 BasePage:301 - search menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:25.506 BasePage:301 - Keyboard hidden.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:37.074 BasePage:301 - Click Continue Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:37.439 BasePage:301 - Tapped the Toggle Icon button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:38.174 BasePage:301 - Tapped POS Icon 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:40.780 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:41.791 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:42.638 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:44.043 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:47.687 BasePage:301 - T18 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:56.512 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:57.123 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:43:59.703 TableLayOutScreen:656 - I should see Order Screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:02.436 BasePage:293 - test1-049
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:02.437 CIWaitListPage:187 - Get Check Number - 1-049
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:02.445 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:05.467 BasePage:301 -  Selected Category as - Ultimate Lunch
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:17.835 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:19.178 BasePage:293 - Menu Option Screen is Displayed - Menu Option - Chicken Rice 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:19.180 BasePage:301 - Tapped Repeat Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:22.419 MenuOptionScreen:160 - Repeated Menu item is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:29.737 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:31.093 BasePage:293 - Menu Option Screen is Displayed - Menu Option - Chicken Rice 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:31.107 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:33.828 BasePage:301 - 3selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:34.859 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:37.668 MenuOptionScreen:178 - 3 Is Visible
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:42.143 BasePage:301 - Tapped Menu Items to see Menu Option Green
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:43.655 BasePage:293 - Menu Option Screen is Displayed - Menu Option - Chicken Rice 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:43.657 BasePage:301 - Tapped Quantity Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:46.873 BasePage:301 - 9selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:47.870 BasePage:301 - Continue (Close Till) button is tapped.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:50.252 OrderManagementScreen:1845 - Displayed Popup as - Quantity is not enough.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:50.257 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:51.280 BasePage:301 - Back Button selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:53.783 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:56.480 BasePage:66 - Power button is clicked
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:44:58.154 BasePage:301 - Selected Btn As - 86 LIST
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:08.023 BasePage:301 - search menu item 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:12.355 CIEightySixListScreen:309 - 86 list menu as - Chicken Rice - 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:14.641 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:16.558 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:18.301 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:20.106 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:21.871 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:24.263 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:25.224 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:26.029 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:27.957 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:31.523 BasePage:301 - T22 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:40.310 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:41.446 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:42.817 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:44.496 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:45.454 BasePage:301 - lattoos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:46.622 OrderManagementScreen:740 - Subtotal Value is - $ 5.15
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:46.623 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:47.888 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:47.891 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:48.837 BasePage:301 - customer list is opened
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:49.788 BasePage:301 - Tapped Add New Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:56.113 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:45:57.674 BasePage:83 - Customer name is entered - auto membership
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:00.495 BasePage:301 - Selected Customer - auto membership 876997065 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:02.027 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:05.559 TableLayOutScreen:656 - I should see Order Screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:08.100 OrderManagementScreen:1436 - auto m - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:10.910 OrderManagementScreen:1522 - 1-050
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:10.917 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:12.568 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:13.702 BasePage:301 - lattoos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:15.223 Hooks:70 - Failed Scenario Name : Price Level ( Customer Mapped in membership by BO level )
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:18.513 GlobalParams:130 - PORT Number is - 4979
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:18.514 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:19.205 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:19.205 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:19.206 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:35.545 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:35.546 Hooks:52 - Start Scenario Name : Customer Mapped in membership by iPad level
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:35.565 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:37.466 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:38.312 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:39.107 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:39.869 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:42.306 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:43.320 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:44.227 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:45.818 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:49.907 BasePage:301 - T22 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:46:59.386 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:00.489 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:01.865 BasePage:301 - customer list is opened
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:02.759 BasePage:301 - Tapped Add New Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:09.091 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:10.814 BasePage:83 - Enter the customer - auto membership1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:17.791 BasePage:301 - Selected Customer as - auto membership1 5876568 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:18.543 BasePage:301 - Tapped Customer Plan Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:22.189 CustomerProfileWindow:224 - Account Types Screen is Displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:23.580 BasePage:301 - Selected Arrow - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:26.823 BasePage:301 - Selected button as - Membership
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:28.190 CustomerProfileWindow:231 - Card Number - 5876568
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:34.213 Hooks:70 - Failed Scenario Name : Customer Mapped in membership by iPad level
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:37.438 GlobalParams:130 - PORT Number is - 9179
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:37.439 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:38.110 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:38.110 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:38.110 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:52.519 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:52.525 Hooks:52 - Start Scenario Name : Display group Price Level
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:52.541 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:53.873 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:54.756 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:55.586 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:56.766 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:47:59.300 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:00.358 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:01.945 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:03.543 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:07.101 BasePage:301 - T22 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:16.823 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:17.961 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:22.451 OrderManagementScreen:1522 - 1-051
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:22.460 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:24.472 BasePage:301 -  Selected Category as - Membership
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:25.597 BasePage:301 - lattoos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:26.645 OrderManagementScreen:740 - Subtotal Value is - $ 7.51
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:27.315 OrderManagementScreen:882 - Tax Value is - $ 0.75
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:27.317 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:30.057 OrderManagementScreen:1059 - Subtotal same with cash value - 7.51
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:31.112 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:38.082 BasePage:301 - Tapped Check Stats Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:39.220 BasePage:301 - Tapped closed Tab button
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:48.361 BasePage:301 - Tapped Closed Checks
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:48.795 PhoneOrderScreen:485 - 1-051 - Closed Check is displayed in closed tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:49.248 BasePage:301 - Selected Button as - CheckDetialsIcon
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:53.178 OrderManagementScreen:1876 - Subtotal Same with Order summary subtotal - $7.51
+[iOS_Ragav's 1 INFO ] 2023-07-28 16:48:53.832 BasePage:66 - Power button is clicked
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:30.802 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:31.843 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:31.851 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:31.869 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:31.870 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:51.461 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:51.469 Hooks:52 - Start Scenario Name : Orders
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:51.726 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:53.601 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:54.399 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:55.095 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:55.829 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:58.376 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:04:59.405 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:02.540 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:11.110 Regression:2466 - 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:12.166 Regression:2470 - GARDEN
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:12.167 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:13.463 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:18.885 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:23.923 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:25.377 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:28.233 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:38.270 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:39.288 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:40.313 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:42.477 BasePage:301 - Tapped Side CC Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:44.064 BasePage:301 - sappthi selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:45.708 BasePage:301 - EACH selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:47.510 BasePage:301 - None selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:47.991 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:48.793 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:05:51.890 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:02.028 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:03.045 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:04.112 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:05.245 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:06.802 BasePage:301 - Tuna Tacos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:08.594 BasePage:301 - Croutons selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:09.021 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:09.773 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:13.350 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:22.770 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:23.785 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:24.830 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:25.957 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:27.664 BasePage:301 - B.I. Wings selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:29.518 BasePage:301 - Spinach selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:31.316 CheckOptionsScreen:813 - Size of the Prefix modifiers - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:32.215 BasePage:301 -  Selected prefix as - No
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:32.612 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:34.418 CheckOptionsScreen:827 - Prefix modifiers is Added with Menu Item - No Spinach
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:34.423 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:39.516 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:47.028 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:48.039 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:49.062 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:06:50.152 BasePage:301 - Food Category selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:00.028 BasePage:301 - Pizza Rucola 12inch selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:01.679 BasePage:301 - EACH selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:03.420 BasePage:301 - Smoked Salmon selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:04.633 CheckOptionsScreen:813 - Size of the Prefix modifiers - 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:05.429 BasePage:301 -  Selected prefix as - EACH
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:05.733 BasePage:301 - done for the menu item
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:07.406 CheckOptionsScreen:827 - Prefix modifiers is Added with Menu Item - EACH Smoked Salmon
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:07.409 BasePage:301 - Payment button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:10.805 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:18.317 OrderTypeWindow:202 - Order Type Window is displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:19.334 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:20.354 BasePage:301 - Tapped log Off Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:21.516 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:22.943 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:23.733 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:24.459 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:25.240 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:30.818 BasePage:301 - Phone To Go order type is selected.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:33.556 BasePage:301 - Order type selection is done.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:35.328 BasePage:293 - Customer profile window is displayed - Customer Profile
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:35.334 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:38.611 BasePage:83 - Customer name is entered - Auto ragav
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:40.402 BasePage:301 - Customer selected 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:41.718 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:47.554 BasePage:293 - Order Type name is - To Go
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:49.313 OrderManagementScreen:1436 - Auto r - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:52.194 OrderManagementScreen:1522 - 1-057
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:52.201 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:07:55.384 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:03.911 Regression:2466 - 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:04.975 Regression:2470 - CAPRESE
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:04.976 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:06.357 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:11.992 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:17.087 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:18.758 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:21.695 BasePage:293 - Phone order Tab is displayed - Driver status
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:27.936 BasePage:301 - Tapped Closed Check in New tab - 1-057
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:28.429 BasePage:301 - Pay check button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:30.521 BasePage:293 - Payment window title is -Select Payment Method
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:31.991 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:40.354 BasePage:301 - Tapped Check Stats Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:41.148 BasePage:301 - Tapped closed Tab button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:50.823 BasePage:301 - Tapped Closed Checks
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:51.259 PhoneOrderScreen:485 - 1-057 - Closed Check is displayed in closed tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:51.271 BasePage:301 - Tapped QSR button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:52.161 BasePage:301 - DELIVERY order type is selected.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:53.088 BasePage:301 - Tapped done button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:55.146 BasePage:293 - Customer profile window is displayed - Customer Profile
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:55.151 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:56.680 BasePage:83 - Customer name is entered - auto loyalty
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:08:58.640 BasePage:301 - Tapped Customer
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:00.256 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:06.451 OrderManagementScreen:1436 - auto l - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:09.577 OrderManagementScreen:1522 - 1-058
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:15.695 TableLayOutScreen:1466 - Total Amount is Not Same- $ 0.00 - Delivery charge as 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:15.697 TableLayOutScreen:1467 - Subtotal Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:15.698 TableLayOutScreen:1468 - Tax Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:15.698 TableLayOutScreen:1469 - Total Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:15.698 TableLayOutScreen:1470 - Paid Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:15.718 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:18.997 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:27.473 Regression:2466 - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:28.607 Regression:2470 - TRATTORIA
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:28.607 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:30.831 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:36.484 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:41.798 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:45.479 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:48.665 BasePage:293 - Phone order Tab is displayed - Driver status
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:54.462 BasePage:301 - Tapped Closed Check in New tab - 1-058
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:54.900 BasePage:301 - Pay check button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:56.865 BasePage:293 - Payment window title is -Select Payment Method
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:09:58.305 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:00.123 BasePage:301 - Exit button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:01.619 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:08.257 BasePage:301 - Tapped Closed Check in New tab - 1-058
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:10.074 BasePage:301 - Tapped Active Diver as - Auto D
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:12.452 PhoneOrderScreen:152 - Driver Offline Popup is Displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:12.457 BasePage:301 - Tapped No Button in the Driver offline popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:14.513 BasePage:301 - Tapped Active Diver as - Auto D
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:14.924 BasePage:301 - Tapped Departure Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:16.547 BasePage:301 - Tapped Out Tab Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:24.041 BasePage:301 - Tapped Closed Check in Out tab - 1-058
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:25.004 BasePage:301 - Tapped Out Tab Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:25.766 BasePage:301 - Complete tab is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:32.495 PhoneOrderScreen:419 - 1-058 - Closed Check is displayed in complete tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:32.505 BasePage:301 - Tapped QSR button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:33.503 BasePage:301 - Phone Delivery order type is selected.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:34.976 BasePage:301 - Order type selection is done.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:36.719 BasePage:293 - Customer profile window is displayed - Customer Profile
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:36.723 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:38.221 BasePage:83 - Customer name is entered - auto loyalty
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:43.720 BasePage:301 - Selected customer as - auto loyaltytest 67891234598 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:44.483 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:49.477 OrderManagementScreen:1436 - auto l - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:55.021 OrderManagementScreen:1522 - 1-059
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:59.793 TableLayOutScreen:1466 - Total Amount is Not Same- $ 0.00 - Delivery charge as 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:59.793 TableLayOutScreen:1467 - Subtotal Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:59.794 TableLayOutScreen:1468 - Tax Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:59.794 TableLayOutScreen:1469 - Total Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:59.794 TableLayOutScreen:1470 - Paid Amount is same with delivery charge - $ 0.00
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:10:59.807 BasePage:301 - Arrow Down
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:02.969 BasePage:301 - Tapped category
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:11.569 Regression:2466 - 6
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:12.612 Regression:2470 - CAPRESE
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:12.612 BasePage:301 - Tapped Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:13.907 BasePage:301 - Croutons - Tapped Main Modifier
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:19.414 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:24.616 BasePage:301 - Tapped Done
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:26.014 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:29.077 BasePage:293 - Phone order Tab is displayed - Driver status
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:35.445 BasePage:301 - Tapped Closed Check in New tab - 1-059
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:36.254 BasePage:301 - Pay check button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:38.303 BasePage:293 - Payment window title is -Select Payment Method
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:39.773 BasePage:301 - Tapped Cash Payment
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:41.757 BasePage:301 - Exit button is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:43.028 BasePage:301 - finish button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:53.241 BasePage:301 - Tapped Closed Check in New tab - 1-059
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:55.569 BasePage:301 - Tapped Active Diver as - Auto D
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:58.654 PhoneOrderScreen:152 - Driver Offline Popup is Displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:11:58.670 BasePage:301 - Tapped No Button in the Driver offline popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:01.352 BasePage:301 - Tapped Active Diver as - Auto D
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:01.740 BasePage:301 - Tapped Departure Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:03.391 BasePage:301 - Tapped Out Tab Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:10.977 BasePage:301 - Tapped Closed Check in Out tab - 1-059
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:11.438 BasePage:301 - Tapped Out Tab Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:12.218 BasePage:301 - Complete tab is tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:20.466 BasePage:787 - element not found
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:23.162 PhoneOrderScreen:419 - 1-059 - Closed Check is displayed in complete tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:23.312 BasePage:301 - Keyboard hidden.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:27.775 Hooks:70 - Failed Scenario Name : Sale In Service Types
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:31.189 GlobalParams:130 - PORT Number is - 4384
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:31.189 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:32.196 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:32.196 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:32.196 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:51.970 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:51.971 Hooks:52 - Start Scenario Name : Price Level ( Customer Mapped in membership by BO level )
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:51.996 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:52.827 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:53.851 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:54.554 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:55.276 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:57.836 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:12:59.071 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:00.480 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:01.757 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:05.844 BasePage:301 - T22 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:14.809 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:15.959 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:17.416 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:19.207 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:20.284 BasePage:301 - lattoos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:21.628 OrderManagementScreen:740 - Subtotal Value is - $ 5.15
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:21.641 BasePage:301 - Void button tapped
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:23.116 BasePage:293 - All Orders are voided is Displayed - All orders are voided
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:23.122 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:24.109 BasePage:301 - customer list is opened
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:25.224 BasePage:301 - Tapped Add New Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:31.564 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:33.369 BasePage:83 - Customer name is entered - auto membership
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:36.519 BasePage:301 - Selected Customer - auto membership 876997065 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:38.122 BasePage:301 - pressed Save button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:41.298 TableLayOutScreen:656 - I should see Order Screen
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:43.076 OrderManagementScreen:1436 - auto m - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:48.977 OrderManagementScreen:1522 - 1-059
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:48.991 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:52.265 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:53.336 BasePage:301 - lattoos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:54.923 Hooks:70 - Failed Scenario Name : Price Level ( Customer Mapped in membership by BO level )
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:58.175 GlobalParams:130 - PORT Number is - 8485
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:58.175 ServerManager:21 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:58.852 ServerManager:30 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:58.852 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:13:58.852 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:14.866 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:14.868 Hooks:52 - Start Scenario Name : Customer Mapped in membership by iPad level
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:14.883 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:15.828 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:16.615 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:17.350 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:18.089 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:20.494 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:21.492 BasePage:301 - Tapped All button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:22.340 BasePage:301 - Tapped Table Layout Tab
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:24.017 BasePage:301 - Tapped New Check Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:27.571 BasePage:301 - T22 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:36.300 BasePage:301 - 1 selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:37.366 BasePage:301 - Tapped Continue button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:38.798 BasePage:301 - customer list is opened
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:39.639 BasePage:301 - Tapped Add New Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:46.074 BasePage:301 - Tapped search Phone
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:47.646 BasePage:83 - Enter the customer - auto membership1
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:55.505 BasePage:301 - Selected Customer as - auto membership1 5876568 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:56.337 BasePage:301 - Tapped Customer Plan Button
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:14:59.152 CustomerProfileWindow:224 - Account Types Screen is Displayed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:00.689 BasePage:301 - Selected Arrow - 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:03.290 BasePage:301 - Selected button as - Membership
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:04.864 CustomerProfileWindow:231 - Card Number - 5876568
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:06.505 CustomerProfileWindow:234 - Membership Name - Basic Level 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:08.153 CustomerProfileWindow:237 - Membership Type - Price Level 2
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:08.153 BasePage:301 - Update Button selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:12.994 OrderManagementScreen:1436 - auto m - Customer Is added on Order Screen 
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:15.795 OrderManagementScreen:1522 - 1-060
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:15.813 BasePage:301 - the rest of the categories is listed
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:17.443 BasePage:301 -  Selected Category as - Menu
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:18.446 BasePage:301 - lattoos selected
+[iOS_Ragav's 1 INFO ] 2023-07-28 18:15:20.162 Hooks:70 - Failed Scenario Name : Customer Mapped in membership by iPad level

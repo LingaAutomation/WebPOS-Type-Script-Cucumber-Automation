@@ -1,0 +1,33 @@
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:04:29.801 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:04:34.937 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:08:05.952 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:08:11.043 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:28:47.111 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:28:52.207 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:38:28.400 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:38:59.003 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:49:10.008 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:49:40.615 BasePage:292 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:49:40.661 BasePage:292 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:49:40.678 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:53:02.820 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:53:38.395 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:54:12.621 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:54:43.094 BasePage:293 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:54:43.120 BasePage:293 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 17:54:43.136 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:07:35.472 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:08:05.962 BasePage:293 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:08:05.993 BasePage:293 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:08:06.003 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:09:32.252 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:10:02.786 BasePage:293 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:10:02.815 BasePage:282 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:10:02.825 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:13:48.986 Hooks:58 - Start Scenario Name : Cashier Out From Till Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:14:19.743 BasePage:293 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:14:19.777 BasePage:282 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:14:19.811 BasePage:282 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:14:19.840 BasePage:282 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:14:19.882 BasePage:293 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-08 18:14:19.894 Hooks:76 - Failed Scenario Name : Cashier Out From Till Management Screen
