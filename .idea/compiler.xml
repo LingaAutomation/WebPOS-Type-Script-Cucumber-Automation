@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="V2.1LingaTestAutomation" />
+        <module name="aftermergingbackup" />
+        <module name="lingarostestautomation100521" />
+        <module name="LingaAutomation_LatestSource_10032022Phase1" />
+        <module name="LingarosLatest Dec 30" />
+        <module name="BasicValidaitonSuite" />
+        <module name="LingaAutomation_LatestSource_14022022" />
+        <module name="V2.2LingaTestAutomation copy" />
+        <module name="V2.2LingaTestAutomation 3" />
+        <module name="aftermergingbackup 3 Dec 20" />
+        <module name="BasicValidaitonSuite-$-Store-TimeClock-3" />
+        <module name="V2.2LingaTestAutomation copy 2" />
+        <module name="aftermergingbackup 3 Dec 22" />
+        <module name="V2.2LingaTestAutomation " />
+        <module name="BasicValidaitonSuite $-Store" />
+        <module name="BasicValidaitonSuite $-Store TimeClock" />
+        <module name="19November" />
+        <module name="V2.2LingaTestAutomation DEC13" />
+        <module name="lingarostestautomation-3" />
+        <module name="lingarostestautomation-2" />
+        <module name="lingarostestautomation" />
+        <module name="LingarosTestAutomation" />
+        <module name="V2.2LingaTestAutomation 2.0" />
+        <module name="18November" />
+        <module name="17Novermver" />
+        <module name="LingaAutomation_LatestSource_10032022Phase1 ( 18 - Apr)" />
+        <module name="LingaTestAutomationLatest(fully merged code)" />
+        <module name="V2.2LingaTestAutomation DEC13 3" />
+        <module name="LingaAutomationLatest 2" />
+        <module name="LingaAutomation_LatestSource_04032022Phase1" />
+        <module name="LingaRealAutomationProject" />
+        <module name="basicvalidaitonsuite-doller-store-timeclock-3" />
+        <module name="22NovemberFinalMerge" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
