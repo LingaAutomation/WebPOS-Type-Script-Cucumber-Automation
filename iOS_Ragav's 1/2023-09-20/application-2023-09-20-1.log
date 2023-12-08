@@ -1,0 +1,87 @@
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:42:09.104 ServerManager:22 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:42:11.863 ServerManager:31 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:42:11.907 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:42:11.977 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:42:11.982 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:43:04.936 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:43:04.939 Hooks:52 - Start Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:43:05.219 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:43:06.287 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-09-20 15:43:07.615 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:12:51.466 ServerManager:22 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:12:52.524 ServerManager:31 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:12:52.534 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:12:52.546 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:12:52.547 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:17.905 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:17.906 Hooks:52 - Start Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:18.118 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:19.458 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:21.862 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:24.093 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:26.364 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:29.373 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:30.425 BasePage:301 - Counting Machine button pressed - 
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:42.055 TillManagementScreen:834 - Active Till is NOT Available
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:42.670 BasePage:293 - till Management screen - Open Till
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:43.064 BasePage:301 - Cancel Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:44.723 BasePage:301 - Reports Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:48.244 BasePage:301 - Cashier out Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:51.378 BasePage:109 - Displayed popup as - Do you want to print the Cashier Out?
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:51.396 BasePage:301 - Tapped Yes Button on the Hold Popup
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:56.506 BasePage:109 - Displayed popup as - Cashier out saved successfully
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:56.555 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:13:58.622 BasePage:66 - Power button is clicked
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:46:43.484 ServerManager:22 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:46:48.857 ServerManager:31 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:46:48.922 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:46:48.960 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:46:48.962 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:47:44.570 ServerManager:22 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:47:50.673 ServerManager:31 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:47:50.723 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:47:50.768 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:47:50.773 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:37.720 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:37.723 Hooks:52 - Start Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:38.113 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:39.497 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:41.510 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:42.414 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:44.338 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:47.203 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:48:48.363 BasePage:301 - Counting Machine button pressed - 
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:00.173 TillManagementScreen:834 - Active Till is NOT Available
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:00.872 BasePage:293 - till Management screen - Open Till
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:01.446 BasePage:301 - Cancel Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:02.708 BasePage:301 - Reports Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:06.225 BasePage:301 - Cashier out Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:11.333 BasePage:109 - Displayed popup as - Do you want to print the Cashier Out?
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:11.353 BasePage:301 - Tapped Yes Button on the Hold Popup
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:16.033 BasePage:109 - Displayed popup as - Cashier out saved successfully
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:16.090 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:49:18.361 BasePage:66 - Power button is clicked
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:51:43.126 ServerManager:22 - starting appium server...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:51:45.012 ServerManager:31 - Appium server started...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:51:45.047 DriverManager:29 - initializing Appium driver
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:51:45.069 PropertyManager:17 - loading config properties
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:51:45.076 CapabilitiesManager:18 - getting capabilities...
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:19.854 DriverManager:42 - Driver is initialized
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:19.859 Hooks:52 - Start Scenario Name : Cashier Out From Till Management Screen
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:20.257 BasePage:301 - Tapped pin 1
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:22.504 BasePage:301 - Tapped pin 2
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:24.680 BasePage:301 - Tapped pin 3
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:26.791 BasePage:301 - Tapped pin 4
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:28.879 BasePage:301 - Tapped Login.
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:31.710 BasePage:301 - Order type selection is cancelled.
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:32.829 BasePage:301 - Counting Machine button pressed - 
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:44.460 TillManagementScreen:834 - Active Till is NOT Available
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:45.113 BasePage:293 - till Management screen - Open Till
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:45.515 BasePage:301 - Cancel Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:46.793 BasePage:301 - Reports Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:50.313 BasePage:301 - Cashier out Button Selected
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:53.328 BasePage:109 - Displayed popup as - Do you want to print the Cashier Out?
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:53.337 BasePage:301 - Tapped Yes Button on the Hold Popup
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:58.211 BasePage:109 - Displayed popup as - Cashier out saved successfully
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:52:58.229 BasePage:301 - Tapped Done Button on the Popup
+[iOS_Ragav's 1 INFO ] 2023-09-20 18:53:00.073 BasePage:66 - Power button is clicked
