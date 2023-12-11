@@ -1,42 +1,42 @@
 package com.qa.pages;
 
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
 public class OrdersAndDriversListScreen extends BasePage {
-    @iOSXCUITFindBy(accessibility = "Table Layout")
+    @FindBy(xpath = "Table Layout")
     private WebElement tableLayoutTab;
 
-    @iOSXCUITFindBy(accessibility = "Check Stats")
+    @FindBy(xpath = "Check Stats")
     private WebElement checkStatsTab;
 
-    @iOSXCUITFindBy(accessibility = "Check Stats")
+    @FindBy(xpath = "Check Stats")
     private WebElement checkStatsTab1;
 
-    @iOSXCUITFindBy(accessibility = "Closed")
+    @FindBy(xpath = "Closed")
     private WebElement closedChecksLst;
 
-    @iOSXCUITFindBy(xpath = ("(//XCUIElementTypeStaticText[@name=\"T25\"])[1]"))
+    @FindBy(xpath = ("(//XCUIElementTypeStaticText[@name=\"T25\"])[1]"))
     private WebElement firstCheckForTable22;
 
-    @iOSXCUITFindBy(accessibility = "reOpenCheck")
+    @FindBy(xpath = "reOpenCheck")
     private WebElement reOpenCheckButton;
 
-    @iOSXCUITFindBy(accessibility = "Re-Open Check")
+    @FindBy(xpath = "Re-Open Check")
     private WebElement reOpenCheckStats;
 
-    @iOSXCUITFindBy(accessibility = "Table Layout")
+    @FindBy(xpath = "Table Layout")
     private WebElement TableLayout;
 
-    @iOSXCUITFindBy(accessibility = "Table Layout")
+    @FindBy(xpath = "Table Layout")
     private WebElement TableLayout1;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"T1\"])")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"T1\"])")
     private WebElement closeCheckTableNo;
 
-    @iOSXCUITFindBy (accessibility = "Closed")
+    @FindBy (xpath = "Closed")
     private WebElement closedTab;
 
     /*** For select Closed check ****/
@@ -75,11 +75,11 @@ public class OrdersAndDriversListScreen extends BasePage {
 
     public String verifyTableLayoutTab() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        return elementGetText(TableLayout1,"Table layout screen is displayed - ");
+        return elementGetText(TableLayout1,"Text");
         //   getText(TableLayout,"Table layout screen is displayed - ");
     }
 
     public String verifyCheckStatsScreen(){
-        return elementGetText(checkStatsTab,"Check Stats Is Displayed - ");
+        return elementGetText(checkStatsTab,"Text");
     }
 }

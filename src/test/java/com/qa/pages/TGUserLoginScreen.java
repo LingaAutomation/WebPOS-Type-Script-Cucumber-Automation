@@ -2,8 +2,6 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.By;
 
 public class TGUserLoginScreen extends SignInScreen{

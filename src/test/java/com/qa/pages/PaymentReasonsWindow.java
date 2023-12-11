@@ -1,23 +1,23 @@
 package com.qa.pages;
 
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.support.FindBy;
 
 public class PaymentReasonsWindow extends TillManagementScreen{
-    @iOSXCUITFindBy(accessibility = "Reasons" )
+    @FindBy(xpath = "Reasons" )
     private WebElement reasonsWindowTitle;
 
-    @iOSXCUITFindBy(accessibility = "Paid In" )
+    @FindBy(xpath = "Paid In" )
     private WebElement paidInReasonBtn;
 
-    @iOSXCUITFindBy(accessibility = "Paid Out" )
+    @FindBy(xpath = "Paid Out" )
     private WebElement paidOutReasonBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Ok\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Ok\"]" )
     private WebElement okBtn;
 
     public String getReasonsWindowTitle() {
-        return elementGetText(reasonsWindowTitle, "Reasons window's name is - ");
+        return elementGetText(reasonsWindowTitle,"Text");
     }
 
     public void selectPaymentReason(){

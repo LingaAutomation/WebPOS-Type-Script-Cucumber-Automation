@@ -1,13 +1,13 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.cucumber.java.bs.A;
 import io.cucumber.java.hu.De;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 
 import java.math.BigDecimal;
@@ -20,358 +20,358 @@ import java.util.concurrent.TimeUnit;
 
 public class Regression extends TableLayOutScreen {
     public String checkNumber = "";
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
     private WebElement searchFldDiscount;
 
-    @iOSXCUITFindBy(accessibility = "Garlic Bread")
+    @FindBy(xpath = "Garlic Bread")
     private WebElement Menu;
 
-    @iOSXCUITFindBy(accessibility = "4 BBQ")
+    @FindBy(xpath = "4 BBQ")
     private WebElement modifier;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
     private WebElement CashbtnPaymentWindow;
 
 
-    @iOSXCUITFindBy(accessibility = "Credit Card")
+    @FindBy(xpath = "Credit Card")
     WebElement creditCardBtn;
 
-    @iOSXCUITFindBy(accessibility = "JCB")
+    @FindBy(xpath = "JCB")
     WebElement jcbBtn;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Total\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Total\"])[1]")
     WebElement totalScreen;
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     WebElement continueBtn;
 
-    @iOSXCUITFindBy(accessibility = "Your Order")
+    @FindBy(xpath = "Your Order")
     WebElement yourOrder;
 
-    @iOSXCUITFindBy(accessibility = "Process")
+    @FindBy(xpath = "Process")
     WebElement processBtn;
 
-    @iOSXCUITFindBy(accessibility = "Card Type")
+    @FindBy(xpath = "Card Type")
     WebElement cardTypeScreen;
 
-    @iOSXCUITFindBy(accessibility = "Ok")
+    @FindBy(xpath = "Ok")
     WebElement okButtonCardTypeWindow;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Manual\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Manual\"]")
     WebElement manualButton;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
     WebElement cardNumberTxtField;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[1]")
     WebElement expireNumTxtField;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]")
     WebElement cvvTxtField;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[3]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[3]")
     WebElement zipCodeTxtField;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField")
     WebElement cardNameField;
 
-    @iOSXCUITFindBy(accessibility = "Finish")
+    @FindBy(xpath = "Finish")
     WebElement FinishBtn;
 
-    @iOSXCUITFindBy(accessibility = "finish")
+    @FindBy(xpath = "finish")
     private WebElement finishOrderBtn;
 
-    @iOSXCUITFindBy(accessibility = "Signature Pad")
+    @FindBy(xpath = "Signature Pad")
     WebElement signaturePadScreen;
 
-    @iOSXCUITFindBy(accessibility = "Others")
+    @FindBy(xpath = "Others")
     WebElement otherBtn;
 
-    @iOSXCUITFindBy(accessibility = "No Thanks")
+    @FindBy(xpath = "No Thanks")
     WebElement noThanks;
 
-    @iOSXCUITFindBy(accessibility = "  Submit")
+    @FindBy(xpath = "  Submit")
     WebElement submit;
 
-    @iOSXCUITFindBy(accessibility = "T1")
+    @FindBy(xpath = "T1")
     WebElement secondTable;
 
-    @iOSXCUITFindBy(accessibility = "1")
+    @FindBy(xpath = "1")
     WebElement singleSeat;
 
-    @iOSXCUITFindBy(accessibility = "Corona Extra")
+    @FindBy(xpath = "Corona Extra")
     WebElement coronaExtra;
 
-    @iOSXCUITFindBy(accessibility = "Ultra")
+    @FindBy(xpath = "Ultra")
     WebElement ultra;
 
-    @iOSXCUITFindBy(accessibility = "Havana Lager")
+    @FindBy(xpath = "Havana Lager")
     WebElement havana;
 
-    @iOSXCUITFindBy(accessibility = "Lagunitas (IPA)")
+    @FindBy(xpath = "Lagunitas (IPA)")
     WebElement lagunitas;
 
-    @iOSXCUITFindBy(accessibility = "Corona Light")
+    @FindBy(xpath = "Corona Light")
     WebElement coronaLight;
 
-    @iOSXCUITFindBy(accessibility = "Blue Moon")
+    @FindBy(xpath = "Blue Moon")
     WebElement blueMoon;
 
 
-    @iOSXCUITFindBy(accessibility = "Angry Orchard (Cider)")
+    @FindBy(xpath = "Angry Orchard (Cider)")
     WebElement angryOrchard;
 
 
-    @iOSXCUITFindBy(accessibility = "Virgin Frozen")
+    @FindBy(xpath = "Virgin Frozen")
     WebElement heinken;
 
 
-    @iOSXCUITFindBy(accessibility = "Water")
+    @FindBy(xpath = "Water")
     WebElement budweiser;
 
 
-    @iOSXCUITFindBy(accessibility = "Hot Tea")
+    @FindBy(xpath = "Hot Tea")
     WebElement budLight;
 
-    @iOSXCUITFindBy(accessibility = "Heineken Double Zero")
+    @FindBy(xpath = "Heineken Double Zero")
     WebElement heinkenDouble;
 
-    @iOSXCUITFindBy(accessibility = "Decaf Coffee")
+    @FindBy(xpath = "Decaf Coffee")
     WebElement gingerBeer;
 
-    @iOSXCUITFindBy(accessibility = "Virgin Mojito")
+    @FindBy(xpath = "Virgin Mojito")
     WebElement miller;
 
-    @iOSXCUITFindBy(accessibility = "Apple Juice")
+    @FindBy(xpath = "Apple Juice")
     WebElement solaIPA;
 
-    @iOSXCUITFindBy(accessibility = "Yuengling (Lager)")
+    @FindBy(xpath = "Yuengling (Lager)")
     WebElement yuenglingLager;
 
 
-    @iOSXCUITFindBy(accessibility = "Un-Holly (Belgian Ale)")
+    @FindBy(xpath = "Un-Holly (Belgian Ale)")
     WebElement unHolly;
 
 
-    @iOSXCUITFindBy(accessibility = "Schofferhofer")
+    @FindBy(xpath = "Schofferhofer")
     WebElement schofferhofer;
 
-    @iOSXCUITFindBy(accessibility = "All")
+    @FindBy(xpath = "All")
     private WebElement allBtn;
 
-    @iOSXCUITFindBy(accessibility = "Table Layout")
+    @FindBy(xpath = "Table Layout")
     private WebElement tableLayoutTab;
 
-    @iOSXCUITFindBy(accessibility = "MPPG AUTH")
+    @FindBy(xpath = "MPPG AUTH")
     private WebElement mppgPayment;
 
-    @iOSXCUITFindBy(accessibility = "MPPG")
+    @FindBy(xpath = "MPPG")
     private WebElement mppgSal;
 
-    @iOSXCUITFindBy(accessibility = "New Tab")
+    @FindBy(xpath = "New Tab")
     private WebElement newTab;
 
-    @iOSXCUITFindBy(accessibility = "New Check")
+    @FindBy(xpath = "New Check")
     private WebElement newCheck;
 
-    @iOSXCUITFindBy(accessibility = "Exit")
+    @FindBy(xpath = "Exit")
     WebElement exitPreauth;
 
-    @iOSXCUITFindBy(accessibility = "Check")
+    @FindBy(xpath = "Check")
     private WebElement Order1;
 
-    @iOSXCUITFindBy(accessibility = "Payment receipt did not print to TCP:192.168.2.161")
+    @FindBy(xpath = "Payment receipt did not print to TCP:192.168.2.161")
     private WebElement paymentPrint;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement done;
 
-    @iOSXCUITFindBy(accessibility = "OK")
+    @FindBy(xpath = "OK")
     private WebElement okBtn;
 
-    @iOSXCUITFindBy(accessibility = "Ok")
+    @FindBy(xpath = "Ok")
     private WebElement okBtn1;
 
 
-    @iOSXCUITFindBy(accessibility = "BerryFruit Cup")
+    @FindBy(xpath = "BerryFruit Cup")
     private WebElement berrry;
-    @iOSXCUITFindBy(accessibility = "Side Sweet Fries")
+    @FindBy(xpath = "Side Sweet Fries")
     private WebElement sideSweet;
-    @iOSXCUITFindBy(accessibility = "Oyster Cracker,")
+    @FindBy(xpath = "Oyster Cracker,")
     private WebElement oyster;
 
-    @iOSXCUITFindBy(accessibility = "Side ColeSlaw")
+    @FindBy(xpath = "Side ColeSlaw")
     private WebElement sideCole;
-    @iOSXCUITFindBy(accessibility = "Fries")
+    @FindBy(xpath = "Fries")
     private WebElement fries;
-    @iOSXCUITFindBy(accessibility = "1Pc Bana Bread")
+    @FindBy(xpath = "1Pc Bana Bread")
     private WebElement banaBread;
-    @iOSXCUITFindBy(accessibility = "Add 1 Egg")
+    @FindBy(xpath = "Add 1 Egg")
     private WebElement addEgg;
-    @iOSXCUITFindBy(accessibility = "Bacon Side")
+    @FindBy(xpath = "Bacon Side")
     private WebElement baconSide;
-    @iOSXCUITFindBy(accessibility = "1Pc Toast")
+    @FindBy(xpath = "1Pc Toast")
     private WebElement Toast;
-    @iOSXCUITFindBy(accessibility = "Home Fries")
+    @FindBy(xpath = "Home Fries")
     private WebElement homeFries;
-    @iOSXCUITFindBy(accessibility = "2Pcs BanaBread")
+    @FindBy(xpath = "2Pcs BanaBread")
     private WebElement PcsBana;
-    @iOSXCUITFindBy(accessibility = "Side Fruit")
+    @FindBy(xpath = "Side Fruit")
     private WebElement sideFruit;
 
-    @iOSXCUITFindBy(accessibility = "Cheesecake")
+    @FindBy(xpath = "Cheesecake")
     private WebElement cheese;
 
-    @iOSXCUITFindBy(accessibility = "Cannoli")
+    @FindBy(xpath = "Cannoli")
     private WebElement cannoli;
 
-    @iOSXCUITFindBy(accessibility = "Tiramisu")
+    @FindBy(xpath = "Tiramisu")
     private WebElement tiramisu;
 
-    @iOSXCUITFindBy(accessibility = "Choc Torte")
+    @FindBy(xpath = "Choc Torte")
     private WebElement choc;
 
-    @iOSXCUITFindBy(accessibility = "Key Lime Pie")
+    @FindBy(xpath = "Key Lime Pie")
     private WebElement keyLime;
 
-    @iOSXCUITFindBy(accessibility = "Potatoes")
+    @FindBy(xpath = "Potatoes")
     private WebElement potatoes;
-    @iOSXCUITFindBy(accessibility = "cake")
+    @FindBy(xpath = "cake")
     private WebElement cake;
-    @iOSXCUITFindBy(accessibility = "Halwa")
+    @FindBy(xpath = "Halwa")
     private WebElement halwa;
-    @iOSXCUITFindBy(accessibility = "Dosa")
+    @FindBy(xpath = "Dosa")
     private WebElement dosa;
-    @iOSXCUITFindBy(accessibility = "Donut")
+    @FindBy(xpath = "Donut")
     private WebElement donut;
 
-    @iOSXCUITFindBy(accessibility = "Melon Ball")
+    @FindBy(xpath = "Melon Ball")
     private WebElement menu1;
-    @iOSXCUITFindBy(accessibility = "Lemon Drop")
+    @FindBy(xpath = "Lemon Drop")
     private WebElement mymenu1;
-    @iOSXCUITFindBy(accessibility = "Ketel 1.")
+    @FindBy(xpath = "Ketel 1.")
     private WebElement mobmenu;
-    @iOSXCUITFindBy(accessibility = "Jager Bomb")
+    @FindBy(xpath = "Jager Bomb")
     private WebElement dummy;
-    @iOSXCUITFindBy(accessibility = "Jager")
+    @FindBy(xpath = "Jager")
     private WebElement rsMenu;
-    @iOSXCUITFindBy(accessibility = "Fireball.")
+    @FindBy(xpath = "Fireball.")
     private WebElement gmenu;
 
-    @iOSXCUITFindBy(accessibility = "test13")
+    @FindBy(xpath = "test13")
     private WebElement test13;
-    @iOSXCUITFindBy(accessibility = "Test321")
+    @FindBy(xpath = "Test321")
     private WebElement test321;
-    @iOSXCUITFindBy(accessibility = "Retail")
+    @FindBy(xpath = "Retail")
     private WebElement retail;
-    @iOSXCUITFindBy(accessibility = "Test456")
+    @FindBy(xpath = "Test456")
     private WebElement test4;
-    @iOSXCUITFindBy(accessibility = "Child Retail")
+    @FindBy(xpath = "Child Retail")
     private WebElement childRetail;
 
 
-    @iOSXCUITFindBy(accessibility = "Cash")
+    @FindBy(xpath = "Cash")
     private WebElement cashPayment;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
     private WebElement cashPayment1;
 
-    @iOSXCUITFindBy(accessibility = "Exact")
+    @FindBy(xpath = "Exact")
     private WebElement exactBtn;
 
 
-    @iOSXCUITFindBy(accessibility = "Enter")
+    @FindBy(xpath = "Enter")
     private WebElement Enter;
 
-    @iOSXCUITFindBy(accessibility = "MPPG AUTH")
+    @FindBy(xpath = "MPPG AUTH")
     private WebElement mppgAuth2;
 
-    @iOSXCUITFindBy(accessibility = "mppg auth")
+    @FindBy(xpath = "mppg auth")
     private WebElement mppgAuth;
 
-    @iOSXCUITFindBy(accessibility = "MPPG Auth")
+    @FindBy(xpath = "MPPG Auth")
     private WebElement mppgAuth1;
 
-    @iOSXCUITFindBy(accessibility = "Beverages")
+    @FindBy(xpath = "Beverages")
     private WebElement bever;
 
-    @iOSXCUITFindBy(accessibility = "Pineapple Juice")
+    @FindBy(xpath = "Pineapple Juice")
     private WebElement pineapple;
-    @iOSXCUITFindBy(accessibility = "Grapefruit")
+    @FindBy(xpath = "Grapefruit")
     private WebElement grape;
-    @iOSXCUITFindBy(accessibility = "Milk")
+    @FindBy(xpath = "Milk")
     private WebElement milk;
-    @iOSXCUITFindBy(accessibility = "Virgin Mojito")
+    @FindBy(xpath = "Virgin Mojito")
     private WebElement virginMo;
-    @iOSXCUITFindBy(accessibility = "Hot Tea")
+    @FindBy(xpath = "Hot Tea")
     private WebElement hotTea;
-    @iOSXCUITFindBy(accessibility = "Soda")
+    @FindBy(xpath = "Soda")
     private WebElement soda;
-    @iOSXCUITFindBy(accessibility = "coffee")
+    @FindBy(xpath = "coffee")
     private WebElement coffee;
-    @iOSXCUITFindBy(accessibility = "Espresso")
+    @FindBy(xpath = "Espresso")
     private WebElement esp;
-    @iOSXCUITFindBy(accessibility = "Party Drink")
+    @FindBy(xpath = "Party Drink")
     private WebElement partyDrink;
-    @iOSXCUITFindBy(accessibility = "Apple Juice")
+    @FindBy(xpath = "Apple Juice")
     private WebElement apple;
-    @iOSXCUITFindBy(accessibility = "Cappuccino")
+    @FindBy(xpath = "Cappuccino")
     private WebElement cap;
 
-    @iOSXCUITFindBy(accessibility = "Coke Products")
+    @FindBy(xpath = "Coke Products")
     private WebElement cakeProd;
-    @iOSXCUITFindBy(accessibility = "Salgam")
+    @FindBy(xpath = "Salgam")
     private WebElement salgam;
-    @iOSXCUITFindBy(accessibility = "Ayran")
+    @FindBy(xpath = "Ayran")
     private WebElement Ayran;
-    @iOSXCUITFindBy(accessibility = "Ayran 3")
+    @FindBy(xpath = "Ayran 3")
     private WebElement Ayran3;
-    @iOSXCUITFindBy(accessibility = "Turkish Tea")
+    @FindBy(xpath = "Turkish Tea")
     private WebElement turkishteapot;
-    @iOSXCUITFindBy(accessibility = "Cofeeee")
+    @FindBy(xpath = "Cofeeee")
     private WebElement cofeee;
 
 
-    @iOSXCUITFindBy(accessibility = "cc")
+    @FindBy(xpath = "cc")
     private WebElement cc;
 
-    @iOSXCUITFindBy(accessibility = "HA")
+    @FindBy(xpath = "HA")
     private WebElement ha;
 
-    @iOSXCUITFindBy(accessibility = "5.00%")
+    @FindBy(xpath = "5.00%")
     WebElement tipss;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
     private WebElement doneButton;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
     public WebElement arrowDownForOtherMenuItems;
 
-    @iOSXCUITFindBy(accessibility = "Cancel")
+    @FindBy(xpath = "Cancel")
     private WebElement cancelBtn;
-    @iOSXCUITFindBy(accessibility = "parent")
+    @FindBy(xpath = "parent")
     WebElement parent;
-    @iOSXCUITFindBy(accessibility = "VegBiriyani")
+    @FindBy(xpath = "VegBiriyani")
     WebElement VegBri;
-    @iOSXCUITFindBy(accessibility = "incluse")
+    @FindBy(xpath = "incluse")
     WebElement incluse;
-    @iOSXCUITFindBy(accessibility = "normal")
+    @FindBy(xpath = "normal")
     WebElement normal;
-    @iOSXCUITFindBy(accessibility = "taxmenu")
+    @FindBy(xpath = "taxmenu")
     WebElement taxMenu;
-    @iOSXCUITFindBy(accessibility = "EggBiriyani")
+    @FindBy(xpath = "EggBiriyani")
     WebElement EggB;
-    @iOSXCUITFindBy(accessibility = "New2")
+    @FindBy(xpath = "New2")
     WebElement new2;
-    @iOSXCUITFindBy(accessibility = "Cate-Menu 1")
+    @FindBy(xpath = "Cate-Menu 1")
     WebElement cateMe;
-    @iOSXCUITFindBy(accessibility = "Cate-Menu 2")
+    @FindBy(xpath = "Cate-Menu 2")
     WebElement cateMe2;
 
-    @iOSXCUITFindBy(accessibility = "Arab Biriyani")
+    @FindBy(xpath = "Arab Biriyani")
     WebElement ArabBr;
-    @iOSXCUITFindBy(accessibility = "5.00")
+    @FindBy(xpath = "5.00")
     WebElement tipAs10;
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Payment\"]")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Payment\"]")
     private WebElement paymentBtn;
 
     public void mppgSale() throws Exception {
@@ -1358,10 +1358,10 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]")
     private WebElement SplitBtn;
 
-    @iOSXCUITFindBy(accessibility = "Split By Seat")
+    @FindBy(xpath = "Split By Seat")
     private WebElement splitSeat;
     public int itemToSelect;
     public int itemToSelect1;
@@ -1561,13 +1561,13 @@ public class Regression extends TableLayOutScreen {
         elementClick(arrowDownForOtherMenuItems, "");
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]")
+    @FindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]")
     private WebElement item;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[1]")
     private WebElement verifyItem;
 
-    @iOSXCUITFindBy(accessibility = "Seat 2")
+    @FindBy(xpath = "Seat 2")
     private WebElement seat2;
 
     public void doSplitAction() {
@@ -1723,7 +1723,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -1792,10 +1792,10 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    @iOSXCUITFindBy(accessibility = "Group Seats")
+    @FindBy(xpath = "Group Seats")
     WebElement groupSeat;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Seat 1\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Seat 1\"])[2]")
     WebElement seat1;
 
     public String check = " ";
@@ -1868,7 +1868,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -1936,7 +1936,7 @@ public class Regression extends TableLayOutScreen {
         return check;
     }
 
-    @iOSXCUITFindBy(accessibility = "Check Stats")
+    @FindBy(xpath = "Check Stats")
     WebElement checkStatsTab;
 
     public String selectMenuForDineInMerge() throws Exception {
@@ -2025,7 +2025,7 @@ public class Regression extends TableLayOutScreen {
                                     elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                     try {
-                                        WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                        WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                         WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                         WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                         WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2115,7 +2115,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2472,7 +2472,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2563,7 +2563,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2662,7 +2662,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2753,7 +2753,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2843,7 +2843,7 @@ public class Regression extends TableLayOutScreen {
         elementClick(submit, "Submit ");
     }
 
-    @iOSXCUITFindBy(accessibility = "Open check")
+    @FindBy(xpath = "Open check")
     WebElement OpenCheckStats;
 
     public void openTheCheckByTableNum() {
@@ -3047,10 +3047,10 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]")
     private WebElement mergeBtn;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     WebElement doneBtnn;
 
     public void doMerge() {
@@ -3074,27 +3074,27 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    @iOSXCUITFindBy(accessibility = "openCheck")
+    @FindBy(xpath = "openCheck")
     private WebElement openCheckBtn;
 
-    @iOSXCUITFindBy(accessibility = "Cash")
+    @FindBy(xpath = "Cash")
     private WebElement Cash;
 
-    @iOSXCUITFindBy(accessibility = "Exact")
+    @FindBy(xpath = "Exact")
     private WebElement Exact;
 
-    @iOSXCUITFindBy(accessibility = "Enter")
+    @FindBy(xpath = "Enter")
     private WebElement Enter1;
 
-    @iOSXCUITFindBy(accessibility = "Delivery")
+    @FindBy(xpath = "Delivery")
     private WebElement deliveryBtn;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Button\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Button\"])[2]")
     private WebElement laterBtn;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
     private WebElement doneButton1;
-    @iOSXCUITFindBy(accessibility = "Customer Profile")
+    @FindBy(xpath = "Customer Profile")
     private WebElement customerProfileWindow;
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
     private WebElement searchField;
 
 
@@ -3122,17 +3122,17 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "QSR")
+    @FindBy(xpath = "QSR")
     private WebElement qsrTab;
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Save\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Save\"]")
     private WebElement saveBtn;
-    @iOSXCUITFindBy(accessibility = "  Exit")
+    @FindBy(xpath = "  Exit")
     WebElement exitBtn;
 
-    @iOSXCUITFindBy(accessibility = "Future")
+    @FindBy(xpath = "Future")
     WebElement futureTab;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement doneBtn;
 
     public void makeSaleForBatchInPhoneStore(String category) throws Exception {
@@ -3212,13 +3212,13 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Batch In Progress")
+    @FindBy(xpath = "Batch In Progress")
     WebElement batchInProgress;
-    @iOSXCUITFindBy(accessibility = "Batch Completed")
+    @FindBy(xpath = "Batch Completed")
     WebElement batchComplete;
-    @iOSXCUITFindBy(accessibility = "ToggleIcon")
+    @FindBy(xpath = "ToggleIcon")
     WebElement ToggleIcon;
-    @iOSXCUITFindBy(accessibility = "Batch/Tip Adjustment")
+    @FindBy(xpath = "Batch/Tip Adjustment")
     WebElement batchTipAdjustBtn;
 
     public void verifyBatchCheckAvailable() throws InterruptedException {
@@ -3339,7 +3339,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -3430,7 +3430,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -4716,7 +4716,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -4807,7 +4807,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -4966,7 +4966,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5057,7 +5057,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5172,7 +5172,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5256,7 +5256,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5366,7 +5366,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5450,7 +5450,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5573,7 +5573,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5664,7 +5664,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5822,7 +5822,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5914,7 +5914,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -6676,7 +6676,7 @@ public class Regression extends TableLayOutScreen {
         verifyTableMergee3(tableNo);
     }
 
-    @iOSXCUITFindBy(accessibility = "Split Check")
+    @FindBy(xpath = "Split Check")
     WebElement splitCheckBtn;
 
     public void verifySplitCheckScren() {
@@ -6772,7 +6772,7 @@ public class Regression extends TableLayOutScreen {
         utils.log().info("Split Check - " + expectedActiveChecks);
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Add\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Add\"]")
     WebElement addBtnSplitCheck;
 
     public void clickAddButtonOntheSplitCheckScreen() {
@@ -6820,7 +6820,7 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Please save all the changes to print. Do you wish to save the changes?")
+    @FindBy(xpath = "Please save all the changes to print. Do you wish to save the changes?")
     WebElement pleaseSaveAllTheChangesPopup;
 
     public void verifyThePleaseSaveAlltheChangesToPrintPopup() {
@@ -7289,7 +7289,7 @@ public class Regression extends TableLayOutScreen {
         Assert.assertEquals(batchScreen.getText(),"Last Batch Started");
         utils.log().info("Displayed Screen as- "+"Last Batch Started");
     }
-    @iOSXCUITFindBy (accessibility = "Power button")
+    @FindBy (xpath = "Power button")
     private WebElement powerBtn;
 
     public void checkAllTheCheckHasBeenBatch() throws Exception {
@@ -7314,9 +7314,9 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Cashier out saved successfully")
+    @FindBy(xpath = "Cashier out saved successfully")
     WebElement cashierOutSavedSuccessfullyPopup;
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement Done1;
 
     public void verifyTheCannotCloseTheShiftStoreHaveTheActiveCheck() {

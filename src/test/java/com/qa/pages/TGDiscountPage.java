@@ -1,11 +1,8 @@
 package com.qa.pages;
 
-import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.ios.IOSDriver;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.springframework.core.SpringVersion;
 
 import java.util.concurrent.TimeUnit;
 

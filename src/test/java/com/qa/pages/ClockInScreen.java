@@ -1,16 +1,11 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.*;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
@@ -18,68 +13,68 @@ public class ClockInScreen extends UserLoginScreen{
 
 
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
     WebElement paymentPin1;
 
     @FindBy(xpath = "//span[.=' Clear ']")
     WebElement pinC;
 
-//    @iOSXCUITFindBy(accessibility = "00")
+//    @FindBy(xpath = "00")
 //    private WebElement pin00;
 
-    @iOSXCUITFindBy (accessibility = "00")
+    @FindBy (xpath = "00")
     WebElement pin00;
 
-    @iOSXCUITFindBy(accessibility = "0")
+    @FindBy(xpath = "0")
     WebElement pin0;
 
-    @iOSXCUITFindBy (accessibility = "1")
+    @FindBy (xpath = "1")
     WebElement pin1;
 
-    @iOSXCUITFindBy (accessibility = "2")
+    @FindBy (xpath = "2")
     WebElement pin2;
 
-    @iOSXCUITFindBy (accessibility = "3")
+    @FindBy (xpath = "3")
     WebElement pin3;
 
-    @iOSXCUITFindBy (accessibility = "4")
+    @FindBy (xpath = "4")
     WebElement pin4;
 
-    @iOSXCUITFindBy (accessibility = "5")
+    @FindBy (xpath = "5")
     WebElement pin5;
 
-    @iOSXCUITFindBy (accessibility = "6")
+    @FindBy (xpath = "6")
     WebElement pin6;
 
-    @iOSXCUITFindBy (accessibility = "7")
+    @FindBy (xpath = "7")
     WebElement pin7;
 
-    @iOSXCUITFindBy (accessibility = "8")
+    @FindBy (xpath = "8")
     WebElement pin8;
 
-    @iOSXCUITFindBy (accessibility = "9")
+    @FindBy (xpath = "9")
     WebElement pin9;
 
-    @iOSXCUITFindBy (accessibility = "Clear")
+    @FindBy (xpath = "Clear")
     private WebElement clearBtn;
 
-    @iOSXCUITFindBy (accessibility = "Login")
+    @FindBy (xpath = "Login")
     private WebElement loginBtn;
 
-    @iOSXCUITFindBy (id = "To Login enter your ID number or swipe the card")
+    @FindBy (id = "To Login enter your ID number or swipe the card")
     private WebElement titleTxt;
 
-    @iOSXCUITFindBy (xpath  = "//XCUIElementTypeButton[@name='Done']")
+    @FindBy (xpath  = "//XCUIElementTypeButton[@name='Done']")
     private WebElement doneBtn;
 
-    @iOSXCUITFindBy (accessibility = "Invalid Pin")
+    @FindBy (xpath = "Invalid Pin")
     private WebElement errTxt;
 
     //XCUIElementTypeButton[@name=\"    Bar Tab\"]
-    @iOSXCUITFindBy(accessibility = "    Bar Tab")
+    @FindBy(xpath = "    Bar Tab")
     WebElement barTabBtn;
 
-    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name='Continue']")
+    @FindBy (xpath = "//XCUIElementTypeButton[@name='Continue']")
     private WebElement continueBtn;
 
     String accessibilityIdForPin1 = "1";
@@ -91,7 +86,7 @@ public class ClockInScreen extends UserLoginScreen{
 
     public String getTitle() {
         driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-        return elementGetText(titleTxt, "user login window's title is - ");
+        return elementGetText(titleTxt,"Text");
     }
 
     public void pressPin0() {
@@ -248,7 +243,7 @@ public class ClockInScreen extends UserLoginScreen{
         pressPin5();
         pressPin4();
     }
-    @iOSXCUITFindBy(accessibility = "Shift Record")
+    @FindBy(xpath = "Shift Record")
     WebElement shiftRecordWindow;
     public void verifyShiftRecordWindow(){
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
@@ -284,7 +279,7 @@ public class ClockInScreen extends UserLoginScreen{
         pressPin6();
         pressLogin();
     }
-    @iOSXCUITFindBy(accessibility = "Clockin is required to log in")
+    @FindBy(xpath = "Clockin is required to log in")
     WebElement clockInRequiredLogin;
     public void ClockIsInRequiredForClockIn()
     {
@@ -398,7 +393,7 @@ public class ClockInScreen extends UserLoginScreen{
         WebElement pin2 = mergeAndFindElement(accessibilityIdForPin2,"",TestUtils.Accessibility);
         WebElement pin3 = mergeAndFindElement(accessibilityIdForPin3,"",TestUtils.Accessibility);
         WebElement pin4 = mergeAndFindElement(accessibilityIdForPin4,"",TestUtils.Accessibility);
-        WebElement btnLogin = mergeAndFindElement(btnLoginXPath,"",TestUtils.XPath);
+        WebElement btnLogin = mergeAndFindElement(btnLoginXPath,"",TestUtils.Accessibility);
         elementClick(pin1,"Tapped pin1");
         elementClick(pin2,"Tapped pin2");
         elementClick(pin3,"Tapped pin3");
@@ -408,7 +403,7 @@ public class ClockInScreen extends UserLoginScreen{
 
     public void LogInWithValidPin(){
         WebElement pin1 = mergeAndFindElement(accessibilityIdForPin1,"", TestUtils.Accessibility);
-        WebElement btnLogin = mergeAndFindElement(btnLoginXPath,"",TestUtils.XPath);
+        WebElement btnLogin = mergeAndFindElement(btnLoginXPath,"",TestUtils.Accessibility);
         elementClick(pin1,"Tapped pin1");
         elementClick(pin1,"Tapped pin1");
         elementClick(pin1,"Tapped pin1");
@@ -435,20 +430,20 @@ public class ClockInScreen extends UserLoginScreen{
         pressPin1();
 
     }
-    @iOSXCUITFindBy(accessibility = "Clockin")
+    @FindBy(xpath = "Clockin")
     WebElement clockInBtn;
     public void clickClockIn(){
         elementClick(clockInBtn,"Clock In Selected");
     }
 
-    @iOSXCUITFindBy(accessibility = "Enter Approver PIN or Swipe Card")
+    @FindBy(xpath = "Enter Approver PIN or Swipe Card")
     WebElement pinOrSwipeCard;
 
     public String verifyApproverPin(){
-        return  elementGetText(pinOrSwipeCard,"Display Pin or Swipe Card popup ");
+        return  elementGetText(pinOrSwipeCard,"Text");
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"TIME  CLOCK\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"TIME  CLOCK\"]")
     WebElement timeClockBtn;
 
     public void clickTimeClockButtonInTheClockInScreen() throws InterruptedException {
@@ -457,38 +452,38 @@ public class ClockInScreen extends UserLoginScreen{
         elementClick(timeClockBtn, "Selected - " + timeClockBtn.getText());
     }
 
-    @iOSXCUITFindBy(accessibility = "Clocked In Successfully")
+    @FindBy(xpath = "Clocked In Successfully")
     WebElement clockInSuccessPopup;
     public String verifyClockInPopup(){
         driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
-        return elementGetText(clockInSuccessPopup,"popup As - ");
+        return elementGetText(clockInSuccessPopup,"Text");
     }
 
-    @iOSXCUITFindBy(accessibility = "Clocked Out Successfully")
+    @FindBy(xpath = "Clocked Out Successfully")
     WebElement clockOutSuccessPopup;
     public String verifyClockOutPopup(){
         driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
-        return elementGetText(clockOutSuccessPopup,"popup As - ");
+        return elementGetText(clockOutSuccessPopup,"Text");
     }
-    @iOSXCUITFindBy(accessibility = "Clock Out")
+    @FindBy(xpath = "Clock Out")
     WebElement clockOutBtn;
     public void clickClockOut(){
         elementClick(clockOutBtn,"Clock Out Selected");
     }
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])")
     WebElement enterPin1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])")
     WebElement enterPin2;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"3\"])")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"3\"])")
     WebElement enterPin3;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"4\"])")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"4\"])")
     WebElement enterPin4;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])")
     WebElement enterPin5;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])")
     WebElement enterPin6;
     //XCUIElementTypeButton[@name="Continue"]
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     WebElement enterContinueBtn;
 
     public void enterClockPin(){
@@ -645,7 +640,7 @@ public class ClockInScreen extends UserLoginScreen{
             utils.log().info(invalidPin.getText()+" - Popup is NOT Displayed");
         }
     }
-@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"    Operation\"]")
+@FindBy(xpath = "//XCUIElementTypeButton[@name=\"    Operation\"]")
 WebElement operationBtnClockInScreen;
     public void clickOperationButton(){
         elementClick(operationBtnClockInScreen,"Operation Button Selected - "+operationBtnClockInScreen.getText());
@@ -718,26 +713,26 @@ WebElement operationBtnClockInScreen;
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "QSR service is disabled in POS settings.")
+    @FindBy(xpath = "QSR service is disabled in POS settings.")
     WebElement qsrServiceIsDisabled;
     public void verifyQsrServiceIsDisabled(){
         Assert.assertEquals(qsrServiceIsDisabled.getText(),"QSR service is disabled in POS settings.");
         utils.log().info(" POPup is - "+qsrServiceIsDisabled.getText());
     }
-    @iOSXCUITFindBy(accessibility = "BarTab is disabled in POS settings.")
+    @FindBy(xpath = "BarTab is disabled in POS settings.")
     WebElement barTabServiceIsDisabled;
     public void verifyBarTabServiceIsDisabled(){
         Assert.assertEquals(barTabServiceIsDisabled.getText(),"BarTab is disabled in POS settings.");
         utils.log().info(" POPup is - "+barTabServiceIsDisabled.getText());
     }
 
-    @iOSXCUITFindBy(accessibility = "Dine is disabled in POS settings.")
+    @FindBy(xpath = "Dine is disabled in POS settings.")
     WebElement dineInServiceIsDisabled;
     public void verifyDineInServiceIsDisabled(){
 
     }
 
-    @iOSXCUITFindBy(accessibility = "Access denied")
+    @FindBy(xpath = "Access denied")
     WebElement accessDeniedPopup;
     public void verifyTheAccessDeniedPopup(){
         String accessDeniedPopupTxt = accessDeniedPopup.getText();
@@ -750,7 +745,7 @@ WebElement operationBtnClockInScreen;
         pressPin6();
         pressPin5();
     }
-    @iOSXCUITFindBy(accessibility = "You can’t punch out with open till,Do you want to close the till")
+    @FindBy(xpath = "You can’t punch out with open till,Do you want to close the till")
     WebElement youCantPunchOutPopup;
     public void verifyYouCantPunchOutOpenTillPopup(){
         String youCantPunchOutTxt = youCantPunchOutPopup.getText();
@@ -758,7 +753,7 @@ WebElement operationBtnClockInScreen;
        utils.log().info("popup is displayed as - "+youCantPunchOutTxt);
     }
 
-    @iOSXCUITFindBy(accessibility = "You can’t punch out with active cashier")
+    @FindBy(xpath = "You can’t punch out with active cashier")
     WebElement youCantPunchOutWithActiveCashierPopup;
 
     public void verifyYouCantPunchOutWithActiveCashierPopup(){
@@ -767,27 +762,27 @@ WebElement operationBtnClockInScreen;
         utils.log().info("popup is displayed as - "+youCantPunchOutWithActiveCashierPopupTxt);
     }
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])[1]")
     WebElement pin6Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])[1]")
     WebElement pin5Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"4\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"4\"])[1]")
     WebElement pin4Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"3\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"3\"])[1]")
     WebElement pin3Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])[1]")
     WebElement pin2Time1;
     @FindBy(xpath = "")
     WebElement pin1Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"7\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"7\"])[1]")
     WebElement pin7Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"8\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"8\"])[1]")
     WebElement pin8Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"9\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"9\"])[1]")
     WebElement pin9Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"0\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"0\"])[1]")
     WebElement pin0Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Clear\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Clear\"])[1]")
     WebElement pinClrTime1;
     public void loggedInForCashier1(){
 //        pressPin6();
@@ -838,7 +833,7 @@ WebElement operationBtnClockInScreen;
     }
     public static WebDriver driver1;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"BACK OFFICE\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"BACK OFFICE\"]")
     WebElement backOffice;
     public void goToBO() throws InterruptedException {
 //     elementClick(backOffice,"Selected "+backOffice.getText());
@@ -880,11 +875,11 @@ WebElement operationBtnClockInScreen;
         signIn.click();
 
     }
-    @iOSXCUITFindBy(accessibility = "logOff")
+    @FindBy(xpath = "logOff")
     private WebElement logOffBtn;
 
 
-    @iOSXCUITFindBy(accessibility = "All")
+    @FindBy(xpath = "All")
     WebElement allB;
     public WebElement syncBtn;
     public void selectTheStore(String store) throws InterruptedException {

@@ -1,7 +1,6 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import io.appium.java_client.AppiumDriver;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

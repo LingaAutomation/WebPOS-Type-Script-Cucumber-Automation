@@ -2,12 +2,12 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.support.FindBy;
 
 public class SignInScreen extends BasePage {
     TestUtils utils = new TestUtils();
 
-    @iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Sign In\"]" )
+    @FindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Sign In\"]" )
     private WebElement signInBtn;
 
 

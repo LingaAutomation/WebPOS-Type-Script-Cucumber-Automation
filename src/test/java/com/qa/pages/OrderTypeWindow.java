@@ -3,69 +3,69 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
 public class OrderTypeWindow extends ClockInScreen {
 
-    @iOSXCUITFindBy(accessibility = "For Here")
+    @FindBy(xpath = "For Here")
     private WebElement forHereBtn;
 
-    @iOSXCUITFindBy(accessibility = "To Go")
+    @FindBy(xpath = "To Go")
     private WebElement togoBtn;
 
-    @iOSXCUITFindBy( accessibility = "Order Type")
+    @FindBy( xpath = "Order Type")
     private WebElement orderTypeWindow;
 
 
-    @iOSXCUITFindBy(accessibility = "Delivery")
+    @FindBy(xpath = "Delivery")
     private WebElement deliveryBtn;
 
-    @iOSXCUITFindBy(accessibility = "Phone To Go")
+    @FindBy(xpath = "Phone To Go")
     private WebElement phoneToGoBtnService;//Added Today
 
-    @iOSXCUITFindBy(accessibility = "QSR")
+    @FindBy(xpath = "QSR")
     private  WebElement qsrServiceType;
 
-    @iOSXCUITFindBy(accessibility = "Phone Delivery")
+    @FindBy(xpath = "Phone Delivery")
     private WebElement phoneDeliveryBtnService;//Added Today
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"To Go\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"To Go\"])[2]")
     private WebElement phoneToGoBtn;//Added Today
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Delivery\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Delivery\"])[2]")
     private WebElement phoneDeliveryBtn;//Added Today
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement doneBtn;
 
-    @iOSXCUITFindBy(accessibility = "Cancel")
+    @FindBy(xpath = "Cancel")
     private WebElement cancelBtn;
 
-    @iOSXCUITFindBy(id = "Order Type")
+    @FindBy(id = "Order Type")
     private WebElement titleTxt;
 
-    @iOSXCUITFindBy(accessibility = "Empty list")
+    @FindBy(xpath = "Empty list")
     private WebElement emptyList;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeTable[@name=\"Empty list\"])[3]")
+    @FindBy(xpath = "(//XCUIElementTypeTable[@name=\"Empty list\"])[3]")
     private WebElement OrderListWithSale;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeTable[@name=\"Empty list\"])[4]")
+    @FindBy(xpath = "(//XCUIElementTypeTable[@name=\"Empty list\"])[4]")
     private WebElement OrderListFromSearch;
 
-    @iOSXCUITFindBy( accessibility = "Egg White")
+    @FindBy( xpath = "Egg White")
     private WebElement eggWhite;
 
 
     public String orderTypeName(String name){
         WebElement order=mergeAndFindElement(name,"",TestUtils.Accessibility);
-        return elementGetText(order,"Order Type name is - ");
+        return elementGetText(order,"Text");
     }
 
     public String getTitle() {
-        return elementGetText(titleTxt, "user login window's title is - ");
+        return elementGetText(titleTxt,"Text");
 
     }
 
@@ -114,10 +114,10 @@ public class OrderTypeWindow extends ClockInScreen {
         elementClick(cancelBtn, "Order type selection is cancelled.");
     }
 
-    @iOSXCUITFindBy(accessibility = "ADD")
+    @FindBy(xpath = "ADD")
     WebElement addBtnOrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "2")
+    @FindBy(xpath = "2")
     WebElement seat2Numbers;
     public String seat2Number= " ";
     public void addCreateSeatInOrderScreen(){
@@ -140,7 +140,7 @@ public class OrderTypeWindow extends ClockInScreen {
     }
 
     public String visibleEmpty() {
-        return elementGetText(emptyList, "Got Nothing is Displayed - ");
+        return elementGetText(emptyList,"Text");
     }
 
     public void clickMenuItem(){

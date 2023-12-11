@@ -3,9 +3,9 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 //import com.sun.corba.se.impl.protocol.RequestCanceledException;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 import java.util.Random;
@@ -25,16 +25,16 @@ public class CheckAndItemTransfer extends BasePage{
 
     public int itemToSelect1;
 
-    @iOSXCUITFindBy(xpath ="(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
+    @FindBy(xpath ="(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
     private WebElement arrowDownForOtherMenuItems;
 
-    @iOSXCUITFindBy(accessibility = "Salad" )
+    @FindBy(xpath = "Salad" )
     private WebElement saladCategoryBtn;
 
-    @iOSXCUITFindBy(accessibility = "finish")
+    @FindBy(xpath = "finish")
     private WebElement finishOrderBtn;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
     private WebElement doneButton;
 
     public void clickTheAllButtonInQSRScreen(){
@@ -118,7 +118,7 @@ public class CheckAndItemTransfer extends BasePage{
                     elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                     try {
-                        WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
+                        WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", String.valueOf(TestUtils.driverWAIT));
                         WebElement subModi1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                         WebElement subModi2 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                         WebElement subModi3 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -182,33 +182,27 @@ public class CheckAndItemTransfer extends BasePage{
     public String verifyTransferToServerBtnInTransferWindow()
     {
         WebElement ele1 = mergeAndFindMobileElement(transferToServerBtn);
-        String TrnsSer = elementGetText(ele1,"Get the text of Transfer to Server button");
-
-        return TrnsSer;
+        return getText(ele1,"Text");
     }
 
     public String verifyTransferToTableBtnInTransferWindow()
     {
         WebElement ele2 = mergeAndFindMobileElement(transferToTableBtn);
-        String TrnsTble = elementGetText(ele2,"Get the text of Transfer to Table button");
-
-        return TrnsTble;
+        return getText(ele2,"Text");
     }
 
     public String verifyTransferItemBtnInTransferWindow()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         WebElement ele3 = mergeAndFindMobileElement(transferItemBtn);
-        String TrnsItem = elementGetText(ele3,"Get the Text of Transfer Item");
-
-        return TrnsItem;
+        return getText(ele3,"Text");
     }
 
     public void selectTheFirstTableFromTheTransferFromTable()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         WebElement ele = mergeAndFindMobileElement(firstElementOfTransferFromTable);
-        Table1 = elementGetText(ele,"Get the Text of corresponding Table");
+        Table1 = getText(ele,"Text");
         Table1 = Table1.substring(Table1.lastIndexOf("T"));
         TestUtils.FirstTable = Table1;
 
@@ -221,7 +215,7 @@ public class CheckAndItemTransfer extends BasePage{
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         WebElement ele = mergeAndFindMobileElement(firstIteminMenuItemTable);
         elementClick(ele,"Click the first menu item from the List of menu items in the Menu Item table - "+ele.getText());
-        String el = elementGetText(ele,"Get the text of First Menu Item from the list");
+        String el = getText(ele,"Text");
         FirstMenuItem = el;
         TestUtils.FirstMenuItem = FirstMenuItem;
         utils.log().info(FirstMenuItem);
@@ -233,7 +227,7 @@ public class CheckAndItemTransfer extends BasePage{
         WebElement ele = mergeAndFindMobileElement(firstElementOfTransferToTable);
         elementClick(ele,"Click the first table from the List of table in the Transfer To table");
 
-        Table2 = elementGetText(ele,"Get the Text of corresponding Table");
+        Table2 = getText(ele,"Text");
         Table2 = Table2.substring(Table2.lastIndexOf("T"));
         TestUtils.SecondTable = Table2;
     }
@@ -249,9 +243,7 @@ public class CheckAndItemTransfer extends BasePage{
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         WebElement ele = mergeAndFindMobileElement(successmessageOfTransfer);
-        String d = elementGetText(ele,"Get the Successful message of Transfer");
-
-        return d;
+        return getText(ele,"Text");
     }
 
     public void clickTheFromTableFromTheListOfTables()
@@ -378,7 +370,7 @@ public class CheckAndItemTransfer extends BasePage{
         WebElement ele = mergeAndFindMobileElement(firstElementOfTransferFromTable);
         elementClick(ele,"Click the first table from the List of table in the Transfer From table");
 
-        FTable1 = elementGetText(ele,"Get the Text of corresponding Table");
+        FTable1 = getText(ele,"Text");
         FTable1 = FTable1.substring(FTable1.lastIndexOf("-"));
         TestUtils.FTable1 = FTable1;
     }
@@ -389,17 +381,17 @@ public class CheckAndItemTransfer extends BasePage{
         WebElement ele = mergeAndFindMobileElement(firstCheckInChecksTable);
         elementClick(ele,"Click the first Check from the List of Checks in the Check table");
 
-        String el = elementGetText(mergeAndFindMobileElement(tableNameInTheFirstCheckAndTheCheckInChecksTable),"Get the text of Table name from the First Check from the Checks Table");
+        String el = getText(mergeAndFindMobileElement(tableNameInTheFirstCheckAndTheCheckInChecksTable),"Get the text of Table name from the First Check from the Checks Table");
         TestUtils.FirstTableName = el;
         utils.log().info(TestUtils.FirstTableName);
 
-        String el2 = elementGetText(mergeAndFindMobileElement(serverNameInTheFirstCheckAndTheCheckInChecksTable),"Get the text of Server name from the First Check from the Checks Table");
+        String el2 = getText(mergeAndFindMobileElement(serverNameInTheFirstCheckAndTheCheckInChecksTable),"Get the text of Server name from the First Check from the Checks Table");
         ServerName = el2;
         utils.log().info(ServerName);
         TestUtils.ServerNamee = ServerName;
     }
 
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"Search Checks\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Search Checks\"`]")
     WebElement searchChecks;
     public void selectThecheckFromTheTransferServer(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -415,7 +407,7 @@ public class CheckAndItemTransfer extends BasePage{
         WebElement ele = mergeAndFindMobileElement(firstElementOfTransferToTable);
         elementClick(ele,"Click the first table from the List of table in the Transfer To table");
 
-        FTable2 = elementGetText(ele,"Get the Text of corresponding Table");
+        FTable2 = getText(ele,"Get the Text of corresponding Table");
         FTable2 = FTable2.substring(FTable2.lastIndexOf("-")+1);
         TestUtils.FTable2 = FTable2;
     }
@@ -424,7 +416,7 @@ public class CheckAndItemTransfer extends BasePage{
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         WebElement ele = mergeAndFindMobileElement(successmessageOfCheckTransfer);
-        String d = elementGetText(ele,"Get the Successful message of Transfer To Table");
+        String d = getText(ele,"Get the Successful message of Transfer To Table");
 
         return d;
     }
@@ -476,9 +468,9 @@ public class CheckAndItemTransfer extends BasePage{
         utils.log().info("Server NAme - "+ServerName1);
         return ServerName1;
     }
-@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"Search\"`][1]")
+@FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Search\"`][1]")
 WebElement searchField;
-    @iOSXCUITFindBy(xpath ="//*[@name=\"Hide keyboard\"]")
+    @FindBy(xpath ="//*[@name=\"Hide keyboard\"]")
     private WebElement hideKeyboardButton;
 
     public void selectTheRequiredServerFromTheListOfServersTableFrom()
@@ -495,7 +487,7 @@ WebElement searchField;
     public void selectTheTransferredToServerFromTheListOfTransferTo()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        String s = elementGetText(mergeAndFindMobileElement(firstElementOfTransferToTable),"Get the text of Transferred To server");
+        String s = getText(mergeAndFindMobileElement(firstElementOfTransferToTable),"Get the text of Transferred To server");
 
         ServerName2 = s;
 

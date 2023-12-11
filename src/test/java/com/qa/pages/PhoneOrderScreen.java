@@ -2,100 +2,100 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
 public class PhoneOrderScreen extends BasePage {
 
 
-    @iOSXCUITFindBy(accessibility = "Phone Order")
+    @FindBy(xpath = "Phone Order")
     private WebElement phoneOrderTab;
 
-    @iOSXCUITFindBy(accessibility = "Driver status")
+    @FindBy(xpath = "Driver status")
     private WebElement driverStatusTabTitle;
 
-    @iOSXCUITFindBy(accessibility = "For Here")
+    @FindBy(xpath = "For Here")
     private WebElement forHereBtnPhoneOrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "To Go")
+    @FindBy(xpath = "To Go")
     private WebElement toGoBtnPhoneOrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "Edit")
+    @FindBy(xpath = "Edit")
     private WebElement editBtn;
 
-    @iOSXCUITFindBy(accessibility = "Cancel Order")
+    @FindBy(xpath = "Cancel Order")
     private  WebElement cancelOrderBtn;
 
-    @iOSXCUITFindBy(accessibility = "Print")
+    @FindBy(xpath = "Print")
     private WebElement printBtn;
 
-//    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Driver is offline Still Do you want to continue\"]")
+//    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Driver is offline Still Do you want to continue\"]")
 //    private WebElement driverOffline;
 
-    @iOSXCUITFindBy(accessibility = "No")
+    @FindBy(xpath = "No")
     private WebElement noBtn;
 
-    @iOSXCUITFindBy(accessibility = "Yes")
+    @FindBy(xpath = "Yes")
     private WebElement YesBtn;
 
-    @iOSXCUITFindBy(accessibility = "Departure")
+    @FindBy(xpath = "Departure")
     private WebElement departureBtn;
 
-    @iOSXCUITFindBy(accessibility = "Out")
+    @FindBy(xpath = "Out")
     private WebElement outTabBtn;
 
-    @iOSXCUITFindBy(accessibility = "Arrival")
+    @FindBy(xpath = "Arrival")
     private WebElement arrivalBtn;
 
-    @iOSXCUITFindBy(accessibility = "Cash")
+    @FindBy(xpath = "Cash")
     private WebElement cashBtn;
 
-    @iOSXCUITFindBy(accessibility = "Delivery orders cannot be submitted here.")
+    @FindBy(xpath = "Delivery orders cannot be submitted here.")
     private WebElement deliveryOrderCannot;
 
-    @iOSXCUITFindBy(accessibility = "Payment(s) made on this check,Can you return this to Auto r")
+    @FindBy(xpath = "Payment(s) made on this check,Can you return this to Auto r")
     private WebElement paymentMadeOnThisCheckPopup;
 
-    @iOSXCUITFindBy(accessibility = "Future")
+    @FindBy(xpath = "Future")
     private WebElement futureTab;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"New\"])")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"New\"])")
     private WebElement newTabBtn;
 
-    @iOSXCUITFindBy(accessibility = "New(1)")
+    @FindBy(xpath = "New(1)")
     WebElement newTabBtn1;
 
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField[3]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField[3]")
     private WebElement searchTabInFutureTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
     private WebElement searchTabInActiveTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
     private WebElement searchTabClosedTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     private WebElement searchTabInOutTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     private WebElement searchTabInCompleteTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     private WebElement searchTabNewTab;
 
     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
     WebElement searchTabInBarTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
     WebElement searchTabInBarTab1;
 
-    @iOSXCUITFindBy(accessibility = "Clear text")
+    @FindBy(xpath = "Clear text")
     WebElement clearTextBtn;
 
     public void clickPhoneOrderTab(){
@@ -147,8 +147,10 @@ public class PhoneOrderScreen extends BasePage {
 
     public void verifyPopup(){
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        // WebElement el2 = mergeAndFindElement("Driver is offline   Still Do you want to continue","",TestUtils.Accessibility);
-        WebElement el2=mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Driver is offline   Still Do you want to continue\"]","",TestUtils.XPath);
+        // WebElement el2 = mergeAndFindElement("Driver is offline   Still Do you want to continue","",TestUtils.Accessibility
+        // );
+        WebElement el2=mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Driver is offline   Still Do you want to continue\"]","",TestUtils.Accessibility
+        );
         if(el2.isDisplayed()){
             utils.log().info("Driver Offline Popup is Displayed");
         }else {
@@ -207,7 +209,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabInFutureTab.clear();
         searchTabInFutureTab.sendKeys(globalCheckNumber);
-        //  WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        //  WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        //  );
         // elementClick(phoneOrders,"Tapped Closed Check - "+ globalCheckNumber);
 //        try {
 //            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
@@ -236,7 +239,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabInOutTab.clear();
         searchTabInOutTab.sendKeys(globalCheckNumber);
-        //  WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        //  WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        //  );
         // elementClick(phoneOrders,"Tapped Closed Check in out tab - "+ globalCheckNumber);
 //        try {
 //            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
@@ -263,7 +267,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabNewTab.clear();
         searchTabNewTab.sendKeys(globalCheckNumber);
-        // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        // );
         //elementClick(phoneOrders,"Tapped Closed Check in New Tab - "+ globalCheckNumber);
 //      //  try {
 //            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
@@ -291,7 +296,8 @@ public class PhoneOrderScreen extends BasePage {
 //        Thread.sleep(1200);
 //        String globalCheckNumber=TestUtils.globalCheckNumber;
 //        searchTabClosedTab.sendKeys(globalCheckNumber);
-//        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+//        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+//        );
 //        elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
 //    }
 
@@ -301,7 +307,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber = TestUtils.globalCheckNumber1;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
-        //  WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        //  WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        //  );
 //        try {
 //            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
 //
@@ -329,7 +336,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
-        //  WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        //  WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        //  );
 //        try {
 //            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
 //
@@ -356,7 +364,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInActiveTab.clear();
         searchTabInActiveTab.sendKeys(globalCheckNumber);
-        // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        // );
         //elementClick(phoneOrders,"Tapped Closed Check in active tab - "+ globalCheckNumber);
 //        try {
 //            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
@@ -385,7 +394,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInCompleteTab.clear();
         searchTabInCompleteTab.sendKeys(globalCheckNumber);
-        // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        // );
         //elementClick(phoneOrders,"Tapped Closed Check in complete Tab - "+ globalCheckNumber);
 
 //        try {
@@ -415,7 +425,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInCompleteTab.clear();
         searchTabInCompleteTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        );
         if (phoneOrders.isDisplayed()){
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in complete tab");
         }else {
@@ -428,7 +439,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabNewTab.clear();
         searchTabNewTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        );
         if (phoneOrders.isDisplayed()){
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in new tab");
         }else {
@@ -441,7 +453,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInOutTab.clear();
         searchTabInOutTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        );
         if (phoneOrders.isDisplayed()){
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in out tab");
         }else {
@@ -454,7 +467,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInFutureTab.clear();
         searchTabInFutureTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        );
         if (phoneOrders.isDisplayed()){
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in future tab");
         }else {
@@ -467,7 +481,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInActiveTab.clear();
         searchTabInActiveTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        );
         if (phoneOrders.isDisplayed()){
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in Active tab");
         }else {
@@ -480,7 +495,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        );
         if (phoneOrders.isDisplayed()){
             elementClick(phoneOrders,"Tapped Closed Checks");
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in closed tab");
@@ -494,7 +510,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInOutTab.clear();
         searchTabInOutTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
+        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
+        );
         if (phoneOrders.isDisplayed()){
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in closed tab");
         }else {
@@ -510,7 +527,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInBarTab.clear();
         searchTabInBarTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.XPath);
+        WebElement phoneOrders =  mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.Accessibility
+        );
         elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
     }
     public void pressClosedCheckInBarTab1() throws InterruptedException {
@@ -518,7 +536,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber1;
         searchTabInBarTab.clear();
         searchTabInBarTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.XPath);
+        WebElement phoneOrders =  mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.Accessibility
+        );
         elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
     }
 
@@ -533,7 +552,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInBarTab1.clear();
         searchTabInBarTab1.sendKeys(globalCheckNumber);                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]
-        WebElement phoneOrders =  mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.XPath);
+        WebElement phoneOrders =  mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.Accessibility
+        );
         elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
     }
 }

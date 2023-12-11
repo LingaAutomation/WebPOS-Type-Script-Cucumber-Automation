@@ -2,58 +2,58 @@ package com.qa.pages;
 
 
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
 public class LogOuts extends BasePage {
 
     /* Belong to clock in page */
-    @iOSXCUITFindBy(accessibility = "Cancel")
+    @FindBy(xpath = "Cancel")
     private WebElement cancelBtn;
 
-    @iOSXCUITFindBy (xpath = "//XCUIElementTypeApplication[@name='Linga POS']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[9]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name='Linga POS']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[9]")
     private WebElement logOffBtn;
 
-    @iOSXCUITFindBy (id = "logout")
+    @FindBy (id = "logout")
     private WebElement logOutBtn;
 
-    @iOSXCUITFindBy (id = "Yes")
+    @FindBy (id = "Yes")
     private WebElement yesBtn;
 
-    @iOSXCUITFindBy (accessibility = "0")
+    @FindBy (xpath = "0")
     private WebElement logOut0Btn;
-    @iOSXCUITFindBy (accessibility = "1")
+    @FindBy (xpath = "1")
     private WebElement logOut1Btn;
 
-    @iOSXCUITFindBy (accessibility = "2")
+    @FindBy (xpath = "2")
     private WebElement logOut2Btn;
 
-    @iOSXCUITFindBy (accessibility = "3")
+    @FindBy (xpath = "3")
     private WebElement logOut3Btn;
 
-    @iOSXCUITFindBy (accessibility = "4")
+    @FindBy (xpath = "4")
     private WebElement logOut4Btn;
 
-    @iOSXCUITFindBy (accessibility = "Continue")
+    @FindBy (xpath = "Continue")
     private WebElement continueBtn;
 
     /*************************/
 
     /* Belongs to Sign In page */
 
-    @iOSXCUITFindBy (id = "Device Id:")
+    @FindBy (id = "Device Id:")
     private WebElement staticTxt;
 
     /* Belongs To BarTab (and Other)*/
-    @iOSXCUITFindBy (accessibility = "Power button")
+    @FindBy (xpath = "Power button")
     private WebElement powerBtn;
 
 
     /*Methods*/
 
     public String checkStaticText(){
-        return elementGetText(staticTxt, "user login window's title is - ");
+        return elementGetText(staticTxt,"Text");
     }
 
     public void pressCancel() {

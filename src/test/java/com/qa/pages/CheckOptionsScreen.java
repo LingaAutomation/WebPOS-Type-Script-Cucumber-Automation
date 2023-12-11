@@ -1,14 +1,12 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
@@ -16,195 +14,195 @@ import java.util.concurrent.TimeUnit;
 
 public class CheckOptionsScreen extends OrderManagementScreen {
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Hold\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Hold\"]")
     WebElement holdBtn;
 
-    @iOSXCUITFindBy(accessibility = "Tax Exempt")
+    @FindBy(xpath = "Tax Exempt")
     WebElement taxExemptBtn;
 
-    @iOSXCUITFindBy(accessibility = "Open Item")
+    @FindBy(xpath = "Open Item")
     WebElement openItemBtn;
 
-    @iOSXCUITFindBy(accessibility = "Resend To Kitchen")
+    @FindBy(xpath = "Resend To Kitchen")
     WebElement resendToKitchenBtn;
 
-    @iOSXCUITFindBy(accessibility = "Modify")
+    @FindBy(xpath = "Modify")
     WebElement modifyBtn;
 
-//    @iOSXCUITFindBy(accessibility = "Done")
+//    @FindBy(xpath = "Done")
 //    WebElement doneHoldBtn;
 
     // Nov 19
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
     WebElement doneHoldBtn;
 
-    @iOSXCUITFindBy(accessibility = " Back ")
+    @FindBy(xpath = " Back ")
     WebElement backBtn;
 
-    @iOSXCUITFindBy(accessibility = "   Back")
+    @FindBy(xpath = "   Back")
     WebElement backBtnForFireCoursing;
 
-    @iOSXCUITFindBy(accessibility = "Check Options")
+    @FindBy(xpath = "Check Options")
     WebElement checkOptionsTitle;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Tax Exempt\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Tax Exempt\"])[2]")
     WebElement taxExemptTitle;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[4]/XCUIElementTypeOther")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[4]/XCUIElementTypeOther")
     WebElement schoolTaxExemptReason;
 
-    @iOSXCUITFindBy(accessibility = "Paid amount exceeds the sale amount") //Changed to xpath by Engin...
-    WebElement paidAmountExceedsTxt;                                                                 //because the text couldn't be found with accessibility id (why!?)
+    @FindBy(xpath = "Paid amount exceeds the sale amount") //Changed to xpath by Engin...
+    WebElement paidAmountExceedsTxt;                                                                 //because the text couldn't be found with xpath id (why!?)
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     WebElement paidAmountExceedsPopupDoneBtn;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\" Back \"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\" Back \"])[1]")
     WebElement backOnTaxExemptBtn;
 //    (//XCUIElementTypeButton[@name=" Back "])[1]
 
-    @iOSXCUITFindBy(accessibility = "Tax Exempt Removed Successfully")
+    @FindBy(xpath = "Tax Exempt Removed Successfully")
     WebElement taxExemptRemovedTxt;
 
-    // @iOSXCUITFindBy(xpath ="//XCUIElementTypeTextView[@name=\"Can't Hold on this time\"]") //Changed to xpath by Engin...
-    @iOSXCUITFindBy(accessibility = "Can't Hold on this time")
-    WebElement cantHoldOnThisTimeTxt;                                                   //because the text couldn't be found with accessibility id (why!?)
+    // @FindBy(xpath ="//XCUIElementTypeTextView[@name=\"Can't Hold on this time\"]") //Changed to xpath by Engin...
+    @FindBy(xpath = "Can't Hold on this time")
+    WebElement cantHoldOnThisTimeTxt;                                                   //because the text couldn't be found with xpath id (why!?)
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]")
     WebElement coursingNameTxt;
 
-    @iOSXCUITFindBy(accessibility = "Gratuity")
+    @FindBy(xpath = "Gratuity")
     WebElement gratuity;
 
-    @iOSXCUITFindBy(accessibility = "Gratuity")
+    @FindBy(xpath = "Gratuity")
     WebElement gratuityBtn;
 
-    @iOSXCUITFindBy(accessibility = "Add Gratuity")
+    @FindBy(xpath = "Add Gratuity")
     WebElement addGratuityScreen;
 
-    @iOSXCUITFindBy(accessibility = "Fixed Gratuity")
+    @FindBy(xpath = "Fixed Gratuity")
     WebElement gratuityFixedBtn;
 
-    @iOSXCUITFindBy(accessibility = "Gratuity Varying")
+    @FindBy(xpath = "Gratuity Varying")
     WebElement gratuityVaryingBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
     WebElement passPercentageValue;
 
-    @iOSXCUITFindBy(accessibility = "Apply")
+    @FindBy(xpath = "Apply")
     WebElement applyBtn;
 
-    @iOSXCUITFindBy(accessibility = "Enter Percentage")
+    @FindBy(xpath = "Enter Percentage")
     WebElement enterPercentagePopup;
 
-    @iOSXCUITFindBy(accessibility = "Enter Value from 5.0 - 15.0")
+    @FindBy(xpath = "Enter Value from 5.0 - 15.0")
     WebElement enterValue;
 
-    @iOSXCUITFindBy(accessibility = "Automatic")
+    @FindBy(xpath = "Automatic")
     WebElement automaticBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypePicker[2]/XCUIElementTypePickerWheel")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypePicker[2]/XCUIElementTypePickerWheel")
     WebElement minuteDropDown;
 
-    @iOSXCUITFindBy(xpath = "/XCUIElementTypePickerWheel[`value == \"00\"`][2]")
+    @FindBy(xpath = "/XCUIElementTypePickerWheel[`value == \"00\"`][2]")
     WebElement minuteDrop1;
 
-    @iOSXCUITFindBy(accessibility = "Open Cash Drawer")
+    @FindBy(xpath = "Open Cash Drawer")
     WebElement openCashDrawerBtn;
 
-    @iOSXCUITFindBy(accessibility = "Fire Coursing") //Nov 16
+    @FindBy(xpath = "Fire Coursing") //Nov 16
     WebElement fireCoursingBtn;
 
-    @iOSXCUITFindBy(accessibility = "Fire Coursing")
+    @FindBy(xpath = "Fire Coursing")
     WebElement fireCoursingTxt;
 
-    @iOSXCUITFindBy(accessibility = "10%")
+    @FindBy(xpath = "10%")
     private WebElement tenPercentage;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField")
     private WebElement enterAmountFieldCheckOption;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]")
     private WebElement continueBtnCheckOption;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextView")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextView")
     private WebElement txtFieldForReasonCheckOption;
 
-    @iOSXCUITFindBy(accessibility = "Linga Close")
+    @FindBy(xpath = "Linga Close")
     private WebElement lingaClose;
 
-    @iOSXCUITFindBy(accessibility = "Apply")
+    @FindBy(xpath = "Apply")
     private WebElement applyButton;
 
-    @iOSXCUITFindBy(accessibility = "Discount")
+    @FindBy(xpath = "Discount")
     private WebElement discountOnOption;
 
-    @iOSXCUITFindBy(accessibility = "Item Discount")
+    @FindBy(xpath = "Item Discount")
     private WebElement itemDiscountBtn;
 
-    @iOSXCUITFindBy(accessibility = "Check Discount")
+    @FindBy(xpath = "Check Discount")
     private WebElement checkDiscountBtn;
 
-    @iOSXCUITFindBy(accessibility = "Open Check Discount")
+    @FindBy(xpath = "Open Check Discount")
     private WebElement openCheckDiscountOptionScreen;
 
-    @iOSXCUITFindBy(accessibility = "Open Check Discount")
+    @FindBy(xpath = "Open Check Discount")
     private WebElement openCheckDiscountIsVisible;
 
-    @iOSXCUITFindBy(accessibility = "Percentage")
+    @FindBy(xpath = "Percentage")
     private WebElement percentageCheckOption;
 
-    @iOSXCUITFindBy(accessibility = "Amount")
+    @FindBy(xpath = "Amount")
     private WebElement amountCheckOption;
 
-    @iOSXCUITFindBy(accessibility = "After")
+    @FindBy(xpath = "After")
     private WebElement afterCheckOption;
 
-    @iOSXCUITFindBy(accessibility = "Before")
+    @FindBy(xpath = "Before")
     private WebElement beforeCheckOption;
 
-    @iOSXCUITFindBy(accessibility = "Need to Attach Customer")
+    @FindBy(xpath = "Need to Attach Customer")
     private WebElement needToAttachCustomer;
 
-    @iOSXCUITFindBy(accessibility = "Item Discount")
+    @FindBy(xpath = "Item Discount")
     private WebElement itemDiscountText;
 
-    @iOSXCUITFindBy(accessibility = "Check Discount")
+    @FindBy(xpath = "Check Discount")
     private WebElement checkDiscountText;
 
-    @iOSXCUITFindBy(accessibility = "Gift Card")
+    @FindBy(xpath = "Gift Card")
     private WebElement giftCardBtn;
 
-    @iOSXCUITFindBy(accessibility = "0000 0000 0000 0000")
+    @FindBy(xpath = "0000 0000 0000 0000")
     private WebElement cardNumber;
 
     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther")
     private WebElement chargeAmountField;
 
-    @iOSXCUITFindBy(accessibility = "GC-1111 ")
+    @FindBy(xpath = "GC-1111 ")
     private WebElement giftCardAddUp;
 
 
     public String getCheckOptionsTitle() {
-        return elementGetText(checkOptionsTitle, "Check Options title is - ");
+        return getText(checkOptionsTitle, "Check Options title is - ");
     }
 
     public String getPaidAmountExceedsTxt() {
-        return elementGetText(paidAmountExceedsTxt, "Paid amount exceeds text is - ");
+        return getText(paidAmountExceedsTxt, "Paid amount exceeds text is - ");
     }
 
     public String getTaxExemptRemovedTxt() {
-        return elementGetText(taxExemptRemovedTxt, "Tax exempt removed text is - ");
+        return getText(taxExemptRemovedTxt, "Tax exempt removed text is - ");
     }
 
     public String getTaxExemptTitle() {
-        return elementGetText(taxExemptTitle, "Tax Exempt title is - ");
+        return getText(taxExemptTitle, "Tax Exempt title is - ");
     }
 
     public String getCantHoldOnThisTimeTxt() {
 
-        return elementGetText(cantHoldOnThisTimeTxt, "Can't Hold On This Time Txt is - ");
+        return getText(cantHoldOnThisTimeTxt, "Can't Hold On This Time Txt is - ");
     }
 
     public void selectHold() {
@@ -281,7 +279,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String verifyAddGratuityScreen() {
-        return elementGetText(addGratuityScreen, "Add Gratuity Screen is Displayed - ");
+        return getText(addGratuityScreen, "Add Gratuity Screen is Displayed - ");
     }
 
     public void pressGratuityFixedBtn() {
@@ -382,7 +380,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String enterValueAccordingBo() {
-        return elementGetText(enterValue, "Enter value txt is displayed - ");
+        return getText(enterValue, "Enter value txt is displayed - ");
     }
 
     public void pressAutomaticBtn() {
@@ -406,7 +404,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String verifyFireCoursing() {
-        return elementGetText(fireCoursingTxt, "Fire coursing is Displayed - ");
+        return getText(fireCoursingTxt, "Fire coursing is Displayed - ");
     }
 
     public void pressCoursing(String Entree) {
@@ -452,7 +450,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String verifyOpenDiscountAppliedOnOrderScreen() {
-        return elementGetText(openCheckDiscountIsVisible, "open check Discount txt is displayed - ");
+        return getText(openCheckDiscountIsVisible, "open check Discount txt is displayed - ");
     }
 
     public void passTheAmountForOpenCheckDiscountSafetyPercentageWholeValue(String name) {
@@ -526,19 +524,19 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String verifyNeedToAttachCustomer() {
-        return elementGetText(needToAttachCustomer, "need to attach popup is displayed - ");
+        return getText(needToAttachCustomer, "need to attach popup is displayed - ");
     }
 
     public String verifyOpenItemScreen() {
-        return elementGetText(itemDiscountText, "Item discount is displayed - ");
+        return getText(itemDiscountText, "Item discount is displayed - ");
     }
 
     public String verifyCheckDiscount() {
-        return elementGetText(checkDiscountText, " Check discount is displayed - ");
+        return getText(checkDiscountText, " Check discount is displayed - ");
     }
 
     public String verifyOpenCheckDiscount() {
-        return elementGetText(openCheckDiscountIsVisible, "Open check discount is displayed - ");
+        return getText(openCheckDiscountIsVisible, "Open check discount is displayed - ");
     }
 
     public void clickGiftCardBtn() {
@@ -546,7 +544,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String verifyGiftCardWindow() {
-        return elementGetText(giftCardBtn, "Gift card screen is displayed - ");
+        return getText(giftCardBtn, "Gift card screen is displayed - ");
     }
 
     public void enterGiftCardNumber() {
@@ -557,8 +555,8 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         elementClick(pin1, "Tapped Pin 1");
         elementClick(pin1, "Tapped Pin 1");
         elementClick(pin1, "Tapped Pin 1");
-        //WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.XPath);
-        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
+        //WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.Accessibility);
+        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.Accessibility);
         elementClick(el2, "Tapped Continue ");
     }
 
@@ -568,8 +566,8 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         elementClick(pin1, "Tapped Pin 1");
         elementClick(pin00, "Tapped Pin 00");
         elementClick(pin00, "Tapped Pin 00");
-        // WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.XPath);
-        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
+        // WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.Accessibility);
+        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.Accessibility);
         elementClick(el2, "Tapped ");
     }
 
@@ -579,7 +577,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String verifyGiftCardAddup() {
-        return elementGetText(giftCardAddUp, "Gift Card is Add to Order screen - ");
+        return getText(giftCardAddUp, "Gift Card is Add to Order screen - ");
     }
 
     public void verifyFixedGratuityAmount() {
@@ -746,10 +744,10 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Auto Varying Gratuity")
+    @FindBy(xpath = "Auto Varying Gratuity")
     WebElement autoGratuityVaryingBtn;
 
-    @iOSXCUITFindBy(accessibility = "Auto Fixed Gratuity")
+    @FindBy(xpath = "Auto Fixed Gratuity")
     WebElement autoFixedGratuityBtn;
 
     public void pressAutoGratuityVaryingBtn() {
@@ -796,7 +794,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Enter Gratuity Percentage")
+    @FindBy(xpath = "Enter Gratuity Percentage")
     WebElement enterGratuityPercentage;
 
     public String verifyGratuityPercentage() {
@@ -866,7 +864,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void selectDiscountAs(String discountName) {
-        WebElement discountTxt = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell/XCUIElementTypeStaticText[1]", "", TestUtils.XPath);
+        WebElement discountTxt = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell/XCUIElementTypeStaticText[1]", "", TestUtils.Accessibility);
         String discountTxt1 = discountTxt.getText();
         Assert.assertEquals(discountName, discountTxt1);
         utils.log().info("Applied Discount as - " + discountName);
@@ -877,7 +875,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         WebElement discount = mergeAndFindElement("Check-Based Percentage", "", TestUtils.Accessibility);
         if (discount.isDisplayed()) {
             utils.log().info("Discount is applied - " + discount.getText());
-            WebElement menuPrice = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]", "", TestUtils.XPath);
+            WebElement menuPrice = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]", "", TestUtils.Accessibility);
             String menuPriceTxt = menuPrice.getText();
             utils.log().info("Actual Menu Prize - " + menuPriceTxt);
             String menuPrice1 = menuPriceTxt.replaceAll("[A-Z,.$ ]", "");
@@ -887,13 +885,13 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             String discounts1 = discounts.getText().replaceAll("[A-Z$,. ]", "");
             int Discount1 = Integer.parseInt(discounts1);
 
-            WebElement discountAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]", "", TestUtils.XPath);
+            WebElement discountAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]", "", TestUtils.Accessibility);
             String discountAmountTxt = discountAmount.getText();
             utils.log().info("Actual Discount - " + discountAmountTxt);
             String discountAmountTxt1 = discountAmountTxt.replaceAll("[A-Z$,. ]", "");
             int Discount2 = Integer.parseInt(discountAmountTxt1);
 
-            WebElement taxAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
+            WebElement taxAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]", "", TestUtils.Accessibility);
             String taxAmountTxt = taxAmount.getText();
             utils.log().info("Actual Tax - " + taxAmountTxt);
             String taxAmountTxt1 = taxAmountTxt.replaceAll("[A-Z$,. ]", "");
@@ -902,7 +900,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             utils.log().info(" Expected and Actual Discount is Same - " + Discount2);
             int realTotal = (menuAmount+tax2) - Discount2;  //Subtract menutotal with Discount
             String realTotalTxt = String.valueOf(realTotal);
-            WebElement totalAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]", "", TestUtils.XPath);
+            WebElement totalAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]", "", TestUtils.Accessibility);
             String totalAmountTxt = totalAmount.getText();
             utils.log().info(" Actual Total - " + totalAmountTxt);
             String totalAmountString = totalAmountTxt.replaceAll("[A-Z$,. ]", "");
@@ -928,7 +926,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         WebElement discount = mergeAndFindElement("Open Check Discount", "", TestUtils.Accessibility);
         if (discount.isDisplayed()) {
             utils.log().info("Discount is applied - " + discount.getText());
-            WebElement menuPrice = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]", "", TestUtils.XPath);
+            WebElement menuPrice = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]", "", TestUtils.Accessibility);
             String menuPriceTxt = menuPrice.getText();
             utils.log().info("Actual Menu Prize - " + menuPriceTxt);
             String menuPrice1 = menuPriceTxt.replaceAll("[A-Z$., ]", "");
@@ -938,21 +936,21 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             int Discount = Integer.parseInt(TestUtils.amountTxt);
             int Discount1 = (menuAmount - Discount);
             String Discount3 = String.valueOf(Discount1);
-            WebElement discountAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]", "", TestUtils.XPath);
+            WebElement discountAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]", "", TestUtils.Accessibility);
             String discountAmountTxt = discountAmount.getText();
             utils.log().info("Actual Discount - " + discountAmountTxt);
             String discountAmountTxt1 = discountAmountTxt.replaceAll("[A-Z$., ]", "");
             int Discount2 = Integer.parseInt(discountAmountTxt1);
             Assert.assertEquals(Discount2, Discount);
             utils.log().info(" Expected and Actual Discount is Same - " + Discount2);
-            WebElement taxAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
+            WebElement taxAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]", "", TestUtils.Accessibility);
             String taxAmountTxt = taxAmount.getText();
             utils.log().info("Actual Discount - " + taxAmountTxt);
             String taxAmountTxt1 = taxAmountTxt.replaceAll("[A-Z$., ]", "");
             int tax2 = Integer.parseInt(taxAmountTxt1);
             int realTotal = (menuAmount+tax2) - Discount2;  //Subtract menutotal with Discount
             String realTotalTxt = String.valueOf(realTotal);
-            WebElement totalAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]", "", TestUtils.XPath);
+            WebElement totalAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]", "", TestUtils.Accessibility);
             String totalAmountTxt = totalAmount.getText();
             utils.log().info(" Actual Total - " + totalAmountTxt);
             String totalAmountString = totalAmountTxt.replaceAll("[A-Z$., ]", "");
@@ -973,7 +971,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Discount exceeds the safety limit")
+    @FindBy(xpath = "Discount exceeds the safety limit")
     WebElement discountExceedsTheSafetyLimit;
 
     public void verifyDiscountExceedLimitPopup() {
@@ -986,7 +984,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         WebElement discount = mergeAndFindElement("IB-AfterTax-Amount", "", TestUtils.Accessibility);
         if (discount.isDisplayed()) {
             utils.log().info("Discount is applied - " + discount.getText());
-            WebElement menuPrice = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]", "", TestUtils.XPath);
+            WebElement menuPrice = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]", "", TestUtils.Accessibility);
             String menuPriceTxt = menuPrice.getText();
             utils.log().info("Actual Menu Prize - " + menuPriceTxt);
             String menuPrice1 = menuPriceTxt.replaceAll("[A-Z$,. ]", "");
@@ -999,13 +997,13 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             //                int Discount = 10;
 //                int Discount1 = ((menuAmount*Discount)/100);
             // String Discount3 = String.valueOf(Discount1);
-            WebElement discountAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]", "", TestUtils.XPath);
+            WebElement discountAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]", "", TestUtils.Accessibility);
             String discountAmountTxt = discountAmount.getText();
             utils.log().info("Actual Discount - " + discountAmountTxt);
             String discountAmountTxt1 = discountAmountTxt.replaceAll("[A-Z$,. ]", "");
             int Discount2 = Integer.parseInt(discountAmountTxt1);
             Assert.assertEquals(Discount2, Discount1);
-            WebElement taxAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
+            WebElement taxAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]", "", TestUtils.Accessibility);
             String taxAmountTxt = taxAmount.getText();
             utils.log().info("Actual Tax - " + taxAmountTxt);
             String taxAmountTxt1 = taxAmountTxt.replaceAll("[A-Z$,. ]", "");
@@ -1013,7 +1011,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             utils.log().info(" Expected and Actual Discount is Same - " + Discount2);
             int realTotal = (menuAmount+tax2) - Discount2;  //Subtract menutotal with Discount
             String realTotalTxt = String.valueOf(realTotal);
-            WebElement totalAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]", "", TestUtils.XPath);
+            WebElement totalAmount = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]", "", TestUtils.Accessibility);
             String totalAmountTxt = totalAmount.getText();
             utils.log().info(" Actual Total - " + totalAmountTxt);
             String totalAmountString = totalAmountTxt.replaceAll("[A-Z$,. ]", "");
@@ -1034,7 +1032,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     WebElement continueBtnn;
 
     public String recurringBalanceTxt2 = " ";
@@ -1132,7 +1130,7 @@ Thread.sleep(4000);
 
     }
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     WebElement doneee;
 
     public void clickDoneIfItsSelectable() {
@@ -1143,7 +1141,7 @@ Thread.sleep(4000);
         }
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"GiveX\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"GiveX\"]")
     WebElement giveXOption;
 
     public void clickGiveXBtn() {
@@ -1151,7 +1149,7 @@ Thread.sleep(4000);
         elementClick(giveXOption, "Tapped GiveX ");
     }
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"GiveX\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"GiveX\"])[2]")
     WebElement givexScreen;
 
     public void shouldSeeGiveXScreen() {

@@ -3,7 +3,7 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -232,7 +232,7 @@ public class cashOption extends TillManagementScreen{
 
     }
 
-    @iOSXCUITFindBy(accessibility = "Cannot apply tip for offline payment")
+    @FindBy(xpath = "Cannot apply tip for offline payment")
     private WebElement cannotApplyPayment;
     public void verifyCannotApplyTipPopup(){
         String cannotApplyPaymentTxt = cannotApplyPayment.getText();

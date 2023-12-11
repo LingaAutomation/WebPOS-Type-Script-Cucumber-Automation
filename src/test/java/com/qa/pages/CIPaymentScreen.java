@@ -1,10 +1,10 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -246,7 +246,7 @@ public class CIPaymentScreen extends BasePage{
         utils.log().info(msg);
     }
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     WebElement continueBtnn;
 
     public void enterGiveXNumber(String Number){

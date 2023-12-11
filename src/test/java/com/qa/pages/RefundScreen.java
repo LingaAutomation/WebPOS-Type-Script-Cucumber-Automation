@@ -3,8 +3,8 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
+import org.openqa.selenium.support.FindBy;
 
 import java.sql.Time;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class RefundScreen extends BasePage{
 
-    @iOSXCUITFindBy(accessibility = "Refund")
+    @FindBy(xpath = "Refund")
     WebElement RefundBtn;
     public void clickRefundButton(){
         elementClick(RefundBtn, "Refund Button Selected");
@@ -23,7 +23,7 @@ public class RefundScreen extends BasePage{
         String noRefund = noRefundCheck.getText();
         utils.log().info("Displayed Popup as - "+noRefund);
     }
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
     WebElement searchTabInRefund;
 
     public void searchTheClosedCheckInRefundScreen() throws InterruptedException {
@@ -42,7 +42,7 @@ public class RefundScreen extends BasePage{
             utils.log().info("closed check is not available"+ globalCheckNumber);
         }
     }
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund\"]")
     WebElement RefundBtnn;
     public void clickRefundButtonInRefundScreen(){
         elementClick(RefundBtnn,"Selected Refund Button");
@@ -91,20 +91,20 @@ public class RefundScreen extends BasePage{
         Assert.assertEquals(refundAmountValueTxt,defaultAmountTxt);
         utils.log().info("Default check amount SAME with Refund Window Total - "+refundAmountValueTxt);
     }
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Cancel\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Cancel\"]")
     WebElement cancelBtn;
     public void clickCancelBtn(){
         elementClick(cancelBtn,"Tapped Cancel Button");
     }
 
     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextView
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
+    @FindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
     WebElement reasonTextView;
     public void enterTheReasonInTheRefundWindow(){
         reasonTextView.sendKeys("Refund");
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
+    @FindBy(xpath = "//XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
     WebElement reasonTextViewRefundOrder;
     public void enterTheReasonInTheRefundOrderScreen(){
         reasonTextViewRefundOrder.sendKeys("Refund");
@@ -125,7 +125,7 @@ public class RefundScreen extends BasePage{
         utils.log().info("Displayed popup as - "+refundConfirmTxt);
     }
 
-    @iOSXCUITFindBy(accessibility = "Refund Success")
+    @FindBy(xpath = "Refund Success")
     WebElement refundSuccessPopup;
     public void verifyRefundSuccessPopup() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
@@ -134,7 +134,7 @@ public class RefundScreen extends BasePage{
         utils.log().info("Displayed popup as - "+"Refund Success");
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
     WebElement amountExceedThPaidAmount;
     public void verifyTheAmountExceedsThePaidAmountPopup(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -143,7 +143,7 @@ public class RefundScreen extends BasePage{
         utils.log().info("Displayed Popup as - "+amountExceedsPaidAmountTxt);
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]")
     WebElement cBtn;
     public void enterTheHugeValueThanTheRefundValue(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -181,7 +181,7 @@ public class RefundScreen extends BasePage{
         reasonTextView.sendKeys("Refund");
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Without Receipt\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Without Receipt\"]")
     WebElement refundWithoutReceipt;
     public void clickRefundWithoutReceiptButton(){
         elementClick(refundWithoutReceipt,"Selected button as - "+refundWithoutReceipt.getText());
@@ -209,12 +209,12 @@ public class RefundScreen extends BasePage{
         reasonTextView.sendKeys(reason);
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Menu Items\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Menu Items\"]")
     WebElement refundMenuItemsBtn;
     public void clickRefundMenuItemsBtn(){
 elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
     }
-    @iOSXCUITFindBy(accessibility = "Please select the check")
+    @FindBy(xpath = "Please select the check")
     WebElement pleaseSelectTheCheckTxt;
     public void verifyPleaseSelectCheckPopup(){
         Assert.assertEquals(pleaseSelectTheCheckTxt.getText(),"Please select the check");
@@ -233,13 +233,13 @@ elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
 
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Check\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Check\"]")
     WebElement refundCheckBtn;
     public void clickRefundCheckBtn(){
         elementClick(refundCheckBtn,"Selected - "+refundCheckBtn.getText());
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Items\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Items\"]")
     WebElement refundItemsBtn;
     public void clickRefundItemsBtn(){
         elementClick(refundItemsBtn,"Selected - "+refundItemsBtn.getText());
@@ -259,7 +259,7 @@ elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
         utils.log().info("Displayed Button as - "+done);
     }
 
-    @iOSXCUITFindBy(accessibility = "check is refunded already")
+    @FindBy(xpath = "check is refunded already")
     WebElement checkIsRefundAlready;
     public void verifyCheckIsRefundedAlready(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -267,7 +267,7 @@ elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
      utils.log().info("Displayed popup as - "+checkIsRefundAlready.getText());
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
     WebElement refundDoneBtn;
     public void clickDoneRefundScreen(){
         elementClick(refundDoneBtn,"Selected - "+refundDoneBtn.getText());

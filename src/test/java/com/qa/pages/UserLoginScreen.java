@@ -3,28 +3,28 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class UserLoginScreen extends SignInScreen{
 
 
-    @iOSXCUITFindBy (id ="User Login")
+    @FindBy (id ="User Login")
     private WebElement titleTxt;
 
-    @iOSXCUITFindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField")
-    //@iOSXCUITFindBy (id = "ID")
+    @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField")
+    //@FindBy (id = "ID")
     private WebElement eMailTxtFld;
 
-    @iOSXCUITFindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField")
     private WebElement passwordTxtFld;
 
-    @iOSXCUITFindBy (id = "Finish")
+    @FindBy (id = "Finish")
     private WebElement finishBtn;
 
-    @iOSXCUITFindBy (accessibility = "Invalid username or password")
+    @FindBy (xpath = "Invalid username or password")
     private WebElement errTxt;
 
     public String getTitle() {
@@ -70,7 +70,7 @@ public class UserLoginScreen extends SignInScreen{
         elementClick(password,"Password Selected");
         password.clear();
     }
-    @iOSXCUITFindBy(accessibility = "No license available")
+    @FindBy(xpath = "No license available")
     WebElement noLicenseAvailable;
     public void verifyNoLicenseAvailablePopup(){
         Assert.assertEquals(noLicenseAvailable,"No license available");

@@ -2,55 +2,55 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 public class TransferWindow extends TableLayOutScreen{
-    @iOSXCUITFindBy( accessibility = "Transfer to Table" )
+    @FindBy( xpath = "Transfer to Table" )
     private WebElement transferToTableBtn;
 
-    @iOSXCUITFindBy( accessibility = "Floor 1-T1" )
+    @FindBy( xpath = "Floor 1-T1" )
     private WebElement selectTransferFromTableBtn;
 
-    @iOSXCUITFindBy( xpath = ("//XCUIElementTypeStaticText[@name=\"Floor 1-T10\"])[1]") )
+    @FindBy( xpath = ("//XCUIElementTypeStaticText[@name=\"Floor 1-T10\"])[1]") )
     private WebElement selectTransferToTableBtn;
 
-    @iOSXCUITFindBy( accessibility = "Done" )
+    @FindBy( xpath = "Done" )
     private WebElement transferDoneBtn;
 
-    @iOSXCUITFindBy(accessibility = "Transfer to Server")
+    @FindBy(xpath = "Transfer to Server")
     private WebElement transferToServerBtn;
 
-    //@iOSXCUITFindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"Ragav N\"])[1]" )
-    @iOSXCUITFindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"Engin T\"])[1]" )
+    //@FindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"Ragav N\"])[1]" )
+    @FindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"Engin T\"])[1]" )
     private WebElement serverFromEnginT;
 
-    // @iOSXCUITFindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"ragav 1\"])[2]" )
-    @iOSXCUITFindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"Engin A\"])[2]" )
+    // @FindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"ragav 1\"])[2]" )
+    @FindBy( xpath = "(//XCUIElementTypeStaticText[@name=\"Engin A\"])[2]" )
     private WebElement serverToEnginA;
 
-    //@iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Employee is offline Still Do you want to continue\"]" )
+    //@FindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Employee is offline Still Do you want to continue\"]" )
     //private WebElement employeeIsOfflineMsg;
 
-    @iOSXCUITFindBy( accessibility = "Employee is offline Still Do you want to continue" )
+    @FindBy( xpath = "Employee is offline Still Do you want to continue" )
     private WebElement employeeIsOfflineMsg;
 
-    @iOSXCUITFindBy( accessibility = "Yes" )
+    @FindBy( xpath = "Yes" )
     private WebElement yesToEmployeeIsOffline;
 
-    @iOSXCUITFindBy( accessibility = "Transfer Item" )
+    @FindBy( xpath = "Transfer Item" )
     private WebElement transferItemBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]" )
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]" )
     private WebElement transferItemFrom;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell")
     private WebElement itemToTransfer;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeTable/XCUIElementTypeCell")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeTable/XCUIElementTypeCell")
     private WebElement tableToTransferTheItem;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther")
     private WebElement checkTransfer;
     public void pressTransferToTable(){
         elementClick(transferToTableBtn, "Transfer to table button tapped" );

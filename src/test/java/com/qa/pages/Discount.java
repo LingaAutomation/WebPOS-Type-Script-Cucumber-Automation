@@ -2,37 +2,37 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Discount extends BasePage{
 
-    @iOSXCUITFindBy(accessibility = "Discount")
+    @FindBy(xpath = "Discount")
     private WebElement discountCheck;
 
-    @iOSXCUITFindBy(accessibility = "Mix&Match SP(Before Tax)")
+    @FindBy(xpath = "Mix&Match SP(Before Tax)")
     private WebElement setPrizeBeforeTax;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[2]/XCUIElementTypeCell")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[2]/XCUIElementTypeCell")
     private WebElement orderListWithDiscount;
 
-    @iOSXCUITFindBy(accessibility = "Discounts")
+    @FindBy(xpath = "Discounts")
     private WebElement discountPage;
 
-    @iOSXCUITFindBy(accessibility = "Discount")
+    @FindBy(xpath = "Discount")
     private WebElement discountNameOrderList;
 
-    @iOSXCUITFindBy(accessibility = "Subtotal")
+    @FindBy(xpath = "Subtotal")
     private WebElement subtotalOfMenuItem;
 
-    @iOSXCUITFindBy(accessibility = "Back")
+    @FindBy(xpath = "Back")
     public WebElement backBtnDiscount;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
     private WebElement searchFldDiscount;
 
     public void pressDiscountBtn(){
@@ -50,7 +50,7 @@ public class Discount extends BasePage{
 
     public void pressDiscount1(String discount){
         sendKeys(searchFldDiscount,discount);
-        WebElement e1=mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Check Based Amount\"])[2]","",TestUtils.XPath);
+        WebElement e1=mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Check Based Amount\"])[2]","",TestUtils.Accessibility);
 
         if (e1.isDisplayed()) {
             elementClick(e1,discount +" Selected");
@@ -59,7 +59,7 @@ public class Discount extends BasePage{
         }
     }
     public String discountPage(){
-        return elementGetText(discountPage,"Discount Page txt is Displayed - ");
+        return elementGetText(discountPage,"Text");
     }
 
     public void  verifyDiscountIsDisplayed(String discount){

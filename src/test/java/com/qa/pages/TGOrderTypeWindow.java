@@ -1,6 +1,5 @@
 package com.qa.pages;
 
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -65,7 +64,7 @@ public class TGOrderTypeWindow extends ClockInScreen {
     // 23 Nov end
 
     public String getTitle() {
-        return getText(titleTxt, "user login window's title is - ");
+        return elementGetText((WebElement) titleTxt, "user login window's title is - ");
     }
 
 //    public void selectForHereOrderType() {

@@ -1,9 +1,8 @@
 package com.qa.pages;
 
-import io.appium.java_client.AppiumDriver;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
@@ -70,7 +69,7 @@ public class TGLogOuts extends BasePage {
     private By signInBtn = By.id("Sign In");
 
 
-    public TGLogOuts(IOSDriver driver) {
+    public TGLogOuts(WebDriver driver) {
     }
 
     public TGLogOuts() {

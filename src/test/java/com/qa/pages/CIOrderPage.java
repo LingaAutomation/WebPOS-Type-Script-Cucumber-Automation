@@ -2,8 +2,6 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.By;
 
 public class CIOrderPage  extends BasePage {

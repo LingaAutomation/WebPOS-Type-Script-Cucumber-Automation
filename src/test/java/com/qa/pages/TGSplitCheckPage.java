@@ -2,9 +2,9 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
@@ -387,27 +387,27 @@ public class TGSplitCheckPage extends BasePage{
 //        elementClick(element,msg);
         findandclick(id, "", TestUtils.Accessibility);
     }
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])[1]")
     WebElement pin6Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])[1]")
     WebElement pin5Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"4\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"4\"])[1]")
     WebElement pin4Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"3\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"3\"])[1]")
     WebElement pin3Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])[1]")
     WebElement pin2Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[1]")
     WebElement pin1Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"7\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"7\"])[1]")
     WebElement pin7Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"8\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"8\"])[1]")
     WebElement pin8Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"9\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"9\"])[1]")
     WebElement pin9Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"0\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"0\"])[1]")
     WebElement pin0Time1;
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Clear\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Clear\"])[1]")
     WebElement pinClrTime1;
     public void pressPin4Time() {
         elementClick(pin4Time1, "Tapped pin 4");
@@ -426,7 +426,7 @@ public class TGSplitCheckPage extends BasePage{
         elementClick(loginBtn, "Tapped Login.");
 
     }
-    @iOSXCUITFindBy (accessibility = "Login")
+    @FindBy (xpath = "Login")
     private WebElement loginBtn;
     public void logInWithValidPin() {
 

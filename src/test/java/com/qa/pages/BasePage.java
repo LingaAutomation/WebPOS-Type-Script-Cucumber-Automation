@@ -117,11 +117,11 @@ public class BasePage extends TGglobalElement {
 //        ((InteractsWithApps) driver).launchApp();
 //    }
 
-    public WebElement andScrollToElementUsingUiScrollable(String childLocAttr, String childLocValue) {
-        return (WebElement) (driver).findElementByAndroidUIAutomator(
-                "new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
-                        + "new UiSelector()." + childLocAttr + "(\"" + childLocValue + "\"));");
-    }
+//    public WebElement andScrollToElementUsingUiScrollable(String childLocAttr, String childLocValue) {
+//        return (WebElement) (driver).findElementByAndroidUIAutomator(
+//                "new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
+//                        + "new UiSelector()." + childLocAttr + "(\"" + childLocValue + "\"));");
+//    }
 
 //    public WebElement iOSScrollToElementUsingMobileScroll(WebElement e) {
 //        RemoteWebElement element = ((RemoteWebElement) e);
@@ -136,20 +136,20 @@ public class BasePage extends TGglobalElement {
 //        return e;
 //    }
 
-    public By iOSScrollToElementUsingMobileScrollParent(WebElement parentE, String predicateString) {
-        RemoteWebElement parent = (RemoteWebElement) parentE;
-        String parentID = parent.getId();
-        HashMap<String, String> scrollObject = new HashMap<String, String>();
-        scrollObject.put("element", parentID);
-//	  scrollObject.put("direction", "down");
-        scrollObject.put("predicateString", predicateString);
-//	  scrollObject.put("name", "test-ADD TO CART");
-//        scrollObject.put("toVisible", "sdfnjksdnfkld");
-//        driver.executeScript("mobile:scroll", scrollObject);
-        By m = MobileBy.iOSNsPredicateString(predicateString);
-        System.out.println("Mobilelement is " + m);
-        return m;
-    }
+//    public By iOSScrollToElementUsingMobileScrollParent(WebElement parentE, String predicateString) {
+//        RemoteWebElement parent = (RemoteWebElement) parentE;
+//        String parentID = parent.getId();
+//        HashMap<String, String> scrollObject = new HashMap<String, String>();
+//        scrollObject.put("element", parentID);
+////	  scrollObject.put("direction", "down");
+//        scrollObject.put("predicateString", predicateString);
+////	  scrollObject.put("name", "test-ADD TO CART");
+////        scrollObject.put("toVisible", "sdfnjksdnfkld");
+////        driver.executeScript("mobile:scroll", scrollObject);
+//        By m = MobileBy.iOSNsPredicateString(predicateString);
+//        System.out.println("Mobilelement is " + m);
+//        return m;
+//    }
 
 
     public WebElement scrollToElement(WebElement element, String direction) throws Exception {
@@ -222,7 +222,7 @@ public class BasePage extends TGglobalElement {
 
     public boolean find(final WebElement element, int timeout) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, timeout);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
             return wait.until(new ExpectedCondition<Boolean>() {
                 @Override
                 public Boolean apply(WebDriver driver) {
@@ -239,7 +239,7 @@ public class BasePage extends TGglobalElement {
 
     public boolean find(final By element, int timeout) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, timeout);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
             return wait.until(new ExpectedCondition<Boolean>() {
                 @Override
                 public Boolean apply(WebDriver driver) {
@@ -262,22 +262,22 @@ public class BasePage extends TGglobalElement {
          js.executeScript("window.scrollBy(0,350)", "");
     }
 
-    public String elementGetText(WebElement e, String msg) {
-        String txt;
-        switch (new GlobalParams().getPlatformName()) {
-            case "Android":
-                txt = e.getAttribute("text");
-                break;
-            case "iOS":
-                txt = e.getAttribute("label");
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + new GlobalParams().getPlatformName());
-        }
-        utils.log().info(msg + txt);
-
-        return txt;
-    }
+//    public String elementGetText(WebElement e, String msg) {
+//        String txt;
+//        switch (new GlobalParams().getPlatformName()) {
+//            case "Android":
+//                txt = e.getAttribute("text");
+//                break;
+//            case "iOS":
+//                txt = e.getAttribute("label");
+//                break;
+//            default:
+//                throw new IllegalStateException("Unexpected value: " + new GlobalParams().getPlatformName());
+//        }
+//        utils.log().info(msg + txt);
+//
+//        return txt;
+//    }
 
     public void elementClick(WebElement e, String msg) {
 
@@ -289,7 +289,7 @@ public class BasePage extends TGglobalElement {
 //        }
     }
 public void findAndClickMobileElement(String selectorPath,String injector, String selectorName) throws Exception {
-    WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+//    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 
 
 
@@ -352,7 +352,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
     public void  findandclick(String selectorPath, String injector, String selectorName) {
 
 //        WebElement element;
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+//        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
 //        String elementXPath = utils.stringFormatInjector(selectorPath, injector);
 //        switch (selectorName) {
 //            case TestUtils.XPath:
@@ -411,7 +411,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
     public String findAndGetText(String selectorPath, String injector, String selectorName) {
         String text="";
 //        WebElement element;
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+//        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
 //        String elementXPath = utils.stringFormatInjector(selectorPath, injector);
 //        switch (selectorName) {
 //            case TestUtils.XPath:
@@ -472,7 +472,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
     public void  findandclick_Skeys(String selectorPath, String injector, String selectorName,String KeyVal,String keyText) {
 
 //        WebElement element;
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+//        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
 //        String elementXPath = utils.stringFormatInjector(selectorPath, injector);
 //        switch (selectorName) {
 //            case TestUtils.XPath:
@@ -544,7 +544,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 
     public void  findandclickM(By selectorPath) {
 //        WebElement element;
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.driverWAIT));
                 try {
 
                     wait.until(ExpectedConditions.elementToBeClickable(selectorPath));
@@ -573,7 +573,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
     public String  findAndGetTextM(By selectorPath) {
 //        WebElement element;
         String text="";
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.driverWAIT));
         try {
 
             wait.until(ExpectedConditions.visibilityOfElementLocated(selectorPath));
@@ -706,7 +706,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
     }
 
     public List<WebElement> findElements(String selectorPath) {
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.driverWAIT));
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(selectorPath))));
 
         List<WebElement> elements = (List<WebElement>) driver.findElements(By.xpath(selectorPath));
@@ -717,7 +717,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
     // Method to find the element
     public WebElement findElement(String selectorPath, String injector, String selectorName) {
         WebElement element = null;
-        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+//        WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
 //        String elementXPath = utils.stringFormatInjector(selectorPath, injector);
 //        switch (selectorName) {
 //            case TestUtils.XPath:
@@ -978,7 +978,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
         }*/
         WebElement element;
 //        try {
-            WebDriverWait wait = new WebDriverWait(driver, TestUtils.driverWAIT);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.driverWAIT));
             wait.until(ExpectedConditions.visibilityOfElementLocated(selectorPath));
 
 
@@ -994,8 +994,12 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
         return element;
     }
 
+    public String elementGetText(WebElement e, String text) {
+        return e.getText();
+    }
+
     public void listScroller(String accessibilityId, int startX, int startY, int endX, int endY, int millis) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 1);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.driverWAIT));
         int iteration = 0;
         boolean isVisible = false;
 
@@ -1013,7 +1017,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
     }
 
     public void listScroller1(WebElement Xpath, int startX, int startY, int endX, int endY, int millis) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 1);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.driverWAIT));
         int iteration = 0;
         boolean isVisible = false;
 

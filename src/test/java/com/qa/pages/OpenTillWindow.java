@@ -2,50 +2,50 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 public class OpenTillWindow extends TillManagementScreen{
-    @iOSXCUITFindBy(accessibility = "Open Till" )
+    @FindBy(xpath = "Open Till" )
     private WebElement openTillWindowTitle;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"0\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"0\"]" )
     private WebElement number0;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"1\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"1\"]" )
     private WebElement number1;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"2\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"2\"]" )
     private WebElement number2;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"3\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"3\"]" )
     private WebElement number3;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"4\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"4\"]" )
     private WebElement number4;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"5\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"5\"]" )
     private WebElement number5;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"6\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"6\"]" )
     private WebElement number6;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"7\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"7\"]" )
     private WebElement number7;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"8\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"8\"]" )
     private WebElement number8;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"9\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"9\"]" )
     private WebElement number9;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"00\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"00\"]" )
     private WebElement number00;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]" )
     private WebElement numberC;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
     private WebElement continueBtn;
 
     public String getOpenTillWindowTitle() {

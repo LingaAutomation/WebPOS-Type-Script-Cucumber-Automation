@@ -2,11 +2,10 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.support.FindBy;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -17,316 +16,316 @@ import java.util.concurrent.TimeUnit;
 public class TableLayOutScreen extends OrderManagementScreen {
 
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     private WebElement continueBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"00:00\"]")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"00:00\"]")
     private WebElement tableSeated;
 
-    @iOSXCUITFindBy(accessibility = "2")
+    @FindBy(xpath = "2")
     private WebElement checkSeatNo;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]")
     private WebElement mergeBtn;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement mergeDoneBtn;
 
-    @iOSXCUITFindBy(accessibility = "Transfer")
+    @FindBy(xpath = "Transfer")
     private WebElement transferBtn;
 
-    @iOSXCUITFindBy(accessibility = "T1")
+    @FindBy(xpath = "T1")
     private WebElement tableToTransfer;
 
-    @iOSXCUITFindBy(accessibility = "Pay Check")
+    @FindBy(xpath = "Pay Check")
     private WebElement payCheckBtn;
 
-    //@iOSXCUITFindBy(accessibility = "Open check")
-    @iOSXCUITFindBy(accessibility = "openCheck")
+    //@FindBy(xpath = "Open check")
+    @FindBy(xpath = "openCheck")
     private WebElement openCheckBtn;
 
-    @iOSXCUITFindBy(accessibility = "Re-Print Check")
+    @FindBy(xpath = "Re-Print Check")
     private WebElement reprintCheck;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Engin T\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Engin T\"])[2]")
     private WebElement serverNameTableCheck;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[6]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[6]")
     private WebElement printBtn;
 
-    @iOSXCUITFindBy(accessibility = "Auto r")
+    @FindBy(xpath = "Auto r")
     private WebElement customerName;
 
-    @iOSXCUITFindBy(accessibility = "Transferred Successfully")
+    @FindBy(xpath = "Transferred Successfully")
     private WebElement transferSuccessfulMsg;
 
-    @iOSXCUITFindBy(accessibility = "Transferred check success.")
+    @FindBy(xpath = "Transferred check success.")
     private WebElement itemTransferSuccessfulMsg;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement itemTransferDone;
 
-    @iOSXCUITFindBy(accessibility = "Check already added")
+    @FindBy(xpath = "Check already added")
     private WebElement checkAlreadyAddedTxt;
 
-    @iOSXCUITFindBy(accessibility = "Select at least 2 checks")
+    @FindBy(xpath = "Select at least 2 checks")
     private WebElement SelectAtleast2CheckTxt;
 
-    @iOSXCUITFindBy(accessibility = "Cancel")
+    @FindBy(xpath = "Cancel")
     private WebElement CancelBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]")
     private WebElement SplitBtn;
 
-    @iOSXCUITFindBy(accessibility = "Split By Seat")
+    @FindBy(xpath = "Split By Seat")
     private WebElement splitSeat;
 
-    @iOSXCUITFindBy(accessibility = "Split Seat")
+    @FindBy(xpath = "Split Seat")
     private WebElement splitSeatPage;
 
-    @iOSXCUITFindBy(accessibility = "Select valid check")
+    @FindBy(xpath = "Select valid check")
     private WebElement selectValid;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"French Friese \"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"French Friese \"])[2]")
     private WebElement item;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[1]")
     private WebElement seperateIcon;
 
-    @iOSXCUITFindBy(accessibility = "Back")
+    @FindBy(xpath = "Back")
     private WebElement BackBtn;
 
-    @iOSXCUITFindBy(accessibility = "Changes made in split, save and close")
+    @FindBy(xpath = "Changes made in split, save and close")
     private WebElement SplitPopup;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement DonePopup;
 
-    @iOSXCUITFindBy(accessibility = "Save & Close")
+    @FindBy(xpath = "Save & Close")
     WebElement SaveClose;
 
-    @iOSXCUITFindBy(accessibility = "Seats")
+    @FindBy(xpath = "Seats")
     private WebElement Order1;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
     private WebElement splitEvent;
 
-    @iOSXCUITFindBy(accessibility = "Select the Order to Proceed")
+    @FindBy(xpath = "Select the Order to Proceed")
     private WebElement selectOrder;
 
-    @iOSXCUITFindBy(accessibility = "Add")
+    @FindBy(xpath = "Add")
     public WebElement AddBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
     private WebElement SplitEvenly;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
     private WebElement seat1Table;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable")
     private WebElement seat2Table;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeTable")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeTable")
     private WebElement seat3Table;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
     private WebElement seat2Group;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
     private WebElement seat1Group;
 
-    @iOSXCUITFindBy(accessibility = "1")
+    @FindBy(xpath = "1")
     private WebElement seat1OrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "2")
+    @FindBy(xpath = "2")
     private WebElement seat2OrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "3")
+    @FindBy(xpath = "3")
     private WebElement seat3OrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "4")
+    @FindBy(xpath = "4")
     private WebElement seat4OrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "5")
+    @FindBy(xpath = "5")
     private WebElement seat5OrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     private WebElement Done1;
 
-    @iOSXCUITFindBy(accessibility = "Delete")
+    @FindBy(xpath = "Delete")
     private WebElement deleteBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[3]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[3]")
     private WebElement GroupSeat;
 
-    @iOSXCUITFindBy(accessibility = "Select the seats to Merge")
+    @FindBy(xpath = "Select the seats to Merge")
     private WebElement popupSelectTheSeatsToMerge;
 
-    @iOSXCUITFindBy(accessibility = "Start Over")
+    @FindBy(xpath = "Start Over")
     private WebElement startOver;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]")
     private WebElement printSplitSeat;
 
-    @iOSXCUITFindBy(accessibility = "Select the Seat to Print")
+    @FindBy(xpath = "Select the Seat to Print")
     private WebElement PopupSelectTheSeatToPrint;
 
-    @iOSXCUITFindBy(accessibility = "Receipt Printer")
+    @FindBy(xpath = "Receipt Printer")
     private WebElement receiptPrinter;
 
-    @iOSXCUITFindBy(accessibility = "select any one seat/check for print")
+    @FindBy(xpath = "select any one seat/check for print")
     private WebElement selectAnyOneSeatForPrint;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[5]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[5]")
     private WebElement PrintAllSplitSeat;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[6]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[6]")
     private WebElement paySplitSeat;
 
-    @iOSXCUITFindBy(accessibility = "Select the Seat to Pay")
+    @FindBy(xpath = "Select the Seat to Pay")
     private WebElement selectTheSeatToPay;
 
-    @iOSXCUITFindBy(accessibility = "select any one seat/check for payment")
+    @FindBy(xpath = "select any one seat/check for payment")
     private WebElement selectAnyoneSeatCheckForPayment;
 
-    @iOSXCUITFindBy(accessibility = "Split is not allowed, no order(s) in this check")
+    @FindBy(xpath = "Split is not allowed, no order(s) in this check")
     private WebElement splitIsNotAllowedNoOrderInThisCheck;
 
-    @iOSXCUITFindBy(accessibility = "Split is not allowed, payment(s) has been made in this check")
+    @FindBy(xpath = "Split is not allowed, payment(s) has been made in this check")
     private WebElement SplitIsNotAllowedPaymentInThisCheck;
 
-    @iOSXCUITFindBy(accessibility = "Split")
+    @FindBy(xpath = "Split")
     private WebElement splitBtnOrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "SPLIT BY SEAT")
+    @FindBy(xpath = "SPLIT BY SEAT")
     private WebElement SplitBySeatOrderScreen;
 
-    @iOSXCUITFindBy(accessibility = "SPLIT CHECK")
+    @FindBy(xpath = "SPLIT CHECK")
     private WebElement SplitCheckOrderScreen;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
-    // @iOSXCUITFindBy(accessibility = "Cash")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
+    // @FindBy(xpath = "Cash")
     private WebElement CashbtnPaymentWindow;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[7]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[7]")
     private WebElement OperationBtnTableLayout;
 
-    @iOSXCUITFindBy(accessibility = "Operation")
+    @FindBy(xpath = "Operation")
     private WebElement operationScreen;
 
-    @iOSXCUITFindBy(accessibility = "No Thanks")
+    @FindBy(xpath = "No Thanks")
     private WebElement NoThanksBtn;
 
-    //@iOSXCUITFindBy(accessibility = "Print Or Send Receipt")
-    @iOSXCUITFindBy(accessibility = "Print Or Send Receipt")
+    //@FindBy(xpath = "Print Or Send Receipt")
+    @FindBy(xpath = "Print Or Send Receipt")
     private WebElement printOrSendReceipt;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Egg White\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Egg White\"])[2]")
     private WebElement modifyToSwipe;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]")
     private WebElement table1Seat;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]")
     private WebElement mergeSlider;
 
-    @iOSXCUITFindBy(accessibility = "Empty List")
+    @FindBy(xpath = "Empty List")
     private WebElement emptyMergeList;
 
-    @iOSXCUITFindBy(accessibility = "New Check")
+    @FindBy(xpath = "New Check")
     private WebElement newCheck;
 
-    @iOSXCUITFindBy(accessibility = "Menu items(s) has to be sent to the kitchen")
+    @FindBy(xpath = "Menu items(s) has to be sent to the kitchen")
     private WebElement menuItemHasToBeSentToKitchen;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
     private WebElement check1OpenForCompleteSale;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther")
     private WebElement check2OpenForCompleteSale;
 
-    @iOSXCUITFindBy(accessibility = "item(s) need to send to kitchen")
+    @FindBy(xpath = "item(s) need to send to kitchen")
     private WebElement itemNeedToSendToKitchen;
 
-    @iOSXCUITFindBy(accessibility = "Cancel")
+    @FindBy(xpath = "Cancel")
     private WebElement cancelBtn;
 
-    @iOSXCUITFindBy(accessibility = "Right")
+    @FindBy(xpath = "Right")
     private WebElement rightBtn;
 
-    @iOSXCUITFindBy(accessibility = "Floor 2")
+    @FindBy(xpath = "Floor 2")
     private WebElement floor2Btn;
 
-    @iOSXCUITFindBy(accessibility = "Left")
+    @FindBy(xpath = "Left")
     private WebElement leftBtn;
 
-    @iOSXCUITFindBy(accessibility = "Floor 1")
+    @FindBy(xpath = "Floor 1")
     private WebElement floor1Btn;
 
-    @iOSXCUITFindBy(accessibility = "All Check")
+    @FindBy(xpath = "All Check")
     private WebElement allCheckBtn;
 
-    @iOSXCUITFindBy(accessibility = "Seated")
+    @FindBy(xpath = "Seated")
     private WebElement seatedBtn;
 
-    @iOSXCUITFindBy(accessibility = "Check Down")
+    @FindBy(xpath = "Check Down")
     private WebElement checkDownBtn;
 
-    @iOSXCUITFindBy(accessibility = "On Hold")
+    @FindBy(xpath = "On Hold")
     private WebElement onHoldBtn;
 
-    @iOSXCUITFindBy(accessibility = "Expired")
+    @FindBy(xpath = "Expired")
     private WebElement expiredBtn;
 
-    @iOSXCUITFindBy(accessibility = "Multiple")
+    @FindBy(xpath = "Multiple")
     private WebElement multipleBtn;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"0\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"0\"])[1]")
     private WebElement seatedStatus;
 
-    @iOSXCUITFindBy(accessibility = "Transfer to Server")
+    @FindBy(xpath = "Transfer to Server")
     private WebElement transferToServerTxt;
 
-    @iOSXCUITFindBy(accessibility = "Paid")
+    @FindBy(xpath = "Paid")
     private WebElement paidTxt;
 
-    @iOSXCUITFindBy(accessibility = "Order cannot be moved, Payment(s) has been made in seat - 1")
+    @FindBy(xpath = "Order cannot be moved, Payment(s) has been made in seat - 1")
     private WebElement orderCannotMovedTxt;
 
-    @iOSXCUITFindBy(accessibility = "Order cannot be moved, Payment(s) has been made in seat - 2")
+    @FindBy(xpath = "Order cannot be moved, Payment(s) has been made in seat - 2")
     private WebElement orderCannotMovedTxt1;
 
-    @iOSXCUITFindBy(accessibility = "Subtotal")
+    @FindBy(xpath = "Subtotal")
     private WebElement subtotalTxt;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 1.900,00\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 1.900,00\"])[2]")
     private WebElement subTotalPrice;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 1.500,00\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 1.500,00\"])[2]")
     private WebElement subTotalPrice1;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 400,00\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 400,00\"])[1]")
     private WebElement subTotalPrice2;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 1.900,00\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 1.900,00\"])[1]")
     private WebElement subTotalPrice4;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 190,00\"][4])")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 190,00\"][4])")
     private WebElement subTotalPrice5;
 
-    @iOSXCUITFindBy(accessibility = "1. Cash(#1)")
+    @FindBy(xpath = "1. Cash(#1)")
     private WebElement cashTxt;
 
-    @iOSXCUITFindBy(accessibility = "Empty seat cannot paid")
+    @FindBy(xpath = "Empty seat cannot paid")
     private WebElement emptySeatCannotPaidTxt;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[11]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[11]")
     private WebElement txt;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"GC-1111 \"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"GC-1111 \"])[2]")
     private WebElement gc;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeStaticText[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeStaticText[2]")
     private WebElement multiple;
 
 
@@ -393,7 +392,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
 
     public void checkTableSeatedDineIn() {
-        WebElement element = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"1\"][1]", "", TestUtils.XPath);
+        WebElement element = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"1\"][1]", "", TestUtils.Accessibility);
         if (element.isDisplayed()) {
             utils.log().info("there is 1 seats in T1");
         } else {
@@ -525,21 +524,21 @@ public class TableLayOutScreen extends OrderManagementScreen {
             utils.log().info("Transfer to server is not completed");
 
     }
-    @iOSXCUITFindBy(accessibility = "On merging the particular checks Discount will be removed. Do you want to continue?")
+    @FindBy(xpath = "On merging the particular checks Discount will be removed. Do you want to continue?")
     WebElement onMergingTheParticularChecksPopup;
     public void ShouldSeeOnMergingTheParticularCheckPopup(){
         Assert.assertEquals(onMergingTheParticularChecksPopup.getText(),"On merging the particular checks Discount will be removed. Do you want to continue?");
         utils.log().info("Displayed popup as - "+onMergingTheParticularChecksPopup.getText());
     }
 
-    @iOSXCUITFindBy(accessibility = "Merge Checks Confirmation")
+    @FindBy(xpath = "Merge Checks Confirmation")
     WebElement mergeCheckPopup;
     public void mergeCheckConfirmationPopup(){
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         Assert.assertEquals(mergeCheckPopup.getText(),"Merge Checks Confirmation");
         utils.log().info("Displayed popup as - "+mergeCheckPopup.getText());
     }
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Confirm\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Confirm\"]")
     WebElement confirmButton;
     public void clickConfirmButton(){
         elementClick(confirmButton,"Selected - "+confirmButton.getText());
@@ -554,7 +553,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(SplitBtn, "Tapped the Split Button");
     }
 
-    @iOSXCUITFindBy(accessibility = "Split Check")
+    @FindBy(xpath = "Split Check")
     WebElement SplitCheckBtn;
 
     public void pressSplitCheckBtn() {
@@ -574,7 +573,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
 
-    @iOSXCUITFindBy(accessibility = "Seat 1")
+    @FindBy(xpath = "Seat 1")
     WebElement seat1Table1;
 
     public void verifySplitSeatIsAvailable() {
@@ -592,38 +591,38 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void selectItem1(String name) {
 //XCUIElementTypeStaticText[@name="Garlic Bread "]
-        WebElement Item = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + name + " \"])", "", TestUtils.XPath);
+        WebElement Item = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + name + " \"])", "", TestUtils.Accessibility);
         elementClick(Item, "Select Item");
     }
 
     public void selectItem2() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[3]", "", TestUtils.Accessibility);
         elementClick(item1, "Select Item");
     }
 
     public void selectItem3() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"cake \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"cake \"])[3]", "", TestUtils.Accessibility);
         elementClick(item1, "Select Item");
     }
 
     public void selectItem6() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"cake \"])[2]", "", TestUtils.XPath);
+        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"cake \"])[2]", "", TestUtils.Accessibility);
         elementClick(item1, "Select Item");
     }
 
     public void selectItem4() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli Pesto \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli Pesto \"])[3]", "", TestUtils.Accessibility);
         elementClick(item1, "Select Item");
     }
 
     public void selectItem5() {
 
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Cheesecake \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Cheesecake \"])[3]", "", TestUtils.Accessibility);
         elementClick(item1, "Select Item");
     }
 
     public void selectRavioli() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[2]", "", TestUtils.XPath);
+        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[2]", "", TestUtils.Accessibility);
         elementClick(item1, "Select Item");
     }
 
@@ -713,7 +712,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void pressSplitEvenly() {
         elementClick(SplitEvenly, "Tapped Split Evenly in the Split Seat");
     }
-    @iOSXCUITFindBy(accessibility = "Cannot split as payment(s) has been made in seats - 2")
+    @FindBy(xpath = "Cannot split as payment(s) has been made in seats - 2")
     WebElement cannotSplitAsPayment;
     public void verifyCannotSplitAsPayments(){
         Assert.assertEquals(cannotSplitAsPayment.getText(),"Cannot split as payment(s) has been made in seats - 2");
@@ -842,14 +841,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(PrintAllSplitSeat, "Tapped Print All Button in the Split seat");
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[3]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[3]")
     WebElement printSplitCheck;
 
     public void clickPrintButtonSplitCheck() {
         elementClick(printSplitCheck, "Selcted Button as - " + printSplitCheck.getText());
     }
 
-    @iOSXCUITFindBy(accessibility = "Print All")
+    @FindBy(xpath = "Print All")
     WebElement printAllBtn;
 
     public void printAllBtn() {
@@ -948,7 +947,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void selectModifiersFromModifyScreen(String Modifier) {
-        WebElement modify = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Modifier + "\"])[2]", "", TestUtils.XPath);
+        WebElement modify = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Modifier + "\"])[2]", "", TestUtils.Accessibility);
         if (find(modify, 2)) {
             utils.log().info(modify + " Modifiers add into Select Modifiers");
         } else {
@@ -1009,7 +1008,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyCheckDownIsIncreased() {
-        WebElement check1 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
+        WebElement check1 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeStaticText[2]", "", TestUtils.Accessibility);
         String data = check1.getText();
         if (find(check1, 2)) {
             utils.log().info("Check Down is Increased - " + data);
@@ -1035,7 +1034,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyAllTypeChecks() {
-        WebElement e1 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]", "", TestUtils.XPath);
+        WebElement e1 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]", "", TestUtils.Accessibility);
         String data = e1.getText();
         utils.log().info(data + "datas");
     }
@@ -1130,7 +1129,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyCashApplied1(String money) {
-        WebElement menu = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + money + "\"])[2]", "", TestUtils.XPath);
+        WebElement menu = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + money + "\"])[2]", "", TestUtils.Accessibility);
         if (menu.isDisplayed()) {
             utils.log().info("cash is Added - " + money);
         } else {
@@ -1144,7 +1143,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyPaidAmount(String prize) {
-        WebElement paidAmount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + prize + "\"])[5]", "", TestUtils.XPath);
+        WebElement paidAmount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + prize + "\"])[5]", "", TestUtils.Accessibility);
         if (paidAmount.isDisplayed()) {
             utils.log().info("Paid AMount is Displayed - " + prize);
         } else {
@@ -1153,7 +1152,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyPaidAmountFrenchFriese(String amount) {
-        WebElement paidAmount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + amount + "\"])[4]", "", TestUtils.XPath);
+        WebElement paidAmount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + amount + "\"])[4]", "", TestUtils.Accessibility);
         if (find(paidAmount, 2)) {
             utils.log().info("Paid AMount is Displayed - " + amount);
         } else {
@@ -1162,7 +1161,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyMenuItemPrizeSplit() {
-        WebElement amount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 1.250,00\"])[1]", "", TestUtils.XPath);
+        WebElement amount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 1.250,00\"])[1]", "", TestUtils.Accessibility);
         String money = amount.getText();
         if (amount.isDisplayed()) {
             utils.log().info("Menu Item Prize is split Evenly - " + money);
@@ -1172,8 +1171,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyDiscountIsApplied(String Discount) {
-        WebElement discount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[3]", "", TestUtils.XPath);
-        WebElement discount1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[5]", "", TestUtils.XPath);
+        WebElement discount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[3]", "", TestUtils.Accessibility);
+        WebElement discount1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[5]", "", TestUtils.Accessibility);
 
         if ((discount.isDisplayed()) && (discount1.isDisplayed())) {
             utils.log().info("Discount is split - " + Discount);
@@ -1183,7 +1182,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyDiscountIsMovedIntoNextSeat(String Discount) {
-        WebElement discount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[2]", "", TestUtils.XPath);
+        WebElement discount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[2]", "", TestUtils.Accessibility);
         if (discount.isDisplayed()) {
             utils.log().info("Discount is moved into next seat - " + Discount);
         } else {
@@ -1220,7 +1219,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void verifySubtotalShouldNotChange() {
         WebElement delivery = mergeAndFindElement("Subtotal", "", TestUtils.Accessibility);
         String total = delivery.getText();
-        WebElement amount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 0,00\"])[1]", "", TestUtils.XPath);
+        WebElement amount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 0,00\"])[1]", "", TestUtils.Accessibility);
         String Price = amount.getText();
         if ((delivery.isDisplayed()) && (amount.isDisplayed())) {
             utils.log().info(total);
@@ -1247,7 +1246,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void getCreditCardValue() {
 //        iOSScrollToElementUsingMobileScroll(txt);
         WebElement credit = mergeAndFindElement("Credit Card", "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"0,00\"])[1]", "", TestUtils.XPath);
+        WebElement price = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"0,00\"])[1]", "", TestUtils.Accessibility);
 
         if (txt.isDisplayed()) {
             String data = credit.getText();
@@ -1261,7 +1260,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void giftCardSeat1() {
         String Gift = gc.getText();
-        WebElement sub = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]", "", TestUtils.XPath);
+        WebElement sub = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]", "", TestUtils.Accessibility);
         String total = sub.getText();
         if (gc.isDisplayed() && sub.isDisplayed()) {
             utils.log().info("Gift card is displayed in seat 1 with amount - " + Gift + " - " + total);
@@ -1272,7 +1271,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void giftCardSeat2() {
         String Gift = gc.getText();
-        WebElement sub = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]", "", TestUtils.XPath);
+        WebElement sub = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]", "", TestUtils.Accessibility);
         String total = sub.getText();
         if (gc.isDisplayed() && sub.isDisplayed()) {
             utils.log().info("Gift card is displayed in seat 2 with amount - " + Gift + " - " + total);
@@ -1285,7 +1284,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(gc, "Tapped Gift card in Seat 1");
     }
 
-    @iOSXCUITFindBy(accessibility = "Batch/Tip Adjustment")
+    @FindBy(xpath = "Batch/Tip Adjustment")
     WebElement batchTipAdjustBtn;
 
     public void clickBatchTipButton() {
@@ -1361,11 +1360,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Batch In Progress")
+    @FindBy(xpath = "Batch In Progress")
     WebElement batchInProgress;
-    @iOSXCUITFindBy(accessibility = "Batch Completed")
+    @FindBy(xpath = "Batch Completed")
     WebElement batchComplete;
-    @iOSXCUITFindBy(accessibility = "ToggleIcon")
+    @FindBy(xpath = "ToggleIcon")
     WebElement ToggleIcon;
 
 
@@ -1392,7 +1391,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
 
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"Search\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Search\"`]")
     WebElement searchTextField;
 
     public void clickTheCheckFromBatchScreen() {

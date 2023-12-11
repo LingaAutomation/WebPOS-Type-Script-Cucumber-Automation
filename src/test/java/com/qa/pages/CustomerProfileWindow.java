@@ -2,14 +2,11 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import org.openqa.selenium.support.FindBy;
 import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.touch.TouchActions;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -17,135 +14,135 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 
     public String loyalty="";
 
-    @iOSXCUITFindBy(accessibility = "Customer Profile")
+    @FindBy(xpath = "Customer Profile")
     private WebElement titleTxt;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[1]")
     private WebElement phoneAsterisk;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[2]")
     private WebElement addressAsterisk;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
     private WebElement searchField;
 
-    //    @iOSXCUITFindBy(accessibility = "Auto ragav  +919080344 ")
-    @iOSXCUITFindBy(accessibility = "Auto ragav 9876887899 ")   // Nov 16
-    // @iOSXCUITFindBy (accessibility = "Engin  Basarand +905012345 ")
+    //    @FindBy( = "Auto ragav  +919080344 ")
+    @FindBy(xpath = "Auto ragav 9876887899 ")   // Nov 16
+    // @FindBy ( = "Engin  Basarand +905012345 ")
     private WebElement customerToSelect;
 
 
-    @iOSXCUITFindBy(accessibility = "auto membership 876997065 ")   // Nov 16
-    // @iOSXCUITFindBy (accessibility = "Engin  Basarand +905012345 ")
+    @FindBy(xpath = "auto membership 876997065 ")   // Nov 16
+    // @FindBy ( = "Engin  Basarand +905012345 ")
     private WebElement customerToSelectForMembership;
 
-    @iOSXCUITFindBy(accessibility = "tax exe 787679878 ")
+    @FindBy( xpath = "tax exe 787679878 ")
     private WebElement customerToSelectForTaxExempt;
 
-    //    @iOSXCUITFindBy(accessibility = "Auto ragav  +919080344 ")
-    @iOSXCUITFindBy(accessibility = "auto test 9878789 ")
-    // @iOSXCUITFindBy (accessibility = "Engin  Basarand +905012345 ")
+    //    @FindBy( = "Auto ragav  +919080344 ")
+    @FindBy(xpath = "auto test 9878789 ")
+    // @FindBy ( = "Engin  Basarand +905012345 ")
     private WebElement customerToSelectForNmi;
 
 
-    @iOSXCUITFindBy(xpath =  "//XCUIElementTypeButton[@name=\"Save\"]")
+    @FindBy(xpath =  "//XCUIElementTypeButton[@name=\"Save\"]")
     private WebElement saveBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeSwitch")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeSwitch")
     private WebElement taxExemptCustomer;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Customer Plan\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Customer Plan\"]")
     private WebElement customerPlanButton;
 
-    @iOSXCUITFindBy(accessibility = "Account Types")
+    @FindBy(xpath = "Account Types")
     private WebElement accountTypeScreen;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[1]")
     private WebElement houseAccTxtField;
 
-    @iOSXCUITFindBy(accessibility = "House Account")
+    @FindBy(xpath = "House Account")
     private WebElement houseAccount;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[3]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[3]")
     private WebElement rechargeField;
 
-    //@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[6]")
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"CustomerProfile DownArrow\"])[6]")
+    //@FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[6]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"CustomerProfile DownArrow\"])[6]")
     private WebElement limitField;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[4]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[4]")
     private WebElement limitTxtField;
 
-    @iOSXCUITFindBy(accessibility = "Daily")
+    @FindBy(xpath = "Daily")
     private WebElement dailyBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[2]")
     private WebElement cardNumberFld;
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     private WebElement continueBtn;
 
-    @iOSXCUITFindBy(accessibility = "Update")
+    @FindBy(xpath = "Update")
     private WebElement updateBtn;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[2]")
     private WebElement saveAccType;
 
-    @iOSXCUITFindBy(accessibility = "HA-3578655")
+    @FindBy(xpath = "HA-3578655")
     private WebElement houseAccountHA;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSwitch[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSwitch[1]")
     private WebElement limitEnable;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]")
     private WebElement firstNameFld;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[2]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[2]")
     private WebElement lastNameFld;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[5]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[5]")
     private WebElement mobileNumberFld;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[7]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[7]")
     private WebElement mailNameFld;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Add\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Add\"])[1]")
     private WebElement addMobileNumber;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[1]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[1]")
     private WebElement saveMobileNumber;
 
-    @iOSXCUITFindBy(accessibility = "Loyalty   0,00")
+    @FindBy(xpath = "Loyalty   0,00")
     private WebElement loyaltyBtn;
 
-    @iOSXCUITFindBy(accessibility = "auto loyaltytest 67891234598 ")
+    @FindBy(xpath = "auto loyaltytest 67891234598 ")
     private WebElement loyalCustomer;
 
-    @iOSXCUITFindBy(accessibility = "Loyalty Balance")
+    @FindBy(xpath = "Loyalty Balance")
     private WebElement loyaltyBalanceScreen;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell")
     private WebElement verifyLoyalty;
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"CustomerProfile Close\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"CustomerProfile Close\"])[2]")
     WebElement closeLoyaltyBalance;
 
-    @iOSXCUITFindBy(accessibility = "Enter Email Id or Mobile Number")
+    @FindBy(xpath = "Enter Email Id or Mobile Number")
     WebElement emailMobileNumberTxt;
 
-    @iOSXCUITFindBy(accessibility = "CustomerProfile Close")
+    @FindBy(xpath = "CustomerProfile Close")
     WebElement customerProfileCloseBtn;
 
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSwitch[1]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSwitch[1]")
     WebElement limitDisableBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[4]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[4]")
     WebElement limitValueBtn;
 
     public String verifyAccountType(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        return elementGetText(accountTypeScreen,"Account Type is displayed - ");
+        return elementGetText(accountTypeScreen,"Text");
     }
 
 
@@ -176,37 +173,37 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     
 
     public String getTitle() {
-        return elementGetText(titleTxt, "user login window's title is - ");
+        return elementGetText(titleTxt,"Text");
     }
 
     public String getPhoneAsterisk() {
-        return elementGetText(phoneAsterisk, "* next to Phone field - ");
+        return elementGetText(phoneAsterisk,"Text");
     }
 
     public String getAddressAsterisk() {
-        return elementGetText(addressAsterisk, "* next to Phone field - ");
+        return elementGetText(addressAsterisk,"Text");
     }
 
     public void pressSearchField() {
         elementClick(searchField, "Tapped search Phone");
     }
-    @iOSXCUITFindBy(xpath ="//*[@name=\"Hide keyboard\"]")
+    @FindBy(xpath ="//*[@name=\"Hide keyboard\"]")
     private WebElement hideKeyboardButton;
 
-    @iOSXCUITFindBy(accessibility = "New Customer")
+    @FindBy( xpath = "New Customer")
     private WebElement addCustomerToTableBtn;
 
-    @iOSXCUITFindBy(accessibility = "Add New")
+    @FindBy(xpath = "Add New")
     private WebElement addNewBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
     private WebElement search;
 
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"5876568\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"5876568\"`]")
     WebElement cardNumber;
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"Basic Level 2\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Basic Level 2\"`]")
     WebElement membershipName;
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"Price Level 2\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Price Level 2\"`]")
     WebElement membershipType;
 
 
@@ -229,14 +226,14 @@ public class CustomerProfileWindow extends OrderTypeWindow{
                 String cardNumberTxt = cardNumber.getText();
                 Assert.assertEquals(cardNumberTxt,"5876568");
                 utils.log().info("Card Number - "+cardNumberTxt);
-              //  WebElement membershipName = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
+              //  WebElement membershipName = (WebElement) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
                 Assert.assertEquals(membershipName.getText(),"Basic Level 2");
                 utils.log().info("Membership Name - "+membershipName.getText());
-              //  WebElement membershipType = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
+              //  WebElement membershipType = (WebElement) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
                 Assert.assertEquals(membershipType.getText(),"Price Level 2");
                 utils.log().info("Membership Type - "+membershipType.getText());
 //                                                                                                XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther
-//                WebElement balanceAmount = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[5]");
+//                WebElement balanceAmount = (WebElement) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[5]");
 //                utils.log().info("Balance Amount - "+balanceAmount.getText());
                 elementClick(updateBtn,"Update Button selected");
             }else{
@@ -339,7 +336,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public String houseAccountOnOrderScreen(){
-        return elementGetText(houseAccountHA,"House Account is displayed - ");
+        return elementGetText(houseAccountHA,"Text");
     }
 
     public void iEnterCustomerFirstName(String name){ sendKeys(firstNameFld,name); }
@@ -357,7 +354,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
     public void clickLoyaltyButton(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
+        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.Accessibility);
         String loyal1=loyal.getText();
         elementClick(loyal,loyal1 + " - Tapped Loyalty Button");
 
@@ -365,7 +362,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 
     public String verifyLoyaltyScreen(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        return elementGetText(loyaltyBalanceScreen,"Loyalty Balance window is displayed - ");
+        return elementGetText(loyaltyBalanceScreen,"Text");
     }
 
     public void selectCustomerLoyalty(){
@@ -385,7 +382,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
         String globalCheckNumber = TestUtils.globalCheckNumber;
 
 
-//        List<WebElement> list= (List<WebElement>) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell");
+//        List<WebElement> list= (List<WebElement>) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell");
 //        int size1=list.size();
 
 //
@@ -398,13 +395,13 @@ public class CustomerProfileWindow extends OrderTypeWindow{
             utils.log().info(globalCheckNumber);
         }
 
-//            WebElement balanceDate = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]");
+//            WebElement balanceDate = (WebElement) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]");
 //            String date = balanceDate.getText();
-//            WebElement CheckNo = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[2]");
+//            WebElement CheckNo = (WebElement) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[2]");
 //            String number = CheckNo.getText();
-//            WebElement type = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[3]");
+//            WebElement type = (WebElement) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[3]");
 //            String Type = type.getText();
-//            WebElement amount = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[4]");
+//            WebElement amount = (WebElement) driver.findElement(By.xpath = ()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[4]");
 //            String money = amount.getText();
 //
 //            if (globalCheckNumber.equals(number)) {
@@ -417,7 +414,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     public void compareLoyaltyBalance(){
 driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         String loyal1=TestUtils.loyaltyBalance;
-        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
+        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.Accessibility);
         String loyal2=loyal.getText();
         if(loyal1.equals(loyal2)){
             utils.log().info("Loyalty Balance is Same"+" Before Sale"+ " "+loyal1+ " & "+"After Sale"+" "+loyal2);
@@ -429,14 +426,14 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 
     public void verifyLoyaltyBalanceInCustomerProfileWindow(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
+        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.Accessibility);
         String loyal2=loyal.getText();
         utils.log().info("Loyalty balance in Customer profile Window - "+loyal2);
     }
     public String getLoyaltyBalance() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         Thread.sleep(1000);
-        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
+        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.Accessibility);
         loyalty=loyal.getText();
         TestUtils.loyaltyBalance=loyalty;
         utils.log().info("Loyalty balance in Customer profile Window - "+loyalty);
@@ -541,7 +538,7 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         }
     }
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[2]")
     WebElement saveBtnnn;
     public void clickSaveBtnInTheAccountTypeScreen(){
         elementClick(saveBtnnn,"Selected Save Btn");

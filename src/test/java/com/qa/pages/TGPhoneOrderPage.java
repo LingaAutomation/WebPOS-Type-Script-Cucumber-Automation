@@ -2,7 +2,6 @@ package com.qa.pages;
 
 import com.google.common.collect.Iterables;
 import com.qa.utils.TestUtils;
-import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import io.cucumber.java.an.E;
 import org.joda.time.base.BaseLocal;
