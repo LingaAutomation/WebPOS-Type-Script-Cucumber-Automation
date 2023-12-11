@@ -7,8 +7,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 public class CIEightySixListStepDef {
+
+    public WebDriver driver = Hooks.driver;
 
     CIWaitListPage waitList=new CIWaitListPage();
     CIPaymentScreen ciPaymentScreen = new CIPaymentScreen();
@@ -382,12 +385,12 @@ public class CIEightySixListStepDef {
 
     @And ("^I click 86List button in the login screen$")
     public void iClick86ListButtonInTheLoginScreen(){
-        new OrderManagementScreen().click86ListButtonInLoginScreen();
+        new OrderManagementScreen(driver).click86ListButtonInLoginScreen();
     }
 
     @Then ("^I should see quantity is not enough popup$")
     public void iShouldSeeQuantityIsNotEnoughPopup(){
-        new OrderManagementScreen().verifyQuantityIsNotEnoughPopup1();
+        new OrderManagementScreen(driver).verifyQuantityIsNotEnoughPopup1();
     }
 
     @Then ("^I should verify 86 list menu as \"([^\"]*)\" with quantity as \"([^\"]*)\"$")

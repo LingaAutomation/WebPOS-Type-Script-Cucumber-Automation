@@ -1,9 +1,14 @@
 package com.qa.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 
 public class TGPaymentReasons extends TillManagementScreen{
+
+    public TGPaymentReasons(WebDriver driver) {
+        super(driver);
+    }
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Reasons\"]" )
 //    private WebElement reasonsWindowTitle;
@@ -20,6 +25,8 @@ public class TGPaymentReasons extends TillManagementScreen{
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Ok\"]" )
 //    private WebElement okBtn;
     public By okBtn = By.id("Ok");
+
+
 
     public String getReasonsWindowTitle() {
 

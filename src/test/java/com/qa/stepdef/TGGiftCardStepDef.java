@@ -4,8 +4,6 @@ import com.qa.pages.CICloseDayScreen;
 import com.qa.pages.TGCheckOptionPage;
 import com.qa.pages.TGGiftCard;
 import com.qa.pages.TGPaymentPage;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

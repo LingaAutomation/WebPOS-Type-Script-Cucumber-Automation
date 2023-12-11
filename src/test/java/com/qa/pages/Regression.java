@@ -6,9 +6,10 @@ import io.cucumber.java.hu.De;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import static com.qa.pages.DriverSteup.driver;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -19,6 +20,11 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Regression extends TableLayOutScreen {
+
+    public WebDriver driver;
+    public Regression(WebDriver driver1) {
+        super(DriverSteup.driver);
+    }
     public String checkNumber = "";
     @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
     private WebElement searchFldDiscount;
@@ -343,7 +349,7 @@ public class Regression extends TableLayOutScreen {
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
     private WebElement doneButton;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
+    @FindBy(xpath = "//linga-icon[@symbol='chevron']")
     public WebElement arrowDownForOtherMenuItems;
 
     @FindBy(xpath = "Cancel")
@@ -373,6 +379,8 @@ public class Regression extends TableLayOutScreen {
     WebElement tipAs10;
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Payment\"]")
     private WebElement paymentBtn;
+
+
 
     public void mppgSale() throws Exception {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -1550,7 +1558,7 @@ public class Regression extends TableLayOutScreen {
                 itemToSelect = 1;
             }
             utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
+            WebElement tableNum = (WebElement) mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]", "", TestUtils.Accessibility);
             utils.log().info(tableNum.getText());
             elementClick(tableNum, "Tapped Table Number");
         }
@@ -1723,7 +1731,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -1868,7 +1876,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2025,7 +2033,7 @@ public class Regression extends TableLayOutScreen {
                                     elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                     try {
-                                        WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                        WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                         WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                         WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                         WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2115,7 +2123,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2326,64 +2334,66 @@ public class Regression extends TableLayOutScreen {
 
     public String[] a = {};
 
-    public void selectMenuBasicValidationForQsr(String category) {
+    public void selectMenuBasicValidationForQsr(String category) throws Exception {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-        WebElement cate = (WebElement) driver.findElement(By.xpath(category));
-        elementClick(cate, "Tapped category");
+        WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+category+"')]"));
+        elementClick(cate1, "Tapped category");
+        Thread.sleep(5000);
         /*****  RandOm Select Menu ****/
-        WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-        check = order.getText();
-        TestUtils.tableNumberof = check;
-        try {
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    itemToSelect1 = rand1.nextInt(count1);
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info(String.valueOf(itemToSelect1));
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-                                elementClick(doneButton, "Tapped Done");
-                        } else {}
-                    } catch (Exception x) {}
-                }
-            }
-        } catch (Exception h) {
-            List<WebElement> menuCollection2 = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-            int count1 = menuCollection2.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 1; j++) {
-                itemToSelect1 = rand1.nextInt(count1);
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-                utils.log().info(String.valueOf(itemToSelect1));
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-                            elementClick(doneButton, "Tapped Done");
-                    } else {
-                    }
-                } catch (Exception x) { }
-            }
-        }
+        Select_RandomMenuItems(driver);
+//        WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
+//        check = order.getText();
+//        TestUtils.tableNumberof = check;
+//        try {
+//            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
+//            if (find(menuCollection1, 2)) {
+//                List<WebElement> menuCollection = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
+//                int count1 = menuCollection.size();
+//                Random rand1 = new Random();
+//                for (int j = 1; j <= 2; j++) {
+//                    itemToSelect1 = rand1.nextInt(count1);
+//                    if (itemToSelect1 == 0) {
+//                        itemToSelect1 = 1;
+//                    }
+////                    utils.log().info(String.valueOf(itemToSelect1));
+//                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
+//                    utils.log().info(menu.getText());
+//                    elementClick(menu, "Tapped Menu");
+//                    try {
+//                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
+//                        if ((mainModi.isDisplayed())) {
+//                            String mainModifier = mainModi.getText();
+//                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
+//                                elementClick(doneButton, "Tapped Done");
+//                        } else {}
+//                    } catch (Exception x) {}
+//                }
+//            }
+//        } catch (Exception h) {
+//            List<WebElement> menuCollection2 = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+//            int count1 = menuCollection2.size();
+//            Random rand1 = new Random();
+//            for (int j = 1; j <= 1; j++) {
+//                itemToSelect1 = rand1.nextInt(count1);
+//                if (itemToSelect1 == 0) {
+//                    itemToSelect1 = 1;
+//                }
+//                utils.log().info(String.valueOf(itemToSelect1));
+//                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
+//                utils.log().info(menu.getText());
+//                elementClick(menu, "Tapped Menu");
+//                try {
+//                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
+//                    if ((mainModi.isDisplayed())) {
+//                        String mainModifier = mainModi.getText();
+//                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
+//                            elementClick(doneButton, "Tapped Done");
+//                    } else {
+//                    }
+//                } catch (Exception x) { }
+//            }
+//        }
     }
 
 
@@ -2472,7 +2482,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2563,7 +2573,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2662,7 +2672,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -2753,7 +2763,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -3339,7 +3349,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -3430,7 +3440,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -4716,7 +4726,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -4807,7 +4817,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -4966,7 +4976,7 @@ public class Regression extends TableLayOutScreen {
                                 elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                                 try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                     WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                     WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5057,7 +5067,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5172,7 +5182,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5256,7 +5266,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5366,7 +5376,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5450,7 +5460,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5573,7 +5583,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5664,7 +5674,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5822,7 +5832,7 @@ public class Regression extends TableLayOutScreen {
                             elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                             try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                                 WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                                 WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -5914,7 +5924,7 @@ public class Regression extends TableLayOutScreen {
                         elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
 
                         try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.xpath);
+                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
                             WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
                             WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
@@ -6693,7 +6703,7 @@ public class Regression extends TableLayOutScreen {
 
         WebElement tableSelect = (WebElement) driver.findElement(By.xpath(m));
         if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
-//            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.XPath);
+//            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.Accessibility);
 //            String number1 = seatt.getText();
             Thread.sleep(100);
             elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
@@ -6733,7 +6743,7 @@ public class Regression extends TableLayOutScreen {
 
         WebElement tableSelect = (WebElement) driver.findElement(By.xpath(m));
         if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
-//            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.XPath);
+//            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.Accessibility);
 //            String number1 = seatt.getText();
             Thread.sleep(100);
             elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
@@ -7323,8 +7333,8 @@ public class Regression extends TableLayOutScreen {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         try {
             if (cashierOutSavedSuccessfullyPopup.isDisplayed()) {
-                utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
-                elementClick(Done1, "Tapped Done Button on the Popup");
+//                utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
+//                elementClick(Done1, "Tapped Done Button on the Popup");
             }
         } catch (Exception z) {
             WebElement cashBtn = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"Cash\"]"));

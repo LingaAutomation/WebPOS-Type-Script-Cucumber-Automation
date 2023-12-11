@@ -4,8 +4,6 @@ import com.qa.pages.TGGiftCard;
 import com.qa.pages.TGLogOuts;
 import com.qa.pages.TGSignInScreen;
 import com.qa.pages.TGUserLoginScreen;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

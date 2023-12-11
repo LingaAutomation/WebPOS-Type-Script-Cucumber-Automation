@@ -1,25 +1,23 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
+import org.openqa.selenium.WebDriver;
 
 
 public class TGDiscountStepDef {
 
+    public WebDriver driver = Hooks.driver;
     @And("^Go to the BO$")
     public void GoToTheBO() throws InterruptedException {
-        new ClockInScreen().goToBO();
+        new ClockInScreen(driver).goToBO();
     }
 
     @When("^I search the store as \"([^\"]*)\"$")
     public void iSearchTheStoreAs(String store) throws InterruptedException {
-        new ClockInScreen().selectTheStore(store);
+        new ClockInScreen(driver).selectTheStore(store);
     }
 
     @Then("User click Option Tab")

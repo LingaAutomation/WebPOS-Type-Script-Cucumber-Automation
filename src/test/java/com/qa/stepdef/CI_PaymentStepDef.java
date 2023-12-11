@@ -10,8 +10,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 
 public class CI_PaymentStepDef {
+
+    public WebDriver driver = Hooks.driver;
 
     CIPaymentScreen ciPaymentScreen = new CIPaymentScreen();
     CICloseDayScreen ciCloseDayScreen = new CICloseDayScreen();
@@ -279,7 +282,7 @@ public class CI_PaymentStepDef {
     }
     @When ("^I verify recharge givex amount is same with order screen givex amount$")
     public void iVerifyRechargeGivexAmountIsSameWithOrderScreenGivexAmount(){
-        new CheckOptionsScreen().verifyRechargeGivexAmountIsSameWithOrderScreenGivexAmount();
+        new CheckOptionsScreen(driver).verifyRechargeGivexAmountIsSameWithOrderScreenGivexAmount();
     }
 
     @And("I click \"([^\"]*)\" in the Give-X Card popup \"([^\"]*)\"$")

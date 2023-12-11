@@ -1,9 +1,14 @@
 package com.qa.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 
 public class TGOrderManagementScreen extends OrderTypeWindow{
+    public TGOrderManagementScreen(WebDriver driver) {
+        super(driver);
+    }
+
 //    @iOSXCUITFindBy(id = "Counting Machine" ) //id("Counting Machine").click();))
 //    private WebElement countingMachineBtn;
     public By countingMachineBtn = By.id("Counting Machine");
@@ -89,11 +94,13 @@ public class TGOrderManagementScreen extends OrderTypeWindow{
 //    private WebElement finishOrderBtn;
     public By finishOrderBtn = By.id("finish");
 
+
+
     public TGTillManagementScreen pressCountingMachineBtn(){
         WebElement element=mergeAndFindMobileElement(countingMachineBtn);
         elementClick(element, "Counting Machine button pressed - ");
 //        elementClick(countingMachineBtn, "Counting Machine button pressed - ");
-        return  new TGTillManagementScreen();
+        return  new TGTillManagementScreen(driver);
     }
 
     public void pressArrowDown1 (){

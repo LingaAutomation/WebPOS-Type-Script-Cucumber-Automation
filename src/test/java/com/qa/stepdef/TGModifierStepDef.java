@@ -4,13 +4,13 @@ import com.qa.pages.CIPaymentScreen;
 import com.qa.pages.TGMenuItemPage;
 import com.qa.pages.TGModifierPage;
 import com.qa.pages.TableLayOutScreen;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
 
 public class TGModifierStepDef {
+    public WebDriver driver = Hooks.driver;
 
     @When("User select first modifier on modifier page")
     public void userSelectFirstModifierOnModifierPage() {
@@ -41,7 +41,7 @@ public class TGModifierStepDef {
     public void iTouchAndSwipeAndDeleteTheModifiers() throws InterruptedException {
             new TGModifierPage().swipeTheModifiersAndDelete();
             new TGModifierPage().swipeTheModifier();
-            new TableLayOutScreen().clickDeleteBtn();
+            new TableLayOutScreen(driver).clickDeleteBtn();
 
         }
     }

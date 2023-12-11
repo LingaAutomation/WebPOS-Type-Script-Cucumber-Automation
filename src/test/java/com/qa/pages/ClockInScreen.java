@@ -1,17 +1,25 @@
 package com.qa.pages;
 
+import com.qa.stepdef.Hooks;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import static com.qa.pages.DriverSteup.driver;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
 public class ClockInScreen extends UserLoginScreen{
 
+    public WebDriver driver;
 
+    public ClockInScreen(WebDriver driver1) {
+        this.driver = DriverSteup.driver;
+      PageFactory.initElements(driver, this);
+  }
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
     WebElement paymentPin1;
@@ -58,7 +66,7 @@ public class ClockInScreen extends UserLoginScreen{
     @FindBy (xpath = "Clear")
     private WebElement clearBtn;
 
-    @FindBy (xpath = "Login")
+    @FindBy (xpath = "//button[contains(.,'Login')]")
     private WebElement loginBtn;
 
     @FindBy (id = "To Login enter your ID number or swipe the card")
@@ -144,7 +152,7 @@ public class ClockInScreen extends UserLoginScreen{
         elementClick(pin2Time1, "Tapped pin 2");
     }
     public void pressPin1Time() {
-        elementClick(driver.findElement(By.xpath("")), "Tapped pin 1");
+        elementClick(pin1Time1, "Tapped pin 1");
     }
     public void pressPin0Time() {
         elementClick(pin0Time1, "Tapped pin 0");
@@ -196,17 +204,12 @@ public class ClockInScreen extends UserLoginScreen{
 
     public OrderTypeWindow ClockIn (){
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
-//        pressPin1();
-//        pressPin2();
-//        pressPin3();
-//        pressPin4();
-//        pressLogin();
-        pressPin1Time();
-        pressPin2Time();
-        pressPin3Time();
-        pressPin4Time();
-        pressLogin();
-        return new OrderTypeWindow();
+        driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[1]/button")).click();
+        driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[2]/button")).click();
+        driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[3]/button")).click();
+        driver.findElement(By.xpath("//ion-grid/ion-row[5]/ion-col[1]/button")).click();
+        driver.findElement(By.xpath("//button[contains(.,'Login')]")).click();
+        return new OrderTypeWindow(driver);
     }
 
     public void clockinPin(){
@@ -292,7 +295,7 @@ public class ClockInScreen extends UserLoginScreen{
         pressPin0();
         pressPin1();
         pressLogin();
-        return new BarTabScreen();
+        return new BarTabScreen(driver);
     }
 
     public BarTabScreen  ClockInForBarTabForBasicValidation(){
@@ -301,7 +304,7 @@ public class ClockInScreen extends UserLoginScreen{
         pressPin9Time();
         pressPin8Time();
         pressLogin();
-        return new BarTabScreen();
+        return new BarTabScreen(driver);
     }
     public void ClockInForBarTab1(){
         pressPin0();
@@ -335,13 +338,13 @@ public class ClockInScreen extends UserLoginScreen{
         pressLogin();
     }
 
-    public ClockInScreen ClockInForBarTabUsingBarTabButton(){
-        pressPin1();
-        pressPin2();
-        pressPin3();
-        pressPin4();
-        return new ClockInScreen();
-    }
+//    public ClockInScreen ClockInForBarTabUsingBarTabButton(){
+//        pressPin1();
+//        pressPin2();
+//        pressPin3();
+//        pressPin4();
+//        return new ClockInScreen();
+//    }
 
     public TableLayOutScreen ClockInForTableScreen(){
         pressPin2();
@@ -349,7 +352,7 @@ public class ClockInScreen extends UserLoginScreen{
         pressPin2();
         pressPin2();
         pressLogin();
-        return new TableLayOutScreen();
+        return new TableLayOutScreen(driver);
     }
     public void priceFrenchFries(){
         pressPin7();
@@ -766,13 +769,13 @@ WebElement operationBtnClockInScreen;
     WebElement pin6Time1;
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])[1]")
     WebElement pin5Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"4\"])[1]")
+    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[4]/button[1]")
     WebElement pin4Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"3\"])[1]")
+    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[3]/button[1]")
     WebElement pin3Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])[1]")
+    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[2]/button[1]")
     WebElement pin2Time1;
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[1]/button[1]")
     WebElement pin1Time1;
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"7\"])[1]")
     WebElement pin7Time1;
@@ -854,7 +857,7 @@ WebElement operationBtnClockInScreen;
         driver1.get("https://mystore.lingapos.com/#/login");
         ClockIn();
         Thread.sleep(1000);
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
         driver1.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 //
 //        Actions a = new Actions(driver1);

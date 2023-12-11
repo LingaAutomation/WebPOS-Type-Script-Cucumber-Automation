@@ -2,6 +2,7 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,10 @@ import org.openqa.selenium.support.FindBy;
 import java.util.concurrent.TimeUnit;
 
 public class OrderTypeWindow extends ClockInScreen {
+
+    public OrderTypeWindow(WebDriver driver) {
+        super(driver);
+    }
 
     @FindBy(xpath = "For Here")
     private WebElement forHereBtn;
@@ -40,7 +45,7 @@ public class OrderTypeWindow extends ClockInScreen {
     @FindBy(xpath = "Done")
     private WebElement doneBtn;
 
-    @FindBy(xpath = "Cancel")
+    @FindBy(xpath = "//button[contains(.,'Cancel')]")
     private WebElement cancelBtn;
 
     @FindBy(id = "Order Type")
@@ -57,6 +62,8 @@ public class OrderTypeWindow extends ClockInScreen {
 
     @FindBy( xpath = "Egg White")
     private WebElement eggWhite;
+
+
 
 
     public String orderTypeName(String name){
@@ -136,7 +143,7 @@ public class OrderTypeWindow extends ClockInScreen {
 
     public CustomerProfileWindow pressDoneBtn() {
         elementClick(doneBtn, "Order type selection is done.");
-        return new CustomerProfileWindow();
+        return new CustomerProfileWindow(driver);
     }
 
     public String visibleEmpty() {

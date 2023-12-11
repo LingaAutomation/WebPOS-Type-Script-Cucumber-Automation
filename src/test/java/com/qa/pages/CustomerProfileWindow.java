@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import io.cucumber.java.bs.A;
@@ -11,6 +12,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CustomerProfileWindow extends OrderTypeWindow{
+
+    public CustomerProfileWindow(WebDriver driver) {
+        super(driver);
+    }
 
     public String loyalty="";
 
@@ -139,6 +144,8 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[4]")
     WebElement limitValueBtn;
+
+
 
     public String verifyAccountType(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);

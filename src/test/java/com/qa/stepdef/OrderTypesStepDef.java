@@ -6,389 +6,394 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.messages.Messages;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import static com.qa.pages.DriverSteup.driver;
 
 public class OrderTypesStepDef {
 
+    public WebDriver driver = DriverSteup.driver;
+
     @And("^I'm logged in$")
     public void i_m_logged_in() {
-        new ClockInScreen().ClockIn();
+        new ClockInScreen(driver).ClockIn();
     }
 
     @Given ("^I'm logged in for clock-in required$")
     public void iMLoggedInForClockInRequired(){
-        new ClockInScreen().ClockInForClockInRequired();
+        new ClockInScreen(driver).ClockInForClockInRequired();
     }
 
     @And("^Enter the clock pin for clock-in required$")
     public void enterTheClockPinForClockInRequired(){
-        new ClockInScreen().ClockInForClockInRequired1();
+        new ClockInScreen(driver).ClockInForClockInRequired1();
     }
 
     @Given ("^I'm logged in of multi role user for clock-in required$")
     public void iMLoggedInOfMultiRoleUserForClockinRequired(){
-        new ClockInScreen().loggedInOfMultiRoleForClockInRequired();
+        new ClockInScreen(driver).loggedInOfMultiRoleForClockInRequired();
     }
 
     @Given ("^I enter clock in pin$")
     public void iEnterClockInPin(){
-        new ClockInScreen().clockinPin();
+        new ClockInScreen(driver).clockinPin();
     }
 
     @Given ("^I enter clock in pin for Server Role$")
     public void iEnterClockInPinForServerRole(){
-        new ClockInScreen().clockInPinForServerRole();
+        new ClockInScreen(driver).clockInPinForServerRole();
     }
 
     @Given ("^I enter clock in pin for Server Role1$")
     public void iEnterClockInPinForServerRole1(){
-        new ClockInScreen().clockInPinForServerRole1();
+        new ClockInScreen(driver).clockInPinForServerRole1();
     }
 
     @When ("^Enter the clock-out pin for server role$")
     public void enterTheClockOutPinForServerRole(){
-        new ClockInScreen().clockOutPinForServerRole();
+        new ClockInScreen(driver).clockOutPinForServerRole();
     }
 
     @When ("^Enter the clock-out pin for server role1$")
     public void enterTheClockOutPinForServerRole1(){
-        new ClockInScreen().clockOutPinForServerRole1();
+        new ClockInScreen(driver).clockOutPinForServerRole1();
     }
 
     @And ("^I click operation button in the clock in screen$")
     public void iClickOperationButtonInTheClockInScreen(){
-        new ClockInScreen().clickOperationButton();
+        new ClockInScreen(driver).clickOperationButton();
     }
 
     @Then ("^I should see the operation screen$")
     public void iShouldSeeTheOperationScreen(){
-        new ClockInScreen().verifyOperationScreen();
+        new ClockInScreen(driver).verifyOperationScreen();
     }
 
     @Then ("^I should see clockin required to login popup$")
     public void iShouldSeeClockinRequiredToLoginPopip(){
-        new ClockInScreen().ClockIsInRequiredForClockIn();
+        new ClockInScreen(driver).ClockIsInRequiredForClockIn();
     }
     @And("^I select the order type FORHERE$")
     public void iSelectTheOrderTypeFORHERE() {
-        new OrderTypeWindow().selectForHereOrderType();
+        new OrderTypeWindow(driver).selectForHereOrderType();
     }
 
 
     @And("^I select the TOGO order type$")
     public void iSelectTheTOGOOrderType() {
-        new OrderTypeWindow().selectToGoOrderType();
+        new OrderTypeWindow(driver).selectToGoOrderType();
     }
 
     @And("^I select the DELIVERY order type$")
     public void iSelectTheDELIVERYOrderType() {
-        new OrderTypeWindow().selectDeliveryOrderType();
+        new OrderTypeWindow(driver).selectDeliveryOrderType();
     }
 
     @And("^I select the Phone To Go order type$")
     public void iSelectThePhoneToGoOrderType() {
-        new OrderTypeWindow().selectPhoneToGoOrderType();
+        new OrderTypeWindow(driver).selectPhoneToGoOrderType();
     }
 
     @And ("^I select service type as qsr$")
     public void iSelectServiceTypeAsQsr(){
-        new OrderTypeWindow().selectQsrOrderType();
+        new OrderTypeWindow(driver).selectQsrOrderType();
     }
 
     @And("^I select the Phone Delivery order type$")
     public void iSelectThePhoneDeliveryOrderType() {
-        new OrderTypeWindow().selectPhoneDeliveryOrderType();
+        new OrderTypeWindow(driver).selectPhoneDeliveryOrderType();
     }
 
     @When("^I click Done button to select the order type$")
     public void iClickDoneButtonToSelectTheOrderType() {
-        new OrderTypeWindow().pressDoneBtn();
+        new OrderTypeWindow(driver).pressDoneBtn();
     }
 
     @And ("^I click service type button in order screen$")
     public void iClickServiceTypeButtonInOrderScreen(){
-        new OrderTypeWindow().clickServiceTypeBtn();
+        new OrderTypeWindow(driver).clickServiceTypeBtn();
     }
 
     @Then("^I should see the Customer Profile page with title \"([^\"]*)\"$")
     public void iShouldSeeTheCustomerProfilePageWithTitle(String title) {
-        Assert.assertEquals(new CustomerProfileWindow().getTitle(), title);
+        Assert.assertEquals(new CustomerProfileWindow(driver).getTitle(), title);
     }
 
     @And("^I should see that \"([^\"]*)\" and \"([^\"]*)\" are added to the check$")
     public void iShouldSeeThatAndAreAddedToTheCheck(String menuItem, String modifier) {
-        new OrderManagementScreen().verifyOrderedItemExists(menuItem);
-        new OrderManagementScreen().verifyOrderedItemExists(modifier);
+        new OrderManagementScreen(driver).verifyOrderedItemExists(menuItem);
+        new OrderManagementScreen(driver).verifyOrderedItemExists(modifier);
     }
 
     @And("^I click Order button in the order management screen$")
     public void iClickOrderButtonInTheOrderManagementScreen() {
-        new OrderManagementScreen().pressOrderBtn();
+        new OrderManagementScreen(driver).pressOrderBtn();
     }
 
     @And("^I click modifier as \"([^\"]*)\" on the order screen$")
     public void iClickModifierAsOnTheOrderScreen(String name) {
-        new OrderManagementScreen().selectNoTomato(name);
+        new OrderManagementScreen(driver).selectNoTomato(name);
     }
 
     @Then("^I should see Already sent to Kitchen warning pop-up$")
     public void iShouldSeeAlreadySentToKitchenWarningPopUp() {
-        Assert.assertEquals(new OrderManagementScreen().getAlreadySentToKitchenPopUpTxt(), "Already sent to Kitchen" );
+        Assert.assertEquals(new OrderManagementScreen(driver).getAlreadySentToKitchenPopUpTxt(), "Already sent to Kitchen" );
     }
 
     /****** already sent to Kitchen pop-up ******/
 
     @And("^I tap Done button at sent to Kitchen warning pop-up$")
     public void iTapDoneButtonAtSentToKitchenWarningPopUp() {
-        new OrderManagementScreen().pressDoneAlreadySentToKitchen();
+        new OrderManagementScreen(driver).pressDoneAlreadySentToKitchen();
     }
 
     /****** Order Types ******/
 
     @And("^I tap QSR button to open the order types combo$")
     public void iTapQSRButtonToOpenTheOrderTypesCombo() {
-        new OrderManagementScreen().selectQSRCombo();
+        new OrderManagementScreen(driver).selectQSRCombo();
     }
 
     @And ("^I tap dine in to open the order type$")
     public void iTapDineInToOpenTheOrderType(){
-        new OrderManagementScreen().selectDineIn();
+        new OrderManagementScreen(driver).selectDineIn();
     }
 
     @And ("^I tap BarTab to open the order type$")
     public void iTapBarTabToOpenTheOrderType(){
-        new OrderManagementScreen().selectBarTab();
+        new OrderManagementScreen(driver).selectBarTab();
     }
 
     @And ("^I tap To Go to open the order type$")
     public void iTapTogoToOpenTheOrderType(){
-        new OrderManagementScreen().selectToGo();
+        new OrderManagementScreen(driver).selectToGo();
     }
 
     @And ("^I tap Phone ToGo to open the order type$")
     public void iTapPhoneToGoOpenTheOrderType(){
-        new OrderManagementScreen().selectPhoneToGo();
+        new OrderManagementScreen(driver).selectPhoneToGo();
     }
 
     @And ("^I tap Delivery to open the order type$")
     public void iTapDeliveryToOpenTheOrderType(){
-        new OrderManagementScreen().selectDelivery();
+        new OrderManagementScreen(driver).selectDelivery();
     }
 
     @And("^I select order type as QSR$")
     public void iSelectOrderTypeAsQSR() {
-        new OrderManagementScreen().selectQSRCombo();
-        new OrderManagementScreen().selectQSROrderType();
+        new OrderManagementScreen(driver).selectQSRCombo();
+        new OrderManagementScreen(driver).selectQSROrderType();
     }
 
     @And("^I select order type as \"([^\"]*)\"$")
     public void iSelectOrderTypeAs(String orderType) {
-        new OrderManagementScreen().selectOrderType(orderType);
+        new OrderManagementScreen(driver).selectOrderType(orderType);
     }
 
     @And("^I should see that \"([^\"]*)\" is added to the check$")
     public void iShouldSeeThatIsAddedToTheCheck(String menuItem) {
-        new OrderManagementScreen().verifyOrderedItemExists(menuItem);
+        new OrderManagementScreen(driver).verifyOrderedItemExists(menuItem);
     }
     @And ("I click the Settings button")
-    public void iClickTheSettingsButton(){ new BarTabScreen().pressSettings();}
+    public void iClickTheSettingsButton(){ new BarTabScreen(driver).pressSettings();}
 
     @And ("^I click 86List button in the operation window$")
     public void iClick86ListButtonInTheOperationWindow(){
-        new OrderManagementScreen().click86ListButton();
+        new OrderManagementScreen(driver).click86ListButton();
     }
 
     @Then ("^I should see 86 list window$")
     public void iShouldSee86ListWindow(){
-        new OrderManagementScreen().verify86ListWindow();
+        new OrderManagementScreen(driver).verify86ListWindow();
     }
 
     @And ("^I click search button in the 86 list window pass the menu as \"([^\"]*)\"$")
     public void iClickSearchButtonInThe86ListWindowPassTheMenuAs(String Menu){
-        new OrderManagementScreen().clickSearchBtnIn86List(Menu);
+        new OrderManagementScreen(driver).clickSearchBtnIn86List(Menu);
     }
     @And ("I click the POS settings from Toggle")
-    public void iClickThePOSSettingsFromToggle(){ new BarTabScreen().pressPOSset();}
+    public void iClickThePOSSettingsFromToggle(){ new BarTabScreen(driver).pressPOSset();}
 
     @And("I click the Quick Bar Icon")
-    public void iClickTheQuickBarIcon() throws Exception {new BarTabScreen().pressQuickBar();}
+    public void iClickTheQuickBarIcon() throws Exception {new BarTabScreen(driver).pressQuickBar();}
 
     @And("I click the Toggle Icon button")
-    public void iClickTheToggleIconButton(){new BarTabScreen().pressToggleBtn();}
+    public void iClickTheToggleIconButton(){new BarTabScreen(driver).pressToggleBtn();}
 
     @And ("I click POS Icon from Toggle")
-    public void iClickPOSIconFromToggle(){new BarTabScreen().pressPOSIcon();}
+    public void iClickPOSIconFromToggle(){new BarTabScreen(driver).pressPOSIcon();}
 
     @When ("^I verify POS is enable or not$")
     public void iVerifyPosIsEnableOrNot(){
-        new BarTabScreen().verifyPOSIsEnableOrNot();
+        new BarTabScreen(driver).verifyPOSIsEnableOrNot();
     }
     @Then ("I should see that OrderScreen")
     public void iShouldSeeThatOrderScreen(){
-        Assert.assertEquals(new OrderTypeWindow().visibleEmpty(),"Empty list");}
+        Assert.assertEquals(new OrderTypeWindow(driver).visibleEmpty(),"Empty list");}
 
     /****** BarTab ******/
     @Then("^I should see the Bar Tab screen and a new BarTab is created$")
     public void iShouldSeeTheBarTabScreenAndANewBarTabIsCreated() {
-        new BarTabScreen().verifyBarTab1();
+        new BarTabScreen(driver).verifyBarTab1();
     }
 
     @Then ("^I should see that BarTab is open$")
-    public void iShouldSeeThatBarTabIsOpen(){new BarTabScreen().verifyBarTabIsOpen();}
+    public void iShouldSeeThatBarTabIsOpen(){new BarTabScreen(driver).verifyBarTabIsOpen();}
 
     @And ("^I click BarTab Layout$")
-    public void iClickBarTabLayout() throws InterruptedException {new BarTabScreen().pressBarTabBtn();}
+    public void iClickBarTabLayout() throws InterruptedException {new BarTabScreen(driver).pressBarTabBtn();}
 
     @And ("^I click NewTab from BarTab Layout$")
-    public void iClickNewTabFromBarTabLayout(){new BarTabScreen().pressNewTabBtn();}
+    public void iClickNewTabFromBarTabLayout(){new BarTabScreen(driver).pressNewTabBtn();}
 
     @And ("^I click the active check1 from Bartab Layout$")
-    public void iClickTheActiveCheck1FromBarTabLayout(){new BarTabScreen().prsssCheck1();}
+    public void iClickTheActiveCheck1FromBarTabLayout(){new BarTabScreen(driver).prsssCheck1();}
 
     @And ("^I click the active check2 from Bartab Layout$")
-    public void iClickTheActiveCheck2FromBarTabLayout(){new BarTabScreen().pressCheck2();}
+    public void iClickTheActiveCheck2FromBarTabLayout(){new BarTabScreen(driver).pressCheck2();}
 
     @And ("^I click already selected Active Check$")
-    public void iClickAlreadySelectedActiveChecks(){new BarTabScreen().pressCheck2();}
+    public void iClickAlreadySelectedActiveChecks(){new BarTabScreen(driver).pressCheck2();}
 
     @Then ("^I should see that OrderScreen with sales$")
     public void iShouldSeeThatOrderscreenWithSales(){
-        new OrderTypeWindow().getOrderList();
+        new OrderTypeWindow(driver).getOrderList();
     }
     @And ("^I click print button on the order screen$")
     public void iClickPrintButtonOnTheOrderScreen(){
-        new OrderManagementScreen().pressPrintBtn();
+        new OrderManagementScreen(driver).pressPrintBtn();
     }
 
     @And ("^I should see the Discount amount reflected to the check as \"([^\"]*)\"$")
     public void iShouldSeeTheDiscountAmountReflectedToTheCheckAs(String name){
-        new OrderManagementScreen().checkDiscountValue(name);
+        new OrderManagementScreen(driver).checkDiscountValue(name);
     }
     @Then ("^I should see the Gratuity amount reflected to the check as \"([^\"]*)\"$")
     public void iShouldSeeTheGratuityAmountReflectedToTheCheckAs(String name){
-        new OrderManagementScreen().checkGratuityValue(name);
+        new OrderManagementScreen(driver).checkGratuityValue(name);
     }
     @Then ("^I should see orderscreen with as Onion Rings EACH$")
     public void iShouldSeeOrderscreenWithAsOnionRingsEach(){
-        Assert.assertEquals(new OrderManagementScreen().OnionRingsEachMenu(),"(F) Onion Rings EACH");
+        Assert.assertEquals(new OrderManagementScreen(driver).OnionRingsEachMenu(),"(F) Onion Rings EACH");
     }
 
     @Then ("^I should see orderscreen with as Dosa EACH$")
     public void iShouldSeeOrderScreenWithAsDosaEach(){
-        Assert.assertEquals(new OrderManagementScreen().dosaEach(),"(F) Dosa EACH");
+        Assert.assertEquals(new OrderManagementScreen(driver).dosaEach(),"(F) Dosa EACH");
     }
     @Then ("^I should see discount as \"([^\"]*)\" on the order screen$")
     public void iShouldSeeDiscountAsOnTheOrderScreen(String num){
-        new OrderManagementScreen().discountName(num);
+        new OrderManagementScreen(driver).discountName(num);
     }
 
     @Then ("^I should see discount as \"([^\"]*)\" on the order screen for least expensive$")
     public void iShouldSeeDiscountAsOnTheOrderScreenFor(String name){
-        new OrderManagementScreen().LeastDiscount(name);
+        new OrderManagementScreen(driver).LeastDiscount(name);
     }
 
     @Then ("^I should see discount as \"([^\"]*)\" on the order screen for most expensive$")
     public void ishouldSeeDiscountAsOnTheOrderScreenForMostExpensive(String name){
-        new OrderManagementScreen().mostDiscount(name);
+        new OrderManagementScreen(driver).mostDiscount(name);
     }
 
     @And ("^I click Later check box$")
     public void iClickLaterCheckBox(){
-        new OrderManagementScreen().ClickLaterCheckBoxBtn();
+        new OrderManagementScreen(driver).ClickLaterCheckBoxBtn();
     }
 
     @And ("^I click done button in the order type window$")
     public void iClickDoneButtonInTheOrderTypeWindow(){
-        new OrderManagementScreen().clickDoneButtonTypeWindow();
+        new OrderManagementScreen(driver).clickDoneButtonTypeWindow();
     }
 
     @And ("^I select the Phone To Go Service type$")
     public void iSelectThePhoneToGoServiceType(){
-        new OrderTypeWindow().selectPhoneToGoServiceType(); //Added Today
+        new OrderTypeWindow(driver).selectPhoneToGoServiceType(); //Added Today
     }
 
     @And ("^I select the Phone Delivery Service type$")
     public void iSelectThePhoneDeliveryServiceType(){
-        new OrderTypeWindow().selectPhoneDeliveryServiceType();//Added Today
+        new OrderTypeWindow(driver).selectPhoneDeliveryServiceType();//Added Today
     }
     //new (nov12)
     @Then ("^I should see the bar tab screen$")
     public void iShouldSeeTheBarTabScreen(){
-        Assert.assertEquals(new BarTabScreen().verifyBarTabScreen(),"BarTab");
+        Assert.assertEquals(new BarTabScreen(driver).verifyBarTabScreen(),"BarTab");
     }
 
     @And ("^I select order type as QSR in order screen$")
     public void iSelectOrderTypeAsQsrInOrderScreen(){
-        new OrderManagementScreen().selectQSRCombo();
+        new OrderManagementScreen(driver).selectQSRCombo();
     }
 
     @And ("^I select service type as \"([^\"]*)\" on the order screen$")
     public void iSelectServiceTypeAsOnTheOrderScreen(String type){
-        new OrderTypeWindow().selectServiceTypeAs(type);
+        new OrderTypeWindow(driver).selectServiceTypeAs(type);
     }
 
     @And ("^I click the active check from bar tab$")
     public void iClickTheActiveCheckFromBarTab(){
-        new BarTabScreen().clickBarTabCheck();
+        new BarTabScreen(driver).clickBarTabCheck();
     }
 
     @When ("^I get he Bussiness date from the order screen$")
     public void iGetHeBussinessDateFromTheOrderScreen(){
-        new ClockInScreen().getBussinessDate();
+        new ClockInScreen(driver).getBussinessDate();
     }
 
     @When ("^I verify bussiness date with close day screen$")
     public void iVerifyBussinessDateWithCloseDayScreen(){
-        new ClockInScreen().verifyBussinessDateWithCloseDayScreen();
+        new ClockInScreen(driver).verifyBussinessDateWithCloseDayScreen();
     }
 
     @When ("^I click qsr button from the pos settings window$")
     public void iClickQsrButtonFromThePosSettingsWindow() throws Exception {
-        new ClockInScreen().clickQsrButton();
+        new ClockInScreen(driver).clickQsrButton();
     }
 
     @Then ("^I should see QSR service is disabled in POS settings popup$")
     public void iShouldSeeQsrServiceIsDisabledInPosSettingsPopup(){
-        new ClockInScreen().verifyQsrServiceIsDisabled();
+        new ClockInScreen(driver).verifyQsrServiceIsDisabled();
     }
 
     @And ("^I click Bartab button from pos settings window$")
     public void iClickBarTabButtonFromPosSettingsWindow() throws Exception {
-        new ClockInScreen().clickBarTabButton();
+        new ClockInScreen(driver).clickBarTabButton();
     }
 
     @And ("^I click Dine-In from pos settings window$")
     public void iClickDineInFromPosSettingsWindow() throws Exception {
-        new ClockInScreen().clickDineInButtonInPOSSettings();
+        new ClockInScreen(driver).clickDineInButtonInPOSSettings();
     }
     @Then ("^I should see Bartab service is disabled in POS settings popup$")
     public void iShouldSeeBarTabServiceIsDisabledInPosSettingsPopup(){
-        new ClockInScreen().verifyBarTabServiceIsDisabled();
+        new ClockInScreen(driver).verifyBarTabServiceIsDisabled();
     }
 
     @When ("^Enter the clock-in pin for server and Manager role$")
     public void enterTheClockInPinForServerAndManagerRole(){
-        new ClockInScreen().enterClockInForServerManagerRole();
+        new ClockInScreen(driver).enterClockInForServerManagerRole();
     }
 
     @Then ("^I should see dine-In service is disabled in POS settings popup$")
     public void iShouldSeeDineInServiceIsDisableInPosSettingsPopup(){
-        new ClockInScreen().verifyDineInServiceIsDisabled();
+        new ClockInScreen(driver).verifyDineInServiceIsDisabled();
     }
 
     @And ("^I click cash drop from Till settings$")
     public void iClickCashDropFromTillSettings(){
-        new TillManagementScreen().clickCashDropFromTillSettings();
+        new TillManagementScreen(driver).clickCashDropFromTillSettings();
     }
 
     @And ("^I click till management button from the operation window$")
     public void iClickTillManagementButtonFromTheOperationWindow(){
-        new TillManagementScreen().clickTheTillManagement();
+        new TillManagementScreen(driver).clickTheTillManagement();
     }
 
     @When ("^I click cash drop button from the till window$")
     public void iClickCashDropButtonFromTheTillWindow(){
-        new TillManagementScreen().clickTheCashDropBtn();
+        new TillManagementScreen(driver).clickTheCashDropBtn();
     }
 
 

@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -14,6 +15,10 @@ import java.util.concurrent.TimeUnit;
 import static com.qa.stepdef.Hooks.driver;
 
 public class TaxRoundingOff extends ClockInScreen{
+
+    public TaxRoundingOff(WebDriver driver) {
+        super(driver);
+    }
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name='arrow down'])[2]")
     WebElement downarrow1;
@@ -206,6 +211,8 @@ public class TaxRoundingOff extends ClockInScreen{
     @FindBy(xpath = "Re-Open Check")
     WebElement reopenCheckBtn;
 
+
+
     //  @FindBy(xpath = "testing menu7")
     // WebElement menu1;
 
@@ -302,7 +309,7 @@ public class TaxRoundingOff extends ClockInScreen{
         elementClick(PaymentBtn, "Selected Payment Button");
         elementClick(cashBtn, "Selected Cash Button");
         elementClick(SubmitBtn, "Selected Submit Button");
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
 
     }
 
@@ -376,7 +383,7 @@ public class TaxRoundingOff extends ClockInScreen{
         elementClick(PaymentBtn, "Selected Payment Button");
         elementClick(cashBtn, "Selected Cash Button");
         elementClick(SubmitBtn, "Selected Submit Button");
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
     }
 //////
 //     //     elementClick(quantityBtn,"");
@@ -523,7 +530,7 @@ public class TaxRoundingOff extends ClockInScreen{
         elementClick(PaymentBtn, "Selected Payment Button");
         elementClick(cashBtn, "Selected Cash Button");
         elementClick(SubmitBtn, "Selected Submit Button");
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
     }
 
     public void SelectTheMenuItemWithTheInclusiveTax() throws InterruptedException {
@@ -618,7 +625,7 @@ public class TaxRoundingOff extends ClockInScreen{
         Assert.assertEquals(ExpectedDueAmount, BalanceDueValue);
 
         elementClick(SubmitBtn, "Selected Submit Button");
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
     }
 
     public void SelectTheMenuItemWithTheExclusiveTax(){
@@ -718,7 +725,7 @@ public class TaxRoundingOff extends ClockInScreen{
 
         Assert.assertEquals(ExpectedDueAmount, BalanceDueValue);
         elementClick(SubmitBtn, "Selected Submit Button");
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
     }
 
     public void SelectTheMenuItemWithExclusiveTaxAndDiscount()
@@ -845,7 +852,7 @@ public class TaxRoundingOff extends ClockInScreen{
 
         Assert.assertEquals(ExpectedDueAmount, BalanceDueValue);
         elementClick(SubmitBtn, "Selected Submit Button");
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
     }
 
     public void SelectTheMenuItemWithInclusiveTaxAndDiscount()
@@ -964,7 +971,7 @@ public class TaxRoundingOff extends ClockInScreen{
 
         Assert.assertEquals(ExpectedDueAmount, BalanceDueValue);
         elementClick(SubmitBtn, "Selected Submit Button");
-        new OrderTypeWindow().pressCancelBtn();
+        new OrderTypeWindow(driver).pressCancelBtn();
     }
 
     public void SelectOptionsButton()

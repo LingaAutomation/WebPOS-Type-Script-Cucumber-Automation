@@ -10,10 +10,11 @@ Feature:Basic Validation
   Scenario: Cashier Out From Till Management Screen
     Given I'm logged in
     And I closed the order type window
-    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     When I verify till is available or not if available closed the till
     Then I should see open till management screen
-    And I click cancel button in open till popup
+#    And I click cancel button in open till popup
     And I click reports button in the Till management screen
     And I click cashier out button in the Till management screen
     Then I should see do you want to print the cashier out popup

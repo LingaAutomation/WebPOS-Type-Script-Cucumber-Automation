@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class OpenItemWindow extends CheckOptionsScreen{
+
+    public OpenItemWindow(WebDriver driver) {
+        super(driver);
+    }
 
     @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]" )
     WebElement CoursingNameTxtFld;
@@ -54,6 +59,8 @@ public class OpenItemWindow extends CheckOptionsScreen{
 
     @FindBy(xpath = "Done")
     WebElement doneBtn;
+
+
 
     public void selectCoursingNameTextFld(){
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);

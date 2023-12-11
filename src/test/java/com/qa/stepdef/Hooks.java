@@ -53,9 +53,9 @@ public class Hooks {
 //
 //            driver = new DriverManager().getDriver();
 
-            ScenarioName = scenario.getName();
-
-            utils.log().info("Start Scenario Name : " + ScenarioName);
+//            ScenarioName = scenario.getName();
+//
+//            utils.log().info("Start Scenario Name : " + ScenarioName);
 
         }
         i++;
@@ -72,21 +72,21 @@ public class Hooks {
 //            byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
 //            scenario.attach(fileContent, "image/png", "screenshot");
             //scenario.getName();
-            ScenarioName = scenario.getName();
-            utils.log().info("Failed Scenario Name : " + ScenarioName);
+//            ScenarioName = scenario.getName();
+//            utils.log().info("Failed Scenario Name : " + ScenarioName);
 
 
-            DriverManager driverManager = new DriverManager();
-            if (driverManager.getDriver() != null) {
-//                driverManager.getDriver().closeApp();
-//                driverManager.getDriver().quit();
-                driverManager.setDriver(null);
-            }
-            ServerManager serverManager = new ServerManager();
-            if (serverManager.getServer() != null) {
-//                serverManager.getServer().stop();
-
-            }
+//            DriverManager driverManager = new DriverManager();
+//            if (driverManager.getDriver() != null) {
+////                driverManager.getDriver().closeApp();
+////                driverManager.getDriver().quit();
+//                driverManager.setDriver(null);
+//            }
+//            ServerManager serverManager = new ServerManager();
+//            if (serverManager.getServer() != null) {
+////                serverManager.getServer().stop();
+//
+//            }
 
         }
     }

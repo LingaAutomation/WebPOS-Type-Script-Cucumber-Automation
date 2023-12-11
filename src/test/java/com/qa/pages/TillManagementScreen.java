@@ -2,9 +2,11 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import io.cucumber.java.bs.A;
 import org.junit.Assert;
+import org.openqa.selenium.support.FindBy;
 
 
 import java.math.BigDecimal;
@@ -14,107 +16,116 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TillManagementScreen extends OrderManagementScreen {
-    @iOSXCUITFindBy(accessibility = "Till" )
+
+    public TillManagementScreen(WebDriver driver) {
+        super(driver);
+    }
+    @FindBy(xpath = "Till" )
     private WebElement tillTabName;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]" )
+    @FindBy(xpath = "//label[contains(.,'Till Management')]/../linga-icon/../.." )
+    private WebElement tillmanagementBtn_Opt;
+
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]" )
     private WebElement tillTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Set Till\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Set Till\"]" )
     private WebElement setTillBtn;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"A001 - 3\"]" )
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"A001 - 3\"]" )
     private WebElement tillName;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"EnginT\"]" )
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"EnginT\"]" )
     private WebElement userName;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"TL 100,00\"]" )
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"TL 100,00\"]" )
     private WebElement tillBalance;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Active Till\"]" )
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Active Till\"]" )
     private WebElement activeBalance;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[3]" )
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[3]" )
     private WebElement payInTab;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField" )
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField" )
     private WebElement paidByTxt;
 
-    @iOSXCUITFindBy(xpath ="//*[@name=\"Hide keyboard\"]")
+    @FindBy(xpath ="//*[@name=\"Hide keyboard\"]")
     private WebElement hideKeyboardButton;
 
-    @iOSXCUITFindBy(accessibility = "0")
+    @FindBy(xpath = "0")
     private WebElement paidByNumber0;
 
-    @iOSXCUITFindBy(accessibility = "1")
+    @FindBy(xpath = "1")
     private WebElement paidByNumber1;
 
-    @iOSXCUITFindBy(accessibility = "2" )
+    @FindBy(xpath = "2" )
     private WebElement paidByNumber2;
 
-    @iOSXCUITFindBy(accessibility = "3")
+    @FindBy(xpath = "3")
     private WebElement paidByNumber3;
 
-    @iOSXCUITFindBy(accessibility = "4" )
+    @FindBy(xpath = "4" )
     private WebElement paidByNumber4;
 
-    @iOSXCUITFindBy(accessibility = "5")
+    @FindBy(xpath = "5")
     private WebElement paidByNumber5;
 
-    @iOSXCUITFindBy(accessibility = "6")
+    @FindBy(xpath = "6")
     private WebElement paidByNumber6;
 
-    @iOSXCUITFindBy(accessibility = "7")
+    @FindBy(xpath = "7")
     private WebElement paidByNumber7;
 
-    @iOSXCUITFindBy(accessibility = "8")
+    @FindBy(xpath = "8")
     private WebElement paidByNumber8;
 
-    @iOSXCUITFindBy(accessibility = "9")
+    @FindBy(xpath = "9")
     private WebElement paidByNumber9;
 
-    @iOSXCUITFindBy(accessibility = "00" )
+    @FindBy(xpath = "00" )
     private WebElement paidByNumber00;
 
-    @iOSXCUITFindBy(accessibility = "C" )
+    @FindBy(xpath = "C" )
     private WebElement paidByNumberC;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther" )
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther" )
     private WebElement paidByContinueBtn;
 
-    @iOSXCUITFindBy(accessibility = "Paid In Successfully")
+    @FindBy(xpath = "Paid In Successfully")
     private WebElement paidInSuccessfulMsg;
 
-    @iOSXCUITFindBy(accessibility = "Paid Out Successfully")
+    @FindBy(xpath = "Paid Out Successfully")
     private WebElement paidOutSuccessfulMsg;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[4]")
     private WebElement payOutTab;
 
-    @iOSXCUITFindBy(accessibility = "Close Till")
+    @FindBy(xpath = "//button[contains(.,'Close Till')]")
     private WebElement closeTillBtn;
 
-    @iOSXCUITFindBy(accessibility = "Yes")
+    @FindBy(xpath = "//button[contains(.,'Yes')]")
     private WebElement yesCloseTillBtn;
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "Continue")
     private WebElement continueCloseTillBtn;
 
-    @iOSXCUITFindBy(xpath= "(//XCUIElementTypeStaticText[@name=\"Close Till\"])[1]")
+    @FindBy(xpath= "(//XCUIElementTypeStaticText[@name=\"Close Till\"])[1]")
     private WebElement closeTillTitle;
 
-    @iOSXCUITFindBy(accessibility = "Continue")
+    @FindBy(xpath = "//ion-grid[@class='numberpad_grid md hydrated']//ion-row//ion-col//button//span[contains(.,'Continue')]")
     private WebElement continueCloseBtn;
 
-    @iOSXCUITFindBy(accessibility = "Submit")
+    @FindBy(xpath = "Submit")
     private WebElement submitCloseTillBtn;
 
-    @iOSXCUITFindBy(accessibility= "Do you want to Close this Till ?")
+    @FindBy(xpath= "Do you want to Close this Till ?")
     private WebElement closeTillPopUpMsg;
 
-    @iOSXCUITFindBy(accessibility = "Closed Till")
+    @FindBy(xpath = "Closed Till")
     private WebElement closeTillTabBtn;
+
+
 
     public String getTabName() {
         return elementGetText(tillTabName, "till tab's name is - ");
@@ -122,11 +133,14 @@ public class TillManagementScreen extends OrderManagementScreen {
 
     public OpenTillWindow pressSetTillBtn() {
         elementClick(setTillBtn, "Tapped set till button.");
-        return new OpenTillWindow();
+        return new OpenTillWindow(driver);
     }
 
     public void pressPayInTab() {
         elementClick(payInTab, "Tapped Pay In tab.");
+    }
+
+    public void pressTillManagementBTN() {elementClick(tillmanagementBtn_Opt, "Clicked on Till management button in the operation option");
     }
 
     public void setPaidBy(){
@@ -200,7 +214,7 @@ public class TillManagementScreen extends OrderManagementScreen {
 
     public PaymentReasonsWindow pressPaidByContinueBtn(){
         elementClick(paidByContinueBtn, "Paid By Continue button is tapped.");
-        return new PaymentReasonsWindow();
+        return new PaymentReasonsWindow(driver);
     }
 
     public String getPaidInSuccessfulMsg() {
@@ -221,7 +235,7 @@ public class TillManagementScreen extends OrderManagementScreen {
 
     public PaymentReasonsWindow pressPaidOutContinueBtn(){
         elementClick(paidByContinueBtn, "Paid Out Continue button is tapped.");
-        return new PaymentReasonsWindow();
+        return new PaymentReasonsWindow(driver);
     }
 
     public void pressCloseTillBtn(){
@@ -257,17 +271,17 @@ public class TillManagementScreen extends OrderManagementScreen {
         else
             utils.log().info("Error closing till");
     }
-    @iOSXCUITFindBy(accessibility = "Open Till")
+    @FindBy(xpath = "//ion-title[contains(.,'OPEN TILL')]")
     WebElement openTill;
 
-    @iOSXCUITFindBy(accessibility = "Done")
+    @FindBy(xpath = "Done")
     WebElement Doneee;
 
     public String verifyOpenTill() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         return elementGetText(openTill, "till Management screen - ");
     }
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeSwitch[`value == \"1\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeSwitch[`value == \"1\"`]")
     WebElement globalEnable;
     //**/XCUIElementTypeSwitch[`value == "0"`]
     public void clickGlobalTillOption() {
@@ -511,7 +525,7 @@ public String totalOfActiveTillTxt = " ";
         }
 
     }
-    @iOSXCUITFindBy(accessibility = "OVER SHORTAGE")
+    @FindBy(xpath = "OVER SHORTAGE")
     WebElement overShortageTxt;
     public String verifyOverShortagePopup(){
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
@@ -521,7 +535,7 @@ public String totalOfActiveTillTxt = " ";
         return elementGetText(overShortageTxt,"Popup As - ");
     }
 
-    @iOSXCUITFindBy(xpath = "//*[@name='Hide keyboard']")
+    @FindBy(xpath = "//*[@name='Hide keyboard']")
     WebElement btn_hideKeyboard;
     public void passReasonForDiscrepencyNotes(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
@@ -532,14 +546,14 @@ public String totalOfActiveTillTxt = " ";
 //            AD.getKeyboard().sendKeys(Keys.RETURN);
         elementClick(btn_hideKeyboard,"Tapped Down");
     }
-    @iOSXCUITFindBy(accessibility = "TOTAL SUMMARY")
+    @FindBy(xpath = "TOTAL SUMMARY")
     WebElement totalSummary;
     public String verifyTotalSummaryScreen(){
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         return elementGetText(totalSummary,"Summary Screen - ");
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Submit\"]")
+    @FindBy(xpath = "//button[contains(.,'Submit')]")
     WebElement submitTotalSummary;
 
     public void clickSubmitInTotalSummary(){
@@ -571,7 +585,7 @@ public String totalOfActiveTillTxt = " ";
             }
         }
     }
-    @iOSXCUITFindBy(accessibility = "Closed Till")
+    @FindBy(xpath = "Closed Till")
     WebElement closedTillBtn;
     public void clickClosedTillBtn(){
         elementClick(closedTillBtn,"Closed Till Button Selected");
@@ -766,23 +780,23 @@ public String totalOfActiveTillTxt = " ";
     }
 
     public void clickReportsBtn(){
-        WebElement reportsBtn = (WebElement) driver.findElement(By.xpath("Reports"));
+        WebElement reportsBtn = (WebElement) driver.findElement(By.xpath("//P[.='Reports']"));
         elementClick(reportsBtn,"Reports Button Selected");
     }
 
     public void clickCashierOutBtn() throws InterruptedException {
-        Thread.sleep(2500);
-        WebElement cashierOutBtn = (WebElement) driver.findElement(By.xpath("Cashier Out"));
+        Thread.sleep(6000);
+        WebElement cashierOutBtn = (WebElement) driver.findElement(By.xpath("//ion-footer//ion-col//button[contains(.,' Cashier Out ')]"));
         elementClick(cashierOutBtn,"Cashier out Button Selected");
     }
-    @iOSXCUITFindBy(accessibility = "Do you want to print the Cashier Out?")
+    @FindBy(xpath = "//p[.='Do you want to print the cashier out?']")
     WebElement doYouWantToPrintTxt;
     public String verifyDoYouWantToPrintCashierOut(){
         driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
         return getText(doYouWantToPrintTxt,"Displayed popup as - ");
     }
 
-   @iOSXCUITFindBy(accessibility = "You have an Active Till. Do you want to close the Till ?")
+   @FindBy(xpath = "You have an Active Till. Do you want to close the Till ?")
    WebElement youHaveAnActiveTillPopup;
 
    public void verifyYouHaveAnActiveTillDoYouWantToCloseTheTill() throws InterruptedException {
@@ -790,7 +804,7 @@ public String totalOfActiveTillTxt = " ";
         String youHaveActiveTillText = youHaveAnActiveTillPopup.getText();
        Assert.assertEquals(youHaveActiveTillText,"You have an Active Till. Do you want to close the Till ?");
    }
-    @iOSXCUITFindBy(accessibility = "Cashier out saved successfully")
+    @FindBy(xpath = "//p[.='Cashier out saved successfully']")
     WebElement cashierOutSavedSuccessfullyPopup;
 
     public String verifyCashierOutSavedSuccessfully(){
@@ -803,36 +817,39 @@ driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
         return getText(number,"Initial Gross Value as - ");
     }
 
-    @iOSXCUITFindBy(accessibility = "Set Till")
+    @FindBy(xpath = "//button[contains(.,'Set Till')]")
     WebElement setTillBtnTill;
     public void verifyTillIsOpenedOrNotIfAvailableCloseTill() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         try {
-            WebElement till_Balance = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[5]"));
+            WebElement till_Balance = (WebElement) driver.findElement(By.xpath("//tbody/tr//td[contains(@class,'Till-Balance')]"));
             if (till_Balance.isDisplayed()) {
                 elementClick(till_Balance, "Active Till Selected");
                 elementClick(closeTillBtn, "Selected Closed Till Button");
                 elementClick(yesCloseTillBtn, "Yes to close till");
                 Thread.sleep(400);
-                WebElement cashExpected = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
-                String Balance = cashExpected.getText();
-                utils.log().info("Cash Expected - " + Balance);
+                WebElement cashExpected = (WebElement) driver.findElement(By.xpath("//span[@slot='end']"));
+                String Balance = cashExpected.getText().substring(17);
+                System.out.println("Cash Expected :"+ Balance);
+//                utils.log().info("Cash Expected - " + Balance);
                 String balanceTxt1 = Balance.replaceAll("[$A-Z,.]","");
                 int len = balanceTxt1.length();
                 for (int i = 0; i < len; i++) {
                     char letter = balanceTxt1.charAt(i);
                     String let = String.valueOf(letter);
-                    utils.log().info("vale - " + let);
-                    WebElement numbers = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + let + "\"]"));
+//                    utils.log().info("vale - " + let);
+                    WebElement numbers = (WebElement) driver.findElement(By.xpath("//ion-grid[@class='numberpad_grid md hydrated']//ion-row//ion-col//button//span[contains(.,'"+let+"')]"));
                     elementClick(numbers, "Selected - " + numbers.getText());
                 }
                 elementClick(continueCloseBtn, "Continue Button Selected");
                 Thread.sleep(4000);
                 elementClick(submitTotalSummary, "Submit the Total Summary");
                 elementClick(setTillBtnTill, "Set Till Button is selected");
-            } else { }
+            } else {
+                int a = Integer.parseInt("1a");
+            }
         } catch (Exception w) {
-            utils.log().info("Active Till is NOT Available");
+//            utils.log().info("Active Till is NOT Available");
         }
     }
 
@@ -861,23 +878,23 @@ driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
         }
     }
 
-    @iOSXCUITFindBy(accessibility = "Active Till")
+    @FindBy(xpath = "Active Till")
     WebElement activeTill;
     public void selectActiveTill(){
         elementClick(activeTill,"Active Till Selected");
     }
 
-    @iOSXCUITFindBy(accessibility = "Pay In")
+    @FindBy(xpath = "Pay In")
     WebElement payInBtn;
     public void clickPayInButton(){
         elementClick(payInBtn,"Pay In Button Selected ");
     }
-    @iOSXCUITFindBy(accessibility = "Pay Out")
+    @FindBy(xpath = "Pay Out")
     WebElement payOutBtn;
     public void clickPayOutButton(){
         elementClick(payOutBtn,"Pay Out Button Selected ");
     }
-    @iOSXCUITFindBy(accessibility = "Till")
+    @FindBy(xpath = "Till")
     WebElement tillBtn;
     public void pressTillBtn(){
 elementClick(tillBtn,"Tapped Till Button");
@@ -915,10 +932,10 @@ elementClick(tillBtn,"Tapped Till Button");
         TestUtils.GrossValue = grossValueAmount1;
         utils.log().info("Before Sale Gross Sales - "+grossValueAmount1);
     }
-    @iOSXCUITFindBy (accessibility = "ToggleIcon")
+    @FindBy (xpath = "ToggleIcon")
     WebElement ToggleIcon;
 
-    @iOSXCUITFindBy (accessibility = "POS Settings")
+    @FindBy (xpath = "POS Settings")
     WebElement posSettings;
 
     public void clickCashDropFromTillSettings(){
@@ -939,26 +956,26 @@ elementClick(tillBtn,"Tapped Till Button");
         }
     }
 
-    @iOSXCUITFindBy (accessibility = "Till Management")
+    @FindBy (xpath = "Till Management")
     WebElement tillManagement;
 
     public void clickTheTillManagement(){
         elementClick(tillManagement,"Till Management selected");
     }
 
-    @iOSXCUITFindBy (accessibility = "Cash Drop")
+    @FindBy (xpath = "Cash Drop")
     WebElement cashDropBtn;
 
-    @iOSXCUITFindBy(accessibility = "downarrow")
+    @FindBy(xpath = "downarrow")
     WebElement downArrowBtn;
     public void clickArrowDownBtnReportScreen(){
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
         elementClick(downArrowBtn,"Down Arrow Button");
     }
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"Search Employees\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Search Employees\"`]")
     WebElement searchEmployeees;
 
-    @iOSXCUITFindBy(accessibility = "search icon")
+    @FindBy(xpath = "search icon")
     WebElement search_icon;
     public void selectTheEmployeee(String Employe_Name){
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
@@ -968,7 +985,7 @@ elementClick(tillBtn,"Tapped Till Button");
 
     }
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Generate\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Generate\"]")
     WebElement generate_Button;
     public void clickTheGenerateButton(){
         elementClick(generate_Button,"Generate Button Selected");

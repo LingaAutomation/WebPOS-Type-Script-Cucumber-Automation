@@ -191,7 +191,7 @@ public class TGClockInScreen extends UserLoginScreen{
         pressPin3();
         pressPin4();
         pressLogin();
-        return new OrderTypeWindow();
+        return new OrderTypeWindow(driver);
     }
 
     public void verifiedClockInPage(){

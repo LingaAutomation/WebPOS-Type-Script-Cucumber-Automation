@@ -1,11 +1,16 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 public class OpenTillWindow extends TillManagementScreen{
+
+    public OpenTillWindow(WebDriver driver) {
+        super(driver);
+    }
     @FindBy(xpath = "Open Till" )
     private WebElement openTillWindowTitle;
 
@@ -47,6 +52,8 @@ public class OpenTillWindow extends TillManagementScreen{
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
     private WebElement continueBtn;
+
+
 
     public String getOpenTillWindowTitle() {
         return getText(openTillWindowTitle, "open till window's title is - ");
@@ -102,7 +109,7 @@ public class OpenTillWindow extends TillManagementScreen{
 
     public TillManagementScreen pressContinueBtn() {
         elementClick(continueBtn, "Tapped Continue button");
-        return new TillManagementScreen();
+        return new TillManagementScreen(driver);
     }
     public String amountGivenTxt1 = " ";
 

@@ -1,8 +1,6 @@
 package com.qa.stepdef;
 
 import com.qa.pages.TGBarTab;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.*;
 
 public class TGBarTabStepDef {

@@ -2,6 +2,7 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import io.cucumber.java.bs.A;
 import org.apache.commons.lang.RandomStringUtils;
@@ -16,10 +17,15 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+import static com.qa.pages.DriverSteup.driver;
 import static org.openqa.selenium.By.*;
 
 public class OrderManagementScreen extends OrderTypeWindow{
+
+    public WebDriver driver = DriverSteup.driver;
+    public OrderManagementScreen(WebDriver driver) {
+        super(driver);
+    }
 
     public String checkNumber="";
 
@@ -27,8 +33,8 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     public String modifier="";  //Added 23Nov
 
-    @FindBy(xpath = "Counting Machine" ) //id("Counting Machine").click();
-    private WebElement countingMachineBtn;
+    @FindBy(xpath = "//linga-icon[@symbol='operationGear']" ) //id("Counting Machine").click();
+    private WebElement QSRSettingsBtn;
 
     @FindBy(xpath = "All" )
     private WebElement allBtn;
@@ -89,7 +95,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "Do you want to send hold menu item(s) to kitchen?")
     private WebElement doYouWantToSendHoldMenuItemToKitchen;
 
-    @FindBy(xpath = "Yes")
+    @FindBy(xpath = "//button[contains(.,'Yes')]")
     private WebElement yesForHold;
 
     @FindBy(xpath = "No More Payment need")
@@ -189,7 +195,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "Done")
     private WebElement doneAlreadySentToKitchen;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Payment\"]")
+    @FindBy(xpath = "//span//div[.='Payment']")
     private WebElement paymentBtn;
 
     @FindBy(xpath = "Payment(s) made on this check,Can you return this to Walkin")
@@ -357,9 +363,11 @@ public class OrderManagementScreen extends OrderTypeWindow{
     private WebElement youNeedToPickAtLeast1ModifiersFromThisGroup;
 
 
+
+
     public TillManagementScreen pressCountingMachineBtn(){
-        elementClick(countingMachineBtn, "Counting Machine button pressed - ");
-        return new TillManagementScreen();
+        elementClick(QSRSettingsBtn, "Settings button pressed - ");
+        return new TillManagementScreen(driver);
     }
 
     public void pressOrderBtn(){
@@ -1542,10 +1550,10 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public String getCheckNumberTxt(){
-        WebElement checkNum=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]","",TestUtils.Accessibility);
+        WebElement checkNum= driver.findElement(By.xpath("//p[@class='order-header-checkno']"));
         checkNumber=checkNum.getText();
         TestUtils.globalCheckNumber=checkNumber;
-        utils.log().info(checkNumber);
+//        utils.log().info(checkNumber);
         return checkNumber;
     }
 
@@ -1831,11 +1839,10 @@ public  void selectCategory (String value) throws Exception {
 
         public void getTotalOfMenuInOrderscreen(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-          WebElement totalOfMenu = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-          String totalOfMenuTxt = totalOfMenu.getText();
+          WebElement totalOfMenu = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+          String totalOfMenuTxt = totalOfMenu.getAttribute("Value");
             TestUtils.totalTxt = totalOfMenuTxt;
-            utils.log().info("Total Of Menus - "+totalOfMenuTxt);
-
+//            utils.log().info("Total Of Menus - "+totalOfMenuTxt);
         }
 
         public void getTheMenuInTheOrderScreen() {

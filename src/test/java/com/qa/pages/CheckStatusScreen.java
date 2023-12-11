@@ -13,6 +13,9 @@ import java.util.concurrent.TimeUnit;
 
 public class CheckStatusScreen extends OrderManagementScreen {
 
+    public CheckStatusScreen(WebDriver driver) {
+        super(driver);
+    }
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Closed\"]")
     private WebElement closedTab;
 
@@ -39,6 +42,7 @@ public class CheckStatusScreen extends OrderManagementScreen {
 
     @FindBy(xpath = "QSR")
     private WebElement qsrTab;
+
 
 
 

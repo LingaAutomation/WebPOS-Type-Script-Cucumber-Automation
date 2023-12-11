@@ -64,7 +64,7 @@ public class TGUserLoginScreen extends SignInScreen{
         WebElement element=mergeAndFindMobileElement(finishBtn);
         elementClick(element, "press finish button");
 //        elementClick(finishBtn, "press finish button");
-        return new ClockInScreen();
+        return new ClockInScreen(driver);
     }
 
     public ClockInScreen login(String eMail, String password) throws InterruptedException {

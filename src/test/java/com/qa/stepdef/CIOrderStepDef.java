@@ -10,10 +10,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 public class CIOrderStepDef {
 
-    ClockInScreen clockInScreen = new ClockInScreen();
+    public WebDriver driver = Hooks.driver;
+
+    ClockInScreen clockInScreen = new ClockInScreen(driver);
     CIOrderPage orderPage = new CIOrderPage();
     CICloseDayScreen ciCloseDayScreen= new CICloseDayScreen();
 

@@ -3,13 +3,16 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
-
+import static com.qa.pages.DriverSteup.driver;
 import java.util.concurrent.TimeUnit;
 
 public class CIPaymentScreen extends BasePage{
+
+    public WebDriver driver = DriverSteup.driver;
 
     // Using Elements: Cancel , Payment, Gratuity ,paymentPin0,paymentPin5,paymentPin00,
     String btnCommonXPath = "//XCUIElementTypeButton[@name=\"{0}\"]";
@@ -115,7 +118,7 @@ public class CIPaymentScreen extends BasePage{
 //        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Close All Cashiers')]"));
         elementClick(element, msg);
     }
 

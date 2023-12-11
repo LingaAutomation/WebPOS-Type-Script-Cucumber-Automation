@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>07 Dec 2023, 19:12</td>
+      <td>11 Dec 2023, 20:06</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Basic Validation</td>
+          <td      class="passed"    >12</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
-          <td >0</td>
-          <td     class="skipped"   >13</td>
           <td >0</td>
           <td >0</td>
           <td class="total">13</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="41625300">0.041</td>
+          <td class="duration" data-value="25075972700">25.075</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.041</span>
+  <span class="lead-duration duration">25.075</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -211,9 +211,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -223,31 +223,17 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-2" class="inner-level collapse collapsable-details  in ">
+    <div id="before-2" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">53.525</span>
+  <span class="lead-duration duration">59.974</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>Error message</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>java.lang.ClassCastException: class org.apache.logging.log4j.core.Logger cannot be cast to class java.util.logging.Logger (org.apache.logging.log4j.core.Logger is in unnamed module of loader 'app'; java.util.logging.Logger is in module java.logging of loader 'bootstrap')
-	at com.qa.utils.TestUtils.log(TestUtils.java:216)
-	at com.qa.stepdef.Hooks.initialize(Hooks.java:58)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -260,7 +246,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -272,15 +258,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">I'm logged in</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.619</span>
 
 </div>
 
@@ -303,11 +289,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I closed the order type window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.106</span>
 
 </div>
 
@@ -330,11 +316,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click counting machine icon</span>
+  <span class="name">I click on the Settings button</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.150</span>
 
 </div>
 
@@ -357,11 +343,38 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on the Till Management button</span>
+
+  <span class="lead-duration duration">0.134</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">I verify till is available or not if available closed the till</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">10.067</span>
 
 </div>
 
@@ -384,11 +397,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see open till management screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.046</span>
 
 </div>
 
@@ -411,38 +424,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I click cancel button in open till popup</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click reports button in the Till management screen</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.100</span>
 
 </div>
 
@@ -465,11 +451,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cashier out button in the Till management screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">6.113</span>
 
 </div>
 
@@ -492,11 +478,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see do you want to print the cashier out popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.046</span>
 
 </div>
 
@@ -519,11 +505,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Yes button on the popup for Hold item</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.108</span>
 
 </div>
 
@@ -546,11 +532,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see cashier out saved successfully popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.475</span>
 
 </div>
 
@@ -573,11 +559,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done button on the Popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.089</span>
 
 </div>
 
@@ -600,11 +586,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">I click power button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.016</span>
 
 </div>
 
@@ -612,6 +598,22 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.NullPointerException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;e&quot; is null
+	at com.qa.pages.BasePage.click(BasePage.java:60)
+	at com.qa.pages.LogOuts.pressPowerBtn(LogOuts.java:103)
+	at com.qa.stepdef.ClockInStepDef.iClickPowerButton(ClockInStepDef.java:120)
+	at &#10045;.I click power button(file:///C:/WebPOS%20TypeScrip%20Cucumber%20Autpmation/WebPOS-Type-Script-Cucumber-Automation/src/test/resources/BAasic.feature:25)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -631,9 +633,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -643,30 +645,17 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details  in ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>Error message</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;currentDriver&quot; is null
-	at com.qa.stepdef.Hooks.quit(Hooks.java:71)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 

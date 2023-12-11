@@ -1,5 +1,6 @@
 package com.qa.pages;
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -11,6 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
 public class MenuOptionScreen extends ClockInScreen{
+
+    public MenuOptionScreen(WebDriver driver) {
+        super(driver);
+    }
 
     @FindBy(xpath = "Fire")
     private WebElement fireBtn;
@@ -133,6 +138,8 @@ public class MenuOptionScreen extends ClockInScreen{
 
     @FindBy(xpath = "Percentage")
     private WebElement percentageCheckOption;
+
+
 
 
     public String pressMenuItems(String menu){

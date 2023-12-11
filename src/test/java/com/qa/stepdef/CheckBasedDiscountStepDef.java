@@ -7,8 +7,13 @@ import com.qa.pages.OrderManagementScreen;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class CheckBasedDiscountStepDef {
+
+    public WebDriver driver = Hooks.driver;
+
     @And("^I select Discount on the Order screen$")
     public void iSelectDiscountOnTheOrderScreen(){
         new Discount().pressDiscountBtn();
@@ -51,7 +56,7 @@ public class CheckBasedDiscountStepDef {
 
     @Then ("^I should see the tax amount reflected to the check as \"([^\"]*)\"$")
     public void iShouldSeeTheTaxAmountReflectedToTheCheckAs(String amount){
-        new OrderManagementScreen().checkTaxValue(amount);
+        new OrderManagementScreen(driver).checkTaxValue(amount);
     }
 
     @Then ("^I should see orderscreen with menu item Total without Discount or Tax as \"([^\"]*)\"$")
@@ -66,26 +71,26 @@ public class CheckBasedDiscountStepDef {
 
     @And ("^I change the Quantity of menu Item as \"([^\"]*)\"$")
     public void iChangeTheQuantityOfMenuItemAs(String number){
-        new OrderManagementScreen().enterMenuQuantity(number);
+        new OrderManagementScreen(driver).enterMenuQuantity(number);
     }
 
     @And ("^I change the Quantity of menu Item1 as \"([^\"]*)\"$")
     public void iChangeTheQuantityOfMenuItem1As(String number){
-        new OrderManagementScreen().enterMenuQuantity$Store(number);
+        new OrderManagementScreen(driver).enterMenuQuantity$Store(number);
     }
 
     @And ("^I change the Quantity1 of menu Item as \"([^\"]*)\"$")
     public void iChangeTheQuantity1OfMenuItemAs(String Num){
-        new OrderManagementScreen().enterMenuQty(Num);
+        new OrderManagementScreen(driver).enterMenuQty(Num);
     }
 
     @And ("^I select menu item as Tea For mix&Match SP Before Tax$")
     public void iSelectMenuItemAsTeaForMixMatchSpBeforeTax(){
-        new OrderManagementScreen().selectMenuAsTea();
+        new OrderManagementScreen(driver).selectMenuAsTea();
     }
     @Then ("^I should see Need to attach customer popup$")
     public void iShouldSeeNeedToAttachCustomerPopup(){
-        Assert.assertEquals(new CheckOptionsScreen().verifyNeedToAttachCustomer(),"Need to Attach Customer");
+        Assert.assertEquals(new CheckOptionsScreen(driver).verifyNeedToAttachCustomer(),"Need to Attach Customer");
     }
 
 }

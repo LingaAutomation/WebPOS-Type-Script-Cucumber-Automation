@@ -1,9 +1,15 @@
 package com.qa.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 
 public class TGOpenTillWindow extends TillManagementScreen{
+
+    public TGOpenTillWindow(WebDriver driver) {
+        super(driver);
+    }
+
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Open Till\"]" )
 //    private WebElement openTillWindowTitle;
 
@@ -71,6 +77,8 @@ public class TGOpenTillWindow extends TillManagementScreen{
 //    private WebElement numberC;
 
     public By continueBtn = By.id("Continue");
+
+
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
 //    private WebElement continueBtn;
@@ -158,7 +166,7 @@ public class TGOpenTillWindow extends TillManagementScreen{
         WebElement element = mergeAndFindMobileElement(continueBtn);
         elementClick(element,"Tapped Continue button");
 //        elementClick(continueBtn, "Tapped Continue button");
-        return  new TGTillManagementScreen();
+        return  new TGTillManagementScreen(driver);
     }
 
 }

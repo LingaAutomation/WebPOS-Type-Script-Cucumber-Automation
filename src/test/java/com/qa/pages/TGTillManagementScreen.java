@@ -1,8 +1,8 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
@@ -16,6 +16,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class TGTillManagementScreen extends TGOrderManagementScreen {
+
+    public TGTillManagementScreen(WebDriver driver) {
+        super(driver);
+    }
     public By tillTabName = By.id("Till");
 
 //    @iOSXCUITFindBy(id = "Till" )
@@ -138,6 +142,8 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
 //    private WebElement paidInSuccessfulMsg;
 
     public By paidOutSuccessfulMsg = By.id("Paid Out Successfully");
+
+
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Paid Out Successfully\"]")
 //    private WebElement paidOutSuccessfulMsg;
@@ -461,7 +467,7 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
         WebElement element = mergeAndFindMobileElement(setTillBtn);
         elementClick(element,"Tapped set till button.");
 //        elementClick(setTillBtn, "Tapped set till button.");
-        return new OpenTillWindow();
+        return new OpenTillWindow(driver);
     }
 
     public void pressPayInTab() {
@@ -577,7 +583,7 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
 
     public TGPaymentReasons pressPaidByContinueBtn(){
         click(paidByContinueBtn, "Paid By Continue button is tapped.");
-        return new TGPaymentReasons();
+        return new TGPaymentReasons(driver);
     }
 
     public String getPaidInSuccessfulMsg() {
@@ -608,7 +614,7 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
         WebElement element=mergeAndFindMobileElement(paidByContinueBtn);
         elementClick(element,"Paid Out Continue button is tapped.");
 //        elementClick(paidByContinueBtn, "Paid Out Continue button is tapped.");
-        return new TGPaymentReasons();
+        return new TGPaymentReasons(driver);
     }
     public void enterTillBalance(){
         WebElement element5=mergeAndFindMobileElement(tillNumberFive);

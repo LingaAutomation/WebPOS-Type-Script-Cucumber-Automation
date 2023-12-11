@@ -3,9 +3,6 @@ package com.qa.stepdef;
 import com.qa.pages.CIPaymentScreen;
 import com.qa.pages.TGCheckOptionPage;
 import com.qa.pages.TGTaxExempt;
-
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.And;
 
 public class TGTaxExemptStepDef {

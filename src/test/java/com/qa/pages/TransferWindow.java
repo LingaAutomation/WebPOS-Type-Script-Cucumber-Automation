@@ -1,11 +1,16 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 public class TransferWindow extends TableLayOutScreen{
+
+    public TransferWindow(WebDriver driver) {
+        super(driver);
+    }
     @FindBy( xpath = "Transfer to Table" )
     private WebElement transferToTableBtn;
 
@@ -52,6 +57,9 @@ public class TransferWindow extends TableLayOutScreen{
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther")
     private WebElement checkTransfer;
+
+
+
     public void pressTransferToTable(){
         elementClick(transferToTableBtn, "Transfer to table button tapped" );
     }

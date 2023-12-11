@@ -94,7 +94,7 @@ public class CheckAndItemTransfer extends BasePage{
         check = order.getText();
         TestUtils.tableNumberof = check;
         utils.log().info(check);
-       new Regression().getCheckNumberTxt();
+       new Regression(driver).getCheckNumberTxt();
         selectFoodCategory();
 
         List<WebElement> menuCollection = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));

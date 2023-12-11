@@ -45,7 +45,7 @@ public class UserLoginScreen extends SignInScreen{
 
     public ClockInScreen pressFinishBtn() {
         elementClick(finishBtn, "press finish button");
-        return new ClockInScreen();
+        return new ClockInScreen(driver);
     }
 
     public ClockInScreen login(String eMail, String password) throws InterruptedException {

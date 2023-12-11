@@ -1,14 +1,17 @@
 package com.qa.pages;
 
+import com.qa.stepdef.Hooks;
 import com.qa.utils.DriverManager;
 import com.qa.utils.GlobalParams;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static com.qa.pages.DriverSteup.driver;
 
 import javax.xml.xpath.XPath;
 import java.beans.Visibility;
@@ -16,14 +19,14 @@ import java.security.PublicKey;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import static java.time.Duration.ofMillis;
 
 public class BasePage extends TGglobalElement {
-    public WebDriver driver;
+    public WebDriver driver = DriverSteup.driver;
     TestUtils utils = new TestUtils();
-
 
 //    public BasePage() {
 //        if(driver==null){
@@ -53,8 +56,8 @@ public class BasePage extends TGglobalElement {
     }
 
     public void click(WebElement e, String msg) {
-        waitForVisibility(e);
-        utils.log().info(msg);
+//        waitForVisibility(e);
+//        utils.log().info(msg);
         e.click();
     }
 
@@ -89,7 +92,7 @@ public class BasePage extends TGglobalElement {
         String txt;
 
                 txt = e.getText();
-        utils.log().info(msg + txt);
+//        utils.log().info(msg + txt);
         return txt;
     }
 
@@ -282,8 +285,8 @@ public class BasePage extends TGglobalElement {
     public void elementClick(WebElement e, String msg) {
 
        // try{
-        utils.log().info(msg);
-        e.click();
+//        utils.log().info(msg);
+         e.click();
 //         }catch (Exception execp){
 //         execp.printStackTrace();
 //        }
@@ -1032,6 +1035,153 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
                 swipe(startX, startY, endX, endY, millis);
             }
         }
+    }
+
+    public WebElement Select_RandomTable(WebDriver driver) throws Exception
+    {
+
+//		if(driver.findElement(By.xpath(Utility.getXpathProperty(""))).isDisplayed())
+//		{
+//
+//		}
+        WebElement randomTab;
+
+
+
+        if(driver.findElement(By.xpath("//div[@class='child']/button")).isDisplayed())
+        {
+//            test.log(LogStatus.INFO, "Table Layout is displayed");
+        }
+        else
+        {
+            if(driver.findElement(By.xpath("//p[.='You not created any Floors in your Store']")).isDisplayed())
+            {
+
+                //Click the Done button
+                driver.findElement(By.xpath("//span[.='Done']/..")).click();
+
+//                test.log(LogStatus.INFO, "Here Floor is not created");
+            }
+
+        }
+
+        List<WebElement> TableList=driver.findElements(By.xpath("//div[@class='child']/button"));
+
+
+        int tableSize=TableList.size();
+
+
+        int randomTable=ThreadLocalRandom.current().nextInt(1, tableSize);
+
+        System.out.println("Table No is : "+randomTable);
+        try
+        {
+            Thread.sleep(2000);
+            driver.findElement(By.xpath("//div[@class='child']/button["+randomTable+"]")).click();
+        }
+        catch(Exception lk) {}
+        randomTab=driver.findElement(By.xpath("//div[@class='child']/button["+randomTable+"]"));
+
+        return randomTab;
+
+
+
+
+    }
+
+    public void Select_RandomMenuItems(WebDriver driver) throws Exception
+    {
+
+        for(int i=1;i<=3;i++)
+        {
+            List<WebElement> MenuList=driver.findElements(By.xpath("//button[contains(@id,'menu-item')]"));
+
+
+            int MenusSize=MenuList.size()-1;
+
+
+            int randomMenu= ThreadLocalRandom.current().nextInt(1, MenusSize-1);
+
+            //Remove Comment lines
+	/*	Thread.sleep(1000);
+	    JavascriptExecutor js=(JavascriptExecutor)driver;
+		WebElement menuEle=driver.findElement(By.xpath("//button[@id='menu-item-"+randomMenu+"']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", menuEle);
+		menuEle.click();
+		*/
+		/*
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		WebElement menuEle=driver.findElement(By.xpath("//div[@id='catAndMenuDiv']/div/div[3]/button["+randomMenu+"]"));
+		js.executeScript("arguments[0].scrollIntoView(true);", menuEle);
+		menuEle.click();
+	*/
+
+            JavascriptExecutor js=(JavascriptExecutor)driver;
+            WebElement menuEle=driver.findElement(By.xpath("//div[contains(@class,'menuItem')]/button["+randomMenu+"]"));
+            js.executeScript("arguments[0].scrollIntoView(true);", menuEle);
+            menuEle.click();
+		/*
+		Reading_Excel_With_2_Menu_Item sw = new Reading_Excel_With_2_Menu_Item();
+		sw.select_Some_MenuItems(driver, test);
+		*/
+            try
+            {
+
+                if(driver.findElement(By.xpath("//*[contains(@class,'modifier_content')]")).isDisplayed())
+                {
+
+
+                    List<WebElement> ModList=driver.findElements(By.xpath("//*[contains(@class,'modifier_content')]/ion-col[1]/button"));
+
+
+                    int ModSize=ModList.size();
+
+
+                    int randomMod=ThreadLocalRandom.current().nextInt(1, ModSize);
+
+
+
+                    JavascriptExecutor js1=(JavascriptExecutor)driver;
+                    WebElement modEle=driver.findElement(By.xpath("//*[contains(@class,'modifier_content')]/ion-col[1]/button["+randomMod+"]"));
+                    js1.executeScript("arguments[0].scrollIntoView(true);", modEle);
+                    modEle.click();
+
+
+
+                    driver.findElement(By.xpath("//div[@class='modifier-decision']/button[contains(.,'Done')]")).click();
+                }
+                if(driver.findElement(By.xpath("//*[contains(@class,'conversational_content')]")).isDisplayed())
+                {
+
+
+                    List<WebElement> ModList=driver.findElements(By.xpath("//*[contains(@class,'conversational_content')]/ion-col[1]/button"));
+
+
+                    int ModSize=ModList.size();
+
+
+                    int randomMod=ThreadLocalRandom.current().nextInt(1, ModSize);
+
+
+
+                    JavascriptExecutor js1=(JavascriptExecutor)driver;
+                    WebElement modEle=driver.findElement(By.xpath("//*[contains(@class,'conversational_content')]/ion-col[1]/button["+randomMod+"]"));
+                    js1.executeScript("arguments[0].scrollIntoView(true);", modEle);
+                    modEle.click();
+
+
+
+                    driver.findElement(By.xpath("//div[@class='modifier-decision']/button[contains(.,'Done')]")).click();
+                }
+
+
+            }
+            catch(Exception cj)
+            {
+
+            }
+        }
+
     }
 }
 

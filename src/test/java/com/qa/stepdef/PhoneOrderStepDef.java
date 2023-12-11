@@ -5,8 +5,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 public class PhoneOrderStepDef {
+
+    public WebDriver driver = Hooks.driver;
 
     @Then("^I should see the Phone Order tab$")
     public void iShouldSeeThePhoneOrderTab() {
@@ -152,42 +155,42 @@ public class PhoneOrderStepDef {
 
     @And ("^I click closed checks details icon button$")
     public void iClickClosedChecksDetailsIconButton(){
-        new OrderManagementScreen().clickClosedChecksDetailsIcon();
+        new OrderManagementScreen(driver).clickClosedChecksDetailsIcon();
     }
 
     @Then ("^I should see order summary screen$")
     public void iShouldSeeOrderSummaryScreen(){
-        new OrderManagementScreen().verifyOrderSummaryScreen();
+        new OrderManagementScreen(driver).verifyOrderSummaryScreen();
     }
 
     @When ("^I verify subtotal value with order summary subtotal value$")
     public void iVerifySubtotalValueWithOrderSummarySubtotalValue(){
-        new OrderManagementScreen().verifySubtotalValueWithOrderSummarySubtotal();
+        new OrderManagementScreen(driver).verifySubtotalValueWithOrderSummarySubtotal();
     }
 
     @When ("^I verify total value with order summary total value when cash reward is enabled$")
     public void iVerifyTotalValueWithOrderSummarySubtotalValueWhenCashRewardIsEnabled(){
-        new OrderManagementScreen().verifyTotalValueWithOrderSummaryTotalValueCashReward();
+        new OrderManagementScreen(driver).verifyTotalValueWithOrderSummaryTotalValueCashReward();
     }
 
     @When ("^I verify tax value with order summary tax value when cash reward is enabled$")
     public void iVerifyTaxValueWithOrderSummaryTaxValueWhenCashRewardIsEnabled(){
-        new OrderManagementScreen().verifyTotalValueWithOrderSummaryTotalValueCashReward();
+        new OrderManagementScreen(driver).verifyTotalValueWithOrderSummaryTotalValueCashReward();
     }
 
     @And ("^I click back to checks button$")
     public void iClickBackToChecksButton(){
-        new OrderManagementScreen().clickBackToChecksBtn();
+        new OrderManagementScreen(driver).clickBackToChecksBtn();
     }
 
     @When ("^I verify gratuity value with order summary total value when cash reward is enabled$")
     public void iVerifyGratuityValueWithOrderSummaryGratuityValueWhenCashRewardIsEnabled(){
-        new OrderManagementScreen().verifyTotalValueWithOrderSummaryTotalValueCashReward();
+        new OrderManagementScreen(driver).verifyTotalValueWithOrderSummaryTotalValueCashReward();
     }
 
     @When ("^I verify discount value with order summary discount value when cash reward is enabled$")
     public void iVerifyDiscountValueWithOrderSummaryDiscountValueWhenCashRewardIsEnabled(){
-        new OrderManagementScreen().verifyTotalValueWithOrderSummaryTotalValueCashReward();
+        new OrderManagementScreen(driver).verifyTotalValueWithOrderSummaryTotalValueCashReward();
     }
 
     @And ("^I click the Closed check on check stats$")
@@ -252,148 +255,148 @@ public class PhoneOrderStepDef {
 
     @And ("^I select prefix modifier$")
     public void iSelectPrefixModifier(){
-        new CheckOptionsScreen().selectPrefixModifier();
+        new CheckOptionsScreen(driver).selectPrefixModifier();
     }
 
     @Then ("^I should verify prefix modifier added to the menu$")
     public void iShouldVerifyPrefixModifierAddedToTheMenu(){
-        new CheckOptionsScreen().verifyPrefixAddedToTheMenu();
+        new CheckOptionsScreen(driver).verifyPrefixAddedToTheMenu();
     }
     @And ("^I select Menu For Dine order type as \"([^\"]*)\"$")
     public void iSelectMenuForDineOrderType(String name) throws InterruptedException {
-        new Regression().selectMenuForDineOrderType(name);
+        new Regression(driver).selectMenuForDineOrderType(name);
     }
 
     @Then ("^I should see Delivery charge is match with Amount in order screen$")
     public void iShouldSeeDeliveryChargeIsMatchWithAmountInOrderScreen(){
-        new TableLayOutScreen().verifyAmountWithDeliveryCharge();
+        new TableLayOutScreen(driver).verifyAmountWithDeliveryCharge();
     }
     @And ("^I click the Exit to close the preauth window$")
     public void iClickTheExitToCloseThePreauthWindow(){
-        new PaymentWindow().pressExitBtn();
+        new PaymentWindow(driver).pressExitBtn();
     }
 
     @Then ("^I should see preauth window$")
     public void iShouldSeePreAuthWindow(){
-        new BarTabScreen().verifyPreAuthWindow();
+        new BarTabScreen(driver).verifyPreAuthWindow();
     }
 
     @Then ("^I should see no device is connected to iPad$")
     public void iShouldSeeNoDeviceIsConnectedToIpad(){
-        Assert.assertEquals(new BarTabScreen().verifyNoDeviceIsConnected(),"No Device is connected to this iPad");
+        Assert.assertEquals(new BarTabScreen(driver).verifyNoDeviceIsConnected(),"No Device is connected to this iPad");
     }
     @And("^I enter the customer name randomly$")
     public void iEnterTheCustomerNameRandomly(){
-        new PaymentWindow().enterTheCustomerNameRandomly();
+        new PaymentWindow(driver).enterTheCustomerNameRandomly();
     }
 
     @And ("^I select category as \"([^\"]*)\"$")
     public void iSelectCategoryAs(String category) throws Exception {
-//        new PaymentWindow().categorySelection(category);
+//        new PaymentWindow(driver).categorySelection(category);
 //        new BasePage().findAndClickMobileElement(ca);
 
-        new PaymentWindow().selectCategory1(category);
+        new PaymentWindow(driver).selectCategory1(category);
     }
 
 
     @And ("^I select uzumaki category$")
     public void iSelectUzumakiCategory() throws Exception {
-//        new PaymentWindow().categorySelection(category);
+//        new PaymentWindow(driver).categorySelection(category);
 //        new BasePage().findAndClickMobileElement(ca);
 
-        new PaymentWindow().selectUzumakiCategory();
+        new PaymentWindow(driver).selectUzumakiCategory();
     }
 
 
 
     @And ("^I select the customer for basic$")
     public void iSelectTheCustomerForBasic(){
-        new PaymentWindow().selectCustomerBasic();
+        new PaymentWindow(driver).selectCustomerBasic();
     }
 
     @And ("^I verify the customer previous order menu with order menu$")
     public void iVerifyTheCustomerPreviousOrderMenuWithOrderMenu(){
-        new PaymentWindow().verifyCustomerPreviousOrderMenuWithOrderMenu();
+        new PaymentWindow(driver).verifyCustomerPreviousOrderMenuWithOrderMenu();
     }
 
     @When ("^I select the previous order on customer profile screen$")
     public void iSelectThePreviousOrderOnCustomerProfileScreen(){
-        new PaymentWindow().selectPreviousOrderOnCustomer();
+        new PaymentWindow(driver).selectPreviousOrderOnCustomer();
     }
 
     @And ("^I delete the menu item in the order screen$")
     public void iDeleteTheMenuItemInTheOrderScreen() throws InterruptedException {
-        new PaymentWindow().deleteTheMenuItemIntheOrderScreen();
+        new PaymentWindow(driver).deleteTheMenuItemIntheOrderScreen();
     }
 
     @When ("^I verify value with order summary screen$")
     public void iVerifyValueWithOrderSummaryScreen(){
-        new PaymentWindow().verifyValueWithOrderSummaryScreen();
+        new PaymentWindow(driver).verifyValueWithOrderSummaryScreen();
     }
 
     @When ("^I verify the Total value with digital printer screen$")
     public void iVerifyTheTotalValueWithDigitalPrinterScreen(){
-        new PaymentWindow().verifyTheTotalValueWithDigitalPrinterScreen();
+        new PaymentWindow(driver).verifyTheTotalValueWithDigitalPrinterScreen();
     }
 
     @And ("^I verify the cash price value with digital receipt screen$")
     public void iVerifyTheCashPriceValueWithDigitalReceiptScreen(){
-        new PaymentWindow().verifyTheCashPriceValueWithDigitalReceiptScreen();
+        new PaymentWindow(driver).verifyTheCashPriceValueWithDigitalReceiptScreen();
     }
 
     @And ("^I verify the fast cash price value with digital receipt screen$")
     public void iVerifyTheFastCashPriceValueWithDigitalReceiptScreen(){
-        new PaymentWindow().verifyTheCashPrice1ValueWithDigitalReceiptScreen();
+        new PaymentWindow(driver).verifyTheCashPrice1ValueWithDigitalReceiptScreen();
     }
     @When ("^I verify the Total value with digital printer screen1$")
     public void iVerifyTheTotalValueWithDigitalPrinterScreen1(){
-        new PaymentWindow().verifyTheTotalValueWithDigitalPrinterScreen1();
+        new PaymentWindow(driver).verifyTheTotalValueWithDigitalPrinterScreen1();
     }
 
     @When ("^I verify the Total value with digital printer screen2$")
     public void iVerifyTheTotalValueWithDigitalPrinterScreen2(){
-        new PaymentWindow().verifyTheTotalValueWithDigitalPrinterScreen2();
+        new PaymentWindow(driver).verifyTheTotalValueWithDigitalPrinterScreen2();
 
     }
 
     @When ("^I verify the Total value with digital printer screen for Cash Reward$")
     public void iVerifyTheTotalValueWithDigitalPrinterScreenForCashReward(){
-        new PaymentWindow().verifyTheTotalValueWithDigitalPrinterScreenForCashReward();
+        new PaymentWindow(driver).verifyTheTotalValueWithDigitalPrinterScreenForCashReward();
 
     }
     @When ("^I verify the Total value with digital printer screen3$")
     public void iVerifyTheTotalValueWithDigitalPrinterScreen3(){
-        new PaymentWindow().verifyTheTotalValueWithDigitalPrinterScreen3();
+        new PaymentWindow(driver).verifyTheTotalValueWithDigitalPrinterScreen3();
 
     }
 
     @When ("^I verify value with order summary screen1$")
     public void iVerifyValueWithOrderSummaryScreen1(){
-        new PaymentWindow().verifyValueWithOrderSummaryScreen1();
+        new PaymentWindow(driver).verifyValueWithOrderSummaryScreen1();
     }
 
     @And ("^I get the cash reward value from the order screen$")
     public void iGetTheCashRewardValueFromTheOrderScreen(){
-        new OrderManagementScreen().getTheCashRewardValueFromOrderScreen();
+        new OrderManagementScreen(driver).getTheCashRewardValueFromOrderScreen();
     }
 
     @When ("^I verify the Change due value with Cash reward value is Same$")
     public void iVerifyTheChangeDueValueWithCashRewardValueIsSame(){
-        new OrderManagementScreen().verifyCashRewardWithChangeDueValue();
+        new OrderManagementScreen(driver).verifyCashRewardWithChangeDueValue();
     }
 
     @When ("^I verify the Change due value with Cash Price value is Same$")
     public void iVerifyTheChangeDueValueWithCashPriceValueIsSame(){
-        new OrderManagementScreen().verifyCashPriceWithChangeDueValue();
+        new OrderManagementScreen(driver).verifyCashPriceWithChangeDueValue();
     }
 
     @When ("^I verify the paid amount is same with the total amount in payment window$")
     public void iVerifyThePaidAmountIsSameWithTheTotalAmountInPaymentWindow(){
-        new PaymentWindow().verifyThePaidAmountWithTotalAmount();
+        new PaymentWindow(driver).verifyThePaidAmountWithTotalAmount();
     }
 
     @And ("^I get the paid amount value in the payment window$")
     public void iGetThePaidAmountValueInThePaymentWindow(){
-        new PaymentWindow().getThePaidAmountValueInThePaymentWindow();
+        new PaymentWindow(driver).getThePaidAmountValueInThePaymentWindow();
     }
 }

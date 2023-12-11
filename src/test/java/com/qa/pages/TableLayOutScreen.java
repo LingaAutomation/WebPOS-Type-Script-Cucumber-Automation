@@ -1,12 +1,13 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
-
+import static com.qa.pages.DriverSteup.driver;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -15,7 +16,11 @@ import java.util.concurrent.TimeUnit;
 
 public class TableLayOutScreen extends OrderManagementScreen {
 
+    public WebDriver driver = DriverSteup.driver;
 
+    public TableLayOutScreen(WebDriver driver) {
+        super(driver);
+    }
     @FindBy(xpath = "Continue")
     private WebElement continueBtn;
 
@@ -149,7 +154,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "5")
     private WebElement seat5OrderScreen;
 
-    @FindBy(xpath = "Done")
+    @FindBy(xpath = "//button[contains(.,'Done')]")
     private WebElement Done1;
 
     @FindBy(xpath = "Delete")
@@ -203,7 +208,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "SPLIT CHECK")
     private WebElement SplitCheckOrderScreen;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
+    @FindBy(xpath = "//ion-row[contains(@class,'payment-types')]//ion-col//button//span[contains(.,'Cash')]")
     // @FindBy(xpath = "Cash")
     private WebElement CashbtnPaymentWindow;
 
@@ -877,18 +882,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void pressCashBtnPaymentWindow() throws Exception {
         //driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        try {
-            if (find(CashbtnPaymentWindow, 2)) {
                 elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
-            } else {
-                scrollToElementPayments(CashbtnPaymentWindow, "up");
-                elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
-            }
-        } catch (Exception w) {
-            scrollToElementPayments(CashbtnPaymentWindow, "down");
-            elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
-        }
-
 
     }
 
@@ -1229,16 +1223,16 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void tapCloseDay() {
-        WebElement closeDay = mergeAndFindElement("Close Day", "", TestUtils.Accessibility);
+        WebElement closeDay = driver.findElement(By.xpath("//label[contains(.,'Close Day')]"));
         elementClick(closeDay, "Tapped close day");
     }
 
     public void verifyCloseDayScreen() {
-        WebElement closeDay = mergeAndFindElement("Close Day", "", TestUtils.Accessibility);
+        WebElement closeDay = driver.findElement(By.xpath("//label[contains(.,'Close Day')]"));
         if (closeDay.isDisplayed()) {
-            utils.log().info("Close day is Displayed");
+//            utils.log().info("Close day is Displayed");
         } else {
-            utils.log().info("Not Displayed");
+//            utils.log().info("Not Displayed");
         }
     }
 

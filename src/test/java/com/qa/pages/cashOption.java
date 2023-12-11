@@ -2,6 +2,7 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -14,8 +15,14 @@ import java.util.concurrent.TimeUnit;
 
 public class cashOption extends TillManagementScreen{
 
+    public cashOption(WebDriver driver) {
+        super(driver);
+    }
+
     public String cashAmount = " ";
     public String balanceDueCardAmount = " ";
+
+
 
     public String getBalanceDueAmount(){
         WebElement balanceDueAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1]"));

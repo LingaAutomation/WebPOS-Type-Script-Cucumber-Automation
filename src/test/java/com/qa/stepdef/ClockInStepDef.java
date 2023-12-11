@@ -6,8 +6,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import static com.qa.pages.DriverSteup.driver;
 
 public class ClockInStepDef {
+
+    public WebDriver driver = DriverSteup.driver;
+
     @Given("^I'm signed in$")
     public void iMSignedIn() throws InterruptedException {
         new SignInScreen().signIn();
@@ -16,47 +21,47 @@ public class ClockInStepDef {
 
     @And("^I press on first number of the pin code$")
     public void iPressOnFirstNumberOfThePinCode() {
-        new ClockInScreen().pressPin1();
+        new ClockInScreen(driver).pressPin1();
     }
 
     @And("^I press on second number of the pin code$")
     public void iPressOnSecondNumberOfThePinCode() {
-        new ClockInScreen().pressPin2();
+        new ClockInScreen(driver).pressPin2();
     }
 
     @And("^I press on third number of the pin code$")
     public void iPressOnThirdNumberOfThePinCode() {
-        new ClockInScreen().pressPin3();
+        new ClockInScreen(driver).pressPin3();
     }
 
     @And("^I press on fourth as wrong number of the pin code$")
     public void iPressOnFourthAsWrongNumberOfThePinCode() {
-        new ClockInScreen().pressPin5();
+        new ClockInScreen(driver).pressPin5();
     }
 
     @And("^I press on fourth number of the pin code$")
     public void iPressOnFourthNumberOfThePinCode() {
-        new ClockInScreen().pressPin4();
+        new ClockInScreen(driver).pressPin4();
     }
 
     @And ("^I tap zero number of the pin code$")
-    public void iTapZeroNumberOfThePinCode(){new ClockInScreen().pressPin0();}
+    public void iTapZeroNumberOfThePinCode(){new ClockInScreen(driver).pressPin0();}
 
     @When("^I click login button$")
     public void iClickLoginButton() {
         // Write code here that turns the phrase above into concrete actions
-        new ClockInScreen().pressLogin();
+        new ClockInScreen(driver).pressLogin();
     }
 
     @Then("^I should see the order type window with the title \"([^\"]*)\"$")
     public void iShouldSeeToOrderTypeWindowWithTheTitle(String title) {
         // Write code here that turns the phrase above into concrete actions
-        Assert.assertEquals(new OrderTypeWindow().getTitle(), title);
+        Assert.assertEquals(new OrderTypeWindow(driver).getTitle(), title);
     }
 
     @And("^I click Done button$")
     public void iClickDoneButton() {
-        new ClockInScreen().pressDone();
+        new ClockInScreen(driver).pressDone();
     }
 
     @And("^I log out$")
@@ -81,53 +86,53 @@ public class ClockInStepDef {
 
     @Then("^I should see error invalid pin pop-up with the warning \"([^\"]*)\"$")
     public void iShouldSeeErrorInvalidPinPopUpWithTheWarning(String err) {
-        Assert.assertEquals(new ClockInScreen().getErrTxt(), err);
+        Assert.assertEquals(new ClockInScreen(driver).getErrTxt(), err);
     }
 
     @And("^Done button to select the order type$")
     public void doneButtonToSelectTheOrderType() {
-        new ClockInScreen().pressDone();
+        new ClockInScreen(driver).pressDone();
     }
 
     @Given ("^I'm logged in for Each sale$")
     public void imLoggedInForEachSale(){
-        new ClockInScreen().clockInForEachSale();
+        new ClockInScreen(driver).clockInForEachSale();
     }
     /*Clock in to see bartab */
 
     @Given("^I'm logged in for BarTab$")
     public void iMLoggedInForBarTab() {
-        new ClockInScreen().ClockInForBarTab();
+        new ClockInScreen(driver).ClockInForBarTab();
     }
 
     @Given("^I'm logged in for BarTab for basic validation$")
     public void iMLoggedInForBarTabForBasicValidation() {
-        new ClockInScreen().ClockInForBarTabForBasicValidation();
+        new ClockInScreen(driver).ClockInForBarTabForBasicValidation();
     }
 
     @Given("^I'm logged in for Table Layout$")
     public void imLoggedInForTableLayout(){
-        new ClockInScreen().ClockInForTableScreen();
+        new ClockInScreen(driver).ClockInForTableScreen();
     }
 
     @And("^I click power button$")
-    public void iClickPowerButton() {
+    public void iClickPowerButton() throws InterruptedException {
         new LogOuts().pressPowerBtn();
     }
 
     @And("^I log out from BarTab user$")
-    public void iLogOutFromBarTabUser() {
+    public void iLogOutFromBarTabUser() throws InterruptedException {
         new LogOuts().logOutAfterClockInForBarTab();
     }
 
     @And("^I click the BarTab button from clock in screen$")
     public void iClickTheBarTabButtonFromClockInScreen() throws InterruptedException {
-        new ClockInScreen().pressBarTabBtn();
+        new ClockInScreen(driver).pressBarTabBtn();
     }
 
     @When("^I login after I click BarTab button$")
     public void iLoginAfterIClickBarTabButton() {
-        new ClockInScreen().ClockInForBarTabUsingBarTabButton();
+//        new ClockInScreen(driver).ClockInForBarTabUsingBarTabButton();
     }
 
     @Given("^I'm in the clock in screen$")
@@ -136,22 +141,22 @@ public class ClockInStepDef {
 
     @Then ("^I should see the access denied popup$")
     public void iShouldSeeTheAccessDeniedPopup(){
-        new ClockInScreen().verifyTheAccessDeniedPopup();
+        new ClockInScreen(driver).verifyTheAccessDeniedPopup();
     }
 
     @Given ("^I'm logged in for Dine-In$")
     public void iMLoggedInForDineIn(){
-        new ClockInScreen().clockInForDineIn();
+        new ClockInScreen(driver).clockInForDineIn();
     }
 
     @And("^Enter the pin for Dine-In$")
     public void enterThePinForDineIn(){
-        new ClockInScreen().clockInForDineIn1();
+        new ClockInScreen(driver).clockInForDineIn1();
     }
 
     @And("^Enter the pin for BarTab$")
     public void enterThePinForBarTab(){
-        new ClockInScreen().ClockInForBarTab1();
+        new ClockInScreen(driver).ClockInForBarTab1();
     }
 
 }

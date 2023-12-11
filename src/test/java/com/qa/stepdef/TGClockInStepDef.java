@@ -1,7 +1,6 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

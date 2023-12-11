@@ -8,9 +8,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 
 public class UserLoginStepDef {
+    public WebDriver driver = Hooks.driver;
 
     @Given("I clicked sign in button and see the login window")
     public void iClickedSignInButtonAndSeeTheLoginWindow() {
@@ -38,7 +40,7 @@ public class UserLoginStepDef {
     @Then("^I should see clock in page with text \"([^\"]*)\"$")
     public void iShouldSeeClockInPageWithText(String text) {
         // Write code here that turns the phrase above into concrete actions
-        Assert.assertEquals(new ClockInScreen().getTitle(), text);
+        Assert.assertEquals(new ClockInScreen(driver).getTitle(), text);
     }
 
     @Then("^I should see error pop-up with the warning \"([^\"]*)\"$")

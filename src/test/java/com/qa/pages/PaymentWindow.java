@@ -2,6 +2,7 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import io.cucumber.java.bs.A;
 import io.cucumber.java.hu.De;
@@ -19,6 +20,10 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class PaymentWindow extends OrderManagementScreen{
+
+    public PaymentWindow(WebDriver driver) {
+        super(driver);
+    }
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
     WebElement paymentPin1;
@@ -67,7 +72,7 @@ public class PaymentWindow extends OrderManagementScreen{
     private WebElement deletePaymentBtn;
 
 
-    @FindBy(xpath = "  Submit")
+    @FindBy(xpath = "//button[contains(.,'Submit')]")
     private WebElement submitBtn;
 
     @FindBy ( xpath = "Cash")
@@ -202,6 +207,8 @@ public class PaymentWindow extends OrderManagementScreen{
 
     @FindBy(xpath = "Gift Card")
     WebElement giftCardPayment;
+
+
 
 
     public String getPaymentWindowTitle(){

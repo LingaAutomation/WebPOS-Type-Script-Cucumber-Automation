@@ -4,10 +4,6 @@ import com.qa.pages.TGCheckStatusPage;
 import com.qa.pages.TGMenuItemPage;
 import com.qa.pages.TGPaymentPage;
 import com.qa.utils.TestUtils;
-
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

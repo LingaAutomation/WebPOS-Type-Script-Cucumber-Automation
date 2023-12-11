@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -13,6 +14,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CheckOptionsScreen extends OrderManagementScreen {
+
+    public CheckOptionsScreen(WebDriver driver) {
+        super(driver);
+    }
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Hold\"]")
     WebElement holdBtn;
@@ -184,6 +189,8 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     private WebElement giftCardAddUp;
 
 
+
+
     public String getCheckOptionsTitle() {
         return getText(checkOptionsTitle, "Check Options title is - ");
     }
@@ -232,7 +239,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public CheckOptionsScreen pressOpenItem() {
         elementClick(openItemBtn, "- Tax Exempt is tapped");
-        return new CheckOptionsScreen();
+        return new CheckOptionsScreen(driver);
     }
 
     public void pressResendToKitchen() {
