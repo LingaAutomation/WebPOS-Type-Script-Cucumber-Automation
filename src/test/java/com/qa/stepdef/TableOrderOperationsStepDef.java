@@ -119,7 +119,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I delete the seat for QSR order type$")
-    public void iDeleteTheSeatForQsrOrderType(){
+    public void iDeleteTheSeatForQsrOrderType() throws InterruptedException {
         new OrderManagementScreen().deleteSeat2();
     }
 
@@ -1192,7 +1192,7 @@ public class TableOrderOperationsStepDef {
     }
     @Then ("^I should see table layout Screen$")
     public void iShouldSeeTableLayoutScreen() throws InterruptedException {
-        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table Layout");
+        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table layout");
     }
     @Then ("^I should see seated status is not change$")
     public void iShouldSeeSeatedStatusIsNotChange(){

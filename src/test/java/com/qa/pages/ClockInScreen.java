@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
@@ -66,8 +67,8 @@ public class ClockInScreen extends UserLoginScreen{
     @FindBy (name = "Clear")
     private WebElement clearBtn;
 
-    @FindBy (name = "Login")
-    private WebElement loginBtn;
+    String loginBtn = "//button[contains(.,'Login')]";
+
 
     @FindBy (id = "To Login enter your ID number or swipe the card")
     private WebElement titleTxt;
@@ -203,16 +204,20 @@ public class ClockInScreen extends UserLoginScreen{
     }
 
     public OrderTypeWindow ClockIn (){
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //        pressPin1();
 //        pressPin2();
 //        pressPin3();
 //        pressPin4();
 //        pressLogin();
+//        pressPin1Time();
+//        pressPin2Time();
+//        pressPin3Time();
+//        pressPin4Time();
         pressPin1Time();
-        pressPin2Time();
-        pressPin3Time();
-        pressPin4Time();
+        pressPin1Time();
+        pressPin1Time();
+        pressPin1Time();
         pressLogin();
         return new OrderTypeWindow();
     }

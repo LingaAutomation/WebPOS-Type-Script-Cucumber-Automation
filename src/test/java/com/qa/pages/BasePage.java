@@ -5,6 +5,7 @@ import com.qa.utils.GlobalParams;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,15 +26,9 @@ import static java.time.Duration.ofMillis;
 
 public class BasePage extends TGglobalElement {
 
+
     TestUtils utils = new TestUtils();
 
-
-//    public BasePage() {
-//        if(driver==null){
-//            this.driver = new DriverManager().getDriver();
-//        }
-//        PageFactory.initElements(new AppiumFieldDecorator(this.driver), this);
-//    }
 
     public void waitForVisibility(WebElement e) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -285,6 +280,10 @@ public class BasePage extends TGglobalElement {
 //         }catch (Exception execp){
 //         execp.printStackTrace();
 //        }
+    }
+
+    public WebElement convertWebElement(String e){
+        return driver.findElement(By.xpath(e));
     }
 
     public void elementName(String e, String msg) {

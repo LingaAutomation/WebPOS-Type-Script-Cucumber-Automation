@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import static com.qa.pages.DriverSteup.driver;
 
@@ -42,8 +43,7 @@ public class OrderTypeWindow extends ClockInScreen {
     @FindBy(name = "Done")
     private WebElement doneBtn;
 
-    @FindBy(name = "Cancel")
-    private WebElement cancelBtn;
+    String cancelBtn= "//button[contains(.,'Cancel')]";
 
     @FindBy(id = "Order Type")
     private WebElement titleTxt;
@@ -111,7 +111,7 @@ public class OrderTypeWindow extends ClockInScreen {
     }
 
     public void pressCancelBtn() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
       Thread.sleep(1000);
         elementClick(cancelBtn, "Order type selection is cancelled.");
     }

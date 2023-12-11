@@ -39,7 +39,7 @@ public class Hooks {
         if(driver == null) {
             i=0;
 
-            DriverSteup setdf = new DriverSteup();
+            DriverSteup setdf = new DriverSteup(driver);
             setdf.setup();
 
 //            GlobalParams params = new GlobalParams();

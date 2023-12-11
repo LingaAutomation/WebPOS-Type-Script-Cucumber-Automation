@@ -14,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -32,8 +33,8 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(name = "Counting Machine" ) //id("Counting Machine").click();
     private WebElement countingMachineBtn;
 
-    @FindBy(name = "All" )
-    private WebElement allBtn;
+    @FindBy(xpath  = "//button[@id='os_all']")
+    WebElement allBtn;
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"QSR\"])[2]")
     private WebElement QSRCombo;
@@ -66,14 +67,11 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"3\"])[2]" ) //seat number3 -to be deleted
     private WebElement seat3;
 
-    @FindBy(xpath ="(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
-    public WebElement arrowDownForOtherMenuItems;
+    String arrowDownForOtherMenuItems ="//button[@id='os_catMenu']";
 
-    @FindBy(name = "Done")
-    private WebElement doneForThisMenuItem;
+  String doneForThisMenuItem = "//button[contains(.,'Done')]";
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"arrow down\"])[1]")
-    private WebElement arrowDownBtn1;
+    String arrowDownBtn1 = "//ion-grid[@class='qsrSeats md hydrated']/ion-row/ion-col[2]/button[2]";
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
     private WebElement arrowDownBtn2;
@@ -164,14 +162,14 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(name = "Done")
     private WebElement doneReceiptPrinter;
 
-    @FindBy(name = "ADD")
-    private WebElement addSeatBtn;
+//    @FindBy(name = "ADD")
+//    private WebElement addSeatBtn;
 
-    @FindBy(name = "edit DeleteSeats" )
-    private WebElement editDeleteSeatsBtn;
+    String addSeatBtn = "//button[@id='os_addSeat']";
 
-    @FindBy(name = "done DeleteSeats" )
-    private WebElement doneDeleteSeatsBtn;
+    String editDeleteSeatsBtn = "//div[@role='menu']/div/div/ion-grid/ion-row/ion-footer/button";
+
+    String doneDeleteSeatsBtn = "//div[@role='menu']/div/div/ion-grid/ion-row/ion-footer/button";
 
     @FindBy(name = "Delete_Seats")
     private WebElement delSeats;
@@ -298,14 +296,11 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(name = "Dine In")
     private WebElement dineInService;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"2\"])[2]")
-    private WebElement seat2Del;
+    String seat2Del = "//*[@id=\"mat-menu-panel-1\"]/div/div/ion-grid/ion-row/div/button[2]/span[1]/div";
 
-    @FindBy(name = "Close your Sale")
-    private WebElement closeYourSaleTxt;
+    String  closeYourSaleTxt = "//mat-dialog-content[contains(.,'Close Your Sale')]";
 
-    @FindBy(name = "logOff")
-    private WebElement logOffBtn;
+    String logOffBtn = "//button[@id='os_logOff']";
 
     @FindBy(name = "Split")
     private WebElement splitBtn;
@@ -437,12 +432,14 @@ public class OrderManagementScreen extends OrderTypeWindow{
         pressArrowDown1();
     }
 
-    public void deleteSeat2(){
+    public void deleteSeat2() throws InterruptedException {
         pressArrowDown1();
-        click(editDeleteSeatsBtn,"editDeleteSeatsBtn is tapped");
-        click(seat2Del,"Selected seat 2 to be deleted");
-        click(doneDeleteSeatsBtn,"doneDeleteSeatsBtn is tapped");
-        pressArrowDown1();
+        elementClick(editDeleteSeatsBtn,"editDeleteSeatsBtn is tapped");
+        elementClick(seat2Del,"Selected seat 2 to be deleted");
+        elementClick(doneDeleteSeatsBtn,"doneDeleteSeatsBtn is tapped");
+        Thread.sleep(1000);
+//        pressArrowDown1();
+        driver.findElement(By.xpath("//div[@class='cdk-overlay-container']")).click();
     }
 
     public void selectSeat1(){
@@ -623,7 +620,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     public WebElement cate;
     public void categorySelection(String category) throws Exception {
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         pressArrowDown2();
         cate =  driver.findElement(By.xpath(category));
         try {
@@ -1480,7 +1477,8 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyServiceType(String order){
-        WebElement type=mergeAndFindElement(order,"",TestUtils.Accessibility);
+
+        WebElement type=driver.findElement(By.xpath("//button[contains(.,'"+order+"')]"));
         if(type.isDisplayed()){
             utils.log().info(order + " - Service Type Is displayed");
         }else {
@@ -1489,7 +1487,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public String verifyCloseSale(){
-        return elementGetText(closeYourSaleTxt,"close your sale txt is displayed - ");
+        return elementGetText(convertWebElement(closeYourSaleTxt),"close your sale txt is displayed - ");
     }
 
     public void clickLogOffBtn(){

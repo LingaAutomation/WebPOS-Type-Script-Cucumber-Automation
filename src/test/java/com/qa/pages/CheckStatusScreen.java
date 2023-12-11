@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.apache.logging.log4j.Level;
 import org.openqa.selenium.*;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,8 +40,7 @@ public class CheckStatusScreen extends OrderManagementScreen {
     @FindBy(name = "Operation")
     private WebElement operationBtnCheckStats;
 
-    @FindBy(name = "QSR")
-    private WebElement qsrTab;
+    String qsrTab = "//button//span[text()=' QSR ']";
 
 
 
@@ -97,12 +97,12 @@ public class CheckStatusScreen extends OrderManagementScreen {
     }
 
     public void selectCloseCheck4(String table) {
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        List<WebElement> phoneOrders = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        List<WebElement> phoneOrders =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
 
         for (int index = 0; index < phoneOrders.size(); index++) {
 
-            phoneOrders = (List<WebElement>) driver.findElement(By.xpath(table));
+            phoneOrders =  driver.findElements(By.xpath(table));
 
             phoneOrders.get(phoneOrders.size() - 1).click();
         }
@@ -111,12 +111,12 @@ public class CheckStatusScreen extends OrderManagementScreen {
 
     public void verifyClosedCheck(String table){
 
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        List<WebElement> phoneOrders = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        List<WebElement> phoneOrders =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
 
         for (int index = 0; index < phoneOrders.size(); index++) {
 
-            phoneOrders = (List<WebElement>) driver.findElement(By.xpath(table));
+            phoneOrders =  driver.findElements(By.xpath(table));
 
             phoneOrders.get(phoneOrders.size() - 1).click();
         }
@@ -125,12 +125,12 @@ public class CheckStatusScreen extends OrderManagementScreen {
 
     public void clickActiveChecks1(String table){
 
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        List<WebElement> phoneOrders = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        List<WebElement> phoneOrders =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
 
         for (int index = 0; index < phoneOrders.size(); index++) {
 
-            phoneOrders = (List<WebElement>) driver.findElement(By.xpath(table));
+            phoneOrders =  driver.findElements(By.xpath(table));
 
             phoneOrders.get(phoneOrders.size() - 1).click();
 
@@ -141,25 +141,25 @@ public class CheckStatusScreen extends OrderManagementScreen {
     public void clickActiveChecks(String table){
 
 
-        List<WebElement> phoneOrders = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
+        List<WebElement> phoneOrders =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
 
         for (int index = 0; index < phoneOrders.size(); index++) {
 
-            phoneOrders = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\""+table+"\"][last()]"));
+            phoneOrders =  driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\""+table+"\"][last()]"));
 
             phoneOrders.get(phoneOrders.size() - 1 ).click();
         }
     }
 
     public String verifyLinga(){
-        driver.manage().timeouts().implicitlyWait(13,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return elementGetText(lingaPage,"Linga txt is displayed - ");
     }
 
     public void pressOperationOnCheckStats(){elementClick(operationBtnCheckStats,"Tapped Operation Button");}
 
     public void clickQsrButton(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(qsrTab,"Tapped QSR button");
     }
 

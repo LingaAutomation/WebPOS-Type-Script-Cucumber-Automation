@@ -3,12 +3,20 @@ package com.qa.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.concurrent.TimeUnit;
 
 public class DriverSteup {
 
     public static WebDriver driver;
 
+    public DriverSteup(WebDriver driver){
+        if(driver == null){
+            this.driver = null;
+        }
+        PageFactory.initElements(driver,this);
+    }
 public void setup() throws InterruptedException {
 
     //Call the chrome driver
