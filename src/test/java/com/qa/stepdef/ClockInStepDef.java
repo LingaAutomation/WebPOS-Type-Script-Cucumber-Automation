@@ -1,17 +1,17 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import static com.qa.pages.DriverSteup.driver;
 
 public class ClockInStepDef {
 
-    public WebDriver driver = DriverSteup.driver;
+    public WebDriver driver = TestUtils.driver;
 
     @Given("^I'm signed in$")
     public void iMSignedIn() throws InterruptedException {

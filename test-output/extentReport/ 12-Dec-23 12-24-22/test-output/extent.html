@@ -1,0 +1,834 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 12, 2023 12:24:22 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@MainBAsic</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Basic Validation</p>
+            <p class="text-sm">
+              <span>12:24:24 PM</span> / <span>30:54:934</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Basic Validation</h5>
+<span class='badge badge-success'>12.12.2023 12:24:24</span>
+<span class='badge badge-danger'>12.12.2023 12:25:19</span>
+<span class='badge badge-default'>30:54:934</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Refund</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuOfBasicValidationForQsrAs(java.lang.String)">
+                <span>And I select Menu of Basic validation for QSR as "Salad"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+	at com.qa.pages.Regression.selectMenuBasicValidationForQsr(Regression.java:2338)
+	at com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuOfBasicValidationForQsrAs(TableOrderOperationsStepDef.java:1861)
+	at ✽.I select Menu of Basic validation for QSR as "Salad"(file:///C:/WebPOS%20TypeScrip%20Cucumber%20Autpmation/WebPOS-Type-Script-Cucumber-Automation/src/test/resources/BAasic.feature:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iGetTheTotalOfMenuItemInOrderScreen()">
+                <span>And I get the total of menu item in order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickTheSettingsButton()">
+                <span>And I click the Settings button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCloseDayTab()">
+                <span>And I click close day tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCloseDayScreen()">
+                <span>Then I should see close day screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CICloseDayStepDef.iClickInTheCloseTheDayPopoupWindow(java.lang.String,java.lang.String)">
+                <span>And I click "//button[contains(.,'Close All Cashiers')]" in the close the day Popup window "Click Close All Cashiers"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TillManagementStepDef.iVerifyTheCannotCloseTheShiftStoreHaveTheActiveCheck()">
+                <span>When I verify the cannot close the shift, store have the active checks</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CICloseDayStepDef.iClickInTheCloseTheDayPopoupWindow(java.lang.String,java.lang.String)">
+                <span>And I click "//button[contains(.,'Close The Day')]" in the close the day Popup window "Click Close The Day"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CICloseDayStepDef.iClickTheCloseTheDayButtonInTheOperationScreen(java.lang.String,java.lang.String)">
+                <span>When I click the Close the day button in the operation screen "Close The Day" "Click Close the day Button"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickYesButtonOnThePopupForHoldItem()">
+                <span>And I click Yes button on the popup for Hold item</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CICloseDayStepDef.iClickTheInTheCloseTheDayScreen(java.lang.String,java.lang.String)">
+                <span>When I click the "//button[contains(.,'Submit')]" in the close the day screen "click submit button"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickTheToggleIconButton()">
+                <span>And I click the Toggle Icon button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundButtonInTheOperationWindow()">
+                <span>And I click Refund button in the operation window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iSearchTheClosedCheckInRefundScreen()">
+                <span>When I search the closed check in refund screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iVerifyTotalOfMenuInRefundScreenAmount()">
+                <span>And I verify total of menu in Refund screen amount</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundButtonInTheRefundScreen()">
+                <span>And I click refund button in the refund screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iVerifyCheckNumberInRefundAmountWindow()">
+                <span>And I verify check number in refund amount window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iVerifyCheckAmountSameWithRefundWindowAmountAndAlsoDefaultyCheckAmountInNumberPad()">
+                <span>And I verify check amount same with refund window amount and also defaulty check amount in number pad</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterTheReasonInTheRefundWindow()">
+                <span>When I enter the reason in the Refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TillManagementStepDef.iHideTheKeyboard()">
+                <span>And I hide the keyboard</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterThePaymentAsInTheRefundWindow(java.lang.String)">
+                <span>When I enter the payment as "Cash" in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeDoYouWantToRefundConfirmPopup()">
+                <span>Then I should see do you want to refund confirm popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickNoButtonOnSendToKitchenPopup()">
+                <span>And I click No button on send to kitchen popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterTheHugeValueThanTheRefundValueInRefundWindow()">
+                <span>When I enter the huge value than the refund value in refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterThePaymentAsInTheRefundWindow(java.lang.String)">
+                <span>When I enter the payment as "Cash" in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeTheAmountExceedsThePaidAmountPopup()">
+                <span>Then I should see the amount exceeds the paid amount popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterTheSameValueOfTheRefundValueInRefundWindow()">
+                <span>When I enter the same value of the refund value in refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterThePaymentAsInTheRefundWindow(java.lang.String)">
+                <span>When I enter the payment as "Cash" in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeDoYouWantToRefundConfirmPopup()">
+                <span>Then I should see do you want to refund confirm popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickYesButtonOnThePopupForHoldItem()">
+                <span>And I click Yes button on the popup for Hold item</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeRefundSuccessPopup()">
+                <span>Then I should see refund success popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundWithoutReceiptButtonInTheRefundWindow()">
+                <span>When I click refund without receipt button in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldVerifyDefaultyNumberPadShouldHaveOnTheRefundWindow(java.lang.String)">
+                <span>Then I should verify defaulty number pad should have "0,00" on the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickCancelButtonInTheRefundWindow()">
+                <span>And I click cancel button in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundWithoutReceiptButtonInTheRefundWindow()">
+                <span>When I click refund without receipt button in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterTheAmountOnTheRefundWindow(java.lang.String)">
+                <span>And I enter the amount as "5430" on the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterTheRefundReasonAsOnTheRefundWindow(java.lang.String)">
+                <span>And I enter the refund reason as "Refund" on the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterThePaymentAsInTheRefundWindow(java.lang.String)">
+                <span>When I enter the payment as "Cash" in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeDoYouWantToRefundConfirmPopup()">
+                <span>Then I should see do you want to refund confirm popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickYesButtonOnThePopupForHoldItem()">
+                <span>And I click Yes button on the popup for Hold item</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeRefundSuccessPopup()">
+                <span>Then I should see refund success popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundMenuItemsButtonOnTheRefundWindow()">
+                <span>And I click refund menu items button on the refund screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeePleaseSelectTheCheckPopup()">
+                <span>Then I should see please select the check popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iSearchTheClosedCheckInRefundScreen()">
+                <span>And I search the closed check in refund screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundMenuItemsButtonOnTheRefundWindow()">
+                <span>And I click refund menu items button on the refund screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldVerifyTheRefundCheckNumberWithOrderScreenCheckNumber()">
+                <span>Then I should verify the refund check number with order screen check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldVerifyTheButtonAsOnTheRefundOrderScreen(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then I should verify the button as "Refund Check"  "Refund Items" "Done" on the refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iSelectTheMenuInTheRefundOrderScreen()">
+                <span>And I select the menu in the Refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundItemsOnTheRefundOrderScreen()">
+                <span>And I click refund items on the refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickTheRefundCheckButtonOnTheRefundOrderScreen()">
+                <span>And I click the refund check button on the refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeCheckIsRefundedAlreadyPopup()">
+                <span>Then I should see check is refunded already popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickDoneButtonOnTheRefundOrderScreen()">
+                <span>And I click Done button on the refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iSearchTheClosedCheckInRefundScreen()">
+                <span>And I search the closed check in refund screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickRefundMenuItemsButtonOnTheRefundWindow()">
+                <span>And I click refund menu items button on the refund screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldVerifyTheRefundCheckNumberWithOrderScreenCheckNumber()">
+                <span>Then I should verify the refund check number with order screen check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldVerifyTheButtonAsOnTheRefundOrderScreen(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then I should verify the button as "Refund Check"  "Refund Items" "Done" on the refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickTheRefundCheckButtonOnTheRefundOrderScreen()">
+                <span>And I click the refund check button on the refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iVerifyCheckNumberInRefundOrderScreen()">
+                <span>And I verify check number in refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterTheReasonInTheRefundOrderScreen()">
+                <span>And I enter the reason in the Refund Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TillManagementStepDef.iHideTheKeyboard()">
+                <span>And I hide the keyboard</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iEnterThePaymentAsInTheRefundWindow(java.lang.String)">
+                <span>When I enter the payment as "Cash" in the refund window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeDoYouWantToRefundConfirmPopup()">
+                <span>Then I should see do you want to refund confirm popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickYesButtonOnThePopupForHoldItem()">
+                <span>And I click Yes button on the popup for Hold item</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickOkButtonInReceiptPrinterPopup()">
+                <span>And I click Ok button in receipt printer popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iShouldSeeRefundSuccessPopup()">
+                <span>Then I should see refund success popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.RefundStepDef.iClickDoneButtonOnTheRefundOrderScreen()">
+                <span>And I click Done button on the refund order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.ClockInStepDef.iClickPowerButton()">
+                <span>And I click power button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" >
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:25:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>And I select Menu of Basic validation for QSR as "Salad"</a>
+<div class="">
+<span class="badge badge-default">Basic Validation.Refund.And I select Menu of Basic validation for QSR as "Salad"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@MainBAsic</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@MainBAsic</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:24:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Refund</a>
+<div class="">
+<span class="badge badge-default">Basic Validation.Refund</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 12, 2023 12:24:22 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 12, 2023 12:25:19 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='4%'><b>4</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>80</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Basic Validation":54.934
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@MainBAsic</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 4,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 80,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

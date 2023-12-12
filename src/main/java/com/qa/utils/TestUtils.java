@@ -2,6 +2,8 @@ package com.qa.utils;
 
 
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.openqa.selenium.WebDriver;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -19,6 +21,12 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public class TestUtils {
+
+
+
+
+    LoggerContext context = new LoggerContext("testlogger");
+    org.apache.logging.log4j.core.Logger logger = context.getLogger("testLogger");
     public static final long WAIT = 5;
     public static String globalCheckNumber=" ";
     public static String menu =" ";
@@ -96,6 +104,7 @@ public class TestUtils {
    public static String menuNameSplitCheck = " ";
     public static String cashDropPoint = "";
     public static int seatCount;
+    public static WebDriver driver;
     public static int seatCount1;
     public static String giveXvalue=" ";
     public static String seatNumber= " ";
@@ -212,8 +221,8 @@ public class TestUtils {
         return dateFormat.format(date);
     }
 
-    public Logger log() {
-        return (Logger) LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
+    public org.apache.logging.log4j.core.Logger log() {
+        return (org.apache.logging.log4j.core.Logger) LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
     }
 
 

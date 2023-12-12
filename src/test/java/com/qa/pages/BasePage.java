@@ -25,15 +25,15 @@ import java.util.function.Function;
 import static java.time.Duration.ofMillis;
 
 public class BasePage extends TGglobalElement {
-    public WebDriver driver = DriverSteup.driver;
+    public WebDriver driver;
     TestUtils utils = new TestUtils();
 
-//    public BasePage() {
-//        if(driver==null){
-//            this.driver = new DriverManager().getDriver();
-//        }
-//        PageFactory.initElements(new AppiumFieldDecorator(this.driver), this);
-//    }
+    public BasePage() {
+
+            this.driver = DriverSteup.driver;
+
+           PageFactory.initElements(driver, this);
+    }
 
     public void waitForVisibility(WebElement e) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -74,7 +74,7 @@ public class BasePage extends TGglobalElement {
 
     public void sendKeys(WebElement e, String txt, String msg) {
         //waitForVisibility(e);
-        utils.log().info(msg);
+//        utils.log().info(msg);
         e.sendKeys(txt);
     }
 
@@ -1083,9 +1083,6 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
         randomTab=driver.findElement(By.xpath("//div[@class='child']/button["+randomTable+"]"));
 
         return randomTab;
-
-
-
 
     }
 

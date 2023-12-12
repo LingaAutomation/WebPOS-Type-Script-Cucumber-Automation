@@ -11,8 +11,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import static com.qa.stepdef.Hooks.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class TaxRoundingOff extends ClockInScreen{
 

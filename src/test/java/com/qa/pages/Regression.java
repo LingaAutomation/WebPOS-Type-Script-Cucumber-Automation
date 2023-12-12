@@ -1,19 +1,16 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import io.cucumber.java.bs.A;
-import io.cucumber.java.hu.De;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import static com.qa.pages.DriverSteup.driver;
+import org.openqa.selenium.support.PageFactory;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.sql.Time;
 import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Random;
@@ -22,8 +19,11 @@ import java.util.concurrent.TimeUnit;
 public class Regression extends TableLayOutScreen {
 
     public WebDriver driver;
+
     public Regression(WebDriver driver1) {
-        super(DriverSteup.driver);
+        super(TestUtils.driver);
+        this.driver = TestUtils.driver;
+        PageFactory.initElements(this.driver,this);
     }
     public String checkNumber = "";
     @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
@@ -84,7 +84,7 @@ public class Regression extends TableLayOutScreen {
     @FindBy(xpath = "Finish")
     WebElement FinishBtn;
 
-    @FindBy(xpath = "finish")
+    @FindBy(xpath = "//button[@id='os_finish']")
     private WebElement finishOrderBtn;
 
     @FindBy(xpath = "Signature Pad")
@@ -162,10 +162,10 @@ public class Regression extends TableLayOutScreen {
     @FindBy(xpath = "Schofferhofer")
     WebElement schofferhofer;
 
-    @FindBy(xpath = "All")
+    @FindBy(xpath = "//button[contains(.,'All')]")
     private WebElement allBtn;
 
-    @FindBy(xpath = "Table Layout")
+    @FindBy(xpath = "//button[contains(.,'Table layout')]")
     private WebElement tableLayoutTab;
 
     @FindBy(xpath = "MPPG AUTH")
@@ -2205,131 +2205,163 @@ public class Regression extends TableLayOutScreen {
     }
 
 
-    public void selectMenuForBasicValidation(String category) {
+    public void selectMenuForBasicValidation(String category) throws Exception {
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
+        WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
         elementClick(New, "Tapped New");
-        List<WebElement> tablee = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-/*****  Random Select Table ****/
-        Random rand = new Random();
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            elementClick(seat, "Tapped seat Number");
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
-            elementClick(arrowDownn, "Arrow Done on iPad 1");
-            /*** Random Select Category ***/
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(category));
-            elementClick(cate1, "Tapped category");
-            /****  RandOm Select Menu ***/
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-                        utils.log().info(String.valueOf(itemToSelect1));
-                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        TestUtils.menu = menuName.getText();
-                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
-                        try {
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            if ((mainModi1.isDisplayed())) {
-                                List<WebElement> mainModi10 = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                                int count2 = mainModi10.size();
-                                Random rand2 = new Random();
-                                for (int k = 1; k <= 1; k++) {
-                                    int itemToSelect2 = rand2.nextInt(count2);
-
-                                    if (itemToSelect2 == 0) {
-                                        itemToSelect2 = 1;
-                                    }
-                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
-                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
-                                }
-                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                                elementClick(donee, "Done Selected");
-                            }else{ }
-                        }catch (Exception x) {
-                        }
-                    }
-                }
-            } catch (Exception h) {
-                List<WebElement> menuCollection2 = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info("Random Number - "+itemToSelect1);
-                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    TestUtils.menu = menuName.getText();
-                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
-                    try {
-                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                        if ((mainModdii.isDisplayed())) {
-                            List<WebElement> mainModi = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            int count2 = mainModi.size();
-                            Random rand2 = new Random();
-                            for (int jk = 1; jk <= 1; jk++) {
-                                int itemToSelect2 = rand2.nextInt(count2);
-                                if (itemToSelect2 == 0) {
-                                    itemToSelect2 = 1;
-                                }
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
-                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
-                            }
-                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                            elementClick(donee, "Tapped Done");
-                        } else {
-                        }
-                    } catch (Exception M) {
-                    }
-                }
+        Select_RandomTable(driver);
+        Thread.sleep(500);
+        //Check whether the Seat Quantity Entering numpad is displayed or not
+        try
+        {
+            if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+            {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
             }
         }
+        catch(Exception w)
+        {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+        }
 
-        WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Subtotal\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subTotalAmount = subtotalValues.getText();
+        Thread.sleep(1000);
+        //Click the required number seat from numpad
+        driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+        //Click the Continue button
+        driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+
+
+        Thread.sleep(1500);
+
+        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+category+"')]"));
+        elementClick(cate1, "Tapped category");
+        Thread.sleep(5000);
+        /*****  RandOm Select Menu ****/
+        Select_RandomMenuItems(driver);
+
+//        List<WebElement> tablee = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
+//        int count = tablee.size();
+//        utils.log().info(String.valueOf(count));
+///*****  Random Select Table ****/
+//        Random rand = new Random();
+//        for (int i = 1; i <= 1; i++) {
+//            itemToSelect = rand.nextInt(count);
+//            if (itemToSelect == 0) {
+//                itemToSelect = 1;
+//            }
+//            utils.log().info(String.valueOf(itemToSelect));
+//            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
+//            String tableNumber = "T" + itemToSelect;
+//            utils.log().info("Table Number  - " + tableNumber);
+//            elementClick(tableNum, "Tapped Table Number");
+//            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
+//            elementClick(seat, "Tapped seat Number");
+//            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
+//            elementClick(cont, "Tapped continue");
+//            getCheckNumberTxt();
+//            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
+//            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
+//            elementClick(arrowDownn, "Arrow Done on iPad 1");
+//            /*** Random Select Category ***/
+//            WebElement cate1 = (WebElement) driver.findElement(By.xpath(category));
+//            elementClick(cate1, "Tapped category");
+//            /****  RandOm Select Menu ***/
+//            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
+//            check = order.getText();
+//            TestUtils.tableNumberof = check;
+//            try {
+//                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
+//                if (find(menuCollection1, 2)) {
+//                    List<WebElement> menuCollection = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
+//                    int count1 = menuCollection.size();
+//                    Random rand1 = new Random();
+//                    for (int j = 1; j <= 2; j++) {
+//                        int itemToSelect1 = rand1.nextInt(count1);
+//                        if (itemToSelect1 == 0) {
+//                            itemToSelect1 = 1;
+//                        }
+//                        utils.log().info(String.valueOf(itemToSelect1));
+//                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
+//                        TestUtils.menu = menuName.getText();
+//                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
+//                        try {
+//                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+//                            if ((mainModi1.isDisplayed())) {
+//                                List<WebElement> mainModi10 = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+//                                int count2 = mainModi10.size();
+//                                Random rand2 = new Random();
+//                                for (int k = 1; k <= 1; k++) {
+//                                    int itemToSelect2 = rand2.nextInt(count2);
+//
+//                                    if (itemToSelect2 == 0) {
+//                                        itemToSelect2 = 1;
+//                                    }
+//                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
+//                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
+//                                }
+//                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
+//                                elementClick(donee, "Done Selected");
+//                            }else{ }
+//                        }catch (Exception x) {
+//                        }
+//                    }
+//                }
+//            } catch (Exception h) {
+//                List<WebElement> menuCollection2 = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+//                int count1 = menuCollection2.size();
+//                Random rand1 = new Random();
+//                for (int j = 1; j <= 2; j++) {
+//                    int itemToSelect1 = rand1.nextInt(count1);
+//                    if (itemToSelect1 == 0) {
+//                        itemToSelect1 = 1;
+//                    }
+//                    utils.log().info("Random Number - "+itemToSelect1);
+//                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
+//                    TestUtils.menu = menuName.getText();
+//                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
+//                    try {
+//                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+//                        if ((mainModdii.isDisplayed())) {
+//                            List<WebElement> mainModi = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+//                            int count2 = mainModi.size();
+//                            Random rand2 = new Random();
+//                            for (int jk = 1; jk <= 1; jk++) {
+//                                int itemToSelect2 = rand2.nextInt(count2);
+//                                if (itemToSelect2 == 0) {
+//                                    itemToSelect2 = 1;
+//                                }
+//                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
+//                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
+//                            }
+//                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
+//                            elementClick(donee, "Tapped Done");
+//                        } else {
+//                        }
+//                    } catch (Exception M) {
+//                    }
+//                }
+//            }
+//        }
+
+        WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmount = subtotalValues.getAttribute("value");
         TestUtils.subtotalTxt = subTotalAmount;
-        utils.log().info("Subtotal Value as Same with Price Level 2 - "+subTotalAmount);
-        WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Tax\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxAmount = taxValues.getText();
+//        utils.log().info("Subtotal Value as Same with Price Level 2 - "+subTotalAmount);
+        WebElement taxValues = (WebElement) driver.findElements(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmount = taxValues.getAttribute("value");
         TestUtils.taxTxt = taxAmount;
-        utils.log().info("Tax Value is SAME - "+taxAmount);
-        WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String totalAmount = totalValues.getText();
+//        utils.log().info("Tax Value is SAME - "+taxAmount);
+        WebElement totalValues = (WebElement) driver.findElements(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmount = totalValues.getAttribute("value");
         TestUtils.totalTxt = totalAmount;
-        utils.log().info("Tptal Value is SAME - "+totalAmount);
-        WebElement cashValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
+//        utils.log().info("Tptal Value is SAME - "+totalAmount);
+        WebElement cashValues = (WebElement) driver.findElements(By.xpath("//div[@id='os_cashOptionStr']//input"));
 //        WebElement cashValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]");
-        String totalAmount1 = cashValues.getText();
+        String totalAmount1 = cashValues.getAttribute("value");
         TestUtils.cashDiscountTxt = totalAmount1;
-        utils.log().info("Cash Discount Value is SAME - "+totalAmount1);
+//        utils.log().info("Cash Discount Value is SAME - "+totalAmount1);
     }
 
     public String[] a = {};
@@ -3251,15 +3283,12 @@ public class Regression extends TableLayOutScreen {
                 break;
             }
         }
-
-
     }
 
-    public void doBatchForVourl(String catego) {
+    public void doBatchForVourl(String catego) throws Exception {
         driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
         selectMenuForBasicValidation(catego);
     }
-
 
     public String selectMenuForDineOrderType(String cate1) throws InterruptedException {
 
@@ -3269,7 +3298,7 @@ public class Regression extends TableLayOutScreen {
         elementClick(New, "Tapped New");
         List<WebElement> tablee = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
         int count = tablee.size();
-        utils.log().info(String.valueOf(count));
+//        utils.log().info(String.valueOf(count));
 
 /****  RandOm Select Table ***/
 
@@ -6906,23 +6935,53 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    public void createdSaleForCashierOut1(String Cate) throws InterruptedException {
+    public void createdSaleForCashierOut1(String Cate) throws Exception {
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
 
         elementClick(cancelBtn, "Closed the Order Type window");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
-        String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
+        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//span[@class='qsrusername']"));
+        String name = (cashierName.getText());
+//        utils.log().info("Cashier Name - " + name);
         TestUtils.cashier_Name1 = name;
 
         elementClick(allBtn, "Selected All");
         elementClick(tableLayoutTab, "Table Layout");
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
+//            utils.log().info("Sale Count - " + i);
 
 
-            selectMenuForDineOrderType(Cate);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+Cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
 //        elementClick(finishOrderBtn,"Finish Button");
             elementClick(cash, "Cash Button");
             elementClick(Exact, "Exact Button");
@@ -6931,8 +6990,38 @@ public class Regression extends TableLayOutScreen {
         }
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Active Sale Count - " + i);
-            selectMenuForDineOrderType(Cate);
+//            utils.log().info("Active Sale Count - " + i);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+Cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
             elementClick(finishOrderBtn, "Finish Button");
 
         }
@@ -6940,23 +7029,55 @@ public class Regression extends TableLayOutScreen {
     }
 
 
-    public void createdSaleForCashierOut2(String Cate) throws InterruptedException {
+    public void createdSaleForCashierOut2(String Cate) throws Exception {
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
 
         elementClick(cancelBtn, "Cancel selected");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
-        String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
+        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//span[@class='qsrusername']"));
+        String name = (cashierName.getText());
+//        utils.log().info("Cashier Name - " + name);
         TestUtils.cashier_Name2 = name;
 
         elementClick(allBtn, "Selected All");
         elementClick(tableLayoutTab, "Table Layout");
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
+//            utils.log().info("Sale Count - " + i);
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+Cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
 
 
-            selectMenuForDineOrderType(Cate);
+//            selectMenuForDineOrderType(Cate);
 //            elementClick(finishOrderBtn,"Finish Button");
             elementClick(cash, "Cash Button");
             elementClick(Exact, "Exact Button");
@@ -6965,30 +7086,95 @@ public class Regression extends TableLayOutScreen {
         }
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
+//            utils.log().info("Sale Count - " + i);
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+Cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
 
 //            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
+//            selectMenuForDineOrderType(Cate);
             elementClick(finishOrderBtn, "Finish Button");
 
         }
     }
 
-    public void createdSaleForCashierOut3(String cate) throws InterruptedException {
+    public void createdSaleForCashierOut3(String cate) throws Exception {
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
         elementClick(cancelBtn, "Cancel selected");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
+        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//span[@class='qsrusername']"));
         String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
+//        utils.log().info("Cashier Name - " + name);
         TestUtils.cashier_Name3 = name;
         elementClick(allBtn, "Selected All");
         elementClick(tableLayoutTab, "Table Layout");
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
+//            utils.log().info("Sale Count - " + i);
+
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
 
 //            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(cate);
+//            selectMenuForDineOrderType(cate);
 //            elementClick(finishOrderBtn,"Finish Button");
             elementClick(cash, "Cash Button");
             elementClick(Exact, "Exact Button");
@@ -6998,30 +7184,93 @@ public class Regression extends TableLayOutScreen {
         }
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
+//            utils.log().info("Sale Count - " + i);
 
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
 //            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(cate);
+//            selectMenuForDineOrderType(cate);
             elementClick(finishOrderBtn, "Finish Button");
 
         }
     }
 
-    public void createdSaleForCashierOut4(String Cate) throws InterruptedException {
+    public void createdSaleForCashierOut4(String Cate) throws Exception {
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
         elementClick(cancelBtn, "Cancel selected");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
+        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//div[contains(.,'New Check')]"));
         String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
+//        utils.log().info("Cashier Name - " + name);
         TestUtils.cashier_Name4 = name;
         elementClick(allBtn, "Selected All");
         elementClick(tableLayoutTab, "Table Layout");
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
+//            utils.log().info("Sale Count - " + i);
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+Cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
 
 //            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
+//            selectMenuForDineOrderType(Cate);
 //            elementClick(finishOrderBtn,"Finish Button");
             elementClick(cash, "Cash Button");
             elementClick(Exact, "Exact Button");
@@ -7030,10 +7279,41 @@ public class Regression extends TableLayOutScreen {
         }
 
         for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
+//            utils.log().info("Sale Count - " + i);
 
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+            elementClick(New, "Tapped New");
+            Select_RandomTable(driver);
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            try
+            {
+                if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+                {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+                }
+            }
+            catch(Exception w)
+            {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+            }
+
+            driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+            //Click the required number seat from numpad
+            driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+
+            //Click the Continue button
+            driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+            Thread.sleep(1500);
+
+            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+            WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+Cate+"')]"));
+            elementClick(cate1, "Tapped category");
+            Thread.sleep(5000);
+            /****  RandOm Select Menu ***/
+            Select_RandomMenuItems(driver);
 //            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
+//            selectMenuForDineOrderType(Cate);
             elementClick(finishOrderBtn, "Finish Button");
 
         }
@@ -7326,20 +7606,24 @@ public class Regression extends TableLayOutScreen {
 
     @FindBy(xpath = "Cashier out saved successfully")
     WebElement cashierOutSavedSuccessfullyPopup;
+
+    @FindBy(xpath = "//ion-label[.='Cannot close the shift, Store have 1 Active Check']")
+    WebElement cashierOutfullyPopup;
+
     @FindBy(xpath = "Done")
     private WebElement Done1;
 
     public void verifyTheCannotCloseTheShiftStoreHaveTheActiveCheck() {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         try {
-            if (cashierOutSavedSuccessfullyPopup.isDisplayed()) {
+            if (!cashierOutfullyPopup.isDisplayed()) {
 //                utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
 //                elementClick(Done1, "Tapped Done Button on the Popup");
             }
         } catch (Exception z) {
-            WebElement cashBtn = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"Cash\"]"));
+            WebElement cashBtn = driver.findElement(By.xpath("//ion-grid[contains(@class,'cashierout-content')]//ion-row//ion-col//button//span[contains(.,'Cash')]"));
             elementClick(cashBtn, "Selected - " + cashBtn.getText());
-            utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
+//            utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
             elementClick(Done1, "Tapped Done Button on the Popup");
         }
     }

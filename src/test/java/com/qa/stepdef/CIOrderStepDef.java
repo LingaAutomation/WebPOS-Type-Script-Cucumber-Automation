@@ -5,6 +5,7 @@ import com.qa.pages.CIOrderPage;
 import com.qa.pages.CIPaymentScreen;
 import com.qa.pages.ClockInScreen;
 import com.qa.pages.CIOrderPage;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 
 public class CIOrderStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     ClockInScreen clockInScreen = new ClockInScreen(driver);
     CIOrderPage orderPage = new CIOrderPage();

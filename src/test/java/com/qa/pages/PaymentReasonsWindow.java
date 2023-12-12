@@ -9,16 +9,16 @@ public class PaymentReasonsWindow extends TillManagementScreen{
     public PaymentReasonsWindow(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "Reasons" )
+    @FindBy(xpath = "//ion-title[.='Reasons']" )
     private WebElement reasonsWindowTitle;
 
-    @FindBy(xpath = "Paid In" )
+    @FindBy(xpath = "//ion-label[.='Paid In']" )
     private WebElement paidInReasonBtn;
 
-    @FindBy(xpath = "Paid Out" )
+    @FindBy(xpath = "//button[.='Paid Out']" )
     private WebElement paidOutReasonBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Ok\"]" )
+    @FindBy(xpath = "//span[contains(.,'Add')]" )
     private WebElement okBtn;
 
 

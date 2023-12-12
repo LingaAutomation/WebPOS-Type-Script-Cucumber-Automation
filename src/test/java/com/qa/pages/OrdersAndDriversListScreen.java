@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.concurrent.TimeUnit;
 
 public class OrdersAndDriversListScreen extends BasePage {
-    @FindBy(xpath = "Table Layout")
+    @FindBy(xpath = "//span[contains(.,'Table layout')]")
     private WebElement tableLayoutTab;
 
     @FindBy(xpath = "Check Stats")

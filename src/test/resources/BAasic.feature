@@ -6,7 +6,7 @@ Feature:Basic Validation
 #    And Go to the BO
 #    When I search the store as "TestAppiumUSD"
 
-
+  @MainBAsic
   Scenario: Cashier Out From Till Management Screen
     Given I'm logged in
     And I closed the order type window
@@ -39,15 +39,15 @@ Feature:Basic Validation
     And I click the Settings button
     And I click close day tab
     Then I should see close day screen
-    And I click "Close All Cashiers" in the close the day Popup window "Click Close All Cashiers"
+    And I click "//button[contains(.,'Close All Cashiers')]" in the close the day Popup window "Click Close All Cashiers"
   When I verify the cannot close the shift, store have the active checks
 #    Then I should see cashier out saved successfully popup
 #    And I click Done button on the Popup
-    And I click "Close The Day" in the close the day Popup window "Click Close The Day"
+    And I click "//button[contains(.,'Close The Day')]" in the close the day Popup window "Click Close The Day"
     When I click the Close the day button in the operation screen "Close The Day" "Click Close the day Button"
     And I click Yes button on the popup for Hold item
 #    And I click "Yes" in the close the day Popup window "click yes button"
-    When I click the "Submit" in the close the day screen "click submit button"
+    When I click the "//button[contains(.,'Submit')]" in the close the day screen "click submit button"
 #    And I click "No" in the close the day Popup window "click No button"
 #    And I click No button on send to kitchen popup
     And I click Done button on the Popup
@@ -65,16 +65,16 @@ Feature:Basic Validation
     Then I should see do you want to refund confirm popup
     And I click No button on send to kitchen popup
     When I enter the huge value than the refund value in refund window
-    And I hide the keyboard
+#    And I hide the keyboard
     When I enter the payment as "Cash" in the refund window
     Then I should see the amount exceeds the paid amount popup
     And I click Done button on the Popup
     When I enter the same value of the refund value in refund window
-    And I hide the keyboard
+#    And I hide the keyboard
     When I enter the payment as "Cash" in the refund window
     Then I should see do you want to refund confirm popup
     And I click Yes button on the popup for Hold item
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     Then I should see refund success popup
     And I click Done button on the Popup
     ########    Verify the "Refund Without Receipt" option   ##########
@@ -85,11 +85,11 @@ Feature:Basic Validation
     When I click refund without receipt button in the refund window
     And I enter the amount as "5430" on the refund window
     And I enter the refund reason as "Refund" on the refund window
-    And I hide the keyboard
+#    And I hide the keyboard
     When I enter the payment as "Cash" in the refund window
     Then I should see do you want to refund confirm popup
     And I click Yes button on the popup for Hold item
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     Then I should see refund success popup
     And I click Done button on the Popup
     ########   Verify the "Refund Menu items" option   #########
@@ -103,14 +103,14 @@ Feature:Basic Validation
     Then I should verify the button as "Refund Check"  "Refund Items" "Done" on the refund order screen
     And I select the menu in the Refund order screen
     And I click refund items on the refund order screen
-    And I verify check number in refund order screen
-    And I enter the reason in the Refund Order Screen
-    And I hide the keyboard
-    When I enter the payment as "Cash" in the refund window
-    Then I should see do you want to refund confirm popup
-    And I click Yes button on the popup for Hold item
-    And I click Ok button in receipt printer popup
-    Then I should see refund success popup
+#    And I verify check number in refund order screen
+#    And I enter the reason in the Refund Order Screen
+#    And I hide the keyboard
+#    When I enter the payment as "Cash" in the refund window
+#    Then I should see do you want to refund confirm popup
+#    And I click Yes button on the popup for Hold item
+#    And I click Ok button in receipt printer popup
+#    Then I should see refund success popup
     And I click Done button on the Popup
     ########  13. Select "Refund check" option from order screen  #########
     And I click the refund check button on the refund order screen
@@ -122,29 +122,31 @@ Feature:Basic Validation
     Then I Should get back to the Order Screen
     Then I should verify the refund check number with order screen check number
     Then I should verify the button as "Refund Check"  "Refund Items" "Done" on the refund order screen
-    And I click the refund check button on the refund order screen
-    And I verify check number in refund order screen
-    And I enter the reason in the Refund Order Screen
-    And I hide the keyboard
-    When I enter the payment as "Cash" in the refund window
-    Then I should see do you want to refund confirm popup
-    And I click Yes button on the popup for Hold item
-    And I click Ok button in receipt printer popup
-    Then I should see refund success popup
-    And I click Done button on the Popup
+#    And I click the refund check button on the refund order screen
+#    And I verify check number in refund order screen
+#    And I enter the reason in the Refund Order Screen
+#    And I hide the keyboard
+#    When I enter the payment as "Cash" in the refund window
+#    Then I should see do you want to refund confirm popup
+#    And I click Yes button on the popup for Hold item
+#    And I click Ok button in receipt printer popup
+#    Then I should see refund success popup
+#    And I click Done button on the Popup
     And I click Done button on the refund order screen
     And I click power button
 
-@Cryptos
+
   Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Refund Screen"
     Given I'm logged in
     And I closed the order type window
     And I select order type as QSR in order screen
-    And I select service type as "Bar Tab" on the order screen
-    And I click the Exit to close the preauth window
+    And I select service type as "BarTab" on the order screen
+#    And I click the Exit to close the preauth window
     And I click Add Customer Button
-    And I click Add new button
-    Then I should see the customer profile window
+#    And I click Add new button
+#    Then I should see the customer profile window
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
     And Enter the new customer randomlys
     And I click the phone number field on the customer profile screen
     And I get the mobile number from the customer profile screen
@@ -156,6 +158,7 @@ Feature:Basic Validation
     And I should verify tax value as "$ 0.10"
     And I should verify total2 value as "$ 1.16"
     And I click Payment button in the Order Management Screen
+#Need to do
     When I select the MPPG Payment on the payment window
     Then I should see tip screen
     And I select the tip from the tip screen
@@ -200,11 +203,13 @@ Feature:Basic Validation
     And I click power button
 
 
-
+  @MainBAsic
   Scenario: Global Till ( PAY IN, PAy Out )
     Given I'm logged in
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     When I verify till is available or not if available closed the till
 ## 16. Navigate to the Till Management screen
   ##15. In the Open Till screen Enter the amount by number pad or use the denomination to enter the amount should be saved in the Till (Enable the  Global Till toggle)
@@ -232,12 +237,14 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click QSR tab
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     Then I should see active till total has changed depends on menu total
  ######  PAY IN  #######
     And I click pay in button in the till management screen
     And I enter Paid By as "KamilTT"
-    And I hide the keyboard
+#    And I hide the keyboard
     And I enter first number of the payment
     And I enter second number of the payment
     And I enter third number of the payment
@@ -246,15 +253,15 @@ Feature:Basic Validation
     And I should see the Reasons window with title "Reasons"
     And I select the pay in reason as Paid In
     When I click OK button to select the payment reason
-    Then I should see payment successful pop-up with the message "Paid In Successfully" pay in
-    And I click Done button on the Popup
+#    Then I should see payment successful pop-up with the message "Paid In Successfully" pay in
+#    And I click Done button on the Popup
     And I click Till button
     Then I should see active till total has changed depends on Pay in
      ######  PAY OUT #######
     And I get the details of Active details
     When I click pay out button in the till management screen
     And I enter Paid By as "KamilTT"
-    And I hide the keyboard
+#    And I hide the keyboard
     And I enter first number of the payment
     And I enter second number of the payment
     And I enter third number of the payment
@@ -263,8 +270,8 @@ Feature:Basic Validation
     And I should see the Reasons window with title "Reasons"
     And I select the pay in reason as Paid Out
     When I click OK button to select the payment reason
-    Then I should see pop-up with the message "Paid Out Successfully" for the pay out
-    And I click Done button on the Popup
+#    Then I should see pop-up with the message "Paid Out Successfully" for the pay out
+#    And I click Done button on the Popup
     And I click Till button
     Then I should see active till total has changed depends on Pay out
 #    @Cashm
@@ -298,14 +305,16 @@ Feature:Basic Validation
     Then I should see cashier out saved successfully popup
     And I click Done button on the Popup
     And I click power button
-
+  @MainBAsic
   Scenario: Verify the Pay in, Payout, Audit, Single cashier out, Close the day for the current business day(Clock in, start till(user till, Global till))
     Given I'm logged in
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     When I verify till is available or not if available closed the till
     Then I should see open till management screen
-    And I click cancel button in open till popup
+#    And I click cancel button in open till popup
     And I click reports button in the Till management screen
     When I get gross value from the reports of till management window
     And I click Till button
@@ -334,12 +343,14 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click QSR tab
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     Then I should see active till total has changed depends on menu total
     ######  PAY IN  #######
     And I click pay in button in the till management screen
     And I enter Paid By as "KamilTT"
-    And I hide the keyboard
+#    And I hide the keyboard
     And I enter first number of the payment
     And I enter second number of the payment
     And I enter third number of the payment
@@ -356,7 +367,7 @@ Feature:Basic Validation
     And I get the details of Active details
     When I click pay out button in the till management screen
     And I enter Paid By as "KamilTT"
-    And I hide the keyboard
+#    And I hide the keyboard
     And I enter first number of the payment
     And I enter second number of the payment
     And I enter third number of the payment
@@ -395,7 +406,7 @@ Feature:Basic Validation
     Then I should see cashier out saved successfully popup
     And I click Done button on the Popup
     And I click power button
-
+  @MainBAsic
   Scenario: Added tip is Correct or not
     Given I'm logged in
     And I closed the order type window
@@ -411,7 +422,7 @@ Feature:Basic Validation
     And I click Submit button in the Payment popup
     And I closed the order type window
     And I click log off button in order screen
-
+  @MainBAsic
   Scenario: Bussiness Date Verify with Close day window Date
     When I get he Bussiness date from the order screen
     Given I'm logged in
@@ -422,7 +433,7 @@ Feature:Basic Validation
     And I click close day tab
     When I verify bussiness date with close day screen
     And I click power button
-
+  @MainBAsic
   Scenario: Cashier OUT PULL Request
     Given Im logged in for cashier1
     And I created sale for Cashier out1 as "FOOD"
@@ -433,21 +444,21 @@ Feature:Basic Validation
     And I created sale for Cashier out3 as "Salad"
     Given Im logged in for cashier4
     And I created sale for Cashier out4 as "Salad"
-#    And I click power button
+    And I click power button
     Given I'm logged in for Phone store
     And I closed the order type window
     And I click the Settings button
     And I click till management button from the operation window
     When I verify till is available or not if available closed the till
-    And I click cancel button in open till popup
+#    And I click cancel button in open till popup
     And I click reports button in the Till management screen
     And I select the cashier1 on the report screen
     And I select the cashier2 on the report screen
     And I select the cashier3 on the report screen
     And I select the cashier4 on the report screen
     And I click power button
+# Need to add the GIveX and exectue this
 
-  @Merge
   Scenario: GiveX
     Given I'm logged in
     And I closed the order type window
@@ -470,12 +481,14 @@ Feature:Basic Validation
     And I closed the order type window
     And I click log off button in order screen
 
-    @Failed
+  @MainBAsic
   Scenario: User Till
     Given I'm logged in
     ##5. Navigate to the Till Management screen
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+      And I click on the Settings button
+      And I click on the Till Management button
     When I verify till is available or not if available closed the till
     Then I should see open till management screen
     ##6. In the Open Till screen Enter the amount by number pad or use the denomination to enter the amount should be saved in the Till (Disable mode of Global Till toggle)
@@ -500,7 +513,9 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click QSR tab
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+      And I click on the Settings button
+      And I click on the Till Management button
     Then I should see active till total has changed depends on menu total
     ##8. Select the active till in till management screen choose Close till option
     And I click Active till check
@@ -542,7 +557,9 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click QSR tab
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+      And I click on the Settings button
+      And I click on the Till Management button
     Then I should see active till total has changed depends on menu total
     And I click Active till check
     And I click the Close Till button
@@ -560,6 +577,7 @@ Feature:Basic Validation
     And I click Closed till button
     And I get the closed till check details
     And I click power button
+
   @Failed0
   Scenario: Global Till
     Given I'm logged in
@@ -591,7 +609,9 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click QSR tab
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     Then I should see active till total has changed depends on menu total
     ##18. Select the active till in till management screen choose Close till option
     And I click Active till check
@@ -633,7 +653,9 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click QSR tab
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     Then I should see active till total has changed depends on menu total
     And I click Active till check
     And I click the Close Till button

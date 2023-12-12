@@ -6,13 +6,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
-import static com.qa.pages.DriverSteup.driver;
+
 import java.util.concurrent.TimeUnit;
 
 public class CIPaymentScreen extends BasePage{
 
-    public WebDriver driver = DriverSteup.driver;
+    public WebDriver driver = TestUtils.driver;
 
     // Using Elements: Cancel , Payment, Gratuity ,paymentPin0,paymentPin5,paymentPin00,
     String btnCommonXPath = "//XCUIElementTypeButton[@name=\"{0}\"]";
@@ -55,7 +54,7 @@ public class CIPaymentScreen extends BasePage{
 
     String clickNewTab="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]";
 
-    String btnSubmit="//XCUIElementTypeButton[@name=\"  Submit\"]";
+    String btnSubmit="//button[contains(.,'Submit')]";
 
     String btnNoXPath="//XCUIElementTypeButton[@name=\"{0}\"]";
 
@@ -118,7 +117,7 @@ public class CIPaymentScreen extends BasePage{
 //        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Close All Cashiers')]"));
+        WebElement element = driver.findElement(By.xpath(btnName));
         elementClick(element, msg);
     }
 

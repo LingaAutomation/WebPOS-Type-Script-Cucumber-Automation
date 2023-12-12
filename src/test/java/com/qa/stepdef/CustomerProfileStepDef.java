@@ -3,15 +3,17 @@ package com.qa.stepdef;
 import com.qa.pages.ClockInScreen;
 import com.qa.pages.CustomerProfileWindow;
 import com.qa.pages.OrderTypeWindow;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class CustomerProfileStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     @And("I should see an asterisk next to the Mobile field")
     public void iShouldSeeAnAsteriskNextToTheMobileField() {
@@ -200,5 +202,31 @@ public class CustomerProfileStepDef {
     @And ("^I click save button in the account type screen$")
     public void iClickSaveButtonInTheAccountTypeScreen(){
         new CustomerProfileWindow(driver).clickSaveBtnInTheAccountTypeScreen();
+    }
+
+    @Then("I should see the add customer screen in the window")
+    public void iShouldSeeTheAddCustomerScreenInTheWindow() {
+
+       String Add_Customer_Text = driver.findElement(By.xpath("//ion-header//p[contains(.,'Add Customer')]")).getText();
+       if (Add_Customer_Text.equals("Add Customer")) {
+
+       }else {
+
+       }
+
+    }
+
+//    @And("I Click on the ByPhone Option")
+//    public void iClickOnTheByPhoneOption() {
+//
+//        driver.findElement(By.xpath("//div[.='By Phone']")).click();
+//
+//
+//    }
+
+    @And("I Click on the Byname Option")
+    public void iClickOnTheBynameOption() {
+
+        driver.findElement(By.xpath("//div[.='By Name / Email']")).click();
     }
 }

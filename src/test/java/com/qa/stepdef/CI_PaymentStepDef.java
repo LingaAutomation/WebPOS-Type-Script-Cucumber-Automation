@@ -1,7 +1,7 @@
 package com.qa.stepdef;
 
-import com.qa.pages.CIPaymentScreen;
 import com.qa.pages.CICloseDayScreen;
+import com.qa.pages.CIPaymentScreen;
 import com.qa.pages.CIWaitListPage;
 import com.qa.pages.CheckOptionsScreen;
 import com.qa.utils.TestUtils;
@@ -9,12 +9,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebDriver;
 
 public class CI_PaymentStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     CIPaymentScreen ciPaymentScreen = new CIPaymentScreen();
     CICloseDayScreen ciCloseDayScreen = new CICloseDayScreen();

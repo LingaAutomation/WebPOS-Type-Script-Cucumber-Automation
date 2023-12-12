@@ -50,7 +50,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     private WebElement customerToSelectForNmi;
 
 
-    @FindBy(xpath =  "//XCUIElementTypeButton[@name=\"Save\"]")
+    @FindBy(xpath =  "//button[contains(.,'Save')]")
     private WebElement saveBtn;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeSwitch")

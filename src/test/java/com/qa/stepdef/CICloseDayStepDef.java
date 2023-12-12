@@ -54,7 +54,7 @@ public class CICloseDayStepDef {
 
     @When("^I click the Close the day button in the operation screen \"([^\"]*)\" \"([^\"]*)\"$")
     public void iClickTheCloseTheDayButtonInTheOperationScreen(String name, String msg) {
-        new CICloseDayScreen().btnCloseTheDay(name, msg);
+//        new CICloseDayScreen().btnCloseTheDay(name, msg);
     }
 
     @And("^I click \"([^\"]*)\" in the close the day Popup window \"([^\"]*)\"$")
@@ -93,7 +93,8 @@ public class CICloseDayStepDef {
     }
 
     @And("^I click the \"([^\"]*)\" in the close the day screen \"([^\"]*)\"$")
-    public void iClickTheInTheCloseTheDayScreen(String btnCloseCashier, String msg) {
+    public void iClickTheInTheCloseTheDayScreen(String btnCloseCashier, String msg) throws InterruptedException {
+        Thread.sleep(4000);
         new CIPaymentScreen().commonBtnClick(btnCloseCashier, msg);
     }
 

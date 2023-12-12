@@ -1,12 +1,13 @@
 package com.qa.stepdef;
 
 import com.qa.pages.CheckStatusScreen;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import org.openqa.selenium.WebDriver;
 
 public class CheckStatusStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     @And("^I select Closed Tab$")
     public void iSelectClosedTab() {

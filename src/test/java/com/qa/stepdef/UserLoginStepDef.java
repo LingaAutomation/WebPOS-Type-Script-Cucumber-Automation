@@ -3,6 +3,7 @@ package com.qa.stepdef;
 import com.qa.pages.ClockInScreen;
 import com.qa.pages.SignInScreen;
 import com.qa.pages.UserLoginScreen;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 
 public class UserLoginStepDef {
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     @Given("I clicked sign in button and see the login window")
     public void iClickedSignInButtonAndSeeTheLoginWindow() {

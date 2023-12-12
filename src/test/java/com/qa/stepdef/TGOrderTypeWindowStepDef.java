@@ -1,6 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,7 +9,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class TGOrderTypeWindowStepDef {
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 //
 //    @And("^I'm logged in")
 //    public void iMLoggedIn() {

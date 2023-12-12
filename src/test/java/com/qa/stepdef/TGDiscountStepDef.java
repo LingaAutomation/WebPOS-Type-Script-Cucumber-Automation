@@ -1,6 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 
 public class TGDiscountStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
     @And("^Go to the BO$")
     public void GoToTheBO() throws InterruptedException {
         new ClockInScreen(driver).goToBO();

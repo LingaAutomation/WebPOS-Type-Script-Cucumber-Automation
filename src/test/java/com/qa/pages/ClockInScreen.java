@@ -1,14 +1,15 @@
 package com.qa.pages;
 
-import com.qa.stepdef.Hooks;
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.*;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import static com.qa.pages.DriverSteup.driver;
+
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
@@ -17,8 +18,8 @@ public class ClockInScreen extends UserLoginScreen{
     public WebDriver driver;
 
     public ClockInScreen(WebDriver driver1) {
-        this.driver = DriverSteup.driver;
-      PageFactory.initElements(driver, this);
+        this.driver = TestUtils.driver;
+        PageFactory.initElements(this.driver,this);
   }
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
@@ -590,9 +591,9 @@ public class ClockInScreen extends UserLoginScreen{
     public void getBussinessDate(){
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
 //        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
-        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[8]/XCUIElementTypeStaticText[3]"));
+        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'time-version')]//p[1]"));
         String bussinessTxt = bussinessDate.getText();
-        utils.log().info("Current "+bussinessTxt);
+//        utils.log().info("Current "+bussinessTxt);
 
         // Split the String by Regex Pattern
         Pattern P =Pattern.compile("-");
@@ -600,18 +601,20 @@ public class ClockInScreen extends UserLoginScreen{
         String[] splitt = P.split(bussinessTxt,2);
         bussiness = splitt[1];
         TestUtils.bussiness1 = bussiness;
-        utils.log().info("Date - "+bussiness);
+        System.out.println(bussiness);
+//        utils.log().info("Date - "+bussiness);
     }
 
     public void verifyBussinessDateWithCloseDayScreen(){
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        WebElement close_BusinessDate = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeStaticText[1]"));
+        WebElement close_BusinessDate = (WebElement) driver.findElement(By.xpath("//ion-list[contains(@class,'closeday_detailgrid')]//p//label[.='From']/.."));
         String close_BusinessDateTxt = close_BusinessDate.getText();
-        utils.log().info("In Close day Business Date "+close_BusinessDateTxt);
+//        utils.log().info("In Close day Business Date "+close_BusinessDateTxt);
+
         if(close_BusinessDateTxt.contains(TestUtils.bussiness1)){
-            utils.log().info("Bussiness Date is SAME");
+//            utils.log().info("Bussiness Date is SAME");
         }else{
-            utils.log().info("Bussiness Date is NOT SAME");
+//            utils.log().info("Bussiness Date is NOT SAME");
         }
     }
 
@@ -765,25 +768,25 @@ WebElement operationBtnClockInScreen;
         utils.log().info("popup is displayed as - "+youCantPunchOutWithActiveCashierPopupTxt);
     }
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[5]/ion-col[3]/button")
     WebElement pin6Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"5\"])[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[5]/ion-col[2]/button")
     WebElement pin5Time1;
-    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[4]/button[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[5]/ion-col[1]/button")
     WebElement pin4Time1;
-    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[3]/button[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[4]/ion-col[3]/button")
     WebElement pin3Time1;
-    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[2]/button[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[4]/ion-col[2]/button")
     WebElement pin2Time1;
-    @FindBy(xpath = "//ion-grid[contains(@class,'numberpad_grid')]/../ion-grid/ion-row[2]/ion-col[1]/button[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[4]/ion-col[1]/button")
     WebElement pin1Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"7\"])[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[6]/ion-col[1]/button")
     WebElement pin7Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"8\"])[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[6]/ion-col[2]/button")
     WebElement pin8Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"9\"])[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[6]/ion-col[3]/button")
     WebElement pin9Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"0\"])[1]")
+    @FindBy(xpath = "//ion-grid/ion-row[7]/ion-col[2]/button")
     WebElement pin0Time1;
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Clear\"])[1]")
     WebElement pinClrTime1;

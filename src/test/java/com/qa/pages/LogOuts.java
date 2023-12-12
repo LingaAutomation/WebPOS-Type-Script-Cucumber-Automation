@@ -1,13 +1,24 @@
 package com.qa.pages;
 
 
+import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
 public class LogOuts extends BasePage {
 
+    public WebDriver driver = TestUtils.driver;
+
+    public LogOuts(){
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
+    }
     /* Belong to clock in page */
     @FindBy(xpath = "Cancel")
     private WebElement cancelBtn;
@@ -99,7 +110,7 @@ public class LogOuts extends BasePage {
 
     public void pressPowerBtn() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         elementClick(powerBtn, "Text");
     }
 

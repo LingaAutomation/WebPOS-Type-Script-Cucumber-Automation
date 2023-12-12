@@ -40,11 +40,8 @@ public class CheckStatusScreen extends OrderManagementScreen {
     @FindBy(xpath = "Operation")
     private WebElement operationBtnCheckStats;
 
-    @FindBy(xpath = "QSR")
+    @FindBy(xpath = "//button[contains(.,'QSR')]")
     private WebElement qsrTab;
-
-
-
 
     public void selectClosedChecksTab(){
         click(closedTab, "Closed checks tab is tapped");

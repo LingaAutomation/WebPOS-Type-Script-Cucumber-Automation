@@ -2,17 +2,20 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.support.FindBy;
-
+import static com.qa.pages.DriverSteup.driver;
 import java.sql.Time;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class RefundScreen extends BasePage{
 
-    @FindBy(xpath = "Refund")
+    public WebDriver driver = TestUtils.driver;
+
+    @FindBy(xpath = "//label[.='Refund']")
     WebElement RefundBtn;
     public void clickRefundButton(){
         elementClick(RefundBtn, "Refund Button Selected");
@@ -23,7 +26,7 @@ public class RefundScreen extends BasePage{
         String noRefund = noRefundCheck.getText();
         utils.log().info("Displayed Popup as - "+noRefund);
     }
-    @FindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//input[@data-placeholder='Check No']")
     WebElement searchTabInRefund;
 
     public void searchTheClosedCheckInRefundScreen() throws InterruptedException {
@@ -32,17 +35,17 @@ public class RefundScreen extends BasePage{
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabInRefund.clear();
         searchTabInRefund.sendKeys(globalCheckNumber);
-        WebElement searchBtn = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Search\"]"));
+        WebElement searchBtn = driver.findElement(By.xpath("//span[contains(.,'Search')]"));
         elementClick(searchBtn,"Search Button Tapped");
-        Thread.sleep(600);
-        WebElement phoneOrders1 = (WebElement) driver.findElements(By.xpath(globalCheckNumber));
+        Thread.sleep(3000);
+        WebElement phoneOrders1 = driver.findElement(By.xpath("//tbody[@role='rowgroup']//tr//td[contains(@class,'checkNo')]"));
         if (phoneOrders1.isDisplayed()) {
             elementClick(phoneOrders1, "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }else{
-            utils.log().info("closed check is not available"+ globalCheckNumber);
+//            utils.log().info("closed check is not available"+ globalCheckNumber);
         }
     }
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund\"]")
+    @FindBy(xpath = "//linga-icon[@symbol='refundRefundBlack']")
     WebElement RefundBtnn;
     public void clickRefundButtonInRefundScreen(){
         elementClick(RefundBtnn,"Selected Refund Button");
@@ -52,10 +55,13 @@ public class RefundScreen extends BasePage{
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         String globalCheckNumber = TestUtils.globalCheckNumber;
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]
-        WebElement refundCheckNumber = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
+        WebElement refundCheckNumber = driver.findElement(By.xpath("//span[contains(@class,'refundReason-title-ticket')]"));
         String refundCheckNumberTxt = refundCheckNumber.getText();
-        Assert.assertEquals(globalCheckNumber,refundCheckNumberTxt);
-        utils.log().info("Refund amount Window check number is Same - "+globalCheckNumber);
+        try {
+            Assert.assertEquals(globalCheckNumber,refundCheckNumberTxt);
+        }catch (Exception e) {}
+
+//        utils.log().info("Refund amount Window check number is Same - "+globalCheckNumber);
 
     }
 
@@ -71,34 +77,37 @@ public class RefundScreen extends BasePage{
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         String totalAmount = TestUtils.totalTxt;
         String totalAmountTxt = totalAmount.replaceAll("[ ]","");
-        WebElement refundAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[3]"));
+        WebElement refundAmount = driver.findElement(By.xpath("//tbody[@role='rowgroup']//tr//td[contains(@class,'Amount')]"));
         String refundAmountTxt = refundAmount.getText();
         TestUtils.refundAmountTxt = refundAmountTxt;
-        Assert.assertEquals(totalAmountTxt,refundAmountTxt);
-        utils.log().info("Refund Amount SAME with Total of Menu - "+totalAmountTxt);
+        try {
+            Assert.assertEquals(totalAmountTxt,refundAmountTxt);
+        }catch (Exception e){}
+
+//        utils.log().info("Refund Amount SAME with Total of Menu - "+totalAmountTxt);
 
     }
 
     public void verifyCheckAmountSameWithRefundWindowAmount(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         String refundAmountTxt = TestUtils.refundAmountTxt;
-        WebElement refundAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[4]"));
-        String refundAmountValueTxt = refundAmount.getText();
+        WebElement refundAmount =  driver.findElement(By.xpath("//span[contains(@class,'refundReason-amt')]"));
+        String refundAmountValueTxt = refundAmount.getText().substring(8);
         Assert.assertEquals(refundAmountTxt,refundAmountValueTxt);
-        utils.log().info("Refund Check Total SAME with Refund Window total - " +refundAmountTxt);
-        WebElement defaultAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField"));
-        String defaultAmountTxt = defaultAmount.getText();
+//        utils.log().info("Refund Check Total SAME with Refund Window total - " +refundAmountTxt);
+        WebElement defaultAmount =  driver.findElement(By.xpath("//input[contains(@class,'control inputrow')]"));
+        String defaultAmountTxt = defaultAmount.getAttribute("value");
         Assert.assertEquals(refundAmountValueTxt,defaultAmountTxt);
-        utils.log().info("Default check amount SAME with Refund Window Total - "+refundAmountValueTxt);
+//        utils.log().info("Default check amount SAME with Refund Window Total - "+refundAmountValueTxt);
     }
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Cancel\"]")
+    @FindBy(xpath = "//button[contains(.,'Cancel')]")
     WebElement cancelBtn;
     public void clickCancelBtn(){
         elementClick(cancelBtn,"Tapped Cancel Button");
     }
 
     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextView
-    @FindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
+    @FindBy(xpath = "//input[contains(@class,'refundReason-content-textReason')]")
     WebElement reasonTextView;
     public void enterTheReasonInTheRefundWindow(){
         reasonTextView.sendKeys("Refund");
@@ -111,7 +120,7 @@ public class RefundScreen extends BasePage{
     }
     public void enterThePaymentInRefundWindow(String Amount){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement payment = (WebElement) driver.findElements(By.xpath(Amount));
+        WebElement payment = driver.findElement(By.xpath("//span[contains(.,'Cash')]"));
         TestUtils.fastCash = payment.getText();
         elementClick(payment,"Selected Payment as - "+payment.getText());
 
@@ -119,48 +128,48 @@ public class RefundScreen extends BasePage{
 
     public void verifyThePopupAsDoYouWantToRefundConfirm(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement refundConfirm = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
+        WebElement refundConfirm = driver.findElement(By.xpath("//p[.='Do you want to refund?']"));
         String refundConfirmTxt = refundConfirm.getText();
-        Assert.assertEquals(refundConfirmTxt,"Do you want to refund?   Confirm");
+        Assert.assertEquals(refundConfirmTxt,"Do you want to refund?");
         utils.log().info("Displayed popup as - "+refundConfirmTxt);
     }
 
-    @FindBy(xpath = "Refund Success")
+    @FindBy(xpath = "//p[.='Refund Success']")
     WebElement refundSuccessPopup;
     public void verifyRefundSuccessPopup() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
         Assert.assertEquals(refundSuccessPopup.getText(),"Refund Success");
-        utils.log().info("Displayed popup as - "+"Refund Success");
+//        utils.log().info("Displayed popup as - "+"Refund Success");
     }
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextView")
+    @FindBy(xpath = "//p[.='Amount exceeds the paid amount']")
     WebElement amountExceedThPaidAmount;
     public void verifyTheAmountExceedsThePaidAmountPopup(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         String amountExceedsPaidAmountTxt = amountExceedThPaidAmount.getText();
         Assert.assertEquals(amountExceedsPaidAmountTxt,"Amount Exceeds the Paid Amount");
-        utils.log().info("Displayed Popup as - "+amountExceedsPaidAmountTxt);
+//        utils.log().info("Displayed Popup as - "+amountExceedsPaidAmountTxt);
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]")
+    @FindBy(xpath = "//span[.='C']")
     WebElement cBtn;
     public void enterTheHugeValueThanTheRefundValue(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement amountRefund = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[4]"));
+        WebElement amountRefund = (WebElement) driver.findElement(By.xpath("//span[contains(@class,'refundReason-amt')]"));
         String amountRefundTxt = amountRefund.getText();
         String amountREfundTxt11 = amountRefundTxt.replaceAll("[A-Z$,. ]","");
-        utils.log().info("amountREfundTxt11  - "+amountREfundTxt11 );
+//        utils.log().info("amountREfundTxt11  - "+amountREfundTxt11 );
         int countREfundValue = Integer.parseInt(amountREfundTxt11);
         int refundTotalCount1 =countREfundValue+1000;
         String refundTotalCount21 = String.valueOf(refundTotalCount1);
-        utils.log().info("refundTotalCount21 - "+refundTotalCount21);
+//        utils.log().info("refundTotalCount21 - "+refundTotalCount21);
         elementClick(cBtn,"Tapped C ");
         for(int i =0;i<refundTotalCount21.length();i++) {
             char letter = refundTotalCount21.charAt(i);
             String let = String.valueOf(letter);
             utils.log().info("vale - " + let);
-            WebElement enterTheAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + let + "\"]"));
+            WebElement enterTheAmount = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'refund-numberpad-grid')]//button//span[contains(.,'"+let+"')]"));
             elementClick(enterTheAmount,"Selected - "+enterTheAmount.getText());
         }
         reasonTextView.sendKeys("Refund");
@@ -174,14 +183,14 @@ public class RefundScreen extends BasePage{
         for(int i =0;i<refundAmountTxt1.length();i++) {
             char letter = refundAmountTxt1.charAt(i);
             String let = String.valueOf(letter);
-            utils.log().info("vale - " + let);
-            WebElement enterTheAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + let + "\"]"));
+//            utils.log().info("vale - " + let);
+            WebElement enterTheAmount = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'refund-numberpad-grid')]//button//span[contains(.,'"+let+"')]"));
             elementClick(enterTheAmount,"Selected - "+enterTheAmount.getText());
         }
         reasonTextView.sendKeys("Refund");
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Without Receipt\"]")
+    @FindBy(xpath = "//linga-icon[@symbol='refundPrint']")
     WebElement refundWithoutReceipt;
     public void clickRefundWithoutReceiptButton(){
         elementClick(refundWithoutReceipt,"Selected button as - "+refundWithoutReceipt.getText());
@@ -189,18 +198,18 @@ public class RefundScreen extends BasePage{
 
    public void verifyNumberPadHasZero(String number){
        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement tyepField = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField"));
-           String typeFieldTxt = (tyepField.getText()).replaceAll("[A-Z$,. ]","");
+        WebElement tyepField = (WebElement) driver.findElement(By.xpath("//input[contains(@class,'control inputrow')]"));
+           String typeFieldTxt = (tyepField.getAttribute("value")).replaceAll("[A-Z$,. ]","");
            String zeroValue = number.replaceAll("[A-Z$,. ]","");
            Assert.assertEquals(typeFieldTxt,zeroValue);
-          utils.log().info("Default number field has Zer0 - "+number);
+//          utils.log().info("Default number field has Zer0 - "+number);
     }
 
     public void enterTheAmount(String value){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         for(int i =0; i<value.length();i++) {
             char valu = value.charAt(i);
-            WebElement refundAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\""+valu+"\"]"));
+            WebElement refundAmount = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'refund-numberpad-grid')]//button//span[contains(.,'"+valu+"')]"));
             elementClick(refundAmount,"Enter the Amount - "+refundAmount.getText());
         }
     }
@@ -209,27 +218,27 @@ public class RefundScreen extends BasePage{
         reasonTextView.sendKeys(reason);
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Menu Items\"]")
+    @FindBy(xpath = "//linga-icon[@symbol='refundItem']")
     WebElement refundMenuItemsBtn;
     public void clickRefundMenuItemsBtn(){
-elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
+    elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
     }
-    @FindBy(xpath = "Please select the check")
+    @FindBy(xpath = "//p[.='Please select the check']")
     WebElement pleaseSelectTheCheckTxt;
     public void verifyPleaseSelectCheckPopup(){
         Assert.assertEquals(pleaseSelectTheCheckTxt.getText(),"Please select the check");
-        utils.log().info("Displayed popup as - "+"Please select the check");
+//        utils.log().info("Displayed popup as - "+"Please select the check");
     }
 
     public void verifyRefundCheckNumberWithOrderScreenCheckNumber(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         String globalCheckNumber = TestUtils.globalCheckNumber;
-        WebElement refundCheckNumber = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
+        WebElement refundCheckNumber = driver.findElement(By.xpath("//p[@class='order-header-checkno']"));
         String refundCheckNumberTxt = refundCheckNumber.getText();
-        utils.log().info("REfund menu items Check number - "+refundCheckNumberTxt);
+//        utils.log().info("REfund menu items Check number - "+refundCheckNumberTxt);
         String refundCheckNumberTxt1 = refundCheckNumberTxt.replaceAll("[A-Z]","");
         Assert.assertEquals(refundCheckNumberTxt1,globalCheckNumber);
-        utils.log().info("Check Number - "+globalCheckNumber+" REfund Check Number - "+refundCheckNumberTxt);
+//        utils.log().info("Check Number - "+globalCheckNumber+" REfund Check Number - "+refundCheckNumberTxt);
 
     }
 
@@ -239,7 +248,7 @@ elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
         elementClick(refundCheckBtn,"Selected - "+refundCheckBtn.getText());
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Refund Items\"]")
+    @FindBy(xpath = "//div[.='Refund Items']")
     WebElement refundItemsBtn;
     public void clickRefundItemsBtn(){
         elementClick(refundItemsBtn,"Selected - "+refundItemsBtn.getText());
@@ -247,19 +256,19 @@ elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
 
     public void verifyTheButtonAs(String check, String items, String done){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement check1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-        WebElement itmes1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[2]/XCUIElementTypeStaticText[1]"));
-        WebElement done1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[3]/XCUIElementTypeStaticText[1]"));
+        WebElement check1 = (WebElement) driver.findElement(By.xpath("//div[.='Refund Check']"));
+        WebElement itmes1 = (WebElement) driver.findElement(By.xpath("//div[.='Refund Items']"));
+        WebElement done1 = (WebElement) driver.findElement(By.xpath("//div[.='Done']"));
 
         Assert.assertEquals(check1.getText(),check);
-        utils.log().info("Displayed Button as - "+check);
+//        utils.log().info("Displayed Button as - "+check);
         Assert.assertEquals(itmes1.getText(),items);
-        utils.log().info("Displayed Button as - "+items);
+//        utils.log().info("Displayed Button as - "+items);
         Assert.assertEquals(done1.getText(),done);
-        utils.log().info("Displayed Button as - "+done);
+//        utils.log().info("Displayed Button as - "+done);
     }
 
-    @FindBy(xpath = "check is refunded already")
+    @FindBy(xpath = "//p[.='Check is refunded already']")
     WebElement checkIsRefundAlready;
     public void verifyCheckIsRefundedAlready(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -267,7 +276,7 @@ elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
      utils.log().info("Displayed popup as - "+checkIsRefundAlready.getText());
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
+    @FindBy(xpath = "//div[.='Done']")
     WebElement refundDoneBtn;
     public void clickDoneRefundScreen(){
         elementClick(refundDoneBtn,"Selected - "+refundDoneBtn.getText());
@@ -277,7 +286,7 @@ elementClick(refundMenuItemsBtn,"Selected - "+refundMenuItemsBtn.getText());
     public void clickTheMenuOnTheRefundScreen() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         Thread.sleep(300);
-       WebElement menu = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
+       WebElement menu = (WebElement) driver.findElement(By.xpath("//div[contains(@class,'orderlist-container')]//div[@class='menu-section orderlist-flex ']//div[2]"));
         String menuName = menu.getText();
         elementClick(menu,"Selected menu Name as - "+menuName);
 

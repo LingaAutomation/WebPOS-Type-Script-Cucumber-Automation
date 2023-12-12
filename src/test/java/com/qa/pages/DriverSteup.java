@@ -24,7 +24,7 @@ public void setup() throws InterruptedException {
     //launch the URL
     Thread.sleep(5000);
     //Launch the URL
-    driver.get("https://staging-webpos-india.lingapos.com/#/auth/login");
+    driver.get("https://staging-webpos-india.lingapos.com/");
     Thread.sleep(8000);
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     Thread.sleep(5000);

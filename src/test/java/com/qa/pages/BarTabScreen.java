@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +13,10 @@ import java.util.concurrent.TimeUnit;
 public class BarTabScreen extends OrderManagementScreen{
 
     public BarTabScreen(WebDriver driver) {
-        super(driver);
+        super(TestUtils.driver);
+        this.driver =TestUtils.driver;
+        PageFactory.initElements(this.driver,this);
+
     }
 
     @FindBy(xpath = "BarTab")
@@ -49,10 +53,10 @@ public class BarTabScreen extends OrderManagementScreen{
     @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[10]/XCUIElementTypeSwitch")
     WebElement QuickBar;
 
-    @FindBy (xpath = "ToggleIcon")
+    @FindBy (xpath = "//linga-icon[@symbol='menuIcon']")
     WebElement ToggleIcon;
 
-    @FindBy (xpath = "POS")
+    @FindBy (xpath = "//label[.='POS']")
     WebElement POSIcon;
 
     @FindBy(xpath = "BarTab")

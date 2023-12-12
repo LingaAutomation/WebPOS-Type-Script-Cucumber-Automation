@@ -9,11 +9,9 @@ import io.cucumber.java.en.When;
 import io.cucumber.messages.Messages;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class OrderTypesStepDef {
-
-    public WebDriver driver = DriverSteup.driver;
 
     @And("^I'm logged in$")
     public void i_m_logged_in() {

@@ -4,15 +4,16 @@ import com.qa.pages.CheckOptionsScreen;
 import com.qa.pages.CheckStatusScreen;
 import com.qa.pages.Discount;
 import com.qa.pages.OrderManagementScreen;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+import static com.qa.utils.TestUtils.driver;
 public class CheckBasedDiscountStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     @And("^I select Discount on the Order screen$")
     public void iSelectDiscountOnTheOrderScreen(){

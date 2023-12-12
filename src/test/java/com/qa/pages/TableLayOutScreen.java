@@ -1,13 +1,12 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import static com.qa.pages.DriverSteup.driver;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -16,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TableLayOutScreen extends OrderManagementScreen {
 
-    public WebDriver driver = DriverSteup.driver;
+    public WebDriver driver = TestUtils.driver;
 
     public TableLayOutScreen(WebDriver driver) {
         super(driver);
@@ -109,7 +108,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Save & Close")
     WebElement SaveClose;
 
-    @FindBy(xpath = "Seats")
+    @FindBy(xpath = "//p[.='Seats']")
     private WebElement Order1;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
@@ -212,7 +211,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     // @FindBy(xpath = "Cash")
     private WebElement CashbtnPaymentWindow;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[7]")
+    @FindBy(xpath = "//div[.='Operation']")
     private WebElement OperationBtnTableLayout;
 
     @FindBy(xpath = "Operation")
@@ -461,7 +460,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         try {
             elementClick(Done1, "Tapped Done Button on the Popup");
         } catch (Exception e) {
-            utils.log().info("Tapped Done");
+//            utils.log().info("Tapped Done");
         }
     }
 
@@ -656,7 +655,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void orderScreen() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-        Thread.sleep(500);
+        Thread.sleep(3000);
         Assert.assertEquals(Order1.getText(), "Seats");
         //  if (Order1.isDisplayed()) {
         utils.log().info("I should see Order Screen");

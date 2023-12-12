@@ -1,18 +1,13 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import io.cucumber.java.bs.A;
-import io.cucumber.java.hu.De;
 import org.apache.commons.lang.RandomStringUtils;
 import org.junit.Assert;
-import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.List;
@@ -22,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class PaymentWindow extends OrderManagementScreen{
 
     public PaymentWindow(WebDriver driver) {
-        super(driver);
+        super(TestUtils.driver);
     }
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
@@ -34,7 +29,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "Yes")
     WebElement yesSendToKitchenBtn;
 
-    @FindBy(xpath = "No")
+    @FindBy(xpath = "//button[contains(.,'No')]")
     WebElement noSendToKitchenBtn;
 
     @FindBy(xpath = "Select Payment Method")
@@ -75,13 +70,13 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//button[contains(.,'Submit')]")
     private WebElement submitBtn;
 
-    @FindBy ( xpath = "Cash")
+    @FindBy ( xpath = "//div[.='Cash']")
     private WebElement Cash;
 
-    @FindBy ( xpath = "Exact")
+    @FindBy ( xpath = "//button[contains(.,'Exact')]")
     private WebElement Exact;
 
-    @FindBy (xpath = "Enter")
+    @FindBy (xpath = "//button[contains(.,'Enter')]")
     private WebElement Enter;
 
     @FindBy (xpath = "TL 100")
@@ -120,11 +115,11 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "Credit Card")
     WebElement creditCardBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Check Total\"])[1]")
+    @FindBy(xpath = "//button[@class='tipscreen-closeBtn']")
  //  @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Total\"])[1]")
     WebElement totalScreen;
 
-    @FindBy(xpath = "Continue")
+    @FindBy(xpath = "//button[contains(.,'Process Payment')]")
     WebElement continueBtn;
 
     @FindBy(xpath = "Your Order")
@@ -165,7 +160,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "Signature Pad")
     WebElement signaturePadScreen;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "(//div[@class='tips-container']//div//p[@class='tip-percentage'])[1]")
     WebElement tipAs10;
 
     @FindBy(xpath = "Finish")
@@ -180,7 +175,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "Transaction Void Successful")
     WebElement transactionVoidSuccess;
 
-    @FindBy(xpath = "Side CC")
+    @FindBy(xpath = "//span[contains(.,'Side CC')]")
     WebElement cCSideBtn;
 
     @FindBy(xpath = "Others")
@@ -343,9 +338,9 @@ public class PaymentWindow extends OrderManagementScreen{
     public void verifyTotalScreen(){
         driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
         if(totalScreen.isDisplayed()){
-            utils.log().info("Should see Total screen");
+//            utils.log().info("Should see Total screen");
         }else {
-            utils.log().info("Total Screen is not displayed");
+//            utils.log().info("Total Screen is not displayed");
         }
     }
 
@@ -585,14 +580,10 @@ public class PaymentWindow extends OrderManagementScreen{
 
     public void clickSideCCBtn() throws Exception {
         try {
-            if (find(cCSideBtn, 2)) {
                 elementClick(cCSideBtn, "Tapped Side CC Button");
-            } else {
-                scrollToElementPayments(cCSideBtn, "up");
-                elementClick(cCSideBtn, "Tapped Side CC Button");
-            }
+
         } catch (Exception e) {
-            scrollToElementPayments(cCSideBtn, "down");
+//            scrollToElementPayments(cCSideBtn, "down");
             elementClick(cCSideBtn, "Tapped Side CC Button");
         }
     }
@@ -709,20 +700,20 @@ public class PaymentWindow extends OrderManagementScreen{
     public String tipss =" ";
     public void tipAddedInTipScreen(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        WebElement tip_From_Tip_Screen = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[6]"));
+        WebElement tip_From_Tip_Screen = driver.findElement(By.xpath("(//div[@class='tips-container']//div//p[@class='tip-percentage'])[1]/..//p[2]"));
         String tipss1 =  tip_From_Tip_Screen.getText();
-        tipss = tipss1.replaceAll("[A-Z ]","");
+        tipss = tipss1.replaceAll("[A-Z $]","");
         TestUtils.tips = tipss;
-        utils.log().info("Tip Screen Amount with TIP - "+tipss);
+//        utils.log().info("Tip Screen Amount with TIP - "+tipss);
 
     }
     public void verifyAddedTipIsSameWithPaymentScreen(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        WebElement tip_Payment = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[3]"));
+        WebElement tip_Payment = (WebElement) driver.findElements(By.xpath("//ion-row[@class='slideList md hydrated']//ion-col//span"));
 //<<<<<<< HEAD
-        String tipAmount = (tip_Payment.getText()).replaceAll("[A-Z ]","");
+        String tipAmount = (tip_Payment.getText()).replaceAll("[A-Z ]","").substring(1);
         Assert.assertEquals(TestUtils.tips,tipAmount);
-        utils.log().info("Tips are same in Both Tip screen and Payment screen - "+tipAmount);
+//        utils.log().info("Tips are same in Both Tip screen and Payment screen - "+tipAmount);
 
     }
 
@@ -746,7 +737,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Add\"])[1]")
     private WebElement addMobileNumber;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[1]")
+    @FindBy(xpath = "//button[contains(.,'Save')]")
     private WebElement saveMobileNumber;
 
     @FindBy(xpath =  "//XCUIElementTypeButton[@name=\"Save\"]")
@@ -840,22 +831,34 @@ public class PaymentWindow extends OrderManagementScreen{
     public void enterCustomerRandomlys(){
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 
+       WebElement Name_Input = driver.findElement(By.xpath("//input[@role='combobox']"));
+        Name_Input.clear();
+        Name_Input.sendKeys(RandomStringUtils.randomAlphabetic(6));
+        driver.findElement(By.xpath("//span[contains(.,' + Add customer ')]")).click();
+
+        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
         String name = RandomStringUtils.randomAlphabetic(6);
-        sendKeys(firstNameFld, name);
-        utils.log().info("First Name - " + name);
+        WebElement firstName = driver.findElement(By.xpath("//input[@id='firstNameInputBox']"));
+        firstName.clear();
+        firstName.sendKeys(name);
+//        utils.log().info("First Name - " + name);
         TestUtils.firstNameCustomer=name;
 
         String name1 = RandomStringUtils.randomAlphabetic(5);
-        sendKeys(lastNameFld, name1);
-        utils.log().info("Last name - " + name1);
+        WebElement lastName = driver.findElement(By.xpath("//input[@data-placeholder='Last Name']"));
+        lastName.clear();
+        lastName.sendKeys(name1);
+//        utils.log().info("Last name - " + name1);
         TestUtils.lastNameCustomer=name1;
 
         String number = RandomStringUtils.randomNumeric(10);
-        utils.log().info("Mobile Number - " + number);
+//        utils.log().info("Mobile Number - " + number);
         TestUtils.MobileNumber = number;
-        elementClick(addMobileNumber, "Tapped Add button for Enter Mobile Number");
-        sendKeys(mobileNumberFld, number);
-        elementClick(saveMobileNumber, "Tapped Save button");
+        driver.findElement(By.xpath("//ion-row//ion-col//p[.='Mobile*']/../..//button[@id='addPhnNo']")).click();
+        WebElement Mobile_Numeber_Input = driver.findElement(By.xpath("//ion-row[@class='quantity_grid-inputrow md hydrated']//input"));
+        Mobile_Numeber_Input.sendKeys(number);
+        driver.findElement(By.xpath("//button[contains(.,'Continue')]")).click();
+//        elementClick(saveMobileNumber, "Tapped Save button");
 
     }
 
@@ -908,10 +911,13 @@ pressArrowDown2();
         }
 
     public void selectCategory1(String catee) throws Exception {
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-//        pressArrowDown2();
-        categorySelection(catee);
-
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[.='"+catee+"']"));
+        elementClick(cate1, "Tapped category");
+        Thread.sleep(5000);
+//       pressArrowDown2();
+//          categorySelection(catee);
 //        scrollToElementPayments("up");
 ////        findandclick(catee,"",TestUtils.xpath);
 //        WebElement cate1 = (WebElement) driver.findElements(By.xpath()(catee);
@@ -1746,17 +1752,17 @@ elementClick(orderMenu,"Selected Order Menu - "+orderMenu.getText());
     }
 
     public void verifyTheCreditCardOfTheCheckFromTheRefundScreenShouldBeEncrypted(){
-        WebElement creditCheck = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[2]"));
+        WebElement creditCheck = driver.findElement(By.xpath("//tbody[@role='rowgroup']//tr//td[contains(@class,'Card-Number')]"));
         String creditCardNumberTxt= creditCheck.getText();
         int sizeOfCardNumber = creditCardNumberTxt.length();
-        utils.log().info("Length of the Card Number "+sizeOfCardNumber);
+//        utils.log().info("Length of the Card Number "+sizeOfCardNumber);
         int size1 = sizeOfCardNumber-4;
-        utils.log().info("Size of the Card Number "+size1);
+//        utils.log().info("Size of the Card Number "+size1);
         for(int i=0;i<sizeOfCardNumber-4;i++) {
             if (creditCardNumberTxt.charAt(i) == '*') {
-                utils.log().info("Encrypted Card Number - " + creditCardNumberTxt.charAt(i));
+//                utils.log().info("Encrypted Card Number - " + creditCardNumberTxt.charAt(i));
             }else{
-                utils.log().info("Not Encrypted Card Number - " + creditCardNumberTxt.charAt(i));
+//                utils.log().info("Not Encrypted Card Number - " + creditCardNumberTxt.charAt(i));
                 break;
             }
         }
@@ -1804,9 +1810,9 @@ elementClick(orderMenu,"Selected Order Menu - "+orderMenu.getText());
 
     public void getTheMobileNumberFromTheCustomerProfileScreen(){
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement MobileNumber = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText"));
+        WebElement MobileNumber = driver.findElement(By.xpath("//ion-row//ion-col//p[.='Mobile*']/../..//button[contains(@class,'phonenumber')]//span[1]"));
         String MobileNumberTxt = MobileNumber.getText();
-        utils.log().info("Customer has Mobile number - "+MobileNumberTxt);
+//        utils.log().info("Customer has Mobile number - "+MobileNumberTxt);
         TestUtils.MobileNumber = MobileNumberTxt;
     }
     public void selectMppgPayment() throws Exception {

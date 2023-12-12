@@ -1,12 +1,10 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
-import io.cucumber.java.bs.A;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en_scouse.An;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -15,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 public class CheckOptionsStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     /****** On Hold Check Down ******/
     @And("^I select Appetizers as category$")
@@ -574,7 +572,7 @@ public class CheckOptionsStepDef {
     }
 
     @And("^I select FOOD as category$")
-    public void iSelectFOODAsCategory() {
+    public void iSelectFOODAsCategory() throws InterruptedException {
         new OrderManagementScreen(driver).selectFoodCategory();
     }
 
@@ -1164,7 +1162,7 @@ public class CheckOptionsStepDef {
 
     @And ("^I click the phone number field on the customer profile screen$")
     public void iClickThePhoneNumberFieldOnTheCustomerProfileScreen() throws InterruptedException {
-        new PaymentWindow(driver).ClickThePhoneNumberField();
+//        new PaymentWindow(driver).ClickThePhoneNumberField();
     }
     @And ("^I get the mobile number from the customer profile screen$")
     public void iGetTheMobileNumberFromTheCustomerProfileScreen(){

@@ -4,13 +4,14 @@ import com.qa.pages.CIPaymentScreen;
 import com.qa.pages.TGMenuItemPage;
 import com.qa.pages.TGModifierPage;
 import com.qa.pages.TableLayOutScreen;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
 public class TGModifierStepDef {
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     @When("User select first modifier on modifier page")
     public void userSelectFirstModifierOnModifierPage() {

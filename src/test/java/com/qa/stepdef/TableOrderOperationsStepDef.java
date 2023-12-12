@@ -1,11 +1,9 @@
 package com.qa.stepdef;
 
 
-import com.google.common.collect.Table;
 import com.qa.pages.*;
 import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -16,7 +14,7 @@ import java.io.IOException;
 
 public class TableOrderOperationsStepDef {
 
-    public WebDriver driver = DriverSteup.driver;
+    public WebDriver driver = TestUtils.driver;
 
     @And ("^I click right symbol$")
     public void iClickRightSymbol(){
@@ -329,7 +327,8 @@ public class TableOrderOperationsStepDef {
     }
 
     @And("^I click Done button on the Popup$")
-    public void iClickDoneButtonOnThePopup(){
+    public void iClickDoneButtonOnThePopup() throws InterruptedException {
+        Thread.sleep(3000);
         new TableLayOutScreen(driver).pressDone1();
     }
 
@@ -1836,7 +1835,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I select Menu For Basic validation as \"([^\"]*)\"$")
-    public void iSelectMenuForBasicValidationAs(String cate){
+    public void iSelectMenuForBasicValidationAs(String cate) throws Exception {
         new Regression(driver).selectMenuForBasicValidation(cate);
     }
 
@@ -1930,7 +1929,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I do batch for vourl as \"([^\"]*)\"$")
-    public void iDoBatchForVourl(String cate){
+    public void iDoBatchForVourl(String cate) throws Exception {
         new Regression(driver).doBatchForVourl(cate);
     }
 
@@ -2176,19 +2175,19 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I created sale for Cashier out1 as \"([^\"]*)\"$")
-    public void iCreatedSaleForCashierOut1As(String cashier) throws InterruptedException {
+    public void iCreatedSaleForCashierOut1As(String cashier) throws Exception {
         new Regression(driver).createdSaleForCashierOut1(cashier);
     }
     @And ("^I created sale for Cashier out2 as \"([^\"]*)\"$")
-    public void iCreatedSaleForCashierOut2As(String cashier) throws InterruptedException {
+    public void iCreatedSaleForCashierOut2As(String cashier) throws Exception {
         new Regression(driver).createdSaleForCashierOut2(cashier);
     }
     @And ("^I created sale for Cashier out3 as \"([^\"]*)\"$")
-    public void iCreatedSaleForCashierOut3As(String cashier) throws InterruptedException {
+    public void iCreatedSaleForCashierOut3As(String cashier) throws Exception {
         new Regression(driver).createdSaleForCashierOut3(cashier);
     }
     @And ("^I created sale for Cashier out4 as \"([^\"]*)\"$")
-    public void iCreatedSaleForCashierOut4As(String cashier) throws InterruptedException {
+    public void iCreatedSaleForCashierOut4As(String cashier) throws Exception {
         new Regression(driver).createdSaleForCashierOut4(cashier);
     }
 

@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 
 public class CIEightySixListStepDef {
 
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
 
     CIWaitListPage waitList=new CIWaitListPage();
     CIPaymentScreen ciPaymentScreen = new CIPaymentScreen();

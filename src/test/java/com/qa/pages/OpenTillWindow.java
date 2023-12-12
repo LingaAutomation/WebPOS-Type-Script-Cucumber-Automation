@@ -5,8 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class OpenTillWindow extends TillManagementScreen{
+
+    public WebDriver driver;
+
+    public OpenTillWindow() {
+        super(TestUtils.driver);
+        this.driver = TestUtils.driver;
+        PageFactory.initElements(this.driver, this);
+    }
 
     public OpenTillWindow(WebDriver driver) {
         super(driver);
@@ -17,13 +26,13 @@ public class OpenTillWindow extends TillManagementScreen{
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"0\"]" )
     private WebElement number0;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"1\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'1')]" )
     private WebElement number1;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"2\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'2')]" )
     private WebElement number2;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"3\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'3')]" )
     private WebElement number3;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"4\"]" )
@@ -44,13 +53,13 @@ public class OpenTillWindow extends TillManagementScreen{
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"9\"]" )
     private WebElement number9;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"00\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'00')]" )
     private WebElement number00;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]" )
     private WebElement numberC;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
+    @FindBy(xpath = "//button[contains(.,'Continue')]")
     private WebElement continueBtn;
 
 
@@ -114,11 +123,11 @@ public class OpenTillWindow extends TillManagementScreen{
     public String amountGivenTxt1 = " ";
 
     public String pressContinueForOpenTill(){
-        WebElement amountGiven = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
+        WebElement amountGiven = driver.findElement(By.xpath("//p[contains(@class,'till_settill')]"));
         amountGivenTxt1 = amountGiven.getText();
         TestUtils.amountGivenTxt=amountGivenTxt1;
         elementClick(continueBtn, "Tapped Continue button");
-        utils.log().info("Amount Given in open Till - "+amountGivenTxt1);
+//        utils.log().info("Amount Given in open Till - "+amountGivenTxt1);
         return amountGivenTxt1;
     }
 

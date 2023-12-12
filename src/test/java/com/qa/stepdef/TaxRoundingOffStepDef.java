@@ -3,12 +3,13 @@ package com.qa.stepdef;
 import com.qa.pages.ClockInScreen;
 import com.qa.pages.OrderTypeWindow;
 import com.qa.pages.TaxRoundingOff;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebDriver;
 
 public class TaxRoundingOffStepDef {
-    public WebDriver driver = Hooks.driver;
+    public WebDriver driver = TestUtils.driver;
     @Given("I am logging in")
     public void i_am_logging_in() {
         new ClockInScreen(driver).ClockIn();

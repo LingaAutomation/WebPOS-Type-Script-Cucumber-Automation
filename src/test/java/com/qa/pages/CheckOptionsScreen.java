@@ -1,13 +1,12 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
@@ -175,7 +174,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     @FindBy(xpath = "Check Discount")
     private WebElement checkDiscountText;
 
-    @FindBy(xpath = "Gift Card")
+    @FindBy(xpath = "//label[.='Gift Card']")
     private WebElement giftCardBtn;
 
     @FindBy(xpath = "0000 0000 0000 0000")
@@ -1148,7 +1147,7 @@ Thread.sleep(4000);
         }
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"GiveX\"]")
+    @FindBy(xpath = "//div//span[contains(@class,'giftcard__tabgrp_giftcardtab')]/..//div[contains(.,'GiveX')]")
     WebElement giveXOption;
 
     public void clickGiveXBtn() {
@@ -1156,7 +1155,7 @@ Thread.sleep(4000);
         elementClick(giveXOption, "Tapped GiveX ");
     }
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"GiveX\"])[2]")
+    @FindBy(xpath = "//div//span[contains(@class,'giftcard__tabgrp_giftcardtab')]/..//div[contains(.,'GiveX')]")
     WebElement givexScreen;
 
     public void shouldSeeGiveXScreen() {

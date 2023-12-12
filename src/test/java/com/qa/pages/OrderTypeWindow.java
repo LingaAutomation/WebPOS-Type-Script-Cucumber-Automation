@@ -213,7 +213,7 @@ public class OrderTypeWindow extends ClockInScreen {
     }
 
     public void selectServiceTypeAs(String name){
-        WebElement serviceType = (WebElement) driver.findElement(By.xpath(name));
+        WebElement serviceType = (WebElement) driver.findElement(By.xpath("//button[@id='os_tableMenu']//span[contains(.,'"+name+"')]"));
         elementClick(serviceType,"Selected - "+name);
     }
 
