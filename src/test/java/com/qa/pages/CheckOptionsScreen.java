@@ -1,41 +1,34 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-
-import org.openqa.selenium.WebElement;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.PageFactory;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
 
-public class CheckOptionsScreen extends OrderManagementScreen {
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Hold\"]")
-    WebElement holdBtn;
+public class CheckOptionsScreen extends TableLayOutScreen{
 
-    @FindBy(name = "Tax Exempt")
-    WebElement taxExemptBtn;
+    public WebDriver driver = TestUtils.driver;
+    public CheckOptionsScreen() {
 
-    @FindBy(name = "Open Item")
-    WebElement openItemBtn;
+        PageFactory.initElements(this.driver,this);
+    }
 
-    @FindBy(name = "Resend To Kitchen")
-    WebElement resendToKitchenBtn;
+    @FindBy(xpath = "//span[.=' Clear ']")
+    WebElement pinC;
 
-    @FindBy(name = "Modify")
-    WebElement modifyBtn;
 
-//    @FindBy(name = "Done")
-//    WebElement doneHoldBtn;
+
 
     // Nov 19
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
@@ -47,14 +40,8 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     @FindBy(name = "   Back")
     WebElement backBtnForFireCoursing;
 
-    @FindBy(name = "Check Options")
-    WebElement checkOptionsTitle;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Tax Exempt\"])[2]")
-    WebElement taxExemptTitle;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[4]/XCUIElementTypeOther")
-    WebElement schoolTaxExemptReason;
 
     @FindBy(name = "Paid amount exceeds the sale amount") //Changed to xpath by Engin...
     WebElement paidAmountExceedsTxt;                                                                 //because the text couldn't be found with name = id (why!?)
@@ -66,8 +53,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     WebElement backOnTaxExemptBtn;
 //    (//XCUIElementTypeButton[@name=" Back "])[1]
 
-    @FindBy(name = "Tax Exempt Removed Successfully")
-    WebElement taxExemptRemovedTxt;
+
 
     // @FindBy(xpath ="//XCUIElementTypeTextView[@name=\"Can't Hold on this time\"]") //Changed to xpath by Engin...
     @FindBy(name = "Can't Hold on this time")
@@ -78,27 +64,6 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     @FindBy(name = "Gratuity")
     WebElement gratuity;
-
-    @FindBy(name = "Gratuity")
-    WebElement gratuityBtn;
-
-    @FindBy(name = "Add Gratuity")
-    WebElement addGratuityScreen;
-
-    @FindBy(name = "Fixed Gratuity")
-    WebElement gratuityFixedBtn;
-
-    @FindBy(name = "Gratuity Varying")
-    WebElement gratuityVaryingBtn;
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
-    WebElement passPercentageValue;
-
-    @FindBy(name = "Apply")
-    WebElement applyBtn;
-
-    @FindBy(name = "Enter Percentage")
-    WebElement enterPercentagePopup;
 
     @FindBy(name = "Enter Value from 5.0 - 15.0")
     WebElement enterValue;
@@ -181,7 +146,8 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     @FindBy(name = "0000 0000 0000 0000")
     private WebElement cardNumber;
 
-    //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField
+
+
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther")
     private WebElement chargeAmountField;
 
@@ -189,36 +155,22 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     private WebElement giftCardAddUp;
 
 
-    public String getCheckOptionsTitle() {
-        return elementGetText(checkOptionsTitle, "Check Options title is - ");
-    }
+
+
+
 
     public String getPaidAmountExceedsTxt() {
         return elementGetText(paidAmountExceedsTxt, "Paid amount exceeds text is - ");
     }
 
-    public String getTaxExemptRemovedTxt() {
-        return elementGetText(taxExemptRemovedTxt, "Tax exempt removed text is - ");
-    }
 
-    public String getTaxExemptTitle() {
-        return elementGetText(taxExemptTitle, "Tax Exempt title is - ");
-    }
 
     public String getCantHoldOnThisTimeTxt() {
 
         return elementGetText(cantHoldOnThisTimeTxt, "Can't Hold On This Time Txt is - ");
     }
 
-    public void selectHold() {
-        elementClick(holdBtn, "- Hold option is selected");
-    }
 
-    public void selectCoursingNameTxtField() {
-        elementClick(coursingNameTxt, "Coursing name text field clicked - ");
-    }
-
-    ;
 
     public void pressDoneHold() {
         try {
@@ -227,26 +179,10 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         }
     }
 
-    public void pressTaxExempt() {
-        elementClick(taxExemptBtn, "- Tax Exempt is tapped");
-    }
 
-    public void pressModify() {
-        elementClick(modifyBtn, "- Modify is tapped");
-    }
 
-    public CheckOptionsScreen pressOpenItem() {
-        elementClick(openItemBtn, "- Tax Exempt is tapped");
-        return new CheckOptionsScreen();
-    }
 
-    public void pressResendToKitchen() {
-        elementClick(resendToKitchenBtn, "- Resend to kitchen is tapped");
-    }
 
-    public void selectSchoolAsTaxExemptReason() {
-        elementClick(schoolTaxExemptReason, "- School Tax Exempt Reason is selected");
-    }
 
     public void pressBack() {
         elementClick(backBtn, "- Back button is tapped");
@@ -279,21 +215,9 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         }
     }
 
-    public void pressGratuityBtn() {
-        elementClick(gratuityBtn, "Tapped Gratuity Button");
-    }
 
-    public String verifyAddGratuityScreen() {
-        return elementGetText(addGratuityScreen, "Add Gratuity Screen is Displayed - ");
-    }
 
-    public void pressGratuityFixedBtn() {
-        elementClick(gratuityFixedBtn, "Tapped Gratuity Fixed Button");
-    }
 
-    public void pressGratuityVaryingBtn() {
-        elementClick(gratuityVaryingBtn, "Tapped Gratuity Varying Button");
-    }
 
     public void checkGratuityExists() {
         if (find(gratuity, 2)) {
@@ -303,86 +227,13 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         }
     }
 
-    public void passPercentage(String number) {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-        elementClick(passPercentageValue, "Pass percentage value field is clicked.");
-        elementClick(pinC, "Tapped Pin C");
-        WebElement el2 =  driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + number + "\"]"));
-        elementClick(el2, "Tapped number as - " + number);
-
-        WebElement el5 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Continue\"]"));
-        elementClick(el5, "Tapped continue Button ");
-
-        elementClick(applyBtn, "Tapped Apply button");
-    }
-
-    public String a = " ";
-
-    public String passPercentageEngin1() {
-        a = "8";
-        WebElement valueBetween =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField"));
-        String valueBetweenTxt = valueBetween.getText();
-        utils.log().info("Percentage value - " + valueBetweenTxt);
-        elementClick(passPercentageValue, "Pass percentage value field is clicked.");
-
-        WebElement el2 =  driver.findElement(By.xpath(a));
-        TestUtils.percent = a;
-        String number = el2.getText();
-        elementClick(el2, "Tapped number as - " + number);
-
-        WebElement el5 =  driver.findElement(By.xpath("Continue"));
-        elementClick(el5, "Tapped continue Button ");
-
-        elementClick(applyBtn, "Tapped Apply button");
-
-        return a;
-
-    }
 
 
-    public String passPercentageEngin2(String value) {
 
-        WebElement valueBetween =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField"));
-        String valueBetweenTxt = valueBetween.getText();
-        utils.log().info("Percentage value - " + valueBetweenTxt);
-        elementClick(passPercentageValue, "Pass percentage value field is clicked.");
 
-        WebElement el2 =  driver.findElement(By.xpath(value));
-        TestUtils.percent = value;
-        String number = el2.getText();
-        elementClick(el2, "Tapped number as - " + number);
 
-        WebElement el5 =  driver.findElement(By.xpath("Continue"));
-        elementClick(el5, "Tapped continue Button ");
 
-        elementClick(applyBtn, "Tapped Apply button");
 
-        return value;
-
-    }
-
-    public void passPercentageEngin() {
-
-        elementClick(passPercentageValue, "Pass percentage value field is clicked.");
-
-        WebElement el2 =  driver.findElement(By.xpath("8"));
-        String number = el2.getText();
-        elementClick(el2, "Tapped number as - " + number);
-
-        WebElement el5 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Continue\"]"));
-        elementClick(el5, "Tapped continue Button ");
-
-        elementClick(applyBtn, "Tapped Apply button");
-    }
-
-    public void verifyEnterPercentage() {
-        if (find(enterPercentagePopup, 2)) {
-            utils.log().info("Percentage popup is visible");
-        } else {
-            utils.log().info("Percentage popup is not visible");
-        }
-    }
 
     public String enterValueAccordingBo() {
         return elementGetText(enterValue, "Enter value txt is displayed - ");
@@ -436,6 +287,10 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     }
 
+    @FindBy (name = "5")
+    WebElement pin5;
+
+
     public void selectDiscountOnCheckOption() {
 
         elementClick(discountOnOption, "Tapped Discount Button");
@@ -488,6 +343,23 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         elementClick(e1, "Tapped as - " + name);
         elementClick(applyButton, "Tapped Apply Button");
     }
+    @FindBy (name = "1")
+    WebElement pin1;
+
+    @FindBy (name = "2")
+    WebElement pin2;
+
+    @FindBy (name = "3")
+    WebElement pin3;
+
+    @FindBy (name = "4")
+    WebElement pin4;
+
+    @FindBy (name = "00")
+    WebElement pin00;
+
+    @FindBy(name = "0")
+    WebElement pin0;
 
     public void passTheAmountForOpenCheckDiscountAsPercentage(String name) {
         elementClick(percentageCheckOption, "Tapped Percentage Button");
@@ -508,7 +380,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public void passTheAmountForOpenCheckDiscountAsAmountttt(String amount, String name) {
         // elementClick(percentageCheckOption,"Tapped Percentage Button");
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         elementClick(enterAmountFieldCheckOption, "Tapped amount field");
 
         amount1 = amount.replaceAll("[$.A-Z, ]", "");
@@ -566,7 +438,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void clickChargeAmountFieldPassAmount() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         elementClick(chargeAmountField, "Tapped Charge Amount Field");
         elementClick(pin1, "Tapped Pin 1");
         elementClick(pin00, "Tapped Pin 00");
@@ -577,7 +449,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void clickChargeAmountField() {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         elementClick(chargeAmountField, "Tapped Charge Amount Field");
     }
 
@@ -586,7 +458,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void verifyFixedGratuityAmount() {
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         WebElement subTotalOfMenu =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         String subTotalOfMenuTxt = subTotalOfMenu.getText();
         String subTotalOfMenuTxt1 = subTotalOfMenuTxt.replaceAll("[$A-Z,.]", "");
@@ -645,7 +517,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void verifyGratuityVarying() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         WebElement subTotalOfMenu =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         String subTotalOfMenuTxt = subTotalOfMenu.getText();
         String subTotalOfMenuTxt1 = subTotalOfMenuTxt.replaceAll("[$A-Z,.]", "");
@@ -703,7 +575,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void verifyAutoGratuityApplied() {
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         WebElement gratuity =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
         String autoGratuityTxt = gratuity.getText();
 
@@ -719,7 +591,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
 
     public void verifyAutoGratuityAppliedOrNot() {
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         WebElement gratuity =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
         String autoGratuityTxt = gratuity.getText();
 
@@ -764,12 +636,12 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void selectAutoGratuityAs(String Gratuity){
-        driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         WebElement selectGratuity =  driver.findElement(By.xpath(Gratuity));
         elementClick(selectGratuity,"Selected - "+selectGratuity.getText());
     }
     public void verifyAutoGratuityAppliedOrNotInSeat() {
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         WebElement gratuity =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
         String autoGratuityTxt = gratuity.getText();
 
@@ -802,19 +674,9 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     @FindBy(name = "Enter Gratuity Percentage")
     WebElement enterGratuityPercentage;
 
-    public String verifyGratuityPercentage() {
-        return getText(enterGratuityPercentage, "Gratuity Popup as - ");
-    }
-
-
-    public void clickTableOrderScreen() {
-        WebElement table =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[1]"));
-        String tableTxt = table.getText();
-        elementClick(table, "selected Table - " + tableTxt);
-    }
 
     public void selectCardFromOrderType() {
-        List<WebElement> cards = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+        List<WebElement> cards =  driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
         int cardCount = cards.size();
         utils.log().info("Card count - " + cardCount);
 
@@ -827,7 +689,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     public String element2 = " ";
 
     public String selectPrefixModifier() {
-        List<WebElement> element = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+        List<WebElement> element =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
         int sizeOfPrefix = element.size();
         utils.log().info("Size of the Prefix modifiers - " + sizeOfPrefix);
         WebElement element1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeStaticText[1]"));
@@ -876,7 +738,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void verifyCheckDiscountIsApplied() {
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         WebElement discount = mergeAndFindElement("Check-Based Percentage", "", TestUtils.Accessibility);
         if (discount.isDisplayed()) {
             utils.log().info("Discount is applied - " + discount.getText());
@@ -913,13 +775,13 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             String totalAmountString1 = String.valueOf(totalAmountInt);
             Assert.assertEquals(realTotalTxt, totalAmountString1);
             utils.log().info("Expected and Actual Total is Same - " + realTotalTxt);
-            String result = " ";
+            StringBuilder result = new StringBuilder(" ");
             for (int i = 1; i <= realTotalTxt.length(); ++i) {
                 char ch = realTotalTxt.charAt(realTotalTxt.length() - i);
                 if (i % 2 == 1 && i > 1) {
-                    result = "," + result;
+                    result.insert(0, ",");
                 }
-                result = ch + result;
+                result.insert(0, ch);
 
             }
             utils.log().info("Total of MENU ITEMs - " + result);
@@ -927,7 +789,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void verifyOpenCheckDiscountIsApplied() {
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         WebElement discount = mergeAndFindElement("Open Check Discount", "", TestUtils.Accessibility);
         if (discount.isDisplayed()) {
             utils.log().info("Discount is applied - " + discount.getText());
@@ -963,13 +825,13 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             String totalAmountString1 = String.valueOf(totalAmountInt);
             Assert.assertEquals(realTotalTxt, totalAmountString1);
             utils.log().info("Expected and Actual Total is Same - " + realTotalTxt);
-            String result = " ";
+            StringBuilder result = new StringBuilder(" ");
             for (int i = 1; i <= realTotalTxt.length(); ++i) {
                 char ch = realTotalTxt.charAt(realTotalTxt.length() - i);
                 if (i % 2 == 1 && i > 1) {
-                    result = "," + result;
+                    result.insert(0, ",");
                 }
-                result = ch + result;
+                result.insert(0, ch);
 
             }
             utils.log().info("Total of MENU ITEMs - " + result);
@@ -985,7 +847,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public void verifyItemDiscountIsAppliedOrNot() {
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         WebElement discount = mergeAndFindElement("IB-AfterTax-Amount", "", TestUtils.Accessibility);
         if (discount.isDisplayed()) {
             utils.log().info("Discount is applied - " + discount.getText());
@@ -1024,13 +886,13 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             String totalAmountString1 = String.valueOf(totalAmountInt);
             Assert.assertEquals(realTotalTxt, totalAmountString1);
             utils.log().info("Expected and Actual Total is Same - " + realTotalTxt);
-            String result = " ";
+            StringBuilder result = new StringBuilder(" ");
             for (int i = 1; i <= realTotalTxt.length(); ++i) {
                 char ch = realTotalTxt.charAt(realTotalTxt.length() - i);
                 if (i % 2 == 1 && i > 1) {
-                    result = "," + result;
+                    result.insert(0, ",");
                 }
-                result = ch + result;
+                result.insert(0, ch);
 
             }
             utils.log().info("Total of MENU ITEMs - " + result);
@@ -1054,7 +916,7 @@ Thread.sleep(4000);
         utils.log().info("Beginning Balance & Recurring Balance Is SAME - " + beginingBalanceTxt);
     }
         public void verifyBeginningBalanceAndRecurringBalanceAndChargeAmount() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
             Thread.sleep(4000);
         WebElement beginningBalance =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeStaticText[5]"));
@@ -1108,28 +970,28 @@ Thread.sleep(4000);
     }
 
     public void clickSuspendAccountBtn() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch
         WebElement activeAccount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch"));
         elementClick(activeAccount, "Selected Active Account Button");
     }
 
     public void clickActiveAccountBtn() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch
         WebElement activeAccount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch"));
         elementClick(activeAccount, "Selected Active Account Button");
     }
 
     public void giftCardInactivatedSuccessfullPopup() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         WebElement giftCardInActivateSuccesFully =  driver.findElement(By.xpath("Gift card inactivated successfully"));
         Assert.assertEquals(giftCardInActivateSuccesFully.getText(), "Gift card inactivated successfully");
 
     }
 
     public void giftCardactivatedSuccessfullPopup() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         WebElement giftCardInActivateSuccesFully =  driver.findElement(By.xpath("Gift card activated successfully"));
         Assert.assertEquals(giftCardInActivateSuccesFully.getText(), "Gift card activated successfully");
 
@@ -1150,7 +1012,7 @@ Thread.sleep(4000);
     WebElement giveXOption;
 
     public void clickGiveXBtn() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         elementClick(giveXOption, "Tapped GiveX ");
     }
 
@@ -1158,13 +1020,13 @@ Thread.sleep(4000);
     WebElement givexScreen;
 
     public void shouldSeeGiveXScreen() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         Assert.assertEquals(givexScreen.getText(), "GiveX");
         utils.log().info("GiveX Screen is Displayed");
     }
 
     public void verifyRechargeGivexAmountIsSameWithOrderScreenGivexAmount() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         givexCardNumber();
         WebElement givexValue =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[2]"));
         String givexValueTxt = givexValue.getText();
@@ -1179,7 +1041,7 @@ Thread.sleep(4000);
         utils.log().info("GiveX value is SAME - " + givexValueTxt);
     }
     public void givexCardNumber(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement givexCardNumberOrderScreen =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
         String givexCardNumberOrderScreen1 = givexCardNumberOrderScreen.getText();
         String givexCardNumberOrderScreen2 = givexCardNumberOrderScreen1.replaceAll("[A-Z-., ]","");

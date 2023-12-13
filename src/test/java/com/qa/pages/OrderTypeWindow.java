@@ -2,16 +2,24 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-import static com.qa.pages.DriverSteup.driver;
 
 public class OrderTypeWindow extends ClockInScreen {
+
+    public WebDriver driver = TestUtils.driver;
+
+    public OrderTypeWindow() {
+
+        PageFactory.initElements(this.driver,this);
+    }
 
     @FindBy(name = "For Here")
     private WebElement forHereBtn;
@@ -51,11 +59,11 @@ public class OrderTypeWindow extends ClockInScreen {
     @FindBy(name = "Empty list")
     private WebElement emptyList;
 
-    @FindBy(xpath = "(//XCUIElementTypeTable[@name=\"Empty list\"])[3]")
-    private WebElement OrderListWithSale;
+    String OrderListWithSale = "//p[contains(@class,'orderlist')]/../div";
+//    @FindBy(xpath = "(//XCUIElementTypeTable[@name=\"Empty list\"])[3]")
+ //   private WebElement OrderListWithSale;
 
-    @FindBy(xpath = "(//XCUIElementTypeTable[@name=\"Empty list\"])[4]")
-    private WebElement OrderListFromSearch;
+   String OrderListFromSearch= "//p[contains(@class,'orderlist')]/../div";
 
     @FindBy( name = "Egg White")
     private WebElement eggWhite;
@@ -148,8 +156,9 @@ public class OrderTypeWindow extends ClockInScreen {
     public void clickMenuItem(){
         elementClick(OrderListWithSale,"Tapped Menu Item");
     }
-    public void getOrderList() {
-        if (find(OrderListWithSale,2)) {
+    public void getOrderList() throws InterruptedException {
+        Thread.sleep(300);
+        if (find(convertWebElement(OrderListWithSale),2)) {
             utils.log().info("Existing Sale is Visble");
         } else {
             utils.log().info("Existing Sale is not Visible");
@@ -164,12 +173,13 @@ public class OrderTypeWindow extends ClockInScreen {
     }
 
 
-    public void verifySearchSaleAdded() {
-
-        if (find(OrderListFromSearch,2)) {
+    public void verifySearchSaleAdded() throws InterruptedException {
+Thread.sleep(300);
+        if (find(convertWebElement(OrderListFromSearch),2)) {
             utils.log().info("Search Item is added to Order List");
         } else {
             utils.log().info("Search item is not added to order list");
+            int i = 1/0;
         }
     }
 

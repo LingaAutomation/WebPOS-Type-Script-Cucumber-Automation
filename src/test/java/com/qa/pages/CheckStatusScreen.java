@@ -3,16 +3,10 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.apache.logging.log4j.Level;
 import org.openqa.selenium.*;
 
 import java.time.Duration;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
-
-import static com.qa.pages.DriverSteup.driver;
 
 public class CheckStatusScreen extends OrderManagementScreen {
 
@@ -41,6 +35,7 @@ public class CheckStatusScreen extends OrderManagementScreen {
     private WebElement operationBtnCheckStats;
 
     String qsrTab = "//button//span[text()=' QSR ']";
+
 
 
 

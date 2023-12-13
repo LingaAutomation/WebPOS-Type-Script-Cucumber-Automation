@@ -1,6 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -25,7 +26,7 @@ public class TillManagementStepDef {
 
     @Given("^I'm displaying Till Management screen$")
     public void iMDisplayingTillManagementScreen() throws InterruptedException {
-        new ClockInScreen().ClockIn();
+//        new ClockInScreen().ClockIn();
         new OrderTypeWindow().pressCancelBtn();
         new OrderManagementScreen().pressCountingMachineBtn();
     }
@@ -43,7 +44,7 @@ public class TillManagementStepDef {
     /*Pay In*/
     @Given("^I'm displaying Open Till window$")
     public void iMDisplayingOpenTillWindow() throws InterruptedException {
-        new ClockInScreen().ClockIn();
+//        new ClockInScreen().ClockIn();
         new OrderTypeWindow().pressCancelBtn();
         new OrderManagementScreen().pressCountingMachineBtn();
 

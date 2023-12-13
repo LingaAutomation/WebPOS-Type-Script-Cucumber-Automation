@@ -1,12 +1,13 @@
 package com.qa.stepdef;
 
 import com.qa.pages.CheckOptionsScreen;
-import com.qa.pages.CheckStatusScreen;
 import com.qa.pages.Discount;
 import com.qa.pages.OrderManagementScreen;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+
+import static com.qa.utils.TestUtils.driver;
 
 public class CheckBasedDiscountStepDef {
     @And("^I select Discount on the Order screen$")
@@ -14,7 +15,7 @@ public class CheckBasedDiscountStepDef {
         new Discount().pressDiscountBtn();
     }
     @Then("^I should see Check Based Discount Screen$")
-    public void iShouldSeeCheckBasedDiscountScreen(){
+    public void iShouldSeeCheckBasedDiscountScreen() throws InterruptedException {
         Assert.assertEquals(new Discount().discountPage(),"Discounts");
     }
 

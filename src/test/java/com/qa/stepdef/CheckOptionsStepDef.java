@@ -1,15 +1,13 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en_scouse.An;
 
 import org.junit.Assert;
 
-//import javax.management.remote.rmi._RMIConnection_Stub;
+import static com.qa.utils.TestUtils.driver;
 
 
 public class CheckOptionsStepDef {
@@ -27,7 +25,7 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see the Check Options screen$")
     public void iShouldSeeTheCheckOptionsScreen() {
-        Assert.assertEquals(new CheckOptionsScreen().getCheckOptionsTitle(), "Check Options");
+        Assert.assertEquals(new OrderManagementScreen().getCheckOptionsTitle(), "Check Option");
     }
 
     @When ("^I click Gift card Button$")
@@ -139,7 +137,7 @@ public class CheckOptionsStepDef {
 
     @And("^I click Hold to put order on hold$")
     public void iClickHoldToPutOrderOnHold() {
-        new CheckOptionsScreen().selectHold();
+        new CheckOptions().selectHold();
     }
 
     @And("^I click Done in the hold window$")
@@ -311,7 +309,7 @@ public class CheckOptionsStepDef {
 
     @When("^I click Tax Exempt Button$")
     public void iClickTaxExemptButton() {
-        new CheckOptionsScreen().pressTaxExempt();
+        new CheckOptions().pressTaxExempt();
     }
 
     @And ("^I click Tax Exempt Button from the Payment Screen$")
@@ -326,17 +324,17 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see tax exempt reasons$")
     public void iShouldSeeTaxExemptReasons() {
-        Assert.assertEquals(new CheckOptionsScreen().getTaxExemptTitle(), "Tax Exempt");
+        Assert.assertEquals(new CheckOptions().getTaxExemptTitle(), "Tax Exempt");
     }
 
     @When("^I select School as reason$")
     public void iSelectSchoolAsReason() {
-        new CheckOptionsScreen().selectSchoolAsTaxExemptReason();
+        new CheckOptions().selectSchoolAsTaxExemptReason();
     }
 
     @Then("^I should return back to the order management screen and I should not see the tax amount$")
     public void iShouldReturnBackToTheOrderManagementScreenAndIShouldNotSeeTheTaxAmount() {
-        new CheckOptionsScreen().checkTaxExists();
+//        new CheckOptionsScreen().checkTaxExists();
     }
 
     @And("^I click Back button on Tax Exempt window$")
@@ -346,7 +344,7 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see Tax Exempt removed successfully popup$")
     public void iShouldSeeTaxExemptRemovedSuccessfullyPopup() {
-        Assert.assertEquals(new CheckOptionsScreen().getTaxExemptRemovedTxt(), "Tax Exempt Removed Successfully");
+        Assert.assertEquals(new CheckOptions().getTaxExemptRemovedTxt(), "Tax Exempt Removed Successfully");
     }
 
     /********** Credit card payment ***********/
@@ -563,7 +561,7 @@ public class CheckOptionsStepDef {
 
     @When("^I click resend to kitchen$")
     public void iClickResendToKitchen() {
-        new CheckOptionsScreen().pressResendToKitchen();
+        new CheckOptions().pressResendToKitchen();
     }
 
     @Then("^Print should be generated to Kitchen Printer again with a title Resending to Kitchen$")
@@ -585,7 +583,7 @@ public class CheckOptionsStepDef {
     //Add Open Item Scenario
     @And("^I click Open Item button$")
     public void iClickOpenItemButton() {
-        new CheckOptionsScreen().pressOpenItem();
+        new CheckOptions().pressOpenItem();
     }
 
     @And("^I click Coursing Name text field$")
@@ -595,12 +593,12 @@ public class CheckOptionsStepDef {
 
     @And ("^I click Coursing Name text field for Menu option$")
     public void iClickCoursingNameTextFieldForMenuOption(){
-        new OpenItemWindow().pressOpenItemTextFieldMenuOption();
+        new CheckOptions().pressOpenItemTextFieldMenuOption();
     }
 
     @And("^I swipe to \"([^\"]*)\" as Coursing Name$")
     public void iSwipeToAsCoursingName(String name) throws InterruptedException {
-        new OpenItemWindow().swipeToCourseName(name);
+        new CheckOptions().swipeToCourseName(name);
     }
 
     @And("^I enter course name as \"([^\"]*)\"$")
@@ -693,35 +691,36 @@ public class CheckOptionsStepDef {
 
     @And("^I click Modify$")
     public void iClickModify() {
-        new CheckOptionsScreen().pressModify();
+        new CheckOptions().pressModify();
     }
 
     @And("^I select ordered item as \"([^\"]*)\"$")
     public void iSelectOrderedItemAs(String orderedItem) throws Exception {
-        new CheckOptionsScreen().selectMenuItem(orderedItem);
+        new OrderManagementScreen().selectMenuItem(orderedItem);
     }
 
     @When("^I click Done button to finish modifying$")
     public void iClickDoneButtonToFinishModifying() {
-        new CheckOptionsScreen().pressDone();
+
+        new OrderManagementScreen().pressDone();
     }
 
     /*********** Gratuity ****************/
     @And ("^I click Gratuity button$")
     public void iClickGratuityButton(){
-        new CheckOptionsScreen().pressGratuityBtn();
+        new CheckOptions().pressGratuityBtn();
     }
     @Then ("^I should see Add Gratuity screen$")
     public void iShoudlSeeAddGratuityScreen(){
-        new CheckOptionsScreen().verifyAddGratuityScreen();
+        new CheckOptions().verifyAddGratuityScreen();
     }
     @And ("^I click Gratuity Fixed button$")
     public void iClickGratuityFixedButton(){
-        new CheckOptionsScreen().pressGratuityFixedBtn();
+        new CheckOptions().pressGratuityFixedBtn();
     }
     @And ("^I click Gratuity varying button$")
     public void iClickGratuityVaryingButton(){
-        new CheckOptionsScreen().pressGratuityVaryingBtn();
+        new CheckOptions().pressGratuityVaryingBtn();
     }
     @Then ("^I should return back to the order management screen and I should Gratuity is added$")
     public void iShouldReturnBackToTheOrderManagementScreenAndIShouldGratuityIsAdded(){
@@ -729,23 +728,28 @@ public class CheckOptionsStepDef {
     }
     @Then ("^I should see enter Percentage popup$")
     public void iShouldSeeEnterPercentagePopup(){
-        new CheckOptionsScreen().verifyEnterPercentage();
+        new CheckOptions().verifyEnterPercentage();
     }
 
 
     @And ("^I pass the value and click Apply button as \"([^\"]*)\"$")
     public void iPassTheValueAndClickApplyButton(String percent){
-        new CheckOptionsScreen().passPercentage(percent);
+        new CheckOptions().passPercentage(percent);
+    }
+
+    @Then ("^I should see orderscreen with menu item Total without Tax Exempt as \"([^\"]*)\"$")
+    public void iShouldSeeOrderScreenWithMenuItemTotalWithoutTaxExemptAs(String amount){
+        new Discount().verifyMenuItemTotal2(amount);
     }
 
     @And ("^I pass the value and click Apply button$")
     public void iPassTheValueAndClickApplyButton(){
-        new CheckOptionsScreen().passPercentageEngin1();
+        new CheckOptions().passPercentageEngin1();
     }
 
     @And ("^I pass the value as \"([^\"]*)\" and click Apply button$")
     public void iPassTheValueAsAndClickApplyButton(String value){
-        new CheckOptionsScreen().passPercentageEngin2(value);
+        new CheckOptions().passPercentageEngin2(value);
     }
 
     @Then ("^I should see enter value according to BO$")

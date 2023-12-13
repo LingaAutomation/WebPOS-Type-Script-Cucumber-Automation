@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class LogOuts extends BasePage {
 

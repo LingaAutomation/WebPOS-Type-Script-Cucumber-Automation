@@ -5,13 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
-
-import static com.qa.pages.DriverSteup.driver;
+import java.time.Duration;
 
 public class MenuOptionScreen extends ClockInScreen{
 
@@ -92,10 +87,10 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[5]/XCUIElementTypeButton[9]")
     private WebElement tab;
 
-    @FindBy(name = "Open Modifier")
+    @FindBy(xpath = "//label[contains(.,'Open Modifier')]")
     private WebElement openModifier;
 
-    @FindBy(name = "Change Coursing")
+    @FindBy(xpath = "//label[contains(.,'Change Coursing')]")
     private WebElement changeCoursingBtn;
 
     @FindBy(name = "Open Modifiers")
@@ -121,10 +116,9 @@ public class MenuOptionScreen extends ClockInScreen{
 
     String syncBtn = "//button[@class='mat-focus-indicator ion-text-center mat-button mat-button-base _mat-animation-noopable ng-star-inserted'][1]";
 
-    @FindBy(name = "Please close the sale to sync the data")
-    private WebElement pleaseCloseTheSaleToSyncTheData;
+    String pleaseCloseTheSaleToSyncTheData = "//p[contains(.,'Please close the sale to sync the data')]";
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Open Item\"])[2]")
+    @FindBy(xpath = "//p[contains(.,'Open Item')]")
     private WebElement openItemScreen;
 
     @FindBy(name = "Void Item")
@@ -136,13 +130,26 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(name = "Percentage")
     private WebElement percentageCheckOption;
 
+    public String txt;
 
-    public String pressMenuItems(String menu){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement e=(WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\""+menu+" \"]"));
-        elementClick(e,"Tapped Menu Items to see Menu Option Green");
-        WebElement el9 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Menu Option - "+menu+" \"]"));
-        return  elementGetText(el9,"Menu Option Screen is Displayed - ");
+//    public MenuOptionScreen() {
+//        super(TestUtils.driver);
+//    }
+
+    public String pressMenuItems(String menu) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        WebElement e= driver.findElement(By.xpath("//div[contains(@class,'p-col-4 orderlist-menuname')]"));
+        utils.log().info(e.getText());
+        if(e.getText().equals(menu)) {
+            elementClick(e, "Tapped Menu Items to see Menu Option Screen");
+            Thread.sleep(1000);
+            WebElement el9 = driver.findElement(By.xpath("//p[contains(.,' Menu Option - "+menu+" ')]"));
+            txt =el9.getText();
+            utils.log().info(txt);
+        }else{
+            utils.log().info("Not Displayed Menu Option Screen");
+        }
+        return txt;
     }
 
     public String pressOpenItems(String item){
@@ -204,7 +211,7 @@ public void verifyDiscountIsApplied(String discount1){
     }
 }
     public void verifyItemDiscountIsApplied(String discount1) {
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         WebElement discount = mergeAndFindElement(discount1, "", TestUtils.Accessibility);
 
         //   WebElement discount = mergeAndFindElement(discount1, "", TestUtils.Accessibility);
@@ -242,7 +249,7 @@ public void verifyDiscountIsApplied(String discount1){
         }
     }
     public void verifyDiscountIsApplied(){
-driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
             WebElement discount = mergeAndFindElement("IB-AfterTax-Amount", "", TestUtils.Accessibility);
 
          //   WebElement discount = mergeAndFindElement(discount1, "", TestUtils.Accessibility);
@@ -299,7 +306,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public void verifyAddNotesAddOnOrderScreen(String reason){
-        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         WebElement e=mergeAndFindElement(reason,"",TestUtils.Accessibility);
         if(e.isDisplayed()){
             utils.log().info(reason +"Add reason Is Applied on Order Screen");
@@ -315,7 +322,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public void getOpenDiscountScreen(){
-        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         if(openDiscountScreen.isDisplayed()){
             utils.log().info("Open Discount Screen Is Visible");
         }else{
@@ -324,7 +331,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public void passAmountAndReason(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(enterAmountField,"Tapped amount field");
         elementClick(pin1ForOpenDiscount,"Tapped pin 1 for open Discount ");
         elementClick(pin0ForOpenDiscount,"Tapped pin 0 for Open Discount");
@@ -336,7 +343,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
         elementClick(applyButton,"Tapped Apply Button");
     }
     public void passAmountAndReasonMenuOptionForSafetyPercentageValue(String name){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         click(enterAmountField,"Tapped amount field");
         pressPin2();
         pressPin0();
@@ -350,7 +357,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
         elementClick(applyButton,"Tapped Apply Button");
     }
     public void passAmountAndReasonMenuOptionForSafetyPercentageDecimalValue(String name){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         click(enterAmountField,"Tapped amount field");
         pressPin2();
         pressPin0();
@@ -365,7 +372,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
         elementClick(applyButton,"Tapped Apply Button");
     }
     public void passAmountAndReasonMenuOptionAsPercentage(String name){
-        driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         elementClick(percentageCheckOption,"Tapped Percentage Button");
         elementClick(enterAmountField,"Tapped amount field");
         pressPin2();
@@ -387,7 +394,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[2]")
     private WebElement pin1ForOpenDiscountMenu1;
     public void passAmountAndReasonMenuOptionAsPercentage1(String name){
-        driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         elementClick(percentageCheckOption,"Tapped Percentage Button");
         elementClick(enterAmountField,"Tapped amount field");
 
@@ -401,7 +408,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
 //       wait.until(ExpectedConditions.visibilityOfElementLocated((WebElement) By.xpath("")));
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
        elementClick( hideKeyboardButton,"Selected - "+hideKeyboardButton.getText());
-        WebElement e1= (WebElement) driver.findElements(By.xpath(name));
+        WebElement e1=  driver.findElement(By.xpath(name));
         elementClick(e1,"Tapped - "+ name);
         elementClick(applyButton,"Tapped Apply Button");
     }
@@ -482,12 +489,10 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public void getAmount(String numb){
-        WebElement e = mergeAndFindElement(numb,"",TestUtils.Accessibility);
-        if(e.isDisplayed()){
-            utils.log().info(numb + " Upcharge Amount Added");
-        }else{
-            utils.log().info("Upcharge Amount Not Added");
-        }
+        WebElement e = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+
+            Assert.assertEquals(e.getAttribute("value"),numb);
+        utils.log().info(numb + " Upcharge Amount Added");
     }
 
     public void pressSyncBtn() throws InterruptedException {
@@ -497,7 +502,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public String getPopupTxt(){
-        return elementGetText(pleaseCloseTheSaleToSyncTheData,"Close then Sale to sync the Data - ");
+        return elementGetText(convertWebElement(pleaseCloseTheSaleToSyncTheData),"Close then Sale to sync the Data - ");
     }
     public String verifyOpenItemScreen(){
         return elementGetText(openItemScreen,"Open item Screen txt is Displayed - ");

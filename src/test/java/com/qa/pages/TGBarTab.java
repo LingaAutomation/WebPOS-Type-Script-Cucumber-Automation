@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 public class TGBarTab extends BasePage {
 
     //    private By newTabButton = By.xpath("//XCUIElementTypeStaticText[@name=\"New Tab\"]\n");

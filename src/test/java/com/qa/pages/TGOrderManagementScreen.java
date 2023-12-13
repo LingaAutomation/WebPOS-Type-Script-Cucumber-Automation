@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.By;
@@ -89,6 +90,10 @@ public class TGOrderManagementScreen extends OrderTypeWindow{
 //    @iOSXCUITFindBy(accessibility = "finish" )
 //    private WebElement finishOrderBtn;
     public By finishOrderBtn = By.id("finish");
+
+//    public TGOrderManagementScreen() {
+//        super(TestUtils.driver);
+//    }
 
     public TGTillManagementScreen pressCountingMachineBtn(){
         WebElement element=mergeAndFindMobileElement(countingMachineBtn);

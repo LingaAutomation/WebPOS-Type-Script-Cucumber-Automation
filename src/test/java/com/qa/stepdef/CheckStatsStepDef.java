@@ -24,7 +24,7 @@ public class CheckStatsStepDef {
     }
 
     @Then ("^I should see check stats Screen$")
-    public void iShouldSeeCheckStatsScreen(){
+    public void iShouldSeeCheckStatsScreen() throws InterruptedException {
         Assert.assertEquals(new OrdersAndDriversListScreen().verifyCheckStatsScreen(),"Check Status");
     }
     @Then ("^I should see the Linga Popup$")

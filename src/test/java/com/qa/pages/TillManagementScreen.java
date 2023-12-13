@@ -2,22 +2,29 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
-
 public class TillManagementScreen extends OrderManagementScreen {
+//
+//    public WebDriver driver = TestUtils.driver;
+//    public TillManagementScreen(WebDriver driver) {
+//        super(TestUtils.driver);
+//        this.driver = TestUtils.driver;
+//        PageFactory.initElements(this.driver, this);
+//
+//    }
+
     @FindBy(name = "Till" )
     private WebElement tillTabName;
 
@@ -119,6 +126,8 @@ public class TillManagementScreen extends OrderManagementScreen {
 
     @FindBy(name = "Closed Till")
     private WebElement closeTillTabBtn;
+
+
 
     public String getTabName() {
         return elementGetText(tillTabName, "till tab's name is - ");

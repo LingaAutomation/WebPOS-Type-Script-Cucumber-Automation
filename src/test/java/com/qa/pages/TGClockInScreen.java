@@ -1,11 +1,10 @@
 package com.qa.pages;
 
+import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-
-import java.util.concurrent.TimeUnit;
 
 public class TGClockInScreen extends UserLoginScreen{
 

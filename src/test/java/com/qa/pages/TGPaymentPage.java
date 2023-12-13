@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 //import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 

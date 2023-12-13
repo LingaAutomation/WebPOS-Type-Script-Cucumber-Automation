@@ -3,7 +3,6 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
@@ -11,10 +10,9 @@ import org.openqa.selenium.By;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import static com.qa.pages.DriverSteup.driver;
 
 public class TableLayOutScreen extends OrderManagementScreen {
 
@@ -107,7 +105,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(name = "Save & Close")
     WebElement SaveClose;
 
-    @FindBy(name = "Seats")
+    @FindBy(xpath = "//p[contains(.,'Seats')]")
     private WebElement Order1;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
@@ -147,8 +145,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     String seat5OrderScreen = "//button[@id='5']";
 
-    @FindBy(name = "Done")
-    private WebElement Done1;
+    String Done1 = "//button[contains(.,'Done')]";
 
     @FindBy(name = "Delete")
     private WebElement deleteBtn;
@@ -325,6 +322,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeStaticText[2]")
     private WebElement multiple;
+
 
 
     /* Check if locators for common tables names in Floor1 and Floor2 are the same...Don't delete this comment*/
@@ -648,7 +646,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void orderScreen() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         Thread.sleep(500);
         Assert.assertEquals(Order1.getText(), "Seats");
         //  if (Order1.isDisplayed()) {

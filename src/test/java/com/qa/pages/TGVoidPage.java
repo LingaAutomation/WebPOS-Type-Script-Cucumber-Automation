@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 import java.util.List;
 
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class TGVoidPage extends BasePage {
 

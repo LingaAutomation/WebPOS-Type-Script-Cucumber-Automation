@@ -11,7 +11,7 @@ import java.sql.Time;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class RefundScreen extends BasePage{
 

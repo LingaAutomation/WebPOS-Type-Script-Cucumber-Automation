@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class Regression extends TableLayOutScreen {
     public String checkNumber = "";

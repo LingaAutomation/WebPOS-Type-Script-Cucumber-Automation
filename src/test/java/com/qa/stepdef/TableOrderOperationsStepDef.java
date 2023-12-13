@@ -1,11 +1,9 @@
 package com.qa.stepdef;
 
 
-import com.google.common.collect.Table;
 import com.qa.pages.*;
 import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -76,8 +74,14 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see close your sale$")
     public void iShouldSeeCloseYourSale(){
-        Assert.assertEquals(new OrderManagementScreen().verifyCloseSale(),"Close your Sale");
+        Assert.assertEquals(new OrderManagementScreen().verifyCloseSale(),"Close Your Sale");
     }
+
+    @And ("^I should see close the sale$")
+    public void iShouldSeeCloseTheSale(){
+        new OrderManagementScreen().closeTheSale();
+    }
+
     @And("^I click Table Layout tab$")
     public void iClickTableLayoutTab() {
         new OrdersAndDriversListScreen().selectTableLayoutTab();
@@ -550,12 +554,12 @@ public class TableOrderOperationsStepDef {
     /****** Check Options ******/
 
     @And("^I select modifier as \"([^\"]*)\"$")
-    public void iSelectModifierAs(String modifier) {
-        new CheckOptionsScreen().selectModifier(modifier);
+    public void iSelectModifierAs(String modifier) throws InterruptedException {
+        new OrderManagementScreen().selectModifier(modifier);
     }
     @And("^I select modifier1 as \"([^\"]*)\"$")
     public void iSelectModifier1(String numb) {
-        new CheckOptionsScreen().selectModifier1(numb);
+        new OrderManagementScreen().selectModifier1(numb);
     }
 
     @And ("^I swipe auto discount in order screen$")
@@ -828,12 +832,13 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I select menu item as Ling Meatballs for Tax on Item Tax$")
     public void iSelectMenuItemAsLingMeatballsForTaxOnItemTax(){
-        new CheckOptionsScreen().selectMenuAsLingMeatballs();
+        new OrderManagementScreen().selectMenuAsLingMeatballs();
     }
 
     @And("^I select the serving size as \"([^\"]*)\"$")
     public void iSelectTheServingSizeAs(String servingSize) {
-        new CheckOptionsScreen().selectServingSize(servingSize);
+
+        new OrderManagementScreen().selectServingSize(servingSize);
     }
 
     @Then("^I should return back to the order management screen and I should verify that the \"([^\"]*)\" and \"([^\"]*)\" are listed under the menu item$")
@@ -1353,7 +1358,8 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see payment made on this check popup message$")
     public void iShouldSeePaymentMadeOnThisCheckPopupMessage(){
-        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this check,Can you return this to Walkin");
+//        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin");
+        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin Walkin");
     }
 
     @Then ("^I should see payment made on this check popup message for house account$")
@@ -1364,7 +1370,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see All orders are voided$")
     public void iShouldSeeAllOrdersAreVoided(){
-        Assert.assertEquals(new OrderManagementScreen().getAllOrdersAreVoidedMsg(),"All orders are voided");
+        Assert.assertEquals(new OrderManagementScreen().getAllOrdersAreVoidedMsg(),"All Orders Are Voided");
     }
 
     @Then ("^I should see the void reason popup$")
@@ -1387,6 +1393,7 @@ public class TableOrderOperationsStepDef {
     }
     @And ("^I click Search Button on the Order Screen$")
     public void iClickSearchButtonOnTheOrderScreen(){
+        new OrderManagementScreen().pressOptions();
         new OrderManagementScreen().pressSearch();
     }
     @Then ("^I should see search field on the Order screen$")
@@ -1623,7 +1630,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I pass menu item to search and click the menu item as \"([^\"]*)\"$")
-    public void iPassMenuItemToSearchAndClickTheMenuItem(String menu_item){
+    public void iPassMenuItemToSearchAndClickTheMenuItem(String menu_item) throws InterruptedException {
         new OrderManagementScreen().selectMenuItemSearch(menu_item);
     }
     @Then ("^I should see no menu item found text$")
@@ -1631,7 +1638,7 @@ public class TableOrderOperationsStepDef {
         Assert.assertEquals(new OrderManagementScreen().verifyNoMenuItemFoundTxt(),"______ NO MENU ITEMS FOUND IN \"PAROTTAS\" ______");
     }
     @Then ("^I should see menu item added into Order list$")
-    public void iShouldSeeMenuItemAddedIntoOrderList(){
+    public void iShouldSeeMenuItemAddedIntoOrderList() throws InterruptedException {
         new OrderManagementScreen().getOrderList();
         new OrderTypeWindow().verifySearchSaleAdded();
     }

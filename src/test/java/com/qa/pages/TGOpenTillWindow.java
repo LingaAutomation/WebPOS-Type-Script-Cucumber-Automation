@@ -73,6 +73,8 @@ public class TGOpenTillWindow extends TillManagementScreen{
 
     public By continueBtn = By.id("Continue");
 
+
+
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
 //    private WebElement continueBtn;
 

@@ -4,22 +4,18 @@ import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import io.cucumber.java.bs.A;
-import io.cucumber.java.hu.De;
 import org.apache.commons.lang.RandomStringUtils;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.FindBy;
 
 
 import java.text.DecimalFormat;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
-
-import static com.qa.pages.DriverSteup.driver;
 
 public class PaymentWindow extends OrderManagementScreen{
 
@@ -44,7 +40,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "Hold item(s) has to be sent to kitchen")
     WebElement holdItemSendToKitchen;
 
-    @FindBy(name = "  Exit")
+    @FindBy(xpath = "//button[contains(@id,'ps_exit')]")
     WebElement exitBtn;
 
     @FindBy (xpath = "//XCUIElementTypeButton[@name=\"  Adjust\"]")
@@ -60,26 +56,26 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "Ok")
     private WebElement okBtnForModifier;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell")
+    @FindBy(xpath = "//ion-item-sliding[contains(@class,'ng-star-inserted md hydrated')]")
     private WebElement selectPaymentBtn;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]")
     private WebElement selectPaymentBtn1;
 
-    @FindBy(name = "  Delete")
+    @FindBy(xpath = "//button[contains(@id,'ps_delete')]")
     private WebElement deletePaymentBtn;
 
 
-    @FindBy(name = "  Submit")
+    @FindBy(xpath = "//button[contains(.,'Submit')]")
     private WebElement submitBtn;
 
-    @FindBy ( name = "Cash")
+    @FindBy ( xpath = "//button[contains(.,'Cash')]")
     private WebElement Cash;
 
-    @FindBy ( name = "Exact")
+    @FindBy ( xpath = "//button[contains(.,'Exact')]")
     private WebElement Exact;
 
-    @FindBy (name = "Enter")
+    @FindBy (xpath = "//button[contains(.,'Enter')]")
     private WebElement Enter;
 
     @FindBy (name = "TL 100")
@@ -181,7 +177,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "Side CC")
     WebElement cCSideBtn;
 
-    @FindBy(name = "Others")
+    @FindBy(xpath = "//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,'Others')]")
     WebElement otherBtn;
 
     @FindBy(name = "NMI")
@@ -205,6 +201,10 @@ public class PaymentWindow extends OrderManagementScreen{
 
     @FindBy(name = "Gift Card")
     WebElement giftCardPayment;
+
+//    public PaymentWindow() {
+//        super(driver);
+//    }
 
 
     public String getPaymentWindowTitle(){
@@ -874,7 +874,7 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void selectCategory(String catee) throws Exception {
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         pressArrowDown2();
 //        categorySelection(catee);
 
@@ -904,7 +904,7 @@ pressArrowDown2();
         }
 
     public void selectCategory1(String catee) throws Exception {
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        pressArrowDown2();
         categorySelection(catee);
 
@@ -923,7 +923,7 @@ pressArrowDown2();
     }
 
     public void verifyValueWithOrderSummaryScreen(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement subtotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]"));
         String subtotalTxtOrderSummary = subtotal.getText().replaceAll(" ","");
         Assert.assertEquals(subtotalTxtOrderSummary,TestUtils.subtotalTxt);
@@ -941,7 +941,7 @@ pressArrowDown2();
     }
 
     public void verifyValueWithOrderSummaryScreen1(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement subtotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]"));
         String subtotalTxtOrderSummary = subtotal.getText().replaceAll(" ","");
         Assert.assertEquals(subtotalTxtOrderSummary,TestUtils.subtotalTxt1);
@@ -1513,7 +1513,7 @@ elementClick(orderMenu,"Selected Order Menu - "+orderMenu.getText());
 
     public void clickTheCustomerNameOnTheOrderScreen() throws InterruptedException {
         Thread.sleep(800);
-        WebElement customerName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeButton[2]"));
+        WebElement customerName = driver.findElement(By.xpath("(//p[contains(@class,'tablecommon-label ng-star-inserted')])[2]"));
         String name = customerName.getText();
         elementClick(customerName,"Selected name as - "+name);
     }

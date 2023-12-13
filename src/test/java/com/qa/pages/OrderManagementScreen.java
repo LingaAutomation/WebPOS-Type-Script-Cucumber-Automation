@@ -2,15 +2,14 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import io.cucumber.java.bs.A;
 import org.apache.commons.lang.RandomStringUtils;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -19,10 +18,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
-import static org.openqa.selenium.By.*;
-
 public class OrderManagementScreen extends OrderTypeWindow{
+
+    public static WebDriver driver=TestUtils.driver;
+
+    public OrderManagementScreen(){
+//        super(TestUtils.driver);
+
+        PageFactory.initElements(this.driver,this);
+    }
 
     public String checkNumber="";
 
@@ -30,25 +34,26 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     public String modifier="";  //Added 23Nov
 
-    @FindBy(name = "Counting Machine" ) //id("Counting Machine").click();
+    @FindBy(xpath = "Counting Machine" ) //id("Counting Machine").click();
     private WebElement countingMachineBtn;
 
-    @FindBy(xpath  = "//button[@id='os_all']")
-    WebElement allBtn;
+    @FindBy(xpath = "//button[@id='os_all']")
+             WebElement allBtn;
+//   String allBtn  = "//button[@id='os_all']";
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"QSR\"])[2]")
     private WebElement QSRCombo;
 
-    @FindBy(name = "Dine In")
+    @FindBy(xpath = "Dine In")
     private WebElement DineInCombo;
 
-    @FindBy(name = "Bar Tab")
+    @FindBy(xpath = "Bar Tab")
     private WebElement BarTabCombo;
 
-    @FindBy(name = "To Go")
+    @FindBy(xpath = "To Go")
     private WebElement ToGoCombo;
 
-    @FindBy(name = "Delivery")
+    @FindBy(xpath = "Delivery")
     private WebElement deliveryCombo;
 
 
@@ -73,10 +78,12 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     String arrowDownBtn1 = "//ion-grid[@class='qsrSeats md hydrated']/ion-row/ion-col[2]/button[2]";
 
+
+
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
     private WebElement arrowDownBtn2;
 
-    @FindBy(name = "Tax" )
+    @FindBy(xpath = "Tax" )
     private WebElement taxLbl;
 
                               //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]
@@ -86,154 +93,153 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
     private WebElement holdIcon;
 
-    @FindBy(name = "Do you want to send hold menu item(s) to kitchen?")
+    @FindBy(xpath = "Do you want to send hold menu item(s) to kitchen?")
     private WebElement doYouWantToSendHoldMenuItemToKitchen;
 
-    @FindBy(name = "Yes")
+    @FindBy(xpath = "Yes")
     private WebElement yesForHold;
 
-    @FindBy(name = "No More Payment need")
+    @FindBy(xpath = "No More Payment need")
     private WebElement noMorePaymentNeed;
 
-    @FindBy(name = "No More payments Needed")
+    @FindBy(xpath = "No More payments Needed")
     private WebElement noMorePaymentNeed1;
 
-    @FindBy(name = "Order Item Before Paying")
+    @FindBy(xpath = "Order Item Before Paying")
     private WebElement youNeedToOrderBeforeYouPay;
 
-    @FindBy(name = "Void Reason")
+    @FindBy(xpath = "//p[contains(.,' Void Reason ')]")
     private WebElement voidReason;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"T2\"]")
     private WebElement tableOrderNumber;
 
-    @FindBy (name = "Modifiers")
+    @FindBy (xpath = "Modifiers")
     private WebElement modifierScreen;
 
     /****** Categories ******/
 
-    @FindBy(name = "PIZZA" )
-    private WebElement pizzaCategoryBtn;
+    String pizzaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'PIZZA')]";
 
-    @FindBy(name = "Breakfast")
-    private WebElement breakFastBtn;
+    String breakFastBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Breakfast')]";
 
-    @FindBy(name = "upcharge category")
-    private WebElement upchargeBtn;
+    String upchargeBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'upcharge category')]";
 
-    @FindBy(name = "Beverages")
-    private WebElement beveragesBtn;
+    String beveragesBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Beverages')]";
 
-    @FindBy(name = "FOOD" )
-    private WebElement foodCategoryBtn;
+    String foodCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'FOOD')]" ;
 
-    @FindBy(name = "Pasta" )
-    private WebElement pastaCategoryBtn;
 
-    @FindBy(name = "Menu" )
-    private WebElement menuCategoryBtn;
+    String pastaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Pasta')]";
 
-    @FindBy(name = "Desserts" )
-    private WebElement dessertsCategoryBtn;
+    String menuCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Menu')]";
 
-    @FindBy(name = "Salad" )
-    private WebElement saladCategoryBtn;
+    String dessertsCategoryBtn= "//div[contains(@class,'center-name category-container')]/div[contains(.,'Desserts')]" ;
 
-    @FindBy(name = "Appetizers" )
-    private WebElement appetizersCategoryBtn;
+    String saladCategoryBtn= "//div[contains(@class,'center-name category-container')]/div[contains(.,'Salad')]";
 
-    @FindBy(name = "Briyani")
+    String appetizersCategoryBtn= "//div[contains(@class,'center-name category-container')]/div[contains(.,'Appetizers')]" ;
+
+    @FindBy(xpath = "Briyani")
     private WebElement briyaniBtn;
 
     //Open Item Menu Item
 
-    @FindBy(name = "Tiramisu ")
+    @FindBy(xpath = "Tiramisu ")
     private WebElement tiramisuBtn;
 
-    @FindBy(name = " NO TOMATO")
+    @FindBy(xpath = " NO TOMATO")
     private WebElement noTomatoMdf;
 
-    @FindBy(name = "Continue")
+    @FindBy(xpath = "Continue")
     private WebElement continueButton;
 
 
     /***********************/
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "Done")
     private WebElement doneReceiptPrinter;
 
-//    @FindBy(name = "ADD")
+//    @FindBy(xpath = "ADD")
 //    private WebElement addSeatBtn;
 
-    String addSeatBtn = "//button[@id='os_addSeat']";
+    @FindBy(xpath = "//button[@id='os_addSeat']")
+    WebElement addSeatBtn;
 
     String editDeleteSeatsBtn = "//div[@role='menu']/div/div/ion-grid/ion-row/ion-footer/button";
 
     String doneDeleteSeatsBtn = "//div[@role='menu']/div/div/ion-grid/ion-row/ion-footer/button";
 
-    @FindBy(name = "Delete_Seats")
+    @FindBy(xpath = "Delete_Seats")
     private WebElement delSeats;
 
-    @FindBy(name = "finish" )
+    @FindBy(xpath = "finish" )
     private WebElement finishOrderBtn;
 
-    @FindBy(name = "Option" )
-    private WebElement optionBtn;
+    String optionBtn = "//linga-icon/../div[contains(.,'Option')]";
 
-    @FindBy(name = "Order")
+ //   @FindBy(xpath = "Option" )
+ //   private WebElement optionBtn;
+
+    @FindBy(xpath = "Order")
     private WebElement orderBtn;
 
-    @FindBy(name = "Already sent to Kitchen")
+    @FindBy(xpath = "Already sent to Kitchen")
     private WebElement alreadySentToKitchenTxt;
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "Done")
     private WebElement doneAlreadySentToKitchen;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Payment\"]")
+    @FindBy(xpath = "//button[contains(.,'Payment')]")
     private WebElement paymentBtn;
 
-    @FindBy(name = "Payment(s) made on this check,Can you return this to Walkin")
+    @FindBy(xpath = "//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Walkin')]")
     private WebElement paymentMadeOnThisCheckPopup;
 
-    @FindBy(name = "Payment(s) made on this check,Can you return this to Auto ragav")
+    @FindBy(xpath = "Payment(s) made on this check,Can you return this to Auto ragav")
     private WebElement paymentMadeOnThisCheckPopupForHouseAccount;
 
-    @FindBy(name = "Print")
+    @FindBy(xpath = "Print")
     private WebElement printBtn;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
     private WebElement handIconForHold;
 
-    @FindBy(name = "Void")
-    private WebElement voidBtn;
+    String voidBtn = "//linga-icon/../div[contains(.,'Void')]";
 
-    @FindBy (name = "All orders are voided")
-    private WebElement allOrdersAreVoided;
+    String allOrdersAreVoided = "//p[contains(.,'All Orders Are Voided')]";
+   // @FindBy (xpath = "All orders are voided")
+   // private WebElement allOrdersAreVoided;
+
+
 
     //Void!!
-    @FindBy(name = "Ordered Wrongly")
+    @FindBy(xpath = "//button[contains(.,' Ordered Wrongly ')]")
     private WebElement orderedWronglyReason;
 
-    @FindBy(name = "Add")
+    @FindBy(xpath = "(//button[contains(.,' Add ')])[2]")
     private WebElement addVoidReasonBtn;
 
     //Add new customer to table
-    @FindBy(name = "New Customer")
+    @FindBy(xpath = "//button[@id='os_customer']")
     private WebElement addCustomerToTableBtn;
 
-    @FindBy(name = "Add New")
+    @FindBy(xpath = "Add New")
     private WebElement addNewBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//input[(@placeholder='Search customer by Name/Email')]")
     private WebElement search;
 
-    @FindBy(name = "Search")
-    private WebElement searchOrderScreen;
+    String searchOrderScreen = "//label[contains(.,'Search Item')]";
+ //   @FindBy(xpath = "Search")
+//    private WebElement searchOrderScreen;
 
-    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
-    private WebElement searchField;
+    String searchField = "(//input[@type='search'])[1]";
 
-    @FindBy(name = "Tiramisu")
+//    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+//    private WebElement searchField;
+
+    @FindBy(xpath = "Tiramisu")
     private WebElement tiramisuMenu;
 
 
@@ -244,113 +250,114 @@ public class OrderManagementScreen extends OrderTypeWindow{
     private WebElement lastRow;
 
     /******************* Tax MENU Item **************************/
-    @FindBy(name = "Ravioli")
+    @FindBy(xpath = "Ravioli")
     private WebElement ravioliMenu;
 
-    @FindBy(name = "Ravioli Pesto")
+    @FindBy(xpath = "Ravioli Pesto")
     private WebElement ravioliPestoMenu;
 
-    @FindBy(name = "Fus Rapini")
+    @FindBy(xpath = "Fus Rapini")
     private WebElement fusRapiniMenu;
 
-    @FindBy(name = "Cheesecake")
+    @FindBy(xpath = "Cheesecake")
     private WebElement CheeseckaeMenu;
 
 
-    @FindBy(name = "Fett Fr di Mare")
+    @FindBy(xpath = "Fett Fr di Mare")
     private WebElement fettFrDiMareMenu;
 
-    @FindBy(name = "Ling Meatballs")
+    @FindBy(xpath = "Ling Meatballs")
     private WebElement lingMeatballsMenu;
 
-    @FindBy(name = "Potatoes")
+    @FindBy(xpath = "Potatoes")
     private WebElement potatoesMenu;
 
-    @FindBy(name = "Cannoli")
+    @FindBy(xpath = "Cannoli")
     private WebElement cannoliMenu;
 
-    @FindBy(name = "TEA")
+    @FindBy(xpath = "TEA")
     private WebElement teaMenu;
 
-    @FindBy(name = "(F) Onion Rings EACH")
+    @FindBy(xpath = "//div[contains(@class,'p-col-5 discount-section-name disc-padding')]")
     private WebElement onionRingEachMenu;
 
-    @FindBy(name = "(F) Dosa EACH")
+    @FindBy(xpath = "(F) Dosa EACH")
     private WebElement dosaEachMenu;
 
-    @FindBy(name = "Ling Littlenck")
+    @FindBy(xpath = "Ling Littlenck")
     private WebElement lingLittlenckMenu;
 
-    @FindBy(name = "Ling Pes Shrimp")
+    @FindBy(xpath = "Ling Pes Shrimp")
     private WebElement lingPesShrimpMenu;
 
-    @FindBy(name = "Remove")
+    @FindBy(xpath = "Remove")
     private WebElement removeBtn;
 
-    @FindBy(name = "Walkin")
+    @FindBy(xpath = "Walkin")
     private WebElement walkinBtn;
 
-    @FindBy(name = "Customer Profile")
+    @FindBy(xpath = "//ion-title[contains(.,'Customer Profile')]")
     private WebElement customerProfileWindow;
 
-    @FindBy(name = "Dine In")
+    @FindBy(xpath = "Dine In")
     private WebElement dineInService;
 
     String seat2Del = "//*[@id=\"mat-menu-panel-1\"]/div/div/ion-grid/ion-row/div/button[2]/span[1]/div";
 
     String  closeYourSaleTxt = "//mat-dialog-content[contains(.,'Close Your Sale')]";
 
+    String  closeTheSaleTxt = "//mat-dialog-content[contains(.,'close the sale')]";
+
     String logOffBtn = "//button[@id='os_logOff']";
 
-    @FindBy(name = "Split")
-    private WebElement splitBtn;
+    String splitBtn= "//linga-icon[@symbol='split']";
 
-    @FindBy(name = "Cannot add modifiers, item already send to kitchen")
+    @FindBy(xpath = "Cannot add modifiers, item already send to kitchen")
     private WebElement cannotAddModifier;
 
-    @FindBy(name = "______ NO MENU ITEMS FOUND IN \"PAROTTAS\" ______")
+    @FindBy(xpath = "______ NO MENU ITEMS FOUND IN \"PAROTTAS\" ______")
     private WebElement noMenuItemTxt;
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Button\"])[2]")
     private WebElement laterBtn;
 
-    @FindBy(name = "Delete")
+    @FindBy(xpath = "Delete")
     private WebElement deleteBtn;
 
-    @FindBy(name = "You cannot delete this Discount")
+    @FindBy(xpath = "You cannot delete this Discount")
     private WebElement youCannotDeleteTxt;
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
     private WebElement doneButton;
 
 
-    @FindBy(name = "Cancel")
+    @FindBy(xpath = "Cancel")
     private WebElement cancelBtnConversational;
 
     //@FindBy(xpath = ""//XCUIElementTypeStaticText[@name=\"Cancel\"]")
 
-    @FindBy(name = "Start Over")
+    @FindBy(xpath = "Start Over")
     private WebElement startOverBtn;
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "Done")
     private WebElement doneBtnConversational;
 
-    @FindBy(name = "Alternate modifier")
+    @FindBy(xpath = "Alternate modifier")
     private WebElement alternateModifier;
 
-    @FindBy(name = "Alternate Modifier")
+    @FindBy(xpath = "Alternate Modifier")
     private WebElement alternateModifierScreen;
 
-    @FindBy(name = "Ok")
+    @FindBy(xpath = "Ok")
     private WebElement okBtnAlternateModifier;
 
-    @FindBy(name = "Revert")
+    @FindBy(xpath = "Revert")
     private WebElement revertBtn;
 
-    @FindBy(name = "Cannot remove customer for Delivery")
+    @FindBy(xpath = "Cannot remove customer for Delivery")
     private WebElement cannotRemoveCustomerForDelivery;
 
-    @FindBy (name = "You need to pick at least 1 modifiers from this Group")
+    @FindBy (xpath = "You need to pick at least 1 modifiers from this Group")
     private WebElement youNeedToPickAtLeast1ModifiersFromThisGroup;
 
 
@@ -408,13 +415,14 @@ public class OrderManagementScreen extends OrderTypeWindow{
     }
 
     public void searchForCustomer(String customerName) {
-        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        elementClick("//button[contains(.,'By Name / Email')]","BY Name / Email");
         sendKeys(search, customerName);
     }
 
     public void selectCustomerNameToAddToTheTable(String customerName){
-        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-        WebElement customer = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\""+customerName+"\"]","",TestUtils.XPath);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        WebElement customer = driver.findElement(By.xpath("(//span[contains(.,'"+customerName+"')])[1]"));
         elementClick(customer,"Tapped Customer - "+customerName);
     }
 
@@ -516,7 +524,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
         pressArrowDown2();
       //  elementClick(pizzaCategoryBtn, "Pizza Category selected");
         try {
-            if (find(pizzaCategoryBtn, 2)) {
+            if (find(convertWebElement(pizzaCategoryBtn), 2)) {
                 elementClick(pizzaCategoryBtn, "Tapped Side CC Button");
             } else {
                 scrollToElementCategory("up");
@@ -532,7 +540,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
         pressArrowDown2();
       //  elementClick(breakFastBtn, "Breakfast Category selected");
         try {
-            if (find(breakFastBtn, 2)) {
+            if (find(convertWebElement(breakFastBtn), 2)) {
                 elementClick(breakFastBtn, "Tapped Side CC Button");
             } else {
                 scrollToElementCategory( "up");
@@ -551,14 +559,14 @@ public class OrderManagementScreen extends OrderTypeWindow{
         pressArrowDown2();
 //        elementClick(beveragesBtn,"Beverages Category selected");
         try {
-            if (find(beveragesBtn, 2)) {
+            if (find(convertWebElement(beveragesBtn), 2)) {
                 elementClick(beveragesBtn, "Tapped Side CC Button");
             } else {
-                scrollToElementPayments(beveragesBtn, "up");
+                scrollToElementPayments(convertWebElement(beveragesBtn), "up");
                 elementClick(beveragesBtn, "Tapped Side CC Button");
             }
         } catch (Exception e) {
-            scrollToElementPayments(beveragesBtn, "down");
+            scrollToElementPayments(convertWebElement(beveragesBtn), "down");
             elementClick(beveragesBtn, "Tapped Side CC Button");
         }
     }
@@ -567,7 +575,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
         pressArrowDown2();
 
         try {
-            if (find(upchargeBtn, 2)) {
+            if (find(convertWebElement(upchargeBtn), 2)) {
                 elementClick(upchargeBtn, "Tapped PAsta Button");
             } else {
                 scrollToElementCategory( "up");
@@ -583,7 +591,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
         pressArrowDown2();
        // elementClick(pastaCategoryBtn, "Pizza Category selected");
         try {
-            if (find(pastaCategoryBtn, 2)) {
+            if (find(convertWebElement(pastaCategoryBtn), 2)) {
                 elementClick(pastaCategoryBtn, "Tapped PAsta Button");
             } else {
                 scrollToElementCategory( "up");
@@ -595,7 +603,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
         }
     }
     public void selectMenuCategory() throws Exception {
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         pressArrowDown2();
         elementClick(menuCategoryBtn, "Pizza Category selected");
 //        categorySelection(String.valueOf(menuCategoryBtn));
@@ -603,10 +611,10 @@ public class OrderManagementScreen extends OrderTypeWindow{
     }
 
     public void selectDessertsCategory() throws Exception {
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         pressArrowDown2();
         try {
-            if (find(dessertsCategoryBtn, 2)) {
+            if (find(convertWebElement(dessertsCategoryBtn), 2)) {
                 elementClick(dessertsCategoryBtn, "Tapped PAsta Button");
             } else {
                 scrollToElementCategory( "up");
@@ -622,7 +630,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     public void categorySelection(String category) throws Exception {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         pressArrowDown2();
-        cate =  driver.findElement(By.xpath(category));
+        cate =  driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'"+category+"')]"));
         try {
             if (cate.isDisplayed()) {
                 elementClick(cate, cate.getText() + " - Selected");
@@ -663,7 +671,7 @@ public  void selectCategory (String value) throws Exception {
 
 
     public void verifyCashPriceValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 //        WebElement totalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStatic)Text[5]"));
@@ -674,7 +682,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyCashPriceValueAsForTaxExempt(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 //        WebElement totalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash PriceCash PriceCash Price\"]/../../XCUIElementTypeOther[2]/X)CUIElementTypeStaticText[4]"));
@@ -686,7 +694,7 @@ public  void selectCategory (String value) throws Exception {
 
 
     public void verifyCashPriceValue1As(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement totalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStatic)Text[6]"));
         String totalAmount = totalValues.getText();
@@ -696,7 +704,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyCashPriceValue2As(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 //        WebElement totalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStatic)Text[7]"));
@@ -707,7 +715,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyCashPriceValue3As(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 //        WebElement totalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStatic)Text[8]"));
@@ -717,7 +725,7 @@ public  void selectCategory (String value) throws Exception {
         utils.log().info("Cash Price is SAME - "+Amount);
     }
     public void selectMenuItem(String menuItem) throws Exception {
-        WebElement e =  driver.findElement(By.xpath(menuItem));
+        WebElement e =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
         if(find(e,2)) {
             elementClick(e, menuItem + " selected");
         }else {
@@ -727,7 +735,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyMenuSubTotalAs(String amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement subtotalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
 //         String subTotalAmount = subtotalValues.getText();
 //         TestUtils.subtotalTxt = subTotalAmount;
@@ -874,7 +882,7 @@ public  void selectCategory (String value) throws Exception {
 
 
     public void verifyTaxValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Tax\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2])"));
         String subtotalValue = e11.getText();
         TestUtils.taxTxt = subtotalValue;
@@ -884,7 +892,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyDiscountValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Discount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticTe)xt[3]"));
         String subtotalValue = e11.getText();
         TestUtils.taxTxt = subtotalValue;
@@ -894,7 +902,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyDiscount1ValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Discount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticTe)xt[4]"));
         String subtotalValue = e11.getText();
         TestUtils.taxTxt = subtotalValue;
@@ -904,7 +912,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyServiceChargeValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Service Charge\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeSt)aticText[3]"));
         String subtotalValue = e11.getText();
         TestUtils.serviceCharge = subtotalValue;
@@ -914,7 +922,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyServiceChargeValue1As(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Service Charge\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeSt)aticText[4]"));
         String subtotalValue = e11.getText();
         TestUtils.serviceCharge = subtotalValue;
@@ -924,7 +932,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyServiceChargeValue2As(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Service Charge\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeSt)aticText[5]"));
         String subtotalValue = e11.getText();
         TestUtils.serviceCharge = subtotalValue;
@@ -934,7 +942,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyTotalValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStatic)Text[5]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -943,7 +951,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyTotal2ValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[)3]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -958,7 +966,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyTotal4ValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[)4]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -967,7 +975,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyPaidAmountValue1As(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Paid Amount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStati)cText[6]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -976,7 +984,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyPaidAmountValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Paid Amount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStati)cText[5]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -984,7 +992,7 @@ public  void selectCategory (String value) throws Exception {
         utils.log().info("Cash Price Value is SAME - "+Amount);
     }
     public void verifyPaidAmountValueAs0(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Paid Amount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStati)cText[4]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -992,7 +1000,7 @@ public  void selectCategory (String value) throws Exception {
         utils.log().info("Cash Price Value is SAME - "+Amount);
     }
     public void verifyTotal5ValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[)5]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -1001,7 +1009,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyTotal6ValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[)6]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -1010,7 +1018,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyTaxExemptTotalValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[)2]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
@@ -1020,14 +1028,14 @@ public  void selectCategory (String value) throws Exception {
 
 
     public void verifyCashOptionValueASWithGratuity(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStatic)Text[6]"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
         utils.log().info("Cash Price Value is SAME - "+Amount);
     }
     public void verifyGratuityValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Gratuity\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticTe)xt[3]"));
         String subtotalValue = e11.getText();
         TestUtils.gratutiy = subtotalValue;
@@ -1036,7 +1044,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyGratuity1ValueAs(String Amount){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Gratuity\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticTe)xt[4]"));
         String subtotalValue = e11.getText();
         TestUtils.gratutiy = subtotalValue;
@@ -1045,14 +1053,14 @@ public  void selectCategory (String value) throws Exception {
     }
 
 //    public void getTheTotalValueInTheOrderScreen(){
-//        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)));
 //        WebElement totalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]");
 //        String totalAmount = totalValues.getText();
 //
 //    }
 
     public void getTotalOfMenuWhileCashDiscountApplied(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIE)lementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
         String totalAmount = totalValues.getText();
         TestUtils.totalTxt1 = totalAmount;
@@ -1060,7 +1068,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyTheTotalValueWithPaymentScreen(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement totalPayment =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIE)lementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText"));
         String totalPaymentTxt = totalPayment.getText();
         String totalOrder = TestUtils.totalTxt1;
@@ -1072,7 +1080,7 @@ public  void selectCategory (String value) throws Exception {
 
     }
     public void verifySubtotalValueWithCashValueInPaymentScreen(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement cashOptionValuePaymentScreen =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIE)lementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField[2]"));
         String cashOptionValuePaymentScreenTxt = cashOptionValuePaymentScreen.getText();
         double subtotalValue = Double.parseDouble(TestUtils.subtotalTxt.replaceAll("[$ ]",""));
@@ -1130,10 +1138,7 @@ public  void selectCategory (String value) throws Exception {
 
     /****** Select & Verify Modifiers ******/
 
-    public void selectModifier(String modifier){
-        WebElement e = mergeAndFindElement(modifier,"",TestUtils.Accessibility);
-        elementClick(e, modifier + " selected");
-    }
+
     public void selectModifier1(String modify){
         WebElement el1 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\" "+modify+"\"]","",TestUtils.XPath);
         elementClick(el1,"Tapped modifier");
@@ -1151,24 +1156,28 @@ public  void selectCategory (String value) throws Exception {
     public void pressSearch(){ elementClick(searchOrderScreen,"Tapped Search Button on the Order screen"); }
 
     public void verifySearchField(){
-        if(searchField.isDisplayed()){
+        if(convertWebElement(searchField).isDisplayed()){
             utils.log().info("Search field got Visible");
         }else {
             utils.log().info("Search field is not visible");
         }
     }
 
-    public void selectMenuItemSearch(String menu_item){
+    public void selectMenuItemSearch(String menu_item) throws InterruptedException {
 
-        searchField.sendKeys(menu_item);
-        try {
-            WebElement e = mergeAndFindElement(menu_item, "", TestUtils.Accessibility);
-            if (find(e, 2)) {
-                elementClick(e, menu_item + " - selected");
+        convertWebElement(searchField).sendKeys(menu_item);
+        Thread.sleep(300);
+
+            WebElement e = driver.findElement(By.xpath("(//div[contains(@class,'subCategoryBtn-txt noImg')])"));
+            Thread.sleep(300);
+            utils.log().info(e.getText());
+            if (e.getText().equals(menu_item)) {
+              e.click();
+              utils.log().info("Selected - "+menu_item);
+            }else{
+                utils.log().info("Element Not Displayed - "+menu_item);
             }
-        }catch (Exception h) {
-            utils.log().info(menu_item + " - not visible");
-        }
+
         //searchField.sendKeys(Keys.ENTER);
 
     }
@@ -1204,6 +1213,11 @@ public  void selectCategory (String value) throws Exception {
     public void pressOptions(){
         elementClick(optionBtn, "Options button is tapped");
     }
+    @FindBy(xpath = "//p[contains(.,'Check Option')]")
+    WebElement checkOptionsTitle;
+    public String getCheckOptionsTitle() {
+        return elementGetText(checkOptionsTitle, "Check Options title is - ");
+    }
 
     public void pressPrintBtn(){
         elementClick(printBtn, "Print button is tapped");
@@ -1219,7 +1233,7 @@ public  void selectCategory (String value) throws Exception {
         elementClick(voidBtn, "Void button tapped" );
     }
     public String getVoidReasonPopup(){
-        return elementGetText(voidReason,"void Reason txt is displayed - ");
+        return getText(voidReason,"void Reason txt is displayed - ");
     }
 
 
@@ -1231,7 +1245,7 @@ public  void selectCategory (String value) throws Exception {
         elementClick(addVoidReasonBtn, "Add (void reason) button is tapped");
     }
 
-    public String getAllOrdersAreVoidedMsg(){return elementGetText(allOrdersAreVoided,"All Orders are voided is Displayed - ");}
+    public String getAllOrdersAreVoidedMsg(){return elementGetText(convertWebElement(allOrdersAreVoided),"All Orders are voided is Displayed - ");}
     /****** Tax Exempt ******/
 
     public void checkTaxExists(){
@@ -1246,9 +1260,10 @@ public  void selectCategory (String value) throws Exception {
 
 
     public void checkTaxValue(String value){
-        WebElement tax=mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement tax = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
         if(tax.isDisplayed()){
-            utils.log().info( " Tax is - "+ value);
+            utils.log().info( " Tax is - "+ tax.getAttribute("value"));
+            Assert.assertEquals(tax.getAttribute("value"),value);
             TestUtils.taxTxt = value;
         }else {
             utils.log().info("Tax is not Displayed");
@@ -1261,7 +1276,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyThePaidAmountPartialPaidAmountOnthePaymentScreen(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement firstAmount =  driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIEleme)ntTypeCell[1]/XCUIElementTypeStaticText[3]"));
         String firstAmountTxt = firstAmount.getText();
         Assert.assertEquals(firstAmountTxt,TestUtils.paidAmount1.replaceAll("[$ ]",""));
@@ -1298,7 +1313,8 @@ public  void selectCategory (String value) throws Exception {
         return elementGetText(doYouWantToSendHoldMenuItemToKitchen,"Do You Want To Send Hold Menu Item is Displayed - ");
     }
     public String getPaymentMadeOnThisCheck(){
-        return elementGetText(paymentMadeOnThisCheckPopup,"Payment made on this check is Displayed - ");
+        return getText(paymentMadeOnThisCheckPopup,"Payment made on this check is Displayed - ");
+
     }
 
     public String getPaymentMadeOnThisCheckHouseAccount(){
@@ -1368,7 +1384,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void enterMenuQuantity$Store(String Number) {
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement el1 = mergeAndFindElement("//XCUIElementTypeButton[@name=\"1\"]", "", TestUtils.XPath);
         el1.click();
 
@@ -1400,34 +1416,40 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void checkDiscountValue(String value){
-        WebElement discount=mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement discount = driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
         if(discount.isDisplayed()){
-            utils.log().info( " Discount is - "+ value);
+            utils.log().info( "Discount is - "+ value);
+            Assert.assertEquals(discount.getAttribute("value"),value);
+            TestUtils.discountTxt = value;
         }else {
             utils.log().info("Discount is not Displayed");
         }
     }
 
     public void checkGratuityValue(String value){
-        WebElement discount=mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement discount= driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
+
         if(discount.isDisplayed()){
             utils.log().info( " Gratuity is - "+ value);
+            Assert.assertEquals(discount.getAttribute("value"),value);
         }else {
             utils.log().info("Gratuity is not Displayed");
         }
     }
 
     public String OnionRingsEachMenu(){
-        return elementGetText(onionRingEachMenu,"Free Item Added in Menu - ");
+        return getText(onionRingEachMenu,"Free Item Added in Menu - ");
     }
 
     public String dosaEach(){
         return elementGetText(dosaEachMenu,"Free Item Added In Menu ");
     }
     public void discountName(String discount){
-        WebElement e2 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + discount + "\"])","",TestUtils.XPath);
+        WebElement e2 = driver.findElement(By.xpath("//div[contains(@class,'p-col-4 discount-section-name disc-padding')]"));
+          utils.log().info(e2.getText());
         if (e2.isDisplayed()) {
             utils.log().info(discount + " - is Displayed");
+            Assert.assertEquals(e2.getText(),discount);
         } else {
             utils.log().info("Discount is not Displayed");
         }
@@ -1455,7 +1477,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyCustomerAddOrderScreen(String member){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement customerAddOrderScreen=mergeAndFindElement(member,"",TestUtils.Accessibility);
         if(customerAddOrderScreen.isDisplayed()){
             utils.log().info(member+" - Customer Is added on Order Screen ");
@@ -1487,15 +1509,20 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public String verifyCloseSale(){
-        return elementGetText(convertWebElement(closeYourSaleTxt),"close your sale txt is displayed - ");
+        return getText(convertWebElement(closeYourSaleTxt),"close your sale txt is displayed - ");
+    }
+
+    public String closeTheSale(){
+        return getText(convertWebElement(closeTheSaleTxt),"close your sale txt is displayed");
     }
 
     public void clickLogOffBtn(){
+
         elementClick(logOffBtn,"Tapped log Off Button");
     }
 
     public void visibleSplitButton(){
-        if(splitBtn.isEnabled()){
+        if(convertWebElement(splitBtn).isEnabled()){
             utils.log().info("Split Button is Enabled");
         }else {
             utils.log().info("Split Button is Disabled");
@@ -1526,6 +1553,11 @@ public  void selectCategory (String value) throws Exception {
     public void swipeDiscount() throws InterruptedException {
         swipe(32,296,-42,296,200);
     }
+    public void selectModifier(String modifier) throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement e = driver.findElement(By.xpath("//span[contains(.,'"+modifier+"')]"));
+        elementClick(e, modifier + " selected");
+    }
 
     public String verifyYouCannotDeletePopup(){
         return elementGetText(youCannotDeleteTxt,"Popup Text is Displayed");
@@ -1542,7 +1574,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public String getCheckNumberTxt(){
-        WebElement checkNum=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]","",TestUtils.XPath);
+        WebElement checkNum=driver.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
         checkNumber=checkNum.getText();
         TestUtils.globalCheckNumber=checkNumber;
         utils.log().info(checkNumber);
@@ -1792,9 +1824,9 @@ public  void selectCategory (String value) throws Exception {
             elementClick(addCustomerToTableBtn,"Add cutoemr button");
 
             elementClick(addNewBtn,"Add new Tapped");
-            String name = RandomStringUtils.randomAlphabetic(6);
-            sendKeys(firstNameFld, name);
-            utils.log().info("First Name - " + name);
+            String xpath = RandomStringUtils.randomAlphabetic(6);
+            sendKeys(firstNameFld, xpath);
+            utils.log().info("First Name - " + xpath);
 
             String name1 = RandomStringUtils.randomAlphabetic(5);
             sendKeys(lastNameFld, name1);
@@ -1814,7 +1846,7 @@ public  void selectCategory (String value) throws Exception {
 
         }
     }
-    @FindBy(name = "Gratuity cannot be removed for paid check")
+    @FindBy(xpath = "Gratuity cannot be removed for paid check")
     WebElement gratuityCannotBeRemovedForPaidCheck;
 
     public String  verifyGratuityCannotBeRemovedForPaidChecksPopup(){
@@ -1830,7 +1862,7 @@ public  void selectCategory (String value) throws Exception {
         }
 
         public void getTotalOfMenuInOrderscreen(){
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
           WebElement totalOfMenu =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
           String totalOfMenuTxt = totalOfMenu.getText();
             TestUtils.totalTxt = totalOfMenuTxt;
@@ -1868,14 +1900,14 @@ public  void selectCategory (String value) throws Exception {
                 }
             }
         }
-        @FindBy(name = "Quantity is not enough.")
+        @FindBy(xpath = "Quantity is not enough.")
         WebElement quantityIsNotEnough;
         public void verifyQuantityIsNotEnoughPopup1(){
             Assert.assertEquals(quantityIsNotEnough.getText(),"Quantity is not enough.");
             utils.log().info("Displayed Popup as - "+quantityIsNotEnough.getText());
         }
 
-        @FindBy(name = "86 List")
+        @FindBy(xpath = "86 List")
         WebElement listBtn;
 
         public void click86ListButton(){
@@ -1887,13 +1919,13 @@ public  void selectCategory (String value) throws Exception {
             utils.log().info("Displayed window as - "+listBtn.getText());
         }
 
-        @FindBy(name = "CheckDetialsIcon")
+        @FindBy(xpath = "CheckDetialsIcon")
         WebElement checkDetailsIcon;
         public void clickClosedChecksDetailsIcon(){
             elementClick(checkDetailsIcon,"Selected Button as - "+checkDetailsIcon.getText());
         }
 
-        @FindBy(name = "ORDER SUMMARY")
+        @FindBy(xpath = "ORDER SUMMARY")
         WebElement orderSummaryScreen;
         public void verifyOrderSummaryScreen(){
             Assert.assertEquals(orderSummaryScreen.getText(),"ORDER SUMMARY");
@@ -1961,17 +1993,17 @@ public  void selectCategory (String value) throws Exception {
         elementClick(phoneOrdersBtn, "Selected Btn As - " + phoneOrdersBtn.getText());
     }
 
-    @FindBy(name = "Pancake")
+    @FindBy(xpath = "Pancake")
     WebElement pancake;
-    @FindBy(name = "Onion Rings")
+    @FindBy(xpath = "Onion Rings")
     WebElement onionRings;
-    @FindBy(name = "Cash")
+    @FindBy(xpath = "Cash")
     WebElement cash;
-    @FindBy(name = "Exact")
+    @FindBy(xpath = "Exact")
     WebElement exact;
-    @FindBy(name = "Enter")
+    @FindBy(xpath = "Enter")
     WebElement enter;
-    @FindBy(name = "Cancel")
+    @FindBy(xpath = "Cancel")
     WebElement Cancel;
     public void createSAle() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
@@ -2029,6 +2061,12 @@ public  void selectCategory (String value) throws Exception {
         Assert.assertEquals(dc.format(changeDueee),changeDueValue.replaceAll("[$, ]",""));
         utils.log().info("Cash Reward & Change Due Value is SAME - " +changeDueValue);
     }
+
+
+
+
+
+
 }
 
 

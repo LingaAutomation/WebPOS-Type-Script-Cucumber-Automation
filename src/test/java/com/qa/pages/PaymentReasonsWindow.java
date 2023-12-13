@@ -2,7 +2,6 @@ package com.qa.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import static com.qa.pages.DriverSteup.driver;
 
 public class PaymentReasonsWindow extends TillManagementScreen{
     @FindBy(name = "Reasons" )
@@ -16,6 +15,7 @@ public class PaymentReasonsWindow extends TillManagementScreen{
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Ok\"]" )
     private WebElement okBtn;
+
 
     public String getReasonsWindowTitle() {
         return elementGetText(reasonsWindowTitle, "Reasons window's name is - ");

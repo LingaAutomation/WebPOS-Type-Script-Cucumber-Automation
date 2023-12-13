@@ -3,17 +3,15 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 
-import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.FindBy;
 
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import static com.qa.pages.DriverSteup.driver;
 
 public class CustomerProfileWindow extends OrderTypeWindow{
 
@@ -50,11 +48,15 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     private WebElement customerToSelectForNmi;
 
 
-    @FindBy(xpath =  "//XCUIElementTypeButton[@name=\"Save\"]")
+    @FindBy(xpath =  "//button[contains(.,' Save ')]")
     private WebElement saveBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeSwitch")
+    @FindBy(xpath = "//input[@aria-checked='false']")
     private WebElement taxExemptCustomer;
+
+
+    @FindBy(xpath = "//input[@aria-checked='true']")
+    private WebElement taxExemptCustomer1;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Customer Plan\"]")
     private WebElement customerPlanButton;
@@ -145,8 +147,12 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[4]")
     WebElement limitValueBtn;
 
+//    public CustomerProfileWindow() {
+//        super(TestUtils.driver);
+//    }
+
     public String verifyAccountType(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return elementGetText(accountTypeScreen,"Account Type is displayed - ");
     }
 
@@ -319,24 +325,38 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public void pressSaveBtn() throws InterruptedException {
-       //Thread.sleep(100);
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+       Thread.sleep(1000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(saveBtn, "pressed Save button");
     }
     public void selectTaxExemptCustomerProfile() throws InterruptedException {
+        Thread.sleep(300);
+        if (taxExemptCustomer.getAttribute("value").equals("on")) {
+            utils.log().info(taxExemptCustomer.getAttribute("value"));
+            elementClick("//span[contains(@class,'mat-slide-toggle-thumb-container')]", "Tapped Tax Exempt on customer Profile");
+        } else {
+            utils.log().info(taxExemptCustomer.getAttribute("value"));
+            utils.log().info(taxExemptCustomer.getText());
+            utils.log().info("Already Selected Tax Exempt - "+  taxExemptCustomer.getAttribute("value"));
+        }
+    }
 
-        elementClick(taxExemptCustomer,"Tapped Tax Exempt on customer Profile");
+    public void removeTaxExemptCustomerProfile() throws InterruptedException {
+        Thread.sleep(300);
+
+            elementClick("//span[contains(@class,'mat-slide-toggle-thumb-container')]", "Tapped Tax Exempt on customer Profile");
+
     }
 
     public void selectCustomerPlan(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(customerPlanButton,"Tapped Customer Plan Button");
     }
 
 
 
     public void clickUpdateBtn(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(updateBtn, "Tapped Update Button");
     }
 
@@ -358,7 +378,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
         mailNameFld.sendKeys(Keys.ENTER);
     }
     public void clickLoyaltyButton(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
         String loyal1=loyal.getText();
         elementClick(loyal,loyal1 + " - Tapped Loyalty Button");
@@ -366,7 +386,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public String verifyLoyaltyScreen(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return elementGetText(loyaltyBalanceScreen,"Loyalty Balance window is displayed - ");
     }
 
@@ -383,7 +403,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public void verifyLoyaltyBalance() throws Exception {
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String globalCheckNumber = TestUtils.globalCheckNumber;
 
 

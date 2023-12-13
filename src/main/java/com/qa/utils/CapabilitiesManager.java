@@ -1,63 +1,102 @@
 package com.qa.utils;
 
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
+import static com.qa.utils.TestUtils.driver;
+
+
 public class CapabilitiesManager {
-//    TestUtils utils = new TestUtils();
-//
-//    public DesiredCapabilities getCaps() throws IOException {
-//        GlobalParams params = new GlobalParams();
-//        Properties props = new PropertyManager().getProps();
-//
-//        try {
-//            utils.log().info("getting capabilities...");
-//            DesiredCapabilities caps = new DesiredCapabilities();
-//            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, params.getPlatformName());
-//            caps.setCapability(MobileCapabilityType.UDID, params.getUDID());
-//            caps.setCapability(MobileCapabilityType.DEVICE_NAME, params.getDeviceName());
-//
-//            switch (params.getPlatformName()) {
-//                case "Android":
-//                    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, props.getProperty("androidAutomationName"));
-//                    caps.setCapability("appPackage", props.getProperty("androidAppPackage"));
-//                    caps.setCapability("appActivity", props.getProperty("androidAppActivity"));
-//                    caps.setCapability("systemPort", params.getSystemPort());
-//                    caps.setCapability("chromeDriverPort", params.getChromeDriverPort());
-//                    //String androidAppUrl = getClass().getResource(props.getProperty("androidAppLocation")).getFile();
-//                    String androidAppUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "Test"
-//                            + File.separator + "resources" + File.separator + "app" + File.separator + "Android.SauceLabs.Mobile.Sample.app.2.3.0.apk";
-//                    utils.log().info("appUrl is" + androidAppUrl);
-//                    caps.setCapability("app", androidAppUrl);
-//                    break;
-//                case "iOS":
-//                    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, props.getProperty("iOSAutomationName"));
-//                    //String iOSAppUrl = getClass().getResource(props.getProperty("iOSAppLocation")).getFile();
-//                    //utils.log().info("appUrl is" + iOSAppUrl);
-//                    caps.setCapability("app", "com.benseron.lingapos");//iOSBundleId
-//                    caps.setCapability("wdaLocalPort", params.getWdaLocalPort());
-//                    caps.setCapability("appium:webkitDebugProxyPort", params.getWebkitDebugProxyPort());
-//                    caps.setCapability("wdaStartupRetryInterval",30);
-//                    caps.setCapability("wdaStartupRetries", 4);
-//                    caps.setCapability("iosInstallPause",18000);
-//                    caps.setCapability("showXcodeLog",true);
-//                    //caps.setCapability("usePrebuiltWDA", false);
-//                    caps.setCapability("xcodeOrgId", "V23JNQM2Z4");
-//                    caps.setCapability("xcodeSigningId", "Apple Development");
-//                    caps.setCapability(MobileCapabilityType.NO_RESET, false);
-//                    caps.setCapability("sendKeyStrategy","setValue");
-//                  //  caps.setCapability("newCommandTimeout", 60 * 5);
-////                    caps.setCapability("autoDismissAlerts", true);
-//                    break;
-//            }
-//            return caps;
-//        }
-//        catch(Exception e){
-//            e.printStackTrace();
-////            utils.log().fatal("Failed to load capabilities. ABORT!!!" + e.toString());
-//            throw e;
-//        }
-//    }
+
+    public void goToWebPOS() throws InterruptedException {
+//        setup();
+        Thread.sleep(3000);
+        try
+        {
+            if(driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).isDisplayed())
+            {
+                driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).click();
+            }
+        }
+        catch(Exception fd)
+        {
+
+        }
+        Thread.sleep(2000);
+        //Clear the text from the user name text box
+        driver.findElement(By.xpath("//input[@name='email']")).clear();
+        //Enter the user name
+        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
+        //Clear the password from the password text box
+        driver.findElement(By.xpath("//input[@name='password']")).clear();
+        //Enter the password
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
+        Thread.sleep(5000);
+        //Click the login button
+        driver.findElement(By.xpath("//ion-button[@type='submit']")).click();
+
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        Thread.sleep(20000);
+    }
+
+
+    public void setup() throws InterruptedException {
+
+        //Call the chrome driver
+//    System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
+
+        System.setProperty("webdriver.chrome.driver", "/Users/Ragav-QA-Mac-IN/Downloads/chromedriver");
+        //Open the Chrome window
+        driver = new ChromeDriver();
+        //Wait for 30 seconds
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        //Maximize the Firefox window
+        driver.manage().window().maximize();
+        //launch the URL
+        Thread.sleep(5000);
+        //Launch the URL
+        driver.get("https://staging-webpos-india.lingapos.com/#/auth/login");
+        Thread.sleep(8000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+        Thread.sleep(3000);
+        try
+        {
+            if(driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).isDisplayed())
+            {
+                driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).click();
+            }
+        }
+        catch(Exception fd)
+        {
+
+        }
+        Thread.sleep(2000);
+        //Clear the text from the user name text box
+        driver.findElement(By.xpath("//input[@name='email']")).clear();
+        //Enter the user name
+        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
+        //Clear the password from the password text box
+        driver.findElement(By.xpath("//input[@name='password']")).clear();
+        //Enter the password
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
+        Thread.sleep(5000);
+        //Click the login button
+        driver.findElement(By.xpath("//ion-button[@type='submit']")).click();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
+        Thread.sleep(20000);
+
+    }
+
+
 }

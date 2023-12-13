@@ -2,7 +2,7 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 import org.openqa.selenium.By;
 
 public class CIOrderPage  extends BasePage {

@@ -7,19 +7,23 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
-import static com.qa.pages.DriverSteup.driver;
-
 
 public class ClockInScreen extends UserLoginScreen{
 
+    public WebDriver driver = TestUtils.driver;
+
+    public ClockInScreen() {
+
+        PageFactory.initElements(this.driver,this);
+    }
 
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
@@ -153,6 +157,7 @@ public class ClockInScreen extends UserLoginScreen{
         elementClick(pin2Time1, "Tapped pin 2");
     }
     public void pressPin1Time() {
+
         elementClick(driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[1]/button")), "Tapped pin 1");
     }
     public void pressPin0Time() {
@@ -203,24 +208,15 @@ public class ClockInScreen extends UserLoginScreen{
         return err;
     }
 
-    public OrderTypeWindow ClockIn (){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//        pressPin1();
-//        pressPin2();
-//        pressPin3();
-//        pressPin4();
-//        pressLogin();
+//    public OrderTypeWindow ClockIn (){
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //        pressPin1Time();
 //        pressPin2Time();
 //        pressPin3Time();
 //        pressPin4Time();
-        pressPin1Time();
-        pressPin1Time();
-        pressPin1Time();
-        pressPin1Time();
-        pressLogin();
-        return new OrderTypeWindow();
-    }
+//        pressLogin();
+//        return new OrderTypeWindow();
+//    }
 
     public void clockinPin(){
         pressPin1();
@@ -345,6 +341,14 @@ public class ClockInScreen extends UserLoginScreen{
        pressPin5();
         pressPin6();
         pressPin5();
+        pressLogin();
+    }
+    public void ClockIn (){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        pressPin1Time();
+        pressPin2Time();
+        pressPin3Time();
+        pressPin4Time();
         pressLogin();
     }
 
@@ -598,7 +602,7 @@ public class ClockInScreen extends UserLoginScreen{
     public String bussiness = " ";
 
     public void getBussinessDate(){
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 //        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
         WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[8]/XCUIElementTypeStaticText[3]"));
         String bussinessTxt = bussinessDate.getText();
@@ -667,7 +671,7 @@ WebElement operationBtnClockInScreen;
 
 
     public void clickQsrButton() throws Exception {
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 
                                                                                  //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[12]/XCUIElementTypeSwitch
         WebElement qsrPos = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[12]/XCUIElementTypeSwitch"));
@@ -689,7 +693,7 @@ WebElement operationBtnClockInScreen;
     }
 
     public void clickBarTabButton() throws Exception {
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 
          WebElement BarTabPos = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[8]/XCUIElementTypeSwitch"));
 
@@ -708,7 +712,7 @@ WebElement operationBtnClockInScreen;
     }
 
     public void clickDineInButtonInPOSSettings() throws Exception {
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 
          WebElement BarTabPos = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeSwitch"));
 
@@ -862,10 +866,10 @@ WebElement operationBtnClockInScreen;
         Thread.sleep(1000);
         //Launch the URL
         driver1.get("https://mystore.lingapos.com/#/login");
-        ClockIn();
+//        ClockIn();
         Thread.sleep(1000);
         new OrderTypeWindow().pressCancelBtn();
-        driver1.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+        driver1.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 //
 //        Actions a = new Actions(driver1);
 //
@@ -1061,35 +1065,6 @@ WebElement operationBtnClockInScreen;
         updateBtn.click();
     }
 
-    public void goToWebPOS() throws InterruptedException {
-//        setup();
-        Thread.sleep(3000);
-        try
-        {
-            if(driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).isDisplayed())
-            {
-                driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).click();
-            }
-        }
-        catch(Exception fd)
-        {
 
-        }
-        Thread.sleep(2000);
-        //Clear the text from the user name text box
-        driver.findElement(By.xpath("//input[@name='email']")).clear();
-        //Enter the user name
-        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("autotest2@mail.com");
-        //Clear the password from the password text box
-        driver.findElement(By.xpath("//input[@name='password']")).clear();
-        //Enter the password
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("welcome123");
-        Thread.sleep(5000);
-        //Click the login button
-        driver.findElement(By.xpath("//ion-button[@type='submit']")).click();
-
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        Thread.sleep(20000);
-    }
 
 }

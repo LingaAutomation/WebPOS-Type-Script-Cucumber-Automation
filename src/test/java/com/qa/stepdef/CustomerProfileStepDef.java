@@ -1,8 +1,8 @@
 package com.qa.stepdef;
 
-import com.qa.pages.ClockInScreen;
 import com.qa.pages.CustomerProfileWindow;
 import com.qa.pages.OrderTypeWindow;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -107,6 +107,11 @@ public class CustomerProfileStepDef {
     @And ("^I select tax exempt on customer profile screen$")
     public void iSelectTaxExemptOnCustomerProfileScreen() throws InterruptedException {
         new CustomerProfileWindow().selectTaxExemptCustomerProfile();
+    }
+
+    @And ("^I remove tax exempt on customer profile screen$")
+    public void iRemoveTaxExemptOnCustomerProfileScreen() throws InterruptedException {
+        new CustomerProfileWindow().removeTaxExemptCustomerProfile();
     }
 
     @When("^I click the Save button$")

@@ -8,9 +8,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class PhoneOrderScreen extends BasePage {
 
@@ -77,7 +78,7 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
     private WebElement searchTabInActiveTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//input[@data-placeholder='Check No']")
     private WebElement searchTabClosedTab;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
@@ -330,45 +331,25 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
-        //  WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
-//        try {
-//            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
-//
-//            //   (//XCUIElementTypeStaticText[@name="Auto Ragav"])[1]
-//
-//            if (phoneOrders.isDisplayed()) {
-//                //elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
-//                utils.log().info("Closed Check be duplicate" + globalCheckNumber);
-//            }
-//        } catch (Exception h) {
-        WebElement phoneOrders1 = (WebElement) driver.findElements(By.xpath(globalCheckNumber));
 
-        if (phoneOrders1.isDisplayed()) {
-            elementClick(phoneOrders1, "Tapped Closed Check in closed tab - " + globalCheckNumber);
+            List<WebElement> phoneOrders1 = driver.findElements(By.xpath("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div"));
+            utils.log().info(phoneOrders1.size());
+            if(phoneOrders1.size() == 1)
+            {
+            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }else{
-            utils.log().info("closed check is not available"+ globalCheckNumber);
-        }
-        //elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
-        //   }
+            utils.log().info("closed check is not available - "+ globalCheckNumber);
+//            int w = 1/0;
+                elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
 
+            }
     }
     public void selectClosedCheckFromActiveTab() throws InterruptedException {
         Thread.sleep(500);
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInActiveTab.clear();
         searchTabInActiveTab.sendKeys(globalCheckNumber);
-        // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
-        //elementClick(phoneOrders,"Tapped Closed Check in active tab - "+ globalCheckNumber);
-//        try {
-//            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"])[2]");
-//
-//            //   (//XCUIElementTypeStaticText[@name="Auto Ragav"])[1]
-//
-//            if (phoneOrders.isDisplayed()) {
-//                //elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
-//                utils.log().info("Active Check be duplicate" + globalCheckNumber);
-//            }
-//        } catch (Exception h) {
+
         WebElement phoneOrders1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"]"));
 
         if (phoneOrders1.isDisplayed()) {

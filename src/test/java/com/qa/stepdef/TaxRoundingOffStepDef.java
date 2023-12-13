@@ -1,16 +1,17 @@
 package com.qa.stepdef;
 
-import com.qa.pages.ClockInScreen;
 import com.qa.pages.OrderTypeWindow;
 import com.qa.pages.TaxRoundingOff;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
 public class TaxRoundingOffStepDef {
     @Given("I am logging in")
     public void i_am_logging_in() {
-        new ClockInScreen().ClockIn();
+//        new ClockInScreen().ClockIn();
     }
+
     @And("^I have closed the order type window$")
     public void iHaveClosedTheOrderTypeWindow() throws InterruptedException {
         new OrderTypeWindow().pressCancelBtn();

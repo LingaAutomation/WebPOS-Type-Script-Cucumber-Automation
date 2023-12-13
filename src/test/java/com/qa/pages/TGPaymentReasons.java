@@ -22,6 +22,8 @@ public class TGPaymentReasons extends TillManagementScreen{
 //    private WebElement okBtn;
     public By okBtn = By.id("Ok");
 
+
+
     public String getReasonsWindowTitle() {
 
         WebElement element=mergeAndFindMobileElement(reasonsWindowTitle);

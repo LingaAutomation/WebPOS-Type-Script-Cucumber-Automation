@@ -13,8 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
-
+import static com.qa.utils.TestUtils.driver;
 public class CICloseDayScreen extends BasePage {
 
     String btnOperation="//XCUIElementTypeButton[@name=\"    Operation\"]";
@@ -601,7 +600,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getBtnActiveCheck(String msg) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(btnActiveCheck, "",TestUtils.XPath);
 //        elementClick(element, msg);
 
@@ -617,14 +616,14 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void clickbtnPopupCancel(String msg) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(btnPopupCancel, "",TestUtils.XPath);
 //        elementClick(element, msg);
         findandclick(btnPopupCancel, "",TestUtils.XPath);
     }
 
     public String getTxtNoActiveChecks(String msg) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtNoActiveChecks, "", TestUtils.XPath);
 //        String txtNoActive = getText(element, msg);
 //        return txtNoActive;
@@ -632,21 +631,21 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void clickBtnDropDown(String btnDropDown,String msg) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(btnDropDownXpath, btnDropDown,TestUtils.XPath);
 //        elementClick(element, msg);
         findandclick(btnDropDownXpath, btnDropDown,TestUtils.XPath);
     }
 
     public void clickTextFieldPercentage(String msg){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(textFieldPercentage, "",TestUtils.XPath);
 //        elementClick(element, msg);
         findandclick(textFieldPercentage, "",TestUtils.XPath);
     }
 
     public void getDiscountValue(String Discount) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtDiscount, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement cash = mergeAndFindElement(Discount, "", TestUtils.Accessibility);
@@ -663,7 +662,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getDiscountTaxValue(String discountTax) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtDiscountTax, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement cash = mergeAndFindElement(discountTax, "", TestUtils.Accessibility);
@@ -692,7 +691,7 @@ public class CICloseDayScreen extends BasePage {
 //        //scrollObject.put("predicateString", "label == 'SUMMARY'");
 //        driver.executeScript("mobile:scroll", scrollObject);  // scroll to the
 //        WebElement element1 = mergeAndFindElement(txtTotalTip, "",TestUtils.XPath);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement cash = mergeAndFindElement(txtTotal, "", TestUtils.Accessibility);
         WebElement price = mergeAndFindElement(totalTip, "", TestUtils.XPath);
 
@@ -710,12 +709,12 @@ public class CICloseDayScreen extends BasePage {
 //        WebElement elm = mergeAndFindElement(netTotal, "", TestUtils.XPath);
 //        String Total = getText(elm, "verify netTotal");
 //        return Total;
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return findAndGetText(netTotal, "", TestUtils.XPath);
     }
 
     public void getCashExpectedValue(String cashExpBf) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtCashExpected, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement cashExpInitialVal = mergeAndFindElement(cashExpBf,"",TestUtils.Accessibility);
@@ -732,28 +731,28 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void clickBtnPayIn(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(btnPayIn,"", TestUtils.XPath);
 //        elementClick(element, "Pay in clicked");
         findandclick(btnPayIn,"", TestUtils.XPath);
     }
 
     public void clickPayByTextField(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(payByTextField,"", TestUtils.XPath);
 //        elementClick(element, "Pay in Text Field clicked");
         findandclick(payByTextField,"", TestUtils.XPath);
     }
 
     public void passNameBy(String txtName){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement element = mergeAndFindElement(payByTextField,"", TestUtils.XPath);
         element.sendKeys(txtName);
 //        findandclick_Skeys(payByTextField,"", TestUtils.XPath,"SKeys",txtName);
     }
 
     public void getPaidInValue(String aftPaidIn,String aftPaidInVal) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtPaidIn, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement PaidIn = mergeAndFindElement(aftPaidIn, "", TestUtils.Accessibility);
@@ -776,7 +775,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getAftPaidOutValue(String paidOutAft,String paidOutVal) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtPaidIn, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement PaidOut = mergeAndFindElement(paidOutAft, "", TestUtils.Accessibility);
@@ -793,7 +792,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getGiftCardSoldValue(String giftCardSoldAft) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtGiftCardSold, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement giftCardSold = mergeAndFindElement(giftCardSoldAft, "", TestUtils.Accessibility);
@@ -823,7 +822,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getCreditCardValue(String creditCardPP,String creditCardPPVal) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtFullCreditcard, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement creditCard = mergeAndFindElement(creditCardPP, "", TestUtils.Accessibility);
@@ -840,7 +839,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getAfterGiftCardValue(String giftCardPP,String giftCardPPVal) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtAfterGiftCard, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement giftCard = mergeAndFindElement(giftCardPP, "", TestUtils.Accessibility);
@@ -881,7 +880,7 @@ public class CICloseDayScreen extends BasePage {
 //}
 
     public void commGetValue(String grossReceiptAft) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtAfterSaleTenderGrossReceipt, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement grossReceipt = mergeAndFindElement(grossReceiptAft, "", TestUtils.Accessibility);
@@ -898,7 +897,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getCashRecordValue(String cashRecordPP) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtCashRecord, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement cashRecord = mergeAndFindElement(cashRecordPP, "", TestUtils.Accessibility);
@@ -915,7 +914,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getGrandSaleValue(String grandSaleAft,String grandSaleAftVal) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtGrandSale, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement grandSale = mergeAndFindElement(grandSaleAft, "", TestUtils.Accessibility);
@@ -932,7 +931,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getGrandSaleValue1(String grandSalePP,String grandSalePPVal) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtGrandSale, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement grandSale = mergeAndFindElement(grandSalePP, "", TestUtils.Accessibility);
@@ -949,7 +948,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getAfterSaleCashExpected(String cashExpPaidOut,String cashExpAft) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtAfterSaleCashExpected, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement cashExpectedPaidOut = mergeAndFindElement(cashExpPaidOut, "", TestUtils.Accessibility);
@@ -966,7 +965,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public String getTxtAfterGrossSale(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtAfterGrossSales, "", TestUtils.XPath);
 //        String value = getText(element,"verify gross sale");
 //        return value;
@@ -974,7 +973,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public String getTxtAfterSaleRecapGrossSale(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtAfterSaleRecapGrossSales, "", TestUtils.XPath);
 //        String value = elementGetText(element,"verify gross sale");
 //        return value;
@@ -982,7 +981,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public String getTxtCoverCount(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtCoverCount, "", TestUtils.XPath);
 //        String value = elementGetText(element,"Verify Cover Count");
 //        return value;
@@ -990,7 +989,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void clickNameTextField(String msg){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtNameTextField,"", TestUtils.XPath);
 //        elementClick(element, msg);
         findandclick(txtNameTextField,"", TestUtils.XPath);
@@ -1019,14 +1018,14 @@ public class CICloseDayScreen extends BasePage {
 
 
     public void clickSave1(String msg) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(btnSave1,"", TestUtils.XPath);
 //        elementClick(element, msg);
         findandclick(passEmailID,"", TestUtils.XPath);
     }
 
     public void clickSave2(String msg) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(btnSave2,"", TestUtils.XPath);
 //        elementClick(element, msg);
         try {
@@ -1045,7 +1044,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getInitialTaxAmountValue(String initialTaxAmt) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtInitialTaxAmount, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement taxAmount = mergeAndFindElement(initialTaxAmt,"",TestUtils.Accessibility);
@@ -1061,7 +1060,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getCreditCard(String creditCardVal) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtCreditCard, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement creditCardValue = mergeAndFindElement(creditCardVal,"",TestUtils.Accessibility);
@@ -1077,7 +1076,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getTaxAmountValue(String tenPercentTax,String twentyPercentTax) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(txtTaxExempt, "",TestUtils.XPath);
 //        iOSScrollToElementUsingMobileScroll(element);
         WebElement tenPercentPrice = mergeAndFindElement(commontxtXPathVal,tenPercentTax,TestUtils.XPath);
@@ -1093,7 +1092,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getOverShortage(String overShortageVal,String txtOverShortageVal) throws Exception {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        iOSScrollToElementUsingMobileScroll(txtOverShortageAft);
         WebElement overShortage = mergeAndFindElement(overShortageVal,"",TestUtils.Accessibility);
         WebElement overShortagePrice = mergeAndFindElement(commontxtXPathVal,txtOverShortageVal,TestUtils.XPath);
@@ -1108,7 +1107,7 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void clickBtnCancel(String msg) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement elementCancel = mergeAndFindElement(Cancel, "", TestUtils.XPath);
 //        click(elementCancel, msg);
         findandclick(Cancel, "", TestUtils.XPath);

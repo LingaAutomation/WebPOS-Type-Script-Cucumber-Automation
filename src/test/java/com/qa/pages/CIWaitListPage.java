@@ -2,7 +2,7 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 

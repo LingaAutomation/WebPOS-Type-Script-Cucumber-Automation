@@ -1,7 +1,5 @@
 package com.qa.pages;
 
-import com.qa.utils.DriverManager;
-import com.qa.utils.GlobalParams;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -10,25 +8,21 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-import javax.xml.xpath.XPath;
-import java.beans.Visibility;
-import java.security.PublicKey;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
 
+import static com.qa.utils.TestUtils.driver;
 
-import static com.qa.pages.DriverSteup.driver;
-import static java.time.Duration.ofMillis;
 
 public class BasePage extends TGglobalElement {
 
-
     TestUtils utils = new TestUtils();
 
+    public WebDriver driver = utils.driver ;
+    public BasePage(){
+        PageFactory.initElements(this.driver,this);
+    }
 
     public void waitForVisibility(WebElement e) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -149,38 +143,17 @@ public class BasePage extends TGglobalElement {
 
     }
 
-
+public WebElement scrollToElement(String txt) throws InterruptedException {
+    WebElement element1 = driver.findElement(By.xpath(txt));
+    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element1);
+    Thread.sleep(500);
+    element1.click();
+    return element1;
+}
     public WebElement scrollToElement(WebElement element, String direction) throws Exception {
-        Dimension size = driver.manage().window().getSize();
-        int startX = (int) (size.width * 0.5);
-        int endX = (int) (size.width * 0.5);
-        int startY = 0;
-        int endY = 0;
-        boolean isFound = false;
-
-        switch (direction) {
-            case "up":
-                endY = (int) (size.height * 0.4);
-                startY = (int) (size.height * 0.6);
-                break;
-
-            case "down":
-                endY = (int) (size.height * 0.6);
-                startY = (int) (size.height * 0.4);
-                break;
-        }
-
-        for (int i = 0; i < 5; i++) {
-            if (find(element, 1)) {
-                isFound = true;
-                break;
-            } else {
-                swipe(startX, startY, endX, endY, 800);
-            }
-        }
-        if (!isFound) {
-            throw new Exception("Element not found");
-        }
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Thread.sleep(500);
+        element.click();
         return element;
     }
 
@@ -267,22 +240,30 @@ public class BasePage extends TGglobalElement {
 
         return txt;
     }
+
+    public String elementGetValue(WebElement e, String msg) {
+        String txt;
+        txt = e.getAttribute("value");
+        utils.log().info(msg + txt);
+
+        return txt;
+    }
 //    public void elementXpath1(String e, String msg) {
 //        utils.log().info(msg);
 //        driver.findElement("e").click();
 //    }
     public void elementClick(String e, String msg) {
-
-       // try{
+        try{
         utils.log().info(msg);
         driver.findElement(By.xpath(e)).click();
 
-//         }catch (Exception execp){
-//         execp.printStackTrace();
-//        }
+         }catch (Exception execp){
+         execp.printStackTrace();
+        }
     }
 
-    public WebElement convertWebElement(String e){
+    public WebElement convertWebElement(String e)  {
+
         return driver.findElement(By.xpath(e));
     }
 
@@ -296,13 +277,9 @@ public class BasePage extends TGglobalElement {
 
     public void elementClick(WebElement e, String msg) {
 
-        // try{
         utils.log().info(msg);
         e.click();
 
-//         }catch (Exception execp){
-//         execp.printStackTrace();
-//        }
     }
 public void findAndClickMobileElement(String selectorPath,String injector, String selectorName) throws Exception {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -808,41 +785,23 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
         return element;
     }
 
-    public WebElement scrollToElementPayments(WebElement element, String direction) throws Exception {
+    public WebElement scrollToElementPayments(WebElement element,String msg) throws Exception {
 
-            Dimension size = driver.manage().window().getSize();
-            int startX = (int) (size.width * 0.5);
-            int endX = (int) (size.width * 0.5);
-            int startY = 0;
-            int endY = 0;
-            boolean isFound = false;
-
-            switch (direction) {
-                case "up":
-                    endY = (int) (size.height * 0.4);
-                    startY = (int) (size.height * 0.6);
-                    break;
-
-                case "down":
-                    endY = (int) (size.height * 0.6);
-                    startY = (int) (size.height * 0.4);
-                    break;
-            }
-
-            for (int i = 0; i < 6; i++) {
-                if (find(element, 1)) {
-                    isFound = true;
-                    break;
-                } else {
-                    swipe(startX, startY, endX, endY, 800);
-                }
-            }
-            if (!isFound) {
-                throw new Exception("Element not found");
-            }
+//        WebElement element1 = driver.findElement(By.xpath(txt));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Thread.sleep(500);
+        element.click();
             return element;
         }
 
+    public void scrollToElementPayments(String txt,String msg) throws Exception {
+
+        WebElement element = driver.findElement(By.xpath(txt));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Thread.sleep(500);
+        element.click();
+
+    }
 
     public void scrollToElementCategory(String direction) throws Exception {
         Dimension size = driver.manage().window().getSize();

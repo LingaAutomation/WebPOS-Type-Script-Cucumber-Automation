@@ -7,15 +7,14 @@ import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.FindBy;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
-
+import static com.qa.utils.TestUtils.driver;
 public class Discount extends BasePage{
 
-    @FindBy(name = "Discount")
-    private WebElement discountCheck;
+    String discountCheck = "//ion-row/button[contains(.,'Discount')]";
 
     @FindBy(name = "Mix&Match SP(Before Tax)")
     private WebElement setPrizeBeforeTax;
@@ -23,8 +22,7 @@ public class Discount extends BasePage{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[2]/XCUIElementTypeCell")
     private WebElement orderListWithDiscount;
 
-    @FindBy(name = "Discounts")
-    private WebElement discountPage;
+    String discountPage= "//ion-col[contains(.,'Discounts')]";
 
     @FindBy(name = "Discount")
     private WebElement discountNameOrderList;
@@ -32,27 +30,27 @@ public class Discount extends BasePage{
     @FindBy(name = "Subtotal")
     private WebElement subtotalOfMenuItem;
 
-    @FindBy(name = "Back")
-    public WebElement backBtnDiscount;
+   String backBtnDiscount = "//span[contains(.,' Cancel ')]";
 
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
-    private WebElement searchFldDiscount;
+    String searchFldDiscount = "//ion-searchbar[contains(@class,'discount')]/div/input";
 
     public void pressDiscountBtn(){
         elementClick(discountCheck,"Tapped Discount on Check Based");
     }
 
     public void pressDiscount(String discount) {
-        sendKeys(searchFldDiscount,discount);
-        WebElement e=mergeAndFindElement(discount,"",TestUtils.Accessibility);
+        sendKeys(convertWebElement(searchFldDiscount),discount);
+        WebElement e=driver.findElement(By.xpath("//span[contains(.,' "+discount+" ')]"));
 
         if (e.isDisplayed()){
             elementClick(e,discount +" Selected");
+        }else{
+            utils.log().info("Not discplayed - "+discount);
         }
     }
 
     public void pressDiscount1(String discount){
-        sendKeys(searchFldDiscount,discount);
+        sendKeys(convertWebElement(searchFldDiscount),discount);
         WebElement e1=mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Check Based Amount\"])[2]","",TestUtils.XPath);
 
         if (e1.isDisplayed()) {
@@ -61,8 +59,9 @@ public class Discount extends BasePage{
             utils.log().info("Discount is not selected");
         }
     }
-    public String discountPage(){
-        return elementGetText(discountPage,"Discount Page txt is Displayed - ");
+    public String discountPage() throws InterruptedException {
+        Thread.sleep(500);
+        return getText(convertWebElement(discountPage),"Discount Page txt is Displayed - ");
     }
 
     public void  verifyDiscountIsDisplayed(String discount){
@@ -77,9 +76,11 @@ public class Discount extends BasePage{
     }
 
     public void verifyMenuItemPrizeIsDisplayed(String value) {
-        WebElement e11 = mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement e11 = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+
         if(e11.isDisplayed()){
-            utils.log().info("SubTotal of Menu Item - "+ value);
+            utils.log().info("SubTotal of Menu Item - "+ e11.getAttribute("value"));
+            Assert.assertEquals(e11.getAttribute("value"),value);
             TestUtils.subtotalTxt = value;
         }else{
             utils.log().info("SubTotal Of Menu Item is not displayed");
@@ -88,10 +89,11 @@ public class Discount extends BasePage{
     }
 
     public void verifyMenuItemTotal(String value){
-        WebElement e11 = mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement e11 = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
         if(e11.isDisplayed()){
-            utils.log().info("Total of Menu Item is - "+ value);
-
+            utils.log().info("Total of Menu Item is - "+ e11.getAttribute("value"));
+            Assert.assertEquals(e11.getAttribute("value"),value);
+            TestUtils.totalTxt = value;
         }else{
             utils.log().info("Total Of Menu Item is not displayed");
             int i =  1/0;
@@ -102,13 +104,16 @@ public class Discount extends BasePage{
     }
 
     public void verifyMenuItemPrice(String value,String value1,String discount,String discount1) {
-        WebElement e11 = mergeAndFindElement(value,"",TestUtils.Accessibility);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        WebElement e11 = driver.findElement(By.xpath("(//div[contains(@class,'p-col-3 text-pos-end ')])[1]"));
+        utils.log().info(e11.getText());
         String data = e11.getText().replaceAll(",", "").substring(0);
-        Float price = Float.parseFloat(data);
+        float price = Float.parseFloat(data);
 
-        WebElement e12 = mergeAndFindElement(value1,"",TestUtils.Accessibility);
+        WebElement e12 = driver.findElement(By.xpath("(//div[contains(@class,'p-col-3 text-pos-end ')])[2]"));
+        utils.log().info(e12.getText());
         String data1 = e12.getText().replaceAll(",", "").substring(0);
-        Float price1 = Float.parseFloat(data1);
+        float price1 = Float.parseFloat(data1);
 
         if (discount1.equalsIgnoreCase("Least")) {
             if (price < price1) {
@@ -127,21 +132,30 @@ public class Discount extends BasePage{
     }
 
     public void verifyMenuItemTotal1(String value){
-        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement e11 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String subtotalValue = e11.getText();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        WebElement e11 =  driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String subtotalValue = e11.getAttribute("value");
+        utils.log().info("Total Value is - "+subtotalValue);
         TestUtils.totalTxt = subtotalValue;
         Assert.assertEquals(subtotalValue,value);
         utils.log().info("Total Value is - "+value);
     }
 
     public void verifyMenuItemTotalGratuity1(String value){
-        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement e11 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String subtotalValue = e11.getText();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        WebElement e11 =  driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String subtotalValue = e11.getAttribute("value");
         TestUtils.totalTxt = subtotalValue;
         Assert.assertEquals(subtotalValue,value);
         utils.log().info("Total Value is - "+value);
     }
 
+    public void verifyMenuItemTotal2(String value){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        WebElement e11 =  driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String subtotalValue = e11.getAttribute("value");
+        Assert.assertEquals(subtotalValue,value);
+        utils.log().info("Total Value is - "+value);
+
+    }
 }

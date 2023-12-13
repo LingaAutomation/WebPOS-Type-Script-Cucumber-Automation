@@ -15,10 +15,10 @@ public class OrderTypesStepDef {
         new ClockInScreen().ClockIn();
     }
 
-    @When ("^I go to WebPOS$")
-    public void iGoToWebPos() throws InterruptedException {
-        new ClockInScreen().goToWebPOS();
-    }
+//    @When ("^I go to WebPOS$")
+//    public void iGoToWebPos() throws InterruptedException {
+//        new ClockInScreen().goToWebPOS();
+//    }
 
     @Given ("^I'm logged in for clock-in required$")
     public void iMLoggedInForClockInRequired(){
@@ -257,7 +257,7 @@ public class OrderTypesStepDef {
     public void iClickAlreadySelectedActiveChecks(){new BarTabScreen().pressCheck2();}
 
     @Then ("^I should see that OrderScreen with sales$")
-    public void iShouldSeeThatOrderscreenWithSales(){
+    public void iShouldSeeThatOrderscreenWithSales() throws InterruptedException {
         new OrderTypeWindow().getOrderList();
     }
     @And ("^I click print button on the order screen$")
@@ -275,7 +275,7 @@ public class OrderTypesStepDef {
     }
     @Then ("^I should see orderscreen with as Onion Rings EACH$")
     public void iShouldSeeOrderscreenWithAsOnionRingsEach(){
-        Assert.assertEquals(new OrderManagementScreen().OnionRingsEachMenu(),"(F) Onion Rings EACH");
+        Assert.assertEquals(new OrderManagementScreen().OnionRingsEachMenu(),"(F)Onion Rings EACH");
     }
 
     @Then ("^I should see orderscreen with as Dosa EACH$")

@@ -12,8 +12,6 @@ import java.math.RoundingMode;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
-
 public class TaxRoundingOff extends ClockInScreen{
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name='arrow down'])[2]")
@@ -206,6 +204,10 @@ public class TaxRoundingOff extends ClockInScreen{
 
     @FindBy(name = "Re-Open Check")
     WebElement reopenCheckBtn;
+
+//    public TaxRoundingOff() {
+//        super();
+//    }
 
     //  @FindBy(name = "testing menu7")
     // WebElement menu1;

@@ -2,9 +2,8 @@ package com.qa.stepdef;
 
 import com.qa.pages.CICloseDayScreen;
 import com.qa.pages.CIOrderPage;
-import com.qa.pages.CIPaymentScreen;
 import com.qa.pages.ClockInScreen;
-import com.qa.pages.CIOrderPage;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

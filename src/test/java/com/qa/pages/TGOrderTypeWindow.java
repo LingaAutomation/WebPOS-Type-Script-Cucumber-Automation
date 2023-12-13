@@ -1,15 +1,12 @@
 package com.qa.pages;
 
 
+import com.qa.utils.TestUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import static com.qa.pages.DriverSteup.driver;
-import static org.apache.commons.collections.CollectionUtils.size;
 
 public class TGOrderTypeWindow extends ClockInScreen {
 
@@ -63,6 +60,10 @@ public class TGOrderTypeWindow extends ClockInScreen {
     //edit xpath
     private By titleTxt = By.id("Order Type");
     private String orderTypeName;
+
+//    public TGOrderTypeWindow() {
+//        super(TestUtils.driver);
+//    }
     // 23 Nov end
 
     public String getTitle() {

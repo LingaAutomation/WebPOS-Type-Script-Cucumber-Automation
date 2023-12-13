@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class TGglobalElement {
 
@@ -3022,6 +3023,7 @@ public class TGglobalElement {
     //    public By giveXCardNumberOnMenuItemPage2 = By.xpath("(//XCUIElementTypeStaticText[@name=\"GCX-603628237912001380863\"])[2]");
     public By firstTable1 = By.xpath("//XCUIElementTypeStaticText[@name=\"T25\"]");
     public By firstTable11 = By.xpath("//XCUIElementTypeStaticText[@name=\"T20\"]");
+
     //    public By firstTable1 = By.id("T25");
     String cardNumberTxtField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
     //    public By selectTable2 = By.xpath("//XCUIElementTypeStaticText[@name=\"T23\"]");

@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.qa.pages.DriverSteup.driver;
+import static com.qa.utils.TestUtils.driver;
 
 public class TGTillManagementScreen extends TGOrderManagementScreen {
     public By tillTabName = By.id("Till");

@@ -8,8 +8,7 @@ import org.openqa.selenium.By;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
-
+import static com.qa.utils.TestUtils.driver;
 public class TGCheck extends BasePage{
     String accessibilityIdForPin1 = "1";
     String accessibilityIdForPin2 = "2";

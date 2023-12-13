@@ -4,16 +4,16 @@ import com.qa.pages.CheckOptionsScreen;
 import com.qa.pages.MenuOptionScreen;
 import com.qa.pages.OrderManagementScreen;
 import com.qa.pages.OrderTypeWindow;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.sv.Men;
 import org.junit.Assert;
 
 public class MenuOptionStepDef {
 
 
     @And("^I click menu item as \"([^\"]*)\" to see Menu option screen$")
-    public void iClickMenuItemAsToSeeMenuOptionScreen(String MenuItem){
+    public void iClickMenuItemAsToSeeMenuOptionScreen(String MenuItem) throws InterruptedException {
         new MenuOptionScreen().pressMenuItems(MenuItem);
     }
 

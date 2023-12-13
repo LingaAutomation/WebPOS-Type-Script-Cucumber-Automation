@@ -2,15 +2,21 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
-
 
 public class BarTabScreen extends OrderManagementScreen{
+
+    public BarTabScreen() {
+        super.driver =TestUtils.driver;
+        PageFactory.initElements(this.driver,this);
+
+    }
 
     @FindBy(xpath = "BarTab")
     WebElement barTab;
@@ -37,8 +43,7 @@ public class BarTabScreen extends OrderManagementScreen{
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Walkin\"])[2]")
     WebElement Barcheck2;
 
-    @FindBy (xpath = "Settings 1")
-    WebElement settings;
+    String settings = "(//linga-icon[@symbol='operationGear'])[1]";
 
     @FindBy (xpath = "POS Settings")
     WebElement POSsettings;
