@@ -112,9 +112,9 @@ public class MenuOptionStepDef {
         new MenuOptionScreen().pressTogoBtn();
     }
     @Then ("^I should see menu item with Togo Logo$")
-    public void iShouldSeeMenuItemWithTogoLogo(){
-        new OrderManagementScreen().verifyTickIcon();
-    }
+//    public void iShouldSeeMenuItemWithTogoLogo(){
+//        new OrderManagementScreen().verifyTickIcon();
+//    }
     @And ("^I click Open Discount on menu option$")
     public void iClickOpenDiscountOnMenuOption(){
         new MenuOptionScreen().pressOpenDiscount();

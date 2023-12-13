@@ -25,7 +25,7 @@ public class CheckStatsStepDef {
 
     @Then ("^I should see check stats Screen$")
     public void iShouldSeeCheckStatsScreen(){
-        Assert.assertEquals(new OrdersAndDriversListScreen().verifyCheckStatsScreen(),"Check Stats");
+        Assert.assertEquals(new OrdersAndDriversListScreen().verifyCheckStatsScreen(),"Check Status");
     }
     @Then ("^I should see the Linga Popup$")
     public void iShouldSeeTheLingaPopup(){
@@ -41,7 +41,7 @@ public class CheckStatsStepDef {
         new CheckStatusScreen().pressOperationOnCheckStats();
     }
 
-    @And ("^I click QSR tab")
+    @And ("^I click QSR tab$")
     public void iClickQsrTab(){
         new CheckStatusScreen().clickQsrButton();
     }

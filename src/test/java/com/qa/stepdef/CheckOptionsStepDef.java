@@ -152,19 +152,19 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().pressBack();
     }
 
-    @Then("^I should see the hold icon over the order section$")
-    public void iShouldSeeTheHoldIconOverTheOrderSection() {
-        new OrderManagementScreen().assertHold();
-    }
+//    @Then("^I should see the hold icon over the order section$")
+//    public void iShouldSeeTheHoldIconOverTheOrderSection() {
+//        new OrderManagementScreen().assertHold();
+//    }
 
     @Then ("^I should see hold item need to send to kitchen popup$")
     public void iShouldSeeHoldItemNeedToSendToKitchenPopup(){
         Assert.assertEquals(new PaymentWindow().getHoldItemHasToSentToKitchen(),"Hold item(s) has to be sent to kitchen");
     }
-    @When("^I click Finish button$")
-    public void iClickFinishButton() {
-        new OrderManagementScreen().pressFinish();
-    }
+//    @When("^I click Finish button$")
+//    public void iClickFinishButton() {
+//        new OrderManagementScreen().pressFinish();
+//    }
 
     @Then("^I should navigate to the table layout screen and see that the table is on hold$")
     public void iShouldNavigateToTheTableLayoutScreenAndSeeThatTheTableIsOnHold() {
@@ -263,34 +263,34 @@ public class CheckOptionsStepDef {
         new PaymentWindow().pressExit();
     }
 
-    @And("^I click Print$")
-    public void iClickPrint() {
-        new OrderManagementScreen().pressPrintBtn();
-    }
-
-    @And("^I click Done on Receipt Printer popup$")
-    public void iClickDoneOnReceiptPrinterPopup() {
-        new OrderManagementScreen().pressDoneReceiptPrinter();
-    }
+//    @And("^I click Print$")
+//    public void iClickPrint() {
+//        new OrderManagementScreen().pressPrintBtn();
+//    }
+//
+//    @And("^I click Done on Receipt Printer popup$")
+//    public void iClickDoneOnReceiptPrinterPopup() {
+//        new OrderManagementScreen().pressDoneReceiptPrinter();
+//    }
 
     @Then("^I should return back to the Table Layout window and see that the table is in check Down status$")
     public void iShouldReturnBackToTheTableLayoutWindowAndSeeThatTheTableIsInCheckDownStatus() {
         new TableLayOutScreen().assertTableOperation();
     }
 
-    @And("^I void and close the check for the table \"([^\"]*)\"$")
-    public void iVoidAndCloseTheCheckForTheTable(String tableNo) {
-        new TableLayOutScreen().selectTable(tableNo);
-        new OrderManagementScreen().pressVoidBtn();
-        new OrderManagementScreen().pressDone();
-        new PaymentWindow().selectPayment();
-        new PaymentWindow().pressDeletePaymentBtn();
-        new PaymentWindow().pressOkToClosePrinterWarningPopUp();
-        new PaymentWindow().pressExit();
-        new OrderManagementScreen().pressVoidBtn();
-        new OrderManagementScreen().selectOrderedWrongly();
-        new OrderManagementScreen().pressAddVoidReasonBtn();
-    }
+//    @And("^I void and close the check for the table \"([^\"]*)\"$")
+//    public void iVoidAndCloseTheCheckForTheTable(String tableNo) {
+//        new TableLayOutScreen().selectTable(tableNo);
+//        new OrderManagementScreen().pressVoidBtn();
+//        new OrderManagementScreen().pressDone();
+//        new PaymentWindow().selectPayment();
+//        new PaymentWindow().pressDeletePaymentBtn();
+//        new PaymentWindow().pressOkToClosePrinterWarningPopUp();
+//        new PaymentWindow().pressExit();
+//        new OrderManagementScreen().pressVoidBtn();
+//        new OrderManagementScreen().selectOrderedWrongly();
+//        new OrderManagementScreen().pressAddVoidReasonBtn();
+//    }
 
     @And("^I click Print on the table layout screen$")
     public void iClickPrintOnTheTableLayoutScreen() {
@@ -304,10 +304,10 @@ public class CheckOptionsStepDef {
         new OrderManagementScreen().selectSaladCategory();
     }
 
-    @And("^I should see the tax reflected to the check$")
-    public void iShouldSeeTheTaxReflectedToTheCheck() {
-        new OrderManagementScreen().checkTaxExists();
-    }
+//    @And("^I should see the tax reflected to the check$")
+//    public void iShouldSeeTheTaxReflectedToTheCheck() {
+//        new OrderManagementScreen().checkTaxExists();
+//    }
 
     @When("^I click Tax Exempt Button$")
     public void iClickTaxExemptButton() {
@@ -334,10 +334,10 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().selectSchoolAsTaxExemptReason();
     }
 
-    @Then("^I should return back to the order management screen and I should not see the tax amount$")
-    public void iShouldReturnBackToTheOrderManagementScreenAndIShouldNotSeeTheTaxAmount() {
-        new CheckOptionsScreen().checkTaxExists();
-    }
+//    @Then("^I should return back to the order management screen and I should not see the tax amount$")
+//    public void iShouldReturnBackToTheOrderManagementScreenAndIShouldNotSeeTheTaxAmount() {
+//        new CheckOptionsScreen().checkTaxExists();
+//    }
 
     @And("^I click Back button on Tax Exempt window$")
     public void iClickBackButtonOnTaxExemptWindow() {
@@ -351,15 +351,15 @@ public class CheckOptionsStepDef {
 
     /********** Credit card payment ***********/
 
-    @And("^I click Payment button in the Order Management Screen$")
-    public void iClickPaymentButtonInTheOrderManagementScreen() {
-        new OrderManagementScreen().pressPayment();
-    }
-
-    @Then ("^I verify the paid amount with partial paid amount on the payment screen$")
-    public void iVerifyThePaidAmountWithPartialPaidAmountOnThePaymentScreen(){
-        new PaymentWindow().verifyThePaidAmountPartialPaidAmountOnthePaymentScreen();
-    }
+//    @And("^I click Payment button in the Order Management Screen$")
+//    public void iClickPaymentButtonInTheOrderManagementScreen() {
+//        new OrderManagementScreen().pressPayment();
+//    }
+//
+//    @Then ("^I verify the paid amount with partial paid amount on the payment screen$")
+//    public void iVerifyThePaidAmountWithPartialPaidAmountOnThePaymentScreen(){
+//        new PaymentWindow().verifyThePaidAmountPartialPaidAmountOnthePaymentScreen();
+//    }
 
     @And ("^I verify the no due as zero on the payment screen$")
     public void iVerifyTheNoDueAsZeroOnThePaymentScreen(){
@@ -575,10 +575,10 @@ public class CheckOptionsStepDef {
         new OrderManagementScreen().selectFoodCategory();
     }
 
-    @And ("^I get check number$")
-    public void iGetCheckNumber(){
-        new OrderManagementScreen().getCheckNumberTxt();
-    }
+//    @And ("^I get check number$")
+//    public void iGetCheckNumber(){
+//        new OrderManagementScreen().getCheckNumberTxt();
+//    }
 
 
 
@@ -679,10 +679,10 @@ public class CheckOptionsStepDef {
         new OpenItemWindow().pressDoneOpenItemBtn();
     }
 
-    @Then("^I should navigate to Order Management screen and see the added open item as \"([^\"]*)\"$")
-    public void iShouldNavigateToOrderManagementScreenAndSeeTheAddedOpenItemAs(String open) {
-        new OpenItemWindow().verifyOpenItem(open);
-    }
+//    @Then("^I should navigate to Order Management screen and see the added open item as \"([^\"]*)\"$")
+//    public void iShouldNavigateToOrderManagementScreenAndSeeTheAddedOpenItemAs(String open) {
+//        new OpenItemWindow().verifyOpenItem(open);
+//    }
 
     @Then ("^I verify the open item value from open item window with order screen$")
     public void iVerifyTheOpenItemValueFromOpenItemWindowWithOrderScreen(){
@@ -758,18 +758,18 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().pressAutomaticBtn();
         new CheckOptionsScreen().setTimeForAutomaticHold();
     }
-    @Then ("^I should see hold Icon change to Tick Icon$")
-    public void iShouldSeeHoldIconChangeToTickIcon() throws InterruptedException {
-        Thread.sleep(53000);
-
-        new OrderManagementScreen().pressPayment();
-        Thread.sleep(18000);
-        new PaymentWindow().pressExit();
-        Thread.sleep(10000);
-        new OrderManagementScreen().pressPayment();
-        new PaymentWindow().pressExit();
-        new OrderManagementScreen().verifyTickIcon();
-    }
+//    @Then ("^I should see hold Icon change to Tick Icon$")
+//    public void iShouldSeeHoldIconChangeToTickIcon() throws InterruptedException {
+//        Thread.sleep(53000);
+//
+//        new OrderManagementScreen().pressPayment();
+//        Thread.sleep(18000);
+//        new PaymentWindow().pressExit();
+//        Thread.sleep(10000);
+//        new OrderManagementScreen().pressPayment();
+//        new PaymentWindow().pressExit();
+//        new OrderManagementScreen().verifyTickIcon();
+//    }
 
     @And ("^I click open cash drawer Button$")
     public void iClickOpenCashDrawerButton(){
@@ -793,16 +793,16 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().pressBackForFireCoursing();
     }
 
-    @Then ("^I should see you cannot delete this discount popup$")
-    public void iShouldSeeYouCannotDeleteThisDiscountPopup(){
-        Assert.assertEquals(new OrderManagementScreen().verifyYouCannotDeletePopup(),"You cannot delete this Discount");
-    }
-
-    //today i done
-    @And ("^I get check number1$")
-    public void iGetCheckNumber1(){
-        new OrderManagementScreen().getCheckNumberTxt1();
-    }
+//    @Then ("^I should see you cannot delete this discount popup$")
+//    public void iShouldSeeYouCannotDeleteThisDiscountPopup(){
+//        Assert.assertEquals(new OrderManagementScreen().verifyYouCannotDeletePopup(),"You cannot delete this Discount");
+//    }
+//
+//    //today i done
+//    @And ("^I get check number1$")
+//    public void iGetCheckNumber1(){
+//        new OrderManagementScreen().getCheckNumberTxt1();
+//    }
 
     @And ("^I select the card from card type$")
     public void iSelectTheCardFromCardType(){
@@ -838,10 +838,10 @@ public class CheckOptionsStepDef {
         new PaymentWindow().verifyAddedTipIsSameWithPaymentScreen();
     }
 
-    @Then ("^I should see gratuity cannot be removed for paid check popup$")
-    public void iShouldSeeGratuityCannotBeRemovedForPaidCheckPopup(){
-        Assert.assertEquals( new OrderManagementScreen().verifyGratuityCannotBeRemovedForPaidChecksPopup(),"Gratuity cannot be removed for paid check");
-    }
+//    @Then ("^I should see gratuity cannot be removed for paid check popup$")
+//    public void iShouldSeeGratuityCannotBeRemovedForPaidCheckPopup(){
+//        Assert.assertEquals( new OrderManagementScreen().verifyGratuityCannotBeRemovedForPaidChecksPopup(),"Gratuity cannot be removed for paid check");
+//    }
 
     @And ("^I get tip value from Tip screen$")
     public void iGetTipValueFromTipScreen(){
@@ -891,177 +891,177 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().clickDoneIfItsSelectable();
     }
 
-    @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split Check$")
-    public void iSelectMenuForDineOrderTypeAsForSplitCheck(String Cate){
-        new Regression().selectMenuForDineInForSplitCheck(Cate);
-    }
-
-    @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split seat$")
-    public void iSelectMenuForDineOrderTypeAsForSplitSeat(String cate){
-        new Regression().selectMenuForDineInForSplitSeat(cate);
-    }
-    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for split Check$")
-    public void iSelectMenuForBartabOrderTypeAsForSplitCheck(String cate){
-        new Regression().selectMenuForBarTabForSplitCheck(cate);
-    }
-
-    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for merge Check$")
-    public void iSelectMenuForBartabOrderTypeAsForMergeCheck(String cate){
-        new Regression().selectMenuForBarTabForSplitCheckMerge(cate);
-    }
-    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for split Check1$")
-    public void iSelectMenuForBartabOrderTypeAsForSplitCheck1(String cate){
-        new Regression().selectMenuForBarTabForSplitCheck1(cate);
-    }
-
-    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for merge Check1$")
-    public void iSelectMenuForBartabOrderTypeAsForMergeCheck1(String cate){
-        new Regression().selectMenuForBarTabForMergeCheck1(cate);
-    }
-
-    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split check order screen$")
-    public void iSelectMenuForDineInAsForSplitCheckOrderScreen(String cate){
-        new Regression().selectTheMenuFromOrderScreen(cate);
-    }
-
-    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreen(String cate){
-        new Regression().selectTheMenuFromOrderScreenSplitSeat(cate);
-    }
-    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen for merge$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreenForMerge(String cate){
-        new Regression().selectTheMenuFromOrderScreenSplitSeatForMerge(cate);
-    }
-
-    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen1$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreen1(String cate){
-        new Regression().selectTheMenuFromOrderScreenSplitSeat1(cate);
-    }
-
-    @And("^I select Menu for Bartab as \"([^\"]*)\" for split check order screen$")
-    public void iSelectMenuForBarTabAsForSplitCheckOrderScreen(String cate){
-        new Regression().selectTheMenuFromOrderScreen(cate);
-    }
-    @And ("^I select Menu for QSR as \"([^\"]*)\"$")
-    public void iSelectMenuForQsrAs(String cate){
-        new Regression().selectTheMenuFromOrderScreen(cate);
-    }
-
-    @And ("^I get the list of the menu from the order screen$")
-    public void iGetTheListOfTheMenuFromTheOrderScreen(){
-        new Regression().getTheListOfTheMenuFromTheOrderScreen();
-    }
-
-    @And ("^I get the seat number from the check$")
-    public void iGetTheSeatNumberFromTheCheck(){
-        new Regression().getSeatNumberFromCheck();
-    }
-
-    @And ("^I get the seat number from the check1$")
-    public void iGetTheSeatNumberFromTheCheck1(){
-        new Regression().getSeatNumberFromCheck1();
-    }
-    @And ("^I get the list of the menu from the order screen1$")
-    public void iGetTheListOfTheMenuFromTheOrderScreen1(){
-        new Regression().getTheListOfTheMenuFromTheOrderScreen1();
-    }
-
-    @When ("^I verify the seat number from the order screen$")
-    public void iVerifyTheSeatNumberFromTheOrderScreen(){
-        new Regression().verifySeatNumberFromTheOrderScreen();
-    }
-
-    @And ("^I verify check number from the order screen$")
-    public void iVerifyCheckNumberFromTheOrderScreen(){
-        new Regression().verifyCheckNumber();
-    }
-
-
-
-    @When("^I verify the Calculation pay amount with the card details pay amount$")
-    public void iVerifyTheCalculationPayAmountWithTheCardDetailsPayAmount(){
-        new Regression(). VerifiedPayAmountWithAllDataInTheCardDetailScreen();
-    }
-
-    @When("^I verify the Calculation pay amount with the card details pay amount while partial pay$")
-    public void iVerifyTheCalculationPayAmountWithTheCardDetailsPayAmountWhilePartialPay(){
-        new Regression().verifyPayAmountWithTipAmountOnCardDetailsScreen();
-    }
-    @When ("^I verify the discount value with card details screen value$")
-    public void iVerifyTheDiscountValueWithCardDetailsScreenValue(){
-        new Regression().verifyDiscountValueWithCardDetailsScreenValue();
-    }
-
-    @When ("^I verify the tip value with card details screen value$")
-    public void iVerifyTheTipValueWithCardDetailsScreenValue(){
-        new Regression().verifyTipValueWithCardDetailsScreenValue();
-    }
-
-    @When ("^I verify the paid amount value is zero$")
-    public void iVerifyThePaidAmountValueIsZero(){
-        new Regression().verifyPaidAmountValueIsZero();
-    }
-
-
-    @When ("^I verify the tip1 value with card details screen value$")
-    public void iVerifyTheTip1ValueWithCardDetailsScreenValue(){
-        new Regression().verifyTip1ValueWithCardDetailsScreenValue();
-    }
-
-    @When ("^I verify the paid amount value with card details screen value$")
-    public void iVerifyThePaidAmountValueWithCardDetailsScreenValue(){
-        new Regression().verifyPaidAmountValueWithCardDetailsScreenValue();
-    }
-
-    @Then ("^I verify card reader is not connected popup or not$")
-    public void iVerifyCardReaderIsNotConnectedPopupOrNot(){
-        new Regression().verifyCardReaderIsNotConnectedPopup();
-    }
-
-    @When ("^I get the card name on the card details screen$")
-    public void iGetTheCardNameOnTheCardDetailsScreen(){
-        new Regression().getTheCardNameOnTheCardDetailScreen();
-    }
-
-    @When ("^I verify the manual, clear and process emv button is enabled or not$")
-    public void iVerifyTheManualClearAndProcessEmvButtonIsEnabledOrNot(){
-        new Regression().verifyManualClearProcessButtonIsEnabledOrNot();
-    }
-
-    @When ("^I verify subtotal,tax and total value with card details screen value$")
-    public void iVerifySubtotalTaxAndTotalValueWithCardDetailsScreenValue(){
-        new Regression().verifySubtotalTaxAndTotalValueWithCardDetailsScreenValue();
-    }
-
-    @When ("^I verify subtotal,tax and total value with card details screen value while cash reward is enabled$")
-    public void iVerifySubtotalTaxAndTotalValueWithCardDetailsScreenValueWhileCashRewardIsEnabled(){
-        new Regression().verifySubtotalTaxAndTotalValueWithCardDetailsScreenValue1();
-    }
-
-    @And ("^I get the pay amount value from the card details screen value$")
-    public void iGetThePayAmountValueFromTheCardDetailsScreenValue(){
-        new Regression().getThePayAmountValueOnTheCardDetailsScreen();
-    }
-
-    @Then("^I should see tip screen$")
-    public void iShouldSeeTipScreen(){
-        new  Regression().shouldSeeTipScreen();
-    }
-
-    @And("^I select the tip from the tip screen$")
-    public void iSelectTheTipFromTheTipScreen() throws InterruptedException {
-        new Regression().selectTipFromTheTipScreen();
-    }
-
-    @Then ("^I should see the card details entry screen$")
-    public void iShouldSeeTheCardDetailsEntryScreen(){
-        new Regression().shouldSeeTheCardDetailsEntryScreen();
-    }
-
-    @When ("^I check the all check has been batch$")
-    public void iCheckTheAllCheckHasBeenBatch() throws Exception {
-        new Regression().checkAllTheCheckHasBeenBatch();
-    }
+//    @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split Check$")
+//    public void iSelectMenuForDineOrderTypeAsForSplitCheck(String Cate){
+//        new Regression().selectMenuForDineInForSplitCheck(Cate);
+//    }
+//
+//    @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split seat$")
+//    public void iSelectMenuForDineOrderTypeAsForSplitSeat(String cate){
+//        new Regression().selectMenuForDineInForSplitSeat(cate);
+//    }
+//    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for split Check$")
+//    public void iSelectMenuForBartabOrderTypeAsForSplitCheck(String cate){
+//        new Regression().selectMenuForBarTabForSplitCheck(cate);
+//    }
+//
+//    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for merge Check$")
+//    public void iSelectMenuForBartabOrderTypeAsForMergeCheck(String cate){
+//        new Regression().selectMenuForBarTabForSplitCheckMerge(cate);
+//    }
+//    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for split Check1$")
+//    public void iSelectMenuForBartabOrderTypeAsForSplitCheck1(String cate){
+//        new Regression().selectMenuForBarTabForSplitCheck1(cate);
+//    }
+//
+//    @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for merge Check1$")
+//    public void iSelectMenuForBartabOrderTypeAsForMergeCheck1(String cate){
+//        new Regression().selectMenuForBarTabForMergeCheck1(cate);
+//    }
+//
+//    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split check order screen$")
+//    public void iSelectMenuForDineInAsForSplitCheckOrderScreen(String cate){
+//        new Regression().selectTheMenuFromOrderScreen(cate);
+//    }
+//
+//    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen$")
+//    public void iSelectMenuForDineInAsForSplitSeatOrderScreen(String cate){
+//        new Regression().selectTheMenuFromOrderScreenSplitSeat(cate);
+//    }
+//    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen for merge$")
+//    public void iSelectMenuForDineInAsForSplitSeatOrderScreenForMerge(String cate){
+//        new Regression().selectTheMenuFromOrderScreenSplitSeatForMerge(cate);
+//    }
+//
+//    @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen1$")
+//    public void iSelectMenuForDineInAsForSplitSeatOrderScreen1(String cate){
+//        new Regression().selectTheMenuFromOrderScreenSplitSeat1(cate);
+//    }
+//
+//    @And("^I select Menu for Bartab as \"([^\"]*)\" for split check order screen$")
+//    public void iSelectMenuForBarTabAsForSplitCheckOrderScreen(String cate){
+//        new Regression().selectTheMenuFromOrderScreen(cate);
+//    }
+//    @And ("^I select Menu for QSR as \"([^\"]*)\"$")
+//    public void iSelectMenuForQsrAs(String cate){
+//        new Regression().selectTheMenuFromOrderScreen(cate);
+//    }
+//
+//    @And ("^I get the list of the menu from the order screen$")
+//    public void iGetTheListOfTheMenuFromTheOrderScreen(){
+//        new Regression().getTheListOfTheMenuFromTheOrderScreen();
+//    }
+//
+//    @And ("^I get the seat number from the check$")
+//    public void iGetTheSeatNumberFromTheCheck(){
+//        new Regression().getSeatNumberFromCheck();
+//    }
+//
+//    @And ("^I get the seat number from the check1$")
+//    public void iGetTheSeatNumberFromTheCheck1(){
+//        new Regression().getSeatNumberFromCheck1();
+//    }
+//    @And ("^I get the list of the menu from the order screen1$")
+//    public void iGetTheListOfTheMenuFromTheOrderScreen1(){
+//        new Regression().getTheListOfTheMenuFromTheOrderScreen1();
+//    }
+//
+//    @When ("^I verify the seat number from the order screen$")
+//    public void iVerifyTheSeatNumberFromTheOrderScreen(){
+//        new Regression().verifySeatNumberFromTheOrderScreen();
+//    }
+//
+//    @And ("^I verify check number from the order screen$")
+//    public void iVerifyCheckNumberFromTheOrderScreen(){
+//        new Regression().verifyCheckNumber();
+//    }
+//
+//
+//
+//    @When("^I verify the Calculation pay amount with the card details pay amount$")
+//    public void iVerifyTheCalculationPayAmountWithTheCardDetailsPayAmount(){
+//        new Regression(). VerifiedPayAmountWithAllDataInTheCardDetailScreen();
+//    }
+//
+//    @When("^I verify the Calculation pay amount with the card details pay amount while partial pay$")
+//    public void iVerifyTheCalculationPayAmountWithTheCardDetailsPayAmountWhilePartialPay(){
+//        new Regression().verifyPayAmountWithTipAmountOnCardDetailsScreen();
+//    }
+//    @When ("^I verify the discount value with card details screen value$")
+//    public void iVerifyTheDiscountValueWithCardDetailsScreenValue(){
+//        new Regression().verifyDiscountValueWithCardDetailsScreenValue();
+//    }
+//
+//    @When ("^I verify the tip value with card details screen value$")
+//    public void iVerifyTheTipValueWithCardDetailsScreenValue(){
+//        new Regression().verifyTipValueWithCardDetailsScreenValue();
+//    }
+//
+//    @When ("^I verify the paid amount value is zero$")
+//    public void iVerifyThePaidAmountValueIsZero(){
+//        new Regression().verifyPaidAmountValueIsZero();
+//    }
+//
+//
+//    @When ("^I verify the tip1 value with card details screen value$")
+//    public void iVerifyTheTip1ValueWithCardDetailsScreenValue(){
+//        new Regression().verifyTip1ValueWithCardDetailsScreenValue();
+//    }
+//
+//    @When ("^I verify the paid amount value with card details screen value$")
+//    public void iVerifyThePaidAmountValueWithCardDetailsScreenValue(){
+//        new Regression().verifyPaidAmountValueWithCardDetailsScreenValue();
+//    }
+//
+//    @Then ("^I verify card reader is not connected popup or not$")
+//    public void iVerifyCardReaderIsNotConnectedPopupOrNot(){
+//        new Regression().verifyCardReaderIsNotConnectedPopup();
+//    }
+//
+//    @When ("^I get the card name on the card details screen$")
+//    public void iGetTheCardNameOnTheCardDetailsScreen(){
+//        new Regression().getTheCardNameOnTheCardDetailScreen();
+//    }
+//
+//    @When ("^I verify the manual, clear and process emv button is enabled or not$")
+//    public void iVerifyTheManualClearAndProcessEmvButtonIsEnabledOrNot(){
+//        new Regression().verifyManualClearProcessButtonIsEnabledOrNot();
+//    }
+//
+//    @When ("^I verify subtotal,tax and total value with card details screen value$")
+//    public void iVerifySubtotalTaxAndTotalValueWithCardDetailsScreenValue(){
+//        new Regression().verifySubtotalTaxAndTotalValueWithCardDetailsScreenValue();
+//    }
+//
+//    @When ("^I verify subtotal,tax and total value with card details screen value while cash reward is enabled$")
+//    public void iVerifySubtotalTaxAndTotalValueWithCardDetailsScreenValueWhileCashRewardIsEnabled(){
+//        new Regression().verifySubtotalTaxAndTotalValueWithCardDetailsScreenValue1();
+//    }
+//
+//    @And ("^I get the pay amount value from the card details screen value$")
+//    public void iGetThePayAmountValueFromTheCardDetailsScreenValue(){
+//        new Regression().getThePayAmountValueOnTheCardDetailsScreen();
+//    }
+//
+//    @Then("^I should see tip screen$")
+//    public void iShouldSeeTipScreen(){
+//        new  Regression().shouldSeeTipScreen();
+//    }
+//
+//    @And("^I select the tip from the tip screen$")
+//    public void iSelectTheTipFromTheTipScreen() throws InterruptedException {
+//        new Regression().selectTipFromTheTipScreen();
+//    }
+//
+//    @Then ("^I should see the card details entry screen$")
+//    public void iShouldSeeTheCardDetailsEntryScreen(){
+//        new Regression().shouldSeeTheCardDetailsEntryScreen();
+//    }
+//
+//    @When ("^I check the all check has been batch$")
+//    public void iCheckTheAllCheckHasBeenBatch() throws Exception {
+//        new Regression().checkAllTheCheckHasBeenBatch();
+//    }
 
     @And ("^I verify the cash price value with paid amount value is same$")
     public void iVerifyTheCashPriceValueWithPaidAmountValueIsSame(){

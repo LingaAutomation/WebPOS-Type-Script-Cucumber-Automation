@@ -1,0 +1,147 @@
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:41:13.253 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:42:43.692 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:43:23.649 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:44:05.230 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:15.905 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:46.848 BasePage:305 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:46.923 BasePage:305 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:46.984 BasePage:305 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:47.041 BasePage:305 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:47.070 BasePage:282 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:48.322 BasePage:282 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:48.517 BasePage:282 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:48.736 TableLayOutScreen:721 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:48.801 OrderManagementScreen:1484 - QSR - Service Type Is displayed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:48.807 BasePage:282 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:48.947 BasePage:282 - editDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:49.074 BasePage:282 - Selected seat 2 to be deleted
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:49.166 BasePage:282 - doneDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:50.438 BasePage:282 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:50.701 BasePage:271 - Check Status Is Displayed - Check Status
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:50.753 BasePage:271 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:50.762 BasePage:282 - Tapped Phone Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:51.064 BasePage:271 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:51.101 BasePage:282 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:52.492 BasePage:282 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:52.701 OrderManagementScreen:1484 - QSR - Service Type Is displayed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:52.716 BasePage:282 - Tapped Sync Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 09:47:54.838 BasePage:282 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:35:36.840 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:35:41.929 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:36:37.007 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:36:42.084 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:40:56.755 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:41:27.319 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:15.588 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:46.021 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:46.063 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:46.101 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:46.122 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:46.139 BasePage:277 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.255 BasePage:277 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.332 BasePage:277 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.391 TableLayOutScreen:721 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.408 OrderManagementScreen:1482 - QSR - Service Type Is displayed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.410 BasePage:277 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.440 BasePage:277 - editDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.468 BasePage:277 - Selected seat 2 to be deleted
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:47.495 BasePage:277 - doneDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:48.593 BasePage:277 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:48.699 BasePage:266 - Check Status Is Displayed - Check Status
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:48.714 BasePage:266 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:48.716 BasePage:277 - Tapped Phone Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:48.791 BasePage:266 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:48.794 BasePage:277 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:49.866 BasePage:277 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:49.919 OrderManagementScreen:1482 - QSR - Service Type Is displayed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:49.922 BasePage:277 - Tapped Sync Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:43:52.961 BasePage:277 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:44:31.924 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:45:05.684 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:45:48.443 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:18.882 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:18.918 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:18.945 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:18.967 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:18.981 BasePage:277 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.106 BasePage:277 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.154 BasePage:277 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.206 TableLayOutScreen:721 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.228 OrderManagementScreen:1482 - QSR - Service Type Is displayed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.229 BasePage:277 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.258 BasePage:277 - editDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.288 BasePage:277 - Selected seat 2 to be deleted
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:20.316 BasePage:277 - doneDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:21.406 BasePage:277 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:21.508 BasePage:266 - Check Status Is Displayed - Check Status
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:21.540 BasePage:266 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:21.543 BasePage:277 - Tapped Phone Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:21.628 BasePage:266 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:21.632 BasePage:277 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:22.698 BasePage:277 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:22.778 OrderManagementScreen:1482 - QSR - Service Type Is displayed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:22.781 BasePage:277 - Tapped Sync Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 10:46:25.821 BasePage:277 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 11:54:22.119 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 11:54:51.339 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 11:56:09.994 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 11:57:09.572 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:17:59.191 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:18:10.924 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:19:26.434 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:12.484 Hooks:58 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:43.199 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:43.253 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:43.302 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:43.352 BasePage:300 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:43.391 BasePage:277 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.605 BasePage:277 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.678 BasePage:277 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.779 TableLayOutScreen:721 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.805 OrderManagementScreen:1483 - QSR - Service Type Is displayed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.807 BasePage:277 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.871 BasePage:277 - editDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.928 BasePage:277 - Selected seat 2 to be deleted
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:44.983 BasePage:277 - doneDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:46.079 BasePage:300 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 12:20:46.094 Hooks:76 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:34:32.753 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:38:22.884 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:38:53.572 BasePage:300 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:38:53.586 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:47:45.813 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:47:45.945 BasePage:300 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:47:45.963 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:50:35.095 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:51:05.758 BasePage:300 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:51:05.770 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:54:42.053 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:55:12.738 BasePage:300 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:55:12.751 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:58:33.102 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:59:03.864 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:59:03.915 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:59:03.953 BasePage:302 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 19:59:03.966 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:08:21.098 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:08:51.774 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:08:51.818 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:08:51.860 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:08:51.896 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:08:51.934 BasePage:302 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:08:51.948 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:10:01.043 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:10:31.732 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:10:31.779 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:10:31.814 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:10:31.851 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:10:31.887 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:11:02.032 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:12:10.112 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:12:40.784 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:12:40.828 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:12:40.866 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:12:40.906 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:12:40.943 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:12:40.989 BasePage:277 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-11 20:13:11.081 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax

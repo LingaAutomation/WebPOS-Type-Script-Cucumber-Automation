@@ -1,9 +1,11 @@
 package com.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static com.qa.pages.DriverSteup.driver;
@@ -12,8 +14,7 @@ public class OrdersAndDriversListScreen extends BasePage {
     @FindBy(name = "Table Layout")
     private WebElement tableLayoutTab;
 
-    @FindBy(name = "Check Stats")
-    private WebElement checkStatsTab;
+    String checkStatsTab = "//button//span[text()=' Check Status ']";
 
     @FindBy(name = "Check Stats")
     private WebElement checkStatsTab1;
@@ -30,11 +31,10 @@ public class OrdersAndDriversListScreen extends BasePage {
     @FindBy(name = "Re-Open Check")
     private WebElement reOpenCheckStats;
 
-    @FindBy(name = "Table Layout")
-    private WebElement TableLayout;
+    String TableLayout = "//button//span[text()=' Table layout ']";
 
-    @FindBy(name = "Table Layout")
-    private WebElement TableLayout1;
+
+    String TableLayout1 = "//button//span[text()=' Table layout ']";
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"T1\"])")
     private WebElement closeCheckTableNo;
@@ -77,12 +77,12 @@ public class OrdersAndDriversListScreen extends BasePage {
     }
 
     public String verifyTableLayoutTab() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        return elementGetText(TableLayout1,"Table layout screen is displayed - ");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        return elementGetText(convertWebElement(TableLayout1),"Table layout screen is displayed - ");
         //   getText(TableLayout,"Table layout screen is displayed - ");
     }
 
     public String verifyCheckStatsScreen(){
-        return elementGetText(checkStatsTab,"Check Stats Is Displayed - ");
+        return elementGetText(driver.findElement(By.xpath(checkStatsTab)),"Check Status Is Displayed - ");
     }
 }

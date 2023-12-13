@@ -119,8 +119,7 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(name = "Delete")
     private WebElement deleteBtn;
 
-    @FindBy(name = "Sync")
-    private WebElement syncBtn;
+    String syncBtn = "//button[@class='mat-focus-indicator ion-text-center mat-button mat-button-base _mat-animation-noopable ng-star-inserted'][1]";
 
     @FindBy(name = "Please close the sale to sync the data")
     private WebElement pleaseCloseTheSaleToSyncTheData;
@@ -494,7 +493,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     public void pressSyncBtn() throws InterruptedException {
 
         elementClick(syncBtn,"Tapped Sync Button");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     public String getPopupTxt(){

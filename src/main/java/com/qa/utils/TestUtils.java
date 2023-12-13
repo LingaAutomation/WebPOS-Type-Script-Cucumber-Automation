@@ -22,8 +22,21 @@ import java.util.List;
 
 
 public class TestUtils {
-    public static final long WAIT = 5;
+
+//    public static WebDriver driver;
+
+    public static String TotalValueBeforeRemovingDiscount = "";
     public static String globalCheckNumber=" ";
+    public static String globalCheckNumber2=" ";
+
+    public static String globalTableNumber=" ";
+
+    public static String globalTableNumber2=" ";
+
+    public static String globalCheckNumber11=" ";
+    public static String globalCheckNumber22=" ";
+    public static final long WAIT = 5;
+//    public static String globalCheckNumber=" ";
     public static String menu =" ";
     public static List<String> menuNames;
     public static String loyaltyBalance=" ";
@@ -156,6 +169,85 @@ public class TestUtils {
     public static String cardNumber= " ";
     public static String cardName= " ";
     public static String FirstTable = "", FirstMenuItem = "", SecondTable = "", FTable1 = "", FTable2 = "", ServerNamee = "", ServerName1 = "", ServerName2 = "",FirstTableName="";
+
+//    public static final long WAIT = 10;
+//    public static String globalCheckNumber=" ";
+//    public static String globalCheckNumber2=" ";
+//
+//    public static String globalTableNumber=" ";
+//
+//    public static String globalTableNumber2=" ";
+//
+//    public static String globalCheckNumber11=" ";
+//    public static String globalCheckNumber22=" ";
+//    public static String loyaltyBalance=" ";
+//    public static final String XPath = "XPath";
+//    public static final String Accessibility = "Accessibility";
+//    public static final String Name = "Name";
+//    public static String globalCheckNumber1=" ";
+//    public static final long driverWAIT = 5;
+//    public static String modifiers=" ";
+//    public static String tableNumberof = " ";
+//    public static String tableNumberof1 = " ";
+//    public static String amountTxt=" ";
+//    public static String cashTxt=" ";
+//    public static String balance= " ";
+//    public static String amountGivenTxt=" ";
+//    public static String cashOptionPaymentScreen= " ";
+//    public static String CashDiscountCalculation=" ";
+//    public static String cashOptionOrderScreen= " ";
+//    public static String BalanceCardAmount=" ";
+//    public static String percent = " ";
+//    public static String tipAmount = " ";
+//    public static String MenuItemPrice1 = " ";
+//    public static String MenuItemQuantity1 = " ";
+//    public static String MenuItemQuantity2= " ";
+//    public static String MenuItemQuantity3= " ";
+//    public static String subtotalAfterDiscount4 = "";
+    public static String subtotalAfterDiscountb = "";
+
+//    public static String subtotalAfterDiscount8 = "";
+//    public static String subtotalAfterDiscount10 = "";
+//    public static String subtotalAfterDiscount12 = "";
+
+    public static String taxAmountInc = "";
+
+    public static String taxAmountInc2 = "";
+
+    public static String checkTaxAmount = "";
+
+    public static String subTotalAmount = "";
+
+    public static String checkTotalAmount = "";
+
+    public static String checkTotalAmountInc = "";
+
+    public static String excTaxValue = "";
+
+    public static String incTaxValue = "";
+
+    public static String checkTaxValue = "";
+
+    public static String excCheckTotalTaxValue = "";
+
+    public static String incCheckTotalTaxValue = "";
+
+    public static String menuItemAmt = "";
+
+    public static String taxExcAmt1 = "";
+
+    public static String taxExcAmt2 = "";
+
+    public static String totalWithDualPrice = "";
+
+    public static String cashPriceValue = "";
+
+    public static String enteredPaymentAmount = "";
+//    public static String paidAmount = "";
+
+    public static String balanceDueAfterPartialPayment = "";
+
+//    public static String TotalValueBeforeRemovingDiscount = "";
 
     public static int itemToSelect1;
     public static WebDriver driver;

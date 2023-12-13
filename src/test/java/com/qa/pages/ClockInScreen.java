@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import static com.qa.utils.TestUtils.driver;
 import org.openqa.selenium.WebElement;
 
 import org.junit.Assert;
@@ -11,10 +12,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
-import static com.qa.pages.DriverSteup.driver;
+//import static com.qa.pages.DriverSteup.driver;
 
 
 public class ClockInScreen extends UserLoginScreen{
@@ -66,8 +68,8 @@ public class ClockInScreen extends UserLoginScreen{
     @FindBy (name = "Clear")
     private WebElement clearBtn;
 
-    @FindBy (name = "Login")
-    private WebElement loginBtn;
+    String loginBtn = "//button[contains(.,'Login')]";
+
 
     @FindBy (id = "To Login enter your ID number or swipe the card")
     private WebElement titleTxt;
@@ -203,16 +205,30 @@ public class ClockInScreen extends UserLoginScreen{
     }
 
     public OrderTypeWindow ClockIn (){
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //        pressPin1();
 //        pressPin2();
 //        pressPin3();
 //        pressPin4();
 //        pressLogin();
+//        pressPin1Time();
+//        pressPin2Time();
+//        pressPin3Time();
+//        pressPin4Time();
         pressPin1Time();
-        pressPin2Time();
-        pressPin3Time();
-        pressPin4Time();
+        pressPin1Time();
+        pressPin1Time();
+        pressPin1Time();
+        pressLogin();
+        return new OrderTypeWindow();
+    }
+
+    public OrderTypeWindow ClockIn2 (){
+        pressPin2();
+        pressPin3();
+        pressPin4();
+        pressPin5();
+//        pressPin4();
         pressLogin();
         return new OrderTypeWindow();
     }
@@ -592,33 +608,33 @@ public class ClockInScreen extends UserLoginScreen{
     }
     public String bussiness = " ";
 
-    public void getBussinessDate(){
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
-//        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
-        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[8]/XCUIElementTypeStaticText[3]"));
-        String bussinessTxt = bussinessDate.getText();
-        utils.log().info("Current "+bussinessTxt);
-
-        // Split the String by Regex Pattern
-        Pattern P =Pattern.compile("-");
-
-        String[] splitt = P.split(bussinessTxt,2);
-        bussiness = splitt[1];
-        TestUtils.bussiness1 = bussiness;
-        utils.log().info("Date - "+bussiness);
-    }
-
-    public void verifyBussinessDateWithCloseDayScreen(){
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        WebElement close_BusinessDate = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeStaticText[1]"));
-        String close_BusinessDateTxt = close_BusinessDate.getText();
-        utils.log().info("In Close day Business Date "+close_BusinessDateTxt);
-        if(close_BusinessDateTxt.contains(TestUtils.bussiness1)){
-            utils.log().info("Bussiness Date is SAME");
-        }else{
-            utils.log().info("Bussiness Date is NOT SAME");
-        }
-    }
+//    public void getBussinessDate(){
+//        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+////        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
+//        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[8]/XCUIElementTypeStaticText[3]"));
+//        String bussinessTxt = bussinessDate.getText();
+//        utils.log().info("Current "+bussinessTxt);
+//
+//        // Split the String by Regex Pattern
+//        Pattern P =Pattern.compile("-");
+//
+//        String[] splitt = P.split(bussinessTxt,2);
+//        bussiness = splitt[1];
+//        TestUtils.bussiness1 = bussiness;
+//        utils.log().info("Date - "+bussiness);
+//    }
+//
+//    public void verifyBussinessDateWithCloseDayScreen(){
+//        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+//        WebElement close_BusinessDate = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeStaticText[1]"));
+//        String close_BusinessDateTxt = close_BusinessDate.getText();
+//        utils.log().info("In Close day Business Date "+close_BusinessDateTxt);
+//        if(close_BusinessDateTxt.contains(TestUtils.bussiness1)){
+//            utils.log().info("Bussiness Date is SAME");
+//        }else{
+//            utils.log().info("Bussiness Date is NOT SAME");
+//        }
+//    }
 
     public void verifyInvalidPin(){
         WebElement invalidPin = (WebElement) driver.findElement(By.xpath("Invalid Pin"));
@@ -1055,6 +1071,7 @@ WebElement operationBtnClockInScreen;
         WebElement updateBtn = driver1.findElement(By.xpath("//button[contains(@type,'submit')]"));
         updateBtn.click();
     }
+
 
     public void goToWebPOS() throws InterruptedException {
 //        setup();

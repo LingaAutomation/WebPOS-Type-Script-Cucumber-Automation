@@ -3,8 +3,10 @@ package com.qa.pages;
 import com.qa.utils.DriverManager;
 import com.qa.utils.GlobalParams;
 import com.qa.utils.TestUtils;
+import static com.qa.utils.TestUtils.driver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,20 +22,41 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 
-import static com.qa.pages.DriverSteup.driver;
+//import static com.qa.pages.DriverSteup.driver;
 import static java.time.Duration.ofMillis;
 
 public class BasePage extends TGglobalElement {
 
+
+    public WebDriver driver;
     TestUtils utils = new TestUtils();
 
+    public BasePage()
+    {
+        this.driver = utils.driver;
+        PageFactory.initElements(this.driver,this);
+    }
 
-//    public BasePage() {
-//        if(driver==null){
-//            this.driver = new DriverManager().getDriver();
-//        }
-//        PageFactory.initElements(new AppiumFieldDecorator(this.driver), this);
-//    }
+
+    public void selectMenuBasicValidationForQsr(String category) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+category+"')]"));
+        elementClick(cate1, "Tapped category");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
+
+    public void selectMenuItemAs(String menuItem) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement menuItemName = driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
+        elementClick(menuItemName, "Tapped menu item");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
 
     public void waitForVisibility(WebElement e) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -287,6 +310,10 @@ public class BasePage extends TGglobalElement {
 //        }
     }
 
+    public WebElement convertWebElement(String e){
+        return driver.findElement(By.xpath(e));
+    }
+
     public void elementName(String e, String msg) {
 
         // try{
@@ -294,6 +321,8 @@ public class BasePage extends TGglobalElement {
         driver.findElement(By.name(e)).click();
 
     }
+
+
 
     public void elementClick(WebElement e, String msg) {
 
@@ -845,7 +874,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
         }
 
 
-    public void scrollToElementCategory(String direction) throws Exception {
+    public void scrollToElementCategory( String direction) throws Exception {
         Dimension size = driver.manage().window().getSize();
         int startX = (int) (size.width * 0.5);
         int endX = (int) (size.width * 0.5);

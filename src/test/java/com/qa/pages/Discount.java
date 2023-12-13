@@ -35,32 +35,41 @@ public class Discount extends BasePage{
     @FindBy(name = "Back")
     public WebElement backBtnDiscount;
 
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
-    private WebElement searchFldDiscount;
+    String discBtn = "//button[contains(.,'Discount')]";
+//    WebElement discBtn;
+
+
+//    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+//    private WebElement searchFldDiscount;
+
+    String searchFldDiscount = "//ion-searchbar[contains(@class,'discount')]/div/input";
 
     public void pressDiscountBtn(){
         elementClick(discountCheck,"Tapped Discount on Check Based");
     }
 
     public void pressDiscount(String discount) {
-        sendKeys(searchFldDiscount,discount);
-        WebElement e=mergeAndFindElement(discount,"",TestUtils.Accessibility);
+        elementClick(discBtn,"selected discount button");
+        sendKeys(convertWebElement(searchFldDiscount),discount);
+        WebElement e=driver.findElement(By.xpath("//span[contains(.,' "+discount+" ')]"));
 
         if (e.isDisplayed()){
             elementClick(e,discount +" Selected");
-        }
-    }
-
-    public void pressDiscount1(String discount){
-        sendKeys(searchFldDiscount,discount);
-        WebElement e1=mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Check Based Amount\"])[2]","",TestUtils.XPath);
-
-        if (e1.isDisplayed()) {
-            elementClick(e1,discount +" Selected");
         }else{
-            utils.log().info("Discount is not selected");
+            utils.log().info("Not discplayed - "+discount);
         }
     }
+
+//    public void pressDiscount1(String discount){
+//        sendKeys(searchFldDiscount,discount);
+//        WebElement e1=mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Check Based Amount\"])[2]","",TestUtils.XPath);
+//
+//        if (e1.isDisplayed()) {
+//            elementClick(e1,discount +" Selected");
+//        }else{
+//            utils.log().info("Discount is not selected");
+//        }
+//    }
     public String discountPage(){
         return elementGetText(discountPage,"Discount Page txt is Displayed - ");
     }

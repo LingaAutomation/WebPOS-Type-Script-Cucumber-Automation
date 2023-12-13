@@ -137,20 +137,15 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
     private WebElement seat1Group;
 
-    @FindBy(name = "1")
-    private WebElement seat1OrderScreen;
+    String seat1OrderScreen = "//button[@id='1']";
 
-    @FindBy(name = "2")
-    private WebElement seat2OrderScreen;
+   String seat2OrderScreen = "//button[@id='2']";
 
-    @FindBy(name = "3")
-    private WebElement seat3OrderScreen;
+    String seat3OrderScreen = "//button[@id='3']";
 
-    @FindBy(name = "4")
-    private WebElement seat4OrderScreen;
+    String seat4OrderScreen = "//button[@id='4']";
 
-    @FindBy(name = "5")
-    private WebElement seat5OrderScreen;
+    String seat5OrderScreen = "//button[@id='5']";
 
     @FindBy(name = "Done")
     private WebElement Done1;
@@ -352,22 +347,22 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     int j = 0;
 
-    public void verifyMenuHasSeperated(String count) {
-        List<WebElement> listOfMenus = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        for (int i = 1; i <= listOfMenus.size(); i++) {
-            WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            String menuNameTxt = menuName.getText();
-            if ((TestUtils.menuNameSplitCheck).equalsIgnoreCase(menuNameTxt)) {
-                int k = j + i;
-                if (Integer.parseInt(count) == k) {
-                    utils.log().info("Menu Count = " + k + " " + menuNameTxt);
-                } else {
-                }
-            } else {
-                utils.log().info("Menu Name - " + menuNameTxt);
-            }
-        }
-    }
+//    public void verifyMenuHasSeperated(String count) {
+//        List<WebElement> listOfMenus = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+//        for (int i = 1; i <= listOfMenus.size(); i++) {
+//            WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
+//            String menuNameTxt = menuName.getText();
+//            if ((TestUtils.menuNameSplitCheck).equalsIgnoreCase(menuNameTxt)) {
+//                int k = j + i;
+//                if (Integer.parseInt(count) == k) {
+//                    utils.log().info("Menu Count = " + k + " " + menuNameTxt);
+//                } else {
+//                }
+//            } else {
+//                utils.log().info("Menu Name - " + menuNameTxt);
+//            }
+//        }
+//    }
 
     public void pressContinueBtn() {
         elementClick(continueBtn, "Tapped Continue button");
@@ -722,7 +717,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         utils.log().info("Displayed popup as - "+cannotSplitAsPayment.getText());
     }
     public void verifySeat2() {
-        if (find(seat2OrderScreen, 2)) {
+        if (find(convertWebElement(seat2OrderScreen), 2)) {
             utils.log().info("Seat2 is Added ");
         } else {
             utils.log().info("Seat2 is not Added");
@@ -731,7 +726,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifySeat3() {
-        if (find(seat3OrderScreen, 2)) {
+        if (find(convertWebElement(seat3OrderScreen), 2)) {
             utils.log().info("Seat3 is Added ");
         } else {
             utils.log().info("Seat3 is not Added");
@@ -1071,7 +1066,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyCreatedSeat() {
-        if (find(seat5OrderScreen, 2)) {
+        if (find(convertWebElement(seat5OrderScreen), 2)) {
             utils.log().info("Seat 5 is displayed ");
         } else {
             utils.log().info("Seat is not displayed");

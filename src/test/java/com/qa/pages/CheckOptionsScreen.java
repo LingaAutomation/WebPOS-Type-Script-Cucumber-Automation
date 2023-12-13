@@ -1,7 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-
+import static com.qa.utils.TestUtils.driver;
 import org.openqa.selenium.WebElement;
 
 import org.junit.Assert;
@@ -15,7 +15,7 @@ import java.math.RoundingMode;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
+//import static com.qa.pages.DriverSteup.driver;
 
 public class CheckOptionsScreen extends OrderManagementScreen {
 

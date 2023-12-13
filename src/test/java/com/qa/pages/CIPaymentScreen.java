@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import static com.qa.utils.TestUtils.driver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
+//import static com.qa.pages.DriverSteup.driver;
 
 public class CIPaymentScreen extends BasePage{
 

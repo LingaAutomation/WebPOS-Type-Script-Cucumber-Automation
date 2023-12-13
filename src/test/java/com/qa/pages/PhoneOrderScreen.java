@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static com.qa.pages.DriverSteup.driver;
@@ -14,11 +15,9 @@ import static com.qa.pages.DriverSteup.driver;
 public class PhoneOrderScreen extends BasePage {
 
 
-    @FindBy(name = "Phone Order")
-    private WebElement phoneOrderTab;
+    String phoneOrderTab = "//button//span[text()=' Phone/Web Orders ']";
 
-    @FindBy(name = "Driver status")
-    private WebElement driverStatusTabTitle;
+    String driverStatusTabTitle= "//button//span[text()=' Future ']";
 
     @FindBy(name = "For Here")
     private WebElement forHereBtnPhoneOrderScreen;
@@ -78,8 +77,8 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
     private WebElement searchTabInActiveTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
-    private WebElement searchTabClosedTab;
+    @FindBy(xpath = "//input[@data-placeholder='Check No']")
+    public WebElement searchTabClosedTab;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     private WebElement searchTabInOutTab;
@@ -125,12 +124,12 @@ public class PhoneOrderScreen extends BasePage {
     }
 
     public String verifyPhoneOrderTab(){
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        return elementGetText(driverStatusTabTitle,"Phone order Tab is displayed - ");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        return elementGetText(convertWebElement(driverStatusTabTitle),"Phone order Tab is displayed - ");
     }
 
     public void clickActiveDriver(String name) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         Thread.sleep(1000);
         WebElement Auto=(WebElement) driver.findElements(By.xpath(name));
         elementClick(Auto,"Tapped Active Diver as - "+name);
@@ -148,7 +147,7 @@ public class PhoneOrderScreen extends BasePage {
 
 
     public void verifyPopup(){
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         // WebElement el2 = mergeAndFindElement("Driver is offline   Still Do you want to continue","",TestUtils.Accessibility);
         WebElement el2=mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Driver is offline   Still Do you want to continue\"]","",TestUtils.XPath);
         if(el2.isDisplayed()){

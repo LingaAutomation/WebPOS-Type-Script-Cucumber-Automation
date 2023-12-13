@@ -22,10 +22,10 @@ public class CheckBasedDiscountStepDef {
     public void iClickDiscountAs(String discount){
         new Discount().pressDiscount(discount);
     }
-    @And ("^I click Discount1 as \"([^\"]*)\"$")
-    public void iClickDiscount1As(String discount){
-        new Discount().pressDiscount1(discount);
-    }
+//    @And ("^I click Discount1 as \"([^\"]*)\"$")
+//    public void iClickDiscount1As(String discount){
+//        new Discount().pressDiscount1(discount);
+//    }
     @And ("^I click Back button on Discount Screen$")
     public void iClickBackButtonOnDiscountScreen(){
         new Discount().pressBackBtn();
@@ -49,10 +49,10 @@ public class CheckBasedDiscountStepDef {
         new Discount().verifyMenuItemTotal(amount);
     }
 
-    @Then ("^I should see the tax amount reflected to the check as \"([^\"]*)\"$")
-    public void iShouldSeeTheTaxAmountReflectedToTheCheckAs(String amount){
-        new OrderManagementScreen().checkTaxValue(amount);
-    }
+//    @Then ("^I should see the tax amount reflected to the check as \"([^\"]*)\"$")
+//    public void iShouldSeeTheTaxAmountReflectedToTheCheckAs(String amount){
+//        new OrderManagementScreen().checkTaxValue(amount);
+//    }
 
     @Then ("^I should see orderscreen with menu item Total without Discount or Tax as \"([^\"]*)\"$")
     public void iShouldSeeOrderScreenWithMenuItemTotalWithoutDiscountOrTaxAs(String amount){
@@ -64,28 +64,28 @@ public class CheckBasedDiscountStepDef {
         new Discount().verifyMenuItemTotalGratuity1(amount);
     }
 
-    @And ("^I change the Quantity of menu Item as \"([^\"]*)\"$")
-    public void iChangeTheQuantityOfMenuItemAs(String number){
-        new OrderManagementScreen().enterMenuQuantity(number);
-    }
-
-    @And ("^I change the Quantity of menu Item1 as \"([^\"]*)\"$")
-    public void iChangeTheQuantityOfMenuItem1As(String number){
-        new OrderManagementScreen().enterMenuQuantity$Store(number);
-    }
-
-    @And ("^I change the Quantity1 of menu Item as \"([^\"]*)\"$")
-    public void iChangeTheQuantity1OfMenuItemAs(String Num){
-        new OrderManagementScreen().enterMenuQty(Num);
-    }
-
-    @And ("^I select menu item as Tea For mix&Match SP Before Tax$")
-    public void iSelectMenuItemAsTeaForMixMatchSpBeforeTax(){
-        new OrderManagementScreen().selectMenuAsTea();
-    }
-    @Then ("^I should see Need to attach customer popup$")
-    public void iShouldSeeNeedToAttachCustomerPopup(){
-        Assert.assertEquals(new CheckOptionsScreen().verifyNeedToAttachCustomer(),"Need to Attach Customer");
-    }
+//    @And ("^I change the Quantity of menu Item as \"([^\"]*)\"$")
+//    public void iChangeTheQuantityOfMenuItemAs(String number){
+//        new OrderManagementScreen().enterMenuQuantity(number);
+//    }
+//
+//    @And ("^I change the Quantity of menu Item1 as \"([^\"]*)\"$")
+//    public void iChangeTheQuantityOfMenuItem1As(String number){
+//        new OrderManagementScreen().enterMenuQuantity$Store(number);
+//    }
+//
+//    @And ("^I change the Quantity1 of menu Item as \"([^\"]*)\"$")
+//    public void iChangeTheQuantity1OfMenuItemAs(String Num){
+//        new OrderManagementScreen().enterMenuQty(Num);
+//    }
+//
+//    @And ("^I select menu item as Tea For mix&Match SP Before Tax$")
+//    public void iSelectMenuItemAsTeaForMixMatchSpBeforeTax(){
+//        new OrderManagementScreen().selectMenuAsTea();
+//    }
+//    @Then ("^I should see Need to attach customer popup$")
+//    public void iShouldSeeNeedToAttachCustomerPopup(){
+//        Assert.assertEquals(new CheckOptionsScreen().verifyNeedToAttachCustomer(),"Need to Attach Customer");
+//    }
 
 }

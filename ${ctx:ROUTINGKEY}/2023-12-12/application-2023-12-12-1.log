@@ -1,0 +1,751 @@
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:22:22.516 Hooks:58 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:22:53.196 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:22:53.245 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:22:53.282 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:22:53.318 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:22:53.353 BasePage:277 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:22:53.397 BasePage:277 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:23:02.480 Hooks:76 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:47:42.194 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:57:16.056 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 11:57:21.203 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:03:33.403 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:03:38.656 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:04:58.685 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:06:39.566 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:07:44.817 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:41.583 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:41.766 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:41.828 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:41.886 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:41.933 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:41.983 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:42.255 BasePage:285 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:10:43.412 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:12:41.763 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:12:41.919 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:12:41.976 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:12:42.027 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:12:42.075 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:12:42.148 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:12:42.378 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:14:20.927 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:14:21.077 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:14:51.189 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:45.521 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:45.649 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:45.696 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:45.737 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:45.777 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:45.814 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:47.048 BasePage:285 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:47.113 BasePage:285 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:47.176 BasePage:285 - Selected FOOD ITEMS category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:23:48.264 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:28.988 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:29.117 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:29.162 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:29.204 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:29.243 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:29.279 BasePage:285 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:30.464 BasePage:285 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:30.536 BasePage:285 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:30.594 BasePage:310 - Selected FOOD ITEMS category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:31:38.668 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:32.195 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:32.353 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:32.399 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:32.447 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:32.510 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:32.557 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:33.751 BasePage:295 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:47:33.814 BasePage:295 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:15.071 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:15.216 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:15.265 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:15.314 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:15.356 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:15.398 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:16.601 BasePage:295 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:51:16.662 BasePage:295 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:36.818 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:36.950 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:36.994 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:37.034 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:37.076 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:37.115 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:38.352 BasePage:295 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 12:56:38.421 BasePage:295 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:27.811 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:27.979 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:28.039 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:28.098 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:28.142 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:28.185 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:29.407 BasePage:295 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:29.463 BasePage:295 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:04:34.581 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:08.597 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:08.761 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:08.813 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:08.866 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:08.909 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:08.954 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:10.230 BasePage:295 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:10.307 BasePage:295 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:10:15.511 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:06.019 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:06.185 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:06.295 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:06.369 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:06.429 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:06.497 BasePage:295 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:07.759 BasePage:295 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:07.823 BasePage:295 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:07.926 BasePage:320 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:12.996 BasePage:295 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:13.059 BasePage:320 - Selected FOOD ITEMS category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:12:13.123 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:02.395 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:02.605 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:02.667 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:02.721 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:02.776 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:02.829 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:04.125 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:04.194 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:04.289 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:09.364 BasePage:330 - Selected testing menu7 menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:39:14.462 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:42:17.465 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:42:17.640 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:42:17.692 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:48.651 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:48.778 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:48.823 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:48.863 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:48.904 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:48.940 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:50.168 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:50.237 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:50.321 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:44:55.413 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:45:00.514 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:45:00.516 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:45:00.537 TaxRoundingOff:887 - Actual tax is
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:45:00.550 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:14.462 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:14.702 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:14.777 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:14.846 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:14.917 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:14.976 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:16.335 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:16.429 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:16.619 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:21.765 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:26.873 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:26.874 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 13:56:31.935 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:54.939 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:55.068 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:55.114 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:55.180 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:55.284 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:55.374 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:56.768 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:56.840 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:26:56.926 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:02.022 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:07.133 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:07.136 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:07.165 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:07.167 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:07.206 TaxRoundingOff:917 - Actual total is 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:07.207 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:27:07.215 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:09.936 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:10.058 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:10.103 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:10.142 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:10.182 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:10.223 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:11.457 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:11.526 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:11.608 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:16.713 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:21.809 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:21.811 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:21.840 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:21.843 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:21.885 TaxRoundingOff:917 - Actual total is 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:21.886 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:31:21.894 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:44.373 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:44.497 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:44.543 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:44.583 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:44.625 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:44.662 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:45.844 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:45.913 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:46.000 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:51.106 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.218 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.220 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.248 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.251 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.309 TaxRoundingOff:917 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.309 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.338 TaxRoundingOff:930 - Expected Balance due is 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.338 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.478 TaxRoundingOff:935 - test $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.480 TaxRoundingOff:937 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 14:43:56.492 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:52.805 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:52.966 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:53.018 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:53.070 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:53.115 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:53.160 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:54.359 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:54.417 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:54.512 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:04:59.613 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.715 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.717 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.745 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.748 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.790 TaxRoundingOff:917 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.790 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.808 TaxRoundingOff:930 - Expected Balance due is 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.809 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.908 TaxRoundingOff:935 - test null
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:05:04.915 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:55.285 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:55.442 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:55.495 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:55.550 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:55.593 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:55.638 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:56.860 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:56.928 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:09:57.035 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:02.140 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.231 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.233 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.263 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.266 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.317 TaxRoundingOff:917 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.318 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.350 TaxRoundingOff:930 - Expected Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.351 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.551 TaxRoundingOff:935 - test null
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:10:07.563 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:14:19.940 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:14:20.206 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:14:20.273 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:10.745 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:10.885 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:10.931 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:10.977 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:11.013 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:11.049 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:12.231 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:12.302 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:12.381 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:17.474 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.576 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.578 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.607 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.610 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.658 TaxRoundingOff:917 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.658 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.682 TaxRoundingOff:930 - Expected Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.682 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.792 TaxRoundingOff:935 - test null
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 15:16:22.800 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:31.426 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:31.567 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:31.614 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:31.657 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:31.698 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:31.735 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:32.921 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:32.993 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:33.076 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:38.175 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.281 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.283 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.311 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.315 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.359 TaxRoundingOff:917 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.359 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.380 TaxRoundingOff:930 - Expected Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.381 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.482 TaxRoundingOff:935 - test $ 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.483 TaxRoundingOff:937 - Actual Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.488 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.595 TaxRoundingOff:948 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.653 TaxRoundingOff:953 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:43.662 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:46:44.750 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:06.881 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:07.022 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:07.076 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:07.136 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:07.189 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:07.244 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:08.512 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:08.589 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:08.670 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:13.761 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.862 TaxRoundingOff:871 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.864 TaxRoundingOff:882 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.893 TaxRoundingOff:889 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.897 TaxRoundingOff:898 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.946 TaxRoundingOff:917 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.947 TaxRoundingOff:919 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.971 TaxRoundingOff:930 - Expected Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:18.971 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:19.085 TaxRoundingOff:935 - test $ 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:19.086 TaxRoundingOff:937 - Actual Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:19.091 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:19.210 TaxRoundingOff:948 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:19.246 TaxRoundingOff:953 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:19.264 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 16:48:20.327 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:02.551 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:02.694 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:02.743 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:02.789 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:02.833 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:02.872 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:04.075 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:04.150 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:04.233 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:09.336 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.452 TaxRoundingOff:880 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.454 TaxRoundingOff:891 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.484 TaxRoundingOff:898 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.492 TaxRoundingOff:907 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.543 TaxRoundingOff:926 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.543 TaxRoundingOff:928 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.566 TaxRoundingOff:939 - Expected Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.567 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.683 TaxRoundingOff:944 - test $ 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.684 TaxRoundingOff:946 - Actual Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.689 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.842 TaxRoundingOff:957 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.872 TaxRoundingOff:962 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:14.884 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:15.965 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:45:16.019 BasePage:330 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:28.090 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:28.281 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:28.342 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:28.389 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:28.431 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:28.471 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:29.686 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:29.749 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:29.865 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:34.961 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.064 TaxRoundingOff:880 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.067 TaxRoundingOff:891 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.098 TaxRoundingOff:898 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.102 TaxRoundingOff:907 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.161 TaxRoundingOff:926 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.162 TaxRoundingOff:928 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.186 TaxRoundingOff:939 - Expected Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.187 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.322 TaxRoundingOff:944 - test $ 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.323 TaxRoundingOff:946 - Actual Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.331 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.500 TaxRoundingOff:957 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.548 TaxRoundingOff:962 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:40.574 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:41.644 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:41.705 BasePage:330 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:41.920 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:41.960 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:41.996 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:42.032 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:42.066 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:43.181 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:43.243 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:43.312 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:48.384 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:53.468 TaxRoundingOff:989 - Exact tax amount is 3.771789
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:53.469 TaxRoundingOff:996 - Expected tax amount is 3.77
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:53.491 TaxRoundingOff:1001 - Actual tax is 3.77
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:53.492 TaxRoundingOff:1010 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 19:54:53.537 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item with exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:40.329 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item with inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:40.608 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:40.676 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:40.748 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:40.812 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:40.879 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:42.180 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:42.264 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:42.401 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:47.536 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.659 TaxRoundingOff:880 - Exact tax amount is 5.921785714285718
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.661 TaxRoundingOff:891 - Expected tax amount is 5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.690 TaxRoundingOff:898 - Actual tax is5.92
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.693 TaxRoundingOff:907 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.753 TaxRoundingOff:926 - Actual total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.754 TaxRoundingOff:928 - Expected total is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.784 TaxRoundingOff:939 - Expected Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:52.785 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:53.025 TaxRoundingOff:944 - test $ 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:53.027 TaxRoundingOff:946 - Actual Balance due is 55.27
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:53.036 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:53.355 TaxRoundingOff:957 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:53.405 TaxRoundingOff:962 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:53.413 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:54.581 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:54.686 BasePage:330 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:55.300 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:55.342 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:55.386 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:55.433 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:55.481 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:56.610 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:56.681 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:05:56.794 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:01.889 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.030 TaxRoundingOff:989 - Exact tax amount is 3.771789
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.031 TaxRoundingOff:996 - Expected tax amount is 3.77
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.059 TaxRoundingOff:1001 - Actual tax is 3.77
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.060 TaxRoundingOff:1010 - RoundOff value is -0.0018
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.120 TaxRoundingOff:1034 - Expected total is 40.55
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.144 TaxRoundingOff:1039 - Actual total is 40.55
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.208 TaxRoundingOff:1048 - Expected Balance due is 40.55
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:07.209 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:08.380 TaxRoundingOff:1056 - Actual Balance due is 40.55
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:08.383 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:08.487 TaxRoundingOff:1109 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:08.522 TaxRoundingOff:1114 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:08.526 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:09.629 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:06:09.723 BasePage:330 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:28.483 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:28.630 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:28.684 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:28.739 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:28.784 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:28.828 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:30.058 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:30.138 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:30.251 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:35.361 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:42:45.526 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:21.679 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:21.822 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:21.878 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:21.933 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:21.977 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:22.022 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:23.237 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:23.301 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:23.392 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:28.494 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:33.564 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:33.928 BasePage:330 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:34.104 TaxRoundingOff:1172 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:34.145 TaxRoundingOff:1177 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:34.153 TaxRoundingOff:1184 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:34.154 TaxRoundingOff:1193 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:34.156 TaxRoundingOff:1199 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 20:50:39.269 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:32.209 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:32.624 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:32.700 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:32.768 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:32.817 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:32.880 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:32.948 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:34.033 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:04:42.149 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:39.671 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:39.906 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:39.984 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:40.111 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:40.160 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:40.225 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:40.296 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:41.418 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:07:49.541 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:22.279 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:22.515 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:22.584 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:22.640 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:22.711 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:22.772 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:24.217 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:24.320 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:24.481 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:29.620 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:34.755 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:35.203 BasePage:330 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:35.388 BasePage:305 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:35.601 TaxRoundingOff:1179 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:35.643 TaxRoundingOff:1184 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:35.650 TaxRoundingOff:1191 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:35.651 TaxRoundingOff:1200 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:35.652 TaxRoundingOff:1206 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:09:40.716 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:14:06.280 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:14:06.645 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:14:36.757 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:14.973 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:15.304 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:15.377 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:15.453 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:15.520 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:15.595 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:17.108 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:17.193 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:17.385 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:22.505 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:27.595 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:27.930 BasePage:330 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.022 BasePage:305 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.191 TaxRoundingOff:1179 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.237 TaxRoundingOff:1184 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.243 TaxRoundingOff:1191 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.244 TaxRoundingOff:1200 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.244 TaxRoundingOff:1206 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.275 TaxRoundingOff:1211 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:28.277 TaxRoundingOff:1220 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:17:33.323 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:18.884 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:19.048 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:19.112 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:19.173 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:19.229 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:19.285 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:20.599 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:20.658 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:20.745 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:25.835 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:30.908 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.265 BasePage:330 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.460 BasePage:305 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.700 TaxRoundingOff:1179 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.733 TaxRoundingOff:1184 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.736 TaxRoundingOff:1191 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.737 TaxRoundingOff:1200 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.738 TaxRoundingOff:1206 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.765 TaxRoundingOff:1211 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.765 TaxRoundingOff:1220 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.790 TaxRoundingOff:1231 - Tax is $ 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.791 TaxRoundingOff:1242 - Expected total is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.813 TaxRoundingOff:1247 - Actual total is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.864 TaxRoundingOff:1265 - Expected Balance due is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:31.865 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:32.046 TaxRoundingOff:1272 - Actual Balance due is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:32.053 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:32.191 TaxRoundingOff:1297 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:19:37.252 Hooks:56 - Failed Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:49.557 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (exclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:49.814 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:49.870 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:49.961 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:50.042 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:50.111 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:51.377 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:51.443 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:51.557 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:21:56.693 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:01.782 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.065 BasePage:330 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.186 BasePage:305 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.308 TaxRoundingOff:1179 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.341 TaxRoundingOff:1184 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.345 TaxRoundingOff:1191 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.346 TaxRoundingOff:1200 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.347 TaxRoundingOff:1206 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.376 TaxRoundingOff:1211 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.377 TaxRoundingOff:1220 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.404 TaxRoundingOff:1231 - Tax is $ 2.45
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.405 TaxRoundingOff:1242 - Expected total is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.437 TaxRoundingOff:1247 - Actual total is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.503 TaxRoundingOff:1265 - Expected Balance due is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.504 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.665 TaxRoundingOff:1272 - Actual Balance due is 41.83
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.671 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.792 TaxRoundingOff:1297 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.831 TaxRoundingOff:1302 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:02.833 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:03.920 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:22:03.978 BasePage:330 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:56.515 Hooks:44 - Start Scenario Name : Check tax and RoundOff value for menu item when item discount is applied (inclusive)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:56.742 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:56.799 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:56.856 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:56.921 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:56.980 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:58.309 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:58.397 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:35:58.559 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:03.707 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:08.872 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.400 BasePage:330 - 30% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.527 BasePage:305 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.710 TaxRoundingOff:1336 - Discount amount is 14.24
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.712 TaxRoundingOff:1341 - subtotal after discount is 33.23
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.713 TaxRoundingOff:1351 - Exact tax amount is 4.276440707501958
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.720 TaxRoundingOff:1360 - Expected tax amount is 4.28
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.806 TaxRoundingOff:1365 - Actual tax is 4.28
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.810 TaxRoundingOff:1374 - RoundOff value is 0.0036
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.820 TaxRoundingOff:1386 - Expected total is 33.23
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.905 TaxRoundingOff:1391 - Actual total is 33.23
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.954 TaxRoundingOff:1402 - Expected Balance due is 33.23
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:09.956 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:11.226 TaxRoundingOff:1410 - Actual Balance due is 33.23
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:11.242 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:11.412 TaxRoundingOff:1419 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:11.440 TaxRoundingOff:1424 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:11.453 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:12.571 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:36:12.784 BasePage:330 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:38.182 Hooks:44 - Start Scenario Name : Check RoundOff value for menu item (check tax)
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:38.673 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:38.742 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:38.804 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:38.873 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:38.952 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:40.329 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:40.444 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:40.663 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:45.880 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.017 TaxRoundingOff:1564 - Exact tax amount is 26.5355856
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.021 TaxRoundingOff:1570 - Expected tax amount is 26.54
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.064 TaxRoundingOff:1575 - Actual tax is 26.54
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.068 TaxRoundingOff:1584 - RoundOff value is 0.0044
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.138 TaxRoundingOff:1042 - Expected total is 239.78
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.173 TaxRoundingOff:1047 - Actual total is 239.78
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.227 TaxRoundingOff:1056 - Expected Balance due is 239.78
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:51.229 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:52.423 TaxRoundingOff:1064 - Actual Balance due is 239.78
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:52.434 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:52.631 TaxRoundingOff:1117 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:52.686 TaxRoundingOff:1122 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:52.697 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:53.924 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 21:42:54.025 BasePage:330 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:31:03.535 Hooks:44 - Start Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:31:03.695 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:31:33.801 Hooks:56 - Failed Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:37:40.534 Hooks:44 - Start Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:37:40.674 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:37:51.344 Hooks:56 - Failed Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:46.438 Hooks:44 - Start Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:46.609 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:46.669 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:46.723 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:46.771 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:46.816 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:48.037 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:48.095 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:48.188 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:53.280 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.393 TaxRoundingOff:3683 - Exact tax1 amount is 5.925339
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.394 TaxRoundingOff:3695 - Exclusive tax amount is 5.93
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.395 TaxRoundingOff:3702 - RoundOff value for exclusive is 0.0047
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.412 TaxRoundingOff:3712 - Exact tax2 amount is 6.2459293613985025
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.413 TaxRoundingOff:3720 - test1 6.25
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.413 TaxRoundingOff:3723 - Inclusive tax amount is 6.25
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.414 TaxRoundingOff:3749 - Total tax is 12.17
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.414 TaxRoundingOff:3755 - New Roundoff is -0.0012
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.441 TaxRoundingOff:3762 - Actual tax is 12.17
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.468 TaxRoundingOff:1848 - Expected total amount is 63.71
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.486 TaxRoundingOff:1853 - Actual total is 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:39:58.495 Hooks:56 - Failed Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:42:36.172 Hooks:56 - Failed Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:02.642 Hooks:44 - Start Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:02.765 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:02.813 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:02.854 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:02.891 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:02.926 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:04.111 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:04.180 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:04.260 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:09.354 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.455 TaxRoundingOff:3683 - Exact tax1 amount is 5.925339
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.456 TaxRoundingOff:3695 - Exclusive tax amount is 5.93
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.457 TaxRoundingOff:3702 - RoundOff value for exclusive is 0.0047
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.474 TaxRoundingOff:3712 - Exact tax2 amount is 6.2459293613985025
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.474 TaxRoundingOff:3720 - test1 6.25
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.475 TaxRoundingOff:3723 - Inclusive tax amount is 6.25
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.475 TaxRoundingOff:3749 - Total tax is 12.17
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.476 TaxRoundingOff:3755 - New Roundoff is -0.0012
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.501 TaxRoundingOff:3762 - Actual tax is 12.17
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.524 TaxRoundingOff:1848 - Expected total amount is 63.71
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.548 TaxRoundingOff:1853 - Actual total is 63.70
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:45:14.556 Hooks:56 - Failed Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:29.461 Hooks:44 - Start Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax with discount
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:29.606 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:29.659 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:29.711 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:29.764 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:29.809 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:31.047 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:31.116 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:31.269 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:36.376 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.455 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.784 BasePage:330 - 22% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.909 TaxRoundingOff:1893 - Discount amount is 12.71
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.909 TaxRoundingOff:1898 - subtotal after discount is 45.07
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.910 TaxRoundingOff:1908 - Exact Tax1 is 4.6219285
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.910 TaxRoundingOff:1917 - Exclusive Tax is 4.62
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.911 TaxRoundingOff:1924 - RoundOff value for exclusive tax is -0.0019
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.911 TaxRoundingOff:1931 - Exact Tax2 is 4.87199785943632
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.912 TaxRoundingOff:1941 - Inclusive tax amount is 4.87
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.913 TaxRoundingOff:1964 - New Roundoff is -0.0039
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.914 TaxRoundingOff:1972 - Expected tax is 9.49
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.941 TaxRoundingOff:1978 - Actual tax is 9.49
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.945 TaxRoundingOff:2000 - Expected total amount is 49.69
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:41.980 TaxRoundingOff:2005 - Actual total is 49.69
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:42.008 TaxRoundingOff:1402 - Expected Balance due is 49.69
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:42.008 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:50:43.106 Hooks:56 - Failed Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax with discount
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:03.984 Hooks:44 - Start Scenario Name : Check RoundOff value for menu item with both inclusive and exclusive tax with discount
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:04.164 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:04.222 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:04.282 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:04.328 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:04.371 BasePage:305 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:05.674 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:05.738 BasePage:305 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:05.836 BasePage:330 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:10.931 BasePage:330 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.005 BasePage:305 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.273 BasePage:330 - 22% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.398 BasePage:305 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.487 TaxRoundingOff:1893 - Discount amount is 12.71
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.488 TaxRoundingOff:1898 - subtotal after discount is 45.07
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.488 TaxRoundingOff:1908 - Exact Tax1 is 4.6219285
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.489 TaxRoundingOff:1917 - Exclusive Tax is 4.62
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.489 TaxRoundingOff:1924 - RoundOff value for exclusive tax is -0.0019
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.490 TaxRoundingOff:1931 - Exact Tax2 is 4.87199785943632
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.490 TaxRoundingOff:1941 - Inclusive tax amount is 4.87
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.491 TaxRoundingOff:1964 - New Roundoff is -0.0039
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.491 TaxRoundingOff:1972 - Expected tax is 9.49
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.519 TaxRoundingOff:1978 - Actual tax is 9.49
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.523 TaxRoundingOff:2000 - Expected total amount is 49.69
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.551 TaxRoundingOff:2005 - Actual total is 49.69
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.576 TaxRoundingOff:1402 - Expected Balance due is 49.69
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:16.577 BasePage:330 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:17.713 TaxRoundingOff:1410 - Actual Balance due is 49.69
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:17.716 BasePage:330 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:17.814 TaxRoundingOff:1419 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:17.871 TaxRoundingOff:1424 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:17.873 BasePage:330 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:18.955 BasePage:305 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-12 22:52:19.014 BasePage:330 - Tapped log Off Button

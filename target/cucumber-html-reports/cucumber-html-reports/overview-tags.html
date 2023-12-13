@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@MainBAsic", ] ,
+        labels:  [ "@TaxRoundOff",  "@basicTaxScenarios", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 0.00, ] 
+                data:  [ 95.56,  95.56, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00, ] 
+                data:  [ 1.11,  1.11, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 100.00, ] 
+                data:  [ 3.33,  3.33, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>07 Dec 2023, 19:12</td>
+      <td>13 Dec 2023, 12:45</td>
     </tr>
   </tbody>
 </table>
@@ -195,20 +195,37 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_4180174260.html">@MainBAsic</a></td>
+        <td class="tagname"><a href="report-tag_1530116459.html">@TaxRoundOff</a></td>
 
+        <td      class="passed"    >86</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >13</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">13</td>
+        <td class="total">90</td>
 
-        <td >0</td>
+        <td  class="passed"    >9</td>
         <td  class="failed"    >1</td>
-        <td class="total">1</td>
+        <td class="total">10</td>
 
-        <td class="duration" data-value="41625300">0.041</td>
+        <td class="duration" data-value="125304642000">2:5.304</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2377296517.html">@basicTaxScenarios</a></td>
+
+        <td      class="passed"    >86</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">90</td>
+
+        <td  class="passed"    >9</td>
+        <td  class="failed"    >1</td>
+        <td class="total">10</td>
+
+        <td class="duration" data-value="125304642000">2:5.304</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -216,30 +233,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
+      <td>172</td>
+      <td>2</td>
+      <td>6</td>
       <td>0</td>
       <td>0</td>
-      <td>13</td>
-      <td>0</td>
-      <td>0</td>
-      <td>13</td>
+      <td>180</td>
 
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>9</td>
+      <td>11</td>
+      <td>20</td>
 
-      <td class="duration">0.041</td>
-      <td>1</td>
+      <td class="duration">4:10.609</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>95.56%</td>
+      <td>1.11%</td>
+      <td>3.33%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>45.00%</td>
+      <td>55.00%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>
