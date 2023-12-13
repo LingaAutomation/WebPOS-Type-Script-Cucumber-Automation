@@ -185,7 +185,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "Delete_Seats")
     private WebElement delSeats;
 
-    @FindBy(xpath = "finish" )
+    @FindBy(xpath = "//button[contains(.,'Finish')]")
     private WebElement finishOrderBtn;
 
     @FindBy(xpath = "//div[.='Option']")

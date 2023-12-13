@@ -78,13 +78,13 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     @FindBy(xpath = "Gratuity")
     WebElement gratuity;
 
-    @FindBy(xpath = "Gratuity")
+    @FindBy(xpath = "//label[.='Gratuity']")
     WebElement gratuityBtn;
 
     @FindBy(xpath = "Add Gratuity")
     WebElement addGratuityScreen;
 
-    @FindBy(xpath = "Fixed Gratuity")
+    @FindBy(xpath = "//button[contains(.,'Fixed Gratuity')]")
     WebElement gratuityFixedBtn;
 
     @FindBy(xpath = "Gratuity Varying")
@@ -588,19 +588,19 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public void verifyFixedGratuityAmount() {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subTotalOfMenuTxt = subTotalOfMenu.getText();
+        WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalOfMenuTxt = subTotalOfMenu.getAttribute("value");
         String subTotalOfMenuTxt1 = subTotalOfMenuTxt.replaceAll("[$A-Z,.]", "");
         double subDouble = Double.parseDouble(subTotalOfMenuTxt1);
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxTxt = tax.getText();
+        WebElement tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxTxt = tax.getAttribute("value");
         String taxTxt1 = taxTxt.replaceAll("[$A-Z,.]", "");
-        WebElement fixedGratuity = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String fixedGratuityTxt = fixedGratuity.getText();
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String totalTxt = Total.getText();
-        WebElement cashOption = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]"));
-        String cashOptionTxt = cashOption.getText();
+        WebElement fixedGratuity = (WebElement) driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
+        String fixedGratuityTxt = fixedGratuity.getAttribute("value");
+        WebElement Total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalTxt = Total.getAttribute("value");
+        WebElement cashOption = (WebElement) driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input"));
+        String cashOptionTxt = cashOption.getAttribute("value");;
         String totalTxt1 = totalTxt.replaceAll("[$A-Z,.]", "");
         double totalDouble = Double.parseDouble(totalTxt1);
         String subTotal1 = subTotalOfMenuTxt.replaceAll("[$A-Z,.]", "");
@@ -613,9 +613,9 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
         String percentage2 = "$ " + percentage1;
 
-        utils.log().info("Subtotal Of Menu - " + subTotalOfMenuTxt);
+//        utils.log().info("Subtotal Of Menu - " + subTotalOfMenuTxt);
 
-        utils.log().info("Tax of Menu - " + taxTxt);
+//        utils.log().info("Tax of Menu - " + taxTxt);
 
         double taxDouble = Double.parseDouble(taxTxt1);
         BigDecimal dd = new BigDecimal(percentage1).setScale(2, RoundingMode.HALF_UP);
@@ -624,12 +624,12 @@ public class CheckOptionsScreen extends OrderManagementScreen {
         String percentage3 = String.valueOf(a);
         String Percentage4 = "$ " + percentage3;
 
-        utils.log().info("Expected Gratuity Of Menu - " + fixedGratuityTxt);
+//        utils.log().info("Expected Gratuity Of Menu - " + fixedGratuityTxt);
 
         if (fixedGratuityTxt.equalsIgnoreCase(Percentage4)) {
-            utils.log().info("Actual Fixed Gratuity is same with Expected Fixed Gratuity - " + Percentage4);
+//            utils.log().info("Actual Fixed Gratuity is same with Expected Fixed Gratuity - " + Percentage4);
         } else {
-            utils.log().info("Actual Fixed Gratuity is NOT same with Expected Fixed Gratuity - " + Percentage4);
+//            utils.log().info("Actual Fixed Gratuity is NOT same with Expected Fixed Gratuity - " + Percentage4);
         }
 
 
@@ -641,8 +641,8 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 //            utils.log().info("Total of Menu is not Correct - $ "+totalVerify);
 //        }
 
-        utils.log().info("Total Of Menu - " + totalTxt);
-        utils.log().info("Cash option Of Menu - " + cashOptionTxt);
+//        utils.log().info("Total Of Menu - " + totalTxt);
+//        utils.log().info("Cash option Of Menu - " + cashOptionTxt);
     }
 
     public void verifyGratuityVarying() {

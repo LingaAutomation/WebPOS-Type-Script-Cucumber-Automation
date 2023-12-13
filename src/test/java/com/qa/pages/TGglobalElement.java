@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 
 public class TGglobalElement {
 
+
+
     public By secondBarTabCheck = By.xpath("(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[1]");
     //Discount
     public By discountPercentage = By.xpath("//XCUIElementTypeStaticText[@name=\"10%\"]");
@@ -3055,10 +3057,10 @@ public class TGglobalElement {
 
     // 04 July 2022
     public By allTabInQSR = By.xpath("//XCUIElementTypeButton[@name=\"All\"]");
-    public By tableLayoutTab = By.xpath("//XCUIElementTypeButton[@name=\"Table Layout\"]");
+    public By tableLayoutTab = By.xpath("//button[contains(.,'Table layout')]");
     public By tables = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton");
     public By selectTheNumberOfTable = By.xpath("//XCUIElementTypeButton[@name=\"1\"]");
-    public By transferBtn = By.id("Transfer");
+    public By transferBtn = By.xpath("//button[contains(.,'Transfer')]");
     public By transferToServerBtn = By.id("Transfer to Server");
     public By transferToTableBtn = By.id("Transfer to Table");
     public By transferItemBtn = By.id("Transfer Item");

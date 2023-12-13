@@ -18,7 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class TestUtils {
 
@@ -43,6 +42,8 @@ public class TestUtils {
     public static final long driverWAIT = 5;
     public static String modifiers=" ";
     public static String tableNumberof = " ";
+    public static String tableNumberof01 = " ";
+    public static String tableNumberof02 = " ";
     public static String tableNumberof1 = " ";
     public static String amountTxt=" ";
     public static String cashTxt=" ";

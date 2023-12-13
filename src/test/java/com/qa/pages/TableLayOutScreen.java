@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -18,7 +19,12 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public WebDriver driver = TestUtils.driver;
 
     public TableLayOutScreen(WebDriver driver) {
+
         super(driver);
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
     }
     @FindBy(xpath = "Continue")
     private WebElement continueBtn;

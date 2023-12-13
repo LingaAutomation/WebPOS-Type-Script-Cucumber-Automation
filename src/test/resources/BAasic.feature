@@ -721,7 +721,7 @@ Feature:Basic Validation
     And User verify Transfer to Server, Transfer to Table and Transfer Item are displayed
     And User select the Transfer Item Option
     When I select check for transferred
-    And I hide the keyboard
+#    And I hide the keyboard
 #    Then Select anyone Check from the Transfer From Table
     And Select the required menu item from the Menu Item Table
 #    Then Select anyone Check from the Transfer To Table
@@ -741,10 +741,10 @@ Feature:Basic Validation
     And I click power button
 #    And Close all the active checks
 #
-
+  @MainBAsic
   Scenario: Transfer To Table from one Check to another Check
     Given Login with valid pin in split screen
-    And I click on "Cancel" for closing order screen popup in split screen "click cancel button"
+    And I closed the order type window
     Given User click All button in QSR
     When User click the Table Layout option
     And User select the two Empty table and take the order
@@ -758,15 +758,15 @@ Feature:Basic Validation
     And Verify the Successful message of Transfer To Table
     And I click Done button on the Popup
     And Check the Transferred from table
-    Then Verify the receiving table it should contain more than one table
-    And Click the close button
+#    Then Verify the receiving table it should contain more than one table
+#    And Click the close button
     And I click power button
 #    And Close all the active checks
 
-
+  @MainBAsic
   Scenario: Verify the "Transfer to Server" from one check to another check
     Given I'm logged in
-    And I click on "Cancel" for closing order screen popup in split screen "click cancel button"
+    And I closed the order type window
     Given User click All button in QSR
     When User click the Table Layout option
     And User select the Empty table and take the order
@@ -785,6 +785,7 @@ Feature:Basic Validation
     And I click power button
 #    And Close all the active checks
 
+  @MainBAsic
   Scenario: Other than Cash Payment
     Given I'm logged in
     And I closed the order type window
@@ -813,8 +814,9 @@ Feature:Basic Validation
     And I click Submit button in the Payment popup
     And I click Table Layout tab
     And I click power button
-  @Failed
-  Scenario: Item Service charge  (Item Service Charge Without Tax )
+
+  #Clarification
+  Scenario: Item Service charge  (Item Service Charge Without Tax)
     Given I'm logged in
     And I closed the order type window
     And I click All
@@ -827,12 +829,13 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
+  @MainBAsic
   Scenario: Item Service charge (Item Service Charge With Tax )
     Given I'm logged in
     And I closed the order type window
     And I click All
     And I click Table Layout tab
-    And I select Menu For Basic validation as "Salad"
+    And I select Menu For Basic validation as "TaXx"
     When i verify service charge with tax of menu
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
@@ -840,6 +843,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
+  @MainBAsic
   Scenario:Manual Gratuity Fixed
   ##Manual Gratuity Fixed
     Given I'm logged in

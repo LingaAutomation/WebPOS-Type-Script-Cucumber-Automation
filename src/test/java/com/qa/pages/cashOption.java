@@ -52,14 +52,14 @@ public class cashOption extends TillManagementScreen{
     }
 
     public void verifyCardOptionApplied(){
-        WebElement cashOption = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[3]"));
+        WebElement cashOption = (WebElement) driver.findElement(By.xpath("//ion-row[contains(@class,'slideList')]//ion-col[3]\n"));
         String cashOptionTxt = cashOption.getText();
-        WebElement noDue = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1]"));
+        WebElement noDue = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'balance')]//p/label[2])[1]"));
         String noDueTxt = noDue.getText();
         if(cashOptionTxt.equalsIgnoreCase(TestUtils.BalanceCardAmount)){
-            utils.log().info("Cash Price is Selected - "+cashOptionTxt+" No Due - "+noDueTxt);
+//            utils.log().info("Cash Price is Selected - "+cashOptionTxt+" No Due - "+noDueTxt);
         }else{
-            utils.log().info("Cash Price is NOT Selected");
+//            utils.log().info("Cash Price is NOT Selected");
         }
     }
     public void verifyPaidAmountForCash(){
@@ -74,12 +74,12 @@ public class cashOption extends TillManagementScreen{
     }
 
     public void verifyPaidAmountForCard(){
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
+        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
         String paidAmountTxt = paidAmount.getText();
         if(paidAmountTxt.equalsIgnoreCase(TestUtils.cashOptionPaymentScreen)){
-            utils.log().info("Paid Amount is same with Cash option Amount - "+paidAmountTxt);
+//            utils.log().info("Paid Amount is same with Cash option Amount - "+paidAmountTxt);
         }else{
-            utils.log().info("Paid Amount is same with Card Amount - "+paidAmountTxt);
+//            utils.log().info("Paid Amount is same with Card Amount - "+paidAmountTxt);
         }
 
     }
@@ -133,14 +133,14 @@ public class cashOption extends TillManagementScreen{
 
     public void getServiceChargeWithTax(){
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subTotalOfMenuTxt = subTotalOfMenu.getText();
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxTxt = tax.getText();
-        WebElement serviceCharge = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String serviceChargeTxt = serviceCharge.getText();
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String totalTxt = Total.getText();
+        WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalOfMenuTxt = subTotalOfMenu.getAttribute("value");
+        WebElement tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxTxt = tax.getAttribute("value");
+        WebElement serviceCharge = (WebElement) driver.findElement(By.xpath("//div[@id='os_serviceChargeStr']//input"));
+        String serviceChargeTxt = serviceCharge.getAttribute("value");
+        WebElement Total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalTxt = Total.getAttribute("value");
         String serviceTax = subTotalOfMenuTxt.replaceAll("[$A-Z,.]","");
 
         double serviceTax1 = Double.parseDouble(serviceTax);
@@ -151,23 +151,23 @@ public class cashOption extends TillManagementScreen{
 
         String percentage2 = "$ "+percentage1;
 
-        utils.log().info("Subtotal Of Menu - "+subTotalOfMenuTxt);
+//        utils.log().info("Subtotal Of Menu - "+subTotalOfMenuTxt);
 
         double taxPercentage = (percentage*10)/100;
 
         double taxCalculation = taxPercentage+percentage;
-        utils.log().info(" Divide 10 Percentage from service charge "+taxPercentage);
+//        utils.log().info(" Divide 10 Percentage from service charge "+taxPercentage);
         String taxPercentageTxt = String.valueOf(taxCalculation);
-        utils.log().info("Tax Percentage of Menu - $ "+taxPercentageTxt);
+//        utils.log().info("Tax Percentage of Menu - $ "+taxPercentageTxt);
         //  utils.log().info("Tax Of Menu - "+taxTxt);
-        utils.log().info("Expected Service Charge Of Menu - "+serviceChargeTxt);
+//        utils.log().info("Expected Service Charge Of Menu - "+serviceChargeTxt);
 
         if(serviceChargeTxt.equalsIgnoreCase(percentage2)){
-            utils.log().info("Actual Service Charge Of Menu (With Tax)-  "+percentage2);
+//            utils.log().info("Actual Service Charge Of Menu (With Tax)-  "+percentage2);
         }else{
-            utils.log().info("Actual Service Charge Of Menu is not Equal (With Tax)  "+percentage2);
+//            utils.log().info("Actual Service Charge Of Menu is not Equal (With Tax)  "+percentage2);
         }
-        utils.log().info("Total of Menu - "+totalTxt);
+//        utils.log().info("Total of Menu - "+totalTxt);
 
 
         // int subtotal=subTotalOfMenuTxt.replace(".","");

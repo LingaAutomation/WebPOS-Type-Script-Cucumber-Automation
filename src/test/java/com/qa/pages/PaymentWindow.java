@@ -8,6 +8,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.List;
@@ -17,7 +19,12 @@ import java.util.concurrent.TimeUnit;
 public class PaymentWindow extends OrderManagementScreen{
 
     public PaymentWindow(WebDriver driver) {
+
         super(TestUtils.driver);
+
+            this.driver = TestUtils.driver;
+
+            PageFactory.initElements(this.driver,this);
     }
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")

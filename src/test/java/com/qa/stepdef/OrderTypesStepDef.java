@@ -1,14 +1,12 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
-import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.messages.Messages;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
+
 import static com.qa.utils.TestUtils.driver;
 
 public class OrderTypesStepDef {
@@ -407,15 +405,20 @@ public class OrderTypesStepDef {
         }
 
         @And("^User select the two Empty table and take the order$")
-        public void userSelectTheEmptyTableFromTheList() throws InterruptedException {
-            for(int i = 1; i<= 2; i++)
-            {
+        public void userSelectTheEmptyTableFromTheList() throws Exception {
+
                 new CheckAndItemTransfer().clickTheEmptyTableFromTheListOfTable();
                 Thread.sleep(3000);
                 new CheckAndItemTransfer().selectTheNumberOfSeatAndClickContinue();
                 Thread.sleep(3000);
                 new CheckAndItemTransfer().selectTheMenuRandomly();
-            }
+
+               new CheckAndItemTransfer().clickTheEmptyTableFromTheListOfTable();
+               Thread.sleep(3000);
+               new CheckAndItemTransfer().selectTheNumberOfSeatAndClickContinue();
+               Thread.sleep(3000);
+               new CheckAndItemTransfer().selectTheMenuRandomly1();
+
 
         }
 
@@ -548,7 +551,7 @@ public class OrderTypesStepDef {
         }
 
         @And("^User select the Empty table and take the order$")
-        public void userSelectTheEmptyTableAndTakeTheOrder() throws InterruptedException {
+        public void userSelectTheEmptyTableAndTakeTheOrder() throws Exception {
             new CheckAndItemTransfer().clickTheEmptyTableFromTheListOfTable();
             Thread.sleep(3000);
             new CheckAndItemTransfer().selectTheNumberOfSeatAndClickContinue();
