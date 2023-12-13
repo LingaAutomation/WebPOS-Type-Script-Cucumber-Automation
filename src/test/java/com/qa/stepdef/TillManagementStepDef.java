@@ -241,7 +241,7 @@ public class TillManagementStepDef {
     }
 
     @And ("^I click reports button in the Till management screen$")
-    public void iClickReportsButtonInTheTillManagementScreen(){
+    public void iClickReportsButtonInTheTillManagementScreen() throws InterruptedException {
         new TillManagementScreen(driver).clickReportsBtn();
     }
 

@@ -7,13 +7,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import static com.qa.utils.TestUtils.driver;
 public class CashOptionStepDef {
 
     public WebDriver driver = TestUtils.driver;
 
     @And("^I get the cash option value and add with menu total$")
-    public void iGetTheCashOptionValueAndWithMenuTotal(){
+    public void iGetTheCashOptionValueAndWithMenuTotal() throws InterruptedException {
         new TillManagementScreen(driver).getDetailsOfCashOption();
     }
 

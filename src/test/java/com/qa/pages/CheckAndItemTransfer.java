@@ -38,7 +38,7 @@ public class CheckAndItemTransfer extends BasePage{
     private WebElement doneButton;
 
     public void clickTheAllButtonInQSRScreen(){
-        WebElement element = mergeAndFindMobileElement(allTabInQSR);
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'All')]"));
         elementClick(element,"Click the All button in QSR Screen");
     }
 

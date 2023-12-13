@@ -41,7 +41,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "Hold item(s) has to be sent to kitchen")
     WebElement holdItemSendToKitchen;
 
-    @FindBy(xpath = "  Exit")
+    @FindBy(xpath = "//button[@id='ps_exit']")
     WebElement exitBtn;
 
     @FindBy (xpath = "//XCUIElementTypeButton[@name=\"  Adjust\"]")

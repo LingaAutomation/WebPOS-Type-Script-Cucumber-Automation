@@ -383,9 +383,9 @@ public class TGSplitCheckPage extends BasePage{
     }
 
     public void commonAccessibilityId(String id,String msg){
-//        WebElement element = mergeAndFindElement(id, "", TestUtils.Accessibility);
-//        elementClick(element,msg);
-        findandclick(id, "", TestUtils.Accessibility);
+        WebElement element = driver.findElement(By.xpath("ef"));
+        elementClick(element,msg);
+//        findandclick(id, "", TestUtils.Accessibility);
     }
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"6\"])[1]")
     WebElement pin6Time1;

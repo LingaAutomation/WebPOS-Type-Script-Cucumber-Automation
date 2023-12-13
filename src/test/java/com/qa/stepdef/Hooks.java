@@ -1,24 +1,18 @@
 package com.qa.stepdef;
 
 
-import com.qa.pages.DriverSteup;
-import com.qa.utils.*;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import com.qa.utils.CapabilitiesManager;
+import com.qa.utils.TestUtils;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.ThreadContext;
 import org.junit.Assume;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
 import java.io.IOException;
-import com.qa.utils.TestUtils;
-import java.security.PublicKey;
 
 import static com.qa.utils.TestUtils.driver;
 
@@ -41,7 +35,7 @@ public class Hooks {
             CapabilitiesManager setdf = new CapabilitiesManager();
             setdf.setup();
             ScenarioName = scenario.getName();
-//            utils.log().info("Start Scenario Name : " + ScenarioName);
+            utils.log().info("Start Scenario Name : " + ScenarioName);
 
         }
         i++;

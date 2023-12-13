@@ -7616,15 +7616,15 @@ public class Regression extends TableLayOutScreen {
     public void verifyTheCannotCloseTheShiftStoreHaveTheActiveCheck() {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         try {
-            if (!cashierOutfullyPopup.isDisplayed()) {
+            if (cashierOutfullyPopup.isDisplayed()) {
 //                utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
 //                elementClick(Done1, "Tapped Done Button on the Popup");
             }
         } catch (Exception z) {
-            WebElement cashBtn = driver.findElement(By.xpath("//ion-grid[contains(@class,'cashierout-content')]//ion-row//ion-col//button//span[contains(.,'Cash')]"));
-            elementClick(cashBtn, "Selected - " + cashBtn.getText());
-//            utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
-            elementClick(Done1, "Tapped Done Button on the Popup");
+//            WebElement cashBtn = driver.findElement(By.xpath("//ion-grid[contains(@class,'cashierout-content')]//ion-row//ion-col//button//span[contains(.,'Cash')]"));
+//            elementClick(cashBtn, "Selected - " + cashBtn.getText());
+////            utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
+//            elementClick(Done1, "Tapped Done Button on the Popup");
         }
     }
 }

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OpenTillWindow extends TillManagementScreen{
 
-    public WebDriver driver;
+    public WebDriver driver = TestUtils.driver;
 
     public OpenTillWindow() {
         super(TestUtils.driver);

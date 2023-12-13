@@ -578,11 +578,13 @@ Feature:Basic Validation
     And I get the closed till check details
     And I click power button
 
-  @Failed0
+  @MainBAsic
   Scenario: Global Till
     Given I'm logged in
     And I closed the order type window
-    And I click counting machine icon
+#    And I click counting machine icon
+    And I click on the Settings button
+    And I click on the Till Management button
     When I verify till is available or not if available closed the till
 ## 16. Navigate to the Till Management screen
 #  And I click Set Till button
@@ -674,7 +676,8 @@ Feature:Basic Validation
     And I click Closed till button
     And I get the closed till check details
     And I click power button
-  @Failed
+
+  @MainBAsic
   Scenario:Verify the Cash Discount charge for the check
     Given I'm logged in
     And I closed the order type window
@@ -702,10 +705,10 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-
+  @MainBAsic
   Scenario: Transfer Item from one Check to another Check
     Given Login with valid pin in split screen
-    And I click on "Cancel" for closing order screen popup in split screen "click cancel button"
+    And I closed the order type window
     Given User click All button in QSR
     When User click the Table Layout option
 

@@ -533,7 +533,7 @@ public String totalOfActiveTillTxt = " ";
     WebElement overShortageTxt;
     public String verifyOverShortagePopup(){
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement amountOfDiscrepency = (WebElement) driver.findElement(By.xpath("//ion-title[contains(.,'Over Shortage')]"));
+        WebElement amountOfDiscrepency = driver.findElement(By.xpath("//ion-title[contains(.,'Over Shortage')]"));
         String discrepencyAmount = amountOfDiscrepency.getText();
 //        utils.log().info("Discrepancy Amount - "+discrepencyAmount);
         return elementGetText(overShortageTxt,"Popup As - ");
@@ -545,7 +545,6 @@ public String totalOfActiveTillTxt = " ";
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
         WebElement notes = (WebElement) driver.findElement(By.xpath("//textarea[contains(@id,'mat-input')]"));
         sendKeys(notes,"The amount should greater than the amount which is in Balance amount ");
-
 //            IOSDriver<WebElement> AD= (IOSDriver) driver;
 //            AD.getKeyboard().sendKeys(Keys.RETURN);
 //        elementClick(btn_hideKeyboard,"Tapped Down");
@@ -566,23 +565,23 @@ public String totalOfActiveTillTxt = " ";
 
     public void enterSmallerAmountThanBalanceAmount(){
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        WebElement cashExpect = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
+        WebElement cashExpect = (WebElement) driver.findElement(By.xpath("//ion-toolbar//ion-title[contains(@class,'title-default')]/..//span[@slot='end']"));
         String cashExpectTxt = cashExpect.getText();
         //  utils.log().info(cashExpectTxt);
         String amount = cashExpectTxt.replaceAll("\\p{Punct}","");
         int count = Integer.parseInt(amount);
         int cashTotalNumber = count-1000;
-        utils.log().info("Small balance - "+cashTotalNumber);
+//        utils.log().info("Small balance - "+cashTotalNumber);
         String cashTotal = String.valueOf(cashTotalNumber);
         int sizeofamount = cashTotal.length();
-        utils.log().info(String.valueOf(sizeofamount));
+//        utils.log().info(String.valueOf(sizeofamount));
         for(int i =0;i<sizeofamount;i++) {
 
             char money = cashTotal.charAt(i);
             String moneyTxt = String.valueOf(money);
 
             try {
-                WebElement text = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + moneyTxt + "\"]"));
+                WebElement text = (WebElement) driver.findElement(By.xpath("//ion-grid[@class='numberpad_grid md hydrated']//ion-row//ion-col//button//span[contains(.,'"+moneyTxt+"')]"));
                 elementClick(text, "Selected - " + moneyTxt);
             }catch (Exception h){
 
@@ -685,12 +684,12 @@ public String totalOfActiveTillTxt = " ";
     public String getCalculationsOfCashDiscountForDollar(){
 
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        WebElement option = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
+        WebElement option = (WebElement) driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input"));
         String cashOptionTxt = option.getText();
-        WebElement total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
+        WebElement total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
         String totalTxt = total.getText();
         String cashTxt1 = cashOptionTxt.replaceAll("[$A-Z,.]","");
-        utils.log().info(cashTxt1);
+//        utils.log().info(cashTxt1);
         //String cashTxt2 = cashTxt1.replace(".","");
         // String cashTxt2 = cashTxt3.replaceAll(",",".");
         //   MathContext mc = new MathContext(3);
@@ -704,9 +703,9 @@ public String totalOfActiveTillTxt = " ";
         //String percentageOfDiscountTxt = percentageOfDiscount.replace(".",",");
 
         percentageOfDiscountTxt1 = "$ "+percentageOfDiscount;
-        utils.log().info("Discount Amount  - "+percentageOfDiscountTxt1);
+//        utils.log().info("Discount Amount  - "+percentageOfDiscountTxt1);
         TestUtils.CashDiscountCalculation = percentageOfDiscountTxt1;
-        utils.log().info("Cash Price with 5% discount - "+a);
+//        utils.log().info("Cash Price with 5% discount - "+a);
         double cal = cash+disc;
         BigDecimal dd1=new BigDecimal(cal).setScale(2, RoundingMode.HALF_UP);
         double a1=dd1.doubleValue();
@@ -716,9 +715,9 @@ public String totalOfActiveTillTxt = " ";
 
         String menuTotal2 = "$ "+menuTotal;
 
-        utils.log().info(cashTxt1+" + "+a+" = "+a1);
+//        utils.log().info(cashTxt1+" + "+a+" = "+a1);
 
-        utils.log().info("Total After Calculation - "+menuTotal2);
+//        utils.log().info("Total After Calculation - "+menuTotal2);
 //        if(menuTotal2.equalsIgnoreCase(totalTxt)){
 //            utils.log().info("Cash discount Total calculation is correct - "+totalTxt);
 //        }else{
@@ -729,21 +728,22 @@ public String totalOfActiveTillTxt = " ";
 
     public String cashOptionTxt = " ";
 
-    public String getDetailsOfCashOption(){
+    public String getDetailsOfCashOption() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        WebElement option = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-        cashOptionTxt = option.getText();
+        Thread.sleep(2000);
+        WebElement option = (WebElement) driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input"));
+        cashOptionTxt = option.getAttribute("value");
         TestUtils.cashOptionOrderScreen = cashOptionTxt;
-        WebElement total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String totalTxt = total.getText();
-        WebElement subtotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subtotal1 = subtotal.getText();
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxTxt = tax.getText();
-        utils.log().info("Actual Subtotal of Menu - "+subtotal1);
-        utils.log().info("Actual Tax of Menu - "+taxTxt);
-        utils.log().info("Actual Total of Menu - "+totalTxt);
-        utils.log().info("Cash Price value - "+cashOptionTxt);
+        WebElement total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalTxt = total.getAttribute("value");
+        WebElement subtotal = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subtotal1 = subtotal.getAttribute("value");
+        WebElement tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxTxt = tax.getAttribute("value");
+//        utils.log().info("Actual Subtotal of Menu - "+subtotal1);
+//        utils.log().info("Actual Tax of Menu - "+taxTxt);
+//        utils.log().info("Actual Total of Menu - "+totalTxt);
+//        utils.log().info("Cash Price value - "+cashOptionTxt);
 
 //        String cashTxt1 = cashOptionTxt.replaceAll("[A-Z]","");
 //        String cashTxt2 = cashTxt1.replaceAll(",",".");
@@ -782,9 +782,10 @@ public String totalOfActiveTillTxt = " ";
         elementClick(cancelBtn,"Cancel Button Selected");
     }
 
-    public void clickReportsBtn(){
+    public void clickReportsBtn() throws InterruptedException {
         WebElement reportsBtn = (WebElement) driver.findElement(By.xpath("//P[.='Reports']"));
         elementClick(reportsBtn,"Reports Button Selected");
+        Thread.sleep(6000);
     }
 
     public void clickCashierOutBtn() throws InterruptedException {

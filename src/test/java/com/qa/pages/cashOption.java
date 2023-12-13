@@ -6,11 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.text.DecimalFormatSymbols;
 import java.util.concurrent.TimeUnit;
 
 public class cashOption extends TillManagementScreen{
@@ -34,22 +32,22 @@ public class cashOption extends TillManagementScreen{
     public String getBalanceDueAndCashOptionAmount(){
 
         getBalanceDueAmount();
-        WebElement cashoptionAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField[2]"));
+        WebElement cashoptionAmount = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'balance')]//p/label[2])[2]"));
         cashAmount = cashoptionAmount.getText();
         TestUtils.cashOptionPaymentScreen=cashAmount;
-        utils.log().info("Cash Price Amount in Payment Screen - "+cashAmount);
+//        utils.log().info("Cash Price Amount in Payment Screen - "+cashAmount);
         return cashAmount;
     }
 
     public void verifyCashOptionApplied(){
-        WebElement cashOption = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[3]"));
+        WebElement cashOption = (WebElement) driver.findElement(By.xpath("//ion-row[contains(@class,'slideList')]//ion-col[3]"));
         String cashOptionTxt = cashOption.getText();
-        WebElement noDue = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1]"));
+        WebElement noDue = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'balance')]//p/label[2])[1]"));
         String noDueTxt = noDue.getText();
         if(cashOptionTxt.equalsIgnoreCase(TestUtils.cashOptionPaymentScreen)){
-            utils.log().info("Cash Price is Selected - "+cashOptionTxt+" No Due - "+noDueTxt);
+//            utils.log().info("Cash Price is Selected - "+cashOptionTxt+" No Due - "+noDueTxt);
         }else{
-            utils.log().info("Cash Price is NOT Selected");
+//            utils.log().info("Cash Price is NOT Selected");
         }
     }
 
@@ -65,12 +63,12 @@ public class cashOption extends TillManagementScreen{
         }
     }
     public void verifyPaidAmountForCash(){
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-        String paidAmountTxt = paidAmount.getText();
+        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
         if(paidAmountTxt.equalsIgnoreCase(TestUtils.cashOptionPaymentScreen)){
-            utils.log().info("Paid Amount is same with Cash option Amount - "+paidAmountTxt);
+//            utils.log().info("Paid Amount is same with Cash option Amount - "+paidAmountTxt);
         }else{
-            utils.log().info("Paid Amount is same with Card Amount - "+paidAmountTxt);
+//            utils.log().info("Paid Amount is same with Card Amount - "+paidAmountTxt);
         }
 
     }
@@ -87,14 +85,14 @@ public class cashOption extends TillManagementScreen{
     }
 
     public void verifyCashDiscount(){
-        WebElement cashDiscount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String cashDiscountTxt = cashDiscount.getText();
+        WebElement cashDiscount = (WebElement) driver.findElement(By.xpath("//div[@id='os_cashDiscountNameStr']//input"));
+        String cashDiscountTxt = cashDiscount.getAttribute("value");
 
         if(cashDiscountTxt.equalsIgnoreCase(TestUtils.CashDiscountCalculation)) {
 
-            utils.log().info("Cash Discount is - " + cashDiscountTxt);
+//            utils.log().info("Cash Discount is - " + cashDiscountTxt);
         }else{
-            utils.log().info("Cash Discount is NOT Applied ");
+//            utils.log().info("Cash Discount is NOT Applied ");
         }
     }
 
