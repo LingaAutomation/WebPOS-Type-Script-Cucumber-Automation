@@ -209,8 +209,9 @@ Thread.sleep(300);
     public void selectPhoneDeliveryServiceType() {
         elementClick(phoneDeliveryBtn, "Phone Delivery order type is selected.");//Added Today
     }
-    public void verifyOrderTypeWindow(){
-        if(find(orderTypeWindow,2)){
+    public void verifyOrderTypeWindow() throws InterruptedException {
+        Thread.sleep(1000);
+        if(orderTypeWindow.isDisplayed()){
             utils.log().info("Order Type Window is displayed");
         }else{
             utils.log().info("Order Type Window is not displayed");

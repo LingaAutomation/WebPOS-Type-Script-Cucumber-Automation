@@ -53,7 +53,7 @@ public class ClockInScreen extends UserLoginScreen{
     @FindBy (name = "4")
     WebElement pin4;
 
-    @FindBy (name = "5")
+    @FindBy (name = "//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'5')]")
     WebElement pin5;
 
     @FindBy (name = "6")
@@ -127,7 +127,9 @@ public class ClockInScreen extends UserLoginScreen{
     public void pressPin5() {
         elementClick(pin5, "Tapped pin5");
     }
-
+    public void pressPin5Open() {
+        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'5')]", "Tapped pin5");
+    }
 
     public void pressPin6() {
         elementClick(pin6, "Tapped pin5");

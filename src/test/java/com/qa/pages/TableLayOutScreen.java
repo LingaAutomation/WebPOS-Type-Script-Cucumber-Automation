@@ -647,7 +647,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void orderScreen() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        Thread.sleep(500);
+        Thread.sleep(2000);
         Assert.assertEquals(Order1.getText(), "Seats");
         //  if (Order1.isDisplayed()) {
         utils.log().info("I should see Order Screen");

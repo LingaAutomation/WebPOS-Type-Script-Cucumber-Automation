@@ -129,13 +129,23 @@ public class MenuOptionStepDef {
     }
 
     @And ("^I pass the amount on open discount for open item discount safety percentage whole value as 20 for \"([^\"]*)\"$")
-    public void iPassTheAmountOnOpenDiscountForOpenItemDiscountSafetyPercentageWholeValueAs20For(String discount){
+    public void iPassTheAmountOnOpenDiscountForOpenItemDiscountSafetyPercentageWholeValueAs20For(String discount) throws InterruptedException {
         new MenuOptionScreen().passAmountAndReasonMenuOptionForSafetyPercentageValue(discount);
     }
 
+    @And ("^I pass the amount on open discount for open item discount safety percentage whole value as 20 for1 \"([^\"]*)\"$")
+    public void iPassTheAmountOnOpenDiscountForOpenItemDiscountSafetyPercentageWholeValueAs20For1(String discount) throws InterruptedException {
+        new MenuOptionScreen().passAmountAndReasonMenuOptionForSafetyPercentageValue1(discount);
+    }
+
     @And ("^I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for \"([^\"]*)\"$")
-    public void iPassTheAmountOnOpenDiscountForOpenItemDiscountSafetyPercentageDecimalValueAsFor(String discount){
+    public void iPassTheAmountOnOpenDiscountForOpenItemDiscountSafetyPercentageDecimalValueAsFor(String discount) throws InterruptedException {
         new MenuOptionScreen().passAmountAndReasonMenuOptionForSafetyPercentageDecimalValue(discount);
+    }
+
+    @And ("^I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for1 \"([^\"]*)\"$")
+    public void iPassTheAmountOnOpenDiscountForOpenItemDiscountSafetyPercentageDecimalValueAsFor1(String discount) throws InterruptedException {
+        new MenuOptionScreen().passAmountAndReasonMenuOptionForSafetyPercentageDecimalValue1(discount);
     }
 
     @And ("^I pass the amount on open discount for open item discount as discount Percentage for \"([^\"]*)\"$")

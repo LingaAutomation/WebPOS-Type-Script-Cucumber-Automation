@@ -31,7 +31,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "No")
     WebElement noSendToKitchenBtn;
 
-    @FindBy(name = "Select Payment Method")
+    @FindBy(xpath = "//span[contains(.,'Payment methods')]")
     WebElement paymentWindowTitle;
 
     @FindBy(name = "Do you want to send hold menu item(s) to kitchen?")
@@ -108,24 +108,23 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[2]")
     WebElement addGratuityPayment;
 
-    @FindBy(name = "House Account")
+    @FindBy(xpath = "//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,' House Account ')]")
     WebElement housePaymentBtn;
 
-    @FindBy(name = "Credit Card")
+    @FindBy(xpath = "//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,' Credit Card ')]")
     WebElement creditCardBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Check Total\"])[1]")
+    @FindBy(xpath = "//span[contains(.,' No Tip ')]")
  //  @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Total\"])[1]")
     WebElement totalScreen;
 
-    @FindBy(name = "Continue")
+    @FindBy(xpath = "//button[contains(.,' Process Payment ')]")
     WebElement continueBtn;
 
-    @FindBy(name = "Your Order")
+    @FindBy(xpath = "//ion-label[contains(.,'Your Order')]")
     WebElement yourOrder;
 
-    @FindBy(name = "Process")
-    WebElement processBtn;
+
 
     @FindBy(name = "Card Type")
     WebElement cardTypeScreen;
@@ -133,7 +132,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "Ok")
     WebElement okButtonCardTypeWindow;
 
-    @FindBy(name = "Manual")
+    @FindBy(name = "//ion-toolbar//button[contains(.,' Manual ')]")
     WebElement manualButton;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
@@ -159,13 +158,13 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "Signature Pad")
     WebElement signaturePadScreen;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//p[contains(.,'$ 10.00')]")
     WebElement tipAs10;
 
     @FindBy(name = "Finish")
     WebElement finishBtn;
 
-    @FindBy(name = "Custom TL")
+    @FindBy(xpath = "//span[contains(.,' Custom Tip ')]")
     WebElement customTL;
 
     @FindBy(name = "Apply Tip")
@@ -174,10 +173,10 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "Transaction Void Successful")
     WebElement transactionVoidSuccess;
 
-    @FindBy(name = "Side CC")
+    @FindBy(xpath = "//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,' Side CC ')]")
     WebElement cCSideBtn;
 
-    @FindBy(xpath = "//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,'Others')]")
+    @FindBy(xpath = "//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,' Others ')]")
     WebElement otherBtn;
 
     @FindBy(name = "NMI")
@@ -241,7 +240,8 @@ public class PaymentWindow extends OrderManagementScreen{
         elementClick(okBtn, "Tapped OK to close the printer warning pop-up");
     }
 
-    public void pressSubmitBtn(){
+    public void pressSubmitBtn() throws InterruptedException {
+        Thread.sleep(500);
         elementClick(submitBtn, "Submit button is tapped" );
     }
 
@@ -336,28 +336,29 @@ public class PaymentWindow extends OrderManagementScreen{
         //  elementClick(housePaymentBtn,"Tapped House Payment");
     }
 
-    public void verifyTotalScreen(){
-        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+    public void verifyTotalScreen() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        Thread.sleep(1000);
         if(totalScreen.isDisplayed()){
-            utils.log().info("Should see Total screen");
+            Assert.assertEquals(totalScreen.getText(),"No Tip");
+            utils.log().info("Should see Total screen - "+"No Tip");
         }else {
             utils.log().info("Total Screen is not displayed");
         }
     }
 
-    public void clickContinueBtn(){
-        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+    public void clickContinueBtn() throws InterruptedException {
+        Thread.sleep(1000);
+
         elementClick(continueBtn,"Tapped Continue Button");
     }
 
-    public String verifyYourOrder(){
+    public String verifyYourOrder() throws InterruptedException {
+        Thread.sleep(5000);
         return elementGetText(yourOrder,"your order screen is displayed - ");
     }
 
-    public void clickProcessButton(){
-        driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
-        elementClick(processBtn,"Tapped Process Button");
-    }
+
 
     public void clickCreditCardBtn() throws Exception {
         try {
@@ -447,11 +448,12 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void verifyTipAdded(String num){
-        WebElement tip=mergeAndFindElement("//XCUIElementTypeStaticText[@name=\""+num+" + 10,00\"]","",TestUtils.XPath);
+        WebElement tip=driver.findElement(By.xpath("//ion-title[contains(.,' "+num+" + $ 10.00')]"));
         if (tip.isDisplayed()){
             utils.log().info("Tip is added with menu total");
         }else {
             utils.log().info("Tip is not added with menu total");
+
         }
     }
 
@@ -467,10 +469,10 @@ public class PaymentWindow extends OrderManagementScreen{
     public void selectCustomTipAdjust(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
         elementClick(customTL,"Tapped Custom Tl Button");
-        elementClick(pin1,"1 Tapped");
-        elementClick(pin0,"0 Tapped");
-        elementClick(pin00,"00 Tapped");
-        elementClick(applyTipBtn,"Tapped Apply Tip");
+        elementClick("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]","1 Tapped");
+        elementClick("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'0')]","0 Tapped");
+        elementClick("//ion-col[@class='quantity_grid-row-col ng-star-inserted md hydrated']//span[contains(.,'00')]","00 Tapped");
+        elementClick("//span[contains(.,' Continue ')]","Tapped Apply Tip");
     }
 //    public void selectCustomTipAdjust(){       //Nov 16
 //        elementClick(customTL,"Tapped Custom Tl Button");
@@ -482,11 +484,12 @@ public class PaymentWindow extends OrderManagementScreen{
 //    }
 
     public void verifyTotalValue(String value){
-        WebElement total=mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement total=driver.findElement(By.xpath("//p[@class='main ion-text-center']"));
         if(total.isDisplayed()){
-            utils.log().info("Total value is displayed");
+            utils.log().info("Total value is displayed - "+total.getText());
+            Assert.assertEquals(total.getText(),value);
         }else {
-            utils.log().info("Total value is not displayed");
+            utils.log().info("Total value is not displayed - "+value);
         }
     }
 
@@ -580,17 +583,18 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void clickSideCCBtn() throws Exception {
-        try {
-            if (find(cCSideBtn, 2)) {
-                elementClick(cCSideBtn, "Tapped Side CC Button");
-            } else {
-                scrollToElementPayments(cCSideBtn, "up");
-                elementClick(cCSideBtn, "Tapped Side CC Button");
-            }
-        } catch (Exception e) {
-            scrollToElementPayments(cCSideBtn, "down");
+        Thread.sleep(1000);
+//        try {
+//            if (find(cCSideBtn, 2)) {
+//                elementClick(cCSideBtn, "Tapped Side CC Button");
+//            } else {
+//                scrollToElementPayments(cCSideBtn, "up");
+//                elementClick(cCSideBtn, "Tapped Side CC Button");
+//            }
+//        } catch (Exception e) {
+//            scrollToElementPayments(cCSideBtn, "down");
             elementClick(cCSideBtn, "Tapped Side CC Button");
-        }
+//        }
     }
 //    public void clickOtherBtn() throws Exception {
 ////        try {
@@ -628,20 +632,21 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void clickOtherBtn() throws Exception {
-        try {
-            if(find(otherBtn,2)) {
+        Thread.sleep(1000);
+//        try {
+//            if(find(otherBtn,2)) {
                 elementClick(otherBtn, "Tapped others button");
-            }else {
-                scrollToElementPayments(otherBtn, "up");
-//                listScroller("Others",636,175,636,343,5000);
-//                listScroller("Others",636,343,636,175,5000);
-                elementClick(otherBtn, "Tapped others button");
-            }
-        }catch (Exception h){
-            scrollToElementPayments(otherBtn, "down");
-//            listScroller("Others",636,343,636,175,5000);
-            elementClick(otherBtn, "Tapped others button");
-        }
+//            }else {
+//                scrollToElementPayments(otherBtn, "up");
+////                listScroller("Others",636,175,636,343,5000);
+////                listScroller("Others",636,343,636,175,5000);
+//                elementClick(otherBtn, "Tapped others button");
+//            }
+//        }catch (Exception h){
+//            scrollToElementPayments(otherBtn, "down");
+////            listScroller("Others",636,343,636,175,5000);
+//            elementClick(otherBtn, "Tapped others button");
+//        }
     }
     public void clickNmiPayment() throws Exception {
         // swipe(565, 332, 565, 246, 50);
@@ -876,11 +881,13 @@ public class PaymentWindow extends OrderManagementScreen{
     public void selectCategory(String catee) throws Exception {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         pressArrowDown2();
+        Thread.sleep(1500);
 //        categorySelection(catee);
 
 //        scrollToElementPayments("up");
 //        findandclick(catee,"",TestUtils.Accessibility);
         WebElement cate1 = (WebElement) driver.findElements(By.xpath(catee));
+        Thread.sleep(1500);
         elementClick(cate1," Selected Category as - "+catee);
 
     }
@@ -890,6 +897,7 @@ public class PaymentWindow extends OrderManagementScreen{
     public void selectUzumakiCategory() throws Exception {
 
 pressArrowDown2();
+Thread.sleep(1500);
             try {
                 if (find(uzumakiBtn, 2)) {
                     elementClick(uzumakiBtn, "Tapped Side CC Button");

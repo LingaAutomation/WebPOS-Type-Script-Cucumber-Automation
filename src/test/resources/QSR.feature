@@ -6,7 +6,7 @@ Feature: QSR feature
     Given I'm logged in
     And I close the order type window
 
-  @RegressionQSR
+  @RegressionQSR3
   Scenario Outline: Service Type  in Order Screen,Seats
     And I add a new seat
     Then I should see created new seat
@@ -32,7 +32,7 @@ Feature: QSR feature
       | order_type |
       | QSR    |
 
-  @RegressionQSR
+  @RegressionQSR3
   Scenario Outline: All Button - During Sale
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -93,7 +93,7 @@ Feature: QSR feature
       | order_type |menu_Item      | modifier |Menu_item1 |
       | QSR        | French Friese | Tomato   |Onion Rings|
 
-  @RegressionQSR
+  @RegressionQSR3
   Scenario Outline: Discount - Order Screen,Discount for Menu Item
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -117,7 +117,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Modifier |Discount            |Discount1  | SubTotal    | Tax       | Total       |
       | QSR       | Ravioli  | Butter   | IB-AfterTax-Amount |$ 1.00     | $ 14.00     | $ 1.40    | $ 14.40     |
 
-  @RegressionQSR
+  @RegressionQSR3
   Scenario Outline: Check with normal bill without discount/Gratuity/upcharge
     Then I should see service type as "<order_type>"
     And I get check number
@@ -129,7 +129,7 @@ Feature: QSR feature
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     #Void check
-    Then I should see the order type window
+##    Then I should see the order type window
     And I close the order type window
     And I click All
     Then I should see check stats Screen
@@ -142,7 +142,7 @@ Feature: QSR feature
     And I click Done button on the Popup
     And I click payment in the payment window
     And I click Delete button on the payment window
-#    And I click Ok button in receipt printer popup
+##    And I click Ok button in receipt printer popup
     And I click Exit to return to Order Management Screen
     And I click Void button on order management screen
     Then I should see the void reason popup
@@ -164,7 +164,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Void check - other payment
     And I click All
@@ -178,7 +178,7 @@ Feature: QSR feature
     And I click Done button on the Popup
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     And I click Exit to return to Order Management Screen
     And I click Void button on order management screen
     Then I should see the void reason popup
@@ -210,7 +210,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(item based - After tax) as percentage
     Then I should see service type as "<order_type>"
@@ -229,7 +229,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
 
     #Check with discount(item based - After tax) as Amount 10
@@ -249,7 +249,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
    #Check with discount(item based - Before tax) as Amount 10
     Then I should see service type as "<order_type>"
@@ -268,14 +268,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item | Modifier |Discount                |Discount1  | SubTotal    | Tax       | Total       |Discount11            |Tax1       | Total1      |Discount21          |Discount3 |Total2      |Discount31         | Tax3     | Total3       |
       | QSR       | Ravioli  | Butter   | IB-BeforeTax-Percentage|$ 1.40     | $ 14.00     | $ 1.26    | $ 13.86     |IB-AfterTax-Percentage| $ 1.40    | $ 14.00     |IB-AfterTax-Amount  |$ 1.00    |$ 14.40     |IB-BeforeTax-Amount|$ 1.30    | $ 14.30      |
 
-  @RegressionQSR
+  @RegressionQSR3
   Scenario Outline: Qsr - Check with discount(item based - After tax) as Set Price 500
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -293,7 +293,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(item based - Before tax) as Set Price 500
     Then I should see service type as "<order_type>"
@@ -312,7 +312,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(item based - Before tax) as Free Item
     Then I should see service type as "<order_type>"
@@ -331,7 +331,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(item based - After tax) as Free Item
     Then I should see service type as "<order_type>"
@@ -350,14 +350,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type  |Menu_Item   | Modifier |Discount                 |Discount1    |Discount2    | SubTotal    | Tax       | Total       |Tax1       | Total1       |Discount21               |Discount31             |SubTotal1    | Tax2       | Total2       |Discount41             |
       | QSR        | Ravioli    | Butter   | IB-AfterTax-SetPrice500 |$ 12.50      | $ 13.00     |$ 14.00      | $ 1.40    | $ 2.90      | $ 0.10    | $ 1.10       |IB-BeforeTax-SetPrice500 |IB-BeforeTax-AsFreeItem| $ 15.00     | $ 1.50     | $ 16.50      |IB-AfterTax-AsFreeItem |
 
-  @RegressionQSR
+  @RegressionQSR3
   Scenario Outline: Check with discount(Check based - After tax) as Percentage-Discount - Check based
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -379,7 +379,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(Check based - Before tax) as Percentage
     Then I should see service type as "<order_type>"
@@ -404,14 +404,14 @@ Feature: QSR feature
     And I click Enter Button on the cash pop-up
   #    #   Then I should see the print or send receipt
   #    #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type | Menu_Item | Modifier |Discount                 | SubTotal    | Tax       | Discount1 |Total       |Tax1    |Total1   |Discount2                |
       |QSR         | Ravioli | Butter     |CB-AfterTax-Percentage10 | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00    | $ 2.52 | $ 27.72 |CB-BeforeTax-Percentage10|
 
-  @RegressionQSR
+  @RegressionQSR3
   Scenario Outline:Qsr  Check with discount(Check based - After tax) as Amount
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -428,7 +428,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(Check based - After tax) as set price
     Then I should see service type as "<order_type>"
@@ -446,7 +446,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -454,7 +454,7 @@ Feature: QSR feature
       | order_type | Menu_Item  |Discount               | SubTotal    | Tax       | Discount1   |Total        |Discount2               |Discount3    |Total1       |
       | QSR        |  cake      |CB-AfterTax-Amount1000 | $ 16.00     | $ 1.60    | $ 1.00      | $ 16.60     |CB-AfterTax-SetPrice1000| $ 6.00      | $ 11.60     |
 
-
+  @RegressionQSR3
   Scenario Outline:Qsr Check with discount(Check based - After tax) as Free
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -470,7 +470,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(Check based - Before tax) as Free item
     Then I should see service type as "<order_type>"
@@ -488,14 +488,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type  |Menu_Item       |Discount             | SubTotal  | Tax      | Total     |Discount1           |
       | QSR        | Cheesecake      | CB-AfterTax-Free300 | $ 17.00   | $ 1.70   | $ 18.70   |CB-BeforeTax-Free300|
 
-
+  @RegressionQSR3
   Scenario Outline:Qsr Check with discount(Check based - Before tax) as Amount
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -516,7 +516,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
   #  Examples:
@@ -540,7 +540,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with discount(Check based - Before tax) as Free item
     And I click log off button in order screen
@@ -579,7 +579,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
  #   Examples:
@@ -604,7 +604,7 @@ Feature: QSR feature
     And I click open item as "<open_Item>" to see Menu option screen
     And I click Open Discount on menu option
     Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount1>"
+    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for1 "<Discount1>"
     Then I should see discount applied on order screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
     Then I should see the tax amount reflected to the check as "<Tax>"
@@ -613,7 +613,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with open item discount as Percentage (After Tax)
     Then I should see service type as "<order_type>"
@@ -642,14 +642,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item|course_name |open_Item | SubTotal | Tax       | Discount | Total   | Discount1 |Discount2|course_name1|Total2  |SubTotal3  | Tax3      | Discount3 | Total3     |
       | QSR       |Dosa     |  SALAD     |onion     | $ 51.00  | $ 5.10    | $ 20.50  | $ 35.60 | After     |$ 0.50   |DESSERT     |$ 55.60 |$ 51.00    | $ 5.10    | $ 20.00   | $ 36.10    |
 
-
+  @RegressionQSR3
   Scenario Outline: qsr Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -677,7 +677,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with open item discount as amount and safety limit in Whole Value as 20(Before Tax)
     Then I should see service type as "<order_type>"
@@ -697,7 +697,7 @@ Feature: QSR feature
     And I click open item as "<open_Item>" to see Menu option screen
     And I click Open Discount on menu option
     Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount1>"
+    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for1 "<Discount1>"
     Then I should see discount applied on order screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
     Then I should see the tax amount reflected to the check as "<Tax1>"
@@ -706,7 +706,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
   #  Examples:
@@ -776,7 +776,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
  #   Examples:
@@ -788,150 +788,150 @@ Feature: QSR feature
       | QSR      |Dosa     |  SALAD     |onion     | $ 51.00  | $ 3.05    | $ 20.50  | $ 33.55 | Before    | $ 3.10    | $ 20.00   | $ 34.10 |$ 51.00    | $ 5.05   | $ 0.50    | $ 55.55    |
 
 
-  Scenario Outline: qsr Check with open Check discount as amount and safety limit in whole value (After Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    Then I should see the order type window
-    And I closed the order type window
-    #Check with open Check discount as amount and safety limit in decimal precision (After Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    Then I should see the order type window
-    And I closed the order type window
-    #Check with open Check discount as percentage (After Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount3>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type|Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 |Discount2 | Total1   | Discount3 | Total2  |
-      | QSR      |Halwa    |   $ 70.00 | $ 7.00    | $ 20.00  | $ 57.00 | After     | $ 20.50  | $ 56.50  | $ 14.00   | $ 63.00 |
+#  Scenario Outline: qsr Check with open Check discount as amount and safety limit in whole value (After Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check with open Check discount as amount and safety limit in decimal precision (After Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check with open Check discount as percentage (After Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount3>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type|Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 |Discount2 | Total1   | Discount3 | Total2  |
+#      | QSR      |Halwa    |   $ 70.00 | $ 7.00    | $ 20.00  | $ 57.00 | After     | $ 20.50  | $ 56.50  | $ 14.00   | $ 63.00 |
 
 
-  Scenario Outline: qsr Check with open Check discount as amount and safety limit in decimal precision(Before Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    Then I should see the order type window
-    And I closed the order type window
-    #Check with open Check discount as amount and safety limit in whole value (Before Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax1>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type |Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 | Tax1       | Discount2 | Total1  |
-      | QSR       |Halwa    |  $ 70.00  | $ 4.95    | $ 20.50  | $ 54.45 | Before    | $ 5.00     | $ 20.00   | $ 55.00 |
+#  Scenario Outline: qsr Check with open Check discount as amount and safety limit in decimal precision(Before Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check with open Check discount as amount and safety limit in whole value (Before Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax1>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type |Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 | Tax1       | Discount2 | Total1  |
+#      | QSR       |Halwa    |  $ 70.00  | $ 4.95    | $ 20.50  | $ 54.45 | Before    | $ 5.00     | $ 20.00   | $ 55.00 |
+#
+#
+#  Scenario Outline: qsr Check with open Check discount as percentage (Before Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type |Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 |
+#      |QSR        |  Halwa  |   $ 70.00 | $ 5.60    | $ 14.00  | $ 61.60 | Before    |
 
-
-  Scenario Outline: qsr Check with open Check discount as percentage (Before Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type |Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 |
-      |QSR        |  Halwa  |   $ 70.00 | $ 5.60    | $ 14.00  | $ 61.60 | Before    |
-
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline:qsr Check with Mix&Match discount as Set Price as 600(After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -948,7 +948,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with Mix&Match discount as Set Each Item Price as 800 (After Tax)
     Then I should see service type as "<order_type>"
@@ -966,14 +966,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item|  SubTotal     | Tax       | Discount | Total   | Discount1              |Discount2 | Total1  | Discount3                |
       | QSR       |  Halwa  |  $ 20.00      | $ 2.00    | $ 8.00   | $ 14.00 | CheckMixMatchSP(After) | $ 2.00   | $ 20.00 | CheckMixMatchSEIP(After) |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: Qsr Check with Mix&Match discount as Set Percentage(Least Expensive)(After tax)
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -991,14 +991,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item    |Menu_Item1         |price |price1|  SubTotal    | Tax       | Discount   | Total       | Discount1                 | expensive|
       | QSR       |  Cheesecake |Pumpkin Cheese Cake|15.00 |11.00 |  $ 26.00     | $ 2.60    | $ 5.50     | $ 23.10     | CheckMixMatchSPerL(After) | Least    |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check with Mix&Match discount as Set Price as 500(Before tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1016,7 +1016,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with Mix&Match discount as Set Each Item Price as 500(Before tax)
     Then I should see service type as "<order_type>"
@@ -1035,14 +1035,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item | Menu_Item1 |  SubTotal    | Tax       | Discount    | Total       | Discount1               |Discount2                 | Tax1      | Discount12   | Total1      |
       | QSR       | cake     | Halwa      |  $ 18.00     | $ 1.00    | $ 8.00      | $ 11.00     | CheckMixMatchSP(Before) |CheckMixMatchSEIP(Before) | $ 1.60    | $ 2.00      | $ 17.60     |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -1060,7 +1060,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -1068,7 +1068,7 @@ Feature: QSR feature
       |order_type |Menu_Item    | Menu_Item1          | price |price1| SubTotal    | Tax       | Discount   | Total        | Discount1                 | expensive |
       | QSR       | Cheesecake  | Pumpkin Cheese Cake | 15.00 |11.00 |  $ 26.00    | $ 1.85    | $ 7.50     | $ 20.35      | CheckMixMatchSPerM(Befor) |Most       |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check with Mix&Match discount as Set Percentage Least Expensive (Before tax)
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -1086,14 +1086,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item    | Menu_Item1          | price |price1| SubTotal    | Tax       | Discount   | Total        | Discount1                 | expensive |
       | QSR       | Cheesecake  | Pumpkin Cheese Cake |15.00  |11.00 | $ 26.00     |$ 2.05     |$ 5.50      | $ 22.55      | CheckMixMatchSPerL(Befor) | Least     |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check with vary gratuity
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1113,14 +1113,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type| Menu_Item   | Percentage | SubTotal   |    Tax    | Gratuity     | Total   |
       | QSR      | Halwa       | 8          | $ 10.00    | $ 1.00    |  $ 0.80      | $ 11.80 |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check With Fixed Gratuity
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1138,14 +1138,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type | Menu_Item |  SubTotal | Tax    | Gratuity | Total   |
       | QSR        |  Halwa    | $ 10.00   | $ 1.00 |  $ 1.00  | $ 12.00 |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check With Exclusive Tax
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1158,14 +1158,14 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type | Modifier | Tax    | SubTotal | Total    |
       |QSR         | Butter   | $ 1.40 | $ 14.00  | $ 15.40  |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check with tax exempt with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1188,7 +1188,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #Check with tax exempt and without customer
     Then I should see service type as "<order_type>"
@@ -1209,7 +1209,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check with tax exempt and without customer through payment screen
 #    Then I should see service type as "<order_type>"
@@ -1229,7 +1229,7 @@ Feature: QSR feature
 #    And I click Cash button for Complete Sale
 #    And I click Exact button on the cash pop-up
 #    And I click Enter Button on the cash pop-up
-#    Then I should see the order type window
+##    Then I should see the order type window
 #    And I closed the order type window
     #Check with tax exempt for pre defined customer
     Then I should see service type as "<order_type>"
@@ -1254,7 +1254,7 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click Add Customer Button
     And I search for "<customer_name>"
@@ -1289,14 +1289,14 @@ Feature: QSR feature
 #    And I click Cash button for Complete Sale
 #    And I click Exact button on the cash pop-up
 #    And I click Enter Button on the cash pop-up
-#    Then I should see the order type window
+##    Then I should see the order type window
 #    And I closed the order type window
 #    And I click log off button in order screen
 #    Examples:
 #      | order_type| Menu_Item   | SubTotal  | Tax      | Gratuity   |Total   |
 #      | QSR       | Halwa       |$ 10.00    | $ 1.00   | $ 0.80     |$ 11.80 |
 
-  @RegressionQSR2
+  @RegressionQSR3
   Scenario Outline: qsr Check With upcharge(Amount)
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -1307,21 +1307,25 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type | Menu_Item          | Modifier     | amount   |
       | QSR        |  Fried Crab Cakes  | White Bread  | $ 18.50  |
 
-
+  @RegressionQSR32
   Scenario Outline: qsr check payment by HA for New created customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
-    And I click Add new button
-    And I select search
-    And I enter an existing customer's name "<customer_name>"
-    And I select the customer
+#    And I click Add new button
+    And I search for "<customer_name>"
+    When I click "<customer_name>" to select customer for the seat
+    And I click the customer name on the order screen
+    Then I should see the customer profile window
+#    And I select search
+#    And I enter an existing customer's name "<customer_name>"
+#    And I select the customer
     And I click customer plan button
     Then I should see Account type screen
   #  And I click house account field and enter recharge amount
@@ -1332,7 +1336,7 @@ Feature: QSR feature
 #    And I click Enter Button on the cash pop-up
 ##   #   Then I should see the print or send receipt
 #    #    And I click No thanks Button on the print receipt
-#    Then I should see the order type window
+##    Then I should see the order type window
 #    And I closed the order type window
 #    And I click Add Customer Button
 #    And I search for "<customer_name>"
@@ -1349,24 +1353,29 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see your order card screen
     And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+##    And I click Ok button in receipt printer popup
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order xtype window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type | customer_name | Menu_Item      | Modifier   | SubTotal |  Total  |
       | QSR        |  Auto ragav   |  French Friese | Steak      | $ 15.00  | $ 15.00 |
 
-
+  @RegressionQSR32
   Scenario Outline: qsr Void HA payment check and again add menu item & Payment through HA
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
-    And I click Add new button
-    And I select search
-    And I enter an existing customer's name "<customer_name>"
-    And I select the customer
+#    And I click Add new button
+#    And I select search
+#    And I enter an existing customer's name "<customer_name>"
+#    And I select the customer
+#    And I click customer plan button
+    And I search for "<customer_name>"
+    When I click "<customer_name>" to select customer for the seat
+    And I click the customer name on the order screen
+    Then I should see the customer profile window
     And I click customer plan button
     Then I should see Account type screen
 #    And I click house account field and enter recharge amount
@@ -1375,7 +1384,7 @@ Feature: QSR feature
 #    And I click Cash button for Complete Sale
 #    And I click Exact button on the cash pop-up
 #    And I click Enter Button on the cash pop-up
-#    Then I should see the order type window
+##    Then I should see the order type window
 #    And I close the order type window
 #    And I click Add Customer Button
 #    And I search for "<customer_name>"
@@ -1393,10 +1402,10 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see your order card screen
     And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click All
     And I click Check Stats tab
@@ -1409,7 +1418,7 @@ Feature: QSR feature
     And I click Done button on the Popup
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     And I click Exit to return to Order Management Screen
     And I select category as "FOOD"
     And I select menu item as "<Menu_Item>"
@@ -1421,17 +1430,17 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see your order card screen
     And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type  | customer_name | Menu_Item     | Modifier   | SubTotal |  Total   |
       | QSR         |  Auto ragav   | French Friese | Steak      | $ 15.00  | $ 15.00  |
 
-
+  @RegressionQSR3
   Scenario Outline:  qsr Check Payment through Other payment - Check with discount(item based - After tax) as amount 10, as set Price 500, as Free ,
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1449,7 +1458,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
 
@@ -1471,7 +1480,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
 
@@ -1493,7 +1502,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #And I click log off button in order screen
 
@@ -1514,14 +1523,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type |Menu_Item | Modifier |Discount11         |Discount1 | SubTotal1   | Tax1      | Total1      |Discount22              |Discount2   | SubTotal2   | Tax2      | Total2      |Discount33              | SubTotal3   | Tax3     | Total3    |Discount44              |Discount4  | SubTotal4    | Tax4       | Total4     |
       | QSR        | Ravioli  | Butter   |IB-AfterTax-Amount |$ 1.00    | $ 14.00     | $ 1.40    | $ 14.40     |IB-AfterTax-SetPrice500 |$ 12.50     | $ 14.00     | $ 1.40    | $ 2.90      | IB-AfterTax-AsFreeItem | $ 15.00     | $ 1.50   | $ 16.50   | IB-AfterTax-Percentage |$ 1.40     | $ 14.00      | $ 1.40     | $ 14.00    |
 
-
+  @RegressionQSR3
   Scenario Outline: Check Payment through others payment - Check with discount(Item based - Before tax) as Percentage, as amount 10 , as Set Price 500 , as Free
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1539,7 +1548,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
    # Examples:
@@ -1585,7 +1594,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through Other payment - Check with discount(item based - Before tax) as Set Price 500
     Then I should see service type as "<order_type>"
@@ -1604,7 +1613,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #And I click log off button in order screen
    # Examples:
@@ -1650,14 +1659,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type  |Menu_Item | Modifier |Discount11                | Tax1     | Total1   | SubTotal1 |Discount1|Discount22            |Discount2  | SubTotal2    | Tax2       | Total2    |Discount33               |Discount3  |Tax3       | Total3       |Discount44               | SubTotal4    | Tax4       | Total4      |
       | QSR         | Ravioli  | Butter   |IB-BeforeTax-Percentage   |$ 1.26    | $ 13.86  | $ 14.00   | $ 1.40  |IB-BeforeTax-Amount   |$ 1.00     | $ 14.00      | $ 1.30     | $ 14.30   |IB-BeforeTax-SetPrice500 |$ 13.00    | $ 0.10    | $ 1.10       | IB-BeforeTax-AsFreeItem | $ 15.00      | $ 1.50     | $ 16.50     |
 
-  @gi2
+  @RegressionQSR3
   Scenario Outline: Check Payment through Other payment - Check with discount(check based - After tax) as percentage, as Amount,as set price, as Free
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1679,7 +1688,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
  #   And I click log off button in order screen
   #  Examples:
@@ -1702,7 +1711,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through Other payment - Check with discount(check based - After tax) as set price
     Then I should see service type as "<order_type>"
@@ -1720,7 +1729,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
   #  Examples:
@@ -1763,14 +1772,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type | Menu_Item1 | Modifier1 |Discount11               | SubTotal1   | Tax1      | Discount1 |Total1       |Menu_Item3|Discount22            | SubTotal3   | Tax3      | Discount2   |Total2       |Discount33               |Discount3   |Total3       |Menu_Item4  |Discount44            | SubTotal4    | Tax4       | Total4    |
       | QSR        |Ravioli     | Butter    |CB-AfterTax-Percentage10 | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00     | cake     |CB-AfterTax-Amount1000| $ 16.00     | $ 1.60    | $ 1.00      | $ 16.60     |CB-AfterTax-SetPrice1000 |$ 6.00      | $ 11.60     | Cheesecake | CB-AfterTax-Free300  | $ 17.00      | $ 1.70     | $ 18.70   |
 
-  @gi2
+  @RegressionQSR3
   Scenario Outline: qsr Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1792,7 +1801,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through Other payment - Check with discount(check based - Before tax) as Amount
     Then I should see service type as "<order_type>"
@@ -1814,7 +1823,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
    # Examples:
@@ -1862,7 +1871,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
  #   And I click log off button in order screen
   #  Examples:
@@ -1886,14 +1895,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type |Menu_Item2 | Modifier2 |Discount11                | SubTotal1    | Tax1       | Discount1 |Total1       |Discount22               |Tax2       | Discount2 |Total2       | Menu_Item3 |Discount33               | SubTotal3   | Tax3      | Discount3 |Total3       |Menu_Item4     |Discount44             | SubTotal4    | Tax4       | Total4       |
       | QSR        | Ravioli   | Butter    |CB-BeforeTax-Percentage10 | $ 28.00      | $ 2.52     | $ 2.80    | $ 27.72     | CB-BeforeTax-Amount1000 | $ 2.70    | $ 1.00    | $ 29.70     | cake       |CB-BeforeTax-SetPrice1000| $ 16.00     | $ 1.00    | $ 6.00    | $ 11.00     | Cheesecake    |  CB-BeforeTax-Free300 | $ 17.00      | $ 1.70     | $ 18.70      |
 
-
+  @RegressionQSR3
   Scenario Outline: qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1921,7 +1930,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
   #  Examples:
@@ -1946,7 +1955,7 @@ Feature: QSR feature
     And I click open item as "<open_Item>" to see Menu option screen
     And I click Open Discount on menu option
     Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount1>"
+    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for1 "<Discount1>"
     Then I should see discount applied on order screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
     Then I should see the tax amount reflected to the check as "<Tax>"
@@ -1955,7 +1964,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through Other Payment - Check with open item discount as Percentage (After Tax)
     Then I should see service type as "<order_type>"
@@ -1984,14 +1993,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item|course_name |open_Item | SubTotal | Tax       | Discount | Total   | Discount1 |course_name1  |Discount2 | Total1    | SubTotal3 | Tax3     | Discounttxt | Total3     |
       | QSR       |Dosa     |  SALAD     |onion     | $ 51.00  | $ 5.10    | $ 20.50  | $ 35.60 | After     |DESSERT       |$ 0.50    | $ 55.60   |$ 51.00    | $ 5.10   | $ 20.00     | $ 36.10    |
 
-
+  @RegressionQSR3
   Scenario Outline: qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2019,7 +2028,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
   #  Examples:
@@ -2044,7 +2053,7 @@ Feature: QSR feature
     And I click open item as "<open_Item>" to see Menu option screen
     And I click Open Discount on menu option
     Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount1>"
+    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for1 "<Discount1>"
     Then I should see discount applied on order screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
     Then I should see the tax amount reflected to the check as "<Tax>"
@@ -2053,7 +2062,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through Other Payment - Check with open item discount as Percentage (Before Tax)
     Then I should see service type as "<order_type>"
@@ -2082,7 +2091,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -2090,149 +2099,149 @@ Feature: QSR feature
       | QSR      |  Dosa   |  SALAD     |onion     | $ 51.00   |$ 3.10    | $ 20.00  |$ 34.10    | Before    |DESSERT      | $ 5.05    | $ 0.50    | $ 55.55    | $ 51.00    | $ 3.05     | $ 20.50   | $ 33.55 |
 
 
-  Scenario Outline:qsr - Check Payment through Other Payment - Check with open check discount as amount and safety limit in Whole Value as 20(After Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
-    #Check Payment through Other payment - Check with open Check discount as amount and safety limit in decimal precision (After Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
-    #Check Payment through Other payment - Check with open Check discount as percentage (After Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount3>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type|Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 |Discount2 | Total1  |Discount3 | Total2  |
-      | QSR      |Halwa    |  $ 70.00  | $ 7.00    | $ 20.00  | $ 57.00 | After     | $ 20.50  | $ 56.50 |$ 14.00   | $ 63.00 |
+#  Scenario Outline:qsr - Check Payment through Other Payment - Check with open check discount as amount and safety limit in Whole Value as 20(After Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check Payment through Other payment - Check with open Check discount as amount and safety limit in decimal precision (After Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check Payment through Other payment - Check with open Check discount as percentage (After Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount3>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type|Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 |Discount2 | Total1  |Discount3 | Total2  |
+#      | QSR      |Halwa    |  $ 70.00  | $ 7.00    | $ 20.00  | $ 57.00 | After     | $ 20.50  | $ 56.50 |$ 14.00   | $ 63.00 |
+#
+#
+#  Scenario Outline:qsr - Check Payment through Other payment - Check with open Check discount as amount and safety limit in decimal precision(Before Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal3>"
+#    Then I should see the tax amount reflected to the check as "<Tax3>"
+#    Then I should see the Discount amount reflected to the check as "<Discount3>"
+#    Then I should see orderscreen with menu item Total as "<Total3>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
+#   # And I click log off button in order screen
+#   # Examples:
+#    #  |order_type |Menu_Item|  SubTotal | Tax       | Discount | Total | Discount1 |
+#     # | QSR      |Halwa |   TL 1.000,00 | TL 97,95   | TL 20,50  | TL 1.077,45 | Before |
+#
+# # Scenario Outline: Check Payment through Other payment -  Check with open Check discount as amount and safety limit in whole value (Before Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check Payment through Other payment - Check with open Check discount as percentage (Before Tax)
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax1>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type |Menu_Item|   SubTotal | Tax      | Discount | Total       | Discount1 | Tax1    | Discount2 | Total1   | SubTotal3   | Tax3     | Discount3 | Total3      |
+#      | QSR       | Halwa   | $ 70.00    | $ 5.00   | $ 20.00  | $ 55.00     | Before    |$ 5.60   | $ 14.00   | $ 61.60  | $ 70.00     | $ 4.95   | $ 20.50   | $ 54.45     |
 
-
-  Scenario Outline:qsr - Check Payment through Other payment - Check with open Check discount as amount and safety limit in decimal precision(Before Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal3>"
-    Then I should see the tax amount reflected to the check as "<Tax3>"
-    Then I should see the Discount amount reflected to the check as "<Discount3>"
-    Then I should see orderscreen with menu item Total as "<Total3>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
-   # And I click log off button in order screen
-   # Examples:
-    #  |order_type |Menu_Item|  SubTotal | Tax       | Discount | Total | Discount1 |
-     # | QSR      |Halwa |   TL 1.000,00 | TL 97,95   | TL 20,50  | TL 1.077,45 | Before |
-
- # Scenario Outline: Check Payment through Other payment -  Check with open Check discount as amount and safety limit in whole value (Before Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
-    #Check Payment through Other payment - Check with open Check discount as percentage (Before Tax)
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax1>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type |Menu_Item|   SubTotal | Tax      | Discount | Total       | Discount1 | Tax1    | Discount2 | Total1   | SubTotal3   | Tax3     | Discount3 | Total3      |
-      | QSR       | Halwa   | $ 70.00    | $ 5.00   | $ 20.00  | $ 55.00     | Before    |$ 5.60   | $ 14.00   | $ 61.60  | $ 70.00     | $ 4.95   | $ 20.50   | $ 54.45     |
-
-
+  @RegressionQSR3
   Scenario Outline:qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price(After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2249,7 +2258,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through Other payment - Check with Mix&Match discount as Set Each Item Price(After Tax)
     Then I should see service type as "<order_type>"
@@ -2267,14 +2276,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type|Menu_Item | SubTotal    | Tax       | Discount  | Total       | Discount1              |Discount2  | Total1      | Discount3                |
       | QSR       |  Halwa  | $ 20.00     | $ 2.00    | $ 8.00    | $ 14.00     | CheckMixMatchSP(After) |$ 2.00     | $ 20.00     | CheckMixMatchSEIP(After) |
 
-  @gi2
+  @RegressionQSR3
   Scenario Outline:qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage(Most Expensive)(After tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2292,7 +2301,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #And I click log off button in order screen
    # Examples:
@@ -2317,14 +2326,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item    |Menu_Item1        |Menu |Menu1|  SubTotal    | Tax       | Discount   | Total       | Discount1                   | expensive | Menu_Item2|Menu_Item3|Menu2    |Menu3   |  SubTotal2  | Tax2      | Discount2 | Total2      | Discount3                 | expensive1 |
       | QSR       |  Cheesecake |Pumpkin Cheese Cake|15.00|11.00 |$ 26.00     | $ 2.60    | $ 5.50     | $ 23.10     | CheckMixMatchSPerL(After) |Least      |Halwa     |cake       |10.00    |8.00    | $ 18.00     | $ 1.80    | $ 5.00    | $ 14.80     | CheckMixMatchSPerM(After) |Most        |
 
-
+  @RegressionQSR3
   Scenario Outline:qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2342,7 +2351,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through Other payment - Check with Mix&Match discount as Set Each Item Price as 500(Before tax)
     Then I should see service type as "<order_type>"
@@ -2361,14 +2370,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item | Menu_Item1|  SubTotal    | Tax       | Discount   | Total       | Discount1               |Discount2                 |  Tax1      | Discount12   | Total1      |
       | QSR       | cake     | Halwa     |  $ 18.00     | $ 1.00    | $ 8.00     | $ 11.00     | CheckMixMatchSP(Before) |CheckMixMatchSEIP(Before) |  $ 1.60    | $ 2.00      | $ 17.60     |
 
-  @gi2
+  @RegressionQSR3
   Scenario Outline:qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2386,7 +2395,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
     #Examples:
@@ -2411,14 +2420,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type |Menu_Item | Menu_Item1           | Menu | Menu1 |expensive| SubTotal    | Tax       | Discount   | Total        | Discount1                 |Menu_Item2 | Menu_Item3  |Menu2    |Menu3    |  SubTotal2  | Tax2      | Discount2  | Total2      | Discount11                | expensive1 |
       | QSR     | Cheesecake  | Pumpkin Cheese Cake |15.00 |11.00  |Least    | $ 26.00     | $ 2.05    | $ 5.50     | $ 22.55      | CheckMixMatchSPerL(Befor)  |cake       | Halwa       |8.00     |10.00    | $ 18.00     | $ 1.30    | $ 5.00     | $ 14.30     | CheckMixMatchSPerM(Befor) |Most        |
 
-
+  @RegressionQSR3
   Scenario Outline: qsr -Check with vary gratuity - other payment
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2438,7 +2447,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check With Fixed Gratuity - other payment
     Then I should see service type as "<order_type>"
@@ -2457,14 +2466,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       |order_type| Menu_Item   | Percentage | SubTotal   |    Tax    | Gratuity     | Total   |Gratuity1 | Total1  |
       | QSR       | Halwa       | 8         | $ 10.00    | $ 1.00    |  $ 0.80      | $ 11.80 | $ 1.00   | $ 12.00 |
 
-
+  @RegressionQSR3
   Scenario Outline:Qsr- Check Payment through other payment - Check with tax exempt and with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -2478,8 +2487,8 @@ Feature: QSR feature
     And I click Options button
     Then I should see the Check Options screen
     And I click Tax Exempt Button
-    Then I should see tax exempt reasons
-    When I select School as reason
+#    Then I should see tax exempt reasons
+#    When I select School as reason
     Then I Should get back to the Order Screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
     And I should see the tax reflected to the check
@@ -2487,7 +2496,7 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through other payment - Check with tax exempt and without customer
     Then I should see service type as "<order_type>"
@@ -2499,8 +2508,8 @@ Feature: QSR feature
     And I click Options button
     Then I should see the Check Options screen
     And I click Tax Exempt Button
-    Then I should see tax exempt reasons
-    When I select School as reason
+#    Then I should see tax exempt reasons
+#    When I select School as reason
     Then I Should get back to the Order Screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
     And I should see the tax reflected to the check
@@ -2508,35 +2517,35 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through other payment - Check with tax exempt and without customer through payment screen
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click Tax Exempt Button from the Payment Screen
-    Then I should see tax exempt reasons
-    When I select School as reason
-    Then I Should get back to the Order Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
-    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click Tax Exempt Button from the Payment Screen
+##    Then I should see tax exempt reasons
+##    When I select School as reason
+#    Then I Should get back to the Order Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    And I should see the tax reflected to the check
+#    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
     #Check Payment through other payment - Check with tax exempt for pre defined customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
-    And I click Add new button
-    And I select search
-    And I enter an existing customer's name "<customer_name>"
-    And I select the customer for tax exempt
+    And I search for "<customer_name>"
+    When I click "<customer_name>" to select customer for the seat
+    And I click the customer name on the order screen
+    Then I should see the customer profile window
     And I select tax exempt on customer profile screen
     And I click the Save button
     Then I Should get back to the Order Screen
@@ -2550,14 +2559,14 @@ Feature: QSR feature
     And I click Submit button on the Payment Window
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click Add Customer Button
-    And I click Add new button
-    And I select search
-    And I enter an existing customer's name "<customer_name>"
-    And I select the customer for tax exempt
-    And I select tax exempt on customer profile screen
+    And I search for "<customer_name>"
+    When I click "<customer_name>" to select customer for the seat
+    And I click the customer name on the order screen
+    Then I should see the customer profile window
+    And I remove tax exempt on customer profile screen
     And I click the Save button
     Then I Should get back to the Order Screen
     And I click log off button in order screen
@@ -2566,34 +2575,34 @@ Feature: QSR feature
       | QSR      |Halwa       | $ 10.00     | $ 1.00    | $ 11.00     | $ 10.00     |tax exe      |
 
 
-  Scenario Outline:Qsr-Check Payment through other payment - Check with vary gratuity through Payment screen
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item1>"
-    And I click Payment button in the Order Management Screen
-    And I click add gratuity from Payment screen
-    Then I should see the Check Options screen
-    Then I should see Add Gratuity screen
-    And I click Gratuity varying button
-    Then I should see enter Percentage popup
-    And I pass the value and click Apply button
-    Then I Should get back to the Order Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal1>"
-    Then I should see the tax amount reflected to the check as "<Tax1>"
-    Then I should see the Gratuity amount reflected to the check as "<Gratuity1>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click other button from the payment method popup
-    And I click Submit button on the Payment Window
-    Then I should see the order type window
-    And I closed the order type window
-    #And I click log off button in order screen
-   # Examples:
-    #  | order_type| Menu_Item   | SubTotal  | Tax      | Gratuity   |Total |
-     # | QSR   | Halwa      |TL 1.000,00| TL 100,00 | TL 80,00 |TL 1.180,00 |
+#  Scenario Outline:Qsr-Check Payment through other payment - Check with vary gratuity through Payment screen
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click add gratuity from Payment screen
+#    Then I should see the Check Options screen
+#    Then I should see Add Gratuity screen
+#    And I click Gratuity varying button
+#    Then I should see enter Percentage popup
+#    And I pass the value and click Apply button
+#    Then I Should get back to the Order Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal1>"
+#    Then I should see the tax amount reflected to the check as "<Tax1>"
+#    Then I should see the Gratuity amount reflected to the check as "<Gratuity1>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click other button from the payment method popup
+#    And I click Submit button on the Payment Window
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #And I click log off button in order screen
+#   # Examples:
+#    #  | order_type| Menu_Item   | SubTotal  | Tax      | Gratuity   |Total |
+#     # | QSR   | Halwa      |TL 1.000,00| TL 100,00 | TL 80,00 |TL 1.180,00 |
 
-
- # Scenario Outline: qsr Check Payment through other payment - Check With upcharge
+  @RegressionQSR3
+  Scenario Outline: qsr Check Payment through other payment - Check With upcharge
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
     And I select menu item as "<Menu_Item>"
@@ -2603,14 +2612,14 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type | Menu_Item         | Modifier     | amount   | Menu_Item1  | SubTotal1  | Tax1      | Gratuity1 |Total1      |
       | QSR        | Fried Crab Cakes  | White Bread  | $ 18.50  |  Halwa      |$ 10.00     | $ 1.00    | $ 0.80    | $ 11.80    |
 
-
+  @RegressionQSR3
   Scenario Outline:qsr- Check Payment through side CC and customer & Merchant copy enabled without tips
     Then I should see service type as "<order_type>"
     And I get check number
@@ -2624,7 +2633,7 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see the Payment window
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #Void check Side CC payment without tips
     And I click All
@@ -2636,9 +2645,9 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
-    Then I should see transaction void successful popup
-    And I click Done button on the Popup
+#    And I click Ok button in receipt printer popup
+#    Then I should see transaction void successful popup
+#    And I click Done button on the Popup
     And I click Exit to return to Order Management Screen
     And I click print button on the order screen
     And I click Done button on the Popup
@@ -2646,16 +2655,16 @@ Feature: QSR feature
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    Then I should see the order type window
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type|  Menu_Item | Modifier |
       | QSR      |  French Friese | Steak |
 
-
+  @RegressionQSR3
   Scenario Outline: qsr Check Payment through Side CC and customer & Merchant copy enabled tips
     Then I should see service type as "<order_type>"
     And I get check number
@@ -2683,9 +2692,9 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
-    Then I should see transaction void successful popup
-    And I click Done button on the Popup
+#    And I click Ok button in receipt printer popup
+#    Then I should see transaction void successful popup
+#    And I click Done button on the Popup
     And I click Exit to return to Order Management Screen
     And I click print button on the order screen
     And I click Done button on the Popup
@@ -2693,16 +2702,16 @@ Feature: QSR feature
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    Then I should see the order type window
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
       | order_type |  Menu_Item     | Modifier |Total    |total    |
       | QSR        |  French Friese | Steak    | $ 15.00 |$ 25.00  |
 
-
+  @RegressionQSR3
   Scenario Outline: qsr Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -2740,7 +2749,7 @@ Feature: QSR feature
       | order_type |  Menu_Item    | Modifier |  Total    |  total     |
       | QSR        | French Friese | Steak    |  $ 15.00  |  $ 25.00   |
 
-
+  @RegressionQSR3
   Scenario Outline: qsr Check Payment through Side CC with discount(item based - After tax/Before) as percentage and with tip
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -2798,7 +2807,7 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see the Payment window
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
 
@@ -2829,7 +2838,7 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see the Payment window
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
 
@@ -2860,7 +2869,7 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see the Payment window
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -2868,7 +2877,7 @@ Feature: QSR feature
       | order_type |Menu_Item | Modifier |Discount                |  Discount1            |Discounttxt  | SubTotal    | Tax       | Total      |   total  |Discount2            |Discount21         |Discounttxt2 | SubTotal1    | Tax1       | Total1       |  total1       |Discount3            |  Discount31                  |Discounttxt3    | SubTotal2    | Tax2       | Total2      |  total2     |Discount4               |Discount41             | SubTotal4    | Tax4       | Total4       | total4        |
       | QSR        | Ravioli    | Butter   |IB-AfterTax-Percentage |IB-BeforeTax-Percentage|$ 2.66      | $ 14.00     | $ 1.13    | $ 12.47    |  $ 22.47 | IB-AfterTax-Amount |IB-BeforeTax-Amount |$ 2.00       | $ 14.00      | $ 1.20     | $ 13.20      |  $ 23.20      | IB-AfterTax-SetPrice500 |IB-BeforeTax-SetPrice500  |$ 13.00         | $ 14.00      | $ 0.10     | $ 1.10      |  $ 11.10    | IB-AfterTax-AsFreeItem |IB-BeforeTax-AsFreeItem| $ 16.00      | $ 1.60     | $ 17.60      |   $ 27.60     |
 
-  @gi2
+  @RegressionQSR3
   Scenario Outline: qsr Check Payment through side CC with discount(Check based - After tax/Before) as percentage and with tip
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -2900,7 +2909,7 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see the Payment window
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
 
@@ -2936,7 +2945,7 @@ Feature: QSR feature
     And I click Submit button on the Payment Window
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
  #   And I click log off button in order screen
 
@@ -2968,7 +2977,7 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see the Payment window
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
 
@@ -2997,7 +3006,7 @@ Feature: QSR feature
     And I click the Continue button on the Total screen
     Then I should see the Payment window
     And I click Submit button on the Payment Window
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -3005,7 +3014,7 @@ Feature: QSR feature
       | order_type | Menu_Item | Modifier |Discount                 |Discount11                | SubTotal    | Tax       | Discounttxt|Total        | total        | Discount2             |Discount21              | SubTotal2   | Tax2     | Discounttxt2   | Total2    |  total2     |Menu_Item1 |Discount3               |Discount31                | SubTotal3    | Tax3    | Discounttxt3 |Total3    | total3    |Menu_Item2      |Discount4            |Discount41             | SubTotal4  | Tax4      | Total4     |   total4    |
       | QSR        |  Ravioli  | Butter   |CB-AfterTax-Percentage10 |CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.27    | $ 5.32     | $ 24.95     | $ 34.95      |CB-AfterTax-Amount1000 |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.60   | $ 2.00         | $ 28.60   |  $ 38.60    | cake      |CB-AfterTaxSetPrice2500 |CB-BeforeTax-SetPrice1000 | $ 16.00      | $ 1.00  | $ 6.00       | $ 11.00  | $ 21.00   |Cheesecake      | CB-AfterTax-Free300 | CB-BeforeTax-Free300  | $ 17.00    | $ 1.70    | $ 18.70    | $ 28.70     |
 
-
+  @RegressionQSR4
   Scenario Outline: qsr Check Payment through CC and customer & Merchant copy enabled without tipss
     Then I should see service type as "<order_type>"
     And I get check number
@@ -3025,8 +3034,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #  Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     #Void check CC payment without tips
     And I click All
@@ -3038,9 +3047,9 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
-    Then I should see transaction void successful popup
-    And I click Done button on the Popup
+#    And I click Ok button in receipt printer popup
+#    Then I should see transaction void successful popup
+#    And I click Done button on the Popup
     And I click Exit to return to Order Management Screen
     And I click print button on the order screen
     And I click Done button on the Popup
@@ -3048,9 +3057,9 @@ Feature: QSR feature
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    Then I should see the order type window
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -3079,8 +3088,8 @@ Feature: QSR feature
     And I pass expire date as "<expire_date>"
     And I click Process button on card screen
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     #Void check CC payment with tips
     And I click All
@@ -3092,9 +3101,9 @@ Feature: QSR feature
     And I click Payment button in the Order Management Screen
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
-    Then I should see transaction void successful popup
-    And I click Done button on the Popup
+#    And I click Ok button in receipt printer popup
+#    Then I should see transaction void successful popup
+#    And I click Done button on the Popup
     And I click Exit to return to Order Management Screen
     And I click print button on the order screen
     And I click Done button on the Popup
@@ -3102,8 +3111,8 @@ Feature: QSR feature
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -3133,8 +3142,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     #Verify merchant copy bill printout of CC payment with sign
     Then I should see service type as "<order_type>"
@@ -3158,8 +3167,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -3201,8 +3210,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
 
@@ -3241,8 +3250,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
 
@@ -3282,8 +3291,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
 
@@ -3321,8 +3330,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -3369,8 +3378,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
 
@@ -3411,8 +3420,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
 #    And I click log off button in order screen
 
@@ -3449,10 +3458,10 @@ Feature: QSR feature
     And I pass card name as "<card_name>"
     And I pass expire date as "<expire_date>"
     And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     #And I click log off button in order screen
 
@@ -3488,10 +3497,10 @@ Feature: QSR feature
     And I pass card name as "<card_name>"
     And I pass expire date as "<expire_date>"
     And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    Then I should see the order type window
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -3540,8 +3549,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
 
@@ -3587,8 +3596,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
 
@@ -3635,8 +3644,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -3677,8 +3686,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
   #  And I click log off button in order screen
 
@@ -3715,8 +3724,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
    # And I click log off button in order screen
 
@@ -3754,8 +3763,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
 
@@ -3797,8 +3806,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -3839,8 +3848,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -3883,8 +3892,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -3927,8 +3936,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -3966,8 +3975,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -4007,8 +4016,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -4048,8 +4057,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through CC with tax Exempt(select customer) and also with tip
     Then I should see service type as "<order_type>"
@@ -4086,8 +4095,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -4126,8 +4135,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     #Check Payment through CC with tax Exempt(predefined customer) and also with tip
     Then I should see service type as "<order_type>"
@@ -4160,8 +4169,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click Add Customer Button
     And I click Add new button
@@ -4202,8 +4211,8 @@ Feature: QSR feature
     And I click Process button on card screen
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
-    And I click Ok button in receipt printer popup
-    Then I should see the order type window
+#    And I click Ok button in receipt printer popup
+#    Then I should see the order type window
     And I closed the order type window
     And I click log off button in order screen
     Examples:

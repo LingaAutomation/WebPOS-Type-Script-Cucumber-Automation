@@ -62,7 +62,7 @@ public class TableOrderOperationsStepDef {
         new OrderTypeWindow().clickSeat1ForAddMenuItem();
     }
     @Then ("^I should see the order type window$")
-    public void iShouldSeeTheOrderTypeWindow(){
+    public void iShouldSeeTheOrderTypeWindow() throws InterruptedException {
         new OrderTypeWindow().verifyOrderTypeWindow();
     }
 
@@ -93,7 +93,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see service type as \"([^\"]*)\"$")
-    public void iShouldSeeServiceTypeAs(String type){
+    public void iShouldSeeServiceTypeAs(String type) throws InterruptedException {
         new OrderManagementScreen().verifyServiceType(type);
     }
 
@@ -426,7 +426,7 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().selectCustomerNameAsToAddToTheTable(customerName);
     }
     @Then ("^I should see customer as \"([^\"]*)\" added on order screen$")
-    public void iShouldSeeCustomerAsAddedOnOrderScreen(String name){
+    public void iShouldSeeCustomerAsAddedOnOrderScreen(String name) throws InterruptedException {
         new OrderManagementScreen().verifyCustomerAddOrderScreen(name);
     }
 
@@ -579,62 +579,62 @@ public class TableOrderOperationsStepDef {
     }
 
     @When ("^I should verify subtotal value as \"([^\"]*)\"$")
-    public void iShouldVerifySubtotalValueAs(String subtotal){
+    public void iShouldVerifySubtotalValueAs(String subtotal) throws InterruptedException {
         new OrderManagementScreen().verifyMenuSubTotalAs(subtotal);
     }
 
     @Then ("^I should verify tax value as \"([^\"]*)\"$")
-    public void iShouldVerifyTaxValueAs(String value){
+    public void iShouldVerifyTaxValueAs(String value) throws InterruptedException {
          new OrderManagementScreen().verifyTaxValueAs(value);
     }
 
     @Then ("^I should verify discount value as \"([^\"]*)\"$")
-    public void iShouldVerifyDiscountValueAs(String value){
+    public void iShouldVerifyDiscountValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyDiscountValueAs(value);
     }
 
     @Then ("^I should verify discount value1 as \"([^\"]*)\"$")
-    public void iShouldVerifyDiscountValue1As(String value){
+    public void iShouldVerifyDiscountValue1As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyDiscount1ValueAs(value);
     }
 
     @Then ("^I should verify service charge value as \"([^\"]*)\"$")
-    public void iShouldVerifyServiceChargeValueAs(String value){
+    public void iShouldVerifyServiceChargeValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyServiceChargeValueAs(value);
     }
 
     @Then ("^I should verify service charge value1 as \"([^\"]*)\"$")
-    public void iShouldVerifyServiceChargeValue1As(String value){
+    public void iShouldVerifyServiceChargeValue1As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyServiceChargeValue1As(value);
     }
 
     @Then ("^I should verify service charge value2 as \"([^\"]*)\"$")
-    public void iShouldVerifyServiceChargeValue2As(String value){
+    public void iShouldVerifyServiceChargeValue2As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyServiceChargeValue2As(value);
     }
 
     @Then ("^I should verify cash price value as \"([^\"]*)\"$")
-    public void iShouldVerifyCashPriceValueAs(String value){
+    public void iShouldVerifyCashPriceValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyCashPriceValueAs(value);
     }
 
     @Then ("^I should verify cash price value as \"([^\"]*)\" for tax exempt$")
-    public void iShouldVerifyCashPriceValueAsForTaxExempt(String value){
+    public void iShouldVerifyCashPriceValueAsForTaxExempt(String value) throws InterruptedException {
         new OrderManagementScreen().verifyCashPriceValueAsForTaxExempt(value);
     }
 
     @Then ("^I should verify cash price value1 as \"([^\"]*)\"$")
-    public void iShouldVerifyCashPriceValue1As(String value){
+    public void iShouldVerifyCashPriceValue1As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyCashPriceValue1As(value);
     }
 
     @Then ("^I should verify cash price value2 as \"([^\"]*)\"$")
-    public void iShouldVerifyCashPriceValue2As(String value){
+    public void iShouldVerifyCashPriceValue2As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyCashPriceValue2As(value);
     }
 
     @Then ("^I should verify cash price value3 as \"([^\"]*)\"$")
-    public void iShouldVerifyCashPriceValue3As(String value){
+    public void iShouldVerifyCashPriceValue3As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyCashPriceValue3As(value);
     }
 
@@ -690,42 +690,42 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should verify total value as \"([^\"]*)\"$")
-    public void iShouldVerifyTotalValueAs(String value){
+    public void iShouldVerifyTotalValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyTotalValueAs(value);
     }
 
     @Then ("^I should verify total4 value as \"([^\"]*)\"$")
-    public void iShouldVerifyTotal4ValueAs(String value){
+    public void iShouldVerifyTotal4ValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyTotal4ValueAs(value);
     }
 
     @And ("^I should verify paid amount as \"([^\"]*)\"$")
-    public void iShouldVerifyPaidAmountAs(String value){
+    public void iShouldVerifyPaidAmountAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyPaidAmountValueAs(value);
     }
 
     @And ("^I should verify paid amount0 as \"([^\"]*)\"$")
-    public void iShouldVerifyPaidAmount0As(String value){
+    public void iShouldVerifyPaidAmount0As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyPaidAmountValueAs0(value);
     }
 
     @And ("^I should verify paid amount1 as \"([^\"]*)\"$")
-    public void iShouldVerifyPaidAmount1As(String value){
+    public void iShouldVerifyPaidAmount1As(String value) throws InterruptedException {
         new OrderManagementScreen().verifyPaidAmountValue1As(value);
     }
 
     @Then ("^I should verify total5 value as \"([^\"]*)\"$")
-    public void iShouldVerifyTotal5ValueAs(String value){
+    public void iShouldVerifyTotal5ValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyTotal5ValueAs(value);
     }
 
     @Then ("^I should verify total6 value as \"([^\"]*)\"$")
-    public void iShouldVerifyTotal6ValueAs(String value){
+    public void iShouldVerifyTotal6ValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyTotal6ValueAs(value);
     }
 
     @Then ("^I should verify total2 value as \"([^\"]*)\"$")
-    public void iShouldVerifyTotal2ValueAs(String value){
+    public void iShouldVerifyTotal2ValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyTotal2ValueAs(value);
     }
 
@@ -770,36 +770,36 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should verify tax exempt total value as \"([^\"]*)\"$")
-    public void iShouldVerifyTaxExemptTotal2ValueAs(String value){
+    public void iShouldVerifyTaxExemptTotal2ValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyTaxExemptTotalValueAs(value);
     }
 
     @And ("^I should verify cash option value as \"([^\"]*)\" with Gratuity$")
-    public void iShouldVerifyCashOptionValueAsWithGratuity(String value){
+    public void iShouldVerifyCashOptionValueAsWithGratuity(String value) throws InterruptedException {
         new OrderManagementScreen().verifyCashOptionValueASWithGratuity(value);
     }
 
     @Then ("^I should verify gratuity value as \"([^\"]*)\"$")
-    public void iShouldVerifyGratuityValueAs(String value){
+    public void iShouldVerifyGratuityValueAs(String value) throws InterruptedException {
         new OrderManagementScreen().verifyGratuityValueAs(value);
     }
 
     @Then ("^I should verify gratuity value1 as \"([^\"]*)\"$")
-    public void iShouldVerifyGratuityValue1As(String value){
+    public void iShouldVerifyGratuityValue1As(String value)throws InterruptedException {
         new OrderManagementScreen().verifyGratuity1ValueAs(value);
     }
 
     @When ("^I get Total of menu while cash discount applied$")
-    public void iGetTotalOfMenuWhileCashDiscountApplied(){
+    public void iGetTotalOfMenuWhileCashDiscountApplied()throws InterruptedException {
         new OrderManagementScreen().getTotalOfMenuWhileCashDiscountApplied();
     }
 
     @When ("^I verify total Menu same with Fast cash total when Cash discount applied")
-    public void iVerifyTotalMenuSameWithFastCashTotaWhenCashDiscountIsApplied(){
+    public void iVerifyTotalMenuSameWithFastCashTotaWhenCashDiscountIsApplied()throws InterruptedException {
         new OrderManagementScreen().verifyTheTotalValueWithPaymentScreen();
     }
     @And ("^I verify subtotal value with cash value in payemnt screen$")
-    public void iVerifySubtotalValueWithCashValueInPaymentScreen(){
+    public void iVerifySubtotalValueWithCashValueInPaymentScreen()throws InterruptedException {
         new OrderManagementScreen().verifySubtotalValueWithCashValueInPaymentScreen();
     }
     @And ("^I select menu item  as \"([^\"]*)\" to see menu option window$")
@@ -1851,7 +1851,7 @@ public class TableOrderOperationsStepDef {
 
 
     @And ("^I get the total of menu item in order screen$")
-    public void iGetTheTotalOfMenuItemInOrderScreen(){
+    public void iGetTheTotalOfMenuItemInOrderScreen()throws InterruptedException {
         new OrderManagementScreen().getTotalOfMenuInOrderscreen();
     }
 

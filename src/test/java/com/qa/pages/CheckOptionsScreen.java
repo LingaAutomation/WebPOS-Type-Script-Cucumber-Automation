@@ -113,8 +113,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(name = "Check Discount")
     private WebElement checkDiscountBtn;
 
-    @FindBy(name = "Open Check Discount")
-    private WebElement openCheckDiscountOptionScreen;
+
 
     @FindBy(name = "Open Check Discount")
     private WebElement openCheckDiscountIsVisible;
@@ -291,11 +290,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     WebElement pin5;
 
 
-    public void selectDiscountOnCheckOption() {
 
-        elementClick(discountOnOption, "Tapped Discount Button");
-        //click(discountOnOptionScreen,"Tapped Discount Button");
-    }
 
     public void selectItemDiscount() {
         elementClick(itemDiscountBtn, "Tapped Item Discount Button");
@@ -305,9 +300,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         elementClick(checkDiscountBtn, "Tapped Check Discount Button");
     }
 
-    public void selectOpenCheckDiscountBtn() {
-        elementClick(openCheckDiscountOptionScreen, "Tapped Open check Discount Button");
-    }
+
 
     public String verifyOpenDiscountAppliedOnOrderScreen() {
         return elementGetText(openCheckDiscountIsVisible, "open check Discount txt is displayed - ");

@@ -20,7 +20,7 @@ public class CheckBasedDiscountStepDef {
     }
 
     @And ("^I click Discount as \"([^\"]*)\"$")
-    public void iClickDiscountAs(String discount){
+    public void iClickDiscountAs(String discount) throws InterruptedException {
         new Discount().pressDiscount(discount);
     }
     @And ("^I click Discount1 as \"([^\"]*)\"$")
@@ -38,30 +38,30 @@ public class CheckBasedDiscountStepDef {
     }
 
     @And ("^I compare menu price as \"([^\"]*)\" \"([^\"]*)\" and applied \"([^\"]*)\" on \"([^\"]*)\" menu Item$")
-    public void iCompareMenuPriceAsAndAppliedOnMenuItem(String amount,String amount1,String name, String name1){
+    public void iCompareMenuPriceAsAndAppliedOnMenuItem(String amount,String amount1,String name, String name1) throws InterruptedException {
         new Discount().verifyMenuItemPrice(amount,amount1,name,name1);
     }
     @Then ("^I should see orderscreen with menu item prize as \"([^\"]*)\"$")
-    public void iShouldSeeOrderScreenWithMenuItemPrizeAs(String amount){
+    public void iShouldSeeOrderScreenWithMenuItemPrizeAs(String amount) throws InterruptedException {
         new Discount().verifyMenuItemPrizeIsDisplayed(amount);
     }
     @Then ("^I should see orderscreen with menu item Total as \"([^\"]*)\"$")
-    public void iShouldSeeOrderScreenWithMenuItemTotalAs(String amount){
+    public void iShouldSeeOrderScreenWithMenuItemTotalAs(String amount) throws InterruptedException {
         new Discount().verifyMenuItemTotal(amount);
     }
 
     @Then ("^I should see the tax amount reflected to the check as \"([^\"]*)\"$")
-    public void iShouldSeeTheTaxAmountReflectedToTheCheckAs(String amount){
+    public void iShouldSeeTheTaxAmountReflectedToTheCheckAs(String amount) throws InterruptedException {
         new OrderManagementScreen().checkTaxValue(amount);
     }
 
     @Then ("^I should see orderscreen with menu item Total without Discount or Tax as \"([^\"]*)\"$")
-    public void iShouldSeeOrderScreenWithMenuItemTotalWithoutDiscountOrTaxAs(String amount){
+    public void iShouldSeeOrderScreenWithMenuItemTotalWithoutDiscountOrTaxAs(String amount) throws InterruptedException {
         new Discount().verifyMenuItemTotal1(amount);
     }
 
     @Then ("^I should see orderscreen with menu item Total without Discount or Tax as \"([^\"]*)\" while Gratuity$")
-    public void iShouldSeeOrderScreenWithMenuItemTotalWithoutDiscountOrTaxAsWhileGratuity(String amount){
+    public void iShouldSeeOrderScreenWithMenuItemTotalWithoutDiscountOrTaxAsWhileGratuity(String amount) throws InterruptedException {
         new Discount().verifyMenuItemTotalGratuity1(amount);
     }
 
@@ -71,7 +71,7 @@ public class CheckBasedDiscountStepDef {
     }
 
     @And ("^I change the Quantity of menu Item1 as \"([^\"]*)\"$")
-    public void iChangeTheQuantityOfMenuItem1As(String number){
+    public void iChangeTheQuantityOfMenuItem1As(String number) throws InterruptedException {
         new OrderManagementScreen().enterMenuQuantity$Store(number);
     }
 

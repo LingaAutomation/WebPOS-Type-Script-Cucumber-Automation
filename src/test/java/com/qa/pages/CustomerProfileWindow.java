@@ -58,10 +58,10 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(xpath = "//input[@aria-checked='true']")
     private WebElement taxExemptCustomer1;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Customer Plan\"]")
+    @FindBy(xpath = "//span[contains(.,' Customer Plan ')]")
     private WebElement customerPlanButton;
 
-    @FindBy(name = "Account Types")
+    @FindBy(xpath = "//ion-label[contains(.,'Account Types')]")
     private WebElement accountTypeScreen;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[1]")
@@ -89,7 +89,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(name = "Continue")
     private WebElement continueBtn;
 
-    @FindBy(name = "Update")
+    @FindBy(xpath = "//button[contains(.,' Update ')]")
     private WebElement updateBtn;
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Save\"])[2]")
@@ -151,8 +151,8 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 //        super(TestUtils.driver);
 //    }
 
-    public String verifyAccountType(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    public String verifyAccountType() throws InterruptedException {
+        Thread.sleep(1000);
         return elementGetText(accountTypeScreen,"Account Type is displayed - ");
     }
 
@@ -348,15 +348,15 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 
     }
 
-    public void selectCustomerPlan(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    public void selectCustomerPlan() throws InterruptedException {
+ Thread.sleep(1000);
         elementClick(customerPlanButton,"Tapped Customer Plan Button");
     }
 
 
 
-    public void clickUpdateBtn(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    public void clickUpdateBtn() throws InterruptedException {
+       Thread.sleep(500);
         elementClick(updateBtn, "Tapped Update Button");
     }
 

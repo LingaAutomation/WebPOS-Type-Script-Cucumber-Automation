@@ -35,16 +35,21 @@ public class MenuOptionScreen extends ClockInScreen{
     // @FindBy(xpath = "//XCUIElementTypeButton[@name=\"To Go\"]")
     private WebElement togoBtn;
 
-    @FindBy(name = "Open Discount")
+    @FindBy(xpath = "//span[contains(.,'Open Discount')]")
     private WebElement openDiscountBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Open Discount\"])[1]")
+    @FindBy(xpath = "//p[contains(.,'Open Discount')]")
     private WebElement openDiscountScreen;
 
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "//input[contains(@class,'mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored')]")
     private WebElement enterAmountField;
 
+//    @FindBy(xpath = "//input[@id='mat-input-14']")
+//    private WebElement enterAmountField1;
+//
+//    @FindBy(xpath = "//input[@id='mat-input-22']")
+//    private WebElement enterAmountField2;
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[2]")
     private WebElement pin1ForOpenDiscount;
@@ -58,24 +63,30 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(name = "9")
     private WebElement pin9ForOpenDiscount;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
+    @FindBy(xpath = "(//ion-col//button[contains(@class,'mat-focus-indicator')]//span[contains(.,'1')])[7]")
     private WebElement pin1ForOpenDiscountMenu;
 
     @FindBy (name = "7")
     private WebElement pin7ForOpenDiscount;
 
-    @FindBy(name = "Continue")
+    @FindBy(xpath = "//button[contains(.,' Continue ')]")
     private WebElement continueButtonOpenDiscount;
 
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextView")
+    @FindBy(xpath = "//textarea[contains(@class,'mat-input-element mat-form-field-autofill-control openDiscount__content_grid-row-col-reason ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored')]")
     private WebElement txtFieldForReasonOPenDiscount;
 
-    @FindBy(name = "Apply")
+//    @FindBy(xpath = "//textarea[@id='mat-input-15']")
+//    private WebElement txtFieldForReasonOPenDiscount1;
+//
+//    @FindBy(xpath = "//textarea[@id='mat-input-23']")
+//    private WebElement txtFieldForReasonOPenDiscount2;
+
+    @FindBy(xpath = "//span[contains(.,' Apply ')]")
     private WebElement applyButton;
 
 
-    @FindBy(name = "Open-Item Discount")
+    @FindBy(xpath = "//div[contains(@class,'discount-section')]//div[contains(.,'Open-Item Discount')]")
     private WebElement discountAppliedOrderScreen;
 
     @FindBy(name = "1,00")
@@ -127,7 +138,7 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(name = "Linga Close")
     private WebElement lingaCloseBtn;
 
-    @FindBy(name = "Percentage")
+    @FindBy(xpath = "//span[contains(.,' Percentage ')]")
     private WebElement percentageCheckOption;
 
     public String txt;
@@ -153,9 +164,16 @@ public class MenuOptionScreen extends ClockInScreen{
     }
 
     public String pressOpenItems(String item){
-        WebElement e=mergeAndFindElement("//XCUIElementTypeStaticText[@name=\""+item+" \"]","",TestUtils.XPath);
+        WebElement e=driver.findElement(By.xpath("(//div[contains(@class,'p-col-4 orderlist-menuname')])[2]"));
+        utils.log().info(e.getText());
+        Assert.assertEquals(e.getText(),item);
         elementClick(e,"Tapped Menu Items to see Menu Option Green");
-        WebElement el9 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Menu Option - "+item+" \"]","",TestUtils.XPath);
+        WebElement el9 = driver.findElement(By.xpath("//p[contains(.,' Menu Option - "+item+" ')]"));
+        if(el9.isDisplayed()){
+            utils.log().info("Menu Option screen is displayed");
+        }else{
+            utils.log().info("Menu Option screen is NOT displayed");
+        }
         return  elementGetText(el9,"Menu Option Screen is Displayed - ");
     }
 
@@ -342,54 +360,115 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         elementClick(lingaCloseBtn,"Tapped Close Button");
         elementClick(applyButton,"Tapped Apply Button");
     }
-    public void passAmountAndReasonMenuOptionForSafetyPercentageValue(String name){
+    public void passAmountAndReasonMenuOptionForSafetyPercentageValue(String name) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Thread.sleep(500);
         click(enterAmountField,"Tapped amount field");
-        pressPin2();
-        pressPin0();
-        pressPin00();
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
-        elementClick(enterAmountField,"Tapped enter Amount Field");
-        elementClick(lingaCloseBtn,"Tapped Close Button");
-        WebElement e1=mergeAndFindElement(name,"",TestUtils.Accessibility);
-        elementClick(e1,"Tapped - "+ name);
+//        elementClick(hideKeyboardButton,"Hide Keyboard");
+//        elementClick(enterAmountField,"Tapped enter Amount Field");
+//        elementClick(lingaCloseBtn,"Tapped Close Button");
+
+        elementClick("//span[contains(.,' "+name+" ')]","Tapped - "+ name);
         elementClick(applyButton,"Tapped Apply Button");
     }
-    public void passAmountAndReasonMenuOptionForSafetyPercentageDecimalValue(String name){
+
+    public void passAmountAndReasonMenuOptionForSafetyPercentageValue1(String name) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Thread.sleep(500);
         click(enterAmountField,"Tapped amount field");
-        pressPin2();
-        pressPin0();
-        pressPin5();
-        pressPin0();
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
-        elementClick(enterAmountField,"Tapped enter Amount Field");
-        elementClick(lingaCloseBtn,"Tapped Close Button");
-        WebElement e1=mergeAndFindElement(name,"",TestUtils.Accessibility);
-        elementClick(e1,"Tapped - "+ name);
+//        elementClick(hideKeyboardButton,"Hide Keyboard");
+//        elementClick(enterAmountField,"Tapped enter Amount Field");
+//        elementClick(lingaCloseBtn,"Tapped Close Button");
+
+        elementClick("//span[contains(.,' "+name+" ')]","Tapped - "+ name);
         elementClick(applyButton,"Tapped Apply Button");
     }
+
+    public void passAmountAndReasonMenuOptionForSafetyPercentageDecimalValue(String name) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Thread.sleep(500);
+        click(enterAmountField,"Tapped amount field");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'5')])","Tapped in 5");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+
+        elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
+        txtFieldForReasonOPenDiscount.sendKeys("Open Item");
+//        elementClick(enterAmountField,"Tapped enter Amount Field");
+//        elementClick(lingaCloseBtn,"Tapped Close Button");
+//        WebElement e1=mergeAndFindElement(name,"",TestUtils.Accessibility);
+        elementClick("//span[contains(.,' "+name+" ')]","Tapped - "+ name);
+        elementClick(applyButton,"Tapped Apply Button");
+    }
+
+    public void passAmountAndReasonMenuOptionForSafetyPercentageDecimalValue1(String name) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Thread.sleep(500);
+        click(enterAmountField,"Tapped amount field");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'5')])","Tapped in 5");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+
+        elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
+        txtFieldForReasonOPenDiscount.sendKeys("Open Item");
+//        elementClick(enterAmountField,"Tapped enter Amount Field");
+//        elementClick(lingaCloseBtn,"Tapped Close Button");
+//        WebElement e1=mergeAndFindElement(name,"",TestUtils.Accessibility);
+        elementClick("//span[contains(.,' "+name+" ')]","Tapped - "+ name);
+        elementClick(applyButton,"Tapped Apply Button");
+    }
+
+    public void passAmountAndReasonMenuOptionForSafetyPercentageDecimalValue2(String name) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Thread.sleep(500);
+        click(enterAmountField,"Tapped amount field");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'5')])","Tapped in 5");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+
+        elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
+        txtFieldForReasonOPenDiscount.sendKeys("Open Item");
+//        elementClick(enterAmountField,"Tapped enter Amount Field");
+//        elementClick(lingaCloseBtn,"Tapped Close Button");
+//        WebElement e1=mergeAndFindElement(name,"",TestUtils.Accessibility);
+        elementClick("//span[contains(.,' "+name+" ')]","Tapped - "+ name);
+        elementClick(applyButton,"Tapped Apply Button");
+    }
+
+
     public void passAmountAndReasonMenuOptionAsPercentage(String name){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         elementClick(percentageCheckOption,"Tapped Percentage Button");
-        elementClick(enterAmountField,"Tapped amount field");
-        pressPin2();
-        elementClick(pin1ForOpenDiscountMenu,"Tapped pin 1");
-        pressPin0();
-        pressPin0();
-        elementClick(continueButtonOpenDiscount,"Taped continue for open Discount");
-//        WebDriverWait wait = new WebDriverWait(driver,3);
-//       wait.until(ExpectedConditions.visibilityOfElementLocated((WebElement) By.xpath("")));
+        click(enterAmountField,"Tapped amount field");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'1')])","Tapped pin 0");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 5");
+        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+
+        elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
-        elementClick(enterAmountField,"Tapped enter Amount Field");
-        elementClick(lingaCloseBtn,"Tapped Close Button");
-        WebElement e1=mergeAndFindElement(name,"",TestUtils.Accessibility);
-        elementClick(e1,"Tapped - "+ name);
+//        elementClick(enterAmountField,"Tapped enter Amount Field");
+//        elementClick(lingaCloseBtn,"Tapped Close Button");
+//        WebElement e1=mergeAndFindElement(name,"",TestUtils.Accessibility);
+        elementClick("//span[contains(.,' "+name+" ')]","Tapped - "+ name);
         elementClick(applyButton,"Tapped Apply Button");
     }
-    @FindBy(xpath ="//*[@name=\"Hide keyboard\"]")
+    @FindBy(xpath ="//*[@name='Hide keyboard']")
     private WebElement hideKeyboardButton;
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[2]")
     private WebElement pin1ForOpenDiscountMenu1;

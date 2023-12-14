@@ -69,7 +69,7 @@ public class CheckOptionsStepDef {
 
     @And ("^I click discount on check option screen$")
     public void iClickDiscountOnCheckOptionScreen(){
-        new CheckOptionsScreen().selectDiscountOnCheckOption();
+        new CheckOptions().selectDiscountOnCheckOption();
     }
 
     @And ("^I click item discount from the check options$")
@@ -84,7 +84,7 @@ public class CheckOptionsStepDef {
 
     @And ("^I click open check discount button from the check options$")
     public void iClickOpenCheckDiscountButtonFromTheCheckOptions(){
-        new CheckOptionsScreen().selectOpenCheckDiscountBtn();
+        new CheckOptions().selectOpenCheckDiscountBtn();
     }
 
     @And ("^I select tax as \"([^\"]*)\"$")
@@ -110,7 +110,7 @@ public class CheckOptionsStepDef {
     }
     @And ("^I select open check discount$")
     public void iSelectOpenCheckDiscount(){
-        new CheckOptionsScreen().selectOpenCheckDiscountBtn();
+        new CheckOptions().selectOpenCheckDiscountBtn();
     }
     @And ("^I pass the amount on open discount for open check discount safety percentage whole value as 20 for \"([^\"]*)\"$")
     public void iPassTheAmountOnOpenDiscountForOpenCheckDiscountSafetyPercentageWholeValueAs20For(String discount){
@@ -186,7 +186,7 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see the Payment window$")
     public void iShouldSeeThePaymentWindow() {
-        Assert.assertEquals(new PaymentWindow().getPaymentWindowTitle(), "Select Payment Method");
+        Assert.assertEquals(new PaymentWindow().getPaymentWindowTitle(), "Payment methods");
     }
 
     @And ("^I click loyalty payment$")
@@ -298,7 +298,7 @@ public class CheckOptionsStepDef {
     /****** Tax Exempt ******/
 
     @And("^I select Salad as category$")
-    public void iSelectSaladAsCategory() {
+    public void iSelectSaladAsCategory() throws InterruptedException {
         new OrderManagementScreen().selectSaladCategory();
     }
 
@@ -355,7 +355,7 @@ public class CheckOptionsStepDef {
     }
 
     @Then ("^I verify the paid amount with partial paid amount on the payment screen$")
-    public void iVerifyThePaidAmountWithPartialPaidAmountOnThePaymentScreen(){
+    public void iVerifyThePaidAmountWithPartialPaidAmountOnThePaymentScreen() throws InterruptedException {
         new PaymentWindow().verifyThePaidAmountPartialPaidAmountOnthePaymentScreen();
     }
 
@@ -413,11 +413,11 @@ public class CheckOptionsStepDef {
     }
 
     @Then ("^I should see total screen$")
-    public void iShouldSeeTotalScreen(){
+    public void iShouldSeeTotalScreen() throws InterruptedException {
         new PaymentWindow().verifyTotalScreen();
     }
     @And ("^I click the Continue button on the Total screen$")
-    public void iClickTheContinueButtonOnTheTotalScreen(){
+    public void iClickTheContinueButtonOnTheTotalScreen() throws InterruptedException {
         new PaymentWindow().clickContinueBtn();
     }
     @Then ("^I should see choose card window$")
@@ -434,7 +434,7 @@ public class CheckOptionsStepDef {
         new PaymentWindow().clickPayBtn();
     }
     @Then ("^I should see your order card screen$")
-    public void iShouldSeeYourOrderCardScreen(){
+    public void iShouldSeeYourOrderCardScreen() throws InterruptedException {
         Assert.assertEquals(new PaymentWindow().verifyYourOrder(),"Your Order");
     }
 
@@ -477,9 +477,9 @@ public class CheckOptionsStepDef {
         new PaymentWindow().clickTickIcon();
     }
 
-    @And ("^I click Process button on card screen$")
-    public void iClickProcessButtonOnCardScreen(){
-        new PaymentWindow().clickProcessButton();
+    @And("^I click Process button on card screen$")
+    public void iClickProcessButtonOnCardScreen() throws InterruptedException {
+        new CheckOptions().clickProcessButton();
     }
 
     @Then("^I should see Paid amount exceeds the sale amount popup$")
@@ -539,7 +539,7 @@ public class CheckOptionsStepDef {
     }
 
     @And("I click Submit button on the Payment Window")
-    public void iClickSubmitButtonOnThePaymentWindow() {
+    public void iClickSubmitButtonOnThePaymentWindow() throws InterruptedException {
         new PaymentWindow().pressSubmitBtn();
     }
 
@@ -592,9 +592,12 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I click Coursing Name text field for Menu option$")
-    public void iClickCoursingNameTextFieldForMenuOption(){
+    public void iClickCoursingNameTextFieldForMenuOption() throws InterruptedException {
         new CheckOptions().pressOpenItemTextFieldMenuOption();
     }
+
+
+
 
     @And("^I swipe to \"([^\"]*)\" as Coursing Name$")
     public void iSwipeToAsCoursingName(String name) throws InterruptedException {
@@ -603,41 +606,44 @@ public class CheckOptionsStepDef {
 
     @And("^I enter course name as \"([^\"]*)\"$")
     public void iEnterCourseNameAs(String menu) throws InterruptedException {
-        new OpenItemWindow().setItemName(menu);
+        new CheckOptions().setItemName(menu);
     }
 
     @And ("^I pass course name as \"([^\"]*)\"$")
-    public void iPassCourseNameAs(String menu){
-        new OpenItemWindow().setOpenItemNameMenuOption(menu);
+    public void iPassCourseNameAs(String menu) throws InterruptedException {
+        new CheckOptions().setOpenItemNameMenuOption(menu);
     }
+
+
 
     @And("^I enter course name as \"([^\"]*)\" for check based open item$")
     public void iEnterCourseNameAsForCheckBasedOpenItem(String menu) throws InterruptedException {
-        new OpenItemWindow().setItemName(menu);
+        new CheckOptions().setItemName(menu);
     }
 
     @And("^I tap Price text field$")
     public void iTapPriceTextField() {
-        new OpenItemWindow().selectPriceFld();
+        new CheckOptions().selectPriceFld();
     }
 
     @And("^I tap Price text field for menu option$")
     public void iTapPriceTextFieldForMenuOption() {
-        new OpenItemWindow().selectPriceFldMenuOption();
+        new CheckOptions().selectPriceFldMenuOption();
     }
+
 
     @And("^I enter the price$")
     public void iEnterThePrice() {
         new OpenItemWindow().press1ForCheckOpenItem();
-        new OpenItemWindow().press00();
-        new OpenItemWindow().press00();
+        new CheckOptions().press00();
+        new CheckOptions().press00();
     }
 
     @And("^I enter the price with sale$")
     public void iEnterThePriceWithSale() {
-        new OpenItemWindow().press1();
-        new OpenItemWindow().press00();
-        new OpenItemWindow().press00();
+        new CheckOptions().pressPin5Open();
+        new CheckOptions().press00();
+        new CheckOptions().press0();
     }
 
     @And ("^I get the open item value from open item window$")
@@ -647,15 +653,15 @@ public class CheckOptionsStepDef {
     @And ("^I enter price for check based open item")
     public void iEnterPriceForCheckBasedOpenItem(){
         new OpenItemWindow().press1ForCheckOpenItem();
-        new OpenItemWindow().press00();
-        new OpenItemWindow().press00();
+        new CheckOptions().press00();
+        new CheckOptions().press00();
     }
 
     @And("^I enter the price for Check based tax on Tirmasu$")
     public void iEnterThePriceForCheckBasedTaxOnTirmasu() {
         new OpenItemWindow().pressPin9();
         new OpenItemWindow().press0();
-        new OpenItemWindow().press00();
+        new CheckOptions().press00();
     }
     @And ("^I click 10 percentage Tax for open item$")
     public void iClick10PercentageTaxForOpenItem() throws InterruptedException {
@@ -669,17 +675,17 @@ public class CheckOptionsStepDef {
 
     @And("^I click Continue button on the Open Item Price numbers popup$")
     public void iClickContinueButtonOnTheOpenItemPriceNumbersPopup() {
-        new OpenItemWindow().pressContinueAddingOpenItem();
+        new CheckOptions().pressContinueAddingOpenItem();
     }
 
     @And("^I click Done button on the open item window$")
     public void iClickDoneButtonOnTheOpenItemWindow() {
-        new OpenItemWindow().pressDoneOpenItemBtn();
+        new CheckOptions().pressDoneOpenItemBtn();
     }
 
     @Then("^I should navigate to Order Management screen and see the added open item as \"([^\"]*)\"$")
-    public void iShouldNavigateToOrderManagementScreenAndSeeTheAddedOpenItemAs(String open) {
-        new OpenItemWindow().verifyOpenItem(open);
+    public void iShouldNavigateToOrderManagementScreenAndSeeTheAddedOpenItemAs(String open) throws InterruptedException {
+        new CheckOptions().verifyOpenItem(open);
     }
 
     @Then ("^I verify the open item value from open item window with order screen$")
@@ -738,7 +744,7 @@ public class CheckOptionsStepDef {
     }
 
     @Then ("^I should see orderscreen with menu item Total without Tax Exempt as \"([^\"]*)\"$")
-    public void iShouldSeeOrderScreenWithMenuItemTotalWithoutTaxExemptAs(String amount){
+    public void iShouldSeeOrderScreenWithMenuItemTotalWithoutTaxExemptAs(String amount) throws InterruptedException {
         new Discount().verifyMenuItemTotal2(amount);
     }
 

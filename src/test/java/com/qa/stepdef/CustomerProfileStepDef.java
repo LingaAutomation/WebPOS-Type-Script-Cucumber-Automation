@@ -76,12 +76,12 @@ public class CustomerProfileStepDef {
     }
 
     @And ("^I click customer plan button$")
-    public void iClickCustomerPlanButton(){
+    public void iClickCustomerPlanButton() throws InterruptedException {
         new CustomerProfileWindow().selectCustomerPlan();
     }
 
     @Then ("^I should see Account type screen$")
-    public void iShouldSeeAccountTypeScreen() {
+    public void iShouldSeeAccountTypeScreen() throws InterruptedException {
         Assert.assertEquals(new CustomerProfileWindow().verifyAccountType(), "Account Types");
     }
 
@@ -95,7 +95,7 @@ public class CustomerProfileStepDef {
     }
 
     @And ("^I click update button$")
-    public void iClickUpdateButton(){
+    public void iClickUpdateButton() throws InterruptedException {
         new CustomerProfileWindow().clickUpdateBtn();
     }
 

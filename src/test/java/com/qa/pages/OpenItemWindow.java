@@ -24,22 +24,7 @@ public class OpenItemWindow extends OrderManagementScreen{
     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]
 
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[2]")
-    WebElement ItemNameTxtFldMenuOption;
 
-    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[2]")
-    WebElement ItemNameTxtFld;
-
-
-    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]")
-    WebElement priceFld;
-    //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]
-
-    @FindBy(xpath = " //XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]")
-    WebElement priceFldMenuOption;
-
-    @FindBy( xpath = "(//XCUIElementTypeButton[@name=\"1\"])[2]")
-    WebElement price1;
 
     @FindBy( name = "1")
     WebElement price1Check;
@@ -47,17 +32,13 @@ public class OpenItemWindow extends OrderManagementScreen{
     @FindBy(name = "0")
     WebElement price0;
 
-    @FindBy(name = "00")
-    WebElement price00;
 
-    @FindBy( name = "Continue")
-    WebElement continueBtn;
+
 
     @FindBy( name = "7% Sales Tax")
     WebElement percent7Tax;
 
-    @FindBy(name = "Done")
-    WebElement doneBtn;
+
 
 
 
@@ -77,43 +58,13 @@ public class OpenItemWindow extends OrderManagementScreen{
     }
 
 
-
-    public void setItemName(String name) throws InterruptedException {
-        Thread.sleep(200);
-        sendKeys( ItemNameTxtFld, name);
-    }
-
-    public void setItemNameMenuOption(){
-        sendKeys( ItemNameTxtFldMenuOption, "Tiramisu");
-    }
-
-    public void setOpenItemNameMenuOption(String item){
-        sendKeys( ItemNameTxtFldMenuOption, item);
-    }
-
-
-
-
-    public void selectPriceFld(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-        elementClick( priceFld, "Price field selected - ");
-    }
-
-    public void selectPriceFldMenuOption(){
-        elementClick(priceFldMenuOption,"Price Field selected");
-    }
-
     public void selectTax(){
         elementClick( percent7Tax, "%7 Tax is selected - ");
     }
 
-    public void pressDoneOpenItemBtn(){
-        elementClick( doneBtn, "Done button is tapped - ");
-    }
 
-    public void press1(){
-        elementClick( price1, "1 is selected ");
-    }
+
+
     public void press1ForCheckOpenItem(){
         elementClick(price1Check,"Tapped 1 Button ");
     }
@@ -122,13 +73,8 @@ public class OpenItemWindow extends OrderManagementScreen{
         elementClick( price0, "0 is selected - ");
     }
 
-    public void press00(){
-        elementClick( price00, "00 is selected - ");
-    }
 
-    public void pressContinueAddingOpenItem(){
-        elementClick( continueBtn, "Continue button is tapped - " );
-    }
+
 
     public String getValueFromOpenItemFieldTxt1 = " ";
     public void getValueFromOpenItemScreen(){

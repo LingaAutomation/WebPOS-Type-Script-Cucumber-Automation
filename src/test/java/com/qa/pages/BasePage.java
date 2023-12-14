@@ -253,13 +253,11 @@ public WebElement scrollToElement(String txt) throws InterruptedException {
 //        driver.findElement("e").click();
 //    }
     public void elementClick(String e, String msg) {
-        try{
-        utils.log().info(msg);
-        driver.findElement(By.xpath(e)).click();
 
-         }catch (Exception execp){
-         execp.printStackTrace();
-        }
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(e)));
+        utils.log().info(msg);
+        element.click();
     }
 
     public WebElement convertWebElement(String e)  {
@@ -276,9 +274,12 @@ public WebElement scrollToElement(String txt) throws InterruptedException {
     }
 
     public void elementClick(WebElement e, String msg) {
-
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(e));
         utils.log().info(msg);
-        e.click();
+        element.click();
+
+//        e.click();
 
     }
 public void findAndClickMobileElement(String selectorPath,String injector, String selectorName) throws Exception {
