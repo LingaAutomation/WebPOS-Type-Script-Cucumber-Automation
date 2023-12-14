@@ -52,6 +52,26 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().menu1Selection(menuItem);
     }
 
+    @And("^I selected the serving size as \"([^\"]*)\"$")
+    public void selectTheMenuSizeAs(String ServingSize) throws Exception {
+        new BasePage().selectTheMenuSize(ServingSize);
+    }
+
+    @And("^I selected the serving size as \"([^\"]*)\" conversational$")
+    public void selectTheMenuSizeConversationalAs(String ServingSize) throws Exception {
+        new BasePage().selectTheMenuSizeConversational(ServingSize);
+    }
+
+    @And("^I selected the modifier \"([^\"]*)\"$")
+    public void selectTheModifier(String ModifierName) throws Exception {
+        new BasePage().selectTheModifierAs(ModifierName);
+    }
+
+    @And("^I selected the prefix \"([^\"]*)\"$")
+    public void selectThePrefix(String PrefixName) throws Exception {
+        new BasePage().selectThePrefixAs(PrefixName);
+    }
+
     @And("^Check the amount of menu item \"([^\"]*)\"$")
     public void checkTheAmountOfMenuItem(String amount) throws InterruptedException {
         new TaxRoundingOff().checkingMenuPrice(amount);

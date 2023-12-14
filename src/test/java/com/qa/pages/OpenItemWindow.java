@@ -55,7 +55,7 @@ public class OpenItemWindow extends CheckOptionsScreen{
     @FindBy( name = "7% Sales Tax")
     WebElement percent7Tax;
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "//button[contains(.,'Done')]")
     WebElement doneBtn;
 
     public void selectCoursingNameTextFld(){

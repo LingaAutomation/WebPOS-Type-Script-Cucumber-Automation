@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                106,
-                1,
+                283,
                 3,
+                9,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 110) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 295) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                9,
-                1
+                22,
+                3
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 10) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 25) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>13 Dec 2023, 12:45</td>
+      <td>15 Dec 2023, 00:28</td>
     </tr>
   </tbody>
 </table>
@@ -325,18 +325,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_1460643925.html">TaxRoundOff_Build_5.2(1.5)</a></td>
 
-        <td      class="passed"    >106</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
+        <td      class="passed"    >283</td>
+        <td      class="failed"    >3</td>
+        <td     class="skipped"   >9</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">110</td>
+        <td class="total">295</td>
 
-        <td  class="passed"    >9</td>
-        <td  class="failed"    >1</td>
-        <td class="total">10</td>
+        <td  class="passed"    >22</td>
+        <td  class="failed"    >3</td>
+        <td class="total">25</td>
 
-        <td class="duration" data-value="139087636000">2:19.087</td>
+        <td class="duration" data-value="429742698000">7:9.742</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -344,30 +344,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>106</td>
-      <td>1</td>
+      <td>283</td>
       <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>110</td>
-
       <td>9</td>
-      <td>1</td>
-      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>295</td>
 
-      <td class="duration">2:19.087</td>
+      <td>22</td>
+      <td>3</td>
+      <td>25</td>
+
+      <td class="duration">7:9.742</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>96.36%</td>
-      <td>0.91%</td>
-      <td>2.73%</td>
+      <td>95.93%</td>
+      <td>1.02%</td>
+      <td>3.05%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>90.00%</td>
-      <td>10.00%</td>
+      <td>88.00%</td>
+      <td>12.00%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

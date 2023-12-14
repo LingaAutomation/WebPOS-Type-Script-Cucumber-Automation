@@ -58,6 +58,50 @@ public class BasePage extends TGglobalElement {
 //        Select_RandomMenuItems(driver);
     }
 
+    public void selectTheMenuSize(String ServingSize) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement menuServingSize = driver.findElement(By.xpath("//ion-grid//ion-row//ion-col[contains(@class,'mod-but')]//button//span[contains(.,"+ServingSize+")]"));
+        elementClick(menuServingSize, "Tapped Serving Size");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
+
+    public void selectTheMenuSizeConversational(String ServingSize) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement menuServingSize = driver.findElement(By.xpath("//ion-grid//ion-row//ion-col[contains(@class,'mod-but')]//div//button[contains(.,"+ServingSize+")]"));
+        elementClick(menuServingSize, "Tapped Serving Size");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
+
+    public void selectTheModifierAs(String ModifierName) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+//        WebElement modifierBtn = driver.findElement(By.xpath("//button[contains(.,"+ModifierName+")]"));
+        ////button[contains(.,"+ModifierName+")]
+        String modifierBtn = "//div[contains(@class,'group-container')]//button[contains(.,"+ModifierName+")]";
+
+        elementClick(modifierBtn, "Tapped modifier");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
+
+    public void selectThePrefixAs(String PrefixName) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement prefixBtn = driver.findElement(By.xpath("//div[contains(@class,'conventional-prefix')]//button//span[contains(.,"+PrefixName+")]"));
+//        WebElement prefixBtn = driver.findElement(By.xpath("//span[contains(.,"+PrefixName+")]"));
+        elementClick(prefixBtn, "Tapped prefix");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
+
     public void waitForVisibility(WebElement e) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(e));
