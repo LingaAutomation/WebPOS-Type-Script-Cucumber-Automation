@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -1127,7 +1128,7 @@ public class TGMenuItemPage extends BasePage {
         elementClick(element1,"Select Second Table");
         WebElement btnDone = mergeAndFindMobileElement(doneButton);
         elementClick(btnDone,"Click Done");
-        driver.findElement(doneButton).click();
+        driver.findElement(By.xpath(doneButton)).click();
     }
     //merge olan checkleri alan method yazılacak
     public void verifyMergeCheck(){
@@ -1264,9 +1265,12 @@ public class TGMenuItemPage extends BasePage {
         WebElement element2 = mergeAndFindMobileElement(firstCategoryOnPopup);
         elementClick(element2,"Click First Category Popup");
     }
+
+    @FindBy(xpath = "//button[@id='os_addSeat']")
+    WebElement addSeatBtn;
     public void clickAddSeatButton(){
-        WebElement element = mergeAndFindMobileElement(addSeat);
-        elementClick(element,"Click Add Seat Button");
+
+        elementClick(addSeatBtn,"Click Add Seat Button");
     }
     public void verifyAddedSeat(){
         WebElement element = mergeAndFindMobileElement(addedSeat);
@@ -1294,7 +1298,7 @@ public class TGMenuItemPage extends BasePage {
     }
     //new nov18
     public void clickEditDoneButton1(){
-        waitForVisibility(giftCardDone);
+        waitForVisibility(By.xpath(giftCardDone));
         WebElement element = mergeAndFindMobileElement(giftCardDone);
         elementClick(element,"Click Edit Done Button");
     }
@@ -1385,7 +1389,7 @@ public class TGMenuItemPage extends BasePage {
         elementClick(element,"Click Discount Tab");
     }
     public void verifyOpenCheckDiscountAmount(){
-        String actualName = driver.findElement(openCheckDiscountTitle).getText();
+        String actualName = driver.findElement(By.xpath(openCheckDiscountTitle)).getText();
         String expectedName = "Open Check Discount";
         Assert.assertEquals(actualName,expectedName);
     }
@@ -1594,14 +1598,16 @@ public class TGMenuItemPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(upchargeWithoutModifierMenuItem);
         elementClick(element,"Search Upcharge MenuItem");
     }
-    public void selectOrderTab(){
+    public void selectOrderTab() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element = mergeAndFindMobileElement(orderButton);
         elementClick(element,"Search OrderTab");
     }
-    public void verifyUpchargeMenuItem(){
-        WebElement element = mergeAndFindMobileElement(upchargeWithoutModifierMenuItem);
+    public void verifyUpchargeMenuItem() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("(//div[(@class='p-col-4 orderlist-menuname')])[1]"));
         String actualName = elementGetText(element,"Verify Upcharge MenuItem");
-        String expectedName = "SANDWICHES ";
+        String expectedName = "SANDWICHES";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -1610,8 +1616,9 @@ public class TGMenuItemPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(upchargeWithModifierMenuItem);
         elementClick(element,"Search Upcharge MenuItem WithModifier");
     }
-    public void verifyUpchargeMenuItemWithModifier(){
-        WebElement element = mergeAndFindMobileElement(upchargeWithModifierMenuItem);
+    public void verifyUpchargeMenuItemWithModifier() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("(//div[(@class='p-col-4 orderlist-menuname')])[2]"));
         String actualName = elementGetText(element,"Verify Upcharge MenuItem WithModifier");
         String expectedName = "Sandwiches Upcharge Add Modifier";
 
@@ -1963,7 +1970,7 @@ public class TGMenuItemPage extends BasePage {
         Assert.assertEquals(actualName,expectedName);
     }
     public void selectServiceType(){
-        WebElement element = mergeAndFindMobileElement(serviceTypeButton);
+        WebElement element = driver.findElement(By.xpath(serviceTypeButton));
         element.isEnabled();
         elementClick(element,"Select Service Type");
     }
@@ -1996,7 +2003,7 @@ public class TGMenuItemPage extends BasePage {
     public void clickSelectedFirstCustomer(){
 //        WebElement element = mergeAndFindMobileElement(firstCustomer);
 //        elementClick(element,"Click Selected First Customer");
-        findandclickM(firstCustomer);
+        findandclickM(By.xpath(firstCustomer));
     }
 //    public void verifiedEditedCustomer(){
 //        WebElement element = mergeAndFindMobileElement(editedCustomer);
@@ -2274,6 +2281,7 @@ public class TGMenuItemPage extends BasePage {
         Assert.assertEquals(expectedName1,actualName1);
     }
     public void clickFoodTab(){
+//        pressArrowDow
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Click FoodTab");
     }
@@ -2284,6 +2292,10 @@ public class TGMenuItemPage extends BasePage {
     public void selectThirdModifierOfSecondPizzaMenuItem(){
         WebElement element = mergeAndFindMobileElement(thirdModifierOfSecondPizzaMenuItem);
         elementClick(element,"Select Third Modifier Of Second Pizza MenuItem");
+    }
+
+    public void selectModifierAs12(){
+        elementClick("/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[2]/app-category-item-option-container/ion-app/ion-content/app-breadcrumb-modifier/div/ion-content/ion-grid/ion-row/ion-col[1]/button[1]","Selected 12");
     }
     public void verifyModifierPrefix(){
         WebElement element = mergeAndFindMobileElement(secondModifierPrefix);
@@ -2306,8 +2318,8 @@ public class TGMenuItemPage extends BasePage {
     }
     public void verifyOptionalModifier(){
         WebElement element = mergeAndFindMobileElement(wellDoneOptionalModifierOnOrderList);
-        String actualName = elementGetText(element," WELL DONE");
-        String expectedName = " WELL DONE";
+        String actualName = elementGetText(element,"WELL DONE");
+        String expectedName = "WELL DONE";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -2457,7 +2469,7 @@ public class TGMenuItemPage extends BasePage {
     public void verifyMenuItemWithNoMandatoryModifier(){
         WebElement element = mergeAndFindMobileElement(fourthMenuItem1);
         String actualName = elementGetText(element,"Verify MenuItem With No Mandatory Modifier");
-        String expectedName = "Fried Crab Cakes ";
+        String expectedName = "Fried Crab Cakes";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -2903,13 +2915,15 @@ public class TGMenuItemPage extends BasePage {
         elementClick(element1,"Click selected Customer For BarTab");
     }
     public void clickFoodCategoryOption(){
-        WebElement element = mergeAndFindMobileElement(foodCategoryOption);
+        WebElement element = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'FOOD')]"));
         elementClick(element,"Click food Category Option");
     }
     public void verifyFoodCategoryOption(){
-        WebElement element = mergeAndFindMobileElement(foodCategoryTitle);
-        String actualName = elementGetText(element,"Verify FoodCategory Option");
-        String expectedName = "______ MENU ITEMS OF \"FOOD\" ______";
+        WebElement element = driver.findElement(By.xpath("//p[@class='hasMenuItem']"));
+
+        String actualName = elementGetText(element,"Verify FoodCategory Option - ");
+        utils.log().info(actualName);
+        String expectedName = "__MENU ITEMS OF 'FOOD'__";
 
         Assert.assertEquals(actualName,expectedName);
     }

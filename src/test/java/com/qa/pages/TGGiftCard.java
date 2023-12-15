@@ -25,15 +25,15 @@ public class TGGiftCard extends BasePage{
 
         int chargeAmount=100;
 
-        Integer.parseInt(driver.findElement(beginningAmount).getText());
+        Integer.parseInt(driver.findElement(By.id(beginningAmount)).getText());
 
         ArrayList<Integer> beginningBalance = new ArrayList<>();
 
         for (int i = 0; i < beginningBalance.size(); i++) {
 
-            Integer.parseInt(driver.findElement(recurringAmount).getText());
+            Integer.parseInt(driver.findElement(By.id(recurringAmount)).getText());
 
-            int recurringBalance = Integer.parseInt(driver.findElement(beginningAmount).getText()) + chargeAmount;
+            int recurringBalance = Integer.parseInt(driver.findElement(By.id(beginningAmount)).getText()) + chargeAmount;
             Assert.assertEquals(recurringBalance,"recurring balance: ");
 
         }
@@ -60,10 +60,10 @@ public class TGGiftCard extends BasePage{
     }
     public void verifyChangingRecurringBalance(){
 
-        String lastBeginningBalance =mergeAndFindMobileElement(By.xpath("//XCUIElementTypeStaticText[@name=\"TL 9.389,99\"]")).getText();
-        String firstRecurringBalance = mergeAndFindMobileElement(By.xpath("//XCUIElementTypeStaticText[@name=\"TL 9.489,99\"]")).getText();
+        String lastBeginningBalance =mergeAndFindMobileElement("//XCUIElementTypeStaticText[@name=\"TL 9.389,99\"]").getText();
+        String firstRecurringBalance = mergeAndFindMobileElement("//XCUIElementTypeStaticText[@name=\"TL 9.489,99\"]").getText();
 
-        String chargeAmount = mergeAndFindMobileElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField")).getText();
+        String chargeAmount = mergeAndFindMobileElement(("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField")).getText();
 
         if(Integer.parseInt(lastBeginningBalance) <= Integer.parseInt(firstRecurringBalance) ){
 

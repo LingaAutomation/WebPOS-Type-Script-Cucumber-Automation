@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -20,12 +21,12 @@ public class TGPosSettingsPage extends BasePage {
                     found = true;
                     break;
                 } else {
-                    scrollToElement(saveChangesButton, direction);
+                    scrollToElement(By.id(saveChangesButton), direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(saveChangesButton, direction);
+                scrollToElement(By.id(saveChangesButton), direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -34,8 +35,8 @@ public class TGPosSettingsPage extends BasePage {
         }
     }
 
-    public void closeAskCustomerNameOptionIfEnable(String direction, String direction1) throws Exception {
-//        scrollToElement(posSettingHeader,direction1);
+    public void closeAskCustomerNameOptionIfEnable() throws Exception {
+
 
         WebElement element = mergeAndFindMobileElement(posSettingHeader);
         String actualName = elementGetText(element,"verify posSettingHeader");
@@ -43,57 +44,11 @@ public class TGPosSettingsPage extends BasePage {
 
         Assert.assertEquals(actualName, expectedName);
 
-        direction = direction.toLowerCase();
-        direction1 = direction1.toLowerCase();
+        WebElement askCustomerName = driver.findElement(By.xpath("//ion-item[contains(.,' Ask Customer Name ')]//ion-toggle[@aria-checked='true']"));
 
-//        scrollToElement(barTabOption, direction);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
 
-        int i = 0;
-        boolean found = false;
-
-        while (i < 5) {
-            try {
-                if (isElementExists()) {
-                    found = true;
-                    break;
-                } else {
-                    scrollToElement(OverWriteCCOption, direction);
-                    i++;
-                    continue;
-                }
-            } catch (Exception e) {
-                scrollToElement(OverWriteCCOption, direction);
-                i++;
-                if (i == 5)
-                    Assert.fail(e.getMessage());
-                continue;
-            }
-        }
-        WebElement element1 = mergeAndFindMobileElement(askCustomerNameToggle);
-        String value = getAttribute(element1,"value");
-
-        if (value.contains("1")) {
-            WebElement element2 = mergeAndFindMobileElement(askCustomerNameToggle);
-            elementClick(element2, "click askCustomerNameToggle Button ");
-            swipeUntilSaveChangesButton(direction1);
-            WebElement element3 = mergeAndFindMobileElement(saveChangesButton);
-            elementClick(element3, "click saveChangesButton Button ");
-            WebElement element4 = mergeAndFindMobileElement(doneButton);
-             elementClick(element4, "click saveChangesButton Button ");
-
-        }
-//        else if (value.contains("0")) {
-//            WebElement menuIcon= mergeAndFindMobileElement(operationMenuIcon);
-//            elementClick(menuIcon, "click operationMenuIcon ");
-//
-//            WebElement tabPos= mergeAndFindMobileElement(posTab);
-//            elementClick(tabPos, "click operationMenuIcon ");
-//        }
-        WebElement menuIcon= mergeAndFindMobileElement(operationMenuIcon);
-        elementClick(menuIcon, "click operationMenuIcon ");
-//        elementClick(menuIcon, "click operationMenuIcon ");
-//        WebElement tabPos= mergeAndFindMobileElement(posTab);
-//        elementClick(tabPos, "click operationMenuIcon ");
+        askCustomerName.click();
     }
 
 
@@ -109,12 +64,12 @@ public class TGPosSettingsPage extends BasePage {
                     found = true;
                     break;
                 } else {
-                    scrollToElement(barTabOption, direction);
+                    scrollToElement(By.id(barTabOption), direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(barTabOption, direction);
+                scrollToElement(By.id(barTabOption), direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -221,12 +176,12 @@ public class TGPosSettingsPage extends BasePage {
                     found = true;
                     break;
                 } else {
-                    scrollToElement(OverWriteCCOption, direction);
+                    scrollToElement(By.id(OverWriteCCOption), direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(OverWriteCCOption, direction);
+                scrollToElement(By.id(OverWriteCCOption), direction);
                 i++;
                 if (i == 5)
                     Assert.fail(e.getMessage());

@@ -45,10 +45,10 @@ public class CheckOptions extends OrderManagementScreen {
     @FindBy(xpath = "//label[contains(.,'Open Item')]")
     WebElement openItemBtn;
 
-    @FindBy(name = "//label[contains(.,'Resend To Kitchen')]")
+    @FindBy(xpath = "//label[contains(.,'Resend To Kitchen')]")
     WebElement resendToKitchenBtn;
 
-    @FindBy(name = "//label[contains(.,'Modify')]")
+    @FindBy(xpath = "//label[contains(.,'Modify')]")
     WebElement modifyBtn;
 
     public void pressGratuityBtn() {
@@ -154,7 +154,8 @@ public class CheckOptions extends OrderManagementScreen {
         elementClick(holdBtn, "- Hold option is selected");
     }
 
-    public void pressModify() {
+    public void pressModify() throws InterruptedException {
+        Thread.sleep(2000);
         elementClick(modifyBtn, "- Modify is tapped");
     }
 

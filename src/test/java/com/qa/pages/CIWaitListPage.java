@@ -190,21 +190,28 @@ public class CIWaitListPage extends BasePage {
             utils.log().info("unable to Get check Number");
         }
     }
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
+
+    @FindBy(xpath = "//input[@data-placeholder='Check No']")
     private WebElement searchTabClosedTab;
+
     public void passCheckNumber() throws Exception{
 
-            // wait 1 sec
-            Thread.sleep(800);
+        Thread.sleep(1000);
+        String globalCheckNumber = TestUtils.globalCheckNumber;
+        searchTabClosedTab.clear();
+        searchTabClosedTab.sendKeys(globalCheckNumber);
 
-           // WebElement searchElement = (WebElement) driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField");
-           searchTabClosedTab.sendKeys(checkNumber);
-//        findandclick_Skeys(closedSearchField, "", TestUtils.XPath,"Skeys",checkNumber);
-//        WebElement tableElement = mergeAndFindElement(checkNumber,"" , TestUtils.Accessibility);
-//        tableElement.click();
-            findandclick(checkNumber,"" , TestUtils.Accessibility);
+        List<WebElement> phoneOrders1 = driver.findElements(By.xpath("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div"));
+        utils.log().info(phoneOrders1.size());
+        if(phoneOrders1.size() == 1)
+        {
+            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
+        }else{
+            utils.log().info("closed check is not available - "+ globalCheckNumber);
+//            int w = 1/0;
+            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
 
-
+        }
 
     }
     public boolean getVoidCheck(String msg) {

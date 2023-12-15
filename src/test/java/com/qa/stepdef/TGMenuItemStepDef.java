@@ -269,12 +269,12 @@ public class TGMenuItemStepDef {
     }
 
     @Then("User take an order with upcharge menu item")
-    public void userTakeAnOrderWithUpchargeMenuItem() {
+    public void userTakeAnOrderWithUpchargeMenuItem() throws InterruptedException {
         new TGMenuItemPage().selectOrderTab();
     }
 
     @And("User verify upcharge menu item")
-    public void userVerifyUpchargeMenuItem() {
+    public void userVerifyUpchargeMenuItem() throws InterruptedException {
         new TGMenuItemPage().verifyUpchargeMenuItem();
     }
 
@@ -284,12 +284,12 @@ public class TGMenuItemStepDef {
     }
 
     @Then("User take an order upcharge menu item with modifier")
-    public void userTakeAnOrderUpchargeMenuItemWithModifier() {
+    public void userTakeAnOrderUpchargeMenuItemWithModifier() throws InterruptedException {
         new TGMenuItemPage().selectOrderTab();
     }
 
     @And("User verify upcharge menu item with modifier")
-    public void userVerifyUpchargeMenuItemWithModifier() {
+    public void userVerifyUpchargeMenuItemWithModifier() throws InterruptedException {
         new TGMenuItemPage().verifyUpchargeMenuItemWithModifier();
     }
 
@@ -830,6 +830,11 @@ public class TGMenuItemStepDef {
     @Then("User select third modifier with prefix of second menu item of pizza")
     public void userSelectThirdModifierWithPrefixOfSecondMenuItemOfPizza() {
         new TGMenuItemPage().selectThirdModifierOfSecondPizzaMenuItem();
+    }
+
+    @And ("^I select modifier as 12$")
+    public void iSelectModifierAs12(){
+        new TGMenuItemPage().selectModifierAs12();
     }
 
     @And("User verify modifier prefix")

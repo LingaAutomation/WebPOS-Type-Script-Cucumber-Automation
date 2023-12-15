@@ -10,110 +10,109 @@ import java.util.concurrent.TimeUnit;
 import static com.qa.utils.TestUtils.driver;
 public class TGBarTab extends BasePage {
 
-    //    private By newTabButton = By.xpath("//XCUIElementTypeStaticText[@name=\"New Tab\"]\n");
-    public By newTabButton = By.id("New Tab");
-    public By transferBarTabOption = By.id("Transfer");
-    //    private By transferBarTabOption = By.xpath("//XCUIElementTypeStaticText[@name=\"Transfer\"]");
-    public By splitBarTabOption = By.id("Split");
-    //    private By splitBarTabOption = By.xpath("//XCUIElementTypeStaticText[@name=\"Split\"]");
-    public By splitBySeatBarTabOption = By.id("Split By Seat");
-    //    private By splitBySeatBarTabOption = By.xpath("//XCUIElementTypeStaticText[@name=\"Split By Seat\"]");
-    private By firstBarTabOrder = By.xpath("(//XCUIElementTypeStaticText[@name=\"goknur bati\"])[1]");
+    //    String newTabButton = "//XCUIElementTypeStaticText[@name=\"New Tab\"]\n";
+    String newTabButton = "New Tab";
+    String transferBarTabOption = "Transfer";
+    //    String transferBarTabOption = "//XCUIElementTypeStaticText[@name=\"Transfer\"]";
+    String splitBarTabOption = "Split";
+    //    String splitBarTabOption = "//XCUIElementTypeStaticText[@name=\"Split\"]";
+    String splitBySeatBarTabOption = "Split By Seat";
+    //    String splitBySeatBarTabOption = "//XCUIElementTypeStaticText[@name=\"Split By Seat\"]";
+    String firstBarTabOrder = "(//XCUIElementTypeStaticText[@name=\"goknur bati\"])[1]";
 
-    public By splitEvenlyBarTabOption = By.id("Split Evenly");
-    //    private By splitEvenlyBarTabOption = By.xpath("//XCUIElementTypeStaticText[@name=\"Split Evenly\"]");
+    String splitEvenlyBarTabOption = "Split Evenly";
+    //    String splitEvenlyBarTabOption = "//XCUIElementTypeStaticText[@name=\"Split Evenly\"]";
 
-    private By mergeBarTabOption = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[3]");
-    public By mergeDoneButton = By.id("Done");
-//    private By mergeDoneButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]");
+    String mergeBarTabOption = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[3]";
+    String mergeDoneButton = "Done";
+//    String mergeDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
 
-    public By payCheckBarTab = By.id("Pay Check");
-//    private By payCheckBarTab = By.xpath("//XCUIElementTypeStaticText[@name=\"Pay Check\"]");
+    String payCheckBarTab = "Pay Check";
+//    String payCheckBarTab = "//XCUIElementTypeStaticText[@name=\"Pay Check\"]";
 
-    private By firstBarTabCheck1 = By.xpath("(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[1]");
+    String firstBarTabCheck1 = "(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[1]";
 
-    private By firstBarTabCheck = By.xpath("(//XCUIElementTypeStaticText[@name=\"Göknur B\"])[2]");
+    String firstBarTabCheck = "(//XCUIElementTypeStaticText[@name=\"Göknur B\"])[2]";
 
-    private By allTabIcon = By.xpath("//XCUIElementTypeStaticText[@name=\"All Tab\"]");
-    public By seatedIcon = By.id("Seated");
-    //    private By seatedIcon = By.xpath("//XCUIElementTypeStaticText[@name=\"Seated\"]");
-    public By checkDownIcon = By.id("Check Down");
-    //    private By checkDownIcon = By.xpath("//XCUIElementTypeStaticText[@name=\"Check Down\"]");
-    public By onHoldIcon = By.id("On Hold");
-    //    private By onHoldIcon = By.xpath("//XCUIElementTypeStaticText[@name=\"On Hold\"]");
-    public By expiredIcon = By.id("Expired");
-    //    private By expiredIcon = By.xpath("//XCUIElementTypeStaticText[@name=\"Expired\"]");
-    public By sortAtoZ = By.id("Sort A - Z");
-    //    private By sortAtoZ = By.xpath("//XCUIElementTypeStaticText[@name=\"Sort A - Z\"]");
-    public By sortZtoA = By.id("Sort Z - A");
-//    private By sortZtoA = By.xpath("//XCUIElementTypeStaticText[@name=\"Sort Z - A\"]\n");
+    String allTabIcon = "//XCUIElementTypeStaticText[@name=\"All Tab\"]";
+    String seatedIcon = "Seated";
+    //    String seatedIcon = "//XCUIElementTypeStaticText[@name=\"Seated\"]";
+    String checkDownIcon = "Check Down";
+    //    String checkDownIcon = "//XCUIElementTypeStaticText[@name=\"Check Down\"]";
+    String onHoldIcon = "On Hold";
+    //    String onHoldIcon = "//XCUIElementTypeStaticText[@name=\"On Hold\"]";
+    String expiredIcon = "Expired";
+    //    String expiredIcon = "//XCUIElementTypeStaticText[@name=\"Expired\"]";
+    String sortAtoZ = "Sort A - Z";
+    //    String sortAtoZ = "//XCUIElementTypeStaticText[@name=\"Sort A - Z\"]";
+    String sortZtoA = "Sort Z - A";
+//    String sortZtoA = "//XCUIElementTypeStaticText[@name=\"Sort Z - A\"]\n";
 
-    private By barTabSearchTextField = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField");
-    public By barTabSearchText = By.id("Search Name or Check Number");
-    //    private By barTabSearchText = By.xpath("//XCUIElementTypeStaticText[@name=\"Search Name or Check Number\"]");
-    private By barTabOrderCustomerName = By.xpath("(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[1]");
+    String barTabSearchTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField";
+    String barTabSearchText = "Search Name or Check Number";
+    //    String barTabSearchText = "//XCUIElementTypeStaticText[@name=\"Search Name or Check Number\"]";
+    String barTabOrderCustomerName = "(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[1]";
     //not used
-    private By searchOrderWithCheckNumberOnBarTab = By.xpath("//XCUIElementTypeStaticText[@name=\"TL 32,70\"]");
-    public By onHoldOrderNumber = By.id("1");
-    //    private By onHoldOrderNumber = By.xpath("//XCUIElementTypeStaticText[@name=\"1\"]");
-    public By expiredOrderNumber = By.id("goknur bati");
-    //    private By expiredOrderNumber = By.xpath("//XCUIElementTypeStaticText[@name=\"Test Automation\"]");
-    private By firstBarTabOrderSortedAToZ = By.xpath("//XCUIElementTypeStaticText[@name=\"goknur bati\"][1]");
-    private By lastBarTabOrderSortedAToZ = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[19]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[last]");
-    private By firstBarTabOrderSortedZToA = By.xpath("(//XCUIElementTypeStaticText[@name=\"goknur bati\"])[1]");
-    private By lastBarTabOrderSortedZToA = By.xpath("//XCUIElementTypeStaticText[@name=\"Automation\"][1]");
-    private By deleteDiscountForMergeInfoText = By.xpath("//XCUIElementTypeAlert[@name=\"Linga\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]");
-    public By deleteDiscountForMergeYesButton = By.id("Yes");
-    //    private By deleteDiscountForMergeYesButton = By.xpath("//XCUIElementTypeButton[@name=\"Yes\"]");
-    public By mergeCheckConfirmButton = By.id("Confirm");
-    //    private By mergeCheckConfirmButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm\"]");
-    public By cancelCustomerButton = By.id("Cancel");
-    //    private By cancelCustomerButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
-    private By lastBarTabOrderWithWalkin = By.xpath("//XCUIElementTypeStaticText[@name=\"Walkin\"][1]");
-    public By mergeSuccessDoneButton = By.id("Done");
-    //    private By mergeSuccessDoneButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]");
-    private By mergedCheck = By.xpath("(//XCUIElementTypeStaticText[@name=\"Göknur B\"])[2]");
-    public By yesOptionForRemoveDiscount = By.id("Yes");
-    //    private By yesOptionForRemoveDiscount = By.xpath("//XCUIElementTypeButton[@name=\"Yes\"]");
-    private By firstBarTabOrderWillMerge = By.xpath("(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[2]");
-    private By secondBarTabOrderWillMerge = By.xpath("(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[3]");
-    private By splitButton = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]");
-    private By splitedOrder = By.xpath("(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[2]");
-    private By reminderOrder = By.xpath("(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[2]");
-
+    String searchOrderWithCheckNumberOnBarTab = "//XCUIElementTypeStaticText[@name=\"TL 32,70\"]";
+    String onHoldOrderNumber = "1";
+    //    String onHoldOrderNumber = "//XCUIElementTypeStaticText[@name=\"1\"]";
+    String expiredOrderNumber = "goknur bati";
+    //    String expiredOrderNumber = "//XCUIElementTypeStaticText[@name=\"Test Automation\"]";
+    String firstBarTabOrderSortedAToZ = "//XCUIElementTypeStaticText[@name=\"goknur bati\"][1]";
+    String lastBarTabOrderSortedAToZ = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[19]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[last]";
+    String firstBarTabOrderSortedZToA = "(//XCUIElementTypeStaticText[@name=\"goknur bati\"])[1]";
+    String lastBarTabOrderSortedZToA = "//XCUIElementTypeStaticText[@name=\"Automation\"][1]";
+    String deleteDiscountForMergeInfoText = "//XCUIElementTypeAlert[@name=\"Linga\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]";
+    String deleteDiscountForMergeYesButton = "Yes";
+    //    String deleteDiscountForMergeYesButton = "//XCUIElementTypeButton[@name=\"Yes\"]";
+    String mergeCheckConfirmButton = "Confirm";
+    //    String mergeCheckConfirmButton = "//XCUIElementTypeStaticText[@name=\"Confirm\"]";
+    String cancelCustomerButton = "Cancel";
+    //    String cancelCustomerButton = "//XCUIElementTypeStaticText[@name=\"Cancel\"]";
+    String lastBarTabOrderWithWalkin = "//XCUIElementTypeStaticText[@name=\"Walkin\"][1]";
+    String mergeSuccessDoneButton = "Done";
+    //    String mergeSuccessDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
+    String mergedCheck = "(//XCUIElementTypeStaticText[@name=\"Göknur B\"])[2]";
+    String yesOptionForRemoveDiscount = "Yes";
+    //    String yesOptionForRemoveDiscount = "//XCUIElementTypeButton[@name=\"Yes\"]";
+    String firstBarTabOrderWillMerge = "(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[2]";
+    String secondBarTabOrderWillMerge = "(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[3]";
+    String splitButton = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]";
+    String splitedOrder = "(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[2]";
+    String reminderOrder = "(//XCUIElementTypeStaticText[@name=\"Goknur B\"])[2]";
     public void selectSecondBarTabCheck(){
         WebElement barTabCheck = mergeAndFindMobileElement(secondBarTabCheck);
         elementClick(barTabCheck,"Select Second BarTab Check");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void selectRemainderOrder(){
-        WebElement orderReminder = mergeAndFindMobileElement(reminderOrder);
+        WebElement orderReminder = mergeAndFindMobileElement( reminderOrder);
         elementClick(orderReminder,"Select Remainder Order");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void selectOrderWhichIsSplit(){
-        WebElement orderReminder = mergeAndFindMobileElement(splitedOrder);
+        WebElement orderReminder = mergeAndFindMobileElement( splitedOrder);
         elementClick(orderReminder,"Select Order Which Is Split");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void clickSplitButtonOnBarTab(){
-        WebElement btnSplit = mergeAndFindMobileElement(splitButton);
+        WebElement btnSplit = mergeAndFindMobileElement( splitButton);
         elementClick(btnSplit,"Select Order Which Is Split");
     }
     public void clickLastBarTabOrderTypeCheck(){
-        WebElement lastCheck = mergeAndFindMobileElement(lastBarTabOrderWithWalkin);
+        WebElement lastCheck = mergeAndFindMobileElement( lastBarTabOrderWithWalkin);
         elementClick(lastCheck,"Click Last BarTab OrderType Check");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void clickRemoveDiscountOptionOnBarTab(){
         WebElement removeDiscount = mergeAndFindMobileElement(lastBarTabOrderWithWalkin);
         elementClick(removeDiscount,"Click Remove Discount Option On BarTab");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void selectMergedCheckOnBarTab(){
         WebElement mergeCheck = mergeAndFindMobileElement(mergedCheck);
         elementClick(mergeCheck,"Select Merged Check On BarTab");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void verifyMergeSuccessMessage(){
         WebElement btnMergeDone = mergeAndFindMobileElement(mergeSuccessDoneButton);
@@ -155,7 +154,7 @@ public class TGBarTab extends BasePage {
     public void selectFirstBarTabOrder(){
         WebElement firstOrder = mergeAndFindMobileElement(firstBarTabOrder);
         elementClick(firstOrder,"Select First BarTab Order");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
 
     public void clickSplitEvenlyBarTab(){
@@ -177,7 +176,7 @@ public class TGBarTab extends BasePage {
     public void clickFirstBarTabCheck(){
         WebElement barTabCheck = mergeAndFindMobileElement(firstBarTabCheck);
         elementClick(barTabCheck,"Click First BarTab Check");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void verifyAllTabIcon(){
 
@@ -217,7 +216,7 @@ public class TGBarTab extends BasePage {
     }
 
     public void clickYes(){
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void verifyDirectedBarTab(){
         WebElement directedBarTab = mergeAndFindMobileElement(sortAtoZ);
@@ -256,19 +255,19 @@ public class TGBarTab extends BasePage {
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]");
         phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void clickSearchedLastBarTabOrder(){
         List<WebElement> phoneOrders = selectAndFindElements("///XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]");
         phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     public void verifyLastCustomerNameOnBarTab(){
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"goknur bati\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
     }
     //new nov 18
     public void verifyLastUpdatedBarTabOrder(){
@@ -276,7 +275,7 @@ public class TGBarTab extends BasePage {
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"thomas\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
 
     }
     public void verifyHoldBarTabOrder(){
@@ -315,10 +314,10 @@ public class TGBarTab extends BasePage {
         Assert.assertEquals(actualName,expectedName);
     }
     public void selectLastBarTabCheck(){
-     //  List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]");
+        //  List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]");
         List<WebElement>     phoneOrders = selectAndFindElements("//XCUIElementTypeStaticText[@name=\"Test Automation\"]");
         phoneOrders.get(phoneOrders.size() - 1).click();
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
 
     }
     public void selectLastBarTabCheckForMerge(){
@@ -329,7 +328,7 @@ public class TGBarTab extends BasePage {
     public void selectFirstBarTabCheck(){
         WebElement barTabCheck = mergeAndFindMobileElement(firstBarTabCheck1);
         elementClick(barTabCheck,"Select First BarTab Check");
-        findandclickM(yesOptionForRemoveDiscount);
+        findandclickM(By.id(yesOptionForRemoveDiscount));
 //        WebElement btnYes = mergeAndFindMobileElement(yesButton);
 //        elementClick(btnYes,"Click Yes");
     }
@@ -343,4 +342,5 @@ public class TGBarTab extends BasePage {
         WebElement btnConfirm = mergeAndFindMobileElement(mergeCheckConfirmButton);
         elementClick(btnConfirm,"Click Confirm");
     }
+
 }

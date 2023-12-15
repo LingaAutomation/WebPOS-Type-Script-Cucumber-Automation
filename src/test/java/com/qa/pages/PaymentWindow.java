@@ -730,7 +730,7 @@ public class PaymentWindow extends OrderManagementScreen{
     public void pressExitBtn(){
         elementClick(exitPreAuth,"Exit Button is tapped");
     }
-    @FindBy(name = "Exit")
+    @FindBy(xpath = "//span[contains(.,'Exit')]")
     WebElement exitPreAuth;
     @FindBy(xpath = "//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]")
     private WebElement firstNameFld;

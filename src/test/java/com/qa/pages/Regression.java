@@ -543,7 +543,7 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    public void saleForTestStatePost1() {
+    public void saleForTestStatePost1() throws InterruptedException {
         for (int z = 1; z <= 32; z++) {
             utils.log().info("Table Count - " + z);
             elementClick(newCheck, "Tapped new check");
@@ -1277,7 +1277,7 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    public void saleForTestzamBar() {
+    public void saleForTestzamBar() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         for (int z = 1; z <= 40; z++) {
             utils.log().info("Bar Count - " + z);
@@ -1310,7 +1310,7 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    public void saleForTestzam() {
+    public void saleForTestzam() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
         for (int z = 1; z <= 16; z++) {
             utils.log().info("Table Count - " + z);

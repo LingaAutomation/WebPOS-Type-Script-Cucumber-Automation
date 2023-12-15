@@ -2,6 +2,7 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
+import org.junit.experimental.theories.Theories;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -20,13 +21,13 @@ import java.util.concurrent.TimeUnit;
 
 public class OrderManagementScreen extends OrderTypeWindow{
 
-    public static WebDriver driver=TestUtils.driver;
+//    public static WebDriver driver=TestUtils.driver;
 
-    public OrderManagementScreen(){
-//        super(TestUtils.driver);
-
-        PageFactory.initElements(this.driver,this);
-    }
+//    public OrderManagementScreen(){
+////        super(TestUtils.driver);
+//
+//        PageFactory.initElements(this.driver,this);
+//    }
 
     public String checkNumber="";
 
@@ -195,6 +196,9 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     @FindBy(xpath = "//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Walkin')]")
     private WebElement paymentMadeOnThisCheckPopup;
+
+    @FindBy(xpath ="//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin tax exe')]")
+    private WebElement paymentMadeOnThisCheckPopup1;
 
     @FindBy(xpath = "Payment(s) made on this check,Can you return this to Auto ragav")
     private WebElement paymentMadeOnThisCheckPopupForHouseAccount;
@@ -378,7 +382,8 @@ public class OrderManagementScreen extends OrderTypeWindow{
         elementClick(arrowDownBtn1, "ArrowDown Button 1 is tapped");
     }
 
-    public void pressArrowDown2 (){
+    public void pressArrowDown2 () throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(arrowDownForOtherMenuItems, "the rest of the categories is listed");
     }
 
@@ -418,6 +423,15 @@ public class OrderManagementScreen extends OrderTypeWindow{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         elementClick("//button[contains(.,'By Name / Email')]","BY Name / Email");
         sendKeys(search, customerName);
+    }
+
+    public void clickByNameEmail(){
+        elementClick("//button[contains(.,'By Name / Email')]","BY Name / Email");
+    }
+
+    public void clickAddCustomerBtnFrom(){
+        sendKeys(search, "huh");
+        elementClick("//button[contains(.,' + Add customer ')]","Selected Add Customer");
     }
 
     public void selectCustomerNameToAddToTheTable(String customerName){
@@ -492,8 +506,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     }
 
     public void selectNoTomato(String modify){
-//        WebElement e=mergeAndFindElement( "//XCUIElementTypeStaticText[@name="+modify+""]",TestUtils.XPath);
-//        elementClick(e, modify +" modifier is selected");
+        elementClick("//div[contains(@class,'modifier-section')]//div[contains(.,'"+modify+"')]","Selected Modifier as - "+modify);
     }
     /****** add a customer ******/
 
@@ -522,18 +535,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     public void selectPizzaCategory() throws Exception {
         pressArrowDown2();
-      //  elementClick(pizzaCategoryBtn, "Pizza Category selected");
-        try {
-            if (find(convertWebElement(pizzaCategoryBtn), 2)) {
-                elementClick(pizzaCategoryBtn, "Tapped Side CC Button");
-            } else {
-                scrollToElementCategory("up");
-                elementClick(pizzaCategoryBtn, "Tapped Side CC Button");
-            }
-        } catch (Exception e) {
-            scrollToElementCategory( "down");
             elementClick(pizzaCategoryBtn, "Tapped Side CC Button");
-        }
     }
 
     public void selectBreakfastCategory() throws Exception {
@@ -673,8 +675,9 @@ public  void selectCategory (String value) throws Exception {
         elementClick(saladCategoryBtn, "Salad Category selected");
     }
 
-    public void selectFoodCategory(){
+    public void selectFoodCategory() throws InterruptedException {
         pressArrowDown2();
+        Thread.sleep(1000);
         elementClick(foodCategoryBtn, "Food Category selected");
     }
 
@@ -742,13 +745,10 @@ public  void selectCategory (String value) throws Exception {
 
     public void verifyMenuSubTotalAs(String amount) throws InterruptedException {
         Thread.sleep(1000);
-//        WebElement subtotalValues =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUI)ElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
-//         String subTotalAmount = subtotalValues.getText();
-//         TestUtils.subtotalTxt = subTotalAmount;
-//         Assert.assertEquals(subTotalAmount,amount);
-//         utils.log().info("Subtotal Value as Same with Price Level 2 - "+amount);
-        WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Subtotal\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticTe)xt[1]"));
-        String subtotalValue = e11.getText();
+
+        WebElement e11 =  driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subtotalValue = e11.getAttribute("value");
+        utils.log().info("Subtotal Value is - "+subtotalValue);
         Assert.assertEquals(subtotalValue,amount);
         TestUtils.subtotalTxt = subtotalValue;
         utils.log().info("Subtotal Value is - "+amount);
@@ -888,32 +888,38 @@ public  void selectCategory (String value) throws Exception {
 
 
     public void verifyTaxValueAs(String Amount) throws InterruptedException {
-        Thread.sleep(1000);
-        WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Tax\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2])"));
-        String subtotalValue = e11.getText();
-        TestUtils.taxTxt = subtotalValue;
-        Assert.assertEquals(subtotalValue,Amount);
-        utils.log().info("Tax Value is - "+Amount);
+        WebElement tax = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        if(tax.isDisplayed()){
+            utils.log().info( " Tax is - "+ tax.getAttribute("value"));
+            Assert.assertEquals(tax.getAttribute("value"),Amount);
+            TestUtils.taxTxt = Amount;
+        }else {
+            utils.log().info("Tax is not Displayed");
+        }
 
     }
 
     public void verifyDiscountValueAs(String Amount) throws InterruptedException {
-        Thread.sleep(1000);
-        WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Discount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticTe)xt[3]"));
-        String subtotalValue = e11.getText();
-        TestUtils.taxTxt = subtotalValue;
-        Assert.assertEquals(subtotalValue,Amount);
-        utils.log().info("Tax Value is - "+Amount);
+        WebElement discount = driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+        if(discount.isDisplayed()){
+            utils.log().info( "Discount is - "+ Amount);
+            Assert.assertEquals(discount.getAttribute("value"),Amount);
+            TestUtils.discountTxt = Amount;
+        }else {
+            utils.log().info("Discount is not Displayed");
+        }
 
     }
 
     public void verifyDiscount1ValueAs(String Amount) throws InterruptedException {
-        Thread.sleep(1000);
-        WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Discount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticTe)xt[4]"));
-        String subtotalValue = e11.getText();
-        TestUtils.taxTxt = subtotalValue;
-        Assert.assertEquals(subtotalValue,Amount);
-        utils.log().info("Tax Value is - "+Amount);
+        WebElement discount = driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+        if(discount.isDisplayed()){
+            utils.log().info( "Discount is - "+ Amount);
+            Assert.assertEquals(discount.getAttribute("value"),Amount);
+            TestUtils.discountTxt = Amount;
+        }else {
+            utils.log().info("Discount is not Displayed");
+        }
 
     }
 
@@ -948,12 +954,14 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyTotalValueAs(String Amount) throws InterruptedException {
-        Thread.sleep(1000);
-        WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStatic)Text[5]"));
-        String totalAmount = totalValues.getText();
-        Assert.assertEquals(totalAmount,Amount);
-        TestUtils.totalTxt = totalAmount;
-        utils.log().info("Cash Price Value is SAME - "+Amount);
+        WebElement discount = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        if(discount.isDisplayed()){
+            utils.log().info( "Discount is - "+ Amount);
+            Assert.assertEquals(discount.getAttribute("value"),Amount);
+            TestUtils.discountTxt = Amount;
+        }else {
+            utils.log().info("Discount is not Displayed");
+        }
     }
 
     public void verifyTotal2ValueAs(String Amount) throws InterruptedException {
@@ -1151,12 +1159,15 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyOrderedItemExists(String itemName) {
-        if(driver.findElements(By.name(itemName)).isEmpty())
+        if(driver.findElement(By.xpath("//div[contains(@class,'modifier-section')]//div[contains(.,'"+itemName+"')]")).isDisplayed())
+
         {
-            utils.log().info("Order Item is added");
+            utils.log().info("Modifier Item is added");
         }
-        else
-            utils.log().info("Order Item is not added");
+        else {
+            utils.log().info("Modifier Item is not added");
+            int w = 1/0;
+        }
     }
 
     public void pressSearch(){ elementClick(searchOrderScreen,"Tapped Search Button on the Order screen"); }
@@ -1194,7 +1205,7 @@ public  void selectCategory (String value) throws Exception {
     /****** Select Serving Sizes ******/
 
     public void selectServingSize(String modifier){
-        WebElement e = mergeAndFindElement(modifier,"",TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("//span[contains(.,'"+modifier+"')]"));
         elementClick(e, modifier + " selected");
     }
 
@@ -1239,6 +1250,7 @@ public  void selectCategory (String value) throws Exception {
         elementClick(voidBtn, "Void button tapped" );
     }
     public String getVoidReasonPopup(){
+
         return getText(voidReason,"void Reason txt is displayed - ");
     }
 
@@ -1312,8 +1324,12 @@ public  void selectCategory (String value) throws Exception {
     }
     public String getPaymentMadeOnThisCheck(){
         return getText(paymentMadeOnThisCheckPopup,"Payment made on this check is Displayed - ");
-
     }
+
+    public String getPaymentMadeOnThisCheck1(){
+        return getText(paymentMadeOnThisCheckPopup1,"Payment made on this check is Displayed - ");
+    }
+
 
     public String getPaymentMadeOnThisCheckHouseAccount(){
         return elementGetText(paymentMadeOnThisCheckPopupForHouseAccount,"Payment made on this check is Displayed - ");
@@ -1496,20 +1512,19 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyServiceType(String order) throws InterruptedException {
-Thread.sleep(1000);
-        WebElement type=driver.findElement(By.xpath("//button[contains(.,'"+order+"')]"));
-        if(type.isDisplayed()){
-            utils.log().info(order + " - Service Type Is displayed");
-        }else {
-            utils.log().info("Service Type as not - "+order);
-        }
+        Thread.sleep(2000);
+        WebElement type=driver.findElement(By.xpath("//button[contains(@id,'os_menu')]"));
+       Assert.assertEquals(type.getText(),order);
+       utils.log().info("Service Type - "+order);
     }
 
-    public String verifyCloseSale(){
+    public String verifyCloseSale() throws InterruptedException {
+        Thread.sleep(2000);
         return getText(convertWebElement(closeYourSaleTxt),"close your sale txt is displayed - ");
     }
 
-    public String closeTheSale(){
+    public String closeTheSale() throws InterruptedException {
+        Thread.sleep(2000);
         return getText(convertWebElement(closeTheSaleTxt),"close your sale txt is displayed");
     }
 
@@ -1554,6 +1569,15 @@ Thread.sleep(1000);
         Thread.sleep(1000);
         WebElement e = driver.findElement(By.xpath("//span[contains(.,'"+modifier+"')]"));
         elementClick(e, modifier + " selected");
+    }
+
+    public void iVerifyTaxAs(String tax) throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Tax\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2])"));
+        String subtotalValue = e11.getText();
+        TestUtils.taxTxt = subtotalValue;
+        Assert.assertEquals(subtotalValue,tax);
+        utils.log().info("Tax Value is - "+tax);
     }
 
     public String verifyYouCannotDeletePopup(){

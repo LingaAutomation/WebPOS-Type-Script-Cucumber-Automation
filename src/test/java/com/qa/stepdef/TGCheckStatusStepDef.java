@@ -28,7 +28,7 @@ public class TGCheckStatusStepDef {
     //new
 
     @When("User take an order in check status screen")
-    public void userTakeAnOrderInCheckStatusScreen() {
+    public void userTakeAnOrderInCheckStatusScreen() throws InterruptedException {
         checkStatus.takeOrder();
     }
 
@@ -222,7 +222,7 @@ public class TGCheckStatusStepDef {
         new TGCheckStatusPage().clickActiveChecks();
     }
     @When("User take an order")
-    public void userTakeAnOrder() {
+    public void userTakeAnOrder() throws InterruptedException {
         new TGCheckStatusPage().takeOrder();
     }
 

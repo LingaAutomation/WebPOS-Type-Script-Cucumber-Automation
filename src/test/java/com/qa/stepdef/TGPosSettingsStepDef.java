@@ -12,10 +12,7 @@ public class TGPosSettingsStepDef {
 
     @And("User close ask customer name option if enable")
     public void userCloseAskCustomerNameOptionIfEnable() throws Exception {
-       /* posSettings = new PosSettingsPage((AppiumDriver<?>) driver);
-        posSettings.closeAskCustomerNameOptionIfEnable("up");*/
-
-        new TGPosSettingsPage().closeAskCustomerNameOptionIfEnable("up","down");
+        new TGPosSettingsPage().closeAskCustomerNameOptionIfEnable();
     }
 
 

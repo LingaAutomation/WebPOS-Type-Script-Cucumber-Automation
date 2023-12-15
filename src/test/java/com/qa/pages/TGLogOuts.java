@@ -13,63 +13,62 @@ import static com.qa.utils.TestUtils.driver;
 
 public class TGLogOuts extends BasePage {
 
-    public By cancelBtn = By.id("Cancel");
+    String cancelBtn = "Cancel";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Cancel']")
 //    private WebElement cancelBtn;
 
-    public By logOffBtn = By.xpath("//XCUIElementTypeApplication[@name='Linga POS']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[9]");
+    String logOffBtn = "//XCUIElementTypeApplication[@name='Linga POS']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[9]";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name='Linga POS']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[9]")
 //    private WebElement logOffBtn;
 
-    public By logOutBtn = By.id("logout");
+    String logOutBtn = "logout";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"logout\"]")
 //    private WebElement logOutBtn;
 
-    public By yesBtn = By.id("Yes");
+    String yesBtn = "Yes";
 
 //    @iOSXCUITFindBy(id = "Yes")
 //    private WebElement yesBtn;
 
-    public By logOut1Btn = By.id("1");
+    String logOut1Btn = "1";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='1']")
 //    private WebElement logOut1Btn;
 
-    public By logOut2Btn = By.id("1");
+    String logOut2Btn = "1";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='2']")
 //    private WebElement logOut2Btn;
 
-    public By logOut3Btn = By.id("3");
+    String logOut3Btn = "3";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='3']")
 //    private WebElement logOut3Btn;
 
-    public By logOut4Btn = By.id("4");
+    String logOut4Btn = "4";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='4']")
 //    private WebElement logOut4Btn;
 
-    public By continueBtn = By.id("Continue");
+    String continueBtn = "Continue";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Continue']")
 //    private WebElement continueBtn;
 
-    public By staticTxt = By.id("Device Id:");
+    String staticTxt = "Device Id:";
 
 //    @iOSXCUITFindBy(id = "Device Id:")
 //    private WebElement staticTxt;
 
-    public By btn = By.id("Sign In");
+    String btn = "Sign In";
 //    @iOSXCUITFindBy(id = "Sign In")
 //    //private WebElement signInBtn;
 //    private String btn;
 
-    private By signInBtn = By.id("Sign In");
-
+    String signInBtn = "Sign In";
 
 
 
@@ -88,8 +87,8 @@ public class TGLogOuts extends BasePage {
 //        driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
 //        WebElement element = mergeAndFindMobileElement(cancelBtn);
 //        elementClick(element,"Cancel button is clicked");
-driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
-        findandclickM(cancelBtn);
+        driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
+        findandclickM(By.id(cancelBtn));
 //        elementClick(cancelBtn, "Cancel button is clicked");
     }
 
@@ -183,6 +182,7 @@ driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
 
 
     }
+
 }
 
 

@@ -18,12 +18,12 @@ import java.util.regex.Pattern;
 
 public class ClockInScreen extends UserLoginScreen{
 
-    public WebDriver driver = TestUtils.driver;
-
-    public ClockInScreen() {
-
-        PageFactory.initElements(this.driver,this);
-    }
+//    public WebDriver driver = TestUtils.driver;
+//
+//    public ClockInScreen() {
+//
+//        PageFactory.initElements(this.driver,this);
+//    }
 
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
@@ -77,7 +77,7 @@ public class ClockInScreen extends UserLoginScreen{
     @FindBy (id = "To Login enter your ID number or swipe the card")
     private WebElement titleTxt;
 
-    @FindBy (xpath  = "//XCUIElementTypeButton[@name='Done']")
+    @FindBy (xpath  = "//div[@class='modifier-decision']//span[contains(.,' Done ')]")
     private WebElement doneBtn;
 
     @FindBy (name = "Invalid Pin")

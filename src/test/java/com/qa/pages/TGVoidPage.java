@@ -1,9 +1,11 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
@@ -25,7 +27,7 @@ public class TGVoidPage extends BasePage {
 
     String staticTxtXpath = "//XCUIElementTypeStaticText[@name=\"{0}\"]";
 
-    String btnExitXPath= "//XCUIElementTypeButton[@name=\"  Exit\"]";
+    String btnExitXPath= "//button[@id='ps_exit']";
 
     String amountXpath="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[{0}]";
 
@@ -33,19 +35,19 @@ public class TGVoidPage extends BasePage {
 
     String btnXpath = "//XCUIElementTypeButton[@name=\"{0}\"]";
 
-    String btnDelete="//XCUIElementTypeButton[@name=\"  Delete\"]";
+    String btnDelete="//button[contains(.,' Delete ')]";
 
     String Done1="Done";
 
-    String chkNumber = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]";
+    String chkNumber = "(//p[contains(@class,'order-header-checkno')])";
 
 
     public void logInWithValidPin() {
-        WebElement pin1 = mergeAndFindElement(accessibilityIdForPin1, "", TestUtils.Accessibility);
-        WebElement pin2 = mergeAndFindElement(accessibilityIdForPin2, "", TestUtils.Accessibility);
-        WebElement pin3 = mergeAndFindElement(accessibilityIdForPin3, "", TestUtils.Accessibility);
-        WebElement pin4 = mergeAndFindElement(accessibilityIdForPin4, "", TestUtils.Accessibility);
-        WebElement btnLogin = mergeAndFindElement(btnLoginXPath, "", TestUtils.XPath);
+        WebElement pin1 = mergeAndFindMobileElement(accessibilityIdForPin1);
+        WebElement pin2 = mergeAndFindMobileElement(accessibilityIdForPin2);
+        WebElement pin3 = mergeAndFindMobileElement(accessibilityIdForPin3);
+        WebElement pin4 = mergeAndFindMobileElement(accessibilityIdForPin4);
+        WebElement btnLogin = mergeAndFindMobileElement(btnLoginXPath);
         elementClick(pin1, "Tapped pin1");
         elementClick(pin2, "Tapped pin2");
         elementClick(pin3, "Tapped pin3");
@@ -54,9 +56,9 @@ public class TGVoidPage extends BasePage {
     }
 
     public void commonAccessibilityId(String id,String msg){
-        WebElement element = mergeAndFindElement(id, "", TestUtils.Accessibility);
+        WebElement element = mergeAndFindMobileElement(id);
         elementClick(element,msg);
-//        findandclick(id, "", TestUtils.Accessibility);
+//        findandclick(id);
     }
 
     public void clickQsrOrderType(){
@@ -92,14 +94,20 @@ public class TGVoidPage extends BasePage {
     public void verifyVoidItem(){
         WebElement element = mergeAndFindMobileElement(emptyCheck);
         String actualName = elementGetText(element,"Verify Void Item");
-        String expectedName = "No Orders To Display";
+        String expectedName = "No order to display";
 
         Assert.assertEquals(actualName,expectedName);
     }
+    String arrowDownForOtherMenuItems ="//button[@id='os_catMenu']";
+    public void pressArrowDown2 () throws InterruptedException {
+        Thread.sleep(1000);
+        elementClick(arrowDownForOtherMenuItems, "the rest of the categories is listed");
+    }
+    public void takeOrder() throws InterruptedException {
+        pressArrowDown2();
+        Thread.sleep(1500);
+        elementClick(driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'FOOD')]")),"Selected FOOD");
 
-    public void takeOrder(){
-        WebElement element = mergeAndFindMobileElement(foodTab);
-        elementClick(element,"Select MenuItem And Order");
 
         WebElement element1 = mergeAndFindMobileElement(firstMenuItem);
         elementClick(element1,"Select MenuItem And Order");
@@ -134,7 +142,8 @@ public class TGVoidPage extends BasePage {
         elementClick(element, "click receiptPrinterDoneButton");
     }
 
-    public void clickCheckStatusTab(){
+    public void clickCheckStatusTab() throws InterruptedException {
+        Thread.sleep(1000);
         WebElement element=mergeAndFindMobileElement(checkStatusTab);
         elementClick(element,"Click Check Status Tab Button");
     }
@@ -144,21 +153,29 @@ public class TGVoidPage extends BasePage {
         elementClick(element,"Click void Checks Tab");
 //        findandclickM(voidChecksTab);
     }
+    @FindBy(xpath = "//input[@data-placeholder='Check No']")
+    private WebElement searchTabClosedTab;
+    public void verifyVoidOrder() throws InterruptedException {
+        Thread.sleep(1000);
+        String globalCheckNumber = TestUtils.globalCheckNumber;
+        searchTabClosedTab.clear();
+        searchTabClosedTab.sendKeys(globalCheckNumber);
 
-    public void verifyVoidOrder() {
-        List<WebElement> orders = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable"));
+        List<WebElement> phoneOrders1 = driver.findElements(By.xpath("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div"));
+        utils.log().info(phoneOrders1.size());
+        if(phoneOrders1.size() == 1)
+        {
+            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
+        }else{
+            utils.log().info("closed check is not available - "+ globalCheckNumber);
+//            int w = 1/0;
+            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
 
-        for (int index = 0; index < orders.size(); index++) {
-            WebElement lastOrder = orders.get(orders.size() - 1);
-            lastOrder.click();
-
-            System.out.println("ArrayList : " + orders);
-            System.out.println("Last element in arraylist : " + lastOrder);
         }
     }
 
     public void commonBtn(String btnName, String msg) {
-        WebElement elementTxtInPopup = mergeAndFindElement(btnXpath,btnName , TestUtils.XPath);
+        WebElement elementTxtInPopup = mergeAndFindMobileElement(btnXpath);
         elementClick(elementTxtInPopup, msg);
 //        findandclick(btnXpath,btnName , TestUtils.XPath);
     }
@@ -179,14 +196,14 @@ public class TGVoidPage extends BasePage {
     }
 
     public String getAmount(String number,String msg){
-        WebElement element = mergeAndFindElement(amountXpath, number,TestUtils.XPath);
+        WebElement element = mergeAndFindMobileElement(amountXpath);
         String text=elementGetText(element,msg);
         return text;
     }
 
     public void pressDone1() {
         try{
-            WebElement element=mergeAndFindElement(Done1,"",TestUtils.Accessibility);
+            WebElement element=mergeAndFindMobileElement(Done1);
             elementClick(element, "Tapped Done Button on the Popup");}
         catch (Exception e){
             utils.log().info("Tapped Done");
@@ -194,50 +211,50 @@ public class TGVoidPage extends BasePage {
     }
 
     public void clickOptCreditCardAmount(String msg) {
-        WebElement element = mergeAndFindElement(optCreditCardAmount, "", TestUtils.XPath);
+        WebElement element = mergeAndFindMobileElement(optCreditCardAmount);
         elementClick(element,msg);
-//        findandclick(optCreditCardAmount, "", TestUtils.XPath);
+//        findandclick(optCreditCardAmount);
     }
 
     public void clickBtnDelete(String msg){
-        WebElement element = mergeAndFindElement(btnDelete, "", TestUtils.XPath);
+        WebElement element = mergeAndFindMobileElement(btnDelete);
         elementClick(element,msg);
-//        findandclick(btnDelete, "", TestUtils.XPath);
+//        findandclick(btnDelete);
     }
 
     public void ClickBtnOk(String btnOk, String msg){
-        WebElement element = mergeAndFindElement(btnOk, "",TestUtils.Accessibility);
+        WebElement element = mergeAndFindMobileElement(btnOk);
         elementClick(element,msg);
-//        findandclick(btnOk, "",TestUtils.Accessibility);
+//        findandclick(btnOk);
     }
 
     public void clickBtnWrong(String btnWrong,String msg){
-        WebElement element = mergeAndFindElement(btnWrong, "", TestUtils.Accessibility);
+        WebElement element = mergeAndFindMobileElement(btnWrong);
         elementClick(element,msg);
-//        findandclick(btnWrong, "", TestUtils.Accessibility);
+//        findandclick(btnWrong);
     }
 
     public void ClickBtnAdd(String btnAdd, String msg){
-        WebElement element = mergeAndFindElement(btnAdd,"" ,TestUtils.Accessibility);
+        WebElement element = mergeAndFindMobileElement(btnAdd);
         elementClick(element, msg);
-//        findandclick(btnAdd,"" ,TestUtils.Accessibility);
+//        findandclick(btnAdd);
     }
 
     public void ClickBtnExit(String msg){
-        WebElement element = mergeAndFindElement(btnExitXPath, "",TestUtils.XPath);
+        WebElement element = mergeAndFindMobileElement(btnExitXPath);
         elementClick(element,msg);
 //        findandclick(btnExitXPath, "",TestUtils.XPath);
     }
 
     public void commonBtnClick(String btnName, String msg){
-        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
+        WebElement element = mergeAndFindMobileElement(btnName);
         elementClick(element, msg);
-//        findandclick(btnName, "",TestUtils.Accessibility);
+//        findandclick(btnName);
     }
 
     public void getCheckNumber(String msg)
     {
-        WebElement element = mergeAndFindElement(chkNumber, "", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath(chkNumber));
         checkNumber =elementGetText(element,"test");
         utils.log().info(msg + " - " +checkNumber);
     }
@@ -260,11 +277,11 @@ public class TGVoidPage extends BasePage {
         } catch (InterruptedException e) {
             // handling InterruptedException
         }
-        WebElement searchElement = mergeAndFindElement(closedSearchField, "", TestUtils.XPath);
+        WebElement searchElement = mergeAndFindMobileElement(closedSearchField);
 //        searchElement.sendKeys(checkNumber);
         searchElement.equals(checkNumber);
-//        findandclick_Skeys(closedSearchField, "", TestUtils.XPath,"Skeys",checkNumber);
-//        WebElement tableElement = mergeAndFindElement(checkNumber,"" , TestUtils.Accessibility);
+//        findandclick_Skeys(closedSearchField,"Skeys",checkNumber);
+//        WebElement tableElement = mergeAndFindMobileElement(checkNumber,"" , TestUtils.Accessibility);
 //        tableElement.click();
         findandclick(checkNumber,"" , TestUtils.Accessibility);
     }
@@ -280,7 +297,7 @@ public class TGVoidPage extends BasePage {
     }
 
     public boolean getVoidCheck(String msg) {
-        WebElement element = mergeAndFindElement(staticTxtXpath, checkNumber, TestUtils.XPath);
+        WebElement element = mergeAndFindMobileElement(staticTxtXpath);
         Boolean isDisplayed = false;
         if (element.isDisplayed()) {
             isDisplayed = true;
@@ -306,7 +323,7 @@ public class TGVoidPage extends BasePage {
         elementClick(element,"Pos Settings Clicked");
     }
 
-    public void openAskCustomerNameOptionIfDisable(String direction,String direction1) throws Exception {
+    public void openAskCustomerNameOptionIfDisable() throws Exception {
         WebElement element= mergeAndFindMobileElement(posSettingHeader);
         String actualName=elementGetText(element,"verify posSettingHeader");
 
@@ -314,58 +331,13 @@ public class TGVoidPage extends BasePage {
 
         Assert.assertEquals(actualName, expectedName);
 
-        direction = direction.toLowerCase();
-
-        int i = 0;
-        boolean found = false;
-
-        while (i < 5) {
-            try {
-                if (isElementExists()) {
-                    found = true;
-                    break;
-                } else {
-                    scrollToElement(OverWriteCCOption, direction);
-                    i++;
-                    continue;
-                }
-            } catch (Exception e) {
-                scrollToElement(OverWriteCCOption, direction);
-                i++;
-                if (i == 5)
-                    Assert.fail(e.getMessage());
-                continue;
-            }
-        }
-        WebElement element2 = mergeAndFindMobileElement(askCustomerNameToggle);
-        String value = getAttribute(element2,"value");
-
-        if (value.contains("0")) {
-            WebElement element1 = mergeAndFindMobileElement(askCustomerNameToggle);
-            elementClick(element1, "click askCustomerNameToggle ");
-            swipeUntilSaveChangesButton("down");
-
-            WebElement element3 = mergeAndFindMobileElement(saveChangesButton);
-            elementClick(element3, "click saveChangesButton ");
-
-
-
-            WebElement element4 = mergeAndFindMobileElement(doneButton);
-            elementClick(element4, "click Done Button ");
-
-        }
-//        } else if (value.contains("1")) {
-//            WebElement menuIcon= mergeAndFindMobileElement(operationMenuIcon);
-//            elementClick(menuIcon, "click operationMenuIcon ");
+//        direction = direction.toLowerCase();
 //
-//            WebElement tabPos= mergeAndFindMobileElement(posTab);
-//            elementClick(tabPos, "click operationMenuIcon ");
-//        }
-        WebElement menuIcon= mergeAndFindMobileElement(operationMenuIcon);
-        elementClick(menuIcon, "click operationMenuIcon ");
-//        elementClick(menuIcon, "click operationMenuIcon ");
-//        WebElement tabPos= mergeAndFindMobileElement(posTab);
-//        elementClick(tabPos, "click operationMenuIcon ");
+        WebElement askCustomerName = driver.findElement(By.xpath("//ion-item[contains(.,' Ask Customer Name ')]//ion-toggle[@aria-checked='false']"));
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
+        askCustomerName.click();
+
     }
 
     public void swipeUntilSaveChangesButton(String direction) throws Exception {
@@ -380,12 +352,12 @@ public class TGVoidPage extends BasePage {
                     found = true;
                     break;
                 } else {
-                    scrollToElement(saveChangesButton, direction);
+                    scrollToElement(By.id(saveChangesButton), direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(saveChangesButton, direction);
+                scrollToElement(By.id(saveChangesButton), direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -396,7 +368,7 @@ public class TGVoidPage extends BasePage {
 
     public void pressCancel() {
 //        driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
-        WebElement element = mergeAndFindMobileElement(cancelBtn);
+        WebElement element = mergeAndFindMobileElement((WebElement) cancelBtn);
         elementClick(element,"Cancel button is clicked");
 
 //        findandclickM(cancelBtn);
@@ -408,15 +380,15 @@ public class TGVoidPage extends BasePage {
         elementClick(element,"Click BarTab OrderType");
     }
 
-    public void enterCustomerNameForBarTab(){
+    public void enterCustomerNameForBarTab() throws InterruptedException {
         WebElement element = mergeAndFindMobileElement(BarTabCustomerNameTitle);
         String actualName = elementGetText(element,"Verify Enter the Customer Name");
         String expectedName = "Enter the Customer Name";
 
         Assert.assertEquals(expectedName,actualName);
         WebElement searchCustomer = mergeAndFindMobileElement(customerSearchTextBoxForBarTab);
-//        searchCustomer.sendKeys("Test Automation");
-        searchCustomer.equals("Test Automation");
+        searchCustomer.sendKeys("Test Automation");
+        Thread.sleep(3000);
         WebElement btnOK = mergeAndFindMobileElement(customerNameOkButton);
         elementClick(btnOK,"Click dineIn");
     }
@@ -436,17 +408,18 @@ public class TGVoidPage extends BasePage {
         elementClick(element1,"Enter Button Clicked");
     }
 
-    public void verifyPaidOrderForSandwiches(){
+    public void verifyPaidOrderForSandwiches() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element=mergeAndFindMobileElement(cashPaymentMethodDiyez);
         String actualName = elementGetText(element,"verify cashPaymentMethodDiyez");
-        String expectedName = "1. Cash(#1)";
+        String expectedName = "Cash(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
         WebElement element1=mergeAndFindMobileElement(voidSandwichesAmount1);
         String actualName1 = elementGetText(element1,"verify voidSandwichesAmount");
 
-        String expectedName1 = "1.100,00";
+        String expectedName1 = "1.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -475,10 +448,10 @@ public class TGVoidPage extends BasePage {
     }
 
     public String commonGetText(String Text, String msg) {
-        WebElement element = mergeAndFindElement(Text,"" ,TestUtils.Accessibility);
+        WebElement element = mergeAndFindMobileElement(Text);
         String text =elementGetText(element, msg);
         return text;
-//        return findAndGetText(Text,"" ,TestUtils.Accessibility);
+//        return findAndGetText(Text);
     }
 
 

@@ -8,72 +8,70 @@ public class TGOpenTillWindow extends TillManagementScreen{
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Open Till\"]" )
 //    private WebElement openTillWindowTitle;
 
-    public By openTillWindowTitle = By.id("Open Till");
+    String openTillWindowTitle = "Open Till";
 
-    public By number0 = By.id("0");
+    String number0 = "0";
 
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"0\"]" )
 //    private WebElement number0;
 
-    public By number1 = By.id("1");
+    String number1 = "1";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"1\"]" )
 //    private WebElement number1;
 
-    public By number2 = By.id("2");
+    String number2 = "2";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"2\"]" )
 //    private WebElement number2;
 
-    public By number3 = By.id("3");
+    String number3 = "3";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"3\"]" )
 //    private WebElement number3;
 
-    public By number4 = By.id("4");
+    String number4 = "4";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"4\"]" )
 //    private WebElement number4;
 
-    public By number5 = By.id("5");
+    String number5 = "5";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"5\"]" )
 //    private WebElement number5;
 
-    public By number6 = By.id("6");
+    String number6 = "6";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"6\"]" )
 //    private WebElement number6;
 
-    public By number7 = By.id("7");
+    String number7 = "7";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"7\"]" )
 //    private WebElement number7;
 
-    public By number8 = By.id("8");
+    String number8 = "8";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"8\"]" )
 //    private WebElement number8;
 
-    public By number9 = By.id("9");
+    String number9 = "9";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"9\"]" )
 //    private WebElement number9;
 
-    public By number00 = By.id("00");
+    String number00 = "00";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"00\"]" )
 //    private WebElement number00;
 
-    public By numberC = By.id("C");
+    String numberC = "C";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]" )
 //    private WebElement numberC;
 
-    public By continueBtn = By.id("Continue");
-
-
+    String continueBtn = "Continue";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
 //    private WebElement continueBtn;
@@ -163,5 +161,7 @@ public class TGOpenTillWindow extends TillManagementScreen{
 //        elementClick(continueBtn, "Tapped Continue button");
         return  new TGTillManagementScreen();
     }
+
+
 
 }

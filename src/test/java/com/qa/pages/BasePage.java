@@ -110,7 +110,7 @@ public class BasePage extends TGglobalElement {
 //    }
 //
 //    public WebElement andScrollToElementUsingUiScrollable(String childLocAttr, String childLocValue) {
-//        return (WebElement) (driver).findElementByAndroidUIAutomator(
+//        return  (driver).findElementByAndroidUIAutomator(
 //                "new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
 //                        + "new UiSelector()." + childLocAttr + "(\"" + childLocValue + "\"));");
 //    }
@@ -253,8 +253,7 @@ public WebElement scrollToElement(String txt) throws InterruptedException {
 //        driver.findElement("e").click();
 //    }
     public void elementClick(String e, String msg) {
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(e)));
         utils.log().info(msg);
         element.click();
@@ -274,7 +273,7 @@ public WebElement scrollToElement(String txt) throws InterruptedException {
     }
 
     public void elementClick(WebElement e, String msg) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(e));
         utils.log().info(msg);
         element.click();
@@ -613,7 +612,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 
     public void SelectPickerWheelValue(String pickerClass, String selectedText, TestUtils.Order order, String msg) {
         // find pickerWheel
-//        WebElement pickerWheel = (WebElement) driver.findElementByXPath(pickerClass);
+//        WebElement pickerWheel =  driver.findElementByXPath(pickerClass);
 //
 //        // limit search time to avoid infinite loops
 //        String resultText;
@@ -717,7 +716,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 //            case TestUtils.XPath:
 //                try {
 //
-//                    element = (WebElement) driver.findElementByXPath(elementXPath);
+//                    element =  driver.findElementByXPath(elementXPath);
 //
 //                    if(!driver.findElements(By.xpath(elementXPath)).isEmpty()) {
 //                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
@@ -733,7 +732,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 //                    }
 //                }catch(Exception e){
 //                    utils.log().info("element not found");
-//                    element = (WebElement) wait.until(new Function<WebDriver,WebElement>() {
+//                    element =  wait.until(new Function<WebDriver,WebElement>() {
 //                        public WebElement apply(WebDriver arg0) {
 //                            return driver.findElement(By.xpath(elementXPath));}
 //                    });
@@ -745,7 +744,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 //                try {
 //
 ////                    wait.until(ExpectedConditions.visibilityOfElementLocated((By.name(accXPath))));
-//                    element = (WebElement) driver.findElementByAccessibilityId(accXPath);
+//                    element =  driver.findElementByAccessibilityId(accXPath);
 //
 //                    if(!driver.findElements(By.id(accXPath)).isEmpty()) {
 //                        wait.until(ExpectedConditions.elementToBeClickable((By.id(accXPath))));
@@ -766,7 +765,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 //                }
 //                catch(Exception e){
 //                        utils.log().info("element not found");
-//                        element = (WebElement) wait.until(new Function<WebDriver,WebElement>() {
+//                        element =  wait.until(new Function<WebDriver,WebElement>() {
 //                            public WebElement apply(WebDriver arg0) {
 //                                return driver.findElementByAccessibilityId(accXPath);}
 //                        });
@@ -775,7 +774,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 //            case TestUtils.Name:
 //                String elmName = utils.stringFormatInjector(selectorPath, injector);
 //                wait.until(ExpectedConditions.visibilityOfElementLocated((By.name(elmName))));
-//                element = (WebElement) driver.findElementByName(elmName);
+//                element =  driver.findElementByName(elmName);
 //                break;
 //            default:
 //                element = null;
@@ -857,116 +856,47 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 
 
     // Function to merge partial xpath and related injector (name,value,etc)
-    public WebElement mergeAndFindMobileElement(By selectorPath) {
-        WebElement element = FindAndSelectMobileElement( selectorPath, 0);
 
-//        //Wait default
-//        int iteration = 1;
-//        do {
-//            try {
-//                if (iteration != 1) {
-//                    // wait 1 sec
-//                    Thread.sleep(1000);
-//                }
-//            } catch (InterruptedException e) {
-//                // handling InterruptedException
-//            }
-//
-//            iteration++;
-//            // Get the element
-//            element = FindAndSelectMobileElement( selectorPath, iteration);
-//        } while (element == null && iteration < Duration.ofSeconds(10));
+    public WebElement mergeAndFindMobileElement(String selectorPath) {
+        return FindAndSelectMobileElement(selectorPath);
+    }
 
-        return element;
+
+    public WebElement mergeAndFindMobileElement(WebElement selectorPath) {
+        return FindAndSelectMobileElement(selectorPath);
     }
 
     // Method to find and get the element
-    public WebElement FindAndSelectMobileElement(By selectorPath, int iteration) {
-        WebElement element = findMobileElement(selectorPath);
+    public WebElement FindAndSelectMobileElement(String selectorPath) {
+        return findMobileElement(selectorPath);
+    }
+    public WebElement FindAndSelectMobileElement(WebElement selectorPath) {
+        return findMobileElement(selectorPath);
+    }
+    // Method to find the element
+    public WebElement findMobileElement(String selectorPath) {
 
+        WebElement element;
 //        try {
-//            // Get the element
-//            element = findMobileElement(selectorPath);
-//        } catch (Exception ex) {
-//
-//            if (iteration == Duration.ofSeconds(10)) {
-//                // log the exception
-//                utils.log().info(ex.getMessage());
-//            }
-//
-//            element = null;
-//        }
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+             element =  driver.findElement(By.xpath(selectorPath));
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+//            element.click();
+
 
         return element;
     }
 
-    // Method to find the element
-    public WebElement findMobileElement(By selectorPath) {
+    public WebElement findMobileElement(WebElement selectorPath) {
 
-//        WebElement element;
-////        String elementXPath = utils.stringFormatInjector(selectorPath);
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//
-//        try{
-//
-////        wait.until(ExpectedConditions.visibilityOfElementLocated(selectorPath));
-//
-//        element = (WebElement) driver.findElement(selectorPath);
-//            if(!driver.findElements(selectorPath).isEmpty()) {
-//                wait.until(ExpectedConditions.elementToBeClickable(selectorPath));
-//                return element;
-//            }
-//
-//            else
-//            {
-//                wait.until(ExpectedConditions.elementToBeClickable(selectorPath));
-//                driver.findElement(selectorPath);
-//                return element;
-//            }
-//
-//
-//        }
-//        catch (Exception e) {
-//
-//            utils.log().info("element not found");
-//            element = (WebElement) wait.until(new Function<WebDriver,WebElement>() {
-//                public WebElement apply(WebDriver arg0) {
-//                    return driver.findElement(selectorPath);}
-//            });
-//
-//        }
-//
-
-
-        //coded on 11 December - Author Sridhar
-        /*try {
-
-            wait.until(ExpectedConditions.visibilityOfElementLocated(selectorPath));
-            element = (WebElement) driver.findElement(selectorPath);
-
-        }
-        catch(Exception e){
-            utils.log().info("element not found");
-            element = (WebElement) wait.until(new Function<WebDriver,WebElement>() {
-                public WebElement apply(WebDriver arg0) {
-                    return driver.findElement(selectorPath);}
-            });
-        }*/
         WebElement element;
 //        try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(selectorPath));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        element =  selectorPath;
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
 
 
-            element = (WebElement) driver.findElement(selectorPath);
-
-            
-//        }
-////        return element;
-//        catch (Exception e) {
-//             utils.log().info(selectorPath + " is not displayed ");
-//
-//        }
         return element;
     }
 

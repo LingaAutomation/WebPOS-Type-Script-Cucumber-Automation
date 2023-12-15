@@ -743,7 +743,7 @@ Feature: QSR feature
 #    And I click Enter Button on the cash pop-up
 ##    #   Then I should see the print or send receipt
 ##    #    And I click No thanks Button on the print receipt
-#    And User click cancel button
+#    And I closed the order type window
 #
 #    Examples:
 #      |order_type |Menu_Item|course_name |open_Item | SubTotal | Tax1       | Discount2 | Total1 | Discount1 |
@@ -1314,7 +1314,7 @@ Feature: QSR feature
       | order_type | Menu_Item          | Modifier     | amount   |
       | QSR        |  Fried Crab Cakes  | White Bread  | $ 18.50  |
 
-  @RegressionQSR32
+  @RegressionQSR3
   Scenario Outline: qsr check payment by HA for New created customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1363,7 +1363,7 @@ Feature: QSR feature
       | order_type | customer_name | Menu_Item      | Modifier   | SubTotal |  Total  |
       | QSR        |  Auto ragav   |  French Friese | Steak      | $ 15.00  | $ 15.00 |
 
-  @RegressionQSR32
+  @RegressionQSR3
   Scenario Outline: qsr Void HA payment check and again add menu item & Payment through HA
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -2616,8 +2616,8 @@ Feature: QSR feature
     And I closed the order type window
     And I click log off button in order screen
     Examples:
-      | order_type | Menu_Item         | Modifier     | amount   | Menu_Item1  | SubTotal1  | Tax1      | Gratuity1 |Total1      |
-      | QSR        | Fried Crab Cakes  | White Bread  | $ 18.50  |  Halwa      |$ 10.00     | $ 1.00    | $ 0.80    | $ 11.80    |
+      | order_type | Menu_Item         | Modifier     | amount   |
+      | QSR        | Fried Crab Cakes  | White Bread  | $ 18.50  |
 
   @RegressionQSR3
   Scenario Outline:qsr- Check Payment through side CC and customer & Merchant copy enabled without tips
@@ -3014,1212 +3014,1212 @@ Feature: QSR feature
       | order_type | Menu_Item | Modifier |Discount                 |Discount11                | SubTotal    | Tax       | Discounttxt|Total        | total        | Discount2             |Discount21              | SubTotal2   | Tax2     | Discounttxt2   | Total2    |  total2     |Menu_Item1 |Discount3               |Discount31                | SubTotal3    | Tax3    | Discounttxt3 |Total3    | total3    |Menu_Item2      |Discount4            |Discount41             | SubTotal4  | Tax4      | Total4     |   total4    |
       | QSR        |  Ravioli  | Butter   |CB-AfterTax-Percentage10 |CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.27    | $ 5.32     | $ 24.95     | $ 34.95      |CB-AfterTax-Amount1000 |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.60   | $ 2.00         | $ 28.60   |  $ 38.60    | cake      |CB-AfterTaxSetPrice2500 |CB-BeforeTax-SetPrice1000 | $ 16.00      | $ 1.00  | $ 6.00       | $ 11.00  | $ 21.00   |Cheesecake      | CB-AfterTax-Free300 | CB-BeforeTax-Free300  | $ 17.00    | $ 1.70    | $ 18.70    | $ 28.70     |
 
-  @RegressionQSR4
-  Scenario Outline: qsr Check Payment through CC and customer & Merchant copy enabled without tipss
-    Then I should see service type as "<order_type>"
-    And I get check number
-    And I select category as "FOOD"
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #  Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    #Void check CC payment without tips
-    And I click All
-    And I click Check Stats tab
-    And I click Closed tab on the Check stats
-    And I click the Closed check on check stats
-    And I click reopen check button on the check stats screen
-    Then I Should get back to the Order Screen
-    And I click Payment button in the Order Management Screen
-    And I click payment in the payment window
-    And I click Delete button on the payment window
-#    And I click Ok button in receipt printer popup
-#    Then I should see transaction void successful popup
+
+#  Scenario Outline: qsr Check Payment through CC and customer & Merchant copy enabled without tipss
+#    Then I should see service type as "<order_type>"
+#    And I get check number
+#    And I select category as "FOOD"
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #  Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Void check CC payment without tips
+#    And I click All
+#    And I click Check Stats tab
+#    And I click Closed tab on the Check stats
+#    And I click the Closed check on check stats
+#    And I click reopen check button on the check stats screen
+#    Then I Should get back to the Order Screen
+#    And I click Payment button in the Order Management Screen
+#    And I click payment in the payment window
+#    And I click Delete button on the payment window
+##    And I click Ok button in receipt printer popup
+##    Then I should see transaction void successful popup
+##    And I click Done button on the Popup
+#    And I click Exit to return to Order Management Screen
+#    And I click print button on the order screen
 #    And I click Done button on the Popup
-    And I click Exit to return to Order Management Screen
-    And I click print button on the order screen
-    And I click Done button on the Popup
-    And I click Void button on order management screen
-    Then I should see the void reason popup
-    And I click void Reason on the void popup
-    And I click Add Button on the void reason popup
-#    Then I should see Receipt Printer popup
-#    And I click Done button on the Popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      | order_type|  Menu_Item     | Modifier | card_number      | expire_date | card_name |
-      | QSR       |  French Friese | Steak    | 3530111333300000 | 1224        | JCB       |
-
-
-  Scenario Outline: Qsr Check Payment through CC and customer & Merchant copy enabled tips
-    Then I should see service type as "<order_type>"
-    And I get check number
-    And I select category as "FOOD"
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click tip as 10
-    Then I should see tip is added with menu total as "<Total>"
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    #Void check CC payment with tips
-    And I click All
-    And I click Check Stats tab
-    And I click Closed tab on the Check stats
-    And I click the Closed check on check stats
-    And I click reopen check button on the check stats screen
-    Then I Should get back to the Order Screen
-    And I click Payment button in the Order Management Screen
-    And I click payment in the payment window
-    And I click Delete button on the payment window
-#    And I click Ok button in receipt printer popup
-#    Then I should see transaction void successful popup
-#    And I click Done button on the Popup
-    And I click Exit to return to Order Management Screen
-    And I click print button on the order screen
-    And I click Done button on the Popup
-    And I click Void button on order management screen
-    Then I should see the void reason popup
-    And I click void Reason on the void popup
-    And I click Add Button on the void reason popup
-#    Then I should see Receipt Printer popup
-#    And I click Done button on the Popup
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      | order_type |  Menu_Item     | Modifier | card_number      | expire_date | card_name | Total    |
-      | QSR        |  French Friese | Steak    | 3530111333300000 | 1224        | JCB       | $ 15.00  |
-
-
-  Scenario Outline: qsr Verify the check in Batch/Tip Adjustment for Check Payment through CC enabled with tips
-    Then I should see service type as "<order_type>"
-    And I select category as "FOOD"
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    #Verify merchant copy bill printout of CC payment with sign
-    Then I should see service type as "<order_type>"
-    And I select category as "FOOD"
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      | order_type |  Menu_Item    | Modifier |  Total   |  card_number      | expire_date | card_name | total    |
-      | QSR        | French Friese | Steak    | $ 15.00  | 3530111333300000  | 1224        | JCB       | $ 25.00  |
-
-
-  Scenario Outline: Qsr -Check Payment through CC with discount(item based - After tax/Before) as percentage and with tip
-    Then I should see service type as "<order_type>"
-    And I select Pasta as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount11>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discounttxt>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-  #  And I click log off button in order screen
-
-
-  #Scenario Outline: Qsr -Check Payment through CC with discount(item based - After tax/Before) as amount and with tip
-    Then I should see service type as "<order_type>"
-    And I select Pasta as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount2>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount21>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal2>"
-    Then I should see the tax amount reflected to the check as "<Tax2>"
-    Then I should see the Discount amount reflected to the check as "<Discounttxt2>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total2>"
-    Then I should see total amount as "<total2>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-  #  And I click log off button in order screen
-
-
-
- # Scenario Outline: Qsr - Check Payment through CC with discount(item based - After tax/Before) as set price and with tip
-    Then I should see service type as "<order_type>"
-    And I select Pasta as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount3>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount31>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal3>"
-    Then I should see the tax amount reflected to the check as "<Tax3>"
-    Then I should see the Discount amount reflected to the check as "<Discounttxt3>"
-    Then I should see orderscreen with menu item Total as "<Total3>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total3>"
-    Then I should see total amount as "<total3>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-   # And I click log off button in order screen
-
-#  Scenario Outline: Qsr - Check Payment through CC with discount(item based - After tax/Before) as Free item and with tip
-    Then I should see service type as "<order_type>"
-    And I select Pasta as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount4>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount41>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with as Onion Rings EACH
-    Then I should see orderscreen with menu item prize as "<SubTotal4>"
-    Then I should see the tax amount reflected to the check as "<Tax4>"
-    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total4>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total4>"
-    Then I should see total amount as "<total4>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-
-    Examples:
-      | order_type |Menu_Item   | Modifier |Discount                |Discount11              |Discounttxt  | SubTotal    | Tax       | Total       |  card_number      | expire_date | card_name | total       | Discount2            |Discount21         |Discounttxt2 | SubTotal2    | Tax2       | Total2       | card_number      | expire_date | card_name | total2       |   Discount3             |  Discount31             | Discounttxt3   |SubTotal3     | Tax3      | Total3      |  card_number     | expire_date | card_name | total3  | Discount4                | Discount41             | SubTotal4    | Tax4       | Total4       |   card_number     | expire_date   | card_name | total4       |
-      |QSR         | Ravioli    | Butter   | IB-AfterTax-Percentage |IB-BeforeTax-Percentage |$ 2.66       | $ 14.00     | $ 1.13    | $ 12.47     |  3530111333300000 | 1224        | JCB       | $ 22.47     |IB-AfterTax-Amount    |IB-BeforeTax-Amount|$ 2.00       | $ 14.00      | $ 1.20     | $ 13.20      | 3530111333300000 | 1224        | JCB       | $ 23.20      | IB-AfterTax-SetPrice500 |IB-BeforeTax-SetPrice500 |$ 13.00         | $ 14.00      | $ 0.10    | $ 1.10      | 3530111333300000 | 1224        | JCB       | $ 11.10 |IB-AfterTax-AsFreeItem    |IB-BeforeTax-AsFreeItem | $ 16.00      | $ 1.60     | $ 17.60      |  3530111333300000 | 1224          | JCB       | $ 27.60      |
-
-  @gi2
-  Scenario Outline: QSR - Check Payment through CC with discount(Check based - After tax/Before) as percentage and with tip
-    Then I should see service type as "<order_type>"
-    And I select Pasta as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select Pasta as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount11>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discounttxt>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-   # And I click log off button in order screen
-
- # Scenario Outline: Qsr - Check Payment through CC with discount(Check based - After tax/Before) as amount and with tip
-    Then I should see service type as "<order_type>"
-    And I select Pasta as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount2>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount21>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal2>"
-    Then I should see the tax amount reflected to the check as "<Tax2>"
-    Then I should see the Discount amount reflected to the check as "<Discounttxt2>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total2>"
-    Then I should see total amount as "<total2>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
+#    And I click Void button on order management screen
+#    Then I should see the void reason popup
+#    And I click void Reason on the void popup
+#    And I click Add Button on the void reason popup
+##    Then I should see Receipt Printer popup
+##    And I click Done button on the Popup
+##    Then I should see the order type window
+#    And I closed the order type window
 #    And I click log off button in order screen
+#    Examples:
+#      | order_type|  Menu_Item     | Modifier | card_number      | expire_date | card_name |
+#      | QSR       |  French Friese | Steak    | 3530111333300000 | 1224        | JCB       |
+#
+#
+#  Scenario Outline: Qsr Check Payment through CC and customer & Merchant copy enabled tips
+#    Then I should see service type as "<order_type>"
+#    And I get check number
+#    And I select category as "FOOD"
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click tip as 10
+#    Then I should see tip is added with menu total as "<Total>"
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Void check CC payment with tips
+#    And I click All
+#    And I click Check Stats tab
+#    And I click Closed tab on the Check stats
+#    And I click the Closed check on check stats
+#    And I click reopen check button on the check stats screen
+#    Then I Should get back to the Order Screen
+#    And I click Payment button in the Order Management Screen
+#    And I click payment in the payment window
+#    And I click Delete button on the payment window
+##    And I click Ok button in receipt printer popup
+##    Then I should see transaction void successful popup
+##    And I click Done button on the Popup
+#    And I click Exit to return to Order Management Screen
+#    And I click print button on the order screen
+#    And I click Done button on the Popup
+#    And I click Void button on order management screen
+#    Then I should see the void reason popup
+#    And I click void Reason on the void popup
+#    And I click Add Button on the void reason popup
+##    Then I should see Receipt Printer popup
+##    And I click Done button on the Popup
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      | order_type |  Menu_Item     | Modifier | card_number      | expire_date | card_name | Total    |
+#      | QSR        |  French Friese | Steak    | 3530111333300000 | 1224        | JCB       | $ 15.00  |
+#
+#
+#  Scenario Outline: qsr Verify the check in Batch/Tip Adjustment for Check Payment through CC enabled with tips
+#    Then I should see service type as "<order_type>"
+#    And I select category as "FOOD"
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Verify merchant copy bill printout of CC payment with sign
+#    Then I should see service type as "<order_type>"
+#    And I select category as "FOOD"
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      | order_type |  Menu_Item    | Modifier |  Total   |  card_number      | expire_date | card_name | total    |
+#      | QSR        | French Friese | Steak    | $ 15.00  | 3530111333300000  | 1224        | JCB       | $ 25.00  |
+#
+#
+#  Scenario Outline: Qsr -Check Payment through CC with discount(item based - After tax/Before) as percentage and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Pasta as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount11>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discounttxt>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#  #  And I click log off button in order screen
+#
+#
+#  #Scenario Outline: Qsr -Check Payment through CC with discount(item based - After tax/Before) as amount and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Pasta as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount2>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount21>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal2>"
+#    Then I should see the tax amount reflected to the check as "<Tax2>"
+#    Then I should see the Discount amount reflected to the check as "<Discounttxt2>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total2>"
+#    Then I should see total amount as "<total2>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#  #  And I click log off button in order screen
+#
+#
+#
+# # Scenario Outline: Qsr - Check Payment through CC with discount(item based - After tax/Before) as set price and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Pasta as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount3>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount31>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal3>"
+#    Then I should see the tax amount reflected to the check as "<Tax3>"
+#    Then I should see the Discount amount reflected to the check as "<Discounttxt3>"
+#    Then I should see orderscreen with menu item Total as "<Total3>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total3>"
+#    Then I should see total amount as "<total3>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#   # And I click log off button in order screen
+#
+##  Scenario Outline: Qsr - Check Payment through CC with discount(item based - After tax/Before) as Free item and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Pasta as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount4>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount41>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with as Onion Rings EACH
+#    Then I should see orderscreen with menu item prize as "<SubTotal4>"
+#    Then I should see the tax amount reflected to the check as "<Tax4>"
+#    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total4>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total4>"
+#    Then I should see total amount as "<total4>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#
+#    Examples:
+#      | order_type |Menu_Item   | Modifier |Discount                |Discount11              |Discounttxt  | SubTotal    | Tax       | Total       |  card_number      | expire_date | card_name | total       | Discount2            |Discount21         |Discounttxt2 | SubTotal2    | Tax2       | Total2       | card_number      | expire_date | card_name | total2       |   Discount3             |  Discount31             | Discounttxt3   |SubTotal3     | Tax3      | Total3      |  card_number     | expire_date | card_name | total3  | Discount4                | Discount41             | SubTotal4    | Tax4       | Total4       |   card_number     | expire_date   | card_name | total4       |
+#      |QSR         | Ravioli    | Butter   | IB-AfterTax-Percentage |IB-BeforeTax-Percentage |$ 2.66       | $ 14.00     | $ 1.13    | $ 12.47     |  3530111333300000 | 1224        | JCB       | $ 22.47     |IB-AfterTax-Amount    |IB-BeforeTax-Amount|$ 2.00       | $ 14.00      | $ 1.20     | $ 13.20      | 3530111333300000 | 1224        | JCB       | $ 23.20      | IB-AfterTax-SetPrice500 |IB-BeforeTax-SetPrice500 |$ 13.00         | $ 14.00      | $ 0.10    | $ 1.10      | 3530111333300000 | 1224        | JCB       | $ 11.10 |IB-AfterTax-AsFreeItem    |IB-BeforeTax-AsFreeItem | $ 16.00      | $ 1.60     | $ 17.60      |  3530111333300000 | 1224          | JCB       | $ 27.60      |
+#
+#  @gi2
+#  Scenario Outline: QSR - Check Payment through CC with discount(Check based - After tax/Before) as percentage and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Pasta as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select Pasta as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount11>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discounttxt>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#   # And I click log off button in order screen
+#
+# # Scenario Outline: Qsr - Check Payment through CC with discount(Check based - After tax/Before) as amount and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Pasta as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount2>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount21>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal2>"
+#    Then I should see the tax amount reflected to the check as "<Tax2>"
+#    Then I should see the Discount amount reflected to the check as "<Discounttxt2>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total2>"
+#    Then I should see total amount as "<total2>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+##    And I click log off button in order screen
+#
+#
+#
+#  #Scenario Outline: qsr -Check Payment through CC with discount(Check based - After tax/Before) as set price and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item1>"
+#    And I select menu item as "<Menu_Item1>"
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount3>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount31>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal3>"
+#    Then I should see the tax amount reflected to the check as "<Tax3>"
+#    Then I should see the Discount amount reflected to the check as "<Discounttxt3>"
+#    Then I should see orderscreen with menu item Total as "<Total3>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total3>"
+#    Then I should see total amount as "<total3>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+##    And I click Ok button in receipt printer popup
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #And I click log off button in order screen
+#
+#
+#
+# # Scenario Outline: qsr- Check Payment through CC with discount(Check based - After tax/Before) as Free item and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Desserts as category
+#    And I select menu item as "<Menu_Item2>"
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount4>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount41>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with as Onion Rings EACH
+#    Then I should see orderscreen with menu item prize as "<SubTotal4>"
+#    Then I should see the tax amount reflected to the check as "<Tax4>"
+#    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total4>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total4>"
+#    Then I should see total amount as "<total4>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+##    And I click Ok button in receipt printer popup
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#
+#    Examples:
+#      | order_type | Menu_Item | Modifier| Discount                |Discount11                | SubTotal    | Tax       | Discounttxt |Total        |  card_number     | expire_date   | card_name | total       |Discount2              |Discount21              | SubTotal2   | Tax2      | Discounttxt2| Total2      |   card_number     | expire_date | card_name | total2      | Menu_Item1|Discount3               |Discount31               | SubTotal3  | Tax3    | Discounttxt3|Total3     |  card_number     | expire_date | card_name | total3    | Menu_Item2 |Discount4           |Discount41            | SubTotal4  | Tax4    | Total4    |   card_number     | expire_date   | card_name | total4    |
+#      | QSR        |  Ravioli  | Butter  |CB-AfterTax-Percentage10 |CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.27    | $ 5.32      | $ 24.95     | 3530111333300000 | 1224          | JCB       | $ 34.95     |CB-AfterTax-Amount1000 |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.60    | $ 2.00      | $ 28.60     |  3530111333300000 | 1224        | JCB       | $ 38.60     |cake       |CB-AfterTaxSetPrice2500 |CB-BeforeTax-SetPrice1000| $ 16.00    |$ 1.00   | $ 6.00      |$ 11.00    | 3530111333300000 | 1224        | JCB       | $ 21.00   |Cheesecake  | CB-AfterTax-Free300| CB-BeforeTax-Free300 |$ 17.00     | $ 1.70  | $ 18.70   |  3530111333300000 | 1224          | JCB       | $ 28.70   |
+#
+#
+#  Scenario Outline:qsr - Check Payment through CC with discount(Open item - After tax/Before) as percentage and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount as discount Percentage for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#   # And I click log off button in order screen
+#
+#
+#
+# # Scenario Outline: qsr- Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as decimal value and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal1>"
+#    Then I should see the tax amount reflected to the check as "<Tax1>"
+#    Then I should see the Discount amount reflected to the check as "<Discount1>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total1>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#  #  And I click log off button in order screen
+#
+#
+#
+#
+#  #Scenario Outline: qsr- Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as non-decimal value and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal2>"
+#    Then I should see the tax amount reflected to the check as "<Tax2>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total2>"
+#    Then I should see total amount as "<total2>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#
+#    Examples:
+#      |order_type |Menu_Item|course_name| open_Item |  SubTotal | Tax       | Discount   | Total | Discount11 | card_number      | expire_date   | card_name | total   |SubTotal1 | Tax1       | Discount1 | Total1  |    total1 |SubTotal2  | Tax2      | Discount2  |     Total2  |  total2     |
+#      |QSR        |  Dosa   | DESSERT   |  onion    |  $ 51.00  | $ 5.10    | $ 0.50     |$ 55.60| After      | 3530111333300000 | 1224          | JCB       | $ 65.60 |$ 51.00   | $ 5.10     | $ 20.50   | $ 35.60 |   $ 45.60 |$ 51.00    | $ 5.10    | $ 20.00    | $ 36.10     | $ 46.10     |
+#
+#
+#  Scenario Outline: qsr - Check Payment through CC with discount(Open Check - After tax/Before) as percentage and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount11>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#  #  And I click log off button in order screen
+#
+#
+##  Scenario Outline:qsr - Check Payment through CC with discount(Open check - After tax/Before) as amount & safety limit as decimal value and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount11>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal1>"
+#    Then I should see the tax amount reflected to the check as "<Tax1>"
+#    Then I should see the Discount amount reflected to the check as "<Discount1>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total1>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#   # And I click log off button in order screen
+#
+#
+#
+# # Scenario Outline:QSR - Check Payment through CC with discount(Open check - After tax/Before) as amount & safety limit as non-decimal value and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I change the Quantity of menu Item as "7"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount11>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal2>"
+#    Then I should see the tax amount reflected to the check as "<Tax2>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total2>"
+#    Then I should see total amount as "<total2>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#
+#    Examples:
+#      |order_type|Menu_Item|  SubTotal   | Tax         | Discount   | Total     | Discount11  |  card_number     | expire_date | card_name | total     |  SubTotal1     | Tax1         | Discount1  | Total1       | total1     | SubTotal2     | Tax2         | Discount2  | Total2       | total2       |
+#      |QSR       |Halwa    |  $ 70.00    | $ 7.00      | $ 14.00    |$ 63.00    | After       | 3530111333300000 | 1224        | JCB       | $ 73.00   |   $ 70.00      | $ 7.00       | $ 20.50    | $ 56.50      | $ 66.50    |  $ 70.00      | $ 7.00       | $ 20.00    | $ 57.00      | $ 67.00      |
+#
+#
+#  Scenario Outline: qsr -Check Payment through CC with discount(Mix&Match - After/before tax) as set price and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I select menu item as "<Menu_Item>"
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount1>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount2>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type |Menu_Item|  SubTotal     | Tax        | Discount     | Total       | Discount1              |Discount2               |  card_number     | expire_date | card_name | total      |
+#      | QSR       |  Halwa  |   $ 20.00     | $ 0.20     | $ 18.00      | $ 2.20      | CheckMixMatchSP(After) | CheckMixMatchSP(Before)| 3530111333300000 | 1224        | JCB       |$ 12.20     |
+#
+#
+#  Scenario Outline: qsr- Check Payment through CC with discount(Mix&Match - After/before tax) as set each item price and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I select menu item as "<Menu_Item>"
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount1>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount2>"
+#    And I click Back button on Discount Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type |Menu_Item|  SubTotal     | Tax      | Discount     | Total     | Discount1                |Discount2                |  card_number     | expire_date | card_name | total      |
+#      | QSR       |  Halwa  |  $ 20.00      | $ 1.40   | $ 6.00       | $ 15.40   | CheckMixMatchSEIP(After) |CheckMixMatchSEIP(Before)| 3530111333300000 | 1224        | JCB       |$ 25.40     |
+#
+#
+#  Scenario Outline: qsr- Check Payment through CC with discount(Mix&Match - After/before tax) as set price(Most Expensive) and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I select menu item as "<Menu_Item1>"
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount1>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount2>"
+#    And I click Back button on Discount Screen
+#    And I compare menu price as "<price>" "<price1>" and applied "<Discount1>" on "<expensive>" menu Item
+#    And I compare menu price as "<price>" "<price1>" and applied "<Discount2>" on "<expensive>" menu Item
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type|Menu_Item|Menu_Item1 |price    |price1  |  SubTotal      | Tax       | Discount    | Total       | Discount1                 | Discount2               |  card_number     | expire_date | card_name | total      | expensive|
+#      | QSR      |  Halwa  |cake       | 10.00   |8.00    |  $ 18.00       | $ 0.80    | $ 10.00     | $ 8.80      | CheckMixMatchSPerM(After) |CheckMixMatchSPerM(Befor)| 3530111333300000 | 1224        | JCB       |$ 18.80     |Most     |
+#
+#  @gi2
+#  Scenario Outline: qsr -Check Payment through CC with discount(Mix&Match - After/before tax) as set price(Least Expensive) and with tip
+#    Then I should see service type as "<order_type>"
+#    And I select Desserts as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select menu item as "<Menu_Item1>"
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount1>"
+#    And I click Back button on Discount Screen
+#    And I select Discount on the Order screen
+#    Then I should see Check Based Discount Screen
+#    And I click Discount as "<Discount2>"
+#    And I click Back button on Discount Screen
+#    And I compare menu price as "<price>" "<price1>" and applied "<Discount1>" on "<expensive>" menu Item
+#    And I compare menu price as "<price>" "<price1>" and applied "<Discount2>" on "<expensive>" menu Item
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type |Menu_Item    |Menu_Item1         | price   |price1   | SubTotal    | Tax       | Discount   | Total      | Discount1                 | Discount2                 |  card_number      | expire_date | card_name | total      | expensive |
+#      | QSR       |Cheesecake   |Pumpkin Cheese Cake|15.00    |11.00    | $ 26.00     | $ 1.50    | $ 11.00    |$ 16.50     | CheckMixMatchSPerL(After) | CheckMixMatchSPerL(Befor) |  3530111333300000 | 1224        | JCB       |$ 26.50     |Least      |
+#
+#
+#  Scenario Outline: qsr- Check Payment through CC with Gratuity(Fixed) and with tips
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click Gratuity button
+#    Then I should see Add Gratuity screen
+#    And I click Gratuity Fixed button
+#    Then I Should get back to the Order Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Gratuity amount reflected to the check as "<Gratuity>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      | order_type | Menu_Item |  SubTotal   | Tax       | Gratuity   | Total       |   card_number     | expire_date | card_name | total      |
+#      | QSR        |  Halwa    | $ 10.00     | $ 1.00    |  $ 1.00    | $ 12.00     |  3530111333300000 | 1224        | JCB       |$ 22.00     |
+#
+#
+#  Scenario Outline: qsr- Check Payment through CC with Gratuity(Varying) and with tips
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click Gratuity button
+#    Then I should see Add Gratuity screen
+#    And I click Gratuity varying button
+#    Then I should see enter Percentage popup
+#    And I pass the value and click Apply button as "<Percentage>"
+#    Then I Should get back to the Order Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Gratuity amount reflected to the check as "<Gratuity>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type| Menu_Item   | Percentage | SubTotal    |    Tax    | Gratuity     | Total       |  card_number     | expire_date | card_name | total      |
+#      | QSR      | Halwa       | 8          | $ 10.00     | $ 1.00    |  $ 0.80      | $ 11.80     | 3530111333300000 | 1224        | JCB       |$ 21.80     |
+#
+#
+#  Scenario Outline: Qsr - Check Payment through CC with tax Exempt(Not select customer) and also with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click Tax Exempt Button
+#    Then I should see tax exempt reasons
+#    When I select School as reason
+#    Then I Should get back to the Order Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    And I should see the tax reflected to the check
+#    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check Payment through CC with tax Exempt(select customer) and also with tip
+#    Then I should see service type as "<order_type>"
+#    And I click Add Customer Button
+#    And I search for "<customer_name>"
+#    When I click "<customer_name>" to select customer for the seat
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click Tax Exempt Button
+#    Then I should see tax exempt reasons
+#    When I select School as reason
+#    Then I Should get back to the Order Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    And I should see the tax reflected to the check
+#    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type| Menu_Item  |  SubTotal   | Tax       | Total       | Total1      |  card_number     | expire_date | card_name | total      |customer_name|
+#      | QSR      |Halwa       | $ 10.00     | $ 1.00    | $ 11.00     | $ 10.00     | 3530111333300000 | 1224        | JCB       |$ 20.00     |tax exe      |
+#
+#
+#  Scenario Outline: qsr - Check Payment through CC with tax Exempt(Not select customer) in payment screen and also with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click Tax Exempt Button from the Payment Screen
+#    Then I should see tax exempt reasons
+#    When I select School as reason
+#    Then I Should get back to the Order Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    And I should see the tax reflected to the check
+#    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    #Check Payment through CC with tax Exempt(predefined customer) and also with tip
+#    Then I should see service type as "<order_type>"
+#    And I click Add Customer Button
+#    And I click Add new button
+#    And I select search
+#    And I enter an existing customer's name "<customer_name>"
+#    And I select the customer for tax exempt
+#    And I select tax exempt on customer profile screen
+#    And I click the Save button
+#    Then I Should get back to the Order Screen
+#    And I select category as "Menu"
+#    And I select menu item as "<Menu_Item>"
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    And I should see the tax reflected to the check
+#    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click Add Customer Button
+#    And I click Add new button
+#    And I select search
+#    And I enter an existing customer's name "<customer_name>"
+#    And I select the customer for tax exempt
+#    And I select tax exempt on customer profile screen
+#    And I click the Save button
+#    Then I Should get back to the Order Screen
+#    And I click Add Customer Button
+#    And I click remove button
+#    And I click log off button in order screen
+#    Examples:
+#      | order_type | Menu_Item  |  SubTotal   | Tax       | Total       | Total1      |  card_number     | expire_date | card_name | total      | customer_name  |
+#      | QSR        |Halwa       | $ 10.00     | $ 1.00    | $ 11.00     | $ 10.00     | 3530111333300000 | 1224        | JCB       |$ 20.00     | tax exe        |
+#
+#
+#  Scenario Outline: qsr Check Payment through CC with Upcharge with tip
+#    Then I should see service type as "<order_type>"
+#    And I select category as "FOOD"
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    Then I should see menu with Upcharge amount on order list as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    #   Then I should see the print or send receipt
+#    #    And I click No thanks Button on the print receipt
+##    And I click Ok button in receipt printer popup
+##    Then I should see the order type window
+#    And I closed the order type window
+#    And I click log off button in order screen
+#    Examples:
+#      |order_type | Menu_Item          | Modifier     | Total   |  card_number     | expire_date | card_name | total      |
+#      | QSR       |  Fried Crab Cakes  | White Bread  | $ 20.35 | 3530111333300000 | 1224        | JCB       | $ 30.35    |
 
-
-
-  #Scenario Outline: qsr -Check Payment through CC with discount(Check based - After tax/Before) as set price and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item1>"
-    And I select menu item as "<Menu_Item1>"
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount3>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount31>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal3>"
-    Then I should see the tax amount reflected to the check as "<Tax3>"
-    Then I should see the Discount amount reflected to the check as "<Discounttxt3>"
-    Then I should see orderscreen with menu item Total as "<Total3>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total3>"
-    Then I should see total amount as "<total3>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-#    And I click Ok button in receipt printer popup
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    Then I should see the order type window
-    And I closed the order type window
-    #And I click log off button in order screen
-
-
-
- # Scenario Outline: qsr- Check Payment through CC with discount(Check based - After tax/Before) as Free item and with tip
-    Then I should see service type as "<order_type>"
-    And I select Desserts as category
-    And I select menu item as "<Menu_Item2>"
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount4>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount41>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with as Onion Rings EACH
-    Then I should see orderscreen with menu item prize as "<SubTotal4>"
-    Then I should see the tax amount reflected to the check as "<Tax4>"
-    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total4>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total4>"
-    Then I should see total amount as "<total4>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-#    And I click Ok button in receipt printer popup
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-
-    Examples:
-      | order_type | Menu_Item | Modifier| Discount                |Discount11                | SubTotal    | Tax       | Discounttxt |Total        |  card_number     | expire_date   | card_name | total       |Discount2              |Discount21              | SubTotal2   | Tax2      | Discounttxt2| Total2      |   card_number     | expire_date | card_name | total2      | Menu_Item1|Discount3               |Discount31               | SubTotal3  | Tax3    | Discounttxt3|Total3     |  card_number     | expire_date | card_name | total3    | Menu_Item2 |Discount4           |Discount41            | SubTotal4  | Tax4    | Total4    |   card_number     | expire_date   | card_name | total4    |
-      | QSR        |  Ravioli  | Butter  |CB-AfterTax-Percentage10 |CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.27    | $ 5.32      | $ 24.95     | 3530111333300000 | 1224          | JCB       | $ 34.95     |CB-AfterTax-Amount1000 |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.60    | $ 2.00      | $ 28.60     |  3530111333300000 | 1224        | JCB       | $ 38.60     |cake       |CB-AfterTaxSetPrice2500 |CB-BeforeTax-SetPrice1000| $ 16.00    |$ 1.00   | $ 6.00      |$ 11.00    | 3530111333300000 | 1224        | JCB       | $ 21.00   |Cheesecake  | CB-AfterTax-Free300| CB-BeforeTax-Free300 |$ 17.00     | $ 1.70  | $ 18.70   |  3530111333300000 | 1224          | JCB       | $ 28.70   |
-
-
-  Scenario Outline:qsr - Check Payment through CC with discount(Open item - After tax/Before) as percentage and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount as discount Percentage for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-   # And I click log off button in order screen
-
-
-
- # Scenario Outline: qsr- Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as decimal value and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal1>"
-    Then I should see the tax amount reflected to the check as "<Tax1>"
-    Then I should see the Discount amount reflected to the check as "<Discount1>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total1>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-  #  And I click log off button in order screen
-
-
-
-
-  #Scenario Outline: qsr- Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as non-decimal value and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal2>"
-    Then I should see the tax amount reflected to the check as "<Tax2>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total2>"
-    Then I should see total amount as "<total2>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-
-    Examples:
-      |order_type |Menu_Item|course_name| open_Item |  SubTotal | Tax       | Discount   | Total | Discount11 | card_number      | expire_date   | card_name | total   |SubTotal1 | Tax1       | Discount1 | Total1  |    total1 |SubTotal2  | Tax2      | Discount2  |     Total2  |  total2     |
-      |QSR        |  Dosa   | DESSERT   |  onion    |  $ 51.00  | $ 5.10    | $ 0.50     |$ 55.60| After      | 3530111333300000 | 1224          | JCB       | $ 65.60 |$ 51.00   | $ 5.10     | $ 20.50   | $ 35.60 |   $ 45.60 |$ 51.00    | $ 5.10    | $ 20.00    | $ 36.10     | $ 46.10     |
-
-
-  Scenario Outline: qsr - Check Payment through CC with discount(Open Check - After tax/Before) as percentage and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount11>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-  #  And I click log off button in order screen
-
-
-#  Scenario Outline:qsr - Check Payment through CC with discount(Open check - After tax/Before) as amount & safety limit as decimal value and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety limit percentage decimal precision as 20.50 for "<Discount11>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal1>"
-    Then I should see the tax amount reflected to the check as "<Tax1>"
-    Then I should see the Discount amount reflected to the check as "<Discount1>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total1>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-   # And I click log off button in order screen
-
-
-
- # Scenario Outline:QSR - Check Payment through CC with discount(Open check - After tax/Before) as amount & safety limit as non-decimal value and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I change the Quantity of menu Item as "7"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "<Discount11>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal2>"
-    Then I should see the tax amount reflected to the check as "<Tax2>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total2>"
-    Then I should see total amount as "<total2>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-
-    Examples:
-      |order_type|Menu_Item|  SubTotal   | Tax         | Discount   | Total     | Discount11  |  card_number     | expire_date | card_name | total     |  SubTotal1     | Tax1         | Discount1  | Total1       | total1     | SubTotal2     | Tax2         | Discount2  | Total2       | total2       |
-      |QSR       |Halwa    |  $ 70.00    | $ 7.00      | $ 14.00    |$ 63.00    | After       | 3530111333300000 | 1224        | JCB       | $ 73.00   |   $ 70.00      | $ 7.00       | $ 20.50    | $ 56.50      | $ 66.50    |  $ 70.00      | $ 7.00       | $ 20.00    | $ 57.00      | $ 67.00      |
-
-
-  Scenario Outline: qsr -Check Payment through CC with discount(Mix&Match - After/before tax) as set price and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I select menu item as "<Menu_Item>"
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount1>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount2>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type |Menu_Item|  SubTotal     | Tax        | Discount     | Total       | Discount1              |Discount2               |  card_number     | expire_date | card_name | total      |
-      | QSR       |  Halwa  |   $ 20.00     | $ 0.20     | $ 18.00      | $ 2.20      | CheckMixMatchSP(After) | CheckMixMatchSP(Before)| 3530111333300000 | 1224        | JCB       |$ 12.20     |
-
-
-  Scenario Outline: qsr- Check Payment through CC with discount(Mix&Match - After/before tax) as set each item price and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I select menu item as "<Menu_Item>"
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount1>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount2>"
-    And I click Back button on Discount Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type |Menu_Item|  SubTotal     | Tax      | Discount     | Total     | Discount1                |Discount2                |  card_number     | expire_date | card_name | total      |
-      | QSR       |  Halwa  |  $ 20.00      | $ 1.40   | $ 6.00       | $ 15.40   | CheckMixMatchSEIP(After) |CheckMixMatchSEIP(Before)| 3530111333300000 | 1224        | JCB       |$ 25.40     |
-
-
-  Scenario Outline: qsr- Check Payment through CC with discount(Mix&Match - After/before tax) as set price(Most Expensive) and with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I select menu item as "<Menu_Item1>"
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount1>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount2>"
-    And I click Back button on Discount Screen
-    And I compare menu price as "<price>" "<price1>" and applied "<Discount1>" on "<expensive>" menu Item
-    And I compare menu price as "<price>" "<price1>" and applied "<Discount2>" on "<expensive>" menu Item
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type|Menu_Item|Menu_Item1 |price    |price1  |  SubTotal      | Tax       | Discount    | Total       | Discount1                 | Discount2               |  card_number     | expire_date | card_name | total      | expensive|
-      | QSR      |  Halwa  |cake       | 10.00   |8.00    |  $ 18.00       | $ 0.80    | $ 10.00     | $ 8.80      | CheckMixMatchSPerM(After) |CheckMixMatchSPerM(Befor)| 3530111333300000 | 1224        | JCB       |$ 18.80     |Most     |
-
-  @gi2
-  Scenario Outline: qsr -Check Payment through CC with discount(Mix&Match - After/before tax) as set price(Least Expensive) and with tip
-    Then I should see service type as "<order_type>"
-    And I select Desserts as category
-    And I select menu item as "<Menu_Item>"
-    And I select menu item as "<Menu_Item1>"
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount1>"
-    And I click Back button on Discount Screen
-    And I select Discount on the Order screen
-    Then I should see Check Based Discount Screen
-    And I click Discount as "<Discount2>"
-    And I click Back button on Discount Screen
-    And I compare menu price as "<price>" "<price1>" and applied "<Discount1>" on "<expensive>" menu Item
-    And I compare menu price as "<price>" "<price1>" and applied "<Discount2>" on "<expensive>" menu Item
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type |Menu_Item    |Menu_Item1         | price   |price1   | SubTotal    | Tax       | Discount   | Total      | Discount1                 | Discount2                 |  card_number      | expire_date | card_name | total      | expensive |
-      | QSR       |Cheesecake   |Pumpkin Cheese Cake|15.00    |11.00    | $ 26.00     | $ 1.50    | $ 11.00    |$ 16.50     | CheckMixMatchSPerL(After) | CheckMixMatchSPerL(Befor) |  3530111333300000 | 1224        | JCB       |$ 26.50     |Least      |
-
-
-  Scenario Outline: qsr- Check Payment through CC with Gratuity(Fixed) and with tips
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click Gratuity button
-    Then I should see Add Gratuity screen
-    And I click Gratuity Fixed button
-    Then I Should get back to the Order Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Gratuity amount reflected to the check as "<Gratuity>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      | order_type | Menu_Item |  SubTotal   | Tax       | Gratuity   | Total       |   card_number     | expire_date | card_name | total      |
-      | QSR        |  Halwa    | $ 10.00     | $ 1.00    |  $ 1.00    | $ 12.00     |  3530111333300000 | 1224        | JCB       |$ 22.00     |
-
-
-  Scenario Outline: qsr- Check Payment through CC with Gratuity(Varying) and with tips
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click Gratuity button
-    Then I should see Add Gratuity screen
-    And I click Gratuity varying button
-    Then I should see enter Percentage popup
-    And I pass the value and click Apply button as "<Percentage>"
-    Then I Should get back to the Order Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Gratuity amount reflected to the check as "<Gratuity>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type| Menu_Item   | Percentage | SubTotal    |    Tax    | Gratuity     | Total       |  card_number     | expire_date | card_name | total      |
-      | QSR      | Halwa       | 8          | $ 10.00     | $ 1.00    |  $ 0.80      | $ 11.80     | 3530111333300000 | 1224        | JCB       |$ 21.80     |
-
-
-  Scenario Outline: Qsr - Check Payment through CC with tax Exempt(Not select customer) and also with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click Tax Exempt Button
-    Then I should see tax exempt reasons
-    When I select School as reason
-    Then I Should get back to the Order Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
-    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    #Check Payment through CC with tax Exempt(select customer) and also with tip
-    Then I should see service type as "<order_type>"
-    And I click Add Customer Button
-    And I search for "<customer_name>"
-    When I click "<customer_name>" to select customer for the seat
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click Tax Exempt Button
-    Then I should see tax exempt reasons
-    When I select School as reason
-    Then I Should get back to the Order Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
-    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type| Menu_Item  |  SubTotal   | Tax       | Total       | Total1      |  card_number     | expire_date | card_name | total      |customer_name|
-      | QSR      |Halwa       | $ 10.00     | $ 1.00    | $ 11.00     | $ 10.00     | 3530111333300000 | 1224        | JCB       |$ 20.00     |tax exe      |
-
-
-  Scenario Outline: qsr - Check Payment through CC with tax Exempt(Not select customer) in payment screen and also with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click Tax Exempt Button from the Payment Screen
-    Then I should see tax exempt reasons
-    When I select School as reason
-    Then I Should get back to the Order Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
-    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    #Check Payment through CC with tax Exempt(predefined customer) and also with tip
-    Then I should see service type as "<order_type>"
-    And I click Add Customer Button
-    And I click Add new button
-    And I select search
-    And I enter an existing customer's name "<customer_name>"
-    And I select the customer for tax exempt
-    And I select tax exempt on customer profile screen
-    And I click the Save button
-    Then I Should get back to the Order Screen
-    And I select category as "Menu"
-    And I select menu item as "<Menu_Item>"
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
-    Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click Add Customer Button
-    And I click Add new button
-    And I select search
-    And I enter an existing customer's name "<customer_name>"
-    And I select the customer for tax exempt
-    And I select tax exempt on customer profile screen
-    And I click the Save button
-    Then I Should get back to the Order Screen
-    And I click Add Customer Button
-    And I click remove button
-    And I click log off button in order screen
-    Examples:
-      | order_type | Menu_Item  |  SubTotal   | Tax       | Total       | Total1      |  card_number     | expire_date | card_name | total      | customer_name  |
-      | QSR        |Halwa       | $ 10.00     | $ 1.00    | $ 11.00     | $ 10.00     | 3530111333300000 | 1224        | JCB       |$ 20.00     | tax exe        |
-
-
-  Scenario Outline: qsr Check Payment through CC with Upcharge with tip
-    Then I should see service type as "<order_type>"
-    And I select category as "FOOD"
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    Then I should see menu with Upcharge amount on order list as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    #   Then I should see the print or send receipt
-    #    And I click No thanks Button on the print receipt
-#    And I click Ok button in receipt printer popup
-#    Then I should see the order type window
-    And I closed the order type window
-    And I click log off button in order screen
-    Examples:
-      |order_type | Menu_Item          | Modifier     | Total   |  card_number     | expire_date | card_name | total      |
-      | QSR       |  Fried Crab Cakes  | White Bread  | $ 20.35 | 3530111333300000 | 1224        | JCB       | $ 30.35    |
-
-
+    @RegressionQSR3
   Scenario Outline: qsr Modify with option
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -4255,44 +4255,39 @@ Feature: QSR feature
     #And I click Add Button on the void reason popup
     #Then I should see Receipt Printer popup
     #And I click Done button on the Popup
-    #And I closed the order type window
-    And I click All
-    And I click Table Layout tab
-    And I click power button
+#    And I closed the order type window
+    And I click log off button in order screen
     Examples:
       | order_type |menu_Item            | Serving_Size | Modifier_1   | Modifier_2     |
       | QSR        | Pizza Rucola 12inch | DOUBLE       | Add Steak    | Add Chicken    |
 
-
+  @RegressionQSR3
   Scenario Outline: Application showing the service type in Order Screen,Verify menu categories,Verify add new seat button,When User click add new customer icon,Delete any seat,Verify select Upcharge MenuItems,Verify select Upcharge MenuItems with Modifiers,Verify Reopen Upcharge Order.
 
-    When User click service type option
-    And User select QSR mode on menu item page
-    Then User verify first service type
-    When User click Food category option
+    Then I should see service type as "QSR"
+#    Then User verify first service type
+    And I select category as "FOOD"
     And User verify Food category menu item
     When User click add seat button
     Then User verify new seat
     #  Scenario Outline: Application
-    When I click "<tabCustomer>" in the order screen "Select Customer tab"
-    When User click add new customer icon
+    When I click Add Customer Button
+    When I click By Name Email Button
+    And I click add customer button from the Add customer window
+    Then I should see the customer profile window
     Then User enter customer first name
     And User enter customer last name
     And User click add button for phone number
     And User enter new customer mobile phone number
-    And User click customer profile save button
+#    And User click customer profile save button
     And User click the Save button
     #Delete any seat
-    When User click popup menu
-    Then User click edit button
-    And User click added seat for delete
-    And User click done button
-    When User click popup menu
+    And I delete the seat for QSR order type
     When User click QSR on Menu Item page
     Then User select DineIn order type
     And I select the "<txtTable>" in the Table layout screen"click t4 table"
-    And User click Food category option
-    When I get the check no in the order screen "Get Check Number"
+    When I get check number
+    And I select category as "FOOD"
     Then User select Sandwiches menu item
     And User take an order with upcharge menu item
     And User verify upcharge menu item
@@ -4310,42 +4305,44 @@ Feature: QSR feature
     And User verify upcharge menu item
     When User click payment button
     Then User click submit button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I click QSR tab
+
+     And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnLogOff|tabCustomer|txtTable|
       |QSR   |Cancel   |logOff   |New Customer |T8    |
 
+  @RegressionQSR3
   Scenario: Verify check options tab should open at all scenarios,Verify Finish button for order / menu item screen
 
     When User click QSR on Menu Item page
     Then User select DineIn order type
     And I select the "T9" in the Table layout screen"click t4 table"
-    And User click Food category option
-    When User take an order as "SANDWICHES"
+    And I select category as "FOOD"
+    When I select menu item as "SANDWICHES"
     Then User click Option Tab
     And User verify option page
     And User click option back button
     Then User click finish button
-    And I click the "Power button" in the close the day screen "click Power button"
-
+    And I click power button
+  @RegressionQSR3
   Scenario: Check number gets changed after completing the sale in QSR Screen --verify changing check number
 
     When User click QSR on Menu Item page
     Then User select DineIn mode
-    And I select the "T9" in the Table layout screen in Menu item "click t4 table"
-    When User take an order as "SANDWICHES"
+    And I select the "T9" in the Table layout screen"click t4 table"
+    When I select menu item as "SANDWICHES"
     Then User click payment button
     And User click exact option
     And USer click cash button
     When User click submit button
-    And I click the "Power button" in the close the day screen "click Power button"
+    And I click power button
 
+  @RegressionQSR3
   Scenario: Menu item with - mandatory modifier
-
-    Given User select QSR mode on menu item page
+##    Given User select QSR mode on menu item page
     And I select FOOD as category
     When User select third menu item with mandatory modifier
     When User select first modifier of third menu item
@@ -4357,6 +4354,7 @@ Feature: QSR feature
     #Verify modifier with prefix
     And I select Pizza as Category
     When User select second pizza menu item with modifier
+    And I select modifier as 12
     Then User select third modifier with prefix of second menu item of pizza
     And User verify modifier prefix
     #Menu item with - optional modifier
@@ -4369,19 +4367,19 @@ Feature: QSR feature
     And User click exact option
     And USer click cash button
     When User click submit button
-    And User click cancel button
-    And I click log off "logOff" button in order screen "click log off button"
+    And I closed the order type window
+    And I click log off button in order screen
 
-  @Regression199010
+  @RegressionQSR3
   Scenario: Verify menu item and modifier with inclusive tax,Verify menu item and modifier with exclusive tax
 
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And I select category as "Pasta"
     And I select menu item as "Ravioli Pesto"
     And I select modifier as "Butter"
     And I click Done to get back
-    And I verify tax as "$ 1.36"
-    Then User verify inclusive tax
+    And I should verify tax value as "$ 1.36"
+#    Then User verify inclusive tax
     And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
@@ -4390,29 +4388,29 @@ Feature: QSR feature
     And I select menu item as "Ravioli"
     And I select modifier as "Butter"
     And I click Done to get back
-    And I verify tax as "$ 1.40"
+    And I should verify tax value as "$ 1.40"
 #    And User verify exclusive tax
     #Verify menu item with all mandatory modifier and prefix
     Then User click payment button
     And User click exact option
     And USer click cash button
     When User click submit button
-    And User click cancel button
-    And I click log off "logOff" button in order screen "click log off button"
-
+    And I closed the order type window
+    And I click log off button in order screen
+  @RegressionQSR3
   Scenario: Check number gets changed after changing a service type in QSR Screen
 
     When User click QSR on Menu Item page
     Then User select DineIn order type
-    When User select first table
+    And I select the "T9" in the Table layout screen"click t4 table"
     And User take an order
     Then User click payment button
     And User click exact option
     And USer click cash button
     When User click submit button
-    And I click the "Power button" in the close the day screen "click Power button"
+    And I click power button
 
-
+  @RegressionQSR3
   Scenario Outline: Void before order
     When User click QSR on Menu Item page in void screen
     Then User select DineIn order type in void screen
@@ -4422,86 +4420,95 @@ Feature: QSR feature
     And User close void info popup in void screen
     And User verify voided menu item in void screen
     #void after order
-    When User take an order as "SANDWICHES"
+    When I select menu item as "SANDWICHES"
     Then User click void button in void screen
-    When User select void reason in void screen
-    Then User click add void button in void screen
-    And User close printer popup in void screen
+    And User close void info popup in void screen
+
+    And I click All
+    And I click power button
+#    When User select void reason in void screen
+#    Then User click add void button in void screen
+#    And User close printer popup in void screen
     #void checks on void tab
-    When User click Check Status tab in void screen
-    Then User click Void Checks tabs in void screen
-    And User verify last voided order in void screen
-    And I click "<btnQsr>" in the all tab screen in void screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup in void screen "Click cancel button"
-    #Scenario Outline: Void
+#    When User click Check Status tab in void screen
+#    Then User click Void Checks tabs in void screen
+#    And User verify last voided order in void screen
+#    And I click QSR tab
+#    And I closed the order type window
+#    #Scenario Outline: Void
     #Void after payment
-    When User click QSR on Menu Item page in void screen
-    Then User select DineIn order type in void screen
-    And User select first table in void screen
-    When User select any menu item in void screen
-    Then User click payment button in void screen
-    And USer click cash button in void screen
-    And User click exit on payment page in void screen
-    Then It should show the amount "4" value as "$ 1.10" in void screen "Verify paid amount value"
-    And I click "<btnVoid>" in the order screen in void screen "Click void button"
-    And I click Done button on the Popup in void screen
-    Then User verify last voided order in void screen
-    And I select the credit card check in the payment screen in void screen "Credit card amount clicked"
-    When I click Delete in the payment screen in void screen "Delete button clicked"
-    And I click "<btnOk>" in the receipt printer popup in void screen "Click ok button in the popup"
-    When I click Exit in the payment screen in void screen "exit button clicked"
-    And I click "<btnVoid>" in the order screen in void screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item in void screen "select reason"
-    And I click "<btnAdd>" in the void screen in void screen "Click add button"
-    And I click the "<btnDone>" in the popup screen in void screen "click done button"
-    And I click the "Power button" in the close the day screen in void screen "click Power button"
+#    When User click QSR on Menu Item page in void screen
+#    Then User select DineIn order type in void screen
+#    And User select first table in void screen
+#    When User select any menu item in void screen
+#    Then User click payment button in void screen
+#    And USer click cash button in void screen
+#    And I click Exit to return to Order Management Screen
+##    Then It should show the amount "4" value as "$ 1.10" in void screen "Verify paid amount value"
+#    And I should verify total value as "$ 1.00"
+#    And I click Void button on order management screen
+#    Then I should see payment made on this check popup message
+#    And I click Done button on the Popup in void screen
+#    Then User verify last voided order in void screen
+#    And I select the credit card check in the payment screen in void screen "Credit card amount clicked"
+#    When I click Delete in the payment screen in void screen "Delete button clicked"
+#    And I click "<btnOk>" in the receipt printer popup in void screen "Click ok button in the popup"
+#    When I click Exit in the payment screen in void screen "exit button clicked"
+#    And I click "<btnVoid>" in the order screen in void screen "Click void button"
+#    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item in void screen "select reason"
+#    And I click "<btnAdd>" in the void screen in void screen "Click add button"
+#    And I click the "<btnDone>" in the popup screen in void screen "click done button"
+#    And I click power button
 
     Examples:
       |btnFinish|btnQsr|btnCancel|btnOk|btnVoid|btnAdd|btnDone|btnWrong|btnVoid|
       |finish   |QSR   |Cancel   |OK   |Void   |Add   |Done   |Wrong Item Ordered |Void |
 
 #  @bugfix
-  @FailedVoid1
+  @RegressionQSR3
   Scenario: Void reopen check
     When User click QSR on Menu Item page in void screen
     Then User select DineIn order type in void screen
     And User select first table in void screen
     When I get the check no in the order screen in void screen "Get Check Number"
-    When User take an order as "SANDWICHES"
+    When I select menu item as "SANDWICHES"
     Then User click payment button in void screen
     And USer click cash button in void screen
     And User click submit button in void screen
     When User click Check Status tab in void screen
     Then User click Closed Checks tabs in void screen
-    Then I should see and select the closed check as in void screen "Closed check selected"
+    Then I click the Closed check on check stats
     Then User click re-open check button in void screen
     When User click payment button in void screen
-    Then User select paid order in void screen
+    Then I click payment in the payment window
     When I click Delete in the payment screen in void screen "Delete button clicked"
-    And I click "OK" in the receipt printer popup in void screen "Click ok button in the popup"
+#    And I click "OK" in the receipt printer popup in void screen "Click ok button in the popup"
     And User click exit on payment page in void screen
     And User click void button in void screen
     Then User select void reason in void screen
     And User click add void button in void screen
-    And I click "Check Stats" in the All Tab Screen in void screen1 "Click Bar Tab"
-    When User click Void Checks tabs in void screen
-    Then I should see and select the closed check as in void screen "Closed check selected"
-    Then I should verify the checks in void screen "verify the void check"
-    And I click the "Power button" in the close the day screen in void screen "click Power button"
+#    And I click All
+#    And I click "Check Stats" in the All Tab Screen in void screen1 "Click Bar Tab"
+#    When User click Void Checks tabs in void screen
+#    Then I click the Closed check on check stats
+#    Then I should verify the checks in void screen "verify the void check"
+    And I click power button
 
 #  @1
-  @FailedVoid
+  @RegressionQSR3
   Scenario Outline: Void Normal Check — Select from CheckStatus/Closed Check
     Given User click setting icon in void screen
     And User verify setting options in void screen
     When User select POS Settings tab in void screen
     Then User open ask customer name option if disable in void screen
-    And I click the "POS" button for navigating to the pos screen in void screen "click pos button"
-    And User click cancel button in void screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     When User click QSR on Menu Item page in void screen
     Then User select Bar Tab in order types in void screen
-    And I click "<btnExit>" in the preauth popup in void screen "click Exit Button"
     When User enter customer name for bar tab in void screen
+    And I click the Exit to close the preauth window
+
     Then User take an order in void screen
     When I get the check no in the order screen in void screen "Get Check Number"
     When User click Cash Tab on Menu Item Page in void screen
@@ -4509,34 +4516,41 @@ Feature: QSR feature
     And User click enter button in void screen
     And User click Check Status tab in void screen
     Then User click Closed Checks tabs in void screen
-    Then I should see and select the closed check as in void screen "Closed check selected"
+    Then I click the Closed check on check stats
     When User click re-open check button in void screen
     Then User click payment button in void screen
     And User verify paid order for Sandwiches in void screen
     When I click Exit in the payment screen in void screen "exit button clicked"
     When User click finish button in void screen
-    And I click "<btnQsr>" in the all tab screen in void screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup in void screen "Click cancel button"
+    And I click QSR tab
+    And I closed the order type window
     #Void Normal Check — Select from BarTab
     When User click QSR on Menu Item page in void screen
     Then User select Bar Tab in order types in void screen
-    And I click "<btnExit>" in the preauth popup in void screen "click Exit Button"
     When User enter customer name for bar tab in void screen
+    And I click the Exit to close the preauth window
     Then User take an order in void screen
     When User click finish button in void screen
-    And User select last active check for BarTab in void screen
-    And I click "<btnVoid>" in the order screen in void screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item in void screen "select reason"
-    And I click "<btnAdd>" in the void screen in void screen "Click add button"
-    And I click the "<btnDone>" in the popup screen in void screen "click done button"
-    Then I should get back to the "<tabCheckStatus>", in void screen "Check Check stats Screen"
-    And I click the "Power button" in the close the day screen in void screen "click Power button"
+    And User click Check Status tab in void screen
+    Then User click Closed Checks tabs in void screen
+    Then I click the Closed check on check stats
+    When User click re-open check button in void screen
+    And I click Void button on order management screen
+    Then I should see payment made on this check popup message1
+    And I click Done button on the Popup
+    And I click payment in the payment window
+    And I click Delete button on the payment window
+    And I click Exit to return to Order Management Screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    Then User click Check Status tab in void screen
+    And I click power button
 
     Examples:
       |btnFinish|btnQsr|btnCancel|btnPayment|btnOk|btnVoid|btnWrong           |btnAdd|btnDone |tabCheckStatus|btnExit|
       |finish   |QSR   |Cancel   |Payment   |OK   |Void   |Wrong Item Ordered |Add    |Done   |Check Stats   |Exit   |
 
-
+  @RegressionQSR3
   Scenario Outline: Verify Tax Exempt- From Order Screen,Application  should removed Tax Exempt and Tax should applied for that Entire Check from Order Screen,Verify Application should not allow to do Tax Exempt after Payment Done Check
     When User click QSR on Menu Item page
     Then User select DineIn order type
@@ -4545,72 +4559,79 @@ Feature: QSR feature
     And I select menu item as "SANDWICHES"
     Then User click Option Tab
     When User select tax exempt option
-    Then User select tax exempt type
-    And User verify added tax exempt1
-    #Application  should removed Tax Exempt and Tax should applied for that Entire Check from Payment Screen - yyy
+#    Then User select tax exempt type
+#    And User verify added tax exempt1
+#    #Application  should removed Tax Exempt and Tax should applied for that Entire Check from Payment Screen - yyy
     #Application  should removed Tax Exempt and Tax should applied for that Entire Check from Order Screen
     When User click Option Tab
     Then User select tax exempt option
-    Then I should see Tax Exempt removed successfully popup
-    And I click Done button on the Popup
+#    Then I should see Tax Exempt removed successfully popup
+#    And I click Done button on the Popup
     #Verify Application should not allow to do Tax Exempt after Payment Done Check - xxx
     And I click Payment button in the Order Management Screen
     When User click exact option
     Then USer click cash button
     And User click submit button
-    When User click QSR on Check Status page
-    And User click cancel button
-    When User click All button
+#    When User click QSR on Check Status page
+#    And I closed the order type window
+#    When User click All button
+    And I click Check Stats tab
     Then User click Closed Checks tabs
     And I click the Closed check on check stats
     When User click re-open check button
     Then User click Option Tab
     When User select tax exempt option
-    And User select tax exempt type
-    And User verify apply tax exempt paid amount warning popup
-    And I click " Back " for closing future order "Click Back button"
-    And I click on " Back " for closing order screen popup "Click Back button"
+#    And User select tax exempt type
+#    And User verify apply tax exempt paid amount warning popup
+#    And I click " Back " for closing future order "Click Back button"
+#    And I click on " Back " for closing order screen popup "Click Back button"
     Then User click payment button
     And User click submit button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+     And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnPayment|btnLogOff|
       |QSR   |Cancel   |Payment   |logOff   |
 
-  Scenario Outline: Verify Check Payment through CC with Tax Exempt and also with tip - xxx
-    Given User click setting icon
-    And User click POS Option
-    And User close ask customer name option if enable
-    And I click the "POS" button for navigating to the pos screen "click pos button"
-    And User click cancel button
+  @RegressionQSR3
+  Scenario Outline: Verify Check Payment through Side CC with Tax Exempt and also with tip
+#    Given User click setting icon
+#    And User click POS Option
+#    And User close ask customer name option if enable
+#    And I click the Toggle Icon button
+#    And I click POS Icon from Toggle
+#    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And I click "Exit" in the preauth popup "click Exit Button"
-    When User click food category
+    And I click the Exit to close the preauth window
+#    When User click food category
     Then User select Sandwiches menu item
     Then User click Option Tab
     When User select tax exempt option
-    Then User select tax exempt type
-    And User verify added tax exempt1
+#    Then User select tax exempt type
+    And I should verify subtotal value as "$ 1.00"
     When User click payment button
     Then User click exact option
     And User click CC Side payment method
-    When User select tip amount which is entered
-    And User click Continue button
-    And User verify CC Side payment with Tax Exempt as select customer and with tips
-    When User click submit button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#    When User select tip amount which is entered
+    And I click tip as 10
+    And I click the Continue button on the Total screen
+    Then I should see the Payment window
+    And I click Submit button on the Payment Window
+#    And User verify CC Side payment with Tax Exempt as select customer and with tips
+#    When User click submit button
+   And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnLogOff|
       |QSR   |Cancel   |logOff   |
 
-  Scenario Outline: Verify Check Payment through CC with Tax Exempt not select customer in payment screen and also with tip
+  @RegressionQSR35
+  Scenario Outline: Verify Check Payment through Side CC with Tax Exempt not select customer in payment screen and also with tip
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
     And I click "Exit" in the preauth popup "click Exit Button"
@@ -4627,9 +4648,9 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with Tax Exempt as not select customer in payment screen and with tips
     When User click submit button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnLogOff|
@@ -4659,12 +4680,12 @@ Feature: QSR feature
     And I click POS Icon from Toggle
     And I click on "Cancel" for closing order screen popup "Click cancel button"
     #Application allow user to sync the change through order screen sync button
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     When User click sync icon
     And I click "<tabAll>" in the order screen "click all tab"
     And User click Table Layout menu
     And I click new check button on the Table layout screen
-    When User select first table
+    And I select the "T9" in the Table layout screen"click t4 table"
     And User enter number of seat
     And I click "<btnContinue>" in the percentage apply screen "Click Continue"
     And User click customer button
@@ -4762,7 +4783,7 @@ Feature: QSR feature
     And I click "<btnAdd>" in the void screen"Click add button"
     And I click the "<btnDone>" in the popup screen"click done button"
     And I closed the order type window
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I click log off button in order screen
 
     Examples:
       | text     | item    | number2 |item2       | text1 |btnVoid |number1 |text2   |text3  |number4 |number3 |btnGratuity | optFixedGratuity | text4 |text5  | text6  |text7  |btnPayment |paymentPin0 |paymentPin5 |btnCash |btnOk | btnWrong          | btnAdd | btnDone | item3          |  btnLogOff |btnDropDown|category|
@@ -4776,13 +4797,13 @@ Feature: QSR feature
     When User click QSR on Menu Item page
     Then User select DineIn mode
     When User select table
-    When User take an order as "SANDWICHES"
+    When I select menu item as "SANDWICHES"
     And User verify total price as "$ 1.10" of Sandwiches
     Then User click payment button
     And User select payment method with cash
     And User click submit button
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     When USer click log off button
 
 
@@ -4792,14 +4813,14 @@ Feature: QSR feature
     When User select POS Settings tab
     Then User close ask customer name option if enable
     And I click the "POS" button for navigating to the pos screen "click pos button"
-    And User click cancel button
+    And I closed the order type window
     Given User click QSR on Menu Item page
     And User select DineIn mode
     And I select the "T16" in the Table layout screen"click t4 table"
     When User click Cash Tab
     Then User verify has no any order
     #Cash-Reopen Check/After Payment
-    When I get the check no in the order screen "Get Check Number"
+    When I get check number
     When User take an order
     Then User click Cash Tab
     And User click exact option
@@ -4822,18 +4843,18 @@ Feature: QSR feature
     And User select DineIn mode
     And User select first table
     When User click add seat button
-    And User take an order as "SANDWICHES"
+    And I select menu item as "SANDWICHES"
     Then User select first seat on menu item page
-    And User take an order as "SANDWICHES"
+    And I select menu item as "SANDWICHES"
     And I click Payment button in the Order Management Screen
     Then USer click cash button
     And User click exit on payment page
     When User select second seat on menu item page
-    And User take an order as "SANDWICHES"
+    And I select menu item as "SANDWICHES"
     And User click Cash Tab
     Then User pay order
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     #Normal check with Fast cash payment
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -4868,7 +4889,7 @@ Feature: QSR feature
     When User click exact option
     Then User click enter button
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     #Normal check with cash payment and Service Charge
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -4881,7 +4902,7 @@ Feature: QSR feature
     And User verify cash payment for Cocktail with service charge
     And User click submit button
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     When USer click log off button
 
   Scenario: Normal Check Cancel - Cancel “Enter Customer Name” popup todo
@@ -4890,7 +4911,7 @@ Feature: QSR feature
     When User select POS Settings tab
     Then User open ask customer name option if disable
     And I click the "POS" button for navigating to the pos screen "click pos button"
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
     And I click "Exit" in the preauth popup "click Exit Button"
@@ -4901,7 +4922,7 @@ Feature: QSR feature
     And User click enter button
     When User select QSR order typ
     # Normal Check - Enter name to “Enter Customer Name” popup
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
     And I click "Exit" in the preauth popup "click Exit Button"
@@ -4911,7 +4932,7 @@ Feature: QSR feature
     Then User click exact option
     And User click enter button
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     When USer click log off button
 
   Scenario: Normal check with Side CC payment
@@ -4920,7 +4941,7 @@ Feature: QSR feature
     When User select POS Settings tab
     Then User close ask customer name option if enable
     And I click the "POS" button for navigating to the pos screen "click pos button"
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
     And I click "Exit" in the preauth popup "click Exit Button"
@@ -4933,7 +4954,7 @@ Feature: QSR feature
     When User verify Side CC payment for Sandwiches
     Then User click submit button
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     #Normal check with Side CC payment with tips and without service charge
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -4948,7 +4969,7 @@ Feature: QSR feature
     Then User click submit button
     When User select QSR order typ
     #Normal check with Side CC payment with tips and with service charge
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
     And I click "Exit" in the preauth popup "click Exit Button"
@@ -4962,7 +4983,7 @@ Feature: QSR feature
     When User verify Side CC payment for cocktail with tip and service charge
     Then User click submit button
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     #Normal check with Side CC payment without tips and without service charge
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -4977,7 +4998,7 @@ Feature: QSR feature
     When User verify Side CC payment for cocktail without tip and service charge
     Then User click submit button
     When User select QSR order typ
-    And User click cancel button
+    And I closed the order type window
     When USer click log off button
 
 
@@ -4985,7 +5006,7 @@ Feature: QSR feature
   Scenario Outline: Check Discount for item based
     #Check Discount for item based
     # Application display enter the menu item discount
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And User take an order in check status screen
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
@@ -5003,11 +5024,11 @@ Feature: QSR feature
     And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
     And I click "<btnAdd>" in the void screen"Click add button"
     And I click the "<btnDone>" in the popup screen"click done button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
     #Check Discount for check-based
-    Given User select QSR mode on menu item page
-    And User take an order as "SANDWICHES"
+#    Given User select QSR mode on menu item page
+    And I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -5017,9 +5038,9 @@ Feature: QSR feature
     And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
     And I click "<btnAdd>" in the void screen"Click add button"
     And I click the "<btnDone>" in the popup screen"click done button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Open Check Discount Option with Percentage
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And User take an order in check status screen
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
@@ -5034,9 +5055,9 @@ Feature: QSR feature
     And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
     And I click "<btnAdd>" in the void screen"Click add button"
     And I click the "<btnDone>" in the popup screen"click done button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Open Check Discount Option with Amount
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And User take an order as "Chicken Schnitzel"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
@@ -5051,8 +5072,8 @@ Feature: QSR feature
     And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
     And I click "<btnAdd>" in the void screen"Click add button"
     And I click the "<btnDone>" in the popup screen"click done button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnVoid|     btnWrong         |btnAdd|btnCancel |btnDiscount |optItemBasedDiscount|btnLogOff|btnDone|
@@ -5060,7 +5081,7 @@ Feature: QSR feature
 
 
   Scenario Outline: Check with discount(Check based - After tax) as Amount
-#    Given User select QSR mode on menu item page
+##    Given User select QSR mode on menu item page
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
     And I selected quantity as "3"
@@ -5072,15 +5093,15 @@ Feature: QSR feature
     When User click Cash Tab
     And User click exact option
     Then User click enter button
-    And User click cancel button
+    And I closed the order type window
 #    When User click All button
 #    And User click Check Status tab
 #    Then User click Closed Checks tabs in check status screen
 #    And User verify closed checks
-#    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-#    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+#   And I click QSR tab
+#   And I closed the order type window
     # Check with discount(Check based - After tax) as Percentage
-#    Given User select QSR mode on menu item page
+##    Given User select QSR mode on menu item page
 #    And User take an order as "<SANDWICHES
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
@@ -5093,16 +5114,16 @@ Feature: QSR feature
     When User click Cash Tab
     And User click exact option
     Then User click enter button
-    And User click cancel button
+    And I closed the order type window
 #    When User click All button
 #    Then User click Closed Checks tabs in check status screen
 ##    And User verify closed checks
-#    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-#    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+#   And I click QSR tab
+#   And I closed the order type window
 
 #    #Check with discount(Check based - After tax) as Free
-#    Given User select QSR mode on menu item page
-    And User take an order as "SANDWICHES"
+##    Given User select QSR mode on menu item page
+    And I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     And User select Check Discount option
@@ -5112,16 +5133,16 @@ Feature: QSR feature
     When User click Cash Tab
     And User click exact option
     Then User click enter button
-    And User click cancel button
+    And I closed the order type window
 #    When User click All button
 #    And User click Check Status tab
 #    Then User click Closed Checks tabs in check status screen
 #    And User verify closed checks
-#    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-#    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+#   And I click QSR tab
+#   And I closed the order type window
 #    #Check with discount(Check based - After tax) as set price
-#    Given User select QSR mode on menu item page
-    And User take an order as "SANDWICHES"
+##    Given User select QSR mode on menu item page
+    And I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -5129,14 +5150,14 @@ Feature: QSR feature
     When User click Cash Tab
     And User click exact option
     Then User click enter button
-    And User click cancel button
+    And I closed the order type window
 #    When User click All button
 #    And User click Check Status tab
 #    Then User click Closed Checks tabs in check status screen
 #    And User verify closed checks
-#    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-#    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#   And I click QSR tab
+#   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnDiscount |btnLogOff|
@@ -5146,7 +5167,7 @@ Feature: QSR feature
  #  @RegressionTest @SmokeTest
 
   Scenario Outline: Check with discount(item based - After tax) as amount
-    And User take an order as "SANDWICHES"
+    And I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Discount"
     When User select item discount option tab
@@ -5154,10 +5175,10 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And User click cancel button
+    And I closed the order type window
 
    # Check with discount(item based - After tax) as percentage
-    And User take an order as "SANDWICHES"
+    And I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     And User select item discount option tab
@@ -5165,10 +5186,10 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And User click cancel button
+    And I closed the order type window
 
     # Check with discount(item based - After tax) as Free
-    And User take an order as "SANDWICHES"
+    And I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     And User select item discount option tab
@@ -5178,7 +5199,7 @@ Feature: QSR feature
     When User click Cash Tab
     And User click exact option
     Then User click enter button
-    And User click cancel button
+    And I closed the order type window
 
     #Check with discount(item based - After tax) as Free Enable auto Discount
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
@@ -5193,8 +5214,8 @@ Feature: QSR feature
     And I click "<btnVoid>" in the order screen "Click void button"
     And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
     And I click "<btnAdd>" in the void screen"Click add button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnVoid|btnWrong|btnAdd|btnCancel|btnDiscount|btnLogOff|btnDropDown|category|
@@ -5204,7 +5225,7 @@ Feature: QSR feature
 #todo Done
 #  @RegressionTest @SmokeTest
   Scenario Outline: Not allows to Remove the Auto Discount
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And  I click "<category>" in the top order screen "Select Category as CIMiniFOOD"
     When User select menu item and take an order
@@ -5232,7 +5253,7 @@ Feature: QSR feature
     Then User verify added first ordered item
     And I click "<btnVoid>" in the order screen "Click void button"
     #Application allows to Increase or Decrease the Menu item Quantity
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And I select menu item as "SANDWICHES"
     And I click the menu item for selecting the discount
     When User click Quantity menu option
@@ -5243,8 +5264,8 @@ Feature: QSR feature
     Then User enter number of quantity for decrease
     And User verify decreased number of quantity
     And I click "<btnVoid>" in the order screen "Click void button"
-    Given User select QSR mode on menu item page
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#    Given User select QSR mode on menu item page
+    And I click log off button in order screen
 
     Examples:
       |btnDone   |category1   |btnVoid|   btnWrong        | btnAdd|btnCancel|btnDiscount|optAutoDiscount|btnDropDown|category|btnLogOff|
@@ -5254,7 +5275,7 @@ Feature: QSR feature
 #  @RegressionTest
 
   Scenario Outline: Verify item based discount after tax
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
     And I select menu item as "Pizza Romano"
     When User click Option Tab
@@ -5265,7 +5286,7 @@ Feature: QSR feature
     And I click "<btnVoid>" in the order screen "Click void button"
     And I click Done button on the Popup
     #Verify item based discount after tax attach Day Restriction
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
     Then User select Brushetta menu item
@@ -5279,7 +5300,7 @@ Feature: QSR feature
     And I click Done button on the Popup
 
     # Verify item based discount after tax attach Role Restriction
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
 #    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I select category as "PIZZA"
     And I select menu item as "Pizza Romano"
@@ -5293,7 +5314,7 @@ Feature: QSR feature
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount after tax with other tax & Auto discount
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
     And I select menu item as "Pizza Romano"
     And User verify auto discount amount
@@ -5306,7 +5327,7 @@ Feature: QSR feature
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount before tax
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
     And I select menu item as "Pizza Romano"
     When User click Option Tab
@@ -5318,7 +5339,7 @@ Feature: QSR feature
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount before tax attach Day Restriction
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
     Then User select Brushetta menu item
@@ -5331,7 +5352,7 @@ Feature: QSR feature
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount before tax attach Role Restriction
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
 #    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I select category as "PIZZA"
     And I select menu item as "Pizza Rucola"
@@ -5347,7 +5368,7 @@ Feature: QSR feature
     And I click Done button on the Popup
     #Verify item based discount before tax with other tax & Auto discount
     #Verify item based discount before tax  — with other tax & Auto discount
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
 #    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I select category as "PIZZA"
     And I select menu item as "Pizza Romano"
@@ -5367,8 +5388,8 @@ Feature: QSR feature
     And I click "<btnVoid>" in the order screen "Click void button"
     Then I should see All orders are voided
     And I click Done button on the Popup
-    #Given User select QSR mode on menu item page
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#    #Given User select QSR mode on menu item page
+    And I click log off button in order screen
 
     Examples:
       |btnVoid|btnDiscount|btnDropDown|category|btnContinue|btnCancel|btnLogOff|btnLogOff1|
@@ -5378,7 +5399,7 @@ Feature: QSR feature
 #  @SmokeTest @RegressionTest
 
   Scenario Outline: Verify check based discount after tax
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
     And I select menu item as "Pizza Lasagna"
     When User click Option Tab
@@ -5391,7 +5412,7 @@ Feature: QSR feature
     And I click Done button on the Popup
     #Verify check based discount before tax
     #Verify check based before tax discount with other tax and Auto discount
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
 #    And User click food category
     And I select category as "PIZZA"
     And I select menu item as "Pizza Rucola"
@@ -5404,7 +5425,7 @@ Feature: QSR feature
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check based discount before tax attach Role Restriction
-    Given User select QSR mode on menu item page
+#    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
     And I select menu item as "Pizza Rucola"
     When User click Option Tab
@@ -5415,8 +5436,8 @@ Feature: QSR feature
     And I click "<btnVoid>" in the order screen "Click void button"
     Then I should see All orders are voided
     And I click Done button on the Popup
-  #  Given User select QSR mode on menu item page
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#  #  Given User select QSR mode on menu item page
+    And I click log off button in order screen
 
     Examples:
       |btnVoid|btnLogOff|btnCancel|btnDiscount|btnDropDown|category|btnLogOff1|
@@ -5546,8 +5567,8 @@ Feature: QSR feature
     And I click "<btnVoid>" in the order screen "Click void button"
     Then I should see All orders are voided
     And I click Done button on the Popup
-  #  Given User select QSR mode on menu item page
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#  #  Given User select QSR mode on menu item page
+    And I click log off button in order screen
 
     Examples:
       |course_name|btnVoid|btnDiscount|btnLogOff|pin1|pin5|pin0|pin0|btnContinue|btnLogOff1|
@@ -5654,7 +5675,7 @@ Feature: QSR feature
     Then User click exact option
     And User click enter button
     Then User click cancel button
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I click log off button in order screen
 
     Examples:
       |btnCancel|btnDiscount|pin1|pin0|pin5|btnLogOff|
@@ -5683,8 +5704,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     # Verify check with vary gratuity on Bar Tab
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -5703,8 +5724,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     # Verify check with Exclusive Tax on Bar Tab  -- hot wings
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -5720,9 +5741,9 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnPos |btnExit|pin1|pin5|pin0|pinPoint|btnApply |btnContinue|btnLogOff|
@@ -5749,8 +5770,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     #Verify check with tax exempt and without customer
     When User click QSR on Menu Item page
     And I select category as "FOOD"
@@ -5761,7 +5782,7 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify check with tax exempt and without customer through payment screen
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -5776,9 +5797,9 @@ Feature: QSR feature
     And User select payment method with cash
     And User verify paid cash on payment page
     And User click submit button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnPos|btnExit|btnLogOff|
@@ -5801,7 +5822,7 @@ Feature: QSR feature
     And User select payment method with cash
     And User verify paid cash on payment page
     And User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Verify check with upcharge
     When User click QSR on Menu Item page
     Then User select DineIn mode
@@ -5817,9 +5838,9 @@ Feature: QSR feature
     And I click "<Back>" button in the keyboard "Click Back"
     And I click "<btnProcess>" in the Credit Card popup "Click Process button"
     And I click "<btnOk>" in the receipt printer popup"Click ok button in the popup"
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |giftCardNumber| btnProcess| btnOk|btnQsr|btnCancel|pin1|pin5|pin0|pinPoint|btnContinue|btnApply|btnManual|Back|btnLogOff|
@@ -5841,7 +5862,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify item based discount after tax value as "12.00+10.00" with percentage with CC Side payment in payment screen and with tips
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #    Verify Check Payment through CC Side with Item Based Discount - Before Tax as percentage and with tip
     And I select category as "PIZZA"
@@ -5858,7 +5879,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify item based discount before tax value as "0.99+10.00" with percentage with CC Side payment in payment screen and with tips for Margarita
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify Check Payment through CC Side with Item Based Discount - Before Tax as amount and with tip (((item based amount discount not displayed)))
     And I select category as "PIZZA"
     And User select PizzaRomano menu item of pizza category
@@ -5870,7 +5891,7 @@ Feature: QSR feature
     Then User click exact option
     Then I click on "<btnCash>" to pay the amount "Click on cash for payment"
     And User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
     # Verify Check Payment through CC Side with Item Based Discount - After Tax as amount and with tip
     And I select category as "PIZZA"
@@ -5887,7 +5908,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify item based discount after tax value as "19.34+10.00" with amount with CC Side payment in payment screen and with tips for Chicken Schnitzel
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify Check Payment through CC Side  with item based discount - After Tax  as set price and with tip
     And I select category as "PIZZA"
     And User select PizzaRomano menu item of pizza category
@@ -5903,7 +5924,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "5.36+10.00" and item based discount After tax as set price for Chicken Schnitzel
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #    Scenario: Verify Check Payment through CC Side  with item based discount - Before Tax  as set price and with tip
     And I select menu item as "Chicken Schnitzel"
@@ -5919,7 +5940,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.52+10.00" and item based discount Before tax as set price for Chicken Schnitzel
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #  Scenario: Verify Check Payment through CC Side  with Item Based Discount After Tax as Free Item and with tip
     And I select category as "FOOD"
@@ -5935,7 +5956,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "25.20+10.00" and item based discount After tax as free item for Chicken Schnitzel
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify Check Payment through CC Side  with Item Based Discount Before Tax as Free Item and with tip
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
@@ -5950,8 +5971,8 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "25.20+10.00" and item based discount Before tax as free item for Chicken Schnitzel
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnCancel|btnDiscount|btnCash|btnLogOff|
@@ -5969,7 +5990,7 @@ Feature: QSR feature
     Then User click exact option
     And User click enter button
     Then User click cancel button
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I click log off button in order screen
     Examples:
       |btnLogOff|
       |logOff   |
@@ -5990,7 +6011,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "1.00+10.00" and check based discount after tax as percentage
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Verify Check Payment through CC Side  with Check Based Discount - Before Tax as percentage and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6006,7 +6027,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.99+10.00" and check based discount before tax as percentage
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify Check Payment through CC Side  with Check Based Discount - After Tax  as amount and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6022,7 +6043,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.52+10.00" and check based discount after tax as amount
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Verify Check Payment through CC Side  with Check Based Discount - Before Tax  as amount and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6038,7 +6059,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.36+10.00" and check based discount before tax as amount
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify Check Payment through CC Side  with Check Based Discount- After Tax as set price and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6054,7 +6075,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.49+10.00" and check based discount after tax as set price
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Verify Check Payment through CC Side  with Check Based Discount- Before Tax as set price and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6070,7 +6091,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.91+10.00" and check based discount before tax as set price
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
     #Verify Check Payment through CC Side  with Check Based Discount - After Tax as Free item and with tip
     And I select category as "FOOD"
@@ -6087,7 +6108,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips and check based discount after tax as free item1
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify Check Payment through CC Side  with Check Based Discount - Before Tax as Free item and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6103,8 +6124,8 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips and check based discount before tax as free item1
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnCancel|btnDiscount  |btnLogOff|
@@ -6131,7 +6152,7 @@ Feature: QSR feature
     When User verify CC Side payment with tips value as "2.29+10.00" and open item discount after tax as percentage
     And I wait for the "10000" "For Loading"
     When I click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     And I click log off button in order screen
     Examples:
       |course_name|btnCancel|pin1|pin0|btnContinue|btnLogOff|
@@ -6156,7 +6177,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.90+10.00" and open check discount after tax as open discount
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #  Scenario: Verify Check Payment through CC Side with Open Check Discount- Before Tax as percentage and with tip
     And I select category as "FOOD"
@@ -6176,7 +6197,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "0.88+10.00" and open check discount before tax as open discount
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #    Scenario: Verify Check Payment through CC Side  with Open Check Discount- After Tax as amount & safety limit as decimal value and with tip
     And I select category as "FOOD"
@@ -6196,7 +6217,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "8.12+10.00" and open check discount after tax as open discount with amount and decimal value
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     #Verify Check Payment through CC Side  with Open Check Discount- Before Tax as amount & safety limit as decimal value and with tip
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
@@ -6215,7 +6236,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "7.61+10.00" and open check discount before tax as open discount with amount and decimal value
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #  Scenario: Verify Check Payment through CC Side with Open Check Discount- After Tax as amount & safety limit as non-decimal value and with tip
     And I select category as "FOOD"
@@ -6238,7 +6259,7 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "8.20+10.00" and open check discount after tax as open discount with amount and non-decimal value
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Verify Check Payment through CC Side with Open Check Discount- Before  Tax as amount & safety limit as non-decimal value and with tip
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
@@ -6259,8 +6280,8 @@ Feature: QSR feature
     When User click Continue button
     Then User verify CC Side payment with tips value as "7.70+10.00" and open check discount before tax as open discount with amount and non-decimal value
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnCancel|btnDiscount|pin1|pin0|btnContinue|btnLogOff|
@@ -6285,7 +6306,7 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with tips value as "0.90+10.00" and item based discount after tax as percentage with tax exempt for Sandwiches
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - Before Tax as Percentage and with Tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6304,7 +6325,7 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with tips value as "0.90+10.00" and item based discount before tax as percentage with tax exempt for Sandwiches
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #     Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - After Tax as amount and with Tip
     And I select category as "FOOD"
@@ -6324,7 +6345,7 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with tips value as "0.42+10.00" and item based discount after tax as amount with tax exempt for Sandwiches
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #     Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - Before Tax as amount and with Tip
     And I select category as "FOOD"
@@ -6344,7 +6365,7 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with tips value as "0.33+10.00" and item based discount before tax as amount with tax exempt for Sandwiches
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 
 #  Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - After Tax as set price and with tip
     And I select category as "FOOD"
@@ -6364,7 +6385,7 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with tips value as "0.39+10.00" and item based discount after tax as set price with tax exempt for Sandwiches
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
 #Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - Before Tax as set price and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6383,8 +6404,8 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with tips value as "0.83+10.00" and item based discount before tax as set price with tax exempt for Sandwiches
     When User click submit button
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnCancel|btnDiscount|btnLogOff|
@@ -6397,7 +6418,7 @@ Feature: QSR feature
     When User select POS Settings tab
     Then User open ask customer name option if disable
     And I click the "<btnPos>" button for navigating to the pos screen "click pos button"
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
     And I click "<btnExit>" in the preauth popup "click Exit Button"
@@ -6413,8 +6434,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
 
 #  Discount - Item Based Before Tax on BarTab and Pay with Fast Cash as Percentage
     When User click QSR on Menu Item page
@@ -6432,8 +6453,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
 
 # Scenario: Discount - Item Based After Tax on BarTab and pay with Fast Cash as Amount
     When User click QSR on Menu Item page
@@ -6451,8 +6472,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     #Discount - Item Based Before Tax on BarTab and pay with Fast Cash as Amount
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6469,8 +6490,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     # Discount - Item Based on BarTab and Pay with Fast Cash as Set Price
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6487,8 +6508,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
 
 #    Scenario: Discount - Item Based on BarTab and Pay with Fast Cash as Free
     When User click QSR on Menu Item page
@@ -6507,8 +6528,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
 
 #    Scenario: Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
@@ -6526,8 +6547,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     # Discount - Item Based with Before Tax as Amount on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6544,8 +6565,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     #Discount - Item Based with Before Tax as Set Price on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6562,8 +6583,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     #Discount - Item Based with Before Tax as Free Item on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6580,9 +6601,9 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnDiscount|btnDropDown|category |btnPos|btnExit|btnLogOff|
@@ -6595,7 +6616,7 @@ Feature: QSR feature
     When User select POS Settings tab
     Then User open ask customer name option if disable
     And I click the "<btnPos>" button for navigating to the pos screen "click pos button"
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
     And I click "<btnExit>" in the preauth popup "click Exit Button"
@@ -6611,8 +6632,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
 
 #   Discount - Check Based with After Tax as Amount on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
@@ -6630,8 +6651,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     #Discount - Check Based with After Tax as Set Price on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6648,8 +6669,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     #Discount - Check Based with After Tax as Free Item on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6666,8 +6687,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
 
     #Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
@@ -6685,8 +6706,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     # Discount - Check Based with Before Tax as Amount on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6703,8 +6724,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
 
 #     Discount - Check Based with Before Tax as Set Price on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
@@ -6722,8 +6743,8 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I click QSR tab
+   And I closed the order type window
     #Discount - Check Based with Before Tax as Free Item on BarTab and Pay with Fast Cash
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -6740,9 +6761,9 @@ Feature: QSR feature
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+   And I click QSR tab
+   And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnQsr|btnCancel|btnDropDown|category |btnExit|btnDiscount|btnLogOff|btnPos|
@@ -6870,7 +6891,7 @@ Feature: QSR feature
     Then User click exact option
     And User click enter button
     Then User click cancel button
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I click log off button in order screen
 
     Examples:
       |course_name|btnCancel|  btnCBDiscount      | text|btnDropDown|category|btnDiscount|pin1|pin5|pin0|btnContinue |btnDone|btnLogOff|
@@ -6897,7 +6918,7 @@ Feature: QSR feature
     When USer click log off button
 
   Scenario Outline: Open Gratuity Page
-    When User take an order as "SANDWICHES"
+    When I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
     Then User verify gratuity page
@@ -6946,8 +6967,8 @@ Feature: QSR feature
     And User click exact option
     And USer click cash button
     When User click submit button
-    And User click cancel button
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
@@ -6955,7 +6976,7 @@ Feature: QSR feature
 
   Scenario Outline: Reduce Gratuity
     When I get check number
-    When User take an order as "SANDWICHES"
+    When I select menu item as "SANDWICHES"
     Then User click Option Tab
     And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
     Then User select fixed gratuity option
@@ -6963,7 +6984,7 @@ Feature: QSR feature
     When User click payment button
     And User select payment method with cash
     Then User click submit button
-    And User click cancel button
+    And I closed the order type window
     When User click All button
     And User click Closed Checks tabs
     And I click the Closed check on check stats
@@ -6979,8 +7000,8 @@ Feature: QSR feature
     And User click exact option
     And USer click cash button
     When User click submit button
-    And User click cancel button
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
@@ -7001,8 +7022,8 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with Gratuity(Fixed) and with tips
     When User click submit button
-    And User click cancel button
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I closed the order type window
+    And I click log off button in order screen
 
     Examples:
       |btnLogOff|
@@ -7026,7 +7047,7 @@ Feature: QSR feature
     And User click Continue button
     And User verify CC Side payment with Gratuity(Varying) and with tips
     When User click submit button
-    And User click cancel button
+    And I closed the order type window
     When USer click log off button
 
     Examples:
@@ -7065,7 +7086,7 @@ Feature: QSR feature
     And User verify added modifier
     And I click "<btnVoid>" in the order screen "Click void button"
     And I click the "<btnDone>" in the popup screen"click done button"
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I click log off button in order screen
 
     Examples:
       |btnVoid|btnRomano |btnOption|btnModify|Modifier |btnLogOff|btnDone|
@@ -7105,7 +7126,7 @@ Feature: QSR feature
     And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
     And I click "<btnAdd>" in the void screen"Click add button"
     And I click the "<btnDone>" in the popup screen"click done button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+   And I closed the order type window
     # Application should do modifier should added as per qty of item with Modifier's max level #Modifiers with Maximum Count
     When User select second menu item with modifier
     Then User add modifier over maximum count
@@ -7114,7 +7135,7 @@ Feature: QSR feature
     Then User verify added quantity of modifier for second modifier
     And User verify maximum quantity of modifiers for first and second modifiers
     And User click modifier cancel button
-    And I click log off "<btnLogOff>" button in order screen "click log off button"
+    And I click log off button in order screen
 
     Examples:
       |btnVoid|   btnWrong         |btnAdd|btnDone|btnCancel|number1|text2|btnOption|btnModify |btnLogOff|

@@ -81,7 +81,7 @@ public class TGOrderTypeWindow extends ClockInScreen {
 //    }
 
     public void selectForHereOrderType() {
-        WebElement element=mergeAndFindMobileElement(forHereBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) forHereBtn);
         elementClick(element, "FORHERE order type is selected.");
         WebElement element1=mergeAndFindMobileElement(doneButton);
         elementClick(element1, "Click Done Button");
@@ -91,7 +91,7 @@ public class TGOrderTypeWindow extends ClockInScreen {
     }
 
     public void selectForHereOrderTypeInQSRBar() {
-        WebElement element=mergeAndFindMobileElement(forHereBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) forHereBtn);
         elementClick(element, "FORHERE order type is selected.");
 
 //        driver.findElement(doneButton).click();
@@ -104,7 +104,7 @@ public class TGOrderTypeWindow extends ClockInScreen {
 //    }
 
     public void selectToGoOrderType() {
-        WebElement element=mergeAndFindMobileElement(togoBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) togoBtn);
         elementClick(element, "TOGO order type is selected.");
     }
 
@@ -120,24 +120,24 @@ public class TGOrderTypeWindow extends ClockInScreen {
 //        elementClick(phoneToGoBtn, "Phone To Go order type is selected.");
 //    }
     public void selectPhoneToGoOrderType() {
-        WebElement element=mergeAndFindMobileElement(phoneToGoBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) phoneToGoBtn);
         elementClick(element, "Phone To Go order type is selected.");
 
 //        driver.findElement(phoneToGoBtn).isDisplayed();
 //        driver.findElement(phoneToGoBtn).click();
     }
     public void selectPhoneDeliveryOrderType() {
-        WebElement element=mergeAndFindMobileElement(phoneDeliveryBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) phoneDeliveryBtn);
         elementClick(element, "Phone Delivery order type is selected.");
     }
 
     public void pressCancelBtn() {
-        WebElement element=mergeAndFindMobileElement(cancelBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) cancelBtn);
         elementClick(element, "Order type selection is cancelled.");
     }
 
     public TGCustomerProfilePage pressDoneBtn() {
-        WebElement element=mergeAndFindMobileElement(doneBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) doneBtn);
         elementClick(element, "Order type selection is Clicked.");
         return new TGCustomerProfilePage();
     }

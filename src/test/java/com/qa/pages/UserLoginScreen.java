@@ -13,12 +13,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class UserLoginScreen extends SignInScreen{
 
-    public WebDriver driver = TestUtils.driver;
+//    public WebDriver driver = TestUtils.driver;
+//
+//    public UserLoginScreen() {
+//
+//        PageFactory.initElements(this.driver,this);
+//    }
 
-    public UserLoginScreen() {
-
-        PageFactory.initElements(this.driver,this);
-    }
     @FindBy(id ="User Login")
     private WebElement titleTxt;
 

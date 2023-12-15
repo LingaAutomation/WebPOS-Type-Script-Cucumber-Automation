@@ -19,7 +19,7 @@ TestUtils utils = new TestUtils();
         new TGPaymentPage().clickCashButton();
     }
     @And("User click submit button")
-    public void userClickSubmitButton() {
+    public void userClickSubmitButton() throws InterruptedException {
         new TGPaymentPage().clickSubmitButton();
     }
 

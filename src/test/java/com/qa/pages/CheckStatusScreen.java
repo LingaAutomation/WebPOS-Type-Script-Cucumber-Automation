@@ -154,7 +154,7 @@ public class CheckStatusScreen extends OrderManagementScreen {
     public void pressOperationOnCheckStats(){elementClick(operationBtnCheckStats,"Tapped Operation Button");}
 
     public void clickQsrButton(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
         elementClick(qsrTab,"Tapped QSR button");
     }
 

@@ -26,27 +26,27 @@ public class TGPaymentReasons extends TillManagementScreen{
 
     public String getReasonsWindowTitle() {
 
-        WebElement element=mergeAndFindMobileElement(reasonsWindowTitle);
+        WebElement element=mergeAndFindMobileElement((WebElement) reasonsWindowTitle);
         String message = elementGetText(element, "Get payment Made On Message.");
         return message;
 //        return elementGetText(reasonsWindowTitle, "Reasons window's name is - ");
     }
 
     public void selectPaymentReason(){
-        WebElement element=mergeAndFindMobileElement(paidInReasonBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) paidInReasonBtn);
         elementClick(element, "Paid In selected as pay in reason.");
 
 //        elementClick(paidInReasonBtn, "Paid In selected as pay in reason." );
     }
 
     public void selectPayOutReason(){
-        WebElement element=mergeAndFindMobileElement(paidOutReasonBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) paidOutReasonBtn);
         elementClick(element, "Paid Out selected as pay in reason.");
 //        elementClick(paidOutReasonBtn, "Paid Out selected as pay in reason." );
     }
 
     public void clickOkBtn(){
-        WebElement element=mergeAndFindMobileElement(okBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) okBtn);
         elementClick(element, "Paid In selected as pay in reason.");
 //        elementClick(okBtn, "Paid In selected as pay in reason." );
     }

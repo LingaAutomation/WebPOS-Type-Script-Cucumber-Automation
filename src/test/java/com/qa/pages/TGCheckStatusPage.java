@@ -149,7 +149,7 @@ public class TGCheckStatusPage extends BasePage {
 //        driver.findElement(barTabType).click();
     }
     public void verifyLastClosedCheckForQSR(){
-        WebElement element=mergeAndFindMobileElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"QSR\"])[last()]"));
+        WebElement element=mergeAndFindMobileElement(String.valueOf(By.xpath("(//XCUIElementTypeStaticText[@name=\"QSR\"])[last()]")));
         String actualName = elementGetText(element,"Get QSR");
         String expectedName = "QSR";
 
@@ -264,14 +264,14 @@ public class TGCheckStatusPage extends BasePage {
     public void clickVoidChecksTab(){
 //        WebElement element=mergeAndFindMobileElement(voidChecksTab);
 //        elementClick(element,"Click void Checks Tab");
-        findandclickM(voidChecksTab);
+        findandclickM(By.id(voidChecksTab));
     }
     public void verifyVoidChecks(){
         WebElement element=mergeAndFindMobileElement(voidChecksTab);
         elementClick(element,"Click void Checks Tab");
         WebElement element1=mergeAndFindMobileElement(voidCheckDetails);
         elementClick(element1,"Click void Check Details");
-        driver.findElement(orderSummary).isDisplayed();
+        driver.findElement(By.xpath(orderSummary)).isDisplayed();
         WebElement element2=mergeAndFindMobileElement(voidCause);
         String actualName = elementGetText(element2,"Get Void cause");
         String expectedName = "*Cold Food";
@@ -404,12 +404,12 @@ public class TGCheckStatusPage extends BasePage {
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(lastBarTabOrder,direction);
+                    scrollToElement(By.id(lastBarTabOrder),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(lastBarTabOrder,direction);
+                scrollToElement(By.id(lastBarTabOrder),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -465,12 +465,12 @@ public class TGCheckStatusPage extends BasePage {
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(closedCheckDetailIcon,direction);
+                    scrollToElement(By.id(closedCheckDetailIcon),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(closedCheckDetailIcon,direction);
+                scrollToElement(By.id(closedCheckDetailIcon),direction);
                 i++;
                 if (i == 5)
                     Assert.fail(e.getMessage());
@@ -521,12 +521,12 @@ public class TGCheckStatusPage extends BasePage {
                     found = true;
                     break;
                 } else {
-                    scrollToElement(voidedCheckOnBarTab,direction);
+                    scrollToElement(By.id(voidedCheckOnBarTab),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(voidedCheckOnBarTab,direction);
+                scrollToElement(By.id(voidedCheckOnBarTab),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -574,10 +574,17 @@ public class TGCheckStatusPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Click FoodTab");
     }
+    String arrowDownForOtherMenuItems ="//button[@id='os_catMenu']";
+    public void pressArrowDown2 () throws InterruptedException {
+        Thread.sleep(1000);
+        elementClick(arrowDownForOtherMenuItems, "the rest of the categories is listed");
+    }
+    public void takeOrder() throws InterruptedException {
+        pressArrowDown2();
+        Thread.sleep(1500);
+        elementClick(driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'FOOD')]")),"Selected FOOD");
 
-    public void takeOrder(){
-        WebElement element = mergeAndFindMobileElement(foodTab);
-        elementClick(element,"Select MenuItem And Order");
+
 
         WebElement element1 = mergeAndFindMobileElement(firstMenuItem);
         elementClick(element1,"Select MenuItem And Order");

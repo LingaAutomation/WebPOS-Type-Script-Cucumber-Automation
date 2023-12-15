@@ -47,7 +47,7 @@ public class LogOuts extends BasePage {
     private WebElement staticTxt;
 
     /* Belongs To BarTab (and Other)*/
-    @FindBy (name = "Power button")
+    @FindBy (xpath = "//linga-icon[(@symbol='logout')]")
     private WebElement powerBtn;
 
 
@@ -98,7 +98,8 @@ public class LogOuts extends BasePage {
         return new SignInScreen();
     }
 
-    public void pressPowerBtn(){
+    public void pressPowerBtn() throws InterruptedException {
+        Thread.sleep(1000);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         click(powerBtn, "Power button is clicked");
     }
@@ -124,7 +125,7 @@ public class LogOuts extends BasePage {
 
     }
 
-    public SignInScreen logOutAfterClockInForBarTab(){
+    public SignInScreen logOutAfterClockInForBarTab() throws InterruptedException {
         pressPowerBtn();
         pressLogOut();
         pressYes();

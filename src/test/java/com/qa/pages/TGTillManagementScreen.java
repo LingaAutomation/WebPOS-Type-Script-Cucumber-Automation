@@ -214,7 +214,7 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
         List<WebElement> list = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTable"));
 
         if (list != null && list.isEmpty()){
-            driver.findElement(setTillButton).click();
+            driver.findElement(By.id(setTillButton)).click();
         }
         else{
             WebElement element=mergeAndFindMobileElement(activeTill);
@@ -454,125 +454,125 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
     }
 
     public String getTabName() {
-        WebElement element=mergeAndFindMobileElement(tillTabName);
+        WebElement element=mergeAndFindMobileElement((WebElement) tillTabName);
         String value = elementGetText(element, "till tab's name is - ");
         return value;
     }
 
     public OpenTillWindow pressSetTillBtn() {
-        WebElement element = mergeAndFindMobileElement(setTillBtn);
+        WebElement element = mergeAndFindMobileElement((WebElement) setTillBtn);
         elementClick(element,"Tapped set till button.");
 //        elementClick(setTillBtn, "Tapped set till button.");
         return new OpenTillWindow();
     }
 
     public void pressPayInTab() {
-        WebElement element = mergeAndFindMobileElement(payInTab);
+        WebElement element = mergeAndFindMobileElement((WebElement) payInTab);
         elementClick(element,"Tapped Pay In tab.");
 //        elementClick(payInTab, "Tapped Pay In tab.");
     }
 
     public void setPaidBy(){
-        WebElement element = mergeAndFindMobileElement(paidByTxt);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByTxt);
 //        elementClick(element,"Tapped Pay In tab.");
         element.sendKeys( "KamilT", "Paid By text is entered.");
     }
 
     public String getTillName() throws Exception {
-        WebElement element = mergeAndFindMobileElement(tillName);
+        WebElement element = mergeAndFindMobileElement((WebElement) tillName);
         String value = elementGetText( element,"the name of the till is: ");
         return value;
     }
 
     public String getOpenedBy() throws Exception {
-        WebElement element = mergeAndFindMobileElement(userName);
+        WebElement element = mergeAndFindMobileElement(String.valueOf(userName));
         String value = elementGetText( element,"the name of the till is: ");
         return value;
 //        return elementGetText( userName,"opened by: ");
     }
 
     public String getBalance() throws Exception {
-        WebElement element = mergeAndFindMobileElement(tillBalance);
+        WebElement element = mergeAndFindMobileElement(String.valueOf(tillBalance));
         String value = elementGetText( element,"till balance is: ");
         return value;
 //        return elementGetText( tillBalance,"till balance is: ");
     }
 
     public void pressHideKeyboardBtn() {
-        WebElement element = mergeAndFindMobileElement(hideKeyboardButton);
+        WebElement element = mergeAndFindMobileElement((WebElement) hideKeyboardButton);
         elementClick(element,"Keyboard hidden.");
 //        click(hideKeyboardButton, "Keyboard hidden.");
     }
     public void press0() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber0);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber0);
         elementClick(element,"Tapped number0");
 //        elementClick(paidByNumber0, "Tapped number0");
     }
 
     public void press1() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber1);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber1);
         elementClick(element,"Tapped number1");
 //        elementClick(paidByNumber1, "Tapped number1");
     }
 
     public void press2() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber2);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber2);
         elementClick(element,"Tapped number2");
 
 //        elementClick(paidByNumber2, "Tapped number2");
     }
 
     public void press3() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber3);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber3);
         elementClick(element,"Tapped number3");
 //        elementClick(paidByNumber3, "Tapped number3");
     }
 
     public void press4() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber4);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber4);
         elementClick(element,"Tapped number4");
 
 //        elementClick(paidByNumber4, "Tapped number4");
     }
 
     public void press5() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber5);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber5);
         elementClick(element,"Tapped number5");
 //        elementClick(paidByNumber5, "Tapped number5");
     }
 
     public void press6() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber6);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber6);
         elementClick(element,"Tapped number6");
 //        elementClick(paidByNumber6, "Tapped number6");
     }
 
     public void press7() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber7);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber7);
         elementClick(element,"Tapped number7");
 //        elementClick(paidByNumber7, "Tapped number7");
     }
 
     public void press8() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber8);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber8);
         elementClick(element,"Tapped number8");
 //        elementClick(paidByNumber8, "Tapped number8");
     }
 
     public void press9() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber9);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber9);
         elementClick(element,"Tapped number9");
 //        elementClick(paidByNumber9, "Tapped number9");
     }
 
     public void press00() {
-        WebElement element = mergeAndFindMobileElement(paidByNumber00);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumber00);
         elementClick(element,"Tapped number00");
 //        elementClick(paidByNumber00, "Tapped number00");
     }
 
     public void pressC() {
-        WebElement element = mergeAndFindMobileElement(paidByNumberC);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidByNumberC);
         elementClick(element,"Tapped numberC");
 //        elementClick(paidByNumberC, "Tapped numberC");
     }
@@ -583,14 +583,14 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
     }
 
     public String getPaidInSuccessfulMsg() {
-        WebElement element = mergeAndFindMobileElement(paidInSuccessfulMsg);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidInSuccessfulMsg);
         String value = elementGetText( element,"paid in successfully - ");
         return value;
 //        return getText(paidInSuccessfulMsg, "paid in successfully - ");
     }
 
     public String getPaidOutSuccessfulMsg() {
-        WebElement element = mergeAndFindMobileElement(paidOutSuccessfulMsg);
+        WebElement element = mergeAndFindMobileElement((WebElement) paidOutSuccessfulMsg);
         String value = elementGetText( element,"paid out successfully - ");
         return value;
 //        return getText(paidOutSuccessfulMsg, "paid out successfully - ");
@@ -602,12 +602,12 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
     }
 
     public void setPaidTo(){
-        WebElement element=mergeAndFindMobileElement(paidByTxt);
+        WebElement element=mergeAndFindMobileElement((WebElement) paidByTxt);
         element.sendKeys( "KamilT", "Paid To text is entered.");
     }
 
     public TGPaymentReasons pressPaidOutContinueBtn(){
-        WebElement element=mergeAndFindMobileElement(paidByContinueBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) paidByContinueBtn);
         elementClick(element,"Paid Out Continue button is tapped.");
 //        elementClick(paidByContinueBtn, "Paid Out Continue button is tapped.");
         return new TGPaymentReasons();
@@ -690,7 +690,7 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
         List<WebElement> list = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTable"));
 
         if (list != null && list.isEmpty()){
-            driver.findElement(setTillButton).click();
+            driver.findElement(By.id(setTillButton)).click();
         }
         else{
             WebElement element=mergeAndFindMobileElement(activeTill);

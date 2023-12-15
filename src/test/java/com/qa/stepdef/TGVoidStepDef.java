@@ -59,7 +59,7 @@ public class TGVoidStepDef {
     }
 
     @When("User take an order in void screen")
-    public void userTakeAnOrderInVoidScreen() {
+    public void userTakeAnOrderInVoidScreen() throws InterruptedException {
         voidScreen.takeOrder();
     }
 
@@ -85,7 +85,7 @@ public class TGVoidStepDef {
     }
 
     @When("User click Check Status tab in void screen")
-    public void userClickCheckStatusTabInVoidScreen() {
+    public void userClickCheckStatusTabInVoidScreen() throws InterruptedException {
         voidScreen.clickCheckStatusTab();
     }
 
@@ -95,7 +95,7 @@ public class TGVoidStepDef {
     }
 
     @And("User verify last voided order in void screen")
-    public void userVerifyLastVoidedOrderInVoidScreen() {
+    public void userVerifyLastVoidedOrderInVoidScreen() throws InterruptedException {
         voidScreen.verifyVoidOrder();
     }
 
@@ -235,7 +235,7 @@ public class TGVoidStepDef {
 
     @Given("User open ask customer name option if disable in void screen")
     public void userOpenAskCustomerNameOptionIfDisableInVoidScreen() throws Exception {
-        voidScreen.openAskCustomerNameOptionIfDisable("up","down");
+        voidScreen.openAskCustomerNameOptionIfDisable();
     }
 
     @And("^I click the \"([^\"]*)\" button for navigating to the pos screen in void screen \"([^\"]*)\"$")
@@ -259,7 +259,7 @@ public class TGVoidStepDef {
     }
 
     @When("User enter customer name for bar tab in void screen")
-    public void userEnterCustomerNameForBarTabInVoidScreen() {
+    public void userEnterCustomerNameForBarTabInVoidScreen() throws InterruptedException {
         voidScreen.enterCustomerNameForBarTab();
     }
 
@@ -279,7 +279,7 @@ public class TGVoidStepDef {
     }
 
     @And("User verify paid order for Sandwiches in void screen")
-    public void userVerifyPaidOrderForSandwichesInVoidScreen() {
+    public void userVerifyPaidOrderForSandwichesInVoidScreen() throws InterruptedException {
         voidScreen.verifyPaidOrderForSandwiches();
     }
 

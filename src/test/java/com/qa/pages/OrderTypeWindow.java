@@ -14,12 +14,12 @@ import java.util.concurrent.TimeUnit;
 
 public class OrderTypeWindow extends ClockInScreen {
 
-    public WebDriver driver = TestUtils.driver;
-
-    public OrderTypeWindow() {
-
-        PageFactory.initElements(this.driver,this);
-    }
+//    public WebDriver driver = TestUtils.driver;
+//
+//    public OrderTypeWindow() {
+//
+//        PageFactory.initElements(this.driver,this);
+//    }
 
     @FindBy(name = "For Here")
     private WebElement forHereBtn;
@@ -119,7 +119,7 @@ public class OrderTypeWindow extends ClockInScreen {
     }
 
     public void pressCancelBtn() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+
       Thread.sleep(1000);
         elementClick(cancelBtn, "Order type selection is cancelled.");
     }

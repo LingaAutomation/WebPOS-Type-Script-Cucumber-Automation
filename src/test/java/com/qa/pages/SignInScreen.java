@@ -11,13 +11,13 @@ public class SignInScreen extends BasePage {
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Sign In\"]" )
     private WebElement signInBtn;
-
-    public WebDriver driver = TestUtils.driver;
-
-    public SignInScreen() {
-
-        PageFactory.initElements(this.driver,this);
-    }
+//
+//    public WebDriver driver = TestUtils.driver;
+//
+//    public SignInScreen() {
+//
+//        PageFactory.initElements(this.driver,this);
+//    }
 
 
     public UserLoginScreen pressSignInBtn() {

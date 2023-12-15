@@ -1,470 +1,379 @@
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:07.857 Hooks:44 - Start Scenario Name : Service Type  in Order Screen,Seats
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:07.927 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:07.944 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:07.967 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:07.990 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:08.013 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:09.138 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:09.214 BasePage:280 - added a new seat to the table
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:09.277 TableLayOutScreen:719 - Seat2 is Added 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:10.329 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:10.337 BasePage:257 - ArrowDown Button 1 is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:10.375 BasePage:257 - editDeleteSeatsBtn is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:10.401 BasePage:257 - Selected seat 2 to be deleted
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:10.428 BasePage:257 - doneDeleteSeatsBtn is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:11.515 BasePage:280 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:11.920 OrdersAndDriversListScreen:87 - Check Status
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:12.270 BasePage:84 - Table layout screen is displayed - Table layout
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:12.276 BasePage:257 - Tapped Phone Order Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:12.374 BasePage:239 - Phone order Tab is displayed - Future
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:12.384 BasePage:257 - Tapped QSR button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:13.451 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:14.535 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:14.544 BasePage:257 - Tapped Sync Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:17.591 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:17.732 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:17.748 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:17.767 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:17.786 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:17.807 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:18.862 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:19.940 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:21.460 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:23.059 BasePage:280 - FOOD - Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:25.115 BasePage:280 - Selected - French Friese
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:26.222 BasePage:280 - Tomato selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:26.271 BasePage:257 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:26.302 BasePage:280 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:26.346 BasePage:84 - close your sale txt is displayed - Close Your Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:26.348 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:26.371 BasePage:257 - Tapped Sync Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.429 BasePage:239 - Close then Sale to sync the Data - Please close the sale to sync the data
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.434 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.470 BasePage:257 - Tapped the settings button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.509 BasePage:84 - close your sale txt is displayedclose the sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.511 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.532 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.564 BasePage:84 - close your sale txt is displayedclose the sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.571 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.603 OrderManagementScreen:1523 - Split Button is Enabled
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.604 BasePage:257 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.644 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:29.646 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:30.697 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:30.701 BasePage:257 - Options button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:30.752 BasePage:257 - Tapped Search Button on the Order screen
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:31.477 OrderManagementScreen:1179 - Onion Rings
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:31.527 OrderManagementScreen:1182 - Selected - Onion Rings
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:31.861 OrderTypeWindow:162 - Existing Sale is Visble
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.192 OrderTypeWindow:179 - Search Item is added to Order List
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.196 BasePage:257 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.247 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.250 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.272 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.367 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.384 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.405 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.426 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:32.447 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:33.512 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:34.602 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:34.812 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:35.107 BasePage:257 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:37.175 BasePage:280 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:38.267 BasePage:280 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:38.307 BasePage:257 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:38.337 BasePage:257 - Tapped Discount on Check Based
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:38.907 BasePage:84 - Discount Page txt is Displayed - Discounts
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:41.025 BasePage:280 - IB-AfterTax-Amount Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:41.065 BasePage:257 - Tapped Back Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:42.153 Discount:85 - SubTotal of Menu Item - $ 14.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:43.211 OrderManagementScreen:1272 -  Tax is - $ 1.40
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:43.238 OrderManagementScreen:1418 - Discount is - $ 1.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.288 Discount:99 - Total of Menu Item is - $ 14.40
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.299 BasePage:257 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.341 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.344 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.364 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.461 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.478 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.498 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.517 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:44.536 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:45.592 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:46.673 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:46.694 OrderManagementScreen:1577 - 4-001
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:46.904 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:47.183 BasePage:257 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:49.240 BasePage:280 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:50.312 BasePage:280 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:50.350 BasePage:257 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:50.381 BasePage:280 - Tapped Cash button for Close Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:50.440 BasePage:280 - Tapped Exact button 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:50.465 BasePage:280 - Tapped Enter for Finish Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:02:59.540 Hooks:56 - Failed Scenario Name : Check with normal bill without discount/Gratuity/upcharge
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:45.534 Hooks:44 - Start Scenario Name : QSR -  Check with discount(item based - Before tax) as percentage
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:45.559 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:45.590 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:45.615 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:45.637 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:45.657 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:46.751 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:47.843 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:48.053 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:48.352 BasePage:257 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:50.417 BasePage:280 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:03:51.500 Hooks:56 - Failed Scenario Name : QSR -  Check with discount(item based - Before tax) as percentage
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:36.887 Hooks:44 - Start Scenario Name : Qsr - Check with discount(item based - After tax) as Set Price 500
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:36.912 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:36.943 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:36.968 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:36.991 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:37.011 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:38.109 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:39.200 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:39.410 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:39.682 BasePage:257 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:41.732 BasePage:280 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:04:42.806 Hooks:56 - Failed Scenario Name : Qsr - Check with discount(item based - After tax) as Set Price 500
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:47.526 Hooks:44 - Start Scenario Name : Service Type  in Order Screen,Seats
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:47.651 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:47.692 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:47.741 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:47.800 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:47.845 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:49.006 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:49.072 BasePage:280 - added a new seat to the table
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:49.189 TableLayOutScreen:719 - Seat2 is Added 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:50.227 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:50.236 BasePage:257 - ArrowDown Button 1 is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:50.274 BasePage:257 - editDeleteSeatsBtn is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:50.311 BasePage:257 - Selected seat 2 to be deleted
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:50.345 BasePage:257 - doneDeleteSeatsBtn is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:51.426 BasePage:280 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:51.849 OrdersAndDriversListScreen:87 - Check Status
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:52.178 BasePage:84 - Table layout screen is displayed - Table layout
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:52.182 BasePage:257 - Tapped Phone Order Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:52.287 BasePage:239 - Phone order Tab is displayed - Future
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:52.296 BasePage:257 - Tapped QSR button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:53.382 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:54.435 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:54.439 BasePage:257 - Tapped Sync Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:57.480 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:57.629 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:57.653 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:57.684 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:57.716 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:57.742 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:58.802 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:07:59.855 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:01.370 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:02.930 BasePage:280 - FOOD - Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:04.972 BasePage:280 - Selected - French Friese
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:06.037 BasePage:280 - Tomato selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:06.069 BasePage:257 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:06.105 BasePage:280 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:06.160 BasePage:84 - close your sale txt is displayed - Close Your Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:06.163 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:06.190 BasePage:257 - Tapped Sync Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.246 BasePage:239 - Close then Sale to sync the Data - Please close the sale to sync the data
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.249 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.277 BasePage:257 - Tapped the settings button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.321 BasePage:84 - close your sale txt is displayedclose the sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.324 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.350 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.388 BasePage:84 - close your sale txt is displayedclose the sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.396 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.434 OrderManagementScreen:1523 - Split Button is Enabled
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.452 BasePage:257 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.500 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:09.503 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:10.544 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:10.546 BasePage:257 - Options button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:10.589 BasePage:257 - Tapped Search Button on the Order screen
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:11.335 OrderManagementScreen:1179 - Onion Rings
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:11.367 OrderManagementScreen:1182 - Selected - Onion Rings
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:11.687 OrderTypeWindow:162 - Existing Sale is Visble
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.005 OrderTypeWindow:179 - Search Item is added to Order List
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.007 BasePage:257 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.048 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.050 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.086 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.229 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.254 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.291 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.317 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:12.346 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:13.438 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:14.486 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:15.493 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:16.570 BasePage:257 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:18.628 BasePage:280 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:19.686 BasePage:280 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:19.726 BasePage:257 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:19.765 BasePage:257 - Tapped Discount on Check Based
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:20.362 BasePage:84 - Discount Page txt is Displayed - Discounts
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:22.459 BasePage:280 - IB-AfterTax-Amount Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:22.501 BasePage:257 - Tapped Back Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:23.576 Discount:85 - SubTotal of Menu Item - $ 14.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:24.610 OrderManagementScreen:1272 -  Tax is - $ 1.40
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:24.630 OrderManagementScreen:1418 - Discount is - $ 1.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.674 Discount:99 - Total of Menu Item is - $ 14.40
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.681 BasePage:257 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.724 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.727 BasePage:257 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.751 BasePage:257 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.861 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.880 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.902 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.923 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:25.945 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:27.006 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:28.047 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:28.061 OrderManagementScreen:1577 - 47-001
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:29.068 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:30.139 BasePage:257 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:32.192 BasePage:280 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:33.247 BasePage:280 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:33.271 BasePage:257 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:33.300 BasePage:280 - Tapped Cash button for Close Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:33.345 BasePage:280 - Tapped Exact button 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:33.377 BasePage:280 - Tapped Enter for Finish Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:08:42.459 Hooks:56 - Failed Scenario Name : Check with normal bill without discount/Gratuity/upcharge
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:28.518 Hooks:44 - Start Scenario Name : Qsr - Check with discount(item based - After tax) as Set Price 500
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:28.546 BasePage:280 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:28.574 BasePage:257 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:28.600 BasePage:257 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:28.624 BasePage:257 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:28.645 BasePage:257 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:29.737 BasePage:257 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:30.830 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:31.840 BasePage:257 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:32.939 BasePage:257 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:35.002 BasePage:280 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:09:36.072 Hooks:56 - Failed Scenario Name : Qsr - Check with discount(item based - After tax) as Set Price 500
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:08.297 Hooks:44 - Start Scenario Name : Service Type  in Order Screen,Seats
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:08.470 BasePage:279 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:08.537 BasePage:259 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:08.586 BasePage:259 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:08.628 BasePage:259 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:08.664 BasePage:259 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:09.831 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:09.935 BasePage:279 - added a new seat to the table
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:10.008 TableLayOutScreen:719 - Seat2 is Added 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:11.042 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:11.071 BasePage:259 - ArrowDown Button 1 is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:11.120 BasePage:259 - editDeleteSeatsBtn is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:11.170 BasePage:259 - Selected seat 2 to be deleted
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:11.212 BasePage:259 - doneDeleteSeatsBtn is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:12.298 BasePage:279 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:12.700 OrdersAndDriversListScreen:87 - Check Status
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:13.037 BasePage:84 - Table layout screen is displayed - Table layout
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:13.069 BasePage:259 - Tapped Phone Order Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:13.183 BasePage:239 - Phone order Tab is displayed - Future
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:13.233 BasePage:259 - Tapped QSR button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:14.362 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:15.438 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:15.461 BasePage:259 - Tapped Sync Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:18.513 BasePage:259 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:18.662 BasePage:279 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:18.697 BasePage:259 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:18.736 BasePage:259 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:18.773 BasePage:259 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:18.805 BasePage:259 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:19.878 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:20.923 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:22.457 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:24.018 BasePage:279 - FOOD - Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:26.067 BasePage:279 - Selected - French Friese
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:27.145 BasePage:279 - Tomato selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:27.205 BasePage:259 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:27.267 BasePage:279 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:27.313 BasePage:84 - close your sale txt is displayed - Close Your Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:27.340 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:27.380 BasePage:259 - Tapped Sync Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.428 BasePage:239 - Close then Sale to sync the Data - Please close the sale to sync the data
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.459 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.519 BasePage:259 - Tapped the settings button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.557 BasePage:84 - close your sale txt is displayedclose the sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.583 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.617 BasePage:259 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.649 BasePage:84 - close your sale txt is displayedclose the sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.667 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.697 OrderManagementScreen:1523 - Split Button is Enabled
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.717 BasePage:259 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.759 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:30.777 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:31.813 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:31.832 BasePage:259 - Options button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:31.896 BasePage:259 - Tapped Search Button on the Order screen
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:32.593 OrderManagementScreen:1179 - Onion Rings
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:32.639 OrderManagementScreen:1182 - Selected - Onion Rings
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:32.960 OrderTypeWindow:162 - Existing Sale is Visble
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.277 OrderTypeWindow:179 - Search Item is added to Order List
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.294 BasePage:259 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.342 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.375 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.410 BasePage:259 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.542 BasePage:279 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.577 BasePage:259 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.609 BasePage:259 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.641 BasePage:259 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:33.672 BasePage:259 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:34.755 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:35.792 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:36.826 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:37.917 BasePage:259 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:39.971 BasePage:279 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:41.026 BasePage:279 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:41.069 BasePage:259 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:41.112 BasePage:259 - Tapped Discount on Check Based
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:41.681 BasePage:84 - Discount Page txt is Displayed - Discounts
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:43.763 BasePage:279 - IB-AfterTax-Amount Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:43.821 BasePage:259 - Tapped Back Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:44.898 Discount:85 - SubTotal of Menu Item - $ 14.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:45.949 OrderManagementScreen:1272 -  Tax is - $ 1.40
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:45.971 OrderManagementScreen:1418 - Discount is - $ 1.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.003 Discount:99 - Total of Menu Item is - $ 14.40
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.025 BasePage:259 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.068 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.098 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.149 BasePage:259 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.318 BasePage:279 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.375 BasePage:259 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.423 BasePage:259 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.467 BasePage:259 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:47.517 BasePage:259 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:48.613 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:49.670 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:49.693 OrderManagementScreen:1577 - 49-001
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:50.718 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:51.772 BasePage:259 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:53.828 BasePage:279 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:54.908 BasePage:279 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:54.948 BasePage:259 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:54.995 BasePage:279 - Tapped Cash button for Close Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:55.055 BasePage:279 - Tapped Exact button 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:55.102 BasePage:279 - Tapped Enter for Finish Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:56.155 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:56.200 BasePage:279 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:56.588 OrdersAndDriversListScreen:87 - Check Status
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:56.633 BasePage:279 - Tapped closed Tab button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:57.760 PhoneOrderScreen:336 - 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:57.776 BasePage:259 - Tapped Closed Check in closed tab - 49-001
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:57.818 BasePage:279 - Tapped Reopen check stats button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:59.862 TableLayOutScreen:653 - I should see Order Screen
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:59.883 BasePage:259 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:59.949 BasePage:84 - Payment made on this check is Displayed - Payment(s) made on this Check, Can you return this to Walkin Walkin
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:15:59.966 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:00.013 BasePage:279 - Payment  selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:00.085 BasePage:279 - Delete button tapped to delete the payment
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:00.174 BasePage:279 - Exit button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:00.245 BasePage:259 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:00.307 BasePage:84 - void Reason txt is displayed - Void Reason
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:00.357 BasePage:279 - Ordered wrongly is selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:00.427 BasePage:279 - Add (void reason) button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:01.523 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:02.570 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:02.583 OrderManagementScreen:1577 - 49-002
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:03.606 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:04.672 BasePage:259 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:06.732 BasePage:279 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:07.817 BasePage:279 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:07.859 BasePage:259 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:07.904 BasePage:279 - Payment button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:08.968 BasePage:279 - Tapped others button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:09.563 BasePage:279 - Submit button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:10.610 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:10.651 BasePage:279 - Tapped All button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:11.013 OrdersAndDriversListScreen:87 - Check Status
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:11.039 BasePage:279 - Tapped closed Tab button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:12.128 PhoneOrderScreen:336 - 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:12.145 BasePage:259 - Tapped Closed Check in closed tab - 49-002
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:12.184 BasePage:279 - Tapped Reopen check stats button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.233 TableLayOutScreen:653 - I should see Order Screen
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.250 BasePage:259 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.308 BasePage:84 - Payment made on this check is Displayed - Payment(s) made on this Check, Can you return this to Walkin Walkin
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.330 BasePage:259 - Tapped Done Button on the Popup
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.396 BasePage:279 - Payment  selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.468 BasePage:279 - Delete button tapped to delete the payment
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.556 BasePage:279 - Exit button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.640 BasePage:259 - Void button tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.703 BasePage:84 - void Reason txt is displayed - Void Reason
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.753 BasePage:279 - Ordered wrongly is selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:14.798 BasePage:279 - Add (void reason) button is tapped
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:15.903 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:15.951 BasePage:259 - Tapped log Off Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:16.078 BasePage:279 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:16.115 BasePage:259 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:16.149 BasePage:259 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:16.183 BasePage:259 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:16.215 BasePage:259 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:17.318 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:18.357 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:19.392 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:20.467 BasePage:259 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:22.515 BasePage:279 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:23.606 BasePage:279 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:23.675 BasePage:259 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:23.734 BasePage:259 - Tapped Discount on Check Based
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:24.292 BasePage:84 - Discount Page txt is Displayed - Discounts
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:26.377 BasePage:279 - IB-AfterTax-SetPrice500 Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:26.431 BasePage:259 - Tapped Back Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:27.494 Discount:85 - SubTotal of Menu Item - $ 14.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:28.538 OrderManagementScreen:1272 -  Tax is - $ 1.40
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:28.571 OrderManagementScreen:1418 - Discount is - $ 12.50
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:29.606 Discount:99 - Total of Menu Item is - $ 2.90
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:29.635 BasePage:279 - Tapped Cash button for Close Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:29.689 BasePage:279 - Tapped Exact button 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:29.735 BasePage:279 - Tapped Enter for Finish Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:30.782 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:31.835 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:32.864 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:33.919 BasePage:259 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:35.987 BasePage:279 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:37.065 BasePage:279 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:37.113 BasePage:259 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:37.144 BasePage:259 - Tapped Discount on Check Based
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:37.703 BasePage:84 - Discount Page txt is Displayed - Discounts
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:39.830 BasePage:279 - IB-BeforeTax-SetPrice500 Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:39.893 BasePage:259 - Tapped Back Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:40.956 Discount:85 - SubTotal of Menu Item - $ 14.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:42.008 OrderManagementScreen:1272 -  Tax is - $ 0.10
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:42.032 OrderManagementScreen:1418 - Discount is - $ 13.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:43.077 Discount:99 - Total of Menu Item is - $ 1.10
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:43.111 BasePage:279 - Tapped Cash button for Close Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:43.175 BasePage:279 - Tapped Exact button 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:43.209 BasePage:279 - Tapped Enter for Finish Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:44.264 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:45.323 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:46.361 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:47.442 BasePage:259 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:49.503 BasePage:279 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:50.579 BasePage:279 - Butter selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:50.627 BasePage:259 - done for the menu item
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:50.658 BasePage:259 - Tapped Discount on Check Based
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:51.219 BasePage:84 - Discount Page txt is Displayed - Discounts
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:53.343 BasePage:279 - IB-BeforeTax-AsFreeItem Selected
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:53.401 BasePage:259 - Tapped Back Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:53.431 BasePage:84 - Free Item Added in Menu - (F)Onion Rings EACH
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:54.475 Discount:85 - SubTotal of Menu Item - $ 15.00
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:55.526 OrderManagementScreen:1272 -  Tax is - $ 1.50
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:56.566 Discount:146 - Total Value is - $ 16.50
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:56.566 Discount:149 - Total Value is - $ 16.50
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:56.597 BasePage:279 - Tapped Cash button for Close Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:56.648 BasePage:279 - Tapped Exact button 
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:56.684 BasePage:279 - Tapped Enter for Finish Sale
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:57.738 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:16:58.816 Hooks:56 - Failed Scenario Name : Qsr - Check with discount(item based - After tax) as Set Price 500
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:44.932 Hooks:44 - Start Scenario Name : Check with discount(Check based - After tax) as Percentage-Discount - Check based
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:44.979 BasePage:279 - Tapped pin 1
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:45.022 BasePage:259 - Tapped pin 2
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:45.052 BasePage:259 - Tapped pin 3
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:45.095 BasePage:259 - Tapped pin 4
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:45.122 BasePage:259 - Tapped Login.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:46.247 BasePage:259 - Order type selection is cancelled.
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:47.311 OrderManagementScreen:1502 - QSR - Service Type Is displayed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:48.356 BasePage:259 - the rest of the categories is listed
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:49.440 BasePage:259 - Tapped PAsta Button
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:51.508 BasePage:279 - Selected - Ravioli
-[${ctx:ROUTINGKEY} INFO ] 2023-12-15 00:17:52.583 Hooks:56 - Failed Scenario Name : Check with discount(Check based - After tax) as Percentage-Discount - Check based
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:00.877 BasePage:278 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.026 PaymentWindow:344 - Should see Total screen - No Tip
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.068 BasePage:278 - Tapped Custom Tl Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.189 BasePage:258 - 1 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.262 BasePage:258 - 0 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.317 BasePage:258 - 00 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.372 BasePage:258 - Tapped Apply Tip
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.437 PaymentWindow:453 - Tip is added with menu total
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:02.462 PaymentWindow:489 - Total value is displayed - $ 38.60
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:03.504 BasePage:278 - Tapped Continue Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:03.611 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:04.150 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:05.207 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:07.250 OrderManagementScreen:1518 - Service Type - QSR
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:09.781 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:11.335 BasePage:278 - Menu - Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:13.384 BasePage:278 - Selected - cake
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:15.432 BasePage:278 - Selected - cake
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:15.465 BasePage:258 - Tapped Discount on Check Based
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:16.025 BasePage:84 - Discount Page txt is Displayed - Discounts
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:18.131 BasePage:278 - CB-AfterTaxSetPrice2500 Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:18.183 BasePage:258 - Tapped Back Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:18.210 BasePage:258 - Tapped Discount on Check Based
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:18.773 BasePage:84 - Discount Page txt is Displayed - Discounts
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:20.911 BasePage:278 - CB-BeforeTax-SetPrice1000 Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:20.951 BasePage:258 - Tapped Back Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:22.011 Discount:85 - SubTotal of Menu Item - $ 16.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:23.063 OrderManagementScreen:1284 -  Tax is - $ 1.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:23.084 OrderManagementScreen:1434 - Discount is - $ 6.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:24.130 Discount:99 - Total of Menu Item is - $ 11.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:24.160 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:25.239 BasePage:278 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.322 PaymentWindow:344 - Should see Total screen - No Tip
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.345 BasePage:278 - Tapped Custom Tl Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.384 BasePage:258 - 1 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.409 BasePage:258 - 0 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.434 BasePage:258 - 00 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.458 BasePage:258 - Tapped Apply Tip
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.485 PaymentWindow:453 - Tip is added with menu total
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:26.501 PaymentWindow:489 - Total value is displayed - $ 21.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:27.550 BasePage:278 - Tapped Continue Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:27.608 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:28.167 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:29.233 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:31.296 OrderManagementScreen:1518 - Service Type - QSR
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:33.566 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:33.872 BasePage:258 - Tapped PAsta Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:35.942 BasePage:278 - Selected - Cheesecake
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:35.985 BasePage:258 - Tapped Discount on Check Based
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:36.544 BasePage:84 - Discount Page txt is Displayed - Discounts
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:38.667 BasePage:278 - CB-AfterTax-Free300 Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:38.724 BasePage:258 - Tapped Back Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:38.756 BasePage:258 - Tapped Discount on Check Based
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:39.311 BasePage:84 - Discount Page txt is Displayed - Discounts
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:41.444 BasePage:278 - CB-BeforeTax-Free300 Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:41.484 BasePage:258 - Tapped Back Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:41.518 BasePage:84 - Free Item Added in Menu - (F)Onion Rings EACH
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:42.557 Discount:85 - SubTotal of Menu Item - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:43.606 OrderManagementScreen:1284 -  Tax is - $ 1.70
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:44.641 Discount:146 - Total Value is - $ 18.70
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:44.641 Discount:149 - Total Value is - $ 18.70
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:44.661 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:45.743 BasePage:278 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.821 PaymentWindow:344 - Should see Total screen - No Tip
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.845 BasePage:278 - Tapped Custom Tl Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.884 BasePage:258 - 1 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.908 BasePage:258 - 0 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.932 BasePage:258 - 00 Tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.960 BasePage:258 - Tapped Apply Tip
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.988 PaymentWindow:453 - Tip is added with menu total
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:46.999 PaymentWindow:489 - Total value is displayed - $ 28.70
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:48.047 BasePage:278 - Tapped Continue Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:48.128 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:48.690 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:49.764 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:49.809 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:49.911 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:49.942 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:49.968 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:49.994 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:50.021 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:51.105 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:53.165 OrderManagementScreen:1518 - Service Type - QSR
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:55.718 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:57.328 BasePage:278 - FOOD - Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:59.404 BasePage:278 - Selected - Pizza Rucola 12inch
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:00:59.488 BasePage:278 - DOUBLE selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:00.553 BasePage:278 - Add Steak selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:00.601 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:00.638 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:00.682 BasePage:239 - Check Options title is - Check Option
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:02.730 BasePage:278 - - Modify is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:02.780 BasePage:258 - Selected Modifier as - Add Steak
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:03.840 BasePage:278 - Add Chicken selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:03.889 BasePage:278 - Tapped Done button.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:03.921 OrderManagementScreen:1165 - Modifier Item is added
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:03.931 OrderManagementScreen:1165 - Modifier Item is added
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:03.944 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:03.991 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:04.003 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:04.029 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:04.143 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:04.169 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:04.215 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:04.241 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:04.265 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:05.344 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:07.408 OrderManagementScreen:1518 - Service Type - QSR
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:09.953 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.535 BasePage:278 - FOOD - Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.585 BasePage:239 - Verify FoodCategory Option - __MENU ITEMS OF 'FOOD'__
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.585 TGMenuItemPage:2925 - __MENU ITEMS OF 'FOOD'__
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.601 BasePage:278 - Click Add Seat Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.646 BasePage:239 - Verify Added Seat2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.662 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.705 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.775 BasePage:258 - Selected Add Customer
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.880 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.911 BasePage:278 - click firstName 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:11.967 BasePage:278 - click lastName 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.032 BasePage:278 - click addPhoneNumberButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.079 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'8')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.101 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.121 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'8')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.140 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'7')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.159 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.179 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'9')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.203 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'2')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.224 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'4')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.244 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'7')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.262 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (1209bf60533c016c156bd2b8285f6b77)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]]
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.330 BasePage:258 - Continue
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.371 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:12.403 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:13.100 BasePage:258 - editDeleteSeatsBtn is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:01:25.794 Hooks:56 - Failed Scenario Name : Application showing the service type in Order Screen,Verify menu categories,Verify add new seat button,When User click add new customer icon,Delete any seat,Verify select Upcharge MenuItems,Verify select Upcharge MenuItems with Modifiers,Verify Reopen Upcharge Order.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:12.727 Hooks:44 - Start Scenario Name : Verify check options tab should open at all scenarios,Verify Finish button for order / menu item screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:12.771 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:12.813 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:12.849 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:12.883 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:12.909 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:14.058 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:14.112 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:14.152 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:14.217 BasePage:258 - click t4 table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:16.795 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:18.390 BasePage:278 - FOOD - Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:20.459 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:20.519 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:20.566 BasePage:239 - verify the checkOptionPageTitleCheck Option
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:20.585 BasePage:278 - click checkOptionBackButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:20.632 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:21.740 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:21.868 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:21.892 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:21.914 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:21.947 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:21.970 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:23.055 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:23.105 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:23.139 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:23.187 BasePage:258 - click t4 table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:25.260 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:25.308 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:25.360 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:25.396 BasePage:278 - click cashButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:28.529 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:28.620 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:28.643 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:28.666 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:28.689 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:28.711 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:29.793 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:30.861 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:31.929 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:31.995 BasePage:278 - Select Third MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:32.048 BasePage:278 - Select First Modifier Of Third MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:32.088 BasePage:278 - Click Modifier Done Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:32.128 BasePage:278 - Select Fourth MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:32.172 BasePage:278 - Select None Option for Fourth MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:32.209 BasePage:239 - Verify MenuItem With No Mandatory ModifierFried Crab Cakes
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:32.220 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:33.277 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:33.323 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:33.380 BasePage:278 - select Second MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:33.415 BasePage:258 - Selected 12
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:33.465 BasePage:278 - Select Third Modifier Of Second Pizza MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:33.503 BasePage:239 - Verify Modifier PrefixExtra
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:33.521 BasePage:278 - Click Modifier Done Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:34.590 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.655 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.709 BasePage:278 - Click Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.763 BasePage:278 - Click bbqSource
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.822 BasePage:278 - Well Done Optional Modifier
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.869 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.908 BasePage:239 - WELL DONEWELL DONE
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.927 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:35.974 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:36.009 BasePage:278 - click cashButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:39.140 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:39.183 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:39.286 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:39.310 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:39.333 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:39.355 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:39.382 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:40.463 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:43.040 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:44.606 BasePage:278 - Pasta - Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:46.670 BasePage:278 - Selected - Ravioli Pesto
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:47.751 BasePage:278 - Butter selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:47.797 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:47.833 OrderManagementScreen:893 -  Tax is - $ 1.36
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:47.851 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:47.884 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:47.896 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:50.459 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:52.044 BasePage:278 - Pasta - Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:54.111 BasePage:278 - Selected - Ravioli
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:55.183 BasePage:278 - Butter selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:55.225 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:55.258 OrderManagementScreen:893 -  Tax is - $ 1.40
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:55.280 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:55.329 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:55.367 BasePage:278 - click cashButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:58.524 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:58.569 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:58.649 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:58.675 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:58.700 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:58.724 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:58.748 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:59.837 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:59.889 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:59.930 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:02:59.987 BasePage:258 - click t4 table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:01.073 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:02.649 BasePage:278 - Selected FOOD
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:02.699 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:02.738 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:02.773 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:02.830 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:02.862 BasePage:278 - click cashButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:05.990 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:06.097 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:06.122 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:06.145 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:06.167 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:06.191 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.275 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.325 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.361 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.422 BasePage:278 - click firstTable
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.487 BasePage:278 - Select MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.524 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.565 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:07.599 BasePage:239 - Verify Void ItemNo order to display
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:09.637 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:09.687 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:09.725 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:09.753 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:10.836 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:10.941 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:10.966 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:10.988 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:11.011 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:11.033 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:12.114 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:12.163 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:12.198 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:12.247 BasePage:278 - click firstTable
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:12.286 BasePage:239 - test45-006
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:12.294 TGVoidPage:259 - Get Check Number - 45-006
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:14.335 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:14.388 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:14.430 BasePage:278 - click cashButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:14.482 BasePage:278 - click submitButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:15.564 BasePage:278 - Click Check Status Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:15.639 BasePage:278 - Click Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:26.799 PhoneOrderScreen:336 - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:26.800 PhoneOrderScreen:341 - closed check is not available - 4-039
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:03:36.856 Hooks:56 - Failed Scenario Name : Void reopen check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:23.181 Hooks:44 - Start Scenario Name : Void Normal Check — Select from CheckStatus/Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:23.230 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:23.269 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:23.314 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:23.346 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:23.371 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:24.516 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:24.570 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:24.638 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:24.660 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:24.739 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:24.801 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:24.866 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:25.995 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:26.043 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:26.081 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:26.136 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:29.235 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:29.279 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:30.338 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:31.910 BasePage:278 - Selected FOOD
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:31.965 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:32.011 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:32.058 BasePage:239 - test46-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:32.067 TGVoidPage:259 - Get Check Number - 46-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:32.088 BasePage:278 - click cashOnMenuItemPage 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:32.152 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:32.189 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:33.254 BasePage:278 - Click Check Status Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:33.332 BasePage:278 - Click Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:44.486 PhoneOrderScreen:336 - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:44.487 PhoneOrderScreen:341 - closed check is not available - 4-039
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:04:54.511 Hooks:56 - Failed Scenario Name : Void Normal Check — Select from CheckStatus/Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:40.897 Hooks:44 - Start Scenario Name : Verify Tax Exempt- From Order Screen,Application  should removed Tax Exempt and Tax should applied for that Entire Check from Order Screen,Verify Application should not allow to do Tax Exempt after Payment Done Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:40.947 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:40.990 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:41.028 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:41.060 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:41.086 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:42.220 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:42.275 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:42.315 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:42.396 BasePage:278 - click firstTable
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:42.445 OrderManagementScreen:1601 - 47-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.484 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.543 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.588 BasePage:278 - click taxExemptOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.633 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.689 BasePage:278 - click taxExemptOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.744 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.802 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:44.839 BasePage:278 - click cashButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:48.187 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:48.261 BasePage:278 - Click Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:49.392 PhoneOrderScreen:336 - 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:49.405 BasePage:258 - Tapped Closed Check in closed tab - 47-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:49.441 BasePage:278 - Click reopenCheck
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:52.180 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:52.747 BasePage:278 - click taxExemptOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:52.815 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:55.067 BasePage:258 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:56.188 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:56.243 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:56.351 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:56.378 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:56.405 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:56.436 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:56.462 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:57.531 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:57.584 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:57.622 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:57.670 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:57.709 BasePage:278 - Click sandwiches
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:57.747 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:57.793 BasePage:278 - click taxExemptOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:58.853 OrderManagementScreen:751 - Subtotal Value is - $ 1.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:58.854 OrderManagementScreen:754 - Subtotal Value is - $ 1.00
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:58.882 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:58.928 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:58.961 BasePage:278 - click ccSidePaymentOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:05:59.018 BasePage:278 - Tapped tip As 10
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:00.066 BasePage:278 - Tapped Continue Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:00.139 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:00.692 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:00.769 BasePage:258 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:01.849 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:01.876 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:01.965 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:01.994 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:02.017 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:02.041 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:02.066 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:03.138 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:03.192 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:03.227 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-16 00:06:03.271 Hooks:56 - Failed Scenario Name : Verify Check Payment through Side CC with Tax Exempt not select customer in payment screen and also with tip

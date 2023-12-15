@@ -389,7 +389,8 @@ public class CI_PaymentStepDef {
 
     @And("^I select the \"([^\"]*)\" in the Table layout screen\"([^\"]*)\"$")
     public void iSelectTheTableInTheTableLayoutScreen(String btnTable,String msg) {
-        ciPaymentScreen.clickBtnPayment(btnTable,msg);
+//        ciPaymentScreen.clickBtnPayment(btnTable,msg);
+        new CIPaymentScreen().selectTheTable(btnTable,msg);
     }
 
 

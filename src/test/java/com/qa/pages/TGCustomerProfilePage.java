@@ -18,25 +18,25 @@ public class TGCustomerProfilePage extends BasePage {
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Customer Profile\"]")
 //    private WebElement titleTxt;
 
-    public By titleTxt = By.id("Customer Profile");
+    String titleTxt = "Customer Profile";
 
-    public By phoneAsterisk = By.xpath("(//XCUIElementTypeStaticText[@name=\"*\"])[1]");
+    String phoneAsterisk = "(//XCUIElementTypeStaticText[@name=\"*\"])[1]";
 
 //    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[1]")
 //    private WebElement phoneAsterisk;
 
-    public By addressAsterisk = By.xpath("(//XCUIElementTypeStaticText[@name=\"*\"])[2]");
+    String addressAsterisk = "(//XCUIElementTypeStaticText[@name=\"*\"])[2]";
 
 //    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[2]")
 //    private WebElement addressAsterisk;
 
-    public By searchField = By.id("Search");
+    String searchField = "Search";
 
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
 //    private WebElement searchField;
 
-    public By customerToSelect = By.xpath("//XCUIElementTypeStaticText[@name=\"Engin Başaran +905356641754 \"]");
+    String customerToSelect = "//XCUIElementTypeStaticText[@name=\"Engin Başaran +905356641754 \"]";
 
     //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Engin Başaran +905356641754 \"]")
 //    private WebElement customerToSelect;
@@ -52,19 +52,21 @@ public class TGCustomerProfilePage extends BasePage {
         //Class Random
         Random rd = new Random();
         int rdNum;
-
+WebElement element;
         // 10 digit phone number
         String m[] = new String[10];
 
         for (int i = 0; i < 10; i++) {
             rdNum = rd.nextInt(10);
             m[i] = Integer.toString(rdNum);
+            element = driver.findElement(By.xpath("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'"+m[i]+"')]"));
+            utils.log().info(element);
+            element.click();
+
         }
+        elementClick("//span[contains(.,' Continue ')]","Continue");
         //System.out.println(“The phone number is : ” +m[0]+m[1]+m[2]+m[3]+m[4]+m[5]+m[6]+m[7]+m[8]+m[9]);
 
-        WebElement element = mergeAndFindMobileElement(randomPhoneNumberText);
-        elementClick(element, "click randomPhoneNumberText ");
-        element.sendKeys(m);
     }
 
     public void selectSearchedCustomer() {
@@ -226,7 +228,7 @@ public class TGCustomerProfilePage extends BasePage {
     }
 
     public void pressSearchField() {
-        WebElement element = mergeAndFindMobileElement(searchField);
+        WebElement element = mergeAndFindMobileElement(String.valueOf(searchField));
         elementClick(element, "Tapped search Phone");
 //        elementClick(searchField, "Tapped search Phone");
     }

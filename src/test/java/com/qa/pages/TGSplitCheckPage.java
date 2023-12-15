@@ -133,7 +133,7 @@ public class TGSplitCheckPage extends BasePage{
         String expectedName = "SANDWICHES";
 
         Assert.assertEquals(actualName,expectedName);
-        WebElement element1=mergeAndFindMobileElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[4]"));
+        WebElement element1=mergeAndFindMobileElement((WebElement) By.xpath("(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[4]"));
         element.equals(element1);
         WebElement element2=mergeAndFindMobileElement(splitedOrderPrice);
         String actualName1 =  elementGetText(element2,"Get Splited Order Price");
@@ -163,7 +163,7 @@ public class TGSplitCheckPage extends BasePage{
         String expectedName = "Seat 2";
 
         Assert.assertEquals(actualName,expectedName);
-        WebElement element1= mergeAndFindMobileElement(By.xpath("(//XCUIElementTypeTable[@name=\"Empty list\"])[13]"));
+        WebElement element1= mergeAndFindMobileElement((WebElement) By.xpath("(//XCUIElementTypeTable[@name=\"Empty list\"])[13]"));
         element.equals(element1);
 
     }
@@ -608,7 +608,7 @@ public class TGSplitCheckPage extends BasePage{
     }
 
     public void clickNewTab(){
-        WebElement tabNew = mergeAndFindMobileElement(newTabButton);
+        WebElement tabNew = mergeAndFindMobileElement((WebElement) newTabButton);
         elementClick(tabNew,"Click New Tab");
     }
 

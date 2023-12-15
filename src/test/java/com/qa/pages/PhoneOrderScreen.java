@@ -300,7 +300,7 @@ public class PhoneOrderScreen extends BasePage {
     public void selectClosedCheckFromClosedTab1() throws InterruptedException {
         //   driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
         Thread.sleep(1000);
-        String globalCheckNumber = TestUtils.globalCheckNumber1;
+        String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
         //  WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
@@ -327,7 +327,7 @@ public class PhoneOrderScreen extends BasePage {
     }
     public void selectClosedCheckFromClosedTab() throws InterruptedException {
         //   driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
@@ -341,7 +341,6 @@ public class PhoneOrderScreen extends BasePage {
             utils.log().info("closed check is not available - "+ globalCheckNumber);
 //            int w = 1/0;
                 elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
-
             }
     }
     public void selectClosedCheckFromActiveTab() throws InterruptedException {

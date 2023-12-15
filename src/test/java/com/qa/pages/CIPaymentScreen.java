@@ -493,4 +493,8 @@ public class CIPaymentScreen extends BasePage{
 //        elementClick(element, msg);
         findandclick(btnTextXPath, btnPayment,TestUtils.XPath);
     }
+
+    public void selectTheTable(String btn,String msg){
+        elementClick("(//p[contains(.,'"+btn+"')])[1]",msg);
+    }
 }

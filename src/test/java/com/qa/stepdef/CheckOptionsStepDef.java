@@ -569,7 +569,7 @@ public class CheckOptionsStepDef {
     }
 
     @And("^I select FOOD as category$")
-    public void iSelectFOODAsCategory() {
+    public void iSelectFOODAsCategory() throws InterruptedException {
         new OrderManagementScreen().selectFoodCategory();
     }
 
@@ -696,7 +696,7 @@ public class CheckOptionsStepDef {
     /****** Check Options - Modify ******/
 
     @And("^I click Modify$")
-    public void iClickModify() {
+    public void iClickModify() throws InterruptedException {
         new CheckOptions().pressModify();
     }
 

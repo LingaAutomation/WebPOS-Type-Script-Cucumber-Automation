@@ -36,7 +36,7 @@ public class TGCheck extends BasePage{
     String optCreditCardAmount="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell";
 
     public void selectFirstClosedCheckForDineInOrderType(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"DineIn\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -50,7 +50,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void selectLastClosedCheckOnTableLayout(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"T1\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -65,7 +65,7 @@ public class TGCheck extends BasePage{
     }
 
     public void lastPaidOrder(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -80,7 +80,7 @@ public class TGCheck extends BasePage{
     }
 
     public void verifyVoidLastCheck(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"Goknur BATI\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -94,7 +94,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void selectFirstClosedCheck(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"T1\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -108,7 +108,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void selectLastClosedCheck(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"Goknur BATI\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -122,7 +122,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void verifyLastPhoneOrderCheckTotalWithGiftCard(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"Phone To Go\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -142,22 +142,22 @@ public class TGCheck extends BasePage{
 
     }
     public void clickBarTabOnCheckStatusPage(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(barTabType);
         elementClick(element,"Click BarTab Type");
 //        driver.findElement(barTabType).isDisplayed();
 //        driver.findElement(barTabType).click();
     }
     public void verifyLastClosedCheckForQSR(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        WebElement element=mergeAndFindMobileElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"QSR\"])[last()]"));
+
+        WebElement element=mergeAndFindMobileElement(String.valueOf(By.xpath("(//XCUIElementTypeStaticText[@name=\"QSR\"])[last()]")));
         String actualName = elementGetText(element,"Get QSR");
         String expectedName = "QSR";
 
         Assert.assertEquals(actualName,expectedName);
     }
     public void selectLastActiveCheckForDineIn(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
 //        List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView");
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeStaticText[@name=\"Walkin\"]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -171,7 +171,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void selectLastActiveCheckForBarTab(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
 //        List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable");
 //        phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"Bar Tab\"])[last()]");
 //        phoneOrders.get(phoneOrders.size() - 1).click();
@@ -188,7 +188,7 @@ public class TGCheck extends BasePage{
         activeOrders.get(activeOrders.size() - 1).click();
     }
     public void verifyGiveXChargeAmount(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(giveXChargeAmount);
         String actualName1 = elementGetText(element,"Get GiveX Charge Amount");
         String expectedName1 = "1.000,00";
@@ -196,7 +196,7 @@ public class TGCheck extends BasePage{
         Assert.assertEquals(actualName1,expectedName1);
     }
     public void verifyGiveXCardNumber(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(giveXCardNumberOnMenuItemPage);
         String actualName = elementGetText(element,"Get GiveX Card Number On Menu Item Page");
         String expectedName = "GC-603628394562001380850";
@@ -204,7 +204,7 @@ public class TGCheck extends BasePage{
         Assert.assertEquals(actualName,expectedName);
     }
     public void verifyGiveXCardNumberOnOrderSummary(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(giveXCardNumberOnOrderSummary);
         String actualName = elementGetText(element,"Get GiveX Card Number On Order Summary");
         String expectedName = "GCX-603628394562001380850 ";
@@ -212,13 +212,13 @@ public class TGCheck extends BasePage{
         Assert.assertEquals(actualName,expectedName);
     }
     public void selectLastClosedOrderDetailIcon(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(closedOrderDetailInfoIcon);
         elementClick(element,"Click Closed Order Detail Info Icon");
     }
 
     public void goToQsrSelectDineInMode(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(barTabChoice);
         elementClick(element,"Click Qsr Button");
         WebElement element1=mergeAndFindMobileElement(barTabChoice);
@@ -230,7 +230,7 @@ public class TGCheck extends BasePage{
 //    }
 
     public void clickCheckStatusTab(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(checkStatusTab);
         elementClick(element,"Click Check Status Tab Button");
     }
@@ -241,7 +241,7 @@ public class TGCheck extends BasePage{
     }
 
     public void verifyActiveChecks(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(qsrButton);
         String actualName = elementGetText(element,"Click Qsr Button");
         String expectedName = "QSR";
@@ -263,7 +263,7 @@ public class TGCheck extends BasePage{
         elementClick(element2,"Click back To Checks");
     }
     public void voidOrder(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(voidTab);
         elementClick(element,"Click void Tab");
         WebElement element1=mergeAndFindMobileElement(voidCauseType);
@@ -276,14 +276,14 @@ public class TGCheck extends BasePage{
     public void clickVoidChecksTab(){
 //        WebElement element=mergeAndFindMobileElement(voidChecksTab);
 //        elementClick(element,"Click void Checks Tab");
-        findandclickM(voidChecksTab);
+        findandclickM(By.id(voidChecksTab));
     }
     public void verifyVoidChecks(){
         WebElement element=mergeAndFindMobileElement(voidChecksTab);
         elementClick(element,"Click void Checks Tab");
         WebElement element1=mergeAndFindMobileElement(voidCheckDetails);
         elementClick(element1,"Click void Check Details");
-        driver.findElement(orderSummary).isDisplayed();
+        driver.findElement(By.xpath(orderSummary)).isDisplayed();
         WebElement element2=mergeAndFindMobileElement(voidCause);
         String actualName = elementGetText(element2,"Get Void cause");
         String expectedName = "*Cold Food";
@@ -360,7 +360,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void selectLastVoidCheckForBarTab(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -375,7 +375,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void clickLastVoidCheck(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"30,00\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -389,7 +389,7 @@ public class TGCheck extends BasePage{
 //        }
     }
     public void verifySubTotal(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement subTotalElm =mergeAndFindMobileElement(subTotalOnOrderSummary);
         WebElement subTotalBalElm =mergeAndFindMobileElement(subTotalBalanceOnOrderSummary);
         subTotalElm.equals(subTotalBalElm);
@@ -419,12 +419,12 @@ public class TGCheck extends BasePage{
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(lastBarTabOrder,direction);
+//                    scrollToElement(lastBarTabOrder,direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(lastBarTabOrder,direction);
+//                scrollToElement(By.id(lastBarTabOrder),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -480,12 +480,12 @@ public class TGCheck extends BasePage{
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(closedCheckDetailIcon,direction);
+//                    scrollToElement(closedCheckDetailIcon,direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(closedCheckDetailIcon,direction);
+//                scrollToElement(closedCheckDetailIcon,direction);
                 i++;
                 if (i == 5)
                     Assert.fail(e.getMessage());
@@ -536,12 +536,12 @@ public class TGCheck extends BasePage{
                     found = true;
                     break;
                 } else {
-                    scrollToElement(voidedCheckOnBarTab,direction);
+//                    scrollToElement(voidedCheckOnBarTab,direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(voidedCheckOnBarTab,direction);
+//                scrollToElement(voidedCheckOnBarTab,direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());

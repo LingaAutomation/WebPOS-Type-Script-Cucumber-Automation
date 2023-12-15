@@ -96,20 +96,20 @@ public class TGOrderManagementScreen extends OrderTypeWindow{
 //    }
 
     public TGTillManagementScreen pressCountingMachineBtn(){
-        WebElement element=mergeAndFindMobileElement(countingMachineBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) countingMachineBtn);
         elementClick(element, "Counting Machine button pressed - ");
 //        elementClick(countingMachineBtn, "Counting Machine button pressed - ");
         return  new TGTillManagementScreen();
     }
 
     public void pressArrowDown1 (){
-        WebElement element=mergeAndFindMobileElement(arrowDownBtn1);
+        WebElement element=mergeAndFindMobileElement((WebElement) arrowDownBtn1);
         elementClick(element, "ArrowDown Button 1 is tapped");
 //        elementClick(arrowDownBtn1, "ArrowDown Button 1 is tapped");
     }
 
     public void pressArrowDown2 (){
-        WebElement element=mergeAndFindMobileElement(arrowDownForOtherMenuItems);
+        WebElement element=mergeAndFindMobileElement((WebElement) arrowDownForOtherMenuItems);
         elementClick(element, "the rest of the categories is listed");
 
 //        elementClick(arrowDownForOtherMenuItems, "the rest of the categories is listed");
@@ -126,20 +126,20 @@ public class TGOrderManagementScreen extends OrderTypeWindow{
     }
 
     public void addNewSeat(){
-        WebElement element=mergeAndFindMobileElement(addSeatBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) addSeatBtn);
         elementClick(element, "added a new seat to the table");
 //        elementClick(addSeatBtn, "added a new seat to the table");
     }
 
     public void deleteSeat(){
         pressArrowDown1();
-        WebElement element=mergeAndFindMobileElement(editDeleteSeatsBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) editDeleteSeatsBtn);
         elementClick(element, "editDeleteSeatsBtn is tapped");
 //        elementClick(editDeleteSeatsBtn,"editDeleteSeatsBtn is tapped");
-        WebElement element1=mergeAndFindMobileElement(seat3);
+        WebElement element1=mergeAndFindMobileElement((WebElement) seat3);
         elementClick(element1, "selected seat3 to be deleted");
 //        elementClick(seat3,"selected seat3 to be deleted");
-        WebElement element2=mergeAndFindMobileElement(doneDeleteSeatsBtn);
+        WebElement element2=mergeAndFindMobileElement((WebElement) doneDeleteSeatsBtn);
         elementClick(element2, "doneDeleteSeatsBtn is tapped");
 //        elementClick(doneDeleteSeatsBtn,"doneDeleteSeatsBtn is tapped");
         pressArrowDown1();
@@ -147,40 +147,40 @@ public class TGOrderManagementScreen extends OrderTypeWindow{
 
     public void selectSeat1(){
 
-        WebElement element=mergeAndFindMobileElement(seat1);
+        WebElement element=mergeAndFindMobileElement((WebElement) seat1);
         elementClick(element, "selected seat 1");
 //        elementClick(seat1, "selected seat 1" );
     }
 
     public void selectSeat2(){
-        WebElement element=mergeAndFindMobileElement(seat2);
+        WebElement element=mergeAndFindMobileElement((WebElement) seat2);
         elementClick(element, "selected seat 2");
 //        elementClick(seat2, "selected seat 2" );
     }
 
     /****** Select Categories ******/
     public void selectPizzaCategory(){
-        WebElement element=mergeAndFindMobileElement(pizzaCategoryBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) pizzaCategoryBtn);
         elementClick(element, "Pizza Category selected");
 //        elementClick(pizzaCategoryBtn, "Pizza Category selected");
     }
 
     public void selectPastaCategory(){
         pressArrowDown2();
-        WebElement element=mergeAndFindMobileElement(pastaCategoryBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) pastaCategoryBtn);
         elementClick(element, "Pizza Category selected");
 //        elementClick(pastaCategoryBtn, "Pizza Category selected");
     }
 
     /****** Select Menu Items ******/
     public void selectMeatLoversPizza(){
-        WebElement element=mergeAndFindMobileElement(meatLoversPizzaBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) meatLoversPizzaBtn);
         elementClick(element, "Meat Lovers Pizza selected");
 //        elementClick(meatLoversPizzaBtn, "Meat Lovers Pizza selected");
     }
 
     public void selectRavioli(){
-        WebElement element=mergeAndFindMobileElement(ravioliBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) ravioliBtn);
         elementClick(element, "Ravioli selected");
 //        elementClick(ravioliBtn,"Ravioli selected");
     }
@@ -188,30 +188,30 @@ public class TGOrderManagementScreen extends OrderTypeWindow{
     /****** Select Modifiers ******/
 
     public void selectHam(){
-        WebElement element=mergeAndFindMobileElement(hamBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) hamBtn);
         elementClick(element, "Ham selected");
 //        elementClick(hamBtn, "Ham selected");
     }
     public void selectFetaCheese(){
-        WebElement element=mergeAndFindMobileElement(fetaCheeseBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) fetaCheeseBtn);
         elementClick(element, "feta cheese selected");
 //        elementClick(fetaCheeseBtn, "feta cheese selected");
     }
 
     public void selectNoEggPlant(){
-        WebElement element=mergeAndFindMobileElement(noEggPlantBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) noEggPlantBtn);
         elementClick(element, "No eggplant selected");
 //        elementClick(noEggPlantBtn, "No eggplant selected");
     }
 
     public void doneForTheMenuItem(){
-        WebElement element=mergeAndFindMobileElement(doneForThisMenuItem);
+        WebElement element=mergeAndFindMobileElement((WebElement) doneForThisMenuItem);
         elementClick(element, "done for the menu item");
 //        elementClick(doneForThisMenuItem, "done for the menu item");
     }
 
     public void pressFinish(){
-        WebElement element=mergeAndFindMobileElement(finishOrderBtn);
+        WebElement element=mergeAndFindMobileElement((WebElement) finishOrderBtn);
         elementClick(element, "finish button tapped");
 //        elementClick(finishOrderBtn, "finish button tapped");
     }

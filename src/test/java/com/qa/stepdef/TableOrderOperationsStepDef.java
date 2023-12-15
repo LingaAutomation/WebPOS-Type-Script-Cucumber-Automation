@@ -73,12 +73,12 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see close your sale$")
-    public void iShouldSeeCloseYourSale(){
+    public void iShouldSeeCloseYourSale() throws InterruptedException {
         Assert.assertEquals(new OrderManagementScreen().verifyCloseSale(),"Close Your Sale");
     }
 
     @And ("^I should see close the sale$")
-    public void iShouldSeeCloseTheSale(){
+    public void iShouldSeeCloseTheSale() throws InterruptedException {
         new OrderManagementScreen().closeTheSale();
     }
 
@@ -415,6 +415,15 @@ public class TableOrderOperationsStepDef {
     public void iSearchFor(String customerName)  {
         new OrderManagementScreen().searchForCustomer(customerName);
     }
+    @And("^I click By Name Email Button$")
+    public void iClickByNamEmailBtn()  {
+        new OrderManagementScreen().clickByNameEmail();
+    }
+
+    @And ("^I click add customer button from the Add customer window$")
+    public void iClickAddCustomerButtonFromTheAddCustomerWindow(){
+        new OrderManagementScreen().clickAddCustomerBtnFrom();
+    }
 
     @And("^I click \"([^\"]*)\" to select customer for the seat$")
     public void iClickToSelectCustomerForTheSeat(String customerName) {
@@ -557,6 +566,12 @@ public class TableOrderOperationsStepDef {
     public void iSelectModifierAs(String modifier) throws InterruptedException {
         new OrderManagementScreen().selectModifier(modifier);
     }
+
+    @When ("^I verify tax as \"([^\"]*)\"$")
+    public void iVerifyTaxAs(String tax) throws InterruptedException {
+        new OrderManagementScreen().iVerifyTaxAs(tax);
+    }
+
     @And("^I select modifier1 as \"([^\"]*)\"$")
     public void iSelectModifier1(String numb) {
         new OrderManagementScreen().selectModifier1(numb);
@@ -1360,6 +1375,12 @@ public class TableOrderOperationsStepDef {
     public void iShouldSeePaymentMadeOnThisCheckPopupMessage(){
 //        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin");
         Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin Walkin");
+    }
+
+    @Then ("^I should see payment made on this check popup message1$")
+    public void iShouldSeePaymentMadeOnThisCheckPopupMessage1(){
+//        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin");
+        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck1(),"Payment(s) made on this Check, Can you return this to Walkin tax exe");
     }
 
     @Then ("^I should see payment made on this check popup message for house account$")

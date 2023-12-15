@@ -7,13 +7,13 @@ import org.openqa.selenium.By;
 public class TGOrdersAndDriversListScreen extends BasePage {
 //    @iOSXCUITFindBy(xpath = "//*[@name='Table Layout']"  )
 //    private WebElement tableLayoutTab;
-    public By tableLayoutTab = By.id("Table Layout");
+    String tableLayoutTab = "Table Layout";
 
 
 
 //    @iOSXCUITFindBy( accessibility = "All"  )
 //    private WebElement allBtn;
-      public By allBtn = By.id("All");
+      String allBtn = "All";
 
     public void pressTableLayout() {
         WebElement element=mergeAndFindMobileElement(tableLayoutTab);

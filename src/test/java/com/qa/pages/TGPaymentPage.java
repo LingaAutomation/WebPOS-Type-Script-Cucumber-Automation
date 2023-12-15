@@ -523,7 +523,7 @@ public class TGPaymentPage extends BasePage {
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsPercentageWithTaxExemptForSandwiches(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC(#1)";
@@ -538,7 +538,7 @@ public class TGPaymentPage extends BasePage {
     }
 
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsPercentageWithTaxExemptForSandwiches1(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC";
@@ -565,7 +565,7 @@ public class TGPaymentPage extends BasePage {
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsPercentageWithTaxExemptForSandwiches(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC(#1)";
@@ -579,7 +579,7 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName1,expectedName1);
     }
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsPercentageWithTaxExemptForSandwiches1(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC";
@@ -593,7 +593,7 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName1,expectedName1);
     }
     public void verifyCCSidePaymentWithoutTipsAndTaxExemptForSandwiches(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC";
@@ -608,7 +608,7 @@ public class TGPaymentPage extends BasePage {
 
     }
     public void VerifyCCSidePaymentWithTipsAndTaxExemptForSandwiches(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC";
@@ -623,7 +623,7 @@ public class TGPaymentPage extends BasePage {
     }
 //nov 29
     public void VerifyCCSidePaymentWithTipsAndTaxExemptForSandwiches2(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC(#1)";
@@ -638,7 +638,7 @@ public class TGPaymentPage extends BasePage {
     }
     //new nov 18
     public void VerifyCCSidePaymentWithTipsAndTaxExemptForSandwiches1(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC(#1)";
@@ -652,7 +652,7 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName1,expectedName1);
     }
     public void verifyCCSidePaymentWithTipsAndVaryingGratuityForSandwiches(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
         String expectedName = "1. Side CC";
@@ -676,20 +676,15 @@ public class TGPaymentPage extends BasePage {
         }
     }
 
-    public void clickSubmitButton(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        try {
-            WebElement element = mergeAndFindMobileElement(submitButton);
-            elementClick(element, "click submitButton ");
-        }
-        catch(Exception e){
-            utils.log().info("submit button not clicked");
+    public void clickSubmitButton() throws InterruptedException {
+        Thread.sleep(2000);
 
-        }
+            WebElement element = mergeAndFindMobileElement(submitButton);
+               element.click();
     }
 
     public void clickCashPaymentTab(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(cashOnMenuItemPage);
         elementClick(element, "click cashOnMenuItemPage ");
     }
@@ -916,12 +911,12 @@ public class TGPaymentPage extends BasePage {
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(ccSidePaymentOption,direction);
+                    scrollToElement(By.id(ccSidePaymentOption),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(ccSidePaymentOption,direction);
+                scrollToElement(By.id(ccSidePaymentOption),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -931,25 +926,25 @@ public class TGPaymentPage extends BasePage {
     }
 
     public void clickCCSidePaymentMethod(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(ccSidePaymentOption);
         elementClick(element, "click ccSidePaymentOption ");
     }
 
     public void clickNoTipButton(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(noTipButton);
         elementClick(element, "click noTipButton ");
     }
 
     public void click10TLPartialPaymentOption(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(partialPaymentForTenPrice);
         elementClick(element, "click partialPaymentForTenPrice ");
     }
 
     public void verifyPartialPaymentWithTen(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(partialPaymentPriceSummary);
         String actualName=elementGetText(element,"verify partialPaymentPriceSummary");
         String expectedName = "990,00+10,00";
@@ -989,7 +984,7 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName,expectedName);
     }
     public void verifyLastSplitPaidAmount(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(remainderSplitAmount);
         String actualName=elementGetText(element,"verify remainderSplitAmount");
         String expectedName = "550,00";
@@ -997,7 +992,7 @@ public class TGPaymentPage extends BasePage {
         actualName.equals(expectedName);
     }
     public void verifyBalanceDueChangedNoDue(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(balanceDue);
         String txtBalanceDue=elementGetText(element,"verify balanceDue");
 
@@ -1017,7 +1012,7 @@ public class TGPaymentPage extends BasePage {
         return null;
     }*/
     public void verifyChangedOrderAmount(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element = mergeAndFindMobileElement(paymentTextBox);
         String actualName=getAttribute(element,"value");
         String expectedName = "TL 0,00";
@@ -1044,7 +1039,7 @@ public class TGPaymentPage extends BasePage {
     }
 
     public void enterPartialAmountOrder(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element1 = mergeAndFindMobileElement(numberOne);
         elementClick(element1, "click numberOne ");
 
@@ -1057,7 +1052,7 @@ public class TGPaymentPage extends BasePage {
     }
 
     public void verifyPartialPaymentShortChangePopup(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element3= mergeAndFindMobileElement(shortChangedPopup);
         String expectedName=elementGetText(element3,"verify shortChangedPopup");
         String actualName = "Please pay TL 33,00";
@@ -1069,7 +1064,7 @@ public class TGPaymentPage extends BasePage {
     }
     //nov 18
     public void verifyNoMorePaymentPopup(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element3= mergeAndFindMobileElement(noMorePaymentPopup);
         String expectedName=elementGetText(element3,"verify noMorePaymentPopup");
         String actualName = "No More payments Needed";
@@ -1091,7 +1086,7 @@ public class TGPaymentPage extends BasePage {
 //        elementClick(element1, "click doneButton ");
     }
     public void verifySelectPaymentWarningPopup1(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element= mergeAndFindMobileElement(selectPaymentTryAgainWarningPopup);
         String expectedName=elementGetText(element,"verify selectPaymentTryAgainWarningPopup");
         String actualName = "Select a Payment and try again!";
@@ -1103,7 +1098,7 @@ public class TGPaymentPage extends BasePage {
     }
 
     public void verifyDeletedPaidCheck(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         WebElement element= mergeAndFindMobileElement(emptyPaidOrder);
         String expectedName=elementGetText(element,"verify emptyPaidOrder");
         String actualName = "";
@@ -1111,7 +1106,7 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName,expectedName);
     }
     public void verifyLastClosedTableServiceTypeCheck(){
-        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"TABLESERVICE\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
@@ -1891,7 +1886,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTaxExemptAsSelectCustomerAndWithTips(){
         WebElement element = mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsSetPriceWithTaxExemptForSandwiches2);
         String actualName1=elementGetText(element,"verify ccSidePaymentMethod");
-        String expectedName1 = "999,90+100,00";
+        String expectedName1 = "1.00+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }

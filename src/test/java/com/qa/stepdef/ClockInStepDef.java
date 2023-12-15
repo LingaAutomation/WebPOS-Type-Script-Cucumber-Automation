@@ -112,12 +112,12 @@ public class ClockInStepDef {
     }
 
     @And("^I click power button$")
-    public void iClickPowerButton() {
+    public void iClickPowerButton() throws InterruptedException {
         new LogOuts().pressPowerBtn();
     }
 
     @And("^I log out from BarTab user$")
-    public void iLogOutFromBarTabUser() {
+    public void iLogOutFromBarTabUser() throws InterruptedException {
         new LogOuts().logOutAfterClockInForBarTab();
     }
 

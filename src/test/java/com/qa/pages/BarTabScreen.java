@@ -21,14 +21,14 @@ public class BarTabScreen extends OrderManagementScreen{
     @FindBy(xpath = "BarTab")
     WebElement barTab;
 
-    @FindBy(xpath = "New Tab")
+    @FindBy(xpath = "(//span[contains(.,'New Tab')])[1]")
     WebElement newTabBar;
 
 
     @FindBy(xpath="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
     WebElement barTab1;
 
-    @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]")
+    @FindBy (xpath = "")
     WebElement newTab;
 
     @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
@@ -45,22 +45,22 @@ public class BarTabScreen extends OrderManagementScreen{
 
     String settings = "(//linga-icon[@symbol='operationGear'])[1]";
 
-    @FindBy (xpath = "POS Settings")
+    @FindBy (xpath = "(//label[contains(.,'POS Settings')])[1]")
     WebElement POSsettings;
 
     @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[10]/XCUIElementTypeSwitch")
     WebElement QuickBar;
 
-    @FindBy (xpath = "ToggleIcon")
+    @FindBy (xpath = "//linga-icon[@symbol='menuIcon']")
     WebElement ToggleIcon;
 
-    @FindBy (xpath = "POS")
+    @FindBy (xpath = "(//span[contains(.,'POS')])[1]")
     WebElement POSIcon;
 
     @FindBy(xpath = "BarTab")
     WebElement barTabScreen;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
+    @FindBy(xpath = "//input[@placeholder='Search Name or Check Number']")
     WebElement searchFieldOnBarTab;
 
 

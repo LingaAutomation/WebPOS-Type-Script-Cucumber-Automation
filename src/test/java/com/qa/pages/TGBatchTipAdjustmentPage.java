@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TGBatchTipAdjustmentPage extends BasePage {
-    //private By clearTip = By.xpath("");
+    //private By clearTip ="");
 
 
     public void selectDeviceTypeForBatchAndAdjustment(){
@@ -59,12 +59,12 @@ public class TGBatchTipAdjustmentPage extends BasePage {
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(ccSidePaymentOptionTable,direction);
+                    scrollToElement(By.id(ccSidePaymentOptionTable),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(ccSidePaymentOptionTable,direction);
+                scrollToElement(By.id(ccSidePaymentOptionTable),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -76,29 +76,29 @@ public class TGBatchTipAdjustmentPage extends BasePage {
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"Side CC - Others\"])[last()]");
         phoneOrders.get(phoneOrders.size() - 1).click();
-//        List<WebElement> phoneOrders = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable"));
+//        List<WebElement> phoneOrders = (List<WebElement>) driver.findElements"//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable"));
 //
 //        for (int index = 0; index < phoneOrders.size(); index++) {
 //
-//            phoneOrders = (List<WebElement>) driver.findElements(By.xpath("(//XCUIElementTypeStaticText[@name=\"Side CC - Others\"])[last()]"));
+//            phoneOrders = (List<WebElement>) driver.findElements"(//XCUIElementTypeStaticText[@name=\"Side CC - Others\"])[last()]"));
 //
 //            phoneOrders.get(phoneOrders.size() - 1).click();
 //        }
     }
 
     public void verifyTipForPaidCheckWithCCSide(){
-        WebElement actualValue=mergeAndFindMobileElement(By.xpath("//XCUIElementTypeStaticText[@name=\"100,00\"]"));
+        WebElement actualValue=mergeAndFindMobileElement("//XCUIElementTypeStaticText[@name=\"100,00\"]");
         String actualName = elementGetText(actualValue,"Get Actual Amount");
-//        String actualName = driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"100,00\"]")).getText();
+//        String actualName = driver.findElement"//XCUIElementTypeStaticText[@name=\"100,00\"]")).getText();
         String expectedName = "100,00";
 
         Assert.assertEquals(actualName,expectedName);
     }
 //nov 29
     public void verifyTipForPaidCheckWithCCSide1(){
-        WebElement actualValue=mergeAndFindMobileElement(By.xpath("//XCUIElementTypeStaticText[@name=\"1.000,00\"]"));
+        WebElement actualValue=mergeAndFindMobileElement("//XCUIElementTypeStaticText[@name=\"1.000,00\"]");
         String actualName = elementGetText(actualValue,"Get Actual Amount");
-//        String actualName = driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"100,00\"]")).getText();
+//        String actualName = driver.findElement"//XCUIElementTypeStaticText[@name=\"100,00\"]")).getText();
         String expectedName = "1.000,00";
 
         Assert.assertEquals(actualName,expectedName);
@@ -115,12 +115,12 @@ public class TGBatchTipAdjustmentPage extends BasePage {
                     found = true;
                     break;
                 } else {
-                    scrollToElement(lastCcSidePaymentOption,direction);
+                    scrollToElement(By.id(lastCcSidePaymentOption),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(lastCcSidePaymentOption,direction);
+                scrollToElement(By.id(lastCcSidePaymentOption),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -164,12 +164,12 @@ public class TGBatchTipAdjustmentPage extends BasePage {
                     found = true;
                     break;
                 } else {
-                    scrollToElement(lastCcSidePaymentOption,direction);
+                    scrollToElement(By.id(lastCcSidePaymentOption),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(lastCcSidePaymentOption,direction);
+                scrollToElement(By.id(lastCcSidePaymentOption),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());

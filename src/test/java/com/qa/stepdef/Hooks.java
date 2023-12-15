@@ -24,7 +24,7 @@ import static com.qa.utils.TestUtils.driver;
 
 public class Hooks {
 
-    //public AppiumDriver driver;
+
 
     public static int i;
 
@@ -57,7 +57,10 @@ public class Hooks {
             File screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
             scenario.attach(fileContent, "image/png", "screenshot");
-            driver = null;
+            driver.close();
+//            driver.quit();
+
+driver=null;
 
             }
 

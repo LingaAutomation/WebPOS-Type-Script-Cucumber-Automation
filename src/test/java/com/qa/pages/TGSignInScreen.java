@@ -13,9 +13,9 @@ public class TGSignInScreen extends BasePage {
 
 //    @iOSXCUITFindBy(id = "Sign In" )
 //    private WebElement signInBtn;
-    public By signInBtn = By.id("Sign In");
+    String signInBtn = "Sign In";
 
-    private By signInButton = By.id("Sign In");
+    String signInButton = "Sign In";
     public TGSignInScreen(){
     }
 
@@ -23,7 +23,7 @@ public class TGSignInScreen extends BasePage {
 //    }
 
     public TGUserLoginScreen pressSignInBtn() {
-        waitForVisibility(signInBtn);
+        waitForVisibility(By.id(signInBtn));
         WebElement element=mergeAndFindMobileElement(signInBtn);
         elementClick(element, "press sign in button");
 //        elementClick(signInBtn, "press sign in button");

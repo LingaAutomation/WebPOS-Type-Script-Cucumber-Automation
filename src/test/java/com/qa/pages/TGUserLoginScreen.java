@@ -11,33 +11,34 @@ public class TGUserLoginScreen extends SignInScreen{
 
 //    @iOSXCUITFindBy (id ="User Login")
 //    private WebElement titleTxt;
-    public By titleTxt = By.id("User Login");
+    String titleTxt = "User Login";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField")
 //    //@iOSXCUITFindBy (id = "ID")
 //    private WebElement eMailTxtFld;
 
-    public By eMailTxtFld = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField");
+    String eMailTxtFld = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField")
 //    private WebElement passwordTxtFld;
-    public By passwordTxtFld = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField");
+    String passwordTxtFld = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField";
 
 //    @iOSXCUITFindBy (id = "Finish")
 //    private WebElement finishBtn;
-    public By finishBtn = By.id("Finish");
+    String finishBtn = "Finish";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Invalid username or password\"]")
 //    private WebElement errTxt;
-//    public By errTxt = By.xpath("//XCUIElementTypeStaticText[@name=\"Invalid username or password\"]");
-    public By errTxt = By.id("Invalid username or password");
+//    String errTxt = "//XCUIElementTypeStaticText[@name=\"Invalid username or password\"]";
+    String errTxt = "Invalid username or password";
 
-//    private By cancel = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
-    public By cancel = By.id("Cancel");
+//    String cancel = "//XCUIElementTypeStaticText[@name=\"Cancel\"]";
+    String cancel = "Cancel";
 
-    private By clearEmailXpath = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField");
+    String clearEmailXpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField";
 
-    private By clearPasswordXPath = By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField");
+    String clearPasswordXPath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField";
+
 
 
     public String getTitle() {
@@ -75,7 +76,7 @@ public class TGUserLoginScreen extends SignInScreen{
     }
 
     public String getErrTxt() {
-        waitForVisibility(errTxt);
+        waitForVisibility(By.id(errTxt));
         WebElement element=mergeAndFindMobileElement(errTxt);
         String err = elementGetText(element, "error text is - ");
         return err;
@@ -105,6 +106,5 @@ public class TGUserLoginScreen extends SignInScreen{
         WebElement element1=mergeAndFindMobileElement(clearPasswordXPath);
         element1.clear();
     }
-
 
 }

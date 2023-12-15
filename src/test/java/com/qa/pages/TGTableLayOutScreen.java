@@ -6,232 +6,230 @@ import org.openqa.selenium.By;
 
 public class TGTableLayOutScreen extends OrdersAndDriversListScreen {
 
-    public By T1 = By.id("T1");
+    String T1 = "T1";
 
 //    @iOSXCUITFindBy( accessibility = "T1"  )
 //    private WebElement T1;
 
-    public By T2 = By.id("T2");
+    String T2 = "T2";
 
 //    @iOSXCUITFindBy( accessibility = "T2" )
 //    private WebElement T2;
 
-    public By T3 = By.id("T3");
+    String T3 = "T3";
 
 //    @iOSXCUITFindBy( accessibility = "T3" )
 //    private WebElement T3;
 
-    public By T4 = By.id("T4");
+    String T4 = "T4";
 
 //    @iOSXCUITFindBy( accessibility = "T4" )
 //    private WebElement T4;
 
-    public By T5 = By.id("T5");
+    String T5 = "T5";
 
 //    @iOSXCUITFindBy( accessibility = "T5" )
 //    private WebElement T5;
 
-    public By T6 = By.id("T6");
+    String T6 = "T6";
 
 //    @iOSXCUITFindBy( accessibility = "T6" )
 //    private WebElement T6;
 
-    public By T7 = By.id("T7");
+    String T7 = "T7";
 
 //    @iOSXCUITFindBy( accessibility = "T7" )
 //    private WebElement T7;
 
-    public By T8 = By.id("T8");
+    String T8 = "T8";
 
 //    @iOSXCUITFindBy( accessibility = "T8" )
 //    private WebElement T8;
 
-    public By T9 = By.id("T9");
+    String T9 = "T9";
 
 //    @iOSXCUITFindBy( accessibility = "T9" )
 //    private WebElement T9;
 
-    public By T10 = By.id("T10");
+    String T10 = "T10";
 
 //    @iOSXCUITFindBy( accessibility = "T10" )
 //    private WebElement T10;
 
-    public By T11 = By.id("T11");
+    String T11 = "T11";
 
 //    @iOSXCUITFindBy( accessibility = "T11" )
 //    private WebElement T11;
 
-    public By T12 = By.id("T12");
+    String T12 = "T12";
 
 //    @iOSXCUITFindBy( accessibility = "T12" )
 //    private WebElement T12;
 
-    public By T13 = By.id("T13");
+    String T13 = "T13";
 
 //    @iOSXCUITFindBy( accessibility = "T13" )
 //    private WebElement T13;
 
-    public By T14 = By.id("T14");
+    String T14 = "T14";
 
 //    @iOSXCUITFindBy( accessibility = "T14" )
 //    private WebElement T14;
 
-    public By T15 = By.id("T15");
+    String T15 = "T15";
 
 //    @iOSXCUITFindBy( accessibility = "T15" )
 //    private WebElement T15;
 
-    public By T16 = By.id("T16");
+    String T16 = "T16";
 
 //    @iOSXCUITFindBy( accessibility = "T16" )
 //    private WebElement T16;
 
-    public By T17 = By.id("T17");
+    String T17 = "T17";
 
 //    @iOSXCUITFindBy( accessibility = "T17" )
 //    private WebElement T17;
 
-    public By T18 = By.id("T18");
+    String T18 = "T18";
 
 //    @iOSXCUITFindBy( accessibility = "T18" )
 //    private WebElement T18;
 
-    public By T19 = By.id("T19");
+    String T19 = "T19";
 
 //    @iOSXCUITFindBy( accessibility = "T19" )
 //    private WebElement T19;
 
-    public By T20 = By.id("T20");
+    String T20 = "T20";
 
 //    @iOSXCUITFindBy( accessibility = "T20" )
 //    private WebElement T20;
 
-    public By T21 = By.id("T21");
+    String T21 = "T21";
 
 //    @iOSXCUITFindBy( accessibility = "T21" )
 //    private WebElement T21;
 
-    public By T22 = By.id("T22");
+    String T22 = "T22";
 
 //    @iOSXCUITFindBy( accessibility = "T22" )
 //    private WebElement T22;
 
-    public By T23 = By.id("T23");
+    String T23 = "T23";
 
 //    @iOSXCUITFindBy( accessibility = "T23" )
 //    private WebElement T23;
 
-    public By T24 = By.id("T24");
+    String T24 = "T24";
 
 //    @iOSXCUITFindBy( accessibility = "T24" )
 //    private WebElement T24;
 
-    public By T25 = By.id("T25");
+    String T25 = "T25";
 
 //    @iOSXCUITFindBy( accessibility = "T25" )
 //    private WebElement T25;
 
-    public By seatNo1 = By.id("1");
+    String seatNo1 = "1";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='1']" )
 //    private WebElement seatNo1;
 
-    public By seatNo2 = By.id("2");
+    String seatNo2 = "2";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='2']" )
 //    private WebElement seatNo2;
 
-    public By seatNo3 = By.id("3");
+    String seatNo3 = "3";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='3']" )
 //    private WebElement seatNo3;
 
-    public By seatNo4 = By.id("4");
+    String seatNo4 = "4";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='4']" )
 //    private WebElement seatNo4;
 
-    public By seatNo5 = By.id("5");
+    String seatNo5 = "5";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='5']" )
 //    private WebElement seatNo5;
 
-    public By seatNo6 = By.id("6");
+    String seatNo6 = "6";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='6']" )
 //    private WebElement seatNo6;
 
-    public By seatNo7 = By.id("7");
+    String seatNo7 = "7";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='7']" )
 //    private WebElement seatNo7;
 
-    public By seatNo8 = By.id("8");
+    String seatNo8 = "8";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='8']" )
 //    private WebElement seatNo8;
 
-    public By seatNo9 = By.id("9");
+    String seatNo9 = "9";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='9']" )
 //    private WebElement seatNo9;
 
-    public By continueBtn = By.id("Continue");
+    String continueBtn = "Continue";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='Continue']" )
 //    private WebElement continueBtn;
 
-    public By tableSeated = By.xpath("//XCUIElementTypeStaticText[@name=\"00:00\"]");
+    String tableSeated = "//XCUIElementTypeStaticText[@name=\"00:00\"]";
 
 //    @iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"00:00\"]" )
 //    private WebElement tableSeated;
 
-    public By checkSeatNo = By.id("2");
+    String checkSeatNo = "2";
 
 //    @iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"2\"]" )
 //    private WebElement checkSeatNo;
 
-    public By mergeBtn = By.id("Merge");
+    String mergeBtn = "Merge";
 
 //    @iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]" )
 //    private WebElement mergeBtn;
 
-    public By mergeDoneBtn = By.id("Done");
+    String mergeDoneBtn = "Done";
 
 //    @iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Done\"]" )
 //    private WebElement mergeDoneBtn;
 
-    public By transferBtn = By.id("Transfer");
+    String transferBtn = "Transfer";
 
 //    @iOSXCUITFindBy( accessibility = "Transfer" )
 //    private WebElement transferBtn;
 
-    public By transferToTableBtn = By.id("Transfer to Table");
+    String transferToTableBtn = "Transfer to Table";
 
 //    @iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Transfer to Table\"]" )
 //    private WebElement transferToTableBtn;
 
-    public By selectTransferFromTableBtn = By.id("Floor 1-T1");
+    String selectTransferFromTableBtn = "Floor 1-T1";
 
 //    @iOSXCUITFindBy( accessibility = "Floor 1-T1" )
 //    private WebElement selectTransferFromTableBtn;
 
-    public By selectTransferToTableBtn = By.xpath("//XCUIElementTypeStaticText[@name=\"Floor 1-T10\"])[1]");
+    String selectTransferToTableBtn = "//XCUIElementTypeStaticText[@name=\"Floor 1-T10\"])[1]";
 
 //    @iOSXCUITFindBy( xpath = ("//XCUIElementTypeStaticText[@name=\"Floor 1-T10\"])[1]") )
 //    private WebElement selectTransferToTableBtn;
 
-    public By transferDoneBtn = By.id("Done");
+    String transferDoneBtn = "Done";
 
 //    @iOSXCUITFindBy( xpath = "//XCUIElementTypeStaticText[@name=\"Done\"]" )
 //    private WebElement transferDoneBtn;
 
-    public By tableToTransfer = By.id("T1");
+    String tableToTransfer = "T1";
 
 //    @iOSXCUITFindBy( xpath = "//*[@name='T1']" )
 //    private WebElement tableToTransfer;
-
-
 
     /*Check if locators for common tables names in Floor1 and Floor2 are the same!!!!!Don't delete this comment!!!*/
 
@@ -566,6 +564,8 @@ public class TGTableLayOutScreen extends OrdersAndDriversListScreen {
             utils.log().info("Error table is not seated");
         }
     }
+
+
 
 
 }

@@ -432,7 +432,7 @@ public class TGCheckOptionPage extends BasePage {
     public void verifyCheckOptionPage(){
         WebElement element = mergeAndFindMobileElement(checkOptionPageTitle);
         String actualName=elementGetText(element,"verify the checkOptionPageTitle");
-        String  expectedName = "Check Options";
+        String  expectedName = "Check Option";
 
         Assert.assertEquals(expectedName,actualName);
     }
@@ -580,12 +580,12 @@ public class TGCheckOptionPage extends BasePage {
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(entreeCoursingOption,direction);
+                    scrollToElement(By.id(entreeCoursingOption),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(entreeCoursingOption,direction);
+                scrollToElement(By.id(entreeCoursingOption),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -680,12 +680,12 @@ public class TGCheckOptionPage extends BasePage {
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(beforeTaxForOpenItem,direction);
+                    scrollToElement(By.id(beforeTaxForOpenItem),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(beforeTaxForOpenItem,direction);
+                scrollToElement(By.id(beforeTaxForOpenItem),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());

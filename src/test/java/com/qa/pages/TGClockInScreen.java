@@ -11,97 +11,98 @@ public class TGClockInScreen extends UserLoginScreen{
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"0\"]")
 //    private WebElement pin0;
 
-    public By pin0 = By.id("0");
+   String pin0 = "0";
 
-    public By pin1 = By.id("1");
+   String pin1 = "1";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"1\"]")
 //    private WebElement pin1;
 
-    public By pin2 = By.id("2");
+   String pin2 = "2";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"2\"]")
 //    private WebElement pin2;
 
-    public By pin3 = By.id("3");
+   String pin3 = "3";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"3\"]")
 //    private WebElement pin3;
 
-    public By pin4 = By.id("4");
+   String pin4 = "4";
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"4\"]")
 //    private WebElement pin4;
 
-    public By pin5 = By.id("5");
+   String pin5 = "5";
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"5\"]")
 //    private WebElement pin5;
 
-    public By pin6 = By.id("6");
+   String pin6 = "6";
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"6\"]")
 //    private WebElement pin6;
 
-    public By pin7 = By.id("7");
+   String pin7 = "7";
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"7\"]")
 //    private WebElement pin7;
 
-    public By pin8 = By.id("8");
+   String pin8 = "8";
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"8\"]")
 //    private WebElement pin8;
 
-    public By pin9 = By.id("9");
+   String pin9 = "9";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"9\"]")
 //    private WebElement pin9;
 
-    public By clearBtn = By.id("Clear");
+   String clearBtn = "Clear";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Clear\"]")
 //    private WebElement clearBtn;
 
-    public By loginBtn = By.id("Login");
+   String loginBtn = "Login";
 
 //    @iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Login\"]")
 //    private WebElement loginBtn;
 
-    public By titleTxt = By.id("To Login enter your ID number or swipe the card");
+   String titleTxt = "To Login enter your ID number or swipe the card";
 
 //    @iOSXCUITFindBy (id = "To Login enter your ID number or swipe the card")
 //    private WebElement titleTxt;
 
-    public By doneBtn = By.id("Done");
+   String doneBtn = "Done";
 
 //    @iOSXCUITFindBy (xpath  = "//XCUIElementTypeButton[@name='Done']")
 //    private WebElement doneBtn;
 
-    public By errTxt = By.id("Invalid Pin");
+   String errTxt = "Invalid Pin";
 
 //    @iOSXCUITFindBy (xpath  = "//XCUIElementTypeStaticText[@name=\"Invalid Pin\"]")
 //    private WebElement errTxt;
 
-    public By pinEntryInfo = By.id("To Login enter your ID number or swipe the card");
+   String pinEntryInfo = "To Login enter your ID number or swipe the card";
 
-    public By clockInButton = By.id("Clock In");
+   String clockInButton = "Clock In";
 
-    public By continueButton = By.id("Continue");
+   String continueButton = "Continue";
 
-    public By clockInSuccessMessage = By.id("Clocked IN successfully");
+   String clockInSuccessMessage = "Clocked IN successfully";
 
 
 
-//    private By pinEntryInfo = By.xpath("//XCUIElementTypeStaticText[@name=\"To Login enter your ID number or swipe the card\"]");
-//    private By clockInButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Clock In\"]");
-//    private By continueButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Continue\"]");
-//    private By clockInSuccessMessage = By.xpath("//XCUIElementTypeStaticText[@name=\"Clocked IN successfully\"]");
+//    private By pinEntryInfo = By.xpath("//XCUIElementTypeStaticText[@name=\"To Login enter your ID number or swipe the card\"]";
+//    private By clockInButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Clock In\"]";
+//    private By continueButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Continue\"]";
+//    private By clockInSuccessMessage = By.xpath("//XCUIElementTypeStaticText[@name=\"Clocked IN successfully\"]";
+
 
     public String getTitle() {
-        WebElement element = mergeAndFindMobileElement(titleTxt);
+        WebElement element = mergeAndFindMobileElement( titleTxt);
         waitForVisibility(element);
 //        WebElement element = mergeAndFindMobileElement(titleTxt);
         return elementGetText(element, "user login window's title is - ");
     }
 
     public void pressPin0() {
-        WebElement element = mergeAndFindMobileElement(pin0);
+        WebElement element = mergeAndFindMobileElement( pin0);
         elementClick(element,"Select Brushetta MenuItem");
 //        elementClick(pin0, "Tapped pin0");
     }

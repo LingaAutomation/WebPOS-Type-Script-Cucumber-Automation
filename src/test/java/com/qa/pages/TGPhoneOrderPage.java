@@ -234,15 +234,15 @@ public class TGPhoneOrderPage extends BasePage{
             try {
                 if (isElementExists()) {
                     found = true;
-                    driver.findElement(lastForHereOrderType).click();
+                    driver.findElement(By.id(lastForHereOrderType)).click();
                     break;
                 } else {
-                    scrollToElement(lastForHereOrderType,direction);
+                    scrollToElement(By.id(lastForHereOrderType),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(lastForHereOrderType,direction);
+                scrollToElement(By.id(lastForHereOrderType),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
@@ -265,12 +265,12 @@ public class TGPhoneOrderPage extends BasePage{
                     break;
                 } else {
                     //LOGGER.info(ccSidePaymentOption + " - FOUNDED but not displayed!");
-                    scrollToElement(forHereOrderType,direction);
+                    scrollToElement(By.id(forHereOrderType),direction);
                     i++;
                     continue;
                 }
             } catch (Exception e) {
-                scrollToElement(forHereOrderType,direction);
+                scrollToElement(By.id(forHereOrderType),direction);
                 i++;
                 if (i == 3)
                     Assert.fail(e.getMessage());
