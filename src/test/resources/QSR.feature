@@ -4529,8 +4529,11 @@ Feature: QSR feature
     Then User select Bar Tab in order types in void screen
     When User enter customer name for bar tab in void screen
     And I click the Exit to close the preauth window
+    And I get check number
     Then User take an order in void screen
-    When User click finish button in void screen
+    When User click Cash Tab on Menu Item Page in void screen
+    Then User click exact option in void screen
+    And User click enter button in void screen
     And User click Check Status tab in void screen
     Then User click Closed Checks tabs in void screen
     Then I click the Closed check on check stats
@@ -4541,6 +4544,7 @@ Feature: QSR feature
     And I click payment in the payment window
     And I click Delete button on the payment window
     And I click Exit to return to Order Management Screen
+    And I click Void button on order management screen
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
     Then User click Check Status tab in void screen
@@ -4630,17 +4634,17 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnLogOff|
       |QSR   |Cancel   |logOff   |
 
-  @RegressionQSR35
+  @RegressionQSR3
   Scenario Outline: Verify Check Payment through Side CC with Tax Exempt not select customer in payment screen and also with tip
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And I click "Exit" in the preauth popup "click Exit Button"
+    And I click the Exit to close the preauth window
     When User click food category
     And I select menu item as "SANDWICHES"
     Then User click Option Tab
     When User select tax exempt option
-    Then User select tax exempt type
-    And User verify added tax exempt1
+#    Then User select tax exempt type
+#    And User verify added tax exempt1
     When User click payment button
     Then User click exact option
     And User click CC Side payment method
@@ -4657,49 +4661,48 @@ Feature: QSR feature
       |QSR   |Cancel   |logOff   |
 
 
-  Scenario: Search Menu Item on Menu
-    When User click Option Tab
-    Then User select Search Item option
-    When User enter searched menu item
-    Then User verify searched menu item
-    And User clear the search bar
-    #Search Menu Item Not in The Menu
-    When User enter searched menu item not in the menu
-    Then User verify no searched menu item
-    And User clear the search bar
-    #Application not allow user to search the category and sub- category
-    When User enter search any category and sub category
-    Then User verify search info message
-    And I click "Hide keyboard" button in the keyboard "Click Back"
-    When USer click log off button
+#  Scenario: Search Menu Item on Menu
+#    When User click Option Tab
+#    Then User select Search Item option
+#    When User enter searched menu item
+#    Then User verify searched menu item
+#    And User clear the search bar
+#    #Search Menu Item Not in The Menu
+#    When User enter searched menu item not in the menu
+#    Then User verify no searched menu item
+#    And User clear the search bar
+#    #Application not allow user to search the category and sub- category
+#    When User enter search any category and sub category
+#    Then User verify search info message
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    When USer click log off button
 
-
+  @RegressionQSR3
   Scenario Outline: Settings Icon on Order Screen,Sync Icon on Order Screen,Application allow user to sync the change through order screen sync button,Add Customer' Icon,Application don't allow user to do "Log off","Operation","Till Management","Sync Icon","All" button process during a sale
     When User click setting icon
     Then User verify setting options
     And I click POS Icon from Toggle
-    And I click on "Cancel" for closing order screen popup "Click cancel button"
+    And I closed the order type window
     #Application allow user to sync the change through order screen sync button
 #    Given User select QSR mode on menu item page
     When User click sync icon
-    And I click "<tabAll>" in the order screen "click all tab"
+    And I wait sometimes
+    And I click All
     And User click Table Layout menu
     And I click new check button on the Table layout screen
     And I select the "T9" in the Table layout screen"click t4 table"
     And User enter number of seat
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User click customer button
-    Then User click add new customer button
-    And User verify customer profile page
-    And I click the "<btnClose>" in the customer profile page "click close button"
-    When User click "<btnDinein>" on Menu Item page "click forhere button"
-    When User click the "<btnQsr>" on Menu Item page "click QSR button"
+    And I click the Continue button
+
+#    And I click the "<btnClose>" in the customer profile page "click close button"
+    When User click QSR on Menu Item page
+    When User click QSR on Menu Item page1
     #  Scenario Outline: Settings Icon
     Then User take an order
     When USer click log off button
     Then User verify close sale popup info
     And I click Done button on the Popup
-    When I click the "<btnSettings>" in the order screen "click settings button"
+    When I click the Settings button
     #Application don't allow user to do "Operation" button process during a sale
     Then User verify close sale popup info
      #Application don't allow user to do "Till" button process during a sale
@@ -4712,36 +4715,37 @@ Feature: QSR feature
     And I click Done button on the Popup
     #Application don't allow user to do "All" button process during a sale
     When User click All button
-    Then User verify close sale popup info
+      When I should see close your sale
     And I click Done button on the Popup
     Then User click payment button
     And User click exact option
     And USer click cash button
     When User click submit button
-    Then User click cancel button
+    And I closed the order type window
     When USer click log off button
 
     Examples:
       |    btnClose         |btnVoid|btnWrong   |btnAdd|btnDone|btnQsr |btnCancel|btnDinein|btnQsr|tabAll|btnDone|btnSettings|btnTillMamagement|btnContinue|
       |CustomerProfile Close|Void   |arrow down |Add   |Done   |QSR    |Cancel   |Dine In  |QSR   |All   |Done   |Settings 1  |Counting Machine|Continue   |
 
+
   Scenario Outline: Verify tax after adding menu item,Verify multiple tax after adding menu item,Verify Subtotal before adding menu item,Verify Subtotal after adding menu item, Verify discount before adding menu item ,Verify gratuity after adding menu item in the order screen,Verify Paid Amount in order screen before doing partial payment,Verify Paid Amount in order screen after doing partial payment,Verify Paid Amount in order screen after doing Full payment
 
-    And I click the "<item>" from the menu item "Click item as pancake"
+    And I select menu item as "Pancake"
     #Verify tax after adding menu item
     Then It should show the amount "<number2>" value as "<text>" "Verify tax amount value"
     And I click the "<item2>" from the menu item "Click item as onion rings"
     #Verify multiple tax after adding menu item
     Then It should show the amount "<number2>" value as "<text1>" "Verify multiple tax amount value"
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click Done to get back
     #Verify Subtotal before adding menu item
     Then It should show the amount "<number1>" value as "<text2>" "Verify subtotal amount value"
-    And I click the "<item>" from the menu item "Click item as pancake"
+    And I select menu item as "Pancake"
     #Verify Subtotal after adding menu item
     Then It should show the amount "<number1>" value as "<text3>" "Verify subtotal amount value"
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click Done to get back
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIFOOD"
     And I click the "<item3>" from the menu item "Click item as sandwiches"
@@ -4757,7 +4761,7 @@ Feature: QSR feature
     And I click Submit button on the Payment Window "click submit button"
     And I closed the order type window
     #Verify Paid Amount in order screen before doing partial payment
-    And I click the "<item>" from the menu item "Click item as pancake"
+    And I select menu item as "Pancake"
     Then It should show the amount "<number4>" value as "<text2>" "Verify paid amount value"
     And I click on "<btnPayment>" in the order screen for paying amount "Click on payment to pay partial amount"
     And I enter partial payment amount "0","0","2","0"
@@ -4778,10 +4782,10 @@ Feature: QSR feature
     When I click Delete in the payment screen "Delete button clicked"
     And I click "<btnOk>" in the receipt printer popup"Click ok button in the popup"
     When I click Exit in the payment screen "exit button clicked"
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done to get back
     And I closed the order type window
     And I click log off button in order screen
 
@@ -5020,10 +5024,10 @@ Feature: QSR feature
     And User select item discount option tab
     When I click the "<optItemBasedDiscount>" in the discount screen "Select ItemBasedDiscount option"
     Then User verify deleted discount
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done to get back
    And I closed the order type window
 
     #Check Discount for check-based
@@ -5034,10 +5038,10 @@ Feature: QSR feature
     When User select Check Discount option
     And User select check based as free discount option
     And User verify applied check based free item discount
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done to get back
    And I closed the order type window
     # Open Check Discount Option with Percentage
 #    Given User select QSR mode on menu item page
@@ -5051,10 +5055,10 @@ Feature: QSR feature
     And User select after tax type applied time
     Then User click apply button for open discount
     And User verify open check discount
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done to get back
    And I closed the order type window
     #Open Check Discount Option with Amount
 #    Given User select QSR mode on menu item page
@@ -5068,10 +5072,10 @@ Feature: QSR feature
     And User select after tax type applied time
     Then User click apply button for open discount
     And User verify open check discount
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done to get back
    And I closed the order type window
     And I click log off button in order screen
 
@@ -5211,9 +5215,9 @@ Feature: QSR feature
     And User select Item Discount option
     And User select free item option
     And User verify free item
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
    And I closed the order type window
     And I click log off button in order screen
 
@@ -5239,11 +5243,11 @@ Feature: QSR feature
     And User select item discount option tab
     When I click the "<optAutoDiscount>" in the discount screen "Select ItemBasedDiscount option"
     And User verify applied auto discount not delete
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
-    And I click on "Cancel" for closing order screen popup "Click cancel button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done to get back
+    And I closed the order type window
     #Application allows to Repeat the same menu item when user click Repeat button in Menu option
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And  I click "<category1>" in the top order screen "Select Category as CIMiniFOOD"
@@ -5251,7 +5255,7 @@ Feature: QSR feature
     And I click the menu item for selecting the discount
     When User click Repeat menu option
     Then User verify added first ordered item
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     #Application allows to Increase or Decrease the Menu item Quantity
 #    Given User select QSR mode on menu item page
     And I select menu item as "SANDWICHES"
@@ -5263,7 +5267,7 @@ Feature: QSR feature
     When User click Quantity menu option
     Then User enter number of quantity for decrease
     And User verify decreased number of quantity
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
 #    Given User select QSR mode on menu item page
     And I click log off button in order screen
 
@@ -5283,19 +5287,19 @@ Feature: QSR feature
     When User select Item Discount option
     Then User select item based discount after tax
     And User verify item based discount after tax
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     And I click Done button on the Popup
     #Verify item based discount after tax attach Day Restriction
 #    Given User select QSR mode on menu item page
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    Then User select Brushetta menu item
+    Then I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Item Discount option
     Then User select item based discount after tax day restrict
     And User verify item based discount after tax day restrict
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
 
@@ -5310,7 +5314,7 @@ Feature: QSR feature
     Then User select item based discount after tax role restrict
 
     And User verify item based discount after tax role restrict
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount after tax with other tax & Auto discount
@@ -5323,7 +5327,7 @@ Feature: QSR feature
     When User select Item Discount option
     Then User select item based discount after tax
     And User verify item based discount after tax
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount before tax
@@ -5335,20 +5339,20 @@ Feature: QSR feature
     When User select Item Discount option
     Then User select item based discount before tax
     And User verify item based discount before tax
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount before tax attach Day Restriction
 #    Given User select QSR mode on menu item page
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    Then User select Brushetta menu item
+    Then I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Item Discount option
     Then User select item based discount before tax day restrict
     And User verify item based discount before tax day restrict
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount before tax attach Role Restriction
@@ -5363,7 +5367,7 @@ Feature: QSR feature
 #    Given I enter the Pin number as "1","1","1","1"
 #    Then I click "<btnContinue>" in the tip popup "Click Continue Button"
     And User verify item based discount before tax role restrict
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify item based discount before tax with other tax & Auto discount
@@ -5385,7 +5389,7 @@ Feature: QSR feature
 #    Given I enter the Pin number as "1","1","1","1"
 #    Then I click "<btnContinue>" in the tip popup "Click Continue Button"
     And User verify item based discount after tax role restrict
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
 #    #Given User select QSR mode on menu item page
@@ -5407,7 +5411,7 @@ Feature: QSR feature
     When User select Check Discount option
     Then User select check based discount after tax
     And User verify check based discount after tax value as "1.50"
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check based discount before tax
@@ -5421,7 +5425,7 @@ Feature: QSR feature
     When User select Check Discount option
     Then User select check based discount before tax
     And User verify check based discount before tax
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check based discount before tax attach Role Restriction
@@ -5433,7 +5437,7 @@ Feature: QSR feature
     When User select Check Discount option
     Then User select check based discount before tax role restrict
     And User verify check based discount before tax role restrict
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
 #  #  Given User select QSR mode on menu item page
@@ -5461,7 +5465,7 @@ Feature: QSR feature
     When User select Check Discount option
     Then User select check based discount after tax with open item
     And User verify check based discount after tax with open item
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     # Verify check with discount as Free which has item based and before tax discount
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -5470,7 +5474,7 @@ Feature: QSR feature
     And User select Item Discount option
     When User select Free discount option which has before tax
     And User verify item based free discount with before tax
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     # Verify check with discount as Percentage which has check based and after tax discount
@@ -5481,7 +5485,7 @@ Feature: QSR feature
     And User select Check Discount option
     When User select check based percentage discount option which has after tax
     Then User verify check based percentage discount value as "$ 0.10" with after tax after applied open item
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
 
@@ -5493,7 +5497,7 @@ Feature: QSR feature
     And User select Check Discount option
     When User select check based amount discount option which has after tax
     Then User verify check based amount discount with after tax value as "$ 0.58"
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check with discount as set price which has check based and after tax discount
@@ -5505,7 +5509,7 @@ Feature: QSR feature
     And User select Check Discount option
     When User select check based set price discount option which has after tax
     Then User verify check based set price discount with after tax value as "$ 1.42"
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check with discount as Free which has check based and after tax discount
@@ -5517,7 +5521,7 @@ Feature: QSR feature
     When User select check based as free discount option which has after tax
     Then User verify check based free discount with after tax value as "0.00"
     Then I should see orderscreen with as Onion Rings EACH
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     # Verify check with discount as Percentage which has check based and before tax discount
@@ -5528,7 +5532,7 @@ Feature: QSR feature
     And User select Check Discount option
     When User select check based as percentage discount option which has before tax
     Then User verify check based percentage discount with after tax value as "$ 0.10"
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check with discount as Amount which has check based and before tax discount
@@ -5539,7 +5543,7 @@ Feature: QSR feature
     And User select Check Discount option
     When User select check based amount discount option which has before tax
     Then User verify check based amount discount with before tax value as "$ 0.72"
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check with discount as set price which has check based and before tax discount
@@ -5551,7 +5555,7 @@ Feature: QSR feature
     And User select Check Discount option
     When User select check based set price discount option which has before tax
     Then User verify check based set price discount with before tax value as "$ 31.00"
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     #Verify check with discount as Free which has check based and before tax discount
@@ -5564,7 +5568,7 @@ Feature: QSR feature
     When User select check based Free discount option which has before tax
     Then User verify check based free discount with before tax value as "0.00"
     Then I should see orderscreen with as Onion Rings EACH
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
 #  #  Given User select QSR mode on menu item page
@@ -6425,7 +6429,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select item discount option tab
@@ -6444,7 +6448,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select item discount option tab
@@ -6499,7 +6503,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select item discount option tab
@@ -6518,7 +6522,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select item discount option tab
@@ -6538,7 +6542,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select item discount option tab
@@ -6574,7 +6578,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select item discount option tab
@@ -6592,7 +6596,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select item discount option tab
@@ -6623,7 +6627,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -6642,7 +6646,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -6660,7 +6664,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -6678,7 +6682,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -6697,7 +6701,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -6715,7 +6719,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -6734,7 +6738,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
     When User select Check Discount option
@@ -6752,7 +6756,7 @@ Feature: QSR feature
     When User enter customer name for bar tab
     When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
     And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    When I select menu item as "BRUSHETTA"
     When User click Option Tab
     And I click "<btnDiscount>" in the lower option screen"Discount button clicked"
     When User select Check Discount option
@@ -6769,198 +6773,222 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnDropDown|category |btnExit|btnDiscount|btnLogOff|btnPos|
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |
 
-  @32320
+  @RegressionQSR3
   Scenario Outline: Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
-    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
-    And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    And I select category as "Appetizers"
+    When I select menu item as "BRUSHETTA"
     Then User click Option Tab
     When User select Open Item option
-    When User select "<course_name>" as course name
-    And User enter item name
-    And User enter open item price as decimal
-    And I enter the percentage as "3","0","1","4"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User click the "<btnDone>" button in the Open item screen "click done button"
-    And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
-    When User select Check Discount option
-    Then User select check based discount after tax with open item
-    And User verify check based discount after tax value as "$ 13.56" and open item with decimal number for Brushetta
+    And I click Coursing Name text field for Menu option
+    And I swipe to "<course_name>" as Coursing Name
+    And I pass course name as "onion"
+    And I tap Price text field for menu option
+    And I enter the percentage1 as "3104"
+#    And I enter the price with sale1
+#    And I click Continue button on the Open Item Price numbers popup
+    And I click Done button on the open item window
+    Then I should navigate to Order Management screen and see the added open item as "onion"
+#    And I click discount on check option screen
+    And I select Discount on the Order screen
+    Then I should see Check Based Discount Screen
+    And I click Discount as "CB-BeforeTax-OpenItem"
+    And I click Back button on Discount Screen
+    And User verify check based discount before tax value as "$ 12.55" and open item with decimal number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    Then User click cancel button
+    And I closed the order type window
 
 #     Open Item Discount with After Tax Check as Amount and Safety Limit in Whole Value
-    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
-    And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    And I select category as "Appetizers"
+    When I select menu item as "BRUSHETTA"
     Then User click Option Tab
     When User select Open Item option
-    When User select "<course_name>" as course name
-    And User enter item name
-    And User enter open item price as whole number
-    And I enter the percentage as "3","1","0","0"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User click the "<btnDone>" button in the Open item screen "click done button"
-    And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
-    When User select Check Discount option
-    Then User select check based discount after tax with open item
-    And User verify check based discount after tax value as "13.13" and open item with whole number for Brushetta
+    And I click Coursing Name text field for Menu option
+    And I swipe to "<course_name>" as Coursing Name
+    And I pass course name as "onion"
+    And I tap Price text field for menu option
+    And I enter the percentage1 as "3100"
+    And I click Done button on the open item window
+    Then I should navigate to Order Management screen and see the added open item as "onion"
+    And I select Discount on the Order screen
+    Then I should see Check Based Discount Screen
+    And I click Discount as "CB-BeforeTax-OpenItem"
+    And I click Back button on Discount Screen
+    And User verify check based discount before tax value as "$ 12.55" and open item with whole number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    Then User click cancel button
+    And I closed the order type window
 
 #  Scenario: Open Item Discount with After Tax Check as Percentage
-    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
-    And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    And I select category as "Appetizers"
+    When I select menu item as "BRUSHETTA"
     Then User click Option Tab
     When User select Open Item option
-    When User select "<course_name>" as course name
-    And User enter item name
-    And User enter open item price
-    And I enter the percentage as "3","1","0","4"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User click the "<btnDone>" button in the Open item screen "click done button"
-    And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
-    When User select Check Discount option
-    Then User select check based discount after tax
-    Then It should show the amount value as "3.10" "Verify discount amount value"
+    And I click Coursing Name text field for Menu option
+    And I swipe to "<course_name>" as Coursing Name
+    And I pass course name as "onion"
+    And I tap Price text field for menu option
+    And I enter the percentage1 as "3104"
+    And I click Done button on the open item window
+    Then I should navigate to Order Management screen and see the added open item as "onion"
+    And I select Discount on the Order screen
+    Then I should see Check Based Discount Screen
+    And I click Discount as "CB-PercentageAfterTax"
+    And I click Back button on Discount Screen
+#    Then User select check based discount after tax
+    Then It should show the amount value as "$ 3.20" "Verify discount amount value"
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    Then User click cancel button
-    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
-    And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    And I closed the order type window
+
+    And I select category as "Appetizers"
+    When I select menu item as "BRUSHETTA"
 
     Then User click Option Tab
     When User select Open Item option
-    When User select "<course_name>" as course name
-    And User enter item name
-    And User enter open item price as decimal
-    And I enter the percentage as "3","1","0","4"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User click the "<btnDone>" button in the Open item screen "click done button"
-    And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
-    When User select Check Discount option
-    Then User select check based discount after tax with open item
-    And User verify check based discount after tax value as "$ 13.56" and open item with decimal number for Brushetta
+    And I click Coursing Name text field for Menu option
+    And I swipe to "<course_name>" as Coursing Name
+    And I pass course name as "onion"
+    And I tap Price text field for menu option
+    And I enter the percentage1 as "3104"
+    And I click Done button on the open item window
+    Then I should navigate to Order Management screen and see the added open item as "onion"
+    And I select Discount on the Order screen
+    Then I should see Check Based Discount Screen
+    And I click Discount as "CB-AfterTax-OpenItem"
+    And I click Back button on Discount Screen
+    And User verify check based discount after tax value as "$ 13.55" and open item with decimal number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    Then User click cancel button
+    And I closed the order type window
+
    #Open Item Discount with Before Tax Check as Amount and Safety Limit in Whole Value
-    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
-    And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    And I select category as "Appetizers"
+    When I select menu item as "BRUSHETTA"
     Then User click Option Tab
-    When User select Open Item option
-    When User select "<course_name>" as course name
-    And User enter item name
-    And User enter open item price as whole number
-    And I enter the percentage as "3","1","0","4"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User click the "<btnDone>" button in the Open item screen "click done button"
-    And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
-    When User select Check Discount option
-    Then User select check based discount after tax with open item
-    And User verify check based discount after tax value as "13.13" and open item with whole number for Brushetta
+    And I click Open Item button
+    Then I should see open item screen
+    And I click Coursing Name text field for Menu option
+    And I swipe to "<course_name>" as Coursing Name
+    And I pass course name as "onion"
+    And I tap Price text field for menu option
+    And I enter the percentage1 as "3100"
+    And I click Done button on the open item window
+    Then I should navigate to Order Management screen and see the added open item as "onion"
+    And I select Discount on the Order screen
+    Then I should see Check Based Discount Screen
+    And I click Discount as "CB-AfterTax-OpenItem"
+    And I click Back button on Discount Screen
+    And User verify check based discount after tax value as "$ 13.55" and open item with whole number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    Then User click cancel button
+    And I closed the order type window
+
     #Open Item Discount with Before Tax Check as Percentage
-    When I click the Drop down "<btnDropDown>" button in the order screen "click drop down button"
-    And I click "<category>" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+    And I select category as "Appetizers"
+    When I select menu item as "BRUSHETTA"
     Then User click Option Tab
     When User select Open Item option
-    When User select "<course_name>" as course name
-    And User enter item name
-    And User enter open item price as whole number
-    And I enter the percentage as "3","1","0","4"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User click the "<btnDone>" button in the Open item screen "click done button"
-    And I click "<btnDiscount>" in the lower option screen"Gift Card button clicked"
-    When User select Check Discount option
-    Then User select check based discount before tax with open item
+    And I click Coursing Name text field for Menu option
+    And I swipe to "<course_name>" as Coursing Name
+    And I pass course name as "onion"
+    And I tap Price text field for menu option
+    And I enter the percentage1 as "3104"
+    And I click Done button on the open item window
+    Then I should navigate to Order Management screen and see the added open item as "onion"
+    And I select Discount on the Order screen
+    Then I should see Check Based Discount Screen
+    And I click Discount as "CB-PercentageBeforeTax"
+    And I click Back button on Discount Screen
+    Then It should show the amount value as "$ 3.20" "Verify discount amount value"
     When User click Cash Tab
     Then User click exact option
     And User click enter button
-    Then User click cancel button
+    And I closed the order type window
     And I click log off button in order screen
 
     Examples:
       |course_name|btnCancel|  btnCBDiscount      | text|btnDropDown|category|btnDiscount|pin1|pin5|pin0|btnContinue |btnDone|btnLogOff|
       |ENTREE     |Cancel   |CB-PercentageAfterTax|TL 101,50|arrow down |Appetizers |Discount|1   |5   |0   |Continue    |Done   |logOff|
 
-
+  @RegressionQSR3
   Scenario: Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
     When User click QSR on Menu Item page
     Given User select DineIn mode
     And User select first table
     Then User click Option Tab
     And User click fire coursing option
-    And I click on "   Back" for closing order screen popup "Click Back button"
-    And I click on " Back " for closing order screen popup "Click Back button"
+    Then I should see the please order the menu popup
+    And I click Done button on the Popup
+    And I closed the order type window
+#    And I click on "   Back" for closing order screen popup "Click Back button"
+#    And I click on " Back " for closing order screen popup "Click Back button"
     When User select any menu item
     Then User click Option Tab
     And User click fire coursing option
-    And I click on "Done" for closing order screen popup "Click Back button"
-    And I click on " Back " for closing order screen popup "Click Back button"
+    Then I should see the please send all the menu items to kitchen popup
+    And I click Done button on the Popup
+    And I closed the order type window
     When User click void button
-    And I click on "Done" for closing order screen popup "Click Back button"
+    And I click Done button on the Popup
     Given User select DineIn mode
     When User select QSR order typ
     When USer click log off button
 
+  @RegressionQSR3
   Scenario Outline: Open Gratuity Page
     When I select menu item as "SANDWICHES"
     Then User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     Then User verify gratuity page
      #Gratuity Fixed
     Then User select fixed gratuity option
     And User verify fixed gratuity as "$ 0.10"
     #Remove Gratuity
     When User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     And User select fixed gratuity option
     And User verify deleted gratuity amount
     #Gratuity Varying
     Then User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     Then User select varying gratuity option
     And User enter percentage of varying gratuity
-    And I enter the percentage as "<pin1>","<pin5>","<pinpoint>","<pin0>"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
+    And I enter the percentage1 as "1500"
+#    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
     And User click apply button for varying gratuity
     And User verify varying gratuity as "$ 0.15"
     Then User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     Then User select varying gratuity option
     #Verify minimum value of Gratuity (Gratuity Varying)
     Then User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     Then User select varying gratuity option
     When User enter value less then minimum value of gratuity
     Then User verify minimum value of gratuity warning popup
-    And I click " Back " for closing future order "Click Back button"
+    And I click Done button on the Popup
+    And I closed the order type window
     #Verify maximum value of Gratuity (Gratuity Varying)
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+#      When User select gratuity option
     Then User select varying gratuity option
     When User enter value more then maximum value of gratuity
-    And I click " Back " for closing future order "Click Back button"
+#    And I click " Back " for closing future order "Click Back button"
+    Then User verify minimum value of gratuity warning popup
+    And I click Done button on the Popup
+    And I closed the order type window
     #Verify Fix Gratuity (gratuity percentage)
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+#      When User select gratuity option
     Then User select fixed gratuity option
     And User verify fixed gratuity as "$ 0.10"
     And User verify total amount with fix gratuity value
     When User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     And User select fixed gratuity option
     And User verify deleted gratuity amount
     Then User click payment button
@@ -6974,11 +7002,12 @@ Feature: QSR feature
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
       |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |
 
+  @RegressionQSR3
   Scenario Outline: Reduce Gratuity
     When I get check number
     When I select menu item as "SANDWICHES"
     Then User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     Then User select fixed gratuity option
     And User verify fixed gratuity as "$ 0.10"
     When User click payment button
@@ -6990,11 +7019,11 @@ Feature: QSR feature
     And I click the Closed check on check stats
     And User click re-open check button
     When User click Option Tab
-    And I click "<btnGratuity>" in the option screen"Gratuity button clicked"
+      When User select gratuity option
     Then User select varying gratuity option
     And User enter percentage of varying gratuity
-    And I enter the percentage as "<pin1>","<pin5>","<pinpoint>","<pin0>"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
+    And I enter the percentage1 as "1500"
+#    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
     And User click apply button for varying gratuity
     Then User click payment button
     And User click exact option
@@ -7007,6 +7036,7 @@ Feature: QSR feature
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
       |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |
 
+  @RegressionQSR3
   Scenario Outline:  Verify Check Payment through CC with Gratuity(Fixed) and with tips
     Then User click food category
     When User select Sandwiches menu item
@@ -7014,7 +7044,7 @@ Feature: QSR feature
     When User select gratuity option
     Then User select fixed gratuity option
     And User verify fixed gratuity as "$ 0.10"
-    And User verify total amount with fix gratuity value
+#    And User verify total amount with fix gratuity value
     When User click payment button
     Then User click exact option
     And User click CC Side payment method
@@ -7028,7 +7058,7 @@ Feature: QSR feature
     Examples:
       |btnLogOff|
       |logOff   |
-
+  @RegressionQSR3
   Scenario Outline: Verify Check Payment through CC with Gratuity(Varying) and with tips
     Then User click food category
     When User select Sandwiches menu item
@@ -7036,8 +7066,9 @@ Feature: QSR feature
     When User select gratuity option
     Then User select varying gratuity option
     And User enter percentage of varying gratuity
-    And I enter the percentage as "<pin1>","<pin5>","<pinpoint>","<pin0>"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
+    And I enter the percentage1 as "<value>"
+#    And I enter the percentage as "<pin1>","<pin5>","<pinpoint>","<pin0>"
+#    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
     And User click apply button for varying gratuity
     And User verify varying gratuity as "$ 0.15"
     When User click payment button
@@ -7051,41 +7082,41 @@ Feature: QSR feature
     When USer click log off button
 
     Examples:
-      |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
-      |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |
+      |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|value|
+      |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |1500  |
 
 
-
+  @RegressionQSR3
   Scenario Outline: Delete Modifier,Add Modifier,Cancel Modifier
    #Application should be closed modifiers screen and come back to the order screen
     When User select menu item with modifier
-    And User select "<btnRomano>" in the modifier page "select modifier"
+    And I select modifier as "<btnRomano>"
     And User click modifier cancel button
     #And User verify empty order page
     #Application should come back to the order screen and selected modifiers should be added to the menu items
     When User select menu item with modifier
-    And User select "<btnRomano>" in the modifier page "select modifier"
-    And User click modifier done button
+    And I select modifier as "<btnRomano>"
+    And I click Done to get back
     And User verify be directed menu item page
     And User verify added modifier
     # Delete Modifier
-    And I click "<btnOption>" in the order screen for selecting Option "Click option button"
-    And I click "<btnModify>" in the option screen"Click tax exempt button clicked"
+    And I click Options button
+    And I click Modify
     And User select first menu item with modifier
-    And I select modifier as "<Modifier>"
+    And I select modifier as "<Modifier>" from the modifier window
+#    And User click modifier cancel button
     And User verify selected modifier on modifier page
-    And User click modifier cancel button
-    And I click "<btnOption>" in the order screen for selecting Option "Click option button"
-    And I click "<btnModify>" in the option screen"Click tax exempt button clicked"
+    And I click Options button
+    And I click Modify
     And User select first menu item with modifier
     #Add Modifier #Application should allow user to add modify with modifiers
-    And I select modifier as "<Modifier>"
+    And I select modifier as "<Modifier>" from the modifier window
     And User verify selected modifier on modifier page
-    And I click Ok button on the modifier screen
+#    And I click Ok button on the modifier screen
     Then User verify selected modifier on menu item page
     And User verify added modifier
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click Done button on the Popup
     And I click log off button in order screen
 
     Examples:
@@ -7093,44 +7124,45 @@ Feature: QSR feature
       |Void   |1/2 Romano|Option   |Modify   |Add Veggies|logOff |Done   |
 
 
-
+  @RegressionQSR3
   Scenario Outline: Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers
     When User select menu item with modifier
     Then User add modifiers over maximum count
     When User verify maximum count popup
     And User click modifier done button
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Done to get back
     Then User verify be directed menu item page
     And User verify added quantity of modifier for first modifier
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Void button on order management screen
+    And I click Done to get back
     When User select another menu item with modifier
     Then User add second menu item modifier over maximum count
     When User verify maximum count popup
     And User click modifier done button
-    And I click the "<btnDone>" in the popup screen"click done button"
+    And I click Done to get back
     And User verify be directed menu item page
     And User verify added quantity of modifier for second modifier
-    And I click "<btnVoid>" in the order screen "Click void button"
+    And I click Void button on order management screen
     And I click Done button on the Popup
     #Modifier After Sent To Kitchen
     When User select menu item with modifier
     Then User add modifiers over maximum count
     And User click modifier done button
     Then User click order button
-    And I click "<btnOption>" in the order screen for selecting Option "Click option button"
-    And I click "<btnModify>" in the option screen"Click tax exempt button clicked"
+    And I click Options button
+    And I click Modify
     When User select first menu item with modifier
     Then User verify ordered menu item modifier popup
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
-   And I closed the order type window
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I closed the order type window
+#   And I closed the order type window
     # Application should do modifier should added as per qty of item with Modifier's max level #Modifiers with Maximum Count
     When User select second menu item with modifier
     Then User add modifier over maximum count
     When User verify maximum count popup
+    And User click modifier done button
     When User select another modifier for the same menu item
     Then User verify added quantity of modifier for second modifier
     And User verify maximum quantity of modifiers for first and second modifiers

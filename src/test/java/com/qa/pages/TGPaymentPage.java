@@ -1836,13 +1836,13 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithGratuityFixedAndWithTips(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify ccSidePaymentMethod");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
         WebElement element1 = mergeAndFindMobileElement(sideCCPaymentDetailAmountWithGratuityFixAndWithTips);
         String actualName1=elementGetText(element1,"verify Amount");
-        String expectedName1 = "1.199,99+100,00";
+        String expectedName1 = "1.10+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -1864,13 +1864,13 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithGratuityVaryingAndWithTips(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify ccSidePaymentMethod");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
         WebElement element1 = mergeAndFindMobileElement(sideCCPaymentDetailAmountWithGratuityVaryingAndWithTips);
         String actualName1=elementGetText(element1,"verify Amount");
-        String expectedName1 = "1.249,99+100,00";
+        String expectedName1 = "1.15+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -1885,7 +1885,7 @@ public class TGPaymentPage extends BasePage {
     //xpath changes (nov 11)
     public void verifyCCSidePaymentWithTaxExemptAsSelectCustomerAndWithTips(){
         WebElement element = mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsSetPriceWithTaxExemptForSandwiches2);
-        String actualName1=elementGetText(element,"verify ccSidePaymentMethod");
+        String actualName1=elementGetText(element,"verify ccSidePaymentMethod - ");
         String expectedName1 = "1.00+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);

@@ -324,7 +324,7 @@ public class TGMenuItemPage extends BasePage {
 
     //nov 17
     public void verifyCheckBasedDiscountAfterTaxAndOpenItemWithWholeNumberForBrushetta(){
-        WebElement element = mergeAndFindMobileElement(checkBasedBeforeTaxWithOpenItemTitle);
+        WebElement element = mergeAndFindMobileElement(checkBasedAfterTaxWithOpenItemTitle);
         String actualName = elementGetText(element,"Verify CheckBasedDiscount");
         String expectedName = "CB-AfterTax-OpenItem";
 
@@ -362,6 +362,67 @@ public class TGMenuItemPage extends BasePage {
 
         Assert.assertEquals(actualName1,expectedName1);
     }
+    public void verifyCheckBasedDiscountAfterTaxAndOpenItemWithDecimalNumberForBrushetta(String expectedName1){
+        WebElement element = mergeAndFindMobileElement(checkBasedAfterTaxWithOpenItemTitle);
+        String actualName = elementGetText(element,"Verify text CB-AfterTax-OpenItem");
+        String expectedName = "CB-AfterTax-OpenItem";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+
+//        MobileElement element1 = mergeAndFindMobileElement(checkBasedBeforeTaxWithOpenItemBruchetta);
+        String actualName1 = elementGetValue(element1,"Verify CheckBasedDiscount Value After Tax");
+//        String expectedName1 = "$ 13.56";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCheckBasedDiscountBeforeTaxAndOpenItemWithDecimalNumberForBrushetta(String expectedName1){
+        WebElement element = mergeAndFindMobileElement(checkBasedBeforeTaxWithOpenItemTitle);
+        String actualName = elementGetText(element,"Verify text CB-BeforeTax-OpenItem");
+        String expectedName = "CB-BeforeTax-OpenItem";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+
+//        MobileElement element1 = mergeAndFindMobileElement(checkBasedBeforeTaxWithOpenItemBruchetta);
+        String actualName1 = elementGetValue(element1,"Verify CheckBasedDiscount Value Before Tax");
+//        String expectedName1 = "$ 13.56";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+
+    public void verifyCheckBasedDiscountAfterTaxAndOpenItemWithWholeNumberForBrushetta(String expectedName1){
+        WebElement element = mergeAndFindMobileElement(checkBasedAfterTaxWithOpenItemTitle);
+        String actualName = elementGetText(element,"Verify text CB-AfterTax-OpenItem");
+        String expectedName = "CB-AfterTax-OpenItem";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+
+//        MobileElement element1 = mergeAndFindMobileElement(checkBasedBeforeTaxWithOpenItemBruchetta);
+        String actualName1 = elementGetValue(element1,"Verify CheckBasedDiscount Value Before Tax");
+//        String expectedName1 = "$ 13.56";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCheckBasedDiscountBeforeTaxAndOpenItemWithWholeNumberForBrushetta(String expectedName1){
+        WebElement element = mergeAndFindMobileElement(checkBasedBeforeTaxWithOpenItemTitle);
+        String actualName = elementGetText(element,"Verify text CB-AfterTax-OpenItem");
+        String expectedName = "CB-BeforeTax-OpenItem";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+
+//        MobileElement element1 = mergeAndFindMobileElement(checkBasedBeforeTaxWithOpenItemBruchetta);
+        String actualName1 = elementGetValue(element1,"Verify CheckBasedDiscount Value Before Tax");
+//        String expectedName1 = "$ 13.56";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCheckBasedDiscountBeforeTaxAsFreeItemForBrushetta(){
         WebElement element = mergeAndFindMobileElement(checkBasedBeforeTaxWithFreeItemTitle);
         String actualName = elementGetText(element,"Verify text CB-BeforeTax-FreeItem");
@@ -1410,13 +1471,15 @@ public class TGMenuItemPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(secondSeatOnMenuItem);
         elementClick(element,"Select Second Seat");
     }
-    public void selectMenuItemHasModifier(){
+    public void selectMenuItemHasModifier() throws InterruptedException {
+        pressArrowDown2();
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Food Tab");
         WebElement element1 = mergeAndFindMobileElement(firstOrderWithModifier);
         elementClick(element1,"First Order With Modifier");
     }
-    public void selectSecondMenuItemHasModifier(){
+    public void selectSecondMenuItemHasModifier() throws InterruptedException {
+        pressArrowDown2();
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Food Tab");
         WebElement element1 = mergeAndFindMobileElement(secondMenuItemHasModifier);
@@ -1454,7 +1517,7 @@ public class TGMenuItemPage extends BasePage {
     public void verifyAddedModifier(){
         WebElement element = mergeAndFindMobileElement(addedModifierInMenuItemPage);
         String actualName = elementGetText(element,"Verify Added Modifier");
-        String expectedName = " Add Veggies";
+        String expectedName = "Add Veggies";
         Assert.assertEquals(actualName,expectedName);
     }
     public void addMaximumModifier(){
@@ -1476,7 +1539,7 @@ public class TGMenuItemPage extends BasePage {
     public void verifyMaximumCount(){
         WebElement element = mergeAndFindMobileElement(maximumCountText);
         String actualName = elementGetText(element,"Verify Maximum Count");
-        String expectedName = "You reached the maximum count";
+        String expectedName = "You reached maximum count";
         Assert.assertEquals(actualName,expectedName);
 
 //        WebElement element1 = mergeAndFindMobileElement(doneButton);
@@ -1538,17 +1601,13 @@ public class TGMenuItemPage extends BasePage {
         Assert.assertEquals(actualName,expectedName);
 //        fixGratuity.equals(actualName);
     }
-    public void verifyDeletedGratuity(){
-        WebElement element = mergeAndFindMobileElement(subtotalAmount);
-        String actualName = elementGetText(element,"Verify Deleted Gratuity");
-        String expectedName = "TL 1.000,00";
-
-        Assert.assertEquals(actualName,expectedName);
-
-
-        WebElement element1 = mergeAndFindMobileElement(withoutGratuityTotalAmount);
-        String actualName1 = elementGetText(element1,"Verify Deleted Gratuity");
-        String expectedName1= "TL 1.100,00";
+    public void verifyDeletedGratuity() throws InterruptedException {
+         Thread.sleep(1000);
+        WebElement element1 = driver.findElement(By.xpath(withoutGratuityTotalAmount));
+        utils.log().info(element1.getAttribute("value"));
+        utils.log().info(element1.getText());
+        String actualName1 = elementGetValue(element1,"Verify Deleted Gratuity");
+        String expectedName1= "$ 1.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -1958,7 +2017,7 @@ public class TGMenuItemPage extends BasePage {
     public void verifyCloseSalePopUpInfo(){
         WebElement element = mergeAndFindMobileElement(closeSaleInfoPopUp);
         String actualName = elementGetText(element,"Verify Close Sale PopUp Info");
-        String expectedName = "Close your Sale";
+        String expectedName = "close the sale";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -2168,20 +2227,20 @@ public class TGMenuItemPage extends BasePage {
     public void verifyAddedModifierToOrderList() {
         WebElement element = mergeAndFindMobileElement(firstModifierOfFirstItemName);
         String actualName = elementGetText(element, "Verify Added Modifier To OrderList");
-        String expectedName=" 1/2 Romano";
+        String expectedName="1/2 Romano";
         Assert.assertEquals(actualName,expectedName);
 
         WebElement element1 = mergeAndFindMobileElement(firstModifierOfFirstItemBalance);
         String actualName1 = elementGetText(element1, "Verify Added Modifier To OrderList");
-        String expectedName1="9,00";
-        actualName.equals(expectedName);
+        String expectedName1="9.00";
+//        actualName.equals(expectedName);
         Assert.assertEquals(actualName1,expectedName1);
     }
 
     public void verifyAddedQuantityOfModifierForFirstModifier(){
         WebElement element = mergeAndFindMobileElement(firstModifierOfFirstItemName);
         String actualName = elementGetText(element,"Verify Added Quantity");
-        String expectedName = " 1/2 Romano";
+        String expectedName = "1/2 Romano";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -2206,7 +2265,7 @@ public class TGMenuItemPage extends BasePage {
     public void verifyAddedQuantityOfModifierForSecondModifier(){
         WebElement element = mergeAndFindMobileElement(secondOrderThirdModifier);
         String actualName = elementGetText(element,"Verify Quantity Of Modifier");
-        String expectedName = " Wheat Bread";
+        String expectedName = "Wheat Bread";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2263,12 +2322,6 @@ public class TGMenuItemPage extends BasePage {
     }
 
     public void verifyAddedTaxExempt1(){
-       /* if("Total".equals(driver.findElement(totalBalanceWithTaxExempt)))
-        {
-            System.out.println("Tax amount didn't remove...");
-        }
-        else
-            System.out.println("tax amount removed...");*/
         WebElement element = mergeAndFindMobileElement(subtotalAmountWithTaxExempt);
         String actualName = elementGetText(element,"Verify Added TaxExempt");
         String expectedName = "TL 999,90";
@@ -2280,8 +2333,14 @@ public class TGMenuItemPage extends BasePage {
 
         Assert.assertEquals(expectedName1,actualName1);
     }
-    public void clickFoodTab(){
-//        pressArrowDow
+    public void pressArrowDown2 () throws InterruptedException {
+        Thread.sleep(1000);
+        elementClick(arrowDownForOtherMenuItems, "the rest of the categories is listed");
+    }
+
+    String arrowDownForOtherMenuItems ="//button[@id='os_catMenu']";
+    public void clickFoodTab() throws InterruptedException {
+        pressArrowDown2();
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Click FoodTab");
     }
@@ -2434,6 +2493,13 @@ public class TGMenuItemPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(qsrOption);
         elementClick(element,"Click qsrOption");
     }
+
+    public void clickQsrOrderType1(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        WebElement element = mergeAndFindMobileElement(qsrOption1);
+        elementClick(element,"Click qsrOption");
+    }
+
     public void clickDineInOrderType(){
         WebElement element = mergeAndFindMobileElement(dineIn);
         elementClick(element,"Click dineIn");
@@ -2612,9 +2678,9 @@ public class TGMenuItemPage extends BasePage {
 //        String expectedName = "TL 107,98";
 
 //        Assert.assertEquals(actualName,expectedName);
-        WebElement element1 = mergeAndFindMobileElement(totalAmountWithGratuity);
-        String actualName1 = elementGetText(element1,"Verify Value AmountWithGratuity");
-        String expectedName1 = "TL 1.199,99";
+        WebElement element1 = driver.findElement(By.xpath(totalAmountWithGratuity));
+        String actualName1 = elementGetValue(element1,"Verify Value AmountWithGratuity");
+        String expectedName1 = "$ 1.10";
 
         Assert.assertEquals(actualName1,expectedName1);
     }

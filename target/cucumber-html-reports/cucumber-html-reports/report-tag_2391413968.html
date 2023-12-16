@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>15 Dec 2023, 23:20</td>
+      <td>16 Dec 2023, 12:03</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@RegressionQSR35</td>
-          <td      class="passed"    >17</td>
+          <td      class="passed"    >24</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">17</td>
+          <td class="total">24</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="6163084000">6.163</td>
+          <td class="duration" data-value="15553644000">15.553</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -184,14 +184,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">6.163</span>
+  <span class="lead-duration duration">15.553</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify Check Payment through CC with Tax Exempt and also with tip - xxx</span>
+  <span class="name">Verify Tax Exempt- From Order Screen,Application  should removed Tax Exempt and Tax should applied for that Entire Check from Order Screen,Verify Application should not allow to do Tax Exempt after Payment Done Check</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -222,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">48.492</span>
+  <span class="lead-duration duration">48.856</span>
 
           </div>
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User click QSR on Menu Item page</span>
 
-  <span class="lead-duration duration">0.069</span>
+  <span class="lead-duration duration">0.087</span>
 
 </div>
 
@@ -284,9 +284,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">User select Bar Tab in order types</span>
+  <span class="name">User select DineIn order type</span>
 
-  <span class="lead-duration duration">0.126</span>
+  <span class="lead-duration duration">0.120</span>
 
 </div>
 
@@ -311,9 +311,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click the Exit to close the preauth window</span>
+  <span class="name">User select first table</span>
 
-  <span class="lead-duration duration">0.135</span>
+  <span class="lead-duration duration">0.100</span>
 
 </div>
 
@@ -336,11 +336,38 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">User select Sandwiches menu item</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.136</span>
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">SANDWICHES</span>&quot;</span>
+
+  <span class="lead-duration duration">2.090</span>
 
 </div>
 
@@ -367,7 +394,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User click Option Tab</span>
 
-  <span class="lead-duration duration">0.147</span>
+  <span class="lead-duration duration">0.085</span>
 
 </div>
 
@@ -394,34 +421,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User select tax exempt option</span>
 
-  <span class="lead-duration duration">0.191</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I should verify subtotal value as &quot;<span class="argument">$ 1.00</span>&quot;</span>
-
-  <span class="lead-duration duration">1.095</span>
+  <span class="lead-duration duration">0.078</span>
 
 </div>
 
@@ -446,9 +446,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User click payment button</span>
+  <span class="name">User click Option Tab</span>
 
-  <span class="lead-duration duration">0.176</span>
+  <span class="lead-duration duration">0.075</span>
 
 </div>
 
@@ -473,90 +473,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
+  <span class="name">User select tax exempt option</span>
+
+  <span class="lead-duration duration">0.079</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Payment button in the Order Management Screen</span>
+
+  <span class="lead-duration duration">0.071</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
   <span class="name">User click exact option</span>
 
-  <span class="lead-duration duration">0.133</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click CC Side payment method</span>
-
-  <span class="lead-duration duration">0.123</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I click tip as 10</span>
-
-  <span class="lead-duration duration">0.101</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I click the Continue button on the Total screen</span>
-
-  <span class="lead-duration duration">1.287</span>
+  <span class="lead-duration duration">0.059</span>
 
 </div>
 
@@ -581,9 +554,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the Payment window</span>
+  <span class="name">USer click cash button</span>
 
-  <span class="lead-duration duration">0.115</span>
+  <span class="lead-duration duration">0.098</span>
 
 </div>
 
@@ -608,9 +581,225 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click Submit button on the Payment Window</span>
+  <span class="name">User click submit button</span>
 
-  <span class="lead-duration duration">0.865</span>
+  <span class="lead-duration duration">2.073</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Check Stats tab</span>
+
+  <span class="lead-duration duration">1.357</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User click Closed Checks tabs</span>
+
+  <span class="lead-duration duration">0.104</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Closed check on check stats</span>
+
+  <span class="lead-duration duration">3.220</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click re-open check button</span>
+
+  <span class="lead-duration duration">0.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User click Option Tab</span>
+
+  <span class="lead-duration duration">2.064</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select tax exempt option</span>
+
+  <span class="lead-duration duration">0.073</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User click payment button</span>
+
+  <span class="lead-duration duration">0.071</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click submit button</span>
+
+  <span class="lead-duration duration">2.132</span>
 
 </div>
 
@@ -637,7 +826,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click QSR tab</span>
 
-  <span class="lead-duration duration">0.271</span>
+  <span class="lead-duration duration">0.221</span>
 
 </div>
 
@@ -664,7 +853,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I closed the order type window</span>
 
-  <span class="lead-duration duration">1.082</span>
+  <span class="lead-duration duration">1.090</span>
 
 </div>
 
@@ -691,7 +880,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click log off button in order screen</span>
 
-  <span class="lead-duration duration">0.102</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 

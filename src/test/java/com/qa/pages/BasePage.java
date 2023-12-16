@@ -284,120 +284,11 @@ public WebElement scrollToElement(String txt) throws InterruptedException {
 public void findAndClickMobileElement(String selectorPath,String injector, String selectorName) throws Exception {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-
-
-//    String elementXPath = utils.stringFormatInjector(selectorPath, injector);
-//    switch (selectorName) {
-//        case TestUtils.XPath:
-//            try {
-//
-//                wait.until(ExpectedConditions.elementToBeClickable(By.id(elementXPath)));
-//
-//                if (!driver.findElements(By.xpath(elementXPath)).isEmpty()) {
-//
-////                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                    driver.findElementByXPath(elementXPath).click();
-//
-//
-//                } else {
-//
-//                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                   scrollToElementCategory("up");
-//                    Thread.sleep(500);
-//                    driver.findElementByXPath(elementXPath).click();
-//
-//                }
-//            } catch (Exception e) {
-//                scrollToElementCategory("down");
-//                driver.findElementByXPath(elementXPath).click();
-////                utils.log().info("Xpath" +  String.valueOf(element) + "element not found");
-//
-//            }
-//            break;
-//        case TestUtils.Accessibility:
-//            try {
-//                wait.until(ExpectedConditions.elementToBeClickable(By.id(elementXPath)));
-//
-//                if (!driver.findElements(By.xpath(elementXPath)).isEmpty()) {
-//                    //                       wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                    driver.findElementByXPath(elementXPath).click();
-//
-//                } else {
-//                    scrollToElementCategory("up");
-//                    wait.until(ExpectedConditions.elementToBeClickable(By.id(elementXPath)));
-//                    driver.findElementByXPath(elementXPath).click();
-//
-//
-//                }
-//            } catch (Exception e) {
-//              scrollToElementCategory("up");
-//                    wait.until(ExpectedConditions.elementToBeClickable(By.id(elementXPath)));
-//                    driver.findElementByXPath(elementXPath).click();
-//            }
-//            break;
-//        default:
-//            utils.log().info("please choose correct selector as mentioned in TestUtils constants");
-//            break;
-//
-//    }
 }
 
     public void  findandclick(String selectorPath, String injector, String selectorName) {
 
-//        WebElement element;
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//        String elementXPath = utils.stringFormatInjector(selectorPath, injector);
-//        switch (selectorName) {
-//            case TestUtils.XPath:
-//                try {
-//
-//                    wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//
-//                    if (!driver.findElements(By.xpath(elementXPath)).isEmpty()) {
-//
-////                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                        driver.findElementByXPath(elementXPath).click();
-//
-//
-//                    } else {
-//
-////                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//
-//                        Thread.sleep(1000);
-//                            driver.findElementByXPath(elementXPath).click();
-//
-//                    }
-//                } catch (Exception e) {
-//
-//                    utils.log().info("Xpath" + elementXPath + "element not found");
-//
-//                }
-//                break;
-//            case TestUtils.Accessibility:
-//                try {
-//                    wait.until(ExpectedConditions.elementToBeClickable((By.id(elementXPath))));
-//
-//                    if (!driver.findElements(By.id(elementXPath)).isEmpty()) {
-//                        //                       wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                            driver.findElement(By.id(elementXPath)).click();
-//
-//                    } else {
-//
-//                        wait.until(ExpectedConditions.elementToBeClickable((By.id(elementXPath))));
-//                            driver.findElement(By.id(elementXPath)).click();
-//
-//
-//                    }
-//                } catch (Exception e) {
-//                    utils.log().info("Xpath" + elementXPath + "element not found");
-//
-//                }
-//                break;
-//            default:
-//                utils.log().info("please choose correct selector as mentioned in TestUtils constants");
-//                break;
-//
-//        }
+
     }
 
 
@@ -405,58 +296,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
         String text="";
 //        WebElement element;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//        String elementXPath = utils.stringFormatInjector(selectorPath, injector);
-//        switch (selectorName) {
-//            case TestUtils.XPath:
-//                try {
-//
-//                    wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(elementXPath))));
-//
-//                    if (!driver.findElements(By.xpath(elementXPath)).isEmpty()) {
-//
-////                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                         text=driver.findElementByXPath(elementXPath).getText();
-//
-//
-//                    } else {
-//
-////                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//
-//                        Thread.sleep(1000);
-//                         text=driver.findElementByXPath(elementXPath).getText();
-//
-//                    }
-//                } catch (Exception e) {
-//
-//                    utils.log().info("Xpath" + elementXPath + "element not found");
-//
-//                }
-//                break;
-//            case TestUtils.Accessibility:
-//                try {
-//                    wait.until(ExpectedConditions.visibilityOfElementLocated((By.id(elementXPath))));
-//
-//                    if (!driver.findElements(By.id(elementXPath)).isEmpty()) {
-//                        //                       wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                         text=driver.findElement(By.id(elementXPath)).getText();
-//
-//                    } else {
-//
-//                        wait.until(ExpectedConditions.elementToBeClickable((By.id(elementXPath))));
-//                         text=driver.findElement(By.id(elementXPath)).getText();
-//
-//
-//                    }
-//                } catch (Exception e) {
-//                    utils.log().info("Xpath" + elementXPath + "element not found");
-//
-//                }
-//                break;
-//            default:
-//                utils.log().info("please choose correct selector as mentioned in TestUtils constants");
-//                break;
-//
-//        }
+
         return text;
     }
 
@@ -466,73 +306,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 
 //        WebElement element;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//        String elementXPath = utils.stringFormatInjector(selectorPath, injector);
-//        switch (selectorName) {
-//            case TestUtils.XPath:
-//                try {
-//
-//                    wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//
-//                    if (!driver.findElements(By.xpath(elementXPath)).isEmpty()) {
-//
-////                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                        if(KeyVal!="SKeys"){
-//                            driver.findElementByXPath(elementXPath).click();
-//                        }else{
-//                            driver.findElementByXPath(elementXPath).sendKeys(keyText);
-//
-//                        }
-//
-//                    } else {
-//
-////                        wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//
-//                        Thread.sleep(1000);
-//                        if(KeyVal!="SKeys"){
-//                            driver.findElementByXPath(elementXPath).click();
-//                        }else{
-//                            driver.findElementByXPath(elementXPath).sendKeys(keyText);
-//
-//                        }
-//                    }
-//                } catch (Exception e) {
-//
-//                    utils.log().info("Xpath" + elementXPath + "element not found");
-//
-//                }
-//                break;
-//            case TestUtils.Accessibility:
-//                try {
-//                    wait.until(ExpectedConditions.elementToBeClickable((By.id(elementXPath))));
-//
-//                    if (!driver.findElements(By.id(elementXPath)).isEmpty()) {
-//                        //                       wait.until(ExpectedConditions.elementToBeClickable((By.xpath(elementXPath))));
-//                        if(KeyVal!="SKeys"){
-//                            driver.findElement(By.id(elementXPath)).click();
-//                        }else{
-//                            driver.findElement(By.id(elementXPath)).sendKeys(keyText);
-//
-//                        }
-//                    } else {
-//
-//                        wait.until(ExpectedConditions.elementToBeClickable((By.id(elementXPath))));
-//                        if(KeyVal!="SKeys"){
-//                            driver.findElement(By.id(elementXPath)).click();
-//                        }else{
-//                            driver.findElement(By.id(elementXPath)).sendKeys(keyText);
-//                        }
-//
-//                    }
-//                } catch (Exception e) {
-//                    utils.log().info("Xpath" + elementXPath + "element not found");
-//
-//                }
-//                break;
-//            default:
-//                utils.log().info("please choose correct selector as mentioned in TestUtils constants");
-//                break;
-//
-//        }
+
     }
 
     public void  findandclickM(By selectorPath) {

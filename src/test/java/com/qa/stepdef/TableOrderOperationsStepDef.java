@@ -567,6 +567,11 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().selectModifier(modifier);
     }
 
+    @And("^I select modifier as \"([^\"]*)\" from the modifier window$")
+    public void iSelectModifierAsFromTheModifierWindow(String modifier) throws InterruptedException {
+        new OrderManagementScreen().selectModifier12(modifier);
+    }
+
     @When ("^I verify tax as \"([^\"]*)\"$")
     public void iVerifyTaxAs(String tax) throws InterruptedException {
         new OrderManagementScreen().iVerifyTaxAs(tax);
@@ -1380,7 +1385,7 @@ public class TableOrderOperationsStepDef {
     @Then ("^I should see payment made on this check popup message1$")
     public void iShouldSeePaymentMadeOnThisCheckPopupMessage1(){
 //        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin");
-        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck1(),"Payment(s) made on this Check, Can you return this to Walkin tax exe");
+        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck1(),"Payment(s) made on this Check, Can you return this to Walkin Test Automation");
     }
 
     @Then ("^I should see payment made on this check popup message for house account$")

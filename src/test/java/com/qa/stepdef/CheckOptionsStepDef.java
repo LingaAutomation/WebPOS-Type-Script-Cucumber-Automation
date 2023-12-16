@@ -646,6 +646,15 @@ public class CheckOptionsStepDef {
         new CheckOptions().press0();
     }
 
+    @And("^I enter the price with sale1$")
+    public void iEnterThePriceWithSale1() {
+        new CheckOptions().pressPin3Open();
+        new CheckOptions().press0();
+        new CheckOptions().press1();
+        new CheckOptions().press4();
+
+    }
+
     @And ("^I get the open item value from open item window$")
     public void iGetTheOpenItemValueFromOpenItemWindow(){
         new OpenItemWindow().getValueFromOpenItemScreen();

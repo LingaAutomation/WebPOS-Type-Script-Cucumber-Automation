@@ -73,6 +73,15 @@ public class TGCheckOptionsStepDef {
         new TGCheckOptionPage().clickVaryingGratuityApplyButton();
     }
 
+    @And ("^User verify varying gratuity as \"([^\"]*)\"$")
+            public void userVerifyVaryingGratuityAs(String value){
+        new TGCheckOptionPage().verifyVaryingGratuityAs(value);
+            }
+
+    @And ("^User verify fixed gratuity as \"([^\"]*)\"$")
+    public void userVerifyFixedGratuityAs(String value){
+        new TGCheckOptionPage().verifyVaryingGratuityAs(value);
+    }
     @And("User enter percentage of varying gratuity")
     public void userEnterPercentageOfVaryingGratuity() {
         new TGCheckOptionPage().enterPercentageOfVarying();
@@ -81,6 +90,16 @@ public class TGCheckOptionsStepDef {
     @And("User click fire coursing option")
     public void userClickFireCoursingOption() {
         new TGCheckOptionPage().selectFireCoursingOption();
+    }
+
+    @When ("^I should see the please send all the menu items to kitchen popup$")
+    public void iShouldSeeThePleaseSendAllTheMenuItemsToKitchenPopup(){
+        new TGCheckOptionPage().shouldSeePleaseSendAlltheMenuItems();
+    }
+
+    @When ("^I should see the please order the menu popup$")
+    public void iShouldSeeThePleaseOrderTheMenuPopup(){
+        new TGCheckOptionPage().shouldSeePleaseOrderTheMenuPopup();
     }
 
     @And("User select to be prepared order")

@@ -252,11 +252,13 @@ public class TGVoidPage extends BasePage {
 //        findandclick(btnName);
     }
 
-    public void getCheckNumber(String msg)
+    public String getCheckNumber(String msg)
     {
-        WebElement element = driver.findElement(By.xpath(chkNumber));
-        checkNumber =elementGetText(element,"test");
-        utils.log().info(msg + " - " +checkNumber);
+        WebElement checkNum=driver.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
+        checkNumber=checkNum.getText();
+        TestUtils.globalCheckNumber=checkNumber;
+        utils.log().info(checkNumber);
+        return checkNumber;
     }
 
     public void clickSubmitButton(){

@@ -197,6 +197,18 @@ public class TGCheckOptionPage extends BasePage {
         WebElement btnVaryingApplyButton=mergeAndFindMobileElement(varyingApplyButton);
         elementClick(btnVaryingApplyButton,"click btnVaryingApplyButton ");
     }
+
+    public void verifyVaryingGratuityAs(String value){
+        WebElement discount= driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
+
+        if(discount.isDisplayed()){
+            utils.log().info( " Gratuity is - "+ value);
+            Assert.assertEquals(discount.getAttribute("value"),value);
+        }else {
+            utils.log().info("Gratuity is not Displayed");
+        }
+    }
+
     public void enterPercentageOfVarying(){
         WebElement btnVaryingPercentageTextBox=mergeAndFindMobileElement(varyingPercentageTextBox);
         elementClick(btnVaryingPercentageTextBox,"click btnVaryingPercentageTextBox ");
@@ -234,6 +246,11 @@ public class TGCheckOptionPage extends BasePage {
 
         elementClick(btnVaryingFiveButton, "click varyingFiveButton ");
 
+        elementClick(btnVaryingFiveButton, "click varyingFiveButton ");
+        elementClick(btnVaryingFiveButton, "click varyingFiveButton ");
+        elementClick(btnVaryingFiveButton, "click varyingFiveButton ");
+
+
         WebElement btnVaryingContinueButton = mergeAndFindMobileElement(varyingContinueButton);
         elementClick(btnVaryingContinueButton, "click varyingContinueButton ");
 
@@ -246,7 +263,7 @@ public class TGCheckOptionPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(minMaxGratuityValueWarningPopup);
         String actualName=elementGetText(element,"value");
 
-        String expectedName = "Enter Value from 10.0 - 100.0";
+        String expectedName = "Please enter value from 10.0 - 100.0";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -262,6 +279,19 @@ public class TGCheckOptionPage extends BasePage {
             WebElement btnFireCoursing = mergeAndFindMobileElement(fireCoursingTitle);
             elementClick(btnFireCoursing, "click fireCoursing Button ");
         }
+    }
+
+    public void shouldSeePleaseSendAlltheMenuItems(){
+
+        WebElement element = driver.findElement(By.xpath("//p[contains(.,'Please send all the menu items to kitchen')]"));
+        Assert.assertEquals(element.getText(),"Please send all the menu items to kitchen");
+        utils.log().info("Displayed - "+element.getText());
+    }
+
+    public void shouldSeePleaseOrderTheMenuPopup(){
+        WebElement element = driver.findElement(By.xpath("//p[contains(.,'Please order a menu item')]"));
+        Assert.assertEquals(element.getText(),"Please order a menu item");
+        utils.log().info("Displayed - "+element.getText());
     }
 
     public void selectPreparedOrder(){
@@ -286,7 +316,7 @@ public class TGCheckOptionPage extends BasePage {
     public void verifyDirectedMenuItemPage(){
         WebElement element = mergeAndFindMobileElement(menuItemTitle);
         String actualName=elementGetText(element,"value");
-        String expectedName = "______ MENU ITEMS OF \"FOOD\" ______";
+        String expectedName = "__MENU ITEMS OF 'FOOD'__";
 
         Assert.assertEquals(actualName,expectedName);
     }

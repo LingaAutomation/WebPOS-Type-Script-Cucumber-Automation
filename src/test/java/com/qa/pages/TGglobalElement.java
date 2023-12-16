@@ -142,7 +142,7 @@ public class TGglobalElement {
     String numberDoubleZero = "00";
 //    String numberDoubleZero = "//XCUIElementTypeStaticText[@name=\"00\"]";
 
-    String continueButton = "Continue";
+    String continueButton = "//button[contains(.,' Process Payment ')]";
 //    String continueButton = "//XCUIElementTypeStaticText[@name=\"Continue\"]";
 
     String itemBasedFreeDiscountOptionWhichHasBeforeTax = "IB-FreeDiscountBeforeTax";
@@ -475,7 +475,7 @@ public class TGglobalElement {
     String creditCardNumber = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
     String creditCardCVVInfo = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]";
     String creditCardExpireDate = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[1]";
-    String firstEnteredTip = "(//XCUIElementTypeStaticText[@name=\"10,00\"])[1]";
+    String firstEnteredTip = "//p[contains(.,'$ 10.00')]";
     String CCSidePaymentDetail = "//XCUIElementTypeStaticText[@name=\"1. Side CC(#1)\"]";
     String CCSidePaymentDetailForBarTab = "//XCUIElementTypeStaticText[@name=\"1. Side CC\"]";
 
@@ -870,26 +870,26 @@ public class TGglobalElement {
     String openDiscountReason = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextView";
     String closeKeyboard = "(//XCUIElementTypeButton[@name=\" Back \"])[2]";
 
-    String gratuityOption = "Gratuity";
+    String gratuityOption = "//label[contains(.,'Gratuity')]";
 //    String gratuityOption = "//XCUIElementTypeStaticText[@name=\"Gratuity\"]";
 
-    String gratuityTitle = "Add Gratuity";
+    String gratuityTitle = "//ion-title[contains(.,'Add Gratuity')]";
 //    String gratuityTitle = "Add Gratuity";
 
 
-    String fixedGratuity = "Fixed Gratuity";
+    String fixedGratuity = "//button[.=' Fixed Gratuity ']";
 //    String fixedGratuity = "//XCUIElementTypeStaticText[@name=\"Fixed Gratuity\"]";
 
-    String varyingGratuity = "Varying Gratuity";
+    String varyingGratuity = "//button[.=' Varying Gratuity ']";
 //    String varyingGratuity = "//XCUIElementTypeStaticText[@name=\"Varying Gratuity\"]";
 
 
-    String varyingPercentageTextBox = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
+    String varyingPercentageTextBox = "//input[contains(@placeholder,'Enter value between 10.0-100.0')]";
 
-    String varyingApplyButton = "Apply";
+    String varyingApplyButton = "//button[contains(.,' Apply ')]";
 //    String varyingApplyButton = "//XCUIElementTypeStaticText[@name=\"Apply\"]";
 
-    String varyingContinueButton = "Continue";
+    String varyingContinueButton = "//span[contains(.,'Continue')]";
 //    String varyingContinueButton = "//XCUIElementTypeStaticText[@name=\"Continue\"]";
 
 
@@ -898,10 +898,10 @@ public class TGglobalElement {
     String varyingZeroButton = "0";
 //    String varyingZeroButton = "//XCUIElementTypeStaticText[@name=\"0\"]";
 
-    String varyingFiveButton = "5";
+    String varyingFiveButton = "//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'5')]";
 //    String varyingFiveButton = "//XCUIElementTypeStaticText[@name=\"5\"]";
 
-    String fireCoursingButton = "Fire  Coursing";
+    String fireCoursingButton = "//label[contains(.,'fireCoursing')]";
 //    String fireCoursingButton = "//XCUIElementTypeStaticText[@name=\"Fire Coursing\"]";
 
     String ToBePreparedOrder = "ENTREE";
@@ -914,9 +914,9 @@ public class TGglobalElement {
 
     String cashDrawer = "Open Cash Drawer";
     //    String cashDrawer = "//XCUIElementTypeStaticText[@name=\"Open Cash Drawer\"]";
-    String menuItemTitle = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText";
+    String menuItemTitle = "//p[@class='hasMenuItem']";
 
-    String openItemOption = "Open Item";
+    String openItemOption = "//label[contains(.,'Open Item')]";
     //    String openItemOption = "//XCUIElementTypeStaticText[@name=\"Open Item\"]";
     String coursingItemNameTextBox = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[2]";
     String coursingPriceTextBox = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]";
@@ -970,7 +970,7 @@ public class TGglobalElement {
     String coursingNameForAfterTaxWithOpenItem = "//XCUIElementTypeStaticText[@name=\"ENTREE \"]";
     String itemNameForAfterTaxWithOpenItem = "//XCUIElementTypeStaticText[@name=\"Test Automation \"]";
 
-    String minMaxGratuityValueWarningPopup = "Enter Value from 10.0 - 100.0";
+    String minMaxGratuityValueWarningPopup = "//p[contains(.,'Please enter value from 10.0 - 100.0')]";
 //    String minMaxGratuityValueWarningPopup = "//XCUIElementTypeTextView[@name=\"Enter Value from 10.0 - 100.0\"]";
 
     String beforeTaxForOpenItem = "BeforeTaxAmount-OpenItem";
@@ -981,7 +981,7 @@ public class TGglobalElement {
     String percentageTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField";
     String amountTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField";
 
-    String applyVaryingGratuity = "Apply";
+    String applyVaryingGratuity = "//button[contains(.,' Apply ')]";
 //    String applyVaryingGratuity = "//XCUIElementTypeStaticText[@name=\"Apply\"]";
 
 
@@ -1072,7 +1072,7 @@ public class TGglobalElement {
     String barTabButton = "Bar Tab";
 
     //    String qsrOrderType = "//XCUIElementTypeStaticText[@name=\"QSR\"]";
-    String qsrOrderType = "QSR";
+    String qsrOrderType = "//button[@id='os_tableMenu']//span[.=' QSR ']";
 
     String lastBarTabOrder = "//XCUIElementTypeStaticText[@name=\"Bar Tab\"])[last()]";
     String closedCheckDetailIcon = "(//XCUIElementTypeButton[@name=\"CheckDetialsIcon\"])[last()]";
@@ -1248,9 +1248,9 @@ public class TGglobalElement {
     String secondTable = "(//p[contains(.,'T20')])[1]";
 //    String secondTable = "//XCUIElementTypeStaticText[@name=\"T2\"]";
 
-    String seatNum = "(//XCUIElementTypeStaticText[@name=\"1\"])[1]";
+    String seatNum = "//span[.='1']";
 
-    String continued = "Continue";
+    String continued = "//span[.=' Continue ']";
 //    String continued = "//XCUIElementTypeStaticText[@name=\"Continue\"]";
 
     String dineIn = "Dine In";
@@ -1412,6 +1412,7 @@ public class TGglobalElement {
 
     String qsrOption = "//button[contains(@id,'os_menu')]";
 
+    String qsrOption1 = "//button[@id='os_tableMenu']//span[.=' QSR ']";
     //String discountOption = "//XCUIElementTypeStaticText[@name=\"Discount\"]";
 
     String openCheckDiscountAmount = "1,15";
@@ -1434,16 +1435,16 @@ public class TGglobalElement {
 
     String secondSeatOnMenuItem = "2";
 
-    String firstOrderWithModifier = "Cheesy Bacon Fries";
+    String firstOrderWithModifier = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Cheesy Bacon Fries')])[1]";
 //    String firstOrderWithModifier = "//XCUIElementTypeStaticText[@name=\"Cheesy Bacon Fries\"]";
 
-    String modifierDone = "Done";
+    String modifierDone = "//mat-dialog-actions//button[contains(.,' Done ')]";
 //    String modifierDone = "//XCUIElementTypeStaticText[@name=\"Done\"]";
 
     String modifyButton = "Modify";
 //    String modifyButton = "//XCUIElementTypeButton[@name=\"Modify\"]";
 
-    String selectedOrderWithModifier = "(//XCUIElementTypeStaticText[@name=\"Cheesy Bacon Fries \"])[1]";
+    String selectedOrderWithModifier = "(//div[@class='menu-section orderlist-flex ']//div[contains(@class,'p-col-4 orderlist-menuname')])";
 
     String addedModifier = "Penne";
 //    String addedModifier = "Penne";
@@ -1453,10 +1454,10 @@ public class TGglobalElement {
     String addMaximumCountModifier = "1/2 Romano";
 //    String addMaximumCountModifier = "//XCUIElementTypeStaticText[@name=\"1/2 Romano\"]";
 
-    String orderedAfterModifyPopup = "Cannot add modifiers, item already send to kitchen";
+    String orderedAfterModifyPopup = "//p[contains(.,'Cannot add modifiers, item already send to kitchen')]";
 //    String orderedAfterModifyPopup = "Cannot add modifiers, item already send to kitchen";
 
-    String orderedAfterModifyPopupDoneButton = "Done";
+    String orderedAfterModifyPopupDoneButton = "//button[contains(.,' Done ')]";
 //    String orderedAfterModifyPopupDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
 
     String gratuityAmountTitle = "Gratuity";
@@ -1469,7 +1470,7 @@ public class TGglobalElement {
 //    String varyingGratuityAmount = "TL 149,99";
 
 
-    String subtotalAmount = "(//XCUIElementTypeStaticText[@name=\"TL 1.000,00\"])[1]";
+    String subtotalAmount = "//div[@id='os_subTotalStr']//input";
 
     String totalAmountWithTax = "TL 1.100,00";
 //    String totalAmountWithTax = "//XCUIElementTypeStaticText[@name=\"TL 1.200,00\"]";
@@ -1537,14 +1538,14 @@ public class TGglobalElement {
     String operationMenuTitle = "(//label[contains(.,'Operation')])[1]";
 //    String operationMenuTitle = "//XCUIElementTypeStaticText[@name=\"Operation\"]";
 
-    String syncIcon = "Sync";
+    String syncIcon = "//button[@class='mat-focus-indicator ion-text-center mat-button mat-button-base _mat-animation-noopable ng-star-inserted'][1]";
 //    String syncIcon = "//XCUIElementTypeButton[@name=\"Sync\"]";
 
     String syncInfo = "Your iPad is up to date";
 //    String syncInfo = "//XCUIElementTypeStaticText[@name=\"Your iPad is up to date\"]";
 
 
-    String logOffButton = "logOff";
+    String logOffButton = "//button[@id='os_logOff']";
 
     String freeMenuItem = "(F) Garlic Bread EACH";
 //    String freeMenuItem = "//XCUIElementTypeStaticText[@name=\"(F) Garlic Bread EACH\"]";
@@ -1661,9 +1662,11 @@ public class TGglobalElement {
 
     String existingCustomer = "(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[5]";
 
-    String closeSaleInfoPopUp = "Close your Sale";
+    String closeSaleInfoPopUp = "//mat-dialog-content[contains(.,'close the sale')]";
+    String  closeYourSaleTxt = "//mat-dialog-content[contains(.,'Close Your Sale')]";
 
-    String syncInfoPopUp = "Please close the sale to sync the data";
+    String  closeTheSaleTxt = "//mat-dialog-content[contains(.,'close the sale')]";
+    String syncInfoPopUp = "//p[contains(.,'Please close the sale to sync the data')]";
 //    String syncInfoPopUp = "Please close the sale to sync the data";
 
     String serviceTypeButton = "//button[contains(@id,'os_menu')]";
@@ -1718,17 +1721,17 @@ public class TGglobalElement {
     String fourthMenuItem = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Fried Crab Cakes')])[1]";
 //    String fourthMenuItem = "//XCUIElementTypeStaticText[@name=\"Fried Crab Cakes\"]";
 
-    String secondItemThirdModifier = "Wheat Bread";
+    String secondItemThirdModifier = "//span[contains(.,'Wheat Bread')]";
 //    String secondItemThirdModifier = "//XCUIElementTypeStaticText[@name=\"Wheat Bread\"]";
 
 
-    String secondOrderThirdModifier = "//XCUIElementTypeStaticText[@name=\" Wheat Bread\"]";
+    String secondOrderThirdModifier = "//div[@class='modifier-section']//div[contains(.,'Wheat Bread')]";
 
     String emptyOrderList = "empty set title";
 //    String emptyOrderList = "//XCUIElementTypeStaticText[@name=\"empty set title\"]";
 
 
-    String firstModifierOfFirstItemName = "//XCUIElementTypeStaticText[@name=\" 1/2 Romano\"]";
+    String firstModifierOfFirstItemName = "//div[@class='modifier-section']//div[contains(.,'1/2 Romano')]";
 
     String firstModifierOfFirstOrderName = "//span[contains(.,'1/2 Romano')]";
 //    String firstModifierOfFirstOrderName = "//XCUIElementTypeStaticText[@name=\"1/2 Romano\"]";
@@ -1736,11 +1739,11 @@ public class TGglobalElement {
     String firstModifierOfThirdMenuItem = "//span[contains(.,'1/2 Romano')]";
 //    String firstModifierOfThirdMenuItem = "//XCUIElementTypeStaticText[@name=\"1/2 Romano\"]";
 
-    String firstModifierOfFirstItemBalance = "9,00";
+    String firstModifierOfFirstItemBalance = "//div[@class='modifier-section']//div[(@class='p-col-3 text-pos-end qsr-mod-padding ')]";
 //    String firstModifierOfFirstItemBalance = "//XCUIElementTypeStaticText[@name=\"9,00\"]";
 
-    String firstModifierOfFirstItemAmount = "(//XCUIElementTypeStaticText[@name=\"2\"])[1]";
-    String secondModifierOfFirstItemAmount = "(//XCUIElementTypeStaticText[@name=\"3\"])[1]";
+    String firstModifierOfFirstItemAmount = "//div[@class='modifier-section']//div[contains(.,'2')]";
+    String secondModifierOfFirstItemAmount = "(//div[@class='modifier-section']//div[contains(.,'1')])[1]";
 
     String deleteModifier = "Delete";
 //    String deleteModifier = "//XCUIElementTypeStaticText[@name=\"Delete\"]";
@@ -1750,13 +1753,13 @@ public class TGglobalElement {
     String totalBalanceWithTaxExempt = "TL 33,00";
 //    String totalBalanceWithTaxExempt = "//XCUIElementTypeStaticText[@name=\"TL 33,00\"]";
 
-    String secondMenuItemHasModifier = "Fried Crab Cakes";
+    String secondMenuItemHasModifier = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Fried Crab Cakes')])[1]";
 //    String secondMenuItemHasModifier = "//XCUIElementTypeStaticText[@name=\"Fried Crab Cakes\"]";
 
-    String maximumCountText = "You reached the maximum count";
+    String maximumCountText = "//mat-dialog-content[(@id='alert-done-popup')]";
 //    String maximumCountText = "//XCUIElementTypeTextView[@name=\"You reached the maximum count\"]";
 
-    String firstModifierForSecondMenuItem = "RYE BREAD";
+    String firstModifierForSecondMenuItem = "//span[contains(.,'RYE BREAD')]";
 //    String firstModifierForSecondMenuItem = "//XCUIElementTypeStaticText[@name=\"RYE BREAD\"]";
 
     String addVoidReasonButton = "(//button[contains(.,' Add ')])[2]";
@@ -2336,7 +2339,10 @@ public class TGglobalElement {
     String checkBasedBeforeTaxWithOpenItemForBruchettas = "9,70";
 
     //    String checkBasedBeforeTaxWithOpenItemTitle = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-OpenItem\"]";
-    String checkBasedBeforeTaxWithOpenItemTitle = "CB-AfterTax-OpenItem";
+    String checkBasedBeforeTaxWithOpenItemTitle = "//div[@class='discount-section']//div[contains(.,'CB-BeforeTax-OpenItem')]";
+
+
+    String checkBasedAfterTaxWithOpenItemTitle = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-OpenItem')]";
 
     //    String checkBasedPercentageDiscountWithAfterTaxAmountAppliedOpenItem = "//XCUIElementTypeStaticText[@name=\"59,99\"]";
     String checkBasedPercentageDiscountWithAfterTaxAmountAppliedOpenItem = "59,99";
@@ -2462,7 +2468,7 @@ public class TGglobalElement {
     String firstItemsFirstModifier = "//XCUIElementTypeStaticText[@name=\"Penne\"][1]";
     String selectedModifier = "//XCUIElementTypeStaticText[@name=\"Penne\"][2]";
     String modifierOkButton = "Ok";
-    String modifierCancelButton = "Cancel";
+    String modifierCancelButton = "//div[@class='modifier-decision']//span[contains(.,' Cancel ')]";
 
     //Operation Pge
 
@@ -2796,7 +2802,7 @@ public class TGglobalElement {
     //    String itemBasedATAsPercentageDiscountAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 12,00\"]";
     String itemBasedATAsPercentageDiscountAmountForSandwiches = "TL 12,00";
     //    String CCSidePaymentDetailBarTab = "//XCUIElementTypeStaticText[@name=\"1. Side CC(#1)\"]";
-    String CCSidePaymentDetailBarTab = "1. Side CC(#1)";
+    String CCSidePaymentDetailBarTab = "(//ion-col[contains(.,'Side CC(#1)')])[3]";
     //String itemBasedDiscountATWithPercentagePaymentDetailAmountWithTip = "//XCUIElementTypeStaticText[@name=\"132,00+100,00\"]";
 //    String itemBasedDiscountBTWithPercentage = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Percentage\"]";
     String itemBasedDiscountBTWithPercentage = "IB-BeforeTax-Percentage";
@@ -2864,7 +2870,7 @@ public class TGglobalElement {
     String checkBasedBeforeTaxWithOpenItemBruchetta = "TL 10,00";
     //    String checkBasedBeforeTaxWithOpenItemBruchettas = "//XCUIElementTypeStaticText[@name=\"9,71\"]";
     String checkBasedBeforeTaxWithOpenItemBruchettas = "9,71";
-    String firstModifier = "(//XCUIElementTypeStaticText[@name=\"Add Veggies\"])[2]";
+    String firstModifier = "//div[@class='modifier-section']//div[contains(.,'Add Veggies')]";
     String selectedModifierInOrderPage = "Add Veggies";
     //    String addedModifierOfFirstItemName = "//XCUIElementTypeStaticText[@name=\" 1/2 Romano\"]";
     String addedModifierOfFirstItemName = " 1/2 Romano";
@@ -2873,13 +2879,13 @@ public class TGglobalElement {
     //    String checkBasedDiscountPercentage = "//XCUIElementTypeStaticText[@name=\"TL 100,00\"]";
     String checkBasedDiscountPercentage = "TL 100,00";
     //    String withoutGratuityTotalAmount = "//XCUIElementTypeStaticText[@name=\"TL 1.200,00\"]";
-    String withoutGratuityTotalAmount = "TL 1.100,00";
+    String withoutGratuityTotalAmount = "//div[@id='os_totalAmountStr']//input";
     //    String totalAmountWithGratuity = "//XCUIElementTypeStaticText[@name=\"TL 1.299,99\"]";
-    String totalAmountWithGratuity = "TL 1.199,99";
+    String totalAmountWithGratuity = "//div[@id='os_totalAmountStr']//input";
     //    String sideCCPaymentDetailAmountWithGratuityFixAndWithTips = "//XCUIElementTypeStaticText[@name=\"1.299,99+100,00\"]";
-    String sideCCPaymentDetailAmountWithGratuityFixAndWithTips = "1.199,99+100,00";
+    String sideCCPaymentDetailAmountWithGratuityFixAndWithTips = "/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]";
     //    String sideCCPaymentDetailAmountWithGratuityVaryingAndWithTips = "//XCUIElementTypeStaticText[@name=\"1.349,99+100,00\"]";
-    String sideCCPaymentDetailAmountWithGratuityVaryingAndWithTips = "1.249,99+100,00";
+    String sideCCPaymentDetailAmountWithGratuityVaryingAndWithTips = "/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]";
     //    String addNewCustomerTab = "//XCUIElementTypeButton[@name=\"Add New\"]";
     String addNewCustomerTab = "Add New";
     //    String numberoneinHA = "//XCUIElementTypeButton[@name=\"1\"]";
@@ -2893,7 +2899,7 @@ public class TGglobalElement {
     String rechargeTxtFieldInHa = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[3]";
     //    String existingCustomerName = "//XCUIElementTypeButton[@name=\"goknur b\"]";
     String existingCustomerName = "goknur b";
-    String addedModifierInMenuItemPage = "//XCUIElementTypeStaticText[@name=\" Add Veggies\"]";
+    String addedModifierInMenuItemPage = "(//div[@class='modifier-section']//div[contains(.,'Add Veggies')])[2]";
     //    String addedModifierInMenuItemPage = " Add Veggies";
 //    String fourthModifierForSecondMenuItem = "//XCUIElementTypeStaticText[@name=\"1/2 Mel\"]";
     String fourthModifierForSecondMenuItem = "1/2 Mel";
@@ -2902,11 +2908,11 @@ public class TGglobalElement {
     //    String totalPriceOfItemBasedDiscountATAsPercentageWithTaxExemptForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 899,91\"]";
     String totalPriceOfItemBasedDiscountATAsPercentageWithTaxExemptForSandwiches = "TL 899,91";
     //    String ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsPercentageWithTaxExemptForSandwiches1 = "//XCUIElementTypeStaticText[@name=\"899,91\"]";
-    String ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsPercentageWithTaxExemptForSandwiches1 = "899,91";
+    String ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsPercentageWithTaxExemptForSandwiches1 = "/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]";
     //    String totalPriceOfItemBasedDiscountBTAsPercentageWithTaxExemptForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 899,90\"]";
     String totalPriceOfItemBasedDiscountBTAsPercentageWithTaxExemptForSandwiches = "TL 899,90";
     //    String ccSidePaymentAmountWithTipsAndItemBasedDiscountBTAsPercentageWithTaxExemptForSandwiches1 = "//XCUIElementTypeStaticText[@name=\"899,90\"]";
-    String ccSidePaymentAmountWithTipsAndItemBasedDiscountBTAsPercentageWithTaxExemptForSandwiches1 = "899,90";
+    String ccSidePaymentAmountWithTipsAndItemBasedDiscountBTAsPercentageWithTaxExemptForSandwiches1 = "/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]";
     //    String totalPriceOfItemBasedDiscountATAsAmountWithTaxExemptForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 989,90\"]";
     String totalPriceOfItemBasedDiscountATAsAmountWithTaxExemptForSandwiches = "TL 989,90";
     //    String ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsAmountWithTaxExemptForSandwiches1 = "//XCUIElementTypeStaticText[@name=\"989,90\"]";

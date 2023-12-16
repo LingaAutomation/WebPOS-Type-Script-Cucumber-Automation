@@ -305,6 +305,13 @@ public class CheckOptions extends OrderManagementScreen {
         elementClick( price1, "1 is selected ");
     }
 
+    @FindBy( xpath = "//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//button[contains(.,'4')]")
+    WebElement price4;
+
+    public void press4(){
+        elementClick( price4, "4 is selected ");
+    }
+
     @FindBy(xpath = "//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'00')]")
     WebElement price00;
     public void press00(){

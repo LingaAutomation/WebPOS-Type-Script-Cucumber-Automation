@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static com.qa.utils.TestUtils.driver;
@@ -339,28 +340,46 @@ public class CIPaymentScreen extends BasePage{
         findandclick(btnWrong, "", TestUtils.Accessibility);
     }
 
-    public void pressPercentagePin(String pin1, String pin2,
-                                   String pinPoint, String pin0) {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        WebElement element = mergeAndFindElement(pin1, "", TestUtils.Accessibility);
-//        elementClick(element, "Tapped pin1");
-        findandclick(pin1, "", TestUtils.Accessibility);
-//        elementClick(element, "Tapped pin1");
+    public void pressPercentagePin1(String value) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 
-//        WebElement elementPin0 = mergeAndFindElement(pin2, "", TestUtils.Accessibility);
-//        elementClick(elementPin0, "Tapped pin2");
-        findandclick(pin2, "", TestUtils.Accessibility);
-//        elementClick(elementPin0, "Tapped pin2");
+        String number = (value.replaceAll("$., ",""));
+        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'C')]", "Tapped Pin C");
+         utils.log().info(number);
+        for(int i =0;i<number.length();i++) {
+            char ch = number.charAt(i);
+            utils.log().info(ch);
+            WebElement el2;
+            if(ch == '0'){
+                el2 = driver.findElement(By.xpath("(//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'" + ch + "')])[2]"));
+                utils.log().info(el2.getText());
+            }else{
+                el2 = driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'" + ch + "')]"));
+                utils.log().info(el2.getText());
+            }
+            elementClick(el2, "Tapped number as - " + ch);
 
-//        WebElement elementPin5 = mergeAndFindElement(pinPoint, "", TestUtils.Accessibility);
-//        elementClick(elementPin5, "Tapped pin.");
-        findandclick(pinPoint, "", TestUtils.Accessibility);
+            Thread.sleep(1500);
+        }
+        WebElement el5 = driver.findElement(By.xpath("//span[contains(.,'Continue')]"));
+        elementClick(el5, "Tapped continue Button ");
+//        elementClick(applyBtn, "Tapped Apply button");
+    }
 
+    public void pressPercentagePin(String value,String value1, String value2, String value3) {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+//        elementClick(passPercentageValue, "Pass percentage value field is clicked.");
+        int number = Integer.parseInt(value.replaceAll("[$., ]",""));
+        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'C')]", "Tapped Pin C");
 
-//        WebElement elementPin00 = mergeAndFindElement(pin0, "", TestUtils.Accessibility);
-//        elementClick(elementPin00, "Tapped pin0");
-        findandclick(pin0, "", TestUtils.Accessibility);
-//        elementClick(elementPin00, "Tapped pin0");
+        for(int i =0;i<number;i++) {
+            WebElement el2 = driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'" + i + "')]"));
+            elementClick(el2, "Tapped number as - " + i);
+
+        }
+        WebElement el5 = driver.findElement(By.xpath("//span[contains(.,'Continue')]"));
+        elementClick(el5, "Tapped continue Button ");
+//        elementClick(applyBtn, "Tapped Apply button");
     }
 
     public void clickTextFieldPercentage(){
@@ -430,7 +449,7 @@ public class CIPaymentScreen extends BasePage{
 
     public void pressCardPin(String pin1, String pin2,
                              String pin3, String pin4,String pin5) {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 //        WebElement elementPin1 = mergeAndFindElement(pin1, "", TestUtils.Accessibility);
 //        click(elementPin1, "Tapped pin1");
         findandclick(pin1, "", TestUtils.Accessibility);

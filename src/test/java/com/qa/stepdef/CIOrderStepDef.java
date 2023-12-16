@@ -61,8 +61,7 @@ public class CIOrderStepDef {
 
     @Then("^It should show the amount value as \"([^\"]*)\" \"([^\"]*)\"$")
     public void textValue(String value, String msg) {
-        String text = orderPage.txtValue(value,msg);
-        Assert.assertEquals(text,value);
+        new CIOrderPage().verifyDiscountAs(value,msg);
 
     }
 

@@ -3,6 +3,7 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.junit.experimental.theories.Theories;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -197,7 +198,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Walkin')]")
     private WebElement paymentMadeOnThisCheckPopup;
 
-    @FindBy(xpath ="//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin tax exe')]")
+    @FindBy(xpath ="//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Test Automation')]")
     private WebElement paymentMadeOnThisCheckPopup1;
 
     @FindBy(xpath = "Payment(s) made on this check,Can you return this to Auto ragav")
@@ -306,7 +307,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "Dine In")
     private WebElement dineInService;
 
-    String seat2Del = "//*[@id=\"mat-menu-panel-1\"]/div/div/ion-grid/ion-row/div/button[2]/span[1]/div";
+    String seat2Del = "/html/body/div/div[2]/div/div/div/div/ion-grid/ion-row/div/button[2]/span[1]/div";
 
     String  closeYourSaleTxt = "//mat-dialog-content[contains(.,'Close Your Sale')]";
 
@@ -1569,6 +1570,16 @@ public  void selectCategory (String value) throws Exception {
         Thread.sleep(1000);
         WebElement e = driver.findElement(By.xpath("//span[contains(.,'"+modifier+"')]"));
         elementClick(e, modifier + " selected");
+    }
+
+    public void selectModifier12(String modifier) throws InterruptedException {
+        WebElement e = driver.findElement(By.xpath("//button[contains(.,' "+modifier+" ')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", e);
+        Thread.sleep(500);
+        elementClick(e,"Selected = "+modifier);
+
+        elementClick("//button[contains(.,'Ok')]","Selected OK");
+
     }
 
     public void iVerifyTaxAs(String tax) throws InterruptedException {

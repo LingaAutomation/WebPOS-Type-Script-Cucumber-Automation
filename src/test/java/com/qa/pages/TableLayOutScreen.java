@@ -227,7 +227,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(name = "Empty List")
     private WebElement emptyMergeList;
 
-    @FindBy(name = "New Check")
+    @FindBy(xpath = "//linga-icon[@symbol='newTab']")
     private WebElement newCheck;
 
     @FindBy(name = "Menu items(s) has to be sent to the kitchen")

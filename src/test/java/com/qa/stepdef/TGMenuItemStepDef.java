@@ -160,7 +160,7 @@ public class TGMenuItemStepDef {
     }
 
     @When("User select menu item with modifier")
-    public void userSelectMenuItemWithModifier() {
+    public void userSelectMenuItemWithModifier() throws InterruptedException {
         new TGMenuItemPage().selectMenuItemHasModifier();
     }
 
@@ -223,7 +223,7 @@ public class TGMenuItemStepDef {
     }
 
     @And("User verify deleted gratuity amount")
-    public void userVerifyDeletedGratuityAmount() {
+    public void userVerifyDeletedGratuityAmount() throws InterruptedException {
         new TGMenuItemPage().verifyDeletedGratuity();
 
     }
@@ -727,7 +727,7 @@ public class TGMenuItemStepDef {
     }
 
     @When("User select second menu item with modifier")
-    public void userSelectSecondMenuItemWithModifier() {
+    public void userSelectSecondMenuItemWithModifier() throws InterruptedException {
         new TGMenuItemPage().selectSecondMenuItemHasModifier();
     }
 
@@ -752,7 +752,7 @@ public class TGMenuItemStepDef {
     }
 
     @And("User click food category")
-    public void userClickFoodCategory() {
+    public void userClickFoodCategory() throws InterruptedException {
         new TGMenuItemPage().clickFoodTab();
     }
 
@@ -775,6 +775,17 @@ public class TGMenuItemStepDef {
     public void userClickQSROnMenuItemPage() {
         new TGMenuItemPage().clickQsrOrderType();
     }
+
+    @When("User click QSR on Menu Item page1")
+    public void userClickQSROnMenuItemPage1() {
+        new TGMenuItemPage().clickQsrOrderType1();
+    }
+
+    @When("User click QSR on service table")
+    public void userClickQSROnServiceTable() {
+        new TGMenuItemPage().clickQsrOrderType1();
+    }
+
 
     @When("User enter customer name for bar tab")
     public void userEnterCustomerNameForBarTab() {
@@ -949,6 +960,26 @@ public class TGMenuItemStepDef {
     @Then("User select check based discount after tax with open item")
     public void userSelectCheckBasedDiscountAfterTaxWithOpenItem() {
         new TGMenuItemPage().selectCheckBasedDiscountAfterTaxWithOpenItem();
+    }
+
+    @And("^User verify check based discount after tax value as \"([^\"]*)\" and open item with decimal number for Brushetta$")
+    public void userVerifyCheckBasedDiscountAfterTaxValueAsAndOpenItemWithDecimalNumberForBrushetta(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountAfterTaxAndOpenItemWithDecimalNumberForBrushetta(value);
+    }
+
+    @And("^User verify check based discount before tax value as \"([^\"]*)\" and open item with decimal number for Brushetta$")
+    public void userVerifyCheckBasedDiscountBeforeTaxValueAsAndOpenItemWithDecimalNumberForBrushetta(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountBeforeTaxAndOpenItemWithDecimalNumberForBrushetta(value);
+    }
+
+    @And("^User verify check based discount after tax value as \"([^\"]*)\" and open item with whole number for Brushetta$")
+    public void userVerifyCheckBasedDiscountAfterTaxValueAsAndOpenItemWithWholeNumberForBrushetta(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountAfterTaxAndOpenItemWithWholeNumberForBrushetta(value);
+    }
+
+    @And("^User verify check based discount before tax value as \"([^\"]*)\" and open item with whole number for Brushetta$")
+    public void userVerifyCheckBasedDiscountBeforeTaxValueAsAndOpenItemWithWholeNumberForBrushetta(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountBeforeTaxAndOpenItemWithWholeNumberForBrushetta(value);
     }
 
     @And("User verify check based discount after tax with open item")

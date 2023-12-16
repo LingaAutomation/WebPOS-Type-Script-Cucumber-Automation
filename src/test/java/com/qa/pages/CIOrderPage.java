@@ -3,7 +3,10 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import static com.qa.utils.TestUtils.driver;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class CIOrderPage  extends BasePage {
 
@@ -42,6 +45,12 @@ public class CIOrderPage  extends BasePage {
         return findAndGetText(item, "",TestUtils.Accessibility);
     }
 
+    public void verifyDiscountAs(String value, String msg){
+        WebElement element = driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+        Assert.assertEquals(element.getAttribute("value"), value);
+        utils.log().info("Discount as - "+element.getAttribute("value")+" "+msg);
+
+    }
     public void clickBtnOption(String msg) {
 //        MobileElement element = mergeAndFindElement(option, "",TestUtils.XPath);
 //        elementClick(element, msg);

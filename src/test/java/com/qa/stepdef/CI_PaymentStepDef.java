@@ -202,6 +202,11 @@ public class CI_PaymentStepDef {
         new CIPaymentScreen().pressPercentagePin(pin1,pin2,pinPoint,pin0);
     }
 
+    @And("^I enter the percentage1 as \"([^\"]*)\"$")
+    public void iEnterThePercentage1As(String pin1) throws InterruptedException {
+        new CIPaymentScreen().pressPercentagePin1(pin1);
+    }
+
     @And("I click on the text field in the varying gratuity popup")
     public void iClickOnTheTextFieldInTheVaryingGratuityPopup() {
         new CIPaymentScreen().clickPercentageTextField();

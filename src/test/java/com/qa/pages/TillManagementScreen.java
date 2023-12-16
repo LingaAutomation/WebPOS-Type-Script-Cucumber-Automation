@@ -109,7 +109,7 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(name = "Yes")
     private WebElement yesCloseTillBtn;
 
-    @FindBy(name = "Continue")
+    @FindBy(xpath = "//span[.=' Continue ']")
     private WebElement continueCloseTillBtn;
 
     @FindBy(xpath= "(//XCUIElementTypeStaticText[@name=\"Close Till\"])[1]")
