@@ -57,6 +57,7 @@ public class Hooks {
             File screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
             scenario.attach(fileContent, "image/png", "screenshot");
+//            driver.close();
             driver = null;
 
         }

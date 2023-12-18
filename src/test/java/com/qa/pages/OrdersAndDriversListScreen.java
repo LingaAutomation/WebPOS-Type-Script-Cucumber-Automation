@@ -16,7 +16,7 @@ public class OrdersAndDriversListScreen extends BasePage {
 
     String checkStatsTab = "//button//span[text()=' Check Status ']";
 
-    @FindBy(name = "Check Stats")
+    @FindBy(xpath = "//span[contains(.,'Check Status')]")
     private WebElement checkStatsTab1;
 
     @FindBy(name = "Closed")

@@ -5,6 +5,7 @@ import com.qa.utils.TestUtils;
 //import io.appium.java_client.MobileElement;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class TaxRoundingOffStepDef {
     @Given("I am logging in")
@@ -47,6 +48,12 @@ public class TaxRoundingOffStepDef {
 //        nselectMenuBasicValidationForQsr
     }
 
+    @And("^Select the sub category \"([^\"]*)\"$")
+    public void selectTheSubCategory(String subcategory) throws Exception {
+        new TaxRoundingOff().subCategory1Selection(subcategory);
+//        nselectMenuBasicValidationForQsr
+    }
+
     @And("^Select the menu item \"([^\"]*)\"$")
     public void selectTheMenu(String menuItem) throws Exception {
         new TaxRoundingOff().menu1Selection(menuItem);
@@ -65,6 +72,11 @@ public class TaxRoundingOffStepDef {
     @And("^I selected the modifier \"([^\"]*)\"$")
     public void selectTheModifier(String ModifierName) throws Exception {
         new BasePage().selectTheModifierAs(ModifierName);
+    }
+
+    @And("^I selected the alternate modifier \"([^\"]*)\"$")
+    public void selectTheAlternateModifier(String ModifierName) throws Exception {
+        new BasePage().selectTheAlternateModifierAs(ModifierName);
     }
 
     @And("^I selected the prefix \"([^\"]*)\"$")
@@ -357,6 +369,13 @@ public class TaxRoundingOffStepDef {
         //new TaxR
     }
 
+    @And("^Select tax exempt option$")
+    public void SelectedTaxExemptOption() throws InterruptedException {
+        new TaxRoundingOff().SelectedTheTaxExemptOption();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxR
+    }
+
     @And("^Selected Open item option$")
     public void SelectedOpenItemOption() throws InterruptedException {
         new TaxRoundingOff().SelectedOpenItemOption();
@@ -621,6 +640,20 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I selected menu options2$")
+    public void iSelectedMenuOptions2() {
+        new TaxRoundingOff().iSelectedTheMenuOptions2();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^I selected menu options2 discount$")
+    public void iSelectedMenuOptions2Disc() {
+        new TaxRoundingOff().iSelectedTheMenuOptions2Disc();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^I selected menu options for second menu$")
     public void iSelectedMenuOptionsForSecondMenu() {
 //        new TaxRoundingOff().iSelectedTheMenuOptionsSecondMenu();
@@ -634,13 +667,12 @@ public class TaxRoundingOffStepDef {
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
-
-    @And("^I selected menu options2$")
-    public void iSelectedMenuOptions2() {
-//        new TaxRoundingOff().iSelectedTheMenuOptions2();
-        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
-        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
-    }
+//
+//    @And("^I selected menu options2$")
+//    public void iSelectedMenuOptions2() {
+////         new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+////        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+//    }
 
     @And("^I selected Open Discount$")
     public void iSelectedOpenDiscount() {
@@ -895,6 +927,13 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I click Closed tab on the Check stats$")
+    public void iSelectedTheClosedTab() {
+        new TaxRoundingOff().iSelectedClosedTab();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^I selected the menu item with exclusive tax and mix and match discount$")
     public void iSelectedTheExclusiveTaxMenuItemWithMixAdMatchDiscout() {
         new TaxRoundingOff().iSelectedExclusiveTaxMenuItemWithMixAdMatchDiscout();
@@ -1096,6 +1135,13 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I selected void button in menu options$")
+    public void iSelectedVoidButtonMenuOption() throws InterruptedException {
+        new TaxRoundingOff().iSelectedTheVoidButtonMenuOption();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^Select the Void reason as \"([^\"]*)\"$")
     public void SelectTheVoidReason(String voidReason) throws InterruptedException {
         new TaxRoundingOff().SelectedVoidReason(voidReason);
@@ -1187,9 +1233,9 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
-    @And("^Remove the item discount$")
-    public void RemoveTheItemDiscount() throws Exception {
-        new TaxRoundingOff().RemovedTheItemDiscount();
+    @And("^Remove the item discount \"([^\"]*)\"$")
+    public void RemoveTheItemDiscount(String discount) throws Exception {
+        new TaxRoundingOff().RemovedTheItemDiscount(discount);
     }
 
     @And("^Remove the item discount2$")
@@ -1222,9 +1268,9 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().iSelectedOKBtn();
     }
 
-    @And("^I selected the Prefix$")
-    public void iSelectedThePrefix() throws Exception {
-        new TaxRoundingOff().iSelectedPrefix();
+    @And("^I selected the Prefix \"([^\"]*)\"$")
+    public void iSelectedThePrefix(String prefix) throws Exception {
+        new TaxRoundingOff().iSelectedPrefix(prefix);
     }
 
     @And("^Verify If Inc Tax \"([^\"]*)\" and exclusive modifier tax \"([^\"]*)\" are Calculated Properly And Calculate RoundOff for item discount after tax Exclusive$")
@@ -1269,9 +1315,9 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
-    @And("^I selected the split option as \"([^\"]*)\"$")
-    public void SelectTheSplitOption(String SplitOption) throws InterruptedException {
-        new TaxRoundingOff().SelectSplitOption(SplitOption);
+    @And("^I selected the split option as Split Check$")
+    public void SelectTheSplitOption() throws InterruptedException {
+        new TaxRoundingOff().SelectSplitOption();
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
@@ -1501,6 +1547,11 @@ public class TaxRoundingOffStepDef {
     @And("^I get table number$")
     public void iGetTableNumber() {
         new TaxRoundingOff().getTableNumberTxt();
+    }
+
+    @And ("^I get check number$")
+    public void iGetCheckNumber(){
+        new TaxRoundingOff().getCheckNumberTxt();
     }
 
     @And("^I get check number2$")
@@ -1821,6 +1872,16 @@ public class TaxRoundingOffStepDef {
     @And ("^I selected cancel button$")
     public void iClickCancelButton(){
         new TaxRoundingOff().iClickTheCancelButton();
+    }
+
+    @Then("^I should see closed check in closed check tab$")
+    public void iShouldSeeClosedCheckInClosedCheckTab() throws InterruptedException {
+        new TaxRoundingOff().verifyClosedCheckInClosedCheckTab();
+    }
+
+    @And ("^I click reopen check button on the check stats screen$")
+    public void iClickReopenCheckButtonOnTheCheckStatsScreen() throws InterruptedException {
+        new TaxRoundingOff().pressReopenCheckStatsBtn();
     }
 
 //    @And("^Verify if the total value is calculated correctly when check tax and exc tax are available disc applied \"([^\"]*)\"$")

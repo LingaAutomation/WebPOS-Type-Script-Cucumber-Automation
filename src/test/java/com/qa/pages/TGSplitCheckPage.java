@@ -369,7 +369,7 @@ public class TGSplitCheckPage extends BasePage{
 //    }
 
     public void saveAndCloseSplitedCheck(){
-        WebElement element = mergeAndFindMobileElement(saveSplitedCheck);
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Save & Close')]"));
         elementClick(element,"Save Splited Check");
     }
 
@@ -439,12 +439,12 @@ public class TGSplitCheckPage extends BasePage{
     }
 
     public void clickQsrOrderType(){
-        WebElement element = mergeAndFindMobileElement(qsrOption);
+        WebElement element = driver.findElement(By.xpath("//button[@id='os_menu']"));
         elementClick(element,"Click qsrOption");
     }
 
     public void selectDineInOrderType(){
-        WebElement element = mergeAndFindMobileElement(dineInOrderType);
+        WebElement element = driver.findElement(By.xpath("//span[contains(.,'DINE IN')]"));
         elementClick(element,"Select DineIn OrderType");
     }
 
@@ -476,7 +476,7 @@ public class TGSplitCheckPage extends BasePage{
     }
 
     public void clickFinishButton(){
-        WebElement element = mergeAndFindMobileElement(finishButton);
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Finish')]"));
         elementClick(element,"Click Finish Button");
     }
 
