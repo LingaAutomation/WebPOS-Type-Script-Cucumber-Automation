@@ -7,13 +7,12 @@ import com.qa.pages.OrderTypeWindow;
 import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.sv.Men;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class MenuOptionStepDef {
 
-    public WebDriver driver = TestUtils.driver;
+    public  WebDriver driver = TestUtils.driver;;
 
 
     @And("^I click menu item as \"([^\"]*)\" to see Menu option screen$")

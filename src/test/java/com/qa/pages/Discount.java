@@ -1,17 +1,27 @@
 package com.qa.pages;
-import com.qa.utils.TestUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
+import com.qa.utils.TestUtils;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.concurrent.TimeUnit;
 
 public class Discount extends BasePage{
 
-    @FindBy(xpath = "Discount")
+    public WebDriver driver = TestUtils.driver;
+
+    public Discount() {
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
+    }
+
+    @FindBy(xpath = "//div[.='Discount']")
     private WebElement discountCheck;
 
     @FindBy(xpath = "Mix&Match SP(Before Tax)")
@@ -20,7 +30,7 @@ public class Discount extends BasePage{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[2]/XCUIElementTypeCell")
     private WebElement orderListWithDiscount;
 
-    @FindBy(xpath = "Discounts")
+    @FindBy(xpath = "//ion-col//div[contains(.,'Discounts')]")
     private WebElement discountPage;
 
     @FindBy(xpath = "Discount")
@@ -29,10 +39,10 @@ public class Discount extends BasePage{
     @FindBy(xpath = "Subtotal")
     private WebElement subtotalOfMenuItem;
 
-    @FindBy(xpath = "Back")
+    @FindBy(xpath = "//button[contains(.,'Cancel')]")
     public WebElement backBtnDiscount;
 
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//ion-searchbar[contains(@class,'discount-search')]//div[@class='searchbar-input-container sc-ion-searchbar-md']//input")
     private WebElement searchFldDiscount;
 
     public void pressDiscountBtn(){
@@ -41,7 +51,7 @@ public class Discount extends BasePage{
 
     public void pressDiscount(String discount) {
         sendKeys(searchFldDiscount,discount);
-        WebElement e=mergeAndFindElement(discount,"",TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("//button//span[contains(.,'"+discount+"')]"));
 
         if (e.isDisplayed()){
             elementClick(e,discount +" Selected");
@@ -74,23 +84,22 @@ public class Discount extends BasePage{
     }
 
     public void verifyMenuItemPrizeIsDisplayed(String value) {
-        WebElement e11 = mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement e11 = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
         if(e11.isDisplayed()){
-            utils.log().info("SubTotal of Menu Item - "+ value);
+//            utils.log().info("SubTotal of Menu Item - "+ value);
             TestUtils.subtotalTxt = value;
         }else{
-            utils.log().info("SubTotal Of Menu Item is not displayed");
+//            utils.log().info("SubTotal Of Menu Item is not displayed");
         }
 
     }
 
     public void verifyMenuItemTotal(String value){
-        WebElement e11 = mergeAndFindElement(value,"",TestUtils.Accessibility);
+        WebElement e11 = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
         if(e11.isDisplayed()){
-            utils.log().info("Total of Menu Item is - "+ value);
-
+//            utils.log().info("Total of Menu Item is - "+ value);
         }else{
-            utils.log().info("Total Of Menu Item is not displayed");
+//            utils.log().info("Total Of Menu Item is not displayed");
             int i =  1/0;
         }
     }

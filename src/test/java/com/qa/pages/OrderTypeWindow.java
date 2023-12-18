@@ -2,10 +2,11 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,22 +14,24 @@ public class OrderTypeWindow extends ClockInScreen {
 
     public OrderTypeWindow(WebDriver driver) {
         super(driver);
+        this.driver = TestUtils.driver;
+        PageFactory.initElements(this.driver,this);
     }
 
-    @FindBy(xpath = "For Here")
+    @FindBy(xpath = "//button[contains(.,'FORHERE')]")
     private WebElement forHereBtn;
 
-    @FindBy(xpath = "To Go")
+    @FindBy(xpath = "//button[.='TOGO']")
     private WebElement togoBtn;
 
-    @FindBy( xpath = "Order Type")
+    @FindBy( xpath = "//p[contains(.,'Order Type')]")
     private WebElement orderTypeWindow;
 
 
-    @FindBy(xpath = "Delivery")
+    @FindBy(xpath = "(//label[.='DELIVERY'])[1]")
     private WebElement deliveryBtn;
 
-    @FindBy(xpath = "Phone To Go")
+    @FindBy(xpath = "//div[contains(@class,'ordertype-content')]/..//div[.='Phone']/..//label[.='TOGO']")
     private WebElement phoneToGoBtnService;//Added Today
 
     @FindBy(xpath = "QSR")
@@ -39,10 +42,10 @@ public class OrderTypeWindow extends ClockInScreen {
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"To Go\"])[2]")
     private WebElement phoneToGoBtn;//Added Today
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Delivery\"])[2]")
+    @FindBy(xpath = "(//label[.='DELIVERY'])[2]")
     private WebElement phoneDeliveryBtn;//Added Today
 
-    @FindBy(xpath = "Done")
+    @FindBy(xpath = "//button[contains(.,'Done')]")
     private WebElement doneBtn;
 
     @FindBy(xpath = "//button[contains(.,'Cancel')]")
@@ -67,7 +70,7 @@ public class OrderTypeWindow extends ClockInScreen {
 
 
     public String orderTypeName(String name){
-        WebElement order=mergeAndFindElement(name,"",TestUtils.Accessibility);
+        WebElement order = driver.findElement(By.xpath("//button[@id='os_menu']//span[1]"));
         return elementGetText(order,"Text");
     }
 

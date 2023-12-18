@@ -6,12 +6,20 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
 public class CIPaymentScreen extends BasePage{
 
     public WebDriver driver = TestUtils.driver;
+
+    public CIPaymentScreen() {
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
+    }
 
     // Using Elements: Cancel , Payment, Gratuity ,paymentPin0,paymentPin5,paymentPin00,
     String btnCommonXPath = "//XCUIElementTypeButton[@name=\"{0}\"]";
@@ -52,7 +60,7 @@ public class CIPaymentScreen extends BasePage{
 
     String clickTextField="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
 
-    String clickNewTab="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]";
+    String clickNewTab="//button[contains(.,'New Tab')]";
 
     String btnSubmit="//button[contains(.,'Submit')]";
 
@@ -117,7 +125,7 @@ public class CIPaymentScreen extends BasePage{
 //        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement element = driver.findElement(By.xpath(btnName));
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
         elementClick(element, msg);
     }
 
@@ -179,11 +187,16 @@ public class CIPaymentScreen extends BasePage{
         findandclick(btnOk, "",TestUtils.Accessibility);
     }
 
+   public void click_On_Submit_Button() {
+       driver.manage().timeouts().implicitlyWait(13,TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//button[contains(.,'Submit Batch')]")).click();
+    }
+
     public void commonBtnClickOption(String optionName, String msg) {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
 //        WebElement element = mergeAndFindElement(optionName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
-        findandclick(optionName, "",TestUtils.Accessibility);
+        driver.findElement(By.xpath("//button[contains(@id,'menu-item')]//p[.='"+optionName+"']")).click();
     }
 
     public void btnHideKeyboard(String optionName, String msg) {
@@ -310,7 +323,7 @@ public class CIPaymentScreen extends BasePage{
     public void clickNewTab(){
 //        WebElement element = mergeAndFindElement(clickNewTab, "", TestUtils.XPath);
 //        elementClick(element,"Click New tab");
-        findandclick(clickNewTab, "", TestUtils.XPath);
+          driver.findElement(By.xpath(clickNewTab)).click();
 
     }
 
@@ -343,22 +356,22 @@ public class CIPaymentScreen extends BasePage{
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //        WebElement element = mergeAndFindElement(pin1, "", TestUtils.Accessibility);
 //        elementClick(element, "Tapped pin1");
-        findandclick(pin1, "", TestUtils.Accessibility);
+        driver.findElement(By.xpath("//button[.='"+pin1+"']")).click();
 //        elementClick(element, "Tapped pin1");
 
 //        WebElement elementPin0 = mergeAndFindElement(pin2, "", TestUtils.Accessibility);
 //        elementClick(elementPin0, "Tapped pin2");
-        findandclick(pin2, "", TestUtils.Accessibility);
+        driver.findElement(By.xpath("//button[.='"+pin2+"']")).click();
 //        elementClick(elementPin0, "Tapped pin2");
 
 //        WebElement elementPin5 = mergeAndFindElement(pinPoint, "", TestUtils.Accessibility);
 //        elementClick(elementPin5, "Tapped pin.");
-        findandclick(pinPoint, "", TestUtils.Accessibility);
+        driver.findElement(By.xpath("//button[.='"+pinPoint+"']")).click();
 
 
 //        WebElement elementPin00 = mergeAndFindElement(pin0, "", TestUtils.Accessibility);
 //        elementClick(elementPin00, "Tapped pin0");
-        findandclick(pin0, "", TestUtils.Accessibility);
+        driver.findElement(By.xpath("//button[.='"+pin0+"']")).click();
 //        elementClick(elementPin00, "Tapped pin0");
     }
 

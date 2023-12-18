@@ -1,6 +1,5 @@
 package com.qa.stepdef;
 
-import com.qa.pages.ClockInScreen;
 import com.qa.pages.CustomerProfileWindow;
 import com.qa.pages.OrderTypeWindow;
 import com.qa.utils.TestUtils;
@@ -116,6 +115,7 @@ public class CustomerProfileStepDef {
 
     @When("^I click the Save button$")
     public void iClickTheSaveButton() throws InterruptedException {
+        Thread.sleep(5000);
         new CustomerProfileWindow(driver).pressSaveBtn();
     }
 

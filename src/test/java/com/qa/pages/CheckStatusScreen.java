@@ -1,14 +1,11 @@
 package com.qa.pages;
 
-import com.qa.utils.TestUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.apache.logging.log4j.Level;
-import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class CheckStatusScreen extends OrderManagementScreen {
@@ -25,7 +22,7 @@ public class CheckStatusScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell")
     private WebElement closedCheck2;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Complete\"]")
+    @FindBy(xpath = "//button[contains(.,'Complete')]")
     private WebElement completeTab;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1])")

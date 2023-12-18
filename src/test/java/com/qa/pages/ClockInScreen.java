@@ -31,25 +31,25 @@ public class ClockInScreen extends UserLoginScreen{
 //    @FindBy(xpath = "00")
 //    private WebElement pin00;
 
-    @FindBy (xpath = "00")
+    @FindBy (xpath = "//button[.='00']")
     WebElement pin00;
 
-    @FindBy(xpath = "0")
+    @FindBy(xpath = "//button[.='0']")
     WebElement pin0;
 
-    @FindBy (xpath = "1")
+    @FindBy (xpath = "//button[.='1']")
     WebElement pin1;
 
-    @FindBy (xpath = "2")
+    @FindBy (xpath = "//button[.='2']")
     WebElement pin2;
 
-    @FindBy (xpath = "3")
+    @FindBy (xpath = "//button[.='3']")
     WebElement pin3;
 
     @FindBy (xpath = "4")
     WebElement pin4;
 
-    @FindBy (xpath = "5")
+    @FindBy (xpath = "//span[.='5']")
     WebElement pin5;
 
     @FindBy (xpath = "6")
@@ -83,7 +83,7 @@ public class ClockInScreen extends UserLoginScreen{
     @FindBy(xpath = "    Bar Tab")
     WebElement barTabBtn;
 
-    @FindBy (xpath = "//XCUIElementTypeButton[@name='Continue']")
+    @FindBy (xpath = "//button[contains(.,'Continue')]")
     private WebElement continueBtn;
 
     String accessibilityIdForPin1 = "1";

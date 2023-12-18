@@ -2,6 +2,7 @@ package com.qa.pages;
 
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -111,6 +112,13 @@ public class LogOuts extends BasePage {
     public void pressPowerBtn() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Thread.sleep(6000);
+        elementClick(powerBtn, "Text");
+    }
+
+    public void pressPowerBtn_AllOrders() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(6000);
+        WebElement powerBtn = driver.findElement(By.xpath("//linga-icon[@symbol='logout']"));
         elementClick(powerBtn, "Text");
     }
 

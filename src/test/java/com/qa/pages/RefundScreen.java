@@ -1,19 +1,25 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.junit.Assert;
 import org.openqa.selenium.support.FindBy;
-import static com.qa.pages.DriverSteup.driver;
-import java.sql.Time;
-import java.util.List;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.concurrent.TimeUnit;
 
 public class RefundScreen extends BasePage{
 
     public WebDriver driver = TestUtils.driver;
+    public RefundScreen() {
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
+    }
+
 
     @FindBy(xpath = "//label[.='Refund']")
     WebElement RefundBtn;

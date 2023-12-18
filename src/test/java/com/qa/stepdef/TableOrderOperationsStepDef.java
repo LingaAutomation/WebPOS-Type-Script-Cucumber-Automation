@@ -2192,12 +2192,12 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I created sale for Cashier out5 as \"([^\"]*)\"$")
-    public void iCreatedSaleForCashierOut5As(String cashier,String cate) throws InterruptedException {
+    public void iCreatedSaleForCashierOut5As(String cashier,String cate) throws Exception {
         new Regression(driver).createdSaleForCashierOut5(cashier);
     }
 
     @And ("^I select the random table from the table layout$")
-    public void iSelectTheRandomTableFromTheTableLayout(){
+    public void iSelectTheRandomTableFromTheTableLayout() throws Exception {
         new Regression(driver).selectTheRandomTableFromTheTableLayout();
     }
 

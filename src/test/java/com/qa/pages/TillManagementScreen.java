@@ -28,7 +28,7 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(xpath = "//label[contains(.,'Till Management')]/../linga-icon/../.." )
     private WebElement tillmanagementBtn_Opt;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]" )
+    @FindBy(xpath = "" )
     private WebElement tillTab;
 
     @FindBy(xpath = "//button[contains(.,'Set Till')]")

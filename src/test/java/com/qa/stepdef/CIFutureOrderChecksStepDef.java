@@ -101,7 +101,7 @@ public class CIFutureOrderChecksStepDef {
 
     @And("^I click \"([^\"]*)\" in the batch screen \"([^\"]*)\"$")
     public void iClickInTheBatchScreen(String btnSubmitBatch, String msg) {
-        waitList.commonBtn(btnSubmitBatch,msg);
+        ciPaymentScreen.click_On_Submit_Button();
     }
 
     @And("^I click the future order check for adjusting tip in batch screen \"([^\"]*)\"$")

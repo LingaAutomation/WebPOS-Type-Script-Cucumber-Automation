@@ -19,7 +19,7 @@ public class BarTabScreen extends OrderManagementScreen{
 
     }
 
-    @FindBy(xpath = "BarTab")
+    @FindBy(xpath = "//button[contains(.,'BarTab')]")
     WebElement barTab;
 
     @FindBy(xpath = "New Tab")
@@ -47,7 +47,7 @@ public class BarTabScreen extends OrderManagementScreen{
     @FindBy (xpath = "//linga-icon[@symbol='operationGear']")
     WebElement settings;
 
-    @FindBy (xpath = "POS Settings")
+    @FindBy (xpath = "//button[.='POS Settings']")
     WebElement POSsettings;
 
     @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[10]/XCUIElementTypeSwitch")

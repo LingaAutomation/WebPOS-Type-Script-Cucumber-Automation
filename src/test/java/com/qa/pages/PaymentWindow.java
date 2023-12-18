@@ -18,6 +18,8 @@ import java.util.concurrent.TimeUnit;
 
 public class PaymentWindow extends OrderManagementScreen{
 
+    public  WebDriver driver;
+
     public PaymentWindow(WebDriver driver) {
 
         super(TestUtils.driver);
@@ -39,7 +41,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//button[contains(.,'No')]")
     WebElement noSendToKitchenBtn;
 
-    @FindBy(xpath = "Select Payment Method")
+    @FindBy(xpath = "//label[.='PAYMENTS']")
     WebElement paymentWindowTitle;
 
     @FindBy(xpath = "Do you want to send hold menu item(s) to kitchen?")
@@ -129,10 +131,10 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//button[contains(.,'Process Payment')]")
     WebElement continueBtn;
 
-    @FindBy(xpath = "Your Order")
+    @FindBy(xpath = "//ion-label[.='Your Order']")
     WebElement yourOrder;
 
-    @FindBy(xpath = "Process")
+    @FindBy(xpath = "//button[contains(.,'Process')]")
     WebElement processBtn;
 
     @FindBy(xpath = "Card Type")
@@ -141,26 +143,26 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "Ok")
     WebElement okButtonCardTypeWindow;
 
-    @FindBy(xpath = "Manual")
+    @FindBy(xpath = "//button[contains(.,'Manual')]")
     WebElement manualButton;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//input[@id='cardInput']")
     //  @FindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"XXXXXXXXXXXXXXXX\"`]")
     WebElement cardNumberTxtField;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[1]")
+    @FindBy(xpath = "//input[@formcontrolname='expiresOn']")
     //@FindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"1218\"`]")
     WebElement expireNumTxtField;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]")
+    @FindBy(xpath = "//input[@formcontrolname='cvv']")
     // @FindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"XXXX\"`]")
     WebElement cvvTxtField;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[3]")
+    @FindBy(xpath = "//input[@formcontrolname='zipCode']")
     // @FindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"XXXXX\"`]")
     WebElement zipCodeTxtField;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//input[@id='cardName']")
     // @FindBy(iOSClassChain = "**/XCUIElementTypeTextField[`value == \"John Smith\"`]")
     WebElement cardNameField;
 
@@ -360,9 +362,10 @@ public class PaymentWindow extends OrderManagementScreen{
         return elementGetText(yourOrder,"Text");
     }
 
-    public void clickProcessButton(){
+    public void clickProcessButton() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
         elementClick(processBtn,"Tapped Process Button");
+        Thread.sleep(6000);
     }
 
     public void clickCreditCardBtn() throws Exception {
@@ -424,11 +427,10 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void passExpireNumber(String number){
+//        expireNumTxtField.click();
         expireNumTxtField.sendKeys(number);
         expireNumTxtField.sendKeys(Keys.ENTER);
-
         cvvTxtField.sendKeys(Keys.ENTER);
-
         zipCodeTxtField.sendKeys(Keys.ENTER);
     }
 
@@ -558,17 +560,8 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void TappedGiftCardPayment() throws Exception {
-        try {
-            if(find(giftCardPayment,2)){
-                elementClick(giftCardPayment,"Tapped Gift Card Payment");
-            }else {
-                scrollToElementPayments(giftCardPayment, "up");
-                elementClick(giftCardPayment,"Tapped Gift Card Payment");
-            }
-        }catch (Exception w){
-            scrollToElementPayments(giftCardPayment, "down");
-            elementClick(giftCardPayment,"Tapped Gift Card Payment");
-        }
+        WebElement selectCard1 = (WebElement) driver.findElements(By.xpath("//button[contains(.,'Gift Card')]"));
+        selectCard1.click();
     }
 
     public void clickLoyalty(){
@@ -725,9 +718,11 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void pressExitBtn(){
-        elementClick(exitPreAuth,"Exit Button is tapped");
+        try {
+            elementClick(exitPreAuth, "Exit Button is tapped");
+        }catch (Exception e) {}
     }
-    @FindBy(xpath = "Exit")
+    @FindBy(xpath = "//button[.='Exit']")
     WebElement exitPreAuth;
     @FindBy(xpath = "//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]")
     private WebElement firstNameFld;
@@ -835,6 +830,18 @@ public class PaymentWindow extends OrderManagementScreen{
 
     }
 
+
+    public void enterCustomerandClickOnAddCustomer() throws InterruptedException {
+
+        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+
+        WebElement Name_Input = driver.findElement(By.xpath("//input[@role='combobox']"));
+        Name_Input.clear();
+        Name_Input.sendKeys(RandomStringUtils.randomAlphabetic(6));
+        driver.findElement(By.xpath("//span[contains(.,' + Add customer ')]")).click();
+        Thread.sleep(4000);
+    }
+
     public void enterCustomerRandomlys(){
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 
@@ -933,7 +940,7 @@ pressArrowDown2();
     }
 
     public void selectCustomerBasic(){
-        WebElement customerName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[1]"));
+        WebElement customerName = (WebElement) driver.findElements(By.xpath("//mat-option[@role='option']//span"));
         String nameTxt = customerName.getText();
         elementClick(customerName,"Selected customer as - "+nameTxt);
 

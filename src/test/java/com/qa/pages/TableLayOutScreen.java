@@ -26,7 +26,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
         PageFactory.initElements(this.driver,this);
     }
-    @FindBy(xpath = "Continue")
+    @FindBy(xpath = "//button[contains(.,'Continue')]")
     private WebElement continueBtn;
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"00:00\"]")
@@ -47,7 +47,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "T1")
     private WebElement tableToTransfer;
 
-    @FindBy(xpath = "Pay Check")
+    @FindBy(xpath = "//div[.='Pay Check']")
     private WebElement payCheckBtn;
 
     //@FindBy(xpath = "Open check")
@@ -242,7 +242,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Empty List")
     private WebElement emptyMergeList;
 
-    @FindBy(xpath = "New Check")
+    @FindBy(xpath = "//div[contains(.,'New Check')]")
     private WebElement newCheck;
 
     @FindBy(xpath = "Menu items(s) has to be sent to the kitchen")
@@ -342,12 +342,12 @@ public class TableLayOutScreen extends OrderManagementScreen {
     /* Check if locators for common tables names in Floor1 and Floor2 are the same...Don't delete this comment*/
 
     public void selectTable(String tableNo) {
-        WebElement e = mergeAndFindElement(tableNo, "", TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("//button[contains(@class,'tableCls vertClas')]//div//p//label[.='"+tableNo+"']"));
         elementClick(e, tableNo + " selected");
     }
 
     public void selectSeatNo(String numberOfSeats) {
-        WebElement e = mergeAndFindElement(numberOfSeats, "", TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='"+numberOfSeats+"']"));
         elementClick(e, numberOfSeats + " selected");
     }
 
@@ -1283,7 +1283,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(gc, "Tapped Gift card in Seat 1");
     }
 
-    @FindBy(xpath = "Batch/Tip Adjustment")
+    @FindBy(xpath = "//button//span[contains(.,'Batch/Tip Adjustment')]")
     WebElement batchTipAdjustBtn;
 
     public void clickBatchTipButton() {
@@ -1297,39 +1297,39 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyChecksInBatchScreen() {
-        List<WebElement> check = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> check =  driver.findElements(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div[contains(@class,'table-row')]"));
         int checkCount = check.size();
-        utils.log().info("Batch Check count - " + checkCount);
+//        utils.log().info("Batch Check count - " + checkCount);
     }
 
     public void verifyBatchInitiatedPopup() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        WebElement batchPopup = (WebElement) driver.findElement(By.xpath("Batch process has been initiated and it may take some time to complete. Please check back after few minutes."));
+        WebElement batchPopup = driver.findElement(By.xpath("//p[.='Batch process has been initiated and it may take some time to complete. Please check back after few minutes.']"));
 
         if (batchPopup.isDisplayed()) {
-            utils.log().info("Batch initiated popup is shown");
+//            utils.log().info("Batch initiated popup is shown");
         } else {
-            utils.log().info("Batch initiated popup is NOT shown");
+//            utils.log().info("Batch initiated popup is NOT shown");
         }
     }
 
     public void selectTheMppgPaymentInDevice() throws Exception {
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        List<WebElement> deviceList = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+        List<WebElement> deviceList = (List<WebElement>) driver.findElement(By.xpath("//mat-option[contains(@class,'mat-option mat-focus-indicator')]//span"));
         int deviceListCount = deviceList.size();
-        utils.log().info("List of device - " + deviceListCount);
-        WebElement listDevice = (WebElement) driver.findElement(By.xpath("MPPG Auth"));
+//        utils.log().info("List of device - " + deviceListCount);
+        WebElement listDevice =  driver.findElement(By.xpath("//mat-option[contains(@class,'mat-option mat-focus-indicator')]//span[contains(.,'MPPG Auth')]"));
         String listDeviceTxt = listDevice.getText();
 
         try {
             if (listDevice.isDisplayed()) {
                 elementClick(listDevice, "MPPG AUTH device is selected - " + listDeviceTxt);
             } else {
-                scrollToElementPayments(listDevice, "up");
+//                scrollToElementPayments(listDevice, "up");
                 elementClick(listDevice, "MPPG AUTH device is selected - " + listDeviceTxt);
             }
         } catch (Exception w) {
-            scrollToElementPayments(listDevice, "down");
+//            scrollToElementPayments(listDevice, "down");
             elementClick(listDevice, "MPPG AUTH device is selected - " + listDeviceTxt);
         }
 
@@ -1394,15 +1394,15 @@ public class TableLayOutScreen extends OrderManagementScreen {
     WebElement searchTextField;
 
     public void clickTheCheckFromBatchScreen() {
-        WebElement search = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeTextField[@value='Search']"));
+        WebElement search = driver.findElement(By.xpath("//ion-col//input[@placeholder='search']"));
         String globalCheckNumber = TestUtils.globalCheckNumber;
         sendKeys(search, globalCheckNumber);
-        WebElement phoneOrders1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"]"));
+        WebElement phoneOrders1 = driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div[contains(@class,'table-row')]//tr//td[.='"+globalCheckNumber+"']"));
 
         if (phoneOrders1.isDisplayed()) {
             elementClick(phoneOrders1, "Tapped Batch Check in Batch Screen - " + globalCheckNumber);
         } else {
-            utils.log().info("Not Selected Batch check" + globalCheckNumber);
+//            utils.log().info("Not Selected Batch check" + globalCheckNumber);
         }
 
     }
@@ -1425,14 +1425,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public String changeTipAmount() {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        pressPinC();
+        driver.findElement(By.xpath("//span[.='C']")).click();
         pressPin5();
         pressPin00();
-        WebElement field = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField"));
-        String fieldTxt = field.getText();
+        WebElement field = driver.findElement(By.xpath("//ion-row[contains(@class,'quantity_grid-inputrow')]//input"));
+        String fieldTxt = field.getAttribute("value");
         fieldTxt1 = fieldTxt.replace("$", "");
         TestUtils.tipAmount = fieldTxt1;
-        utils.log().info("Tip Amount Entered - " + fieldTxt1);
+//        utils.log().info("Tip Amount Entered - " + fieldTxt1);
         elementClick(continueBtn, "Selected Continue ");
         return fieldTxt1;
     }
@@ -1455,17 +1455,17 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void VerifyTipAmountIsAppliedOrNot() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         String tipAmount1 = TestUtils.tipAmount;
-        utils.log().info("tipAmount1 - " + tipAmount1);
-        WebElement search = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeTextField[@value=\"Search\"]"));
+//        utils.log().info("tipAmount1 - " + tipAmount1);
+        WebElement search = driver.findElement(By.xpath("//ion-col//input[@placeholder='search']"));
         String globalCheckNumber = TestUtils.globalCheckNumber;
         sendKeys(search, globalCheckNumber);
-        WebElement checkkk = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell//XCUIElementTypeStaticText[7]"));
+        WebElement checkkk = driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div[contains(@class,'table-row')]//tr//td[.='"+globalCheckNumber+"']/..//td[7]"));
         String CheckTxt = checkkk.getText();
-        utils.log().info("CheckTxt - " + CheckTxt);
+//        utils.log().info("CheckTxt - " + CheckTxt);
         if (tipAmount1.equalsIgnoreCase(CheckTxt)) {
-            utils.log().info("Changed Tip is Same - " + tipAmount1);
+//            utils.log().info("Changed Tip is Same - " + tipAmount1);
         } else {
-            utils.log().info("Changed Tip is NOT Same - " + tipAmount1);
+//            utils.log().info("Changed Tip is NOT Same - " + tipAmount1);
         }
     }
 
@@ -1473,36 +1473,36 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void verifyAmountWithDeliveryCharge() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-        WebElement deliveryAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[2]"));
+        WebElement deliveryAmount = (WebElement) driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div[@class='menu-section orderlist-flex']//div[contains(@class,'text-pos-end')]"));
         String deliveryAmountTxt = deliveryAmount.getText();
 
-        WebElement subtotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subtotalTxt = subtotal.getText();
+        WebElement subtotal = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subtotalTxt = subtotal.getAttribute("value");
         String subtotalTxt1 = subtotalTxt.replace("$", "");
-        WebElement Tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxTxt = Tax.getText();
+        WebElement Tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxTxt = Tax.getAttribute("value");
         String taxTxt1 = taxTxt.replace("$", "");
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String totalTxt = Total.getText();
+        WebElement Total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalTxt = Total.getAttribute("value");
         String totalTxt1 = totalTxt.replace("$", "");
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String paidAmountTxt = paidAmount.getText();
+        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
         String paidAmountTxt1 = paidAmountTxt.replace("$", "");
         if (subtotalTxt1.equalsIgnoreCase(deliveryAmountTxt)) {
-            utils.log().info("Subtotal Amount is same with delivery charge - " + subtotalTxt + " - Delivery charge as " + deliveryAmountTxt);
+//            utils.log().info("Subtotal Amount is same with delivery charge - " + subtotalTxt + " - Delivery charge as " + deliveryAmountTxt);
         } else if (taxTxt1.equalsIgnoreCase(deliveryAmountTxt)) {
-            utils.log().info("Tax Amount is same with delivery charge - " + taxTxt + " - Delivery charge as " + deliveryAmountTxt);
+//            utils.log().info("Tax Amount is same with delivery charge - " + taxTxt + " - Delivery charge as " + deliveryAmountTxt);
         } else if (totalTxt1.equalsIgnoreCase(deliveryAmountTxt)) {
-            utils.log().info("Total Amount is same with delivery charge - " + totalTxt + " - Delivery charge as " + deliveryAmountTxt);
+//            utils.log().info("Total Amount is same with delivery charge - " + totalTxt + " - Delivery charge as " + deliveryAmountTxt);
         } else if (paidAmountTxt1.equalsIgnoreCase(deliveryAmountTxt)) {
-            utils.log().info("Paid Amount is same with delivery charge - " + paidAmountTxt + " - Delivery charge as " + deliveryAmountTxt);
+//            utils.log().info("Paid Amount is same with delivery charge - " + paidAmountTxt + " - Delivery charge as " + deliveryAmountTxt);
         } else {
 
-            utils.log().info("Total Amount is Not Same- " + totalTxt + " - Delivery charge as " + deliveryAmountTxt);
-            utils.log().info("Subtotal Amount is same with delivery charge - " + subtotalTxt);
-            utils.log().info("Tax Amount is same with delivery charge - " + taxTxt);
-            utils.log().info("Total Amount is same with delivery charge - " + totalTxt);
-            utils.log().info("Paid Amount is same with delivery charge - " + paidAmountTxt);
+//            utils.log().info("Total Amount is Not Same- " + totalTxt + " - Delivery charge as " + deliveryAmountTxt);
+//            utils.log().info("Subtotal Amount is same with delivery charge - " + subtotalTxt);
+//            utils.log().info("Tax Amount is same with delivery charge - " + taxTxt);
+//            utils.log().info("Total Amount is same with delivery charge - " + totalTxt);
+//            utils.log().info("Paid Amount is same with delivery charge - " + paidAmountTxt);
 
 
         }

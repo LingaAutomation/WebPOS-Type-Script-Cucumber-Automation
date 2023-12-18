@@ -1,13 +1,23 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class CIWaitListPage extends BasePage {
+
+    public WebDriver driver = TestUtils.driver;
+
+    public CIWaitListPage() {
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
+    }
 
     String checkNumber = "";
 
@@ -182,11 +192,12 @@ public class CIWaitListPage extends BasePage {
     public void getCheckNumber(String msg)
     {
         try{
-        WebElement element = mergeAndFindElement(chkNumber, "", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//div[@id='os_check']//p[contains(@class,'checkno')]"));
         checkNumber =elementGetText(element,"Text");
-        utils.log().info(msg + " - " +checkNumber);}
+//        utils.log().info(msg + " - " +checkNumber);
+        }
         catch (Exception e){
-            utils.log().info("unable to Get check Number");
+//            utils.log().info("unable to Get check Number");
         }
     }
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")

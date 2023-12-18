@@ -1,13 +1,13 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -28,11 +28,11 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[2]")
     private WebElement addressAsterisk;
 
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//input[@role='combobox']")
     private WebElement searchField;
 
     //    @FindBy( = "Auto ragav  +919080344 ")
-    @FindBy(xpath = "Auto ragav 9876887899 ")   // Nov 16
+    @FindBy(xpath = "//mat-option[@role='option']//span")   // Nov 16
     // @FindBy ( = "Engin  Basarand +905012345 ")
     private WebElement customerToSelect;
 

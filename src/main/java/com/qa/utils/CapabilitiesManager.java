@@ -2,13 +2,11 @@ package com.qa.utils;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import static com.qa.utils.TestUtils.driver;
-import java.io.File;
-import java.io.IOException;
-import java.util.Properties;
+
 import java.util.concurrent.TimeUnit;
+
+import static com.qa.utils.TestUtils.driver;
 
 public class CapabilitiesManager {
 
@@ -44,7 +42,7 @@ public class CapabilitiesManager {
         //Clear the text from the user name text box
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name
-        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("basicautotest@mail.com");
+        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusd@mail.com");
         //Clear the password from the password text box
         driver.findElement(By.xpath("//input[@name='password']")).clear();
         //Enter the password

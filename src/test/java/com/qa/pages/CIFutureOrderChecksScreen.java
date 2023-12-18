@@ -1,9 +1,10 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -11,6 +12,15 @@ import java.util.concurrent.TimeUnit;
 import static java.lang.Integer.parseInt;
 
 public class CIFutureOrderChecksScreen extends BasePage {
+
+    public WebDriver driver = TestUtils.driver;
+
+    public CIFutureOrderChecksScreen() {
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
+    }
 
     String checkNumber = "";
 
@@ -48,7 +58,7 @@ public class CIFutureOrderChecksScreen extends BasePage {
 
     String batchSearchField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]";
 
-    String txtCheckXPath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell";
+    String txtCheckXPath = "";
 
     String driverXpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[{0}]";
 
@@ -537,7 +547,9 @@ public class CIFutureOrderChecksScreen extends BasePage {
     public void clickBtnOne(String btnDropDown, String msg) {
 //        WebElement element = mergeAndFindElement(btnOneXPath, btnDropDown, TestUtils.XPath);
 //        elementClick(element, msg);
-        findandclick(btnOneXPath, btnDropDown, TestUtils.XPath);
+        driver.findElement(By.xpath("(//mat-select[contains(@class,'select batch_header')]//div//div[contains(@class,'mat-select-arrow')]//div)[3]")).click();
+
+
     }
 
     public String getTip(String txtTip,String msg){

@@ -159,4 +159,8 @@ public class ClockInStepDef {
         new ClockInScreen(driver).ClockInForBarTab1();
     }
 
+    @And("I click power button in the All Orders screen")
+    public void iClickPowerButtonInTheAllOrdersScreen() throws InterruptedException {
+        new LogOuts().pressPowerBtn_AllOrders();
+    }
 }

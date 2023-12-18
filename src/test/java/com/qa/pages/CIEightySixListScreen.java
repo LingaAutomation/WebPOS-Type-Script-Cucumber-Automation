@@ -1,11 +1,9 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebElement;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -28,7 +26,7 @@ public class CIEightySixListScreen extends BasePage {
 
     String btnButtonTwo = "(//XCUIElementTypeButton[@name=\"{0}\"])[2]";
 
-    String qtyTxtFieldXPath="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeTextField";
+    String qtyTxtFieldXPath="//table[contains(@class,'list86Component-menuList')]//tr//td//input";
 
     String qtyXPath="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[7]/XCUIElementTypeStaticText[@name=\"{0}\"]";
 
@@ -66,7 +64,7 @@ public class CIEightySixListScreen extends BasePage {
     String noCountDownXpath="//XCUIElementTypeStaticText[@name=\"{0}\"]";
 
     public void itemSearchField(String chickenBiriyani,String msg){
-        WebElement elementSearchField = mergeAndFindElement(itemSearchFieldXpath,"", TestUtils.XPath);
+        WebElement elementSearchField = driver.findElement(By.xpath("//ion-searchbar[contains(@class,'list86Component-searchField')]//input[@type='search']"));
         elementClick(elementSearchField,msg);
         elementSearchField.sendKeys(chickenBiriyani);
 //        findandclick_Skeys(itemSearchFieldXpath,"", TestUtils.XPath,"Skeys",chickenBiriyani);
@@ -281,20 +279,14 @@ public class CIEightySixListScreen extends BasePage {
     }
 
     public void getQtyOf86ListMenu(String QTY,String menu){
-        List<WebElement> menuCollection = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-        int sizeOfMenus=  menuCollection.size();
-        for (int i =1;i<=sizeOfMenus;i++){
-            WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell["+i+"]/XCUIElementTypeStaticText[2]"));
-            String menuNameTxt = menuName.getText();
-            if(menuNameTxt.equalsIgnoreCase(menu)){
-                WebElement menuList = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell["+i+"]/XCUIElementTypeStaticText[1]"));
-                String menuListCount = menuList.getText();
-                Assert.assertEquals(menuListCount,QTY);
-                utils.log().info("86 List Menu Count is equal");
-            }
 
-        }
-    }
+            WebElement menuName = driver.findElement(By.xpath("//button[contains(@id,'menu-item')]//div[.='"+menu+"']"));
+            String menuNameTxt = menuName.getText();
+            WebElement menuList = driver.findElement(By.xpath("//button[contains(@id,'menu-item')]//div[.='"+menu+"']/..//span"));
+            String menuListCount = menuList.getText();
+            Assert.assertEquals(menuListCount,QTY);
+//                utils.log().info("86 List Menu Count is equal");
+         }
 
 
 

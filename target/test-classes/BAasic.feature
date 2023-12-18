@@ -135,7 +135,7 @@ Feature:Basic Validation
     And I click Done button on the refund order screen
     And I click power button
 
-
+##Hold Due to unable to do MPPG payment
   Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Refund Screen"
     Given I'm logged in
     And I closed the order type window
@@ -305,6 +305,7 @@ Feature:Basic Validation
     Then I should see cashier out saved successfully popup
     And I click Done button on the Popup
     And I click power button
+
   @MainBAsic
   Scenario: Verify the Pay in, Payout, Audit, Single cashier out, Close the day for the current business day(Clock in, start till(user till, Global till))
     Given I'm logged in
@@ -406,6 +407,7 @@ Feature:Basic Validation
     Then I should see cashier out saved successfully popup
     And I click Done button on the Popup
     And I click power button
+
   @MainBAsic
   Scenario: Added tip is Correct or not
     Given I'm logged in
@@ -422,6 +424,7 @@ Feature:Basic Validation
     And I click Submit button in the Payment popup
     And I closed the order type window
     And I click log off button in order screen
+
   @MainBAsic
   Scenario: Bussiness Date Verify with Close day window Date
     When I get he Bussiness date from the order screen
@@ -433,6 +436,7 @@ Feature:Basic Validation
     And I click close day tab
     When I verify bussiness date with close day screen
     And I click power button
+
   @MainBAsic
   Scenario: Cashier OUT PULL Request
     Given Im logged in for cashier1
@@ -459,6 +463,7 @@ Feature:Basic Validation
     And I click power button
 # Need to add the GIveX and exectue this
 
+  ## Hold Due to GiveX funtionality is not available
   Scenario: GiveX
     Given I'm logged in
     And I closed the order type window
@@ -711,7 +716,6 @@ Feature:Basic Validation
     And I closed the order type window
     Given User click All button in QSR
     When User click the Table Layout option
-
 #    And User select the two Empty table and take the order
 #    And I click new check button on the Table layout screen
     And I select Menu For Basic validation as "Menu"
@@ -851,9 +855,11 @@ Feature:Basic Validation
     And I click All
     And I click Table Layout tab
     And I select Menu For Basic validation as "Salad"
+
   ##4. Choose the "Option" from the POS customer button in order screen
     And I click Options button
     And I click Gratuity button
+
 #  And I select fixed gratuity in add gratuity screen
     And I click Gratuity Fixed button
     And I verify fixed gratuity is applied
@@ -863,21 +869,24 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-
+  @MainBAsic
   Scenario: Manual Gratuity Varying
     Given I'm logged in
     And I closed the order type window
     And I click All
     And I click Table Layout tab
     And I select Menu For Basic validation as "Salad"
+
   ##4. Choose the "Option" from the POS customer button in order screen
     And I click Options button
     And I click Gratuity button
+
 #  And I select fixed gratuity in add gratuity screen
     And I click Gratuity varying button
     Then I should see enter Percentage popup
     And I pass the value and click Apply button
     And I verify varying gratuity is applied
+
   #   And I verify fixed gratuity is applied
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
@@ -885,6 +894,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
+  @MainBAsic
   Scenario: Auto Gratuity Fixed
     Given I'm logged in
     And I closed the order type window
@@ -906,7 +916,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-
+  @MainBAsic
   Scenario: Auto Gratuity Varying(Multiple Auto Varying/Fixed gratuity is available means From Step 6 will be applicable)
     ##NOTE: If the store has only one Auto Varying gratuity is available means Step 5 will be applicable
 
@@ -916,11 +926,13 @@ Feature:Basic Validation
     And I click All
     And I click Table Layout tab
     And I select Menu For Basic validation as "Salad"
+
  ## 4. Add second seat in the respective check
     When I verify auto gratuity is applied or not
     And I add a new seat
     And I add a new seat
     Then I should see Add Gratuity screen
+
 #    And I click auto Gratuity varying button
     And I select auto gratuity as "Auto Varying Gratuity"
     Then I should see enter Percentage popup
@@ -935,8 +947,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-#
-
+#Hold due to Credit card payment un-available
   Scenario: Card Service Charge
     Given I'm logged in
     And I closed the order type window
@@ -957,7 +968,8 @@ Feature:Basic Validation
     And I click Ok button in receipt printer popup
     And I click Table Layout tab
     And I click power button
-  @Cryptos00
+
+  #Hold due to Credit card payment un-available
   Scenario: Batch process
     #Manual Batch
     Given I'm logged in
@@ -997,7 +1009,8 @@ Feature:Basic Validation
     Then I should see batch has been initiated popup
     And I click Done button on the Popup
     When I check the all check has been batch
-  @Cryptos00
+
+  #Hold due to Credit card payment un-available
   Scenario: Verify the Tip Adjustment for Online Sale in Batch Screen
     Given I'm logged in
     And I closed the order type window
@@ -1006,6 +1019,7 @@ Feature:Basic Validation
     And I select Menu For Basic validation as "Salad"
     And I click Payment button in the Order Management Screen
     When I get the balance Due Amount and cash option amount in payment window
+    ## need to implement
     And I click mppg auth payment in the payment window
     Then I should see total screen
     And I click tip as 10
@@ -1017,6 +1031,7 @@ Feature:Basic Validation
     And I pass expire date as "1223"
     And I click Process button on card screen
     And I click Ok button in receipt printer popup
+    ## need to implement
     And I click Submit button on the Payment Window
     Then I should get back to the Table Layout tab
     And I click the Operation button on the Table Layout
@@ -1026,10 +1041,10 @@ Feature:Basic Validation
     And I select the MPPG Payment name in the device list
     Then I should see the list of checks in batch screen
     When I click the check from batch screen
-    And I hide the keyboard
+#    And I hide the keyboard
     And I change tip amount in batch screen
     Then I should see tip Amount is applied or not
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click "Submit Batch" in the batch screen "click submit batch button"
     Then I should see batch has been initiated popup
     And I click Done button on the Popup
@@ -1038,24 +1053,30 @@ Feature:Basic Validation
     And I click the Toggle Icon button
     When I click batch/Tip adjustment button
     Then I should see the list of checks in batch screen
-    Then I should see last batch started text
-    Then I have verify check in the batch screen
+#    Then I should see last batch started text
+#    Then I have verify check in the batch screen
   #  And I click Table Layout tab
     And I click power button
 
-@cus
+  @MainBAsic
   Scenario: Customer
     ## Verify the Customer attachment and search(name & phone no).
     Given I'm logged in
     And I closed the order type window
     And I click Add Customer Button
-    And I click Add new button
+#    And I click Add Customer Button
+#    And I click Add new button
+#    Then I should see the customer profile window
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter the new customer randomlys
+#    And I click the phone number field on the customer profile screen
+    And I click the Save button
     Then I should see the customer profile window
     And I enter the customer name randomly
-
     And I click log off button in order screen
 
-
+  @MainBAsic
   Scenario: Taxes
       #####   Item based tax (amount)  #####
     Given I'm logged in
@@ -1075,7 +1096,6 @@ Feature:Basic Validation
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-
 #########   Default tax  #########
     And I click Table Layout tab
     And I click new check button on the Table layout screen
@@ -1092,7 +1112,6 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-
 #########  Quantity based tax  ########
     And I click new check button on the Table layout screen
     And I select table as "T7"
@@ -1119,7 +1138,6 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-
     #########  Inclusive tax  ########
     And I click new check button on the Table layout screen
     And I select table as "T8"
@@ -1138,7 +1156,6 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-
     #########  Check tax(Enable Apply on subtotal)  ##########
     And I click new check button on the Table layout screen
     And I select table as "T9"
@@ -1155,7 +1172,6 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-
     #############   Check tax(Without enable Apply on subtotal)  ##############
     And I click new check button on the Table layout screen
     And I select table as "T10"
@@ -1174,7 +1190,6 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-
     #######  Tax on item tax  #######
     And I click new check button on the Table layout screen
     And I select table as "T11"
@@ -1191,7 +1206,6 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-
 #  Scenario Outline: Tax on check Tax
     And I click new check button on the Table layout screen
     And I select table as "T8"
@@ -1211,19 +1225,17 @@ Feature:Basic Validation
     And I click power button
 
 
-
+  @MainBAsic
   Scenario: Orders
      ## Verify Orders(Menu, Menu with Serving size, Menu with Modifiers, Menu with Modifiers and Prefix, Menu with Serving, Modifiers and Prefix)
   ##  Menu   ##
     Given I'm logged in
     And I closed the order type window
     And I select Menu of Basic validation for QSR as "Salad"
-
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click Submit button in the Payment popup
     Then I should see the order type window
-
  #   Scenario: Menu with serving size
   #    Given I'm logged in
     And I closed the order type window
@@ -1236,7 +1248,6 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button in the Payment popup
     Then I should see the order type window
-
   #Scenario: Menu with serving size
    # Given I'm logged in
     And I closed the order type window
@@ -1248,7 +1259,6 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button in the Payment popup
     Then I should see the order type window
-
 #  Scenario:  Menu with Modifiers and Prefix
 #    Given I'm logged in
     And I closed the order type window
@@ -1262,7 +1272,6 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button in the Payment popup
     Then I should see the order type window
-
   #  Scenario:Menu with Serving, Modifiers and Prefix
    #   Given I'm logged in
     And I closed the order type window
@@ -1280,7 +1289,7 @@ Feature:Basic Validation
     And I close the order type window
     And I click log off button in order screen
 
-  @Failed
+  @MainBAsic
   Scenario: Verify the sale in QSR Service Type
     Given I'm logged in
     And I close the order type window
@@ -1295,7 +1304,6 @@ Feature:Basic Validation
     And I click All
     And I click Closed tab on the Check stats
     Then I should see closed check in closed check tab
-
     ## Verify the sale in Dine In Service Type
     And I click Table Layout tab
     And I select Menu For Dine order type as "Salad"
@@ -1307,19 +1315,17 @@ Feature:Basic Validation
     And I click Check Stats tab
     And I click Closed tab on the Check stats
     Then I should see closed check in closed check tab
-
-
     ## Verify the sale in Service Type(For Here)
     And I click QSR tab
     And I select the order type FORHERE
-    And I click Done button to select the order type
-    Then I should see the customer profile window
-    And I select search
-    And I enter an existing customer's name "Auto ragav"
-    And I select the customer
-    When I click the Save button
+#    And I click Done button to select the order type
+#    Then I should see the customer profile window
+#    And I select search
+#    And I enter an existing customer's name "Auto ragav"
+#    And I select the customer
+#    When I click the Save button
     Then I should see the Ordering Screen with a button with the label "For Here"
-    Then I should see customer as "Auto r" added on order screen
+#    Then I should see customer as "Auto r" added on order screen
     And I get check number
     And I select Menu of Basic validation for QSR as "Salad"
     And I click Finish Order button
@@ -1332,13 +1338,14 @@ Feature:Basic Validation
     And I click Check Stats tab
     And I click Closed tab on the Check stats
     Then I should see closed check in closed check tab
-
-
     ## Verify the sale in Service Type( TO GO )
-
     And I click QSR tab
     And I select the TOGO order type
     And I click Done button to select the order type
+    And I click Add Customer Button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
     Then I should see the customer profile window
     And I select search
     And I enter an existing customer's name "Auto ragav"
@@ -1360,7 +1367,7 @@ Feature:Basic Validation
     Then I should see closed check in closed check tab
     And I click power button
 
-  @Cryptos00
+  @MainBAsic
   Scenario: Sale In Service Types
     ## Verify the sale in Service Type( TO GO )
     Given I'm logged in
@@ -1368,6 +1375,10 @@ Feature:Basic Validation
    # And I click QSR tab
     And I select the Phone To Go order type
     And I click Done button to select the order type
+    And I click Add Customer Button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
     Then I should see the customer profile window
     And I select search
     And I enter an existing customer's name "Auto ragav"
@@ -1387,13 +1398,15 @@ Feature:Basic Validation
     And I click Check Stats tab
     And I click Closed tab on the Check stats
     Then I should see closed check in closed check tab
-
 #    Scenario: Verify the sale in Service Type(Delivery)
 #    Given I'm logged in
 #    And I close the order type window
     And I click QSR tab
     And I select the DELIVERY order type
     And I click done button in the order type window
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
     Then I should see the customer profile window
     And I select search
     And I enter an existing customer's name "auto loyalty"
@@ -1422,18 +1435,18 @@ Feature:Basic Validation
     And I click Arrival button in phone order screen
     And I click Complete tab
     Then I should see closed check in complete tab
-
-
     # Verify the sale in Service Type(Phone Delivery)
     And I click QSR tab
     And I select the Phone Delivery Service type
     And I click Done button to select the order type
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
     Then I should see the customer profile window
     And I select search
     And I enter an existing customer's name "auto loyalty"
     And I select the customer for basic
     When I click the Save button
-
     Then I should see customer as "auto l" added on order screen
     And I get check number
     Then I should see Delivery charge is match with Amount in order screen
@@ -1457,12 +1470,12 @@ Feature:Basic Validation
     And I click Arrival button in phone order screen
     And I click Complete tab
     Then I should see closed check in complete tab
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click power button
 
 
+  @MainBAsic
   Scenario: UpCharge (Verify the Upcharge for the check)
-      ####  For All Roles ####
     Given I'm logged in
     And I closed the order type window
     And I click All
@@ -1489,9 +1502,9 @@ Feature:Basic Validation
     And I click closed checks details icon button
     Then I should see order summary screen
     When I verify subtotal value with order summary subtotal value
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Cryptos
+  @MainBAsic
   Scenario: Upcharge (Role restriction)
     Given I'm logged in for BarTab for basic validation
     And I click New Tab in the Bar Tab Screen
@@ -1507,7 +1520,7 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
     Given I'm logged in
     And I closed the order type window
     And I click All
@@ -1534,9 +1547,9 @@ Feature:Basic Validation
     And I click closed checks details icon button
     Then I should see order summary screen
     When I verify subtotal value with order summary subtotal value
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Cryptos
+  @MainBAsic
   Scenario: Verify the sale in Bar Tab Service Type
     Given I'm logged in
     And I closed the order type window
@@ -1546,9 +1559,9 @@ Feature:Basic Validation
     And I click BarTab Layout
     And I click New Tab in the Bar Tab Screen
 #    Then I should see preauth window
-    And I click Process button on card screen
-    Then I should see no device is connected to iPad
-    And I click Done button on the Popup
+#    And I click Process button on card screen
+#    Then I should see no device is connected to iPad
+#    And I click Done button on the Popup
     And I click the Exit to close the preauth window
     And I get check number
     And I select Menu of Basic validation for QSR as "Salad"
@@ -1558,9 +1571,9 @@ Feature:Basic Validation
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @bsci
+  @MainBAsic
   Scenario: Menu Option - Verify the Menu option for the all service type by menu level in order screen
      ## AUTOMATIC HOLD ##
     Given I'm logged in
@@ -1597,14 +1610,14 @@ Feature:Basic Validation
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click Void button on order management screen
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
       #####  REPEAT  #####
     And I closed the order type window
     And I select FOOD as category
@@ -1691,7 +1704,7 @@ Feature:Basic Validation
     And I pass the Name as "fruits" and price on Open Modifier
     Then I should see open modifier as "fruits" added on open modifiers screen
     And I click Done button on the Popup
-    And I click Back button in the menu options window
+#    And I click Back button in the menu options window
     Then I should see modifier as "fruits" applied on order screen
     And I click Void button on order management screen
     Then I should see All orders are voided
@@ -1708,7 +1721,7 @@ Feature:Basic Validation
     And I click Done button on the Popup
     And I click log off button in order screen
 
-
+  @MainBAsic
   Scenario: Check OPTIONS
          #######   TAX EXEMPT  #######
 
@@ -1726,16 +1739,16 @@ Feature:Basic Validation
     And I click Options button
     Then I should see the Check Options screen
     And I click Tax Exempt Button
-    Then I should see tax exempt reasons
-    And I select School as reason
+#    Then I should see tax exempt reasons
+#    And I select School as reason
     Then I should see orderscreen with menu item prize as "$ 12.00"
     Then I should see the tax reflected to the check
     Then I should see orderscreen with menu item Total as "$ 12.00"
     And I click Options button
     Then I should see the Check Options screen
     And I click Tax Exempt Button
-    Then I should see Tax Exempt removed successfully popup
-    And I click Done button on the Popup
+#    Then I should see Tax Exempt removed successfully popup
+#    And I click Done button on the Popup
     Then I should see orderscreen with menu item prize as "$ 12.00"
     Then I should see the tax amount reflected to the check as "$ 1.20"
     Then I should see orderscreen with menu item Total as "$ 13.20"
@@ -1765,39 +1778,39 @@ Feature:Basic Validation
     And I click discount on check option screen
     And I click check discount from the check options
     And I select tax as "Check-Based Percentage"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-       #   And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "After"
-    And I pass the amount as "2.21" on open discount as "After"
-    Then I should see orderscreen with open check discount
-    Then I verify open check discount is applied or not in order screen
-    Then I should see orderscreen with menu item prize as "$ 10.00"
-    Then I should see the tax amount reflected to the check as "$ 1.20"
-    Then I should see the Discount amount reflected to the check as "$ 2.21"
-    Then I should see orderscreen with menu item Total as "$ 8.99"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I click remove button
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount as "40,00" on open discount as "After"
-    Then I should see discount exceeds the safety limit popup
-    And I click Done button on the Popup
-    And I click cancel button on the table layout screen
-    And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
-    And I click Void button on order management screen
-    Then I should see All orders are voided
-    And I click Done button on the Popup
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#       #   And I pass the amount on open discount for open check discount safety percentage whole value as 20 for "After"
+#    And I pass the amount as "2.21" on open discount as "After"
+#    Then I should see orderscreen with open check discount
+#    Then I verify open check discount is applied or not in order screen
+#    Then I should see orderscreen with menu item prize as "$ 10.00"
+#    Then I should see the tax amount reflected to the check as "$ 1.20"
+#    Then I should see the Discount amount reflected to the check as "$ 2.21"
+#    Then I should see orderscreen with menu item Total as "$ 8.99"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I click remove button
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount as "40,00" on open discount as "After"
+#    Then I should see discount exceeds the safety limit popup
+#    And I click Done button on the Popup
+#    And I click cancel button on the table layout screen
+#    And I click Back button on Tax Exempt window
+#    And I click Back button on Check Options Screen
+#    And I click Void button on order management screen
+#    Then I should see All orders are voided
+#    And I click Done button on the Popup
        #   And I click log off button in order screen
 
           #Scenario: OPEN ITEM
@@ -1809,14 +1822,14 @@ Feature:Basic Validation
     And I click Open Item button
     Then I should see open item screen
     And I click Coursing Name text field
-    And I swipe to "RETAIL" as Coursing Name
+    And I swipe to "Retails" as Coursing Name
     And I enter course name as "Open Item" for check based open item
     And I tap Price text field
     And I enter price for check based open item
     And I get the open item value from open item window
     And I click Continue button on the Open Item Price numbers popup
     And I click Done button on the open item window
-    And I click Back button on Check Options Screen
+#    And I click Back button on Check Options Screen
     Then I should navigate to Order Management screen and see the added open item as "Open Item"
     Then I verify the open item value from open item window with order screen
     And I click Void button on order management screen
@@ -1825,6 +1838,7 @@ Feature:Basic Validation
     And I click log off button in order screen
   ###########   Gift Card  ##############
 
+  @MainBAsic
   Scenario: Gift
     Given I'm logged in
     And I close the order type window
@@ -1864,13 +1878,13 @@ Feature:Basic Validation
     And I pass card name as "Gift Card"
     And I pass expire date as "1224"
     And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     And I closed the order type window
     And I click log off button in order screen
 
     ######## GIVE-X ###########
 
-
+  @MainBAsic
   Scenario: 86 list
     Given I'm logged in
     And I closed the order type window

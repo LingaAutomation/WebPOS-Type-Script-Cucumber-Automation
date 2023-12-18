@@ -51,7 +51,7 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen(driver).shouldSeeGiveXScreen();
     }
     @And ("^I enter gift card number")
-    public void iEnterGiftCardNumberAs(){
+    public void iEnterGiftCardNumberAs() throws InterruptedException {
         new CheckOptionsScreen(driver).enterGiftCardNumber();
     }
 
@@ -189,7 +189,7 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see the Payment window$")
     public void iShouldSeeThePaymentWindow() {
-        Assert.assertEquals(new PaymentWindow(driver).getPaymentWindowTitle(), "Select Payment Method");
+        Assert.assertEquals(new PaymentWindow(driver).getPaymentWindowTitle(), "PAYMENTS");
     }
 
     @And ("^I click loyalty payment$")
@@ -481,7 +481,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I click Process button on card screen$")
-    public void iClickProcessButtonOnCardScreen(){
+    public void iClickProcessButtonOnCardScreen() throws InterruptedException {
         new PaymentWindow(driver).clickProcessButton();
     }
 
@@ -601,7 +601,7 @@ public class CheckOptionsStepDef {
 
     @And("^I swipe to \"([^\"]*)\" as Coursing Name$")
     public void iSwipeToAsCoursingName(String name) throws InterruptedException {
-        new OpenItemWindow(driver).swipeToCourseName(name);
+        new OpenItemWindow(driver).swipeToCourseName_ChangeCoursing(name);
     }
 
     @And("^I enter course name as \"([^\"]*)\"$")
@@ -930,7 +930,7 @@ public class CheckOptionsStepDef {
         new Regression(driver).selectTheMenuFromOrderScreenSplitSeat(cate);
     }
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen for merge$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreenForMerge(String cate){
+    public void iSelectMenuForDineInAsForSplitSeatOrderScreenForMerge(String cate) throws Exception {
         new Regression(driver).selectTheMenuFromOrderScreenSplitSeatForMerge(cate);
     }
 
@@ -1201,5 +1201,11 @@ public class CheckOptionsStepDef {
     @And ("^I search the closed check in the Batch screen field$")
     public void iSearchTheClosedCheckInTheBatchScreenField(){
         new PaymentWindow(driver).searchTheClosedCheckInBatchScreen();
+    }
+
+    @And("Enter some name and click on Add Customer button")
+    public void enterSomeNameAndClickOnAddCustomerButton() throws InterruptedException {
+        new PaymentWindow(driver).enterCustomerandClickOnAddCustomer();
+
     }
 }

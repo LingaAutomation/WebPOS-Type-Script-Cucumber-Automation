@@ -264,7 +264,7 @@ public class PhoneOrderStepDef {
         new CheckOptionsScreen(driver).verifyPrefixAddedToTheMenu();
     }
     @And ("^I select Menu For Dine order type as \"([^\"]*)\"$")
-    public void iSelectMenuForDineOrderType(String name) throws InterruptedException {
+    public void iSelectMenuForDineOrderType(String name) throws Exception {
         new Regression(driver).selectMenuForDineOrderType(name);
     }
 

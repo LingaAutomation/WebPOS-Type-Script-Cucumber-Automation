@@ -35,7 +35,7 @@ public class Hooks {
             CapabilitiesManager setdf = new CapabilitiesManager();
             setdf.setup();
             ScenarioName = scenario.getName();
-            utils.log().info("Start Scenario Name : " + ScenarioName);
+//            utils.log().info("Start Scenario Name : " + ScenarioName);
 
         }
         i++;

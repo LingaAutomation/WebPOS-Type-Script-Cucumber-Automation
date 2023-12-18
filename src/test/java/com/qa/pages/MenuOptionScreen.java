@@ -1,38 +1,44 @@
 package com.qa.pages;
+
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
 public class MenuOptionScreen extends ClockInScreen{
 
+    public  WebDriver driver;
+
     public MenuOptionScreen(WebDriver driver) {
-        super(driver);
+
+        super(TestUtils.driver);
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
     }
 
-    @FindBy(xpath = "Fire")
+    @FindBy(xpath = "//button[.='Fire']")
     private WebElement fireBtn;
 
-    @FindBy(xpath = "Repeat")
+    @FindBy(xpath = "//button[contains(.,'Repeat')]")
     private WebElement repeatBtn;
 
-    @FindBy(xpath = "Quantity")
+    @FindBy(xpath = "//label[.='Quantity']")
     private WebElement quantityBtn;
 
-    @FindBy(xpath = "Attach")
+    @FindBy(xpath = "//label[.='Attach']")
     private WebElement attachBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Discount\"])[1]")
+    @FindBy(xpath = "//label[.='Discounts']")
     private WebElement discountBtn;
 
-    @FindBy(xpath = "Add Notes")
+    @FindBy(xpath = "//p[contains(.,'Add Notes')]")
     private WebElement addNotes;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextView")
@@ -42,14 +48,14 @@ public class MenuOptionScreen extends ClockInScreen{
     // @FindBy(xpath = "//XCUIElementTypeButton[@name=\"To Go\"]")
     private WebElement togoBtn;
 
-    @FindBy(xpath = "Open Discount")
+    @FindBy(xpath = "//label[.='Open Discount']")
     private WebElement openDiscountBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Open Discount\"])[1]")
+    @FindBy(xpath = "//p[.='Open Discount']")
     private WebElement openDiscountScreen;
 
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "//ion-col[contains(@class,'openDiscount__content_grid')]//input")
     private WebElement enterAmountField;
 
 
@@ -71,18 +77,18 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy (xpath = "7")
     private WebElement pin7ForOpenDiscount;
 
-    @FindBy(xpath = "Continue")
+    @FindBy(xpath = "//button[contains(.,'Continue')]")
     private WebElement continueButtonOpenDiscount;
 
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextView")
+    @FindBy(xpath = "//textarea[contains(@class,'openDiscount__content_grid')]")
     private WebElement txtFieldForReasonOPenDiscount;
 
-    @FindBy(xpath = "Apply")
+    @FindBy(xpath = "//button[contains(.,'Apply')]")
     private WebElement applyButton;
 
 
-    @FindBy(xpath = "Open-Item Discount")
+    @FindBy(xpath = "//div[@class='discount-section']//div[.='Open-Item Discount']")
     private WebElement discountAppliedOrderScreen;
 
     @FindBy(xpath = "1,00")
@@ -94,22 +100,22 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[5]/XCUIElementTypeButton[9]")
     private WebElement tab;
 
-    @FindBy(xpath = "Open Modifier")
+    @FindBy(xpath = "//label[.='Open Modifier']")
     private WebElement openModifier;
 
-    @FindBy(xpath = "Change Coursing")
+    @FindBy(xpath = "//label[.='Change Coursing']")
     private WebElement changeCoursingBtn;
 
-    @FindBy(xpath = "Open Modifiers")
+    @FindBy(xpath = "//div[.='Open Modifier']")
     private WebElement openModifiersScreen;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//div[contains(@class,'openModifier__content')]//input")
     private WebElement txtFieldForOpenModifierScreen;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField")
+    @FindBy(xpath = "//ion-row[contains(@class,'openModifier__content')]//label[.='Price']/..//input")
     private WebElement priceField;
 
-    @FindBy(xpath = "Add")
+    @FindBy(xpath = "//button[.='Add']")
     private WebElement addBtn;
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[2]")
@@ -127,16 +133,16 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(xpath = "Please close the sale to sync the data")
     private WebElement pleaseCloseTheSaleToSyncTheData;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Open Item\"])[2]")
+    @FindBy(xpath = "//p[.='Open Item']")
     private WebElement openItemScreen;
 
-    @FindBy(xpath = "Void Item")
+    @FindBy(xpath = "//button[.='Void Item']")
     private WebElement voidBtnMenuOption;
 
     @FindBy(xpath = "Linga Close")
     private WebElement lingaCloseBtn;
 
-    @FindBy(xpath = "Percentage")
+    @FindBy(xpath = "//button[contains(.,'Percentage')]")
     private WebElement percentageCheckOption;
 
 
@@ -144,9 +150,9 @@ public class MenuOptionScreen extends ClockInScreen{
 
     public String pressMenuItems(String menu){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement e=(WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\""+menu+" \"]"));
+        WebElement e=(WebElement) driver.findElement(By.xpath("(//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='"+menu+"'])[1]"));
         elementClick(e,"Tapped Menu Items to see Menu Option Green");
-        WebElement el9 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Menu Option - "+menu+" \"]"));
+        WebElement el9 = (WebElement) driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='"+menu+"']"));
         return  elementGetText(el9,"Text");
     }
 
@@ -162,11 +168,11 @@ public class MenuOptionScreen extends ClockInScreen{
     public void pressRepeatMenuOption(){elementClick(repeatBtn,"Tapped Repeat Button");}
 
     public void verifyRepeatedMenuItem(String menu){
-        WebElement el1 =mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\""+menu+" \"])[2]","",TestUtils.Accessibility);
+        WebElement el1 = driver.findElement(By.xpath("(//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='"+menu+"'])[2]"));
         if(el1.isDisplayed()){
-            utils.log().info("Repeated Menu item is Visible");
+//            utils.log().info("Repeated Menu item is Visible");
         }else {
-            utils.log().info("Repeated Menu Item is not visible");
+//            utils.log().info("Repeated Menu Item is not visible");
         }
     }
 
@@ -175,16 +181,16 @@ public class MenuOptionScreen extends ClockInScreen{
     }
 
     public void pressQuantityNumber(String num){
-        WebElement el3 = mergeAndFindElement(num,"",TestUtils.Accessibility);
+        WebElement el3 = driver.findElement(By.xpath("//span[.='"+num+"']"));
         elementClick(el3,num +"selected");
     }
 
     public void verifyQuantityNumber(String num){
-        WebElement el4 =mergeAndFindElement(num,"",TestUtils.Accessibility);
+        WebElement el4 = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='mongo test']/../div[.='"+num+"']"));
         if(el4.isDisplayed()){
-            utils.log().info(num+" Is Visible");
+//            utils.log().info(num+" Is Visible");
         }else{
-            utils.log().info("Quantity is not visible");
+//            utils.log().info("Quantity is not visible");
         }
     }
     public void pressAttachBtn(){
@@ -196,16 +202,16 @@ public class MenuOptionScreen extends ClockInScreen{
     }
 
     public void clickDiscountInDiscountWindow(String discount1){
-        WebElement discount = mergeAndFindElement(discount1,"",TestUtils.Accessibility);
+        WebElement discount = driver.findElement(By.xpath("//button[contains(.,'"+discount1+"')]"));
         String discountTxt = discount.getText();
         elementClick(discount,"selected Discount as - "+discountTxt);
     }
 public void verifyDiscountIsApplied(String discount1){
-    WebElement discount = mergeAndFindElement(discount1, "", TestUtils.Accessibility);
+    WebElement discount = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']/..//div[@class='discount-section']//div[.='"+discount1+"']"));
     if (discount.isDisplayed()) {
-        utils.log().info("Discount is applied - " + discount.getText());
+//        utils.log().info("Discount is applied - " + discount.getText());
     }else{
-        utils.log().info("Discount is NOT applied - " + discount.getText());
+//        utils.log().info("Discount is NOT applied - " + discount.getText());
     }
 }
     public void verifyItemDiscountIsApplied(String discount1) {
@@ -291,25 +297,25 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public void pressAddNotesReason(String reason){
-        WebElement el2 = mergeAndFindElement(reason,"",TestUtils.Accessibility);
+        WebElement el2 = driver.findElement(By.xpath("//button[contains(.,'"+reason+"'')]"));
         elementClick(el2,"Tapped Reason  "+reason);
 
         String data=notesPageScreen.getText();
         if(data.equalsIgnoreCase(reason)){
-            utils.log().info(reason +"Add Notes Reason is Tapped");
+//            utils.log().info(reason +"Add Notes Reason is Tapped");
         }else{
-            utils.log().info("Add Notes Reason are not Tapped");
+//            utils.log().info("Add Notes Reason are not Tapped");
         }
 
     }
 
     public void verifyAddNotesAddOnOrderScreen(String reason){
         driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-        WebElement e=mergeAndFindElement(reason,"",TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']/..//div[text()='"+reason+"']"));
         if(e.isDisplayed()){
-            utils.log().info(reason +"Add reason Is Applied on Order Screen");
+//            utils.log().info(reason +"Add reason Is Applied on Order Screen");
         }else{
-            utils.log().info("Add reason is applied on Order Screen");
+//            utils.log().info("Add reason is applied on Order Screen");
         }
     }
 
@@ -405,8 +411,8 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
 //        WebDriverWait wait = new WebDriverWait(driver,3);
 //       wait.until(ExpectedConditions.visibilityOfElementLocated((WebElement) By.xpath("")));
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
-       elementClick( hideKeyboardButton,"Selected - "+hideKeyboardButton.getText());
-        WebElement e1= (WebElement) driver.findElements(By.xpath(name));
+//       elementClick( hideKeyboardButton,"Selected - "+hideKeyboardButton.getText());
+        WebElement e1= (WebElement) driver.findElements(By.xpath("//button[contains(.,'"+name+"')]"));
         elementClick(e1,"Tapped - "+ name);
         elementClick(applyButton,"Tapped Apply Button");
     }
@@ -425,12 +431,12 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public void verifyChangeCoursing(String courseee){
-        WebElement coursingName = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]","",TestUtils.Accessibility);
+        WebElement coursingName = driver.findElement(By.xpath("//p[contains(.,'"+courseee+"')]"));
            String coursingNameTxt = coursingName.getText();
         if(coursingNameTxt.equalsIgnoreCase(courseee)){
-            utils.log().info("Coursing name is Same - "+courseee);
+//            utils.log().info("Coursing name is Same - "+courseee);
         }else{
-            utils.log().info("Coursing name is NOT Same - ");
+//            utils.log().info("Coursing name is NOT Same - ");
         }
     }
     public void passNamePriceApplyTax(String modify){
@@ -455,11 +461,12 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     public void getModifierAddedOnOpenModifier(String Modify) {
 
         try{
-            WebElement e1 = mergeAndFindElement(Modify,"",TestUtils.Accessibility);
+            WebElement e1 = driver.findElement(By.xpath("//li[contains(.,'"+Modify+"')]"));
             if (e1.isDisplayed()) {
-                utils.log().info(Modify + " - Modifiers Added in Open Modifier screen");
+//                utils.log().info(Modify + " - Modifiers Added in Open Modifier screen");
             } }catch(Exception e) {
-            utils.log().info("Modifiers not Added in Open Modifier screen"); }
+//            utils.log().info("Modifiers not Added in Open Modifier screen");
+        }
     }
 
     public void clickDone(){
@@ -468,11 +475,11 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
         catch (Exception e){}
     }
     public void verifyModifyAddedOnOrderList(String modify){
-        WebElement e=mergeAndFindElement("//XCUIElementTypeStaticText[@name=\" "+modify+"\"]","",TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("//div[@class='modifier-section']//div[text()='"+modify+"']"));
         if(e.isDisplayed()){
-            utils.log().info(modify+" - Open Modifies is Added");
+//            utils.log().info(modify+" - Open Modifies is Added");
         }else{
-            utils.log().info("Open Modifiers is Not Added");
+//            utils.log().info("Open Modifiers is Not Added");
         }
     }
     public void swipeModifiersForDeleteInOpenModifyScreen() throws InterruptedException {
@@ -512,7 +519,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
         elementClick(voidBtnMenuOption,"Tapped void button");
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Back\"]")
+    @FindBy(xpath = "")
     private WebElement backBtnMenu;
     public void clickBackBtn(){
 elementClick(backBtnMenu,"Back Button selected");
