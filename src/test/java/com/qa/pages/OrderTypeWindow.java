@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class OrderTypeWindow extends ClockInScreen {
@@ -124,16 +125,17 @@ public class OrderTypeWindow extends ClockInScreen {
         elementClick(cancelBtn, "Order type selection is cancelled.");
     }
 
-    @FindBy(xpath = "ADD")
+    @FindBy(xpath = "//button[@id='os_addSeat']")
     WebElement addBtnOrderScreen;
 
-    @FindBy(xpath = "2")
+    @FindBy(xpath = "//ion-col[contains(@class,'qsrSeats_row-col')]//p[.='Seats']/..//button[contains(@class,'qsrSeats_row-col')]//span[1]")
     WebElement seat2Numbers;
     public String seat2Number= " ";
     public void addCreateSeatInOrderScreen(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         elementClick(addBtnOrderScreen,"Selected Button as - "+addBtnOrderScreen.getText());
-        seat2Number = seat2Numbers.getText();
+        List<WebElement> seatNum =  driver.findElements(By.xpath("//ion-col[contains(@class,'qsrSeats_row-col')]//p[.='Seats']/..//button[contains(@class,'qsrSeats_row-col')]//span[1]"));
+        seat2Number = Integer.toString(seatNum.size());
         TestUtils.seatNumberOrderScreen = seat2Number;
     }
 

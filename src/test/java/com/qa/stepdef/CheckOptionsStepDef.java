@@ -907,7 +907,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for merge Check$")
-    public void iSelectMenuForBartabOrderTypeAsForMergeCheck(String cate){
+    public void iSelectMenuForBartabOrderTypeAsForMergeCheck(String cate) throws Exception {
         new Regression(driver).selectMenuForBarTabForSplitCheckMerge(cate);
     }
     @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for split Check1$")
@@ -916,7 +916,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for merge Check1$")
-    public void iSelectMenuForBartabOrderTypeAsForMergeCheck1(String cate){
+    public void iSelectMenuForBartabOrderTypeAsForMergeCheck1(String cate) throws Exception {
         new Regression(driver).selectMenuForBarTabForMergeCheck1(cate);
     }
 
@@ -935,7 +935,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen1$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreen1(String cate){
+    public void iSelectMenuForDineInAsForSplitSeatOrderScreen1(String cate) throws Exception {
         new Regression(driver).selectTheMenuFromOrderScreenSplitSeat1(cate);
     }
 

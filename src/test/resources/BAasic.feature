@@ -2013,9 +2013,9 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Merge09
+  @MainBAsic
   Scenario: Merge with Item Based Amount (Verify the Merge option from Table layout screen )
     Given I'm logged in
     And I closed the order type window
@@ -2073,16 +2073,16 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Cryptos8
+  @MainBAsic
   Scenario: Verify the Merge option from Bar Tab screen
     Given I'm logged in
     And I closed the order type window
     And I click All
     And I click BarTab Layout
     And I click NewTab from BarTab Layout
-    And I click "Exit" in the preauth popup "click Exit Button"
+#    And I click "Exit" in the preauth popup "click Exit Button"
 #    And I select Menu For Bartab order type as "IceCreams" for split Check
     And I select Menu For Bartab order type as "North Indian dish" for merge Check
     And I get the seat number from the check
@@ -2091,7 +2091,7 @@ Feature:Basic Validation
     And I click Finish button
     And I click BarTab Layout
     And I click NewTab from BarTab Layout
-    And I click "Exit" in the preauth popup "click Exit Button"
+#    And I click "Exit" in the preauth popup "click Exit Button"
     And I select Menu For Bartab order type as "North Indian dish" for merge Check1
     And I get the seat number from the check1
     And I get the list of the menu from the order screen1
@@ -2100,13 +2100,13 @@ Feature:Basic Validation
     And I click BarTab Layout
     And I click Merge button
     When I click the check from the bartab screen for merge
-    And I hide the keyboard
+#    And I hide the keyboard
     When I click the check from the bartab screen1 for merge
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click Done button to merge checks
     Then I should see the merged popup after merge
     And I click Done button on the Popup
-    And I click clear text button
+#    And I click clear text button
     When I click the check from the bartab screen
     Then I Should get back to the Order Screen
     And I verify check number from the order screen
@@ -2122,7 +2122,8 @@ Feature:Basic Validation
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click BarTab Layout
-    And I click power button
+    And I click power button in the All Orders screen
+
 
 
   Scenario: Split Check from Table layout
@@ -2884,11 +2885,11 @@ Feature:Basic Validation
     Then I should see active check
     And I hide the keyboard
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
 
 
-  @bsci
+  @MainBAsic
   Scenario: Price Level ( Customer Mapped in membership by BO level )
     Given I'm logged in
     And I closed the order type window
@@ -2905,11 +2906,14 @@ Feature:Basic Validation
     Then I should see All orders are voided
     And I click Done button on the Popup
     And I click Add Customer Button
-    And I click Add new button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
+    Then I should see the customer profile window
     And I select search
     And I enter an existing customer's name "auto membership"
-    And I select the customer for autoMembership
-    And I click the Save button
+    And I select the customer
+    When I click the Save button
     Then I Should get back to the Order Screen
     Then I should see customer as "auto m" added on order screen
     And I get check number
@@ -2927,9 +2931,9 @@ Feature:Basic Validation
     And I click closed checks details icon button
     Then I should see order summary screen
     When I verify subtotal value with order summary subtotal value
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @bsci
+  @MainBAsic
   Scenario: Customer Mapped in membership by iPad level
     Given I'm logged in
     And I closed the order type window
@@ -2940,9 +2944,15 @@ Feature:Basic Validation
     And I select the number of seats as "1"
     And I tap Continue to finish selecting the number of seats
     And I click Add Customer Button
-    And I click Add new button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
+    Then I should see the customer profile window
+    And I select search
+    And I enter an existing customer's name "auto membership1"
+    And I select the customer
+    When I click the Save button
 #     And I select search
-    When I verify the customer as "auto membership1" is available in the customer profile window
     Then I should see customer as "auto m" added on order screen
     And I get check number
     And I select category as "Menu"
@@ -2959,9 +2969,9 @@ Feature:Basic Validation
     And I click closed checks details icon button
     Then I should see order summary screen
     When I verify subtotal value with order summary subtotal value
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @bsci
+  @MainBAsic
   Scenario: Display group Price Level
     Given I'm logged in
     And I closed the order type window
@@ -2986,9 +2996,9 @@ Feature:Basic Validation
     And I click closed checks details icon button
     Then I should see order summary screen
     When I verify subtotal value with order summary subtotal value
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Cryptos00
+  @MainBAsic
   Scenario: Reopen the closed checks and validate the tax, total, Subtotal
     Given I'm logged in
     And I closed the order type window
@@ -3015,9 +3025,9 @@ Feature:Basic Validation
     And I click Payment button in the Order Management Screen
     And I click submit button
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @bsci
+  @MainBAsic
     Scenario: When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
       Given I'm logged in
       And I closed the order type window
@@ -3062,8 +3072,9 @@ Feature:Basic Validation
       Then I should see All orders are voided
       And I click Done button on the Popup
       And I click All
-      And I click power button
+      And I click power button in the All Orders screen
 
+  @MainBAsic
   Scenario: LIN-22163 - Gratuity value is mismatching, when applying auto gratuity
     Given I'm logged in
     And I closed the order type window
@@ -3083,7 +3094,7 @@ Feature:Basic Validation
     And I add a new seat
     Then I should see Add Gratuity screen
 #    And I click auto Gratuity varying button
-    And I select auto gratuity as "Auto Varying Gratuity"
+    And I select auto gratuity as "Auto vary Gratuity"
     Then I should see enter Percentage popup
     And I pass the value and click Apply button
     And I select Menu of Basic validation for QSR as "Salad"
@@ -3094,20 +3105,21 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Cryptos00
+  @MainBAsic
 Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   Given I'm logged in
   And I closed the order type window
-  And I click Add Customer Button
-  And I click Add new button
-  Then I should see the customer profile window
-  And I select search
-  And I enter an existing customer's name "Auto test"
-  And I select the customer for basic
-#  When I select the last sale of the customer
-  And I click the Save button
+    And I click Add Customer Button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
+    Then I should see the customer profile window
+    And I select search
+    And I enter an existing customer's name "Auto test"
+    And I select the customer
+    When I click the Save button
   And I get check number
   And I select category as "FOOD"
   And I select menu item as "Onion Rings"
@@ -3122,12 +3134,14 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I click Exact button on the cash pop-up
   And I click Enter Button on the cash pop-up
   And I closed the order type window
-  And I click Add Customer Button
-  And I click Add new button
-  Then I should see the customer profile window
-  And I select search
-  And I enter an existing customer's name "Auto test"
-  And I select the customer for basic
+    And I click Add Customer Button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
+    Then I should see the customer profile window
+    And I select search
+    And I enter an existing customer's name "Auto test"
+    And I select the customer
       And I wait sometimes
   And I verify the customer previous order menu with order menu
   And I select the previous order on customer profile screen
@@ -3146,7 +3160,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I click log off button in order screen
 
 
-  @Cryptos00
+  @MainBAsic
   Scenario: LIN-22594 - Gratuity amounts disappears from the check in the following scenario
     Given I'm logged in
     And I closed the order type window
@@ -3163,7 +3177,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     And I add a new seat
     Then I should see Add Gratuity screen
 #    And I click auto Gratuity varying button
-    And I select auto gratuity as "Auto Varying Gratuity"
+    And I select auto gratuity as "Auto vary Gratuity"
     Then I should see enter Percentage popup
     And I pass the value and click Apply button
     Then I should verify subtotal value as "$ 2.95"
@@ -3196,7 +3210,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     And I click Payment button in the Order Management Screen
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
   @Cryptos
   Scenario: LIN - 21416 - The Already Tokenized Credit card number is allowed to save once again while manually tokenize the credit card in customer profile screen
@@ -3388,17 +3402,20 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     When I verify the credit card of the check from the batch screen should be encrypted
     And I click power button
 
-  @Cryptos
+  @MainBAsic
     Scenario: LIN-22815 - Allow to save more that 140 characters in customer notes after alert message in customer profile.
       Given I'm logged in
-      And I closed the order type window
-      And I click Add Customer Button
-      And I click Add new button
-      Then I should see the customer profile window
-      And Enter the new customer randomly1
+    And I click Add Customer Button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
+    Then I should see the customer profile window
+    And I select search
+    And I enter an existing customer's name "pink flower"
+    And I select the customer
       And I wait sometimes
       And I enter the above 150 words on the customer notes
-      And I hide the keyboard
+#      And I hide the keyboard
       And I click the Save button
      And I Should get back to the Order Screen
     And I click the customer name on the order screen
@@ -3455,7 +3472,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
       And I click Done button on the Popup
       And I click power button
 
-      @Crash
+  @MainBAsic
 Scenario: Application gets crashed when scroll the category/service type/suggestive search
   Given I'm logged in
   And I closed the order type window
@@ -3463,9 +3480,16 @@ Scenario: Application gets crashed when scroll the category/service type/suggest
   And I click All
   And I click BarTab Layout
   And I click New Tab in the Bar Tab Screen
-  And I click the Exit to close the preauth window
-  And I click Add Customer Button
-  And I search the existing customer as "loyalty test1" on the order screen
+#  And I click the Exit to close the preauth window
+    And I click Add Customer Button
+    Then I should see the add customer screen in the window
+    And I Click on the Byname Option
+    And Enter some name and click on Add Customer button
+    Then I should see the customer profile window
+    And I select search
+    And I enter an existing customer's name "loyalty test1"
+    And I select the customer
+    When I click the Save button
   And I wait sometimes
   And I click Finish button
   And I click QSR tab

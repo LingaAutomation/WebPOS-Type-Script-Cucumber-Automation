@@ -96,7 +96,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     @FindBy(xpath = "//input[contains(@class,'ratuityvarying-gridinput')]")
     WebElement passPercentageValue;
 
-    @FindBy(xpath = "Apply")
+    @FindBy(xpath = "//button[contains(.,'Apply')]")
     WebElement applyBtn;
 
     @FindBy(xpath = "Enter Percentage")
@@ -331,11 +331,12 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 //        utils.log().info("Percentage value - " + valueBetweenTxt);
         elementClick(passPercentageValue, "Pass percentage value field is clicked.");
 
-        WebElement el2 = driver.findElement(By.xpath(a));
+        WebElement el2 = driver.findElement(By.xpath("//button//span[.='"+a+"']"));
         TestUtils.percent = a;
         String number = el2.getText();
         elementClick(el2, "Tapped number as - " + number);
-        WebElement el5 = (WebElement) driver.findElement(By.xpath("Continue"));
+        driver.findElement(By.xpath("//button//span[.='00']")).click();
+        WebElement el5 = (WebElement) driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
         elementClick(el5, "Tapped continue Button ");
         elementClick(applyBtn, "Tapped Apply button");
         return a;
@@ -712,15 +713,15 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public void verifyAutoGratuityApplied() {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        WebElement gratuity = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
+        WebElement gratuity = (WebElement) driver.findElement(By.xpath("//p[@id='os_gratuityAmount']"));
         String autoGratuityTxt = gratuity.getText();
 
         if (autoGratuityTxt.equals("Gratuity")) {
-            WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Subtotal\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subTotalOfMenuTxt = subTotalOfMenu.getText();
-            utils.log().info("Subtotal of Menu - " + subTotalOfMenuTxt);
+            WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
+            String subTotalOfMenuTxt = subTotalOfMenu.getAttribute("value");
+//            utils.log().info("Subtotal of Menu - " + subTotalOfMenuTxt);
         } else {
-            utils.log().info("GRATUITY IS NOT APPLIED");
+//            utils.log().info("GRATUITY IS NOT APPLIED");
             int i =1/0;
         }
     }
@@ -728,33 +729,35 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public void verifyAutoGratuityAppliedOrNot() {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        WebElement gratuity = (WebElement) driver.findElement(By.xpath("//p[@id='os_gratuityAmount']"));
-        String autoGratuityTxt = gratuity.getText();
+        try {
+            WebElement gratuity = (WebElement) driver.findElement(By.xpath("//p[@id='os_gratuityAmount']"));
+            String autoGratuityTxt = gratuity.getText();
 
-        if (autoGratuityTxt.equals("Gratuity")) {
-            WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
-            String subTotalOfMenuTxt = subTotalOfMenu.getText();
+            if (autoGratuityTxt.equals("Gratuity")) {
+                WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+                String subTotalOfMenuTxt = subTotalOfMenu.getText();
 //            utils.log().info("Subtotal of Menu - " + subTotalOfMenuTxt);
 
-            WebElement tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
-            String taxTxt = tax.getText();
+                WebElement tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+                String taxTxt = tax.getText();
 //            utils.log().info("Tax of Menu - " + taxTxt);
 
-            WebElement gratuity1 = (WebElement) driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
-            String autoGratuity1 = gratuity1.getText();
+                WebElement gratuity1 = (WebElement) driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
+                String autoGratuity1 = gratuity1.getText();
 //            utils.log().info("Gratuity of Menu - " + autoGratuity1);
 
-            WebElement Total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
-            String totalTxt = Total.getText();
+                WebElement Total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+                String totalTxt = Total.getText();
 //            utils.log().info("Total of Menu - " + totalTxt);
 
-            WebElement cashOption = (WebElement) driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input"));
-            String cashOptionTxt = cashOption.getText();
+                WebElement cashOption = (WebElement) driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input"));
+                String cashOptionTxt = cashOption.getText();
 //            utils.log().info("Cash Price of Menu - " + cashOptionTxt);
 
-        } else {
+            } else {
 //            utils.log().info("GRATUITY IS NOT APPLIED");
-        }
+            }
+        }catch (Exception e) {}
     }
 
     @FindBy(xpath = "Auto Varying Gratuity")
@@ -773,7 +776,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public void selectAutoGratuityAs(String Gratuity){
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-        WebElement selectGratuity = (WebElement) driver.findElement(By.xpath("//button[contains(.,'vary Gratuity')]"));
+        WebElement selectGratuity = (WebElement) driver.findElement(By.xpath("//button[contains(.,'"+Gratuity+"')]"));
         elementClick(selectGratuity,"Selected - "+selectGratuity.getText());
     }
     public void verifyAutoGratuityAppliedOrNotInSeat() {

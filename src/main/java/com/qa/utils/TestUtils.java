@@ -30,6 +30,8 @@ public class TestUtils {
     public static String globalCheckNumber=" ";
     public static String menu =" ";
     public static List<String> menuNames;
+    public static String MergecheckTableNO1=" ";
+    public static String MergecheckTableNO2 =" ";
     public static String loyaltyBalance=" ";
     public static final String XPath = "XPath";
     public static String tipTotal=" ";

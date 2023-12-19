@@ -104,7 +104,7 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
     WebElement searchTabInBarTab1;
 
-    @FindBy(xpath = "Clear text")
+    @FindBy(xpath = "//input[@placeholder='Search Name or Check Number']")
     WebElement clearTextBtn;
 
     public void clickPhoneOrderTab(){
@@ -360,12 +360,12 @@ public class PhoneOrderScreen extends BasePage {
 //                utils.log().info("Closed Check be duplicate" + globalCheckNumber);
 //            }
 //        } catch (Exception h) {
-        WebElement phoneOrders1 = (WebElement) driver.findElements(By.xpath(globalCheckNumber));
+        WebElement phoneOrders1 = (WebElement) driver.findElements(By.xpath("//div[contains(@class,'table-row table-row')]//tr//td[.='"+globalCheckNumber+"']"));
 
         if (phoneOrders1.isDisplayed()) {
             elementClick(phoneOrders1, "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }else{
-            utils.log().info("closed check is not available"+ globalCheckNumber);
+//            utils.log().info("closed check is not available"+ globalCheckNumber);
         }
         //elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
         //   }

@@ -35,10 +35,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "2")
     private WebElement checkSeatNo;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]")
+    @FindBy(xpath = "//button[.='Merge']")
     private WebElement mergeBtn;
 
-    @FindBy(xpath = "Done")
+    @FindBy(xpath = "//button[contains(.,'Done')]")
     private WebElement mergeDoneBtn;
 
     @FindBy(xpath = "Transfer")
@@ -440,9 +440,9 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void verifyMergedPopupAfterMerge(){
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextView
-        WebElement mergedPopup = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextView"));
+        WebElement mergedPopup = (WebElement) driver.findElement(By.xpath("//app-alertcontent//mat-dialog-content[@id='alert-done-popup']//p"));
         String mergePopupTxt = mergedPopup.getText();
-        utils.log().info("Displayed popup as - "+mergePopupTxt);
+//        utils.log().info("Displayed popup as - "+mergePopupTxt);
     }
     public void findMergeBox() {
         if (find(emptyMergeList, 2)) {
@@ -534,21 +534,21 @@ public class TableLayOutScreen extends OrderManagementScreen {
             utils.log().info("Transfer to server is not completed");
 
     }
-    @FindBy(xpath = "On merging the particular checks Discount will be removed. Do you want to continue?")
+    @FindBy(xpath = "//p[.='On merging the particular checks Discount will be removed. Do you want to continue?']")
     WebElement onMergingTheParticularChecksPopup;
     public void ShouldSeeOnMergingTheParticularCheckPopup(){
         Assert.assertEquals(onMergingTheParticularChecksPopup.getText(),"On merging the particular checks Discount will be removed. Do you want to continue?");
-        utils.log().info("Displayed popup as - "+onMergingTheParticularChecksPopup.getText());
+//        utils.log().info("Displayed popup as - "+onMergingTheParticularChecksPopup.getText());
     }
 
-    @FindBy(xpath = "Merge Checks Confirmation")
+    @FindBy(xpath = "//ion-col[contains(.,'Merge Checks Confirmation')]")
     WebElement mergeCheckPopup;
     public void mergeCheckConfirmationPopup(){
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         Assert.assertEquals(mergeCheckPopup.getText(),"Merge Checks Confirmation");
-        utils.log().info("Displayed popup as - "+mergeCheckPopup.getText());
+//        utils.log().info("Displayed popup as - "+mergeCheckPopup.getText());
     }
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Confirm\"]")
+    @FindBy(xpath = "//ion-footer//ion-col[contains(.,'Confirm')]")
     WebElement confirmButton;
     public void clickConfirmButton(){
         elementClick(confirmButton,"Selected - "+confirmButton.getText());
@@ -664,7 +664,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         Thread.sleep(3000);
         Assert.assertEquals(Order1.getText(), "Seats");
         //  if (Order1.isDisplayed()) {
-        utils.log().info("I should see Order Screen");
+//        utils.log().info("I should see Order Screen");
 //            List<WebElement> Listmenu = (List<WebElement>) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell");
 //            int countOfMenu = Listmenu.size();
 //            for (int i = 2; i <= countOfMenu; i++) {
@@ -2005,57 +2005,57 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void clickTableNumberOnTheOrderScreen(){
-        WebElement tableNumber = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText"));
+        WebElement tableNumber = (WebElement) driver.findElement(By.xpath("//button[@id='os_selectedSeat']//span[@class='mat-button-wrapper']"));
         elementClick(tableNumber,"Selected - "+tableNumber.getText());
 
     }
     public void verifyTheSeat2MenuWith1stCheck(){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        List<WebElement> orderMenu = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        utils.log().info("orderMenu.size() " + orderMenu.size());
-        for (int i = 2; i <= orderMenu.size(); i++) {
-            WebElement orderMenuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            orderMenuName1[i - 1] = orderMenuName.getText();
+        List<WebElement> orderMenu = (List<WebElement>) driver.findElement(By.xpath("//div[contains(@class,'orderlist-container ordr-border')]"));
+//        utils.log().info("orderMenu.size() " + orderMenu.size());
+        for (int i = 1; i <= orderMenu.size(); i++) {
+            WebElement orderMenuName = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')]//div[contains(@class,'menu-section orderlist')]//div[contains(@class,'orderlist-menuname')])["+i+"]"));
+            orderMenuName1[i] = orderMenuName.getText();
 
-            TestUtils.orderMenuName2[i - 1] = orderMenuName1[i - 1];
+            TestUtils.orderMenuName2[i] = orderMenuName1[i];
 
-            WebElement orderMenuPrize1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-            orderMenuPrize[i - 1] = orderMenuPrize1.getText();
-            TestUtils.orderMenuPrize2[i - 1] = orderMenuPrize[i - 1];
-            Assert.assertEquals(TestUtils.orderMenuName2[i - 1],orderMenuName1[i - 1]);
-            Assert.assertEquals(TestUtils.orderMenuPrize2[i - 1],orderMenuPrize[i - 1]);
-            utils.log().info("Order Screen menu SAME with SEAT 2 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
+            WebElement orderMenuPrize1 = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')]//div[contains(@class,'menu-section orderlist')]//div[contains(@class,'text-pos-end')])["+i+"]"));
+            orderMenuPrize[i] = orderMenuPrize1.getText();
+            TestUtils.orderMenuPrize2[i] = orderMenuPrize[i];
+            Assert.assertEquals(TestUtils.orderMenuName2[i],orderMenuName1[i]);
+            Assert.assertEquals(TestUtils.orderMenuPrize2[i],orderMenuPrize[i]);
+//            utils.log().info("Order Screen menu SAME with SEAT 2 Menu - " + (i) + " " + orderMenuName1[i] + " Prize " + orderMenuPrize[i]);
             try {
-                List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'menuname qsr-mod')]"));
                 for (int m = 1; m <= modifier.size(); m++) {
-                    WebElement modifier1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
+                    WebElement modifier1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'menuname qsr-mod')])["+m+"]"));
                     modifierVerify1[m] = modifier1.getText();
                     // TestUtils.modifier[m] = modifieR[m];
-                    WebElement modifierPrize1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[3]"));
+                    WebElement modifierPrize1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'pos-end qsr-mod')])["+m+"]"));
                     modifierPrizeVerify1[m] = modifierPrize1.getText();
                     //   TestUtils.modifierPrize[m] = modifierPrize[m];
                     Assert.assertEquals(TestUtils.modifier2[m],modifierVerify1[m]);
                     Assert.assertEquals(TestUtils.modifierPrize2[m],modifierPrizeVerify1[m]);
-                    utils.log().info("Seat 2 Modifier - " + modifierVerify1[m] + " Prize - " + modifierPrizeVerify1[m]);
+//                    utils.log().info("Seat 2 Modifier - " + modifierVerify1[m] + " Prize - " + modifierPrizeVerify1[m]);
                 }
-                List<WebElement> discount = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
+                List<WebElement> discount = (List<WebElement>) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-name')]"));
                 for(int h =1;h<=discount.size();h++){
-                    WebElement discountName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[1]"));
+                    WebElement discountName1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-name')])["+h+"]"));
                     discountNameVerify2[h] = discountName1.getText();
                     TestUtils.discountName1[h] = discountNameVerify2[h];
 
-                    WebElement discountCount1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[2]"));
+                    WebElement discountCount1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-quantity')])["+h+"]"));
                     discountCountVerify2[h] = discountCount1.getText();
                     TestUtils.discountCount1[h] = discountCountVerify2[h];
 
-                    WebElement discountPrize1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[3]"));
+                    WebElement discountPrize1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-price')])["+h+"]"));
                     discountPrizeVerify2[h] = discountPrize1.getText();
                     TestUtils.discountPrize1[h] = discountPrizeVerify2[h];
 
                     Assert.assertEquals(TestUtils.discountName1[h],discountNameVerify2[h]);
                     Assert.assertEquals(TestUtils.discountCount1[h],discountCountVerify2[h]);
                     Assert.assertEquals(TestUtils.discountPrize1[h],discountPrizeVerify2[h]);
-                    utils.log().info("Discount - "+discountNameVerify2[h]+" Qty - "+discountCountVerify2[h]+" Amount - "+discountPrizeVerify2[h]);
+//                    utils.log().info("Discount - "+discountNameVerify2[h]+" Qty - "+discountCountVerify2[h]+" Amount - "+discountPrizeVerify2[h]);
                 }
 
 
@@ -2077,52 +2077,52 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifyTheSeat1MenuWith1stCheck() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        List<WebElement> orderMenu = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        utils.log().info("orderMenu.size() " + orderMenu.size());
-        for (int i = 2; i <= orderMenu.size(); i++) {
+        List<WebElement> orderMenu = (List<WebElement>) driver.findElement(By.xpath("//div[contains(@class,'orderlist-container ordr-border')]"));
+//        utils.log().info("orderMenu.size() " + orderMenu.size());
+        for (int i = 1; i <= orderMenu.size(); i++) {
 
-            WebElement orderMenuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            orderMenuName1[i - 1] = orderMenuName.getText();
+            WebElement orderMenuName = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')]//div[contains(@class,'menu-section orderlist')]//div[contains(@class,'orderlist-menuname')])["+i+"]"));
+            orderMenuName1[i ] = orderMenuName.getText();
 
-            TestUtils.orderMenuName[i - 1] = orderMenuName1[i - 1];
+            TestUtils.orderMenuName[i] = orderMenuName1[i];
 
-            WebElement orderMenuPrize1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-            orderMenuPrize[i - 1] = orderMenuPrize1.getText();
-            TestUtils.orderMenuPrize[i - 1] = orderMenuPrize[i - 1];
-            Assert.assertEquals(TestUtils.orderMenuName[i - 1], orderMenuName1[i - 1]);
-            Assert.assertEquals(TestUtils.orderMenuPrize[i - 1], orderMenuPrize[i - 1]);
-            utils.log().info("Order Screen menu SAME with Seat 1 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
+            WebElement orderMenuPrize1 = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')]//div[contains(@class,'menu-section orderlist')]//div[contains(@class,'text-pos-end')])["+i+"]"));
+            orderMenuPrize[i] = orderMenuPrize1.getText();
+            TestUtils.orderMenuPrize[i - 1] = orderMenuPrize[i];
+            Assert.assertEquals(TestUtils.orderMenuName[i], orderMenuName1[i]);
+            Assert.assertEquals(TestUtils.orderMenuPrize[i], orderMenuPrize[i ]);
+//            utils.log().info("Order Screen menu SAME with Seat 1 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
             try {
-                List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'menuname qsr-mod')]"));
                 for (int m = 1; m <= modifier.size(); m++) {
-                    WebElement modifier1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
+                    WebElement modifier1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'menuname qsr-mod')])["+m+"]"));
                     modifierVerify[m] = modifier1.getText();
                     // TestUtils.modifier[m] = modifieR[m];
-                    WebElement modifierPrize11 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[3]"));
+                    WebElement modifierPrize11 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'pos-end qsr-mod')])["+m+"]"));
                     modifierPrizeVerify[m] = modifierPrize11.getText();
                     //   TestUtils.modifierPrize[m] = modifierPrize[m];
                     Assert.assertEquals(TestUtils.modifier[m], modifierVerify[m]);
                     Assert.assertEquals(TestUtils.modifierPrize[m], modifierPrizeVerify[m]);
-                    utils.log().info("Seat 1 Modifier is SAME - " + modifierVerify[m] + " Prize - " + modifierPrizeVerify[m]);
+//                    utils.log().info("Seat 1 Modifier is SAME - " + modifierVerify[m] + " Prize - " + modifierPrizeVerify[m]);
                 }
-                List<WebElement> discount = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
+                List<WebElement> discount = (List<WebElement>) driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-name')]"));
                 for(int h =1;h<=discount.size();h++){
-                    WebElement discountName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[1]"));
+                    WebElement discountName1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-name')])["+h+"]"));
                     discountNameVerify1[h] = discountName1.getText();
                     TestUtils.discountName[h] = discountNameVerify1[h];
 
-                    WebElement discountCount1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[2]"));
+                    WebElement discountCount1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-quantity')])["+h+"]"));
                     discountCountVerify1[h] = discountCount1.getText();
                     TestUtils.discountCount[h] = discountCountVerify1[h];
 
-                    WebElement discountPrize1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[3]"));
+                    WebElement discountPrize1 = (WebElement) driver.findElement(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-price')])["+h+"]"));
                     discountPrizeVerify1[h] = discountPrize1.getText();
                     TestUtils.discountPrize[h] = discountPrizeVerify1[h];
 
                     Assert.assertEquals(TestUtils.discountName[h],discountNameVerify1[h]);
                     Assert.assertEquals(TestUtils.discountCount[h],discountCountVerify1[h]);
                     Assert.assertEquals(TestUtils.discountPrize[h],discountPrizeVerify1[h]);
-                    utils.log().info("Discount - "+discountNameVerify1[h]+" Qty - "+discountCountVerify1[h]+" Amount - "+discountPrizeVerify1[h]);
+//                    utils.log().info("Discount - "+discountNameVerify1[h]+" Qty - "+discountCountVerify1[h]+" Amount - "+discountPrizeVerify1[h]);
                 }
 
             } catch (Exception g) {
@@ -2194,15 +2194,15 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifyGratuityValueAfterAddAutoGratuity(String value){
 
-        WebElement e11 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Subtotal\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        int subtotalValue = Integer.parseInt(e11.getText().replaceAll("[A-Z$., ]",""));
+        WebElement e11 = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        int subtotalValue = Integer.parseInt(e11.getAttribute("value").replaceAll("[A-Z$., ]",""));
 
         int gratuityValue = Integer.parseInt(value);
-       int gratuity = ( subtotalValue * gratuityValue )/100 ;
+        int gratuity = ( subtotalValue * gratuityValue )/100;
         String ExpectedGratuity = String.valueOf(gratuity);
-        utils.log().info("Gratuity as - "+ gratuity);
-        WebElement Gratuity1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Gratuity\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-       String actualGratuity = (Gratuity1.getText().replaceAll("[A-Z$,. ]",""));
+//        utils.log().info("Gratuity as - "+ gratuity);
+        WebElement Gratuity1 = (WebElement) driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
+       String actualGratuity = (Gratuity1.getAttribute("value").replaceAll("[A-Z$,. ]",""));
         Assert.assertEquals(ExpectedGratuity,actualGratuity);
 
     }

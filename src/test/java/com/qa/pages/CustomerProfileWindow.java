@@ -295,7 +295,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public void clickRepeatOrderButton(){
-      WebElement repeatOrderBtn = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Repeat Order\"]"));
+      WebElement repeatOrderBtn = (WebElement) driver.findElement(By.xpath("//button[contains(.,'Repeat Order')]"));
       elementClick(repeatOrderBtn,"Selected Repeat Order Btn");
     }
 

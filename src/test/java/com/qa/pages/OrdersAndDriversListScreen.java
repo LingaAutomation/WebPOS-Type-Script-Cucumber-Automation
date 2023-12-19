@@ -36,7 +36,7 @@ public class OrdersAndDriversListScreen extends BasePage {
     @FindBy(xpath = "reOpenCheck")
     private WebElement reOpenCheckButton;
 
-    @FindBy(xpath = "Re-Open Check")
+    @FindBy(xpath = "//button[contains(.,'Re-Open Check')]")
     private WebElement reOpenCheckStats;
 
     @FindBy(xpath = "Table Layout")
