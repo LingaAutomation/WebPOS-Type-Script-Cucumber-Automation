@@ -1139,7 +1139,7 @@ Feature: TaxRoundOff_Build_5.2(1.5)
 #      And Select the menu item with exclusive tax
 
 #  @setthree
-  @basicTaxScenarios3
+  @basicTaxScenarios
   Scenario: Verify tax and roundoff after placing menu items with check discount and reopen to void some menu items
 #      And I added a new seat
     And I get check number
@@ -1174,7 +1174,7 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setthree
-  @basicTaxScenarios3
+  @basicTaxScenarios
   Scenario: Verify tax and roundoff after placing menu items with check discount then reopen to void some menu items and again reopen to void the check
     And I get check number
     And I have selected category arrow
@@ -1216,7 +1216,7 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setthree
-  @abc
+  @basicTaxScenarios
   Scenario: Verify tax and roundoff after placing menu items with exclusive tax and item service charge
     And I get check number
     And I have selected category arrow
@@ -1230,13 +1230,13 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setfour
-  @aaaa
+  @basicTaxScenarios
   Scenario: Verify tax and roundoff after placing menu items with inclusive tax and item service charge
     And I get check number
     And I have selected category arrow
-    And Select the category as "Sparklers"
-    And Select the sub category as "Basic"
-    And I selected the menu item "Minty orange"
+    And Select the category "Sparklers"
+    And Select the sub category "Basic"
+    And Select the menu item "Minty orange"
     And Verify If Inclusive Tax "0.13450" and tax on item service charge "0.12000" Is Calculated Properly when item service charge "0.13467"
     And Verify If item service charge "0.13467" Is Calculated Properly
     And Verify if the balance due value is calculated correctly when item service charge is present
@@ -1247,18 +1247,18 @@ Feature: TaxRoundOff_Build_5.2(1.5)
 #      An
 
 #  @setfour
-  @aaaa
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item with exclusive tax with open item discount (amount BT)
     And I have selected category arrow
-    And Select the category "Food items"
-    And Select the menu item with exclusive tax for open discount
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu15"
     And I selected menu options
     And I selected Open Discount
     And I tapped the amount field
     And I entered the discount amount
     And I selected the Continue button
     And I tapped reason and entered the reason
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I selected the apply button
     And Verify If Tax Is Calculated Properly And Calculate RoundOff for Open Discount "14.55" Exclusive "0.10255" Amount BT
     And Verify if the total amount is calculated correctly for exclusive open discount
@@ -1267,18 +1267,18 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setfour
-  @aaaa
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item with inclusive tax with open item discount (amount BT)
     And I have selected category arrow
-    And Select the category "Food items"
-    And Select the menu item with inclusive tax for open discount
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu16"
     And I selected menu options
     And I selected Open Discount
     And I tapped the amount field
     And I entered the discount amount
     And I selected the Continue button
     And I tapped reason and entered the reason
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I selected the apply button
     And Verify If Tax Is Calculated Properly And Calculate RoundOff for Open Discount "14.55" Inclusive "0.17620" Amount BT
     And Verify if the balance due amount is displayed correctly
@@ -1286,18 +1286,18 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setfour
-  @aaaa
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item with exclusive tax with open item discount (percentage AT)
     And I have selected category arrow
-    And Select the category "Food items"
-    And Select the menu item with exclusive tax for open discount
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu15"
     And I selected menu options
     And I selected Open Discount
     And I tapped the percentage field
     And I entered the discount percentage
     And I selected the Continue button
     And I tapped reason and entered the reason
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I selected After Tax option
     And I selected the apply button
     And Verify If Tax "0.10255" and discount "0.1345" Is Calculated Properly And Calculate RoundOff for open item discount after tax Exclusive
@@ -1307,18 +1307,18 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setfour
-  @aaaa
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item with inclusive tax with open item discount (percentage AT)
     And I have selected category arrow
-    And Select the category "Food items"
-    And Select the menu item with inclusive tax for open discount
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu16"
     And I selected menu options
     And I selected Open Discount
     And I tapped the percentage field
     And I entered the discount percentage
     And I selected the Continue button
     And I tapped reason and entered the reason
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I selected After Tax option
     And I selected the apply button
     And Verify If Tax "0.17620" and discount "0.1345" Is Calculated Properly And Calculate RoundOff for open item discount after tax Inclusive
@@ -1326,7 +1326,7 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-#  @setfour
+    #NOTIMPLEMENTEDINWEBPOS
   Scenario: Check RoundOff value for menu item with exclusive tax with open check discount (percentage BT)
     And I have selected category arrow
     And Select the category "Food items"
@@ -1349,8 +1349,7 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-#  @setfour
-  @void66
+   #NOTIMPLEMENTEDINWEBPOS
   Scenario: Check RoundOff value for menu item with inclusive tax with open check discount (percentage BT)
     And I have selected category arrow
     And Select the category "Food items"
@@ -1373,21 +1372,21 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setfour
-  @aaaa
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item (exclusive tax) along with modifier (exclusive tax) applying open item discount (amount BT)
     And I have selected category arrow
 #    And Select the category Food items
-    And Select the category as "FOOD ITEMS"
-    And I selected the menu item "testing menu33"
-    And I selected the modifier "sprinkled cheese"
-    And I click Done button on the open item window
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu33"
+    And I selected the modifier "Bbq"
+#    And I click Done button on the open item window
     And I selected menu options
     And I selected Open Discount
     And I tapped the amount field
     And I entered the discount amount
     And I selected the Continue button
     And I tapped reason and entered the reason
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I selected the apply button
     And Verify if exclusive tax menu "0.05623" exclusive tax modifier "0.10255" and discount "14.55" are calculated properly
     And Verify if the balance due amount is displayed correctly
@@ -1395,50 +1394,49 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setfour
-  @aaaa
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item (inclusive tax) along with modifier (inclusive tax) applying open item discount (amount BT)
     And I have selected category arrow
-    And Select the category as "Chinese"
-    And Select the sub category as "NoTVeg"
-    And I selected the menu item "testing menu34"
-    And I selected the modifier "CHEESE"
-    And I click Done button on the open item window
+    And Select the category "Chinese"
+    And Select the sub category "NoTVeg"
+    And Select the menu item "testing menu34"
+    And I selected the modifier2 "CHEESE"
+#    And I click Done button on the open item window
     And I selected menu options
     And I selected Open Discount
     And I tapped the amount field
     And I entered the discount amount
     And I selected the Continue button
     And I tapped reason and entered the reason
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I selected the apply button
     And Verify if inclusive tax menu "0.35000" inclusive tax modifier "0.08655" and discount "14.55" are calculated properly
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-#  @setfour
-  @aaaa
+   #NOTIMPLEMENTEDINWEBPOS
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item (exclusive tax) along with modifier (exclusive tax) applying open item discount (amount BT) with include additional modifiers toggle disabled
     And I have selected category arrow
-#    And Select the category Food items
-    And Select the category as "FOOD ITEMS"
-    And I selected the menu item "testing menu33"
-    And I selected the modifier "sprinkled cheese"
-    And I click Done button on the open item window
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu33"
+    And I selected the modifier "Bbq"
+    #And I click Done button on the open item window
     And I selected menu options
     And I selected Open Discount
     And I tapped the amount field
     And I entered the discount amount
     And I selected the Continue button
     And I tapped reason and entered the reason
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I selected the apply button
     And Verify if exclusive tax menu "0.05623" exclusive tax modifier "0.10255" and discount amount "14.55" are calculated properly toggle disabled
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-#  @setfour
+    #NOTIMPLEMENTEDINWEBPOS
   @aa989
   Scenario: Check RoundOff value for menu item (inclusive tax) along with modifier (inclusive tax) applying open item discount (amount BT) with include additional modifiers toggle disabled
     And I have selected category arrow
@@ -1502,37 +1500,39 @@ Feature: TaxRoundOff_Build_5.2(1.5)
 
 #  @setfour
 
+  @basicTaxScenarios
   Scenario: Check RoundOff value for menu item ($0) along with modifier (exclusive tax)
     And I have selected category arrow
-    And Select the category as "Drink"
-    And I selected the menu item "testing menu35"
-    And I selected the modifier "Modifier1"
-    And I click Done button on the open item window
+    And Select the category "Drink"
+    And Select the menu item "testing menu35"
+    And I selected the modifier2 "Modifier1"
+#    And I click Done button on the open item window
     And Verify If Inc Tax "0" and exclusive modifier tax "0.07000" are Calculated Properly And Calculate RoundOff for item discount after tax Exclusive
     And Verify if the balance due value is calculated correctly
     And Verify if the balance due value is displayed correctly after payment
     And I click log off button in order screen
 
+    @basicTaxScenarios
   Scenario: LIN-21678 - Combo - Unable to get menu items (Exclusive)
     And I have selected category arrow
-    And Select the category as "COMBO"
-    And I selected the menu item "Pizza Combo"
-    And I selected the menu item "testing menu12"
-    And I selected the menu item "testing menu17"
+    And Select the category "COMBO"
+    And Select the menu item "Pizza Combo"
+    And Select the combo menu item "testing menu12"
+    And Select the combo menu item "testing menu17"
     And I click Done button on the open item window
     And Verify if exclusive taxes "0.12000" and "0.10255" are calculated properly and calculate roundoff when combo discount "0.1222" is applied
     And I selected order button
     And Verify if the balance due amount is displayed correctly
-    And Verify if the balance due value is displayed correctly after payment split merge
+    And Verify if the balance due value is displayed correctly after payment
     And I click log off button in order screen
 
-  @aa7
+  @basicTaxScenarios
   Scenario: LIN-21678 - Combo - Unable to get menu items (Inclusive)
     And I have selected category arrow
-    And Select the category as "COMBO"
-    And I selected the menu item "Pasta Combo"
-    And I selected the menu item "testing menu18"
-    And I selected the menu item "testing menu11"
+    And Select the category "COMBO"
+    And Select the menu item "Pasta Combo"
+    And Select the combo menu item "testing menu18"
+    And Select the combo menu item "testing menu11"
     And I click Done button on the open item window
     And I click Done button on the open item window
     And Verify if inclusive taxes "0.17620" and "0.14770" are calculated properly and calculate roundoff when combo discount "0.3232" is applied
@@ -1556,11 +1556,11 @@ Feature: TaxRoundOff_Build_5.2(1.5)
 #    And Verify if the balance due amount is displayed correctly after the payment
 #    And I click log off button in order screen
 
-  @void2
+ #NOTIMPLEMENTEDINWEBPOS
   Scenario: Check RoundOff value for menu item (exclusive tax) when check discount (before tax) and open check discount (after tax) are applied.
     And I have selected category arrow
-    And Select the category as "FOOD ITEMS"
-    And I selected the menu item "testing menu9"
+    And Select the category "COMBO"
+    And Select the menu item "testing menu9"
     And Apply the check discount "Disc 7.50"
     And Verify if tax is calculated properly "7.50" "0.10255" and calculate roundOff for check discount exclusive amount
     And Select the option button
@@ -1580,186 +1580,227 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios
   Scenario: LIN-21716 Total amount shows wrong when user apply combo discount exclusive
     And I have selected category arrow
-    And Select the category as "COMBO"
-    And I selected the menu item "Food Item Combo"
-    And I selected the menu item "menu 10.10"
-    And I selected the menu item "menu 20"
-    And I selected the menu item "menu 30"
-    And I selected the menu item "menu 40"
+    And Select the category "COMBO"
+    And Select the menu item "Food Item Combo"
+    And Select the combo menu item "menu 10.10"
+    And Select the combo menu item "menu 20"
+    And Select the combo menu item "menu 30"
+    And Select the combo menu item "menu 40"
     And I click Done button on the open item window
     And Verify if exclusive tax menu "0.10110" and combo discount set price "29" are calculated properly
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-  @combo2
+  @basicTaxScenarios
   Scenario: LIN-21716 Total amount shows wrong when user apply combo discount inclusive
     And I have selected category arrow
-    And Select the category as "FOOD ITEMS"
-    And I selected the menu item "Drink Item Combo"
-    And I selected the menu item "drink 10"
-    And I selected the menu item "drink 20"
-    And I selected the menu item "drink 30"
-    And I selected the menu item "drink 40"
+    And Select the category "COMBO"
+    And Select the menu item "Drink Item Combo"
+    And Select the combo menu item "drink 10"
+    And Select the combo menu item "drink 20"
+    And Select the combo menu item "drink 30"
+    And Select the combo menu item "drink 40"
     And I click Done button on the open item window
     And Verify if inclusive tax menu "0.11110" and combo discount set price "29" are calculated properly
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple item discounts are applied (percentage - before tax)
     And I have selected category arrow
-    And Select the category as "FOOD ITEMS"
-    And I selected the menu item "testing menu9"
-    And Apply the item discount "20% Discount"
-    And Apply the item discount "30% Discount"
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu9"
+    And I click Discount as "20% Discount"
+    And I selected cancel button
+    And I click Discount as "30% Discount"
+    And I selected cancel button
     And Verify if exclusive tax "0.10255" is calculated properly when item discounts "0.20" and "0.30" are applied and calculate round-off
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-  @combo8
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple item discounts are applied (amount - before tax)
     And I have selected category arrow
-    And Select the category as "FOOD ITEMS"
-    And I selected the menu item "testing menu9"
-    And Apply the item discount "8$ d"
-    And Apply the item discount "12$ d"
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu9"
+    And I click Discount as "8$ d"
+    And I selected cancel button
+    And I click Discount as "12$ d"
+    And I selected cancel button
     And Verify if exclusive tax "0.10255" is calculated properly when item discounts amount "8.00" and "12.00" are applied and calculate round-off
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple item discounts are applied (percentage - after tax)
     And I have selected category arrow
-    And Select the category as "FOOD ITEMS"
-    And I selected the menu item "testing menu9"
-    And Apply the item discount "20% AT"
-    And Apply the item discount "30% AT"
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu9"
+    And I click Discount as "20% AT"
+    And I selected cancel button
+    And I click Discount as "30% AT"
+    And I selected cancel button
     And Verify if exclusive tax "0.10255" is calculated properly when item discounts "0.20" and "0.30" are applied and calculate round-off after tax
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple item discounts are applied (amount - after tax)
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "testing menu36"
-    And Apply the item discount "11$ AT"
-    And Apply the item discount "14$ AT"
+    And Select the category "DRINKS"
+    And Select the menu item "testing menu36"
+    And I click Discount as "11$ AT"
+    And I selected cancel button
+    And I click Discount as "14$ AT"
+    And I selected cancel button
     And Verify if exclusive tax "0.17174" is calculated properly when item discounts amount after tax "11.00" and "14.00" are applied and calculate round-off
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple check discounts are applied
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "testing menu37"
-    And Apply the check discount "check 20%"
-    And Apply the check discount "check 30%"
+    And Select the category "DRINKS"
+    And Select the menu item "testing menu37"
+    And I click Discount as "check 20%"
+    And I selected cancel button
+    And I click Discount as "check 30%"
+    And I selected cancel button
     And Verify if exclusive tax "0.17174" is calculated properly when check discounts "0.20" and "0.30" are applied and calculate round-off
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple check discounts are applied amount
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "testing menu37"
-    And Apply the check discount "check 38.38$"
-    And Apply the check discount "check 18.18$"
+    And Select the category "DRINKS"
+    And Select the menu item "testing menu37"
+    And I click Discount as "check 38.38$"
+    And I selected cancel button
+    And I click Discount as "check 18.18$"
+    And I selected cancel button
     And Verify if exclusive tax "0.17174" is calculated properly when item discounts amount "38.38" and "18.18" are applied and calculate round-off
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple check discounts are applied percentage AT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "testing menu37"
-    And Apply the check discount "27.27% check AT"
-    And Apply the check discount "22.22% check AT"
+    And Select the category "DRINKS"
+    And Select the menu item "testing menu37"
+    And I click Discount as "27.27% check AT"
+    And I selected cancel button
+    And I click Discount as "22.22% check AT"
+    And I selected cancel button
     And Verify if exclusive tax "0.17174" is calculated properly when item discounts "0.2727" and "0.2222" are applied and calculate round-off after tax
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple check discounts are applied amount AT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "Butter Fruit"
-    And Apply the check discount "8.8$ check AT"
-    And Apply the check discount "4.4$ check AT"
+    And Select the category "DRINKS"
+    And Select the menu item "Butter Fruit"
+    And I click Discount as "8.8$ check AT"
+    And I selected cancel button
+    And I click Discount as "4.4$ check AT"
+    And I selected cancel button
     And Verify if exclusive tax "0.17174" is calculated properly when item discounts amount after tax "8.80" and "4.40" are applied and calculate round-off
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple mix and match discounts are applied set price BT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "Butter Fruit"
-    And Apply the mix and match discount "mix and 1"
-    And Apply the mix and match discount "mix and 2"
+    And Select the category "DRINKS"
+    And Select the menu item "Butter Fruit"
+    And I click Discount as "mix and 1"
+    And I selected cancel button
+    And I click Discount as "mix and 2"
+    And I selected cancel button
     And Verify exc tax "0.17174" when multiple mix and match discounts set price are applied "120.00" and "100.00"
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple mix and match discounts are applied set price AT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "Butter Fruit"
-    And Apply the mix and match discount "Mix1 AT"
-    And Apply the mix and match discount "Mix2 AT"
+    And Select the category "DRINKS"
+    And Select the menu item "Butter Fruit"
+    And I click Discount as "Mix1 AT"
+    And I selected cancel button
+    And I click Discount as "Mix2 AT"
+    And I selected cancel button
     And Verify exc tax "0.17174" when multiple mix and match discounts set price after tax are applied "120.00" and "100.00"
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with inclusive menu item when multiple mix and match discounts are applied set price BT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "Dragon Fruit"
-    And Apply the mix and match discount "mix and 1"
-    And Apply the mix and match discount "mix and 2"
+    And Select the category "DRINKS"
+    And Select the menu item "Dragon Fruit"
+    And I click Discount as "mix and 1"
+    And I selected cancel button
+    And I click Discount as "mix and 2"
+    And I selected cancel button
     And Verify inc tax "0.14140" when multiple mix and match discounts set price are applied "120.00" and "100.00"
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with inclusive menu item when multiple mix and match discounts are applied set price AT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "Dragon Fruit"
-    And Apply the mix and match discount "Mix1 AT"
-    And Apply the mix and match discount "Mix2 AT"
+    And Select the category "DRINKS"
+    And Select the menu item "Dragon Fruit"
+    And I click Discount as "Mix1 AT"
+    And I selected cancel button
+    And I click Discount as "Mix2 AT"
+    And I selected cancel button
     And Verify inc tax "0.14140" when multiple mix and match discounts set price are applied after tax "120.00" and "100.00"
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple mix and match discounts are applied percentage BT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "Butter Fruit"
-    And Apply the mix and match discount "Mix 10.12%"
-    And Apply the mix and match discount "Mix 6.34%"
+    And Select the category "DRINKS"
+    And Select the menu item "Butter Fruit"
+    And I click Discount as "Mix 10.12%"
+    And I selected cancel button
+    And I click Discount as "Mix 6.34%"
+    And I selected cancel button
     And Verify exc tax "0.17174" when multiple mix and match discounts percentage are applied "10.12" and "6.34"
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
+  @basicTaxScenarios3
   Scenario: Tax roundoff with exclusive menu item when multiple mix and match discounts are applied percentage AT
     And I have selected category arrow
-    And Select the category as "DRINKS"
-    And I selected the menu item "Butter Fruit"
-    And Apply the mix and match discount "Mix 13.11% AT"
-    And Apply the mix and match discount "Mix 21.11% AT"
+    And Select the category "DRINKS"
+    And Select the menu item "Butter Fruit"
+    And I click Discount as "Mix 13.11% AT"
+    And I selected cancel button
+    And I click Discount as "Mix 21.11% AT"
+    And I selected cancel button
     And Verify exc tax "0.17174" when multiple mix and match discounts percentage are applied AT "13.11" and "21.11"
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment

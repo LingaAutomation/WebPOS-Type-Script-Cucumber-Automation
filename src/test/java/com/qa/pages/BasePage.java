@@ -58,6 +58,16 @@ public class BasePage extends TGglobalElement {
 //        Select_RandomMenuItems(driver);
     }
 
+    public void selectComboMenuItemAs(String menuItem) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement menuItemName = driver.findElement(By.xpath("(//div[contains(@class,'match-menu')]//div[contains(.,'"+menuItem+"')])[1]"));
+        elementClick(menuItemName, "Tapped menu item");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
+
     public void selectSubCategoryBasicValidationForQsr(String subcategory) throws Exception {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
@@ -94,6 +104,19 @@ public class BasePage extends TGglobalElement {
 //        WebElement modifierBtn = driver.findElement(By.xpath("//button[contains(.,"+ModifierName+")]"));
         ////button[contains(.,"+ModifierName+")]
         String modifierBtn = "//div[contains(@class,'group-container')]//button[contains(.,"+ModifierName+")]";
+
+        elementClick(modifierBtn, "Tapped modifier");
+        Thread.sleep(5000);
+//        /****  RandOm Select Menu ***/
+//        Select_RandomMenuItems(driver);
+    }
+
+    public void selectTheModifierAs2(String ModifierName) throws Exception {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+//        WebElement modifierBtn = driver.findElement(By.xpath("//button[contains(.,"+ModifierName+")]"));
+        ////button[contains(.,"+ModifierName+")]
+        String modifierBtn = "//ion-row[contains(@class,'modifier_content')]//button[contains(.,'"+ModifierName+"')]";
 
         elementClick(modifierBtn, "Tapped modifier");
         Thread.sleep(5000);

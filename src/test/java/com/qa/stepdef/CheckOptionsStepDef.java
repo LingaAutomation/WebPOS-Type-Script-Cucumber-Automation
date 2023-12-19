@@ -5,6 +5,8 @@ import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import com.qa.utils.TestUtils;
+
 import io.cucumber.java.en_scouse.An;
 
 import org.junit.Assert;
@@ -676,7 +678,7 @@ public class CheckOptionsStepDef {
 
     @And("^I click Done button on the open item window$")
     public void iClickDoneButtonOnTheOpenItemWindow() {
-        new OpenItemWindow().pressDoneOpenItemBtn();
+        new TaxRoundingOff().pressDoneOpenItemBtn1();
     }
 
 //    @Then("^I should navigate to Order Management screen and see the added open item as \"([^\"]*)\"$")

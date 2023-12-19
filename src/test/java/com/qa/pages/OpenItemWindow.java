@@ -5,6 +5,9 @@ import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.By;
+import static com.qa.utils.TestUtils.driver;
+
+
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,7 +15,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.pages.DriverSteup.driver;
+//import static com.qa.pages.DriverSteup.driver;
 
 public class OpenItemWindow extends CheckOptionsScreen{
 
@@ -115,7 +118,8 @@ public class OpenItemWindow extends CheckOptionsScreen{
     }
 
     public void pressDoneOpenItemBtn(){
-        elementClick( doneBtn, "Done button is tapped - ");
+        WebElement done1Btn = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
+        elementClick( done1Btn, "Done button is tapped - ");
     }
 
     public void press1(){

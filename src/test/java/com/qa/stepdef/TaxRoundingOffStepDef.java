@@ -59,6 +59,12 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().menu1Selection(menuItem);
     }
 
+    @And("^Select the combo menu item \"([^\"]*)\"$")
+    public void selectTheComboMenu(String menuItem) throws Exception {
+        new BasePage().selectComboMenuItemAs(menuItem);
+    }
+
+
     @And("^I selected the serving size as \"([^\"]*)\"$")
     public void selectTheMenuSizeAs(String ServingSize) throws Exception {
         new BasePage().selectTheMenuSize(ServingSize);
@@ -72,6 +78,21 @@ public class TaxRoundingOffStepDef {
     @And("^I selected the modifier \"([^\"]*)\"$")
     public void selectTheModifier(String ModifierName) throws Exception {
         new BasePage().selectTheModifierAs(ModifierName);
+    }
+
+    @And("^I selected the modifier2 \"([^\"]*)\"$")
+    public void selectTheModifier2(String ModifierName) throws Exception {
+        new BasePage().selectTheModifierAs2(ModifierName);
+    }
+
+
+    @And("^Verify if inclusive tax menu \"([^\"]*)\" inclusive tax modifier \"([^\"]*)\" and discount \"([^\"]*)\" are calculated properly$")
+    public void VerifyIfTheInclusiveTaxAndDiscountArecalculatedProperlyAmountBT(double taxPercent, double modifierTaxPercent, double discountAmount) {
+        new TaxRoundingOff().VerifyIfInclusiveTaxAndDiscountArecalculatedProperlyAmountBT(taxPercent, modifierTaxPercent, discountAmount);
+
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
     @And("^I selected the alternate modifier \"([^\"]*)\"$")
@@ -212,6 +233,12 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().VerifyIfTheIncTaxIsCalculatedCorrectlyInCheckPreviewCheckTaxAvailable();
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^Verify if exclusive tax menu \"([^\"]*)\" exclusive tax modifier \"([^\"]*)\" and discount \"([^\"]*)\" are calculated properly$")
+    public void VerifyIfTheExclusiveTaxAndDiscountArecalculatedProperlyAmountBT(double taxPercent, double modifierTaxPercent, double discountAmount) {
+        new TaxRoundingOff().VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyAmountBT(taxPercent, modifierTaxPercent, discountAmount);
+
     }
 
     @And("^Verify if the total value is calculated correctly$")
