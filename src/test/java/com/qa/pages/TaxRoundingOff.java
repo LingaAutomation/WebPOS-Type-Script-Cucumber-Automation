@@ -304,6 +304,16 @@ public class TaxRoundingOff extends ClockInScreen {
     @FindBy(xpath = "//span[contains(.,'Continue')]")
     private WebElement ContinueBtn;
 
+
+    @FindBy(xpath = "//ion-label[contains(.,'Default')]")
+    private WebElement DefaultTax;
+
+    @FindBy(xpath = "//ion-label[contains(.,'Quantity')]")
+    private WebElement QuantityTax;
+
+    @FindBy(xpath = "(//ion-label[contains(.,'Inclusive item')])[1]")
+    WebElement InclusiveTax;
+
 //    @FindBy(xpath = "5")
 //    WebElement quantity5;
 
@@ -419,6 +429,9 @@ public class TaxRoundingOff extends ClockInScreen {
     @FindBy(xpath = "//div[contains(@class,'mat-select-arrow-wrapper')]")
     private WebElement CoursingName;
 
+    @FindBy(xpath = "(//ion-col[contains(@class,'openItem__content')])[6]//input")
+    private WebElement PriceText;
+
 //    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[2]")
 //    WebElement ItemNameTxtFld1;
 
@@ -431,8 +444,7 @@ public class TaxRoundingOff extends ClockInScreen {
 //    @FindBy(xpath = "Quantity")
 //    WebElement QuantityTax;
 //
-//    @FindBy(xpath = "Inclusive item")
-//    WebElement InclusiveTax;
+
 //
 //    @FindBy(xpath = "exc tax1")
 //    WebElement exclusiveTax;
@@ -467,12 +479,12 @@ public class TaxRoundingOff extends ClockInScreen {
     private WebElement amountFieldOpenCheckDisc;
 
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"ADD\"]")
+    @FindBy(xpath = "//button[contains(.,'+')]")
     //  @FindBy(xpath = "Percentage")
 
     WebElement addSeatBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"QSR\"])[1]")
+    @FindBy(xpath = "//p[contains(.,'Table')]/../button[contains(.,'QSR')]")
     //  @FindBy(xpath = "Percentage")
 
     WebElement qsrBtn;
@@ -1480,6 +1492,22 @@ public class TaxRoundingOff extends ClockInScreen {
         new OrderTypeWindow().pressCancelBtn();
     }
 
+    public void VerifyIfBalanceDueAmountIsCalculatedCorrectlyAfterThePaymentDone() throws InterruptedException {
+//        elementClick(cashBtn, "Selected Cash Button");
+        String ExpectedDueAmount = "0.00";
+        utils.log().info("Expected balance due after payment is " + ExpectedDueAmount);
+
+        WebElement BalanceDue =  driver.findElement(By.xpath("//div[contains(@class,'balance')]//p/label[2][1]"));
+        String BalanceDueAmount = BalanceDue.getText();
+        String BalanceDueValue = BalanceDueAmount.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual Balance due is " + BalanceDueValue);
+
+
+        Assert.assertEquals(ExpectedDueAmount, BalanceDueValue);
+        elementClick(SubmitBtn, "Selected Submit Button");
+        new OrderTypeWindow().pressCancelBtn();
+    }
+
     public void SelectOptionsButton() {
         elementClick(OptionButton, "Selected Option Button");
     }
@@ -1497,12 +1525,32 @@ public class TaxRoundingOff extends ClockInScreen {
 
     }
 
+    public void enterCoursingNameAs() {
+
+        WebElement coursingName = driver.findElement(By.xpath("(//ion-col[contains(@class,'openItem__content')])[4]//input"));
+        coursingName.sendKeys("IceCream");
+
+    }
+
+    public void iSelectedPriceTextField() {
+        elementClick(PriceText, "Selected Open Item option");
+
+    }
+
     public void swipeToTheCourseName(String Name) throws InterruptedException {
-        WebElement DatePickerWheel = mergeAndFindElement("//XCUIElementTypePicker", "", TestUtils.XPath);
+        WebElement DatePickerWheel = driver.findElement(By.xpath("//span[contains(.,'"+Name+"')]"));
+        DatePickerWheel.click();
+//        List<WebElement> course = DatePickerWheel.findElements(By.xpath("//XCUIElementTypePickerWheel"));
+//
+//        course.get(0).sendKeys(Name);
+    }
 
-        List<WebElement> course = DatePickerWheel.findElements(By.xpath("//XCUIElementTypePickerWheel"));
-
-        course.get(0).sendKeys(Name);
+    public void swipeToTheCourseName2(String Name) throws InterruptedException {
+        WebElement DatePickerWheel2 = driver.findElement(By.xpath("(//span[contains(.,'"+Name+"')])[2]"));
+        DatePickerWheel2.click();
+//        List<WebElement> course = DatePickerWheel.findElements(By.xpath("//XCUIElementTypePickerWheel"));
+//
+//        course.get(0).sendKeys(Name);
     }
 
 //    public void setMenuItemName(String name) {
@@ -1516,29 +1564,34 @@ public class TaxRoundingOff extends ClockInScreen {
 //    }
 
     public void iEnteredThePrice() {
-        for (int i = 0; i <= 3; i++) {
-            elementClick(press2, "Entered menu amount");
-        }
+        elementClick(selectNum1, "I tapped 1");
+        elementClick(selectNum3, "I tapped 3");
+        elementClick(selectNum4, "I tapped 4");
+        elementClick(selectNum5, "I tapped 5");
     }
 
     public void iSelectedContinueButton() {
         elementClick(ContinueBtn, " I Selected continue button");
     }
 
+    public void selectTheTax() {
+        elementClick(DefaultTax, " I Selected continue button");
+    }
+
 //    public void selectTheTax() {
 //        elementClick(DefaultTax, "Default Tax is de-selected");
 //    }
 //
-//    public void selectTheTax2Exclusive() {
-//        elementClick(QuantityTax, "Quantity Tax is selected");
-//    }
+    public void selectTheTax2Exclusive() {
+        elementClick(QuantityTax, "Quantity Tax is selected");
+    }
 
     public void iSelectedBackButton() {
         elementClick(BackBtn, "Selected the Back button");
     }
 
     public void verifyIfTaxAndRoundOffAreCalculatedProperlyExclusive() {
-        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount3 = menuItemAmount1.getText();
 
         double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
@@ -1553,8 +1606,8 @@ public class TaxRoundingOff extends ClockInScreen {
         String ExpectedTax = String.valueOf(aa);
         utils.log().info("Expected tax amount is " + ExpectedTax);
 
-        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String ActualTax2 = ActualTaxAmount.getText();
+        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
         String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
         utils.log().info("Actual tax is " + ActualTax3);
 
@@ -1568,12 +1621,12 @@ public class TaxRoundingOff extends ClockInScreen {
         utils.log().info("RoundOff value is " + RoundOffValue);
     }
 
-//    public void selectTheTax2Inclusive() {
-//        elementClick(InclusiveTax, "Quantity Tax is selected");
-//    }
+    public void selectTheTax2Inclusive() {
+        elementClick(InclusiveTax, "Quantity Tax is selected");
+    }
 
     public void verifyIfTheTaxAndRoundOffAreCalculatedProperlyInclusive() {
-        WebElement menuItemAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement menuItemAmount =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount2 = menuItemAmount.getText();
 
         double menuItemAmount3 = Double.parseDouble(menuItemAmount2);
@@ -1588,8 +1641,8 @@ public class TaxRoundingOff extends ClockInScreen {
         String ExpectedTax = String.valueOf(aa);
         utils.log().info("Expected tax amount is " + ExpectedTax);
 
-        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String ActualTax2 = ActualTaxAmount.getText();
+        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
         String ActualTax3 = ActualTax2.replaceAll("[A-Z$, ]", "");
         utils.log().info("Actual tax is" + ActualTax3);
 
@@ -1641,7 +1694,7 @@ public class TaxRoundingOff extends ClockInScreen {
     }
 
     public void VerifyIfCheckTaxIsCalculatedCorrectlyAndCalculateRoundoff(double taxValue) {
-        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount3 = menuItemAmount1.getText();
 
         double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
@@ -1656,8 +1709,8 @@ public class TaxRoundingOff extends ClockInScreen {
         String ExpectedTax = String.valueOf(aa);
         utils.log().info("Expected tax amount is " + ExpectedTax);
 
-        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String ActualTax2 = ActualTaxAmount.getText();
+        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
         String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
         utils.log().info("Actual tax is " + ActualTax3);
 
@@ -1673,7 +1726,7 @@ public class TaxRoundingOff extends ClockInScreen {
     }
 
     public void VerifyIfCheckTaxIsCalculatedCorrectlyAndCalculateRoundoffMultipleMenu(double taxValue) {
-        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name='Linga POS']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
+        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount33 = menuItemAmount1.getText();
         String menuItemAmount3 = menuItemAmount33.replaceAll("[A-Z$ ]", "");
 
@@ -1689,8 +1742,8 @@ public class TaxRoundingOff extends ClockInScreen {
         String ExpectedTax = String.valueOf(aa);
         utils.log().info("Expected tax amount is " + ExpectedTax);
 
-        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String ActualTax2 = ActualTaxAmount.getText();
+        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
         String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
         utils.log().info("Actual tax is " + ActualTax3);
 
@@ -4861,7 +4914,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public void selectTheTable1() throws InterruptedException {
         Thread.sleep(1000);
-        WebElement Table1 =  driver.findElement(By.xpath("T4"));
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class='child']/button[4]"));
         if (Table1.isDisplayed()) {
             elementClick(Table1, "Selected the table ");
         }
@@ -4873,7 +4926,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public void selectTheTable2() throws InterruptedException {
 
-        WebElement Table1 =  driver.findElement(By.xpath("T7"));
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class='child']/button[7]"));
         if (Table1.isDisplayed()) {
             elementClick(Table1, "Selected the table ");
         }
@@ -4892,7 +4945,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
 
     public void selectedTheSeatNumber() throws InterruptedException {
-//        press1.click();
+       elementClick(selectNum1, "selected 1");
         ContinueBtn.click();
         Thread.sleep(1000);
     }
@@ -4915,17 +4968,17 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public void selectTheTableWithMergedChecks(String m) throws InterruptedException {
         Thread.sleep(1000);
-        WebElement Table1 =  driver.findElement(By.xpath(m));
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class=\'child\']/button[4]"));
         if (Table1.isDisplayed()) {
             elementClick(Table1, "Selected the table " + m + "with check  number " + TestUtils.globalCheckNumber);
         }
 
         try {
-            WebElement Check =  driver.findElement(By.xpath("Checks"));
+            WebElement Check =  driver.findElement(By.xpath("//ion-title[contains(.,'Checks')]"));
 
             if (Check.isDisplayed()) {
                 String a = TestUtils.globalCheckNumber;
-                WebElement CheckNumm =  driver.findElement(By.xpath(a));
+                WebElement CheckNumm =  driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]/ion-grid//ion-row//div//p[contains(.,'"+TestUtils.globalCheckNumber+"')]"));
 
                 if (CheckNumm.isDisplayed()) {
                     elementClick(CheckNumm, "Selected the check");
@@ -4947,7 +5000,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
 
     public String getTableNumberTxt() {
-        WebElement tableNum = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton", "", TestUtils.XPath);
+        WebElement tableNum = driver.findElement(By.xpath("//ion-toolbar[contains(@class,'tablecommon')]//button[2]//span[1]"));
         tableNumber = tableNum.getText();
         TestUtils.globalTableNumber = tableNumber;
         utils.log().info(tableNumber);
@@ -4955,7 +5008,7 @@ public class TaxRoundingOff extends ClockInScreen {
     }
 
     public String getTableNumberTxt2() {
-        WebElement tableNum2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton", "", TestUtils.XPath);
+        WebElement tableNum2 = driver.findElement(By.xpath("//ion-toolbar[contains(@class,'tablecommon')]//button[2]//span[1]"));
         tableNumber2 = tableNum2.getText();
         TestUtils.globalTableNumber2 = tableNumber2;
         utils.log().info(tableNumber2);
@@ -4964,7 +5017,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
 
     public String getCheckNumber2Txt() {
-        WebElement checkNum2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
+        WebElement checkNum2 = driver.findElement(By.xpath("//p[contains(.,'Check')]/../p[2]"));
         checkNumber2 = checkNum2.getText();
         TestUtils.globalCheckNumber2 = checkNumber2;
         utils.log().info(checkNumber2);
@@ -4977,21 +5030,21 @@ public class TaxRoundingOff extends ClockInScreen {
 //        WebElement MergeButton =  driver.findElement(By.xpath()("//XCUIElementTypeImage[@name=\"Merge\"]");
         //WebElement MergeButton =  driver.findElement(By.xpath("Merge");
 
-        WebElement MergeButton =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[3]"));
+        WebElement MergeButton =  driver.findElement(By.xpath("//button[contains(.,'Merge')]"));
 
         MergeButton.click();
 
-        WebElement Table1 =  driver.findElement(By.xpath(m));
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class=\'child\']/button[4]"));
         if (Table1.isDisplayed()) {
             elementClick(Table1, "Selected the table " + m + "with check  number " + TestUtils.globalCheckNumber);
         }
 
         try {
-            WebElement Check =  driver.findElement(By.xpath("Checks"));
+            WebElement Check =  driver.findElement(By.xpath("//ion-title[contains(.,'Checks')]"));
 
             if (Check.isDisplayed()) {
                 String a = TestUtils.globalCheckNumber;
-                WebElement CheckNumm =  driver.findElement(By.xpath(a));
+                WebElement CheckNumm =  driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]/ion-grid//ion-row//div//p[contains(.,'"+TestUtils.globalCheckNumber+"')]"));
 
                 if (CheckNumm.isDisplayed()) {
                     elementClick(CheckNumm, "Selected the check");
@@ -5002,7 +5055,7 @@ public class TaxRoundingOff extends ClockInScreen {
 //                    elementClick(yes, "select yes btn");
 //                }
 
-                WebElement Xbtn =  driver.findElement(By.xpath("X"));
+                WebElement Xbtn =  driver.findElement(By.xpath("//ion-toolbar[contains(@class,'toolbar-title')]//ion-title[contains(.,'Checks')]/..//button"));
 
                 if (Xbtn.isDisplayed()) {
                     Xbtn.click();
@@ -5020,31 +5073,31 @@ public class TaxRoundingOff extends ClockInScreen {
     public void iNowMergeCheck1WithDiscount(String m) throws InterruptedException {
         Thread.sleep(1000);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        WebElement MergeButton =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[3]"));
+        WebElement MergeButton =  driver.findElement(By.xpath("//button[contains(.,'Merge')]"));
         MergeButton.click();
 
-        WebElement Table1 =  driver.findElement(By.xpath(m));
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class=\'child\']/button[4]"));
         if (Table1.isDisplayed()) {
             elementClick(Table1, "Selected the table " + m + "with check  number " + TestUtils.globalCheckNumber);
         }
 
         try {
-            WebElement Check =  driver.findElement(By.xpath("Checks"));
+            WebElement Check =  driver.findElement(By.xpath("//ion-title[contains(.,'Checks')]"));
 
             if (Check.isDisplayed()) {
                 String a = TestUtils.globalCheckNumber;
-                WebElement CheckNumm =  driver.findElement(By.xpath(a));
+                WebElement CheckNumm =  driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]/ion-grid//ion-row//div//p[contains(.,'"+TestUtils.globalCheckNumber+"')]"));
 
                 if (CheckNumm.isDisplayed()) {
                     elementClick(CheckNumm, "Selected the check");
                 }
 
-                WebElement yes =  driver.findElement(By.xpath("Yes"));
+                WebElement yes =  driver.findElement(By.xpath("//button[contains(.,'Yes')]"));
                 if (yes.isDisplayed()) {
                     elementClick(yes, "select yes btn");
                 }
 
-                WebElement Xbtn =  driver.findElement(By.xpath("X"));
+                WebElement Xbtn =  driver.findElement(By.xpath("//ion-toolbar[contains(@class,'toolbar-title')]//ion-title[contains(.,'Checks')]/..//button"));
 
                 if (Xbtn.isDisplayed()) {
                     Xbtn.click();
@@ -5066,17 +5119,17 @@ public class TaxRoundingOff extends ClockInScreen {
 //        WebElement MergeButton =  driver.findElement(By.xpath()("//XCUIElementTypeImage[@name=\"Merge\"]");
 //        MergeButton.click();
 
-        WebElement Table1 =  driver.findElement(By.xpath(n));
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class=\'child\']/button[7]"));
         if (Table1.isDisplayed()) {
             elementClick(Table1, "Selected the table " + n + "with check  number " + TestUtils.globalCheckNumber2);
         }
 
         try {
-            WebElement Check =  driver.findElement(By.xpath("Checks"));
+            WebElement Check =  driver.findElement(By.xpath("//ion-title[contains(.,'Checks')]"));
 
             if (Check.isDisplayed()) {
                 String a = TestUtils.globalCheckNumber2;
-                WebElement CheckNumm =  driver.findElement(By.xpath(a));
+                WebElement CheckNumm =  driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]/ion-grid//ion-row//div//p[contains(.,'"+TestUtils.globalCheckNumber2+"')]"));
 
                 if (CheckNumm.isDisplayed()) {
                     elementClick(CheckNumm, "Selected the check");
@@ -5087,7 +5140,7 @@ public class TaxRoundingOff extends ClockInScreen {
 //                    elementClick(yes, "select yes btn");
 //                }
 
-                WebElement Xbtn =  driver.findElement(By.xpath("X"));
+                WebElement Xbtn =  driver.findElement(By.xpath("//ion-toolbar[contains(@class,'toolbar-title')]//ion-title[contains(.,'Checks')]/..//button"));
 
                 if (Xbtn.isDisplayed()) {
                     Xbtn.click();
@@ -5109,28 +5162,28 @@ public class TaxRoundingOff extends ClockInScreen {
 //        WebElement MergeButton =  driver.findElement(By.xpath()("//XCUIElementTypeImage[@name=\"Merge\"]");
 //        MergeButton.click();
 
-        WebElement Table1 =  driver.findElement(By.xpath(n));
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class=\'child\']/button[7]"));
         if (Table1.isDisplayed()) {
             elementClick(Table1, "Selected the table " + n + "with check  number " + TestUtils.globalCheckNumber2);
         }
 
         try {
-            WebElement Check =  driver.findElement(By.xpath("Checks"));
+            WebElement Check =  driver.findElement(By.xpath("//ion-title[contains(.,'Checks')]"));
 
             if (Check.isDisplayed()) {
                 String a = TestUtils.globalCheckNumber2;
-                WebElement CheckNumm =  driver.findElement(By.xpath(a));
+                WebElement CheckNumm =  driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]/ion-grid//ion-row//div//p[contains(.,'"+TestUtils.globalCheckNumber2+"')]"));
 
                 if (CheckNumm.isDisplayed()) {
                     elementClick(CheckNumm, "Selected the check");
                 }
 
-                WebElement yes =  driver.findElement(By.xpath("Yes"));
+                WebElement yes =  driver.findElement(By.xpath("//button[contains(.,'Yes')]"));
                 if (yes.isDisplayed()) {
                     elementClick(yes, "select yes btn");
                 }
 
-                WebElement Xbtn =  driver.findElement(By.xpath("X"));
+                WebElement Xbtn =  driver.findElement(By.xpath("//ion-toolbar[contains(@class,'toolbar-title')]//ion-title[contains(.,'Checks')]/..//button"));
 
                 if (Xbtn.isDisplayed()) {
                     Xbtn.click();
@@ -5147,17 +5200,17 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public void selectTheNewCheck() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        WebElement newCheck =  driver.findElement(By.xpath("New Check"));
+        WebElement newCheck =  driver.findElement(By.xpath("//ion-col[contains(.,'New Check')]"));
         newCheck.click();
     }
 
     public void selectTableLayout() {
-        WebElement newCheck =  driver.findElement(By.xpath("Table Layout"));
+        WebElement newCheck =  driver.findElement(By.xpath("//button[contains(.,'Table layout')]"));
         newCheck.click();
     }
 
     public void VerifyIfTheTaxIsCalculatedProperlyAndCalculateRoundOffForCheckDiscountExclusive(double DiscountPercent, double taxPercent) {
-        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount3 = menuItemAmount1.getText();
 
         double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
@@ -5165,7 +5218,7 @@ public class TaxRoundingOff extends ClockInScreen {
         //define discount percentage
 //        double DiscountPercent = 0.24;
         ///1st Menu Tax calculation
-        WebElement Menu1Price =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement Menu1Price =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String Menu1PriceAmount = Menu1Price.getText();
         double Menu1PriceValue = Double.parseDouble(Menu1PriceAmount);
         utils.log().info("a is " + Menu1PriceValue);
@@ -5232,8 +5285,8 @@ public class TaxRoundingOff extends ClockInScreen {
 
         //Commenting below steps as there is mismatch in exp and act tax when two exclusive are there (LIN-19736)
 
-        WebElement ActualTaxAmount=  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String ActualTax2 = ActualTaxAmount.getText();
+        WebElement ActualTaxAmount=  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
         String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
         utils.log().info("Actual tax is " + ActualTax3);
 
@@ -5277,7 +5330,7 @@ public class TaxRoundingOff extends ClockInScreen {
         //define discount percentage
 //        double DiscountPercent = 0.24;
         ///1st Menu Tax calculation
-        WebElement Menu1Price =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement Menu1Price =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String Menu1PriceAmount = Menu1Price.getText();
         double Menu1PriceValue = Double.parseDouble(Menu1PriceAmount);
         utils.log().info("a is " + Menu1PriceValue);
@@ -5308,7 +5361,7 @@ public class TaxRoundingOff extends ClockInScreen {
         utils.log().info("Expected Tax1 is " + ExpectedTax);
 
 //        //2nd Menu Tax Calculation
-        WebElement Menu2Price =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement Menu2Price =  driver.findElement(By.xpath("(//ion-content/div/div/div//div[5])[3]"));
         String Menu2PriceAmount = Menu2Price.getText();
         double Menu2PriceValue = Double.parseDouble(Menu2PriceAmount);
         utils.log().info("amount2 is " + Menu2PriceValue);
@@ -5348,8 +5401,8 @@ public class TaxRoundingOff extends ClockInScreen {
 
         //Commenting below steps as there is mismatch in exp and act tax when two exclusive are there (LIN-19736)
 
-        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String ActualTax2 = ActualTaxAmount.getText();
+        WebElement ActualTaxAmount =  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
         String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
         utils.log().info("Actual tax is " + ActualTax3);
 
@@ -5385,8 +5438,8 @@ public class TaxRoundingOff extends ClockInScreen {
     }
 
     public void iClickTheConfirmBtn() {
-        WebElement confirm =  driver.findElement(By.xpath("Confirm"));
-        elementClick(confirm, "select yes btn");
+        WebElement confirm =  driver.findElement(By.xpath("//button[contains(.,'Confirm')]"));
+        elementClick(confirm, "select confirm btn");
     }
 
     public void VerifyIfTaxIsCalculatedCorrectlyAfter100PercentDiscount() {
@@ -8000,7 +8053,7 @@ public class TaxRoundingOff extends ClockInScreen {
     }
     public void iVerifyIfPriceIsCorrectForTheFirstModifier(Double modifierAmount)
     {
-        WebElement modifierAmountInScreen =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell/XCUIElementTypeStaticText[3]"));
+        WebElement modifierAmountInScreen =  driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container')]//div[@class='modifier-section']/div[5])[1]"));
         String modifierAmount1 = modifierAmountInScreen.getText();
         double modifierAmount2 = Double.parseDouble(modifierAmount1);
         DecimalFormat d00 = new DecimalFormat("0.00");
@@ -8020,7 +8073,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public void iVerifyIfPriceIsCorrectForTheSecondModifier(Double modifierAmount)
     {
-        WebElement modifierAmountInScreen =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell/XCUIElementTypeStaticText[3]"));
+        WebElement modifierAmountInScreen =  driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container')]//div[@class='modifier-section']/div[5])[1]"));
         String modifierAmount1 = modifierAmountInScreen.getText();
         double modifierAmount2 = Double.parseDouble(modifierAmount1);
         DecimalFormat d00 = new DecimalFormat("0.00");
@@ -8044,7 +8097,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
 //       WebElement modifierQtyReduce =  driver.findElement(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeButton[1]");
-        WebElement modifierQtyReduce =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeButton"));
+        WebElement modifierQtyReduce =  driver.findElement(By.xpath("(//ion-row[contains(@class,'modifier_content')]//ion-col//button)[1]//span//span[1]"));
         modifierQtyReduce.click();
 //        WebElement quantityValue =  driver.findElement(By.xpath(quantity);
 //        elementClick(quantityValue, "Entered the quantity");
@@ -8055,7 +8108,7 @@ public class TaxRoundingOff extends ClockInScreen {
     public void VerifyIfDiscountIsCalculatedCorrectlyAfter100PercentDiscountIsApplied()
 
     {
-        WebElement Menu1Price =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement Menu1Price =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String Menu1PriceAmount = Menu1Price.getText();
         double Menu1PriceValue = Double.parseDouble(Menu1PriceAmount);
 //          double discountAmount = 0.00;
@@ -8065,8 +8118,8 @@ public class TaxRoundingOff extends ClockInScreen {
         //String ExpectedDiscount2 = String.valueOf(expectedDiscountAmount);
         utils.log().info("Discount amount is " + expectedDiscountAmount);
 
-        WebElement ActualDiscoutAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String ActualDiscount2 = ActualDiscoutAmount.getText();
+        WebElement ActualDiscoutAmount =  driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+        String ActualDiscount2 = ActualDiscoutAmount.getAttribute("value");
         String ActualDiscount3 = ActualDiscount2.replaceAll("[A-Z$ ]", "");
         utils.log().info("Actual discount is " + ActualDiscount3);
 
@@ -8214,6 +8267,164 @@ public class TaxRoundingOff extends ClockInScreen {
         elementClick( done1Btn, "Done button is tapped - ");
     }
 
+    public void pressDoneOpenItemBtn1S() throws InterruptedException {
+
+        Thread.sleep(1000);
+        WebElement done1Btn = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
+        elementClick( done1Btn, "Done button is tapped - ");
+    }
+
+    public void VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyAmountBTCheckTax(double taxPercent, double modifierTaxPercent, double checkTaxPercent, double discPerc) {
+        //Menu Amount
+        WebElement menuItemAmount1 = driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
+        String menuItemAmount3 = menuItemAmount1.getText();
+
+        double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
+
+        //Modifier Amount
+        WebElement modifierAmount = driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container')]//div[@class='modifier-section']/div[5])[1]"));
+        String modifierAmount1 = modifierAmount.getText();
+        utils.log().info("modifier Amount is " + modifierAmount1);
+        double modifierAmount2 = Double.parseDouble(modifierAmount1);
+
+        //define discount percentage
+        //double DiscountAmount = 5;
+
+        WebElement subTotalAmount3 = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmount2 = subTotalAmount3.getAttribute("value");
+        String subTotalAmount1 = subTotalAmount2.replaceAll("[A-Z$ ]", "");
+
+        double subTotalAmount = Double.parseDouble(subTotalAmount1);
+
+        double discountAmount = subTotalAmount * discPerc;
+
+        double subTotalAfterDisc = subTotalAmount - discountAmount;
+
+        double menuDiscountAmount = (menuItemAmount4 / subTotalAmount) * discountAmount;
+
+        double menuAfterDisc = menuItemAmount4 - menuDiscountAmount;
+        BigDecimal menuAfterDisc1 = new BigDecimal(menuAfterDisc).setScale(2, RoundingMode.HALF_UP);
+        double menuAfterDiscount = menuAfterDisc1.doubleValue();
+
+        double modifierDiscountAmount = (modifierAmount2 / subTotalAmount) * discountAmount;
+
+        double modifierAfterDisc = modifierAmount2 - modifierDiscountAmount;
+        BigDecimal modifierAfterDisc1 = new BigDecimal(modifierAfterDisc).setScale(2, RoundingMode.HALF_UP);
+        double modifierAfterDiscount = modifierAfterDisc1.doubleValue();
+
+        double taxAmount = menuAfterDiscount * taxPercent;
+        utils.log().info("Exact Tax is " + taxAmount);
+
+        BigDecimal menuTaxValue1 = new BigDecimal(taxAmount).setScale(2, RoundingMode.HALF_UP);
+        double menuTaxValue2 = menuTaxValue1.doubleValue();
+
+        BigDecimal dd = new BigDecimal(taxAmount).setScale(4, RoundingMode.HALF_UP);
+        double bb = dd.doubleValue();
+        utils.log().info("Tax1 is " + bb);
+
+        //modifierTax
+        //double modifierTax = modifierAmount2 - (modifierAmount2 / (1 + modifierTaxPercent));
+        double modifierAmount3 = modifierAfterDiscount * modifierTaxPercent;
+
+        BigDecimal modTaxValue1 = new BigDecimal(modifierAmount3).setScale(2, RoundingMode.HALF_UP);
+        double modTaxValue2 = modTaxValue1.doubleValue();
+        BigDecimal dd1 = new BigDecimal(modifierAmount3).setScale(4, RoundingMode.HALF_UP);
+        double aa1 = dd1.doubleValue();
+        utils.log().info("Tax2 is " + aa1);
+
+        double totalWithTax = subTotalAfterDisc + menuTaxValue2 + modTaxValue2;
+        utils.log().info("menu after disc is " + menuAfterDiscount);
+        utils.log().info("Menu tax is " + menuTaxValue2);
+        utils.log().info("Modifier tax is " + modTaxValue2);
+        utils.log().info("Total with Tax is " + totalWithTax);
+
+        double checkTaxamount = totalWithTax * checkTaxPercent;
+        BigDecimal ddd1 = new BigDecimal(checkTaxamount).setScale(4, RoundingMode.HALF_UP);
+        double aaa1 = ddd1.doubleValue();
+        utils.log().info("Check Tax is " + aa1);
+
+        double totalTax = bb + aa1 + aaa1;
+        BigDecimal totalTax1 = new BigDecimal(totalTax).setScale(2, RoundingMode.HALF_UP);
+        double totalTax2 = totalTax1.doubleValue();
+
+        DecimalFormat d00 = new DecimalFormat("0.00");
+        String ExpectedTax = d00.format(totalTax2);
+        utils.log().info("Expected Tax is " + ExpectedTax);
+
+        WebElement ActualTaxAmount = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
+        String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual tax is " + ActualTax3);
+
+        Assert.assertEquals(ExpectedTax, ActualTax3);
+    }
+
+    public void VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyPercBT(double taxPercent, double modifierTaxPercent, double discAmt) {
+        //Menu Amount
+        WebElement menuItemAmount1 = driver.findElement(By.xpath("(//ion-content/div/div/div//div[5])[2]"));
+        String menuItemAmount3 = menuItemAmount1.getText();
+
+        double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
+
+        //Modifier Amount
+        WebElement modifierAmount = driver.findElement(By.xpath("(//ion-content/div/div/div//div[5])[3]"));
+        String modifierAmount1 = modifierAmount.getText();
+        utils.log().info("modifier Amount is " + modifierAmount1);
+        double modifierAmount2 = Double.parseDouble(modifierAmount1);
+
+        //define discount percentage
+        //double DiscountAmount = 5;
+
+        WebElement subTotalAmount3 = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmount2 = subTotalAmount3.getAttribute("value");
+        String subTotalAmount1 = subTotalAmount2.replaceAll("[A-Z$ ]", "");
+
+        double subTotalAmount = Double.parseDouble(subTotalAmount1);
+
+        double discountAmount = subTotalAmount * discAmt;
+
+        double menuDiscountAmount = (menuItemAmount4 / subTotalAmount) * discountAmount;
+
+        double menuAfterDisc = menuItemAmount4 - menuDiscountAmount;
+        BigDecimal menuAfterDisc1 = new BigDecimal(menuAfterDisc).setScale(2, RoundingMode.HALF_UP);
+        double menuAfterDiscount = menuAfterDisc1.doubleValue();
+
+        double modifierDiscountAmount = (modifierAmount2 / subTotalAmount) * discountAmount;
+
+        double modifierAfterDisc = modifierAmount2 - modifierDiscountAmount;
+        BigDecimal modifierAfterDisc1 = new BigDecimal(modifierAfterDisc).setScale(2, RoundingMode.HALF_UP);
+        double modifierAfterDiscount = modifierAfterDisc1.doubleValue();
+
+        double taxAmount = menuAfterDiscount * taxPercent;
+        utils.log().info("Exact Tax is " + taxAmount);
+
+        BigDecimal dd = new BigDecimal(taxAmount).setScale(4, RoundingMode.HALF_UP);
+        double bb = dd.doubleValue();
+        utils.log().info("Tax1 is " + bb);
+
+        //modifierTax
+        //double modifierTax = modifierAmount2 - (modifierAmount2 / (1 + modifierTaxPercent));
+        double modifierAmount3 = modifierAfterDiscount * modifierTaxPercent;
+        BigDecimal dd1 = new BigDecimal(modifierAmount3).setScale(4, RoundingMode.HALF_UP);
+        double aa1 = dd1.doubleValue();
+        utils.log().info("Tax2 is " + aa1);
+
+
+        double totalTax = bb + aa1;
+        BigDecimal totalTax1 = new BigDecimal(totalTax).setScale(2, RoundingMode.HALF_UP);
+        double totalTax2 = totalTax1.doubleValue();
+
+        DecimalFormat d00 = new DecimalFormat("0.00");
+        String ExpectedTax = d00.format(totalTax2);
+        utils.log().info("Expected Tax is " + ExpectedTax);
+
+        WebElement ActualTaxAmount = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
+        String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual tax is " + ActualTax3);
+
+        Assert.assertEquals(ExpectedTax, ActualTax3);
+    }
 
 }
 

@@ -681,6 +681,11 @@ public class CheckOptionsStepDef {
         new TaxRoundingOff().pressDoneOpenItemBtn1();
     }
 
+    @And("^I click Done button on the open item window second time$")
+    public void iClickDoneButtonOnTheOpenItemWindoS() throws InterruptedException {
+        new TaxRoundingOff().pressDoneOpenItemBtn1S();
+    }
+
 //    @Then("^I should navigate to Order Management screen and see the added open item as \"([^\"]*)\"$")
 //    public void iShouldNavigateToOrderManagementScreenAndSeeTheAddedOpenItemAs(String open) {
 //        new OpenItemWindow().verifyOpenItem(open);

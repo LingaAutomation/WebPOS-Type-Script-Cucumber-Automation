@@ -103,7 +103,7 @@ public class BasePage extends TGglobalElement {
 //        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
 //        WebElement modifierBtn = driver.findElement(By.xpath("//button[contains(.,"+ModifierName+")]"));
         ////button[contains(.,"+ModifierName+")]
-        String modifierBtn = "//div[contains(@class,'group-container')]//button[contains(.,"+ModifierName+")]";
+        String modifierBtn = "//div[contains(@class,'group-container')]//button[contains(.,'"+ModifierName+"')]";
 
         elementClick(modifierBtn, "Tapped modifier");
         Thread.sleep(5000);

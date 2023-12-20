@@ -110,6 +110,24 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().checkingMenuPrice(amount);
     }
 
+    @And("^Verify if exclusive tax menu \"([^\"]*)\" exclusive tax modifier \"([^\"]*)\" check tax \"([^\"]*)\" and discount \"([^\"]*)\" are calculated properly$")
+    public void VerifyIfTheExclusiveTaxAndDiscountArecalculatedProperlyAmountBTWithCheckTax(double taxPercent, double modifierTaxPercent, double checkTaxPercent, double discPerc) {
+        new TaxRoundingOff().VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyAmountBTCheckTax(taxPercent, modifierTaxPercent, checkTaxPercent, discPerc);
+
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^Verify if exclusive tax menu \"([^\"]*)\" exclusive tax modifier \"([^\"]*)\" and percentage discount \"([^\"]*)\" are calculated properly$")
+    public void VerifyIfTheExclusiveTaxAndDiscountArecalculatedProperlyPercBT(double taxPercent, double modifierTaxPercent, double discAmt) {
+        new TaxRoundingOff().VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyPercBT(taxPercent, modifierTaxPercent, discAmt);
+
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^Verify if menu price and subtotal are equal$")
     public void verifyIfMenuItemAndSubtotalAmountAreSame() throws InterruptedException {
         new TaxRoundingOff().verifyIfMenuAmountAndSubtotalAreEqual();
@@ -389,6 +407,13 @@ public class TaxRoundingOffStepDef {
         //new TaxR
     }
 
+    @And("^Verify if the balance due amount is displayed correctly after the payment done$")
+    public void VerifyIfTheBalanceDueAmountIsCalculatedCorrectlyAfterThePaymentDone() throws InterruptedException {
+        new TaxRoundingOff().VerifyIfBalanceDueAmountIsCalculatedCorrectlyAfterThePaymentDone();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxR
+    }
+
     @And("^Selected Options button$")
     public void SelectedOptionsButton() throws InterruptedException {
         new TaxRoundingOff().SelectOptionsButton();
@@ -423,14 +448,20 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().swipeToTheCourseName(name);
     }
 
-    @And("^I entered course name as \"([^\"]*)\"$")
-    public void iEnteredCourseNameAs(String menu) {
+    @And("^I swipe to \"([^\"]*)\" Coursing Name2$")
+    public void iSwipeToTheCoursingName2(String name) throws InterruptedException {
+        new TaxRoundingOff().swipeToTheCourseName2(name);
+    }
+
+    @And("^I entered course name$")
+    public void iEnteredCourseNameAs() {
 //        new TaxRoundingOff().setMenuItemName(menu);
+        new  TaxRoundingOff().enterCoursingNameAs();
     }
 
     @And("^I selected the Price text field$")
     public void iSelectedThePriceTextField() {
-//        new TaxRoundingOff().iSelectedPriceTextField();
+        new TaxRoundingOff().iSelectedPriceTextField();
     }
 
     @And("^I entered the price$")
@@ -444,14 +475,14 @@ public class TaxRoundingOffStepDef {
     }
 
     @And("^I selected the Tax$")
-//    public void iSelectedTheTax() {
-//        new TaxRoundingOff().selectTheTax();
-//    }
+    public void iSelectedTheTax() {
+        new TaxRoundingOff().selectTheTax();
+    }
 
     @And("^I selected the Exclusive Tax$")
-//    public void iSelectedTheTax2Exclusive() {
-//        new TaxRoundingOff().selectTheTax2Exclusive();
-//    }
+    public void iSelectedTheTax2Exclusive() {
+        new TaxRoundingOff().selectTheTax2Exclusive();
+    }
 
     @And("^I selected the back button$")
     public void iSelectedTheBackButton() {
@@ -464,9 +495,9 @@ public class TaxRoundingOffStepDef {
     }
 
     @And("^I selected the Inclusive Tax$")
-//    public void iSelectedTheTax2Inclusive() {
-//        new TaxRoundingOff().selectTheTax2Inclusive();
-//    }
+    public void iSelectedTheTax2Inclusive() {
+        new TaxRoundingOff().selectTheTax2Inclusive();
+    }
 
     @And("^Verify if tax and round-off are calculated properly for inclusive$")
     public void verifyIfTheTaxAndRoundOffAreCalculatedProperlyInclusive() {
