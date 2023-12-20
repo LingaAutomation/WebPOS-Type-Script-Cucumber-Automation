@@ -132,7 +132,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(name = "Ok")
     WebElement okButtonCardTypeWindow;
 
-    @FindBy(name = "//ion-toolbar//button[contains(.,' Manual ')]")
+    @FindBy(xpath = "//ion-toolbar//button[contains(.,' Manual ')]")
     WebElement manualButton;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
@@ -584,15 +584,7 @@ public class PaymentWindow extends OrderManagementScreen{
 
     public void clickSideCCBtn() throws Exception {
         Thread.sleep(1000);
-//        try {
-//            if (find(cCSideBtn, 2)) {
-//                elementClick(cCSideBtn, "Tapped Side CC Button");
-//            } else {
-//                scrollToElementPayments(cCSideBtn, "up");
-//                elementClick(cCSideBtn, "Tapped Side CC Button");
-//            }
-//        } catch (Exception e) {
-//            scrollToElementPayments(cCSideBtn, "down");
+
             elementClick(cCSideBtn, "Tapped Side CC Button");
 //        }
     }

@@ -333,8 +333,8 @@ public class TGVoidPage extends BasePage {
 
         Assert.assertEquals(actualName, expectedName);
 
-//        direction = direction.toLowerCase();
-//
+       Thread.sleep(1500);
+
         WebElement askCustomerName = driver.findElement(By.xpath("//ion-item[contains(.,' Ask Customer Name ')]//ion-toggle[@aria-checked='false']"));
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);

@@ -394,6 +394,31 @@ public class TGDiscountStepDef {
         new TGDiscountPage().selectCheckBasedDiscountAfterTaxAsPercentage();
     }
 
+    @Then("^User verify check based discount after tax as percentage value as \"([^\"]*)\" with Sandwiches$")
+    public void userVerifyCheckBasedDiscountAfterTaxAsPercentageValueAsWithSandwiches(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountAfterTaxAsPercentageWithSandwiches(value);
+    }
+
+    @Then("^User verify check based discount before tax as percentage value as \"([^\"]*)\" with Sandwiches$")
+    public void userVerifyCheckBasedDiscountBeforeTaxAsPercentageValueAsWithSandwiches(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountBeforeTaxAsPercentageWithSandwiches(value);
+    }
+
+    @Then("^User verify check based discount after tax as amount value as \"([^\"]*)\" with Sandwiches$")
+    public void userVerifyCheckBasedDiscountAfterTaxAsAmountValueASWithSandwiches(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountAfterTaxAsAmountWithSandwiches(value);
+    }
+
+    @Then("^User verify check based discount before tax as amount value as \"([^\"]*)\" with Sandwiches$")
+    public void userVerifyCheckBasedDiscountBeforeTaxAsAmountValueAsWithSandwiches(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountBeforeTaxAsAmountWithSandwiches(value);
+    }
+
+    @Then("^User verify check based discount after tax as set price value as \"([^\"]*)\" with Sandwiches$")
+    public void userVerifyCheckBasedDiscountAfterTaxAsSetPriceValueAsWithSandwiches(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountAfterTaxAsSetPriceWithSandwiches(value);
+    }
+
     @When("User select check based discount before tax as percentage")
     public void userSelectCheckBasedDiscountBeforeTaxAsPercentage() {
         new TGDiscountPage().selectCheckBasedDiscountBeforeTaxAsPercentage();
@@ -427,6 +452,20 @@ public class TGDiscountStepDef {
     @When("User select check based discount before tax as free item")
     public void userSelectCheckBasedDiscountBeforeTaxAsFreeItem() {
         new TGDiscountPage().selectCheckBasedDiscountBeforeTaxAsFreeItem();
+    }
+//    @And("^User verify check based discount before tax as free item value as \"([^\"]*)\" for Brushetta$")
+//    public void userVerifyCheckBasedDiscountBeforeTaxAsFreeItemValueAsForBrushetta(String value ) {
+//        new TGMenuItemPage().verifyCheckBasedDiscountBeforeTaxAsFreeItemForBrushetta(value);
+//    }
+
+    @Then("^User verify check based discount before tax as free item value as \"([^\"]*)\" with Sandwiches$")
+    public void userVerifyCheckBasedDiscountBeforeTaxAsFreeItemValueAsWithSandwiches(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountBeforeTaxAsFreeItemWithSandwiches(value);
+    }
+
+    @Then("^User verify check based discount after tax as free item value as \"([^\"]*)\" with Sandwiches$")
+    public void userVerifyCheckBasedDiscountAfterTaxAsFreeItemValueAsWithSandwiches(String value) {
+        new TGMenuItemPage().verifyCheckBasedDiscountAfterTaxAsFreeItemWithSandwiches(value);
     }
 
     @Then("User select item based discount after tax with percentage")

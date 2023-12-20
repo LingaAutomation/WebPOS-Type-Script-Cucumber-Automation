@@ -62,7 +62,7 @@ public class CIPaymentScreen extends BasePage{
 
     String giftCardTextField="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField";
 
-    String cardNumberHATxtField="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
+    String cardNumberHATxtField="//input[@id='cardInput']";
 
     String textFieldPercentage="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField";
 
@@ -430,9 +430,9 @@ public class CIPaymentScreen extends BasePage{
     }
 
     public void passHACardNumber(String Number){
-        WebElement element = mergeAndFindElement(cardNumberHATxtField,"",TestUtils.XPath);
+        WebElement element = mergeAndFindMobileElement(cardNumberHATxtField);
         element.sendKeys(Number);
-        element.sendKeys(Keys.ENTER);
+//        element.sendKeys(Keys.ENTER);
     }
 
     public void clickTable() {

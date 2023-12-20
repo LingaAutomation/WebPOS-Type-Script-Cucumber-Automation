@@ -112,7 +112,7 @@ public class TGglobalElement {
     String checkBasedBeforeTax = "CheckBased-BeforeTax";
 //    String checkBasedBeforeTax = "//XCUIElementTypeStaticText[@name=\"CheckBased-BeforeTax\"]";
 
-    String checkBasedBeforeTaxText = "CheckBased-BeforeTax";
+    String checkBasedBeforeTaxText = "//div[@class='discount-section']//div[contains(.,'CheckBased-BeforeTax')]";
 //    String checkBasedBeforeTaxText = "//XCUIElementTypeStaticText[@name=\"CheckBased-BeforeTax\"]";
 
     String checkBasedDiscountBeforeTaxDayRestrict = "CB-AfterTax-RestrictDay";
@@ -121,7 +121,7 @@ public class TGglobalElement {
     String checkBasedDiscountBeforeTaxDayRestrictText = "CB-AfterTax-RestrictDay";
 //    String checkBasedDiscountBeforeTaxDayRestrictText = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-RestrictDay\"]";
 
-    String checkBasedDiscountBeforeTaxRoleRestrict = "CB-AfterTax-RestrictRole";
+    String checkBasedDiscountBeforeTaxRoleRestrict = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-RestrictRole')]";
 //    String checkBasedDiscountBeforeTaxRoleRestrict = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-RestrictRole\"]";
 
     String checkBasedDiscountBeforeTaxRoleRestrictText = "CB-AfterTax-RestrictRole";
@@ -212,58 +212,58 @@ public class TGglobalElement {
     String openCheckDiscountAmountAfterTaxOnPriceSide = "TL 15,00";
 //    String openCheckDiscountAmountAfterTaxOnPriceSide = "//XCUIElementTypeStaticText[@name=\"TL 15,00\"]";
 
-    String itemBasedDiscountBeforeTaxAsAmount = "IB-BeforeTax-Amount";
+    String itemBasedDiscountBeforeTaxAsAmount = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-Amount')]";
 //    String itemBasedDiscountBeforeTaxAsAmount = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Amount\"]";
 
-    String itemBasedDiscountAfterTaxAsSetPrice = "IB-AfterTax-SetPrice";
+    String itemBasedDiscountAfterTaxAsSetPrice = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-SetPrice')]";
 //    String itemBasedDiscountAfterTaxAsSetPrice = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-SetPrice\"]";
 
-    String itemBasedDiscountBeforeTaxAsSetPrice = "IB-BeforeTax-SetPrice";
+    String itemBasedDiscountBeforeTaxAsSetPrice = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-SetPrice')]";
 //    String itemBasedDiscountBeforeTaxAsSetPrice = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-SetPrice\"]";
 
-    String itemBasedDiscountAfterTaxAsFreeItem = "IB-AfterTax-FreeItem";
+    String itemBasedDiscountAfterTaxAsFreeItem = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-FreeItem')]";
 //    String itemBasedDiscountAfterTaxAsFreeItem = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-FreeItem\"]";
 
-    String itemBasedDiscountBeforeTaxAsFreeItem = "IB-BeforeTax-FreeItem";
+    String itemBasedDiscountBeforeTaxAsFreeItem = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-FreeItem')]";
 //    String itemBasedDiscountBeforeTaxAsFreeItem = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-FreeItem\"]";
 
-    String itemBasedDiscountBeforeTaxAsPercentage = "IB-BeforeTax-Percentage";
+    String itemBasedDiscountBeforeTaxAsPercentage = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-Percentage')]";
 //    String itemBasedDiscountBeforeTaxAsPercentage = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Percentage\"]";
 
-    String itemBasedDiscountAfterTaxAsPercentage = "IB-AfterTax-Percentage";
+    String itemBasedDiscountAfterTaxAsPercentage = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-Percentage')]";
 //    String itemBasedDiscountAfterTaxAsPercentage = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-Percentage\"]";
 
-    String checkBasedDiscountAfterTaxAsPercentage = "CB-PercentageAfterTax";
+    String checkBasedDiscountAfterTaxAsPercentage = "//div[@class='discount-section']//div[contains(.,'CB-PercentageAfterTax')]";
 //    String checkBasedDiscountAfterTaxAsPercentage = "//XCUIElementTypeStaticText[@name=\"CB-PercentageAfterTax\"]";
 
-    String checkBasedDiscountBeforeTaxAsPercentage = "CB-PercentageBeforeTax";
+    String checkBasedDiscountBeforeTaxAsPercentage = "//div[@class='discount-section']//div[contains(.,'CB-PercentageBeforeTax')]";
 //    String checkBasedDiscountBeforeTaxAsPercentage = "//XCUIElementTypeStaticText[@name=\"CB-PercentageBeforeTax\"]";
 
-    String checkBasedDiscountBeforeTaxAsAmount = "CB-AmountBeforeTax";
+    String checkBasedDiscountBeforeTaxAsAmount = "//div[@class='discount-section']//div[contains(.,'CB-AmountBeforeTax')]";
 //    String checkBasedDiscountBeforeTaxAsAmount = "//XCUIElementTypeStaticText[@name=\"CB-AmountBeforeTax\"]";
 
-    String checkBasedDiscountBeforeTaxAsSetPrice = "CB-BeforeTax-SetPrice";
+    String checkBasedDiscountBeforeTaxAsSetPrice = "//div[@class='discount-section']//div[contains(.,'CB-BeforeTax-SetPrice')]";
 //    String checkBasedDiscountBeforeTaxAsSetPrice = "//XCUIElementTypeStaticText[@name=\"CB-BeforeTax-SetPrice\"]";
 
-    String checkBasedDiscountAfterTaxAsSetPrice = "CB-AfterTax-SetPrice";
+    String checkBasedDiscountAfterTaxAsSetPrice = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-SetPrice')]";
 //    String checkBasedDiscountAfterTaxAsSetPrice = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-SetPrice\"]";
 
-    String checkBasedDiscountAfterTaxAsAmount = "CheckBasedAmountAfterTax";
+    String checkBasedDiscountAfterTaxAsAmount = "//div[@class='discount-section']//div[contains(.,'CheckBasedAmountAfterTax')]";
 //    String checkBasedDiscountAfterTaxAsAmount = "//XCUIElementTypeStaticText[@name=\"CheckBasedAmountAfterTax\"]";
 
-    String checkBasedDiscountAfterTaxAsFreeItem = "CB-AfterTax-FreeItem";
+    String checkBasedDiscountAfterTaxAsFreeItem = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-FreeItem')]";
 //    String checkBasedDiscountAfterTaxAsFreeItem = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-FreeItem\"]";
 
-    String checkBasedDiscountBeforeTaxAsFreeItem = "CB-BeforeTax-FreeItem";
+    String checkBasedDiscountBeforeTaxAsFreeItem = "//div[@class='discount-section']//div[contains(.,'CB-BeforeTax-FreeItem')]";
 //    String checkBasedDiscountBeforeTaxAsFreeItem = "//XCUIElementTypeStaticText[@name=\"CB-BeforeTax-FreeItem\"]";
 
-    String itemBasedDiscountBeforeTaxWithPercentage = "IB-BeforeTax-Percentage";
+    String itemBasedDiscountBeforeTaxWithPercentage = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-Percentage')]";
 //    String itemBasedDiscountBeforeTaxWithPercentage = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Percentage\"]";
 
-    String itemBasedDiscountBeforeTaxWithAmount = "IB-BeforeTax-Amount";
+    String itemBasedDiscountBeforeTaxWithAmount = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-Amount')]";
 //    String itemBasedDiscountBeforeTaxWithAmount = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Amount\"]";
 
-    String itemBasedDiscountAfterTaxWithAmount = "IB-DiscountAfterTax";
+    String itemBasedDiscountAfterTaxWithAmount = "//div[@class='discount-section']//div[contains(.,'IB-DiscountAfterTax')]";
 //    String itemBasedDiscountAfterTaxWithAmount = "//XCUIElementTypeStaticText[@name=\"IB-DiscountAfterTax\"]";
 
     //Payment
@@ -338,7 +338,7 @@ public class TGglobalElement {
 //    String paymentMethodTitle = "//XCUIElementTypeStaticText[@name=\"Select Payment Method\"]";
 
 
-    String paidOrder = "Success";
+    String paidOrder = "(//ion-row//ion-col[contains(.,' Success')])[3]";
 
     String deleteButtonOnPayment = "//XCUIElementTypeButton[@name=\"  Delete\"]";
 
@@ -367,7 +367,7 @@ public class TGglobalElement {
 
     String creditCardOption = "Credit Card";
 
-    String giftCardOption = "Gift Card";
+    String giftCardOption = "//span[contains(.,' Gift Card ')]";
 
     String giftCardNumber = "0000  0000  0000  0000";
 //    String giftCardNumber = "//XCUIElementTypeButton[@name=\"0000  0000  0000  0000\"]";
@@ -405,12 +405,12 @@ public class TGglobalElement {
 
 
     String CCSideTitle = "//XCUIElementTypeStaticText[@name=\"1. CC Side(#1)\"]";
-    String sideCCTitle = "//XCUIElementTypeStaticText[@name=\"1. Side CC(#1)\"]";
+    String sideCCTitle = "(//ion-col[contains(.,'Side CC(#1)')])[3]";
 
     String ccSidePaymentOption = "//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,' Side CC ')]";
 //    String ccSidePaymentOption = "//XCUIElementTypeStaticText[@name=\"Side CC\"]";
 
-    String noTipButton = "No Tip";
+    String noTipButton = "//button[contains(.,' No Tip ')]";
 //    String noTipButton = "//XCUIElementTypeStaticText[@name=\"No Tip\"]";
 
     String partialPaymentForTenPrice = "TL 10";
@@ -471,7 +471,7 @@ public class TGglobalElement {
 //    String creditCardPaymentMethod = "//XCUIElementTypeStaticText[@name=\"Credit Card\"]";
 
 
-    String firstTipOption = "(//XCUIElementTypeStaticText[@name=\"10,00\"])[1]";
+    String firstTipOption = "//p[contains(.,'$ 10.00')]";
     String creditCardNumber = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
     String creditCardCVVInfo = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]";
     String creditCardExpireDate = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[1]";
@@ -1230,7 +1230,7 @@ public class TGglobalElement {
 //    String forHereOrderOption = "//XCUIElementTypeStaticText[@name=\"For Here\"]";
 
 
-    String ojCoctailModifier = "//XCUIElementTypeStaticText[@name=\"O.J.\"]";
+    String ojCoctailModifier = "//button[contains(.,'O.J.')]";
 
     String bbqSource = "//span[contains(.,'4 BBQ')]";
 //    String bbqSource = "//XCUIElementTypeStaticText[@name=\"4 BBQ\"]";
@@ -1406,7 +1406,7 @@ public class TGglobalElement {
     String cashButtonOnMenuItem = "//button[contains(.,'Cash')]";
 //    String cashButtonOnMenuItem = "//XCUIElementTypeButton[@name=\"Cash\"]";
 
-    String firstSeatOnMenuItem = "1";
+    String firstSeatOnMenuItem = "//button[@id='1']";
 //    String firstSeatOnMenuItem = "//XCUIElementTypeStaticText[@name=\"1\"]";
 
 
@@ -1428,12 +1428,12 @@ public class TGglobalElement {
 //    String entreeTitleOnMenuItemPage = "ENTREE";
 
 
-    String emptyCheckPopup = "Order Item Before Paying";
+    String emptyCheckPopup = "//p[contains(.,'You need to order before paying')]";
 
-    String emptyCheckDoneButton = "Done";
+    String emptyCheckDoneButton = "//button[contains(.,'Done')]";
 //    String emptyCheckDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
 
-    String secondSeatOnMenuItem = "2";
+    String secondSeatOnMenuItem = "//button[@id='2']";
 
     String firstOrderWithModifier = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Cheesy Bacon Fries')])[1]";
 //    String firstOrderWithModifier = "//XCUIElementTypeStaticText[@name=\"Cheesy Bacon Fries\"]";
@@ -1547,7 +1547,7 @@ public class TGglobalElement {
 
     String logOffButton = "//button[@id='os_logOff']";
 
-    String freeMenuItem = "(F) Garlic Bread EACH";
+    String freeMenuItem = "//div[contains(@class,'p-col-5 discount-section-name disc-padding')]";
 //    String freeMenuItem = "//XCUIElementTypeStaticText[@name=\"(F) Garlic Bread EACH\"]";
 
     String openItem = "Test Automation";
@@ -1583,22 +1583,22 @@ public class TGglobalElement {
     String checkBasedSetPriceAmount = "20,00";
 //    String checkBasedSetPriceAmount = "//XCUIElementTypeStaticText[@name=\"20,00\"]";
 
-    String itemBasedAmountTitle = "ItemBased with Amount";
+    String itemBasedAmountTitle = "//div[@class='discount-section']//div[contains(.,'ItemBased with Amount')]";
 //    String itemBasedAmountTitle = "//XCUIElementTypeStaticText[@name=\"ItemBased with Amount\"]";
 
     String itemBasedAmount = "500,00";
 //    String itemBasedAmount = "//XCUIElementTypeStaticText[@name=\"500,00\"]";
 
-    String itemBasedPercentageTitle = "ItemBased with Percentage";
+    String itemBasedPercentageTitle = "//div[@class='discount-section']//div[contains(.,'ItemBased with Percentage')]";
 //    String itemBasedPercentageTitle = "//XCUIElementTypeStaticText[@name=\"ItemBased with Percentage\"]";
 
-    String itemBasedPercentageText = "IB-AfterTax-Percentage";
+    String itemBasedPercentageText = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-Percentage')]";
 //    String itemBasedPercentageText = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-Percentage\"]";
 
-    String itemBasedBeforeTaxPercentageText = "IB-BeforeTax-Percentage";
+    String itemBasedBeforeTaxPercentageText = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-Percentage')]";
 //    String itemBasedBeforeTaxPercentageText = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Percentage\"]";
 
-    String itemBasedBeforeTaxAmountText = "IB-BeforeTax-Amount";
+    String itemBasedBeforeTaxAmountText = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-Amount')]";
 //    String itemBasedBeforeTaxAmountText = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Amount\"]";
 
     String itemBasedPercentageAmount = "3,00";
@@ -1709,13 +1709,13 @@ public class TGglobalElement {
 //    String noSelectedCustomer = "//XCUIElementTypeButton[@name=\"Walkin\"]";
 
     String firstOrderedMenuItem = "//XCUIElementTypeStaticText[@name=\"SANDWICHES \"]";
-    String repeatedMenuItem = "(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[2]";
+    String repeatedMenuItem = "(//div[contains(@class,'menu-section orderlist-flex ')]//div[contains(.,'SANDWICHES')])[2]";
 
 
-    String quantityOfOrder = "2";
+    String quantityOfOrder = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[3]";
 //    String quantityOfOrder = "//XCUIElementTypeStaticText[@name=\"2\"]";
 
-    String quantityOfOrderAfterDecrease = "1";
+    String quantityOfOrderAfterDecrease = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[3]";
 //    String quantityOfOrderAfterDecrease = "//XCUIElementTypeStaticText[@name=\"1\"]";
 
     String fourthMenuItem = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Fried Crab Cakes')])[1]";
@@ -1854,16 +1854,16 @@ public class TGglobalElement {
     //    String itemBasedAfterTaxDiscountTitle = "//XCUIElementTypeStaticText[@name=\"Discount\"]";
     String itemBasedAfterTaxDiscountAmount = "(//XCUIElementTypeStaticText[@name=\"1.000,00\"])[1]";
 
-    String BlackBluPizza = "Black and Blu Pizza";
+    String BlackBluPizza = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Black and Blu Pizza')])[1]";
 //    String BlackBluPizza = "//XCUIElementTypeStaticText[@name=\"Black and Blu Pizza\"]";
 
-    String PizzaRomano = "Pizza Romano";
+    String PizzaRomano = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Pizza Romano')])[1]";
 //    String PizzaRomano = "//XCUIElementTypeStaticText[@name=\"Pizza Romano\"]";
 
-    String PizzaRucola = "Pizza Rucola";
+    String PizzaRucola = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Pizza Rucola')])[1]";
 //    String PizzaRucola = "//XCUIElementTypeStaticText[@name=\"Pizza Rucola\"]";
 
-    String PizzaLasagna = "Pizza Lasagna";
+    String PizzaLasagna = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Pizza Lasagna')])[1]";
 //    String PizzaLasagna = "//XCUIElementTypeStaticText[@name=\"Pizza Lasagna\"]";
 
     String checkBasedAfterTaxTitle = "CheckBased-AfterTax";
@@ -1875,7 +1875,7 @@ public class TGglobalElement {
     String itemBasedBeforeTaxTitle = "IB-DiscountBeforeTax";
 //    String itemBasedBeforeTaxTitle = "//XCUIElementTypeStaticText[@name=\"IB-DiscountBeforeTax\"]";
 
-    String itemBasedBeforeTaxAmount = "(//XCUIElementTypeStaticText[@name=\"1.000,00\"])[1]";
+    String itemBasedBeforeTaxAmount = "//div[@class='discount-section']//div[contains(.,'IB-DiscountAfterTax')]";
 
     String itemBasedRestrictRoleTitle = "BeforeTaxRoleRestriction";
 //    String itemBasedRestrictRoleTitle = "//XCUIElementTypeStaticText[@name=\"BeforeTaxRoleRestriction\"]";
@@ -1889,7 +1889,7 @@ public class TGglobalElement {
     String itemBasedAfterTaxRestrictRoleAmount = "10,00";
 //    String itemBasedAfterTaxRestrictRoleAmount = "//XCUIElementTypeStaticText[@name=\"10,00\"]";
 
-    String checkBasedAfterTaxOpenItem = "CB-AfterTax-OpenItem";
+    String checkBasedAfterTaxOpenItem =  "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-OpenItem')]";
 //    String checkBasedAfterTaxOpenItem = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-OpenItem\"]";
 
     String checkBasedBeforeTaxAutoDiscountText = "CheckBased-BeforeTax-Auto";
@@ -2032,11 +2032,11 @@ public class TGglobalElement {
     //    String tunaTacosFreeMenuItemWithSandwiches = "//XCUIElementTypeStaticText[@name=\"(F) Tuna Tacos EACH\"]";
     String tunaTacosFreeMenuItemWithSandwiches = "(F) Tuna Tacos EACH";
     //    String beforeTaxAsSetPriceForSandwiches = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-SetPrice\"]";
-    String beforeTaxAsSetPriceForSandwiches = "IB-BeforeTax-SetPrice";
+    String beforeTaxAsSetPriceForSandwiches = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-SetPrice')]";
     //    String beforeTaxAsSetPriceAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 1.200,00\"]";
     String beforeTaxAsSetPriceAmountForSandwiches = "TL 1.200,00";
     //    String checkBasedAfterTaxPercentageWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CB-PercentageAfterTax\"]";
-    String checkBasedAfterTaxPercentageWithSandwiches = "CB-PercentageAfterTax";
+    String checkBasedAfterTaxPercentageWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CB-PercentageAfterTax')]";
     //    String checkBasedAfterTaxAsPercentageAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 100,00\"]";
     String checkBasedAfterTaxAsPercentageAmountForSandwiches = "TL 100,00";
     //    String checkBasedAfterTaxAsPercentageAmountForSandwiches1 = "//XCUIElementTypeStaticText[@name=\"99,99\"]";
@@ -2044,33 +2044,33 @@ public class TGglobalElement {
     //    String checkBasedAfterTaxAsPercentageAmountForSandwich = "//XCUIElementTypeStaticText[@name=\"TL 99,99\"]";
     String checkBasedAfterTaxAsPercentageAmountForSandwich = "TL 99,99";
     //    String checkBasedBeforeTaxPercentageWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CB-PercentageBeforeTax\"]";
-    String checkBasedBeforeTaxPercentageWithSandwiches = "CB-PercentageBeforeTax";
+    String checkBasedBeforeTaxPercentageWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CB-PercentageBeforeTax')]";
     //    String checkBasedBeforeTaxAsPercentageAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"100,00\"]";
     String checkBasedBeforeTaxAsPercentageAmountForSandwiches = "100,00";
     //    String checkBasedBeforeTaxAmountWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CB-AmountBeforeTax\"]";
-    String checkBasedBeforeTaxAmountWithSandwiches = "CB-AmountBeforeTax";
+    String checkBasedBeforeTaxAmountWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CB-AmountBeforeTax')]";
     //    String checkBasedBeforeTaxAsAmountForSandwichesAmount = "//XCUIElementTypeStaticText[@name=\"5,00\"]";
     String checkBasedBeforeTaxAsAmountForSandwichesAmount = "5,00";
     //    String checkBasedAfterTaxSetPriceWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-SetPrice\"]";
-    String checkBasedAfterTaxSetPriceWithSandwiches = "CB-AfterTax-SetPrice";
+    String checkBasedAfterTaxSetPriceWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-SetPrice')]";
     //    String checkBasedAfterTaxSetPriceAmountWithSandwiches = "//XCUIElementTypeStaticText[@name=\"970,00\"]";
     String checkBasedAfterTaxSetPriceAmountWithSandwiches = "970,00";
     //    String checkBasedBeforeTaxSetPriceWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CB-BeforeTax-SetPrice\"]";
-    String checkBasedBeforeTaxSetPriceWithSandwiches = "CB-BeforeTax-SetPrice";
+    String checkBasedBeforeTaxSetPriceWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CB-BeforeTax-SetPrice')]";
     //    String checkBasedBeforeTaxSetPriceAmountWithSandwiches = "//XCUIElementTypeStaticText[@name=\"970,00\"]";
     String checkBasedBeforeTaxSetPriceAmountWithSandwiches = "970,00";
     //    String checkBasedAfterTaxAsAmountWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CheckBasedAmountAfterTax\"]";
-    String checkBasedAfterTaxAsAmountWithSandwiches = "CheckBasedAmountAfterTax";
+    String checkBasedAfterTaxAsAmountWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CheckBasedAmountAfterTax')]";
     //    String checkBasedAfterTaxAmountAsAmountWithSandwiches = "//XCUIElementTypeStaticText[@name=\"5,00\"]";
     String checkBasedAfterTaxAmountAsAmountWithSandwiches = "5,00";
     //    String checkBasedAfterTaxAsFreeItemWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-FreeItem\"]";
-    String checkBasedAfterTaxAsFreeItemWithSandwiches = "CB-AfterTax-FreeItem";
+    String checkBasedAfterTaxAsFreeItemWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-FreeItem')]";
     //    String checkBasedAfterTaxAmountAsFreeItemWithSandwiches = "//XCUIElementTypeStaticText[@name=\"0,00\"]";
     String checkBasedAfterTaxAmountAsFreeItemWithSandwiches = "0,00";
     //    String checkBasedAfterTaxAsFreeItemMenuItemWithSandwiches = "//XCUIElementTypeStaticText[@name=\"(F) Little Coke EACH\"]";
-    String checkBasedAfterTaxAsFreeItemMenuItemWithSandwiches = "(F) Little Coke EACH";
+    String checkBasedAfterTaxAsFreeItemMenuItemWithSandwiches = "(F)Little Coke EACH";
     //    String checkBasedBeforeTaxAsFreeItemWithSandwiches = "//XCUIElementTypeStaticText[@name=\"CB-BeforeTax-FreeItem\"]";
-    String checkBasedBeforeTaxAsFreeItemWithSandwiches = "CB-BeforeTax-FreeItem";
+    String checkBasedBeforeTaxAsFreeItemWithSandwiches = "//div[@class='discount-section']//div[contains(.,'CB-BeforeTax-FreeItem')]";
     //    String checkBasedBeforeTaxAmountAsFreeItemWithSandwiches = "//XCUIElementTypeStaticText[@name=\"0,00\"]";
     String checkBasedBeforeTaxAmountAsFreeItemWithSandwiches = "0,00";
     //    String checkBasedBeforeTaxAsFreeItemMenuItemWithSandwiches = "//XCUIElementTypeStaticText[@name=\"(F) Little Coke EACH\"]";
@@ -2139,7 +2139,7 @@ public class TGglobalElement {
     //    String itemBasedAfterTaxAsSetPriceDiscountAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 20,00\"]";
     String itemBasedAfterTaxAsSetPriceDiscountAmountForSandwiches = "TL 20,00";
     //    String itemBasedDiscountBeforeTaxSetPrice = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-SetPrice\"]";
-    String itemBasedDiscountBeforeTaxSetPrice = "IB-BeforeTax-SetPrice";
+    String itemBasedDiscountBeforeTaxSetPrice = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-SetPrice')]";
     //    String itemBasedBeforeTaxAsSetPriceDiscountAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 20,00\"]";
     String itemBasedBeforeTaxAsSetPriceDiscountAmountForSandwiches = "TL 20,00";
     //    String customerNameOkButton = "//XCUIElementTypeStaticText[@name=\"Ok\"]";
@@ -2228,7 +2228,7 @@ public class TGglobalElement {
     String parmesanModifier = "Parmesan";
 
     //    String itemBasedAfterTaxAsAmountText = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-Amount\"]";
-    String itemBasedAfterTaxAsAmountText = "IB-AfterTax-Amount";
+    String itemBasedAfterTaxAsAmountText = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-Amount')]";
 
     //    String itemBasedAfterTaxAsAmountPrice = "//XCUIElementTypeStaticText[@name=\"170,00\"]";
     String itemBasedAfterTaxAsAmountPrice = "170,00";
@@ -2237,10 +2237,10 @@ public class TGglobalElement {
     String brushettaMenuItem = "BRUSHETTA";
 
     //    String drinksCategory = "//XCUIElementTypeStaticText[@name=\"DRINKS\"]";
-    String drinksCategory = "DRINKS";
+    String drinksCategory = "//div[contains(@class,'center-name category-container')]/div[contains(.,'DRINKS')]";
 
     //    String cocktailMenuItem = "//XCUIElementTypeStaticText[@name=\"COCKTAIL\"]";
-    String cocktailMenuItem = "COCKTAIL";
+    String cocktailMenuItem = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'COCKTAIL')])[1]";
 
     //    String serviceChargeText = "//XCUIElementTypeStaticText[@name=\"Service Charge\"]";
     String serviceChargeText = "Service Charge";
@@ -2270,13 +2270,13 @@ public class TGglobalElement {
     String itemBasedDiscountAsSetPriceAmountForBruchetta = "400,00";
 
     //    String itemBasedAfterTaxAsFreeItemTitle = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-FreeItem\"]";
-    String itemBasedAfterTaxAsFreeItemTitle = "IB-AfterTax-FreeItem";
+    String itemBasedAfterTaxAsFreeItemTitle = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-FreeItem')]";
 
     //    String itemBasedBeforeTaxAsFreeItemTitle = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-FreeItem\"]";
-    String itemBasedBeforeTaxAsFreeItemTitle = "IB-BeforeTax-FreeItem";
+    String itemBasedBeforeTaxAsFreeItemTitle = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-FreeItem')]";
 
     //    String itemBasedBeforeTaxAsSetPriceTitle = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-SetPrice\"]";
-    String itemBasedBeforeTaxAsSetPriceTitle = "IB-BeforeTax-SetPrice";
+    String itemBasedBeforeTaxAsSetPriceTitle = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-SetPrice')]";
 
     //    String itemBasedDiscountAsFreeItemPriceForBruchetta = "//XCUIElementTypeStaticText[@name=\"0,00\"]";
     String itemBasedDiscountAsFreeItemPriceForBruchetta = "0,00";
@@ -2285,46 +2285,46 @@ public class TGglobalElement {
     String itemBasedDiscountPriceForSetPriceForBruchetta = "400,00";
 
     //    String checkBasedPercentageAfterTaxTitle = "//XCUIElementTypeStaticText[@name=\"CB-PercentageAfterTax\"]";
-    String checkBasedPercentageAfterTaxTitle = "CB-PercentageAfterTax";
+    String checkBasedPercentageAfterTaxTitle = "//div[@class='discount-section']//div[contains(.,'CB-PercentageAfterTax')]";
 
     //    String checkBasedPercentageAfterTaxForBruchetta = "//XCUIElementTypeStaticText[@name=\"50,00\"]";
     String checkBasedPercentageAfterTaxForBruchetta = "50,00";
 
     //    String checkBasedAmountAfterTaxTitle = "//XCUIElementTypeStaticText[@name=\"CheckBasedAmountAfterTax\"]";
-    String checkBasedAmountAfterTaxTitle = "CheckBasedAmountAfterTax";
+    String checkBasedAmountAfterTaxTitle = "//div[@class='discount-section']//div[contains(.,'CheckBasedAmountAfterTax')]";
 
     //    String checkBasedAmountAfterTaxForBruchetta = "//XCUIElementTypeStaticText[@name=\"5,00\"]";
     String checkBasedAmountAfterTaxForBruchetta = "5,00";
 
     //    String checkBasedAfterTaxAsSetPriceTitle = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-SetPrice\"]";
-    String checkBasedAfterTaxAsSetPriceTitle = "CB-AfterTax-SetPrice";
+    String checkBasedAfterTaxAsSetPriceTitle = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-SetPrice')]";
 
     //    String checkBasedAfterTaxWithSetPriceAmountForBruchetta = "//XCUIElementTypeStaticText[@name=\"470,00\"]";
     String checkBasedAfterTaxWithSetPriceAmountForBruchetta = "470,00";
 
     //    String checkBasedAfterTaxWithFreeItemTitle = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-FreeItem\"]";
-    String checkBasedAfterTaxWithFreeItemTitle = "CB-AfterTax-FreeItem";
+    String checkBasedAfterTaxWithFreeItemTitle = "//div[@class='discount-section']//div[contains(.,'CB-AfterTax-FreeItem')]";
 
     //    String checkBasedBeforeTaxWithFreeItemTitle = "//XCUIElementTypeStaticText[@name=\"CB-BeforeTax-FreeItem\"]";
-    String checkBasedBeforeTaxWithFreeItemTitle = "CB-BeforeTax-FreeItem";
+    String checkBasedBeforeTaxWithFreeItemTitle = "//div[@class='discount-section']//div[contains(.,'CB-BeforeTax-FreeItem')]";
 
     //    String checkBasedAfterTaxWithFreeItemAmountForBruchetta = "//XCUIElementTypeStaticText[@name=\"0,00\"]";
     String checkBasedAfterTaxWithFreeItemAmountForBruchetta = "0,00";
 
     //    String checkBasedBeforeTaxWithPercentageTitle = "//XCUIElementTypeStaticText[@name=\"CB-PercentageBeforeTax\"]";
-    String checkBasedBeforeTaxWithPercentageTitle = "CB-PercentageBeforeTax";
+    String checkBasedBeforeTaxWithPercentageTitle = "//div[@class='discount-section']//div[contains(.,'CB-PercentageBeforeTax')]";
 
     //    String checkBasedBeforeTaxWithPercentageAmountForBruchetta = "//XCUIElementTypeStaticText[@name=\"50,00\"]";
     String checkBasedBeforeTaxWithPercentageAmountForBruchetta = "50,00";
 
     //    String checkBasedBeforeTaxWithAmountTitle = "//XCUIElementTypeStaticText[@name=\"CB-AmountBeforeTax\"]";
-    String checkBasedBeforeTaxWithAmountTitle = "CB-AmountBeforeTax";
+    String checkBasedBeforeTaxWithAmountTitle = "//div[@class='discount-section']//div[contains(.,'CB-AmountBeforeTax')]";
 
     //    String checkBasedBeforeTaxWithAmountForBruchetta = "//XCUIElementTypeStaticText[@name=\"5,00\"]";
     String checkBasedBeforeTaxWithAmountForBruchetta = "5,00";
 
     //    String checkBasedBeforeTaxWithSetPriceTitle = "//XCUIElementTypeStaticText[@name=\"CB-BeforeTax-SetPrice\"]";
-    String checkBasedBeforeTaxWithSetPriceTitle = "CB-BeforeTax-SetPrice";
+    String checkBasedBeforeTaxWithSetPriceTitle = "//div[@class='discount-section']//div[contains(.,'CB-BeforeTax-SetPrice')]";
 
     //    String checkBasedBeforeTaxWithSetPriceForBruchetta = "//XCUIElementTypeStaticText[@name=\"470,00\"]";
     String checkBasedBeforeTaxWithSetPriceForBruchetta = "470,00";
@@ -2427,15 +2427,15 @@ public class TGglobalElement {
     //Menu Option
 
     //    String repeatMenuOption = "//XCUIElementTypeStaticText[@name=\"Repeat\"]";
-    String repeatMenuOption = "Repeat";
+    String repeatMenuOption = "//label[contains(.,'Repeat')]";
     //    String quantityMenuOption = "//XCUIElementTypeStaticText[@name=\"Quantity\"]";
-    String quantityMenuOption = "Quantity";
+    String quantityMenuOption = "//label[contains(.,'Quantity')]";
     //    String calculatorNumberTwo = "//XCUIElementTypeButton[@name=\"2\"]";
-    String calculatorNumberTwo = "2";
+    String calculatorNumberTwo = "//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'2')]";
     //    String continueForCalculator = "//XCUIElementTypeStaticText[@name=\"Continue\"]";
-    String continueForCalculator = "Continue";
+    String continueForCalculator = "//span[contains(.,'Continue')]";
     //    String holdMenuOption = "//XCUIElementTypeStaticText[@name=\"Hold\"]";
-    String holdMenuOption = "Hold";
+    String holdMenuOption = "//label[contains(.,'Hold')]";
     String holdHeaderText = "(//XCUIElementTypeStaticText[@name=\"Hold\"])[1]";
     //    String holdAutomationButton = "//XCUIElementTypeStaticText[@name=\"Automatic\"]";
     String holdAutomationButton = "Automatic";
@@ -2760,15 +2760,15 @@ public class TGglobalElement {
 
     String autoDiscountItem = "EGG SANDWICHES";
     //    String calculatorNumberOne = "//XCUIElementTypeButton[@name=\"1\"]";
-    String calculatorNumberOne = "1";
+    String calculatorNumberOne = "//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]";
     //    String itemBasedATRestrictRoleTitle = "//XCUIElementTypeStaticText[@name=\"AfterTax-RoleRestriction\"]";
-    String itemBasedATRestrictRoleTitle = "AfterTax-RoleRestriction";
+    String itemBasedATRestrictRoleTitle = "//div[@class='discount-section']//div[contains(.,'AfterTax-RoleRestriction')]";
     //    String itemBasedDiscountBRestrictDay = "//XCUIElementTypeStaticText[@name=\"BeforeTaxDayRestriction\"]";
-    String itemBasedDiscountBRestrictDay = "BeforeTaxDayRestriction";
+    String itemBasedDiscountBRestrictDay = "//div[@class='discount-section']//div[contains(.,'BeforeTaxDayRestriction')]";
     //    String itemBasedDiscountBTRoleRestrict = "//XCUIElementTypeStaticText[@name=\"BeforeTaxRoleRestriction\"]";
-    String itemBasedDiscountBTRoleRestrict = "BeforeTaxRoleRestriction";
+    String itemBasedDiscountBTRoleRestrict = "//div[@class='discount-section']//div[contains(.,'BeforeTaxRoleRestriction')]";
     //    String checkBasedATTitle = "//XCUIElementTypeStaticText[@name=\"CB-PercentageAfterTax\"]";
-    String checkBasedATTitle = "CB-PercentageAfterTax";
+    String checkBasedATTitle = "//div[@class='discount-section']//div[contains(.,'CB-PercentageAfterTax')]";
     //    String checkBasedATAmount = "//XCUIElementTypeStaticText[@name=\"171,70\"]";
     String checkBasedATAmount = "171,70";
     //    String itemBasedFreeDiscountBTAmount = "//XCUIElementTypeStaticText[@name=\"TL 100,00\"]";
@@ -2798,14 +2798,14 @@ public class TGglobalElement {
     //    String sandwicheTaxAmount = "//XCUIElementTypeStaticText[@name=\"TL 200,10\"]";
     String sandwicheTaxAmount = "TL 100,10";
     //    String itemBasedDiscountATWithPercentage = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-Percentage\"]";
-    String itemBasedDiscountATWithPercentage = "IB-AfterTax-Percentage";
+    String itemBasedDiscountATWithPercentage = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-Percentage')]";
     //    String itemBasedATAsPercentageDiscountAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 12,00\"]";
     String itemBasedATAsPercentageDiscountAmountForSandwiches = "TL 12,00";
     //    String CCSidePaymentDetailBarTab = "//XCUIElementTypeStaticText[@name=\"1. Side CC(#1)\"]";
     String CCSidePaymentDetailBarTab = "(//ion-col[contains(.,'Side CC(#1)')])[3]";
     //String itemBasedDiscountATWithPercentagePaymentDetailAmountWithTip = "//XCUIElementTypeStaticText[@name=\"132,00+100,00\"]";
 //    String itemBasedDiscountBTWithPercentage = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-Percentage\"]";
-    String itemBasedDiscountBTWithPercentage = "IB-BeforeTax-Percentage";
+    String itemBasedDiscountBTWithPercentage = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-Percentage')]";
     //    String itemBasedDiscountATWithPercentagePaymentDetailAmountWithTip = "//XCUIElementTypeStaticText[@name=\"132,00+100,00\"]";
     String itemBasedDiscountATWithPercentagePaymentDetailAmountWithTip = "132,00+100,00";
     //    String itemBasedBTAsPercentageDiscountAmountForMargarita = "//XCUIElementTypeStaticText[@name=\"TL 101,00\"]";
@@ -3004,7 +3004,7 @@ public class TGglobalElement {
     //    String checkBasedAfterTaxWithSetPriceAmountForBruchetta1 = "//XCUIElementTypeStaticText[@name=\"TL 970,00\"]";
     String checkBasedAfterTaxWithSetPriceAmountForBruchetta1 = "TL 970,00";
     //    String itemBasedDiscountBeforeTaxAsAmount1 = "//XCUIElementTypeStaticText[@name=\"IB-AfterTax-Amount\"]";
-    String itemBasedDiscountBeforeTaxAsAmount1 = "IB-AfterTax-Amount";
+    String itemBasedDiscountBeforeTaxAsAmount1 = "//div[@class='discount-section']//div[contains(.,'IB-AfterTax-Amount')]";
     //    String itemBasedDiscountAsSetPriceAmountBruchetta1 = "//XCUIElementTypeStaticText[@name=\"0,00\"]";
     String itemBasedDiscountAsSetPriceAmountBruchetta1 = "0,00";
     //    String sidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsFreeItem1 = "//XCUIElementTypeStaticText[@name=\"1.200,00+100,00\"]";
@@ -3019,7 +3019,7 @@ public class TGglobalElement {
     //    String afterTaxDayRestrictDiscountAmount1 = "//XCUIElementTypeStaticText[@name=\"TL 1,00\"]";
     String afterTaxDayRestrictDiscountAmount1 = "TL 1,00";
     //    String itemBasedDiscountBeforeTaxRestrictDay1 = "//XCUIElementTypeStaticText[@name=\"After Tax Day Restriction\"]";
-    String itemBasedDiscountBeforeTaxRestrictDay1 = "After Tax Day Restriction";
+    String itemBasedDiscountBeforeTaxRestrictDay1 = "//div[@class='discount-section']//div[contains(.,'After Tax Day Restriction')]";
     //    String checkBasedDiscountBeforeTaxDayRestrict1 = "//XCUIElementTypeStaticText[@name=\"CB-BeforeTax-RestrictDay\"]";
     String checkBasedDiscountBeforeTaxDayRestrict1 = "CB-BeforeTax-RestrictDay";
     //    String subtotalAmountWithTaxExempt2 = "//XCUIElementTypeStaticText[@name=\"TL 1.999,80\"]";

@@ -355,12 +355,7 @@ public class CheckOptions extends OrderManagementScreen {
 
     public void clickProcessButton() throws InterruptedException {
         Thread.sleep(3000);
-        if(processBtn.isDisplayed()) {
-            utils.log().info("Displayed");
-            processBtn.click();
-        }else{
-            utils.log().info("Not Displayed");
-        }
+       elementClick("(//div[@class='card-details-decisions']//button[contains(.,' Process ')])[2]","Selected Process");
     }
 
     @FindBy(xpath = "//label[contains(.,'Discount')]")

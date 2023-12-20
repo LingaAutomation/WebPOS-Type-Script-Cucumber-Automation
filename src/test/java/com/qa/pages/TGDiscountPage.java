@@ -228,7 +228,7 @@ public class TGDiscountPage extends BasePage {
 
     }
     public void selectItemBasedDiscountBeforeTaxOption() {
-        WebElement btnItemBasedDiscountAfterTax=mergeAndFindMobileElement(itemBasedDiscountAfterTax);
+        WebElement btnItemBasedDiscountAfterTax=mergeAndFindMobileElement(itemBasedBeforeTaxTitle);
         elementClick(btnItemBasedDiscountAfterTax,"Item Based Discount After Tax Selected");
 //        driver.findElement(itemBasedDiscountAfterTax).isDisplayed();
 //        driver.findElement(itemBasedDiscountAfterTax).click();
@@ -259,9 +259,9 @@ public class TGDiscountPage extends BasePage {
         String expectedName =  "After Tax Day Restriction";
 
         Assert.assertEquals(actualName,expectedName);
-        WebElement element1=mergeAndFindMobileElement(afterTaxDayRestrictDiscountAmount1);
-        String actualName1 = elementGetText(element1,"Get TL 1,00");
-        String expectedName1 = "TL 1,00";
+        WebElement element1=driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+        String actualName1 = elementGetValue(element1,"Get $ 0.00");
+        String expectedName1 = "$ 0.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }

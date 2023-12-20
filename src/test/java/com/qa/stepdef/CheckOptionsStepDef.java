@@ -24,7 +24,7 @@ public class CheckOptionsStepDef {
     }
 
     @Then("^I should see the Check Options screen$")
-    public void iShouldSeeTheCheckOptionsScreen() {
+    public void iShouldSeeTheCheckOptionsScreen() throws InterruptedException {
         Assert.assertEquals(new OrderManagementScreen().getCheckOptionsTitle(), "Check Option");
     }
 

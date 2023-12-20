@@ -1413,6 +1413,11 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().pressAddVoidReasonBtn();
     }
 
+    @And ("^I click Add Button on the void reason popup1$")
+    public void iClickAddButtonOnTheVoidReasonPopup1(){
+        new OrderManagementScreen().pressAddVoidReasonBtn1();
+    }
+
     @Then ("^I should see that OrderScreen with Merge seats as \"([^\"]*)\"$")
     public void iShouldSeeThatOrderScreenWithMergeSeatsAs(String seat){
         new TableLayOutScreen().verifyAllSeatIsMerged(seat);

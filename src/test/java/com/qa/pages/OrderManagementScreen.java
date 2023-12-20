@@ -183,7 +183,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
  //   @FindBy(xpath = "Option" )
  //   private WebElement optionBtn;
 
-    @FindBy(xpath = "Order")
+    @FindBy(xpath = "//ion-row/button[contains(.,'Order')]")
     private WebElement orderBtn;
 
     @FindBy(xpath = "Already sent to Kitchen")
@@ -224,6 +224,10 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     @FindBy(xpath = "(//button[contains(.,' Add ')])[2]")
     private WebElement addVoidReasonBtn;
+
+    @FindBy(xpath = "(//button[contains(.,' Add ')])[1]")
+    private WebElement addVoidReasonBtn1;
+
 
     //Add new customer to table
     @FindBy(xpath = "//button[@id='os_customer']")
@@ -638,7 +642,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     public WebElement cate;
     public void categorySelection(String category) throws Exception {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
-        Thread.sleep(1500);
+        Thread.sleep(2000);
         pressArrowDown2();
         Thread.sleep(1500);
         cate =  driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'"+category+"')]"));
@@ -1233,7 +1237,8 @@ public  void selectCategory (String value) throws Exception {
     }
     @FindBy(xpath = "//p[contains(.,'Check Option')]")
     WebElement checkOptionsTitle;
-    public String getCheckOptionsTitle() {
+    public String getCheckOptionsTitle() throws InterruptedException {
+        Thread.sleep(2000);
         return elementGetText(checkOptionsTitle, "Check Options title is - ");
     }
 
@@ -1262,6 +1267,10 @@ public  void selectCategory (String value) throws Exception {
 
     public void pressAddVoidReasonBtn(){
         elementClick(addVoidReasonBtn, "Add (void reason) button is tapped");
+    }
+
+    public void pressAddVoidReasonBtn1(){
+        elementClick(addVoidReasonBtn1, "Add (void reason) button is tapped");
     }
 
     public String getAllOrdersAreVoidedMsg(){return elementGetText(convertWebElement(allOrdersAreVoided),"All Orders are voided is Displayed - ");}
@@ -2081,6 +2090,11 @@ public  void selectCategory (String value) throws Exception {
         Assert.assertEquals(dc.format(changeDueee),changeDueValue.replaceAll("[$, ]",""));
         utils.log().info("Cash Reward & Change Due Value is SAME - " +changeDueValue);
     }
+    public String tunaTacosEach(){
+        return elementGetText(tunaTacosEachMenu,"Free Item Added In Menu ");
+    }
+    @FindBy(xpath = "//div[contains(@class,'p-col-5 discount-section-name disc-padding')]")
+    private WebElement tunaTacosEachMenu;
 
     public void verifyCashPriceWithChangeDueValueWhileGratuityApplying(){
         driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);

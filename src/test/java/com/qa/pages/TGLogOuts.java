@@ -13,7 +13,7 @@ import static com.qa.utils.TestUtils.driver;
 
 public class TGLogOuts extends BasePage {
 
-    String cancelBtn = "Cancel";
+    String cancelBtn= "//button[contains(.,'Cancel')]";
 
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name='Cancel']")
 //    private WebElement cancelBtn;
@@ -88,7 +88,8 @@ public class TGLogOuts extends BasePage {
 //        WebElement element = mergeAndFindMobileElement(cancelBtn);
 //        elementClick(element,"Cancel button is clicked");
         driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
-        findandclickM(By.id(cancelBtn));
+        elementClick(cancelBtn, "Order type selection is cancelled.");
+//        findandclickM(By.id(cancelBtn));
 //        elementClick(cancelBtn, "Cancel button is clicked");
     }
 

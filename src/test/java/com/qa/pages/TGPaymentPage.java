@@ -59,11 +59,11 @@ public class TGPaymentPage extends BasePage {
     public void verifySideCCPaymentForCokeWithoutTipAndServiceCharge(){
         WebElement element=mergeAndFindMobileElement(sideCCTitle);
         String actualName = elementGetText(element,"verify sideCCTitle");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(sideCCPaymentWithoutTipsAndWithServiceCharge);
+        WebElement element1=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element1,"verify sideCCPaymentWithoutTipsAndWithServiceCharge");
 
         String expectedName1 = "140,80";
@@ -74,14 +74,14 @@ public class TGPaymentPage extends BasePage {
         WebElement element1=mergeAndFindMobileElement(sideCCTitle);
         String actualName = elementGetText(element1,"verify sideCCTitle");
 
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element=mergeAndFindMobileElement(sideCCPaymentWithTipsAndWithServiceCharge);
+        WebElement element=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element,"verify sideCCPaymentWithTipsAndWithServiceCharge");
 
-        String expectedName1 = "2.033,50+100,00";
+        String expectedName1 = "75.50+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -90,14 +90,14 @@ public class TGPaymentPage extends BasePage {
         WebElement element1=mergeAndFindMobileElement(sideCCTitle);
         String actualName = elementGetText(element1,"verify sideCCTitle");
 
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element=mergeAndFindMobileElement(coctailAmount);
+        WebElement element=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element,"verify sideCCPaymentWithTipsAndWithServiceCharge");
 
-        String expectedName1 = "2.033,50";
+        String expectedName1 = "75.50";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -106,14 +106,14 @@ public class TGPaymentPage extends BasePage {
         WebElement element=mergeAndFindMobileElement(sideCCTitle);
         String actualName = elementGetText(element,"verify sideCCTitle");
 
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(sideCCPaymentWithTipsAndWithoutServiceCharge);
+        WebElement element1=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element1,"verify sideCCPaymentWithTipsAndWithoutServiceCharge");
 
-        String expectedName1 = "1.100,00+100,00";
+        String expectedName1 = "1.00+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -121,14 +121,14 @@ public class TGPaymentPage extends BasePage {
         WebElement element1=mergeAndFindMobileElement(sideCCTitle);
         String actualName = elementGetText(element1,"verify sideCCTitle");
 
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element=mergeAndFindMobileElement(sideCCForSandwich);
+        WebElement element=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element,"verify sideCCForSandwich");
 
-        String expectedName1 = "1.100,00+100,00";
+        String expectedName1 = "1.00+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -142,11 +142,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyPaidOrderForSandwiches(){
         WebElement element=mergeAndFindMobileElement(cashPaymentMethodDiyez);
         String actualName = elementGetText(element,"verify cashPaymentMethodDiyez");
-        String expectedName = "1. Cash(#1)";
+        String expectedName = "Cash(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(voidSandwichesAmount1);
+        WebElement element1=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element1,"verify voidSandwichesAmount");
 
         String expectedName1 = "1.200,00";
@@ -156,13 +156,13 @@ public class TGPaymentPage extends BasePage {
     public void verifyCashPaymentForCocktailWithServiceCharge(){
         WebElement element=mergeAndFindMobileElement(cashPaymentMethodDiyez);
         String actualName = elementGetText(element,"verify cashPaymentMethodDiyez");
-        String expectedName = "1. Cash(#1)";
+        String expectedName = "Cash(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(coctailAmount);
+        WebElement element1=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element1,"verify coctailAmount");
-        String expectedName1 = "2.033,50";
+        String expectedName1 = "75.50";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -170,13 +170,13 @@ public class TGPaymentPage extends BasePage {
     public void verifyCashPaymentForSandwiches(){
         WebElement element=mergeAndFindMobileElement(cashPaymentMethodDiyez);
         String actualName = elementGetText(element,"verify cashPaymentMethodDiyez");
-        String expectedName = "1. Cash(#1)";
+        String expectedName = "Cash(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(sandwichesPricePayWithCash);
+        WebElement element1=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element1,"verify sandwichesPricePayWithCash");
-        String expectedName1 = "1.100,00";
+        String expectedName1 = "1.00";
         Assert.assertEquals(actualName1,expectedName1);
     }
     public void verifyGiveXPaymentMethodAndTotalPriceForTunaTacos(){
@@ -401,11 +401,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsSetPriceWithTaxExemptForSandwiches(){
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountBeforeTaxAsSetPriceWithTaxExemptForSandwiches);
+        WebElement element1=mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1 = elementGetText(element1,"verify the amount");
 
         String expectedName1 = "29,90+100,00";
@@ -413,7 +413,22 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName1,expectedName1);
     }
 
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsSetPriceWithTaxExemptForSandwiches(String expectedName1){
+        WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
 
+        Assert.assertEquals(actualName,expectedName);
+
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1=mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountBeforeTaxAsSetPriceWithTaxExemptForSandwiches);
+        String actualName1 = elementGetText(element1,"verify the amount");
+
+//        String expectedName1 = "29,90+100,00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
 
     //    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceWithTaxExemptForSandwiches(){
 //        WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
@@ -431,7 +446,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceWithTaxExemptForSandwiches(){
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -441,6 +456,21 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName1,expectedName1);
     }
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceWithTaxExemptForSandwiches(String expectedName1){
+        WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1=mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsSetPriceWithTaxExemptForSandwiches);
+        String actualName1 = elementGetText(element1,"verify the amount");
+//        String expectedName1 = "29,90+100,00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceWithTaxExemptForSandwiches1(){
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
@@ -481,10 +511,26 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsAmountWithTaxExemptForSandwiches(String expectedName1){
+        WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1=mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsAmountWithTaxExemptForSandwiches);
+        String actualName1 = elementGetText(element1,"verify the amount");
+//        String expectedName1 = "994,90+100,00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsAmountWithTaxExemptForSandwiches(){
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -522,11 +568,29 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsPercentageWithTaxExemptForSandwiches(String expectedName1){
+        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1=mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountBTAsPercentageWithTaxExemptForSandwiches);
+        String actualName1 = elementGetText(element1,"verify the amount");
+//        String expectedName1 = "899,90+100,00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsPercentageWithTaxExemptForSandwiches(){
 
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -564,11 +628,29 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsPercentageWithTaxExemptForSandwiches(String expectedName1){
+        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1=mergeAndFindMobileElement(ccSidePaymentAmountWithTipsAndItemBasedDiscountATAsPercentageWithTaxExemptForSandwiches);
+        String actualName1 = elementGetText(element1,"verify the amount");
+//        String expectedName1 = "900,00+10,00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsPercentageWithTaxExemptForSandwiches(){
 
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -626,7 +708,7 @@ public class TGPaymentPage extends BasePage {
 
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -641,7 +723,7 @@ public class TGPaymentPage extends BasePage {
 
         WebElement element=mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName = elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1213,7 +1295,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsPercentage(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1227,7 +1309,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsPercentage(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1242,7 +1324,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsAmount(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1257,7 +1339,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsAmount(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1272,7 +1354,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPrice(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1288,7 +1370,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsFreeItem(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1303,7 +1385,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsSetPrice(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1318,7 +1400,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsFreeItem(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1332,11 +1414,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTips(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetail);
         String actualName=elementGetText(element,"verify CCSidePaymentDetail");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmount);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.200,00+100,00";
 
@@ -1356,14 +1438,33 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
-    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsPercentage(){
-        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsPercentage(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBTAsPercentage);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBTAsPercentage);
+        String actualName1=elementGetText(element1,"verify Amount");
+
+//        String expectedName1 = "0.99+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsPercentage(){
+        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
 
         String expectedName1 = "1.080,00+100,00";
@@ -1384,14 +1485,33 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
-    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsAmount(){
+
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsAmount( String expectedName1){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsAmount);
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsAmount);
+        String actualName1=elementGetText(element1,"verify Amount");
+
+//        String expectedName1 = "0.36+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsAmount(){
+        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
 
         String expectedName1 = "1.194,00+100,00";
@@ -1412,14 +1532,48 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
-    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsSetPrice(){
-        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsSetPrice(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountAfterTaxAsSetPrice);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsSetPrice);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "0.91+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsSetPrice(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountAfterTaxAsSetPrice);
+        String actualName1=elementGetText(element1,"verify Amount");
+
+//        String expectedName1 = "0.49+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsSetPrice(){
+        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
 
         String expectedName1 = "230,00+100,00";
@@ -1442,11 +1596,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsSetPrice(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsSetPrice);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "36,00+100,00";
 
@@ -1466,14 +1620,32 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsAmount(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountATAsAmount);
+        String actualName1=elementGetText(element1,"verify Amount");
+
+//        String expectedName1 = "0.52+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsAmount(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountATAsAmount);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
 
         String expectedName1 = "1.195,00+100,00";
@@ -1495,14 +1667,30 @@ public class TGPaymentPage extends BasePage {
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
 
+    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsPercentage(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountATAsPercentageForSandwiches);
+        String actualName1=elementGetText(element1,"verify Amount");
+
+//        String expectedName1 = "1.00+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsPercentage(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountATAsPercentageForSandwiches);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
 
         String expectedName1 = "1.000,01+100,00";
@@ -1516,7 +1704,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountAfterTaxAsFreeItem);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "810,01+100,00";
 
@@ -1539,7 +1727,7 @@ public class TGPaymentPage extends BasePage {
 //    public void verifySideCCPaymentWithTipsAndOpenItemBeforeTaxAmountSafetyLimitAsDecimal(){
 //        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
 //        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-//        String expectedName = "1. Side CC(#1)";
+//        String expectedName = "Side CC(#1)";
 //
 //        Assert.assertEquals(actualName,expectedName);
 //
@@ -1553,11 +1741,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsFreeItemForSandwiches(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountAfterTaxAsFreeItemForSandwiches);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.200,00+100,00";
 
@@ -1570,7 +1758,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountAfterTaxAsFreeItem);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "44,00+100,00";
 
@@ -1583,7 +1771,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsFreeItemForSandwich);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "2.211,06+100,00";
 
@@ -1605,13 +1793,13 @@ public class TGPaymentPage extends BasePage {
     public void verifySideCCPaymentWithTipsAndOpenItemBeforeTaxAmountSafetyLimitAsDecimal(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(sidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsFreeItem);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
-        String expectedName1 = "1.201,10+100,00";
+        String expectedName1 = "1.201,10+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -1620,13 +1808,13 @@ public class TGPaymentPage extends BasePage {
     public void verifySideCCPaymentWithTipsAndOpenItemBeforeTaxAmountSafetyLimitAsDecimal1(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(sidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsFreeItem1);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
-        String expectedName1 = "1.200,00+100,00";
+        String expectedName1 = "5.40+10.00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -1634,11 +1822,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndOpenItemAfterTaxAsAmountSafetyLimitAsDecimalForSandwiches(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxAsFreeItemForSandwiches);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.200,00+100,00";
 
@@ -1665,7 +1853,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBTAsFreeItem);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "2.211,00+100,00";
 
@@ -1679,7 +1867,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithCheckBasedDiscountBeforeTaxForSandwiches);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "2.211,06+100,00";
 
@@ -1693,7 +1881,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenItemDiscountAfterTax);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "2.211,06+100,00";
 
@@ -1706,7 +1894,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenItemDiscountBeforeTaxWithNonDecimalValue);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "2.211,06+100,00";
 
@@ -1719,7 +1907,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenCheckDiscountAfterTaxWithPercentage);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.000,01+100,00";
 
@@ -1732,7 +1920,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenCheckDiscountBeforeTaxWithPercentage);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "990,00+100,00";
 
@@ -1932,7 +2120,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithUpchargeAddModifierMenuItemInPaymentScreenAndWithTips(){
         WebElement element = mergeAndFindMobileElement(CCSideOpenItemPaymentDetailForBarTab);
         String actualName=elementGetText(element,"verify CCSideOpenItemPaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1945,7 +2133,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentInPaymentScreenAndWithoutTips(){
         WebElement element = mergeAndFindMobileElement(CCSideOpenItemPaymentDetailForBarTab);
         String actualName=elementGetText(element,"verify CCSideOpenItemPaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -1958,11 +2146,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentInPaymentScreenAndWithTips(){
         WebElement element = mergeAndFindMobileElement(CCSideOpenItemPaymentDetailForBarTab);
         String actualName=elementGetText(element,"verify CCSideOpenItemPaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithTip);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.100,00+100,00";
 
@@ -1971,11 +2159,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyTipAmountWithCCSidePaymentInPaymentScreen(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetail);
         String actualName=elementGetText(element,"verify CCSidePaymentDetail");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithTipForBarTab);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.100,00+100,00";
 
@@ -1994,14 +2182,31 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
     // }
+
+
+    public void verifyItemBasedDiscountAfterTaxWithPercentageWithCCSidePaymentInPaymentScreenAndWithTips(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountATWithPercentagePaymentDetailAmountWithTip);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "12.00+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyItemBasedDiscountAfterTaxWithPercentageWithCCSidePaymentInPaymentScreenAndWithTips(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountATWithPercentagePaymentDetailAmountWithTip);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "132,00+100,00";
 
@@ -2014,7 +2219,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountBeforeTaxWithAmountPaymentDetailAmountWithTip);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.617,90+100,00";
 
@@ -2027,7 +2232,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountBeforeTaxWithAmountPaymentDetailAmountWithTip);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "138,60+100,00";
 
@@ -2046,14 +2251,31 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+
+    public void verifyItemBasedDiscountBeforeTaxWithPercentageWithCCSidePaymentInPaymentScreenAndWithTipsForMargarita( String expectedName1 ){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountBTWithAmountPaymentDetailAmountWithTipForMargarita);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "0.99+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyItemBasedDiscountBeforeTaxWithPercentageWithCCSidePaymentInPaymentScreenAndWithTipsForMargarita(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountBTWithAmountPaymentDetailAmountWithTipForMargarita);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "999,90+100,00";
 
@@ -2079,7 +2301,7 @@ public class TGPaymentPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountAfterTaxWithAmountPaymentDetailAmountWithTip);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "20,00+100,00";
 
@@ -2101,16 +2323,32 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsFreeItemForChickenSchnitzel(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountBTWithFreeItemPaymentDetailForChickenSchinitzel);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "144,00+100,00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
+
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsFreeItemForChickenSchnitzel(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountBTWithFreeItemPaymentDetailForChickenSchinitzel);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "25.20+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     //    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsFreeItemForChickenSchnitzel(){
 //        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
 //        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
@@ -2127,17 +2365,35 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsFreeItemForChickenSchnitzel(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountATWithFreeItemPaymentDetailForChickenSchinitzel);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "240,00+100,00";
 
         Assert.assertEquals(actualName1,expectedName1);
 
     }
+
+
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsFreeItemForChickenSchnitzel(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(itemBasedDiscountATWithFreeItemPaymentDetailForChickenSchinitzel);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "25.20+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+
+    }
+
     //    public void userVerifyCCSidePaymentWithTipAmountAndItemBasedDiscountAfterTaxAsAmountForChickenSchnitzel(){
 //        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
 //        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
@@ -2151,14 +2407,31 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+
+    public void userVerifyCCSidePaymentWithTipAmountAndItemBasedDiscountAfterTaxAsAmountForChickenSchnitzel(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithItemBasedDiscountATAsPercentageForChickenSchinitzel);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "19.34+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void userVerifyCCSidePaymentWithTipAmountAndItemBasedDiscountAfterTaxAsAmountForChickenSchnitzel(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithItemBasedDiscountATAsPercentageForChickenSchinitzel);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "780,59+100,00";
 
@@ -2177,14 +2450,30 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceForChickenSchnitzel(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithItemBasedDiscountATAsSetPriceForPizzaRomano);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "5.36+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceForChickenSchnitzel(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithItemBasedDiscountATAsSetPriceForPizzaRomano);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.463,59+100,00";
 
@@ -2206,16 +2495,33 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsSetPriceForChickenSchnitzel(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithItemBasedDiscountBTAsSetPriceForChickenSchinitzel);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.200,00+100,00";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
+
+
+    public void verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsSetPriceForChickenSchnitzel(String expectedName1){
+       WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+       WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithItemBasedDiscountBTAsSetPriceForChickenSchinitzel);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "0.52+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     //    public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsOpenItemWithSandwiches(){
 //        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
 //        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
@@ -2232,11 +2538,11 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsOpenItemWithSandwiches(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenItemDiscountATForSandwiches);
+        WebElement element1 = mergeAndFindMobileElement("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]");
         String actualName1=elementGetText(element1,"verify Amount");
         String expectedName1 = "1.101,10+100,00";
 
@@ -2255,10 +2561,57 @@ public class TGPaymentPage extends BasePage {
 //
 //        Assert.assertEquals(actualName1,expectedName1);
 //    }
+
+
+    public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountBeforeTaxAsOpenDiscount(String expectedName1){
+        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenCheckDiscountBTForSandwiches);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "0.88+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountAfterTaxAsOpenDiscount(String expectedName1){
+        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenCheckDiscountATForSandwiches);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "0.90+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
+    public void verifyCCSidePaymentWithTipsAndOpenItemDiscountAfterTaxAsPercentage(String expectedName1){
+        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
+        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
+        String expectedName = "Side CC(#1)";
+
+        Assert.assertEquals(actualName,expectedName);
+        WebElement element1 =  driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]"));
+
+//       WebElement element1 = mergeAndFindMobileElement(ccSidePaymentDetailAmountWithOpenItemDiscountATPercentageForSandwiches);
+        String actualName1=elementGetText(element1,"verify Amount");
+//        String expectedName1 = "2.29+10.00";
+
+        Assert.assertEquals(actualName1,expectedName1);
+    }
+
     public void verifyCCSidePaymentWithTipsAndOpenItemDiscountAfterTaxAsPercentage(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2284,7 +2637,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountAfterTaxAsOpenDiscount(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2310,7 +2663,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountBeforeTaxAsOpenDiscount(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2323,7 +2676,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountAmountBeforeTaxAsOpenDiscount(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2362,7 +2715,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountBeforeTaxAsOpenDiscountWithAmountAndDecimalValue(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2388,7 +2741,7 @@ public class TGPaymentPage extends BasePage {
     public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountAfterTaxAsOpenDiscountWithAmountAndNonDecimalValue(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2401,7 +2754,7 @@ public class TGPaymentPage extends BasePage {
     public void userVerifyCCSidePaymentWithTipsAndOpenCheckDiscountBeforeTaxAsOpenDiscountWithAmountAndNonDecimalValue(){
         WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailBarTab);
         String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-        String expectedName = "1. Side CC(#1)";
+        String expectedName = "Side CC(#1)";
 
         Assert.assertEquals(actualName,expectedName);
 
@@ -2427,7 +2780,7 @@ public class TGPaymentPage extends BasePage {
 //    public void verifyCCSidePaymentWithTipsAndOpenCheckDiscountAfterTaxAsOpenDiscountWithAmountAndNonDecimalValue(){
 //        WebElement element = mergeAndFindMobileElement(CCSidePaymentDetailForBarTab);
 //        String actualName=elementGetText(element,"verify CCSidePaymentDetailForBarTab");
-//        String expectedName = "1. Side CC(#1)";
+//        String expectedName = "Side CC(#1)";
 //
 //        Assert.assertEquals(actualName,expectedName);
 //

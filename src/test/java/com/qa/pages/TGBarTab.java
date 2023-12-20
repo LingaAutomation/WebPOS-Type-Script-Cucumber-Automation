@@ -67,7 +67,7 @@ public class TGBarTab extends BasePage {
     //    String deleteDiscountForMergeYesButton = "//XCUIElementTypeButton[@name=\"Yes\"]";
     String mergeCheckConfirmButton = "Confirm";
     //    String mergeCheckConfirmButton = "//XCUIElementTypeStaticText[@name=\"Confirm\"]";
-    String cancelCustomerButton = "Cancel";
+    String cancelCustomerButton = "//button[contains(.,' Cancel ')]";
     //    String cancelCustomerButton = "//XCUIElementTypeStaticText[@name=\"Cancel\"]";
     String lastBarTabOrderWithWalkin = "//XCUIElementTypeStaticText[@name=\"Walkin\"][1]";
     String mergeSuccessDoneButton = "Done";

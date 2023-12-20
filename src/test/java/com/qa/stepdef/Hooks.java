@@ -37,12 +37,10 @@ public class Hooks {
 
         if(driver == null) {
             i=0;
-
             CapabilitiesManager setdf = new CapabilitiesManager();
             setdf.setup();
             ScenarioName = scenario.getName();
             utils.log().info("Start Scenario Name : " + ScenarioName);
-
         }
         i++;
 

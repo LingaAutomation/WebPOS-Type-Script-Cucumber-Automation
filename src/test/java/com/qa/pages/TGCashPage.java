@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 
@@ -35,7 +36,7 @@ public class TGCashPage extends BasePage{
     }
     public void clickExactButtonOnCashTab(){
 
-        WebElement element=mergeAndFindMobileElement(exactButton);
+        WebElement element=driver.findElement(By.xpath(exactButton));
         elementClick(element,"Exact Button Clicked");
     }
     public void clickEnterButtonOnCashButton(){

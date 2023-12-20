@@ -82,6 +82,13 @@ public class TGCheckOptionsStepDef {
     public void userVerifyFixedGratuityAs(String value){
         new TGCheckOptionPage().verifyVaryingGratuityAs(value);
     }
+
+    @Then("^User verify exclusive tax value as \"([^\"]*)\" for Hot Wings$")
+    public void userVerifyExclusiveTaxValueAsForHotWings(String value) {
+        new TGMenuItemPage().verifyExclusiveTaxForHorWings(value);
+    }
+
+
     @And("User enter percentage of varying gratuity")
     public void userEnterPercentageOfVaryingGratuity() {
         new TGCheckOptionPage().enterPercentageOfVarying();

@@ -48,6 +48,7 @@ public class Discount extends BasePage{
             elementClick(e,discount +" Selected");
         }else{
             utils.log().info("Not discplayed - "+discount);
+            int w = 1/ 0;
         }
     }
 

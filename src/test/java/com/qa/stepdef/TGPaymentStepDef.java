@@ -475,6 +475,63 @@ TestUtils utils = new TestUtils();
         new TGPaymentPage().verifySideCCPaymentWithTipsAndOpenItemBeforeTaxAmountSafetyLimitAsDecimal1();
     }
 
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and check based discount after tax as percentage$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndCheckBasedDiscountAfterTaxAsPercentage(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsPercentage(value);
+    }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and check based discount before tax as percentage$")
+    public void userVerifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsPercentage(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsPercentage(value);
+    }
+
+    @Then("^User verify item based discount after tax value as \"([^\"]*)\" with percentage with CC Side payment in payment screen and with tips$")
+    public void userVerifyItemBasedDiscountAfterTaxValueAsWithPercentageWithCCSidePaymentInPaymentScreenAndWithTips(String value) {
+        new TGPaymentPage().verifyItemBasedDiscountAfterTaxWithPercentageWithCCSidePaymentInPaymentScreenAndWithTips(value);
+    }
+
+    @Then("^User verify item based discount before tax value as \"([^\"]*)\" with percentage with CC Side payment in payment screen and with tips for Margarita$")
+    public void userVerifyItemBasedDiscountBeforeTaxValueAsWithPercentageWithCCSidePaymentInPaymentScreenAndWithTipsForMargarita(String value) {
+        new TGPaymentPage().verifyItemBasedDiscountBeforeTaxWithPercentageWithCCSidePaymentInPaymentScreenAndWithTipsForMargarita(value);
+    }
+
+    @Then("^User verify item based discount after tax value as \"([^\"]*)\" with amount with CC Side payment in payment screen and with tips for Chicken Schnitzel$")
+    public void userVerifyItemBasedDiscountAfterTaxValueAsWithAmountWithCCSidePaymentInPaymentScreenAndWithTipsForChickenSchnitzel(String value) {
+        new TGPaymentPage().userVerifyCCSidePaymentWithTipAmountAndItemBasedDiscountAfterTaxAsAmountForChickenSchnitzel(value);
+    }
+
+    @Then("^User verify CC Side payment with tips value as \"([^\"]*)\" and item based discount After tax as set price for Chicken Schnitzel$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndItemBasedDiscountAfterTaxAsSetPriceForChickenSchnitzel(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceForChickenSchnitzel(value);
+    }
+
+    @And("^User verify item based discount before tax as set price value as \"([^\"]*)\" for chicken schnitzel$")
+    public void userVerifyItemBasedDiscountBeforeTaxAsSetPriceValueAsForChickenSchnitzel(String value) {
+        new TGMenuItemPage().verifyItemBasedDiscountBeforeTaxAsSetPriceForChickenSchnitzel(value);
+    }
+
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and check based discount after tax as amount$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndCheckBasedDiscountAfterTaxAsAmount(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsAmount(value);
+    }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and check based discount before tax as amount$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndCheckBasedDiscountBeforeTaxAsAmount(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsAmount(value);
+    }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and check based discount after tax as set price$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndCheckBasedDiscountAfterTaxAsSetPrice(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndCheckBasedDiscountAfterTaxAsSetPrice(value);
+    }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and check based discount before tax as set price$")
+    public void userVerifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsSetPrice(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsSetPrice(value);
+    }
+
+
     //    @And("User verify CC Side payment with tips and check based discount before tax as free item")
 //    public void userVerifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsFreeItem() {
 //        new TGPaymentPage().verifyCCSidePaymentWithTipsAndOpenItemBeforeTaxAmountSafetyLimitAsDecimal();
@@ -933,4 +990,52 @@ TestUtils utils = new TestUtils();
         Thread.sleep(Long.parseLong(time));
         utils.log().info(msg);
     }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and item based discount after tax as percentage with tax exempt for Sandwiches$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndItemBasedDiscountAfterTaxAsPercentageWithTaxExemptForSandwiches(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsPercentageWithTaxExemptForSandwiches(value);
     }
+
+    @When("^User verify CC Side payment with tips value as \"([^\"]*)\" and open item discount after tax as percentage$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndOpenItemDiscountAfterTaxAsPercentage(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndOpenItemDiscountAfterTaxAsPercentage(value);
+    }
+
+    @Then("^User verify CC Side payment with tips value as \"([^\"]*)\" and open check discount after tax as open discount$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndOpenCheckDiscountAfterTaxAsOpenDiscount(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndOpenCheckDiscountAfterTaxAsOpenDiscount(value);
+    }
+
+    @Then("^User verify CC Side payment with tips value as \"([^\"]*)\" and open check discount before tax as open discount$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndOpenCheckDiscountBeforeTaxAsOpenDiscount(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndOpenCheckDiscountBeforeTaxAsOpenDiscount(value);
+    }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and item based discount before tax as percentage with tax exempt for Sandwiches$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndItemBasedDiscountBeforeTaxAsPercentageWithTaxExemptForSandwiches(String text) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsPercentageWithTaxExemptForSandwiches(text);
+    }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and item based discount after tax as amount with tax exempt for Sandwiches$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndItemBasedDiscountAfterTaxAsAmountWithTaxExemptForSandwiches(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsAmountWithTaxExemptForSandwiches(value);
+    }
+
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and item based discount before tax as amount with tax exempt for Sandwiches$")
+    public void userVerifyCCSidePaymentWithTipsValueASAndItemBasedDiscountBeforeTaxAsAmountWithTaxExemptForSandwiches(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsAmountWithTaxExemptForSandwiches(value);
+    }
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and item based discount after tax as set price with tax exempt for Sandwiches$")
+    public void userVerifyCCSidePaymentWithTipsValueASAndItemBasedDiscountAfterTaxAsSetPriceWithTaxExemptForSandwiches(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndItemBasedDiscountAfterTaxAsSetPriceWithTaxExemptForSandwiches(value);
+    }
+
+
+    @And("^User verify CC Side payment with tips value as \"([^\"]*)\" and item based discount before tax as set price with tax exempt for Sandwiches$")
+    public void userVerifyCCSidePaymentWithTipsValueAsAndItemBasedDiscountBeforeTaxAsSetPriceWithTaxExemptForSandwiches(String value) {
+        new TGPaymentPage().verifyCCSidePaymentWithTipsAndItemBasedDiscountBeforeTaxAsSetPriceWithTaxExemptForSandwiches(value);
+    }
+
+}
