@@ -15,6 +15,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.sql.Time;
 import java.text.DecimalFormat;
+import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -416,7 +417,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void makeSaleForTipStore() throws Exception {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         for (int z = 1; z <= 40; z++) {
             utils.log().info("Sale Count - " + z);
 //            if (tableLayoutTab.isDisplayed()) {
@@ -1673,7 +1674,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void selectMenu() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
         int count = tablee.size();
         utils.log().info(String.valueOf(count));
@@ -1806,7 +1807,7 @@ public class Regression extends TableLayOutScreen {
     public String selectMenuForDineIn(String cate) throws Exception {
 
         //   utils.log().info("First iPad Menu - "+k);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
         elementClick(New, "Tapped New");
@@ -2330,7 +2331,7 @@ public class Regression extends TableLayOutScreen {
     public String[] a = {};
 
     public void selectMenuBasicValidationForQsr(String category) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         elementClick(arrowDownForOtherMenuItems, "Arrow Down");
         WebElement cate = (WebElement) driver.findElement(By.xpath(category));
         elementClick(cate, "Tapped category");
@@ -2636,7 +2637,7 @@ public class Regression extends TableLayOutScreen {
 
 
     public void selectMenuForQSR() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         try {
             WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
@@ -2850,7 +2851,7 @@ public class Regression extends TableLayOutScreen {
     WebElement OpenCheckStats;
 
     public void openTheCheckByTableNum() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[8]"));
         String number = tableNum.getText();
 
@@ -3057,7 +3058,7 @@ public class Regression extends TableLayOutScreen {
     WebElement doneBtnn;
 
     public void doMerge() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         elementClick(mergeBtn, "Merge Button Selected");
 
@@ -3759,7 +3760,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void verifyMenuAfterMergeDone() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("orderMenu.size() " + orderMenu.size());
@@ -4035,7 +4036,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void verifyTheMenuPrizeAfterMergeDone() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
         int countOfListValues = listOfValues.size();
         utils.log().info("countOfListValues - " + countOfListValues);
@@ -4239,7 +4240,7 @@ public class Regression extends TableLayOutScreen {
 
 
     public void verifyTheMenuPrizeAfterMergeDoneForBarTabOnly() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
         int countOfListValues = listOfValues.size();
         utils.log().info("countOfListValues - " + countOfListValues);
@@ -5987,7 +5988,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void getTheListOfTheMenuFromTheOrderScreen() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("orderMenu.size() " + orderMenu.size());
         for (int i = 2; i <= orderMenu.size(); i++) {
@@ -6080,7 +6081,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void getTheListOfTheMenuFromTheOrderScreen1() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("orderMenu.size() - " + orderMenu.size());
         for (int i = 2; i <= orderMenu.size(); i++) {
@@ -6132,7 +6133,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public String selectTheMenuFromOrderScreen(String cate) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
         elementClick(New, "Tapped New");
@@ -6265,7 +6266,7 @@ public class Regression extends TableLayOutScreen {
 
 
     public String selectTheMenuFromOrderScreenSplitSeat(String cate) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
         elementClick(New, "Tapped New");
@@ -6397,7 +6398,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public String selectTheMenuFromOrderScreenSplitSeatForMerge(String cate) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
         elementClick(New, "Tapped New");
@@ -6529,7 +6530,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public String selectTheMenuFromOrderScreenSplitSeat1(String cate) {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
 
         WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
         elementClick(New, "Tapped New");
@@ -6661,20 +6662,20 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void selectTheCheckFromTableLayout() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         String tableNo = TestUtils.tableNumberof;
         //    verifyTableMerge(tableNo);
         verifyTableMergee2(tableNo);
     }
 
     public void clickTheCheckFromTheTableLayoutForMerged() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         String tableNo = TestUtils.tableNumberof;
         verifyTableMergee2(tableNo);
     }
 
     public void clickTheCheckFromTheTableLayoutForMerged1() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         String tableNo = TestUtils.tableNumberof1;
         verifyTableMergee3(tableNo);
     }
@@ -6683,43 +6684,44 @@ public class Regression extends TableLayOutScreen {
     WebElement splitCheckBtn;
 
     public void verifySplitCheckScren() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         Assert.assertEquals(splitCheckBtn.getText(), "Split Check");
         utils.log().info("Displayed Screen as - " + splitCheckBtn.getText());
     }
 
     public void verifyTableMergee2(String m) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         utils.log().info("m - " + m);
 //    String data = m.replaceAll("[A-Z ]", "");
 //    utils.log().info("Table num after regex - " + data);
 
-        WebElement tableSelect = (WebElement) driver.findElement(By.xpath(m));
+        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
         if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
 //            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.XPath);
 //            String number1 = seatt.getText();
             Thread.sleep(100);
             elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
             try {
-                WebElement checks = (WebElement) driver.findElement(By.xpath("Checks"));
+                WebElement checks = (WebElement) driver.findElement(By.xpath("//ion-title[.='Checks']"));
 
                 if (checks.isDisplayed()) {
-                    Thread.sleep(200);
+                    Thread.sleep(500);
                     String globalCheckNumber = TestUtils.globalCheckNumber;
                     //utils.log().info("Tapped Merging checks - " + globalCheckNumber);
-                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath(globalCheckNumber));
+                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath("(//div[@class='ng-star-inserted']//p)[5]"));
+                    Assert.assertEquals(checkNumberrr.getText(),globalCheckNumber);
                     if (checkNumberrr.isDisplayed()) {
                         elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
                     } else {
 
                     }
-                    WebElement x = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"X\"]"));
+                    WebElement x = (WebElement) driver.findElements(By.xpath("//linga-icon[@symbol='closeButton']"));
                     if (x.isDisplayed()) {
                         elementClick(x, "Tapped X Button");
                     } else {
                     }
                 } else {
-                    WebElement table1 = (WebElement) driver.findElement(By.xpath(m));
+                    WebElement table1 = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
                     elementClick(table1, "table SELECTED - " + m);
                 }
             } catch (Exception w) {
@@ -6729,36 +6731,38 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void verifyTableMergee3(String m) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         utils.log().info("m - " + m);
 //    String data = m.replaceAll("[A-Z ]", "");
 //    utils.log().info("Table num after regex - " + data);
 
-        WebElement tableSelect = (WebElement) driver.findElement(By.xpath(m));
+        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
         if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
 //            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.XPath);
 //            String number1 = seatt.getText();
             Thread.sleep(100);
             elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
             try {
-                WebElement checks = (WebElement) driver.findElement(By.xpath("Checks"));
+                WebElement checks = (WebElement) driver.findElement(By.xpath("//ion-title[.='Checks']"));
 
                 if (checks.isDisplayed()) {
-                    Thread.sleep(200);
+                    Thread.sleep(500);
                     String globalCheckNumber = TestUtils.globalCheckNumber1;
                     //utils.log().info("Tapped Merging checks - " + globalCheckNumber);
-                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath(globalCheckNumber));
+                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath("(//div[@class='ng-star-inserted']//p)[5]"));
+                    Assert.assertEquals(checkNumberrr.getText(),globalCheckNumber);
                     if (checkNumberrr.isDisplayed()) {
                         elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
                     } else {
+
                     }
-                    WebElement x = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"X\"]"));
+                    WebElement x = (WebElement) driver.findElements(By.xpath("//linga-icon[@symbol='closeButton']"));
                     if (x.isDisplayed()) {
                         elementClick(x, "Tapped X Button");
                     } else {
                     }
                 } else {
-                    WebElement table1 = (WebElement) driver.findElement(By.xpath(m));
+                    WebElement table1 = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
                     elementClick(table1, "table SELECTED - " + m);
                 }
             } catch (Exception w) {
@@ -6784,7 +6788,7 @@ public class Regression extends TableLayOutScreen {
 
 
     public void VerifyNewCheckAddedOnTheSplitCheckScreen() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         WebElement checkSeat = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
         String checkSeatTxt = checkSeat.getText();
         Assert.assertEquals(checkSeatTxt, "Check");
@@ -6855,7 +6859,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void selectMenuCloudPOSSs(String category) {
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         for (int o = 1; o <= 180; o++) {
             utils.log().info("Sync - " + o);
 
@@ -7270,7 +7274,7 @@ public class Regression extends TableLayOutScreen {
     }
 
     public void shouldSeeTipScreen(){
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         WebElement checkTotal = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeStaticText[@name=\"Check Total\"])[1]"));
         org.testng.Assert.assertEquals(checkTotal.getText(),"Check Total");
         utils.log().info("Tip Screen is displayed");

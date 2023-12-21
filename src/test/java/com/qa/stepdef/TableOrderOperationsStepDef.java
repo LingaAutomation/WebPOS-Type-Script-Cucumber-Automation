@@ -221,10 +221,12 @@ public class TableOrderOperationsStepDef {
     @Then("^I should see \"([^\"]*)\" with modifiers \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" with modifier \"([^\"]*)\"$")
     public void iShouldSeeWithModifiersAndAndWithModifier(String menuItem1, String modifier1, String modifier2, String menuItem2, String modifier3) {
         //new OrderManagementScreen().verifyOrderedItemExists(menuItem1);
-        new OrderManagementScreen().verifyOrderedItemExists(menuItem2);
+        new OrderManagementScreen().verifyOrderedMenuItemExists(menuItem1);
+        new OrderManagementScreen().verifyOrderedMenuItemExists(menuItem2);
         new OrderManagementScreen().verifyOrderedItemExists(modifier1);
         new OrderManagementScreen().verifyOrderedItemExists(modifier2);
         new OrderManagementScreen().verifyOrderedItemExists(modifier3);
+
     }
 
     /****** Merge Operations ******/
@@ -278,7 +280,7 @@ public class TableOrderOperationsStepDef {
         Assert.assertEquals( new TableLayOutScreen().getCheckAlreadyMergedString(), "Check already added");
     }
     @Then ("^I should see select at least 2 checks$")
-    public void iShouldSeeSelectAtLeast2Checks(){
+    public void iShouldSeeSelectAtLeast2Checks() throws InterruptedException {
         Assert.assertEquals(new TableLayOutScreen().Atleast2Chceks(),"Select at least 2 checks");
     }
     @Then ("^I click cancel button on the pop-up for disappear merge box$")
@@ -369,6 +371,16 @@ public class TableOrderOperationsStepDef {
     @And("^I click Add Customer Button$")
     public void iClickAddCustomerButton() {
         new OrderManagementScreen().openCustomerSelectionMenu();
+    }
+
+    @Then ("^I should see the add customer window$")
+    public void iShouldSeeTheAddCustomerWindow() throws InterruptedException {
+        new OrderManagementScreen().shouldSeeTheAddCustomerWindow();
+    }
+
+    @And ("^I click x button on the Add customer window$")
+    public void iClickXButtonOnTheAddCustomerWindow(){
+        new OrderManagementScreen().clickXBtn();
     }
 
     @And ("^I click Add new button$")
@@ -875,7 +887,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see that OrderScreen with modifiers as \"([^\"]*)\"$")
-    public void iShouldSeeThatOrderScreenWithModifiers(String modify){
+    public void iShouldSeeThatOrderScreenWithModifiers(String modify) throws InterruptedException {
         new OrderManagementScreen().verifyModifiersAddOrderScreen(modify);
     }
 
@@ -902,7 +914,7 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().selectTable(firstTableToMerge);
     }
     @Then ("^I should see the Split Screen$")
-    public void iShouldSeeTheSplitScreen(){
+    public void iShouldSeeTheSplitScreen() throws InterruptedException {
         new TableLayOutScreen().verifySplitScreen();
     }
 
@@ -1100,7 +1112,7 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().verifySubtotalShouldNotChange();
     }
     @Then ("^I Should see Split Evenly is Disable")
-    public void iShouldSeeSplitEvenlyIsDisable(){
+    public void iShouldSeeSplitEvenlyIsDisable() throws InterruptedException {
         new TableLayOutScreen().splitEvently();
     }
 
@@ -1138,7 +1150,7 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().verifyMenuItemPrizeSplit();
     }
     @Then ("^I should see Seperate Item is Disable$")
-    public void iShouldSeeSeperateItemIsDisable(){
+    public void iShouldSeeSeperateItemIsDisable() throws InterruptedException {
         new TableLayOutScreen().seperateItemIsVisble();
     }
 
@@ -1148,22 +1160,22 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click the Group Seats button in the Split Seat$")
-    public void iClickTheGroupSeatsButtonInTheSplitSeat(){
+    public void iClickTheGroupSeatsButtonInTheSplitSeat() throws InterruptedException {
         new TableLayOutScreen().pressGroupSeat();
     }
 
     @Then ("^I should see the Select the Seats to Merge Popup message$")
-    public void iShouldSeeTheSelectTheSeatsToMergePopupMessage(){
-        Assert.assertEquals(new TableLayOutScreen().getPopupMessage(),"Select the seats to Merge");
+    public void iShouldSeeTheSelectTheSeatsToMergePopupMessage() throws InterruptedException {
+        Assert.assertEquals(new TableLayOutScreen().getPopupMessage(),"Select the seats to merge");
     }
 
     @And ("^I click Seat 2 for add menu item$")
-    public void iClickSeat2ForAddMenuItem(){
+    public void iClickSeat2ForAddMenuItem() throws InterruptedException {
         new TableLayOutScreen().pressSeat2();
     }
 
     @And ("^I click Seat 3 for add menu item$")
-    public void iClickSeat3ForAddMenuItem(){ new TableLayOutScreen().pressSeat3(); }
+    public void iClickSeat3ForAddMenuItem() throws InterruptedException { new TableLayOutScreen().pressSeat3(); }
 
     @And ("^I click Seat 4 for add menu item$")
     public void iClickSeat4ForAddMenuItem(){ new TableLayOutScreen().pressSeat4(); }
@@ -1230,7 +1242,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I click Start Over Button to come back original stage$")
-    public void iClickStartOverButtonToComeBackOriginalStage(){
+    public void iClickStartOverButtonToComeBackOriginalStage() throws InterruptedException {
         new TableLayOutScreen().clickStartOver();
     }
 
@@ -1241,7 +1253,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see select the seat to print popup$")
     public void iShouldSeeSelectTheSeatToPrintPopup(){
-        Assert.assertEquals(new TableLayOutScreen().getSelectTheSeatToPrint(),"Select the Seat to Print");
+        Assert.assertEquals(new TableLayOutScreen().getSelectTheSeatToPrint(),"Select the seat to print");
     }
 
     @Then ("^I should see Receipt Printer popup$")
@@ -1295,7 +1307,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see Select any one seat/check for payment in popup$")
     public void iShouldSeeSelectAnyOneSeatCheckForPaymentInPopup(){
-        Assert.assertEquals( new TableLayOutScreen().getSelectAnyOneSeatCheckForPaymentMsg(),"select any one seat/check for payment");
+        Assert.assertEquals( new TableLayOutScreen().getSelectAnyOneSeatCheckForPaymentMsg(),"Select the seat to Pay");
     }
     @Then ("^I should see selected seat item should club into seat two$")
     public void iShouldSeeSelectedSeatItemShouldClubIntoSeatTwo(){
@@ -1471,7 +1483,7 @@ public class TableOrderOperationsStepDef {
         new PaymentWindow().enterHugePayment();
     }
     @And ("^I click table number on the Order Screen as \"([^\"]*)\"$")
-    public void iClickTableNumberOnTheScreen(String table_no){
+    public void iClickTableNumberOnTheScreen(String table_no) throws InterruptedException {
         new OrderManagementScreen().pressTableNumber(table_no);
     }
 
@@ -1480,8 +1492,8 @@ public class TableOrderOperationsStepDef {
         Assert.assertEquals(new OrderManagementScreen().verifyCannotAddModifierTxt(),"Cannot add modifiers, item already send to kitchen");
     }
     @Then ("^I should see You need to order before you paying popup$")
-    public void iShouldSeeYouNeedToOrderBeforeYouPayingPopup(){
-        Assert.assertEquals(new OrderManagementScreen().getYouNeedToOrderBeforeYouPayMsg(),"Order Item Before Paying");
+    public void iShouldSeeYouNeedToOrderBeforeYouPayingPopup() throws InterruptedException {
+        Assert.assertEquals(new OrderManagementScreen().getYouNeedToOrderBeforeYouPayMsg(),"You need to order before paying");
     }
     @And ("^I click payment in the payment window$")
     public void iClickPaymentInThePaymentWindow(){
@@ -1584,7 +1596,7 @@ public class TableOrderOperationsStepDef {
         Assert.assertEquals(new OrderManagementScreen().getModifierScreen(),"Modifiers");
     }
     @And ("^I click modifier as \"([^\"]*)\" on modifier screen$")
-    public void iClickModifier(String modifier_1){
+    public void iClickModifier(String modifier_1) throws InterruptedException {
         new OrderManagementScreen().selectModifierInModifierScreen(modifier_1);
     }
 
@@ -1598,7 +1610,7 @@ public class TableOrderOperationsStepDef {
         new OrderTypeWindow().verifyModifierInOrderList();
     }
     @And ("^I click modifier as \"([^\"]*)\" Maximum time$")
-    public void iClickModifierAsMaximumTime(String maxModify){
+    public void iClickModifierAsMaximumTime(String maxModify) throws InterruptedException {
         new OrderManagementScreen().selectModifierForMoreTime(maxModify);
     }
     @Then ("^I should see modifiers added in the Selected modifiers as \"([^\"]*)\"$")
@@ -1619,7 +1631,7 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().pressNewCheckButton();
     }
     @Then ("^I should see as \"([^\"]*)\" on the order screen$")
-    public void iShouldSeeAsOnTheOrderScreen(String seatNo){
+    public void iShouldSeeAsOnTheOrderScreen(String seatNo) throws InterruptedException {
         new OrderManagementScreen().seatWithOrderScreen(seatNo);
     }
     @Then ("^I should see mulitiple check change on Table layout screen$")

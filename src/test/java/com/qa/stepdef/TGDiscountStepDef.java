@@ -84,7 +84,10 @@ public class TGDiscountStepDef {
     public void userSelectItemBasedDiscountOptionWithAmount() {
         new TGDiscountPage().clickItemBasedWithAmountDiscount();
     }
-
+    @When("^User take an order as \"([^\"]*)\"$")
+    public void userTakeAnOrderAs(String menu) {
+        new TGCheckStatusPage().takeOrderAs(menu);
+    }
     @Then("User select item based discount option with percentage")
     public void userSelectItemBasedDiscountOptionWithPercentage() {
         new TGDiscountPage().clickDiscountWithPercentage();

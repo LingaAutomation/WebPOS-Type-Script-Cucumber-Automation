@@ -491,6 +491,18 @@ public class TGCheckStatusPage extends BasePage {
 //            phoneOrders.get(phoneOrders.size() - 1).click();
 //        }
     }
+
+    public void takeOrderAs(String Menu){
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        WebElement element = mergeAndFindMobileElement(foodTab);
+        elementClick(element,"Select MenuItem And Order");
+
+        WebElement element1 =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+Menu+"')])[1]"));
+        elementClick(element1,"Select MenuItem And Order ");
+
+        WebElement element2 = mergeAndFindMobileElement(orderButton);
+        elementClick(element2,"Click Order");
+    }
     public void selectLastCheckWithPaidCCSideOnClosedTab(){
         List<WebElement> phoneOrders = selectAndFindElements("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable");
         phoneOrders = selectAndFindElements("(//XCUIElementTypeStaticText[@name=\"T1\"])[last()]");

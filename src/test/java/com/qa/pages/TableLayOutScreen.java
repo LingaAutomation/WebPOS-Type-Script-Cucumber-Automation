@@ -17,122 +17,122 @@ import java.util.concurrent.TimeUnit;
 public class TableLayOutScreen extends OrderManagementScreen {
 
 
-    @FindBy(name = "Continue")
+    @FindBy(xpath = "//span[.=' Continue ']")
     private WebElement continueBtn;
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"00:00\"]")
     private WebElement tableSeated;
 
-    @FindBy(name = "2")
+    @FindBy(xpath = "2")
     private WebElement checkSeatNo;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]")
+    @FindBy(xpath = "//span[contains(.,'Merge')]")
     private WebElement mergeBtn;
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "//button[contains(.,' Done ')]")
     private WebElement mergeDoneBtn;
 
-    @FindBy(name = "Transfer")
+    @FindBy(xpath = "//span[contains(.,'Transfer')]")
     private WebElement transferBtn;
 
-    @FindBy(name = "T1")
+    @FindBy(xpath = "T1")
     private WebElement tableToTransfer;
 
-    @FindBy(name = "Pay Check")
+    @FindBy(xpath = "//span[contains(.,'Pay Check')]")
     private WebElement payCheckBtn;
 
-    //@FindBy(name = "Open check")
-    @FindBy(name = "openCheck")
+    //@FindBy(xpath = "Open check")
+    @FindBy(xpath = "openCheck")
     private WebElement openCheckBtn;
 
-    @FindBy(name = "Re-Print Check")
+    @FindBy(xpath = "Re-Print Check")
     private WebElement reprintCheck;
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Engin T\"])[2]")
     private WebElement serverNameTableCheck;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[6]")
+    @FindBy(xpath = "//div[.='Print']")
     private WebElement printBtn;
 
-    @FindBy(name = "Auto r")
+    @FindBy(xpath = "Auto r")
     private WebElement customerName;
 
-    @FindBy(name = "Transferred Successfully")
+    @FindBy(xpath = "Transferred Successfully")
     private WebElement transferSuccessfulMsg;
 
-    @FindBy(name = "Transferred check success.")
+    @FindBy(xpath = "Transferred check success.")
     private WebElement itemTransferSuccessfulMsg;
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "Done")
     private WebElement itemTransferDone;
 
-    @FindBy(name = "Check already added")
+    @FindBy(xpath = "//p[contains(.,'Check already added')]")
     private WebElement checkAlreadyAddedTxt;
 
-    @FindBy(name = "Select at least 2 checks")
+    @FindBy(xpath = "//p[contains(.,'Select at least 2 checks')]")
     private WebElement SelectAtleast2CheckTxt;
 
-    @FindBy(name = "Cancel")
+    @FindBy(xpath = "//button[contains(.,' Cancel ')]")
     private WebElement CancelBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//button[contains(.,'Split')]")
     private WebElement SplitBtn;
 
-    @FindBy(name = "Split By Seat")
+    @FindBy(xpath = "//button[contains(.,' Split By Seat ')]")
     private WebElement splitSeat;
 
-    @FindBy(name = "Split Seat")
+    @FindBy(xpath = "//p[.=' Split Seat ']")
     private WebElement splitSeatPage;
 
-    @FindBy(name = "Select valid check")
+    @FindBy(xpath = "//p[contains(.,'Select valid check')]")
     private WebElement selectValid;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"French Friese \"])[2]")
+    @FindBy(xpath = "(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]")
     private WebElement item;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[1]")
+    @FindBy(xpath = "//div[.='Separate item']")
     private WebElement seperateIcon;
 
-    @FindBy(name = "Back")
+    @FindBy(xpath = "(//button[.='Back'])")
     private WebElement BackBtn;
 
-    @FindBy(name = "Changes made in split, save and close")
+    @FindBy(xpath = "(//p[.='Changes made in split, save and close'])")
     private WebElement SplitPopup;
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "(//button[.=' Done '])")
     private WebElement DonePopup;
 
-    @FindBy(name = "Save & Close")
+    @FindBy(xpath = "(//button[.=' Save & Close '])")
     WebElement SaveClose;
 
     @FindBy(xpath = "//p[contains(.,'Seats')]")
     private WebElement Order1;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
+    @FindBy(xpath = "//div[.='Split Evenly']")
     private WebElement splitEvent;
 
-    @FindBy(name = "Select the Order to Proceed")
+    @FindBy(xpath = "//p[.='Select the order to proceed']")
     private WebElement selectOrder;
 
-    @FindBy(name = "Add")
+    @FindBy(xpath = "//button[@class='add-seat']")
     public WebElement AddBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
+    @FindBy(xpath = "//div[.='Split Evenly']")
     private WebElement SplitEvenly;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//ion-app[@id='seat1']")
     private WebElement seat1Table;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable")
+    @FindBy(xpath = "//ion-app[@id='seat2']")
     private WebElement seat2Table;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeTable")
+    @FindBy(xpath = "//ion-app[@id='seat3']")
     private WebElement seat3Table;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//ion-app[@id='seat2']")
     private WebElement seat2Group;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//ion-app[@id='seat1']")
     private WebElement seat1Group;
 
     String seat1OrderScreen = "//button[@id='1']";
@@ -147,72 +147,72 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     String Done1 = "//button[contains(.,'Done')]";
 
-    @FindBy(name = "Delete")
+    @FindBy(xpath = "Delete")
     private WebElement deleteBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[3]")
+    @FindBy(xpath = "//div[.='Group Seats']")
     private WebElement GroupSeat;
 
-    @FindBy(name = "Select the seats to Merge")
+    @FindBy(xpath = "//p[.='Select the seats to merge']")
     private WebElement popupSelectTheSeatsToMerge;
 
-    @FindBy(name = "Start Over")
+    @FindBy(xpath = "(//button[.=' Start Over '])")
     private WebElement startOver;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "(//button[.='Print'])[1]")
     private WebElement printSplitSeat;
 
-    @FindBy(name = "Select the Seat to Print")
+    @FindBy(xpath = "//p[.='Select the seat to print']")
     private WebElement PopupSelectTheSeatToPrint;
 
-    @FindBy(name = "Receipt Printer")
+    @FindBy(xpath = "Receipt Printer")
     private WebElement receiptPrinter;
 
-    @FindBy(name = "select any one seat/check for print")
+    @FindBy(xpath = "select any one seat/check for print")
     private WebElement selectAnyOneSeatForPrint;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[5]")
+    @FindBy(xpath = "(//div[.='Print All'])")
     private WebElement PrintAllSplitSeat;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[6]")
+    @FindBy(xpath = "//div[.='Pay']")
     private WebElement paySplitSeat;
 
-    @FindBy(name = "Select the Seat to Pay")
+    @FindBy(xpath = "Select the Seat to Pay")
     private WebElement selectTheSeatToPay;
 
-    @FindBy(name = "select any one seat/check for payment")
+    @FindBy(xpath = "//mat-dialog-content[@id='alert-done-popup']")
     private WebElement selectAnyoneSeatCheckForPayment;
 
-    @FindBy(name = "Split is not allowed, no order(s) in this check")
+    @FindBy(xpath = "Split is not allowed, no order(s) in this check")
     private WebElement splitIsNotAllowedNoOrderInThisCheck;
 
-    @FindBy(name = "Split is not allowed, payment(s) has been made in this check")
+    @FindBy(xpath = "Split is not allowed, payment(s) has been made in this check")
     private WebElement SplitIsNotAllowedPaymentInThisCheck;
 
-    @FindBy(name = "Split")
+    @FindBy(xpath = "//button[@id='os_split']")
     private WebElement splitBtnOrderScreen;
 
-    @FindBy(name = "SPLIT BY SEAT")
+    @FindBy(xpath = "//button[@id='os_splitSeat']")
     private WebElement SplitBySeatOrderScreen;
 
-    @FindBy(name = "SPLIT CHECK")
+    @FindBy(xpath = "//button[@id='os_splitCheck']")
     private WebElement SplitCheckOrderScreen;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
-    // @FindBy(name = "Cash")
+    @FindBy(xpath = "//span[contains(.,' Cash ')]")
+    // @FindBy(xpath = "Cash")
     private WebElement CashbtnPaymentWindow;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[7]")
+    @FindBy(xpath = "//span[contains(.,'Operation')]")
     private WebElement OperationBtnTableLayout;
 
-    @FindBy(name = "Operation")
+    @FindBy(xpath = "//span[contains(.,'Operation')]")
     private WebElement operationScreen;
 
-    @FindBy(name = "No Thanks")
+    @FindBy(xpath = "No Thanks")
     private WebElement NoThanksBtn;
 
-    //@FindBy(name = "Print Or Send Receipt")
-    @FindBy(name = "Print Or Send Receipt")
+    //@FindBy(xpath = "Print Or Send Receipt")
+    @FindBy(xpath = "Print Or Send Receipt")
     private WebElement printOrSendReceipt;
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Egg White\"])[2]")
@@ -224,13 +224,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]")
     private WebElement mergeSlider;
 
-    @FindBy(name = "Empty List")
+    @FindBy(xpath = "Empty List")
     private WebElement emptyMergeList;
 
-    @FindBy(xpath = "//linga-icon[@symbol='newTab']")
+    @FindBy(xpath = "//span[.=' New Check ']")
     private WebElement newCheck;
 
-    @FindBy(name = "Menu items(s) has to be sent to the kitchen")
+    @FindBy(xpath = "Menu items(s) has to be sent to the kitchen")
     private WebElement menuItemHasToBeSentToKitchen;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
@@ -239,58 +239,58 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther")
     private WebElement check2OpenForCompleteSale;
 
-    @FindBy(name = "item(s) need to send to kitchen")
+    @FindBy(xpath = "item(s) need to send to kitchen")
     private WebElement itemNeedToSendToKitchen;
 
-    @FindBy(name = "Cancel")
+    @FindBy(xpath = "Cancel")
     private WebElement cancelBtn;
 
-    @FindBy(name = "Right")
+    @FindBy(xpath = "Right")
     private WebElement rightBtn;
 
-    @FindBy(name = "Floor 2")
+    @FindBy(xpath = "Floor 2")
     private WebElement floor2Btn;
 
-    @FindBy(name = "Left")
+    @FindBy(xpath = "Left")
     private WebElement leftBtn;
 
-    @FindBy(name = "Floor 1")
+    @FindBy(xpath = "Floor 1")
     private WebElement floor1Btn;
 
-    @FindBy(name = "All Check")
+    @FindBy(xpath = "All Check")
     private WebElement allCheckBtn;
 
-    @FindBy(name = "Seated")
+    @FindBy(xpath = "Seated")
     private WebElement seatedBtn;
 
-    @FindBy(name = "Check Down")
+    @FindBy(xpath = "Check Down")
     private WebElement checkDownBtn;
 
-    @FindBy(name = "On Hold")
+    @FindBy(xpath = "On Hold")
     private WebElement onHoldBtn;
 
-    @FindBy(name = "Expired")
+    @FindBy(xpath = "Expired")
     private WebElement expiredBtn;
 
-    @FindBy(name = "Multiple")
+    @FindBy(xpath = "Multiple")
     private WebElement multipleBtn;
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"0\"])[1]")
     private WebElement seatedStatus;
 
-    @FindBy(name = "Transfer to Server")
+    @FindBy(xpath = "Transfer to Server")
     private WebElement transferToServerTxt;
 
-    @FindBy(name = "Paid")
+    @FindBy(xpath = "Paid")
     private WebElement paidTxt;
 
-    @FindBy(name = "Order cannot be moved, Payment(s) has been made in seat - 1")
+    @FindBy(xpath = "Order cannot be moved, Payment(s) has been made in seat - 1")
     private WebElement orderCannotMovedTxt;
 
-    @FindBy(name = "Order cannot be moved, Payment(s) has been made in seat - 2")
+    @FindBy(xpath = "Order cannot be moved, Payment(s) has been made in seat - 2")
     private WebElement orderCannotMovedTxt1;
 
-    @FindBy(name = "Subtotal")
+    @FindBy(xpath = "Subtotal")
     private WebElement subtotalTxt;
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 1.900,00\"])[2]")
@@ -308,10 +308,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"TL 190,00\"][4])")
     private WebElement subTotalPrice5;
 
-    @FindBy(name = "1. Cash(#1)")
+    @FindBy(xpath = "1. Cash(#1)")
     private WebElement cashTxt;
 
-    @FindBy(name = "Empty seat cannot paid")
+    @FindBy(xpath = "Empty seat cannot paid")
     private WebElement emptySeatCannotPaidTxt;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[11]")
@@ -328,25 +328,26 @@ public class TableLayOutScreen extends OrderManagementScreen {
     /* Check if locators for common tables names in Floor1 and Floor2 are the same...Don't delete this comment*/
 
     public void selectTable(String tableNo) {
-        WebElement e = mergeAndFindElement(tableNo, "", TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("(//p[contains(.,'"+tableNo+"')])[1]"));
         elementClick(e, tableNo + " selected");
+        TestUtils.tableNumberof = e.getText();
     }
 
     public void selectSeatNo(String numberOfSeats) {
-        WebElement e = mergeAndFindElement(numberOfSeats, "", TestUtils.Accessibility);
+        WebElement e = driver.findElement(By.xpath("//span[.='"+numberOfSeats+"']"));
         elementClick(e, numberOfSeats + " selected");
     }
 
     public void selectSplit(String numberOfSplit) throws InterruptedException {
-        // Thread.sleep(500);
-        WebElement e = mergeAndFindElement(numberOfSplit, "", TestUtils.Accessibility);
+         Thread.sleep(1000);
+        WebElement e = driver.findElement(By.xpath("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'"+numberOfSplit+"')]"));
         elementClick(e, numberOfSplit + " selected");
     }
 
     int j = 0;
 
     public void verifyMenuHasSeperated(String count) {
-        List<WebElement> listOfMenus = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> listOfMenus =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         for (int i = 1; i <= listOfMenus.size(); i++) {
             WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
             String menuNameTxt = menuName.getText();
@@ -375,7 +376,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void checkTableSeated() {
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[7]
         try {
-            WebElement element = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[T11]/XCUIElementTypeStaticText[2]", "", TestUtils.Accessibility);
+            WebElement element = driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[T11]/XCUIElementTypeStaticText[2]"));
             String numbers = element.getText();
             if (element.isDisplayed()) {
                 utils.log().info("Table seated -  " + numbers);
@@ -388,7 +389,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
 
     public void checkTableSeatedDineIn() {
-        WebElement element = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"1\"][1]", "", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"1\"][1]"));
         if (element.isDisplayed()) {
             utils.log().info("there is 1 seats in T1");
         } else {
@@ -397,7 +398,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void checkTableSeatedByOne() {
-        WebElement element = mergeAndFindElement("1", "", TestUtils.Accessibility);
+        WebElement element = driver.findElement(By.xpath("1"));
         if (element.isDisplayed()) {
             utils.log().info("There is 1 seat in T2");
         } else {
@@ -440,7 +441,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyMerge() {
-        WebElement element = mergeAndFindElement("3", "", TestUtils.Accessibility);
+        WebElement element = driver.findElement(By.xpath("3"));
         if (element.isDisplayed()) {
             utils.log().info("there is 3 seat in T1");
         } else {
@@ -464,7 +465,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
 
-    public String Atleast2Chceks() {
+    public String Atleast2Chceks() throws InterruptedException {
+        Thread.sleep(1000);
         return elementGetText(SelectAtleast2CheckTxt, "Select at least 2 check text is - ");
     }
 
@@ -512,7 +514,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyServer() {
-        List<WebElement> customer = (List<WebElement>) driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"Engin A\"])[2]"));
+        List<WebElement> customer =  driver.findElements(By.xpath("(//XCUIElementTypeStaticText[@name=\"Engin A\"])[2]"));
         if (customer.isEmpty()) {
             utils.log().info("Transfer to server is completed");
 
@@ -520,14 +522,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
             utils.log().info("Transfer to server is not completed");
 
     }
-    @FindBy(name = "On merging the particular checks Discount will be removed. Do you want to continue?")
+    @FindBy(xpath = "On merging the particular checks Discount will be removed. Do you want to continue?")
     WebElement onMergingTheParticularChecksPopup;
     public void ShouldSeeOnMergingTheParticularCheckPopup(){
         Assert.assertEquals(onMergingTheParticularChecksPopup.getText(),"On merging the particular checks Discount will be removed. Do you want to continue?");
         utils.log().info("Displayed popup as - "+onMergingTheParticularChecksPopup.getText());
     }
 
-    @FindBy(name = "Merge Checks Confirmation")
+    @FindBy(xpath = "Merge Checks Confirmation")
     WebElement mergeCheckPopup;
     public void mergeCheckConfirmationPopup(){
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
@@ -549,7 +551,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(SplitBtn, "Tapped the Split Button");
     }
 
-    @FindBy(name = "Split Check")
+    @FindBy(xpath = "Split Check")
     WebElement SplitCheckBtn;
 
     public void pressSplitCheckBtn() {
@@ -560,7 +562,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(splitSeat, "Tapped Split Seat");
     }
 
-    public void verifySplitScreen() {
+    public void verifySplitScreen() throws InterruptedException {
+        Thread.sleep(4000);
         if (splitSeatPage.isDisplayed()) {
             utils.log().info("Split Seat Page is Visible");
         } else {
@@ -569,7 +572,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
 
-    @FindBy(name = "Seat 1")
+    @FindBy(xpath = "Seat 1")
     WebElement seat1Table1;
 
     public void verifySplitSeatIsAvailable() {
@@ -587,38 +590,38 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void selectItem1(String name) {
 //XCUIElementTypeStaticText[@name="Garlic Bread "]
-        WebElement Item = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + name + " \"])", "", TestUtils.XPath);
+        WebElement Item = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + name + " \"])"));
         elementClick(Item, "Select Item");
     }
 
     public void selectItem2() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[3]"));
         elementClick(item1, "Select Item");
     }
 
     public void selectItem3() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"cake \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"cake \"])[3]"));
         elementClick(item1, "Select Item");
     }
 
     public void selectItem6() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"cake \"])[2]", "", TestUtils.XPath);
+        WebElement item1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"cake \"])[2]"));
         elementClick(item1, "Select Item");
     }
 
     public void selectItem4() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli Pesto \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"Ravioli Pesto \"])[3]"));
         elementClick(item1, "Select Item");
     }
 
     public void selectItem5() {
 
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Cheesecake \"])[3]", "", TestUtils.XPath);
+        WebElement item1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"Cheesecake \"])[3]"));
         elementClick(item1, "Select Item");
     }
 
     public void selectRavioli() {
-        WebElement item1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[2]", "", TestUtils.XPath);
+        WebElement item1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"Ravioli \"])[2]"));
         elementClick(item1, "Select Item");
     }
 
@@ -651,7 +654,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         Assert.assertEquals(Order1.getText(), "Seats");
         //  if (Order1.isDisplayed()) {
         utils.log().info("I should see Order Screen");
-//            List<WebElement> Listmenu = (List<WebElement>) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell");
+//            List<WebElement> Listmenu =  driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell");
 //            int countOfMenu = Listmenu.size();
 //            for (int i = 2; i <= countOfMenu; i++) {
 //                WebElement menu = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
@@ -660,7 +663,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 //                String priceOfPrize = prize.getText();
 //                utils.log().info("Menus Are - " + menuName + " - " + priceOfPrize);
 //                try {                                                                                  //XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]
-//                    List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable/XCUIElementTypeCell");
+//                    List<WebElement> modifier =  driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable/XCUIElementTypeCell");
 //                    int sizeOfModifier = modifier.size();
 //                    for (int w = 1; w <= sizeOfModifier; w++) {
 //                        WebElement modi = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
@@ -673,7 +676,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 //
 //                }
 //            }
-//            List<WebElement> ListofTotals = (List<WebElement>) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText");
+//            List<WebElement> ListofTotals =  driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText");
 //            int totals = ListofTotals.size();
 //            for (int j = 1; j <= totals; j++) {
 //                WebElement menu1 = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[" + j + "]");
@@ -688,9 +691,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
 //        }
     }
 
-    public void splitEvently() {
+    public void splitEvently() throws InterruptedException {
+        Thread.sleep(1000);
         if (splitEvent.isEnabled()) {
             utils.log().info("Split Evently is Enabled");
+            int w = 1/0;
         } else {
             utils.log().info("Split Evently is Disabled");
         }
@@ -708,7 +713,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void pressSplitEvenly() {
         elementClick(SplitEvenly, "Tapped Split Evenly in the Split Seat");
     }
-    @FindBy(name = "Cannot split as payment(s) has been made in seats - 2")
+    @FindBy(xpath = "Cannot split as payment(s) has been made in seats - 2")
     WebElement cannotSplitAsPayment;
     public void verifyCannotSplitAsPayments(){
         Assert.assertEquals(cannotSplitAsPayment.getText(),"Cannot split as payment(s) has been made in seats - 2");
@@ -731,9 +736,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
 
-    public void seperateItemIsVisble() {
+    public void seperateItemIsVisble() throws InterruptedException {
+        Thread.sleep(1000);
         if (seperateIcon.isEnabled()) {
             utils.log().info("Seperate Icon Is Enable");
+            int w =1/0;
         } else {
             utils.log().info("Seperate Icon Is Disable");
         }
@@ -741,9 +748,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verify2Table() {
-        String Table1 = seat1Table.getText();
-        String Table2 = seat2Table.getText();
-        if (Table1.equalsIgnoreCase(Table2)) {
+        String Table1 = driver.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]")).getText();
+        String Table2 = driver.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[2]")).getText();
+        String qty1= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[1]")).getText();
+        String qty2= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[3]")).getText();
+        String value1= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[2]")).getText();
+        String value2= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[4]")).getText();
+        if (Table1.equalsIgnoreCase(Table2) && qty1.equals(qty2) && value1.equals(value2))
+        {
             utils.log().info("Item & Modifier has seperated Equally");
         } else {
             utils.log().info("Item & Modifier has not Seperated Equally");
@@ -751,19 +763,23 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
 
-    public void pressGroupSeat() {
+    public void pressGroupSeat() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(GroupSeat, "Tapped the Group Seats Button");
     }
 
-    public String getPopupMessage() {
+    public String getPopupMessage() throws InterruptedException {
+        Thread.sleep(1000);
         return elementGetText(popupSelectTheSeatsToMerge, "Select the seats to Merge is displayed - ");
     }
 
-    public void pressSeat3() {
+    public void pressSeat3() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(seat3OrderScreen, "Seat 3 for add menu item");
     }
 
-    public void pressSeat2() {
+    public void pressSeat2() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(seat2OrderScreen, "Tapped Seat 2 for add menu item");
     }
 
@@ -788,7 +804,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void pressSeat1() {
-        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(seat1Table, "Tapped Seat 1");
     }
 
@@ -797,7 +813,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyClubItem() {
-        List<WebElement> element = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]"));
+        List<WebElement> element =  driver.findElements(By.xpath("(//ion-grid[@class='orderDetails ion-no-padding md hydrated'])[2]"));
         if (element.isEmpty()) {
             utils.log().info("Seat 2 is Empty, Menu Item club into seat 1");
         } else {
@@ -813,7 +829,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
 
-    public void clickStartOver() {
+    public void clickStartOver() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(startOver, "Tapped Start Over button to get back original page");
     }
 
@@ -844,7 +861,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(printSplitCheck, "Selcted Button as - " + printSplitCheck.getText());
     }
 
-    @FindBy(name = "Print All")
+    @FindBy(xpath = "Print All")
     WebElement printAllBtn;
 
     public void printAllBtn() {
@@ -873,17 +890,17 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void pressCashBtnPaymentWindow() throws Exception {
         //driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        try {
-            if (find(CashbtnPaymentWindow, 2)) {
-                elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
-            } else {
-                scrollToElementPayments(CashbtnPaymentWindow, "up");
-                elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
-            }
-        } catch (Exception w) {
-            scrollToElementPayments(CashbtnPaymentWindow, "down");
+//        try {
+//            if (find(CashbtnPaymentWindow, 2)) {
+//                elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
+//            } else {
+//                scrollToElementPayments(CashbtnPaymentWindow, "up");
+//                elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
+//            }
+//        } catch (Exception w) {
+//            scrollToElementPayments(CashbtnPaymentWindow, "down");
             elementClick(CashbtnPaymentWindow, "Tapped Cash Payment");
-        }
+//        }
 
 
     }
@@ -911,7 +928,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void pressOperation() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(OperationBtnTableLayout, "Tapped Operation Button on the Table Layout");
     }
 
@@ -928,7 +945,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifyAllSeatIsMerged(String numb) {
         pressArrowDown1();
-        WebElement seat = mergeAndFindElement(numb, "", TestUtils.Accessibility);
+        WebElement seat = driver.findElement(By.xpath(numb));
         if (seat.isDisplayed()) {
 
             utils.log().info(numb + " Seats are Merged with menu Items ");
@@ -943,7 +960,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void selectModifiersFromModifyScreen(String Modifier) {
-        WebElement modify = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Modifier + "\"])[2]", "", TestUtils.XPath);
+        WebElement modify = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Modifier + "\"])[2]"));
         if (find(modify, 2)) {
             utils.log().info(modify + " Modifiers add into Select Modifiers");
         } else {
@@ -1004,12 +1021,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyCheckDownIsIncreased() {
-        WebElement check1 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
-        String data = check1.getText();
-        if (find(check1, 2)) {
-            utils.log().info("Check Down is Increased - " + data);
+        WebElement check1 = driver.findElement(By.xpath("(//p[@class='tablebarfooter-total-firstrow-weight'])[3]"));
+        String[] data = check1.getText().split(" ");
+        utils.log().info(data[1]);
+        if (!data[1].equals("0")) {
+            utils.log().info("Check Down is Increased - " + data[1]);
         } else {
             utils.log().info("Check Down is not Increased");
+            int w = 1/0;
         }
     }
 
@@ -1030,7 +1049,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyAllTypeChecks() {
-        WebElement e1 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]", "", TestUtils.XPath);
+        WebElement e1 = driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]"));
         String data = e1.getText();
         utils.log().info(data + "datas");
     }
@@ -1050,7 +1069,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifyMenuItem(String name) {
         try {
-            WebElement menuItem = mergeAndFindElement(name, "", TestUtils.Accessibility);
+            WebElement menuItem = driver.findElement(By.xpath(name));
             if (menuItem.isDisplayed()) {
                 utils.log().info("Menu Item is visible");
             }
@@ -1125,7 +1144,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyCashApplied1(String money) {
-        WebElement menu = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + money + "\"])[2]", "", TestUtils.XPath);
+        WebElement menu = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + money + "\"])[2]"));
         if (menu.isDisplayed()) {
             utils.log().info("cash is Added - " + money);
         } else {
@@ -1139,7 +1158,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyPaidAmount(String prize) {
-        WebElement paidAmount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + prize + "\"])[5]", "", TestUtils.XPath);
+        WebElement paidAmount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + prize + "\"])[5]"));
         if (paidAmount.isDisplayed()) {
             utils.log().info("Paid AMount is Displayed - " + prize);
         } else {
@@ -1148,7 +1167,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyPaidAmountFrenchFriese(String amount) {
-        WebElement paidAmount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + amount + "\"])[4]", "", TestUtils.XPath);
+        WebElement paidAmount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + amount + "\"])[4]"));
         if (find(paidAmount, 2)) {
             utils.log().info("Paid AMount is Displayed - " + amount);
         } else {
@@ -1157,7 +1176,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyMenuItemPrizeSplit() {
-        WebElement amount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 1.250,00\"])[1]", "", TestUtils.XPath);
+        WebElement amount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"TL 1.250,00\"])[1]"));
         String money = amount.getText();
         if (amount.isDisplayed()) {
             utils.log().info("Menu Item Prize is split Evenly - " + money);
@@ -1167,8 +1186,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyDiscountIsApplied(String Discount) {
-        WebElement discount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[3]", "", TestUtils.XPath);
-        WebElement discount1 = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[5]", "", TestUtils.XPath);
+        WebElement discount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[3]"));
+        WebElement discount1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[5]"));
 
         if ((discount.isDisplayed()) && (discount1.isDisplayed())) {
             utils.log().info("Discount is split - " + Discount);
@@ -1178,7 +1197,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyDiscountIsMovedIntoNextSeat(String Discount) {
-        WebElement discount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[2]", "", TestUtils.XPath);
+        WebElement discount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[2]"));
         if (discount.isDisplayed()) {
             utils.log().info("Discount is moved into next seat - " + Discount);
         } else {
@@ -1187,10 +1206,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyDeliveryChargeAdded() {
-        WebElement delivery = mergeAndFindElement("Delivery Charge ", "", TestUtils.Accessibility);//Prod
+        WebElement delivery = driver.findElement(By.xpath("Delivery Charge "));//Prod
         //WebElement delivery = (WebElement) driver.findElement(By.xpath()("Delivery Charge  ");//Staging
         String charge = delivery.getText();
-        WebElement amount = mergeAndFindElement("10,00", "", TestUtils.Accessibility);
+        WebElement amount = driver.findElement(By.xpath("10,00"));
         String Price = amount.getText();
         if ((delivery.isDisplayed()) && (amount.isDisplayed())) {
             utils.log().info(charge + Price);
@@ -1200,10 +1219,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyDeliveryChargeAddedForLoyalty() {
-        WebElement delivery = mergeAndFindElement("Delivery Charge ", "", TestUtils.Accessibility);//Prod
+        WebElement delivery = driver.findElement(By.xpath("Delivery Charge "));//Prod
         //WebElement delivery = (WebElement) driver.findElement(By.xpath()("Delivery Charge  ");//Staging
         String charge = delivery.getText();
-        WebElement amount = mergeAndFindElement("25,00", "", TestUtils.Accessibility);
+        WebElement amount = driver.findElement(By.xpath("25,00"));
         String Price = amount.getText();
         if ((delivery.isDisplayed()) && (amount.isDisplayed())) {
             utils.log().info(charge);
@@ -1213,9 +1232,9 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifySubtotalShouldNotChange() {
-        WebElement delivery = mergeAndFindElement("Subtotal", "", TestUtils.Accessibility);
+        WebElement delivery = driver.findElement(By.xpath("Subtotal"));
         String total = delivery.getText();
-        WebElement amount = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 0,00\"])[1]", "", TestUtils.XPath);
+        WebElement amount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"TL 0,00\"])[1]"));
         String Price = amount.getText();
         if ((delivery.isDisplayed()) && (amount.isDisplayed())) {
             utils.log().info(total);
@@ -1225,12 +1244,12 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void tapCloseDay() {
-        WebElement closeDay = mergeAndFindElement("Close Day", "", TestUtils.Accessibility);
+        WebElement closeDay = driver.findElement(By.xpath("Close Day"));
         elementClick(closeDay, "Tapped close day");
     }
 
     public void verifyCloseDayScreen() {
-        WebElement closeDay = mergeAndFindElement("Close Day", "", TestUtils.Accessibility);
+        WebElement closeDay = driver.findElement(By.xpath("Close Day"));
         if (closeDay.isDisplayed()) {
             utils.log().info("Close day is Displayed");
         } else {
@@ -1241,8 +1260,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void getCreditCardValue() {
 //        iOSScrollToElementUsingMobileScroll(txt);
-        WebElement credit = mergeAndFindElement("Credit Card", "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"0,00\"])[1]", "", TestUtils.XPath);
+        WebElement credit = driver.findElement(By.xpath("Credit Card"));
+        WebElement price = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"0,00\"])[1]"));
 
         if (txt.isDisplayed()) {
             String data = credit.getText();
@@ -1256,7 +1275,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void giftCardSeat1() {
         String Gift = gc.getText();
-        WebElement sub = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]", "", TestUtils.XPath);
+        WebElement sub = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]"));
         String total = sub.getText();
         if (gc.isDisplayed() && sub.isDisplayed()) {
             utils.log().info("Gift card is displayed in seat 1 with amount - " + Gift + " - " + total);
@@ -1267,7 +1286,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void giftCardSeat2() {
         String Gift = gc.getText();
-        WebElement sub = mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]", "", TestUtils.XPath);
+        WebElement sub = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"TL 100,00\"])[3]"));
         String total = sub.getText();
         if (gc.isDisplayed() && sub.isDisplayed()) {
             utils.log().info("Gift card is displayed in seat 2 with amount - " + Gift + " - " + total);
@@ -1280,7 +1299,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(gc, "Tapped Gift card in Seat 1");
     }
 
-    @FindBy(name = "Batch/Tip Adjustment")
+    @FindBy(xpath = "Batch/Tip Adjustment")
     WebElement batchTipAdjustBtn;
 
     public void clickBatchTipButton() {
@@ -1294,13 +1313,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifyChecksInBatchScreen() {
-        List<WebElement> check = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> check =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell"));
         int checkCount = check.size();
         utils.log().info("Batch Check count - " + checkCount);
     }
 
     public void verifyBatchInitiatedPopup() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement batchPopup = (WebElement) driver.findElement(By.xpath("Batch process has been initiated and it may take some time to complete. Please check back after few minutes."));
 
         if (batchPopup.isDisplayed()) {
@@ -1312,7 +1331,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void selectTheMppgPaymentInDevice() throws Exception {
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        List<WebElement> deviceList = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+        List<WebElement> deviceList =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
         int deviceListCount = deviceList.size();
         utils.log().info("List of device - " + deviceListCount);
         WebElement listDevice = (WebElement) driver.findElement(By.xpath("MPPG Auth"));
@@ -1356,17 +1375,17 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
 
-    @FindBy(name = "Batch In Progress")
+    @FindBy(xpath = "Batch In Progress")
     WebElement batchInProgress;
-    @FindBy(name = "Batch Completed")
+    @FindBy(xpath = "Batch Completed")
     WebElement batchComplete;
-    @FindBy(name = "ToggleIcon")
+    @FindBy(xpath = "ToggleIcon")
     WebElement ToggleIcon;
 
 
     public void verifyBatchCheckAvailable1() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        List<WebElement> check = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> check =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell"));
         int checkCount = check.size();
         utils.log().info("Batch Check count - " + checkCount);
         String batchText = batchInProgress.getText();
@@ -1387,7 +1406,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
 
-    @FindBy(name = "**/XCUIElementTypeTextField[`value == \"Search\"`]")
+    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Search\"`]")
     WebElement searchTextField;
 
     public void clickTheCheckFromBatchScreen() {
@@ -1450,7 +1469,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void VerifyTipAmountIsAppliedOrNot() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String tipAmount1 = TestUtils.tipAmount;
         utils.log().info("tipAmount1 - " + tipAmount1);
         WebElement search = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeTextField[@value=\"Search\"]"));
@@ -1468,7 +1487,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
 
     public void verifyAmountWithDeliveryCharge() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         WebElement deliveryAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[2]"));
         String deliveryAmountTxt = deliveryAmount.getText();
@@ -1517,7 +1536,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifySeatsAvaliableInSplitCheck() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String seatNumber = TestUtils.seatNumber;
         WebElement getSeatNumber = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
         String seatNumber1 = getSeatNumber.getText();
@@ -1529,7 +1548,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifySeatsAvaliableInSplitCheck1() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String seatNumber = TestUtils.seatNumberOrderScreen;
         WebElement getSeatNumber = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
         String seatNumber1 = getSeatNumber.getText();
@@ -1541,11 +1560,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifySplittedCheckAvailableInActiveCheck() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement searchTab = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField"));
         // String checkNumber = TestUtils.globalCheckNumber1;
         searchTab.sendKeys(TestUtils.globalCheckNumber1);
-        WebElement phoneOrders = mergeAndFindElement(TestUtils.globalCheckNumber1, "", TestUtils.Accessibility);
+        WebElement phoneOrders = driver.findElement(By.xpath(TestUtils.globalCheckNumber1));
         if (phoneOrders.isDisplayed()) {
             utils.log().info(TestUtils.globalCheckNumber1 + " - Closed Check is displayed in Active tab ");
             elementClick(phoneOrders, "Selected - " + TestUtils.globalCheckNumber1);
@@ -1573,7 +1592,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public String[] ModifierQty2 = {" ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
 
     public void verifyMenuIsSplittedEvenly() {
-        List<WebElement> menus = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> menus =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         for (int i = 1; i <= menus.size(); i++) {
             WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
             MenuNameTxt[i] = menuName.getText();
@@ -1588,7 +1607,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
             TestUtils.SplitSeatMenusPrize[i] = MenuNamePrize[i];
             utils.log().info("Seat 1 Menu Name  - "+i+" " + MenuNameTxt[i] + " Quantity - " + MenuQty[i] + " Prize - " + MenuNamePrize[i]);
             try {                                                                                       //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]
-                List<WebElement> modifers = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for (int k = 1; k <= modifers.size(); k++) {
 
                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]
@@ -1609,7 +1628,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
             }
 
         }
-        List<WebElement> menus1 = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> menus1 =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         for (int j = 1; j <= menus1.size(); j++) {
             WebElement menuName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[1]"));
             MenuNameTxt2[j] = menuName1.getText();
@@ -1624,7 +1643,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
             utils.log().info("Seat 2 Menu Name - "+j+" " + MenuNameTxt2[j] + " Quantity - " + MenuQty2[j] + " Prize - " + MenuNamePrize2[j]);
             try {
                 //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]
-                List<WebElement> modifers = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for (int k = 1; k <= modifers.size(); k++) {
                     WebElement modifierName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
                     ModifierName2[j] = modifierName.getText();
@@ -1665,11 +1684,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifyAllMenuIsClubIntoSingleSeat() {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        List<WebElement> seat1TableMenuCount = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> seat1TableMenuCount =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         int sizeOfCount = seat1TableMenuCount.size();
         Assert.assertEquals(sizeOfCount, 0);
         utils.log().info("Seat 1 Menu Count - " + sizeOfCount);
-        List<WebElement> seat1TableMenuCount1 = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> seat1TableMenuCount1 =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         int sizeOfCount1 = seat1TableMenuCount1.size();
         utils.log().info("Seat 2 Menu Count - " + sizeOfCount1);
 //        for (int i = 1; i <= sizeOfCount1; i++) {
@@ -1681,7 +1700,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void getSeat1Prize() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement subTotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
         WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
@@ -1743,7 +1762,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void getSeat2Prize() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement subTotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
         WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
@@ -1811,7 +1830,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifySeat1PrizeAndSeat2PrizeIsSame() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement subTotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
         WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
@@ -1835,7 +1854,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
 
     public void verifyPrizeDetailsAfterGroupSeats() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         //////  SUBTOTAL AFTER GROUP SEATS  /////////
         String subTotalTxt1 = TestUtils.subtotalTxt;
         String subTotalTxt2 = subTotalTxt1.replaceAll("[A-Z$,. ]", "");
@@ -1920,7 +1939,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void verifySplitSeatPrizeWithOrderScreenPrize() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement subtotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         Assert.assertEquals(subtotal.getText(), TestUtils.subtotalTxt);
         utils.log().info("Subtotal is - " + subtotal.getText());
@@ -1973,8 +1992,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public String[] discountPrize111 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
 
     public void verifySplitMenuWithOrderScreenMenu() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        List<WebElement> orderMenu = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("orderMenu.size() "+orderMenu.size());
         for (int i = 2; i <= orderMenu.size(); i++) {
 
@@ -1986,7 +2005,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
             Assert.assertEquals(orderMenuName1[i-1], TestUtils.SplitSeatMenus2[i-1]);
             utils.log().info("Order Screen menu SAME with Split Menu - "+(i-1)+" " + orderMenuName1[i-1]);
             try{
-                List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+(i)+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+(i)+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for(int m=1;m<=modifier.size();m++){
                     WebElement modifier1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell["+m+"]/XCUIElementTypeStaticText[1]"));
                     modifieR[m] = modifier1.getText();
@@ -2007,8 +2026,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
     public void verifyTheSeat2MenuWith1stCheck(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        List<WebElement> orderMenu = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("orderMenu.size() " + orderMenu.size());
         for (int i = 2; i <= orderMenu.size(); i++) {
             WebElement orderMenuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
@@ -2023,7 +2042,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
             Assert.assertEquals(TestUtils.orderMenuPrize2[i - 1],orderMenuPrize[i - 1]);
             utils.log().info("Order Screen menu SAME with SEAT 2 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
             try {
-                List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for (int m = 1; m <= modifier.size(); m++) {
                     WebElement modifier1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
                     modifierVerify1[m] = modifier1.getText();
@@ -2035,7 +2054,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
                     Assert.assertEquals(TestUtils.modifierPrize2[m],modifierPrizeVerify1[m]);
                     utils.log().info("Seat 2 Modifier - " + modifierVerify1[m] + " Prize - " + modifierPrizeVerify1[m]);
                 }
-                List<WebElement> discount = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
+                List<WebElement> discount =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
                 for(int h =1;h<=discount.size();h++){
                     WebElement discountName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[1]"));
                     discountNameVerify2[h] = discountName1.getText();
@@ -2073,8 +2092,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public String[] modifierPrizeVerify1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
 
     public void verifyTheSeat1MenuWith1stCheck() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        List<WebElement> orderMenu = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("orderMenu.size() " + orderMenu.size());
         for (int i = 2; i <= orderMenu.size(); i++) {
 
@@ -2090,7 +2109,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
             Assert.assertEquals(TestUtils.orderMenuPrize[i - 1], orderMenuPrize[i - 1]);
             utils.log().info("Order Screen menu SAME with Seat 1 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
             try {
-                List<WebElement> modifier = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for (int m = 1; m <= modifier.size(); m++) {
                     WebElement modifier1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
                     modifierVerify[m] = modifier1.getText();
@@ -2102,7 +2121,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
                     Assert.assertEquals(TestUtils.modifierPrize[m], modifierPrizeVerify[m]);
                     utils.log().info("Seat 1 Modifier is SAME - " + modifierVerify[m] + " Prize - " + modifierPrizeVerify[m]);
                 }
-                List<WebElement> discount = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
+                List<WebElement> discount =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
                 for(int h =1;h<=discount.size();h++){
                     WebElement discountName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[2]/XCUIElementTypeCell["+h+"]/XCUIElementTypeStaticText[1]"));
                     discountNameVerify1[h] = discountName1.getText();
@@ -2135,8 +2154,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
     public void getMenuDetailsGroupSeat2() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        List<WebElement> menus1 = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        List<WebElement> menus1 =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("menus1.size - "+menus1.size());
         for (int j = 1; j <= menus1.size(); j++) {
             WebElement menuName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[1]"));
@@ -2151,7 +2170,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
             TestUtils.SplitSeatMenusPrize2[j] = MenuNamePrize2[j];
             utils.log().info("Seat 2 Menu Name - " +j+" "+ MenuNameTxt2[j] + " Quantity - " + MenuQty2[j] + " Prize - " + MenuNamePrize2[j]);
             try {
-                List<WebElement> modifers = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
+                List<WebElement> modifers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for (int k = 1; k <= modifers.size(); k++) {
                     WebElement modifierName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
                     ModifierName2[j] = modifierName.getText();

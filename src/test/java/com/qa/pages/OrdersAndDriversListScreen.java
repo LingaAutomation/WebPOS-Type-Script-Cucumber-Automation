@@ -9,7 +9,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import static com.qa.utils.TestUtils.driver;
 public class OrdersAndDriversListScreen extends BasePage {
-    @FindBy(name = "Table Layout")
+    @FindBy(xpath = "//button[contains(.,' Table layout ')]")
     private WebElement tableLayoutTab;
 
     String checkStatsTab = "//button//span[text()=' Check Status ']";

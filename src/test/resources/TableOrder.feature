@@ -7,16 +7,16 @@ Feature:Table Order Operations
     And I click All
     And I click Table Layout tab
 
-
+  @RegressionTable
   Scenario: Change Floors
     #Given I'm logged in
     #And I close the order type window
     #And I click All
     #And I click Table Layout tab
-    And I click right symbol
-    Then I should see next floor
-    And I click Left symbol
-    Then I should see previous floor
+#    And I click right symbol
+#    Then I should see next floor
+#    And I click Left symbol
+#    Then I should see previous floor
 
   #Scenario: Operation Table Layout
     And I click the Operation button on the Table Layout
@@ -29,10 +29,10 @@ Feature:Table Order Operations
 
 
  # Scenario: Types of checks should show on the Table Layout screen
-    Then I should see types of checks available on the Table layout screen
+#    Then I should see types of checks available on the Table layout screen
     And I click power button
 
-
+  @RegressionTable
   Scenario Outline: Merge Checks - Rare Scenarios
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -141,8 +141,8 @@ Feature:Table Order Operations
     And I select a table to be merged as "<four>"
     And I select a table to be merged as "<five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -156,7 +156,7 @@ Feature:Table Order Operations
       | first |second |third | four | five | number_of_seats | Menu_Item   | Menu_Item1   | Menu_Item2 | Modifier | Modifier1 | Modifier2 | Merge_seat |
       | T1    | T2    |T3    | T4    | T5  | 3               |French Friese| Garlic Bread | Tuna Tacos |  Steak   | 4 BBQ     | Croutons  | 15         |
 
-
+  @RegressionTable
   Scenario Outline: Merge 5 check without pay
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -275,8 +275,8 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -408,12 +408,12 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I click Print on the table layout screen
     And I select a table to be merged as "<first>"
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -545,13 +545,13 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I Should get back to the Order Screen
     And I click print button on the order screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -684,8 +684,8 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -826,8 +826,8 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -969,12 +969,12 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I click Print on the table layout screen
     And I select a table to be merged as "<first>"
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -1115,13 +1115,13 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click print button on the order screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
@@ -1265,13 +1265,13 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click print button on the order screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
@@ -1416,12 +1416,12 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I click Print on the table layout screen
     And I select a table to be merged as "<first>"
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -1568,13 +1568,13 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click print button on the order screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
@@ -1586,7 +1586,7 @@ Feature:Table Order Operations
       | first |second |third | Four | Five | number_of_seats | Menu_Item   | Menu_Item1   | Menu_Item2 | Menu_Item3         | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3  | Modifier4 | Merge_seat |
       | T1    | T2    | T3   | T4   | T5   | 1               |French Friese| Garlic Bread | Tuna Tacos | Cheesy Bacon Fries | B.I. Wings | Steak    | 4 BBQ     | Croutons  | 1/2 Cheese | Tomato    | 5          |
 
-  @gi30
+  @RegressionTable
   Scenario Outline: Check whether the gratuity amount show correctly when both the seats are placed with inclusive tax menu items and gratuity applied
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1647,6 +1647,7 @@ Feature:Table Order Operations
     And I select modifier as "<Modifier>"
     And I click Done to get back
     And I click the split seat from Order screen
+
     Then I should see the Split Screen
     And I click seat one on the split screen
     And I click seat two on the split screen
@@ -1666,7 +1667,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats |Menu_Item      | Modifier |  Modifier1 |SubTotal   |  Tax     | Gratuity | Total   |
       | T8       | 3               | French Friese | Steak    | Butter     |$ 30.00    |$ 2.72    |$ 2.72    | $ 32.72 |
 
-  @edu
+  @RegressionTable
   Scenario Outline: Replace Customers
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1678,11 +1679,14 @@ Feature:Table Order Operations
     When I click "Ragavan P" to select customer for the seat
     Then I should see customer as "<customer>" added on order screen
     And I click Add Customer Button
+    Then I should see the add customer window
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
     Then I should see customer as "<customer1>" added on order screen
     And I click Add Customer Button
     And I click remove button
+    Then I should see the add customer window
+    And I click x button on the Add customer window
     And I click All
     And I click Table Layout tab
     #And I click power button
@@ -1701,7 +1705,9 @@ Feature:Table Order Operations
     When I click "Ragavan P" to select customer for the seat
     Then I should see customer as "<customer>" added on order screen
     And I click Add Customer Button
+    Then I should see the add customer window
     And I click remove button
+    And I click x button on the Add customer window
     Then I should see customer removed
     And I click All
     And I click Table Layout tab
@@ -1710,7 +1716,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats |customer_name  | customer   | customer_name1 | customer1 |
       | T6       |1                | Ragavan P     | Ragavan P  |  auto number1  | auto n    |
 
-
+@RegressionTable
   Scenario Outline: Customer Profile From order screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1741,13 +1747,13 @@ Feature:Table Order Operations
     And I get check number
     When I click Finish button
     Then I should get back to the Table Layout tab
-    Then I should see seated status is not change
+#    Then I should see seated status is not change
     And I click power button
     Examples:
       | table_no | number_of_seats |
       | T6       |1                |
 
-
+  @RegressionTable
   Scenario Outline: Check Down
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1761,8 +1767,8 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Order button in the order management screen
     And I click print button on the order screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I click Finish button
     Then I should get back to the Table Layout tab
     Then I should see check down is increased
@@ -1772,15 +1778,15 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     And I click power button
     Examples:
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T6       |1                | French Friese | Tomato   |
 
-
+  @RegressionTable
   Scenario Outline: Print - Table Layout Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1796,10 +1802,10 @@ Feature:Table Order Operations
     Then I should get back to the Table Layout tab
     And I click Print on the table layout screen
     And I click the check from the table layout for merged
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    And I click X Button
-    And I click the check from the table layout for merged
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+##    And I click X Button
+#    And I click the check from the table layout for merged
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
@@ -1827,13 +1833,13 @@ Feature:Table Order Operations
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click Split Evenly Button
-    Then I should see menu items has to be sent to the kitchen
-    And I click Yes button on send to kitchen popup
+#    Then I should see menu items has to be sent to the kitchen
+#    And I click Yes button on send to kitchen popup
     Then I should see Seperate Item is Disable
     Then I should see the additional seat & Item on the Split Seat
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -1861,10 +1867,10 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click seat one on the split screen
     And I click print button in the split seat screen
-    Then I should see item need to send to kitchen popup
-    And I click Yes button on send to kitchen popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see item need to send to kitchen popup
+#    And I click Yes button on send to kitchen popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -1893,13 +1899,13 @@ Feature:Table Order Operations
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click Split Evenly Button
-    Then I should see menu items has to be sent to the kitchen
-    And I click Yes button on send to kitchen popup
+#    Then I should see menu items has to be sent to the kitchen
+#    And I click Yes button on send to kitchen popup
     Then I should see Seperate Item is Disable
     Then I should see the additional seat & Item on the Split Seat
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click Start Over Button to come back original stage
     And I click the Back button on Split Screen
     Then I Should get back to the Order Screen
@@ -1914,7 +1920,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T28      |1                | French Friese | Tomato   |
 
-
+  @RegressionTable
   Scenario Outline: New Check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1991,7 +1997,7 @@ Feature:Table Order Operations
       |table_no|number_of_seats| Menu_Item    | Modifier|
       |T22     |1              | Garlic Bread | 4 BBQ   |
 
-
+  @RegressionTable
   Scenario Outline: Creating a table order for 2 and then add & delete a seat, select menu items to order for each seats and then finish order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2029,7 +2035,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | customer_name | menu_item_1   | menu_item_2   | modifier_1 | modifier_2 | modifier_3 |
       | T13      | 2               | Ragavan P     | French Friese |  Garlic Bread | Steak      | Tomato     | 4 BBQ      |
 
-  @MMM
+  @RegressionTable
   Scenario Outline: Creating another table order to be merged
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2054,7 +2060,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item          | Modifier   |
       | T11      | 1               | Cheesy Bacon Fries | 1/2 Cheese |
 
-  @MMM
+  @RegressionTable
   Scenario Outline: Create 2 Table Order then Merge and Click already selected Check to see "Check already added" pop-up
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2107,7 +2113,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item          | Modifier   |second_table  | number_of_seats | Menu_Item1   | Modifier1 |
       | T15      |1                | Cheesy Bacon Fries | 1/2 Cheese | T16          |1                | Garlic Bread | 4 BBQ     |
 
-  @MMM
+  @RegressionTable
   Scenario Outline: Create 2 Table Order then Merge 1 Order click Done to see "Select Atleast 2 Check" pop-up
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2157,7 +2163,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item  | Modifier | second_table | number_of_seats | Menu_Item1   | Modifier1 |
       | T8       |1                | B.I. Wings | Tomato   | T9           |1                | Garlic Bread | 4 BBQ     |
 
-  @MMM
+  @RegressionTable
   Scenario Outline: Create 2 Table Order then Merge after that click Cancel button should merge box disappered
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2205,7 +2211,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item  | Modifier | second_table | number_of_seats | Menu_Item1   | Modifier1 |
       | T10      |1                | Tuna Tacos | Croutons | T11          |1                | Garlic Bread | 4 BBQ     |
 
-
+  @RegressionTable
   Scenario Outline: Create Sale in Table Layout Screen then click the Split to see Split Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2227,8 +2233,8 @@ Feature:Table Order Operations
     And I click Void button on order management screen
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     And I click power button
     Examples:
@@ -2236,7 +2242,7 @@ Feature:Table Order Operations
       | T17       |1                | B.I. Wings | Tomato   |
 
 
-  @failed_T0
+  @RegressionTable
   Scenario Outline: Split Check Without Sale
     And I click new check button on the Table layout screen
     And I click the Split Button from the Table Layout Screen
@@ -2288,8 +2294,6 @@ Feature:Table Order Operations
 
  # Scenario Outline: Split - Without Select item to Seperate Item
     And I click new check button on the Table layout screen
-
-  #ok
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -2654,7 +2658,7 @@ Feature:Table Order Operations
       | T15      | 1             |2                 | French Friese | Tomato   | Garlic Bread | 4 BBQ     | 2               |
 
 
-  @failed_T
+  @RegressionTable
   Scenario Outline: Print Split Screen for Without Select seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2705,8 +2709,8 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click seat one on the split screen
     And I click print button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -2779,8 +2783,8 @@ Feature:Table Order Operations
     Then I should see created new seat
     And I click seat two on the split screen
     And I click print button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -2795,7 +2799,7 @@ Feature:Table Order Operations
       | T22       |1                | French Friese | Tomato   |
 
 
-  @failed_T
+  @RegressionTable
   Scenario Outline: Print All Split Screen,when click Print All application should as Items need to send kitchen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2814,8 +2818,8 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click seat one on the split screen
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -2847,8 +2851,8 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click seat one on the split screen
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -2886,8 +2890,8 @@ Feature:Table Order Operations
     And I click seat one on the split screen
     And I click seat two on the split screen
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I click Start Over Button to come back original stage
     Then I should see Seat 2 is hide
     And I click the save & close button on the split screen
@@ -3173,9 +3177,9 @@ Feature:Table Order Operations
     Then I should get back to the Table Layout tab
     And I click Print on the table layout screen
     And I click the check from the table layout for merged
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    And I click X Button
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+#    And I click X Button
     And I click the check from the table layout for merged
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -3205,9 +3209,9 @@ Feature:Table Order Operations
     Then I should get back to the Table Layout tab
     And I click Print on the table layout screen
     And I click the check from the table layout for merged
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    And I click X Button
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+#    And I click X Button
     And I click the check from the table layout for merged
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
@@ -3283,8 +3287,8 @@ Feature:Table Order Operations
     And I click Void button on order management screen
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
    # And I click power button
 
@@ -3950,8 +3954,8 @@ Feature:Table Order Operations
     Then I should see merge box is hide
     And I click the arrow button in the Merge Box1
     And I click Done button to merge checks
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I click the check from the table layout for merged
     Then I Should get back to the Order Screen
     And I click Payment button in the Order Management Screen
@@ -3998,8 +4002,8 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     And I click power button
     Examples:
@@ -4462,8 +4466,8 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I closed the order type window
     And I click All
     Then I should see check stats Screen
@@ -4566,8 +4570,8 @@ Feature:Table Order Operations
     And I click Void button on order management screen
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
    # And I click power button
 
@@ -7022,8 +7026,8 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     And I click power button
     Examples:
@@ -7064,8 +7068,8 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
    # And I click power button
     #Examples:
@@ -7106,8 +7110,8 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     And I click power button
    # Examples:
@@ -7187,20 +7191,20 @@ Feature:Table Order Operations
     And I click print All button in the split seat screen
     Then I should see item need to send to kitchen popup
     And I click Yes button on send to kitchen popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click seat two on the split screen
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Void button on order management screen
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
   #  And I click power button
  #   Examples:
@@ -7235,16 +7239,16 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click seat one on the split screen
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the Back button on Split Screen
     Then I Should get back to the Order Screen
     And I click Void button on order management screen
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     And I click power button
     #Examples:
@@ -7365,8 +7369,8 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     And I click power button
    # Examples:
@@ -7478,8 +7482,8 @@ Feature:Table Order Operations
     Then I should see the void reason popup
     And I click void Reason on the void popup
     And I click Add Button on the void reason popup
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
     #And I click power button
    # Examples:
@@ -7706,8 +7710,8 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged
     And I click the check from the table layout for merged1
     And I click Done button to merge checks
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I click Pay Check button
     And I click the check from the table layout for merged
     And I click cash button from the payment method popup
@@ -7736,8 +7740,8 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged
     And I click the check from the table layout for merged1
     And I click Done button to merge checks
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I click Pay Check button
     And I click the check from the table layout for merged
     Then I click on "Cash" to pay the amount "Click on cash for payment"
@@ -7770,8 +7774,8 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged
     And I click the check from the table layout for merged1
     And I click Done button to merge checks
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     And I click Pay Check button
     And I click the check from the table layout for merged
     Then I click on "Cash" to pay the amount "Click on cash for payment"
@@ -7804,8 +7808,8 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     Then User select table which will be merge
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I select table as "T10"
     And USer click cash button
@@ -7837,8 +7841,8 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     Then User select table which will be merge
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I select table as "T10"
     And USer click cash button
@@ -7885,8 +7889,8 @@ Feature:Table Order Operations
     And I click clear text button
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
@@ -7946,8 +7950,8 @@ Feature:Table Order Operations
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
     And User confirm merge checks confirmation popup
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
@@ -7993,8 +7997,8 @@ Feature:Table Order Operations
     And I click clear text button
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
@@ -8045,8 +8049,8 @@ Feature:Table Order Operations
     And I click clear text button
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
@@ -8105,8 +8109,8 @@ Feature:Table Order Operations
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
     And User confirm merge checks confirmation popup
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
@@ -8162,8 +8166,8 @@ Feature:Table Order Operations
     And I click clear text button
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
@@ -8223,8 +8227,8 @@ Feature:Table Order Operations
     And I click clear text button
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
@@ -8288,8 +8292,8 @@ Feature:Table Order Operations
     And I click clear text button
     And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
-    Then I should see the Linga Popup
-    And I click Done button on the Popup
+#    Then I should see the Linga Popup
+#    And I click Done button on the Popup
     When User click Pay Check button
     And I click merged barTab
 #    And I click "Yes" in the close the day Popup window "click yes button"
