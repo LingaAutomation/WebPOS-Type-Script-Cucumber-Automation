@@ -2202,4 +2202,8 @@ public class TableOrderOperationsStepDef {
     }
 
 
+    @And("I click new seat added on the split seat screen")
+    public void iClickNewSeatAddedOnTheSplitSeatScreen() {
+        new Regression(driver).clickNewSeatOnTheSplitSeatScreen();
+    }
 }

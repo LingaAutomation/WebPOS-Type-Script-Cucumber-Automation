@@ -142,7 +142,7 @@ public class OrderTypeWindow extends ClockInScreen {
 
 
     public void clickSeat1ForAddMenuItem(){
-      WebElement seat1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText"));
+      WebElement seat1 = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'qsrSeats_row')]//p[.='Seats']/..//button[contains(.,'1')]"));
        elementClick(seat1,"selected seat - "+seat1.getText());
     }
 

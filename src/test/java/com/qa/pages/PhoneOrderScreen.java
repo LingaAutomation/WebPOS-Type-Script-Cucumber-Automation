@@ -82,7 +82,7 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField[3]")
     private WebElement searchTabInFutureTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//input[@data-placeholder='Check No']")
     private WebElement searchTabInActiveTab;
 
     @FindBy(xpath = "//mat-form-field[contains(@class,'checkstats-matpic')]//div//div//div//input/..//span//label//span[.='Check No']/../../..//input")
@@ -492,12 +492,11 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInActiveTab.clear();
         searchTabInActiveTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
-        );
+        WebElement phoneOrders =  driver.findElement(By.xpath("//div[contains(@class,'table-row table-row')]//tr//td[.='"+globalCheckNumber+"']"));
         if (phoneOrders.isDisplayed()){
-            utils.log().info(globalCheckNumber + " - Closed Check is displayed in Active tab");
+//            utils.log().info(globalCheckNumber + " - Closed Check is displayed in Active tab");
         }else {
-            utils.log().info("Closed check is not displayed");
+//            utils.log().info("Closed check is not displayed");
         }
     }
 

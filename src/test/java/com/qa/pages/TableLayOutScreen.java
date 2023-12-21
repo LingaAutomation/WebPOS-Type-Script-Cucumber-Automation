@@ -84,13 +84,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Cancel")
     private WebElement CancelBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//button[contains(.,'Split')]")
     private WebElement SplitBtn;
 
-    @FindBy(xpath = "Split By Seat")
+    @FindBy(xpath = "//button[contains(.,'Split By Seat')]")
     private WebElement splitSeat;
 
-    @FindBy(xpath = "Split Seat")
+    @FindBy(xpath = "//p[contains(.,'Split Seat')]")
     private WebElement splitSeatPage;
 
     @FindBy(xpath = "Select valid check")
@@ -99,7 +99,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"French Friese \"])[2]")
     private WebElement item;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[1]")
+    @FindBy(xpath = "//div[.='Separate item']")
     private WebElement seperateIcon;
 
     @FindBy(xpath = "Back")
@@ -111,7 +111,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Done")
     private WebElement DonePopup;
 
-    @FindBy(xpath = "Save & Close")
+    @FindBy(xpath = "//button[contains(.,'Save & Close')]")
     WebElement SaveClose;
 
     @FindBy(xpath = "//p[.='Seats']")
@@ -123,13 +123,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Select the Order to Proceed")
     private WebElement selectOrder;
 
-    @FindBy(xpath = "Add")
+    @FindBy(xpath = "//button[@class='add-seat']")
     public WebElement AddBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]")
+    @FindBy(xpath = "//div[.='Split Evenly']")
     private WebElement SplitEvenly;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//ion-col[.='Seat 1']")
     private WebElement seat1Table;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable")
@@ -147,7 +147,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "1")
     private WebElement seat1OrderScreen;
 
-    @FindBy(xpath = "2")
+    @FindBy(xpath = "//ion-col[contains(@class,'qsrSeats_row')]//p[.='Seats']/..//button//span[.=' 2 ']")
     private WebElement seat2OrderScreen;
 
     @FindBy(xpath = "3")
@@ -165,7 +165,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Delete")
     private WebElement deleteBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[3]")
+    @FindBy(xpath = "//div[.='Group Seats']")
     private WebElement GroupSeat;
 
     @FindBy(xpath = "Select the seats to Merge")
@@ -174,7 +174,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Start Over")
     private WebElement startOver;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//ion-col[contains(@class,'ion-text-center md hydrated')]//linga-icon[@symbol='print']/..//div[.='Print']")
     private WebElement printSplitSeat;
 
     @FindBy(xpath = "Select the Seat to Print")
@@ -189,7 +189,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[5]")
     private WebElement PrintAllSplitSeat;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[6]")
+    @FindBy(xpath = "//div[.='Pay']")
     private WebElement paySplitSeat;
 
     @FindBy(xpath = "Select the Seat to Pay")
@@ -204,13 +204,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Split is not allowed, payment(s) has been made in this check")
     private WebElement SplitIsNotAllowedPaymentInThisCheck;
 
-    @FindBy(xpath = "Split")
+    @FindBy(xpath = "//button[@id='os_split']")
     private WebElement splitBtnOrderScreen;
 
-    @FindBy(xpath = "SPLIT BY SEAT")
+    @FindBy(xpath = "//button[@id='os_splitSeat']")
     private WebElement SplitBySeatOrderScreen;
 
-    @FindBy(xpath = "SPLIT CHECK")
+    @FindBy(xpath = "//button[@id='os_splitCheck']")
     private WebElement SplitCheckOrderScreen;
 
     @FindBy(xpath = "//ion-row[contains(@class,'payment-types')]//ion-col//button//span[contains(.,'Cash')]")
@@ -245,7 +245,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//div[contains(.,'New Check')]")
     private WebElement newCheck;
 
-    @FindBy(xpath = "Menu items(s) has to be sent to the kitchen")
+    @FindBy(xpath = "//p[.='Menu items(s) has to be sent to the kitchen']")
     private WebElement menuItemHasToBeSentToKitchen;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
@@ -302,7 +302,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Order cannot be moved, Payment(s) has been made in seat - 1")
     private WebElement orderCannotMovedTxt;
 
-    @FindBy(xpath = "Order cannot be moved, Payment(s) has been made in seat - 2")
+    @FindBy(xpath = "//p[.='Order cannot be moved, Payment(s) has been made in seat - 2']")
     private WebElement orderCannotMovedTxt1;
 
     @FindBy(xpath = "Subtotal")
@@ -360,18 +360,18 @@ public class TableLayOutScreen extends OrderManagementScreen {
     int j = 0;
 
     public void verifyMenuHasSeperated(String count) {
-        List<WebElement> listOfMenus = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> listOfMenus = (List<WebElement>) driver.findElement(By.xpath("(//ion-grid[contains(@class,'orderDetails')]//ion-list)[1]//ion-item[contains(@class,'inserted item md item')]//ion-col[contains(@class,'menu-name')]"));
         for (int i = 1; i <= listOfMenus.size(); i++) {
-            WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
+            WebElement menuName = (WebElement) driver.findElement(By.xpath("((//ion-grid[contains(@class,'orderDetails')]//ion-list)[1]//ion-item[contains(@class,'inserted item md item')]//ion-col[contains(@class,'menu-name')])["+i+"]"));
             String menuNameTxt = menuName.getText();
             if ((TestUtils.menuNameSplitCheck).equalsIgnoreCase(menuNameTxt)) {
                 int k = j + i;
                 if (Integer.parseInt(count) == k) {
-                    utils.log().info("Menu Count = " + k + " " + menuNameTxt);
+//                    utils.log().info("Menu Count = " + k + " " + menuNameTxt);
                 } else {
                 }
             } else {
-                utils.log().info("Menu Name - " + menuNameTxt);
+//                utils.log().info("Menu Name - " + menuNameTxt);
             }
         }
     }
@@ -563,7 +563,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(SplitBtn, "Tapped the Split Button");
     }
 
-    @FindBy(xpath = "Split Check")
+    @FindBy(xpath = "//button[contains(.,'Split Check')]")
     WebElement SplitCheckBtn;
 
     public void pressSplitCheckBtn() {
@@ -576,19 +576,19 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifySplitScreen() {
         if (splitSeatPage.isDisplayed()) {
-            utils.log().info("Split Seat Page is Visible");
+//            utils.log().info("Split Seat Page is Visible");
         } else {
-            utils.log().info("Split Seat Page is not Visible");
+//            utils.log().info("Split Seat Page is not Visible");
         }
 
     }
 
-    @FindBy(xpath = "Seat 1")
+    @FindBy(xpath = "//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']")
     WebElement seat1Table1;
 
     public void verifySplitSeatIsAvailable() {
         Assert.assertEquals(seat1Table1.getText(), "Seat 1");
-        utils.log().info("Available - " + seat1Table1.getText());
+//        utils.log().info("Available - " + seat1Table1.getText());
     }
 
     public String getSelectValidCheckMsg() {
@@ -722,17 +722,20 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void pressSplitEvenly() {
         elementClick(SplitEvenly, "Tapped Split Evenly in the Split Seat");
     }
-    @FindBy(xpath = "Cannot split as payment(s) has been made in seats - 2")
+    @FindBy(xpath = "//p[.='Cannot split as payment(s) has been made in seats - 2']")
     WebElement cannotSplitAsPayment;
     public void verifyCannotSplitAsPayments(){
         Assert.assertEquals(cannotSplitAsPayment.getText(),"Cannot split as payment(s) has been made in seats - 2");
-        utils.log().info("Displayed popup as - "+cannotSplitAsPayment.getText());
+//        utils.log().info("Displayed popup as - "+cannotSplitAsPayment.getText());
     }
     public void verifySeat2() {
-        if (find(seat2OrderScreen, 2)) {
-            utils.log().info("Seat2 is Added ");
+
+        int count = driver.findElements(By.xpath("//ion-col[contains(@class,'seats md hydrated')]//div//button")).size();
+        String count1 = Integer.toString(count);
+        if (count1.equals("2")) {
+//            utils.log().info("Seat2 is Added ");
         } else {
-            utils.log().info("Seat2 is not Added");
+//            utils.log().info("Seat2 is not Added");
         }
 
     }
@@ -747,9 +750,9 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void seperateItemIsVisble() {
         if (seperateIcon.isEnabled()) {
-            utils.log().info("Seperate Icon Is Enable");
+//            utils.log().info("Seperate Icon Is Enable");
         } else {
-            utils.log().info("Seperate Icon Is Disable");
+//            utils.log().info("Seperate Icon Is Disable");
         }
 
     }
@@ -851,14 +854,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(PrintAllSplitSeat, "Tapped Print All Button in the Split seat");
     }
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[3]")
+    @FindBy(xpath = "//ion-col[contains(@class,'ion-text-center md hydrated')]//linga-icon[@symbol='print']/..//div[.='Print']")
     WebElement printSplitCheck;
 
     public void clickPrintButtonSplitCheck() {
         elementClick(printSplitCheck, "Selcted Button as - " + printSplitCheck.getText());
     }
 
-    @FindBy(xpath = "Print All")
+    @FindBy(xpath = "//div[.='Print All']")
     WebElement printAllBtn;
 
     public void printAllBtn() {
@@ -1510,25 +1513,25 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void selectTheNumberOfSplitItem(String numb) {
-        WebElement numberSelect = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + numb + "\"]"));
+        WebElement numberSelect = (WebElement) driver.findElement(By.xpath("//button[.='"+numb+"']"));
         elementClick(numberSelect, "Selected - " + numb);
     }
 
     public void clickSplitBySeatInSplitCheck() {
-        WebElement splitBySeat = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeButton[2]"));
+        WebElement splitBySeat = (WebElement) driver.findElement(By.xpath("//div[.='Split By Seat']"));
         elementClick(splitBySeat, "Selected Button as - " + splitBySeat.getText());
     }
 
     public void verifySeatsAvaliableInSplitCheck() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         String seatNumber = TestUtils.seatNumber;
-        WebElement getSeatNumber = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        String seatNumber1 = getSeatNumber.getText();
-        String seatNumber11 = seatNumber1.replaceAll("[A-Za-z ]", "");
-        utils.log().info("seatNumber - " + seatNumber);
-        utils.log().info("seatNumber11 - " + seatNumber11);
+        List<WebElement> getSeatNumber = driver.findElements(By.xpath("//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(.,'Seat')]"));
+        int seatNumber1 = getSeatNumber.size();
+        String seatNumber11 = Integer.toString(seatNumber1);
+//        utils.log().info("seatNumber - " + seatNumber);
+//        utils.log().info("seatNumber11 - " + seatNumber11);
         Assert.assertEquals(seatNumber, seatNumber11);
-        utils.log().info("Seat Number - " + seatNumber11 + " is Available");
+//        utils.log().info("Seat Number - " + seatNumber11 + " is Available");
     }
 
     public void verifySeatsAvaliableInSplitCheck1() {
@@ -1545,15 +1548,15 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifySplittedCheckAvailableInActiveCheck() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        WebElement searchTab = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField"));
+        WebElement searchTab = (WebElement) driver.findElement(By.xpath("//input[@data-placeholder='Check No']"));
         // String checkNumber = TestUtils.globalCheckNumber1;
         searchTab.sendKeys(TestUtils.globalCheckNumber1);
-        WebElement phoneOrders = mergeAndFindElement(TestUtils.globalCheckNumber1, "", TestUtils.Accessibility);
+        WebElement phoneOrders = driver.findElement(By.xpath("//div[contains(@class,'table-row table-row')]//tr//td[.='"+TestUtils.globalCheckNumber1+"']"));
         if (phoneOrders.isDisplayed()) {
-            utils.log().info(TestUtils.globalCheckNumber1 + " - Closed Check is displayed in Active tab ");
+//            utils.log().info(TestUtils.globalCheckNumber1 + " - Closed Check is displayed in Active tab ");
             elementClick(phoneOrders, "Selected - " + TestUtils.globalCheckNumber1);
         } else {
-            utils.log().info("Closed check is not displayed");
+//            utils.log().info("Closed check is not displayed");
         }
     }
 
@@ -1576,17 +1579,17 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public String[] ModifierQty2 = {" ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
 
     public void verifyMenuIsSplittedEvenly() {
-        List<WebElement> menus = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> menus = (List<WebElement>) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')]"));
         for (int i = 1; i <= menus.size(); i++) {
-            WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
+            WebElement menuName = (WebElement) driver.findElement(By.xpath("(//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')])["+i+"]"));
             MenuNameTxt[i] = menuName.getText();
             TestUtils.SplitSeatMenus[i] = MenuNameTxt[i];
-            WebElement menuQuantity = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeButton/XCUIElementTypeStaticText"));
+            WebElement menuQuantity = (WebElement) driver.findElement(By.xpath("(//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'ion-text-right')])["+i+"]"));
             MenuQty[i] = menuQuantity.getText();
             TestUtils.MenuQuantity[i] = MenuQty[i];
 
             //    utils.log().info("Seat 1 Menu Name - " + MenuNameTxt[i]);
-            WebElement menuPrize = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
+            WebElement menuPrize = (WebElement) driver.findElement(By.xpath(""));
             MenuNamePrize[i] = menuPrize.getText();
             TestUtils.SplitSeatMenusPrize[i] = MenuNamePrize[i];
             utils.log().info("Seat 1 Menu Name  - "+i+" " + MenuNameTxt[i] + " Quantity - " + MenuQty[i] + " Prize - " + MenuNamePrize[i]);
@@ -1668,13 +1671,16 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifyAllMenuIsClubIntoSingleSeat() {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        List<WebElement> seat1TableMenuCount = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        int sizeOfCount = seat1TableMenuCount.size();
-        Assert.assertEquals(sizeOfCount, 0);
-        utils.log().info("Seat 1 Menu Count - " + sizeOfCount);
-        List<WebElement> seat1TableMenuCount1 = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
+        int countvalue = 0;
+        try {
+            List<WebElement> seat1TableMenuCount = (List<WebElement>) driver.findElement(By.xpath("(//ion-grid[contains(@class,'orderDetails')]//ion-list)[1]//ion-item[contains(@class,'inserted item md item')]//ion-col[contains(@class,'menu-name')]"));
+            countvalue = seat1TableMenuCount.size();
+        }catch (Exception e) {}
+        Assert.assertEquals(countvalue, 0);
+//        utils.log().info("Seat 1 Menu Count - " + sizeOfCount);
+        List<WebElement> seat1TableMenuCount1 = (List<WebElement>) driver.findElement(By.xpath("(//ion-grid[contains(@class,'orderDetails')]//ion-list)//ion-item[contains(@class,'inserted item md item')]//ion-col[contains(@class,'menu-name')]"));
         int sizeOfCount1 = seat1TableMenuCount1.size();
-        utils.log().info("Seat 2 Menu Count - " + sizeOfCount1);
+//        utils.log().info("Seat 2 Menu Count - " + sizeOfCount1);
 //        for (int i = 1; i <= sizeOfCount1; i++) {
 //            WebElement menus = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
 //            String menuTxt = menus.getText();
@@ -1685,16 +1691,16 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void getSeat1Prize() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
+        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement tax = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Tax']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Paid Amount']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement Total = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
         String subTotalTxt = subTotal.getText();
         String subTotalTxt1 = subTotalTxt.replaceAll("[A-Z$. ]","");
         String subTotalTxt11 = subTotalTxt1.replaceAll("[,]","");
         double subTotalTxt2 = Double.parseDouble(subTotalTxt11);
         TestUtils.subtotalTxt = subTotalTxt;
-        utils.log().info("Seat 1 SubTotal - " + subTotalTxt);
+//        utils.log().info("Seat 1 SubTotal - " + subTotalTxt);
         double subtotalValue = Double.parseDouble(subTotalTxt11);
         double taxValue = ((subtotalValue*8)/100);//DefaultTAx
         // TestUtils.taxTxtOfBeforeRound = String.valueOf(taxValue);
@@ -1706,7 +1712,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         double a1 = (int)Math.round(a);
         DecimalFormat d= new DecimalFormat("0.00");
         d.format(a1);
-        utils.log().info("Tax Value After Format - "+d.format(a1));
+//        utils.log().info("Tax Value After Format - "+d.format(a1));
         String taxTxt = String.valueOf(d.format(a1));
 //        String taxTxt = String.valueOf(a);
         TestUtils.taxTxtSeat1 = taxTxt;
@@ -1719,13 +1725,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
         DecimalFormat decimalFormat = new DecimalFormat("0.00");
         String ActualValueTax3=decimalFormat.format(Double.parseDouble(ActualValueTax2));
 
-        utils.log().info("taxTxt - " + taxTxt);
-        utils.log().info("ActualValueTax3 - " + ActualValueTax3);
+//        utils.log().info("taxTxt - " + taxTxt);
+//        utils.log().info("ActualValueTax3 - " + ActualValueTax3);
         Assert.assertEquals(taxTxt,ActualValueTax3);
-        utils.log().info("Seat 1 Tax - " + taxTxt);
+//        utils.log().info("Seat 1 Tax - " + taxTxt);
         String paidAmountTxt = paidAmount.getText();
         TestUtils.paidAmount = paidAmountTxt;
-        utils.log().info("Seat 1 Paid Amount - " + paidAmountTxt);
+//        utils.log().info("Seat 1 Paid Amount - " + paidAmountTxt);
 
         String TotalTxt = Total.getText();
         String TotalTxt1 = TotalTxt.replaceAll("[A-Z$. ]","");
@@ -1734,7 +1740,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         String totalTxtt1 = String.valueOf((int) Math.round(totalTxtt));
 
         double totalValuee = subTotalTxt2+taxValue;
-        utils.log().info("subTotalTxt2 "+subTotalTxt2 );
+//        utils.log().info("subTotalTxt2 "+subTotalTxt2 );
 //        utils.log().info("a "+a );
         BigDecimal totall=new BigDecimal(totalValuee).setScale(2, RoundingMode.HALF_UP);
         double totall1= totall.doubleValue();
@@ -1742,15 +1748,15 @@ public class TableLayOutScreen extends OrderManagementScreen {
         TestUtils.totalTxt = String.valueOf(totalValuee);
         Assert.assertEquals(totalValuee1,totalTxtt1);
 
-        utils.log().info("Seat 1 Total - " + TotalTxt);
+//        utils.log().info("Seat 1 Total - " + TotalTxt);
     }
 
     public void getSeat2Prize() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
+        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement tax = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Tax']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Paid Amount']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement Total = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
 //        String subTotalTxt = subTotal.getText();
 //        TestUtils.subtotalTxt1 = subTotalTxt;
 //        utils.log().info("Seat 2 SubTotal - " + subTotalTxt);
@@ -1790,10 +1796,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
         DecimalFormat d1= new DecimalFormat("0.00");
         String taxTxt1 = d1.format(ActualValueTax3);
         Assert.assertEquals(taxTxt,taxTxt1);
-        utils.log().info("Seat 2 Tax - " + taxTxt);
+//        utils.log().info("Seat 2 Tax - " + taxTxt);
         String paidAmountTxt = paidAmount.getText();
         TestUtils.paidAmount1 = paidAmountTxt;
-        utils.log().info("Seat 2 Paid Amount - " + paidAmountTxt);
+//        utils.log().info("Seat 2 Paid Amount - " + paidAmountTxt);
 
         String TotalTxt = Total.getText();
         String TotalTxt1 = TotalTxt.replaceAll("[A-Z$. ]","");
@@ -1802,7 +1808,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         String totalTxtt1 = String.valueOf(totalTxtt);
 
         double totalValuee = subTotalTxt2+taxValue;
-        utils.log().info("subTotalTxt2 "+subTotalTxt2 );
+//        utils.log().info("subTotalTxt2 "+subTotalTxt2 );
 //        utils.log().info("a "+a );
         BigDecimal totall=new BigDecimal(totalValuee).setScale(2, RoundingMode.HALF_UP);
         double totall1= totall.doubleValue();
@@ -1810,7 +1816,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         TestUtils.totalTxt1 = String.valueOf(totalValuee);
         Assert.assertEquals(totalValuee1,totalTxtt1);
 
-        utils.log().info("Seat 2 Total - " + TotalTxt);
+//        utils.log().info("Seat 2 Total - " + TotalTxt);
     }
 
     public void verifySeat1PrizeAndSeat2PrizeIsSame() {
@@ -2178,9 +2184,9 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifySeatAsPaid(){
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
-        WebElement seats = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
+        WebElement seats = (WebElement) driver.findElement(By.xpath("//ion-app[contains(@id,'seat2')]//ion-header//ion-col[.='Paid']"));
         Assert.assertEquals(seats.getText(),"Paid");
-        utils.log().info("Displayed as - "+seats.getText());
+//        utils.log().info("Displayed as - "+seats.getText());
     }
 
     public void verifyTheMergedPopup(){

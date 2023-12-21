@@ -35,7 +35,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
     WebElement cashPaymentBtn;
 
-    @FindBy(xpath = "Yes")
+    @FindBy(xpath = "//button[contains(.,'Yes')]")
     WebElement yesSendToKitchenBtn;
 
     @FindBy(xpath = "//button[contains(.,'No')]")

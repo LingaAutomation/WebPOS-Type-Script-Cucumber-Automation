@@ -42,7 +42,7 @@ public class CapabilitiesManager {
         //Clear the text from the user name text box
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name
-        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusd@mail.com");
+        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("basicautotest@mail.com");
         //Clear the password from the password text box
         driver.findElement(By.xpath("//input[@name='password']")).clear();
         //Enter the password

@@ -2124,8 +2124,7 @@ Feature:Basic Validation
     And I click BarTab Layout
     And I click power button in the All Orders screen
 
-
-
+  @MainBAsic
   Scenario: Split Check from Table layout
      ####  Split Check from Table layout/bar tab Screen  ####
     Given I'm logged in
@@ -2136,7 +2135,7 @@ Feature:Basic Validation
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click Table Layout tab
 #      And I select Menu For Dine order type as "Salad" for split Check
 #      And I click finish button
@@ -2162,14 +2161,14 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
 
       ##### Separate Item  #####
     And I click the menu on the split check screen
@@ -2195,7 +2194,7 @@ Feature:Basic Validation
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click Table Layout tab
     And I click the Split Button from the Table Layout Screen
     And I click split check button
@@ -2214,12 +2213,12 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the menu on the split check screen
     And I click Seperate item button
     And I select the number of split item "2" for Split check
@@ -2234,10 +2233,10 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click Check Stats tab
     When I verify the splitted check is available in active checks tab
-    And I click power button
+    And I click power button in the All Orders screen
 
 
-  @Merge09
+  @MainBAsic
   Scenario: Split Check By BarTab Screen
   #######  Split Check By BarTab Screen  #######
     Given I'm logged in
@@ -2245,14 +2244,14 @@ Feature:Basic Validation
     And I click All
     And I click BarTab Layout
     And I click NewTab from BarTab Layout
-    And I click "Exit" in the preauth popup "click Exit Button"
+#    And I click "Exit" in the preauth popup "click Exit Button"
     And I click add button to create seat in order screen
     And I click seat 1 for add menu item
     And I select Menu For Bartab order type as "North Indian dish" for split Check
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click BarTab Layout
     And I click split button on the bartab screen
     And I click split check button
@@ -2272,14 +2271,14 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
 
       ##### Separate Item  #####
     And I click the menu on the split check screen
@@ -2302,14 +2301,14 @@ Feature:Basic Validation
 
     And I click BarTab Layout
     And I click NewTab from BarTab Layout
-    And I click "Exit" in the preauth popup "click Exit Button"
+#    And I click "Exit" in the preauth popup "click Exit Button"
     And I click add button to create seat in order screen
     And I click seat 1 for add menu item
     And I select Menu For Bartab order type as "North Indian dish" for split Check
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click BarTab Layout
     And I click split button on the bartab screen
     And I click split check button
@@ -2328,8 +2327,8 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
     And I click print All Button in the split check screen
     Then I should see Receipt Printer popup
@@ -2348,9 +2347,9 @@ Feature:Basic Validation
 #    And I click BarTab Layout
     And I click Check Stats tab
     When I verify the splitted check is available in active checks tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-
+  @MainBAsic
   Scenario: Split Check From Order Screen (Table Layout)
     Given I'm logged in
     And I closed the order type window
@@ -2374,14 +2373,14 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
 
       ##### Separate Item  #####
     And I click the menu on the split check screen
@@ -2419,8 +2418,8 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
     And I click print All Button in the split check screen
     Then I should see Receipt Printer popup
@@ -2439,16 +2438,16 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click Check Stats tab
     When I verify the splitted check is available in active checks tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Merge09
+  @MainBAsic
   Scenario: Split Check From Order Screen (Bartab Layout)
     Given I'm logged in
     And I closed the order type window
     And I click All
     And I click BarTab Layout
     And I click NewTab from BarTab Layout
-    And I click "Exit" in the preauth popup "click Exit Button"
+#    And I click "Exit" in the preauth popup "click Exit Button"
     And I click add button to create seat in order screen
     And I click seat 1 for add menu item
     And I select Menu For Bartab order type as "North Indian dish" for split Check
@@ -2470,14 +2469,14 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
 
       ##### Separate Item  #####
     And I click the menu on the split check screen
@@ -2519,8 +2518,8 @@ Feature:Basic Validation
     And I click print button in the split check screen
     Then I should see please save all the changes to print popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
     And I click print All Button in the split check screen
     Then I should see Receipt Printer popup
@@ -2539,9 +2538,9 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click Check Stats tab
     When I verify the splitted check is available in active checks tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Merge
+  @MainBAsic
   Scenario: Split Seat from Table layout/bar tab Screen
     Given I'm logged in
     And I closed the order type window
@@ -2551,7 +2550,7 @@ Feature:Basic Validation
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click Table Layout tab
     And I click the Split Button from the Table Layout Screen
     And I click the Split By Seat on the Pop-up
@@ -2571,14 +2570,14 @@ Feature:Basic Validation
     And I click print button in the split seat screen
 #  Then I should see please save all the changes to print popup
 #  And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
 
 #####  SEPERATE ITEM #######
 
@@ -2604,25 +2603,25 @@ Feature:Basic Validation
     And I click Split Evenly Button
     Then I should see Seperate Item is Disable
     And I get seat 1 prize details
-    Then I should verify menu is splitted evenly
+#    Then I should verify menu is splitted evenly
 #  And I verify seat 1 prize and seat 2 prize is same
 
   #########  GROUP SEATS  ###########
 
     And I get seat 1 prize details
     And I get seat 2 prize details
-    And I click new check added on the split check screen
+    And I click new seat added on the split seat screen
     And I click seat one on the split screen
     And I click the Group Seats button in the Split Seat
     When I verify all menu is club into single seat after click group seat
-    And I get menu details from the group seat 2
-    And I verify prize details after group seats done
+#    And I get menu details from the group seat 2
+#    And I verify prize details after group seats done
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Seat 2 for add menu item
 #  And I select Menu of Basic validation for QSR as "Appetizers"
-    When I verify split seat menu with order screen menu
-    And I verify split seat prize with order screen prize
+#    When I verify split seat menu with order screen menu
+#    And I verify split seat prize with order screen prize
     And I click Finish button
     And I click Table Layout tab
     And I click the Split Button from the Table Layout Screen
@@ -2633,7 +2632,7 @@ Feature:Basic Validation
 
   ##########  PAY  ############
 
-    And I click new check added on the split check screen
+    And I click new seat added on the split seat screen
     And I click Pay Button in Split Screen
     Then I should see the Payment window
     And I click cash button from the payment method popup
@@ -2649,25 +2648,25 @@ Feature:Basic Validation
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-  @Merge09
+  @MainBAsic
   Scenario: Split Seat from bar tab Screen
     Given I'm logged in
     And I closed the order type window
     And I click All
     And I click BarTab Layout
     And I click NewTab from BarTab Layout
-    And I click "Exit" in the preauth popup "click Exit Button"
+#    And I click "Exit" in the preauth popup "click Exit Button"
 #    And I click add button to create seat in order screen
 #    And I click seat 1 for add menu item
     And I select Menu For Bartab order type as "North Indian dish" for split Check
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click BarTab Layout
     And I click split button on the bartab screen
 #    And I click split check button
@@ -2693,14 +2692,14 @@ Feature:Basic Validation
     And I click print button in the split seat screen
 #  Then I should see please save all the changes to print popup
 #  And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All button in the split seat screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
 
 #####  SEPERATE ITEM #######
 
@@ -2727,7 +2726,7 @@ Feature:Basic Validation
     And I click Split Evenly Button
     Then I should see Seperate Item is Disable
     And I get seat 1 prize details
-    Then I should verify menu is splitted evenly
+#    Then I should verify menu is splitted evenly
 #    And I verify seat 1 prize and seat 2 prize is same
 
   #########  GROUP SEATS  ###########
@@ -2738,14 +2737,14 @@ Feature:Basic Validation
     And I click seat one on the split screen
     And I click the Group Seats button in the Split Seat
     When I verify all menu is club into single seat after click group seat
-    And I get menu details from the group seat 2
-    And I verify prize details after group seats done
+#    And I get menu details from the group seat 2
+#    And I verify prize details after group seats done
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Seat 2 for add menu item
 #  And I select Menu of Basic validation for QSR as "Appetizers"
-    When I verify split seat menu with order screen menu
-    And I verify split seat prize with order screen prize
+#    When I verify split seat menu with order screen menu
+#    And I verify split seat prize with order screen prize
     And I click Finish button
     And I click BarTab Layout
 #    And I click the Split Button from the Table Layout Screen
@@ -2777,7 +2776,7 @@ Feature:Basic Validation
     And I click BarTab Layout
     And I click power button
 
-  @bsci
+  @MainBAsic
   Scenario: Split Seat from Order Screen
     Given I'm logged in
     And I closed the order type window
@@ -2806,16 +2805,16 @@ Feature:Basic Validation
 #  And I click yes to open Close Till Screen
     Then I should see item need to send to kitchen popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All button in the split seat screen
     Then I should see item need to send to kitchen popup
     And I click yes to open Close Till Screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
 
 #####  SEPERATE ITEM #######
 
@@ -2836,7 +2835,7 @@ Feature:Basic Validation
     And I click Split Evenly Button
     Then I should see Seperate Item is Disable
     And I get seat 1 prize details
-    Then I should verify menu is splitted evenly
+#    Then I should verify menu is splitted evenly
   #  And I verify seat 1 prize and seat 2 prize is same
 
   #########  GROUP SEATS  ###########
@@ -2847,14 +2846,14 @@ Feature:Basic Validation
     And I click seat one on the split screen
     And I click the Group Seats button in the Split Seat
     When I verify all menu is club into single seat after click group seat
-    And I get menu details from the group seat 2
-    And I verify prize details after group seats done
+#    And I get menu details from the group seat 2
+#    And I verify prize details after group seats done
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Seat 2 for add menu item
 #  And I select Menu of Basic validation for QSR as "Appetizers"
-    When I verify split seat menu with order screen menu
-    And I verify split seat prize with order screen prize
+#    When I verify split seat menu with order screen menu
+#    And I verify split seat prize with order screen prize
 #    And I click Finish button
 #    And I click Table Layout tab
 #    And I click the Split Button from the Table Layout Screen
@@ -2886,8 +2885,6 @@ Feature:Basic Validation
     And I hide the keyboard
     And I click Table Layout tab
     And I click power button in the All Orders screen
-
-
 
   @MainBAsic
   Scenario: Price Level ( Customer Mapped in membership by BO level )

@@ -893,16 +893,16 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split Check$")
-    public void iSelectMenuForDineOrderTypeAsForSplitCheck(String Cate){
+    public void iSelectMenuForDineOrderTypeAsForSplitCheck(String Cate) throws Exception {
         new Regression(driver).selectMenuForDineInForSplitCheck(Cate);
     }
 
     @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split seat$")
-    public void iSelectMenuForDineOrderTypeAsForSplitSeat(String cate){
+    public void iSelectMenuForDineOrderTypeAsForSplitSeat(String cate) throws Exception {
         new Regression(driver).selectMenuForDineInForSplitSeat(cate);
     }
     @And ("^I select Menu For Bartab order type as \"([^\"]*)\" for split Check$")
-    public void iSelectMenuForBartabOrderTypeAsForSplitCheck(String cate){
+    public void iSelectMenuForBartabOrderTypeAsForSplitCheck(String cate) throws Exception {
         new Regression(driver).selectMenuForBarTabForSplitCheck(cate);
     }
 
@@ -921,7 +921,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split check order screen$")
-    public void iSelectMenuForDineInAsForSplitCheckOrderScreen(String cate){
+    public void iSelectMenuForDineInAsForSplitCheckOrderScreen(String cate) throws Exception {
         new Regression(driver).selectTheMenuFromOrderScreen(cate);
     }
 
@@ -940,11 +940,11 @@ public class CheckOptionsStepDef {
     }
 
     @And("^I select Menu for Bartab as \"([^\"]*)\" for split check order screen$")
-    public void iSelectMenuForBarTabAsForSplitCheckOrderScreen(String cate){
+    public void iSelectMenuForBarTabAsForSplitCheckOrderScreen(String cate) throws Exception {
         new Regression(driver).selectTheMenuFromOrderScreen(cate);
     }
     @And ("^I select Menu for QSR as \"([^\"]*)\"$")
-    public void iSelectMenuForQsrAs(String cate){
+    public void iSelectMenuForQsrAs(String cate) throws Exception {
         new Regression(driver).selectTheMenuFromOrderScreen(cate);
     }
 
