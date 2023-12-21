@@ -1766,21 +1766,21 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I select the menu item for Split Evenly$")
-    public void iSelectTheMenuItemForSplitEvenly(){
+    public void iSelectTheMenuItemForSplitEvenly() throws InterruptedException {
         new Regression(driver).selectMenuForSplitEvenly();
     }
     @And ("^I select the menu item for Split")
-    public void iSelectTheMenuItemForSplit(){
+    public void iSelectTheMenuItemForSplit() throws InterruptedException {
         new Regression(driver).selectMenuForSplitAction();
     }
 
     @And ("^I select the menu item for Seperate item as \"([^\"]*)\"$")
-    public void iSelectTheMenuItemForSeperateITemAs(String number){
+    public void iSelectTheMenuItemForSeperateITemAs(String number) throws InterruptedException {
         new Regression(driver).splitSeperateItem(number);
     }
 
     @And ("^I select the menu item for group seat$")
-    public void iSelectTheMenuItemForGroupSeat(){
+    public void iSelectTheMenuItemForGroupSeat() throws InterruptedException {
         new Regression(driver).selectMenuForGroupSeat();
     }
 
@@ -1815,7 +1815,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And("^I select the Menu")
-    public void iSelectTheMenu(){
+    public void iSelectTheMenu() throws InterruptedException {
         new Regression(driver).selectMenu();
     }
 
@@ -1840,7 +1840,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I select Menu For Basic validation2 as \"([^\"]*)\"$")
-    public void iSelectMenuForBasicValidation2As(String cate){
+    public void iSelectMenuForBasicValidation2As(String cate) throws InterruptedException {
         new Regression(driver).selectMenuCloudPOSSs(cate);
     }
 

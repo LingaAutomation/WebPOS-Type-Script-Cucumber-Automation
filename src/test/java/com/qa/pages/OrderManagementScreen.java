@@ -18,18 +18,16 @@ import java.util.concurrent.TimeUnit;
 
 public class OrderManagementScreen extends OrderTypeWindow{
 
-    public WebDriver driver;
+    public WebDriver driver = TestUtils.driver;
 
 
-    public OrderManagementScreen(){
+    public OrderManagementScreen(WebDriver driver1){
+
         super(TestUtils.driver);
 
         this.driver =TestUtils.driver;
 
         PageFactory.initElements(this.driver,this);
-    }
-    public OrderManagementScreen(WebDriver driver) {
-        super(driver);
     }
 
     public String checkNumber="";
@@ -1553,7 +1551,8 @@ public  void selectCategory (String value) throws Exception {
         elementClick(doneButton,"Tapped done button");
     }
 
-    public String getCheckNumberTxt(){
+    public String getCheckNumberTxt() throws InterruptedException {
+        Thread.sleep(7000);
         WebElement checkNum= driver.findElement(By.xpath("//p[@class='order-header-checkno']"));
         checkNumber=checkNum.getText();
         TestUtils.globalCheckNumber=checkNumber;

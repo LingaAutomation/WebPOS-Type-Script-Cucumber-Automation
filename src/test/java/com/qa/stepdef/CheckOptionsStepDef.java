@@ -577,7 +577,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I get check number$")
-    public void iGetCheckNumber(){
+    public void iGetCheckNumber() throws InterruptedException {
         new OrderManagementScreen(driver).getCheckNumberTxt();
     }
 
@@ -926,7 +926,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreen(String cate){
+    public void iSelectMenuForDineInAsForSplitSeatOrderScreen(String cate) throws InterruptedException {
         new Regression(driver).selectTheMenuFromOrderScreenSplitSeat(cate);
     }
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen for merge$")

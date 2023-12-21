@@ -548,7 +548,7 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    public void saleForTestStatePost1() {
+    public void saleForTestStatePost1() throws InterruptedException {
         for (int z = 1; z <= 32; z++) {
             utils.log().info("Table Count - " + z);
             elementClick(newCheck, "Tapped new check");
@@ -1282,7 +1282,7 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    public void saleForTestzamBar() {
+    public void saleForTestzamBar() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         for (int z = 1; z <= 40; z++) {
             utils.log().info("Bar Count - " + z);
@@ -1315,7 +1315,7 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    public void saleForTestzam() {
+    public void saleForTestzam() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
         for (int z = 1; z <= 16; z++) {
             utils.log().info("Table Count - " + z);
@@ -1377,14 +1377,14 @@ public class Regression extends TableLayOutScreen {
     public int itemToSelect4;
 
 
-    public void selectMenuForSplitEvenly() {
+    public void selectMenuForSplitEvenly() throws InterruptedException {
         selectMenu();
         //   verifyTableSeat(itemToSelect);
         splitEvenlyAction();
         // verifyTableSeat(r);
     }
 
-    public void selectMenuForSplitAction() {
+    public void selectMenuForSplitAction() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         selectMenu();
         doSplitAction();
@@ -1631,7 +1631,7 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    public void splitSeperateItem(String noOfSplit) {
+    public void splitSeperateItem(String noOfSplit) throws InterruptedException {
 
         selectMenu();
         elementClick(tableLayoutTab, "");
@@ -1677,7 +1677,7 @@ public class Regression extends TableLayOutScreen {
         }
     }
 
-    public void selectMenu() {
+    public void selectMenu() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         List<WebElement> tablee = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
         int count = tablee.size();
@@ -2752,7 +2752,7 @@ public class Regression extends TableLayOutScreen {
     }
 
 
-    public void selectMenuForGroupSeat() {
+    public void selectMenuForGroupSeat() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         selectMenu();
         doSplitAction();
@@ -4617,7 +4617,7 @@ public class Regression extends TableLayOutScreen {
     }
 
 
-    public String selectTheMenuFromOrderScreenSplitSeat(String cate) {
+    public String selectTheMenuFromOrderScreenSplitSeat(String cate) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
@@ -5035,7 +5035,7 @@ public class Regression extends TableLayOutScreen {
 //        utils.log().info("Primary Check is SAME After Split Check - " + checkNumber.getText());
     }
 
-    public void selectMenuCloudPOSSs(String category) {
+    public void selectMenuCloudPOSSs(String category) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         for (int o = 1; o <= 180; o++) {
             utils.log().info("Sync - " + o);
