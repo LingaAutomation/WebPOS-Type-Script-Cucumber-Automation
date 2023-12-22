@@ -18,14 +18,11 @@ import java.util.concurrent.TimeUnit;
 
 public class OrderManagementScreen extends OrderTypeWindow{
 
-    public WebDriver driver = TestUtils.driver;
-
+//    public WebDriver driver = TestUtils.driver;
 
     public OrderManagementScreen(WebDriver driver1){
 
         super(TestUtils.driver);
-
-        this.driver =TestUtils.driver;
 
         PageFactory.initElements(this.driver,this);
     }
@@ -73,7 +70,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"3\"])[2]" ) //seat number3 -to be deleted
     private WebElement seat3;
 
-    @FindBy(xpath ="(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
+    @FindBy(xpath ="//linga-icon[@symbol='chevron']")
     public WebElement arrowDownForOtherMenuItems;
 
     @FindBy(xpath = "//ion-footer[contains(@class,'modifier_footer')]//span[contains(.,'Done')]")
@@ -369,8 +366,6 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     @FindBy (xpath = "You need to pick at least 1 modifiers from this Group")
     private WebElement youNeedToPickAtLeast1ModifiersFromThisGroup;
-
-
 
 
     public TillManagementScreen pressCountingMachineBtn(){
@@ -669,6 +664,7 @@ public  void selectCategory (String value) throws Exception {
 //        pressArrowDown2();
 //        elementClick(foodCategoryBtn, "Food Category selected");
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        Thread.sleep(2000);
         elementClick(arrowDownForOtherMenuItems, "Arrow Down");
         WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[.='FOOD']"));
         elementClick(cate1, "Tapped category");

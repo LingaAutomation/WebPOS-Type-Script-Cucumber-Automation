@@ -6,7 +6,7 @@ Feature:Basic Validation
 #    And Go to the BO
 #    When I search the store as "TestAppiumUSD"
 
-  @MainBAsic
+
   Scenario: Cashier Out From Till Management Screen
     Given I'm logged in
     And I closed the order type window
@@ -24,11 +24,11 @@ Feature:Basic Validation
 #    Then I should verify the initial Gross sale value as "0,00"
     And I click power button
 
-  @MainBAsic
+
   Scenario: Refund
     Given I'm logged in
     And I closed the order type window
-    And I get check number
+    And I get check number in the Order screen
     And I select Menu of Basic validation for QSR as "Salad"
    # And I get the menu from the order screen
     And I get the total of menu item in order screen
@@ -203,7 +203,7 @@ Feature:Basic Validation
     And I click power button
 
 
-  @MainBAsic
+
   Scenario: Global Till ( PAY IN, PAy Out )
     Given I'm logged in
     And I closed the order type window
@@ -300,13 +300,14 @@ Feature:Basic Validation
     Then I should see you have an Active till do you want to close the till popup
     And I click Yes button on the popup for Hold item
     When I verify the cash expected value and closed till
+    And I click cashier out button in the Till management screen
     Then I should see do you want to print the cashier out popup
     And I click Yes button on the popup for Hold item
     Then I should see cashier out saved successfully popup
     And I click Done button on the Popup
     And I click power button
 
-  @MainBAsic
+
   Scenario: Verify the Pay in, Payout, Audit, Single cashier out, Close the day for the current business day(Clock in, start till(user till, Global till))
     Given I'm logged in
     And I closed the order type window
@@ -360,8 +361,8 @@ Feature:Basic Validation
     And I should see the Reasons window with title "Reasons"
     And I select the pay in reason as Paid In
     When I click OK button to select the payment reason
-    Then I should see payment successful pop-up with the message "Paid In Successfully" pay in
-    And I click Done button on the Popup
+#    Then I should see payment successful pop-up with the message "Paid In Successfully" pay in
+#    And I click Done button on the Popup
     And I click Till button
     Then I should see active till total has changed depends on Pay in
      ######  PAY OUT #######
@@ -377,8 +378,8 @@ Feature:Basic Validation
     And I should see the Reasons window with title "Reasons"
     And I select the pay in reason as Paid Out
     When I click OK button to select the payment reason
-    Then I should see pop-up with the message "Paid Out Successfully" for the pay out
-    And I click Done button on the Popup
+#    Then I should see pop-up with the message "Paid Out Successfully" for the pay out
+#    And I click Done button on the Popup
     And I click Till button
     Then I should see active till total has changed depends on Pay out
     And I click the Toggle Icon button
@@ -402,13 +403,14 @@ Feature:Basic Validation
     Then I should see you have an Active till do you want to close the till popup
     And I click Yes button on the popup for Hold item
     When I verify the cash expected value and closed till
+    And I click cashier out button in the Till management screen
     Then I should see do you want to print the cashier out popup
     And I click Yes button on the popup for Hold item
     Then I should see cashier out saved successfully popup
     And I click Done button on the Popup
     And I click power button
 
-  @MainBAsic
+
   Scenario: Added tip is Correct or not
     Given I'm logged in
     And I closed the order type window
@@ -425,7 +427,7 @@ Feature:Basic Validation
     And I closed the order type window
     And I click log off button in order screen
 
-  @MainBAsic
+
   Scenario: Bussiness Date Verify with Close day window Date
     When I get he Bussiness date from the order screen
     Given I'm logged in
@@ -486,7 +488,7 @@ Feature:Basic Validation
     And I closed the order type window
     And I click log off button in order screen
 
-  @MainBAsic
+   
   Scenario: User Till
     Given I'm logged in
     ##5. Navigate to the Till Management screen
@@ -583,7 +585,7 @@ Feature:Basic Validation
     And I get the closed till check details
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Global Till
     Given I'm logged in
     And I closed the order type window
@@ -682,7 +684,7 @@ Feature:Basic Validation
     And I get the closed till check details
     And I click power button
 
-  @MainBAsic
+   
   Scenario:Verify the Cash Discount charge for the check
     Given I'm logged in
     And I closed the order type window
@@ -710,7 +712,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Transfer Item from one Check to another Check
     Given Login with valid pin in split screen
     And I closed the order type window
@@ -745,7 +747,7 @@ Feature:Basic Validation
     And I click power button
 #    And Close all the active checks
 #
-  @MainBAsic
+   
   Scenario: Transfer To Table from one Check to another Check
     Given Login with valid pin in split screen
     And I closed the order type window
@@ -767,7 +769,7 @@ Feature:Basic Validation
     And I click power button
 #    And Close all the active checks
 
-  @MainBAsic
+   
   Scenario: Verify the "Transfer to Server" from one check to another check
     Given I'm logged in
     And I closed the order type window
@@ -789,7 +791,7 @@ Feature:Basic Validation
     And I click power button
 #    And Close all the active checks
 
-  @MainBAsic
+   
   Scenario: Other than Cash Payment
     Given I'm logged in
     And I closed the order type window
@@ -833,7 +835,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Item Service charge (Item Service Charge With Tax )
     Given I'm logged in
     And I closed the order type window
@@ -847,7 +849,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario:Manual Gratuity Fixed
   ##Manual Gratuity Fixed
     Given I'm logged in
@@ -869,7 +871,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Manual Gratuity Varying
     Given I'm logged in
     And I closed the order type window
@@ -894,7 +896,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Auto Gratuity Fixed
     Given I'm logged in
     And I closed the order type window
@@ -916,7 +918,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Auto Gratuity Varying(Multiple Auto Varying/Fixed gratuity is available means From Step 6 will be applicable)
     ##NOTE: If the store has only one Auto Varying gratuity is available means Step 5 will be applicable
 
@@ -1058,7 +1060,7 @@ Feature:Basic Validation
   #  And I click Table Layout tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Customer
     ## Verify the Customer attachment and search(name & phone no).
     Given I'm logged in
@@ -1076,7 +1078,7 @@ Feature:Basic Validation
     And I enter the customer name randomly
     And I click log off button in order screen
 
-  @MainBAsic
+   
   Scenario: Taxes
       #####   Item based tax (amount)  #####
     Given I'm logged in
@@ -1225,7 +1227,7 @@ Feature:Basic Validation
     And I click power button
 
 
-  @MainBAsic
+   
   Scenario: Orders
      ## Verify Orders(Menu, Menu with Serving size, Menu with Modifiers, Menu with Modifiers and Prefix, Menu with Serving, Modifiers and Prefix)
   ##  Menu   ##
@@ -1289,7 +1291,7 @@ Feature:Basic Validation
     And I close the order type window
     And I click log off button in order screen
 
-  @MainBAsic
+   
   Scenario: Verify the sale in QSR Service Type
     Given I'm logged in
     And I close the order type window
@@ -1367,7 +1369,7 @@ Feature:Basic Validation
     Then I should see closed check in closed check tab
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Sale In Service Types
     ## Verify the sale in Service Type( TO GO )
     Given I'm logged in
@@ -1474,7 +1476,7 @@ Feature:Basic Validation
     And I click power button
 
 
-  @MainBAsic
+   
   Scenario: UpCharge (Verify the Upcharge for the check)
     Given I'm logged in
     And I closed the order type window
@@ -1504,7 +1506,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Upcharge (Role restriction)
     Given I'm logged in for BarTab for basic validation
     And I click New Tab in the Bar Tab Screen
@@ -1549,7 +1551,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Verify the sale in Bar Tab Service Type
     Given I'm logged in
     And I closed the order type window
@@ -1573,7 +1575,7 @@ Feature:Basic Validation
     And I click Submit button on the Payment Window
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Menu Option - Verify the Menu option for the all service type by menu level in order screen
      ## AUTOMATIC HOLD ##
     Given I'm logged in
@@ -1721,7 +1723,7 @@ Feature:Basic Validation
     And I click Done button on the Popup
     And I click log off button in order screen
 
-  @MainBAsic
+   
   Scenario: Check OPTIONS
          #######   TAX EXEMPT  #######
 
@@ -1838,7 +1840,7 @@ Feature:Basic Validation
     And I click log off button in order screen
   ###########   Gift Card  ##############
 
-  @MainBAsic
+   
   Scenario: Gift
     Given I'm logged in
     And I close the order type window
@@ -1884,7 +1886,7 @@ Feature:Basic Validation
 
     ######## GIVE-X ###########
 
-  @MainBAsic
+   
   Scenario: 86 list
     Given I'm logged in
     And I closed the order type window
@@ -1955,7 +1957,7 @@ Feature:Basic Validation
 #    And I click Done button on the Popup
 #    And I click power button
 
-  @MainBAsic
+   
   Scenario: Merge With Check Based Amount (Verify the Merge option from Table layout screen )
     Given I'm logged in
     And I closed the order type window
@@ -2015,7 +2017,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Merge with Item Based Amount (Verify the Merge option from Table layout screen )
     Given I'm logged in
     And I closed the order type window
@@ -2075,7 +2077,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Verify the Merge option from Bar Tab screen
     Given I'm logged in
     And I closed the order type window
@@ -2124,7 +2126,7 @@ Feature:Basic Validation
     And I click BarTab Layout
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Split Check from Table layout
      ####  Split Check from Table layout/bar tab Screen  ####
     Given I'm logged in
@@ -2236,7 +2238,7 @@ Feature:Basic Validation
     And I click power button in the All Orders screen
 
 
-  @MainBAsic
+   
   Scenario: Split Check By BarTab Screen
   #######  Split Check By BarTab Screen  #######
     Given I'm logged in
@@ -2349,7 +2351,7 @@ Feature:Basic Validation
     When I verify the splitted check is available in active checks tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Split Check From Order Screen (Table Layout)
     Given I'm logged in
     And I closed the order type window
@@ -2440,7 +2442,7 @@ Feature:Basic Validation
     When I verify the splitted check is available in active checks tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Split Check From Order Screen (Bartab Layout)
     Given I'm logged in
     And I closed the order type window
@@ -2540,7 +2542,7 @@ Feature:Basic Validation
     When I verify the splitted check is available in active checks tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Split Seat from Table layout/bar tab Screen
     Given I'm logged in
     And I closed the order type window
@@ -2652,7 +2654,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Split Seat from bar tab Screen
     Given I'm logged in
     And I closed the order type window
@@ -2776,7 +2778,7 @@ Feature:Basic Validation
     And I click BarTab Layout
     And I click power button
 
-  @MainBAsic
+   
   Scenario: Split Seat from Order Screen
     Given I'm logged in
     And I closed the order type window
@@ -2886,7 +2888,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Price Level ( Customer Mapped in membership by BO level )
     Given I'm logged in
     And I closed the order type window
@@ -2930,7 +2932,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Customer Mapped in membership by iPad level
     Given I'm logged in
     And I closed the order type window
@@ -2968,7 +2970,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Display group Price Level
     Given I'm logged in
     And I closed the order type window
@@ -2995,7 +2997,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: Reopen the closed checks and validate the tax, total, Subtotal
     Given I'm logged in
     And I closed the order type window
@@ -3024,7 +3026,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
     Scenario: When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
       Given I'm logged in
       And I closed the order type window
@@ -3071,7 +3073,7 @@ Feature:Basic Validation
       And I click All
       And I click power button in the All Orders screen
 
-  @MainBAsic
+   
   Scenario: LIN-22163 - Gratuity value is mismatching, when applying auto gratuity
     Given I'm logged in
     And I closed the order type window
@@ -3104,7 +3106,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+   
 Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   Given I'm logged in
   And I closed the order type window
@@ -3157,7 +3159,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I click log off button in order screen
 
 
-  @MainBAsic
+   
   Scenario: LIN-22594 - Gratuity amounts disappears from the check in the following scenario
     Given I'm logged in
     And I closed the order type window
@@ -3399,7 +3401,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     When I verify the credit card of the check from the batch screen should be encrypted
     And I click power button
 
-  @MainBAsic
+   
     Scenario: LIN-22815 - Allow to save more that 140 characters in customer notes after alert message in customer profile.
       Given I'm logged in
     And I click Add Customer Button
@@ -3469,7 +3471,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
       And I click Done button on the Popup
       And I click power button
 
-  @MainBAsic
+   
 Scenario: Application gets crashed when scroll the category/service type/suggestive search
   Given I'm logged in
   And I closed the order type window

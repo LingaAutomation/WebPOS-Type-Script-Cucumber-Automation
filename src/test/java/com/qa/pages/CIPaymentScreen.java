@@ -62,7 +62,7 @@ public class CIPaymentScreen extends BasePage{
 
     String clickNewTab="//button[contains(.,'New Tab')]";
 
-    String btnSubmit="//button[contains(.,'Submit')]";
+    String btnSubmit = "//button[contains(.,'Submit')]";
 
     String btnNoXPath="//XCUIElementTypeButton[@name=\"{0}\"]";
 
@@ -121,11 +121,13 @@ public class CIPaymentScreen extends BasePage{
 //        click(optExistingCheck,"Existing check clicked");
     }
 
-    public void commonBtnClick(String btnName, String msg){
+    public void commonBtnClick(String btnName, String msg) throws InterruptedException {
 //        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
+        Thread.sleep(3000);
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
+        WebElement element = driver.findElement(By.xpath(btnName));
+
         elementClick(element, msg);
     }
 
@@ -239,7 +241,7 @@ public class CIPaymentScreen extends BasePage{
     public void clickSubmit(){
 //        WebElement element = mergeAndFindElement(btnSubmit, "",TestUtils.XPath);
 //        elementClick(element, "Submit button Clicked");
-        findandclick(btnSubmit, "",TestUtils.XPath);
+        driver.findElement(By.xpath("//button[contains(.,'Submit')]")).click();
 
     }
 

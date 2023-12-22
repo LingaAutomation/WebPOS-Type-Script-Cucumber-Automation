@@ -1,11 +1,10 @@
 package com.qa.stepdef;
 
+import com.qa.pages.OrderManagementScreen_NewPage;
 import com.qa.pages.RefundScreen;
-import com.qa.pages.TillManagementScreen;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import static com.qa.utils.TestUtils.driver;
 
 public class RefundStepDef {
 
@@ -159,5 +158,11 @@ public class RefundStepDef {
     @And ("^I select the menu in the Refund order screen$")
     public void iSelectTheMenuInTheRefundOrderScreen() throws InterruptedException {
         new RefundScreen().clickTheMenuOnTheRefundScreen();
+    }
+
+    @And("I get check number in the Order screen")
+    public void iGetCheckNumberInTheOrderScreen() throws InterruptedException {
+        new OrderManagementScreen_NewPage().getCheckNumberTxt1();
+
     }
 }

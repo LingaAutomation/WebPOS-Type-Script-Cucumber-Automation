@@ -142,7 +142,7 @@ public class TillManagementStepDef {
     }
 
     @And("^I select the pay in reason as Paid In$")
-    public void iSelectThePayInReasonAs() {
+    public void iSelectThePayInReasonAs() throws InterruptedException {
         new PaymentReasonsWindow(driver).selectPaymentReason();
     }
 
@@ -385,7 +385,7 @@ public class TillManagementStepDef {
     }
 
     @When ("^I verify the cash expected value and closed till$")
-    public void iVerifyTheCashExpectedValueAndClosedTill(){
+    public void iVerifyTheCashExpectedValueAndClosedTill() throws InterruptedException {
         new TillManagementScreen(driver).closeTheActiveTills();
     }
 

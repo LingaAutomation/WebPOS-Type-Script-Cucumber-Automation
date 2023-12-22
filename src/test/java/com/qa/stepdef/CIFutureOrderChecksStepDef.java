@@ -58,7 +58,7 @@ public class CIFutureOrderChecksStepDef {
     }
 
     @Then("^I click \"([^\"]*)\" in the tip popup in the batch screen \"([^\"]*)\"$")
-    public void iClickInTheTipPopupInTheBatchScreen(String btnContinue, String msg) {
+    public void iClickInTheTipPopupInTheBatchScreen(String btnContinue, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClick(btnContinue,msg);
     }
 
@@ -467,7 +467,7 @@ public class CIFutureOrderChecksStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the batch tip screen \"([^\"]*)\"$")
-    public void iClickInTheBatchTipScreen(String btnProcessOffline, String msg) {
+    public void iClickInTheBatchTipScreen(String btnProcessOffline, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClick(btnProcessOffline,msg);
     }
 

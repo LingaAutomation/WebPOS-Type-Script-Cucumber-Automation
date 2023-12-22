@@ -13,7 +13,7 @@ public class CapabilitiesManager {
     public void setup() throws InterruptedException {
 
         //Call the chrome driver
-        System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64 - 120 Version\\chromedriver.exe");
         //Open the Chrome window
         driver = new ChromeDriver();
         //Wait for 30 seconds
@@ -38,7 +38,7 @@ public class CapabilitiesManager {
         {
 
         }
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         //Clear the text from the user name text box
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name

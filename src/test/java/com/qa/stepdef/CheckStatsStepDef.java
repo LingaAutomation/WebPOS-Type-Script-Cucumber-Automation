@@ -1,6 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.CheckStatusScreen;
+import com.qa.pages.OrderManagementScreen_NewPage;
 import com.qa.pages.OrdersAndDriversListScreen;
 import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
@@ -12,7 +13,10 @@ public class CheckStatsStepDef {
 
     public WebDriver driver = TestUtils.driver;
 
-
+    @And ("^I get check number$")
+    public void iGetCheckNumber() throws InterruptedException {
+        new OrderManagementScreen_NewPage().getCheckNumberTxt1();
+    }
     @And("^I click Check Stats tab$")
     public void iClickCheckStatsTab() throws InterruptedException {
         new OrdersAndDriversListScreen().selectCheckStatsTab();

@@ -2,9 +2,11 @@ package com.qa.stepdef;
 
 import com.qa.pages.CICloseDayScreen;
 import com.qa.pages.CIPaymentScreen;
-import com.qa.pages.CIOrderPage;
 import com.qa.pages.CIWaitListPage;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class CICloseDayStepDef {
@@ -58,7 +60,7 @@ public class CICloseDayStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the close the day Popup window \"([^\"]*)\"$")
-    public void iClickInTheCloseTheDayPopoupWindow(String btnYes, String msg) {
+    public void iClickInTheCloseTheDayPopoupWindow(String btnYes, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClick(btnYes, msg);
     }
 
@@ -99,7 +101,7 @@ public class CICloseDayStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the close the day screen \"([^\"]*)\"$")
-    public void iClickInTheCloseTheDayScreen(String btnToggleIcon, String msg) {
+    public void iClickInTheCloseTheDayScreen(String btnToggleIcon, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClick(btnToggleIcon, msg);
     }
 
@@ -244,7 +246,7 @@ public class CICloseDayStepDef {
     }
 
     @When("^I click \"([^\"]*)\" in the Active check popup\"([^\"]*)\"$")
-    public void iClickInTheActiveCheckPopup(String btnActiveCheck, String msg) {
+    public void iClickInTheActiveCheckPopup(String btnActiveCheck, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClick(btnActiveCheck,msg);
     }
 
@@ -289,7 +291,7 @@ public class CICloseDayStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the Tip popup \"([^\"]*)\"$")
-    public void iClickInTheTipPopup(String btnCustomTL, String msg) {
+    public void iClickInTheTipPopup(String btnCustomTL, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClick(btnCustomTL,msg);
     }
 
@@ -324,12 +326,12 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I click \"([^\"]*)\" in the amount popup \"([^\"]*)\"$")
-    public void iClickInTheAmountPopup(String btnContinue, String msg) {
+    public void iClickInTheAmountPopup(String btnContinue, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClick(btnContinue,msg);
     }
 
     @Then("^I click \"([^\"]*)\" in the reason screen \"([^\"]*)\"$")
-    public void iClickInTheReasonScreen(String btnOk, String msg) {
+    public void iClickInTheReasonScreen(String btnOk, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClick(btnOk,msg);
     }
 
@@ -414,7 +416,7 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I select \"([^\"]*)\" in the total seats popup \"([^\"]*)\"$")
-    public void iSelectInTheTotalSeatsPopup(String number, String msg) {
+    public void iSelectInTheTotalSeatsPopup(String number, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClick(number,msg);
     }
 

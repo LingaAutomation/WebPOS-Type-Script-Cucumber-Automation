@@ -353,7 +353,7 @@ public class Regression extends TableLayOutScreen {
     @FindBy(xpath = "//linga-icon[@symbol='chevron']")
     public WebElement arrowDownForOtherMenuItems;
 
-    @FindBy(xpath = "Cancel")
+    @FindBy(xpath = "//button[contains(.,'Cancel')]")
     private WebElement cancelBtn;
     @FindBy(xpath = "parent")
     WebElement parent;
@@ -4839,8 +4839,6 @@ public class Regression extends TableLayOutScreen {
         String tableNo = TestUtils.MergecheckTableNO1;
         WebElement table1 = driver.findElement(By.xpath("//p[@id='tableNameId']//label[contains(.,'"+tableNo+"')]"));
 
-
-
     }
 
     public void clickTheCheckFromTheTableLayoutForMerged1() throws InterruptedException {
@@ -5084,9 +5082,9 @@ public class Regression extends TableLayOutScreen {
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
 
         elementClick(cancelBtn, "Closed the Order Type window");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//span[@class='qsrusername']"));
+        WebElement cashierName = driver.findElement(By.xpath("//span[@class='qsrusername']"));
         String name = (cashierName.getText());
-//        utils.log().info("Cashier Name - " + name);
+//       utils.log().info("Cashier Name - " + name);
         TestUtils.cashier_Name1 = name;
 
         elementClick(allBtn, "Selected All");

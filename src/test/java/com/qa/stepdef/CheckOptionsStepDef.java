@@ -576,14 +576,7 @@ public class CheckOptionsStepDef {
         new OrderManagementScreen(driver).selectFoodCategory();
     }
 
-    @And ("^I get check number$")
-    public void iGetCheckNumber() throws InterruptedException {
-        new OrderManagementScreen(driver).getCheckNumberTxt();
-    }
-
-
-
-    //Add Open Item Scenario
+  //Add Open Item Scenario
     @And("^I click Open Item button$")
     public void iClickOpenItemButton() {
         new CheckOptionsScreen(driver).pressOpenItem();

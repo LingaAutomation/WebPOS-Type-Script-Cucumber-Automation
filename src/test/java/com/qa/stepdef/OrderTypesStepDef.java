@@ -334,7 +334,7 @@ public class OrderTypesStepDef {
     }
 
     @When ("^I get he Bussiness date from the order screen$")
-    public void iGetHeBussinessDateFromTheOrderScreen(){
+    public void iGetHeBussinessDateFromTheOrderScreen() throws InterruptedException {
         new ClockInScreen(driver).getBussinessDate();
     }
 
@@ -378,7 +378,7 @@ public class OrderTypesStepDef {
     }
 
     @And ("^I click cash drop from Till settings$")
-    public void iClickCashDropFromTillSettings(){
+    public void iClickCashDropFromTillSettings() throws InterruptedException {
         new TillManagementScreen(driver).clickCashDropFromTillSettings();
     }
 
@@ -603,6 +603,7 @@ public class OrderTypesStepDef {
         public void closeAllTheActiveChecks(){
             new CheckAndItemTransfer().closeTheActiveChecks();
         }
+
 
 }
 

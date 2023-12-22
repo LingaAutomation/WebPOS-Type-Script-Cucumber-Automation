@@ -68,8 +68,6 @@ public class OrderTypeWindow extends ClockInScreen {
     private WebElement eggWhite;
 
 
-
-
     public String orderTypeName(String name){
         WebElement order = driver.findElement(By.xpath("//button[@id='os_menu']//span[1]"));
         return elementGetText(order,"Text");

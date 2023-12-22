@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 
 public class ClockInScreen extends UserLoginScreen{
 
-    public WebDriver driver;
+    public WebDriver driver = TestUtils.driver;
 
     public ClockInScreen(WebDriver driver1) {
         this.driver = TestUtils.driver;
@@ -588,8 +588,9 @@ public class ClockInScreen extends UserLoginScreen{
     }
     public String bussiness = " ";
 
-    public void getBussinessDate(){
+    public void getBussinessDate() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        Thread.sleep(4000);
 //        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
         WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'time-version')]//p[1]"));
         String bussinessTxt = bussinessDate.getText();

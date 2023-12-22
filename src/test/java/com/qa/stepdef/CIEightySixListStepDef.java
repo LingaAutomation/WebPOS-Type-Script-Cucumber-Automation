@@ -126,7 +126,7 @@ public class CIEightySixListStepDef {
     }
 
     @Then("^I click \"([^\"]*)\" in the Quantity popup \"([^\"]*)\"$")
-    public void iClickInTheQuantityPopup(String btnContinue, String msg) {
+    public void iClickInTheQuantityPopup(String btnContinue, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClick(btnContinue,msg);
     }
 
@@ -250,7 +250,7 @@ public class CIEightySixListStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the customer field \"([^\"]*)\"$")
-    public void iClickInTheCustomerField(String btnRepeat, String msg) {
+    public void iClickInTheCustomerField(String btnRepeat, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClick(btnRepeat,msg);
     }
 
@@ -260,7 +260,7 @@ public class CIEightySixListStepDef {
     }
 
     @When("^I click \"([^\"]*)\" in the option screen for repeat \"([^\"]*)\"$")
-    public void iClickInTheOptionScreenForRepeat(String btnRepeat, String msg) {
+    public void iClickInTheOptionScreenForRepeat(String btnRepeat, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClick(btnRepeat,msg);
     }
 
@@ -277,7 +277,7 @@ public class CIEightySixListStepDef {
     }
 
     @And("^I click \"([^\"]*)\" from the selected menu item quantity \"([^\"]*)\"$")
-    public void iClickFromTheSelectedMenuItemQuantity(String btnValue,String msg) {
+    public void iClickFromTheSelectedMenuItemQuantity(String btnValue,String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClick(btnValue,msg);
     }
 

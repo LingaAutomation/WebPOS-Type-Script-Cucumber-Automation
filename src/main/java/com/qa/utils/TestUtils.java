@@ -86,6 +86,8 @@ public class TestUtils {
     public static String taxTxtSeat2= " ";
     public static String taxTxtGroup= " ";
     public static String totalTxt = " ";
+    public static String CasePriceTxt = " ";
+    public static String PaidTxt = " ";
     public static String paidAmount = " ";
     public static String subtotalTxt1 = " ";
     public static String taxTxt1 = " ";

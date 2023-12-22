@@ -1,28 +1,15 @@
 package com.qa.pages;
 
-import com.qa.stepdef.Hooks;
-import com.qa.utils.DriverManager;
-import com.qa.utils.GlobalParams;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import static com.qa.pages.DriverSteup.driver;
 
-import javax.xml.xpath.XPath;
-import java.beans.Visibility;
-import java.security.PublicKey;
 import java.time.Duration;
-import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
-import static java.time.Duration.ofMillis;
 
 public class BasePage extends TGglobalElement {
     public WebDriver driver;
@@ -284,9 +271,11 @@ public class BasePage extends TGglobalElement {
 
     public void elementClick(WebElement e, String msg) {
 
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(e));
+        e.click();
        // try{
 //        utils.log().info(msg);
-         e.click();
 //         }catch (Exception execp){
 //         execp.printStackTrace();
 //        }

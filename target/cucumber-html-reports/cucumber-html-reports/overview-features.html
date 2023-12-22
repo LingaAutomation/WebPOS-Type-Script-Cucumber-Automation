@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                328,
-                45,
-                1930,
+                1,
+                1,
+                19,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 2303) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 21) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                2,
-                49
+                0,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 51) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>21 Dec 2023, 11:10</td>
+      <td>22 Dec 2023, 16:19</td>
     </tr>
   </tbody>
 </table>
@@ -325,18 +325,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_3617140784.html">Basic Validation</a></td>
 
-        <td      class="passed"    >328</td>
-        <td      class="failed"    >45</td>
-        <td     class="skipped"   >1930</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >19</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">2303</td>
+        <td class="total">21</td>
 
-        <td  class="passed"    >2</td>
-        <td  class="failed"    >49</td>
-        <td class="total">51</td>
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="749235842400">12:29.235</td>
+        <td class="duration" data-value="31344347400">31.344</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -344,30 +344,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>328</td>
-      <td>45</td>
-      <td>1930</td>
+      <td>1</td>
+      <td>1</td>
+      <td>19</td>
       <td>0</td>
       <td>0</td>
-      <td>2303</td>
+      <td>21</td>
 
-      <td>2</td>
-      <td>49</td>
-      <td>51</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
 
-      <td class="duration">12:29.235</td>
+      <td class="duration">31.344</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>14.24%</td>
-      <td>1.95%</td>
-      <td>83.80%</td>
+      <td>4.76%</td>
+      <td>4.76%</td>
+      <td>90.48%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>3.92%</td>
-      <td>96.08%</td>
+      <td>0.00%</td>
+      <td>100.00%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

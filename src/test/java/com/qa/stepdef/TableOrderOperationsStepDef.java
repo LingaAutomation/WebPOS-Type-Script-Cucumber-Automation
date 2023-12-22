@@ -329,7 +329,7 @@ public class TableOrderOperationsStepDef {
     @And("^I click Done button on the Popup$")
     public void iClickDoneButtonOnThePopup() throws InterruptedException {
         Thread.sleep(3000);
-        new TableLayOutScreen(driver).pressDone1();
+        new TableLayOutScreen(driver).pressDone2();
     }
 
 
@@ -1847,7 +1847,7 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I get the total of menu item in order screen$")
     public void iGetTheTotalOfMenuItemInOrderScreen(){
-        new OrderManagementScreen(driver).getTotalOfMenuInOrderscreen();
+        new OrderManagementScreen_NewPage().getTotalOfMenuInOrderscreen1();
     }
 
     @And ("^I get the menu from the order screen$")

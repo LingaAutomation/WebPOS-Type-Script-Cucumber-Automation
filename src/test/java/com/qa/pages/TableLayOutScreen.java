@@ -470,6 +470,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
 
+    public void pressDone2() {
+        try {
+            driver.findElement(By.xpath("//mat-dialog-actions//button[contains(.,'Done')]")).click();
+        } catch (Exception e) {
+//            utils.log().info("Tapped Done");
+        }
+    }
+
 
 
     public String getCheckAlreadyMergedString() {

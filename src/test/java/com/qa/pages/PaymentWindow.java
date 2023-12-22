@@ -709,7 +709,7 @@ public class PaymentWindow extends OrderManagementScreen{
     }
     public void verifyAddedTipIsSameWithPaymentScreen(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
-        WebElement tip_Payment = (WebElement) driver.findElements(By.xpath("//ion-row[@class='slideList md hydrated']//ion-col//span"));
+        WebElement tip_Payment = driver.findElement(By.xpath("//ion-row[@class='slideList md hydrated']//ion-col//span"));
 //<<<<<<< HEAD
         String tipAmount = (tip_Payment.getText()).replaceAll("[A-Z ]","").substring(1);
         Assert.assertEquals(TestUtils.tips,tipAmount);
