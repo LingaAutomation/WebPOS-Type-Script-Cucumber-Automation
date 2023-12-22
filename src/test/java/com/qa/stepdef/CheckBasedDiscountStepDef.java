@@ -66,7 +66,7 @@ public class CheckBasedDiscountStepDef {
     }
 
     @And ("^I change the Quantity of menu Item as \"([^\"]*)\"$")
-    public void iChangeTheQuantityOfMenuItemAs(String number){
+    public void iChangeTheQuantityOfMenuItemAs(String number) throws InterruptedException {
         new OrderManagementScreen().enterMenuQuantity(number);
     }
 

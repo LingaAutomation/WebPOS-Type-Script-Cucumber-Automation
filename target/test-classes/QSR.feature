@@ -4639,6 +4639,7 @@ Feature: QSR feature
   Scenario Outline: Verify Check Payment through Side CC with Tax Exempt not select customer in payment screen and also with tip
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
+    When User click cancel button for customer name popup
     And I click the Exit to close the preauth window
     When User click food category
     And I select menu item as "SANDWICHES"

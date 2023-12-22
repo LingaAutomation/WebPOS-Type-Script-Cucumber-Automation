@@ -169,6 +169,11 @@ public class CustomerProfileStepDef {
         new CustomerProfileWindow().closedCustomerProfile();
     }
 
+    @And ("^I closed customer profile window1$")
+    public void iClosedCustomerProfileWindow1(){
+        new CustomerProfileWindow().closedCustomerProfile1();
+    }
+
     @When ("^I enter the card number as \"([^\"]*)\" on the account type screen$")
     public void iEnterTheCardNumberAsOnTheAccountTypeScreen(String Number){
         new CustomerProfileWindow().enterTheCardNumberAccountTypeScreen(Number);

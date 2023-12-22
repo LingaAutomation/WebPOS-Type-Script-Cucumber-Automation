@@ -339,7 +339,7 @@ public class PhoneOrderScreen extends BasePage {
             elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }else{
             utils.log().info("closed check is not available - "+ globalCheckNumber);
-//            int w = 1/0;
+            int w = 1/0;
                 elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
             }
     }

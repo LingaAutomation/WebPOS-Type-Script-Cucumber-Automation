@@ -101,10 +101,10 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "Yes")
     private WebElement yesForHold;
 
-    @FindBy(xpath = "No More Payment need")
+    @FindBy(xpath = "//p[contains(.,'No More payments Needed')]")
     private WebElement noMorePaymentNeed;
 
-    @FindBy(xpath = "No More payments Needed")
+    @FindBy(xpath = "//p[contains(.,'No More payments Needed')]")
     private WebElement noMorePaymentNeed1;
 
     @FindBy(xpath = "(//p[.='You need to order before paying'])")
@@ -302,7 +302,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//button[contains(.,' Remove')]")
     private WebElement removeBtn;
 
-    @FindBy(xpath = "Walkin")
+    @FindBy(xpath = "//p[.=' Walk-in ']")
     private WebElement walkinBtn;
 
     @FindBy(xpath = "//ion-title[contains(.,'Customer Profile')]")
@@ -465,12 +465,16 @@ public class OrderManagementScreen extends OrderTypeWindow{
     }
 
 
-    public void deleteSeat(){
+    public void deleteSeat() throws InterruptedException {
         pressArrowDown1();
+        Thread.sleep(2000);
         elementClick(editDeleteSeatsBtn,"editDeleteSeatsBtn is tapped");
+        Thread.sleep(2000);
         elementClick(seat3,"selected seat3 to be deleted");
+        Thread.sleep(2000);
         elementClick(doneDeleteSeatsBtn,"doneDeleteSeatsBtn is tapped");
-        pressArrowDown1();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//div[@class='cdk-overlay-container']")).click();
     }
 
     public void deleteSeat2() throws InterruptedException {
@@ -758,8 +762,14 @@ public  void selectCategory (String value) throws Exception {
     public void selectMenuItem(String menuItem) throws Exception {
         Thread.sleep(2000);
         WebElement e =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
-
-        elementClick(e, "Selected - "+menuItem);
+        Thread.sleep(2000);
+        if(e.isDisplayed()) {
+            elementClick(e, "Selected - " + menuItem);
+        }
+        else{
+            ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
+            elementClick(e, "Selected - " + menuItem);
+        }
     }
 
     public void verifyMenuSubTotalAs(String amount) throws InterruptedException {
@@ -1278,7 +1288,8 @@ public  void selectCategory (String value) throws Exception {
 
     /***** Void Order ******/
 
-    public void pressVoidBtn(){
+    public void pressVoidBtn() throws InterruptedException {
+        Thread.sleep(2000);
         elementClick(voidBtn, "Void button tapped" );
     }
     public String getVoidReasonPopup(){
@@ -1371,8 +1382,11 @@ public  void selectCategory (String value) throws Exception {
         return elementGetText(paymentMadeOnThisCheckPopupForHouseAccount,"Payment made on this check is Displayed - ");
     }
 
-    public String getNoMorePaymentNeedPopup(){
-        return elementGetText(noMorePaymentNeed,"No more payment need is Diplayed - ");
+    public void getNoMorePaymentNeedPopup() throws InterruptedException {
+        Thread.sleep(1000);
+        Assert.assertEquals(noMorePaymentNeed.getText(),"No More payments Needed");
+        utils.log().info("No More payments Needed");
+//        return elementGetText(noMorePaymentNeed,"No more payment need is Diplayed - ");
     }
     public String getNoMorePaymentNeed1Popup(){
         return elementGetText(noMorePaymentNeed1,"No more payment need is Diplayed - ");
@@ -1519,7 +1533,11 @@ public  void selectCategory (String value) throws Exception {
         }
 
     }
-
+    public String customerRemoved() throws InterruptedException {
+        Thread.sleep(3000);
+        utils.log().info(walkinBtn.getText());
+        return elementGetText(walkinBtn,"Customer name is displayed - ");
+    }
     public void LeastDiscount(String discount){
         WebElement e2 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\""+discount+"\"])[1]"));
         // String data= e2.getText().substring(1);
@@ -1542,13 +1560,18 @@ public  void selectCategory (String value) throws Exception {
         }
     }
 
+
+
+
+
+
+
+
     public void clickRemoveBtn(){
         elementClick(removeBtn,"Tapped remove button");
     }
 
-    public String customerRemoved(){
-        return elementGetText(walkinBtn,"Customer name is displayed - ");
-    }
+
 
     public String verifyCustomerProfile(){
         return elementGetText(customerProfileWindow,"Customer profile window is displayed - ");
@@ -2141,8 +2164,90 @@ public  void selectCategory (String value) throws Exception {
         utils.log().info("Cash Reward & Change Due Value is SAME - " +changeDueValue);
     }
 
+    public void clickTheCheckFromTheTableLayoutForMerged() throws InterruptedException {
+
+        String tableNo = TestUtils.tableNumberof;
+        verifyTableMergee2(tableNo);
+    }
 
 
+
+    public void verifyTableMergee2(String m) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("//p[@id='tableNameId']//label[.='"+m+"']"));
+        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
+
+            Thread.sleep(100);
+            elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
+            try {
+                WebElement checks = (WebElement) driver.findElement(By.xpath("//ion-title[.='Checks']"));
+
+                if (checks.isDisplayed()) {
+                    Thread.sleep(200);
+                    String globalCheckNumber = TestUtils.globalCheckNumber;
+
+                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+globalCheckNumber+"']"));
+                    if (checkNumberrr.isDisplayed()) {
+                        elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
+                    } else {
+
+                    }
+                    WebElement x = (WebElement) driver.findElements(By.xpath("//linga-icon[@symbol='closeButton']"));
+                    if (x.isDisplayed()) {
+                        elementClick(x, "Tapped X Button");
+                    } else {
+                    }
+                } else {
+                    WebElement table1 = (WebElement) driver.findElement(By.xpath("//p[@id='tableNameId']//label[.='"+m+"']"));
+                    elementClick(table1, "table SELECTED - " + m);
+                }
+            } catch (Exception w) {
+
+            }
+        }
+    }
+
+    public void verifyTableMergee3(String m) throws InterruptedException {
+
+        utils.log().info("m - " + m);
+//    String data = m.replaceAll("[A-Z ]", "");
+//    utils.log().info("Table num after regex - " + data);
+
+        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
+        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
+//            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.XPath);
+//            String number1 = seatt.getText();
+            Thread.sleep(100);
+            elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
+            try {
+                WebElement checks = (WebElement) driver.findElement(By.xpath("//ion-title[.='Checks']"));
+
+                if (checks.isDisplayed()) {
+                    Thread.sleep(500);
+                    String globalCheckNumber = TestUtils.globalCheckNumber1;
+                    //utils.log().info("Tapped Merging checks - " + globalCheckNumber);
+                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath("(//div[@class='ng-star-inserted']//p)[5]"));
+                    Assert.assertEquals(checkNumberrr.getText(),globalCheckNumber);
+                    if (checkNumberrr.isDisplayed()) {
+                        elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
+                    } else {
+
+                    }
+                    WebElement x = (WebElement) driver.findElements(By.xpath("//linga-icon[@symbol='closeButton']"));
+                    if (x.isDisplayed()) {
+                        elementClick(x, "Tapped X Button");
+                    } else {
+                    }
+                } else {
+                    WebElement table1 = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
+                    elementClick(table1, "table SELECTED - " + m);
+                }
+            } catch (Exception w) {
+
+            }
+        }
+    }
 
 
 

@@ -56,7 +56,7 @@ public class OrderTypeWindow extends ClockInScreen {
     @FindBy(id = "Order Type")
     private WebElement titleTxt;
 
-    @FindBy(name = "Empty list")
+    @FindBy(xpath = "//p[contains(.,'Seats')]")
     private WebElement emptyList;
 
     String OrderListWithSale = "//p[contains(@class,'orderlist')]/../div";

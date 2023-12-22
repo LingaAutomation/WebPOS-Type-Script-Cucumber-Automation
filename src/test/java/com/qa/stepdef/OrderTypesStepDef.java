@@ -230,7 +230,7 @@ public class OrderTypesStepDef {
     }
     @Then ("I should see that OrderScreen")
     public void iShouldSeeThatOrderScreen(){
-        Assert.assertEquals(new OrderTypeWindow().visibleEmpty(),"Empty list");}
+        Assert.assertEquals(new OrderTypeWindow().visibleEmpty(),"Seats");}
 
     /****** BarTab ******/
     @Then("^I should see the Bar Tab screen and a new BarTab is created$")

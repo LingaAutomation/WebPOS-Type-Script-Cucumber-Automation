@@ -6668,17 +6668,7 @@ public class Regression extends TableLayOutScreen {
         verifyTableMergee2(tableNo);
     }
 
-    public void clickTheCheckFromTheTableLayoutForMerged() throws InterruptedException {
 
-        String tableNo = TestUtils.tableNumberof;
-        verifyTableMergee2(tableNo);
-    }
-
-    public void clickTheCheckFromTheTableLayoutForMerged1() throws InterruptedException {
-
-        String tableNo = TestUtils.tableNumberof1;
-        verifyTableMergee3(tableNo);
-    }
 
     @FindBy(name = "Split Check")
     WebElement splitCheckBtn;
@@ -6689,87 +6679,6 @@ public class Regression extends TableLayOutScreen {
         utils.log().info("Displayed Screen as - " + splitCheckBtn.getText());
     }
 
-    public void verifyTableMergee2(String m) throws InterruptedException {
-
-        utils.log().info("m - " + m);
-//    String data = m.replaceAll("[A-Z ]", "");
-//    utils.log().info("Table num after regex - " + data);
-
-        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
-        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
-//            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.XPath);
-//            String number1 = seatt.getText();
-            Thread.sleep(100);
-            elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
-            try {
-                WebElement checks = (WebElement) driver.findElement(By.xpath("//ion-title[.='Checks']"));
-
-                if (checks.isDisplayed()) {
-                    Thread.sleep(500);
-                    String globalCheckNumber = TestUtils.globalCheckNumber;
-                    //utils.log().info("Tapped Merging checks - " + globalCheckNumber);
-                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath("(//div[@class='ng-star-inserted']//p)[5]"));
-                    Assert.assertEquals(checkNumberrr.getText(),globalCheckNumber);
-                    if (checkNumberrr.isDisplayed()) {
-                        elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
-                    } else {
-
-                    }
-                    WebElement x = (WebElement) driver.findElements(By.xpath("//linga-icon[@symbol='closeButton']"));
-                    if (x.isDisplayed()) {
-                        elementClick(x, "Tapped X Button");
-                    } else {
-                    }
-                } else {
-                    WebElement table1 = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
-                    elementClick(table1, "table SELECTED - " + m);
-                }
-            } catch (Exception w) {
-
-            }
-        }
-    }
-
-    public void verifyTableMergee3(String m) throws InterruptedException {
-
-        utils.log().info("m - " + m);
-//    String data = m.replaceAll("[A-Z ]", "");
-//    utils.log().info("Table num after regex - " + data);
-
-        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
-        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
-//            WebElement seatt = BasePage1.mergeAndFindMobileElement12("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]", "", TestUtils.XPath);
-//            String number1 = seatt.getText();
-            Thread.sleep(100);
-            elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
-            try {
-                WebElement checks = (WebElement) driver.findElement(By.xpath("//ion-title[.='Checks']"));
-
-                if (checks.isDisplayed()) {
-                    Thread.sleep(500);
-                    String globalCheckNumber = TestUtils.globalCheckNumber1;
-                    //utils.log().info("Tapped Merging checks - " + globalCheckNumber);
-                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath("(//div[@class='ng-star-inserted']//p)[5]"));
-                    Assert.assertEquals(checkNumberrr.getText(),globalCheckNumber);
-                    if (checkNumberrr.isDisplayed()) {
-                        elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
-                    } else {
-
-                    }
-                    WebElement x = (WebElement) driver.findElements(By.xpath("//linga-icon[@symbol='closeButton']"));
-                    if (x.isDisplayed()) {
-                        elementClick(x, "Tapped X Button");
-                    } else {
-                    }
-                } else {
-                    WebElement table1 = (WebElement) driver.findElement(By.xpath("(//p[contains(.,'"+m+"')])[1]"));
-                    elementClick(table1, "table SELECTED - " + m);
-                }
-            } catch (Exception w) {
-
-            }
-        }
-    }
 
     public void verifyActiveCheckWithSplitCheck() {
         WebElement activeCheck = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));

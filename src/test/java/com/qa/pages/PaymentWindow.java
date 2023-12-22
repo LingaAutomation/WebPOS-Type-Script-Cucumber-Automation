@@ -25,10 +25,10 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
     WebElement cashPaymentBtn;
 
-    @FindBy(name = "Yes")
+    @FindBy(xpath = "//button[.=' Yes ']")
     WebElement yesSendToKitchenBtn;
 
-    @FindBy(name = "No")
+    @FindBy(xpath = "//button[.=' No ']")
     WebElement noSendToKitchenBtn;
 
     @FindBy(xpath = "//span[contains(.,'Payment methods')]")
@@ -47,7 +47,7 @@ public class PaymentWindow extends OrderManagementScreen{
     // @FindBy (xpath = "//XCUIElementTypeButton[@name=\"Adjust\"]")
     WebElement adjustBtn;
 
-    @FindBy (name = "Adjust")
+    @FindBy (xpath = "//button[@id='ps_adjust']")
     WebElement adjustBtnPayment;
 
     @FindBy (name = "OK")
@@ -78,22 +78,25 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy (xpath = "//button[contains(.,'Enter')]")
     private WebElement Enter;
 
-    @FindBy (name = "TL 100")
+    @FindBy (xpath = "//button[contains(.,'$100')]")
     private WebElement hugeAmount;
 
-    @FindBy (name = "Change Due")
+    @FindBy (xpath = "//p[contains(.,'Change Due')]")
     private WebElement changeDue;
 
-    @FindBy (name = "Select a Payment and try again!")
+    @FindBy (xpath = "//p[.='Select a payment and try again!']")
     private WebElement selectAPaymentAndTryAgain;
 
-    @FindBy (name = "Balance Due")
+    @FindBy (xpath = "//label[.='Balance Due:']")
     private WebElement balanceDue;
 
-    @FindBy(name = "No Due")
+    @FindBy(xpath = "//div[@class='balance ng-star-inserted']//p//label[1]")
     private WebElement noDue;
 
-    @FindBy (name = "TL 10")
+    @FindBy(xpath = "//div[@class='balance ng-star-inserted']//p//label[2]")
+    private WebElement noDue1;
+
+    @FindBy (xpath = "//span[.=' $10.00 ']")
     private WebElement Tl10;
 
     @FindBy (name = "Linga Payment")
@@ -226,7 +229,9 @@ public class PaymentWindow extends OrderManagementScreen{
         elementClick(noSendToKitchenBtn, "Order is not sent to kitchen" );
     }
 
-    public void pressExit(){ elementClick(exitBtn, "Exit button is tapped" ); }
+    public void pressExit() throws InterruptedException {
+        Thread.sleep(2000);
+        elementClick(exitBtn, "Exit button is tapped" ); }
 
     public void selectPayment(){ elementClick(selectPaymentBtn, "Payment  selected"); }
 
@@ -272,6 +277,7 @@ public class PaymentWindow extends OrderManagementScreen{
             utils.log().info("Payment is not Deleted");
         }else{
             utils.log().info("Payment Got deleted");
+            int w = 1/0;
         }
     }
 
@@ -291,10 +297,11 @@ public class PaymentWindow extends OrderManagementScreen{
         }
     }
     public void verifyNoDue(){
-        if (noDue.isDisplayed()){
-            utils.log().info("No due field is visible");
+        if (noDue.isDisplayed() && noDue1.getText().equals("$ 0.00")){
+            utils.log().info("No due field is visible - "+noDue1.getText());
         }else {
-            utils.log().info("No due is not visible");
+            utils.log().info("No due is not visible - "+noDue1.getText());
+            int w = 1/0;
         }
     }
     public void pressTl10(){

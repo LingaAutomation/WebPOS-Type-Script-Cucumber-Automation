@@ -53,7 +53,7 @@ public class CapabilitiesManager {
         //Call the chrome driver
 //    System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
 
-        System.setProperty("webdriver.chrome.driver", "/Users/Ragav-QA-Mac-IN/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/shaunmatthew/Downloads/chromedriver");
         //Open the Chrome window
         driver = new ChromeDriver();
         //Wait for 30 seconds
@@ -67,7 +67,7 @@ public class CapabilitiesManager {
         Thread.sleep(8000);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-        Thread.sleep(3000);
+        Thread.sleep(10000);
         try
         {
             if(driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).isDisplayed())
@@ -94,7 +94,7 @@ public class CapabilitiesManager {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
-        Thread.sleep(20000);
+        Thread.sleep(25000);
 
     }
 

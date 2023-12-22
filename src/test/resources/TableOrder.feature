@@ -34,6 +34,7 @@ Feature:Table Order Operations
 
   @RegressionTable
   Scenario Outline: Merge Checks - Rare Scenarios
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -54,6 +55,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -74,6 +76,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -94,6 +97,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -114,6 +118,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -141,8 +146,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<four>"
     And I select a table to be merged as "<five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -158,6 +164,7 @@ Feature:Table Order Operations
 
   @RegressionTable
   Scenario Outline: Merge 5 check without pay
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -180,6 +187,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -202,6 +210,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -224,6 +233,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -246,6 +256,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -275,8 +286,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -291,6 +303,7 @@ Feature:Table Order Operations
  #     | T1    | T2   | T3   | T4  | T5  | 1               |French Friese | Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5        |
 
 #  Scenario Outline: Merge 5 Checks without Pay (Print in Table Layout)
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -313,6 +326,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -335,6 +349,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -357,6 +372,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -379,6 +395,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -409,7 +426,8 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I wait sometimes
+    And I click Done button on the Popup
     And I click Print on the table layout screen
     And I select a table to be merged as "<first>"
 #    Then I should see Receipt Printer popup
@@ -428,6 +446,7 @@ Feature:Table Order Operations
   #    | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
 
   #Scenario Outline: Merge 5 Check without pay (print in Order Screen)
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -450,6 +469,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -472,6 +492,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -494,6 +515,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -516,6 +538,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -545,14 +568,15 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I Should get back to the Order Screen
     And I click print button on the order screen
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
-    And I select a table to be merged as "<first>"
+#    And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
@@ -567,6 +591,7 @@ Feature:Table Order Operations
 
 
  # Scenario Outline: Merge 5 Check without pay (complete the Payment and Print)
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -589,6 +614,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -611,6 +637,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -633,6 +660,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -655,6 +683,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -684,8 +713,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -700,6 +730,7 @@ Feature:Table Order Operations
   #    | T1    | T2   | T3   | T4| T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak| 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5            |
 
   #Scenario Outline: Merge 5 checks- Paid checks and Without paid check
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -725,6 +756,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -747,6 +779,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -769,6 +802,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -794,6 +828,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -826,8 +861,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
@@ -843,6 +879,7 @@ Feature:Table Order Operations
 
 
  # Scenario Outline: Merge 5 checks- Paid checks and Without paid check(Print in Table Layout Screen)
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -868,6 +905,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -890,6 +928,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -912,6 +951,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -937,6 +977,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -969,8 +1010,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I click Print on the table layout screen
     And I select a table to be merged as "<first>"
 #    Then I should see Receipt Printer popup
@@ -989,6 +1031,7 @@ Feature:Table Order Operations
    #   | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
 
   #Scenario Outline: Merge 5 checks- Paid checks and Without paid check(Print in Order Layout Screen)
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1014,6 +1057,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1036,6 +1080,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1058,6 +1103,7 @@ Feature:Table Order Operations
     And I click Done to get back
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1083,6 +1129,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1115,8 +1162,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click print button on the order screen
@@ -1133,6 +1181,7 @@ Feature:Table Order Operations
  #     | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
  #     | T1    | T2   | T3   | T4  | T5  | 1               |French Friese | Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak| 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
   #Scenario Outline: Merge 5 checks with Paid checks
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1158,6 +1207,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1183,6 +1233,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1208,6 +1259,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1233,6 +1285,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1265,8 +1318,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click print button on the order screen
@@ -1274,6 +1328,7 @@ Feature:Table Order Operations
 #    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
+    And I click Done button on the Popup
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
@@ -1284,6 +1339,7 @@ Feature:Table Order Operations
    #   | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato   | 5          |
 
  # Scenario Outline: Merge 5 checks with Paid checks(Print in Table Layout Screen)
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1309,6 +1365,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1334,6 +1391,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1359,6 +1417,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1384,6 +1443,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1416,8 +1476,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I click Print on the table layout screen
     And I select a table to be merged as "<first>"
 #    Then I should see Receipt Printer popup
@@ -1426,6 +1487,7 @@ Feature:Table Order Operations
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
+    And I click Done button on the Popup
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
@@ -1436,6 +1498,7 @@ Feature:Table Order Operations
    #   | T1    | T2    | T3   | T4   | T5   | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato | 5            |
 
  # Scenario Outline: Merge 5 checks with Paid checks(Print Order Screen)
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1461,6 +1524,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<second>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1486,6 +1550,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<third>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1511,6 +1576,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Four>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1536,6 +1602,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select a table to be merged as "<Five>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
@@ -1568,8 +1635,9 @@ Feature:Table Order Operations
     And I select a table to be merged as "<Four>"
     And I select a table to be merged as "<Five>"
     And I click Done button on the pop-up to complete merging
+    And I wait sometimes
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I select a table to be merged as "<first>"
     Then I should see that OrderScreen with Merge seats as "<Merge_seat>"
     And I click print button on the order screen
@@ -1577,6 +1645,7 @@ Feature:Table Order Operations
 #    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
+    And I click Done button on the Popup
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
@@ -1724,12 +1793,20 @@ Feature:Table Order Operations
     And I tap Continue to finish selecting the number of seats
     And I get check number
     And I click Add Customer Button
-    And I click Add new button
-    Then I should see the customer profile window
-    And I click the Save button
-    Then I should see enter email or mobile number popup
-    And I click Done button on the Popup
-    And I closed customer profile window
+  Then I should see the add customer window
+  And I click By Name Email Button
+  And I click add customer button from the Add customer window
+  Then I should see the customer profile window
+  And I closed customer profile window1
+
+#  When I click "Ragavan P" to select customer for the seat
+#  Then I should see customer as "<customer>" added on order screen
+#    And I click Add new button
+#    Then I should see the customer profile window
+#    And I click the Save button
+#    Then I should see enter email or mobile number popup
+#    And I click Done button on the Popup
+#    And I closed customer profile window
     Then I Should get back to the Order Screen
     And I click All
     And I click Table Layout tab
@@ -1805,7 +1882,7 @@ Feature:Table Order Operations
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
 ##    And I click X Button
-#    And I click the check from the table layout for merged
+    And I click the check from the table layout for merged
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
@@ -1833,8 +1910,8 @@ Feature:Table Order Operations
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click Split Evenly Button
-#    Then I should see menu items has to be sent to the kitchen
-#    And I click Yes button on send to kitchen popup
+    Then I should see menu items has to be sent to the kitchen
+    And I click Yes button on send to kitchen popup
     Then I should see Seperate Item is Disable
     Then I should see the additional seat & Item on the Split Seat
     And I click print All button in the split seat screen
@@ -1867,8 +1944,8 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click seat one on the split screen
     And I click print button in the split seat screen
-#    Then I should see item need to send to kitchen popup
-#    And I click Yes button on send to kitchen popup
+    Then I should see item need to send to kitchen popup
+    And I click Yes button on send to kitchen popup
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     And I click the save & close button on the split screen
@@ -1899,8 +1976,8 @@ Feature:Table Order Operations
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click Split Evenly Button
-#    Then I should see menu items has to be sent to the kitchen
-#    And I click Yes button on send to kitchen popup
+    Then I should see menu items has to be sent to the kitchen
+    And I click Yes button on send to kitchen popup
     Then I should see Seperate Item is Disable
     Then I should see the additional seat & Item on the Split Seat
     And I click print All button in the split seat screen
@@ -2908,7 +2985,7 @@ Feature:Table Order Operations
       | T23       |1                | French Friese | Steak    |
 
 
-  @failed_T
+  @RegressionTable
   Scenario Outline: Pay-Split Screen, When click Pay Button application should navigate to the order screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3010,7 +3087,7 @@ Feature:Table Order Operations
       | T11      |1                | French Friese | Tomato   |
 
 
-  @failed_T
+  @RegressionTable
   Scenario Outline: Touch & Paste on Split Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3123,7 +3200,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |  number_of_seats3 | Menu_Item     | Modifier | Menu_Item1   | Modifier1 | Menu_Item2 | Modifier2 |table_no1|
       | T17      |1                | French Friese | Tomato   | 3                 | French Friese | Tomato   | Garlic Bread | 4 BBQ     | B.I. Wings | Tomato    |T15      |
 
-
+  @RegressionTable
   Scenario Outline: Pay Check-Table Layout, Should navigate to Payment Window
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3162,7 +3239,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T23      |1                | French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Print Table Layout, see Receipt printer without order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3252,7 +3329,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier1 | Modifier |
       | T17      |1                | French Friese | Steak     |  Tomato  |
 
-
+  @RegressionTable
   Scenario Outline: Void - Before Order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3365,7 +3442,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier1 | Menu_item1 | Modifier |
       | T10      |1                | French Friese | Tomato    |Onion Rings | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Cash (Paid Exact Amount)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3471,7 +3548,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T12      |1                | French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Payment -Adjust Payment Should not Allow Except cash payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3486,7 +3563,7 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     And I click cash button from the payment method popup
     And I click payment in the payment window
     And I click Adjust button in the payment window after Payment
@@ -3710,7 +3787,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats|number_of_seats2 | Menu_Item    | Modifier |
       | T7       |1               | 2               |French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Cash reopen check After Payment for 2 checks
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3751,7 +3828,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T13      |2                | French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Adjust Payment- Select payment and try again
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"

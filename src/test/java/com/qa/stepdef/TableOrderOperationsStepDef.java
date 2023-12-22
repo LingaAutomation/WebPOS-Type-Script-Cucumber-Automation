@@ -118,7 +118,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And("^I delete the seat$")
-    public void iDeleteTheSeat() {
+    public void iDeleteTheSeat() throws InterruptedException {
         new OrderManagementScreen().deleteSeat();
     }
 
@@ -398,8 +398,8 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see customer removed$")
-    public void iShouldSeeCustomerRemoved(){
-        Assert.assertEquals(new OrderManagementScreen().customerRemoved(),"Walkin");
+    public void iShouldSeeCustomerRemoved() throws InterruptedException {
+        Assert.assertEquals(new OrderManagementScreen().customerRemoved(),"Walk-in");
     }
 
     @Then ("^I should see the customer profile window$")
@@ -1073,7 +1073,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click the save & close button on the split screen$")
-    public void iClickTheSaveCloseButtonOnTheSplitScreen(){
+    public void iClickTheSaveCloseButtonOnTheSplitScreen() throws InterruptedException {
         new TableLayOutScreen().clickSaveandClose();
     }
 
@@ -1084,7 +1084,7 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I wait sometimes$")
     public void iWaitSometimes() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(7000);
     }
 
     @And ("^I verify the values after reopen the check$")
@@ -1225,7 +1225,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should get back to the Table Layout tab$")
     public void iShouldGetBackToTheTableLayoutTab() throws InterruptedException {
-        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table Layout");
+        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table layout");
     }
     @Then ("^I should see table layout Screen$")
     public void iShouldSeeTableLayoutScreen() throws InterruptedException {
@@ -1237,7 +1237,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see check down is increased$")
-    public void iShouldSeeCheckDownIsIncreased(){
+    public void iShouldSeeCheckDownIsIncreased() throws InterruptedException {
         new TableLayOutScreen().verifyCheckDownIsIncreased();
     }
 
@@ -1247,7 +1247,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click print button in the split seat screen$")
-    public void iClickPrintButtonInTheSplitSeatScreen(){
+    public void iClickPrintButtonInTheSplitSeatScreen() throws InterruptedException {
         new TableLayOutScreen().pressPrintInSplitSeat();
     }
 
@@ -1296,7 +1296,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click the Exit button in the payment window$")
-    public void iClickTheExitButtonInThePaymentWindow(){
+    public void iClickTheExitButtonInThePaymentWindow() throws InterruptedException {
         new PaymentWindow().pressExit();
     }
 
@@ -1307,7 +1307,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see Select any one seat/check for payment in popup$")
     public void iShouldSeeSelectAnyOneSeatCheckForPaymentInPopup(){
-        Assert.assertEquals( new TableLayOutScreen().getSelectAnyOneSeatCheckForPaymentMsg(),"Select the seat to Pay");
+        Assert.assertEquals( new TableLayOutScreen().getSelectAnyOneSeatCheckForPaymentMsg(),"select any one seat/check for payment");
     }
     @Then ("^I should see selected seat item should club into seat two$")
     public void iShouldSeeSelectedSeatItemShouldClubIntoSeatTwo(){
@@ -1384,7 +1384,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click Void button on order management screen$")
-    public void iClickVoidButtonOnOrderManagementScreen(){
+    public void iClickVoidButtonOnOrderManagementScreen() throws InterruptedException {
         new OrderManagementScreen().pressVoidBtn();
     }
 
@@ -1431,7 +1431,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see that OrderScreen with Merge seats as \"([^\"]*)\"$")
-    public void iShouldSeeThatOrderScreenWithMergeSeatsAs(String seat){
+    public void iShouldSeeThatOrderScreenWithMergeSeatsAs(String seat) throws InterruptedException {
         new TableLayOutScreen().verifyAllSeatIsMerged(seat);
     }
     @And ("^I click Search Button on the Order Screen$")
@@ -1528,7 +1528,7 @@ public class TableOrderOperationsStepDef {
         new PaymentWindow().pressAdjustBtnForPayment();
     }
     @Then ("^I should see No more payment needed popup$")
-    public void iShouldSeeNoMorePaymentNeededPopUp(){
+    public void iShouldSeeNoMorePaymentNeededPopUp() throws InterruptedException {
         new OrderManagementScreen().getNoMorePaymentNeedPopup();
     }
     @Then ("^I should see No more payment needed popup from Payment window$")
@@ -1542,7 +1542,7 @@ public class TableOrderOperationsStepDef {
     }
     @Then ("^I should see select payment and try again popup$")
     public void iShouldSeeSelectPaymentAndTryAgainPopUp(){
-        Assert.assertEquals(new PaymentWindow().getSelectAnyPaymentAndTryAgainMsg(),"Select a Payment and try again!");
+        Assert.assertEquals(new PaymentWindow().getSelectAnyPaymentAndTryAgainMsg(),"Select a payment and try again!");
     }
     @Then ("^I should see Balance Due on the payment window$")
     public void iShouldSeeBalanceDueOnThePaymentWindow(){
@@ -1648,12 +1648,12 @@ public class TableOrderOperationsStepDef {
 
 
     @Then ("^I should see menu items has to be sent to the kitchen$")
-    public void iShouldSeeMenuItemsHasToBeSentToKitchen(){
-        Assert.assertEquals(new TableLayOutScreen().MenuItemHasToSentKitchen(),"Menu items(s) has to be sent to the kitchen");
+    public void iShouldSeeMenuItemsHasToBeSentToKitchen() throws InterruptedException {
+        Assert.assertEquals(new TableLayOutScreen().MenuItemHasToSentKitchen(),"Item(s) has to be sent to kitchen");
     }
     @Then ("^I should see item need to send to kitchen popup$")
     public void iShouldSeeItemNeedToSendToKitchenPopup(){
-        Assert.assertEquals(new TableLayOutScreen().getItemsNeedToSendToKitchen(),"item(s) need to send to kitchen");
+        Assert.assertEquals(new TableLayOutScreen().getItemsNeedToSendToKitchen(),"Item(s) has to be sent to kitchen");
     }
     /***************** Check Stats **************************************/
 
@@ -2031,7 +2031,7 @@ public class TableOrderOperationsStepDef {
 
     @When ("^I click the check from the table layout for merged$")
     public void iClickTheCheckFromTheTableLayoutForMerged() throws InterruptedException {
-        new Regression().clickTheCheckFromTheTableLayoutForMerged();
+        new OrderManagementScreen().clickTheCheckFromTheTableLayoutForMerged();
     }
 
     @Then ("^I should see on merging the particular checks popup$")
@@ -2050,7 +2050,7 @@ public class TableOrderOperationsStepDef {
     }
     @When ("^I click the check from the table layout for merged1$")
     public void iClickTheCheckFromTheTableLayoutForMerged1() throws InterruptedException {
-        new Regression().clickTheCheckFromTheTableLayoutForMerged1();
+        new TableLayOutScreen().clickTheCheckFromTheTableLayoutForMerged1();
     }
     @Then ("^I should see the Split check screen$")
     public void iShouldSeeTheSplitCheckScreen(){

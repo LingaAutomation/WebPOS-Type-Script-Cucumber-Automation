@@ -257,7 +257,7 @@ public class CheckOptionsStepDef {
 
 
     @And("^I click Exit to return to Order Management Screen$")
-    public void iClickExitToReturnToOrderManagementScreen() {
+    public void iClickExitToReturnToOrderManagementScreen() throws InterruptedException {
         new PaymentWindow().pressExit();
     }
 
@@ -277,7 +277,7 @@ public class CheckOptionsStepDef {
     }
 
     @And("^I void and close the check for the table \"([^\"]*)\"$")
-    public void iVoidAndCloseTheCheckForTheTable(String tableNo) {
+    public void iVoidAndCloseTheCheckForTheTable(String tableNo) throws InterruptedException {
         new TableLayOutScreen().selectTable(tableNo);
         new OrderManagementScreen().pressVoidBtn();
         new OrderManagementScreen().pressDone();

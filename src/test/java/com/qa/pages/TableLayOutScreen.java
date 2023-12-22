@@ -156,10 +156,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//p[.='Select the seats to merge']")
     private WebElement popupSelectTheSeatsToMerge;
 
-    @FindBy(xpath = "(//button[.=' Start Over '])")
+    @FindBy(xpath = "//button[.=' Start Over ']")
     private WebElement startOver;
 
-    @FindBy(xpath = "(//button[.='Print'])[1]")
+    @FindBy(xpath = "//linga-icon[@symbol='print']")
     private WebElement printSplitSeat;
 
     @FindBy(xpath = "//p[.='Select the seat to print']")
@@ -171,7 +171,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "select any one seat/check for print")
     private WebElement selectAnyOneSeatForPrint;
 
-    @FindBy(xpath = "(//div[.='Print All'])")
+    @FindBy(xpath = "//div[.='Print All']")
     private WebElement PrintAllSplitSeat;
 
     @FindBy(xpath = "//div[.='Pay']")
@@ -230,7 +230,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//span[.=' New Check ']")
     private WebElement newCheck;
 
-    @FindBy(xpath = "Menu items(s) has to be sent to the kitchen")
+    @FindBy(xpath = "//p[.='Item(s) has to be sent to kitchen']")
     private WebElement menuItemHasToBeSentToKitchen;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
@@ -239,7 +239,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther")
     private WebElement check2OpenForCompleteSale;
 
-    @FindBy(xpath = "item(s) need to send to kitchen")
+    @FindBy(xpath = "//p[.='Item(s) has to be sent to kitchen']")
     private WebElement itemNeedToSendToKitchen;
 
     @FindBy(xpath = "Cancel")
@@ -330,7 +330,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void selectTable(String tableNo) {
         WebElement e = driver.findElement(By.xpath("(//p[contains(.,'"+tableNo+"')])[1]"));
         elementClick(e, tableNo + " selected");
-        TestUtils.tableNumberof = e.getText();
+        TestUtils.tableNumberof = tableNo;
     }
 
     public void selectSeatNo(String numberOfSeats) {
@@ -542,6 +542,12 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(confirmButton,"Selected - "+confirmButton.getText());
     }
 
+    public void clickTheCheckFromTheTableLayoutForMerged1() throws InterruptedException {
+
+        String tableNo = TestUtils.tableNumberof1;
+        verifyTableMergee3(tableNo);
+    }
+
     public void pressItemTransferDone() {
         elementClick(itemTransferDone, "Item transfer done");
     }
@@ -644,7 +650,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
 
-    public void clickSaveandClose() {
+    public void clickSaveandClose() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(SaveClose, "Tapped Save&Close on Split Seat");
     }
 
@@ -720,10 +727,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
         utils.log().info("Displayed popup as - "+cannotSplitAsPayment.getText());
     }
     public void verifySeat2() {
-        if (find(convertWebElement(seat2OrderScreen), 2)) {
+        if (find(convertWebElement("//span[.=' 2 ']"), 2)) {
             utils.log().info("Seat2 is Added ");
         } else {
             utils.log().info("Seat2 is not Added");
+            int w = 1/0;
         }
 
     }
@@ -738,7 +746,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void seperateItemIsVisble() throws InterruptedException {
         Thread.sleep(1000);
-        if (seperateIcon.isEnabled()) {
+        utils.log().info(seperateIcon.isSelected());
+        utils.log().info(seperateIcon.isEnabled());
+        utils.log().info(seperateIcon.isDisplayed());
+        if (seperateIcon.isSelected()) {
             utils.log().info("Seperate Icon Is Enable");
             int w =1/0;
         } else {
@@ -834,7 +845,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(startOver, "Tapped Start Over button to get back original page");
     }
 
-    public void pressPrintInSplitSeat() {
+    public void pressPrintInSplitSeat() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(printSplitSeat, "Tapped Print Button in the Split Seat Screen");
     }
 
@@ -885,6 +897,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public String getSelectAnyOneSeatCheckForPaymentMsg() {
+        utils.log().info(selectAnyoneSeatCheckForPayment.getText());
         return elementGetText(selectAnyoneSeatCheckForPayment, "Select any one seat/check for payment is displayed - ");
     }
 
@@ -943,16 +956,19 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     }
 
-    public void verifyAllSeatIsMerged(String numb) {
+    public void verifyAllSeatIsMerged(String numb) throws InterruptedException {
         pressArrowDown1();
-        WebElement seat = driver.findElement(By.xpath(numb));
+        Thread.sleep(2000);
+        WebElement seat = driver.findElement(By.xpath("//ion-grid[@class='seatDropDown ng-star-inserted md hydrated']//button[.=' "+numb+" ']"));
         if (seat.isDisplayed()) {
 
             utils.log().info(numb + " Seats are Merged with menu Items ");
         } else {
             utils.log().info("Not Merged with menu items");
         }
-        pressArrowDown1();
+        Thread.sleep(2000);
+//        pressArrowDown1();
+        driver.findElement(By.xpath("//div[@class='cdk-overlay-container']")).click();
     }
 
     public void pressNoThanks() {
@@ -1008,7 +1024,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(check2OpenForCompleteSale, "Tapped ");
     }
 
-    public String MenuItemHasToSentKitchen() {
+    public String MenuItemHasToSentKitchen() throws InterruptedException {
+        Thread.sleep(1000);
         return elementGetText(menuItemHasToBeSentToKitchen, "Menu Item has to be sent to kitchen txt is displayed - ");
     }
 
@@ -1020,10 +1037,12 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(cancelBtn, "Tapped cancel Button");
     }
 
-    public void verifyCheckDownIsIncreased() {
+    public void verifyCheckDownIsIncreased() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement check1 = driver.findElement(By.xpath("(//p[@class='tablebarfooter-total-firstrow-weight'])[3]"));
         String[] data = check1.getText().split(" ");
         utils.log().info(data[1]);
+        utils.log().info(data[0]);
         if (!data[1].equals("0")) {
             utils.log().info("Check Down is Increased - " + data[1]);
         } else {

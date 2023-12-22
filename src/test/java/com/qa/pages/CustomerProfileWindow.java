@@ -137,9 +137,11 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(name = "Enter Email Id or Mobile Number")
     WebElement emailMobileNumberTxt;
 
-    @FindBy(name = "CustomerProfile Close")
+    @FindBy(xpath = "//app-customer-container[@class='ng-star-inserted']//span[contains(.,'X')]")
     WebElement customerProfileCloseBtn;
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div/mat-dialog-container/app-customers/ion-header/ion-toolbar/button")
+    WebElement customerProfileCloseBtn1;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSwitch[1]")
     WebElement limitDisableBtn;
@@ -476,6 +478,11 @@ driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     public void closedCustomerProfile(){
         elementClick(customerProfileCloseBtn,"Tapped close button of Customer profile");
     }
+
+    public void closedCustomerProfile1(){
+        elementClick(customerProfileCloseBtn1,"Tapped close button of Customer profile");
+    }
+
 
     public void selectMembershipFromAccountType() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);

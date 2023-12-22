@@ -375,9 +375,10 @@ public class ClockInScreen extends UserLoginScreen{
         return new TableLayOutScreen();
     }
     public void priceFrenchFries(){
-        pressPin7();
-        pressPin5();
-        pressPin00();
+       elementClick("//span[.=' 5 ']","Selected - "+"7");
+        elementClick("//span[.=' 0 ']","Selected - "+"0");
+        elementClick("//span[.=' 0 ']","Selected - "+"0");
+        elementClick("//span[.=' 0 ']","Selected - "+"0");
     }
     public void enterHugePayment(){
         pressPinC();
