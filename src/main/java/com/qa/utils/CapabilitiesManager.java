@@ -13,7 +13,7 @@ public class CapabilitiesManager {
     public void setup() throws InterruptedException {
 
         //Call the chrome driver
-        System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\ragavan.pandarinatha\\Documents\\chromedriver-win64.zip\\chromedriver-win64");
         //Open the Chrome window
         driver = new ChromeDriver();
         //Wait for 30 seconds
