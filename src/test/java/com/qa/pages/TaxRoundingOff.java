@@ -277,12 +277,10 @@ public class TaxRoundingOff extends ClockInScreen {
     @FindBy(xpath = "//button[contains(.,'Log Off')]")
     WebElement logOffBtn;
 
-
-
 //
 //    @FindBy(xpath = "6")
 //    WebElement press6;
-//
+
 //    @FindBy(xpath = "7")
 //    WebElement press7;
 //
@@ -303,7 +301,6 @@ public class TaxRoundingOff extends ClockInScreen {
 
     @FindBy(xpath = "//span[contains(.,'Continue')]")
     private WebElement ContinueBtn;
-
 
     @FindBy(xpath = "//ion-label[contains(.,'Default')]")
     private WebElement DefaultTax;
@@ -1474,6 +1471,23 @@ public class TaxRoundingOff extends ClockInScreen {
 
 
         Assert.assertEquals(ActualTotalValue, BalanceDueValue);
+    }
+
+    public void VerifyIfBalanceDueAmountIsDisplayedCorrectlyReopenPaymentDone() throws InterruptedException {
+
+        String ExpectedBalanceDueValue = "0.00";
+        utils.log().info("Expected Balance due is " + ExpectedBalanceDueValue);
+
+        elementClick(PaymentBtn, "Selected Payment Button");
+        Thread.sleep(1000);
+        WebElement BalanceDue =  driver.findElement(By.xpath("//div[contains(@class,'balance')]//p/label[2][1]"));
+        String BalanceDueAmount = BalanceDue.getText();
+
+        String BalanceDueValue = BalanceDueAmount.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual Balance due is " + BalanceDueValue);
+
+
+        Assert.assertEquals(ExpectedBalanceDueValue, BalanceDueValue);
     }
 
     public void VerifyIfBalanceDueAmountIsCalculatedCorrectlyAfterThePayment() throws InterruptedException {
@@ -3925,6 +3939,11 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public void SelectedThePaymentButton() throws InterruptedException {
         elementClick(PaymentBtn, "Selected Payment Button");
+        elementClick(SubmitBtn, "Selected Submit Button");
+        new OrderTypeWindow().pressCancelBtn();
+    }
+
+    public void SelectedTheSubmitButton() throws InterruptedException {
         elementClick(SubmitBtn, "Selected Submit Button");
         new OrderTypeWindow().pressCancelBtn();
     }
@@ -8267,11 +8286,17 @@ public class TaxRoundingOff extends ClockInScreen {
         elementClick( done1Btn, "Done button is tapped - ");
     }
 
+    public void pressStartOverOpenItemBtn1(){
+        WebElement startOverBtn = driver.findElement(By.xpath("//button[contains(.,'Start Over')]"));
+        elementClick( startOverBtn, "Start over button is tapped - ");
+    }
+
     public void pressDoneOpenItemBtn1S() throws InterruptedException {
 
         Thread.sleep(1000);
         WebElement done1Btn = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
         elementClick( done1Btn, "Done button is tapped - ");
+
     }
 
     public void VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyAmountBTCheckTax(double taxPercent, double modifierTaxPercent, double checkTaxPercent, double discPerc) {

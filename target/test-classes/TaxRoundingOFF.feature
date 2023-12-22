@@ -1,5 +1,5 @@
 @TaxRoundOffTypeScriptWebPOS
-Feature: TaxRoundOff_Build_5.2(1.5)
+Feature: TaxRoundOff
   Background:
 #    Given I am logging in new
     And I enter the pin in the pin screen
@@ -1467,7 +1467,7 @@ Feature: TaxRoundOff_Build_5.2(1.5)
     And I click log off button in order screen
 
 #  @setfour
-  @aaaa
+#  @aaaa
 #  Scenario: Netsale amount showing two different values under sale recap report
 #    And I get check number
 #    And I select Tax category
@@ -1490,7 +1490,7 @@ Feature: TaxRoundOff_Build_5.2(1.5)
 #    And I click Exact button on the cash pop-up
 #    And I click Enter Button on the cash pop-up
 
-  @setfour
+#  @setfour
 #  Scenario: While applying the check discount as before tax type for inclusive menu item and modifier - The Modifier discount tax amount is getting subtracted twice in the Sale Reports-same for Exclusive tax
 #    And I get check number
 #    And I select Tax category
@@ -2169,7 +2169,46 @@ Feature: TaxRoundOff_Build_5.2(1.5)
 #    And Verify if the balance due value is displayed correctly after payment
 #    And I click log off button in order screen
 
+  @SOB
+  Scenario: TS-10 -> Check tax missing while user click start over in the modifier selection screen
+    And I have selected category arrow
+    And Select the category "IceCreams"
+    And Select the menu item "Pan IceCream"
+    And Verify if the CheckTax is calculated correctly and calculate round-off
+    And I click Start Over button on the open item window
+#    And Select the menu item with check tax
+    And I click Done button on the open item window
+    And Verify if the CheckTax is calculated correctly and calculate round-off
+    And Verify if the total value is calculated correctly
+    And Verify if the balance due value is calculated correctly
+    And Verify if the balance due value is displayed correctly after payment
+    And I click log off button in order screen
 
-
-
-
+@dddr
+    Scenario: TS-11 -> Open Discount not shows while reopening the check & hence shows Balance due
+      And I get check number
+      And I have selected category arrow
+      And Select the category "FOOD ITEMS"
+      And Select the menu item "testing menu15"
+      And I selected menu options
+      And I selected Open Discount
+      And I tapped the percentage field
+      And I entered the discount percentage
+      And I selected the Continue button
+      And I tapped reason and entered the reason
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
+      And I selected the apply button
+      And Verify If Tax "0.1345" Is Calculated Properly And Calculate RoundOff for Open Discount "0.10255" Exclusive
+      And Verify if the total amount is calculated correctly for exclusive open discount
+      And Verify if the balance due amount is displayed correctly
+      And Verify if the balance due amount is displayed correctly after the payment
+      And Select the All option
+#    And I click Check Stats tab
+      And I click Closed tab on the Check stats
+      Then I should see closed check in closed check tab
+      And I click reopen check button on the check stats screen
+      And Verify If Tax "0.1345" Is Calculated Properly And Calculate RoundOff for Open Discount "0.10255" Exclusive
+      And Verify if the total amount is calculated correctly for exclusive open discount
+      And Verify if the balance due amount is displayed correctly reopen payment done already
+      And I Selected submit button
+      And I click log off button in order screen

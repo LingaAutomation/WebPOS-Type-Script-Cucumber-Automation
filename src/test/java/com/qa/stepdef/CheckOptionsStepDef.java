@@ -681,6 +681,11 @@ public class CheckOptionsStepDef {
         new TaxRoundingOff().pressDoneOpenItemBtn1();
     }
 
+    @And("^I click Start Over button on the open item window$")
+    public void iClickStartOverButtonOnTheOpenItemWindow() {
+        new TaxRoundingOff().pressStartOverOpenItemBtn1();
+    }
+
     @And("^I click Done button on the open item window second time$")
     public void iClickDoneButtonOnTheOpenItemWindoS() throws InterruptedException {
         new TaxRoundingOff().pressDoneOpenItemBtn1S();

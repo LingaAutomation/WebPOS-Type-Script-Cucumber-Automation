@@ -400,6 +400,13 @@ public class TaxRoundingOffStepDef {
         //new TaxR
     }
 
+    @And("^Verify if the balance due amount is displayed correctly reopen payment done already$")
+    public void VerifyIfTheBalanceDueAmountIsDisplayedCorrectlyReopenPaymentDone() throws InterruptedException {
+        new TaxRoundingOff().VerifyIfBalanceDueAmountIsDisplayedCorrectlyReopenPaymentDone();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxR
+    }
+
     @And("^Verify if the balance due amount is displayed correctly after the payment$")
     public void VerifyIfTheBalanceDueAmountIsCalculatedCorrectlyAfterThePayment() throws InterruptedException {
         new TaxRoundingOff().VerifyIfBalanceDueAmountIsCalculatedCorrectlyAfterThePayment();
@@ -1217,6 +1224,13 @@ public class TaxRoundingOffStepDef {
     @And("^I Selected payment button$")
     public void SelectThePaymentButton() throws InterruptedException {
         new TaxRoundingOff().SelectedThePaymentButton();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^I Selected submit button$")
+    public void SelectTheSubmitButton() throws InterruptedException {
+        new TaxRoundingOff().SelectedTheSubmitButton();
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
