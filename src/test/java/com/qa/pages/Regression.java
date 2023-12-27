@@ -6661,23 +6661,11 @@ public class Regression extends TableLayOutScreen {
         return check1;
     }
 
-    public void selectTheCheckFromTableLayout() throws InterruptedException {
-
-        String tableNo = TestUtils.tableNumberof;
-        //    verifyTableMerge(tableNo);
-        verifyTableMergee2(tableNo);
-    }
 
 
 
-    @FindBy(name = "Split Check")
-    WebElement splitCheckBtn;
 
-    public void verifySplitCheckScren() {
 
-        Assert.assertEquals(splitCheckBtn.getText(), "Split Check");
-        utils.log().info("Displayed Screen as - " + splitCheckBtn.getText());
-    }
 
 
     public void verifyActiveCheckWithSplitCheck() {

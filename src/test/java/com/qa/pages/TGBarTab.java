@@ -132,8 +132,16 @@ public class TGBarTab extends BasePage {
         phoneOrders.get(phoneOrders.size() - 1).click();
     }
     public void clickCancelButtonForCustomerNamePopup(){
-        WebElement popupCustomer = mergeAndFindMobileElement(cancelCustomerButton);
-        elementClick(popupCustomer,"Click Cancel Button For CustomerName Popup");
+try {
+    WebElement popupCustomer = mergeAndFindMobileElement(cancelCustomerButton);
+    if (popupCustomer.isDisplayed()) {
+        elementClick(popupCustomer, "Click Cancel Button For CustomerName Popup");
+    } else {
+
+    }
+}catch (Exception h){
+
+}
     }
     public void clickNewTab(){
         WebElement tabNew = mergeAndFindMobileElement(newTabButton);

@@ -75,7 +75,7 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField[3]")
     private WebElement searchTabInFutureTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "//input[@data-placeholder='Check No']")
     private WebElement searchTabInActiveTab;
 
     @FindBy(xpath = "//input[@data-placeholder='Check No']")
@@ -327,7 +327,7 @@ public class PhoneOrderScreen extends BasePage {
     }
     public void selectClosedCheckFromClosedTab() throws InterruptedException {
         //   driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
@@ -349,15 +349,16 @@ public class PhoneOrderScreen extends BasePage {
         searchTabInActiveTab.clear();
         searchTabInActiveTab.sendKeys(globalCheckNumber);
 
-        WebElement phoneOrders1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"]"));
-
-        if (phoneOrders1.isDisplayed()) {
-            elementClick(phoneOrders1, "Tapped Closed Check in active tab - " + globalCheckNumber);
+        List<WebElement> phoneOrders1 = driver.findElements(By.xpath("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div"));
+        utils.log().info(phoneOrders1.size());
+        if(phoneOrders1.size() == 1)
+        {
+            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }else{
-            utils.log().info("closed check is not available"+ globalCheckNumber);
+            utils.log().info("closed check is not available - "+ globalCheckNumber);
+            int w = 1/0;
+            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }
-        //elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
-        // }
 
     }
 

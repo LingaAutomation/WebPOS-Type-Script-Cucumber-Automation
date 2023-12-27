@@ -335,11 +335,12 @@ public class TGVoidPage extends BasePage {
 
        Thread.sleep(1500);
 
-        WebElement askCustomerName = driver.findElement(By.xpath("//ion-item[contains(.,' Ask Customer Name ')]//ion-toggle[@aria-checked='false']"));
-
+        WebElement askCustomerName = driver.findElement(By.xpath("/html/body/app-root/app-opearion/ion-content/app-pos-setting/ion-content/ion-grid[2]/ion-row[4]/ion-list/ion-item[6]/ion-toggle"));
+//
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
+        Thread.sleep(2000);
         askCustomerName.click();
-
+        Thread.sleep(2000);
     }
 
     public void swipeUntilSaveChangesButton(String direction) throws Exception {

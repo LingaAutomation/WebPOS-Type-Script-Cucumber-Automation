@@ -381,10 +381,10 @@ public class ClockInScreen extends UserLoginScreen{
         elementClick("//span[.=' 0 ']","Selected - "+"0");
     }
     public void enterHugePayment(){
-        pressPinC();
-        pressPin9();
-        pressPin9();
-        pressPin00();
+        elementClick("//button[.=' C ']","Selected - "+"C");
+        elementClick("//button[.=' 9 ']","Selected - "+"C");
+        elementClick("//button[.=' 9 ']","Selected - "+"C");
+        elementClick("//button[.=' 00 ']","Selected - "+"C");
     }
 
     public void enterManualPayment(String number){
@@ -399,17 +399,26 @@ public class ClockInScreen extends UserLoginScreen{
         }
     }
     public void enterFrenchFrieseAmount(){
-        pressPinC();
-        press1InPaymentWindow();
-        pressPin7();
-        pressPin0();
-        pressPin00();
+        elementClick("//button[.=' C ']","Selected - "+"C");
+        elementClick("(//button[.=' 1 '])[2]","Selected - "+"1");
+        elementClick("//button[.=' 7 ']","Selected - "+"7");
+        elementClick("//button[.=' 0 ']","Selected - "+"0");
+        elementClick("//button[.=' 00 ']","Selected - "+"00");
+//        pressPinC();
+//        press1InPaymentWindow();
+//        pressPin7();
+//        pressPin0();
+//        pressPin00();
     }
     public void enterFrenchFrieseAmount3seat(){
-        pressPinC();
-        pressPin8();
-        pressPin5();
-        pressPin00();
+        elementClick("//button[.=' C ']","Selected - "+"C");
+        elementClick("(//button[.=' 1 '])[2]","Selected - "+"1");
+        elementClick("//button[.=' 5 ']","Selected - "+"5");
+        elementClick("//button[.=' 00 ']","Selected - "+"00");
+//        pressPinC();
+//        pressPin8();
+//        pressPin5();
+//        pressPin00();
     }
 
     public void logInWithValidPin(){

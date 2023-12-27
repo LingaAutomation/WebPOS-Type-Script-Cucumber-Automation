@@ -30,12 +30,12 @@ public class CheckOptionsStepDef {
 
     @When ("^I click Gift card Button$")
     public void iClickGiftCardButton(){
-        new CheckOptionsScreen().clickGiftCardBtn();
+        new CheckOptions().clickGiftCardBtn();
     }
 
     @Then ("^I should see Gift card window$")
     public void iShouldSeeGiftCardWindow(){
-        Assert.assertEquals(new CheckOptionsScreen().verifyGiftCardWindow(),"Gift Card");
+        Assert.assertEquals(new CheckOptions().verifyGiftCardWindow(),"Gift Card");
     }
 
     @And ("^I click GiveX option$")
@@ -48,13 +48,13 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().shouldSeeGiveXScreen();
     }
     @And ("^I enter gift card number")
-    public void iEnterGiftCardNumberAs(){
-        new CheckOptionsScreen().enterGiftCardNumber();
+    public void iEnterGiftCardNumberAs() throws InterruptedException {
+        new CheckOptions().enterGiftCardNumber();
     }
 
     @And ("^I click charge amount field and pass the amount$")
     public void iClickChargeAmountFieldAndPassTheAmount() throws InterruptedException {
-        new CheckOptionsScreen().clickChargeAmountFieldPassAmount();
+        new CheckOptions().clickChargeAmountFieldPassAmount();
     }
 
     @And ("^I click charge amount field in Gift card window$")
@@ -63,8 +63,8 @@ public class CheckOptionsStepDef {
     }
 
     @Then ("^I should see gift card amount add up into order screen$")
-    public void iShouldSeeGiftCardAmountAddUpInToOrderScreen(){
-        Assert.assertEquals(new CheckOptionsScreen().verifyGiftCardAddup(),"GC-1111 ");
+    public void iShouldSeeGiftCardAmountAddUpInToOrderScreen() throws InterruptedException {
+        Assert.assertEquals(new CheckOptions().verifyGiftCardAddup(),"GC-1111");
     }
 
     @And ("^I click discount on check option screen$")
@@ -185,7 +185,7 @@ public class CheckOptionsStepDef {
     }
 
     @Then("^I should see the Payment window$")
-    public void iShouldSeeThePaymentWindow() {
+    public void iShouldSeeThePaymentWindow() throws InterruptedException {
         Assert.assertEquals(new PaymentWindow().getPaymentWindowTitle(), "Payment methods");
     }
 
@@ -339,7 +339,7 @@ public class CheckOptionsStepDef {
 
     @And("^I click Back button on Tax Exempt window$")
     public void iClickBackButtonOnTaxExemptWindow() {
-        new CheckOptionsScreen().pressBackOnTaxExempt();
+        new CheckOptions().pressBackOnTaxExempt();
     }
 
     @Then("^I should see Tax Exempt removed successfully popup$")
@@ -496,6 +496,11 @@ public class CheckOptionsStepDef {
     @And("^I click Back button on Check Options Screen$")
     public void iClickBackButtonOnCheckOptionsScreen() {
         new CheckOptionsScreen().pressBack();
+    }
+
+    @And ("^I click Back button on the gratuity screen$")
+    public void iClickBackButtonOnTheGratuityScreen(){
+        new CheckOptions().pressBack1();
     }
 
     @Then ("^I should see tip added on order screen")
@@ -739,7 +744,7 @@ public class CheckOptionsStepDef {
     }
     @Then ("^I should return back to the order management screen and I should Gratuity is added$")
     public void iShouldReturnBackToTheOrderManagementScreenAndIShouldGratuityIsAdded(){
-        new CheckOptionsScreen().checkGratuityExists();
+        new CheckOptions().checkGratuityExists();
     }
     @Then ("^I should see enter Percentage popup$")
     public void iShouldSeeEnterPercentagePopup(){

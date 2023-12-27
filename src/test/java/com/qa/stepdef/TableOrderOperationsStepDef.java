@@ -61,6 +61,16 @@ public class TableOrderOperationsStepDef {
     public void iClickSeat1ForAddMenuItem(){
         new OrderTypeWindow().clickSeat1ForAddMenuItem();
     }
+
+    @And ("^I click seat 2 for add menu item$")
+    public void iClickSeat2ForAddMenuItem(){
+        new OrderTypeWindow().clickSeat2ForAddMenuItem();
+    }
+    @And ("^I click seat 3 for add menu item$")
+    public void iClickSeat3ForAddMenuItem(){
+        new OrderTypeWindow().clickSeat3ForAddMenuItem();
+    }
+
     @Then ("^I should see the order type window$")
     public void iShouldSeeTheOrderTypeWindow() throws InterruptedException {
         new OrderTypeWindow().verifyOrderTypeWindow();
@@ -83,7 +93,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And("^I click Table Layout tab$")
-    public void iClickTableLayoutTab() {
+    public void iClickTableLayoutTab() throws InterruptedException {
         new OrdersAndDriversListScreen().selectTableLayoutTab();
     }
 
@@ -247,16 +257,16 @@ public class TableOrderOperationsStepDef {
     }
     @And("^I select second table to be merged as \"([^\"]*)\"$")
     public void iSelectSecondTableToBeMergedAs(String secondTableToMerge) {
-        new TableLayOutScreen().selectTable(secondTableToMerge);
+        new TableLayOutScreen().selectTable1(secondTableToMerge);
     }
 
     @And("^I click Done button to merge checks$")
-    public void iClickDoneButtonToMergeChecks() {
+    public void iClickDoneButtonToMergeChecks() throws InterruptedException {
         new TableLayOutScreen().pressMergeDone();
     }
 
     @When("^I click Done button on the pop-up to complete merging$")
-    public void iClickDoneButtonOnThePopUpToCompleteMerging() {
+    public void iClickDoneButtonOnThePopUpToCompleteMerging() throws InterruptedException {
         new TableLayOutScreen().pressMergeDone();
     }
 
@@ -334,6 +344,11 @@ public class TableOrderOperationsStepDef {
     @And("^I click Done button on the Popup$")
     public void iClickDoneButtonOnThePopup(){
         new TableLayOutScreen().pressDone1();
+    }
+
+    @And("^I click Done button on the Popup from Table Layout$")
+    public void iClickDoneButtonOnThePopupFromTableLayout(){
+        new TableLayOutScreen().pressDone2();
     }
 
 
@@ -918,6 +933,20 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().verifySplitScreen();
     }
 
+    @Then ("^I should see subtotal as \"([^\"]*)\" in Split seat Screen$")
+    public void iShouldSeeSubTotalAsInSplitSeatScreen(String value){
+        new TableLayOutScreen().shouldSeeSubtotal(value);
+    }
+
+    @Then ("^I should see tax as \"([^\"]*)\" in Split seat Screen$")
+    public void iShouldSeeTaxAsInSplitSeatScreen(String value){
+        new TableLayOutScreen().shouldSeeTax(value);
+    }
+
+    @Then ("^I should see total as \"([^\"]*)\" in Split seat Screen$")
+    public void iShouldSeeTotalAsInSplitSeatScreen(String value){
+        new TableLayOutScreen().shouldSeeTotal(value);
+    }
     @When ("^I verify the split seat is avilable in split seat screen$")
     public void iVerifyTheSplitSeatIsAvailableInSplitSeatScreen(){
         new TableLayOutScreen().verifySplitSeatIsAvailable();
@@ -949,7 +978,7 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().verifyCreatedSeat();
     }
     @Then ("^I should see menu item as Ravioli added into next seat$")
-    public void iShouldSeeMenuItemAsAddedIntoNextSeat(){
+    public void iShouldSeeMenuItemAsAddedIntoNextSeat() throws InterruptedException {
         new TableLayOutScreen().verifyMenuAddedIntoNextSeat();
     }
 
@@ -958,29 +987,41 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().verifyDiscountIsMovedIntoNextSeat(discount);
     }
     @Then ("^I should see menu item as cake added into next seat$")
-    public void iShouldSeeMenuItemAsCakeAddedIntoNextSeat(){
+    public void iShouldSeeMenuItemAsCakeAddedIntoNextSeat() throws InterruptedException {
         new TableLayOutScreen().verifyMenuAddedIntoNextSeat1();
     }
     @Then ("^I should see menu item as Ravioli Pesto added into next seat$")
-    public void iShouldSeeMenuItemAsRavioliPestoAddedIntoNextSeat(){
+    public void iShouldSeeMenuItemAsRavioliPestoAddedIntoNextSeat() throws InterruptedException {
         new TableLayOutScreen().verifyMenuAddedIntoNextSeat2();
     }
     @Then ("^I should see menu item as Ravioli added into next seat for gratuity$")
-    public void iShouldSeeMenuItemaAsRavioliAddedIntoNextSeatForGratuity(){
-        new TableLayOutScreen().verifyMenuAddedIntoNextSeat2();
+    public void iShouldSeeMenuItemaAsRavioliAddedIntoNextSeatForGratuity() throws InterruptedException {
+        new TableLayOutScreen().verifyMenuAddedIntoNextSeat21();
     }
     @Then ("^I should see menu item as cheese cake added into next seat$")
-    public void iShouldSeeMenuItemAsCheeseCakeAddedIntoNextSeat(){
+    public void iShouldSeeMenuItemAsCheeseCakeAddedIntoNextSeat() throws InterruptedException {
         new TableLayOutScreen().verifyMenuAddedIntoNextSeat3();
     }
+
+    @Then ("^I should see menu item as cheese cake added into next seat1$")
+    public void iShouldSeeMenuItemAsCheeseCakeAddedIntoNextSeat1() throws InterruptedException {
+        new TableLayOutScreen().verifyMenuAddedIntoNextSeat5();
+    }
+
     @Then ("^I should see applied discount as \"([^\"]*)\"$")
     public void iShouldSeeAppliedDiscountAs(String name){
         new TableLayOutScreen().verifyDiscountIsApplied(name);
     }
     @Then ("^I should see menu item as Ravioli added into next seat for Free Item$")
-    public void iShouldSeeMenuItemAsAddedIntoNextSeatForFreeItem(){
+    public void iShouldSeeMenuItemAsAddedIntoNextSeatForFreeItem() throws InterruptedException {
         new TableLayOutScreen().verifyMenuAddedIntoNextSeat4();
     }
+
+    @Then ("^I should see menu item as Ravioli added into next seat for Free Item1$")
+    public void iShouldSeeMenuItemAsAddedIntoNextSeatForFreeItem1() throws InterruptedException {
+        new TableLayOutScreen().verifyMenuAddedIntoNextSeat42();
+    }
+
     @Then ("^I should see seat as paid$")
     public void iShouldSeeSeatAsPaid(){
         Assert.assertEquals(new TableLayOutScreen().verifyPaidTxt(),"Paid");
@@ -1118,10 +1159,10 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see Select the Order to Proceed Popup$")
     public void iShouldSeeSelectTheOrderToProceedPopUP(){
-        Assert.assertEquals(new TableLayOutScreen().getSelectTheOrderToProceedMsg(),"Select the Order to Proceed");
+        Assert.assertEquals(new TableLayOutScreen().getSelectTheOrderToProceedMsg(),"Select the order to proceed");
     }
     @And ("^I click Add Button to create Seat$")
-    public void iClickAddButtonToCreateSeat(){
+    public void iClickAddButtonToCreateSeat() throws InterruptedException {
         new TableLayOutScreen().pressAddBtn();
     }
 
@@ -1130,9 +1171,19 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().verifySeat2();
     }
 
+    @Then ("^I should not see created new seat$")
+    public void iShouldNotSeeCreatedNewSeat(){
+        new TableLayOutScreen().verifySeat22();
+    }
+
     @Then ("^I should see seat 3 is created$")
     public void iShouldSeeSeat3IsCreated(){
         new TableLayOutScreen().verifySeat3();
+    }
+
+    @Then ("^I should not see seat 3 is created$")
+    public void iShouldNotSeeSeat3IsCreated(){
+        new TableLayOutScreen().verifySeat33();
     }
 
     @And ("^I click Split Evenly Button$")
@@ -1169,14 +1220,6 @@ public class TableOrderOperationsStepDef {
         Assert.assertEquals(new TableLayOutScreen().getPopupMessage(),"Select the seats to merge");
     }
 
-    @And ("^I click Seat 2 for add menu item$")
-    public void iClickSeat2ForAddMenuItem() throws InterruptedException {
-        new TableLayOutScreen().pressSeat2();
-    }
-
-    @And ("^I click Seat 3 for add menu item$")
-    public void iClickSeat3ForAddMenuItem() throws InterruptedException { new TableLayOutScreen().pressSeat3(); }
-
     @And ("^I click Seat 4 for add menu item$")
     public void iClickSeat4ForAddMenuItem(){ new TableLayOutScreen().pressSeat4(); }
 
@@ -1189,8 +1232,8 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click seat one on the split screen$")
-    public void iClickSeatOneOnTheSplitScreen(){
-        new TableLayOutScreen().pressSeat1();
+    public void iClickSeatOneOnTheSplitScreen() throws InterruptedException {
+        new TableLayOutScreen().pressSeat11();
     }
 
     @And ("^I click another seat for Group$")
@@ -1206,6 +1249,16 @@ public class TableOrderOperationsStepDef {
     @And ("^I click seat three on the split screen$")
     public void iClickSeatThreeOnTheSplitScreen(){
         new TableLayOutScreen().pressSeat3Table();
+    }
+
+    @Then ("^I should see orderscreen with menu item prize as \"([^\"]*)\" in split seat1$")
+    public void iShouldSeeOrderScreenWithMenuItemPrizeAsInSplitSeat(String amount){
+        new Discount().verifyMenuItemPrizeIsDisplayedInSplitSeat1(amount);
+    }
+
+    @Then ("^I should see orderscreen with menu item prize as \"([^\"]*)\" in split seat2$")
+    public void iShouldSeeOrderScreenWithMenuItemPrizeAsInSplitSeat2(String amount){
+        new Discount().verifyMenuItemPrizeIsDisplayedInSplitSeat2(amount);
     }
 
     @Then ("^I should see order cannot moved popup message$")
@@ -1263,7 +1316,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see select any one seat/check for print popup$")
     public void iShouldSeeSelectAnyOneSeatOrCheckForPrintPopup(){
-        Assert.assertEquals(new TableLayOutScreen().getSelectAnyOneSeatForPrint(),"select any one seat/check for print");
+        Assert.assertEquals(new TableLayOutScreen().getSelectAnyOneSeatForPrint(),"Select any one seat/check for print");
     }
 
     @And ("^I click print All button in the split seat screen$")
@@ -1301,12 +1354,12 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see Select the seat to pay in popup$")
-    public void iShouldSeeSelectTheSeatToPayInPopup(){
-        Assert.assertEquals(new TableLayOutScreen().getSelectTheSeatToPay(),"Select the Seat to Pay");
+    public void iShouldSeeSelectTheSeatToPayInPopup() throws InterruptedException {
+        Assert.assertEquals(new TableLayOutScreen().getSelectTheSeatToPay(),"Select the seat to Pay");
     }
 
     @Then ("^I should see Select any one seat/check for payment in popup$")
-    public void iShouldSeeSelectAnyOneSeatCheckForPaymentInPopup(){
+    public void iShouldSeeSelectAnyOneSeatCheckForPaymentInPopup() throws InterruptedException {
         Assert.assertEquals( new TableLayOutScreen().getSelectAnyOneSeatCheckForPaymentMsg(),"select any one seat/check for payment");
     }
     @Then ("^I should see selected seat item should club into seat two$")
@@ -1330,7 +1383,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see cash payment is added in payment window$")
     public void iShouldSeeCashPaymentIsAddedInPaymentWindow(){
-        Assert.assertEquals(new TableLayOutScreen().verifyCashApplied(),"1. Cash(#1)");
+        Assert.assertEquals(new TableLayOutScreen().verifyCashApplied(),"Cash(#1)");
     }
     @Then ("^I should see cash payment is added in payment window as \"([^\"]*)\"$")
     public void iShouldSeeCashPaymentIsAddedInPaymentWindowAs(String name){
@@ -1421,13 +1474,18 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click Add Button on the void reason popup$")
-    public void iClickAddButtonOnTheVoidReasonPopup(){
+    public void iClickAddButtonOnTheVoidReasonPopup() throws InterruptedException {
         new OrderManagementScreen().pressAddVoidReasonBtn();
     }
 
     @And ("^I click Add Button on the void reason popup1$")
     public void iClickAddButtonOnTheVoidReasonPopup1(){
         new OrderManagementScreen().pressAddVoidReasonBtn1();
+    }
+
+    @And ("^I click Add Button on the void reason popup3$")
+    public void iClickAddButtonOnTheVoidReasonPopup3(){
+        new OrderManagementScreen().pressAdd2Void();
     }
 
     @Then ("^I should see that OrderScreen with Merge seats as \"([^\"]*)\"$")
@@ -1502,6 +1560,11 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I click payment for all seat in the payment window$")
     public void iClickPaymentForAllInThePaymentWindow(){
+        new PaymentWindow().selectPayment();
+    }
+
+    @And ("^I click payment for all seat in the payment window1$")
+    public void iClickPaymentForAllInThePaymentWindow1(){
         new PaymentWindow().selectPayment1();
     }
 
@@ -1567,11 +1630,11 @@ public class TableOrderOperationsStepDef {
     }
     @Then ("^I should see please pay amount$")
     public void iShouldSeePleasePayAmount(){
-        Assert.assertEquals(new PaymentWindow().getPleasePayAmountMsg(),"Linga Payment");
+        Assert.assertEquals(new PaymentWindow().getPleasePayAmountMsg(),"Please pay $ 5.00");
     }
     @Then ("^I should see please pay amount for One seat$")
     public void iShouldSeePleasePayAmountForOneSeat(){
-        Assert.assertEquals(new PaymentWindow().getPleasePayAmountMsg1(),"Linga Payment");
+        Assert.assertEquals(new PaymentWindow().getPleasePayAmountMsg1(),"Please pay $ 15.00");
     }
     @And ("^I click huge amount for complete payment by manually$")
     public void iClickHugeAmountForCompletePaymentByManually(){
@@ -2026,7 +2089,7 @@ public class TableOrderOperationsStepDef {
 
     @When ("^I click the check from the table layout$")
     public void iClickTheCheckFromTheTableLayout() throws InterruptedException {
-        new Regression().selectTheCheckFromTableLayout();
+        new TableLayOutScreen().selectTheCheckFromTableLayout();
     }
 
     @When ("^I click the check from the table layout for merged$")
@@ -2054,7 +2117,7 @@ public class TableOrderOperationsStepDef {
     }
     @Then ("^I should see the Split check screen$")
     public void iShouldSeeTheSplitCheckScreen(){
-        new Regression().verifySplitCheckScren();
+        new TableLayOutScreen().verifySplitCheckScren();
     }
 
     @When ("^I verify the Active check with split check$")

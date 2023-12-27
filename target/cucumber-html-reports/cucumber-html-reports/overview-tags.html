@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@Payment",  "@RegressionTable",  "@TableOrders", ] ,
+        labels:  [ "@Payment",  "@Payments10",  "@RegressionQSR",  "@RegressionQSR3",  "@RegressionTable",  "@TableOrders",  "@VerificationForUSDStore123", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 67.35,  67.35,  67.35, ] 
+                data:  [ 82.60,  80.63,  100.00,  80.29,  82.60,  84.04,  80.63, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.46,  0.46,  0.46, ] 
+                data:  [ 0.27,  0.38,  0.00,  0.39,  0.27,  0.18,  0.38, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 32.19,  32.19,  32.19, ] 
+                data:  [ 17.13,  18.99,  0.00,  19.33,  17.13,  15.78,  18.99, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>22 Dec 2023, 00:26</td>
+      <td>27 Dec 2023, 03:56</td>
     </tr>
   </tbody>
 </table>
@@ -197,52 +197,120 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-tag_2896167333.html">@Payment</a></td>
 
-        <td      class="passed"    >2059</td>
-        <td      class="failed"    >14</td>
-        <td     class="skipped"   >984</td>
+        <td      class="passed"    >7712</td>
+        <td      class="failed"    >25</td>
+        <td     class="skipped"   >1599</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">3057</td>
+        <td class="total">9336</td>
 
-        <td  class="passed"    >9</td>
-        <td  class="failed"    >16</td>
-        <td class="total">25</td>
+        <td  class="passed"    >112</td>
+        <td  class="failed"    >27</td>
+        <td class="total">139</td>
 
-        <td class="duration" data-value="2178392443000">36:18.392</td>
+        <td class="duration" data-value="9480153711000">2:38:0.153</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2418117227.html">@Payments10</a></td>
+
+        <td      class="passed"    >3164</td>
+        <td      class="failed"    >15</td>
+        <td     class="skipped"   >745</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3924</td>
+
+        <td  class="passed"    >71</td>
+        <td  class="failed"    >17</td>
+        <td class="total">88</td>
+
+        <td class="duration" data-value="3466085708000">57:46.085</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3175669294.html">@RegressionQSR</a></td>
+
+        <td      class="passed"    >69</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">69</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="78368781000">1:18.368</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3956467683.html">@RegressionQSR3</a></td>
+
+        <td      class="passed"    >3095</td>
+        <td      class="failed"    >15</td>
+        <td     class="skipped"   >745</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3855</td>
+
+        <td  class="passed"    >70</td>
+        <td  class="failed"    >17</td>
+        <td class="total">87</td>
+
+        <td class="duration" data-value="3387716927000">56:27.716</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2394618796.html">@RegressionTable</a></td>
 
-        <td      class="passed"    >2059</td>
-        <td      class="failed"    >14</td>
-        <td     class="skipped"   >984</td>
+        <td      class="passed"    >7712</td>
+        <td      class="failed"    >25</td>
+        <td     class="skipped"   >1599</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">3057</td>
+        <td class="total">9336</td>
 
-        <td  class="passed"    >9</td>
-        <td  class="failed"    >16</td>
-        <td class="total">25</td>
+        <td  class="passed"    >112</td>
+        <td  class="failed"    >27</td>
+        <td class="total">139</td>
 
-        <td class="duration" data-value="2178392443000">36:18.392</td>
+        <td class="duration" data-value="9480153711000">2:38:0.153</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_3633510386.html">@TableOrders</a></td>
 
-        <td      class="passed"    >2059</td>
-        <td      class="failed"    >14</td>
-        <td     class="skipped"   >984</td>
+        <td      class="passed"    >4548</td>
+        <td      class="failed"    >10</td>
+        <td     class="skipped"   >854</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">3057</td>
+        <td class="total">5412</td>
 
-        <td  class="passed"    >9</td>
-        <td  class="failed"    >16</td>
-        <td class="total">25</td>
+        <td  class="passed"    >41</td>
+        <td  class="failed"    >10</td>
+        <td class="total">51</td>
 
-        <td class="duration" data-value="2178392443000">36:18.392</td>
+        <td class="duration" data-value="6014068003000">1:40:14.068</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_595977256.html">@VerificationForUSDStore123</a></td>
+
+        <td      class="passed"    >3164</td>
+        <td      class="failed"    >15</td>
+        <td     class="skipped"   >745</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3924</td>
+
+        <td  class="passed"    >71</td>
+        <td  class="failed"    >17</td>
+        <td class="total">88</td>
+
+        <td class="duration" data-value="3466085708000">57:46.085</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -250,30 +318,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>6177</td>
-      <td>42</td>
-      <td>2952</td>
+      <td>29464</td>
+      <td>105</td>
+      <td>6287</td>
       <td>0</td>
       <td>0</td>
-      <td>9171</td>
+      <td>35856</td>
 
-      <td>9</td>
-      <td>66</td>
-      <td>75</td>
+      <td>112</td>
+      <td>481</td>
+      <td>593</td>
 
-      <td class="duration">1:48:55.177</td>
-      <td>3</td>
+      <td class="duration">9:49:32.632</td>
+      <td>7</td>
     </tr>
     <tr>
       <td></td>
-      <td>67.35%</td>
-      <td>0.46%</td>
-      <td>32.19%</td>
+      <td>82.17%</td>
+      <td>0.29%</td>
+      <td>17.53%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>12.00%</td>
-      <td>88.00%</td>
+      <td>18.89%</td>
+      <td>81.11%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

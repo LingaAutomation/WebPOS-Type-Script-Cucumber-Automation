@@ -13,7 +13,7 @@ public class TGMergePage extends BasePage{
     public void clickMergeButton(){
         try {
             WebElement element = mergeAndFindMobileElement(btnMerge);
-            elementClick(element, "click firstTable ");
+            elementClick(element, "click Merge ");
         }
         catch(Exception e){
             utils.log().info("merge button not clicked");

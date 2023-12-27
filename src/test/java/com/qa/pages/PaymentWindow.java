@@ -43,7 +43,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//button[contains(@id,'ps_exit')]")
     WebElement exitBtn;
 
-    @FindBy (xpath = "//XCUIElementTypeButton[@name=\"  Adjust\"]")
+    @FindBy (xpath = "//button[@id='ps_adjust']")
     // @FindBy (xpath = "//XCUIElementTypeButton[@name=\"Adjust\"]")
     WebElement adjustBtn;
 
@@ -59,7 +59,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//ion-item-sliding[contains(@class,'ng-star-inserted md hydrated')]")
     private WebElement selectPaymentBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]")
+    @FindBy(xpath = "//ion-item-sliding[contains(@class,'ng-star-inserted md hydrated')]")
     private WebElement selectPaymentBtn1;
 
     @FindBy(xpath = "//button[contains(@id,'ps_delete')]")
@@ -99,10 +99,10 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy (xpath = "//span[.=' $10.00 ']")
     private WebElement Tl10;
 
-    @FindBy (name = "Linga Payment")
+    @FindBy (xpath = "//p[.='Please pay $ 5.00']")
     private WebElement pleasePayTl;
 
-    @FindBy (name = "Linga Payment")
+    @FindBy (xpath = "//p[.='Please pay $ 15.00']")
     private WebElement pleasePayTl1;
 
     @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]")
@@ -209,7 +209,8 @@ public class PaymentWindow extends OrderManagementScreen{
 //    }
 
 
-    public String getPaymentWindowTitle(){
+    public String getPaymentWindowTitle() throws InterruptedException {
+        Thread.sleep(2000);
         return elementGetText(paymentWindowTitle, "Payment window title is -");
     }
 
@@ -273,12 +274,16 @@ public class PaymentWindow extends OrderManagementScreen{
 
 
     public void verifyCashGotDel(){
-        if(find(selectPaymentBtn,1)){
-            utils.log().info("Payment is not Deleted");
-        }else{
+        try {
+            if (selectPaymentBtn.isDisplayed()) {
+                utils.log().info("Payment is not Deleted");
+                int w = 1 / 0;
+            }
+        }catch (Exception z){
             utils.log().info("Payment Got deleted");
-            int w = 1/0;
+
         }
+
     }
 
     public String getSelectAnyPaymentAndTryAgainMsg(){

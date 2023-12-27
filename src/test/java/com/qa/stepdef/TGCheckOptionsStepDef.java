@@ -1,5 +1,6 @@
 package com.qa.stepdef;
 
+import com.qa.pages.OrderManagementScreen;
 import com.qa.pages.TGCheckOptionPage;
 import com.qa.pages.TGMenuItemPage;
 import com.qa.pages.TGSplitCheckPage;
@@ -360,7 +361,10 @@ public class TGCheckOptionsStepDef {
         new TGSplitCheckPage().clickSaveAndCloseButton();
     }
 
-
+    @And ("^I get the next check number after done split check process$")
+    public void iGetTheNextCheckNumberAfterDoneSplitCheckProcess(){
+        new OrderManagementScreen().getTheNextCheckNumberAfterDoneSplitCheckProcess();
+    }
     @Then("User click split by seat button1 in check screen")
     public void userClickSplitBySeatButtonInCheckScreen(int arg0) {
         new TGMenuItemPage().selectSplitBySeatOption1();

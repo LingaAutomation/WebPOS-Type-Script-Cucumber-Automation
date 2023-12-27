@@ -274,7 +274,7 @@ public class OrderTypesStepDef {
         new OrderManagementScreen().checkGratuityValue(name);
     }
     @Then ("^I should see orderscreen with as Onion Rings EACH$")
-    public void iShouldSeeOrderscreenWithAsOnionRingsEach(){
+    public void iShouldSeeOrderscreenWithAsOnionRingsEach() throws InterruptedException {
         Assert.assertEquals(new OrderManagementScreen().OnionRingsEachMenu(),"(F)Onion Rings EACH");
     }
 

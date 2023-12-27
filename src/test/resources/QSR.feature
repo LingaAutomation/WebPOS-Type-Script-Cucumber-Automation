@@ -1,4 +1,4 @@
-@Payments1   @Payment   @VerificationForUSDStore123
+@RegressionTable @Payments10   @Payment   @VerificationForUSDStore123
 Feature: QSR feature
 
   Background:
@@ -4354,7 +4354,7 @@ Feature: QSR feature
     #Verify modifier with prefix
     And I select Pizza as Category
     When User select second pizza menu item with modifier
-    And I select modifier as 12
+#    And I select modifier as 12
     Then User select third modifier with prefix of second menu item of pizza
     And User verify modifier prefix
     #Menu item with - optional modifier

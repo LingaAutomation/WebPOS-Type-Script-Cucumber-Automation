@@ -515,5 +515,10 @@ public class CIPaymentScreen extends BasePage{
 
     public void selectTheTable(String btn,String msg){
         elementClick("(//p[contains(.,'"+btn+"')])[1]",msg);
+        TestUtils.tableNumberof = btn;
+    }
+    public void selectTheTable1(String btn,String msg){
+        elementClick("(//p[contains(.,'"+btn+"')])[1]",msg);
+        TestUtils.tableNumberof1 = btn;
     }
 }

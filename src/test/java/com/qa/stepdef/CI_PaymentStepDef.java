@@ -398,6 +398,11 @@ public class CI_PaymentStepDef {
         new CIPaymentScreen().selectTheTable(btnTable,msg);
     }
 
+    @And("^I select the \"([^\"]*)\" in the Table layout screen1\"([^\"]*)\"$")
+    public void iSelectTheTableInTheTableLayoutScreen1(String btnTable,String msg) {
+//        ciPaymentScreen.clickBtnPayment(btnTable,msg);
+        new CIPaymentScreen().selectTheTable1(btnTable,msg);
+    }
 
     @And("^I click \"([^\"]*)\" in the order screen for placing the menu item\"([^\"]*)\"$")
     public void iClickInTheOrderScreenForPlacingTheMenuItem(String btnSeat, String msg) {

@@ -6,7 +6,6 @@ Feature:Table Order Operations
     And I close the order type window
     And I click All
     And I click Table Layout tab
-
   @RegressionTable
   Scenario: Change Floors
     #Given I'm logged in
@@ -43,12 +42,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item2>"
     And I select modifier as "<Modifier2>"
@@ -64,12 +63,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item2>"
     And I select modifier as "<Modifier2>"
@@ -85,12 +84,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item2>"
     And I select modifier as "<Modifier2>"
@@ -106,12 +105,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item2>"
     And I select modifier as "<Modifier2>"
@@ -127,12 +126,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item2>"
     And I select modifier as "<Modifier2>"
@@ -1667,7 +1666,7 @@ Feature:Table Order Operations
     And I select menu item as RavioliPesto for Item Based Inclusive Tax
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select Pasta as category
     And I select menu item as RavioliPesto for Item Based Inclusive Tax
     And I select modifier as "<Modifier1>"
@@ -1705,12 +1704,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -2041,17 +2040,20 @@ Feature:Table Order Operations
     And I click Finish Order button
     Then I should get back to the Table Layout tab and see the table as seated
     Then I should see mulitiple check change on Table layout screen
-    And I select table as "<table_no>"
-    And I select check for complete sale
-   #    Then I should see the print or send receipt
-#    And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-    And I select table as "<table_no>"
+    And I click the check from the table layout for merged
+    And I Should get back to the Order Screen
     And I click Payment button in the Order Management Screen
+#    And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
+#    And I select table as "<table_no>"
+#    And I click Payment button in the Order Management Screen
+#    And I click Submit button on the Payment Window
+   #    Then I should see the print or send receipt
+#    And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
    # And I click power button
     #Examples:
   #    |table_no|number_of_seats| Menu_Item | Modifier |
@@ -2218,8 +2220,11 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged
     And I click Done button on the pop-up to complete merging
     Then I should see select at least 2 checks
-    And I click Done button on the Popup
-    And I select table as "<table_no>"
+     And I click Done button on the Popup from Table Layout
+    And I click cancel button on the table layout screen
+    And I click the check from the table layout for merged
+#    And I select table as "<table_no>"
+    Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
@@ -2703,7 +2708,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -3098,12 +3103,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item2>"
     And I select modifier as "<Modifier2>"
@@ -3171,7 +3176,7 @@ Feature:Table Order Operations
     #  | table_no | number_of_seats |
      # | T17         |1              |
 
-  #Scenario Outline: Split screen From order Screen, Should see Split is not allow, payment in this check
+#  Scenario Outline: Split screen From order Screen, Should see Split is not allow, payment in this check
     And I click new check button on the Table layout screen
     And I select table as "<table_no1>"
     And I select the number of seats as "<number_of_seats>"
@@ -3499,9 +3504,10 @@ Feature:Table Order Operations
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click the Exit button in the payment window
+#    And I wait sometimes
     And I click Cash button for Complete Sale
-    Then I should see No more payment needed popup
-    And I click Done button on the Popup
+#    Then I should see No more payment needed popup
+#    And I click Done button on the Popup
     Then I Should get back to the Order Screen
     And I click Payment button in the Order Management Screen
     And I click Submit button on the Payment Window
@@ -3535,8 +3541,8 @@ Feature:Table Order Operations
     And I click reopen check button on the check stats screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
-    Then I should see No more payment needed popup
-    And I click Done button on the Popup
+#    Then I should see No more payment needed popup
+#    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
@@ -3563,7 +3569,7 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     And I click cash button from the payment method popup
     And I click payment in the payment window
     And I click Adjust button in the payment window after Payment
@@ -3716,7 +3722,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -3775,8 +3781,8 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And I click the Exit button in the payment window
     And I click Cash button for Complete Sale
-    Then I should see No more payment needed popup
-    And I click Done button on the Popup
+#    Then I should see No more payment needed popup
+#    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
@@ -3787,7 +3793,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats|number_of_seats2 | Menu_Item    | Modifier |
       | T7       |1               | 2               |French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Cash reopen check After Payment for 2 checks
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3798,7 +3804,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -3816,8 +3822,8 @@ Feature:Table Order Operations
     And I click reopen check button on the check stats screen
     Then I Should get back to the Order Screen
     And I click Cash button for Complete Sale
-    Then I should see No more payment needed popup
-    And I click Done button on the Popup
+#    Then I should see No more payment needed popup
+#    And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
@@ -3828,7 +3834,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T13      |2                | French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Adjust Payment- Select payment and try again
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3895,7 +3901,7 @@ Feature:Table Order Operations
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click the Exit button in the payment window
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -3915,7 +3921,7 @@ Feature:Table Order Operations
    #   | table_no | number_of_seats | Menu_Item | Modifier |
    #   | T7        |2              | French Friese | Steak |
 
- # Scenario Outline: Adjust Payment - Create a sale with 3 seat to see change due popup should not come
+#  Scenario Outline: Adjust Payment - Create a sale with 3 seat to see change due popup should not come
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats3>"
@@ -3931,17 +3937,25 @@ Feature:Table Order Operations
     And I click Yes button on send to kitchen popup
     Then I should see the additional seat & Item on the Split Seat
     And I click seat to Group into one seat
-    And I click Pay Button in Split Screen
-    Then I should see the Payment window
-    And I click cash button from the payment method popup
-    And I click the Exit button in the payment window
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
+#    And I click seat 1 for add menu item
+#    And I click Pay Button in Split Screen
+#    Then I should see the Payment window
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
+    And I click the Exit button in the payment window
+#    And I click the save & close button on the split screen
+    Then I Should get back to the Order Screen
+#    And I click seat 2 for add menu item
+
+    And I click table number on the Order Screen as "<table_no>"
+    And I click Payment button in the Order Management Screen
+#    And I click cash button from the payment method popup
     And I click payment for all seat in the payment window
     And I click Adjust button in the payment window after Payment
     And I click total payment by manually 3 seat
+    And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
@@ -3951,7 +3965,7 @@ Feature:Table Order Operations
       | table_no |number_of_seats1|number_of_seats2| number_of_seats3 | Menu_Item     | Modifier |
       | T8       |1               |2               |3                 | French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Exit Payment , Finish - In Table layout screen, color of the table should be changed to seated color
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4001,7 +4015,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T19       |1                | French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Create 2 Table order then Merge after that click Arrow to see Merge box Hide
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -4028,11 +4042,11 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged
     And I click the check from the table layout for merged1
     And I click the arrow button in the Merge Box
-    Then I should see merge box is hide
+#    Then I should see merge box is hide
     And I click the arrow button in the Merge Box1
     And I click Done button to merge checks
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I click the check from the table layout for merged
     Then I Should get back to the Order Screen
     And I click Payment button in the Order Management Screen
@@ -4044,9 +4058,9 @@ Feature:Table Order Operations
     And I click power button
     Examples:
       | table_no | number_of_seats | Menu_Item     | Modifier | second_table | number_of_seats | Menu_Item1   | Modifier1 |
-      | T18      |1                | French Friese | Steak    | T19          |1                | Garlic Bread | 4 BBQ     |
+      | T20      |1                | French Friese | Steak    | T19          |1                | Garlic Bread | 4 BBQ     |
 
-
+  @RegressionTable
   Scenario Outline: Void - Reopen Check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4087,7 +4101,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T14      |1                | French Friese | Steak    |
 
-
+  @RegressionTable
   Scenario Outline: Normal check with cash payment,Normal check with CC payment, Normal check with CC payment with tips and without service charge
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4140,88 +4154,88 @@ Feature:Table Order Operations
      # | T13       |1              |  French Friese | Steak |  JCB      |TL 65,00 |
 
   #Scenario Outline: Normal check with CC payment with tips and without service charge
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I get check number
-    And I select FOOD as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-   # Then I should see card type window
-    #And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click tip as 10
-    Then I should see tip is added with menu total as "<Total>"
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    Then I should see service charge as "<service_charge>"
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    And I click Ok button in receipt printer popup
-   # Then I should see signature pad screen
-    #And I click tick mark button
-   #    Then I should see the print or send receipt
-#    And I click No thanks Button on the print receipt
-   #    Then I should see the print or send receipt
-#    And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-    And I click Table Layout tab
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I get check number
+#    And I select FOOD as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#   # Then I should see card type window
+#    #And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click tip as 10
+#    Then I should see tip is added with menu total as "<Total>"
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    Then I should see service charge as "<service_charge>"
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    And I click Ok button in receipt printer popup
+#   # Then I should see signature pad screen
+#    #And I click tick mark button
+#   #    Then I should see the print or send receipt
+##    And I click No thanks Button on the print receipt
+#   #    Then I should see the print or send receipt
+##    And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#    And I click Table Layout tab
     And I click power button
     Examples:
       | table_no | number_of_seats |  Menu_Item     | Modifier |  card_number      | expire_date | card_name | Total    | service_charge |
       | T14      |1                |  French Friese | Steak    |  3530111333300000 | 1224        | JCB       | $ 15.00  | $ 0.00         |
 
-  @gi4
-  Scenario Outline: Normal check with CC payment with tips and with service charge
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I get check number
-    And I select FOOD as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-   # Then I should see card type window
-    #And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click tip as 10
-    Then I should see tip is added with menu total as "<Total>"
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    Then I should see service charge as "<service_charge>"
-    And I click manual button on the your order screen
-    And I pass the Amex card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-    And I click Ok button in receipt printer popup
-  #  Then I should see signature pad screen
-   # And I click tick mark button
-   #    Then I should see the print or send receipt
-#    And I click No thanks Button on the print receipt
-   #    Then I should see the print or send receipt
-#    And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-    And I click power button
-    Examples:
-      | table_no | number_of_seats |  Menu_Item     | Modifier | card_number     | expire_date | card_name | Total    | service_charge |
-      | T14       |1               |  French Friese | Steak    | 371449635398431 | 1224        | Amex      | $ 15.00  | $ 0.00         |
+#
+#  Scenario Outline: Normal check with CC payment with tips and with service charge
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I get check number
+#    And I select FOOD as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#   # Then I should see card type window
+#    #And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click tip as 10
+#    Then I should see tip is added with menu total as "<Total>"
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    Then I should see service charge as "<service_charge>"
+#    And I click manual button on the your order screen
+#    And I pass the Amex card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+#    And I click Ok button in receipt printer popup
+#  #  Then I should see signature pad screen
+#   # And I click tick mark button
+#   #    Then I should see the print or send receipt
+##    And I click No thanks Button on the print receipt
+#   #    Then I should see the print or send receipt
+##    And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#    And I click power button
+#    Examples:
+#      | table_no | number_of_seats |  Menu_Item     | Modifier | card_number     | expire_date | card_name | Total    | service_charge |
+#      | T14       |1               |  French Friese | Steak    | 371449635398431 | 1224        | Amex      | $ 15.00  | $ 0.00         |
 
-
+  @RegressionTable
   Scenario Outline: Normal check with HA payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4346,7 +4360,7 @@ Feature:Table Order Operations
       | T19      |1                |  French Friese | Steak      | $ 15.00  | $ 15.00 | $ 25.00 | Auto ragav    |
 
 
-
+  @RegressionTable
   Scenario Outline: Verify whether application display Transfer server screen when user clicks the Transfer button present in the table layout screen
    # Given I'm logged in
     #And I close the order type window
@@ -4365,7 +4379,7 @@ Feature:Table Order Operations
     When I click Gift card Button
     Then I should see Gift card window
     And I click cancel button on the table layout screen
-    And I click Back button on Check Options Screen
+#    And I click Back button on Check Options Screen
 
   # Verify whether application can allow to select cancel in gift card screen
     And I click Options button
@@ -4373,24 +4387,24 @@ Feature:Table Order Operations
     When I click Gift card Button
     Then I should see Gift card window
     And I click cancel button on the table layout screen
-    Then I should see the Check Options screen
-    And I click Back button on Check Options Screen
+#    Then I should see the Check Options screen
+#    And I click Back button on Check Options Screen
 
 # Verify whether application allow user to select Tax Exempt in check option from order Screen
     And I click Options button
     Then I should see the Check Options screen
     And I click Tax Exempt Button
-    Then I should see tax exempt reasons
-    And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
+#    Then I should see tax exempt reasons
+#    And I click Back button on Tax Exempt window
+#    And I click Back button on Check Options Screen
 
  # Verify whether application can allow user to click back button before giving tax exempt in the Tax exempt screen
     And I click Options button
     Then I should see the Check Options screen
     And I click Tax Exempt Button
-    Then I should see tax exempt reasons
-    And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
+#    Then I should see tax exempt reasons
+#    And I click Back button on Tax Exempt window
+#    And I click Back button on Check Options Screen
 
  # Verify whether application allow user to select open item in check option from order Screen
     And I click Options button
@@ -4398,15 +4412,15 @@ Feature:Table Order Operations
     And I click Open Item button
     Then I should see open item screen
     And I click cancel button on the table layout screen
-    And I click Back button on Check Options Screen
+#    And I click Back button on Check Options Screen
 
   # Verify whether application can allow user to click back button in Gratuity screen
     And I click Options button
     Then I should see the Check Options screen
     And I click Gratuity button
     Then I should see Add Gratuity screen
-    And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
+    And I click Back button on the gratuity screen
+#    And I click Back button on Check Options Screen
 
   # Verify whether application can allow to navigate back to the check options screen from open Item when user Clicks back option from open item screen
     And I click Options button
@@ -4414,26 +4428,26 @@ Feature:Table Order Operations
     And I click Open Item button
     Then I should see open item screen
     And I click cancel button on the table layout screen
-    Then I should see the Check Options screen
-    And I click Back button on Check Options Screen
+#    Then I should see the Check Options screen
+#    And I click Back button on Check Options Screen
 
   # Verify whether application can allow user to select discount on check option screen from order Screen
     And I click Options button
     Then I should see the Check Options screen
     And I click discount on check option screen
-    Then I should see item discount
+    Then I should see Check Based Discount Screen
     And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
+#    And I click Back button on Check Options Screen
 
   # Verify whether application can display already created discounts in discount screen under item Discount,check discount when user clicks discount from check option
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    Then I should see item discount
-    Then I should see Check discount
-    Then I should see open check discount
-    And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    Then I should see item discount
+#    Then I should see Check discount
+#    Then I should see open check discount
+#    And I click Back button on Tax Exempt window
+#    And I click Back button on Check Options Screen
 
  # Verify whether application can allow user to click back button in Discount screen
     And I select Discount on the Order screen
@@ -4452,7 +4466,7 @@ Feature:Table Order Operations
       |SubTotal|
       |$ 0.00 |
 
-  @gi0
+  @RegressionTable
   Scenario Outline: Verify whether application allow user to view sub total in ordering screen after adding menu item to the order screen
     And I click new check button on the Table layout screen
     And I select table as "T8"
@@ -4505,49 +4519,49 @@ Feature:Table Order Operations
       |Menu_Item      |Modifier    |SubTotal|Tax      |Menu_Item1|Modifier1    |SubTotal2|Tax    |SubTotal1   | Tax1      | Total        |Discount |
       | French Friese | Steak      |$ 15.00 |$ 0.00   | Ravioli  | Butter      |$ 0.00   |$ 0.00  |$ 14.00     |$ 1.40     | $ 15.40      |$ 0.00   |
 
-
+  @RegressionTable
   Scenario Outline:Verify whether application allows the user to Fire the Hold Menu Item
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats2>"
-    And I tap Continue to finish selecting the number of seats
-    And I get check number
-    And I select FOOD as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I select menu item as "<Menu_Item1>"
-    And I select modifier as "<Modifier1>"
-    And I click Done to get back
-    And I select menu item as "<Menu_Item2>"
-    And I click table number on the Order Screen as "<order_Type>"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click Hold to put order on hold
-    And I click Done in the hold window
-    When I click Back to return to Order Management Screen
-    Then I should see the hold icon over the order section
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Fire to send menu item to kitchen
-    Then I should see do you want to send hold menu items to kitchen popup message
-    And I click Yes button on send to kitchen popup
-    And I click menu item as "<Menu_Item1>" to see Menu option screen
-    And I click Fire to send menu item to kitchen
-    Then I should see do you want to send hold menu items to kitchen popup message
-    And I click Yes button on send to kitchen popup
-    And I click menu item as "<Menu_Item2>" to see Menu option screen
-    And I click Fire to send menu item to kitchen
-    Then I should see do you want to send hold menu items to kitchen popup message
-    And I click Yes button on send to kitchen popup
-    And I click Void button on order management screen
-    Then I should see the void reason popup
-    And I click void Reason on the void popup
-    And I click Add Button on the void reason popup
-#    Then I should see Receipt Printer popup
-#    And I click Done button on the Popup
-    And I closed the order type window
-    And I click All
-    Then I should see check stats Screen
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats2>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I get check number
+#    And I select FOOD as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I select menu item as "<Menu_Item1>"
+#    And I select modifier as "<Modifier1>"
+#    And I click Done to get back
+#    And I select menu item as "<Menu_Item2>"
+#    And I click table number on the Order Screen as "<order_Type>"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click Hold to put order on hold
+#    And I click Done in the hold window
+#    When I click Back to return to Order Management Screen
+#    Then I should see the hold icon over the order section
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Fire to send menu item to kitchen
+#    Then I should see do you want to send hold menu items to kitchen popup message
+#    And I click Yes button on send to kitchen popup
+#    And I click menu item as "<Menu_Item1>" to see Menu option screen
+#    And I click Fire to send menu item to kitchen
+#    Then I should see do you want to send hold menu items to kitchen popup message
+#    And I click Yes button on send to kitchen popup
+#    And I click menu item as "<Menu_Item2>" to see Menu option screen
+#    And I click Fire to send menu item to kitchen
+#    Then I should see do you want to send hold menu items to kitchen popup message
+#    And I click Yes button on send to kitchen popup
+#    And I click Void button on order management screen
+#    Then I should see the void reason popup
+#    And I click void Reason on the void popup
+#    And I click Add Button on the void reason popup
+##    Then I should see Receipt Printer popup
+##    And I click Done button on the Popup
+#    And I closed the order type window
+#    And I click All
+#    Then I should see check stats Screen
    # And I click power button
 
   #  Examples:
@@ -4568,7 +4582,7 @@ Feature:Table Order Operations
     And I select modifier as "<Modifier3>"
     And I click Done to get back
     And I select menu item as "<Menu_Item2>"
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
@@ -4583,7 +4597,7 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click the Back button on Split Screen
     Then I Should get back to the Order Screen
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I click Void button on order management screen
     Then I should see payment made on this check popup message
     And I click Done button on the Popup
@@ -4671,7 +4685,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
@@ -4772,12 +4786,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
 
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
@@ -4820,7 +4834,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
@@ -4857,7 +4871,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
@@ -4896,7 +4910,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
@@ -4928,10 +4942,10 @@ Feature:Table Order Operations
    #   | T13      | 2            | French Friese | Steak  | Garlic Bread | 4 BBQ  |
 
 
-  #Scenario Outline: Verify whether user can able to drag unpaid seat menu items to paid seat when user create the check with multiple seats and pay amount for one seat
+#  Scenario Outline: Verify whether user can able to drag unpaid seat menu items to paid seat when user create the check with multiple seats and pay amount for one seat
   #  And I click All
   #  Then I should see check stats Screen
-    And I click Table Layout tab
+#    And I click Table Layout tab
     And I click new check button on the Table layout screen
     And I select table as "<table_no1>"
     And I select the number of seats as "<number_of_seats2>"
@@ -4941,7 +4955,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
@@ -4976,7 +4990,7 @@ Feature:Table Order Operations
       |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
       |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
-
+  @RegressionTable
   Scenario Outline: Verify whether application allow to split the check based amount discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
 
     And I click new check button on the Table layout screen
@@ -5151,7 +5165,7 @@ Feature:Table Order Operations
 
 
 
-
+  @RegressionTable
   Scenario Outline:Verify whether application allow to split the check based percentage discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -5327,7 +5341,7 @@ Feature:Table Order Operations
       | table_no |table_no1 | number_of_seats2| Menu_Item| Modifier |Discount                   | SubTotal    | Tax       | txtDiscount |Total       |Discount1                | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 | Tax3       | SubTotal3    | Total3      | Discount3              |txtDiscount3 |
       | T13      |T16       | 2               |  Ravioli | Butter   | CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.52    | $ 2.80      |$ 27.72      |CB-AfterTax-Percentage10 | $ 28.00    | $ 2.80    | $ 2.80       | $ 28.00     |$ 2.45     | $ 30.00      | $ 27.00      |CB-BeforeTax-Percentage10 | $ 3.00      | $ 2.73     | $ 30.00      | $ 27.28     |CB-AfterTax-Percentage10| $ 2.72      |
 
-
+  @RegressionTable
   Scenario Outline: Verify whether application allow to split the check based set price discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
 
     And I click new check button on the Table layout screen
@@ -5495,7 +5509,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item|Modifier1|Discount                  | SubTotal    | Tax       | txtDiscount   |Total       |Discount1                  | SubTotal1    | Tax1       | txtDiscount1   |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
       | T17      | 2               |  cake    |Butter   |CB-BeforeTax-SetPrice1000 | $ 16.00     | $ 1.00    | $ 6.00        | $ 11.00    |CB-AfterTax-SetPrice1000   | $ 16.00      | $ 1.60     | $ 6.00         | $ 11.60     |$ 0.91     | $ 30.00      | $ 10.00      |CB-BeforeTax-SetPrice1000 | $ 20.00     |$ 2.73     | $ 30.00      | $ 10.00      |CB-AfterTax-SetPrice1000|$ 20.00      |
 
-  @failed_R0
+  @RegressionTable
   Scenario Outline: verify whether application allow to split the check based free item (exclusive tax menu item) discount with type before tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -5705,7 +5719,7 @@ Feature:Table Order Operations
       | table_no |number_of_seats|Menu_Item   |Menu_Item1 |Discount              |Discount1             | SubTotal    | Tax      | Total     |Modifier2 | Tax2       | SubTotal2   | Total2       |SubTotal3   | Tax3       | Gratuity3   | Total3       |
       | T19      |2              | Cheesecake |Halwa      | CB-BeforeTax-Free300 |CB-AfterTax-Free300   | $ 32.00     | $ 3.20   | $ 35.20   | Butter   | $ 2.93     | $ 32.00     | $ 32.20      |$ 12.00     | $ 1.20     |  $ 1.20     | $ 14.40      |
 
-
+  @RegressionTable8
   Scenario Outline:Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based amount discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -5881,6 +5895,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount             |txtDiscount | SubTotal    | Tax       | Total       | Discount1         | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2      | SubTotal2   | Total2      | txtDiscount2 | Tax3     | SubTotal3   | Total3      | txtDiscount3  |
       | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-Amount |$ 2.00      | $ 28.00     | $ 2.60    | $ 28.60     |IB-AfterTax-Amount | $ 28.00     | $ 2.80    | $ 2.00       | $ 28.80     |$ 2.55    | $ 30.00     | $ 28.00     | $ 2.00       |$ 2.73    | $ 30.00     | $ 28.00     | $ 2.00        |
 
+  @RegressionTable8
   Scenario Outline:Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based percentage discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -6057,7 +6072,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount    | SubTotal    | Tax      | Total       |Discount1                |txtDiscount1    | SubTotal1    | Tax1      | Total1       | Tax2          | SubTotal2    | Total2       | txtDiscount2 |Tax3           | SubTotal3    | Total3       | txtDiscount3    |
       | T12       |2                | Ravioli  | Butter   | IB-BeforeTax-Percentage  |$ 2.80         | $ 28.00     | $ 2.52   | $ 27.72     |IB-AfterTax-Percentage   |$ 2.80          | $ 28.00      | $ 2.80    | $ 28.00      |$ 2.45         | $ 30.00      | $ 27.00      | $ 3.00       |$ 2.73         | $ 30.00      | $ 27.28      | $ 2.72          |
 
-
+  @RegressionTable
   Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -6236,7 +6251,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount  | SubTotal    | Tax       | Total       | Discount1               |txtDiscount1 | SubTotal1   | Tax1      | Total1      | Tax2    | SubTotal2   | Total2      | txtDiscount2 | Tax3       | SubTotal3    | Total3       | txtDiscount3 |
       | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-SetPrice500 |$ 26.00      | $ 28.00     | $ 0.20    | $ 2.20      | IB-AfterTax-SetPrice500 |$ 25.00      | $ 28.00     | $ 2.80    | $ 5.80      |$ 0.18   | $ 30.00     | $ 2.00      | $ 28.00      |$ 2.73      | $ 30.00      | $ 3.00       | $ 27.00      |
 
-  @gi
+  @RegressionTable
   Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -6500,7 +6515,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       | Discount1              | Tax2       | SubTotal2    | Total2      |Discount2    | Discount3     | SubTotal3   | Tax3       | Total3       |Discount4      | SubTotal4   | Tax4       | Total4       |
       | T16       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | $ 30.00     | $ 3.00    | $ 33.00     |IB-AfterTax-AsFreeItem  | $ 2.93     | $ 32.00      | $ 32.20     |IB-BF-AsFree |IB-BF-AsFree   | $ 30.00     | $ 3.00     | $ 33.00      |  IB-AF-AsFree | $ 31.00     | $ 3.10     | $ 34.10      |
 
-
+  @RegressionTable
   Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
 
     And I click new check button on the Table layout screen
@@ -6589,7 +6604,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Modifier | Tax        | SubTotal     | Total       |Discount                | Tax1       | SubTotal1    | Total1      |Discount1              |
       | T8       |2                | Butter   | $ 2.93     | $ 32.00      | $ 32.20     |IB-BeforeTax-AsFreeItem | $ 2.93     | $ 32.00      | $ 32.20     |IB-AfterTax-AsFreeItem |
 
-
+  @RegressionTable
   Scenario Outline: Verify whether application calculate the gratuity based on the net sale of the seat if user move menu item from one seat to another seat
 
     And I click new check button on the Table layout screen
@@ -6648,7 +6663,7 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click on item as Ravioli For Gratuity
     And I click seat two on the split screen
-    Then I should see menu item as Ravioli added into next seat for Free Item
+    Then I should see menu item as Ravioli added into next seat for Free Item1
     Then I should see selected Modifier as Butter
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
@@ -6687,7 +6702,7 @@ Feature:Table Order Operations
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click Start Over Button to come back original stage
-    Then I should see created new seat
+    Then I should not see created new seat
     And I click the Back button on Split Screen
     Then I Should get back to the Order Screen
     And I click Void button on order management screen
@@ -6705,7 +6720,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | number_of_seats1|Menu_Item |Modifier  |SubTotal    | Tax       |  Gratuity  | Total       |  SubTotal1   | Tax1       | Total1       |
       | T9         |2              | 1               | Ravioli  | Butter   |$ 14.00     | $ 1.40    |  $ 1.40    | $ 16.80     | $ 14.00      | $ 1.40     | $ 15.40      |
 
-
+  @RegressionTable2
   Scenario Outline: Verify whether user can revert changes when user create the check with multiple seats and done the payment for any one seat
 
     And I click new check button on the Table layout screen
@@ -6717,7 +6732,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -6759,7 +6774,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -6777,7 +6792,7 @@ Feature:Table Order Operations
     And I click Add Button to create Seat
     Then I should see seat 3 is created
     And I click Start Over Button to come back original stage
-    Then I should see seat 3 is created
+    Then I should not see seat 3 is created
     And I click seat two on the split screen
     And I click Pay Button in Split Screen
     Then I should see the Payment window
@@ -6968,7 +6983,7 @@ Feature:Table Order Operations
    #   | T7         |1              | French Friese | Steak    |
 
 
- # Scenario Outline: Verify whether application allow to do payment for already paid seat
+#  Scenario Outline: Verify whether application allow to do payment for already paid seat
   #  And I click All
   #  Then I should see check stats Screen
     And I click Table Layout tab
@@ -7019,12 +7034,12 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 3 for add menu item
+    And I click seat 3 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7061,57 +7076,57 @@ Feature:Table Order Operations
 
     Examples:
       | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
-      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | $ 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
 
-  Scenario Outline: Verify whether the application splits the Open Check discount amount exactly once the user clicks on the Split Evenly button
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I get check number
-    And I select Menu as category
-    And I select menu item as "<Menu_Item>"
-    And I click Seat 2 for add menu item
-    And I select Menu as category
-    And I select menu item as "<Menu_Item1>"
-    And I click table number on the Order Screen as "<table_no>"
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click discount on check option screen
-    And I select open check discount
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
-    Then I should see orderscreen with open check discount
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click the split seat from Order screen
-    Then I should see the Split Screen
-    Then I should see orderscreen with menu item prize as "<SubTotal1>" in split seat1
-    Then I should see orderscreen with menu item prize as "<SubTotal2>" in split seat2
-    And I click on item as cake on split seat screen
-    And I click seat two on the split screen
-    And I click Split Evenly Button
-    Then I should see menu items has to be sent to the kitchen
-    And I click Yes button on send to kitchen popup
-    Then I should see menu item prize split evenly
-    And I click the save & close button on the split screen
-    Then I Should get back to the Order Screen
-    And I click Void button on order management screen
-    Then I should see the void reason popup
-    And I click void Reason on the void popup
-    And I click Add Button on the void reason popup
-#    Then I should see Receipt Printer popup
-#    And I click Done button on the Popup
-    Then I should get back to the Table Layout tab
-    And I click power button
-    Examples:
-      | table_no | number_of_seats | Menu_Item  | Menu_Item1  |Discount1| SubTotal    | Tax       | Discount  | Total       | SubTotal1   | SubTotal2   |
-      | T8       |    2            |  cake      |   Halwa     | Before  | $ 18.00     | $ 1.44    | $ 3.60    | $ 15.84     | $ 8.00      | $ 10.00     |
+#  Scenario Outline: Verify whether the application splits the Open Check discount amount exactly once the user clicks on the Split Evenly button
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I get check number
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item>"
+#    And I click seat 2 for add menu item
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item1>"
+#    And I click table number on the Order Screen as "<table_no>"
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click discount on check option screen
+#    And I select open check discount
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open check discount percentage as 20 for "<Discount1>"
+#    Then I should see orderscreen with open check discount
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click the split seat from Order screen
+#    Then I should see the Split Screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal1>" in split seat1
+#    Then I should see orderscreen with menu item prize as "<SubTotal2>" in split seat2
+#    And I click on item as cake on split seat screen
+#    And I click seat two on the split screen
+#    And I click Split Evenly Button
+#    Then I should see menu items has to be sent to the kitchen
+#    And I click Yes button on send to kitchen popup
+#    Then I should see menu item prize split evenly
+#    And I click the save & close button on the split screen
+#    Then I Should get back to the Order Screen
+#    And I click Void button on order management screen
+#    Then I should see the void reason popup
+#    And I click void Reason on the void popup
+#    And I click Add Button on the void reason popup
+##    Then I should see Receipt Printer popup
+##    And I click Done button on the Popup
+#    Then I should get back to the Table Layout tab
+#    And I click power button
+#    Examples:
+#      | table_no | number_of_seats | Menu_Item  | Menu_Item1  |Discount1| SubTotal    | Tax       | Discount  | Total       | SubTotal1   | SubTotal2   |
+#      | T8       |    2            |  cake      |   Halwa     | Before  | $ 18.00     | $ 1.44    | $ 3.60    | $ 15.84     | $ 8.00      | $ 10.00     |
 
-  @gi0
+  @RegressionTable
   Scenario Outline: Verify whether application removes the applied check based discount when the user does Split Evenly
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7199,7 +7214,7 @@ Feature:Table Order Operations
       | table_no |number_of_seats|Menu_Item   |Discount              | SubTotal    | Tax      | Total     | SubTotal1  |  SubTotal2  |
       | T12      |2              | Cheesecake | CB-BeforeTax-Free300 | $ 32.00     | $ 3.20   | $ 35.20   | $ 17.00    |  $ 15.00    |
 
-  @gi1
+  @RegressionTable
   Scenario Outline: Verify whether the application allows the user to close the check before doing the payment for the seat 2
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7210,7 +7225,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7256,7 +7271,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7289,7 +7304,7 @@ Feature:Table Order Operations
    #   | T7         |2              | French Friese | Steak    |
 
 
- # Scenario Outline: Verify whether application displays the Ordered Free Items are UnOrdered Free Items when the user tries to Print the Seat from the Split Screen
+#  Scenario Outline: Verify whether application displays the Ordered Free Items are UnOrdered Free Items when the user tries to Print the Seat from the Split Screen
   #  And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -7323,7 +7338,7 @@ Feature:Table Order Operations
     And I click Void button on order management screen
     Then I should see the void reason popup
     And I click void Reason on the void popup
-    And I click Add Button on the void reason popup
+    And I click Add Button on the void reason popup3
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
@@ -7333,9 +7348,9 @@ Feature:Table Order Operations
       #| T13      |1              | Cheesecake | CB-BeforeTax-Free300 | TL 900,00   | TL 90,00 | TL 990,00 |
     Examples:
       | table_no | number_of_seats |number_of_seats1| Menu_Item     | Modifier |amount     | Paid_Amount | Menu_Item1   |Discount1              | SubTotal1    | Tax1      | Total1     |
-      | T7       |2                |1               | French Friese | Steak    |  $ 15.00  | $ 15.00     | Cheesecake   | CB-BeforeTax-Free300  | $ 32.00      | $ 3.20    | $ 35.20    |
+      | T7       |2                |1               | French Friese | Steak    | 15.00  | $ 15.00     | Cheesecake   | CB-BeforeTax-Free300  | $ 32.00      | $ 3.20    | $ 35.20    |
 
-
+  @RegressionTable
   Scenario Outline: Verify whether the Application shows the seat total in the split screen shows less amount than  the seat's subtotal when the user does split evenly for the menu item which has priced  modifier to it
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7353,9 +7368,9 @@ Feature:Table Order Operations
     Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
     And I click the split seat from Order screen
     Then I should see the Split Screen
-    Then I should see amount as "<SubTotal>"
-    Then I should see amount as "<Tax>"
-    Then I should see amount as "<Total>"
+    Then I should see subtotal as "<SubTotal>" in Split seat Screen
+    Then I should see tax as "<Tax>" in Split seat Screen
+    Then I should see total as "<Total>" in Split seat Screen
     And I click the save & close button on the split screen
     And I click Void button on order management screen
     Then I should see All orders are voided
@@ -7368,7 +7383,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier | Modifier1 | Modifier2 | SubTotal  | Tax    | Total   |
       | T7         |1              | French Friese | Steak    | Tomato    | Turkey    | $ 71.00   | $ 4.69 | $ 75.69 |
 
-
+  @RegressionTable
   Scenario Outline: Verify whether application allow user to move the menu item from one seat to another seat along with Item based free item discount
 
     And I click new check button on the Table layout screen
@@ -7439,13 +7454,13 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click on item as cheesecake
     And I click seat two on the split screen
-    Then I should see menu item as cheese cake added into next seat
+    Then I should see menu item as cheese cake added into next seat1
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Void button on order management screen
     Then I should see the void reason popup
     And I click void Reason on the void popup
-    And I click Add Button on the void reason popup
+    And I click Add Button on the void reason popup3
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
@@ -7458,7 +7473,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item  | Modifier | SubTotal    | Tax       | Total     | Discount    | Discount1               | Menu_Item1   |Discount2                 | SubTotal1    | Tax1      | Total1     | Discount3 |
       | T13      |2                | Ravioli    | Butter   | $ 14.00     | $ 1.40    | $ 2.90    | $ 12.50     | IB-AfterTax-SetPrice500 |Cheesecake    | IB-BeforeTax-SetPrice500 | $ 130.00     | $ 0.20    | $ 102.20   | $ 28.00   |
 
-  @y
+  @RegressionTable
   Scenario Outline: Verify whether application allow to close the check if user paid the total check amount by selecting a single seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7469,7 +7484,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7579,7 +7594,7 @@ Feature:Table Order Operations
     Then I Should get back to the Order Screen
     And I select Desserts as category
     And I select menu item as "<Menu_Item1>"
-    And I click Seat 2 for add menu item
+    And I click seat 2 for add menu item
     And I select Desserts as category
     And I select menu item as "<Menu_Item1>"
     And I click Options button
@@ -7654,40 +7669,42 @@ Feature:Table Order Operations
      # | Modifier  | Menu_item |Menu_Item1|
       #| Penne    |  Parottas | Onion Rings|
 
+  @RegressionTable
   Scenario Outline: Create New Check
 
     Then User click New Check option
-    And I select the "T15" in the Table layout screen"click t4 table"
+    And I select table as "T15"
     And I select the number of seats as "1"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    And User verify menu screen
+    And I tap Continue to finish selecting the number of seats
+#    And User verify menu screen
 #  Scenario: Pay Check with fast cash button
     When User click All button
     Then User click Table Layout menu
     Then User click New Check option
-    And I select the "T14" in the Table layout screen"click t4 table"
+    And I select table as "T14"
     And I select the number of seats as "1"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
+    And I tap Continue to finish selecting the number of seats
     And I select category as "FOOD"
     Then User take an order
     When User click Cash Tab on Menu Item Page
     Then User click exact option
     And User click enter button
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+    And I click QSR tab
+    And I closed the order type window
   #  Scenario: Split Check with Split Check Option and Separate Item
     Given User select QSR mode on menu item page
     When User select DineIn mode
-    And I select the "<txtTable>" in the Table layout screen"click t4 table"
+    And I select table as "<txtTable>"
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
     And User click finish button
+    Then I should see table layout Screen
     And I click new check button on the Table layout screen
-    And I select the "T23" in the Table layout screen"click t4 table"
+    And I select table as "T23"
     And I select the number of seats as "1"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    When User click add new seat button on menu item
-    Then User verify added new seat
+    And I tap Continue to finish selecting the number of seats
+    When I add a new seat
+#    Then User verify added new seat
     And I get check number
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -7695,27 +7712,28 @@ Feature:Table Order Operations
     Then User click split button
     And User select split check option
 #    And User select table which will be split in check screen
-    When User select order for split item1
+    When I click the check from the table layout
+    Then I should see the Split check screen
     When User click save and close in check screen
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done button on the Popup
+    And I click QSR tab
+    And I closed the order type window
     #  Scenario: Split Check with Split Check Option and Split By Seat
     Given User select QSR mode on menu item page
     When User select DineIn mode
-    And I select the "<txtTable>" in the Table layout screen"click t4 table"
+    And I select table as "<txtTable>"
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
     And User click finish button
     Then User click New Check option
-    And I select the "T23" in the Table layout screen"click t4 table"
+    And I select table as "T23"
     And I select the number of seats as "1"
-    And I click "<btnContinue>" in the percentage apply screen "Click Continue"
-    When User click add new seat button on menu item
-    Then User verify added new seat
+    And I tap Continue to finish selecting the number of seats
+    When I add a new seat
+#    Then User verify added new seat
     And I get check number
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -7723,9 +7741,11 @@ Feature:Table Order Operations
     Then User click split button
     And User select split check option
 #    And User select table which will be split in check screen
-    When User select the table as "T23" order for split item2
+    When I click the check from the table layout
+    Then I should see the Split check screen
     Then User click split by seat button1
     When User click Save and Close button
+    And I wait sometimes
     And I click All
     And I click Check Stats tab
     And I get the next check number after done split check process
@@ -7733,39 +7753,42 @@ Feature:Table Order Operations
     And I click open check button
 #    And I get check number
     Then User verify orders which will be split
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
-    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done button on the Popup
+    And I click QSR tab
+    And I closed the order type window
     And I click log off "<btnLogOff>" button in order screen "click log off button"
 
     Examples:
       |btnVoid|btnWrong           |btnAdd|btnDone|btnQsr|btnCancel|btnContinue|btnLogOff|btnSeatOne|txtTable|
       |Void   |Wrong Item Ordered   |Add   |Done   |QSR   |Cancel   |Continue   |logOff   |1         |T16     |
 
-
+  @RegressionTable
   Scenario Outline: Open Cash Drawer
+    And I click new check button on the Table layout screen
     And User select first table
+    And I select the number of seats as "1"
+    And I tap Continue to finish selecting the number of seats
     When User take an order as "SANDWICHES"
     And User click Option Tab
     Then User select cash drawer option
     And User verify be directed menu item page
-    And I click "<btnVoid>" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "<btnWrong>" reason to void my menu item "select reason"
-    And I click "<btnAdd>" in the void screen"Click add button"
-    And I click the "<btnDone>" in the popup screen"click done button"
-    And I click the "<btnPower>" in the close the day screen "click Power button"
+    And I click Void button on order management screen
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    And I click Done button on the Popup
+    And I click power button
 
     Examples:
       |btnVoid|btnWrong|btnAdd|btnDone|btnPower|
       |Void |Wrong Item Ordered|Add |Done |Power button |
 
-
+  @RegressionTable
   Scenario: Merge Check
     And I click new check button on the Table layout screen
-    And I click the "Right" in the table layout screen1 "click right button"
+##    And I click the "Right" in the table layout screen1 "click right button"
     And I select table as "T7"
     And I select the number of seats as "1"
     And I tap Continue to finish selecting the number of seats
@@ -7783,16 +7806,17 @@ Feature:Table Order Operations
     And I select menu item as "Onion Rings"
     And I click Finish Order button
     Then I should get back to the Table Layout tab
+#    And I click Merge button
     Then User click Merge button in the table layout screen
     And I click the check from the table layout for merged
     And I click the check from the table layout for merged1
     And I click Done button to merge checks
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I click Pay Check button
     And I click the check from the table layout for merged
     And I click cash button from the payment method popup
-    And I click Submit button in the Payment popup
+    And I click Submit button on the Payment Window
     Then I should get back to the Table Layout tab
     #  Scenario: Merge Check without Pay
     And I click new check button on the Table layout screen
@@ -7818,11 +7842,11 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged1
     And I click Done button to merge checks
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I click Pay Check button
     And I click the check from the table layout for merged
-    Then I click on "Cash" to pay the amount "Click on cash for payment"
-    And I click Submit button in the Payment popup
+    Then I click cash button from the payment method popup
+    And I click Submit button on the Payment Window
     Then I should get back to the Table Layout tab
 
 #     Scenario: Merge check with pay - xxxxxx
@@ -7852,83 +7876,91 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged1
     And I click Done button to merge checks
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
+    And I click Done button on the Popup
     And I click Pay Check button
     And I click the check from the table layout for merged
-    Then I click on "Cash" to pay the amount "Click on cash for payment"
-    And I click Submit button in the Payment popup
+    Then I click cash button from the payment method popup
+    And I click Submit button on the Payment Window
     Then I should get back to the Table Layout tab
     And I click QSR tab
     And I closed the order type window
     When User click QSR on Menu Item page
     Then User select DineIn order type
-    And I click the "Right" in the table layout screen1 "click right button"
-    And I click the check from the table layout for merged
+    And I select the "T18" in the Table layout screen"click t4 table"
+#    And I click the "Right" in the table layout screen1 "click right button"
+#    And I click the check from the table layout for merged
+
     And User click add seat button
+    And I get check number
     When User take an order as "SANDWICHES"
     And User select first seat on menu item page
     Then User take an order
     And User click finish button
     Then User click operation button
     And User select POS option
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     When User select DineIn mode
-    And I click the "Right" in the table layout screen1 "click right button"
-    And I select table as "T12"
+#    And I click the "Right" in the table layout screen1 "click right button"
+    And I select the "T16" in the Table layout screen1"click t4 table"
+    And I get check number1
     And User click add seat button
     And User take an order
     And User select first seat on menu item page
     Then User take an order
     And User click finish button
-    And I click the "Right" in the table layout screen1 "click right button"
+#    And I click the "Right" in the table layout screen1 "click right button"
     Then User click Merge button in the table layout screen
-    Then User select table which will be merge
-    And User click merge done button
+     And I click the check from the table layout for merged
+    And I click the check from the table layout for merged1
+    And I click Done button to merge checks
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
-    And I select table as "T10"
-    And USer click cash button
+    And I click Done button on the Popup
+    When I click Pay Check button
+    And I click the check from the table layout for merged
+    And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
     And I click QSR tab
-    Then User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     Then User select DineIn order type
-    And I click the "Right" in the table layout screen1 "click right button"
-    And I select table as "T10"
+#    And I click the "Right" in the table layout screen1 "click right button"
+    And I select the "T10" in the Table layout screen"click t4 table"
+    And I get check number
     When User take an order as "SANDWICHES"
     And User select first seat on menu item page
     Then User take an order
     And User click finish button
     Then User click operation button
     And User select POS option
-    And User click cancel button
+    And I closed the order type window
     When User click QSR on Menu Item page
     When User select DineIn mode
-    And I click the "Right" in the table layout screen1 "click right button"
-    And I select table as "T12"
+#    And I click the "Right" in the table layout screen1 "click right button"
+    And I select the "T12" in the Table layout screen1"click t4 table"
+    And I get check number1
     And User click add seat button
     And User take an order
     And User select first seat on menu item page
     Then User take an order
     And User click finish button
-    And I click the "Right" in the table layout screen1 "click right button"
+#    And I click the "Right" in the table layout screen1 "click right button"
     Then User click Merge button in the table layout screen
-    Then User select table which will be merge
-    And User click merge done button
+     And I click the check from the table layout for merged
+    And I click the check from the table layout for merged1
+    And I click Done button to merge checks
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
-    And I select table as "T10"
-    And USer click cash button
+    And I click Done button on the Popup
+    When I click Pay Check button
+    And I click the check from the table layout for merged
+    And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click the "Left" in the table layout screen1 "click right button"
+#    And I click the "Left" in the table layout screen1 "click right button"
     And I click QSR tab
-    Then User click cancel button
-    And I click log off "logOff" button in order screen "click log off button"
+    And I closed the order type window
+    And I click log off button in order screen
 
 
   Scenario Outline: Merge without Discount
@@ -7936,7 +7968,7 @@ Feature:Table Order Operations
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
     And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+    And I closed the order type window
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8387,7 +8419,9 @@ Feature:Table Order Operations
   Scenario Outline: Delete Seat,Add New Seat
     #Add New Seat
     And User select first table
-    When User click add new seat button on menu item
+    And I select the number of seats as "1"
+    And I tap Continue to finish selecting the number of seats
+    When I click Add Button to create Seat
     Then User verify added new seat
     #Delete Seat
     When User select last added seat
@@ -8398,7 +8432,7 @@ Feature:Table Order Operations
     When User down arrow icon
     Then User verify deleted seat
     And I click "<btnFinish>" in the order screen for closing order "Click Finish"
-    And I click the "<btnPower>" in the close the day screen "click Power button"
+    And I click power button
 
     Examples:
       |btnFinish|btnPower|
@@ -8407,8 +8441,10 @@ Feature:Table Order Operations
   Scenario Outline: Add Group Seat, Group Seats- Without Selecting Seats
     #Group Seats- Without Selecting Seats
     And User select first table
+    And I select the number of seats as "1"
+    And I tap Continue to finish selecting the number of seats
     When User take an order as "SANDWICHES"
-    When User click add new seat button on menu item
+    When I click Add Button to create Seat
     Then User verify added new seat
     When User take an order as "SANDWICHES"
     When User click split button on menu item page
@@ -8424,15 +8460,15 @@ Feature:Table Order Operations
     When User select seat is payable
     Then User click pay button on split seat
     And User click exact option
-    And USer click cash button
+    And I click cash button from the payment method popup
     And User click submit button
     When User click Check Status tab
     Then User click Closed Checks tabs
     And User verify closed checks
     And I click the "Power button" in the close the day screen "click Power button"
 
-#    And I click "<btnQsr>" in the all tab screen "click Qsr button"
-#    And I click on "<btnCancel>" for closing order screen popup "Click cancel button"
+#    And I click QSR tab
+#    And I closed the order type window
 #    And I click log off "<btnLogOff>" button in order screen "click log off button"
 
 

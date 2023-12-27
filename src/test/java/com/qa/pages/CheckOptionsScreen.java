@@ -34,7 +34,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
     WebElement doneHoldBtn;
 
-    @FindBy(name = " Back ")
+    @FindBy(xpath = "//button[.=' Cancel ']")
     WebElement backBtn;
 
     @FindBy(name = "   Back")
@@ -49,8 +49,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(name = "Done")
     WebElement paidAmountExceedsPopupDoneBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\" Back \"])[1]")
-    WebElement backOnTaxExemptBtn;
+
 //    (//XCUIElementTypeButton[@name=" Back "])[1]
 
 
@@ -139,8 +138,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(name = "Check Discount")
     private WebElement checkDiscountText;
 
-    @FindBy(name = "Gift Card")
-    private WebElement giftCardBtn;
+
 
     @FindBy(name = "0000 0000 0000 0000")
     private WebElement cardNumber;
@@ -150,8 +148,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther")
     private WebElement chargeAmountField;
 
-    @FindBy(name = "GC-1111 ")
-    private WebElement giftCardAddUp;
+
 
 
 
@@ -187,9 +184,9 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         elementClick(backBtn, "- Back button is tapped");
     }
 
-    public void pressBackOnTaxExempt() {
-        elementClick(backOnTaxExemptBtn, "- Back button on tax exempt window is tapped");
-    }
+
+
+
 
     public void pressBackForFireCoursing() {
         elementClick(backBtnForFireCoursing, "Tapped Back Button");
@@ -213,25 +210,6 @@ public class CheckOptionsScreen extends TableLayOutScreen{
             utils.log().info("Paid amount exceeds pop-up is not thrown");
         }
     }
-
-
-
-
-
-    public void checkGratuityExists() {
-        if (find(gratuity, 2)) {
-            utils.log().info("Gratuity is Applied");
-        } else {
-            utils.log().info("Gratuity is not Applied");
-        }
-    }
-
-
-
-
-
-
-
 
 
     public String enterValueAccordingBo() {
@@ -409,46 +387,18 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         return elementGetText(openCheckDiscountIsVisible, "Open check discount is displayed - ");
     }
 
-    public void clickGiftCardBtn() {
-        elementClick(giftCardBtn, "Tapped Gift Card Button");
-    }
 
-    public String verifyGiftCardWindow() {
-        return elementGetText(giftCardBtn, "Gift card screen is displayed - ");
-    }
 
-    public void enterGiftCardNumber() {
-        WebElement el1 = mergeAndFindElement("0000  0000  0000  0000", "", TestUtils.Accessibility);
-        elementClick(el1, "Tapped Card Number Field");
-        //click(cardNumber,"Tapped Card Number Field");
-        elementClick(pin1, "Tapped Pin 1");
-        elementClick(pin1, "Tapped Pin 1");
-        elementClick(pin1, "Tapped Pin 1");
-        elementClick(pin1, "Tapped Pin 1");
-        //WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.XPath);
-        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
-        elementClick(el2, "Tapped Continue ");
-    }
 
-    public void clickChargeAmountFieldPassAmount() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        elementClick(chargeAmountField, "Tapped Charge Amount Field");
-        elementClick(pin1, "Tapped Pin 1");
-        elementClick(pin00, "Tapped Pin 00");
-        elementClick(pin00, "Tapped Pin 00");
-        // WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.XPath);
-        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
-        elementClick(el2, "Tapped ");
-    }
+
+
 
     public void clickChargeAmountField() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         elementClick(chargeAmountField, "Tapped Charge Amount Field");
     }
 
-    public String verifyGiftCardAddup() {
-        return elementGetText(giftCardAddUp, "Gift Card is Add to Order screen - ");
-    }
+
 
     public void verifyFixedGratuityAmount() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));

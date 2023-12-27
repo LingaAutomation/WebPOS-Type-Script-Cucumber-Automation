@@ -138,6 +138,23 @@ public class Discount extends BasePage{
             }
         }
     }
+    public void verifyMenuItemPrizeIsDisplayedInSplitSeat1(String value){
+        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
+        WebElement e11 =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
+        String subtotalValue = e11.getText();
+        Assert.assertEquals(subtotalValue,value);
+        utils.log().info("Subtotal Value is - "+value);
+
+    }
+
+    public void verifyMenuItemPrizeIsDisplayedInSplitSeat2(String value){
+        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
+                WebElement e11 =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
+                String subtotalValue = e11.getText();
+                Assert.assertEquals(subtotalValue,value);
+                utils.log().info("Subtotal Value is - "+value);
+
+                }
 
     public void verifyMenuItemTotal1(String value) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));

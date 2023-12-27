@@ -50,7 +50,8 @@ public class OrdersAndDriversListScreen extends BasePage {
         }
     }
 
-    public void selectTableLayoutTab() {
+    public void selectTableLayoutTab() throws InterruptedException {
+        Thread.sleep(1300);
         elementClick(tableLayoutTab, "Tapped Table Layout Tab");
     }
 

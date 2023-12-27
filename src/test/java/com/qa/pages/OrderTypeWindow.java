@@ -140,8 +140,18 @@ public class OrderTypeWindow extends ClockInScreen {
 
 
     public void clickSeat1ForAddMenuItem(){
-      WebElement seat1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText"));
+      WebElement seat1 = (WebElement) driver.findElement(By.xpath("//button[@id='1']"));
        elementClick(seat1,"selected seat - "+seat1.getText());
+    }
+
+    public void clickSeat2ForAddMenuItem(){
+        WebElement seat1 = (WebElement) driver.findElement(By.xpath("//button[@id='2']"));
+        elementClick(seat1,"selected seat - "+seat1.getText());
+    }
+
+    public void clickSeat3ForAddMenuItem(){
+        WebElement seat1 = (WebElement) driver.findElement(By.xpath("//button[@id='3']"));
+        elementClick(seat1,"selected seat - "+seat1.getText());
     }
 
     public CustomerProfileWindow pressDoneBtn() {

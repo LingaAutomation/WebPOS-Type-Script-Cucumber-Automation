@@ -492,8 +492,9 @@ public class TGCheckStatusPage extends BasePage {
 //        }
     }
 
-    public void takeOrderAs(String Menu){
+    public void takeOrderAs(String Menu) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        pressArrowDown2();
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Select MenuItem And Order");
 

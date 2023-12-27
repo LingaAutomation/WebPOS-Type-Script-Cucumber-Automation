@@ -1348,7 +1348,7 @@ public class TGMenuItemPage extends BasePage {
         Assert.assertEquals(actualName1,expectedName1);
     }
     public void verifyOrdersWhichWillBeSplit(){
-        WebElement element = mergeAndFindMobileElement(firstOrderOnSeatOne);
+        WebElement element = mergeAndFindMobileElement("(//div[@class='orderlist-container   highlight']//div[contains(.,'SANDWICHES')])[1]");
         String actualName = elementGetText(element,"Verify SANDWICHES");
         String expectedName = "SANDWICHES ";
 
@@ -2785,6 +2785,7 @@ public class TGMenuItemPage extends BasePage {
     }
 
     public void enterCustomerNameForBarTab() throws InterruptedException {
+        Thread.sleep(1000);
         WebElement element = mergeAndFindMobileElement(BarTabCustomerNameTitle);
         String actualName = elementGetText(element,"Verify Enter the Customer Name");
         String expectedName = "Enter the Customer Name";
