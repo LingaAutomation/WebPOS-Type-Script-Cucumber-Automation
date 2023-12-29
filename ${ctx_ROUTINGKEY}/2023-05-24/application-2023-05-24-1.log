@@ -1,9 +1,0 @@
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 10:30:17.918 GlobalParams:130 - PORT Number is - 6507
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 11:13:06.426 GlobalParams:130 - PORT Number is - 6565
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 11:42:04.772 GlobalParams:130 - PORT Number is - 9934
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 12:00:14.795 GlobalParams:130 - PORT Number is - 9390
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 12:01:21.747 GlobalParams:130 - PORT Number is - 6460
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 12:02:00.519 GlobalParams:130 - PORT Number is - 7161
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 13:07:50.835 GlobalParams:130 - PORT Number is - 9374
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 13:11:19.912 GlobalParams:130 - PORT Number is - 9355
-[${ctx:ROUTINGKEY} INFO ] 2023-05-24 15:45:33.270 GlobalParams:130 - PORT Number is - 7085
