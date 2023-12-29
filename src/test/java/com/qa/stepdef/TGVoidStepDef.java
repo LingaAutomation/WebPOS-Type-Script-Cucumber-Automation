@@ -131,7 +131,7 @@ public class TGVoidStepDef {
     }
 
     @And("^I click Done button on the Popup in void screen$")
-    public void iClickDoneButtonOnThePopupInVoidScreen(){
+    public void iClickDoneButtonOnThePopupInVoidScreen() throws InterruptedException {
         voidScreen.pressDone1();
     }
 

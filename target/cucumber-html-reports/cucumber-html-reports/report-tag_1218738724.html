@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>26 Dec 2023, 17:31</td>
+      <td>27 Dec 2023, 23:40</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@RegressionTable2</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >185</td>
+          <td      class="passed"    >259</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">187</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">259</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="10205921000">10.205</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="357682675000">5:57.682</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,24 +171,23 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1463873253.html">Table Order Operations</a>
+      <a href="report-feature_2_1463873253.html">Table Order Operations</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3633510386.html">@TableOrders</a>
-       <a href="report-tag_2896167333.html">@Payment</a>
+       <a href="report-tag_2106825667.html">@RegressionBarTab01</a>
        <a href="report-tag_1218738724.html">@RegressionTable2</a>
 </div>
 
 
-  <span class="lead-duration duration">10.205</span>
+  <span class="lead-duration duration">5:57.682</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Verify whether user can revert changes when user create the check with multiple seats and done the payment for any one seat</span>
 
@@ -199,7 +198,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +220,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1:11.100</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -238,9 +237,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,7 +249,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -258,7 +257,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click new check button on the Table layout screen</span>
 
-  <span class="lead-duration duration">0.098</span>
+  <span class="lead-duration duration">0.052</span>
 
 </div>
 
@@ -281,11 +280,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select table as &quot;<span class="argument">&lt;table_no&gt;</span>&quot;</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
 
-  <span class="lead-duration duration">10.092</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -293,44 +292,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//label[.='&lt;table_no&gt;'])[1]&quot;}
-  (Session info: chrome=113.0.5672.126)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [258e68217bd85953295d58cdc76fbd69, findElement {using=xpath, value=(//label[.='&lt;table_no&gt;'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/hw/hfqk4l990gs...}, goog:chromeOptions: {debuggerAddress: localhost:52175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52175/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 258e68217bd85953295d58cdc76fbd69
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at com.qa.pages.TableLayOutScreen.selectTable(TableLayOutScreen.java:333)
-	at com.qa.stepdef.TableOrderOperationsStepDef.iSelectTableAs(TableOrderOperationsStepDef.java:102)
-	at &#10045;.I select table as &quot;&lt;table_no&gt;&quot;(file:///Users/Ragav-QA-Mac-IN/Downloads/WebPOS-Type-Script-Cucumber-Automation-Payment/WebPOS-Type-Script-Cucumber-Automation-Payment/src/test/resources/TableOrder.feature:6727)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -346,11 +307,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select the number of seats as &quot;<span class="argument">&lt;number_of_seats&gt;</span>&quot;</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">2</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -373,11 +334,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap Continue to finish selecting the number of seats</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -400,11 +361,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.065</span>
 
 </div>
 
@@ -427,11 +388,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I select FOOD as category</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.116</span>
 
 </div>
 
@@ -454,11 +415,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">4.095</span>
 
 </div>
 
@@ -481,11 +442,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.087</span>
 
 </div>
 
@@ -508,11 +469,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -535,11 +496,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat 2 for add menu item</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -562,11 +523,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.082</span>
 
 </div>
 
@@ -589,11 +550,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.073</span>
 
 </div>
 
@@ -616,11 +577,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -643,11 +604,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the split seat from Order screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.103</span>
 
 </div>
 
@@ -670,11 +631,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.034</span>
 
 </div>
 
@@ -697,11 +658,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat one on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.063</span>
 
 </div>
 
@@ -724,11 +685,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.058</span>
 
 </div>
 
@@ -751,11 +712,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.034</span>
 
 </div>
 
@@ -778,11 +739,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.065</span>
 
 </div>
 
@@ -805,11 +766,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see cash payment is added in payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 
@@ -832,11 +793,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the Exit button in the payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.090</span>
 
 </div>
 
@@ -859,11 +820,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.034</span>
 
 </div>
 
@@ -886,11 +847,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see seat as paid</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -913,11 +874,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Start Over Button to come back original stage</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.080</span>
 
 </div>
 
@@ -940,11 +901,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat two on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.041</span>
 
 </div>
 
@@ -967,11 +928,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.042</span>
 
 </div>
 
@@ -994,11 +955,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.028</span>
 
 </div>
 
@@ -1021,11 +982,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.052</span>
 
 </div>
 
@@ -1048,11 +1009,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Submit button on the Payment Window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.568</span>
 
 </div>
 
@@ -1075,11 +1036,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should get back to the Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.335</span>
 
 </div>
 
@@ -1102,11 +1063,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.367</span>
 
 </div>
 
@@ -1129,11 +1090,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click new check button on the Table layout screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.031</span>
 
 </div>
 
@@ -1156,11 +1117,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select table as &quot;<span class="argument">&lt;table_no&gt;</span>&quot;</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -1183,11 +1144,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select the number of seats as &quot;<span class="argument">&lt;number_of_seats&gt;</span>&quot;</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">2</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -1210,11 +1171,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap Continue to finish selecting the number of seats</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -1237,11 +1198,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.062</span>
 
 </div>
 
@@ -1264,11 +1225,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I select FOOD as category</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.126</span>
 
 </div>
 
@@ -1291,11 +1252,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.106</span>
 
 </div>
 
@@ -1318,11 +1279,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.084</span>
 
 </div>
 
@@ -1345,11 +1306,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -1372,11 +1333,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat 2 for add menu item</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -1399,11 +1360,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.091</span>
 
 </div>
 
@@ -1426,11 +1387,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.079</span>
 
 </div>
 
@@ -1453,11 +1414,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.039</span>
 
 </div>
 
@@ -1480,11 +1441,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the split seat from Order screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.107</span>
 
 </div>
 
@@ -1507,11 +1468,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.033</span>
 
 </div>
 
@@ -1534,11 +1495,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat one on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.055</span>
 
 </div>
 
@@ -1561,11 +1522,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.047</span>
 
 </div>
 
@@ -1588,11 +1549,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.028</span>
 
 </div>
 
@@ -1615,11 +1576,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.059</span>
 
 </div>
 
@@ -1642,11 +1603,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see cash payment is added in payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -1669,11 +1630,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the Exit button in the payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.084</span>
 
 </div>
 
@@ -1696,11 +1657,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.033</span>
 
 </div>
 
@@ -1723,11 +1684,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see seat as paid</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -1750,11 +1711,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Add Button to create Seat</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.079</span>
 
 </div>
 
@@ -1777,11 +1738,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see seat 3 is created</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -1804,11 +1765,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Start Over Button to come back original stage</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.074</span>
 
 </div>
 
@@ -1831,11 +1792,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should not see seat 3 is created</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">6.004</span>
 
 </div>
 
@@ -1858,11 +1819,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat two on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.055</span>
 
 </div>
 
@@ -1885,11 +1846,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.051</span>
 
 </div>
 
@@ -1912,11 +1873,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.039</span>
 
 </div>
 
@@ -1939,11 +1900,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.060</span>
 
 </div>
 
@@ -1966,11 +1927,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Submit button on the Payment Window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.567</span>
 
 </div>
 
@@ -1993,11 +1954,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should get back to the Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.334</span>
 
 </div>
 
@@ -2020,11 +1981,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.366</span>
 
 </div>
 
@@ -2047,11 +2008,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click new check button on the Table layout screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.031</span>
 
 </div>
 
@@ -2074,11 +2035,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select table as &quot;<span class="argument">&lt;table_no&gt;</span>&quot;</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -2101,11 +2062,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select the number of seats as &quot;<span class="argument">&lt;number_of_seats&gt;</span>&quot;</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">2</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -2128,11 +2089,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap Continue to finish selecting the number of seats</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -2155,11 +2116,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.069</span>
 
 </div>
 
@@ -2182,11 +2143,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I select FOOD as category</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.128</span>
 
 </div>
 
@@ -2209,11 +2170,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.106</span>
 
 </div>
 
@@ -2236,11 +2197,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.089</span>
 
 </div>
 
@@ -2263,11 +2224,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -2290,11 +2251,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the split seat from Order screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.101</span>
 
 </div>
 
@@ -2317,11 +2278,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.037</span>
 
 </div>
 
@@ -2344,11 +2305,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat two on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.037</span>
 
 </div>
 
@@ -2371,11 +2332,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.035</span>
 
 </div>
 
@@ -2398,11 +2359,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see empty seat cannot paid popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -2425,11 +2386,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done button on the Popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.057</span>
 
 </div>
 
@@ -2452,11 +2413,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the Back button on Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.041</span>
 
 </div>
 
@@ -2479,11 +2440,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I Should get back to the Order Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.033</span>
 
 </div>
 
@@ -2506,11 +2467,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Void button on order management screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.074</span>
 
 </div>
 
@@ -2533,11 +2494,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see All orders are voided</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -2560,11 +2521,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done button on the Popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.053</span>
 
 </div>
 
@@ -2587,11 +2548,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click All</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.065</span>
 
 </div>
 
@@ -2614,11 +2575,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see check stats Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.340</span>
 
 </div>
 
@@ -2641,11 +2602,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.360</span>
 
 </div>
 
@@ -2668,11 +2629,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click new check button on the Table layout screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.040</span>
 
 </div>
 
@@ -2695,11 +2656,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select table as &quot;<span class="argument">&lt;table_no&gt;</span>&quot;</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -2722,11 +2683,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select the number of seats as &quot;<span class="argument">&lt;number_of_seats1&gt;</span>&quot;</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -2749,11 +2710,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap Continue to finish selecting the number of seats</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -2776,11 +2737,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.061</span>
 
 </div>
 
@@ -2803,11 +2764,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I select FOOD as category</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.119</span>
 
 </div>
 
@@ -2830,11 +2791,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.093</span>
 
 </div>
 
@@ -2857,11 +2818,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.075</span>
 
 </div>
 
@@ -2884,11 +2845,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -2911,11 +2872,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Order button in the order management screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.041</span>
 
 </div>
 
@@ -2938,11 +2899,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see Tick mark in the Menu item</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -2965,11 +2926,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the split seat from Order screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.089</span>
 
 </div>
 
@@ -2992,11 +2953,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.031</span>
 
 </div>
 
@@ -3019,11 +2980,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat one on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.051</span>
 
 </div>
 
@@ -3046,11 +3007,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.063</span>
 
 </div>
 
@@ -3073,11 +3034,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.031</span>
 
 </div>
 
@@ -3100,11 +3061,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.054</span>
 
 </div>
 
@@ -3127,11 +3088,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see cash payment is added in payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -3154,11 +3115,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the Exit button in the payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.084</span>
 
 </div>
 
@@ -3181,11 +3142,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.031</span>
 
 </div>
 
@@ -3208,11 +3169,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see seat as paid</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -3235,11 +3196,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the Back button on Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.038</span>
 
 </div>
 
@@ -3262,11 +3223,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I Should get back to the Order Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.029</span>
 
 </div>
 
@@ -3289,11 +3250,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Payment button in the Order Management Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.056</span>
 
 </div>
 
@@ -3316,11 +3277,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Submit button on the Payment Window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.577</span>
 
 </div>
 
@@ -3343,11 +3304,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should get back to the Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.334</span>
 
 </div>
 
@@ -3370,11 +3331,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.362</span>
 
 </div>
 
@@ -3397,11 +3358,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click new check button on the Table layout screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -3424,11 +3385,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select table as &quot;<span class="argument">&lt;table_no&gt;</span>&quot;</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -3451,11 +3412,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select the number of seats as &quot;<span class="argument">&lt;number_of_seats1&gt;</span>&quot;</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -3478,11 +3439,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap Continue to finish selecting the number of seats</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -3505,11 +3466,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.069</span>
 
 </div>
 
@@ -3532,11 +3493,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I select FOOD as category</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.116</span>
 
 </div>
 
@@ -3559,11 +3520,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.098</span>
 
 </div>
 
@@ -3586,11 +3547,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.081</span>
 
 </div>
 
@@ -3613,11 +3574,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -3640,11 +3601,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Order button in the order management screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -3667,11 +3628,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see Tick mark in the Menu item</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -3694,11 +3655,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the split seat from Order screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.095</span>
 
 </div>
 
@@ -3721,11 +3682,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.029</span>
 
 </div>
 
@@ -3748,11 +3709,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat one on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.053</span>
 
 </div>
 
@@ -3775,11 +3736,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.046</span>
 
 </div>
 
@@ -3802,11 +3763,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.030</span>
 
 </div>
 
@@ -3829,11 +3790,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.063</span>
 
 </div>
 
@@ -3856,11 +3817,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see cash payment is added in payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -3883,11 +3844,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the Exit button in the payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.083</span>
 
 </div>
 
@@ -3910,11 +3871,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.031</span>
 
 </div>
 
@@ -3937,11 +3898,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see paid amount as &quot;<span class="argument">&lt;Paid_Amount&gt;</span>&quot; in Split seat screen</span>
+  <span class="name">I should see paid amount as &quot;<span class="argument">$ 15.00</span>&quot; in Split seat screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -3964,11 +3925,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the Back button on Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.038</span>
 
 </div>
 
@@ -3991,11 +3952,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I Should get back to the Order Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.027</span>
 
 </div>
 
@@ -4018,11 +3979,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Payment button in the Order Management Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.052</span>
 
 </div>
 
@@ -4045,11 +4006,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Submit button on the Payment Window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.562</span>
 
 </div>
 
@@ -4072,11 +4033,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should get back to the Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.331</span>
 
 </div>
 
@@ -4099,11 +4060,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.363</span>
 
 </div>
 
@@ -4126,11 +4087,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click new check button on the Table layout screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -4153,11 +4114,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select table as &quot;<span class="argument">&lt;table_no&gt;</span>&quot;</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -4180,11 +4141,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select the number of seats as &quot;<span class="argument">&lt;number_of_seats1&gt;</span>&quot;</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -4207,11 +4168,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap Continue to finish selecting the number of seats</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -4234,11 +4195,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.061</span>
 
 </div>
 
@@ -4261,11 +4222,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I select FOOD as category</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.118</span>
 
 </div>
 
@@ -4288,11 +4249,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.084</span>
 
 </div>
 
@@ -4315,11 +4276,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.079</span>
 
 </div>
 
@@ -4342,11 +4303,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -4369,11 +4330,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the split seat from Order screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.092</span>
 
 </div>
 
@@ -4396,11 +4357,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.031</span>
 
 </div>
 
@@ -4423,11 +4384,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat one on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.055</span>
 
 </div>
 
@@ -4450,11 +4411,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.046</span>
 
 </div>
 
@@ -4477,11 +4438,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.027</span>
 
 </div>
 
@@ -4504,11 +4465,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I enter huge amount than Menu item price</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.127</span>
 
 </div>
 
@@ -4531,11 +4492,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.039</span>
 
 </div>
 
@@ -4558,11 +4519,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see change Due popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -4585,11 +4546,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done button on the Popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.069</span>
 
 </div>
 
@@ -4612,11 +4573,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see cash payment is added in payment window as &quot;<span class="argument">&lt;amount&gt;</span>&quot;</span>
+  <span class="name">I should see cash payment is added in payment window as &quot;<span class="argument">15.00</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -4639,11 +4600,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Submit button on the Payment Window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.556</span>
 
 </div>
 
@@ -4666,11 +4627,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should get back to the Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.330</span>
 
 </div>
 
@@ -4693,11 +4654,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.362</span>
 
 </div>
 
@@ -4720,11 +4681,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click new check button on the Table layout screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -4747,11 +4708,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select table as &quot;<span class="argument">&lt;table_no&gt;</span>&quot;</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -4774,11 +4735,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select the number of seats as &quot;<span class="argument">&lt;number_of_seats1&gt;</span>&quot;</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -4801,11 +4762,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap Continue to finish selecting the number of seats</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -4828,11 +4789,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I get check number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.068</span>
 
 </div>
 
@@ -4855,11 +4816,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I select FOOD as category</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.112</span>
 
 </div>
 
@@ -4882,11 +4843,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select menu item as &quot;<span class="argument">&lt;Menu_Item&gt;</span>&quot;</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.073</span>
 
 </div>
 
@@ -4909,11 +4870,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I select modifier as &quot;<span class="argument">&lt;Modifier&gt;</span>&quot;</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.081</span>
 
 </div>
 
@@ -4936,11 +4897,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done to get back</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -4963,11 +4924,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click the split seat from Order screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.109</span>
 
 </div>
 
@@ -4990,11 +4951,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.036</span>
 
 </div>
 
@@ -5017,11 +4978,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click seat one on the split screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.068</span>
 
 </div>
 
@@ -5044,11 +5005,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Pay Button in Split Screen</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.049</span>
 
 </div>
 
@@ -5071,11 +5032,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the Payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.034</span>
 
 </div>
 
@@ -5098,11 +5059,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click partial amount from the payment window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.042</span>
 
 </div>
 
@@ -5125,11 +5086,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.048</span>
 
 </div>
 
@@ -5152,11 +5113,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Submit button on the Payment Window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.577</span>
 
 </div>
 
@@ -5179,11 +5140,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see please pay amount</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -5206,11 +5167,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Done button on the Popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.059</span>
 
 </div>
 
@@ -5233,11 +5194,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Exact button on the cash pop-up</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.033</span>
 
 </div>
 
@@ -5260,11 +5221,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click cash button from the payment method popup</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.035</span>
 
 </div>
 
@@ -5287,11 +5248,11 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click Submit button on the Payment Window</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.562</span>
 
 </div>
 
@@ -5314,11 +5275,1955 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should get back to the Table Layout tab</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.334</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">1.367</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.031</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I get check number</span>
+
+  <span class="lead-duration duration">0.067</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select FOOD as category</span>
+
+  <span class="lead-duration duration">2.129</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
+
+  <span class="lead-duration duration">4.104</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
+
+  <span class="lead-duration duration">3.093</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done to get back</span>
+
+  <span class="lead-duration duration">0.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the split seat from Order screen</span>
+
+  <span class="lead-duration duration">1.088</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the Split Screen</span>
+
+  <span class="lead-duration duration">7.031</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click seat one on the split screen</span>
+
+  <span class="lead-duration duration">3.054</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Pay Button in Split Screen</span>
+
+  <span class="lead-duration duration">0.047</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the Payment window</span>
+
+  <span class="lead-duration duration">2.029</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click cash button from the payment method popup</span>
+
+  <span class="lead-duration duration">0.055</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Exit button in the payment window</span>
+
+  <span class="lead-duration duration">2.094</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the Split Screen</span>
+
+  <span class="lead-duration duration">7.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see seat as paid</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click seat one on the split screen</span>
+
+  <span class="lead-duration duration">3.054</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Pay Button in Split Screen</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see No more payment needed popup</span>
+
+  <span class="lead-duration duration">1.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.054</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Back button on Split Screen</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I Should get back to the Order Screen</span>
+
+  <span class="lead-duration duration">4.033</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Payment button in the Order Management Screen</span>
+
+  <span class="lead-duration duration">0.053</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Submit button on the Payment Window</span>
+
+  <span class="lead-duration duration">0.562</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should get back to the Table Layout tab</span>
+
+  <span class="lead-duration duration">0.330</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">1.363</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T19</span>&quot;</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">3</span>&quot;</span>
+
+  <span class="lead-duration duration">0.024</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I get check number</span>
+
+  <span class="lead-duration duration">0.068</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select FOOD as category</span>
+
+  <span class="lead-duration duration">2.121</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
+
+  <span class="lead-duration duration">4.078</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
+
+  <span class="lead-duration duration">3.075</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done to get back</span>
+
+  <span class="lead-duration duration">0.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click seat 2 for add menu item</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
+
+  <span class="lead-duration duration">4.087</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
+
+  <span class="lead-duration duration">3.082</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done to get back</span>
+
+  <span class="lead-duration duration">0.029</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click seat 3 for add menu item</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">French Friese</span>&quot;</span>
+
+  <span class="lead-duration duration">4.091</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Steak</span>&quot;</span>
+
+  <span class="lead-duration duration">3.080</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done to get back</span>
+
+  <span class="lead-duration duration">0.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click table number on the Order Screen as &quot;<span class="argument">T19</span>&quot;</span>
+
+  <span class="lead-duration duration">1.064</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Options button</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the Check Options screen</span>
+
+  <span class="lead-duration duration">2.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Gratuity button</span>
+
+  <span class="lead-duration duration">0.047</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see Add Gratuity screen</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Gratuity Fixed button</span>
+
+  <span class="lead-duration duration">0.033</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should return back to the order management screen and I should Gratuity is added</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 45.00</span>&quot;</span>
+
+  <span class="lead-duration duration">1.047</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the Gratuity amount reflected to the check as &quot;<span class="argument">$ 4.50</span>&quot;</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total as &quot;<span class="argument">$ 49.50</span>&quot;</span>
+
+  <span class="lead-duration duration">1.045</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the split seat from Order screen</span>
+
+  <span class="lead-duration duration">1.108</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the Split Screen</span>
+
+  <span class="lead-duration duration">7.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click seat one on the split screen</span>
+
+  <span class="lead-duration duration">3.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click seat two on the split screen</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click seat three on the split screen</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Group Seats button in the Split Seat</span>
+
+  <span class="lead-duration duration">1.083</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see selected seat item should club into one seat</span>
+
+  <span class="lead-duration duration">0.058</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the save &amp; close button on the split screen</span>
+
+  <span class="lead-duration duration">1.069</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I Should get back to the Order Screen</span>
+
+  <span class="lead-duration duration">4.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Void button on order management screen</span>
+
+  <span class="lead-duration duration">2.074</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click All</span>
+
+  <span class="lead-duration duration">0.071</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see check stats Screen</span>
+
+  <span class="lead-duration duration">0.332</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">1.362</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click power button</span>
+
+  <span class="lead-duration duration">1.074</span>
 
 </div>
 
@@ -5345,7 +7250,7 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -5357,13 +7262,13 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.399</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -5372,21 +7277,6 @@ Session ID: 258e68217bd85953295d58cdc76fbd69
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>screenshot</a>
-      <a href="embeddings/embedding_169233209.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_169233209.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>

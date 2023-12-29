@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 
+import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -28,8 +29,10 @@ public class TGTransferPage extends BasePage {
         Assert.assertEquals(expectedName,actualName);
     }
 
-    public void selectServerWhichTransferFrom(){
-        WebElement element=mergeAndFindMobileElement(serverOne);
+    public void selectServerWhichTransferFrom() throws InterruptedException {
+        sendKeys(driver.findElement(By.xpath("(//input[@placeholder='Search'])[2]")),TestUtils.ServerName1);
+        Thread.sleep(2000);
+        WebElement element=mergeAndFindMobileElement("//span[.='Admin u']");
         elementClick(element,"click serverOne");
     }
 
@@ -67,36 +70,50 @@ public class TGTransferPage extends BasePage {
         Assert.assertEquals(actualName,expectedName);
 
 
-        WebElement element1=mergeAndFindMobileElement(doneButton);
+        WebElement element1=driver.findElement(By.xpath(doneButton));
         elementClick(element1,"click doneButton");
     }
 
-    public void clickTransferDoneButton(){
-        WebElement element1=mergeAndFindMobileElement(doneButton);
+    public void clickTransferDoneButton() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element1=driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-table-transfer/ion-footer/div/button[2]"));
         elementClick(element1,"click doneButton");
+        Thread.sleep(2000);
+        try {
+            WebElement element = mergeAndFindMobileElement(yesButton);
+            elementClick(element, "click yesButton");
+        }catch (Exception w){
 
-        WebElement element=mergeAndFindMobileElement(yesButton);
-        elementClick(element,"click yesButton");
+        }
     }
 
-    public void selectTransferItemButton(){
+    public void selectTransferItemButton() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element1=mergeAndFindMobileElement(transferItemButton);
         elementClick(element1,"click transferItemButton");
     }
 
     public void selectBarTabOrderForTransferMenuItem(){
-        WebElement element1=mergeAndFindMobileElement(barTabOrderForTransfer);
+        sendKeys(driver.findElement(By.xpath("(//div[@class='tabletransfer_positionstick']//input[@aria-label='search text'])[1]")), TestUtils.globalCheckNumber);
+        WebElement element1=driver.findElement(By.xpath("//div[@class='transfer-from-to-item ng-star-inserted']"));
         elementClick(element1,"click barTabOrderForTransfer");
     }
 
     public void selectMenuItemWhichIsTransferred(){
-        WebElement element1=mergeAndFindMobileElement(menuItemForTransfer);
-        elementClick(element1,"click menuItemForTransfer");
+        WebElement element1=driver.findElement(By.xpath(menuItemForTransfer));
+        utils.log().info(element1.getText());
+        elementClick(element1,"click menuItemForTransfer ");
     }
 
-    public void selectBarTabWhichMenuItemTransferredTo(){
-        WebElement element1=mergeAndFindMobileElement(barTabWillBeTransferTo);
-        elementClick(element1,"click barTabWillBeTransferTo");
+    public void selectBarTabWhichMenuItemTransferredTo() throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement element1=driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-table-transfer/mat-tab-group/div/mat-tab-body[2]/div/app-transfer-detail-content/ion-grid/ion-row/ion-col[3]/ul/div[4]/div"));
+        String[] value = element1.getText().split(" ");
+        utils.log().info(value[0]);
+        TestUtils.globalCheckNumber1 = value[0];
+        element1.click();
+        utils.log().info(element1.getText());
+        Thread.sleep(1000);
     }
 
     public void clickTransferToTableButton(){
@@ -104,13 +121,23 @@ public class TGTransferPage extends BasePage {
         elementClick(element1,"click transferToTableButton");
     }
 
-    public void selectTableWhichIsTransferFrom(){
-        WebElement element1=mergeAndFindMobileElement(tableWillBeTransferFrom);
+    public void selectTableWhichIsTransferFrom() throws InterruptedException {
+        Thread.sleep(2000);
+        utils.log().info(TestUtils.tableNumberof);
+        sendKeys(driver.findElement(By.xpath("(//input[@placeholder='Search'])[2]")),"Floor 1-"+TestUtils.tableNumberof);
+        Thread.sleep(2000);
+        WebElement element1=mergeAndFindMobileElement("//span[.='Floor 1-"+TestUtils.tableNumberof+"']");
         elementClick(element1,"click tableWillBeTransferFrom");
     }
 
-    public void selectTableWhichIsTransferTo(){
-        WebElement element1=mergeAndFindMobileElement(tableWillBeTransferTo);
-        elementClick(element1,"click tableWillBeTransferTo");
+    public void selectTableWhichIsTransferTo() throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement element1=driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-table-transfer/mat-tab-group/div/mat-tab-body[2]/div/app-transfer-detail-content/ion-grid/ion-row/ion-col[3]/ul/div[4]/div"));
+        String[] value = element1.getText().split(" ");
+        utils.log().info(value[0]);
+        TestUtils.globalCheckNumber1 = value[0];
+        element1.click();
+        utils.log().info(element1.getText());
+        Thread.sleep(1000);
     }
 }

@@ -61,7 +61,7 @@ public class TGCreateCheckStepDef {
     }
 
     @And("User select check which will be transfer")
-    public void userSelectCheckWhichWillBeTransfer() {
+    public void userSelectCheckWhichWillBeTransfer() throws InterruptedException {
         new TGMenuItemPage().selectTransferedCheck();
     }
 
@@ -83,6 +83,11 @@ public class TGCreateCheckStepDef {
     @When("User click Pay Check button")
     public void userClickPayCheckButton() {
         new TGMenuItemPage().clickPayCheck();
+    }
+
+    @When("User click Pay Check button on the bartab")
+    public void userClickPayCheckButtonOnTheBartab() throws InterruptedException {
+        new TGMenuItemPage().clickPayCheck1();
     }
 
     @Then("User select check")

@@ -52,7 +52,7 @@ public class CapabilitiesManager {
 
         //Call the chrome driver
 //    System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/Users/Ragav-QA-Mac-IN/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/shaunmatthew/Downloads/chromedriver");
         //Open the Chrome window
         driver = new ChromeDriver();
         //Wait for 30 seconds

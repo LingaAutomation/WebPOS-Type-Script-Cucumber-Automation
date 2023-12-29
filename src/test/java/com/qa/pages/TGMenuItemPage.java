@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 
+import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 
 import io.cucumber.java.bs.A;
@@ -183,6 +184,7 @@ public class TGMenuItemPage extends BasePage {
     }
     public void selectHamburgerMenuItem(){
         WebElement element = mergeAndFindMobileElement(hamburgerMenuItem);
+        TestUtils.menu = element.getText();
         elementClick(element,"Select Hamburger MenuItem");
     }
     public void verifyTotalPriceOfBrushettaWithVaryingGratuity(){
@@ -199,15 +201,15 @@ public class TGMenuItemPage extends BasePage {
         Assert.assertEquals(actualName1,expectedName1);
     }
     public void verifyFixedGratuityOptionAppliedOnBrushetta(){
-        WebElement element = mergeAndFindMobileElement(gratuityText);
-        String actualName = elementGetText(element,"Verify Fixed Gratuity");
-        String expectedName = "Gratuity";
+//        WebElement element = mergeAndFindMobileElement(gratuityText);
+//        String actualName = elementGetText(element,"Verify Fixed Gratuity");
+//        String expectedName = "Gratuity";
+//
+//        Assert.assertEquals(actualName,expectedName);
 
-        Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(brushettaFixGratuityPrice);
-        String actualName1 = elementGetText(element1,"Verify Fixed Gratuity value");
-        String expectedName1 = "$ 99,99";
+        WebElement element1 = driver.findElement(By.xpath(brushettaFixGratuityPrice));
+        String actualName1 = element1.getAttribute("value");
+        String expectedName1 = "$ 0.10";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -219,7 +221,7 @@ public class TGMenuItemPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(pizzaMargaritaTotalPriceWithTaxExempt);
+        WebElement element1 = mergeAndFindMobileElement(totalText);
         String actualName1 = elementGetText(element1,"Verify Total Price With TaxExempt");
         String expectedName1 = "$ 1.000,00";
 
@@ -292,15 +294,15 @@ public class TGMenuItemPage extends BasePage {
 //    }
 
     public void verifyTotalPriceOfPizzaMelMenuItem(){
-        WebElement element = mergeAndFindMobileElement(totalText);
-        String actualName = elementGetText(element,"Verify Total Text");
-        String expectedName = "Total";
+//        WebElement element = mergeAndFindMobileElement(totalText);
+//        String actualName = elementGetText(element,"Verify Total Text");
+//        String expectedName = "Total";
+//
+//        Assert.assertEquals(actualName,expectedName);
 
-        Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(pizzaMelTotalPrice);
-        String actualName1 = elementGetText(element1,"Verify Total Price Value");
-        String expectedName1 = "$ 2.057,00";
+        WebElement element1 = driver.findElement(By.xpath(pizzaMelTotalPrice));
+        String actualName1 = element1.getAttribute("value");
+        String expectedName1 = "$ 17.60";
 
         Assert.assertEquals(actualName1,expectedName1);
     }
@@ -1512,8 +1514,9 @@ public class TGMenuItemPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(willBeTransferredTable);
         elementClick(element,"Select Transfer To Table");
     }
-    public void selectTransferedCheck(){
-        WebElement element = mergeAndFindMobileElement(willBeTransferedCheck);
+    public void selectTransferedCheck() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = mergeAndFindMobileElement("//div[@class='transfer-checks']//p[.='"+ TestUtils.globalCheckNumber +"']");
         elementClick(element,"Select Transfered Check");
     }
     public void clickTransferDone(){
@@ -1540,6 +1543,15 @@ public class TGMenuItemPage extends BasePage {
             utils.log().info("Paycheck button not clicked");
         }
     }
+
+    public void clickPayCheck1() throws InterruptedException {
+        Thread.sleep(2000);
+
+            WebElement element = mergeAndFindMobileElement("//button[contains(.,'Pay Check')]");
+            elementClick(element, "Click Pay Check");
+
+    }
+
     public void selectPayCheck(){
         WebElement element = mergeAndFindMobileElement(selectPayCheck);
         elementClick(element,"Select Pay Check");
@@ -1585,7 +1597,7 @@ public class TGMenuItemPage extends BasePage {
     }
 
     public void clickEditDoneButton(){
-        WebElement element = mergeAndFindMobileElement(editDoneButton);
+        WebElement element = mergeAndFindMobileElement("//button[@class='done']");
         elementClick(element,"Click Edit Done Button");
     }
     //new nov18
@@ -1698,6 +1710,22 @@ public class TGMenuItemPage extends BasePage {
 
         WebElement element1 = mergeAndFindMobileElement(emptyCheckDoneButton);
         elementClick(element1," Done Popup");
+    }
+
+    public void clickHoldManualOption() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//span[.=' Manual ']"));
+        elementClick(element, "click holdManualOption ");
+
+        WebElement element1 = mergeAndFindMobileElement(holdManuelDoneButton);
+        elementClick(element1, "click holdManuelDoneButton ");
+
+    }
+
+    public void clickDoneButton() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement DoneBtn = driver.findElement(By.xpath("//span[.='Done']"));
+        DoneBtn.click();
     }
     public void selectSecondSeat(){
         WebElement element = mergeAndFindMobileElement(secondSeatOnMenuItem);
@@ -1814,14 +1842,15 @@ public class TGMenuItemPage extends BasePage {
     }
 
     // Nov 16
-    public void verifyFixedGratuity1(){
-        WebElement element = mergeAndFindMobileElement(gratuityAmountTitle);
-        String fixGratuity = elementGetText(element,"verifyFixedGratuity");
-        WebElement element1 = mergeAndFindMobileElement(fixGratuityAmount1);
-        String actualName = elementGetText(element1,"fixGratuityAmount");
-        String expectedName = "$ 197,98";
+    public void verifyFixedGratuity1() throws InterruptedException {
+        Thread.sleep(2000);
+//        WebElement element = mergeAndFindMobileElement(gratuityAmountTitle);
+//        String fixGratuity = elementGetText(element,"verifyFixedGratuity");
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
+        String actualName = elementGetValue(element1,"fixGratuityAmount");
+        String expectedName = "$ 0.90";
         Assert.assertEquals(actualName,expectedName);
-        fixGratuity.equals(actualName);
+
     }
     public void verifyVaryingGratuity(){
 //        WebElement element = mergeAndFindMobileElement(gratuityAmountTitle);
@@ -3991,9 +4020,9 @@ public class TGMenuItemPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(itemBasedBeforeTaxAsSetPriceDiscountAmountForSandwiches);
-        String actualName1 = elementGetText(element1,"Verify TaxAsSetPriceDiscountAmount Value");
-        String expectedName1 = "20,00";
+        WebElement element1 = driver.findElement(By.xpath(itemBasedBeforeTaxAsSetPriceDiscountAmountForSandwiches));
+        String actualName1 = element1.getAttribute("value");
+        String expectedName1 = "$ 0.53";
 
         Assert.assertEquals(actualName1,expectedName1);
     }

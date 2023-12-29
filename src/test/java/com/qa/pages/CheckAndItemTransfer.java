@@ -400,20 +400,21 @@ public class CheckAndItemTransfer extends BasePage{
         TestUtils.ServerNamee = ServerName;
     }
 
-    @FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Search Checks\"`]")
+    @FindBy(xpath = "//input[@placeholder='Search Checks']")
     WebElement searchChecks;
-    public void selectThecheckFromTheTransferServer(){
+    public void selectThecheckFromTheTransferServer() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         searchChecks.sendKeys(TestUtils.globalCheckNumber);
-        elementClick(hideKeyboardButton, "Keyboard hidden.");
-        WebElement ele = mergeAndFindMobileElement(firstCheckInChecksTable);
+        Thread.sleep(1000);
+//        elementClick(hideKeyboardButton, "Keyboard hidden.");
+        WebElement ele =driver.findElement(By.xpath("//div[@class='transfer-checks']//p[.='"+TestUtils.globalCheckNumber+"']"));
         elementClick(ele,"Click the first Check from the List of Checks in the Check table- "+TestUtils.globalCheckNumber);
 
     }
     public void selectTheFirstTableforTransferChecksFromTheTransferToTable()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        WebElement ele = mergeAndFindMobileElement(firstElementOfTransferToTable);
+        WebElement ele = driver.findElement(By.xpath("//span[.='Appium l']"));
         elementClick(ele,"Click the first table from the List of table in the Transfer To table");
 
         FTable2 = elementGetText(ele,"Get the Text of corresponding Table");
@@ -469,47 +470,46 @@ public class CheckAndItemTransfer extends BasePage{
     public String getTheServerFromTheTable()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        String e = driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"T1\"]/../XCUIElementTypeStaticText[@name][5]")).getText();
-
+        String e = driver.findElement(By.xpath("//span[@class='qsrusername']")).getText();
+        utils.log().info("Server Name - "+e);
         ServerName1 = e;
 
         TestUtils.ServerName1 = ServerName1;
         utils.log().info("Server NAme - "+ServerName1);
         return ServerName1;
     }
-@FindBy(xpath = "**/XCUIElementTypeTextField[`value == \"Search\"`][1]")
+@FindBy(xpath = "(//input[@placeholder='Search'])[2]")
 WebElement searchField;
     @FindBy(xpath ="//*[@name=\"Hide keyboard\"]")
     private WebElement hideKeyboardButton;
 
-    public void selectTheRequiredServerFromTheListOfServersTableFrom()
-    {
+    public void selectTheRequiredServerFromTheListOfServersTableFrom() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         utils.log().info(" TestUtils.ServerName1 - "+TestUtils.ServerName1);
         searchField.sendKeys(TestUtils.ServerName1);
-        elementClick(hideKeyboardButton, "Keyboard hidden.");
-        WebElement server = (WebElement) driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\""+TestUtils.ServerName1+"\"])[1]"));
+        Thread.sleep(2000);
+        WebElement server =  driver.findElement(By.xpath("//span[.='Admin u']"));
         elementClick(server,"Tapped - "+TestUtils.ServerName1);
 //        driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\""+TestUtils.ServerName1+"\"])[1]")).click();
     }
 
-    public void selectTheTransferredToServerFromTheListOfTransferTo()
-    {
+    public void selectTheTransferredToServerFromTheListOfTransferTo() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        String s = elementGetText(mergeAndFindMobileElement(firstElementOfTransferToTable),"Get the text of Transferred To server");
+        String s = elementGetText(driver.findElement(By.xpath("//span[.='Appium l']")),"Get the text of Transferred To server");
 
         ServerName2 = s;
 
         TestUtils.ServerName2 = ServerName2;
+        sendKeys(driver.findElement(By.xpath("(//input[@placeholder='Search'])[3]")),"Appium l");
+        elementClick(driver.findElement(By.xpath("//span[.='Appium l']")),"Click the required Transferred To Server");
 
-        elementClick(mergeAndFindMobileElement(firstElementOfTransferToTable),"Click the required Transferred To Server");
-
-        try{
+        Thread.sleep(2000);
+//        try{
             if(mergeAndFindMobileElement(offlineServerTransactionConfirmation).isDisplayed())
             {
                 elementClick(mergeAndFindMobileElement(yesButton),"Click the Yes button");
             }
-        }catch (Exception d){}
+//        }catch (Exception d){}
     }
 
     public void verifyTheTransferredToServer()

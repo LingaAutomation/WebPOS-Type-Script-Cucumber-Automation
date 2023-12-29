@@ -37,7 +37,7 @@ public class TGVoidPage extends BasePage {
 
     String btnDelete="//button[contains(.,' Delete ')]";
 
-    String Done1="Done";
+    String Done1="//button[.='Done']";
 
     String chkNumber = "(//p[contains(@class,'order-header-checkno')])";
 
@@ -201,14 +201,14 @@ public class TGVoidPage extends BasePage {
         return text;
     }
 
-    public void pressDone1() {
-        try{
-            WebElement element=mergeAndFindMobileElement(Done1);
-            elementClick(element, "Tapped Done Button on the Popup");}
-        catch (Exception e){
-            utils.log().info("Tapped Done");
-        }
+    public void pressDone1() throws InterruptedException {
+        Thread.sleep(2000);
+
+            WebElement element=driver.findElement(By.xpath(Done1));
+            elementClick(element, "Tapped Done Button on the Popup");
     }
+
+
 
     public void clickOptCreditCardAmount(String msg) {
         WebElement element = mergeAndFindMobileElement(optCreditCardAmount);
@@ -334,13 +334,18 @@ public class TGVoidPage extends BasePage {
         Assert.assertEquals(actualName, expectedName);
 
        Thread.sleep(1500);
+try {
+    WebElement askCustomerName = driver.findElement(By.xpath("(//ion-list)[4]//ion-item[6]//ion-toggle[@aria-checked='false']"));
 
-        WebElement askCustomerName = driver.findElement(By.xpath("/html/body/app-root/app-opearion/ion-content/app-pos-setting/ion-content/ion-grid[2]/ion-row[4]/ion-list/ion-item[6]/ion-toggle"));
-//
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
+    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
+    if (askCustomerName.isDisplayed()) {
         Thread.sleep(2000);
         askCustomerName.click();
         Thread.sleep(2000);
+    }
+}catch (Exception w){
+    utils.log().info("Already Enabled");
+}
     }
 
     public void swipeUntilSaveChangesButton(String direction) throws Exception {

@@ -1,0 +1,1771 @@
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:12.073 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:12.121 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:12.156 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:12.184 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:12.213 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:12.244 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:13.365 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:13.417 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:13.468 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:13.488 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:13.550 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:19.238 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:19.340 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:19.992 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:20.059 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:20.127 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:21.207 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:22.846 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:22.933 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:24.013 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:56:24.592 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:56.087 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:56.133 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:56.167 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:56.195 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:56.223 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:56.253 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:57.361 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:57.407 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:57.461 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:57.483 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:57:57.550 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:03.183 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:03.228 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:03.809 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:03.852 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:03.890 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:04.967 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:06.567 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:06.609 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:07.667 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:07.729 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:11.802 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:11.863 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:11.907 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 12:58:16.960 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:47.889 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:47.936 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:47.967 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:47.994 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:48.021 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:48.047 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:49.160 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:49.210 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:49.262 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:49.282 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:49.344 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:54.991 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:55.038 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:55.618 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:55.660 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:55.697 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:56.771 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:58.378 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:58.424 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:59.484 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:38:59.532 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:39:03.607 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:39:03.670 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:39:03.712 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:39:08.804 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:10.104 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:10.151 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:10.186 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:10.212 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:10.239 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:10.264 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:11.374 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:11.423 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:11.477 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:11.499 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:11.561 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:17.187 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:17.233 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:17.811 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:17.851 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:17.888 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:18.959 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:20.557 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:20.598 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:21.657 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:21.718 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:25.793 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:25.855 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:25.899 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:43:30.989 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:48.581 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:48.627 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:48.663 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:48.690 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:48.715 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:48.740 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:49.850 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:49.899 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:49.951 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:49.972 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:50.034 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:55.672 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:55.718 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:56.301 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:56.342 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:56.380 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:57.450 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:59.039 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:55:59.085 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:56:00.140 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:56:00.198 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:56:04.273 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:56:04.327 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:56:04.372 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:56:09.445 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:55.168 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:55.214 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:55.247 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:55.274 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:55.301 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:55.327 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:56.443 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:56.493 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:56.546 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:56.568 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:57:56.628 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:02.265 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:02.312 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:02.894 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:02.938 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:02.975 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:04.038 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:05.632 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:05.673 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:06.725 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:06.779 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:10.859 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:10.919 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:10.964 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 13:58:16.037 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:27.393 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:27.441 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:27.473 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:27.500 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:27.527 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:27.553 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:28.645 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:28.686 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:28.737 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:28.759 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:28.827 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:34.451 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:34.497 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:35.079 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:35.123 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:35.160 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:36.231 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:37.831 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:37.880 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:38.934 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:38.980 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:43.056 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:43.116 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:43.685 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:09:48.736 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:21.537 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:21.584 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:21.616 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:21.642 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:21.669 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:21.695 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:22.811 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:22.860 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:22.911 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:22.932 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:22.992 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:28.624 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:28.669 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:29.245 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:29.286 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:29.322 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:30.394 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:31.995 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:32.036 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:33.093 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:33.141 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:37.219 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:37.280 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:37.325 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:12:42.406 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:46.165 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:46.210 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:46.244 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:46.272 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:46.300 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:46.331 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:47.437 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:47.483 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:47.534 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:47.555 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:47.615 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:53.242 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:53.288 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:53.871 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:53.916 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:53.952 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:55.023 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:56.618 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:56.662 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:57.719 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:14:57.769 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:15:01.848 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:15:01.909 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:15:01.953 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:15:07.008 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:45.472 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:45.518 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:45.550 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:45.577 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:45.604 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:45.630 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:46.745 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:46.791 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:46.841 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:46.862 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:46.929 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:52.554 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:52.601 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:53.191 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:53.233 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:53.271 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:54.339 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:55.937 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:55.979 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:57.036 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:19:57.080 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:20:01.153 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:20:01.211 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:20:01.254 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:20:06.308 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:01.561 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:01.606 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:01.637 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:01.664 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:01.690 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:01.716 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:02.836 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:02.882 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:02.932 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:02.951 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:03.011 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:08.639 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:08.686 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:09.272 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:09.317 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:09.354 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:10.429 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:12.023 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:12.064 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:13.119 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:13.169 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:17.245 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:17.306 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:25:17.350 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:11.603 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:11.647 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:11.679 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:11.705 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:11.731 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:11.757 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:12.849 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:12.888 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:12.938 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:12.959 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:13.028 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:18.656 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:18.702 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:19.287 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:19.331 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:19.372 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:20.443 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:22.033 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:22.074 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:23.131 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:23.181 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:27.259 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:27.329 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 14:28:27.372 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:15.018 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:15.062 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:15.095 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:15.122 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:15.147 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:15.173 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:16.286 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:16.334 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:16.384 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:16.404 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:16.472 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:22.105 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:22.154 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:22.736 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:22.779 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:22.816 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:23.882 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:25.470 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:25.512 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:26.550 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:26.588 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:30.664 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:30.719 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:37:30.760 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:52.125 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:52.172 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:52.204 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:52.230 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:52.258 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:52.284 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:53.395 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:53.443 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:53.494 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:53.514 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:53.579 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:59.218 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:59.265 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:59.846 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:59.890 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:42:59.927 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:01.004 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:02.599 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:02.639 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:03.695 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:03.742 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:07.816 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:07.875 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:43:07.920 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:28.022 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:28.067 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:28.100 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:28.126 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:28.151 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:28.176 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:29.287 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:29.335 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:29.386 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:29.407 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:29.478 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:35.101 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:35.145 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:35.712 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:35.754 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:35.793 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:36.867 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:38.465 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:38.506 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:39.559 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:39.616 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:43.690 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:43.752 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:43.794 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:48.836 TGVoidPage:209 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:48.864 BasePage:278 - click checkOptionBackButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:45:49.954 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:56.175 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:56.220 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:56.252 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:56.279 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:56.306 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:56.333 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:57.448 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:57.497 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:57.548 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:57.568 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:47:57.628 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:03.275 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:03.322 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:03.905 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:03.946 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:03.984 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:05.057 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:06.660 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:06.702 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:07.760 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:07.809 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:11.881 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:11.939 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:11.984 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:17.026 TGVoidPage:209 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:17.053 BasePage:278 - click checkOptionBackButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:48:18.090 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:25.796 Hooks:43 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:25.840 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:25.913 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:25.939 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:25.964 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:25.988 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:27.096 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:27.145 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:27.195 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:27.216 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:27.283 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:32.931 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:32.979 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:33.560 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:33.601 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:33.641 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:34.692 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:36.286 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:36.345 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:37.389 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:37.429 BasePage:278 - Click FoodTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:41.505 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:41.565 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:41.609 BasePage:278 - click holdCheckOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:46.651 TGVoidPage:209 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:46.681 BasePage:278 - click checkOptionBackButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:50:47.772 Hooks:54 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:48.044 Hooks:43 - Start Scenario Name : Application should ask customer name enable Ask customer name option
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:48.090 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:48.119 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:48.146 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:48.172 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:48.198 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:49.297 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:49.345 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:49.397 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:49.417 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:49.486 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:55.129 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:55.178 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:55.755 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:55.795 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:55.832 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:56.896 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:58.501 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:58.549 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:57:59.604 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.171 BasePage:278 - Selected FOOD
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.218 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.258 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.296 BasePage:278 - Click Option Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.345 BasePage:278 - click gratuityOption 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.386 BasePage:278 - click varyingGratuity 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.422 BasePage:278 - click btnVaryingPercentageTextBox 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.459 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.473 CIPaymentScreen:348 - 1500
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.474 CIPaymentScreen:351 - 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.483 CIPaymentScreen:358 - 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:01.490 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:03.009 CIPaymentScreen:351 - 5
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:03.032 CIPaymentScreen:358 - 5
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:03.043 BasePage:278 - Tapped number as - 5
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:04.566 CIPaymentScreen:351 - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:04.590 CIPaymentScreen:355 - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:04.601 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:06.124 CIPaymentScreen:351 - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:06.144 CIPaymentScreen:355 - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:06.156 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:07.706 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:07.750 BasePage:278 - click btnVaryingApplyButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:07.780 TGCheckOptionPage:221 -  Gratuity is - $ 0.15
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:07.804 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 15:58:08.898 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:10.385 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:10.433 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:10.467 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:10.494 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:10.518 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:10.543 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:11.658 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:11.707 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:11.757 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:11.777 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:11.837 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:17.481 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:17.529 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:18.110 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:18.154 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:18.191 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:18.268 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:18.302 OrderManagementScreen:1687 - 102-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:18.319 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:19.377 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:19.423 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:19.453 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:19.494 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:19.532 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:07:24.610 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:09.935 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:09.981 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:10.012 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:10.036 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:10.062 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:10.087 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:11.190 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:11.237 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:11.287 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:11.308 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:11.375 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.002 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.046 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.630 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.675 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.719 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.780 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.829 OrderManagementScreen:1687 - 103-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:17.846 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:18.906 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:18.953 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:18.981 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:19.022 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:19.063 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:20.120 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:20.166 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:20.197 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:20.231 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:20.264 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:20.349 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:20.392 BasePage:278 - click splitCheckOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:13:23.438 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:18.892 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:18.946 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:18.980 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:19.005 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:19.031 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:19.056 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:20.166 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:20.214 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:20.264 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:20.283 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:20.351 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:25.985 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:26.032 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:26.613 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:26.657 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:26.695 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:27.765 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:29.376 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:29.418 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:29.445 OrderManagementScreen:1687 - 105-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:29.462 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:30.517 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:30.564 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:30.592 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:30.634 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:30.680 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:31.726 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:31.771 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:31.801 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:31.834 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:31.869 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:31.947 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:31.989 BasePage:278 - click splitCheckOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:16:32.039 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:10.149 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:10.195 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:10.228 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:10.256 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:10.283 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:10.308 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:11.418 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:11.466 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:11.518 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:11.538 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:11.604 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:17.249 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:17.299 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:17.884 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:17.932 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:17.969 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:19.038 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:20.629 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:20.670 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:20.699 OrderManagementScreen:1687 - 107-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:20.715 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:21.771 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:21.825 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:21.855 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:21.895 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:21.934 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:22.982 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:23.027 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:23.057 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:23.090 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:23.126 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:23.210 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:27.850 BasePage:278 - Tapped Closed Check in closed tab - 107-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:20:28.942 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:13.405 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:13.450 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:13.483 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:13.508 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:13.534 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:13.560 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:14.669 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:14.718 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:14.770 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:14.790 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:14.860 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:20.495 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:20.541 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:21.124 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:21.165 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:21.208 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:22.279 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:23.872 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:23.914 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:23.941 OrderManagementScreen:1687 - 109-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:23.958 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:25.019 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:25.068 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:25.097 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:25.137 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:25.177 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:26.228 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:26.274 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:26.305 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:26.339 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:26.374 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:26.456 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:28.516 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:33.160 BasePage:278 - Tapped Closed Check in closed tab - 109-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:29:35.250 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:03.716 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:03.761 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:03.793 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:03.820 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:03.845 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:03.870 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:04.970 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:05.014 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:05.063 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:05.083 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:05.142 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:10.746 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:10.804 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:11.390 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:11.434 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:11.468 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:12.537 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:14.133 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:14.175 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:14.204 OrderManagementScreen:1687 - 111-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:14.220 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:15.280 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:15.328 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:15.356 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:15.396 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:15.434 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:16.482 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:16.535 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:16.566 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:16.598 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:16.633 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:16.701 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:18.762 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:23.409 BasePage:278 - Tapped Closed Check in closed tab - 111-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:31:37.525 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:30.762 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:30.806 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:30.839 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:30.865 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:30.890 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:30.915 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:32.022 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:32.069 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:32.119 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:32.139 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:32.205 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:37.854 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:37.901 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:38.485 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:38.530 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:38.567 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:39.632 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:41.222 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:41.263 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:41.292 OrderManagementScreen:1687 - 112-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:41.308 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:42.368 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:42.420 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:42.451 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:42.491 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:42.530 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:43.567 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:43.604 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:43.634 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:43.667 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:43.701 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:43.781 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:45.839 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:50.473 BasePage:278 - Tapped Closed Check in closed tab - 112-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:59.548 TableLayOutScreen:577 - Displayed Screen as - Split Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:59.570 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:34:59.621 BasePage:278 - Select Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:35:15.322 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:20.390 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:20.437 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:20.470 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:20.494 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:20.519 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:20.544 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:21.653 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:21.700 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:21.749 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:21.770 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:21.828 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:27.461 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:27.514 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:28.091 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:28.132 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:28.169 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:29.239 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:30.833 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:30.883 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:30.913 OrderManagementScreen:1687 - 115-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:30.930 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:31.989 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:32.037 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:32.065 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:32.106 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:32.145 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:33.192 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:33.251 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:33.281 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:33.314 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:33.347 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:33.415 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:35.486 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:40.129 BasePage:278 - Tapped Closed Check in closed tab - 115-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:49.215 TableLayOutScreen:577 - Displayed Screen as - Split Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:49.238 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:49.289 BasePage:278 - Select Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:49.317 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:49.351 TableLayOutScreen:918 - null
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:49.351 TableLayOutScreen:919 - Paste the item in seat 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:43:49.363 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:12.083 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:12.127 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:12.158 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:12.183 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:12.209 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:12.234 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:13.340 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:13.387 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:13.438 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:13.458 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:13.527 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:19.166 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:19.212 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:19.794 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:19.838 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:19.875 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:20.947 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:22.551 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:22.596 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:22.626 OrderManagementScreen:1687 - 116-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:22.642 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:23.713 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:23.756 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:23.785 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:23.825 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:23.863 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:24.914 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:24.957 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:24.987 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:25.019 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:25.054 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:25.130 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:27.188 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:31.817 BasePage:278 - Tapped Closed Check in closed tab - 116-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:47:45.911 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:57.403 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:57.449 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:57.480 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:57.505 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:57.530 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:57.555 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:58.662 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:58.710 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:58.761 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:58.781 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:49:58.840 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:04.463 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:04.519 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:05.098 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:05.140 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:05.189 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:06.242 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:07.819 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:07.859 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:07.887 OrderManagementScreen:1687 - 117-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:07.903 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:07.940 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:08.992 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:11.047 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:13.103 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:15.185 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:15.230 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:16.278 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:16.323 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:18.382 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:18.423 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:18.455 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:18.539 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:20.596 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:50:25.237 BasePage:278 - Tapped Closed Check in closed tab - 117-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:43.897 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:43.942 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:43.972 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:43.996 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:44.021 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:44.046 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:45.152 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:45.201 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:45.252 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:45.272 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:45.341 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:50.961 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:51.007 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:51.586 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:51.629 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:51.673 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:52.749 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:54.343 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:54.385 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:54.414 OrderManagementScreen:1687 - 119-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:54.431 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:54.470 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:55.525 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:57.602 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:54:59.659 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:01.740 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:01.786 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:02.833 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:02.878 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:04.938 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:04.976 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:05.010 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:05.082 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:07.138 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:11.777 BasePage:278 - Tapped Closed Check in closed tab - 119-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:20.867 TableLayOutScreen:577 - Displayed Screen as - Split Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:20.890 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:20.951 BasePage:278 - Select Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:20.979 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:21.013 TableLayOutScreen:918 - null
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:21.014 TableLayOutScreen:919 - Paste the item in seat 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 16:55:21.027 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:46.612 Hooks:43 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:46.656 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:46.686 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:46.714 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:46.740 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:46.765 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:47.870 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:47.917 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:47.969 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:47.988 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:48.059 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:53.715 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:53.762 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:54.346 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:54.390 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:54.428 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:55.500 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:57.099 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:57.140 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:57.168 OrderManagementScreen:1687 - 120-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:57.185 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:57.224 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:32:58.275 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:00.353 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:02.411 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:04.491 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:04.537 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:05.583 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:05.628 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:07.684 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:07.722 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:07.755 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:07.829 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:09.887 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:14.533 BasePage:278 - Tapped Closed Check in closed tab - 120-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:23.623 TableLayOutScreen:577 - Displayed Screen as - Split Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:23.647 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:33:30.744 Hooks:54 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:13.022 Hooks:43 - Start Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:13.072 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:13.103 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:13.130 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:13.156 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:13.182 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:14.301 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:14.352 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:14.390 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:14.447 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:38:24.580 Hooks:54 - Failed Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:02.321 Hooks:43 - Start Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:02.367 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:02.397 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:02.422 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:02.447 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:02.472 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:03.564 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:03.608 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:03.647 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:03.711 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:03.765 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:03.798 OrderManagementScreen:1687 - 122-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:04.836 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:06.890 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:08.944 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:11.021 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:11.064 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:12.105 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:12.151 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:14.219 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:14.256 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:14.291 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:14.367 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:16.425 BasePage:278 - Split Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:42:22.997 Hooks:54 - Failed Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:15.777 Hooks:43 - Start Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:15.824 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:15.852 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:15.876 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:15.902 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:15.927 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:17.027 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:17.071 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:17.109 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:17.169 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:17.211 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:17.247 OrderManagementScreen:1687 - 123-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:18.292 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:20.369 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:22.427 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:24.506 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:24.553 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:25.596 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:25.637 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:27.699 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:27.739 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:27.781 BasePage:278 - Tapped Split Icon From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:28.844 BasePage:278 - Tapped Split By Seat Button From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 17:49:41.965 Hooks:54 - Failed Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:48.804 Hooks:43 - Start Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:48.848 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:48.880 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:48.906 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:48.932 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:48.957 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:50.067 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:50.114 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:50.151 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:50.213 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:50.264 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:50.299 OrderManagementScreen:1687 - 124-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:51.338 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:53.411 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:55.470 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:57.548 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:57.593 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:58.641 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:19:58.684 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:00.750 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:00.789 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:00.824 BasePage:278 - Tapped Split Icon From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:01.888 BasePage:278 - Tapped Split By Seat Button From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:08.940 TableLayOutScreen:609 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:08.965 BasePage:278 - Tapped Split Evenly in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:10.030 TableLayOutScreen:831 - false
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:10.040 TableLayOutScreen:832 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:10.051 TableLayOutScreen:833 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:10.058 TableLayOutScreen:838 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:10.094 TableLayOutScreen:852 - Item & Modifier has seperated Equally
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:20:10.108 Hooks:54 - Failed Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:57.756 Hooks:43 - Start Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:57.800 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:57.833 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:57.859 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:57.883 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:57.908 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:59.003 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:59.046 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:59.083 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:59.152 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:59.195 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:21:59.230 OrderManagementScreen:1687 - 125-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:00.272 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:02.345 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:04.405 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:06.479 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:06.524 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:07.573 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:07.616 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:09.671 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:09.709 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:09.743 BasePage:278 - Tapped Split Icon From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:10.798 BasePage:278 - Tapped Split By Seat Button From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:17.859 TableLayOutScreen:609 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:17.884 BasePage:278 - Tapped Split Evenly in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:18.957 TableLayOutScreen:831 - false
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:18.966 TableLayOutScreen:832 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:18.975 TableLayOutScreen:833 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:18.982 TableLayOutScreen:838 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:19.019 TableLayOutScreen:852 - Item & Modifier has seperated Equally
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:20.063 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:20.109 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:20.812 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:20.843 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:22.190 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:22:23.245 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:34.884 Hooks:43 - Start Scenario Name : Split Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:34.929 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:34.961 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:34.986 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:35.012 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:35.038 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:36.132 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:36.174 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:36.212 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:36.273 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:36.318 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:36.353 OrderManagementScreen:1687 - 126-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:37.396 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:39.466 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:41.528 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:43.607 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:43.652 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:44.700 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:44.752 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:46.806 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:46.843 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:46.888 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:46.987 BasePage:278 - click splitButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:47.025 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:47.044 OrderManagementScreen:2225 - M - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:49.120 BasePage:278 - Selected Table - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:51.215 BasePage:278 - Selected Check Number - 126-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:59.291 TableLayOutScreen:617 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:40:59.317 Hooks:54 - Failed Scenario Name : Split Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:23.260 Hooks:43 - Start Scenario Name : Split Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:23.305 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:23.335 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:23.360 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:23.386 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:23.411 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:24.514 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:24.561 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:24.599 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:24.672 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:24.718 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:24.753 OrderManagementScreen:1687 - 127-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:25.781 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:27.858 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:29.921 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:32.000 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:32.046 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:33.098 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:33.137 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:35.197 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:35.236 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:35.270 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:35.374 BasePage:278 - click splitButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:35.413 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:35.431 OrderManagementScreen:2225 - M - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:37.489 BasePage:278 - Selected Table - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:39.581 BasePage:278 - Selected Check Number - 127-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:47.654 TableLayOutScreen:617 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:47.681 BasePage:278 - Click Seperate Item Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:47.725 BasePage:278 - Select Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:47:48.788 Hooks:54 - Failed Scenario Name : Split Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:37.711 Hooks:43 - Start Scenario Name : Split Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:37.756 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:37.791 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:37.819 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:37.853 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:37.877 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:38.982 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:39.029 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:39.068 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:39.129 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:39.179 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:39.218 OrderManagementScreen:1687 - 128-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:40.265 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:42.324 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:44.385 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:46.467 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:46.514 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:47.568 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:47.615 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:49.675 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:49.716 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:49.761 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:49.856 BasePage:278 - click splitButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:49.894 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:49.913 OrderManagementScreen:2225 - M - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:51.984 BasePage:278 - Selected Table - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:49:54.080 BasePage:278 - Selected Check Number - 128-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:02.154 TableLayOutScreen:617 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:02.179 BasePage:278 - Select Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:02.226 BasePage:278 - Click Seperate Item Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:02.265 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:02.298 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:03.355 TableLayOutScreen:772 - Split Evently is Disabled
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:03.382 TableLayOutScreen:877 - Item & Modifier has seperated Equally
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:04.423 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:05.154 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:05.199 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:05.230 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:50:06.267 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:49.816 Hooks:43 - Start Scenario Name : Split without Sale
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:49.861 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:49.895 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:49.921 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:49.946 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:49.971 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:51.079 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:51.126 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:51.164 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:51.225 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:51.277 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:52.334 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:54.407 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:56.462 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:58.541 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:58.581 OrderManagementScreen:1687 - 129-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:58.599 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:59.651 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:53:59.700 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:01.771 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:01.808 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:01.843 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:01.944 BasePage:278 - click splitButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:02.507 BasePage:278 - click splitBySeatButtonOnTableLayout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:02.532 OrderManagementScreen:2225 - M - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:04.592 BasePage:278 - Selected Table - T20
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:06.684 BasePage:278 - Selected Check Number - 129-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:14.757 TableLayOutScreen:617 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:16.803 BasePage:278 - Tapped Add Button in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:16.860 TableLayOutScreen:797 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:17.896 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:21.958 TableLayOutScreen:728 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:21.986 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:22.031 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:22.063 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:54:23.111 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 18:58:44.649 Hooks:54 - Failed Scenario Name : Split from Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:48.297 Hooks:43 - Start Scenario Name : Split from Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:48.342 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:48.373 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:48.397 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:48.422 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:48.448 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:49.554 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:49.600 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:49.637 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:49.701 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:50.756 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:52.829 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:54.886 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:56.962 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:57.007 BasePage:278 - Tapped Split Icon From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:04:58.068 BasePage:278 - Tapped Split By Seat Button From Order Management Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:05:01.134 BasePage:258 - Tapped Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:05:01.174 BasePage:278 - Click Pay Button On Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:05:03.250 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:05:03.274 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:05:03.329 BasePage:278 - click submitButton 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:05:04.380 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:27.186 Hooks:43 - Start Scenario Name : Application allows the user to navigate the split seat screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:27.229 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:27.260 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:27.285 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:27.311 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:27.335 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:28.443 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:28.489 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:28.526 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:28.602 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:29.662 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:31.734 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:33.776 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:35.848 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:35.897 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:35.932 BasePage:278 - Click SplitCheck On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:37.140 BasePage:239 - Split CheckSplit Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:38.187 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:13:45.262 Hooks:54 - Failed Scenario Name : Application allows the user to navigate the split seat screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:24.049 Hooks:43 - Start Scenario Name : Application allows the user to navigate the split seat screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:24.094 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:24.125 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:24.151 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:24.176 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:24.201 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:25.308 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:25.355 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:25.392 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:25.454 BasePage:278 - T20 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:26.520 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:28.591 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:30.642 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:32.705 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:32.748 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:32.787 BasePage:278 - Click SplitCheck On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:33.913 BasePage:239 - Split CheckSplit Check
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:34.943 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:34.988 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:35.027 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:35.059 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:15:36.107 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:38.446 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:38.491 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:38.520 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:38.544 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:38.569 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:38.594 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:39.699 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:39.747 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:39.798 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:39.819 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:39.886 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:45.519 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:45.565 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:46.149 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:46.197 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:46.238 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:47.293 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:48.890 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:48.935 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:49.985 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:50.024 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:50.063 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:50.114 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:50.148 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:50.186 BasePage:278 - Click margarita
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:50.240 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:20:50.273 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:21:00.794 Hooks:54 - Failed Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:22:58.735 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:22:58.780 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:22:58.810 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:22:58.838 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:22:58.863 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:22:58.888 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:22:59.991 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:00.040 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:00.092 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:00.111 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:00.178 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:05.825 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:05.870 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:06.452 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:06.497 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:06.540 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:07.609 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:09.194 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:09.236 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.289 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.328 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.365 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.416 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.453 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.501 BasePage:278 - Click margarita
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.545 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:10.577 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:23:21.091 Hooks:54 - Failed Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:54.857 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:54.903 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:54.933 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:54.958 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:54.982 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:55.006 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:56.115 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:56.165 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:56.217 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:56.237 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:25:56.305 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:01.944 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:01.990 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:02.575 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:02.618 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:02.661 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:03.724 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:05.313 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:05.355 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.412 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.454 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.494 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.544 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.582 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.628 BasePage:278 - Click margarita
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.672 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.706 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.751 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:06.787 BasePage:278 - Click SplitCheck On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:07.412 BasePage:278 - Select Add Button For Split Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:26:08.500 Hooks:54 - Failed Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:52.185 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:52.232 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:52.263 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:52.295 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:52.325 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:52.353 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:53.442 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:53.482 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:53.541 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:53.562 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:53.622 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:59.208 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:59.258 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:59.849 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:59.887 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:28:59.929 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:00.994 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:02.670 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:02.725 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:03.781 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:03.842 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:03.895 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:03.963 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:04.023 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:04.080 BasePage:278 - Click margarita
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:04.157 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:04.200 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:04.260 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:04.306 BasePage:278 - Click SplitCheck On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:07.352 BasePage:278 - Select Add Button For Split Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:29:12.389 Hooks:54 - Failed Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:45.456 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:45.498 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:45.533 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:45.559 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:45.585 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:45.611 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:46.718 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:46.763 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:46.814 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:46.834 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:46.904 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:52.542 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:52.587 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:53.173 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:53.217 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:53.260 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:54.335 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:55.928 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:55.971 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.026 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.068 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.107 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.160 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.197 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.243 BasePage:278 - Click margarita
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.287 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.319 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.364 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:30:57.399 BasePage:278 - Click SplitCheck On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:31:00.462 BasePage:278 - Select Add Button For Split Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:31:02.547 BasePage:278 - Select Save And Close Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:31:02.596 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:31:02.636 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:31:02.667 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 19:31:03.715 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:21.796 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:21.842 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:21.874 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:21.901 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:21.926 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:21.951 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:23.060 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:23.109 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:23.160 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:23.181 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:23.249 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:28.889 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:28.937 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:29.522 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:29.566 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:29.604 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:30.675 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:32.273 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:32.315 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:32.350 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:32.392 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:03:37.473 Hooks:54 - Failed Scenario Name : Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:11.128 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:11.172 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:11.205 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:11.232 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:11.258 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:11.284 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:12.387 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:12.433 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:12.483 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:12.504 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:12.571 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:18.203 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:18.248 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:18.830 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:18.874 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:18.912 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:19.977 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:21.571 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:21.613 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:21.647 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:21.687 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:06:26.728 Hooks:54 - Failed Scenario Name : Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:49.844 Hooks:43 - Start Scenario Name : Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:49.889 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:49.919 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:49.944 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:49.970 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:49.995 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:51.101 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:51.151 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:51.201 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:51.222 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:51.290 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:56.933 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:56.981 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:57.559 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:57.602 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:57.639 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:08:58.708 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:00.299 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:00.347 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:00.382 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:00.422 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:01.473 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:01.522 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:03.584 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:03.632 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:03.680 BasePage:278 - Select Second Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:04.721 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:04.756 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:06.818 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:06.857 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:06.891 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:06.926 BasePage:278 - Click SplitBySeat On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:08.989 BasePage:278 - Select Save And Close Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:09.032 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:09.334 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:09.366 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:09:10.405 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:28.068 Hooks:43 - Start Scenario Name : Split By Seat - Separate Item on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:28.112 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:28.141 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:28.166 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:28.191 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:28.216 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:29.316 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:29.364 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:29.416 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:29.436 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:29.505 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:35.128 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:35.176 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:35.759 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:35.801 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:35.842 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:36.897 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:38.485 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:38.526 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:38.559 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:38.599 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:39.650 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:39.698 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:41.759 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:41.807 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:41.845 BasePage:278 - Select Second Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:42.892 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:42.943 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:45.007 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:45.046 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:45.080 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:45.116 BasePage:278 - Click SplitBySeat On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:52.171 TableLayOutScreen:617 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:52.194 BasePage:278 - Select Item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:52.232 BasePage:278 - Click Seperate Item Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:52.268 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:52.310 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:53.360 TableLayOutScreen:772 - Split Evently is Disabled
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:53.384 TableLayOutScreen:877 - Item & Modifier has seperated Equally
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:54.426 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:58.487 TableLayOutScreen:728 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:58.516 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:58.568 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:58.598 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:23:59.649 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:35.680 Hooks:43 - Start Scenario Name : Split By Seat - Split Evenly on Bar Tab - with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:35.727 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:35.759 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:35.787 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:35.812 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:35.837 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:36.944 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:36.993 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:37.042 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:37.063 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:37.131 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:42.765 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:42.812 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:43.397 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:43.441 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:43.480 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:44.556 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:46.153 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:46.201 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:47.256 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:47.306 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:49.373 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:49.421 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:49.459 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:49.494 BasePage:278 - Click SplitBySeat On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:52.577 BasePage:278 - Select Add Button For Split Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:52.622 BasePage:278 - Click Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:53.674 TableLayOutScreen:839 - false
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:53.683 TableLayOutScreen:840 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:53.693 TableLayOutScreen:841 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:53.700 TableLayOutScreen:846 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:53.737 TableLayOutScreen:860 - Item & Modifier has seperated Equally
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:54.781 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:58.840 TableLayOutScreen:728 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:58.869 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:58.923 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:58.954 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:31:59.993 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:01.389 Hooks:43 - Start Scenario Name : Split By Seat - Split Evenly on Bar Tab - with More Than One Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:01.436 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:01.465 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:01.490 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:01.514 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:01.539 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:02.643 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:02.691 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:02.742 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:02.762 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:02.832 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:08.459 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:08.503 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:09.087 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:09.131 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:09.174 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:10.228 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:11.817 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:11.858 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:11.892 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:11.932 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:12.982 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:13.028 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:15.095 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:15.143 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:15.180 BasePage:278 - Select Second Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:16.231 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:16.275 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:18.333 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:18.371 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:18.406 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:18.445 BasePage:278 - Click SplitBySeat On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:19.053 BasePage:278 - Click Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:20.107 TableLayOutScreen:839 - false
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:20.116 TableLayOutScreen:840 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:20.126 TableLayOutScreen:841 - true
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:20.133 TableLayOutScreen:846 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:20.168 TableLayOutScreen:860 - Item & Modifier has seperated Equally
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:21.209 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:25.266 TableLayOutScreen:728 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:25.294 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:25.338 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:25.368 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:36:26.412 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:38.473 Hooks:43 - Start Scenario Name : Split By Seat - Group Seat on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:38.519 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:38.550 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:38.576 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:38.601 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:38.626 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:39.736 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:39.785 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:39.835 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:39.856 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:39.923 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:45.561 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:45.608 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:46.190 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:46.234 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:46.272 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:47.345 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:48.937 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:48.979 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:49.013 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:49.054 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:49.082 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:49.119 BasePage:258 - Tapped Search Button on the Order screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:49.151 OrderManagementScreen:1215 - Search field got Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:49.810 OrderManagementScreen:1228 - HAMBURGER
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:49.862 OrderManagementScreen:1231 - Selected - HAMBURGER
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:50.185 OrderTypeWindow:172 - Existing Sale is Visble
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:50.513 OrderTypeWindow:189 - Search Item is added to Order List
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:50.541 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:50.584 BasePage:278 - Select Second Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:50.609 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:50.641 BasePage:258 - Tapped Search Button on the Order screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:50.669 OrderManagementScreen:1215 - Search field got Visible
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:51.332 OrderManagementScreen:1228 - HAMBURGER
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:51.372 OrderManagementScreen:1231 - Selected - HAMBURGER
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:51.702 OrderTypeWindow:172 - Existing Sale is Visble
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:52.031 OrderTypeWindow:189 - Search Item is added to Order List
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:52.057 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:52.096 BasePage:278 - Click Split Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:52.130 BasePage:278 - Click SplitBySeat On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:53.313 BasePage:278 - Click Seat One For Group Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:53.344 BasePage:278 - Click Seat Two For Group Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:53.374 BasePage:278 - Click Group Seat Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:53.408 TableLayOutScreen:944 - Seat 2 is not Empty, not Club into seat 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:54.455 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:58.513 TableLayOutScreen:728 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:58.541 BasePage:278 - Click Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:58.584 BasePage:278 - Exact Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:58.625 BasePage:278 - Enter Button Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 22:42:59.667 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:55.135 Hooks:43 - Start Scenario Name : Transfer  Check To Another Server
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:55.181 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:55.212 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:55.237 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:55.263 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:55.287 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:56.397 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:56.445 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:56.496 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:56.516 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:52:56.583 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:02.193 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:02.238 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:02.824 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:02.870 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:02.909 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:03.985 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:05.587 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:05.628 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:05.656 OrderManagementScreen:1677 - 4-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:06.695 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:08.771 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:10.830 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:12.909 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:12.958 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:13.032 BasePage:278 - Click New Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:13.095 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:14.152 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:15.739 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:15.769 OrderManagementScreen:1815 - 4-002
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:15.781 CheckAndItemTransfer:473 - Server Name - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:15.781 CheckAndItemTransfer:477 - Server NAme - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:18.823 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:20.395 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:20.435 BasePage:278 - Select Hamburger MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:20.468 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:20.541 BasePage:278 - Click New Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:20.591 BasePage:278 - click transferToServerButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:20.607 CheckAndItemTransfer:488 -  TestUtils.ServerName1 - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:53:20.632 Hooks:54 - Failed Scenario Name : Transfer  Check To Another Server
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:27.070 Hooks:43 - Start Scenario Name : Transfer  Check To Another Server
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:27.117 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:27.148 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:27.173 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:27.197 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:27.222 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:28.332 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:28.380 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:28.432 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:28.453 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:28.521 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:34.156 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:34.203 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:34.787 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:34.830 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:34.869 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:35.937 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:37.529 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:37.577 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:37.605 OrderManagementScreen:1677 - 45-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:38.643 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:40.716 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:42.775 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:44.856 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:44.903 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:44.980 BasePage:278 - Click New Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:45.039 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:46.097 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:47.683 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:47.714 OrderManagementScreen:1815 - 45-002
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:47.726 CheckAndItemTransfer:473 - Server Name - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:47.726 CheckAndItemTransfer:477 - Server NAme - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:50.765 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.335 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.374 BasePage:278 - Select Hamburger MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.408 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.481 BasePage:278 - Click New Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.530 BasePage:278 - click transferToServerButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.546 CheckAndItemTransfer:488 -  TestUtils.ServerName1 - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.588 BasePage:278 - Tapped - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.652 BasePage:278 - Click the first Check from the List of Checks in the Check table- 45-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.678 BasePage:239 - Get the text of Transferred To serverAppium l
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:56:52.688 BasePage:278 - Click the required Transferred To Server
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:57:00.781 BasePage:278 - click transferItemButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:57:00.856 BasePage:278 - click barTabOrderForTransfer
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:57:04.525 TGTransferPage:98 - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:57:04.534 BasePage:278 - click menuItemForTransfer - 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:57:04.560 TGTransferPage:104 - 120-001 - BarTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:57:04.570 BasePage:278 - click barTabWillBeTransferTo
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:57:04.600 BasePage:278 - click doneButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:57.720 Hooks:43 - Start Scenario Name : Transfer  Check To Another Server
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:57.768 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:57.801 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:57.826 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:57.851 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:57.876 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:58.981 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:59.028 BasePage:278 - Click Setting Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:59.080 BasePage:239 - Verify Setting OptionsOperation
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:59.100 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:58:59.167 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:04.806 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:04.852 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:05.422 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:05.461 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:05.502 BasePage:278 - Click BarTab OrderType
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:06.575 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:08.175 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:08.224 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:08.250 OrderManagementScreen:1677 - 46-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:09.286 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:11.361 BasePage:278 - Select MenuItem And Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:13.419 BasePage:278 - Select MenuItem And Order 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:15.490 BasePage:278 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:15.535 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:15.606 BasePage:278 - Click New Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:15.672 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:16.731 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:18.323 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:18.353 OrderManagementScreen:1815 - 46-002
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:18.372 CheckAndItemTransfer:473 - Server Name - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:18.372 CheckAndItemTransfer:477 - Server NAme - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:21.415 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:22.978 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.018 BasePage:278 - Select Hamburger MenuItem
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.052 BasePage:278 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.130 BasePage:278 - Click New Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.178 BasePage:278 - click transferToServerButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.195 CheckAndItemTransfer:488 -  TestUtils.ServerName1 - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.244 BasePage:278 - Tapped - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.316 BasePage:278 - Click the first Check from the List of Checks in the Check table- 46-001
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.348 BasePage:239 - Get the text of Transferred To serverAppium l
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:23.358 BasePage:278 - Click the required Transferred To Server
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:31.422 BasePage:278 - click transferItemButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:31.495 BasePage:278 - click barTabOrderForTransfer
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:31.579 TGTransferPage:98 - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:31.586 BasePage:278 - click menuItemForTransfer - 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:31.610 TGTransferPage:104 - 46-002 - BarTab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:31.620 BasePage:278 - click barTabWillBeTransferTo
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:31.653 BasePage:278 - click doneButton
+[${ctx:ROUTINGKEY} INFO ] 2023-12-28 23:59:32.706 Hooks:54 - Failed Scenario Name : Transfer  Check To Another Server

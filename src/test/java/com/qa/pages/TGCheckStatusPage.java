@@ -494,13 +494,15 @@ public class TGCheckStatusPage extends BasePage {
 
     public void takeOrderAs(String Menu) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+
         pressArrowDown2();
+        Thread.sleep(2000);
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Select MenuItem And Order");
-
+        Thread.sleep(2000);
         WebElement element1 =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+Menu+"')])[1]"));
         elementClick(element1,"Select MenuItem And Order ");
-
+        Thread.sleep(2000);
         WebElement element2 = mergeAndFindMobileElement(orderButton);
         elementClick(element2,"Click Order");
     }

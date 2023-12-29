@@ -310,9 +310,9 @@ public class CIPaymentScreen extends BasePage{
     }
 
     public void clickNewTab(){
-//        WebElement element = mergeAndFindElement(clickNewTab, "", TestUtils.XPath);
-//        elementClick(element,"Click New tab");
-        findandclick(clickNewTab, "", TestUtils.XPath);
+
+        elementClick("//button[.=' New Tab ']","Click New tab");
+
 
     }
 

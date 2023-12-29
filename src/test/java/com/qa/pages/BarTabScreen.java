@@ -18,7 +18,7 @@ public class BarTabScreen extends OrderManagementScreen{
 
     }
 
-    @FindBy(xpath = "BarTab")
+    @FindBy(xpath = "//linga-icon[@symbol='barGlass']")
     WebElement barTab;
 
     @FindBy(xpath = "(//span[contains(.,'New Tab')])[1]")
@@ -122,11 +122,24 @@ public class BarTabScreen extends OrderManagementScreen{
         return getText(e,msg);
     }
 
-    public void clickBarTabCheck(){
+    public void clickBarTabCheck() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         String globalCheckNumber= TestUtils.globalCheckNumber;
         searchFieldOnBarTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.XPath) ;
+        Thread.sleep(2000);
+        WebElement phoneOrders =  driver.findElement(By.xpath("//div[@class='bartab-row-col seated']"));
+        Thread.sleep(2000);
+        elementClick(phoneOrders,"Tapped Closed Check in New Tab - "+ globalCheckNumber);
+    }
+
+    public void clickBarTabCheck1() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        String globalCheckNumber= TestUtils.globalCheckNumber1;
+        utils.log().info(TestUtils.globalCheckNumber1);
+        searchFieldOnBarTab.sendKeys(globalCheckNumber);
+        Thread.sleep(2000);
+        WebElement phoneOrders =  driver.findElement(By.xpath("//div[@class='bartab-row-col seated']"));
+        Thread.sleep(2000);
         elementClick(phoneOrders,"Tapped Closed Check in New Tab - "+ globalCheckNumber);
     }
 
@@ -146,6 +159,12 @@ public class BarTabScreen extends OrderManagementScreen{
 
     public void clickSplitBtn(){
         WebElement splitBtn =  driver.findElement(By.xpath("//button[contains(.,'Split')]"));
+        elementClick(splitBtn,"Split Btn Selected");
+    }
+
+    public void clickSplitCheckBtn() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement splitBtn =  driver.findElement(By.xpath("//button[.=' Split Check ']"));
         elementClick(splitBtn,"Split Btn Selected");
     }
 

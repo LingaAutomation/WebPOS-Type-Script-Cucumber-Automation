@@ -51,9 +51,9 @@ public class TGSplitCheckPage extends BasePage{
     }
 
     public void verifyTotalPriceOfSplitedSeat(){
-        WebElement element=mergeAndFindMobileElement(subtotalForSeatOne);
-        String actualName =  elementGetText(element,"Get subtotal For Seat One");
-        String expectedName = "TL 1.000,00";
+        WebElement element=driver.findElement(By.xpath(subtotalForSeatOne));
+        String actualName =  element.getAttribute("value");
+        String expectedName = "$ 1.00";
 
         Assert.assertEquals(actualName,expectedName);
 //        WebElement element1=mergeAndFindMobileElement(subtotalForSeatTwo);
@@ -77,7 +77,8 @@ public class TGSplitCheckPage extends BasePage{
         WebElement element=mergeAndFindMobileElement(selectFirstItemToSplit);
         elementClick(element,"Select First Item To Split");
     }
-    public void clickSaveAndCloseButtonOnSplitCheckPage(){
+    public void clickSaveAndCloseButtonOnSplitCheckPage() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element=mergeAndFindMobileElement(saveAndCloseButton);
         elementClick(element,"Select Save And Close Button");
     }
@@ -104,7 +105,8 @@ public class TGSplitCheckPage extends BasePage{
         WebElement element=mergeAndFindMobileElement(firstOrderForSplit);
         elementClick(element,"Select First Order For Split Button");
     }
-    public void clickAddButtonForSplit(){
+    public void clickAddButtonForSplit() throws InterruptedException {
+        Thread.sleep(3000);
         WebElement element=mergeAndFindMobileElement(addButtonForSplit);
         elementClick(element,"Select Add Button For Split Button");
     }
@@ -458,11 +460,17 @@ public class TGSplitCheckPage extends BasePage{
         WebElement element = mergeAndFindMobileElement(addSeat);
         elementClick(element,"Click Add Seat Button");
     }
+    public void pressArrowDown2 () throws InterruptedException {
+        Thread.sleep(1000);
+        elementClick(arrowDownForOtherMenuItems, "the rest of the categories is listed");
+    }
+    String arrowDownForOtherMenuItems ="//button[@id='os_catMenu']";
 
-    public void selectMenuItemAndOrder(){
+    public void selectMenuItemAndOrder() throws InterruptedException {
+        pressArrowDown2();
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Select MenuItem And Order");
-
+        Thread.sleep(2000);
         WebElement element1 = mergeAndFindMobileElement(firstMenuItem);
         elementClick(element1,"Select MenuItem And Order");
 
@@ -492,7 +500,11 @@ public class TGSplitCheckPage extends BasePage{
         WebElement element = mergeAndFindMobileElement(splitCheckOption);
         elementClick(element, "click splitCheckOption");
     }
+    public void click2SplitCheckBtn(){
+        WebElement element = driver.findElement(By.xpath("//ion-col[.='Check']"));
+        elementClick(element, "click splitBySeatButtonOnTableLayout");
 
+    }
     public void clickSplitBySeatOption(){
 //        nov 19
         WebElement element = mergeAndFindMobileElement(splitBySeatOption);
@@ -650,15 +662,10 @@ public class TGSplitCheckPage extends BasePage{
     }
 
     public void verifyTotalPriceOfMargaritaMenuItem(){
-        WebElement element = mergeAndFindMobileElement(totalText);
-        String actualName = elementGetText(element,"Verify Total Text");
-        String expectedName = "Total";
 
-        Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(pizzaMargaritaTotalPrice1);
-        String actualName1 = elementGetText(element1,"Verify Total Price Value");
-        String expectedName1 = "TL 2.999,70";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String actualName1 = element1.getAttribute("value");
+        String expectedName1 = "$ 18.70";
 
         Assert.assertEquals(actualName1,expectedName1);
     }

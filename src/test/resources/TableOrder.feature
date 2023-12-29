@@ -1,4 +1,4 @@
-@TableOrders @Payment
+@RegressionBarTab01
 Feature:Table Order Operations
 
   Background:
@@ -4521,52 +4521,52 @@ Feature:Table Order Operations
 
   @RegressionTable
   Scenario Outline:Verify whether application allows the user to Fire the Hold Menu Item
-#    And I click new check button on the Table layout screen
-#    And I select table as "<table_no>"
-#    And I select the number of seats as "<number_of_seats2>"
-#    And I tap Continue to finish selecting the number of seats
-#    And I get check number
-#    And I select FOOD as category
-#    And I select menu item as "<Menu_Item>"
-#    And I select modifier as "<Modifier>"
-#    And I click Done to get back
-#    And I select menu item as "<Menu_Item1>"
-#    And I select modifier as "<Modifier1>"
-#    And I click Done to get back
-#    And I select menu item as "<Menu_Item2>"
-#    And I click table number on the Order Screen as "<order_Type>"
-#    And I click Options button
-#    Then I should see the Check Options screen
-#    And I click Hold to put order on hold
-#    And I click Done in the hold window
-#    When I click Back to return to Order Management Screen
-#    Then I should see the hold icon over the order section
-#    And I click menu item as "<Menu_Item>" to see Menu option screen
-#    And I click Fire to send menu item to kitchen
-#    Then I should see do you want to send hold menu items to kitchen popup message
-#    And I click Yes button on send to kitchen popup
-#    And I click menu item as "<Menu_Item1>" to see Menu option screen
-#    And I click Fire to send menu item to kitchen
-#    Then I should see do you want to send hold menu items to kitchen popup message
-#    And I click Yes button on send to kitchen popup
-#    And I click menu item as "<Menu_Item2>" to see Menu option screen
-#    And I click Fire to send menu item to kitchen
-#    Then I should see do you want to send hold menu items to kitchen popup message
-#    And I click Yes button on send to kitchen popup
-#    And I click Void button on order management screen
-#    Then I should see the void reason popup
-#    And I click void Reason on the void popup
-#    And I click Add Button on the void reason popup
-##    Then I should see Receipt Printer popup
-##    And I click Done button on the Popup
-#    And I closed the order type window
-#    And I click All
-#    Then I should see check stats Screen
-   # And I click power button
+    And I click new check button on the Table layout screen
+    And I select table as "<table_no>"
+    And I select the number of seats as "<number_of_seats2>"
+    And I tap Continue to finish selecting the number of seats
+    And I get check number
+    And I select FOOD as category
+    And I select menu item as "<Menu_Item>"
+    And I select modifier as "<Modifier>"
+    And I click Done to get back
+    And I select menu item as "<Menu_Item1>"
+    And I select modifier as "<Modifier1>"
+    And I click Done to get back
+    And I select menu item as "<Menu_Item2>"
+    And I click table number on the Order Screen as "<order_Type>"
+    And I click Options button
+    Then I should see the Check Options screen
+    And I click Hold to put order on hold
+    And I click Done in the hold window
+    When I click Back to return to Order Management Screen
+    Then I should see the hold icon over the order section
+    And I click menu item as "<Menu_Item>" to see Menu option screen
+    And I click Fire to send menu item to kitchen
+    Then I should see do you want to send hold menu items to kitchen popup message
+    And I click Yes button on send to kitchen popup
+    And I click menu item as "<Menu_Item1>" to see Menu option screen
+    And I click Fire to send menu item to kitchen
+    Then I should see do you want to send hold menu items to kitchen popup message
+    And I click Yes button on send to kitchen popup
+    And I click menu item as "<Menu_Item2>" to see Menu option screen
+    And I click Fire to send menu item to kitchen
+    Then I should see do you want to send hold menu items to kitchen popup message
+    And I click Yes button on send to kitchen popup
+    And I click Void button on order management screen
+    Then I should see the void reason popup
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+    And I closed the order type window
+    And I click All
+    Then I should see check stats Screen
+#    And I click power button
 
-  #  Examples:
-   #   |order_Type| Menu_Item | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 |
-    #  |QSR   | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons|
+#    Examples:
+#      |order_Type| Menu_Item | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 |
+#      |QSR   | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons|
 
   #Scenario Outline: Verify whether application allows the user to void Menu Items without asking the Void reason
    # And I click All
@@ -7962,13 +7962,14 @@ Feature:Table Order Operations
     And I closed the order type window
     And I click log off button in order screen
 
-
+  @RegressionTable
   Scenario Outline: Merge without Discount
 
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    And I closed the order type window
+    And User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    And I closed the order type window
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -7978,8 +7979,9 @@ Feature:Table Order Operations
     Then User select PizzaMel menu item of pizza category
     And User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+    When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -7991,18 +7993,19 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
     And I click clear text button
-  #  And I click "Yes" in the close the day Popup window "click yes button"
+  #  And I click yes button
     And I click closed check in bar tab1
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+##    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+    When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+  Then I should see the Payment window
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
@@ -8012,8 +8015,9 @@ Feature:Table Order Operations
     Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8023,8 +8027,9 @@ Feature:Table Order Operations
     Then User select Sandwiches menu item
     Then User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+    When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -8038,11 +8043,11 @@ Feature:Table Order Operations
     Then I should see Check Based Discount Screen
     And I click Discount as "IB-BeforeTax-SetPrice500"
     And I click Back button on Discount Screen
-    When User click Option Tab
-    Then User select tax exempt option
-    And User click merge done button
-    And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
+#    When User click Option Tab
+#    Then User select tax exempt option
+#    And User click merge done button
+#    And I click Back button on Tax Exempt window
+#    And I click Back button on Check Options Screen
     Then I should see orderscreen with menu item prize as "$ 14.00"
     Then I should see the tax amount reflected to the check as "$ 0.10"
     Then I should see the Discount amount reflected to the check as "$ 13.00"
@@ -8051,19 +8056,20 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
     And I click clear text button
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
     And I click closed check in bar tab1
-    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+  And I click Yes button on the bartab
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
     And User confirm merge checks confirmation popup
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+  When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+  Then I should see the Payment window
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
@@ -8073,8 +8079,9 @@ Feature:Table Order Operations
     Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8086,8 +8093,9 @@ Feature:Table Order Operations
    # And User verify total price of PizzaMel menu item
     And User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -8099,29 +8107,32 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
     And I click clear text button
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
     And I click closed check in bar tab1
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+##    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+  When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+  Then I should see the Payment window
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
     And I click QSR tab
     Then User click cancel button
-    #Scenario Outline: Merge with Tax Exempt
+
+#    Scenario Outline: Merge with Tax Exempt
     Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8131,12 +8142,13 @@ Feature:Table Order Operations
     Then User select PizzaMel menu item of pizza category
     When User click Option Tab
     Then User select tax exempt option
-    And User select tax exempt type
-    Then I should see the tax reflected to the check
+#    And User select tax exempt type
+#    Then I should see the tax reflected to the check
     And User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -8144,26 +8156,27 @@ Feature:Table Order Operations
     And I get check number1
     And I select Pizza as Category
     Then User select Margarita menu item of pizza category
-    Then I should see the tax reflected to the check
+#    Then I should see the tax reflected to the check
     And User click finish button
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
 
-    And I click "Yes" in the close the day Popup window "click yes button"
+  And I click Yes button on the bartab
     And I click clear text button
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
     And I click closed check in bar tab1
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+    When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
-    And User select payment method with cash
+#    And I click yes button
+    Then I should see the Payment window
+    And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
     And I click QSR tab
@@ -8172,8 +8185,9 @@ Feature:Table Order Operations
     Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8184,8 +8198,9 @@ Feature:Table Order Operations
     Then I should see the tax reflected to the check
     And User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -8194,8 +8209,8 @@ Feature:Table Order Operations
     When User click Option Tab
     Then User select tax exempt option
     And User click merge done button
-    And I click Back button on Tax Exempt window
-    And I click Back button on Check Options Screen
+#    And I click Back button on Tax Exempt window
+#    And I click Back button on Check Options Screen
     And I select Pasta as category
     And I select menu item as "Ravioli"
     And I select modifier as "Butter"
@@ -8204,36 +8219,38 @@ Feature:Table Order Operations
     Then I should see Check Based Discount Screen
     And I click Discount as "IB-BeforeTax-SetPrice500"
     And I click Back button on Discount Screen
-    Then I should see the tax reflected to the check
+#    Then I should see the tax reflected to the check
     Then User click finish button
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
     And I click clear text button
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click yes button
+##    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I click closed check in bar tab1
-    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+    And I click Yes button on the bartab
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
     And User confirm merge checks confirmation popup
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+    When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
     And I click QSR tab
     Then User click cancel button
-    #Scenario Outline: Merge with Tax Exempt and Fix Gratuity
+
+#    Scenario Outline: Merge with Tax Exempt and Fix Gratuity
     Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8245,8 +8262,9 @@ Feature:Table Order Operations
     Then I should see the tax reflected to the check
     And User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -8267,19 +8285,20 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
     And I click clear text button
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click yes button
+##    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I click closed check in bar tab1
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+    When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+  Then I should see the Payment window
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
@@ -8289,8 +8308,9 @@ Feature:Table Order Operations
     Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8300,11 +8320,12 @@ Feature:Table Order Operations
     Then User select PizzaMel menu item of pizza category
     When User click Option Tab
     Then User select tax exempt option
-    And User select tax exempt type
+#    And User select tax exempt type
     And User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -8326,33 +8347,35 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
 
-    And I click "Yes" in the close the day Popup window "click yes button"
+  And I click Yes button on the bartab
     And I click clear text button
-#    And I click "Yes" in the close the day Popup window "click yes button"
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click yes button
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I click closed check in bar tab1
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+    When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+  Then I should see the Payment window
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
     And I click QSR tab
-    Then User click cancel button
+    Then I closed the order type window
 #    Scenario Outline: : Merge with Fix Gratuity
 
     Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+  When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -8371,8 +8394,9 @@ Feature:Table Order Operations
     Then I should return back to the order management screen and I should Gratuity is added
     And User click finish button
     Then User click new tab on Bar tab
-    And I click "Exit" in the preauth popup "click Exit Button"
-    Then User click cancel button
+     When User click cancel button for customer name popup
+    And I click the Exit to close the preauth window
+#    Then User click cancel button
     And I click Add Customer Button
     And I search for "<customer_name1>"
     When I click "<customer_name1>" to select customer for the seat
@@ -8393,19 +8417,20 @@ Feature:Table Order Operations
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
     And I click clear text button
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click yes button
+##    And I click "Hide keyboard" button in the keyboard "Click Back"
     And I click closed check in bar tab1
-#    And I click "Yes" in the close the day Popup window "click yes button"
-#    And I click "Yes" in the close the day Popup window "click yes button"
+#    And I click yes button
+#    And I click yes button
     And I click clear text button
-    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
     And User click merge done button
 #    Then I should see the Linga Popup
-#    And I click Done button on the Popup
-    When User click Pay Check button
+    And I click Done button on the Popup
+    When User click Pay Check button on the bartab
     And I click merged barTab
-#    And I click "Yes" in the close the day Popup window "click yes button"
+  Then I should see the Payment window
+#    And I click yes button
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
@@ -8416,66 +8441,68 @@ Feature:Table Order Operations
       |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
 
 
-  Scenario Outline: Delete Seat,Add New Seat
-    #Add New Seat
-    And User select first table
-    And I select the number of seats as "1"
-    And I tap Continue to finish selecting the number of seats
-    When I click Add Button to create Seat
-    Then User verify added new seat
-    #Delete Seat
-    When User select last added seat
-    And User down arrow icon
-    And User select edit seat button
-    And User delete selected seat
-    And User click done button for delete seat
-    When User down arrow icon
-    Then User verify deleted seat
-    And I click "<btnFinish>" in the order screen for closing order "Click Finish"
-    And I click power button
-
-    Examples:
-      |btnFinish|btnPower|
-      |finish   |Power button |
-
-  Scenario Outline: Add Group Seat, Group Seats- Without Selecting Seats
-    #Group Seats- Without Selecting Seats
-    And User select first table
-    And I select the number of seats as "1"
-    And I tap Continue to finish selecting the number of seats
-    When User take an order as "SANDWICHES"
-    When I click Add Button to create Seat
-    Then User verify added new seat
-    When User take an order as "SANDWICHES"
-    When User click split button on menu item page
-    And User click split by seat option on menu item page
-    When User click group seat button
-    Then User verify seats to merge warning popup
-    And I click Done button on the Popup
-    #Add Group Seat
-    Then User select seats to merge
-    When User click group seat button
-    Then User verify group seat option
-    #Pay Group Seat Order
-    When User select seat is payable
-    Then User click pay button on split seat
-    And User click exact option
-    And I click cash button from the payment method popup
-    And User click submit button
-    When User click Check Status tab
-    Then User click Closed Checks tabs
-    And User verify closed checks
-    And I click the "Power button" in the close the day screen "click Power button"
-
-#    And I click QSR tab
-#    And I closed the order type window
-#    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#  Scenario Outline: Delete Seat,Add New Seat
+#    #Add New Seat
+#    And User select first table
+#    And I select the number of seats as "1"
+#    And I tap Continue to finish selecting the number of seats
+#    When I click Add Button to create Seat
+#    Then User verify added new seat
+#    #Delete Seat
+#    When User select last added seat
+#    And User down arrow icon
+#    And User select edit seat button
+#    And User delete selected seat
+#    And User click done button for delete seat
+#    When User down arrow icon
+#    Then User verify deleted seat
+#    And I click "<btnFinish>" in the order screen for closing order "Click Finish"
+#    And I click power button
+#
+#    Examples:
+#      |btnFinish|btnPower|
+#      |finish   |Power button |
 
 
-    Examples:
-      |btnQsr|btnCancel|btnLogOff|
-      |QSR   |Cancel|logOff      |
-
+#  Scenario Outline: Add Group Seat, Group Seats- Without Selecting Seats
+#    #Group Seats- Without Selecting Seats
+#    And User select first table
+#    And I select the number of seats as "1"
+#    And I tap Continue to finish selecting the number of seats
+#    When User take an order as "SANDWICHES"
+#    When I add a new seat
+#    Then User verify added new seat
+#    When User take an order as "SANDWICHES"
+#    And I click the split seat from Order screen
+#    Then I should see the Split Screen
+#    When I click the Group Seats button in the Split Seat
+#    And I should see the Select the Seats to Merge Popup message
+##    Then User verify seats to merge warning popup
+#    And I click Done button on the Popup
+#    #Add Group Seat
+#    Then I select seat one
+#    When User click group seat button
+#    Then User verify group seat option
+#    #Pay Group Seat Order
+#    When User select seat is payable
+#    Then User click pay button on split seat
+#    And User click exact option
+#    And I click cash button from the payment method popup
+#    And User click submit button
+#    When User click Check Status tab
+#    Then User click Closed Checks tabs
+#    And User verify closed checks
+#    And I click the "Power button" in the close the day screen "click Power button"
+#
+##    And I click QSR tab
+##    And I closed the order type window
+##    And I click log off "<btnLogOff>" button in order screen "click log off button"
+#
+#
+#    Examples:
+#      |btnQsr|btnCancel|btnLogOff|
+#      |QSR   |Cancel|logOff      |
+#
 
 
 

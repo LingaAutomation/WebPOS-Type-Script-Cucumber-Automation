@@ -17,7 +17,7 @@ public class OrdersAndDriversListScreen extends BasePage {
     @FindBy(xpath = "//span[contains(.,' Check Status ')]")
     private WebElement checkStatsTab1;
 
-    @FindBy(name = "Closed")
+    @FindBy(xpath = "//span[contains(.,'Closed')]")
     private WebElement closedChecksLst;
 
     @FindBy(xpath = ("(//XCUIElementTypeStaticText[@name=\"T25\"])[1]"))
@@ -76,7 +76,7 @@ public class OrdersAndDriversListScreen extends BasePage {
     }
 
     public String verifyTableLayoutTab() throws InterruptedException {
-        Thread.sleep(300);
+        Thread.sleep(3000);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         return getText(convertWebElement(TableLayout1),"Table layout screen is displayed - ");
         //   getText(TableLayout,"Table layout screen is displayed - ");

@@ -57,13 +57,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Auto r")
     private WebElement customerName;
 
-    @FindBy(xpath = "Transferred Successfully")
+    @FindBy(xpath = "//p[.='Transferred Successfully']")
     private WebElement transferSuccessfulMsg;
 
-    @FindBy(xpath = "Transferred check success.")
+    @FindBy(xpath = "//p[.='Transferred item success']")
     private WebElement itemTransferSuccessfulMsg;
 
-    @FindBy(xpath = "Done")
+    @FindBy(xpath = "//button[.=' Done ']")
     private WebElement itemTransferDone;
 
     @FindBy(xpath = "//p[contains(.,'Check already added')]")
@@ -460,7 +460,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
 
-    public void pressDone1() {
+    public void pressDone1() throws InterruptedException {
+        Thread.sleep(2000);
         try {
             elementClick(Done1, "Tapped Done Button on the Popup");
         } catch (Exception e) {
@@ -524,7 +525,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
         return elementGetText(transferSuccessfulMsg, "Transfer successful message is displayed - ");
     }
 
-    public String getItemTransferSuccessfulMsg() {
+    public String getItemTransferSuccessfulMsg() throws InterruptedException {
+        Thread.sleep(1000);
         return elementGetText(itemTransferSuccessfulMsg, "Item transfer successful message is displayed - ");
     }
 
@@ -549,6 +551,14 @@ public class TableLayOutScreen extends OrderManagementScreen {
         //    verifyTableMerge(tableNo);
         verifyTableMergee2(tableNo);
     }
+
+    public void selectTheCheckFromTableLayoutS() throws InterruptedException {
+
+        String tableNo = TestUtils.tableNumberof;
+        //    verifyTableMerge(tableNo);
+        verifyTableMergeeTable(tableNo);
+    }
+
     @FindBy(xpath = "Merge Checks Confirmation")
     WebElement mergeCheckPopup;
     public void mergeCheckConfirmationPopup(){
@@ -570,12 +580,18 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "(//p[(.=' Split Check ')])")
     WebElement splitCheckBtn;
 
-    public void verifySplitCheckScren() {
-
+    public void verifySplitCheckScren() throws InterruptedException {
+          Thread.sleep(7000);
         Assert.assertEquals(splitCheckBtn.getText(), "Split Check");
         utils.log().info("Displayed Screen as - " + splitCheckBtn.getText());
     }
 
+    public void shouldSeeMenuItemAreMovedToSplitCheck() throws InterruptedException {
+        Thread.sleep(2000);
+     WebElement element = driver.findElement(By.xpath("//p[.=' Burger ind    ']"));
+     Assert.assertEquals(element.getText(),"Burger ind");
+     utils.log().info("Displayed - "+element.getText());
+    }
     public void pressItemTransferDone() {
         elementClick(itemTransferDone, "Item transfer done");
     }
@@ -685,7 +701,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(seperateIcon, "Tapped Seperate Button");
     }
 
-    public void pressBack() {
+    public void pressBack() throws InterruptedException {
         elementClick(BackBtn, "Tapped Back Button");
     }
 
@@ -845,6 +861,24 @@ public class TableLayOutScreen extends OrderManagementScreen {
             utils.log().info("Item & Modifier has seperated Equally");
         } else {
             utils.log().info("Item & Modifier has not Seperated Equally");
+            int w = 1/0;
+        }
+
+    }
+
+    public void verify1Table() {
+//        String Table1 = driver.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]")).getText();
+//        String Table2 = driver.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[2]")).getText();
+        String qty1= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[1]")).getText();
+        String qty2= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[3]")).getText();
+//        String value1= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[2]")).getText();
+//        String value2= driver.findElement(By.xpath("(//ion-col[@class='ion-text-right md hydrated'])[4]")).getText();
+        if ( qty1.equals(qty2))
+        {
+            utils.log().info("Item & Modifier has seperated Equally");
+        } else {
+            utils.log().info("Item & Modifier has not Seperated Equally");
+            int w = 1/0;
         }
 
     }
@@ -914,6 +948,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
     public void verifyTouchAndAdd() {
         if (item.isDisplayed()) {
+            utils.log().info(item.getAttribute("value"));
             utils.log().info("Paste the item in seat 2");
         } else {
             utils.log().info("not Paste into seat 2");
@@ -1662,8 +1697,8 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void selectTheNumberOfSplitItem(String numb) {
-        WebElement numberSelect = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + numb + "\"]"));
-        elementClick(numberSelect, "Selected - " + numb);
+        WebElement e = driver.findElement(By.xpath("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'"+numb+"')]"));
+        elementClick(e, numb + " selected");
     }
 
     public void clickSplitBySeatInSplitCheck() {

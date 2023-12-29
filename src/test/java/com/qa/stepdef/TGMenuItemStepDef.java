@@ -75,6 +75,10 @@ public class TGMenuItemStepDef {
         new TGMenuItemPage().clickFinishButton();
     }
 
+    @When("User select manuel option for Hold check option")
+    public void userSelectManuelOptionForHoldCheckOption() throws InterruptedException {
+        new TGMenuItemPage().clickHoldManualOption();
+    }
 
     @Then("User click split button on menu item page")
     public void userClickSplitButtonOnMenuItemPage() {
@@ -1984,7 +1988,7 @@ public class TGMenuItemStepDef {
 
     // Nov 16
     @And("User verify fixed gratuity1")
-    public void userVerifyFixedGratuity1() {
+    public void userVerifyFixedGratuity1() throws InterruptedException {
         new TGMenuItemPage().verifyFixedGratuity1();
     }
 

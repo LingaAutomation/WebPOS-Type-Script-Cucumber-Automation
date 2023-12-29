@@ -201,7 +201,7 @@ public class TGSplitCheckStepDef {
     }
 
     @And("User click Add button for split")
-    public void userClickAddButtonForSplit() {
+    public void userClickAddButtonForSplit() throws InterruptedException {
         split.clickAddButtonForSplit();
     }
 
@@ -221,7 +221,7 @@ public class TGSplitCheckStepDef {
     }
 
     @When("User click Save and Close button on Split Check page")
-    public void userClickSaveAndCloseButtonOnSplitCheckPage() {
+    public void userClickSaveAndCloseButtonOnSplitCheckPage() throws InterruptedException {
         split.clickSaveAndCloseButtonOnSplitCheckPage();
     }
 
@@ -306,7 +306,7 @@ public class TGSplitCheckStepDef {
     }
 
     @When("User take an order in split screen")
-    public void userTakeAnOrderInSplitScreen() {
+    public void userTakeAnOrderInSplitScreen() throws InterruptedException {
         split.selectMenuItemAndOrder();
     }
 
@@ -340,6 +340,11 @@ public class TGSplitCheckStepDef {
 //        split.saveAndCloseSplitedCheck();
 //    }
 
+
+    @And ("^I click 2 split check button$")
+    public void iClick2SplitCheckButton(){
+        split.click2SplitCheckBtn();
+    }
     @And("^I click the \"([^\"]*)\" in the close the day screen in split screen \"([^\"]*)\"$")
     public void iClickTheInTheCloseTheDayScreenInSplitScreen(String btnCloseCashier, String msg) {
         split.commonBtnClick(btnCloseCashier, msg);

@@ -14,6 +14,14 @@ import java.util.List;
 
 public class CheckOptions extends OrderManagementScreen {
 
+    @FindBy(xpath = "//span[.='Open Cash Drawer']")
+    WebElement openCashDrawerBtn;
+
+    @FindBy(xpath = "//label[contains(.,'fireCoursing')]") //Nov 16
+    WebElement fireCoursingBtn;
+
+    @FindBy(xpath = "Fire Coursing")
+    WebElement fireCoursingTxt;
 
     @FindBy(xpath = "//label[contains(.,'Gratuity')]")
     WebElement gratuityBtn;
@@ -365,7 +373,7 @@ public class CheckOptions extends OrderManagementScreen {
 
     public void clickProcessButton() throws InterruptedException {
         Thread.sleep(3000);
-       elementClick("(//div[@class='card-details-decisions']//button[contains(.,' Process ')])[2]","Selected Process");
+       elementClick("/html/body/div/div[4]/div/mat-dialog-container/app-pay/ion-footer/ion-toolbar/div/button[4]","Selected Process");
     }
     @FindBy(xpath = "//button[.='Gift Card']")
     private WebElement giftCardBtn;
@@ -435,6 +443,16 @@ public class CheckOptions extends OrderManagementScreen {
 //        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
         elementClick("//button[.=' Continue ']", "Tapped Continue ");
     }
+    public void pressOpenCashDrawer() {
+        elementClick(openCashDrawerBtn, "Tapped Open Cash Drawer Button");
+    }
 
+    public void pressFireCoursing() {
+        elementClick(fireCoursingBtn, "Tapped Fire coursing Button");
+    }
+
+    public String verifyFireCoursing() {
+        return elementGetText(fireCoursingTxt, "Fire coursing is Displayed - ");
+    }
 
 }

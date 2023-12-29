@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 
+import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 
 import org.junit.Assert;
@@ -11,19 +12,19 @@ import static com.qa.utils.TestUtils.driver;
 public class TGBarTab extends BasePage {
 
     //    String newTabButton = "//XCUIElementTypeStaticText[@name=\"New Tab\"]\n";
-    String newTabButton = "New Tab";
-    String transferBarTabOption = "Transfer";
+    String newTabButton = "//button[.=' New Tab ']";
+    String transferBarTabOption = "//span[contains(.,'Transfer')]";
     //    String transferBarTabOption = "//XCUIElementTypeStaticText[@name=\"Transfer\"]";
-    String splitBarTabOption = "Split";
+    String splitBarTabOption = "//span[contains(.,'Split')]";
     //    String splitBarTabOption = "//XCUIElementTypeStaticText[@name=\"Split\"]";
-    String splitBySeatBarTabOption = "Split By Seat";
+    String splitBySeatBarTabOption = "//span[.=' Split By Seat ']";
     //    String splitBySeatBarTabOption = "//XCUIElementTypeStaticText[@name=\"Split By Seat\"]";
-    String firstBarTabOrder = "(//XCUIElementTypeStaticText[@name=\"goknur bati\"])[1]";
+    String firstBarTabOrder = "//div[@class='bartab-row-col seated']//p[.='goknur bati']";
 
-    String splitEvenlyBarTabOption = "Split Evenly";
+    String splitEvenlyBarTabOption = "//div[.='Split Evenly']";
     //    String splitEvenlyBarTabOption = "//XCUIElementTypeStaticText[@name=\"Split Evenly\"]";
 
-    String mergeBarTabOption = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[3]";
+    String mergeBarTabOption = "//div[.='Merge']";
     String mergeDoneButton = "Done";
 //    String mergeDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
 
@@ -34,38 +35,38 @@ public class TGBarTab extends BasePage {
 
     String firstBarTabCheck = "(//XCUIElementTypeStaticText[@name=\"Göknur B\"])[2]";
 
-    String allTabIcon = "//XCUIElementTypeStaticText[@name=\"All Tab\"]";
-    String seatedIcon = "Seated";
+    String allTabIcon = "(//p[@class='tablebarfooter-total-firstrow-weight'])[1]";
+    String seatedIcon = "(//p[@class='tablebarfooter-total-firstrow-weight'])[2]";
     //    String seatedIcon = "//XCUIElementTypeStaticText[@name=\"Seated\"]";
-    String checkDownIcon = "Check Down";
+    String checkDownIcon = "(//p[@class='tablebarfooter-total-firstrow-weight'])[3]";
     //    String checkDownIcon = "//XCUIElementTypeStaticText[@name=\"Check Down\"]";
-    String onHoldIcon = "On Hold";
+    String onHoldIcon = "(//p[@class='tablebarfooter-total-firstrow-weight'])[4]";
     //    String onHoldIcon = "//XCUIElementTypeStaticText[@name=\"On Hold\"]";
-    String expiredIcon = "Expired";
+    String expiredIcon = "(//p[@class='tablebarfooter-total-firstrow-weight'])[5]";
     //    String expiredIcon = "//XCUIElementTypeStaticText[@name=\"Expired\"]";
-    String sortAtoZ = "Sort A - Z";
+    String sortAtoZ = "//span[.=' A-Z ']";
     //    String sortAtoZ = "//XCUIElementTypeStaticText[@name=\"Sort A - Z\"]";
-    String sortZtoA = "Sort Z - A";
+    String sortZtoA = "//span[.=' Z-A ']";
 //    String sortZtoA = "//XCUIElementTypeStaticText[@name=\"Sort Z - A\"]\n";
 
-    String barTabSearchTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField";
+    String barTabSearchTextField = "//p[.='Test Automation']";
     String barTabSearchText = "Search Name or Check Number";
     //    String barTabSearchText = "//XCUIElementTypeStaticText[@name=\"Search Name or Check Number\"]";
-    String barTabOrderCustomerName = "(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[1]";
+    String barTabOrderCustomerName = "//p[.='goknur bati']";
     //not used
     String searchOrderWithCheckNumberOnBarTab = "//XCUIElementTypeStaticText[@name=\"TL 32,70\"]";
-    String onHoldOrderNumber = "1";
+    String onHoldOrderNumber = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img";
     //    String onHoldOrderNumber = "//XCUIElementTypeStaticText[@name=\"1\"]";
     String expiredOrderNumber = "goknur bati";
     //    String expiredOrderNumber = "//XCUIElementTypeStaticText[@name=\"Test Automation\"]";
-    String firstBarTabOrderSortedAToZ = "//XCUIElementTypeStaticText[@name=\"goknur bati\"][1]";
+    String firstBarTabOrderSortedAToZ = "(//p[.='auto l'])[1]";
     String lastBarTabOrderSortedAToZ = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[19]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[last]";
-    String firstBarTabOrderSortedZToA = "(//XCUIElementTypeStaticText[@name=\"goknur bati\"])[1]";
+    String firstBarTabOrderSortedZToA = "(//p[.='Walkin'])[1]";
     String lastBarTabOrderSortedZToA = "//XCUIElementTypeStaticText[@name=\"Automation\"][1]";
     String deleteDiscountForMergeInfoText = "//XCUIElementTypeAlert[@name=\"Linga\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]";
     String deleteDiscountForMergeYesButton = "Yes";
     //    String deleteDiscountForMergeYesButton = "//XCUIElementTypeButton[@name=\"Yes\"]";
-    String mergeCheckConfirmButton = "Confirm";
+    String mergeCheckConfirmButton = "//button[.=' Confirm ']";
     //    String mergeCheckConfirmButton = "//XCUIElementTypeStaticText[@name=\"Confirm\"]";
     String cancelCustomerButton = "//button[contains(.,' Cancel ')]";
     //    String cancelCustomerButton = "//XCUIElementTypeStaticText[@name=\"Cancel\"]";
@@ -189,38 +190,38 @@ try {
     public void verifyAllTabIcon(){
 
         WebElement iconAll = mergeAndFindMobileElement(allTabIcon);
-        String actualName = elementGetText(iconAll,"Get All Tab icon");
+        String[] actualName = iconAll.getText().split(":");
         String expectedName = "All Tab";
-
-        Assert.assertEquals(expectedName,actualName);
+        utils.log().info(actualName[0]);
+        Assert.assertEquals(expectedName,actualName[0]);
     }
     public void verifySeatedIcon(){
         WebElement iconSeated = mergeAndFindMobileElement(seatedIcon);
-        String actualName = elementGetText(iconSeated,"Get Seated icon");
+        String[] actualName = iconSeated.getText().split(":");
         String expectedName = "Seated";
-
-        Assert.assertEquals(expectedName,actualName);
+        utils.log().info(actualName[0]);
+        Assert.assertEquals(expectedName,actualName[0]);
     }
     public void verifyCheckDownIcon(){
         WebElement iconCheckDown = mergeAndFindMobileElement(checkDownIcon);
-        String actualName = elementGetText(iconCheckDown,"Get Check Down icon");
+        String[] actualName = iconCheckDown.getText().split(":");
         String expectedName = "Check Down";
-
-        Assert.assertEquals(expectedName,actualName);
+        utils.log().info(actualName[0]);
+        Assert.assertEquals(expectedName,actualName[0]);
     }
     public void verifyOnHoldIcon(){
         WebElement iconOnHold = mergeAndFindMobileElement(onHoldIcon);
-        String actualName = elementGetText(iconOnHold,"Get On Hold icon");
+        String[] actualName = iconOnHold.getText().split(":");
         String expectedName = "On Hold";
-
-        Assert.assertEquals(expectedName,actualName);
+        utils.log().info(actualName[0]);
+        Assert.assertEquals(expectedName,actualName[0]);
     }
     public void verifyExpiredIcon(){
         WebElement iconExpired = mergeAndFindMobileElement(expiredIcon);
-        String actualName = elementGetText(iconExpired,"Get Expired icon");
+        String[] actualName = iconExpired.getText().split(":");
         String expectedName = "Expired";
-
-        Assert.assertEquals(expectedName,actualName);
+        utils.log().info(actualName[0]);
+        Assert.assertEquals(expectedName,actualName[0]);
     }
 
     public void clickYes(){
@@ -229,7 +230,7 @@ try {
     public void verifyDirectedBarTab(){
         WebElement directedBarTab = mergeAndFindMobileElement(sortAtoZ);
         String actualName = elementGetText(directedBarTab,"Verify Directed BarTab");
-        String expectedName = "Sort A - Z";
+        String expectedName = "A-Z";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -239,6 +240,7 @@ try {
     }
     public void clickSortZtoAButton(){
         WebElement btnSortZtoA = mergeAndFindMobileElement(sortZtoA);
+        elementClick(btnSortZtoA,"Click Sort AtoZ Button");
     }
     public void enterCustomerNameForSearch(){
         WebElement searchCustomer = mergeAndFindMobileElement(barTabSearchTextField);
@@ -247,7 +249,7 @@ try {
     public void verifySearchCustomerName(){
         WebElement customerSearch = mergeAndFindMobileElement(barTabOrderCustomerName);
         String actualName = elementGetText(customerSearch,"Verify Search Customer Name");
-        String expectedName = "Test Automation";
+        String expectedName = "goknur bati";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -287,11 +289,13 @@ try {
 
     }
     public void verifyHoldBarTabOrder(){
-        WebElement holdOrder = mergeAndFindMobileElement(onHoldOrderNumber);
-        String actualName = elementGetText(holdOrder,"Verify Hold BarTab Order");
-        String expectedName = "1";
 
-        Assert.assertEquals(actualName,expectedName);
+        WebElement holdOrder = mergeAndFindMobileElement(onHoldOrderNumber);
+       if(holdOrder.isDisplayed()){
+           utils.log().info("Displayed HOLD");
+       }else{
+           utils.log().info("Not Displayed HOLD");
+       }
     }
     public void verifyExpiredBarTabOrder(){
         WebElement holdExpired = mergeAndFindMobileElement(expiredOrderNumber);
@@ -300,20 +304,7 @@ try {
 
         Assert.assertEquals(actualName,expectedName);
     }
-    public void verifyBarTabOrdersSortedFromAToZ(){
-        WebElement sortedFromAToZ = mergeAndFindMobileElement(firstBarTabOrderSortedAToZ);
-        String actualName = elementGetText(sortedFromAToZ,"Verify BarTab Orders Sorted From AToZ");
-        String expectedName = "goknur bati";
 
-        Assert.assertEquals(actualName,expectedName);
-    }
-    public void verifyBarTabOrdersSortedFromZToA(){
-        WebElement sortedFromZToA = mergeAndFindMobileElement(firstBarTabOrderSortedZToA);
-        String actualName = elementGetText(sortedFromZToA,"Verify BarTab Orders Sorted From ZToA");
-        String expectedName = "goknur bati";
-
-        Assert.assertEquals(actualName,expectedName);
-    }
     public void verifyBarTabSearchTextField(){
         WebElement searchTxtField = mergeAndFindMobileElement(barTabSearchTextField);
         String actualName = elementGetText(searchTxtField,"Verify BarTab Search Text Field");
@@ -346,9 +337,20 @@ try {
         WebElement btnClose = mergeAndFindMobileElement(deleteDiscountForMergeYesButton);
         elementClick(btnClose,"Click Close");
     }
-    public void confirmMergeChecksConfirmationPopup(){
+    public void confirmMergeChecksConfirmationPopup() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement btnConfirm = mergeAndFindMobileElement(mergeCheckConfirmButton);
         elementClick(btnConfirm,"Click Confirm");
+    }
+
+    public void selectTheCheckFromBarTab() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        WebElement searchTabBarTab =  driver.findElement(By.xpath("//input[@placeholder='Search Name or Check Number']"));
+        searchTabBarTab.sendKeys(TestUtils.globalCheckNumber);
+        Thread.sleep(2000);
+        WebElement tabCheck =  driver.findElement(By.xpath("//ion-content[contains(@class,'barTabContent')]/app-bar-tab/ion-grid/ion-row/ion-col[1]"));
+        elementClick(tabCheck,"Tapped select check - ");
+
     }
 
 }

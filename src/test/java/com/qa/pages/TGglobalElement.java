@@ -817,7 +817,7 @@ public class TGglobalElement {
     String exceedCashAmountPopup = "Cash amount has exceeded the limit.Please make a drop now";
 //    String exceedCashAmountPopup = "//XCUIElementTypeStaticText[@name=\"Cash amount has exceeded the limit.Please make a drop now\"]";
 
-    String yesButton = "Yes";
+    String yesButton = "//button[.=' Yes ']";
 //    String yesButton = "//XCUIElementTypeButton[@name=\"Yes\"]";
 
     //Check Option
@@ -958,7 +958,7 @@ public class TGglobalElement {
     String suspendAccount = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch";
     String activateAccount = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch";
 
-    String holdCheckOption = "Hold";
+    String holdCheckOption = "//label[.='Hold']";
 //    String holdCheckOption = "//XCUIElementTypeStaticText[@name=\"Hold\"]";
 
     String checkOptionPageTitle = "//p[contains(.,'Check Option')]";
@@ -1060,7 +1060,7 @@ public class TGglobalElement {
     String noMorePaymentPopupDoneButton = "Done";
 
     String openCheckButton = "Open Check";
-    String qsrOptionOnCheckStatus = "QSR";
+    String qsrOptionOnCheckStatus = "";
 //    String qsrOptionOnCheckStatus = "//XCUIElementTypeStaticText[@name=\"QSR\"]";
 
     //    String subTotalOnOrderSummary = "//XCUIElementTypeStaticText[@name=\"Sub-Total :\"]";
@@ -1211,9 +1211,9 @@ public class TGglobalElement {
 
     //Hold Screen
 //    String holdManualOption = "//XCUIElementTypeStaticText[@name=\"Manual\"]";
-    String holdManualOption = "Manual";
+    String holdManualOption = "//span[.=' Manual ']";
     //    String holdManuelDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
-    String holdManuelDoneButton = "Done";
+    String holdManuelDoneButton = "//span[.='Done']";
 
     //Menu Item Page
 
@@ -1242,7 +1242,7 @@ public class TGglobalElement {
     String newCheckTab = "//span[contains(.,' New Check ')]";
 //    String newCheckTab = "//XCUIElementTypeStaticText[@name=\"New Check\"]";
 
-    String firstTable = "(//p[contains(.,'T22')])[1]";
+    String firstTable = "(//label[.='T22'])[1]";
 //    String firstTable = "//XCUIElementTypeStaticText[@name=\"T1\"]";
 
     String secondTable = "(//p[contains(.,'T20')])[1]";
@@ -1258,16 +1258,16 @@ public class TGglobalElement {
 
     //String qsrButton = "(//XCUIElementTypeButton[@name=\"QSR\"])[2]";
 
-    String mergeButton = "Merge";
+    String mergeButton = "//div[.='Merge']";
 //    String mergeButton = "//XCUIElementTypeStaticText[@name=\"Merge\"]";
 
-    String transferButton = "Transfer";
+    String transferButton = "//div[.='Transfer']";
 //    String transferButton = "//XCUIElementTypeStaticText[@name=\"Transfer\"]";
 
-    String transferToTableOption = "Transfer to Table";
+    String transferToTableOption = "//p[.='Transfer to Table']";
 //    String transferToTableOption = "/XCUIElementTypeStaticText[@name=\"Transfer to Table\"]";
 
-    String transferItemOption = "Transfer Item";
+    String transferItemOption = "//p[.='Transfer item']";
 //    String transferItemOption = "//XCUIElementTypeStaticText[@name=\"Transfer Item\"]";
 
     String transferedFromTable = "Floor 1-T3";
@@ -1276,7 +1276,7 @@ public class TGglobalElement {
     String transferedToTable = "Transfer to Table";
 //    String transferedToTable = "//XCUIElementTypeStaticText[@name=\"Transfer to Table\"]";
 
-    String transferToServer = "Transfer to Server";
+    String transferToServer = "//p[.='Transfer to Server']";
 //    String transferToServer = "//XCUIElementTypeStaticText[@name=\"Transfer to Server\"]";
 
 
@@ -1382,13 +1382,13 @@ public class TGglobalElement {
     String finishButton = "//button[(@id='os_finish')]";
 //    String finishButton = "//XCUIElementTypeStaticText[@name=\"finish\"]";
 
-    String splitCheckOptionButton = "SPLIT CHECK";
+    String splitCheckOptionButton = "//button[@id='os_splitCheck']";
 //    String splitCheckOptionButton = "//XCUIElementTypeStaticText[@name=\"SPLIT CHECK\"]";
 
-    String splitBySeatOptionOnMenuItemPage = "SPLIT BY SEAT";
+    String splitBySeatOptionOnMenuItemPage = "//button[@id='os_splitSeat']";
 //    String splitBySeatOptionOnMenuItemPage = "//XCUIElementTypeStaticText[@name=\"SPLIT BY SEAT\"]";
 
-    String splitButtonOnMenuItem = "Split";
+    String splitButtonOnMenuItem = "//button[@id='os_split']";
 //    String splitButtonOnMenuItem = "//XCUIElementTypeButton[@name=\"Split\"]";
 
     //    String paymentButtonOnMenuItemPage = "Payment";
@@ -1460,7 +1460,7 @@ public class TGglobalElement {
     String orderedAfterModifyPopupDoneButton = "//button[contains(.,' Done ')]";
 //    String orderedAfterModifyPopupDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
 
-    String gratuityAmountTitle = "Gratuity";
+    String gratuityAmountTitle = "//div[@id='os_gratuityAmountStr']//input";
 //    String gratuityAmountTitle = "Gratuity";
 
     String fixGratuityAmount = "TL 99,99";
@@ -1693,7 +1693,7 @@ public class TGglobalElement {
     String deleteLastSeat = "Delete_Seats";
 //    String deleteLastSeat = "//XCUIElementTypeImage[@name=\"Delete_Seats\"]";
 
-    String lastSeat = "2";
+    String lastSeat = "//button[.=' 2 ']";
 //    String lastSeat = "//XCUIElementTypeStaticText[@name=\"2\"]";
 
     String selectedPhoneToGo = "ToGo";
@@ -1907,12 +1907,12 @@ public class TGglobalElement {
     String cheesePizza = "Cheese Pizza";
 //    String cheesePizza = "//XCUIElementTypeStaticText[@name=\"Cheese Pizza\"]";
 
-    String margarita = "//XCUIElementTypeStaticText[@name=\"**Margarita**\"]";
+    String margarita = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'**Margarita**')])[1]";
 
-    String pizzaTomBasil = "Pizza Tom Basil";
+    String pizzaTomBasil = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Pizza Tom Basil')])[1]";
 //    String pizzaTomBasil = "//XCUIElementTypeStaticText[@name=\"Pizza Tom Basil\"]";
 
-    String pizzaMel = "Pizza Mel";
+    String pizzaMel = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Pizza Mel')])[1]";
 //    String pizzaMel = "//XCUIElementTypeStaticText[@name=\"Pizza Mel\"]";
 
     String defaultTaxAmountOnPizzaMel = "TL 357,00";
@@ -2141,7 +2141,7 @@ public class TGglobalElement {
     //    String itemBasedDiscountBeforeTaxSetPrice = "//XCUIElementTypeStaticText[@name=\"IB-BeforeTax-SetPrice\"]";
     String itemBasedDiscountBeforeTaxSetPrice = "//div[@class='discount-section']//div[contains(.,'IB-BeforeTax-SetPrice')]";
     //    String itemBasedBeforeTaxAsSetPriceDiscountAmountForSandwiches = "//XCUIElementTypeStaticText[@name=\"TL 20,00\"]";
-    String itemBasedBeforeTaxAsSetPriceDiscountAmountForSandwiches = "TL 20,00";
+    String itemBasedBeforeTaxAsSetPriceDiscountAmountForSandwiches = "//div[@id='os_discountAmountStr']//input";
     //    String customerNameOkButton = "//XCUIElementTypeStaticText[@name=\"Ok\"]";
     String customerNameOkButton = "//button[contains(.,' Ok ')]";
     //    String itemBasedAfterTaxAsSetPriceDiscountAmountForChickenSchnitzel = "//XCUIElementTypeStaticText[@name=\"TL 400,00\"]";
@@ -2351,10 +2351,10 @@ public class TGglobalElement {
     String cokeMenuItem = "COKE";
 
     //    String totalText = "//XCUIElementTypeStaticText[@name=\"Total\"]";
-    String totalText = "Total";
+    String totalText = "//div[@id='os_totalAmountStr']//input";
 
     //    String pizzaMelTotalPrice = "//XCUIElementTypeStaticText[@name=\"TL 2.057,00\"]";
-    String pizzaMelTotalPrice = "TL 2.057,00";
+    String pizzaMelTotalPrice = "//div[@id='os_totalAmountStr']//input";
 
     //    String pizzaMargaritaTotalPrice = "//XCUIElementTypeStaticText[@name=\"TL 3.267,00\"]";
     String pizzaMargaritaTotalPrice = "TL 3.267,00";
@@ -2372,13 +2372,13 @@ public class TGglobalElement {
     String gratuityText = "Gratuity";
 
     //    String brushettaFixGratuityPrice = "//XCUIElementTypeStaticText[@name=\"TL 99,99\"]";
-    String brushettaFixGratuityPrice = "TL 99,99";
+    String brushettaFixGratuityPrice = "//div[@id='os_gratuityAmountStr']//input";
 
     //    String brushettaVaryingGratuityPrice = "//XCUIElementTypeStaticText[@name=\"TL 50,00\"]";
     String brushettaVaryingGratuityPrice = "TL 50,00";
 
     //    String hamburgerMenuItem = "//XCUIElementTypeStaticText[@name=\"HAMBURGER\"]";
-    String hamburgerMenuItem = "HAMBURGER";
+    String hamburgerMenuItem = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'HAMBURGER')])[1]";
 
     //    String plusIconForAddSeat = "//XCUIElementTypeButton[@name=\"ADD\"]";
     String plusIconForAddSeat = "ADD";
@@ -2474,7 +2474,7 @@ public class TGglobalElement {
 
     //String posOption = "//XCUIElementTypeStaticText[@name=\"POS\"]";
 //    String operationTitle = "//XCUIElementTypeStaticText[@name=\"Operation\"]";
-    String operationTitle = "Operation";
+    String operationTitle = "(//label[contains(.,'Operation')])[1]";
     //    String batchTipAdjustmentTab = "//XCUIElementTypeStaticText[@name=\"Batch/Tip Adjustment\"]";
     String batchTipAdjustmentTab = "Batch/Tip Adjustment";
     //    String posSettings = "//XCUIElementTypeStaticText[@name=\"POS Settings\"]";
@@ -2558,11 +2558,11 @@ public class TGglobalElement {
     String addNewSeatForSplit = "Add";
     String selectItemInCheck = "(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[1]";
     //    String splitEvenly = "//XCUIElementTypeStaticText[@name=\"Split Evenly\"]";
-    String splitEvenly = "Split Evenly";
+    String splitEvenly = "//div[.='Split Evenly']";
     String firstTotalAmount = "(//XCUIElementTypeStaticText[@name=\"TL 10,00\"])[4]";
     String secondTotalAmount = "(//XCUIElementTypeStaticText[@name=\"TL 5,00\"])[2]";
     //    String separateItemButton = "//XCUIElementTypeStaticText[@name=\"Seperate Item\"]";
-    String separateItemButton = "Seperate Item";
+    String separateItemButton = "//div[.='Separate item']";
     String firstOrderItem = "(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[3]";
     //    String separatedFirstItemAmount = "(//XCUIElementTypeStaticText[@name=\"5,00\"])[1]";
 //    String separatedSecondItemAmount = "(//XCUIElementTypeStaticText[@name=\"5,00\"])[2]";
@@ -2580,10 +2580,10 @@ public class TGglobalElement {
     String selectOrderWarningDoneButton = "Done";
     //    String firstSeatTitle = "//XCUIElementTypeStaticText[@name=\"Seat 1\"]";
     String secondSeatTitle = "(//XCUIElementTypeStaticText[@name=\"Seat 2\"])[2]";
-    String payButtonOnSplitSeat = "//XCUIElementTypeStaticText[@name=\"Pay\"]";
+    String payButtonOnSplitSeat = "//div[.='Pay']";
     //    String payButtonOnSplitSeat = "Pay";
     //    String groupSeatButton = "//XCUIElementTypeStaticText[@name=\"Group Seats\"]";
-    String groupSeatButton = "Group Seats";
+    String groupSeatButton = "//div[.='Group Seats']";
     //    String mergeSeatWarningPopup = "//XCUIElementTypeTextView[@name=\"Select the seats to Merge\"]";
     String mergeSeatWarningPopup = "Select the seats to Merge";
     String firstSeatTotalAmountTitle = "(//XCUIElementTypeStaticText[@name=\"Total\"])[2]";
@@ -2607,7 +2607,7 @@ public class TGglobalElement {
     String splitedOrderForFirstCheck = "(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[3]";
     String splitedOrderForSecondCheck = "(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[4]";
     //    String addButtonForSplit = "//XCUIElementTypeStaticText[@name=\"Add\"]";
-    String addButtonForSplit = "Add";
+    String addButtonForSplit = "//button[@class='add-seat']";
     String firstOrderForSplit = "(//XCUIElementTypeStaticText[@name=\"HAMBURGER \"])[2]";
     String seatForSplit = "(//XCUIElementTypeStaticText[@name=\"Seat 1\"])[3]";
     //    String hamburgerPrice = "//XCUIElementTypeStaticText[@name=\"1.500,00\"]";
@@ -2619,7 +2619,7 @@ public class TGglobalElement {
     String splitBySeatButton = "Split by seat";
     //    String separatedHamburgerPrice = "//XCUIElementTypeStaticText[@name=\"750,00\"]";
     String separatedHamburgerPrice = "750,00";
-    String subtotalForSeatOne = "(//XCUIElementTypeStaticText[@name=\"TL 1.000,00\"])[2]";
+    String subtotalForSeatOne = "//div[@id='os_subTotalStr']//input";
     //    String subtotalForSeatOne = "TL 1.000,00";
     String subtotalForSeatTwo = "(//XCUIElementTypeStaticText[@name=\"TL 1.000,00\"])[2]";
     //    String subtotalForSeatTwo = "TL 1.000,00";
@@ -2640,7 +2640,7 @@ public class TGglobalElement {
     //String firstTable = "//XCUIElementTypeStaticText[@name=\"T1\"]";
     //String tableLayout = "//XCUIElementTypeStaticText[@name=\"Table Layout\"]";
 //    String splitBySeatButtonOnTableLayout = "//XCUIElementTypeStaticText[@name=\"Split By Seat\"]";
-    String splitBySeatButtonOnTableLayout = "Split By Seat";
+    String splitBySeatButtonOnTableLayout = "//button[contains(.,' Split By Seat ')]";
     String firstNumberForSeatOnCalculator = "";
     //String emptyCheck = "//XCUIElementTypeStaticText[@name=\"empty set detail label\"]";
     String printerPopupInfo = "Select the Receipt Printer in Operations/Hard ware Settings";
@@ -2648,7 +2648,7 @@ public class TGglobalElement {
     //String secondTable = "//XCUIElementTypeStaticText[@name=\"T5\"]";
     //String mergeButton = "//XCUIElementTypeStaticText[@name=\"Merge\"]";
 //    String mergeDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
-    String mergeDoneButton = "Done";
+    String mergeDoneButton = "//button[.=' Done ']";
     String mergedTablesPopup = "//XCUIElementTypeStaticText[contains(@name, 'are merged')]";
     String operationButton = "//span[contains(.,'Operation')]";
     //    String doneMergeButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
@@ -2733,23 +2733,23 @@ public class TGglobalElement {
     // Transfer Page
 
     //    String transferToServerButton = "//XCUIElementTypeStaticText[@name=\"Transfer to Server\"]";
-    String transferToServerButton = "Transfer to Server";
+    String transferToServerButton = "//p[.='Transfer to Server']";
     //    String transferItemButton = "//XCUIElementTypeStaticText[@name=\"Transfer Item\"]";
-    String transferItemButton = "Transfer Item";
+    String transferItemButton = "//p[.='Transfer item']";
     String serverOne = "(//XCUIElementTypeStaticText[@name=\"auto c\"])[1]";
     String checkWillBeTransferredOnBarTab = "(//XCUIElementTypeStaticText[@name=\"BarTab\"])[1]";
     String serverTwo = "(//XCUIElementTypeStaticText[@name=\"Karthick T\"])[2]";
     //String yesButton = "//XCUIElementTypeButton[@name=\"Yes\"]";
 //    String transferSuccessMessage = "//XCUIElementTypeTextView[@name=\"Transferred Successfully\"]";
-    String transferSuccessMessage = "Transferred Successfully";
+    String transferSuccessMessage = "//p[.='Transferred Successfully']";
     //String doneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
 //    String barTabOrderForTransfer = "//XCUIElementTypeStaticText[@name=\"0-012 - BarTab\"]";
     String barTabOrderForTransfer = "0-012 - BarTab";
-    String menuItemForTransfer = "//XCUIElementTypeStaticText[@name=\"HAMBURGER \"]";
+    String menuItemForTransfer = "//ion-col[@class='menu-name ion-text-left md hydrated']";
     //    String barTabWillBeTransferTo = "//XCUIElementTypeStaticText[@name=\"0-013 - BarTab\"]";
-    String barTabWillBeTransferTo = "0-013 - BarTab";
+    String barTabWillBeTransferTo = "//*[@id='mat-tab-content-13-1']/div/app-transfer-detail-content/ion-grid/ion-row/ion-col[3]/ul/div[4]/div/div";
     //    String transferToTableButton = "//XCUIElementTypeStaticText[@name=\"Transfer to Table\"]";
-    String transferToTableButton = "Transfer to Table";
+    String transferToTableButton = "//p[.='Transfer to Table']";
     //    String tableWillBeTransferFrom = "//XCUIElementTypeStaticText[@name=\"Floor 1-T1\"]";
     String tableWillBeTransferFrom = "Floor 1-T1";
     String tableWillBeTransferTo = "(//XCUIElementTypeStaticText[@name=\"Walkin\"])[1]";
@@ -2975,7 +2975,7 @@ public class TGglobalElement {
 
     // add new element
 //    String splitCheckPageTitle = "//XCUIElementTypeStaticText[@name=\"Split Check\"]";
-    String splitCheckPageTitle = "Split Check";
+    String splitCheckPageTitle = "(//p[(.=' Split Check ')])";
     String seperatedItem = "//XCUIElementTypeStaticText[@name=\"SANDWICHES \"]";
     //    String splitCheckOnMenuItemPage = "//XCUIElementTypeStaticText[@name=\"SPLIT CHECK\"]";
     String splitCheckOnMenuItemPage = "SPLIT CHECK";
@@ -2991,7 +2991,7 @@ public class TGglobalElement {
 
     //edit element
     String firstSeatTitle = "//XCUIElementTypeStaticText[@name=\"Seat 1\"]";
-    String seatTwoForGroupSeat = "(//XCUIElementTypeStaticText[@name=\"Seat 2\"])[2]";
+    String seatTwoForGroupSeat = "(//ion-col[contains(.,'Seat 2')])[2]";
     //    String voidSandwichesAmount = "//XCUIElementTypeStaticText[@name=\"2.420,02\"]";
     String voidSandwichesAmount = "2.420,02";
     String separatedFirstItemAmount = "(//XCUIElementTypeStaticText[@name=\"500,00\"])[1]";
@@ -3064,10 +3064,10 @@ public class TGglobalElement {
     String separateItemNumber1 = "(//XCUIElementTypeStaticText[@name=\"2\"])[2]";
     String firstSeatTitle1 = "(//XCUIElementTypeStaticText[@name=\"Seat 1\"])[2]";
     //    String pizzaMargaritaTotalPrice1 = "//XCUIElementTypeStaticText[@name=\"TL 2.999,70\"]";
-    String pizzaMargaritaTotalPrice1 = "TL 2.999,70";
+    String pizzaMargaritaTotalPrice1 = "";
     String seatTwoForGroupSeat1 = "Seat 2";
     //    String seatOneForGroupSeat1 = "//XCUIElementTypeStaticText[@name=\"Seat 1\"]";
-    String seatOneForGroupSeat1 = "Seat 1";
+    String seatOneForGroupSeat1 = "(//ion-col[contains(.,'Seat 1')])[2]";
 
     // nov 29
     String ccSidePaymentDetailAmountWithOpenCheckDiscountAfterTaxWithAmountForMargarita1= "1.099,00+10,00";
@@ -3091,7 +3091,7 @@ public class TGglobalElement {
     String firstIteminMenuItemTable = "//XCUIElementTypeStaticText[@name=\"Menu Item\"]/../XCUIElementTypeTable//XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]";
     String secIteminMenuItemTable = "//XCUIElementTypeStaticText[@name=\"Menu Item\"]/../XCUIElementTypeTable//XCUIElementTypeCell[2]//XCUIElementTypeStaticText[1]";
     String thirdIteminMenuItemTable = "//XCUIElementTypeStaticText[@name=\"Menu Item\"]/../XCUIElementTypeTable//XCUIElementTypeCell[3]//XCUIElementTypeStaticText[1]";
-    String firstCheckInChecksTable = "//XCUIElementTypeStaticText[@name=\"Checks\"]/../XCUIElementTypeCollectionView/XCUIElementTypeCell[1]";
+    String firstCheckInChecksTable = "";
     String secondCheckInChecksTable = "//XCUIElementTypeStaticText[@name=\"Checks\"]/../XCUIElementTypeCollectionView/XCUIElementTypeCell[2]";
     String thirdCheckInChecksTable = "//XCUIElementTypeStaticText[@name=\"Checks\"]/../XCUIElementTypeCollectionView/XCUIElementTypeCell[3]";
     String firstElementOfTransferToTable = "//XCUIElementTypeStaticText[@name=\"Transfer To\"]/../XCUIElementTypeTable//XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]";
@@ -3107,7 +3107,7 @@ public class TGglobalElement {
     String tableNameInTheFirstCheckAndTheCheckInChecksTable = "//XCUIElementTypeStaticText[@name=\"Checks\"]/../XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]";
     String serverNameInTheFirstCheckAndTheCheckInChecksTable="//XCUIElementTypeStaticText[@name=\"Checks\"]/../XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[3]";
     String closeBtnFromChecksPopup = "//XCUIElementTypeStaticText[@name=\"X\"]";
-    String offlineServerTransactionConfirmation = "//XCUIElementTypeStaticText[@name=\"Employee is offline   Still Do you want to continue\"]";
+    String offlineServerTransactionConfirmation = "//p[.='Employee is offline, Still Do you want to continue']";
 
 
 

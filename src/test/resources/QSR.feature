@@ -1,4 +1,4 @@
-@RegressionTable @Payments10   @Payment   @VerificationForUSDStore123
+@RegressionTable @Payments10   @Payment   @VerificationForUSDStore123 @RegressionBarTab01
 Feature: QSR feature
 
   Background:
@@ -5990,13 +5990,13 @@ Feature: QSR feature
     And I click Discount as "IB-DiscountAfterTax"
     And I click Back button on Discount Screen
 #    Then User select item based discount after tax with amount
-    And User verify item based discount after tax with amount value as "$ 1.00"
+    And User verify item based discount after tax with amount value as "$ 2.25"
     When User click payment button
     Then User click exact option
     When User click CC Side payment method
     And User select tip amount which is entered
     When User click Continue button
-    Then User verify item based discount after tax value as "18.89+10.00" with amount with CC Side payment in payment screen and with tips for Chicken Schnitzel
+    Then User verify item based discount after tax value as "19.34+10.00" with amount with CC Side payment in payment screen and with tips for Chicken Schnitzel
     When User click submit button
    And I closed the order type window
     #Verify Check Payment through CC Side  with item based discount - After Tax  as set price and with tip

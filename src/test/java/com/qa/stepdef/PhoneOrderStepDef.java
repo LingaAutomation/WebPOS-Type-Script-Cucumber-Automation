@@ -195,6 +195,16 @@ public class PhoneOrderStepDef {
         new PhoneOrderScreen().selectClosedCheckFromClosedTab();
     }
 
+    @And ("^I click the Closed check on check stats11$")
+    public void iClickTheClosedCheckOnCheckStats11() throws InterruptedException {
+        new PhoneOrderScreen().selectClosedCheckFromClosedTab11();
+    }
+
+    @And ("^I click the Active check on check stats11$")
+    public void iClickTheActiveCheckOnCheckStats11() throws InterruptedException {
+        new PhoneOrderScreen().selectClosedCheckFromClosedTab11();
+    }
+
     @And ("^I click the Closed check on check stats1$")
     public void iClickTheClosedCheckOnCheckStats1() throws InterruptedException {
         new PhoneOrderScreen().selectClosedCheckFromClosedTab1();
@@ -235,11 +245,20 @@ public class PhoneOrderStepDef {
     public void iClickClosedCheckInBarTab() throws InterruptedException {
         new PhoneOrderScreen().pressClosedCheckInBarTab();
     }
+
+    @Then ("^I should see closed check in barTab$")
+    public void iShouldSeeClosedCheckInBarTab() throws InterruptedException {
+        new PhoneOrderScreen().shouldSeeClosedCheckInBArTab();
+    }
     @And ("^I click closed check in bar tab1$")
     public void iClickClosedCheckInBarTab1() throws InterruptedException {
         new PhoneOrderScreen().pressClosedCheckInBarTab1();
     }
 
+    @And ("^I click Yes button on the bartab$")
+    public void iClickYesButtonOnTheBarTab() throws InterruptedException {
+        new PhoneOrderScreen().clickYesBtn();
+    }
     @And ("^I click merged barTab$")
     public void iClickMergedBarTab() throws InterruptedException {
         new PhoneOrderScreen().clickMergedBar();

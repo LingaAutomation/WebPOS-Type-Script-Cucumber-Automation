@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 
+import com.qa.utils.TestUtils;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -74,6 +75,8 @@ public class TGTableLayoutPage extends BasePage {
 
     public void selectTableForSplit(){
         WebElement element = mergeAndFindMobileElement(firstTable);
+        TestUtils.tableNumberof = element.getText();
+        utils.log().info(TestUtils.tableNumberof);
         elementClick(element, "click firstTable");
     }
 

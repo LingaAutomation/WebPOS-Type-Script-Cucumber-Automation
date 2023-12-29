@@ -333,10 +333,13 @@ public class OrderTypesStepDef {
     }
 
     @And ("^I click the active check from bar tab$")
-    public void iClickTheActiveCheckFromBarTab(){
+    public void iClickTheActiveCheckFromBarTab() throws InterruptedException {
         new BarTabScreen().clickBarTabCheck();
     }
-
+    @And ("^I click the active check from bar tab1$")
+    public void iClickTheActiveCheckFromBarTab1() throws InterruptedException {
+        new BarTabScreen().clickBarTabCheck1();
+    }
     @When ("^I get he Bussiness date from the order screen$")
     public void iGetHeBussinessDateFromTheOrderScreen(){
         new ClockInScreen().getBussinessDate();
@@ -569,7 +572,7 @@ public class OrderTypesStepDef {
         }
 
         @Then("^Select correct server from the Transfer From Table$")
-        public void selectCorrectServerFromTheTransferFromTable() {
+        public void selectCorrectServerFromTheTransferFromTable() throws InterruptedException {
             new CheckAndItemTransfer().selectTheRequiredServerFromTheListOfServersTableFrom();
         }
 
@@ -579,12 +582,12 @@ public class OrderTypesStepDef {
         }
 
     @And("^Select the required check from the Checks Table for Transfer Server$")
-    public void selectTheRequiredCheckFromTheChecksTableForTransferServer() {
+    public void selectTheRequiredCheckFromTheChecksTableForTransferServer() throws InterruptedException {
         new CheckAndItemTransfer().selectThecheckFromTheTransferServer();
     }
 
         @Then("^Select anyone server from the Transfer To Table$")
-        public void selectAnyoneServerFromTheTransferToTable() {
+        public void selectAnyoneServerFromTheTransferToTable() throws InterruptedException {
             new CheckAndItemTransfer().selectTheTransferredToServerFromTheListOfTransferTo();
         }
 

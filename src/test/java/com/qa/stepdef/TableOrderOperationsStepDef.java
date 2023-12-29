@@ -342,7 +342,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And("^I click Done button on the Popup$")
-    public void iClickDoneButtonOnThePopup(){
+    public void iClickDoneButtonOnThePopup() throws InterruptedException {
         new TableLayOutScreen().pressDone1();
     }
 
@@ -573,8 +573,8 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then("^I should see item transfer successful pop-up$")
-    public void iShouldSeeItemTransferSuccessfulPopUp() {
-        Assert.assertEquals(new TableLayOutScreen().getItemTransferSuccessfulMsg(), "Transferred check success.");
+    public void iShouldSeeItemTransferSuccessfulPopUp() throws InterruptedException {
+        Assert.assertEquals(new TableLayOutScreen().getItemTransferSuccessfulMsg(), "Transferred item success");
     }
 
     @Then("^I should verify that the menu item \"([^\"]*)\" is transferred to the selected server$")
@@ -1100,7 +1100,7 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().selectTheNumberOfSplitItem(number);
     }
     @And ("^I click the Back button on Split Screen$")
-    public void iClickTheBackButtonOnSplitScreen(){
+    public void iClickTheBackButtonOnSplitScreen() throws InterruptedException {
         new TableLayOutScreen().pressBack();
     }
 
@@ -1208,6 +1208,11 @@ public class TableOrderOperationsStepDef {
     @Then ("^I should see the additional seat & Item on the Split Seat$")
     public void iShouldSeeTheAdditionalSeatItemOnTheSplitSeat(){
         new TableLayOutScreen().verify2Table();
+    }
+
+    @Then ("^I should see the additional seat & Item on the Split Seat1$")
+    public void iShouldSeeTheAdditionalSeatItemOnTheSplitSeat1(){
+        new TableLayOutScreen().verify1Table();
     }
 
     @And ("^I click the Group Seats button in the Split Seat$")
@@ -1519,11 +1524,29 @@ public class TableOrderOperationsStepDef {
     public void iShouldSeeDoYouWantToSendHoldMenuItemsToKitchenPopupMessage(){
         Assert.assertEquals(new OrderManagementScreen().getdoYouWantToSendHoldMenuItemToKitchenMsg(),"Do you want to send hold menu item(s) to kitchen?");
     }
+
+    @Then ("^I should see do you want to send hold menu items to kitchen popup message1$")
+    public void iShouldSeeDoYouWantToSendHoldMenuItemsToKitchenPopupMessage1(){
+        Assert.assertEquals(new OrderManagementScreen().getdoYouWantToSendHoldMenuItemToKitchenMsg(),"Do you want to send hold menu item(s) to kitchen?");
+    }
+
+    @Then ("^I should see do you want to send hold menu items to kitchen popup message2$")
+    public void iShouldSeeDoYouWantToSendHoldMenuItemsToKitchenPopupMessage2(){
+        Assert.assertEquals(new OrderManagementScreen().getdoYouWantToSendHoldMenuItemToKitchenMsg2(),"Do you want to send hold item(s) to kitchen ?");
+    }
+    @Then ("^I should see do you want to send hold menu items to kitchen popup message from the order screen$")
+    public void iShouldSeeDoYouWantToSendHoldMenuItemsToKitchenPopupMessageFromTheOrderScreen(){
+        Assert.assertEquals(new OrderManagementScreen().getdoYouWantToSendHoldMenuItemToKitchenMsg1(),"Do you want to send hold item(s) to kitchen ?");
+    }
+
     @And ("^I click Yes button on the popup for Hold item$")
     public void iClickYesButtonOnThePopupForHoldItem(){
         new OrderManagementScreen().pressYesForHold();
     }
-
+//    @And ("^I click Yes button on the popup for Hold item1$")
+//    public void iClickYesButtonOnThePopupForHoldItem1(){
+//        new OrderManagementScreen().pressYesForHold1();
+//    }
 
     /******************* ORDER SCREEN ************************************/
 
@@ -2092,6 +2115,11 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().selectTheCheckFromTableLayout();
     }
 
+    @When ("^I click the check from the table layout screen$")
+    public void iClickTheCheckFromTheTableLayoutScreen() throws InterruptedException {
+        new TableLayOutScreen().selectTheCheckFromTableLayoutS();
+    }
+
     @When ("^I click the check from the table layout for merged$")
     public void iClickTheCheckFromTheTableLayoutForMerged() throws InterruptedException {
         new OrderManagementScreen().clickTheCheckFromTheTableLayoutForMerged();
@@ -2116,8 +2144,13 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().clickTheCheckFromTheTableLayoutForMerged1();
     }
     @Then ("^I should see the Split check screen$")
-    public void iShouldSeeTheSplitCheckScreen(){
+    public void iShouldSeeTheSplitCheckScreen() throws InterruptedException {
         new TableLayOutScreen().verifySplitCheckScren();
+    }
+
+    @Then ("^I should see menu item are moved to split check$")
+    public void iShouldSeeMenuItemAreMovedToSplitCheck() throws InterruptedException {
+        new TableLayOutScreen().shouldSeeMenuItemAreMovedToSplitCheck();
     }
 
     @When ("^I verify the Active check with split check$")
@@ -2193,6 +2226,11 @@ public class TableOrderOperationsStepDef {
     @And ("^I click split button on the bartab screen$")
     public void iClickSplitButtonOnTheBartabScreen(){
         new BarTabScreen().clickSplitBtn();
+    }
+
+    @And ("^I click split check button on the bartab screen$")
+    public void iClickSplitCheckButtonOnTheBartabScreen() throws InterruptedException {
+        new BarTabScreen().clickSplitCheckBtn();
     }
 
     @When ("^I click the check from the bartab screen$")

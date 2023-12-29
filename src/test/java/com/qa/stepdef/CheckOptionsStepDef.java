@@ -146,7 +146,7 @@ public class CheckOptionsStepDef {
     }
 
     @When("^I click Back to return to Order Management Screen$")
-    public void iClickBackToReturnToOrderManagementScreen() {
+    public void iClickBackToReturnToOrderManagementScreen() throws InterruptedException {
         new CheckOptionsScreen().pressBack();
     }
 
@@ -242,7 +242,7 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see the send to kitchen warning popup$")
     public void iShouldSeeTheResendToKitchenWarningPopup() {
-        Assert.assertEquals(new PaymentWindow().getSendToKitchenPopUpTxt(),"Do you want to send hold menu item(s) to kitchen?");
+        Assert.assertEquals(new PaymentWindow().getSendToKitchenPopUpTxt(),"Do you want to send hold item(s) to kitchen ?");
     }
 
     @And("^I click No button on send to kitchen popup$")
@@ -307,9 +307,18 @@ public class CheckOptionsStepDef {
         new OrderManagementScreen().checkTaxExists();
     }
 
+    @And("^I should see the tax reflected to the check1$")
+    public void iShouldSeeTheTaxReflectedToTheCheck1() {
+        new OrderManagementScreen().checkTaxExists1();
+    }
     @When("^I click Tax Exempt Button$")
     public void iClickTaxExemptButton() {
         new CheckOptions().pressTaxExempt();
+    }
+
+    @Then ("^I should not see tax on the order screen$")
+    public void iShouldNotSeeTaxOnTheOrderScreen(){
+        new PaymentWindow().checkTaxExists2();
     }
 
     @And ("^I click Tax Exempt Button from the Payment Screen$")
@@ -334,7 +343,7 @@ public class CheckOptionsStepDef {
 
     @Then("^I should return back to the order management screen and I should not see the tax amount$")
     public void iShouldReturnBackToTheOrderManagementScreenAndIShouldNotSeeTheTaxAmount() {
-//        new CheckOptionsScreen().checkTaxExists();
+        new CheckOptionsScreen().checkTaxExists();
     }
 
     @And("^I click Back button on Tax Exempt window$")
@@ -494,8 +503,13 @@ public class CheckOptionsStepDef {
     }
 
     @And("^I click Back button on Check Options Screen$")
-    public void iClickBackButtonOnCheckOptionsScreen() {
+    public void iClickBackButtonOnCheckOptionsScreen() throws InterruptedException {
         new CheckOptionsScreen().pressBack();
+    }
+
+    @And("^I click Back button on Check Options Screen1$")
+    public void iClickBackButtonOnCheckOptionsScreen1() throws InterruptedException {
+        new CheckOptionsScreen().pressBack1();
     }
 
     @And ("^I click Back button on the gratuity screen$")
@@ -560,7 +574,7 @@ public class CheckOptionsStepDef {
 
     //Can't Hold on this time
     @Then("^I should see warning popup Can't Hold on this time$")
-    public void iShouldSeeWarningPopupCanTHoldOnThisTime() {
+    public void iShouldSeeWarningPopupCanTHoldOnThisTime() throws InterruptedException {
         Assert.assertEquals(new CheckOptionsScreen().getCantHoldOnThisTimeTxt(), "Can't Hold on this time");
     }
 
@@ -797,15 +811,15 @@ public class CheckOptionsStepDef {
 
     @And ("^I click open cash drawer Button$")
     public void iClickOpenCashDrawerButton(){
-        new CheckOptionsScreen().pressOpenCashDrawer();
+        new CheckOptions().pressOpenCashDrawer();
     }
     @And ("^I select fire coursing Button$")
     public void iSelectFireCoursingButton(){
-        new CheckOptionsScreen().pressFireCoursing();
+        new CheckOptions().pressFireCoursing();
     }
     @Then ("^I should see fire coursing$")
     public void iShouldSeeFireCoursing(){
-        Assert.assertEquals(new CheckOptionsScreen().verifyFireCoursing(),"Fire Coursing");
+        Assert.assertEquals(new CheckOptions().verifyFireCoursing(),"Fire Coursing");
     }
     @And ("^I click Coursing Name as \"([^\"]*)\"")
     public void iClickCoursingNameAsEntree(String courseName){

@@ -52,12 +52,30 @@ public class TGCheckOptionPage extends BasePage {
         elementClick(btnVaryingApplyButton,"click varyingApplyButton ");
 
     }
-
+    String firstBarTabOrderSortedAToZ = "(//p[.='auto l'])[1]";
+    String firstBarTabOrderSortedZToA = "(//p[.='Walkin'])[1]";
     public void selectHoldCheckOption(){
         WebElement btnHoldCheckOption=mergeAndFindMobileElement(holdCheckOption);
         elementClick(btnHoldCheckOption,"click holdCheckOption ");
     }
 
+
+    public void verifyBarTabOrdersSortedFromAToZ() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement sortedFromAToZ = driver.findElement(By.xpath(firstBarTabOrderSortedAToZ));
+        String actualName = elementGetText(sortedFromAToZ,"Verify BarTab Orders Sorted From AToZ");
+        String expectedName = "auto l";
+
+        Assert.assertEquals(actualName,expectedName);
+    }
+    public void verifyBarTabOrdersSortedFromZToA() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement sortedFromZToA = mergeAndFindMobileElement(firstBarTabOrderSortedZToA);
+        String actualName = elementGetText(sortedFromZToA,"Verify BarTab Orders Sorted From ZToA");
+        String expectedName = "Walkin";
+
+        Assert.assertEquals(actualName,expectedName);
+    }
     public void enterCoursingPriceAsAsDecimalValue(){
         WebElement btnCoursingPriceTextBox=mergeAndFindMobileElement(coursingPriceTextBox);
         elementClick(btnCoursingPriceTextBox,"click coursingPriceTextBox ");

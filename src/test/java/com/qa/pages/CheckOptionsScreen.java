@@ -31,22 +31,25 @@ public class CheckOptionsScreen extends TableLayOutScreen{
 
 
     // Nov 19
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
+    @FindBy(xpath = "//span[.='Done']")
     WebElement doneHoldBtn;
 
-    @FindBy(xpath = "//button[.=' Cancel ']")
+    @FindBy(xpath = "//button[.='Cancel']")
     WebElement backBtn;
 
-    @FindBy(name = "   Back")
+    @FindBy(xpath = "//button[.='Cancel']")
+    WebElement backBtn1;
+
+    @FindBy(xpath = "   Back")
     WebElement backBtnForFireCoursing;
 
 
 
 
-    @FindBy(name = "Paid amount exceeds the sale amount") //Changed to xpath by Engin...
-    WebElement paidAmountExceedsTxt;                                                                 //because the text couldn't be found with name = id (why!?)
+    @FindBy(xpath = "//p[(.='Paid amount exceeds the sale amount')]") //Changed to xpath by Engin...
+    WebElement paidAmountExceedsTxt;                                                                 //because the text couldn't be found with xpath = id (why!?)
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "//button[contains(.,'Done')]")
     WebElement paidAmountExceedsPopupDoneBtn;
 
 
@@ -55,19 +58,19 @@ public class CheckOptionsScreen extends TableLayOutScreen{
 
 
     // @FindBy(xpath ="//XCUIElementTypeTextView[@name=\"Can't Hold on this time\"]") //Changed to xpath by Engin...
-    @FindBy(name = "Can't Hold on this time")
-    WebElement cantHoldOnThisTimeTxt;                                                   //because the text couldn't be found with name = id (why!?)
+    @FindBy(xpath = "/html/body/div[1]/div[4]/div/mat-dialog-container/app-alertcontent/mat-dialog-content")
+    WebElement cantHoldOnThisTimeTxt;                                                   //because the text couldn't be found with xpath = id (why!?)
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]")
     WebElement coursingNameTxt;
 
-    @FindBy(name = "Gratuity")
+    @FindBy(xpath = "Gratuity")
     WebElement gratuity;
 
-    @FindBy(name = "Enter Value from 5.0 - 15.0")
+    @FindBy(xpath = "Enter Value from 5.0 - 15.0")
     WebElement enterValue;
 
-    @FindBy(name = "Automatic")
+    @FindBy(xpath = "Automatic")
     WebElement automaticBtn;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypePicker[2]/XCUIElementTypePickerWheel")
@@ -76,16 +79,8 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(xpath = "/XCUIElementTypePickerWheel[`value == \"00\"`][2]")
     WebElement minuteDrop1;
 
-    @FindBy(name = "Open Cash Drawer")
-    WebElement openCashDrawerBtn;
 
-    @FindBy(name = "Fire Coursing") //Nov 16
-    WebElement fireCoursingBtn;
-
-    @FindBy(name = "Fire Coursing")
-    WebElement fireCoursingTxt;
-
-    @FindBy(name = "10%")
+    @FindBy(xpath = "10%")
     private WebElement tenPercentage;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextField")
@@ -97,50 +92,50 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTextView")
     private WebElement txtFieldForReasonCheckOption;
 
-    @FindBy(name = "Linga Close")
+    @FindBy(xpath = "Linga Close")
     private WebElement lingaClose;
 
-    @FindBy(name = "Apply")
+    @FindBy(xpath = "Apply")
     private WebElement applyButton;
 
-    @FindBy(name = "Discount")
+    @FindBy(xpath = "Discount")
     private WebElement discountOnOption;
 
-    @FindBy(name = "Item Discount")
+    @FindBy(xpath = "Item Discount")
     private WebElement itemDiscountBtn;
 
-    @FindBy(name = "Check Discount")
+    @FindBy(xpath = "Check Discount")
     private WebElement checkDiscountBtn;
 
 
 
-    @FindBy(name = "Open Check Discount")
+    @FindBy(xpath = "Open Check Discount")
     private WebElement openCheckDiscountIsVisible;
 
-    @FindBy(name = "Percentage")
+    @FindBy(xpath = "Percentage")
     private WebElement percentageCheckOption;
 
-    @FindBy(name = "Amount")
+    @FindBy(xpath = "Amount")
     private WebElement amountCheckOption;
 
-    @FindBy(name = "After")
+    @FindBy(xpath = "After")
     private WebElement afterCheckOption;
 
-    @FindBy(name = "Before")
+    @FindBy(xpath = "Before")
     private WebElement beforeCheckOption;
 
-    @FindBy(name = "Need to Attach Customer")
+    @FindBy(xpath = "Need to Attach Customer")
     private WebElement needToAttachCustomer;
 
-    @FindBy(name = "Item Discount")
+    @FindBy(xpath = "Item Discount")
     private WebElement itemDiscountText;
 
-    @FindBy(name = "Check Discount")
+    @FindBy(xpath = "Check Discount")
     private WebElement checkDiscountText;
 
 
 
-    @FindBy(name = "0000 0000 0000 0000")
+    @FindBy(xpath = "0000 0000 0000 0000")
     private WebElement cardNumber;
 
 
@@ -161,8 +156,8 @@ public class CheckOptionsScreen extends TableLayOutScreen{
 
 
 
-    public String getCantHoldOnThisTimeTxt() {
-
+    public String getCantHoldOnThisTimeTxt() throws InterruptedException {
+Thread.sleep(1000);
         return elementGetText(cantHoldOnThisTimeTxt, "Can't Hold On This Time Txt is - ");
     }
 
@@ -180,12 +175,17 @@ public class CheckOptionsScreen extends TableLayOutScreen{
 
 
 
-    public void pressBack() {
+    public void pressBack() throws InterruptedException {
+        Thread.sleep(2000);
         elementClick(backBtn, "- Back button is tapped");
     }
 
 
 
+    public void pressBack1() throws InterruptedException {
+        Thread.sleep(2000);
+        elementClick(backBtn1, "- Back button is tapped");
+    }
 
 
     public void pressBackForFireCoursing() {
@@ -228,17 +228,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         course.get(0).sendKeys("01");
     }
 
-    public void pressOpenCashDrawer() {
-        elementClick(openCashDrawerBtn, "Tapped Open Cash Drawer Button");
-    }
 
-    public void pressFireCoursing() {
-        elementClick(fireCoursingBtn, "Tapped Fire coursing Button");
-    }
-
-    public String verifyFireCoursing() {
-        return elementGetText(fireCoursingTxt, "Fire coursing is Displayed - ");
-    }
 
     public void pressCoursing(String Entree) {
 
@@ -264,7 +254,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
 
     }
 
-    @FindBy (name = "5")
+    @FindBy (xpath = "5")
     WebElement pin5;
 
 
@@ -314,22 +304,22 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         elementClick(e1, "Tapped as - " + name);
         elementClick(applyButton, "Tapped Apply Button");
     }
-    @FindBy (name = "1")
+    @FindBy (xpath = "1")
     WebElement pin1;
 
-    @FindBy (name = "2")
+    @FindBy (xpath = "2")
     WebElement pin2;
 
-    @FindBy (name = "3")
+    @FindBy (xpath = "3")
     WebElement pin3;
 
-    @FindBy (name = "4")
+    @FindBy (xpath = "4")
     WebElement pin4;
 
-    @FindBy (name = "00")
+    @FindBy (xpath = "00")
     WebElement pin00;
 
-    @FindBy(name = "0")
+    @FindBy(xpath = "0")
     WebElement pin0;
 
     public void passTheAmountForOpenCheckDiscountAsPercentage(String name) {
@@ -564,10 +554,10 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         }
     }
 
-    @FindBy(name = "Auto Varying Gratuity")
+    @FindBy(xpath = "Auto Varying Gratuity")
     WebElement autoGratuityVaryingBtn;
 
-    @FindBy(name = "Auto Fixed Gratuity")
+    @FindBy(xpath = "Auto Fixed Gratuity")
     WebElement autoFixedGratuityBtn;
 
     public void pressAutoGratuityVaryingBtn() {
@@ -614,7 +604,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         }
     }
 
-    @FindBy(name = "Enter Gratuity Percentage")
+    @FindBy(xpath = "Enter Gratuity Percentage")
     WebElement enterGratuityPercentage;
 
 
@@ -781,7 +771,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         }
     }
 
-    @FindBy(name = "Discount exceeds the safety limit")
+    @FindBy(xpath = "Discount exceeds the safety limit")
     WebElement discountExceedsTheSafetyLimit;
 
     public void verifyDiscountExceedLimitPopup() {
@@ -842,7 +832,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
         }
     }
 
-    @FindBy(name = "Continue")
+    @FindBy(xpath = "Continue")
     WebElement continueBtnn;
 
     public String recurringBalanceTxt2 = " ";
@@ -940,7 +930,7 @@ Thread.sleep(4000);
 
     }
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "Done")
     WebElement doneee;
 
     public void clickDoneIfItsSelectable() {

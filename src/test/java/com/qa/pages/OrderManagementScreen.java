@@ -95,10 +95,15 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
     private WebElement holdIcon;
 
-    @FindBy(xpath = "Do you want to send hold menu item(s) to kitchen?")
+    @FindBy(xpath = "//p[.='Hold item(s) has to be sent to kitchen']")
     private WebElement doYouWantToSendHoldMenuItemToKitchen;
 
-    @FindBy(xpath = "Yes")
+    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen ?']")
+    private WebElement doYouWantToSendHoldMenuItemToKitchen2;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div/mat-dialog-container/app-alertcontent/mat-dialog-content")
+    private WebElement doYouWantToSendHoldMenuItemToKitchen1;
+    @FindBy(xpath = "//button[.=' Yes ']")
     private WebElement yesForHold;
 
     @FindBy(xpath = "//p[contains(.,'No More payments Needed')]")
@@ -207,7 +212,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//button//div[contains(.,'Print')]")
     private WebElement printBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
+    @FindBy(xpath = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img")
     private WebElement handIconForHold;
 
     String voidBtn = "//linga-icon/../div[contains(.,'Void')]";
@@ -222,7 +227,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//button[contains(.,' Ordered Wrongly ')]")
     private WebElement orderedWronglyReason;
 
-    @FindBy(xpath = "(//button[contains(.,' Add ')])[2]")
+    @FindBy(xpath = "/html/body/div/div[2]/div/mat-dialog-container/app-voidreason/ion-footer/div[2]/button[2]")
     private WebElement addVoidReasonBtn;
 
     @FindBy(xpath = "(//button[contains(.,' Add ')])[1]")
@@ -665,17 +670,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
         pressArrowDown2();
         Thread.sleep(1500);
         cate =  driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'"+category+"')]"));
-        try {
-            if (cate.isDisplayed()) {
-                elementClick(cate, cate.getText() + " - Selected");
-            } else {
-                scrollToElementCategory("up");
-                elementClick(cate, cate.getText() + " - Selected");
-            }
-        } catch (Exception z) {
-            scrollToElementCategory("down");
-            elementClick(cate, cate.getText() + " - Selected");
-        }
+        elementClick(cate,"Selected - "+cate.getText());
     }
 String xpath = "//XCUIElementTypeStaticText[@name=\"{0}\"]";
 public void selectCatc(String category) throws Exception {
@@ -764,13 +759,9 @@ public  void selectCategory (String value) throws Exception {
         Thread.sleep(2000);
         WebElement e =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
         Thread.sleep(2000);
-        if(e.isDisplayed()) {
-            elementClick(e, "Selected - " + menuItem);
-        }
-        else{
             ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
             elementClick(e, "Selected - " + menuItem);
-        }
+
     }
 
     public void verifyMenuSubTotalAs(String amount) throws InterruptedException {
@@ -1254,21 +1245,25 @@ public  void selectCategory (String value) throws Exception {
     /**********************************/
 
     public void pressFinish(){
-        driver.manage().timeouts().implicitlyWait(16,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         elementClick(finishOrderBtn, "finish button tapped");
     }
 
     /****** Hold operation ******/
     public void assertHold(){
-        if(find(handIconForHold,2)) {
-            utils.log().info("Hold action is verified");}
+        if(handIconForHold.isDisplayed()) {
+            utils.log().info("Hold action is verified");
+        }
         else{
-            utils.log().info("Hold action is not verified, please check logs!");}
+            utils.log().info("Hold action is not verified, please check logs!");
+        }
     }
     public void pressYesForHold(){
         elementClick(yesForHold,"Tapped Yes Button on the Hold Popup");
     }
-
+//    public void pressYesForHold1(){
+//        elementClick(yesForHold1,"Tapped Yes Button on the Hold Popup");
+//    }
     public void pressOptions(){
         elementClick(optionBtn, "Options button is tapped");
     }
@@ -1320,12 +1315,27 @@ public  void selectCategory (String value) throws Exception {
 
     public void checkTaxExists(){
 
-        if(driver.findElements(By.name("Tax")).isEmpty())
+        if(driver.findElements(By.xpath("//div[@id='os_taxAmountStr']//input")).isEmpty())
         {
             utils.log().info("Tax is exempted");
         }
+        else {
+            utils.log().info("Tax is not exempted");
+int w = 1/0;
+        }
+
+    }
+
+    public void checkTaxExists1(){
+
+        if(driver.findElements(By.xpath("//div[@id='os_taxAmountStr']//input")).isEmpty())
+        {
+            utils.log().info("Tax is exempted");
+
+        }
         else
             utils.log().info("Tax is not exempted");
+        int w = 1/0;
     }
 
 
@@ -1374,6 +1384,15 @@ public  void selectCategory (String value) throws Exception {
     public String getdoYouWantToSendHoldMenuItemToKitchenMsg(){
         return elementGetText(doYouWantToSendHoldMenuItemToKitchen,"Do You Want To Send Hold Menu Item is Displayed - ");
     }
+
+    public String getdoYouWantToSendHoldMenuItemToKitchenMsg2(){
+        return elementGetText(doYouWantToSendHoldMenuItemToKitchen2,"Do You Want To Send Hold Menu Item is Displayed - ");
+    }
+
+    public String getdoYouWantToSendHoldMenuItemToKitchenMsg1(){
+        return elementGetText(doYouWantToSendHoldMenuItemToKitchen1,"Do You Want To Send Hold Menu Item is Displayed - ");
+    }
+
     public String getPaymentMadeOnThisCheck(){
         return getText(paymentMadeOnThisCheckPopup,"Payment made on this check is Displayed - ");
     }
@@ -2208,6 +2227,45 @@ public  void selectCategory (String value) throws Exception {
                         Thread.sleep(1000);
                         WebElement x =  driver.findElement(By.xpath("//*[@id=\"multiple-Check\"]/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
                         elementClick(x, "Tapped X Button");
+                    } else {
+
+                    }
+
+
+
+                } else {
+//                    WebElement table1 =  driver.findElement(By.xpath("//p[@id='tableNameId']//label[.='"+m+"']"));
+//                    elementClick(table1, "table SELECTED - " + m);
+                }
+            } catch (Exception w) {
+
+            }
+        }
+    }
+
+    public void verifyTableMergeeTable(String m) throws InterruptedException {
+
+        utils.log().info("M - "+m);
+        Thread.sleep(1000);
+        WebElement tableSelect =  driver.findElement(By.xpath("(//label[.='"+m+"'])[1]"));
+        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
+
+            Thread.sleep(1000);
+            elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
+            try {
+                WebElement checks =  driver.findElement(By.xpath("//ion-title[.='Checks']"));
+
+                if (checks.isDisplayed()) {
+                    Thread.sleep(1000);
+                    String globalCheckNumber = TestUtils.globalCheckNumber;
+
+                    WebElement checkNumberrr =  driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+globalCheckNumber+"']"));
+                    if (checkNumberrr.isDisplayed()) {
+                        Thread.sleep(1000);
+                        elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
+                        Thread.sleep(1000);
+//                        WebElement x =  driver.findElement(By.xpath("//*[@id=\"multiple-Check\"]/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
+//                        elementClick(x, "Tapped X Button");
                     } else {
 
                     }

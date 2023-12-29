@@ -213,6 +213,7 @@ public class TGCheckOptionsStepDef {
         new TGCheckOptionPage().selectHoldCheckOption();
     }
 
+
     @And("User verify option page")
     public void userVerifyOptionPage() {
         new TGCheckOptionPage().verifyCheckOptionPage();

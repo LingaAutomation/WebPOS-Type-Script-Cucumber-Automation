@@ -1,6 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.TGBarTab;
+import com.qa.pages.TGMenuItemPage;
 import com.qa.pages. TGTransferPage;
 
 import io.cucumber.java.en.And;
@@ -25,7 +26,7 @@ public class TGTransferStepDef {
     }
 
     @When("User select server which transfer from")
-    public void userSelectServerWhichTransferFrom() {
+    public void userSelectServerWhichTransferFrom() throws InterruptedException {
         new  TGTransferPage().selectServerWhichTransferFrom();
     }
 
@@ -50,12 +51,12 @@ public class TGTransferStepDef {
     }
 
     @And("User click transfer done button")
-    public void userClickTransferDoneButton() {
+    public void userClickTransferDoneButton() throws InterruptedException {
         new  TGTransferPage().clickTransferDoneButton();
     }
 
     @Then("User select Transfer Item button")
-    public void userSelectTransferItemButton() {
+    public void userSelectTransferItemButton() throws InterruptedException {
         new  TGTransferPage().selectTransferItemButton();
     }
 
@@ -70,7 +71,7 @@ public class TGTransferStepDef {
     }
 
     @And("User select Bar Tab which menu item transferred to")
-    public void userSelectBarTabWhichMenuItemTransferredTo() {
+    public void userSelectBarTabWhichMenuItemTransferredTo() throws InterruptedException {
         new  TGTransferPage().selectBarTabWhichMenuItemTransferredTo();
     }
 
@@ -80,12 +81,17 @@ public class TGTransferStepDef {
     }
 
     @When("User select table which is transfer from")
-    public void userSelectTableWhichIsTransferFrom() {
+    public void userSelectTableWhichIsTransferFrom() throws InterruptedException {
         new  TGTransferPage().selectTableWhichIsTransferFrom();
     }
 
     @And("User select table which is transfer to")
-    public void userSelectTableWhichIsTransferTo() {
+    public void userSelectTableWhichIsTransferTo() throws InterruptedException {
         new  TGTransferPage().selectTableWhichIsTransferTo();
+    }
+
+    @And("I click Done button on the Hold")
+    public void iClickDoneButtonOnTheHold() throws InterruptedException {
+        new TGMenuItemPage().clickDoneButton();
     }
 }

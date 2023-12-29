@@ -2,6 +2,7 @@ package com.qa.stepdef;
 
 import com.qa.pages.TGBarTab;
 
+import com.qa.pages.TGCheckOptionPage;
 import io.cucumber.java.en.*;
 
 public class TGBarTabStepDef {
@@ -11,6 +12,10 @@ public class TGBarTabStepDef {
     @When("User click new tab on Bar tab")
     public void userClickNewTabOnBarTab() {
         barTab.clickNewTab();
+    }
+    @And ("^I select check from the bartab screen$")
+    public void iSelectCheckFromTheBarTabScreen() throws InterruptedException {
+        barTab.selectTheCheckFromBarTab();
     }
 
     @When("User click Transfer option on Bar tab")
@@ -139,13 +144,13 @@ public class TGBarTabStepDef {
     }
 
     @Then("User verify bar tab orders from A to Z")
-    public void userVerifyBarTabOrdersFromAToZ() {
-        barTab.verifyBarTabOrdersSortedFromAToZ();
+    public void userVerifyBarTabOrdersFromAToZ() throws InterruptedException {
+        new TGCheckOptionPage().verifyBarTabOrdersSortedFromAToZ();
     }
 
     @Then("User verify bar tab orders from Z to A")
-    public void userVerifyBarTabOrdersFromZToA() {
-        barTab.verifyBarTabOrdersSortedFromZToA();
+    public void userVerifyBarTabOrdersFromZToA() throws InterruptedException {
+        new TGCheckOptionPage().verifyBarTabOrdersSortedFromZToA();
     }
 
     @And("User verify last customer name as floating on bar tab")
@@ -179,7 +184,7 @@ public class TGBarTabStepDef {
     }
 
     @Then("User confirm merge checks confirmation popup")
-    public void userConfirmMergeChecksConfirmationPopup() {
+    public void userConfirmMergeChecksConfirmationPopup() throws InterruptedException {
         barTab.confirmMergeChecksConfirmationPopup();
     }
 

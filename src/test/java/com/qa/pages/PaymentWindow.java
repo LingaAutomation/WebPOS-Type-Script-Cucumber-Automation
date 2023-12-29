@@ -34,10 +34,10 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//span[contains(.,'Payment methods')]")
     WebElement paymentWindowTitle;
 
-    @FindBy(name = "Do you want to send hold menu item(s) to kitchen?")
+    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen ?']")
     WebElement sendToKitchenPopUpTxt;
 
-    @FindBy(name = "Hold item(s) has to be sent to kitchen")
+    @FindBy(xpath = "//p[.='Hold item(s) has to be sent to kitchen']")
     WebElement holdItemSendToKitchen;
 
     @FindBy(xpath = "//button[contains(@id,'ps_exit')]")
@@ -329,23 +329,25 @@ public class PaymentWindow extends OrderManagementScreen{
         elementClick(taxExemptPayment,"Tapped Tax Exempt Button");
     }
 
+    public void checkTaxExists2() {
+
+        if (driver.findElements(By.xpath("//div[@id='os_taxAmountStr']//input")).isEmpty()) {
+            utils.log().info("Tax is exempted");
+            int w = 1 / 0;
+        } else {
+            utils.log().info("Tax is not exempted");
+
+        }
+    }
+
     public void addGratuityPaymentWindow(){
         elementClick(addGratuityPayment,"Tapped Add Gratuity from Payment Screen");
     }
 
     public void clickHousePaymentBtn() throws Exception {
-        try {
-            if(find(housePaymentBtn,2)){
-                elementClick(housePaymentBtn, "Tapped credit card Payment");
-            }else {
-                scrollToElementPayments(housePaymentBtn, "up");
-                elementClick(housePaymentBtn, "Tapped credit card Payment");
-            }
-        }catch (Exception w){
-            scrollToElementPayments(housePaymentBtn, "down");
+
             elementClick(housePaymentBtn, "Tapped credit card Payment");
-        }
-        //  elementClick(housePaymentBtn,"Tapped House Payment");
+
     }
 
     public void verifyTotalScreen() throws InterruptedException {
@@ -1524,7 +1526,7 @@ elementClick(orderMenu,"Selected Order Menu - "+orderMenu.getText());
     }
 
     public void clickTheCustomerNameOnTheOrderScreen() throws InterruptedException {
-        Thread.sleep(800);
+        Thread.sleep(2000);
         WebElement customerName = driver.findElement(By.xpath("(//p[contains(@class,'tablecommon-label ng-star-inserted')])[2]"));
         String name = customerName.getText();
         elementClick(customerName,"Selected name as - "+name);
