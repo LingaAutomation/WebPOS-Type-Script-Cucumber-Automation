@@ -401,7 +401,7 @@ public class TaxRoundingOff extends ClockInScreen {
 //    @FindBy(xpath = " Back ")
 //    WebElement BackBtn;
 
-    @FindBy(xpath = "//linga-icon[@symbol='clearArrow']/../..")
+    @FindBy(xpath = "//button[contains(.,'Back')]")
     private WebElement BackBtn;
 
 
@@ -2921,6 +2921,21 @@ public class TaxRoundingOff extends ClockInScreen {
         elementClick(ContinueBtn, "Selected continue button");
     }
 
+    public void iSelectedTheVoidQuantity(String quantity) {
+
+        String quantityValue =  "(//span[.="+quantity+"])";
+        elementClick(quantityValue, "Entered the quantity");
+
+        elementClick(ContinueBtn, "Selected continue button");
+    }
+
+    public void iVerifyTheModifierVoidQuantity(String quantity) {
+
+        WebElement ModifierVoidQty = driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container')]//div[@class='modifier-section']/div[3])[2]"));
+        String ModifierVoidQuantity = ModifierVoidQty.getText();
+        Assert.assertEquals(quantity,ModifierVoidQuantity);
+    }
+
     public void verifyIfTaxAndDiscountAreCalculatedProperly(double taxAmount, double discountAmount) {
         WebElement menuItemAmount1 =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount3 = menuItemAmount1.getText();
@@ -4187,6 +4202,7 @@ public class TaxRoundingOff extends ClockInScreen {
         //double b = menuItemAmount3 - (menuItemAmount3 / (1+a));
 
         BigDecimal dd = new BigDecimal(a).setScale(2, RoundingMode.HALF_UP);
+
         BigDecimal tt = new BigDecimal(a).setScale(4, RoundingMode.HALF_UP);
 
         double aa = dd.doubleValue();
@@ -6836,7 +6852,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public String discountCalculationSetPriceType(Double Disc1,Double Disc2) {
 
-        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount3 = menuItemAmount1.getText();
 
         double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
@@ -6858,7 +6874,7 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public String discountCalculationPercentageType(Double Disc1,Double Disc2) {
 
-        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+        WebElement menuItemAmount1 =  driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount3 = menuItemAmount1.getText();
 
         double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
@@ -8124,6 +8140,21 @@ public class TaxRoundingOff extends ClockInScreen {
 //        elementClick(ContinueBtn, "Selected continue button");
     }
 
+    public void iReduceTheQtyOfModifierConversational()
+    {
+//        WebElement sides =  driver.findElement(By.xpath()("//XCUIElementTypeButton[@name=\"-\"]");
+//        elementClick(sides,"Selected Sides" );
+
+        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
+//       WebElement modifierQtyReduce =  driver.findElement(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeButton[1]");
+        WebElement modifierQtyReduce =  driver.findElement(By.xpath("(//div[contains(@id,'conversational')]//div//div//button)[1]//span[1]"));
+        modifierQtyReduce.click();
+//        WebElement quantityValue =  driver.findElement(By.xpath(quantity);
+//        elementClick(quantityValue, "Entered the quantity");
+//
+//        elementClick(ContinueBtn, "Selected continue button");
+    }
+
     public void VerifyIfDiscountIsCalculatedCorrectlyAfter100PercentDiscountIsApplied()
 
     {
@@ -8205,7 +8236,9 @@ public class TaxRoundingOff extends ClockInScreen {
         if (phoneOrders.isDisplayed()){
             elementClick(phoneOrders,"Tapped Closed Checks");
             utils.log().info(globalCheckNumber + " - Closed Check is displayed in closed tab");
-        }else {
+        }
+
+        else {
             utils.log().info("Closed check is not displayed");
         }
     }
@@ -8436,6 +8469,91 @@ public class TaxRoundingOff extends ClockInScreen {
 
 
         double totalTax = bb + aa1;
+        BigDecimal totalTax1 = new BigDecimal(totalTax).setScale(2, RoundingMode.HALF_UP);
+        double totalTax2 = totalTax1.doubleValue();
+
+        DecimalFormat d00 = new DecimalFormat("0.00");
+        String ExpectedTax = d00.format(totalTax2);
+        utils.log().info("Expected Tax is " + ExpectedTax);
+
+        WebElement ActualTaxAmount = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
+        String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual tax is " + ActualTax3);
+
+        Assert.assertEquals(ExpectedTax, ActualTax3);
+    }
+
+    public void VerifyIfInclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTax(double taxPercent, double modifierTaxPercent, double checkTaxPercent) {
+        //Menu Amount
+        WebElement menuItemAmount1 = driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
+        String menuItemAmount3 = menuItemAmount1.getText();
+
+        double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
+
+        //Modifier Amount
+        WebElement modifierAmount = driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container')]//div[@class='modifier-section']/div[5])[1]"));
+        String modifierAmount1 = modifierAmount.getText();
+        utils.log().info("modifier Amount is " + modifierAmount1);
+        double modifierAmount2 = Double.parseDouble(modifierAmount1);
+
+        //define discount percentage
+        //double DiscountAmount = 5;
+
+        WebElement subTotalAmount3 = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmount2 = subTotalAmount3.getAttribute("value");
+        String subTotalAmount1 = subTotalAmount2.replaceAll("[A-Z$ ]", "");
+
+        double subTotalAmount = Double.parseDouble(subTotalAmount1);
+
+//        double discountAmount = subTotalAmount * discPerc;
+//
+//        double subTotalAfterDisc = subTotalAmount - discountAmount;
+//
+//        double menuDiscountAmount = (menuItemAmount4 / subTotalAmount) * discountAmount;
+//
+//        double menuAfterDisc = menuItemAmount4 - menuDiscountAmount;
+//        BigDecimal menuAfterDisc1 = new BigDecimal(menuAfterDisc).setScale(2, RoundingMode.HALF_UP);
+//        double menuAfterDiscount = menuAfterDisc1.doubleValue();
+//
+//        double modifierDiscountAmount = (modifierAmount2 / subTotalAmount) * discountAmount;
+//
+//        double modifierAfterDisc = modifierAmount2 - modifierDiscountAmount;
+//        BigDecimal modifierAfterDisc1 = new BigDecimal(modifierAfterDisc).setScale(2, RoundingMode.HALF_UP);
+//        double modifierAfterDiscount = modifierAfterDisc1.doubleValue();
+
+        double taxAmount = menuItemAmount4 * taxPercent;
+        utils.log().info("Exact Tax is " + taxAmount);
+
+        BigDecimal menuTaxValue1 = new BigDecimal(taxAmount).setScale(2, RoundingMode.HALF_UP);
+        double menuTaxValue2 = menuTaxValue1.doubleValue();
+
+        BigDecimal dd = new BigDecimal(taxAmount).setScale(4, RoundingMode.HALF_UP);
+        double bb = dd.doubleValue();
+        utils.log().info("Tax1 is " + bb);
+
+        //modifierTax
+        double modifierAmount3 = modifierAmount2 - (modifierAmount2 / (1 + modifierTaxPercent));
+//        double modifierAmount3 = modifierAmount2 * modifierTaxPercent;
+
+        BigDecimal modTaxValue1 = new BigDecimal(modifierAmount3).setScale(2, RoundingMode.HALF_UP);
+        double modTaxValue2 = modTaxValue1.doubleValue();
+        BigDecimal dd1 = new BigDecimal(modifierAmount3).setScale(4, RoundingMode.HALF_UP);
+        double aa1 = dd1.doubleValue();
+        utils.log().info("Tax2 is " + aa1);
+
+        double totalWithTax = menuItemAmount4 + modifierAmount2;
+        utils.log().info("menu amt is " + menuItemAmount4);
+        utils.log().info("Menu tax is " + menuTaxValue2);
+        utils.log().info("Modifier tax is " + modTaxValue2);
+        utils.log().info("Total with Tax is " + totalWithTax);
+
+        double checkTaxamount = totalWithTax * checkTaxPercent;
+        BigDecimal ddd1 = new BigDecimal(checkTaxamount).setScale(4, RoundingMode.HALF_UP);
+        double aaa1 = ddd1.doubleValue();
+        utils.log().info("Check Tax is " + aa1);
+
+        double totalTax = bb + aa1 + aaa1;
         BigDecimal totalTax1 = new BigDecimal(totalTax).setScale(2, RoundingMode.HALF_UP);
         double totalTax2 = totalTax1.doubleValue();
 

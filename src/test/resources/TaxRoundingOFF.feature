@@ -425,6 +425,7 @@ Feature: TaxRoundOff
     And Verify if the balance due amount is displayed correctly
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
+
 #  Scenario: Check RoundOff value for open item with check tax
 #    And
 
@@ -1466,46 +1467,6 @@ Feature: TaxRoundOff
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-#  @setfour
-#  @aaaa
-#  Scenario: Netsale amount showing two different values under sale recap report
-#    And I get check number
-#    And I select Tax category
-#    And I select menu item as "Inclusive Menu 1"
-#    And I select modifier as "inclusiveModi1"
-#    And I select modifier as "inclusiveModi2"
-#    And I click Done to get back
-#    And I select menu item as "Inclusive Menu 2"
-#    And I select modifier as "inclusiveModi1"
-#    And I select modifier as "inclusiveModi2"
-#    And I click Done to get back
-#    And I select menu item as "Inclusive Menu 3"
-#    And I click Cash button for Complete Sale
-#    And I click Exact button on the cash pop-up
-#    And I click Enter Button on the cash pop-up
-#    And I closed the order type window
-#    And I select Tax category
-#    And I select menu item as "Inclusive Menu 3"
-#    And I click Cash button for Complete Sale
-#    And I click Exact button on the cash pop-up
-#    And I click Enter Button on the cash pop-up
-
-#  @setfour
-#  Scenario: While applying the check discount as before tax type for inclusive menu item and modifier - The Modifier discount tax amount is getting subtracted twice in the Sale Reports-same for Exclusive tax
-#    And I get check number
-#    And I select Tax category
-#    And I select menu item as "Inclusive Menu 5"
-#    And I select modifier as "InclusiveModi10"
-#    And I click Done to get back
-#    And I select Discount on the Order screen
-#    Then I should see Check Based Discount Screen
-#    And I click Discount as "CheckBasedBeforeTaxDis45"
-#    And I click Back button on Discount Screen
-#    And I click Cash button for Complete Sale
-#    And I click Exact button on the cash pop-up
-#    And I click Enter Button on the cash pop-up
-
-#  @setfour
 
   @basicTaxScenarios
   Scenario: Check RoundOff value for menu item ($0) along with modifier (exclusive tax)
@@ -2213,18 +2174,156 @@ Feature: TaxRoundOff
       And I Selected submit button
       And I click log off button in order screen
 
+  @tic1
   Scenario: TS-12 -> Unable to change the serving size after place menu item, its added new on the selection
     And I have selected category arrow
     And Select the category "PIZZA"
     And Select the menu item "PEPPERONI PIZZA"
     And I selected the serving size as "MEDIUM"
-#   And I click Done button on the open item window
-    And I click Discount as "free item disc"
-    And I selected cancel button
+#    And I selected the modifier2 "CHEESE"
+#    And I selected the modifier2 "GREEN PEPPER"
+    And I click Done button on the open item window
+    And I selected menu options
+    And I selected the back button
+    And I selected the serving size as "SMALL"
+    And I click Done button on the open item window
+#    And I selected cancel button
     And Verify if exclusive tax "0.05623" is calculated properly and calculate roundoff
-    And Verify if the total value is calculated correctly exc when free item amount is "1"
+    And Verify if the total value is calculated correctly
     And Verify if the balance due value is calculated correctly
     And Verify if the balance due value is displayed correctly after payment
     And I click log off button in order screen
 
+@tic
+  Scenario: TS-4 -> Unable to apply the item discount for special menu item
+    And I have selected category arrow
+    And Select the category "PIZZA"
+    And Select the menu item "Special Combo Menu"
+    And Select the menu item "pizza supreme"
+    And Select the menu item "pizza dominator"
+#    And Apply the check discount "check discount 24%"
+    And I click Discount as "20% Discount"
+    And I selected cancel button
+    And Verify if tax "0.20" "0.0622" is calculated properly and calculate round-off
+    And Verify if the total amount is calculated correctly
+    And Verify if the balance due amount is calculated correctly
+    And Verify if the balance due amount is displayed correctly after payment
+    And I click log off button in order screen
 
+  @disc20
+  Scenario: TS-14 -> Unable to add discount again while void the menu item partially
+    And I have selected category arrow
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu33"
+    And I selected the modifier "Bbq"
+    And I click Done button on the open item window
+    And I selected quantity as "5"
+    And I click Discount as "20% Discount"
+    And I selected cancel button
+    And I selected order button
+    And I selected menu options
+    And I selected void button in menu options
+    And I selected void quantity as "2"
+    And Select the Void item reason as "Server Error"
+    And Verify if tax "0.20" "0.05623" is calculated properly and calculate round-off
+    And I click Discount as "20% Discount"
+    And I selected cancel button
+    And I click Discount as "20% Discount"
+    And I selected cancel button
+    And Verify if tax "0.20" "0.05623" is calculated properly and calculate round-off
+    And Verify if the total amount is calculated correctly
+    And Verify if the balance due amount is calculated correctly
+    And Verify if the balance due amount is displayed correctly after payment
+    And I click log off button in order screen
+
+    @13
+  Scenario: TS-13 -> Modifier quantity shows wrong in voided menu item
+    And I have selected category arrow
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu33"
+    And I selected the modifier "Bbq"
+    And I click Done button on the open item window
+    And I selected quantity as "5"
+    And I selected order button
+    And I click Discount as "20% Discount"
+    And I selected cancel button
+    And I selected menu options
+    And I selected void button in menu options
+    And I selected void quantity as "2"
+    And Select the Void item reason as "Server Error"
+    And Verify if the modifier voided quantity "2" is displayed correctly
+    And Verify if tax "0.20" "0.05623" is calculated properly and calculate round-off
+    And Verify if the total amount is calculated correctly
+    And Verify if the balance due amount is calculated correctly
+    And Verify if the balance due amount is displayed correctly after payment
+    And I click log off button in order screen
+
+      @22
+  Scenario: TS-22 -> Tax value & Total is display wrongly when Apply check tax (Apply on subtotal) with Inclusive tax
+    And I have selected category arrow
+    And Select the category "IceCreams"
+    And Select the menu item "Rajbhog"
+    And Check the amount of menu item "520.00"
+    And I selected the modifier2 "CHEESE"
+#    And Verify if exclusive tax menu "0.05555" exclusive tax modifier "0.07777" and discount "0.20" are calculated properly
+    And Verify if exclusive tax menu "0.10255" inclusive tax modifier "0.08655" check tax "0.12444" are calculated properly
+    And Verify if the balance due amount is displayed correctly
+    And Verify if the balance due amount is displayed correctly after the payment
+    And I click log off button in order screen
+
+    @25
+  Scenario: TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+    And I have selected category arrow
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu33"
+    And I selected the modifier "Bbq"
+    And I click Done button on the open item window
+    And I selected quantity as "5"
+    And I selected order button
+    And I click Discount as "20% Discount"
+    And I selected cancel button
+    And I selected menu options
+    And I selected void button in menu options
+    And I selected void quantity as "2"
+    And Select the Void item reason as "Server Error"
+
+    @97
+  Scenario: TS-97 -> Unable to Create Open modifier, Open Discount for the open menu item
+    And Selected Options button
+    And Selected Open item option
+    And Selected Coursing name field
+    And I swipe to "DESSERT" Coursing Name
+    And I entered course name
+    And I selected the Price text field
+    And I entered the price
+    And I selected the Continue button
+    And I selected the Tax
+    And I selected the Exclusive Tax
+    And I click Done button on the open item window
+    And I selected menu options
+    And I selected Open Discount
+    And I tapped the percentage field
+    And I entered the discount percentage
+    And I selected the Continue button
+    And I tapped reason and entered the reason
+    #And I click "Hide keyboard" button in the keyboard "Click Back"
+    And I selected the apply button
+    And Verify If Tax "0.1345" Is Calculated Properly And Calculate RoundOff for Open Discount "0.10255" Exclusive
+    And Verify if the total amount is calculated correctly for exclusive open discount
+    And Verify if the balance due amount is displayed correctly
+    And Verify if the balance due amount is displayed correctly after the payment
+    And I click log off button in order screen
+
+      @71
+  Scenario: TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+    And I have selected category arrow
+    And Select the category "FOOD ITEMS"
+    And Select the menu item "testing menu33"
+    And I selected the modifier "Bbq"
+    And I click Done button on the open item window
+    And I selected quantity as "5"
+    And I selected menu options
+    And I selected the back button
+    #And I verify if the modifier price "2.00" is correct for the second modifier
+    And I reduced one quantity of the modifier conversational
+    And I selected the modifier "Bbq"

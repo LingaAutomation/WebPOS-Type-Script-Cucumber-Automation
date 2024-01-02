@@ -119,6 +119,15 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^Verify if exclusive tax menu \"([^\"]*)\" inclusive tax modifier \"([^\"]*)\" check tax \"([^\"]*)\" are calculated properly$")
+    public void VerifyIfTheInclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTax(double taxPercent, double modifierTaxPercent, double checkTaxPercent) {
+        new TaxRoundingOff().VerifyIfInclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTax(taxPercent, modifierTaxPercent, checkTaxPercent);
+
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^Verify if exclusive tax menu \"([^\"]*)\" exclusive tax modifier \"([^\"]*)\" and percentage discount \"([^\"]*)\" are calculated properly$")
     public void VerifyIfTheExclusiveTaxAndDiscountArecalculatedProperlyPercBT(double taxPercent, double modifierTaxPercent, double discAmt) {
         new TaxRoundingOff().VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyPercBT(taxPercent, modifierTaxPercent, discAmt);
@@ -918,6 +927,20 @@ public class TaxRoundingOffStepDef {
     @And("^I selected quantity as \"([^\"]*)\"$")
     public void iSelectedQuantity(String quantity) throws InterruptedException {
         new TaxRoundingOff().iSelectedTheQuantity(quantity);
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^I selected void quantity as \"([^\"]*)\"$")
+    public void iSelectedVoidQuantity(String quantity) throws InterruptedException {
+        new TaxRoundingOff().iSelectedTheVoidQuantity(quantity);
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^Verify if the modifier voided quantity \"([^\"]*)\" is displayed correctly$")
+    public void iVerifyModifierVoidQuantity(String quantity) throws InterruptedException {
+        new TaxRoundingOff().iVerifyTheModifierVoidQuantity(quantity);
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
@@ -1899,6 +1922,13 @@ public class TaxRoundingOffStepDef {
     public void iReduceQtyOfModifier() throws InterruptedException {
 
         new TaxRoundingOff().iReduceTheQtyOfModifier();
+
+    }
+
+    @And("^I reduced one quantity of the modifier conversational$")
+    public void iReduceQtyOfModifierConversational() throws InterruptedException {
+
+        new TaxRoundingOff().iReduceTheQtyOfModifierConversational();
 
     }
 

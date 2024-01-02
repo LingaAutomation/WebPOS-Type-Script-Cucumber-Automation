@@ -1,0 +1,23 @@
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:45.090 Hooks:44 - Start Scenario Name : TS-97 -> Unable to Create Open modifier, Open Discount for the open menu item
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:45.285 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:45.356 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:45.443 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:45.512 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:45.576 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:46.930 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:47.004 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:47.189 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:47.405 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:47.789 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:47.910 BasePage:399 - I tapped 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:47.985 BasePage:399 - I tapped 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.090 BasePage:399 - I tapped 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.146 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.223 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.285 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.338 BasePage:424 - Quantity Tax is selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.417 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.532 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.627 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:48.686 BasePage:424 - I selected percenntage option
+[${ctx:ROUTINGKEY} INFO ] 2023-12-29 12:08:56.795 Hooks:56 - Failed Scenario Name : TS-97 -> Unable to Create Open modifier, Open Discount for the open menu item

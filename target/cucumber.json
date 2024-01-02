@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 519111000,
+              "duration": 496408000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1068276000,
+              "duration": 1066166000,
               "status": "passed"
             },
             "line": 6,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2023-12-21T13:04:02.543Z",
+        "start_timestamp": "2024-01-02T08:08:03.827Z",
         "before": [
           {
             "result": {
-              "duration": 50244322000,
+              "duration": 50907187000,
               "status": "passed"
             },
             "match": {
@@ -48,14 +48,14 @@
             }
           }
         ],
-        "line": 2188,
-        "name": "TS-11 -\u003e Open Discount not shows while reopening the check \u0026 hence shows Balance due",
+        "line": 2318,
+        "name": "TS-71 -\u003e If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity",
         "description": "",
-        "id": "taxroundoff;ts-11--\u003e-open-discount-not-shows-while-reopening-the-check-\u0026-hence-shows-balance-due",
+        "id": "taxroundoff;ts-71--\u003e-if-trying-to-increase-the-quantity-for-the-menu-item-with-mandatory-modifier-group--allowing-to-increase-the-quantity-for-modifier-more-than-menu-quantity",
         "after": [
           {
             "result": {
-              "duration": 1207000,
+              "duration": 3751000,
               "status": "passed"
             },
             "match": {
@@ -68,22 +68,10 @@
         "steps": [
           {
             "result": {
-              "duration": 37707000,
+              "duration": 61049000,
               "status": "passed"
             },
-            "line": 2189,
-            "name": "I get check number",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iGetCheckNumber()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 69620000,
-              "status": "passed"
-            },
-            "line": 2190,
+            "line": 2319,
             "name": "I have selected category arrow",
             "match": {
               "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedCategoryArrow()"
@@ -92,10 +80,10 @@
           },
           {
             "result": {
-              "duration": 5099736000,
+              "duration": 5083431000,
               "status": "passed"
             },
-            "line": 2191,
+            "line": 2320,
             "name": "Select the category \"FOOD ITEMS\"",
             "match": {
               "arguments": [
@@ -110,15 +98,15 @@
           },
           {
             "result": {
-              "duration": 5096385000,
+              "duration": 5106702000,
               "status": "passed"
             },
-            "line": 2192,
-            "name": "Select the menu item \"testing menu15\"",
+            "line": 2321,
+            "name": "Select the menu item \"testing menu33\"",
             "match": {
               "arguments": [
                 {
-                  "val": "testing menu15",
+                  "val": "testing menu33",
                   "offset": 22
                 }
               ],
@@ -128,10 +116,58 @@
           },
           {
             "result": {
-              "duration": 80974000,
+              "duration": 5077918000,
               "status": "passed"
             },
-            "line": 2193,
+            "line": 2322,
+            "name": "I selected the modifier \"Bbq\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bbq",
+                  "offset": 25
+                }
+              ],
+              "location": "com.qa.stepdef.TaxRoundingOffStepDef.selectTheModifier(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80027000,
+              "status": "passed"
+            },
+            "line": 2323,
+            "name": "I click Done button on the open item window",
+            "match": {
+              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickDoneButtonOnTheOpenItemWindow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 297170000,
+              "status": "passed"
+            },
+            "line": 2324,
+            "name": "I selected quantity as \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 24
+                }
+              ],
+              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedQuantity(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82555000,
+              "status": "passed"
+            },
+            "line": 2325,
             "name": "I selected menu options",
             "match": {
               "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedMenuOptions()"
@@ -140,249 +176,43 @@
           },
           {
             "result": {
-              "duration": 67938000,
+              "duration": 67587000,
               "status": "passed"
             },
-            "line": 2194,
-            "name": "I selected Open Discount",
+            "line": 2326,
+            "name": "I selected the back button",
             "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedOpenDiscount()"
+              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedTheBackButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1156604000,
+              "duration": 54770000,
               "status": "passed"
             },
-            "line": 2195,
-            "name": "I tapped the percentage field",
+            "line": 2328,
+            "name": "I reduced one quantity of the modifier conversational",
             "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iTappedThePercentageField()"
+              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iReduceQtyOfModifierConversational()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 185355000,
+              "duration": 5046106000,
               "status": "passed"
             },
-            "line": 2196,
-            "name": "I entered the discount percentage",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iEnteredTheDiscountPercentage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 52649000,
-              "status": "passed"
-            },
-            "line": 2197,
-            "name": "I selected the Continue button",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedTheContinueButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 204975000,
-              "status": "passed"
-            },
-            "line": 2198,
-            "name": "I tapped reason and entered the reason",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iTappedReasonAndEnteredTheReason()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82971000,
-              "status": "passed"
-            },
-            "line": 2200,
-            "name": "I selected the apply button",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedTheApplyButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 57329000,
-              "status": "passed"
-            },
-            "line": 2201,
-            "name": "Verify If Tax \"0.1345\" Is Calculated Properly And Calculate RoundOff for Open Discount \"0.10255\" Exclusive",
+            "line": 2329,
+            "name": "I selected the modifier \"Bbq\"",
             "match": {
               "arguments": [
                 {
-                  "val": "0.1345",
-                  "offset": 15
-                },
-                {
-                  "val": "0.10255",
-                  "offset": 88
+                  "val": "Bbq",
+                  "offset": 25
                 }
               ],
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.VerifyIfTheTaxIsCalculatedProperlyAndCalculateRoundOffOpenDiscountExclusive(double,double)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 43060000,
-              "status": "passed"
-            },
-            "line": 2202,
-            "name": "Verify if the total amount is calculated correctly for exclusive open discount",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.VerifyIfTheTotalAmountIsCalculatedCorrectlyExclusiveOpenDiscount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1150554000,
-              "status": "passed"
-            },
-            "line": 2203,
-            "name": "Verify if the balance due amount is displayed correctly",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.VerifyIfTheBalanceDueAmountIsDisplayedCorrectly()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1283487000,
-              "status": "passed"
-            },
-            "line": 2204,
-            "name": "Verify if the balance due amount is displayed correctly after the payment",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.VerifyIfTheBalanceDueAmountIsCalculatedCorrectlyAfterThePayment()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 144453000,
-              "status": "passed"
-            },
-            "line": 2205,
-            "name": "Select the All option",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedTheAllOption()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 70840000,
-              "status": "passed"
-            },
-            "line": 2207,
-            "name": "I click Closed tab on the Check stats",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iSelectedTheClosedTab()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2536671000,
-              "status": "passed"
-            },
-            "line": 2208,
-            "name": "I should see closed check in closed check tab",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iShouldSeeClosedCheckInClosedCheckTab()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2093456000,
-              "status": "passed"
-            },
-            "line": 2209,
-            "name": "I click reopen check button on the check stats screen",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iClickReopenCheckButtonOnTheCheckStatsScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1412370000,
-              "status": "passed"
-            },
-            "line": 2210,
-            "name": "Verify If Tax \"0.1345\" Is Calculated Properly And Calculate RoundOff for Open Discount \"0.10255\" Exclusive",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0.1345",
-                  "offset": 15
-                },
-                {
-                  "val": "0.10255",
-                  "offset": 88
-                }
-              ],
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.VerifyIfTheTaxIsCalculatedProperlyAndCalculateRoundOffOpenDiscountExclusive(double,double)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35973000,
-              "status": "passed"
-            },
-            "line": 2211,
-            "name": "Verify if the total amount is calculated correctly for exclusive open discount",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.VerifyIfTheTotalAmountIsCalculatedCorrectlyExclusiveOpenDiscount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1106698000,
-              "status": "passed"
-            },
-            "line": 2212,
-            "name": "Verify if the balance due amount is displayed correctly reopen payment done already",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.VerifyIfTheBalanceDueAmountIsDisplayedCorrectlyReopenPaymentDone()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1093494000,
-              "status": "passed"
-            },
-            "line": 2213,
-            "name": "I Selected submit button",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.SelectTheSubmitButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 72438000,
-              "status": "passed"
-            },
-            "line": 2214,
-            "name": "I click log off button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.TaxRoundingOffStepDef.iClickLogOffButtonInOrderScreen()"
+              "location": "com.qa.stepdef.TaxRoundingOffStepDef.selectTheModifier(java.lang.String)"
             },
             "keyword": "And "
           }
@@ -392,7 +222,7 @@
             "name": "@TaxRoundOffTypeScriptWebPOS"
           },
           {
-            "name": "@dddr"
+            "name": "@71"
           }
         ]
       }
