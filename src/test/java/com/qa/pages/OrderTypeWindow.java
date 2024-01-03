@@ -174,11 +174,16 @@ public class OrderTypeWindow extends ClockInScreen {
             utils.log().info("Existing Sale is not Visible");
         }
     }
-
-    public void pressOrderListWithSale(String menu) {
-
-            WebElement e = mergeAndFindElement("(//XCUIElementTypeTable[@name=\""+menu+" \"]","",TestUtils.XPath);
-                elementClick(e,"Tapped Order List");
+    public String txt;
+    public void pressOrderListWithSale(String menu) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        WebElement e= driver.findElement(By.xpath("//div[contains(@class,'p-col-4 orderlist-menuname')]"));
+        utils.log().info(e.getText());
+        if(e.getText().equals(menu)) {
+            elementClick(e, "Tapped Menu Items to see Menu Option Screen");
+        }else{
+            utils.log().info("Not Displayed Menu Option Screen");
+        }
 
     }
 

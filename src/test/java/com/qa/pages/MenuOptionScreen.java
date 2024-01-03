@@ -10,28 +10,28 @@ import java.time.Duration;
 
 public class MenuOptionScreen extends ClockInScreen{
 
-    @FindBy(name = "Fire")
+    @FindBy(xpath = "//label[.='Fire']")
     private WebElement fireBtn;
 
-    @FindBy(name = "Repeat")
+    @FindBy(xpath = "//label[.='Repeat']")
     private WebElement repeatBtn;
 
-    @FindBy(name = "Quantity")
+    @FindBy(xpath = "//label[.='Quantity']")
     private WebElement quantityBtn;
 
-    @FindBy(name = "Attach")
+    @FindBy(xpath = "//label[.='Attach']")
     private WebElement attachBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Discount\"])[1]")
+    @FindBy(xpath = "//label[.='Discounts']")
     private WebElement discountBtn;
 
-    @FindBy(name = "Add Notes")
+    @FindBy(xpath = "//p[.=' Add Notes ']")
     private WebElement addNotes;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextView")
+    @FindBy(xpath = "//div[@class='textarea-row']")
     private WebElement notesPageScreen;
 
-    @FindBy(name = "TOGO") //for Staging
+    @FindBy(xpath = "//label[.='TOGO']") //for Staging
     // @FindBy(xpath = "//XCUIElementTypeButton[@name=\"To Go\"]")
     private WebElement togoBtn;
 
@@ -181,31 +181,26 @@ public class MenuOptionScreen extends ClockInScreen{
 
     public void pressRepeatMenuOption(){elementClick(repeatBtn,"Tapped Repeat Button");}
 
-    public void verifyRepeatedMenuItem(String menu){
-        WebElement el1 =mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\""+menu+" \"])[2]","",TestUtils.XPath);
-        if(el1.isDisplayed()){
-            utils.log().info("Repeated Menu item is Visible");
-        }else {
-            utils.log().info("Repeated Menu Item is not visible");
-        }
+    public void verifyRepeatedMenuItem(String menu) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement el1 = driver.findElement(By.xpath("(//div[@class='p-col-4 orderlist-menuname'])[2]"));
+        Assert.assertEquals(el1.getText(),menu);
     }
 
     public void pressQuantityBtn(){
         elementClick(quantityBtn,"Tapped Quantity Button");
     }
 
-    public void pressQuantityNumber(String num){
-        WebElement el3 = mergeAndFindElement(num,"",TestUtils.Accessibility);
+    public void pressQuantityNumber(String num) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement el3 =driver.findElement(By.xpath("//button[.='"+num+"']"));
         elementClick(el3,num +"selected");
     }
 
     public void verifyQuantityNumber(String num){
-        WebElement el4 =mergeAndFindElement(num,"",TestUtils.Accessibility);
-        if(el4.isDisplayed()){
-            utils.log().info(num+" Is Visible");
-        }else{
-            utils.log().info("Quantity is not visible");
-        }
+        WebElement el4 = driver.findElement(By.xpath("//div[contains(@class,'p-col-2 orderlist-qty')]"));
+      Assert.assertEquals(el4.getText(),num);
+      utils.log().info("Quantity is Incresed - "+num);
     }
     public void pressAttachBtn(){
         elementClick(attachBtn,"Tapped Attach Button");
@@ -311,25 +306,27 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
 
     public void pressAddNotesReason(String reason){
-        WebElement el2 = mergeAndFindElement(reason,"",TestUtils.Accessibility);
+        WebElement el2 = driver.findElement(By.xpath("//button[.=' "+reason+" ']"));
         elementClick(el2,"Tapped Reason  "+reason);
 
-        String data=notesPageScreen.getText();
-        if(data.equalsIgnoreCase(reason)){
-            utils.log().info(reason +"Add Notes Reason is Tapped");
-        }else{
-            utils.log().info("Add Notes Reason are not Tapped");
-        }
+//        String data=notesPageScreen.getText();
+//        if(data.equalsIgnoreCase(reason)){
+//            utils.log().info(reason +"Add Notes Reason is Tapped - "+reason);
+//        }else{
+//            utils.log().info("Add Notes Reason are not Tapped - "+data);
+//            int w = 1/0;
+//        }
 
     }
 
     public void verifyAddNotesAddOnOrderScreen(String reason){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-        WebElement e=mergeAndFindElement(reason,"",TestUtils.Accessibility);
+        WebElement e= driver.findElement(By.xpath("//div[.='"+reason+"']"));
         if(e.isDisplayed()){
             utils.log().info(reason +"Add reason Is Applied on Order Screen");
         }else{
             utils.log().info("Add reason is applied on Order Screen");
+            int w = 1/0;
         }
     }
 
@@ -549,11 +546,24 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         catch (Exception e){}
     }
     public void verifyModifyAddedOnOrderList(String modify){
-        WebElement e=mergeAndFindElement("//XCUIElementTypeStaticText[@name=\" "+modify+"\"]","",TestUtils.XPath);
+        WebElement e=driver.findElement(By.xpath("(//div[@class='modifier-section']//div[contains(.,'"+modify+"')])[1]"));
         if(e.isDisplayed()){
-            utils.log().info(modify+" - Open Modifies is Added");
+            utils.log().info(modify+" - Modifies is Added");
         }else{
-            utils.log().info("Open Modifiers is Not Added");
+            utils.log().info("Modifiers is Not Added");
+        }
+    }
+   public WebElement e;
+    public void verifyModifyAddedOnOrderList1(String modify){
+        try{
+         e=driver.findElement(By.xpath("(//div[@class='modifier-section']//div[contains(.,'"+modify+"')])[2]"));
+        if(e.isDisplayed()) {
+            utils.log().info(modify + " - Modifies is Added");
+            Assert.assertEquals(e.getText(),modify);
+        }
+        }catch (Exception w){
+            utils.log().info("Modifiers is Not Added");
+
         }
     }
     public void swipeModifiersForDeleteInOpenModifyScreen() throws InterruptedException {

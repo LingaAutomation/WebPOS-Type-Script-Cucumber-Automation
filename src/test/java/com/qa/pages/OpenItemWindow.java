@@ -15,7 +15,7 @@ import java.util.List;
 public class OpenItemWindow extends OrderManagementScreen{
 
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]")
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div/mat-dialog-container/app-open-item/ion-content/ion-grid/ion-row[1]/ion-col[2]/mat-form-field/div/div[1]/div/mat-select/div/div[2]")
     WebElement coursingNameTxt;
 
     @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]" )
@@ -35,8 +35,6 @@ public class OpenItemWindow extends OrderManagementScreen{
 
 
 
-    @FindBy( name = "7% Sales Tax")
-    WebElement percent7Tax;
 
 
 
@@ -58,9 +56,6 @@ public class OpenItemWindow extends OrderManagementScreen{
     }
 
 
-    public void selectTax(){
-        elementClick( percent7Tax, "%7 Tax is selected - ");
-    }
 
 
 

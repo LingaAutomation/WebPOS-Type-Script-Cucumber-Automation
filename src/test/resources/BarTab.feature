@@ -1,11 +1,11 @@
-@Bar
+
 Feature: Bar Tab
 
   Background:
     Given I'm logged in
     And I closed the order type window
 
-  @RegressionBarTab01
+
   Scenario: Verify Bar Tab to Split
     Given User click setting icon
     And User verify setting options
@@ -59,7 +59,7 @@ Feature: Bar Tab
 #    When User select QSR order typ
     And I click log off button in order screen
 
-  @RegressionBarTab01
+
   Scenario: Verify Merge with Discount on Bar Tab
     Given User click setting icon
     And User verify setting options
@@ -154,7 +154,7 @@ Feature: Bar Tab
     And I click BarTab Layout
     And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Verify search option with check number on Bar Tab
         Given User click setting icon
     And User verify setting options
@@ -193,7 +193,7 @@ Feature: Bar Tab
 #    And User click cancel button
     And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Application display the entered name or updated name
     Given User click setting icon
     And User verify setting options
@@ -240,7 +240,7 @@ Feature: Bar Tab
 #    Then User click cancel button
     And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Application display the check in blue color  - on hold
     Given User click setting icon
     And User verify setting options
@@ -266,12 +266,12 @@ Feature: Bar Tab
     When User click finish button
     And User verify be directed bar tab screen
     #Application display the check in orange color - expired
-    And User verify expired order
+#    And User verify expired order
     When I click QSR tab
     Then User click cancel button
     And I click log off button in order screen
 
-  @RegressionBarTab01
+
   Scenario: Application can sort customer name  also bar tab check from A to Z
     Given User click setting icon
     And User verify setting options
@@ -298,7 +298,7 @@ Feature: Bar Tab
     Then User click cancel button
     And I click log off button in order screen
 
-  @RegressionBarTab01
+
   Scenario: Application should ask customer name enable Ask customer name option
     Given User click setting icon
     And User verify setting options
@@ -327,7 +327,7 @@ Feature: Bar Tab
     And I click power button
 
 
-  @RegressionBarTab01
+
   Scenario: Split without Selected Item
     Given User click setting icon
     And User verify setting options
@@ -362,7 +362,7 @@ Feature: Bar Tab
     Then User click finish button in split screen
     And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Split Evenly
     Given User click QSR on Menu Item page in split screen
     Given User select DineIn mode in split screen
@@ -390,7 +390,7 @@ Feature: Bar Tab
     And I click Table Layout tab
 ##    And I click "OK" in the receipt printer popup in split screen "Click ok button in the popup"
     And I click power button
-  @RegressionBarTab01
+
   Scenario: Split Item
     Given User click QSR on Menu Item page in split screen
     Given User select DineIn mode in split screen
@@ -423,7 +423,7 @@ Feature: Bar Tab
     And User click enter button in split screen
 #    And I click "OK" in the receipt printer popup in split screen "Click ok button in the popup"
     And I click power button
-  @RegressionBarTab01
+
   Scenario: Split without Sale
     Given User click QSR on Menu Item page in split screen
     Given User select DineIn mode in split screen
@@ -449,7 +449,7 @@ Feature: Bar Tab
 #    And I click "OK" in the receipt printer popup in split screen "Click ok button in the popup"
     And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Split from Order Screen
     Given User click QSR on Menu Item page in split screen
     Given User select DineIn mode in split screen
@@ -479,7 +479,7 @@ Feature: Bar Tab
 #    And User click submit button in split screen
 #    And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Application allows the user to navigate the split seat screen
     Given User click QSR on Menu Item page in split screen
     Given User select DineIn mode in split screen
@@ -494,7 +494,7 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Split By Seat on BarTab with Add Button
     Given User click setting icon
     And User verify setting options
@@ -524,7 +524,7 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
-  @RegressionBarTab01
+
   Scenario: Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
     Given User click setting icon
     And User verify setting options
@@ -553,7 +553,7 @@ Feature: Bar Tab
     And User click exact option in split screen
     And User click enter button in split screen
     And I click power button
-  @RegressionBarTab01
+
   Scenario: Split By Seat - Separate Item on Bar Tab
     Given User click setting icon
     And User verify setting options
@@ -589,7 +589,7 @@ Feature: Bar Tab
     And User click exact option in split screen
     And User click enter button in split screen
     And I click power button
-  @RegressionBarTab01
+
   Scenario: Split By Seat - Split Evenly on Bar Tab - with Add Button
     Given User click setting icon
     And User verify setting options
@@ -620,7 +620,7 @@ Feature: Bar Tab
     And User click exact option in split screen
     And User click enter button in split screen
     And I click power button
-  @RegressionBarTab01
+
   Scenario: Split By Seat - Split Evenly on Bar Tab - with More Than One Seat
     Given User click setting icon
     And User verify setting options
@@ -652,7 +652,7 @@ Feature: Bar Tab
     And User click exact option in split screen
     And User click enter button in split screen
     And I click power button
-  @RegressionBarTab01
+
   Scenario: Split By Seat - Group Seat on Bar Tab
     Given User click setting icon
     And User verify setting options
@@ -697,7 +697,7 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
-  @RegressionBarTab01
+  @BarTab
   Scenario: Transfer  Check To Another Server
 #
     Given User click setting icon

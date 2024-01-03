@@ -40,14 +40,11 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(xpath = "//button[.='Cancel']")
     WebElement backBtn1;
 
-    @FindBy(xpath = "   Back")
+    @FindBy(xpath = "(//span[(.='Cancel')])[2]")
     WebElement backBtnForFireCoursing;
 
 
-
-
-    @FindBy(xpath = "//p[(.='Paid amount exceeds the sale amount')]") //Changed to xpath by Engin...
-    WebElement paidAmountExceedsTxt;                                                                 //because the text couldn't be found with xpath = id (why!?)
+                                                            //because the text couldn't be found with xpath = id (why!?)
 
     @FindBy(xpath = "//button[contains(.,'Done')]")
     WebElement paidAmountExceedsPopupDoneBtn;
@@ -67,8 +64,7 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(xpath = "Gratuity")
     WebElement gratuity;
 
-    @FindBy(xpath = "Enter Value from 5.0 - 15.0")
-    WebElement enterValue;
+
 
     @FindBy(xpath = "Automatic")
     WebElement automaticBtn;
@@ -150,11 +146,6 @@ public class CheckOptionsScreen extends TableLayOutScreen{
 
 
 
-    public String getPaidAmountExceedsTxt() {
-        return elementGetText(paidAmountExceedsTxt, "Paid amount exceeds text is - ");
-    }
-
-
 
     public String getCantHoldOnThisTimeTxt() throws InterruptedException {
 Thread.sleep(1000);
@@ -175,10 +166,7 @@ Thread.sleep(1000);
 
 
 
-    public void pressBack() throws InterruptedException {
-        Thread.sleep(2000);
-        elementClick(backBtn, "- Back button is tapped");
-    }
+
 
 
 
@@ -203,18 +191,10 @@ Thread.sleep(1000);
 
     /****** Verifications ******/
 
-    public void verifyPaidAmountExceeds() {
-        if (paidAmountExceedsTxt.isDisplayed()) {
-            utils.log().info("Paid amount exceeds pop-up is thrown");
-        } else {
-            utils.log().info("Paid amount exceeds pop-up is not thrown");
-        }
-    }
 
 
-    public String enterValueAccordingBo() {
-        return elementGetText(enterValue, "Enter value txt is displayed - ");
-    }
+
+
 
     public void pressAutomaticBtn() {
         elementClick(automaticBtn, "Tapped Automatic Hold Button");
@@ -232,7 +212,7 @@ Thread.sleep(1000);
 
     public void pressCoursing(String Entree) {
 
-        WebElement courseName =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + Entree + "\"]"));
+        WebElement courseName =  driver.findElement(By.xpath("//button[contains(.,' "+Entree+" ')]"));
         elementClick(courseName, "Tapped Course Name in the Fire Coursing");
     }
 

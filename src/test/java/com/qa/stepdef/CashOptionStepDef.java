@@ -1,10 +1,12 @@
 package com.qa.stepdef;
 
+import com.qa.pages.CheckOptions;
 import com.qa.pages.TillManagementScreen;
 import com.qa.pages.cashOption;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class CashOptionStepDef {
 
@@ -49,5 +51,11 @@ public class CashOptionStepDef {
     @When ("^i verify service charge with tax of menu$")
     public void iVerifyServiceChargeWithTaxOfMenu(){
         new cashOption().getServiceChargeWithTax();
+    }
+
+    @And("I should see Paid amount exceeding the sale amount popup")
+    public void iShouldSeePaidAmountExceedingTheSaleAmountPopup() {
+        new CheckOptions().verifyPaidAmountExceeds1();
+        Assert.assertEquals(new CheckOptions().getPaidAmountExceedsTxt1(), "Paid Amount exceeding Sale Amount");
     }
 }

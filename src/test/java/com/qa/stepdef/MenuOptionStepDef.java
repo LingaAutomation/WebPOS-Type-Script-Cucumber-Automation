@@ -1,10 +1,7 @@
 package com.qa.stepdef;
 
-import com.qa.pages.CheckOptionsScreen;
-import com.qa.pages.MenuOptionScreen;
-import com.qa.pages.OrderManagementScreen;
-import com.qa.pages.OrderTypeWindow;
-import com.qa.utils.TestUtils;
+import com.qa.pages.*;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -32,7 +29,7 @@ public class MenuOptionStepDef {
     }
 
     @Then("^I should see Repeated menu item as \"([^\"]*)\"$")
-    public void iShouldSeeRepeatedMenuItemAs(String MenuItem){
+    public void iShouldSeeRepeatedMenuItemAs(String MenuItem) throws InterruptedException {
         new MenuOptionScreen().verifyRepeatedMenuItem(MenuItem);
     }
 
@@ -42,7 +39,7 @@ public class MenuOptionStepDef {
     }
 
     @And ("^I click \"([^\"]*)\"$")
-    public void iClick(String number){
+    public void iClick(String number) throws InterruptedException {
         new MenuOptionScreen().pressQuantityNumber(number);
     }
 
@@ -112,8 +109,13 @@ public class MenuOptionStepDef {
         new MenuOptionScreen().pressTogoBtn();
     }
     @Then ("^I should see menu item with Togo Logo$")
-    public void iShouldSeeMenuItemWithTogoLogo(){
-        new OrderManagementScreen().verifyTickIcon();
+    public void iShouldSeeMenuItemWithTogoLogo() throws InterruptedException {
+        new OrderManagementScreen().togoIcon();
+    }
+
+    @Then ("^I should not see menu item with Togo Logo$")
+    public void iShouldNotSeeMenuItemWithTogoLogo() throws InterruptedException {
+        new OrderManagementScreen().togoIcon1();
     }
     @And ("^I click Open Discount on menu option$")
     public void iClickOpenDiscountOnMenuOption(){
@@ -194,6 +196,12 @@ public class MenuOptionStepDef {
     public void iShouldSeeModifierAsAppliedOnOrderScreen(String Modifiers){
         new MenuOptionScreen().verifyModifyAddedOnOrderList(Modifiers);
     }
+
+    @Then ("^I should not see modifier as \"([^\"]*)\" applied on order screen$")
+    public void iShouldNotSeeModifierAsAppliedOnOrderScreen(String Modifiers){
+        new MenuOptionScreen().verifyModifyAddedOnOrderList1(Modifiers);
+    }
+
     @And ("^I swipe the modifiers for Delete in open modifiers screen$")
     public void iSwipeTheModifiersForDeleteInOpenModifiersScreen() throws InterruptedException {
         new MenuOptionScreen().swipeModifiersForDeleteInOpenModifyScreen();
@@ -237,4 +245,13 @@ public class MenuOptionStepDef {
     public void iShouldSeeDiscountExceedsTheSafetyLimitPopup(){
         new CheckOptionsScreen().verifyDiscountExceedLimitPopup();
     }
+
+//    @And("I should see Paid amount exceeding the sale amount popup")
+//    public void iShouldSeePaidAmountExceedingTheSaleAmountPopup() {
+//        new CheckOptions().verifyPaidAmountExceeds1();
+//        Assert.assertEquals(new CheckOptions().getPaidAmountExceedsTxt1(), "Paid Amount exceeding Sale Amount");
+//
+//    }
+
+
 }

@@ -1,0 +1,61 @@
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:02.327 Hooks:43 - Start Scenario Name : Remove- Tax Exempt from Order Screen/Payment Screen.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:02.380 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:02.415 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:02.443 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:02.472 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:02.500 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:03.591 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:03.633 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:05.005 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:05.097 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:05.136 BasePage:278 - T15 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:05.185 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:05.229 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:06.278 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:07.825 BasePage:258 - Salad Category selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:11.877 BasePage:278 - Selected - CAESAR
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:14.945 BasePage:278 - Selected - Anchovy
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:14.985 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:15.034 BasePage:278 - - Tax Exempt is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:15.091 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:15.145 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:17.230 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:17.272 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:17.311 BasePage:278 - - Tax Exempt is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:17.344 PaymentWindow:338 - Tax is not exempted
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:17.360 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:17.404 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:17.953 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:20.987 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:21.004 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:21.037 BasePage:278 - T15 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:21.073 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:21.106 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:21.174 OrderManagementScreen:1710 - 101-002
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:22.194 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:23.730 BasePage:258 - Salad Category selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:27.805 BasePage:278 - Selected - CAESAR
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:30.906 BasePage:278 - Selected - Anchovy
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:30.944 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:30.980 BasePage:278 - - Tax Exempt is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:31.017 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:31.586 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:31.644 BasePage:278 - Payment  selected
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:32.196 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:35.247 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:36.491 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:36.554 BasePage:278 - Closed Checks list is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:41.674 PhoneOrderScreen:374 - 1
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:41.686 BasePage:258 - Tapped Closed Check in closed tab - 101-002
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:41.716 BasePage:278 - Tapped Reopen check stats button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:45.758 TableLayOutScreen:729 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:45.772 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:45.808 BasePage:278 - - Tax Exempt is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:02:45.836 PaymentWindow:338 - Tax is not exempted
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:03:05.911 CheckOptionsScreen:199 - Done button
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:03:05.943 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:03:06.001 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:03:06.569 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:03:09.625 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:03:10.969 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2023-12-30 00:03:12.026 BasePage:49 - Power button is clicked

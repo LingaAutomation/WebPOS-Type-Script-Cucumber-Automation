@@ -1,5 +1,6 @@
 package com.qa.pages;
 import com.qa.utils.TestUtils;
+import io.cucumber.java.it.Ma;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -55,12 +56,13 @@ public class Discount extends BasePage{
     public void pressDiscount1(String discount){
         sendKeys(convertWebElement(searchFldDiscount),discount);
 
-        WebElement e1=mergeAndFindElement("(//XCUIElementTypeStaticText[@name=\"Check Based Amount\"])[2]","",TestUtils.XPath);
+        WebElement e=driver.findElement(By.xpath("//span[contains(.,' "+discount+" ')]"));
 
-        if (e1.isDisplayed()) {
-            elementClick(e1,discount +" Selected");
+        if (e.isDisplayed()){
+            elementClick(e,discount +" Selected");
         }else{
-            utils.log().info("Discount is not selected");
+            utils.log().info("Not discplayed - "+discount);
+            int w = 1/ 0;
         }
     }
     public String discountPage() throws InterruptedException {
@@ -110,31 +112,54 @@ public class Discount extends BasePage{
     }
 
     public void verifyMenuItemPrice(String value,String value1,String discount,String discount1) throws InterruptedException {
+        Thread.sleep(2000);
+        utils.log().info(value+value1+discount+discount1);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        utils.log().info("Discount - " + discount1);
         Thread.sleep(1000);
-        WebElement e11 = driver.findElement(By.xpath("(//div[contains(@class,'p-col-3 text-pos-end ')])[1]"));
-        utils.log().info(e11.getText());
-        String data = e11.getText().replaceAll(",", "").substring(0);
-        float price = Float.parseFloat(data);
+        WebElement e11 = driver.findElement(By.xpath("(//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[@class='p-col-3 text-pos-end '])[1]"));
+        String data = e11.getText();
+        Assert.assertEquals(data, value);
+        double price = Double.parseDouble(data);
+        utils.log().info("Price - " + price);
         Thread.sleep(1000);
-        WebElement e12 = driver.findElement(By.xpath("(//div[contains(@class,'p-col-3 text-pos-end ')])[2]"));
-        utils.log().info(e12.getText());
-        String data1 = e12.getText().replaceAll(",", "").substring(0);
-        float price1 = Float.parseFloat(data1);
+
+        WebElement e12 = driver.findElement(By.xpath("(//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[@class='p-col-3 text-pos-end '])[2]"));
+        String data1 = e12.getText();
+        Assert.assertEquals(data1, value1);
+        double price1 = Double.parseDouble(data1);
+        utils.log().info("Price 1 - " + price1);
         Thread.sleep(1000);
-        if (discount1.equalsIgnoreCase("Least")) {
-            if (price < price1) {
-                utils.log().info(discount + " - Discount is applied " + value + " on menu Item "+discount1+" expensive");
+
+
+        if (discount1.equals("Least")) {
+           double minim =  Math.min(price,price1);
+            utils.log().info("Mini- " + minim);
+            if (minim == price) {
+                WebElement discountt = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[.='" + value + "']/../..//div[@class='discount-section']//div[.='" + discount + "']"));
+                utils.log().info(discountt.getText());
+                Assert.assertEquals(discountt.getText(), discount);
+                utils.log().info(discount + " - Discount is applied " + value + " on menu Item " + discount1 + " expensive");
             } else {
-                utils.log().info(discount + " Discount is not applied");
+                WebElement discountt = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[.='" + value1 + "']/../..//div[@class='discount-section']//div[.='" + discount + "']"));
+                utils.log().info(discountt.getText());
+                Assert.assertEquals(discountt.getText(), discount);
+                utils.log().info(discount + " - Discount is applied " + value1 + " on menu Item " + discount1 + " expensive");
             }
-        }
-        Thread.sleep(1000);
-        if (discount1.equalsIgnoreCase("Most")) {
-            if (price1 > price) {
-                utils.log().info(discount + " - Discount is applied " + value1 + " on menu Item "+discount1+" expensive");
+            Thread.sleep(1000);
+        } else if (discount1.equals("Most")) {
+            double maxi =  Math.max(price,price1);
+            utils.log().info("Maxi- " + maxi);
+            if (maxi == price) {
+                WebElement discountt = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[.='" + value + "']/../..//div[@class='discount-section']//div[.='" + discount + "']"));
+                utils.log().info(discountt.getText());
+                Assert.assertEquals(discountt.getText(), discount);
+                utils.log().info(discount + " - Discount is applied " + value + " on menu Item " + discount1 + " expensive");
             } else {
-                utils.log().info(discount + " Discount is not applied");
+                WebElement discountt = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[.='" + value1 + "']/../..//div[@class='discount-section']//div[.='" + discount + "']"));
+                utils.log().info(discountt.getText());
+                Assert.assertEquals(discountt.getText(), discount);
+                utils.log().info(discount + " - Discount is applied " + value1 + " on menu Item " + discount1 + " expensive");
             }
         }
     }

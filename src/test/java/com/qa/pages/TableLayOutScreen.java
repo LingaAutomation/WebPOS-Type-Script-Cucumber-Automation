@@ -1091,9 +1091,20 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(NoThanksBtn, "Tapped No Thanks button ");
     }
 
-    public void selectModifiersFromModifyScreen(String Modifier) {
-        WebElement modify = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Modifier + "\"])[2]"));
-        if (find(modify, 2)) {
+    public void selectModifiersFromModifyScreen(String Modifier) throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement modify = driver.findElement(By.xpath("(//li[(.='# "+Modifier+"')])[1]"));
+        if (modify.isDisplayed()) {
+            utils.log().info(modify + " Modifiers add into Select Modifiers");
+        } else {
+            utils.log().info("Modifiers Not Add into Select Modifiers");
+        }
+    }
+
+    public void selectModifiersFromModifyScreen1(String Modifier) throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement modify = driver.findElement(By.xpath("(//li[(.='# "+Modifier+"')])[5]"));
+        if (modify.isDisplayed()) {
             utils.log().info(modify + " Modifiers add into Select Modifiers");
         } else {
             utils.log().info("Modifiers Not Add into Select Modifiers");
@@ -1101,12 +1112,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void swipeTheModifiers() throws InterruptedException {
-        swipe(884, 561, 810, 561, 1000);
-
+    WebElement elemet = driver.findElement(By.xpath("//div[@class='remove-icon dngr']"));
+    elementClick(elemet,"Selected X");
     }
 
     public void clickDeleteBtn() {
-        elementClick(deleteBtn, "Tapped Delete Button");
+        WebElement elemet = driver.findElement(By.xpath("//div[@class='remove-icon dngr']"));
+        elementClick(elemet,"Selected X");
     }
 
     public void pressMergeSlider() {

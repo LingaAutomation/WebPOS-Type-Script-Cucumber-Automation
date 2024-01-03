@@ -418,7 +418,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see the customer profile window$")
-    public void iShouldSeeTheCustomerProfileWindow(){
+    public void iShouldSeeTheCustomerProfileWindow() throws InterruptedException {
         Assert.assertEquals(new OrderManagementScreen().verifyCustomerProfile(),"Customer Profile");
     }
 
@@ -1516,7 +1516,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click Order List with Menu item as \"([^\"]*)\"$")
-    public void iClickOrderListWithMenuItemAs(String Name){
+    public void iClickOrderListWithMenuItemAs(String Name) throws InterruptedException {
         new OrderManagementScreen().pressOrderListWithSale(Name);
     }
 
@@ -1700,8 +1700,13 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().selectModifierForMoreTime(maxModify);
     }
     @Then ("^I should see modifiers added in the Selected modifiers as \"([^\"]*)\"$")
-    public void iShouldSeeModifiersAddedInTheSelectedModifiersAs(String name){
+    public void iShouldSeeModifiersAddedInTheSelectedModifiersAs(String name) throws InterruptedException {
         new TableLayOutScreen().selectModifiersFromModifyScreen(name);
+    }
+
+    @Then ("^I should see modifiers added in multi times the Selected modifiers as \"([^\"]*)\"$")
+    public void iShouldNotSeeModifiersAddedInMultiTimesTheSelectedModifiersAs(String name) throws InterruptedException {
+        new TableLayOutScreen().selectModifiersFromModifyScreen1(name);
     }
     @And ("^I touch and swipe the modifiers$")
     public void iTouchAndSwipeTheModifiers() throws InterruptedException {

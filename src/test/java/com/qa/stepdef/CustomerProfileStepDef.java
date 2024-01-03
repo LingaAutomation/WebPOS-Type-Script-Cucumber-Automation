@@ -109,6 +109,11 @@ public class CustomerProfileStepDef {
         new CustomerProfileWindow().selectTaxExemptCustomerProfile();
     }
 
+    @And ("^I not select tax exempt on customer profile screen$")
+    public void iNotSelectTaxExemptOnCustomerProfileScreen() throws InterruptedException {
+        new CustomerProfileWindow().selectTaxExemptCustomerProfile1();
+    }
+
     @And ("^I remove tax exempt on customer profile screen$")
     public void iRemoveTaxExemptOnCustomerProfileScreen() throws InterruptedException {
         new CustomerProfileWindow().removeTaxExemptCustomerProfile();

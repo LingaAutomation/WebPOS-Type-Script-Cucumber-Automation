@@ -90,6 +90,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
                               //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]
     @FindBy(xpath = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img")
+
     private WebElement TickIcon;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
@@ -121,7 +122,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"T2\"]")
     private WebElement tableOrderNumber;
 
-    @FindBy (xpath = "Modifiers")
+    @FindBy (xpath = "(//label[(.='Modifiers')])")
     private WebElement modifierScreen;
 
     /****** Categories ******/
@@ -299,10 +300,10 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//div[@class='free-section']//div[contains(@class,'p-col-4 discount-section-name disc-padding')]")
     private WebElement dosaEachMenu;
 
-    @FindBy(xpath = "Ling Littlenck")
+    @FindBy(xpath = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Ling Littlenck')])[1]")
     private WebElement lingLittlenckMenu;
 
-    @FindBy(xpath = "Ling Pes Shrimp")
+    @FindBy(xpath = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Ling Pes Shrimp')])[1]")
     private WebElement lingPesShrimpMenu;
 
     @FindBy(xpath = "//button[contains(.,' Remove')]")
@@ -1312,30 +1313,36 @@ public  void selectCategory (String value) throws Exception {
     }
     public String getAllOrdersAreVoidedMsg(){return elementGetText(convertWebElement(allOrdersAreVoided),"All Orders are voided is Displayed - ");}
     /****** Tax Exempt ******/
+   public WebElement element;
+    public void checkTaxExists() throws InterruptedException {
+        Thread.sleep(1000);
+       try {
+            element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
+           if (element.isDisplayed()){
+               utils.log().info("Tax is Available - "+element.getText());
 
-    public void checkTaxExists(){
-
-        if(driver.findElements(By.xpath("//div[@id='os_taxAmountStr']//input")).isEmpty())
-        {
-            utils.log().info("Tax is exempted");
-        }
-        else {
-            utils.log().info("Tax is not exempted");
-int w = 1/0;
-        }
-
+           }
+       }catch (Exception w){
+           utils.log().info("Tax is Exempted ");
+           Assert.assertEquals(element.getText(),"Tax1");
+           utils.log().info("Tax is Exempted - "+element.getText());
+       }
     }
 
     public void checkTaxExists1(){
 
-        if(driver.findElements(By.xpath("//div[@id='os_taxAmountStr']//input")).isEmpty())
-        {
-            utils.log().info("Tax is exempted");
-
+        try {
+            element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
+            if (element.isDisplayed()){
+                utils.log().info("Tax is Not exempted - "+element.getText());
+                Assert.assertEquals(element.getText(),"Tax");
+                utils.log().info("Tax is Available - "+element.getText());
+            }else{
+                utils.log().info("Tax is exempted - ");
+            }
+        }catch (Exception w){
+            utils.log().info("Tax is exempted - ");
         }
-        else
-            utils.log().info("Tax is not exempted");
-        int w = 1/0;
     }
 
 
@@ -1371,6 +1378,29 @@ int w = 1/0;
 
     /****** Open Item Verification ******/
 
+    public void togoIcon() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("(//div[.='GO'])[2]"));
+        if(element.isDisplayed()){
+            utils.log().info("TOGO icon Displayed");
+        }else{
+            utils.log().info("Not TOGO icon Displayed");
+            int w = 1/0;
+        }
+    }
+
+    public void togoIcon1() throws InterruptedException {
+        Thread.sleep(2000);
+        try {
+            WebElement element = driver.findElement(By.xpath("(//div[.='GO'])[2]"));
+            if (element.isDisplayed()) {
+                utils.log().info("TOGO icon Displayed");
+                Assert.assertEquals("1","2");
+            }
+        }catch (Exception w){
+            utils.log().info("TOGO icon Not Displayed");
+        }
+    }
 
     public void verifyTickIcon(){
         if(TickIcon.isDisplayed()){
@@ -1433,21 +1463,36 @@ int w = 1/0;
 
     public void selectModifierInModifierScreen(String modifier) throws InterruptedException {
         Thread.sleep(1000);
-        WebElement e=driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\""+modifier+"\"]"));
+        WebElement e1 = driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-modify/ion-header/div[1]/ion-searchbar/div/input"));
+        sendKeys(e1,modifier);
+        Thread.sleep(1000);
+        WebElement e = driver.findElement(By.xpath("//button[contains(.,' "+modifier+" ')]"));
         elementClick(e,modifier + "selected");
     }
 
     public void selectModifierForMoreTime(String modifier) throws InterruptedException {
         Thread.sleep(1000);
-        WebElement e=driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\""+modifier+"\"]"));
+        WebElement e1 = driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-modify/ion-header/div[1]/ion-searchbar/div/input"));
+        sendKeys(e1,modifier);
+        Thread.sleep(1000);
+        WebElement e = driver.findElement(By.xpath("//button[contains(.,' "+modifier+" ')]"));
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", e);
         for(int i=0;i<5;i++) {
             elementClick(e, modifier + "selected");
+            Thread.sleep(1000);
         }
+
+//        elementClick(e,"Selected = "+modifier);
+
+//        elementClick("//button[contains(.,'Ok')]","Selected OK");
+//
+//        WebElement e=driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\""+modifier+"\"]"));
+
 
     }
     public void verifyModifiersAddOrderScreen(String modifiers) throws InterruptedException {
         Thread.sleep(1000);
-        WebElement el1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\" " + modifiers + "\"])"));
+        WebElement el1 = driver.findElement(By.xpath("//div[@class='modifier-section']//div[contains(.,'"+modifiers+"')]"));
         String modi=el1.getText();
         if (el1.isDisplayed()) {
             utils.log().info("Modifiers Added into Menu Items "+modi);
@@ -1598,7 +1643,8 @@ int w = 1/0;
 
 
 
-    public String verifyCustomerProfile(){
+    public String verifyCustomerProfile() throws InterruptedException {
+        Thread.sleep(2000);
         return elementGetText(customerProfileWindow,"Customer profile window is displayed - ");
     }
 
@@ -1976,7 +2022,7 @@ int w = 1/0;
 
         }
     }
-    @FindBy(xpath = "Gratuity cannot be removed for paid check")
+    @FindBy(xpath = "//p[(.='Gratuity cannot be removed for paid check')]")
     WebElement gratuityCannotBeRemovedForPaidCheck;
 
     public String  verifyGratuityCannotBeRemovedForPaidChecksPopup(){

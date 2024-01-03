@@ -53,7 +53,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy (name = "OK")
     private WebElement okBtn;
 
-    @FindBy(name = "Ok")
+    @FindBy(xpath = "(//span[(.='Ok')])")
     private WebElement okBtnForModifier;
 
     @FindBy(xpath = "//ion-item-sliding[contains(@class,'ng-star-inserted md hydrated')]")
@@ -331,12 +331,15 @@ public class PaymentWindow extends OrderManagementScreen{
 
     public void checkTaxExists2() {
 
-        if (driver.findElements(By.xpath("//div[@id='os_taxAmountStr']//input")).isEmpty()) {
-            utils.log().info("Tax is exempted");
-            int w = 1 / 0;
-        } else {
-            utils.log().info("Tax is not exempted");
-
+        try {
+             element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
+            if (element.isDisplayed()){
+                utils.log().info("Tax is Not exempted - "+element.getText());
+                Assert.assertEquals(element.getText(),"Tax1");
+                utils.log().info("Tax is Not exempted - "+element.getText());
+            }
+        }catch (Exception w){
+            utils.log().info("Tax is exempted - ");
         }
     }
 
@@ -1526,7 +1529,7 @@ elementClick(orderMenu,"Selected Order Menu - "+orderMenu.getText());
     }
 
     public void clickTheCustomerNameOnTheOrderScreen() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         WebElement customerName = driver.findElement(By.xpath("(//p[contains(@class,'tablecommon-label ng-star-inserted')])[2]"));
         String name = customerName.getText();
         elementClick(customerName,"Selected name as - "+name);

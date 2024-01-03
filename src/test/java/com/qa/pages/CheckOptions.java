@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class CheckOptions extends OrderManagementScreen {
 
@@ -20,7 +21,7 @@ public class CheckOptions extends OrderManagementScreen {
     @FindBy(xpath = "//label[contains(.,'fireCoursing')]") //Nov 16
     WebElement fireCoursingBtn;
 
-    @FindBy(xpath = "Fire Coursing")
+    @FindBy(xpath = "//p[contains(.,'fireCoursing')]")
     WebElement fireCoursingTxt;
 
     @FindBy(xpath = "//label[contains(.,'Gratuity')]")
@@ -58,6 +59,24 @@ public class CheckOptions extends OrderManagementScreen {
 
     @FindBy(xpath = "//label[contains(.,'Modify')]")
     WebElement modifyBtn;
+
+    public void checkGratuityNotExists(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        try {
+            if (driver.findElement(By.xpath("//p[@id='os_gratuityAmount']")).isDisplayed()) {
+                utils.log().info("Gratuity is Applied");
+                int i = 1 / 0;
+            }
+        }catch (Exception w){
+            utils.log().info("Gratuity is not Applied");
+
+        }
+    }
+    @FindBy(xpath = "//p[.='Please enter value from 5.0 - 15.0']")
+    WebElement enterValue;
+    public String enterValueAccordingBo() {
+        return elementGetText(enterValue, "Enter value txt is displayed - ");
+    }
 
     public void pressGratuityBtn() {
         elementClick(gratuityBtn, "Tapped Gratuity Button");
@@ -150,6 +169,33 @@ public class CheckOptions extends OrderManagementScreen {
 
     }
 
+    public String getPaidAmountExceedsTxt1() {
+        return elementGetText(paidAmountExceedsTxt1, "Paid amount exceeds text is - ");
+    }
+
+    public String getPaidAmountExceedsTxt() {
+        return elementGetText(paidAmountExceedsTxt, "Paid amount exceeds text is - ");
+    }
+
+
+    @FindBy(xpath = "//p[.='Paid Amount exceeding Sale Amount']") //Changed to xpath by Engin...
+    WebElement paidAmountExceedsTxt1;
+    @FindBy(xpath = "//p[(.='Paid amount exceeds the sale amount')]") //Changed to xpath by Engin...
+    WebElement paidAmountExceedsTxt;
+    public void verifyPaidAmountExceeds() {
+        if (paidAmountExceedsTxt.isDisplayed()) {
+            utils.log().info("Paid amount exceeds pop-up is thrown");
+        } else {
+            utils.log().info("Paid amount exceeds pop-up is not thrown");
+        }
+    }
+    public void verifyPaidAmountExceeds1() {
+        if (paidAmountExceedsTxt1.isDisplayed()) {
+            utils.log().info("Paid amount exceeds pop-up is thrown");
+        } else {
+            utils.log().info("Paid amount exceeds pop-up is not thrown");
+        }
+    }
     public void passPercentageEngin() {
 
         elementClick(passPercentageValue, "Pass percentage value field is clicked.");
@@ -210,6 +256,13 @@ public class CheckOptions extends OrderManagementScreen {
         elementClick(openItemBtn, "Tax Exempt is tapped");
     }
 
+    @FindBy( xpath = "(//ion-item[@role='listitem'])//ion-label[.=' 7% Sales Tax ']")
+    WebElement percent7Tax;
+
+
+    public void selectTax(){
+        elementClick( percent7Tax, "%7 Tax is selected - ");
+    }
 
     public void swipeToCourseName(String Name) throws InterruptedException {
         Thread.sleep(300);
@@ -257,11 +310,11 @@ public class CheckOptions extends OrderManagementScreen {
 //    @FindBy(xpath = "(//input[contains(@class,'mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored')])[1]")
 //    WebElement ItemNameTxtFldMenuOption2;
 
-    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[2]")
+    @FindBy( xpath = "(//input[contains(@class,'mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored')])[1]")
     WebElement ItemNameTxtFld;
 
 
-    @FindBy( xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]")
+    @FindBy( xpath = "(//input[contains(@class,'mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored')])")
     WebElement priceFld;
     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[3]
 
@@ -356,8 +409,22 @@ public class CheckOptions extends OrderManagementScreen {
     }
 
     public void verifyOpenItem(String name) throws InterruptedException {
-        Thread.sleep(300);
+        Thread.sleep(1300);
         WebElement menu=driver.findElement(By.xpath("(//div[contains(@class,'p-col-4 orderlist-menuname')])[2]"));
+
+        if(menu.isDisplayed())
+        {
+            utils.log().info("Open Item is added - "+menu.getText());
+            Assert.assertEquals(menu.getText(), name);
+        }
+        else {
+            utils.log().info("Open Item is not added - "+name);
+        }
+    }
+
+    public void verifyOpenItem1(String name) throws InterruptedException {
+        Thread.sleep(1300);
+        WebElement menu=driver.findElement(By.xpath("(//div[contains(@class,'p-col-4 orderlist-menuname')])[1]"));
 
         if(menu.isDisplayed())
         {
@@ -454,5 +521,10 @@ public class CheckOptions extends OrderManagementScreen {
     public String verifyFireCoursing() {
         return elementGetText(fireCoursingTxt, "Fire coursing is Displayed - ");
     }
-
+    @FindBy(xpath = "//button[.=' Cancel ']")
+    WebElement backBtn;
+    public void pressBack() throws InterruptedException {
+        Thread.sleep(2000);
+        elementClick(backBtn, "- Back button is tapped");
+    }
 }

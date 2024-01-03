@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import org.junit.Assert;
@@ -48,7 +49,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     private WebElement customerToSelectForNmi;
 
 
-    @FindBy(xpath =  "//button[contains(.,' Save ')]")
+    @FindBy(xpath ="//button[contains(.,' Save ')]")
     private WebElement saveBtn;
 
     @FindBy(xpath = "//input[@aria-checked='false']")
@@ -327,27 +328,59 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public void pressSaveBtn() throws InterruptedException {
-       Thread.sleep(1000);
+       Thread.sleep(3000);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         elementClick(saveBtn, "pressed Save button");
     }
     public void selectTaxExemptCustomerProfile() throws InterruptedException {
-        Thread.sleep(300);
-        if (taxExemptCustomer.getAttribute("value").equals("on")) {
-            utils.log().info(taxExemptCustomer.getAttribute("value"));
-            elementClick("//span[contains(@class,'mat-slide-toggle-thumb-container')]", "Tapped Tax Exempt on customer Profile");
-        } else {
-            utils.log().info(taxExemptCustomer.getAttribute("value"));
-            utils.log().info(taxExemptCustomer.getText());
-            utils.log().info("Already Selected Tax Exempt - "+  taxExemptCustomer.getAttribute("value"));
-        }
+        WebElement element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/mat-dialog-container/app-customers/ion-content/ion-grid/ion-row/ion-col[2]/ion-row[2]/form/ion-row/ion-col[2]/ion-row/ion-row/ion-col/div[1]/mat-slide-toggle/label/span[1]"));
+      elementClick(element,"Selected Tax exempt");
+//        try {
+//            WebElement element = driver.findElement(By.xpath("//ion-col[@class='customer_grid_form-row-col md hydrated']//mat-slide-toggle//input[@aria-checked='false']"));
+//            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+//            if (element.isDisplayed()) {
+//                Thread.sleep(2000);
+//                element.click();
+//                Thread.sleep(2000);
+//            }
+////            elementClick(element, "Tapped Tax Exempt on customer Profile");
+//
+//        }catch (Exception w){
+//            utils.log().info("Already REmoved Tax Exempt");
+//        }
     }
 
+    public void selectTaxExemptCustomerProfile1() throws InterruptedException {
+        Thread.sleep(3000);
+        try {
+            WebElement element = driver.findElement(By.xpath("//ion-col[@class='customer_grid_form-row-col md hydrated']//mat-slide-toggle//input[@aria-checked='true']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            if (element.isDisplayed()) {
+                Thread.sleep(2000);
+                element.click();
+                Thread.sleep(2000);
+            }
+//            elementClick(element, "Tapped Tax Exempt on customer Profile");
+
+        }catch (Exception w){
+            utils.log().info("Already REmoved Tax Exempt");
+        }
+
+    }
     public void removeTaxExemptCustomerProfile() throws InterruptedException {
-        Thread.sleep(300);
+        try {
+            WebElement element = driver.findElement(By.xpath("//ion-col[@class='customer_grid_form-row-col md hydrated']//mat-slide-toggle//input[@aria-checked='true']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            if (element.isDisplayed()) {
+                Thread.sleep(2000);
+                element.click();
+                Thread.sleep(2000);
+            }
+//            elementClick(element, "Tapped Tax Exempt on customer Profile");
 
-            elementClick("//span[contains(@class,'mat-slide-toggle-thumb-container')]", "Tapped Tax Exempt on customer Profile");
-
+        }catch (Exception w){
+            utils.log().info("Already REmoved Tax Exempt");
+        }
     }
 
     public void selectCustomerPlan() throws InterruptedException {

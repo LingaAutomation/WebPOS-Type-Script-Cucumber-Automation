@@ -303,7 +303,7 @@ public class CheckOptionsStepDef {
     }
 
     @And("^I should see the tax reflected to the check$")
-    public void iShouldSeeTheTaxReflectedToTheCheck() {
+    public void iShouldSeeTheTaxReflectedToTheCheck() throws InterruptedException {
         new OrderManagementScreen().checkTaxExists();
     }
 
@@ -342,7 +342,7 @@ public class CheckOptionsStepDef {
     }
 
     @Then("^I should return back to the order management screen and I should not see the tax amount$")
-    public void iShouldReturnBackToTheOrderManagementScreenAndIShouldNotSeeTheTaxAmount() {
+    public void iShouldReturnBackToTheOrderManagementScreenAndIShouldNotSeeTheTaxAmount() throws InterruptedException {
         new CheckOptionsScreen().checkTaxExists();
     }
 
@@ -493,9 +493,11 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see Paid amount exceeds the sale amount popup$")
     public void iShouldSeePaidAmountExceedsTheSaleAmountPopup() {
-        new CheckOptionsScreen().verifyPaidAmountExceeds();
-        Assert.assertEquals(new CheckOptionsScreen().getPaidAmountExceedsTxt(), "Paid amount exceeds the sale amount");
+        new CheckOptions().verifyPaidAmountExceeds();
+        Assert.assertEquals(new CheckOptions().getPaidAmountExceedsTxt(), "Paid amount exceeds the sale amount");
     }
+
+
 
     @And("^I click Done button on the popup in check options page$")
     public void iClickDoneButtonOnThePopupInCheckOptionsPage() {
@@ -504,7 +506,7 @@ public class CheckOptionsStepDef {
 
     @And("^I click Back button on Check Options Screen$")
     public void iClickBackButtonOnCheckOptionsScreen() throws InterruptedException {
-        new CheckOptionsScreen().pressBack();
+        new CheckOptions().pressBack();
     }
 
     @And("^I click Back button on Check Options Screen1$")
@@ -698,7 +700,7 @@ public class CheckOptionsStepDef {
 
     @And("^I select the Tax$")
     public void iSelectTheTax() {
-        new OpenItemWindow().selectTax();
+        new CheckOptions().selectTax();
     }
 
     @And("^I click Continue button on the Open Item Price numbers popup$")
@@ -716,6 +718,11 @@ public class CheckOptionsStepDef {
         new CheckOptions().verifyOpenItem(open);
     }
 
+    @Then("^I should navigate to Order Management screen and see the added open item1 as \"([^\"]*)\"$")
+    public void iShouldNavigateToOrderManagementScreenAndSeeTheAddedOpenItem1As(String open) throws InterruptedException {
+        new CheckOptions().verifyOpenItem1(open);
+    }
+
     @Then ("^I verify the open item value from open item window with order screen$")
     public void iVerifyTheOpenItemValueFromOpenItemWindowWithOrderScreen(){
         new OpenItemWindow().verifyOpenItemPriceWithOrderScreenPrice();
@@ -726,6 +733,10 @@ public class CheckOptionsStepDef {
     @And("^I click Modify$")
     public void iClickModify() throws InterruptedException {
         new CheckOptions().pressModify();
+    }
+    @Then ("^I should return back to the order management screen and I should not see Gratuity is added$")
+    public void iShouldReturnBackToTheOrderManagementScreenAndIShouldNotSeeGratuityIsAdded(){
+        new CheckOptions().checkGratuityNotExists();
     }
 
     @And("^I select ordered item as \"([^\"]*)\"$")
@@ -788,7 +799,7 @@ public class CheckOptionsStepDef {
 
     @Then ("^I should see enter value according to BO$")
     public void iShouldSeeEnterValueAccordingToBO(){
-        Assert.assertEquals(new CheckOptionsScreen().enterValueAccordingBo(),"Enter Value from 5.0 - 15.0");
+        Assert.assertEquals(new CheckOptions().enterValueAccordingBo(),"Please enter value from 5.0 - 15.0");
     }
 
     @And ("^I click Automatic button on Hold popup$")
@@ -819,7 +830,7 @@ public class CheckOptionsStepDef {
     }
     @Then ("^I should see fire coursing$")
     public void iShouldSeeFireCoursing(){
-        Assert.assertEquals(new CheckOptions().verifyFireCoursing(),"Fire Coursing");
+        Assert.assertEquals(new CheckOptions().verifyFireCoursing(),"fireCoursing");
     }
     @And ("^I click Coursing Name as \"([^\"]*)\"")
     public void iClickCoursingNameAsEntree(String courseName){
