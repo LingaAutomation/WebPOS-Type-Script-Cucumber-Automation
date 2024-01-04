@@ -1,4 +1,4 @@
-@RegressionTable @Payments10   @Payment   @VerificationForUSDStore123 @RegressionBarTab01
+@BarTab12
 Feature: QSR feature
 
   Background:
@@ -6,7 +6,7 @@ Feature: QSR feature
     Given I'm logged in
     And I close the order type window
 
-  @RegressionQSR3
+
   Scenario Outline: Service Type  in Order Screen,Seats
     And I add a new seat
     Then I should see created new seat
@@ -32,7 +32,7 @@ Feature: QSR feature
       | order_type |
       | QSR    |
 
-  @RegressionQSR3
+
   Scenario Outline: All Button - During Sale
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -93,7 +93,7 @@ Feature: QSR feature
       | order_type |menu_Item      | modifier |Menu_item1 |
       | QSR        | French Friese | Tomato   |Onion Rings|
 
-  @RegressionQSR3
+
   Scenario Outline: Discount - Order Screen,Discount for Menu Item
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -117,7 +117,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Modifier |Discount            |Discount1  | SubTotal    | Tax       | Total       |
       | QSR       | Ravioli  | Butter   | IB-AfterTax-Amount |$ 1.00     | $ 14.00     | $ 1.40    | $ 14.40     |
 
-  @RegressionQSR3
+
   Scenario Outline: Check with normal bill without discount/Gratuity/upcharge
     Then I should see service type as "<order_type>"
     And I get check number
@@ -192,7 +192,7 @@ Feature: QSR feature
       | order_type  |Menu_Item | Modifier |
       | QSR         | Ravioli  | Butter   |
 
-  @RegressionQSR
+
   Scenario Outline:QSR -  Check with discount(item based - Before tax) as percentage
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -275,7 +275,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Modifier |Discount                |Discount1  | SubTotal    | Tax       | Total       |Discount11            |Tax1       | Total1      |Discount21          |Discount3 |Total2      |Discount31         | Tax3     | Total3       |
       | QSR       | Ravioli  | Butter   | IB-BeforeTax-Percentage|$ 1.40     | $ 14.00     | $ 1.26    | $ 13.86     |IB-AfterTax-Percentage| $ 1.40    | $ 14.00     |IB-AfterTax-Amount  |$ 1.00    |$ 14.40     |IB-BeforeTax-Amount|$ 1.30    | $ 14.30      |
 
-  @RegressionQSR3
+
   Scenario Outline: Qsr - Check with discount(item based - After tax) as Set Price 500
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -357,7 +357,7 @@ Feature: QSR feature
       |order_type  |Menu_Item   | Modifier |Discount                 |Discount1    |Discount2    | SubTotal    | Tax       | Total       |Tax1       | Total1       |Discount21               |Discount31             |SubTotal1    | Tax2       | Total2       |Discount41             |
       | QSR        | Ravioli    | Butter   | IB-AfterTax-SetPrice500 |$ 12.50      | $ 13.00     |$ 14.00      | $ 1.40    | $ 2.90      | $ 0.10    | $ 1.10       |IB-BeforeTax-SetPrice500 |IB-BeforeTax-AsFreeItem| $ 15.00     | $ 1.50     | $ 16.50      |IB-AfterTax-AsFreeItem |
 
-  @RegressionQSR3
+
   Scenario Outline: Check with discount(Check based - After tax) as Percentage-Discount - Check based
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -411,7 +411,7 @@ Feature: QSR feature
       | order_type | Menu_Item | Modifier |Discount                 | SubTotal    | Tax       | Discount1 |Total       |Tax1    |Total1   |Discount2                |
       |QSR         | Ravioli | Butter     |CB-AfterTax-Percentage10 | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00    | $ 2.52 | $ 27.72 |CB-BeforeTax-Percentage10|
 
-  @RegressionQSR3
+
   Scenario Outline:Qsr  Check with discount(Check based - After tax) as Amount
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -454,7 +454,7 @@ Feature: QSR feature
       | order_type | Menu_Item  |Discount               | SubTotal    | Tax       | Discount1   |Total        |Discount2               |Discount3    |Total1       |
       | QSR        |  cake      |CB-AfterTax-Amount1000 | $ 16.00     | $ 1.60    | $ 1.00      | $ 16.60     |CB-AfterTax-SetPrice1000| $ 6.00      | $ 11.60     |
 
-  @RegressionQSR3
+
   Scenario Outline:Qsr Check with discount(Check based - After tax) as Free
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -495,7 +495,7 @@ Feature: QSR feature
       | order_type  |Menu_Item       |Discount             | SubTotal  | Tax      | Total     |Discount1           |
       | QSR        | Cheesecake      | CB-AfterTax-Free300 | $ 17.00   | $ 1.70   | $ 18.70   |CB-BeforeTax-Free300|
 
-  @RegressionQSR3
+
   Scenario Outline:Qsr Check with discount(Check based - Before tax) as Amount
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -551,7 +551,7 @@ Feature: QSR feature
       | order_type | Menu_Item | Modifier |Discount                | SubTotal    | Tax       | txtDiscount |Total        | Menu_Item1|Discount1                | SubTotal1   | Tax1      | txtDiscount1 |Total1       |
       | QSR        |  Ravioli  | Butter   |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.70    | $ 1.00      | $ 29.70     | cake      |CB-BeforeTax-SetPrice1000| $ 16.00     | $ 1.00    | $ 6.00       | $ 11.00     |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -649,7 +649,7 @@ Feature: QSR feature
       |order_type |Menu_Item|course_name |open_Item | SubTotal | Tax       | Discount | Total   | Discount1 |Discount2|course_name1|Total2  |SubTotal3  | Tax3      | Discount3 | Total3     |
       | QSR       |Dosa     |  SALAD     |onion     | $ 51.00  | $ 5.10    | $ 20.50  | $ 35.60 | After     |$ 0.50   |DESSERT     |$ 55.60 |$ 51.00    | $ 5.10    | $ 20.00   | $ 36.10    |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -931,7 +931,7 @@ Feature: QSR feature
 #      |order_type |Menu_Item|  SubTotal | Tax       | Discount | Total   | Discount1 |
 #      |QSR        |  Halwa  |   $ 70.00 | $ 5.60    | $ 14.00  | $ 61.60 | Before    |
 
-  @RegressionQSR3
+
   Scenario Outline:qsr Check with Mix&Match discount as Set Price as 600(After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -973,7 +973,7 @@ Feature: QSR feature
       |order_type |Menu_Item|  SubTotal     | Tax       | Discount | Total   | Discount1              |Discount2 | Total1  | Discount3                |
       | QSR       |  Halwa  |  $ 20.00      | $ 2.00    | $ 8.00   | $ 14.00 | CheckMixMatchSP(After) | $ 2.00   | $ 20.00 | CheckMixMatchSEIP(After) |
 
-  @RegressionQSR3
+
   Scenario Outline: Qsr Check with Mix&Match discount as Set Percentage(Least Expensive)(After tax)
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -998,7 +998,7 @@ Feature: QSR feature
       |order_type |Menu_Item    |Menu_Item1         |price |price1|  SubTotal    | Tax       | Discount   | Total       | Discount1                 | expensive|
       | QSR       |  Cheesecake |Pumpkin Cheese Cake|15.00 |11.00 |  $ 26.00     | $ 2.60    | $ 5.50     | $ 23.10     | CheckMixMatchSPerL(After) | Least    |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check with Mix&Match discount as Set Price as 500(Before tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1042,7 +1042,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Menu_Item1 |  SubTotal    | Tax       | Discount    | Total       | Discount1               |Discount2                 | Tax1      | Discount12   | Total1      |
       | QSR       | cake     | Halwa      |  $ 18.00     | $ 1.00    | $ 8.00      | $ 11.00     | CheckMixMatchSP(Before) |CheckMixMatchSEIP(Before) | $ 1.60    | $ 2.00      | $ 17.60     |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -1068,7 +1068,7 @@ Feature: QSR feature
       |order_type |Menu_Item    | Menu_Item1          | price |price1| SubTotal    | Tax       | Discount   | Total        | Discount1                 | expensive |
       | QSR       | Cheesecake  | Pumpkin Cheese Cake | 15.00 |11.00 |  $ 26.00    | $ 1.85    | $ 7.50     | $ 20.35      | CheckMixMatchSPerM(Befor) |Most       |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check with Mix&Match discount as Set Percentage Least Expensive (Before tax)
     Then I should see service type as "<order_type>"
     And I select Desserts as category
@@ -1093,7 +1093,7 @@ Feature: QSR feature
       |order_type |Menu_Item    | Menu_Item1          | price |price1| SubTotal    | Tax       | Discount   | Total        | Discount1                 | expensive |
       | QSR       | Cheesecake  | Pumpkin Cheese Cake |15.00  |11.00 | $ 26.00     |$ 2.05     |$ 5.50      | $ 22.55      | CheckMixMatchSPerL(Befor) | Least     |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check with vary gratuity
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1120,7 +1120,7 @@ Feature: QSR feature
       |order_type| Menu_Item   | Percentage | SubTotal   |    Tax    | Gratuity     | Total   |
       | QSR      | Halwa       | 8          | $ 10.00    | $ 1.00    |  $ 0.80      | $ 11.80 |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check With Fixed Gratuity
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1145,7 +1145,7 @@ Feature: QSR feature
       | order_type | Menu_Item |  SubTotal | Tax    | Gratuity | Total   |
       | QSR        |  Halwa    | $ 10.00   | $ 1.00 |  $ 1.00  | $ 12.00 |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check With Exclusive Tax
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1165,7 +1165,7 @@ Feature: QSR feature
       | order_type | Modifier | Tax    | SubTotal | Total    |
       |QSR         | Butter   | $ 1.40 | $ 14.00  | $ 15.40  |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check with tax exempt with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1296,7 +1296,7 @@ Feature: QSR feature
 #      | order_type| Menu_Item   | SubTotal  | Tax      | Gratuity   |Total   |
 #      | QSR       | Halwa       |$ 10.00    | $ 1.00   | $ 0.80     |$ 11.80 |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check With upcharge(Amount)
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -1314,7 +1314,7 @@ Feature: QSR feature
       | order_type | Menu_Item          | Modifier     | amount   |
       | QSR        |  Fried Crab Cakes  | White Bread  | $ 18.50  |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr check payment by HA for New created customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1363,7 +1363,7 @@ Feature: QSR feature
       | order_type | customer_name | Menu_Item      | Modifier   | SubTotal |  Total  |
       | QSR        |  Auto ragav   |  French Friese | Steak      | $ 15.00  | $ 15.00 |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Void HA payment check and again add menu item & Payment through HA
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1440,7 +1440,7 @@ Feature: QSR feature
       | order_type  | customer_name | Menu_Item     | Modifier   | SubTotal |  Total   |
       | QSR         |  Auto ragav   | French Friese | Steak      | $ 15.00  | $ 15.00  |
 
-  @RegressionQSR3
+
   Scenario Outline:  qsr Check Payment through Other payment - Check with discount(item based - After tax) as amount 10, as set Price 500, as Free ,
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1530,7 +1530,7 @@ Feature: QSR feature
       | order_type |Menu_Item | Modifier |Discount11         |Discount1 | SubTotal1   | Tax1      | Total1      |Discount22              |Discount2   | SubTotal2   | Tax2      | Total2      |Discount33              | SubTotal3   | Tax3     | Total3    |Discount44              |Discount4  | SubTotal4    | Tax4       | Total4     |
       | QSR        | Ravioli  | Butter   |IB-AfterTax-Amount |$ 1.00    | $ 14.00     | $ 1.40    | $ 14.40     |IB-AfterTax-SetPrice500 |$ 12.50     | $ 14.00     | $ 1.40    | $ 2.90      | IB-AfterTax-AsFreeItem | $ 15.00     | $ 1.50   | $ 16.50   | IB-AfterTax-Percentage |$ 1.40     | $ 14.00      | $ 1.40     | $ 14.00    |
 
-  @RegressionQSR3
+
   Scenario Outline: Check Payment through others payment - Check with discount(Item based - Before tax) as Percentage, as amount 10 , as Set Price 500 , as Free
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1666,7 +1666,7 @@ Feature: QSR feature
       | order_type  |Menu_Item | Modifier |Discount11                | Tax1     | Total1   | SubTotal1 |Discount1|Discount22            |Discount2  | SubTotal2    | Tax2       | Total2    |Discount33               |Discount3  |Tax3       | Total3       |Discount44               | SubTotal4    | Tax4       | Total4      |
       | QSR         | Ravioli  | Butter   |IB-BeforeTax-Percentage   |$ 1.26    | $ 13.86  | $ 14.00   | $ 1.40  |IB-BeforeTax-Amount   |$ 1.00     | $ 14.00      | $ 1.30     | $ 14.30   |IB-BeforeTax-SetPrice500 |$ 13.00    | $ 0.10    | $ 1.10       | IB-BeforeTax-AsFreeItem | $ 15.00      | $ 1.50     | $ 16.50     |
 
-  @RegressionQSR3
+
   Scenario Outline: Check Payment through Other payment - Check with discount(check based - After tax) as percentage, as Amount,as set price, as Free
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1779,7 +1779,7 @@ Feature: QSR feature
       | order_type | Menu_Item1 | Modifier1 |Discount11               | SubTotal1   | Tax1      | Discount1 |Total1       |Menu_Item3|Discount22            | SubTotal3   | Tax3      | Discount2   |Total2       |Discount33               |Discount3   |Total3       |Menu_Item4  |Discount44            | SubTotal4    | Tax4       | Total4    |
       | QSR        |Ravioli     | Butter    |CB-AfterTax-Percentage10 | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00     | cake     |CB-AfterTax-Amount1000| $ 16.00     | $ 1.60    | $ 1.00      | $ 16.60     |CB-AfterTax-SetPrice1000 |$ 6.00      | $ 11.60     | Cheesecake | CB-AfterTax-Free300  | $ 17.00      | $ 1.70     | $ 18.70   |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -1902,7 +1902,7 @@ Feature: QSR feature
       | order_type |Menu_Item2 | Modifier2 |Discount11                | SubTotal1    | Tax1       | Discount1 |Total1       |Discount22               |Tax2       | Discount2 |Total2       | Menu_Item3 |Discount33               | SubTotal3   | Tax3      | Discount3 |Total3       |Menu_Item4     |Discount44             | SubTotal4    | Tax4       | Total4       |
       | QSR        | Ravioli   | Butter    |CB-BeforeTax-Percentage10 | $ 28.00      | $ 2.52     | $ 2.80    | $ 27.72     | CB-BeforeTax-Amount1000 | $ 2.70    | $ 1.00    | $ 29.70     | cake       |CB-BeforeTax-SetPrice1000| $ 16.00     | $ 1.00    | $ 6.00    | $ 11.00     | Cheesecake    |  CB-BeforeTax-Free300 | $ 17.00      | $ 1.70     | $ 18.70      |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2000,7 +2000,7 @@ Feature: QSR feature
       |order_type |Menu_Item|course_name |open_Item | SubTotal | Tax       | Discount | Total   | Discount1 |course_name1  |Discount2 | Total1    | SubTotal3 | Tax3     | Discounttxt | Total3     |
       | QSR       |Dosa     |  SALAD     |onion     | $ 51.00  | $ 5.10    | $ 20.50  | $ 35.60 | After     |DESSERT       |$ 0.50    | $ 55.60   |$ 51.00    | $ 5.10   | $ 20.00     | $ 36.10    |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2241,7 +2241,7 @@ Feature: QSR feature
 #      |order_type |Menu_Item|   SubTotal | Tax      | Discount | Total       | Discount1 | Tax1    | Discount2 | Total1   | SubTotal3   | Tax3     | Discount3 | Total3      |
 #      | QSR       | Halwa   | $ 70.00    | $ 5.00   | $ 20.00  | $ 55.00     | Before    |$ 5.60   | $ 14.00   | $ 61.60  | $ 70.00     | $ 4.95   | $ 20.50   | $ 54.45     |
 
-  @RegressionQSR3
+
   Scenario Outline:qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price(After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2283,7 +2283,7 @@ Feature: QSR feature
       |order_type|Menu_Item | SubTotal    | Tax       | Discount  | Total       | Discount1              |Discount2  | Total1      | Discount3                |
       | QSR       |  Halwa  | $ 20.00     | $ 2.00    | $ 8.00    | $ 14.00     | CheckMixMatchSP(After) |$ 2.00     | $ 20.00     | CheckMixMatchSEIP(After) |
 
-  @RegressionQSR3
+
   Scenario Outline:qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage(Most Expensive)(After tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2333,7 +2333,7 @@ Feature: QSR feature
       |order_type |Menu_Item    |Menu_Item1        |Menu |Menu1|  SubTotal    | Tax       | Discount   | Total       | Discount1                   | expensive | Menu_Item2|Menu_Item3|Menu2    |Menu3   |  SubTotal2  | Tax2      | Discount2 | Total2      | Discount3                 | expensive1 |
       | QSR       |  Cheesecake |Pumpkin Cheese Cake|15.00|11.00 |$ 26.00     | $ 2.60    | $ 5.50     | $ 23.10     | CheckMixMatchSPerL(After) |Least      |Halwa     |cake       |10.00    |8.00    | $ 18.00     | $ 1.80    | $ 5.00    | $ 14.80     | CheckMixMatchSPerM(After) |Most        |
 
-  @RegressionQSR3
+
   Scenario Outline:qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2377,7 +2377,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Menu_Item1|  SubTotal    | Tax       | Discount   | Total       | Discount1               |Discount2                 |  Tax1      | Discount12   | Total1      |
       | QSR       | cake     | Halwa     |  $ 18.00     | $ 1.00    | $ 8.00     | $ 11.00     | CheckMixMatchSP(Before) |CheckMixMatchSEIP(Before) |  $ 1.60    | $ 2.00      | $ 17.60     |
 
-  @RegressionQSR3
+
   Scenario Outline:qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2427,7 +2427,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Menu_Item1           | Menu | Menu1 |expensive| SubTotal    | Tax       | Discount   | Total        | Discount1                 |Menu_Item2 | Menu_Item3  |Menu2    |Menu3    |  SubTotal2  | Tax2      | Discount2  | Total2      | Discount11                | expensive1 |
       | QSR     | Cheesecake  | Pumpkin Cheese Cake |15.00 |11.00  |Least    | $ 26.00     | $ 2.05    | $ 5.50     | $ 22.55      | CheckMixMatchSPerL(Befor)  |cake       | Halwa       |8.00     |10.00    | $ 18.00     | $ 1.30    | $ 5.00     | $ 14.30     | CheckMixMatchSPerM(Befor) |Most        |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr -Check with vary gratuity - other payment
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2473,7 +2473,7 @@ Feature: QSR feature
       |order_type| Menu_Item   | Percentage | SubTotal   |    Tax    | Gratuity     | Total   |Gratuity1 | Total1  |
       | QSR       | Halwa       | 8         | $ 10.00    | $ 1.00    |  $ 0.80      | $ 11.80 | $ 1.00   | $ 12.00 |
 
-  @RegressionQSR3
+
   Scenario Outline:Qsr- Check Payment through other payment - Check with tax exempt and with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -2601,7 +2601,7 @@ Feature: QSR feature
 #    #  | order_type| Menu_Item   | SubTotal  | Tax      | Gratuity   |Total |
 #     # | QSR   | Halwa      |TL 1.000,00| TL 100,00 | TL 80,00 |TL 1.180,00 |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check Payment through other payment - Check With upcharge
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -2619,7 +2619,7 @@ Feature: QSR feature
       | order_type | Menu_Item         | Modifier     | amount   |
       | QSR        | Fried Crab Cakes  | White Bread  | $ 18.50  |
 
-  @RegressionQSR3
+
   Scenario Outline:qsr- Check Payment through side CC and customer & Merchant copy enabled without tips
     Then I should see service type as "<order_type>"
     And I get check number
@@ -2664,7 +2664,7 @@ Feature: QSR feature
       | order_type|  Menu_Item | Modifier |
       | QSR      |  French Friese | Steak |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check Payment through Side CC and customer & Merchant copy enabled tips
     Then I should see service type as "<order_type>"
     And I get check number
@@ -2711,7 +2711,7 @@ Feature: QSR feature
       | order_type |  Menu_Item     | Modifier |Total    |total    |
       | QSR        |  French Friese | Steak    | $ 15.00 |$ 25.00  |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -2749,7 +2749,7 @@ Feature: QSR feature
       | order_type |  Menu_Item    | Modifier |  Total    |  total     |
       | QSR        | French Friese | Steak    |  $ 15.00  |  $ 25.00   |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check Payment through Side CC with discount(item based - After tax/Before) as percentage and with tip
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -2877,7 +2877,7 @@ Feature: QSR feature
       | order_type |Menu_Item | Modifier |Discount                |  Discount1            |Discounttxt  | SubTotal    | Tax       | Total      |   total  |Discount2            |Discount21         |Discounttxt2 | SubTotal1    | Tax1       | Total1       |  total1       |Discount3            |  Discount31                  |Discounttxt3    | SubTotal2    | Tax2       | Total2      |  total2     |Discount4               |Discount41             | SubTotal4    | Tax4       | Total4       | total4        |
       | QSR        | Ravioli    | Butter   |IB-AfterTax-Percentage |IB-BeforeTax-Percentage|$ 2.66      | $ 14.00     | $ 1.13    | $ 12.47    |  $ 22.47 | IB-AfterTax-Amount |IB-BeforeTax-Amount |$ 2.00       | $ 14.00      | $ 1.20     | $ 13.20      |  $ 23.20      | IB-AfterTax-SetPrice500 |IB-BeforeTax-SetPrice500  |$ 13.00         | $ 14.00      | $ 0.10     | $ 1.10      |  $ 11.10    | IB-AfterTax-AsFreeItem |IB-BeforeTax-AsFreeItem| $ 16.00      | $ 1.60     | $ 17.60      |   $ 27.60     |
 
-  @RegressionQSR3
+
   Scenario Outline: qsr Check Payment through side CC with discount(Check based - After tax/Before) as percentage and with tip
     Then I should see service type as "<order_type>"
     And I select Pasta as category
@@ -4219,7 +4219,7 @@ Feature: QSR feature
 #      |order_type | Menu_Item          | Modifier     | Total   |  card_number     | expire_date | card_name | total      |
 #      | QSR       |  Fried Crab Cakes  | White Bread  | $ 20.35 | 3530111333300000 | 1224        | JCB       | $ 30.35    |
 
-    @RegressionQSR3
+
   Scenario Outline: qsr Modify with option
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -4261,7 +4261,7 @@ Feature: QSR feature
       | order_type |menu_Item            | Serving_Size | Modifier_1   | Modifier_2     |
       | QSR        | Pizza Rucola 12inch | DOUBLE       | Add Steak    | Add Chicken    |
 
-  @RegressionQSR3
+
   Scenario Outline: Application showing the service type in Order Screen,Verify menu categories,Verify add new seat button,When User click add new customer icon,Delete any seat,Verify select Upcharge MenuItems,Verify select Upcharge MenuItems with Modifiers,Verify Reopen Upcharge Order.
 
     Then I should see service type as "QSR"
@@ -4314,7 +4314,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnLogOff|tabCustomer|txtTable|
       |QSR   |Cancel   |logOff   |New Customer |T8    |
 
-  @RegressionQSR3
+
   Scenario: Verify check options tab should open at all scenarios,Verify Finish button for order / menu item screen
 
     When User click QSR on Menu Item page
@@ -4327,7 +4327,7 @@ Feature: QSR feature
     And User click option back button
     Then User click finish button
     And I click power button
-  @RegressionQSR3
+
   Scenario: Check number gets changed after completing the sale in QSR Screen --verify changing check number
 
     When User click QSR on Menu Item page
@@ -4340,7 +4340,7 @@ Feature: QSR feature
     When User click submit button
     And I click power button
 
-  @RegressionQSR3
+
   Scenario: Menu item with - mandatory modifier
 ##    Given User select QSR mode on menu item page
     And I select FOOD as category
@@ -4370,7 +4370,7 @@ Feature: QSR feature
     And I closed the order type window
     And I click log off button in order screen
 
-  @RegressionQSR3
+
   Scenario: Verify menu item and modifier with inclusive tax,Verify menu item and modifier with exclusive tax
 
 #    Given User select QSR mode on menu item page
@@ -4397,7 +4397,7 @@ Feature: QSR feature
     When User click submit button
     And I closed the order type window
     And I click log off button in order screen
-  @RegressionQSR3
+
   Scenario: Check number gets changed after changing a service type in QSR Screen
 
     When User click QSR on Menu Item page
@@ -4410,7 +4410,7 @@ Feature: QSR feature
     When User click submit button
     And I click power button
 
-  @RegressionQSR3
+
   Scenario Outline: Void before order
     When User click QSR on Menu Item page in void screen
     Then User select DineIn order type in void screen
@@ -4465,7 +4465,7 @@ Feature: QSR feature
       |finish   |QSR   |Cancel   |OK   |Void   |Add   |Done   |Wrong Item Ordered |Void |
 
 #  @bugfix
-  @RegressionQSR3
+
   Scenario: Void reopen check
     When User click QSR on Menu Item page in void screen
     Then User select DineIn order type in void screen
@@ -4495,7 +4495,7 @@ Feature: QSR feature
     And I click power button
 
 #  @1
-  @RegressionQSR3
+
   Scenario Outline: Void Normal Check — Select from CheckStatus/Closed Check
     Given User click setting icon in void screen
     And User verify setting options in void screen
@@ -4554,7 +4554,7 @@ Feature: QSR feature
       |btnFinish|btnQsr|btnCancel|btnPayment|btnOk|btnVoid|btnWrong           |btnAdd|btnDone |tabCheckStatus|btnExit|
       |finish   |QSR   |Cancel   |Payment   |OK   |Void   |Wrong Item Ordered |Add    |Done   |Check Stats   |Exit   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify Tax Exempt- From Order Screen,Application  should removed Tax Exempt and Tax should applied for that Entire Check from Order Screen,Verify Application should not allow to do Tax Exempt after Payment Done Check
     When User click QSR on Menu Item page
     Then User select DineIn order type
@@ -4599,7 +4599,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnPayment|btnLogOff|
       |QSR   |Cancel   |Payment   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify Check Payment through Side CC with Tax Exempt and also with tip
 #    Given User click setting icon
 #    And User click POS Option
@@ -4635,7 +4635,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnLogOff|
       |QSR   |Cancel   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify Check Payment through Side CC with Tax Exempt not select customer in payment screen and also with tip
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
@@ -4679,7 +4679,7 @@ Feature: QSR feature
 #    And I click "Hide keyboard" button in the keyboard "Click Back"
 #    When USer click log off button
 
-  @RegressionQSR3
+
   Scenario Outline: Settings Icon on Order Screen,Sync Icon on Order Screen,Application allow user to sync the change through order screen sync button,Add Customer' Icon,Application don't allow user to do "Log off","Operation","Till Management","Sync Icon","All" button process during a sale
     When User click setting icon
     Then User verify setting options
@@ -4730,7 +4730,7 @@ Feature: QSR feature
       |    btnClose         |btnVoid|btnWrong   |btnAdd|btnDone|btnQsr |btnCancel|btnDinein|btnQsr|tabAll|btnDone|btnSettings|btnTillMamagement|btnContinue|
       |CustomerProfile Close|Void   |arrow down |Add   |Done   |QSR    |Cancel   |Dine In  |QSR   |All   |Done   |Settings 1  |Counting Machine|Continue   |
 
-#  @RegressionQSR301
+#
 #  Scenario Outline: Verify tax after adding menu item,Verify multiple tax after adding menu item,Verify Subtotal before adding menu item,Verify Subtotal after adding menu item, Verify discount before adding menu item ,Verify gratuity after adding menu item in the order screen,Verify Paid Amount in order screen before doing partial payment,Verify Paid Amount in order screen after doing partial payment,Verify Paid Amount in order screen after doing Full payment
 #
 #    And I select menu item as "Pancake"
@@ -4794,7 +4794,7 @@ Feature: QSR feature
 #    Examples:
 #      | text     | item    | number2 |item2       | text1 |btnVoid |number1 |text2   |text3  |number4 |number3 |btnGratuity | optFixedGratuity | text4 |text5  | text6  |text7  |btnPayment |paymentPin0 |paymentPin5 |btnCash |btnOk | btnWrong          | btnAdd | btnDone | item3          |  btnLogOff |btnDropDown|category|
 #      | $ 0.31   | Pancake | 2       |Onion Rings |$ 1.21 |Void    | 1      | $ 0.00 |$ 1.00 | 4      | 3      |Gratuity    | Fixed Gratuity   |$ 1.25 |$ 0.14 |$ 1.20  |$ 1.20 |Payment    | 0          |5           |Cash    | OK   |Wrong Item Ordered | Add    | Done    | EGG SANDWICHES | logOff     |arrow down |CIFOOD  |
-  @RegressionQSR3
+
   Scenario: Application allow user to login through operation
     Given User click setting icon
     And User verify setting options
@@ -4812,7 +4812,7 @@ Feature: QSR feature
     And I closed the order type window
     When USer click log off button
 
-  @RegressionQSR3
+
   Scenario: Cash-On Empty Checks- empty
 #    Given User click setting icon
 #    And User verify setting options
@@ -4885,7 +4885,7 @@ Feature: QSR feature
     Then User click cancel button
     When USer click log off button
 
-  @RegressionQSR3
+
   Scenario: Normal check with Fast cash payment and Service Charge,Normal check with cash payment and Service Charge
     Given User click setting icon
     And User verify setting options
@@ -4921,7 +4921,7 @@ Feature: QSR feature
     And I closed the order type window
     When USer click log off button
 
-  @RegressionQSR3
+
   Scenario: Normal Check Cancel - Cancel “Enter Customer Name” popup todo
     Given User click setting icon
     And User verify setting options
@@ -4953,7 +4953,7 @@ Feature: QSR feature
     And I closed the order type window
     When USer click log off button
 
-  @RegressionQSR3
+
   Scenario: Normal check with Side CC payment
     Given User click setting icon
     And User verify setting options
@@ -5028,7 +5028,7 @@ Feature: QSR feature
     When USer click log off button
 
 
-  @RegressionQSR3
+
   Scenario Outline: Check Discount for item based
     #Check Discount for item based
     # Application display enter the menu item discount
@@ -5113,7 +5113,7 @@ Feature: QSR feature
       |btnVoid|     btnWrong         |btnAdd|btnCancel |btnDiscount |optItemBasedDiscount|btnLogOff|btnDone|
       |Void   |   Wrong Item Ordered |Add   |Cancel    |Discount    |Item-Based Discount |logOff   |Done   |
 
-  @RegressionQSR3
+
   Scenario Outline: Check with discount(Check based - After tax) as Amount
 ##    Given User select QSR mode on menu item page
     And I select category as "FOOD"
@@ -5203,7 +5203,7 @@ Feature: QSR feature
 
  #todo done
  #  @RegressionTest @SmokeTest
-  @RegressionQSR3
+
   Scenario Outline: Check with discount(item based - After tax) as amount
     And I select menu item as "SANDWICHES"
     And I select menu item as "SANDWICHES"
@@ -5270,7 +5270,7 @@ Feature: QSR feature
 
 #todo Done
 #  @RegressionTest @SmokeTest
-  @RegressionQSR3
+
   Scenario Outline: Not allows to Remove the Auto Discount
 #    Given User select QSR mode on menu item page
     And I select category as "CIFOOD"
@@ -5326,7 +5326,7 @@ Feature: QSR feature
 
 #todo done
 #  @RegressionTest
-  @RegressionQSR3
+
   Scenario Outline: Verify item based discount after tax
 #    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
@@ -5457,7 +5457,7 @@ Feature: QSR feature
 
 #todo inprogress
 #  @SmokeTest @RegressionTest
-  @RegressionQSR3
+
   Scenario Outline: Verify check based discount after tax
 #    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
@@ -5508,7 +5508,7 @@ Feature: QSR feature
 
 #todo done
 #  @d1
-  @RegressionQSR3
+
   Scenario Outline: Verify check based discount after tax with open item (amount only)
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -5761,7 +5761,7 @@ Feature: QSR feature
 
 #todo done
 #  @SmokeTest
-  @RegressionQSR3
+
   Scenario Outline: Verify check with fix gratuity on Bar Tab
     Given User click setting icon
     And User verify setting options
@@ -5831,7 +5831,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnPos |btnExit|pin1|pin5|pin0|pinPoint|btnApply |btnContinue|btnLogOff|
       |QSR   |Cancel   |POS    |Exit   | 1  |5   |0   |.       |Apply    |Continue   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify check with tax exempt and with customer
     Given User click setting icon
     And User verify setting options
@@ -5888,7 +5888,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |POS   |Exit   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify check with vary gratuity through Payment screen
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -5928,7 +5928,7 @@ Feature: QSR feature
       |giftCardNumber| btnProcess| btnOk|btnQsr|btnCancel|pin1|pin5|pin0|pinPoint|btnContinue|btnApply|btnManual|Back|btnLogOff|
       |12345      |Process    |OK    |QSR   |Cancel   |1   |5   |0   |.       |Continue   |Apply   |Manual   |Hide keyboard|logOff|
 
-  @RegressionQSR3
+
   Scenario Outline: Verify Check Payment through CC Side with Item Based Discount - After Tax as percentage and with tip
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
@@ -6077,7 +6077,7 @@ Feature: QSR feature
       |btnCancel|btnDiscount|btnCash|btnLogOff|
       |Cancel   |Discount   |Cash   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify check with tax exempt for pre defined customer
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6094,7 +6094,7 @@ Feature: QSR feature
       |btnLogOff|
       |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify Check Payment through CC Side  with Check Based Discount - After Tax as percentage and with tip# Given User click setting icon
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6246,7 +6246,7 @@ Feature: QSR feature
       |btnCancel|btnDiscount  |btnLogOff|
       |Cancel   | Discount    |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Verify Check Payment through CC Side with Open item Discount- After Tax as percentage and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6273,7 +6273,7 @@ Feature: QSR feature
       |course_name|btnCancel|pin1|pin0|btnContinue|btnLogOff|
       |  ENTREE   |Cancel   |    1|0  |Continue   |logOff   |
 
-#  @RegressionQSR3
+#
 #  Scenario Outline:Verify Check Payment through CC Side with Open Check Discount- After Tax as percentage and with tip
 #    And I select category as "FOOD"
 #    And I select menu item as "SANDWICHES"
@@ -6402,7 +6402,7 @@ Feature: QSR feature
 #      |btnCancel|btnDiscount|pin1|pin0|btnContinue|btnLogOff|
 #      |Cancel   |Discount   |1   |0   |Continue   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - After Tax as Percentage and with Tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6545,7 +6545,7 @@ Feature: QSR feature
       |btnCancel|btnDiscount|btnLogOff|
       |Cancel   |Discount   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Discount - Item Based After Tax on BarTab and Pay with Fast Cash as Percentage
     Given User click setting icon
     And User verify setting options
@@ -6681,7 +6681,7 @@ Feature: QSR feature
     Examples:
       |btnQsr|btnCancel|btnDiscount|btnDropDown|category |btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |Discount   |arrow down |Appetizers|POS  |Exit   |logOff   |
-  @RegressionQSR3
+
     Scenario Outline: Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
       Given User click setting icon
       And User verify setting options
@@ -6778,7 +6778,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnDiscount|btnDropDown|category |btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |Discount   |arrow down |Appetizers|POS  |Exit   |logOff   |
 
-  @RegressionQSR3
+
   Scenario Outline: Discount - Check Based with After Tax on BarTab and Pay with Fast Cash as Percentage
     Given User click setting icon
     And User verify setting options
@@ -6874,7 +6874,7 @@ Feature: QSR feature
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |
 
 
-  @RegressionQSR3
+
     Scenario Outline: Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
     Given User click setting icon
     And User verify setting options
@@ -6968,7 +6968,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnDropDown|category |btnExit|btnDiscount|btnLogOff|btnPos|
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |
 
-  @RegressionQSR3
+
   Scenario Outline: Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
     And I select category as "Appetizers"
     When I select menu item as "BRUSHETTA"
@@ -7111,7 +7111,7 @@ Feature: QSR feature
       |course_name|btnCancel|  btnCBDiscount      | text|btnDropDown|category|btnDiscount|pin1|pin5|pin0|btnContinue |btnDone|btnLogOff|
       |ENTREE     |Cancel   |CB-PercentageAfterTax|TL 101,50|arrow down |Appetizers |Discount|1   |5   |0   |Continue    |Done   |logOff|
 
-  @RegressionQSR3
+
   Scenario: Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
     When User click QSR on Menu Item page
     Given User select DineIn mode
@@ -7135,7 +7135,7 @@ Feature: QSR feature
     When User select QSR order typ
     When USer click log off button
 
-  @RegressionQSR3
+
   Scenario Outline: Open Gratuity Page
     When I select menu item as "SANDWICHES"
     Then User click Option Tab
@@ -7197,7 +7197,7 @@ Feature: QSR feature
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
       |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |
 
-  @RegressionQSR3
+
   Scenario Outline: Reduce Gratuity
     When I get check number
     When I select menu item as "SANDWICHES"
@@ -7231,7 +7231,7 @@ Feature: QSR feature
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
       |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |
 
-  @RegressionQSR3
+
   Scenario Outline:  Verify Check Payment through CC with Gratuity(Fixed) and with tips
     Then User click food category
     When User select Sandwiches menu item
@@ -7253,7 +7253,7 @@ Feature: QSR feature
     Examples:
       |btnLogOff|
       |logOff   |
-  @RegressionQSR3
+
   Scenario Outline: Verify Check Payment through CC with Gratuity(Varying) and with tips
     Then User click food category
     When User select Sandwiches menu item
@@ -7281,7 +7281,7 @@ Feature: QSR feature
       |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |1500  |
 
 
-  @RegressionQSR3
+
   Scenario Outline: Delete Modifier,Add Modifier,Cancel Modifier
    #Application should be closed modifiers screen and come back to the order screen
     When User select menu item with modifier
@@ -7319,7 +7319,7 @@ Feature: QSR feature
       |Void   |1/2 Romano|Option   |Modify   |Add Veggies|logOff |Done   |
 
 
-  @RegressionQSR3
+
   Scenario Outline: Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers
     When User select menu item with modifier
     Then User add modifiers over maximum count

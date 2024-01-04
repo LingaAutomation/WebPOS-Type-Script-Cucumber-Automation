@@ -1,4 +1,4 @@
-
+@BarTab12
 Feature: Bar Tab
 
   Background:

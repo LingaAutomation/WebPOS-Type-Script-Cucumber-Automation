@@ -120,7 +120,7 @@ public class TGOrderTypeWindow extends ClockInScreen {
 //        elementClick(phoneToGoBtn, "Phone To Go order type is selected.");
 //    }
     public void selectPhoneToGoOrderType() {
-        WebElement element=mergeAndFindMobileElement((WebElement) phoneToGoBtn);
+        WebElement element=driver.findElement(By.xpath( "//span[.=' PHONE TOGO ']"));
         elementClick(element, "Phone To Go order type is selected.");
 
 //        driver.findElement(phoneToGoBtn).isDisplayed();

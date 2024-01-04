@@ -26,10 +26,10 @@ public class OpenItemWindow extends OrderManagementScreen{
 
 
 
-    @FindBy( name = "1")
+    @FindBy( xpath = "//button[.='1']")
     WebElement price1Check;
 
-    @FindBy(name = "0")
+    @FindBy(xpath = "//button[.='0']")
     WebElement price0;
 
 

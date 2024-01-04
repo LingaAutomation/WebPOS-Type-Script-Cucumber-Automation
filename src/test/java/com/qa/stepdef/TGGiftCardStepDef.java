@@ -202,10 +202,10 @@ public class TGGiftCardStepDef {
 //        Assert.assertEquals(btnPopup, text);
 
     }
-    @Then("user verify the enter the charge amount \"([^\"]*)\" \"([^\"]*)\"$")
-    public void userVerifyTheEnterTheChargeAmount(String warningPopup, String msg) {
-        String text =  new CICloseDayScreen().commonAccessibilityIdReturn(warningPopup,msg);
-        Assert.assertEquals(warningPopup, text);
+    @Then("user verify the enter the charge amount$")
+    public void userVerifyTheEnterTheChargeAmount() {
+        new TGGiftCard().verifyEnterTheChargeAmountInfoPopup();
+
     }
     @Then("I click the \"([^\"]*)\" button in the popup screen \"([^\"]*)\"$")
     public void IClickTheButtonInThePopupScreen(String rechargeSucessFull, String msg) {
@@ -213,7 +213,7 @@ public class TGGiftCardStepDef {
 
     }
     @Then("i should verify the deleted card number")
-    public void IShouldVerifyTheDeletedCardNumber() {
+    public void IShouldVerifyTheDeletedCardNumber() throws InterruptedException {
         new TGGiftCard().verifyCreditCardTxtField();
 
     }

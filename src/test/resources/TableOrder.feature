@@ -1,4 +1,5 @@
-@RegressionBarTab01
+@Regression
+
 Feature:Table Order Operations
 
   Background:
@@ -6,7 +7,7 @@ Feature:Table Order Operations
     And I close the order type window
     And I click All
     And I click Table Layout tab
-  @RegressionTable
+
   Scenario: Change Floors
     #Given I'm logged in
     #And I close the order type window
@@ -31,7 +32,7 @@ Feature:Table Order Operations
 #    Then I should see types of checks available on the Table layout screen
     And I click power button
 
-  @RegressionTable
+
   Scenario Outline: Merge Checks - Rare Scenarios
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
@@ -161,7 +162,7 @@ Feature:Table Order Operations
       | first |second |third | four | five | number_of_seats | Menu_Item   | Menu_Item1   | Menu_Item2 | Modifier | Modifier1 | Modifier2 | Merge_seat |
       | T1    | T2    |T3    | T4    | T5  | 3               |French Friese| Garlic Bread | Tuna Tacos |  Steak   | 4 BBQ     | Croutons  | 15         |
 
-  @RegressionTable
+
   Scenario Outline: Merge 5 check without pay
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
@@ -1654,7 +1655,7 @@ Feature:Table Order Operations
       | first |second |third | Four | Five | number_of_seats | Menu_Item   | Menu_Item1   | Menu_Item2 | Menu_Item3         | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3  | Modifier4 | Merge_seat |
       | T1    | T2    | T3   | T4   | T5   | 1               |French Friese| Garlic Bread | Tuna Tacos | Cheesy Bacon Fries | B.I. Wings | Steak    | 4 BBQ     | Croutons  | 1/2 Cheese | Tomato    | 5          |
 
-  @RegressionTable
+
   Scenario Outline: Check whether the gratuity amount show correctly when both the seats are placed with inclusive tax menu items and gratuity applied
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1735,7 +1736,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats |Menu_Item      | Modifier |  Modifier1 |SubTotal   |  Tax     | Gratuity | Total   |
       | T8       | 3               | French Friese | Steak    | Butter     |$ 30.00    |$ 2.72    |$ 2.72    | $ 32.72 |
 
-  @RegressionTable
+
   Scenario Outline: Replace Customers
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1784,7 +1785,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats |customer_name  | customer   | customer_name1 | customer1 |
       | T6       |1                | Ragavan P     | Ragavan P  |  auto number1  | auto n    |
 
-@RegressionTable
+
   Scenario Outline: Customer Profile From order screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1829,7 +1830,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats |
       | T6       |1                |
 
-  @RegressionTable
+
   Scenario Outline: Check Down
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1862,7 +1863,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T6       |1                | French Friese | Tomato   |
 
-  @RegressionTable
+
   Scenario Outline: Print - Table Layout Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1996,7 +1997,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T28      |1                | French Friese | Tomato   |
 
-  @RegressionTable
+
   Scenario Outline: New Check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2076,7 +2077,7 @@ Feature:Table Order Operations
       |table_no|number_of_seats| Menu_Item    | Modifier|
       |T22     |1              | Garlic Bread | 4 BBQ   |
 
-  @RegressionTable
+
   Scenario Outline: Creating a table order for 2 and then add & delete a seat, select menu items to order for each seats and then finish order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2114,7 +2115,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | customer_name | menu_item_1   | menu_item_2   | modifier_1 | modifier_2 | modifier_3 |
       | T13      | 2               | Ragavan P     | French Friese |  Garlic Bread | Steak      | Tomato     | 4 BBQ      |
 
-  @RegressionTable
+
   Scenario Outline: Creating another table order to be merged
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2139,7 +2140,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item          | Modifier   |
       | T11      | 1               | Cheesy Bacon Fries | 1/2 Cheese |
 
-  @RegressionTable
+
   Scenario Outline: Create 2 Table Order then Merge and Click already selected Check to see "Check already added" pop-up
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2192,7 +2193,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item          | Modifier   |second_table  | number_of_seats | Menu_Item1   | Modifier1 |
       | T15      |1                | Cheesy Bacon Fries | 1/2 Cheese | T16          |1                | Garlic Bread | 4 BBQ     |
 
-  @RegressionTable
+
   Scenario Outline: Create 2 Table Order then Merge 1 Order click Done to see "Select Atleast 2 Check" pop-up
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2245,7 +2246,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item  | Modifier | second_table | number_of_seats | Menu_Item1   | Modifier1 |
       | T8       |1                | B.I. Wings | Tomato   | T9           |1                | Garlic Bread | 4 BBQ     |
 
-  @RegressionTable
+
   Scenario Outline: Create 2 Table Order then Merge after that click Cancel button should merge box disappered
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2293,7 +2294,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item  | Modifier | second_table | number_of_seats | Menu_Item1   | Modifier1 |
       | T10      |1                | Tuna Tacos | Croutons | T11          |1                | Garlic Bread | 4 BBQ     |
 
-  @RegressionTable
+
   Scenario Outline: Create Sale in Table Layout Screen then click the Split to see Split Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2324,7 +2325,7 @@ Feature:Table Order Operations
       | T17       |1                | B.I. Wings | Tomato   |
 
 
-  @RegressionTable
+
   Scenario Outline: Split Check Without Sale
     And I click new check button on the Table layout screen
     And I click the Split Button from the Table Layout Screen
@@ -2740,7 +2741,7 @@ Feature:Table Order Operations
       | T15      | 1             |2                 | French Friese | Tomato   | Garlic Bread | 4 BBQ     | 2               |
 
 
-  @RegressionTable
+
   Scenario Outline: Print Split Screen for Without Select seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2881,7 +2882,7 @@ Feature:Table Order Operations
       | T22       |1                | French Friese | Tomato   |
 
 
-  @RegressionTable
+
   Scenario Outline: Print All Split Screen,when click Print All application should as Items need to send kitchen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2990,7 +2991,7 @@ Feature:Table Order Operations
       | T23       |1                | French Friese | Steak    |
 
 
-  @RegressionTable
+
   Scenario Outline: Pay-Split Screen, When click Pay Button application should navigate to the order screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3092,7 +3093,7 @@ Feature:Table Order Operations
       | T11      |1                | French Friese | Tomato   |
 
 
-  @RegressionTable
+
   Scenario Outline: Touch & Paste on Split Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3205,7 +3206,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |  number_of_seats3 | Menu_Item     | Modifier | Menu_Item1   | Modifier1 | Menu_Item2 | Modifier2 |table_no1|
       | T17      |1                | French Friese | Tomato   | 3                 | French Friese | Tomato   | Garlic Bread | 4 BBQ     | B.I. Wings | Tomato    |T15      |
 
-  @RegressionTable
+
   Scenario Outline: Pay Check-Table Layout, Should navigate to Payment Window
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3244,7 +3245,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T23      |1                | French Friese | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Print Table Layout, see Receipt printer without order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3334,7 +3335,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier1 | Modifier |
       | T17      |1                | French Friese | Steak     |  Tomato  |
 
-  @RegressionTable
+
   Scenario Outline: Void - Before Order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3447,7 +3448,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier1 | Menu_item1 | Modifier |
       | T10      |1                | French Friese | Tomato    |Onion Rings | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Cash (Paid Exact Amount)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3554,7 +3555,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T12      |1                | French Friese | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Payment -Adjust Payment Should not Allow Except cash payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3793,7 +3794,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats|number_of_seats2 | Menu_Item    | Modifier |
       | T7       |1               | 2               |French Friese | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Cash reopen check After Payment for 2 checks
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3834,7 +3835,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T13      |2                | French Friese | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Adjust Payment- Select payment and try again
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3965,7 +3966,7 @@ Feature:Table Order Operations
       | table_no |number_of_seats1|number_of_seats2| number_of_seats3 | Menu_Item     | Modifier |
       | T8       |1               |2               |3                 | French Friese | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Exit Payment , Finish - In Table layout screen, color of the table should be changed to seated color
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4015,7 +4016,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T19       |1                | French Friese | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Create 2 Table order then Merge after that click Arrow to see Merge box Hide
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -4060,7 +4061,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier | second_table | number_of_seats | Menu_Item1   | Modifier1 |
       | T20      |1                | French Friese | Steak    | T19          |1                | Garlic Bread | 4 BBQ     |
 
-  @RegressionTable
+
   Scenario Outline: Void - Reopen Check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4101,7 +4102,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier |
       | T14      |1                | French Friese | Steak    |
 
-  @RegressionTable
+
   Scenario Outline: Normal check with cash payment,Normal check with CC payment, Normal check with CC payment with tips and without service charge
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4235,7 +4236,7 @@ Feature:Table Order Operations
 #      | table_no | number_of_seats |  Menu_Item     | Modifier | card_number     | expire_date | card_name | Total    | service_charge |
 #      | T14       |1               |  French Friese | Steak    | 371449635398431 | 1224        | Amex      | $ 15.00  | $ 0.00         |
 
-  @RegressionTable
+
   Scenario Outline: Normal check with HA payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4360,7 +4361,7 @@ Feature:Table Order Operations
       | T19      |1                |  French Friese | Steak      | $ 15.00  | $ 15.00 | $ 25.00 | Auto ragav    |
 
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application display Transfer server screen when user clicks the Transfer button present in the table layout screen
    # Given I'm logged in
     #And I close the order type window
@@ -4466,7 +4467,7 @@ Feature:Table Order Operations
       |SubTotal|
       |$ 0.00 |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow user to view sub total in ordering screen after adding menu item to the order screen
     And I click new check button on the Table layout screen
     And I select table as "T8"
@@ -4519,7 +4520,7 @@ Feature:Table Order Operations
       |Menu_Item      |Modifier    |SubTotal|Tax      |Menu_Item1|Modifier1    |SubTotal2|Tax    |SubTotal1   | Tax1      | Total        |Discount |
       | French Friese | Steak      |$ 15.00 |$ 0.00   | Ravioli  | Butter      |$ 0.00   |$ 0.00  |$ 14.00     |$ 1.40     | $ 15.40      |$ 0.00   |
 
-  @RegressionTable
+
   Scenario Outline:Verify whether application allows the user to Fire the Hold Menu Item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4990,7 +4991,7 @@ Feature:Table Order Operations
       |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
       |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow to split the check based amount discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
 
     And I click new check button on the Table layout screen
@@ -5165,7 +5166,7 @@ Feature:Table Order Operations
 
 
 
-  @RegressionTable
+
   Scenario Outline:Verify whether application allow to split the check based percentage discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -5341,7 +5342,7 @@ Feature:Table Order Operations
       | table_no |table_no1 | number_of_seats2| Menu_Item| Modifier |Discount                   | SubTotal    | Tax       | txtDiscount |Total       |Discount1                | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 | Tax3       | SubTotal3    | Total3      | Discount3              |txtDiscount3 |
       | T13      |T16       | 2               |  Ravioli | Butter   | CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.52    | $ 2.80      |$ 27.72      |CB-AfterTax-Percentage10 | $ 28.00    | $ 2.80    | $ 2.80       | $ 28.00     |$ 2.45     | $ 30.00      | $ 27.00      |CB-BeforeTax-Percentage10 | $ 3.00      | $ 2.73     | $ 30.00      | $ 27.28     |CB-AfterTax-Percentage10| $ 2.72      |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow to split the check based set price discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
 
     And I click new check button on the Table layout screen
@@ -5509,7 +5510,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item|Modifier1|Discount                  | SubTotal    | Tax       | txtDiscount   |Total       |Discount1                  | SubTotal1    | Tax1       | txtDiscount1   |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
       | T17      | 2               |  cake    |Butter   |CB-BeforeTax-SetPrice1000 | $ 16.00     | $ 1.00    | $ 6.00        | $ 11.00    |CB-AfterTax-SetPrice1000   | $ 16.00      | $ 1.60     | $ 6.00         | $ 11.60     |$ 0.91     | $ 30.00      | $ 10.00      |CB-BeforeTax-SetPrice1000 | $ 20.00     |$ 2.73     | $ 30.00      | $ 10.00      |CB-AfterTax-SetPrice1000|$ 20.00      |
 
-  @RegressionTable
+
   Scenario Outline: verify whether application allow to split the check based free item (exclusive tax menu item) discount with type before tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -5719,7 +5720,7 @@ Feature:Table Order Operations
       | table_no |number_of_seats|Menu_Item   |Menu_Item1 |Discount              |Discount1             | SubTotal    | Tax      | Total     |Modifier2 | Tax2       | SubTotal2   | Total2       |SubTotal3   | Tax3       | Gratuity3   | Total3       |
       | T19      |2              | Cheesecake |Halwa      | CB-BeforeTax-Free300 |CB-AfterTax-Free300   | $ 32.00     | $ 3.20   | $ 35.20   | Butter   | $ 2.93     | $ 32.00     | $ 32.20      |$ 12.00     | $ 1.20     |  $ 1.20     | $ 14.40      |
 
-  @RegressionTable8
+
   Scenario Outline:Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based amount discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -5895,7 +5896,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount             |txtDiscount | SubTotal    | Tax       | Total       | Discount1         | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2      | SubTotal2   | Total2      | txtDiscount2 | Tax3     | SubTotal3   | Total3      | txtDiscount3  |
       | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-Amount |$ 2.00      | $ 28.00     | $ 2.60    | $ 28.60     |IB-AfterTax-Amount | $ 28.00     | $ 2.80    | $ 2.00       | $ 28.80     |$ 2.55    | $ 30.00     | $ 28.00     | $ 2.00       |$ 2.73    | $ 30.00     | $ 28.00     | $ 2.00        |
 
-  @RegressionTable8
+
   Scenario Outline:Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based percentage discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -6072,7 +6073,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount    | SubTotal    | Tax      | Total       |Discount1                |txtDiscount1    | SubTotal1    | Tax1      | Total1       | Tax2          | SubTotal2    | Total2       | txtDiscount2 |Tax3           | SubTotal3    | Total3       | txtDiscount3    |
       | T12       |2                | Ravioli  | Butter   | IB-BeforeTax-Percentage  |$ 2.80         | $ 28.00     | $ 2.52   | $ 27.72     |IB-AfterTax-Percentage   |$ 2.80          | $ 28.00      | $ 2.80    | $ 28.00      |$ 2.45         | $ 30.00      | $ 27.00      | $ 3.00       |$ 2.73         | $ 30.00      | $ 27.28      | $ 2.72          |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -6251,7 +6252,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount  | SubTotal    | Tax       | Total       | Discount1               |txtDiscount1 | SubTotal1   | Tax1      | Total1      | Tax2    | SubTotal2   | Total2      | txtDiscount2 | Tax3       | SubTotal3    | Total3       | txtDiscount3 |
       | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-SetPrice500 |$ 26.00      | $ 28.00     | $ 0.20    | $ 2.20      | IB-AfterTax-SetPrice500 |$ 25.00      | $ 28.00     | $ 2.80    | $ 5.80      |$ 0.18   | $ 30.00     | $ 2.00      | $ 28.00      |$ 2.73      | $ 30.00      | $ 3.00       | $ 27.00      |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -6515,7 +6516,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       | Discount1              | Tax2       | SubTotal2    | Total2      |Discount2    | Discount3     | SubTotal3   | Tax3       | Total3       |Discount4      | SubTotal4   | Tax4       | Total4       |
       | T16       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | $ 30.00     | $ 3.00    | $ 33.00     |IB-AfterTax-AsFreeItem  | $ 2.93     | $ 32.00      | $ 32.20     |IB-BF-AsFree |IB-BF-AsFree   | $ 30.00     | $ 3.00     | $ 33.00      |  IB-AF-AsFree | $ 31.00     | $ 3.10     | $ 34.10      |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
 
     And I click new check button on the Table layout screen
@@ -6604,7 +6605,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Modifier | Tax        | SubTotal     | Total       |Discount                | Tax1       | SubTotal1    | Total1      |Discount1              |
       | T8       |2                | Butter   | $ 2.93     | $ 32.00      | $ 32.20     |IB-BeforeTax-AsFreeItem | $ 2.93     | $ 32.00      | $ 32.20     |IB-AfterTax-AsFreeItem |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application calculate the gratuity based on the net sale of the seat if user move menu item from one seat to another seat
 
     And I click new check button on the Table layout screen
@@ -6720,7 +6721,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | number_of_seats1|Menu_Item |Modifier  |SubTotal    | Tax       |  Gratuity  | Total       |  SubTotal1   | Tax1       | Total1       |
       | T9         |2              | 1               | Ravioli  | Butter   |$ 14.00     | $ 1.40    |  $ 1.40    | $ 16.80     | $ 14.00      | $ 1.40     | $ 15.40      |
 
-  @RegressionTable2
+
   Scenario Outline: Verify whether user can revert changes when user create the check with multiple seats and done the payment for any one seat
 
     And I click new check button on the Table layout screen
@@ -7126,7 +7127,7 @@ Feature:Table Order Operations
 #      | table_no | number_of_seats | Menu_Item  | Menu_Item1  |Discount1| SubTotal    | Tax       | Discount  | Total       | SubTotal1   | SubTotal2   |
 #      | T8       |    2            |  cake      |   Halwa     | Before  | $ 18.00     | $ 1.44    | $ 3.60    | $ 15.84     | $ 8.00      | $ 10.00     |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application removes the applied check based discount when the user does Split Evenly
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7214,7 +7215,7 @@ Feature:Table Order Operations
       | table_no |number_of_seats|Menu_Item   |Discount              | SubTotal    | Tax      | Total     | SubTotal1  |  SubTotal2  |
       | T12      |2              | Cheesecake | CB-BeforeTax-Free300 | $ 32.00     | $ 3.20   | $ 35.20   | $ 17.00    |  $ 15.00    |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether the application allows the user to close the check before doing the payment for the seat 2
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7350,7 +7351,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats |number_of_seats1| Menu_Item     | Modifier |amount     | Paid_Amount | Menu_Item1   |Discount1              | SubTotal1    | Tax1      | Total1     |
       | T7       |2                |1               | French Friese | Steak    | 15.00  | $ 15.00     | Cheesecake   | CB-BeforeTax-Free300  | $ 32.00      | $ 3.20    | $ 35.20    |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether the Application shows the seat total in the split screen shows less amount than  the seat's subtotal when the user does split evenly for the menu item which has priced  modifier to it
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7383,7 +7384,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item     | Modifier | Modifier1 | Modifier2 | SubTotal  | Tax    | Total   |
       | T7         |1              | French Friese | Steak    | Tomato    | Turkey    | $ 71.00   | $ 4.69 | $ 75.69 |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow user to move the menu item from one seat to another seat along with Item based free item discount
 
     And I click new check button on the Table layout screen
@@ -7473,7 +7474,7 @@ Feature:Table Order Operations
       | table_no | number_of_seats | Menu_Item  | Modifier | SubTotal    | Tax       | Total     | Discount    | Discount1               | Menu_Item1   |Discount2                 | SubTotal1    | Tax1      | Total1     | Discount3 |
       | T13      |2                | Ravioli    | Butter   | $ 14.00     | $ 1.40    | $ 2.90    | $ 12.50     | IB-AfterTax-SetPrice500 |Cheesecake    | IB-BeforeTax-SetPrice500 | $ 130.00     | $ 0.20    | $ 102.20   | $ 28.00   |
 
-  @RegressionTable
+
   Scenario Outline: Verify whether application allow to close the check if user paid the total check amount by selecting a single seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -7669,7 +7670,7 @@ Feature:Table Order Operations
      # | Modifier  | Menu_item |Menu_Item1|
       #| Penne    |  Parottas | Onion Rings|
 
-  @RegressionTable
+
   Scenario Outline: Create New Check
 
     Then User click New Check option
@@ -7765,7 +7766,7 @@ Feature:Table Order Operations
       |btnVoid|btnWrong           |btnAdd|btnDone|btnQsr|btnCancel|btnContinue|btnLogOff|btnSeatOne|txtTable|
       |Void   |Wrong Item Ordered   |Add   |Done   |QSR   |Cancel   |Continue   |logOff   |1         |T16     |
 
-  @RegressionTable
+
   Scenario Outline: Open Cash Drawer
     And I click new check button on the Table layout screen
     And User select first table
@@ -7785,7 +7786,7 @@ Feature:Table Order Operations
       |btnVoid|btnWrong|btnAdd|btnDone|btnPower|
       |Void |Wrong Item Ordered|Add |Done |Power button |
 
-  @RegressionTable
+
   Scenario: Merge Check
     And I click new check button on the Table layout screen
 ##    And I click the "Right" in the table layout screen1 "click right button"
@@ -7962,7 +7963,7 @@ Feature:Table Order Operations
     And I closed the order type window
     And I click log off button in order screen
 
-  @RegressionTable
+
   Scenario Outline: Merge without Discount
 
     When User click Bar Tab on Check Status page

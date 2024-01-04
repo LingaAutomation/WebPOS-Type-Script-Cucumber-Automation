@@ -1104,6 +1104,10 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().pressBack();
     }
 
+    @And ("^I click the Back button on Menu option Screen$")
+    public void iClickTheBackButtonOnMenuOptionScreen() throws InterruptedException {
+        new TableLayOutScreen().pressBack1();
+    }
     @Then ("^I should see the Changes made in split save and close pop-up$")
     public void iShouldSeeTheChangesMadeInSplitSaveAndClosePopUp(){
         Assert.assertEquals(new TableLayOutScreen().getChangesMadeinSplitMag(),"Changes made in split, save and close");

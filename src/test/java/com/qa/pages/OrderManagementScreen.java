@@ -90,7 +90,6 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
                               //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]
     @FindBy(xpath = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img")
-
     private WebElement TickIcon;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
@@ -192,10 +191,10 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//ion-row/button[contains(.,'Order')]")
     private WebElement orderBtn;
 
-    @FindBy(xpath = "Already sent to Kitchen")
+    @FindBy(xpath = "//p[.='Already sent to Kitchen']")
     private WebElement alreadySentToKitchenTxt;
 
-    @FindBy(xpath = "Done")
+    @FindBy(xpath = "//button[.=' Done ']")
     private WebElement doneAlreadySentToKitchen;
 
     @FindBy(xpath = "//button[contains(.,'Payment')]")
@@ -1176,7 +1175,7 @@ public  void selectCategory (String value) throws Exception {
 
 
     public void selectModifier1(String modify){
-        WebElement el1 = driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\" "+modify+"\"]"));
+        WebElement el1 = driver.findElement(By.xpath("//div[contains(@class,'modifier-section')]//div[contains(.,'"+modify+"')]"));
         elementClick(el1,"Tapped modifier");
     }
 

@@ -1232,7 +1232,7 @@ public class TGPaymentPage extends BasePage {
     public void clickClearButtonOnGİftCard(){
 //        WebElement element = mergeAndFindMobileElement(clearGiftCardInfo);
 //        elementClick(element, "click clearGiftCardInfo ");
-        WebElement element = mergeAndFindElement(cardNumberTxtField,"", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//button[.=' Clear ']"));
 //        sendKeys(element, "Number");
         element.clear();
     }

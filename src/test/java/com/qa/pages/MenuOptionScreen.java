@@ -51,16 +51,16 @@ public class MenuOptionScreen extends ClockInScreen{
 //    @FindBy(xpath = "//input[@id='mat-input-22']")
 //    private WebElement enterAmountField2;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[2]")
+    @FindBy(xpath = "//button[.='1']")
     private WebElement pin1ForOpenDiscount;
 
-    @FindBy(name = "00")
+    @FindBy(xpath = "//button[.='00']")
     private WebElement pin00ForOpenDiscount;
 
-    @FindBy(name = "0")
+    @FindBy(xpath = "//button[.='0']")
     private WebElement pin0ForOpenDiscount;
 
-    @FindBy(name = "9")
+    @FindBy(xpath = "//button[.='9']")
     private WebElement pin9ForOpenDiscount;
 
     @FindBy(xpath = "(//ion-col//button[contains(@class,'mat-focus-indicator')]//span[contains(.,'1')])[7]")
@@ -104,19 +104,19 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(xpath = "//label[contains(.,'Change Coursing')]")
     private WebElement changeCoursingBtn;
 
-    @FindBy(name = "Open Modifiers")
+    @FindBy(xpath = "//div[.='Open Modifier']")
     private WebElement openModifiersScreen;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
+    @FindBy(xpath = "/html/body/div/div[2]/div/mat-dialog-container/app-open-modifier/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/input")
     private WebElement txtFieldForOpenModifierScreen;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField")
+    @FindBy(xpath = "(//ion-row[@class='openModifier__content_grid-row md hydrated'])[2]//input")
     private WebElement priceField;
 
-    @FindBy(name = "Add")
+    @FindBy(xpath = "//button[.='Add']")
     private WebElement addBtn;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[2]")
+    @FindBy(xpath = "//button[.='Done']")
     private WebElement doneBtn;
 
     @FindBy(name = "85,00")
@@ -132,7 +132,7 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(xpath = "//p[contains(.,'Open Item')]")
     private WebElement openItemScreen;
 
-    @FindBy(name = "Void Item")
+    @FindBy(xpath = "//label[.='Void Item']")
     private WebElement voidBtnMenuOption;
 
     @FindBy(name = "Linga Close")
@@ -350,11 +350,11 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         elementClick(enterAmountField,"Tapped amount field");
         elementClick(pin1ForOpenDiscount,"Tapped pin 1 for open Discount ");
         elementClick(pin0ForOpenDiscount,"Tapped pin 0 for Open Discount");
-        elementClick(pin00ForOpenDiscount,"Tapped pin 00 For open Discount");
+        elementClick(pin0ForOpenDiscount,"Tapped pin 00 For open Discount");
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
-        elementClick(enterAmountField,"Tapped enter Amount Field");
-        elementClick(lingaCloseBtn,"Tapped Close Button");
+//        elementClick(enterAmountField,"Tapped enter Amount Field");
+//        elementClick(lingaCloseBtn,"Tapped Close Button");
         elementClick(applyButton,"Tapped Apply Button");
     }
     public void passAmountAndReasonMenuOptionForSafetyPercentageValue(String name) throws InterruptedException {
@@ -518,7 +518,11 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         pressPin0();
         pressPin0();
         pressContinueBarTabLoginBtn();
+        TestUtils.price = priceField.getAttribute("value");
+        utils.log().info(TestUtils.price);
+        elementClick("//label[.='Default']","Selected Default");
         elementClick(addBtn,"Tapped Add Button");
+
     }
 
     public void passNamePriceApplyTaxForMenu(String modify){
@@ -532,17 +536,44 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
     public void getModifierAddedOnOpenModifier(String Modify) {
 
-        try{
-            WebElement e1 = mergeAndFindElement(Modify,"",TestUtils.Accessibility);
-            if (e1.isDisplayed()) {
-                utils.log().info(Modify + " - Modifiers Added in Open Modifier screen");
-            } }catch(Exception e) {
-            utils.log().info("Modifiers not Added in Open Modifier screen"); }
+
+            WebElement e1 = driver.findElement(By.xpath("//li[.=' "+Modify+" ']"));
+            WebElement e2 = driver.findElement(By.xpath("//ol[@class='openModifier__content-modifierList ng-star-inserted']//li[2]"));
+            utils.log().info(e2.getText());
+            utils.log().info(e2.getAttribute("value"));
+            Assert.assertEquals(e1.getText(),Modify);
+            Assert.assertEquals(e2.getText(),TestUtils.price);
+            utils.log().info(Modify + " - Modifiers Added in Open Modifier screen - "+TestUtils.price);
+
+    }
+
+    public void getModifierAddedOnOpenModifier1(String Modify) {
+
+try {
+    WebElement e1 = driver.findElement(By.xpath("//li[.=' " + Modify + " ']"));
+    WebElement e2 = driver.findElement(By.xpath("//ol[@class='openModifier__content-modifierList ng-star-inserted']//li[2]"));
+    utils.log().info(e2.getText());
+    utils.log().info(e2.getAttribute("value"));
+    utils.log().info(Modify + " - Modifiers Added in Open Modifier screen - " + TestUtils.price);
+
+    Assert.assertEquals(e1.getText(),"mod");
+    Assert.assertEquals(e2.getText(), TestUtils.price);
+    utils.log().info(Modify + " - Modifiers Added in Open Modifier screen - " + TestUtils.price);
+}catch (Exception w ){
+    utils.log().info(Modify + "Not - Modifiers Added in Open Modifier screen - " + TestUtils.price);
+}
+
     }
 
     public void clickDone(){
         try{
             elementClick(doneBtn,"Tapped Done Button");}
+        catch (Exception e){}
+    }
+
+    public void clickCancel(){
+        try{
+            elementClick("//button[.='Cancel']","Tapped CAncel Button");}
         catch (Exception e){}
     }
     public void verifyModifyAddedOnOrderList(String modify){
@@ -568,13 +599,13 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
     public void swipeModifiersForDeleteInOpenModifyScreen() throws InterruptedException {
 
-        swipe(580,248,506,248,5000);
-        elementClick(deleteBtn,"Tapped Delete Button");
+        elementClick("//div[.='X']","Tapped Delete Button");
+
 
     }
     public void swipeModifierForDeleteInOrderScreen() throws InterruptedException {
-        swipe( 32, 320, -42, 320,5000);
-        elementClick(deleteBtn,"Tapped Delete Button");
+//        swipe( 32, 320, -42, 320,5000);
+        elementClick("/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div[4]/div[1]/div","Tapped Delete Button");
     }
 
     public void getAmount(String numb){
@@ -597,7 +628,8 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         return elementGetText(openItemScreen,"Open item Screen txt is Displayed - ");
     }
 
-    public void pressVoidBtnMenuOperation(){
+    public void pressVoidBtnMenuOperation() throws InterruptedException {
+        Thread.sleep(2000);
         elementClick(voidBtnMenuOption,"Tapped void button");
     }
 

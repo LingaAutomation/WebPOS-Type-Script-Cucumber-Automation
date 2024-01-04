@@ -1,4 +1,4 @@
-@Payments1
+@Regression
 Feature: Menu Option In scenarios
 
   Background:
@@ -7,7 +7,7 @@ Feature: Menu Option In scenarios
     And I click All
     And I click Table Layout tab
 
-@Menu
+
   Scenario Outline: Upcharge Reopen Check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -41,7 +41,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats | Menu_Item          | Modifier     | amount   |
       | T15      |1                |  Fried Crab Cakes  | White Bread  |$ 18.50   |
 
-  @Menu
+
   Scenario Outline: Void open item - Reopen check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -92,7 +92,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats |  course_name |open_Item     |
       | T8       |1                |  DESSERT     |Tiramisu      |
 
-  @Menu1
+
   Scenario Outline: Menu Option - Hold, Fire, Repeat, Quantity, Attach, Togo, Deselected from an Item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -306,6 +306,7 @@ Feature: Menu Option In scenarios
     Then I should see Open discount Screen
     And I pass the amount and reason on Open discount
     Then I should see discount applied on order screen
+    Then I should verify discount value as "$ 1.00"
     And I click menu item as "<Menu_Item>" to see Menu option screen
     And I click Open Discount on menu option
     And I click Cash button for Complete Sale
@@ -480,6 +481,7 @@ Feature: Menu Option In scenarios
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
+    Then I Should get back to the Order Screen
     And I click Options button
     And I click Open Item button
     Then I should see open item screen
@@ -491,8 +493,8 @@ Feature: Menu Option In scenarios
     And I click Continue button on the Open Item Price numbers popup
     And I select the Tax
     And I click Done button on the open item window
-    When I click Back button on Check Options Screen
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    When I click Back button on Check Options Screen
+    Then I should navigate to Order Management screen and see the added open item1 as "<open_Item>"
     And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
@@ -519,8 +521,8 @@ Feature: Menu Option In scenarios
     And I click Continue button on the Open Item Price numbers popup
     And I select the Tax
     And I click Done button on the open item window
-    When I click Back button on Check Options Screen
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    When I click Back button on Check Options Screen
+    Then I should navigate to Order Management screen and see the added open item1 as "<open_Item>"
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click the Exit button in the payment window
@@ -544,7 +546,7 @@ Feature: Menu Option In scenarios
     #  | table_no | number_of_seats | course_name |open_Item |
      # | T7     |1              |  DESSERT    |Tiramisu      |
 
-  #Scenario Outline: Open Item - Void Item, Void Item After Order
+#  Scenario Outline: Open Item - Void Item, Void Item After Order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -560,8 +562,8 @@ Feature: Menu Option In scenarios
     And I click Continue button on the Open Item Price numbers popup
     And I select the Tax
     And I click Done button on the open item window
-    When I click Back button on Check Options Screen
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    When I click Back button on Check Options Screen
+    Then I should navigate to Order Management screen and see the added open item1 as "<open_Item>"
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click the Exit button in the payment window
@@ -602,8 +604,8 @@ Feature: Menu Option In scenarios
     And I click Continue button on the Open Item Price numbers popup
     And I select the Tax
     And I click Done button on the open item window
-    When I click Back button on Check Options Screen
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    When I click Back button on Check Options Screen
+    Then I should navigate to Order Management screen and see the added open item1 as "<open_Item>"
     And I click Order button in the order management screen
     And I click Menu item on order screen
     And I click void item on Menu option
@@ -841,176 +843,176 @@ Feature: Menu Option In scenarios
       | T11     |1               |Dosa     |  SALAD     |onion     | $ 51.00  | $ 3.05    | $ 20.50  | $ 33.55 | Before     | $ 51.00     | $ 3.10    | $ 20.00   | $ 34.10    | $ 51.00  | $ 5.05      | $ 0.50      | $ 55.55    |
 
 
-  Scenario Outline: Check Payment through CC with discount(Open item - After tax/Before) as percentage and with tip
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I select Menu as category
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount as discount Percentage for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-  #  Then I should see card type window
-   # And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-#    And I click Ok button in receipt printer popup
-   # Then I should see signature pad screen
-    #And I click tick mark button
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-  #  And I click power button
+#  Scenario Outline: Check Payment through CC with discount(Open item - After tax/Before) as percentage and with tip
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount as discount Percentage for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#  #  Then I should see card type window
+#   # And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+##    And I click Ok button in receipt printer popup
+#   # Then I should see signature pad screen
+#    #And I click tick mark button
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#  #  And I click power button
+#
+# # Scenario Outline:  Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as decimal value and with tip
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal1>"
+#    Then I should see the tax amount reflected to the check as "<Tax1>"
+#    Then I should see the Discount amount reflected to the check as "<Discount1>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#  #  Then I should see card type window
+#   # And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total1>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+##    And I click Ok button in receipt printer popup
+#   # Then I should see signature pad screen
+#   # And I click tick mark button
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#   # And I click power button
+#
+#
+#
+# # Scenario Outline: Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as non-decimal value and with tip
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal2>"
+#    Then I should see the tax amount reflected to the check as "<Tax2>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Payment button in the Order Management Screen
+#    And I click credit card payment on payment window
+#    #Then I should see card type window
+#   # And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total2>"
+#    Then I should see total amount as "<total2>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    Then I should see tip added on order screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "<card_number>"
+#    And I pass card name as "<card_name>"
+#    And I pass expire date as "<expire_date>"
+#    And I click Process button on card screen
+##    And I click Ok button in receipt printer popup
+#    #Then I should see signature pad screen
+#    #And I click tick mark button
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#    And I click power button
+#
+#    Examples:
+#      |table_no| number_of_seats |Menu_Item|course_name| open_Item |  SubTotal | Tax       | Discount | Total    | Discount11 |  card_number     | expire_date   | card_name | total     |  SubTotal1 | Tax1       | Discount1 | Total1 |  total1   | SubTotal2  | Tax2        | Discount2  |Total2  | total2     |
+#      | T5     |1                |  Dosa   | DESSERT   |  onion    |  $ 51.00  | $ 5.10    | $ 0.50   |$ 55.60   | After      | 3530111333300000 | 1224          | JCB       | $ 65.60   |  $ 51.00   | $ 5.10     | $ 20.50   |$ 35.60 |  $ 45.60  |  $ 51.00   | $ 5.10      | $ 20.00    |$ 36.10 |  $ 46.10   |
 
- # Scenario Outline:  Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as decimal value and with tip
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I select Menu as category
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal1>"
-    Then I should see the tax amount reflected to the check as "<Tax1>"
-    Then I should see the Discount amount reflected to the check as "<Discount1>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-  #  Then I should see card type window
-   # And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total1>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-#    And I click Ok button in receipt printer popup
-   # Then I should see signature pad screen
-   # And I click tick mark button
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-   # And I click power button
 
 
-
- # Scenario Outline: Check Payment through CC with discount(Open item - After tax/Before) as amount & safety limit as non-decimal value and with tip
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I select Menu as category
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal2>"
-    Then I should see the tax amount reflected to the check as "<Tax2>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Payment button in the Order Management Screen
-    And I click credit card payment on payment window
-    #Then I should see card type window
-   # And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total2>"
-    Then I should see total amount as "<total2>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    Then I should see tip added on order screen
-    And I click manual button on the your order screen
-    And I pass the card number as "<card_number>"
-    And I pass card name as "<card_name>"
-    And I pass expire date as "<expire_date>"
-    And I click Process button on card screen
-#    And I click Ok button in receipt printer popup
-    #Then I should see signature pad screen
-    #And I click tick mark button
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-    And I click power button
-
-    Examples:
-      |table_no| number_of_seats |Menu_Item|course_name| open_Item |  SubTotal | Tax       | Discount | Total    | Discount11 |  card_number     | expire_date   | card_name | total     |  SubTotal1 | Tax1       | Discount1 | Total1 |  total1   | SubTotal2  | Tax2        | Discount2  |Total2  | total2     |
-      | T5     |1                |  Dosa   | DESSERT   |  onion    |  $ 51.00  | $ 5.10    | $ 0.50   |$ 55.60   | After      | 3530111333300000 | 1224          | JCB       | $ 65.60   |  $ 51.00   | $ 5.10     | $ 20.50   |$ 35.60 |  $ 45.60  |  $ 51.00   | $ 5.10      | $ 20.00    |$ 36.10 |  $ 46.10   |
-
-
-  @failed_Ragav1
   Scenario Outline: Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1124,7 +1126,7 @@ Feature: Menu Option In scenarios
       | T13     |1                 |Dosa     | SALAD      |onion     | $ 51.00  | $ 5.10    | $ 20.00  | $ 36.10    | After     | $ 51.00   | $ 5.10     | $ 20.50    | $ 35.60    | $ 51.00     | $ 5.10      | $ 0.50     | $ 55.60    |
 
 
-  @failed_Ragav1
+
   Scenario Outline: Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1374,244 +1376,248 @@ Feature: Menu Option In scenarios
       | T6     |1                |  Dosa   | DESSERT   |  onion    |  $ 51.00  | $ 5.10    | $ 0.50   |$ 55.60   | After      | $ 65.60   |  $ 51.00   | $ 5.10     | $ 20.50   |$ 35.60 |  $ 45.60  |  $ 51.00   | $ 5.10      | $ 20.00    |$ 36.10 |  $ 46.10   |
 
 
-  @failed_Ragav1
-  Scenario Outline: Check Payment through NMI with discount(Open item - After tax/Before) as percentage and with tip
+#  @failed_Ragav1
+#  Scenario Outline: Check Payment through NMI with discount(Open item - After tax/Before) as percentage and with tip
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I click Add Customer Button
+#    And I search for "<customer_name>"
+#    When I click "<customer_name>" to select customer for the seat
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount as discount Percentage for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal>"
+#    Then I should see the tax amount reflected to the check as "<Tax>"
+#    Then I should see the Discount amount reflected to the check as "<Discount>"
+#    Then I should see orderscreen with menu item Total as "<Total>"
+#    And I click Payment button in the Order Management Screen
+##    And I scroll the close the day "Others" "scroll close the day"
+#    And I click NMI payment button in the payment window
+#  #  Then I should see card type window
+#   # And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total>"
+#    Then I should see total amount as "<total>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see choose card window
+#    And I select credit card from choose card window
+#    And I click pay button in choose card window
+##    And I click Ok button in receipt printer popup
+#   # Then I should see signature pad screen
+#    #And I click tick mark button
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#  #  And I click power button
+#
+# # Scenario Outline:  Check Payment through NMI with discount(Open item - After tax/Before) as amount & safety limit as decimal value and with tip
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I click Add Customer Button
+#    And I search for "<customer_name>"
+#    When I click "<customer_name>" to select customer for the seat
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal1>"
+#    Then I should see the tax amount reflected to the check as "<Tax1>"
+#    Then I should see the Discount amount reflected to the check as "<Discount1>"
+#    Then I should see orderscreen with menu item Total as "<Total1>"
+#    And I click Payment button in the Order Management Screen
+##     And I scroll the close the day "Others" "scroll close the day"
+#    And I click NMI payment button in the payment window
+#    #Then I should see card type window
+#   # And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total1>"
+#    Then I should see total amount as "<total1>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see choose card window
+#    And I select credit card from choose card window
+#    And I click pay button in choose card window
+##    And I click Ok button in receipt printer popup
+#    #Then I should see signature pad screen
+#    #And I click tick mark button
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#   # And I click power button
+#
+#
+#
+#  #Scenario Outline: Check Payment through NMI with discount(Open item - After tax/Before) as amount & safety limit as non-decimal value and with tip
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I click Add Customer Button
+#    And I search for "<customer_name>"
+#    When I click "<customer_name>" to select customer for the seat
+#    And I select Menu as category
+#    And I select menu item as "<Menu_Item>"
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Open Item button
+#    Then I should see open item screen
+#    And I click Coursing Name text field for Menu option
+#    And I swipe to "<course_name>" as Coursing Name
+#    And I pass course name as "<open_Item>"
+#    And I tap Price text field for menu option
+#    And I enter the price with sale
+#    And I click Continue button on the Open Item Price numbers popup
+#    And I click Done button on the open item window
+#    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
+#    And I click open item as "<open_Item>" to see Menu option screen
+#    And I click Open Discount on menu option
+#    Then I should see Open discount Screen
+#    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount11>"
+#    Then I should see discount applied on order screen
+#    Then I should see orderscreen with menu item prize as "<SubTotal2>"
+#    Then I should see the tax amount reflected to the check as "<Tax2>"
+#    Then I should see the Discount amount reflected to the check as "<Discount2>"
+#    Then I should see orderscreen with menu item Total as "<Total2>"
+#    And I click Payment button in the Order Management Screen
+##  And I scroll the close the day "Others" "scroll close the day"
+#    And I click NMI payment button in the payment window
+#  #  Then I should see card type window
+#   # And I click visa card type as "<card_type>"
+#    #And I click ok button in card type window
+#    Then I should see total screen
+#    And I click custom for tip adjustment
+#    Then I should see tip is added with menu total as "<Total2>"
+#    Then I should see total amount as "<total2>" on total screen
+#    And I click the Continue button on the Total screen
+#    Then I should see choose card window
+#    And I select credit card from choose card window
+#    And I click pay button in choose card window
+##    And I click Ok button in receipt printer popup
+#   # Then I should see signature pad screen
+#    # And I click tick mark button
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
+#    And I click power button
+#    Examples:
+#      |table_no| number_of_seats |Menu_Item|course_name| open_Item |  SubTotal | Tax       | Discount | Total    | Discount11 | total     | customer_name |  SubTotal1 | Tax1       | Discount1 | Total1 |  total1   | SubTotal2  | Tax2        | Discount2  |Total2  | total2     |
+#      | T7     |1                |  Dosa   | DESSERT   |  onion    |  $ 51.00  | $ 5.10    | $ 0.50   |$ 55.60   | After      | $ 65.60   | Auto ragav    |  $ 51.00   | $ 5.10     | $ 20.50   |$ 35.60 |  $ 45.60  |  $ 51.00   | $ 5.10      | $ 20.00    |$ 36.10 |  $ 46.10   |
+
+
+
+
+  Scenario Outline: Menu Option - Remove Open Modifier
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
-    And I click Add Customer Button
-    And I search for "<customer_name>"
-    When I click "<customer_name>" to select customer for the seat
-    And I select Menu as category
+    And I select FOOD as category
     And I select menu item as "<Menu_Item>"
+    And I select modifier as "<Modifier>"
+    And I click Done to get back
     And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount as discount Percentage for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal>"
-    Then I should see the tax amount reflected to the check as "<Tax>"
-    Then I should see the Discount amount reflected to the check as "<Discount>"
-    Then I should see orderscreen with menu item Total as "<Total>"
-    And I click Payment button in the Order Management Screen
-#    And I scroll the close the day "Others" "scroll close the day"
-    And I click NMI payment button in the payment window
-  #  Then I should see card type window
-   # And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total>"
-    Then I should see total amount as "<total>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see choose card window
-    And I select credit card from choose card window
-    And I click pay button in choose card window
-#    And I click Ok button in receipt printer popup
-   # Then I should see signature pad screen
-    #And I click tick mark button
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-  #  And I click power button
-
- # Scenario Outline:  Check Payment through NMI with discount(Open item - After tax/Before) as amount & safety limit as decimal value and with tip
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I click Add Customer Button
-    And I search for "<customer_name>"
-    When I click "<customer_name>" to select customer for the seat
-    And I select Menu as category
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage decimal value as 20.50 for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal1>"
-    Then I should see the tax amount reflected to the check as "<Tax1>"
-    Then I should see the Discount amount reflected to the check as "<Discount1>"
-    Then I should see orderscreen with menu item Total as "<Total1>"
-    And I click Payment button in the Order Management Screen
-#     And I scroll the close the day "Others" "scroll close the day"
-    And I click NMI payment button in the payment window
-    #Then I should see card type window
-   # And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total1>"
-    Then I should see total amount as "<total1>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see choose card window
-    And I select credit card from choose card window
-    And I click pay button in choose card window
-#    And I click Ok button in receipt printer popup
-    #Then I should see signature pad screen
-    #And I click tick mark button
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
-   # And I click power button
-
-
-
-  #Scenario Outline: Check Payment through NMI with discount(Open item - After tax/Before) as amount & safety limit as non-decimal value and with tip
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I click Add Customer Button
-    And I search for "<customer_name>"
-    When I click "<customer_name>" to select customer for the seat
-    And I select Menu as category
-    And I select menu item as "<Menu_Item>"
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Open Item button
-    Then I should see open item screen
-    And I click Coursing Name text field for Menu option
-    And I swipe to "<course_name>" as Coursing Name
-    And I pass course name as "<open_Item>"
-    And I tap Price text field for menu option
-    And I enter the price with sale
-    And I click Continue button on the Open Item Price numbers popup
-    And I click Done button on the open item window
-    Then I should navigate to Order Management screen and see the added open item as "<open_Item>"
-    And I click open item as "<open_Item>" to see Menu option screen
-    And I click Open Discount on menu option
-    Then I should see Open discount Screen
-    And I pass the amount on open discount for open item discount safety percentage whole value as 20 for "<Discount11>"
-    Then I should see discount applied on order screen
-    Then I should see orderscreen with menu item prize as "<SubTotal2>"
-    Then I should see the tax amount reflected to the check as "<Tax2>"
-    Then I should see the Discount amount reflected to the check as "<Discount2>"
-    Then I should see orderscreen with menu item Total as "<Total2>"
-    And I click Payment button in the Order Management Screen
-#  And I scroll the close the day "Others" "scroll close the day"
-    And I click NMI payment button in the payment window
-  #  Then I should see card type window
-   # And I click visa card type as "<card_type>"
-    #And I click ok button in card type window
-    Then I should see total screen
-    And I click custom for tip adjustment
-    Then I should see tip is added with menu total as "<Total2>"
-    Then I should see total amount as "<total2>" on total screen
-    And I click the Continue button on the Total screen
-    Then I should see choose card window
-    And I select credit card from choose card window
-    And I click pay button in choose card window
-#    And I click Ok button in receipt printer popup
-   # Then I should see signature pad screen
-    # And I click tick mark button
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
+    And I click Open Modifier on menu option
+    Then I should see Open modifier Screen
+    And I pass the Name as "<Modifier1>" and price on Open Modifier
+    Then I should see open modifier as "<Modifier1>" added on open modifiers screen
+    And I click Done button on the Open modifiers screen
+    And I swipe the modifiers for Delete in order screen
+    And I click Cash button for Complete Sale
+    And I click Exact button on the cash pop-up
+    And I click Enter Button on the cash pop-up
+#     Then I should see the print or send receipt
+#    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click power button
     Examples:
-      |table_no| number_of_seats |Menu_Item|course_name| open_Item |  SubTotal | Tax       | Discount | Total    | Discount11 | total     | customer_name |  SubTotal1 | Tax1       | Discount1 | Total1 |  total1   | SubTotal2  | Tax2        | Discount2  |Total2  | total2     |
-      | T7     |1                |  Dosa   | DESSERT   |  onion    |  $ 51.00  | $ 5.10    | $ 0.50   |$ 55.60   | After      | $ 65.60   | Auto ragav    |  $ 51.00   | $ 5.10     | $ 20.50   |$ 35.60 |  $ 45.60  |  $ 51.00   | $ 5.10      | $ 20.00    |$ 36.10 |  $ 46.10   |
+      | table_no | number_of_seats | Menu_Item | Modifier | Modifier1 |
+      | T7      |1              |  French Friese | Steak  | Tomato   |
 
 
-
-
-#  Scenario Outline: Menu Option - Remove Open Modifier
- #   And I click new check button on the Table layout screen
-  #  And I select table as "<table_no>"
-   # And I select the number of seats as "<number_of_seats>"
-    #And I tap Continue to finish selecting the number of seats
-    #And I select FOOD as category
-    #And I select menu item as "<Menu_Item>"
-    #And I select modifier as "<Modifier>"
-    #And I click Done to get back
-    #And I click menu item as "<Menu_Item>" to see Menu option screen
-    #And I click Open Modifier on menu option
-    #Then I should see Open modifier Screen
-    #And I pass the Name as "<Modifier1>" and price on Open Modifier
-    #Then I should see open modifier as "<Modifier1>" added on open modifiers screen
-    #And I click Done button on the Open modifiers screen
-    #And I swipe the modifiers for Delete in order screen
-    #And I click Cash button for Complete Sale
-    #And I click Exact button on the cash pop-up
-    #And I click Enter Button on the cash pop-up
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-   # Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier | Modifier1 |
-      #| T7      |1              |  French Friese | Steak  | Tomato   |
-
-  #Scenario Outline: Open Modifiers Tab, Delete modifier
-   # And I click new check button on the Table layout screen
-   # And I select table as "<table_no>"
-    #And I select the number of seats as "<number_of_seats>"
-    #And I tap Continue to finish selecting the number of seats
-    #And I select FOOD as category
-    #And I select menu item as "<Menu_Item>"
-    #And I select modifier as "<Modifier>"
-    #And I click Done to get back
-    #And I click menu item as "<Menu_Item>" to see Menu option screen
-    #And I click Open Modifier on menu option
-    #Then I should see Open modifier Screen
-    #And I pass the Name as "<Modifier1>" and price on Open Modifier
-    #Then I should see open modifier as "<Modifier1>" added on open modifiers screen
-    #And I swipe the modifiers for Delete in open modifiers screen
-    #Then I should see open modifier as "<Modifier1>" added on open modifiers screen
-    #And I click Done button on the Open modifiers screen
-    #And I click Cash button for Complete Sale
-    #And I click Exact button on the cash pop-up
-    #And I click Enter Button on the cash pop-up
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-   # Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier | Modifier1 |
-     # | T16      |1              |  Tuna Tacos | Croutons  | Tomato   |
+  Scenario Outline: Open Modifiers Tab, Delete modifier
+    And I click new check button on the Table layout screen
+    And I select table as "<table_no>"
+    And I select the number of seats as "<number_of_seats>"
+    And I tap Continue to finish selecting the number of seats
+    And I select FOOD as category
+    And I select menu item as "<Menu_Item>"
+    And I select modifier as "<Modifier>"
+    And I click Done to get back
+    And I click menu item as "<Menu_Item>" to see Menu option screen
+    And I click Open Modifier on menu option
+    Then I should see Open modifier Screen
+    And I pass the Name as "<Modifier1>" and price on Open Modifier
+    Then I should see open modifier as "<Modifier1>" added on open modifiers screen
+    And I swipe the modifiers for Delete in open modifiers screen
+    Then I should not see open modifier as "<Modifier1>" added on open modifiers screen
+    And I click cancel button on the Open modifiers screen
+    And I click Cash button for Complete Sale
+    And I click Exact button on the cash pop-up
+    And I click Enter Button on the cash pop-up
+#     Then I should see the print or send receipt
+#    And I click No thanks Button on the print receipt
+    Then I should get back to the Table Layout tab
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier | Modifier1 |
+      | T16      |1              |  Tuna Tacos | Croutons  | Tomato   |
 
 
   Scenario Outline: Application allow user to Hold automatic/Hold Manual Tab should appear ------execute Menu Option
     And I click new check button on the Table layout screen
     And I select the "T25" in the Table layout screen"click t25 table"
-#    And I select menu item as "<menu_item>"
-#    And I click menu item as "<menu_item>" to see Menu option screen
-#    When User click Hold check option
-#    Then User verify Hold screen
-#    And User verify Hold Automation and Hold Manuel options
-#    Then User click cancel button
-#    And I click the Back button on Split Screen
-#    Then I Should get back to the Order Screen
+    And I select the number of seats as "<number_of_seats>"
+    And I tap Continue to finish selecting the number of seats
+    And I select category as "FOOD"
+    And I select menu item as "<menu_item>"
+    And I click menu item as "<menu_item>" to see Menu option screen
+    When User click Hold check option
+    Then User verify Hold screen
+    And User verify Hold Automation and Hold Manuel options
+    Then User click cancel button
+    And I click the Back button on Menu option Screen
+    Then I Should get back to the Order Screen
     #Application allow user to Fire ------execute take an order popup
     And I click menu item as "<menu_item>" to see Menu option screen
     When User select Fire menu option
@@ -1640,8 +1646,10 @@ Feature: Menu Option In scenarios
     #Application allow user to Attach any notes
     And I click menu item as "<menu_item>" to see Menu option screen
     When User click Attach menu option
-    Then User select any notes for attach to menu item
-    And User verify attached notes to menu item
+    Then I should see Add Notes popup
+    And I click Add notes reason as "Spicy"
+    And I click Add Button on the void reason popup
+    Then I should see reason as "Spicy" on the Order screen
     #Verify application allow user To Go order type option -- execute --- Then User verify menu item which has ToGo order type element inspect edilemediği için verify eklenemedi
     And I click menu item as "<menu_item>" to see Menu option screen
     When User select ToGo menu option

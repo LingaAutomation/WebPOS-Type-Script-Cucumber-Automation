@@ -9,55 +9,55 @@ public class TGMenuOption extends BasePage{
 
 
     public void selectRepeatMenuOption(){
-        WebElement element = mergeAndFindMobileElement(repeatMenuOption);
+        WebElement element = driver.findElement(By.xpath(repeatMenuOption));
         elementClick(element, "click repeatMenuOption ");
     }
 
     public void selectQuantityMenuOption(){
-        WebElement element = mergeAndFindMobileElement(quantityMenuOption);
+        WebElement element = driver.findElement(By.xpath(quantityMenuOption));
         elementClick(element, "click quantityMenuOption ");
     }
 
     public Object enterQuantityOfOrder(){
-        WebElement element = mergeAndFindMobileElement(calculatorNumberTwo);
+        WebElement element = driver.findElement(By.xpath(calculatorNumberTwo));
         elementClick(element, "click calculatorNumberTwo ");
 
-        WebElement element1 = mergeAndFindMobileElement(continueForCalculator);
+        WebElement element1 = driver.findElement(By.xpath(continueForCalculator));
         elementClick(element1, "click continueForCalculator ");
 
         return null;
     }
 
     public Object enterQuantityOfOrderForDecrease(){
-        WebElement element = mergeAndFindMobileElement(calculatorNumberOne);
+        WebElement element = driver.findElement(By.xpath(calculatorNumberOne));
         elementClick(element, "click calculatorNumberTwo ");
 
-        WebElement element1 = mergeAndFindMobileElement(continueForCalculator);
+        WebElement element1 = driver.findElement(By.xpath(continueForCalculator));
         elementClick(element1, "click continueForCalculator ");
 
         return null;
     }
 
     public void clickHoldMenuOption(){
-        WebElement element = mergeAndFindMobileElement(holdMenuOption);
+        WebElement element = driver.findElement(By.xpath(holdMenuOption));
         elementClick(element, "click holdManualOption ");
     }
 
     public void verifyHoldScreen(){
-        WebElement element = mergeAndFindMobileElement(holdHeaderText);
+        WebElement element = driver.findElement(By.xpath(holdHeaderText));
         String actualName=elementGetText(element,"verify holdHeaderText");
         String expectedName = "Hold";
 
         Assert.assertEquals(expectedName,actualName);
     }
     public void verifyHoldTypeButtons(){
-        WebElement element = mergeAndFindMobileElement(holdAutomationButton);
+        WebElement element = driver.findElement(By.xpath(holdAutomationButton));
         String actualName=elementGetText(element,"verify holdAutomationButton");
         String expectedName = "Automatic";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element1 = mergeAndFindMobileElement(holdManuelButton);
+        WebElement element1 = driver.findElement(By.xpath(holdManuelButton));
         String actualName1=elementGetText(element1,"verify holdManuelButton");
         String expectedName1 = "Manual";
 
@@ -65,35 +65,35 @@ public class TGMenuOption extends BasePage{
     }
 
     public void clickFireMenuOption(){
-        WebElement element = mergeAndFindMobileElement(fireMenuOption);
+        WebElement element = driver.findElement(By.xpath(fireMenuOption));
         elementClick(element, "click fireMenuOption ");
     }
 
     public void clickRepeatMenuOption(){
-        WebElement element = mergeAndFindMobileElement(repeatMenuOption);
+        WebElement element = driver.findElement(By.xpath(repeatMenuOption));
         elementClick(element, "click repeatMenuOption ");
     }
 
     public void verifyRepeatedMenuItem(){
-        WebElement element1 = mergeAndFindMobileElement(firstMenuItem);
+        WebElement element1 = driver.findElement(By.xpath(firstMenuItem));
         String actualName=elementGetText(element1,"verify firstMenuItem");
 
-        WebElement element = mergeAndFindMobileElement(repeatedMenuItem);
+        WebElement element = driver.findElement(By.xpath(repeatedMenuItem));
         String expectedName=elementGetText(element,"verify repeatedMenuItem");
 
         Assert.assertEquals(actualName,expectedName);
     }
 
     public void enterQuantityOfRepeatMenuItem(){
-        WebElement element = mergeAndFindMobileElement(calculatorNumberTwo);
+        WebElement element = driver.findElement(By.xpath(calculatorNumberTwo));
         elementClick(element, "click calculatorNumberTwo ");
 
-        WebElement element1 = mergeAndFindMobileElement(continueForCalculator);
+        WebElement element1 = driver.findElement(By.xpath(continueForCalculator));
         elementClick(element1, "click continueForCalculator ");
     }
 
     public void verifyQuantityOfOrder(){
-        WebElement element1 = mergeAndFindMobileElement(quantityOfOrder);
+        WebElement element1 = driver.findElement(By.xpath(quantityOfOrder));
         String actualName=elementGetText(element1,"verify quantityOfOrder");
         String expectedName = "2";
 
@@ -101,33 +101,33 @@ public class TGMenuOption extends BasePage{
     }
 
     public void clickAttachMenuOption(){
-        WebElement element1 = mergeAndFindMobileElement(attachMenuOption);
+        WebElement element1 = driver.findElement(By.xpath(attachMenuOption));
         elementClick(element1, "click attachMenuOption ");
     }
 
     public void selectAnyAttachNote(){
-        WebElement element1 = mergeAndFindMobileElement(attachNoteTitle);
+        WebElement element1 = driver.findElement(By.xpath(attachNoteTitle));
         String actualName=elementGetText(element1,"verify attachNoteTitle");
         String expectedName = "Add Notes";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element = mergeAndFindMobileElement(firstAttachNote);
+        WebElement element = driver.findElement(By.xpath(firstAttachNote));
         elementClick(element, "click firstAttachNote ");
 
-        WebElement element2 = mergeAndFindMobileElement(addAttachNoteButton);
+        WebElement element2 = driver.findElement(By.xpath(addAttachNoteButton));
         elementClick(element2, "click addAttachNoteButton ");
     }
 
     public void verifyAttachedNotes(){
-        WebElement element1 = mergeAndFindMobileElement(attachedNotesOnOrder);
+        WebElement element1 = driver.findElement(By.xpath(attachedNotesOnOrder));
         String actualName=elementGetText(element1,"verify attachedNotesOnOrder");
         String expectedName = "Toasted";
 
         Assert.assertEquals(expectedName,actualName);
     }
     public void clickToGoMenuOption(){
-        WebElement element2 = mergeAndFindMobileElement(ToGoMenuOption);
+        WebElement element2 = driver.findElement(By.xpath(ToGoMenuOption));
         elementClick(element2, "click ToGoMenuOption ");
     }
 

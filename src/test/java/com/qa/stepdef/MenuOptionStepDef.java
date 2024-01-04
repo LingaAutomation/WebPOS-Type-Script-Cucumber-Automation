@@ -192,6 +192,12 @@ public class MenuOptionStepDef {
     public void iShouldSeeOpenModifierAsAddedOnOpenModifiersScreen(String modifier){
         new MenuOptionScreen().getModifierAddedOnOpenModifier(modifier);
     }
+
+    @Then ("^I should not see open modifier as \"([^\"]*)\" added on open modifiers screen$")
+    public void iShouldNotSeeOpenModifierAsAddedOnOpenModifiersScreen(String modifier){
+        new MenuOptionScreen().getModifierAddedOnOpenModifier1(modifier);
+    }
+
     @Then ("^I should see modifier as \"([^\"]*)\" applied on order screen$")
     public void iShouldSeeModifierAsAppliedOnOrderScreen(String Modifiers){
         new MenuOptionScreen().verifyModifyAddedOnOrderList(Modifiers);
@@ -210,6 +216,12 @@ public class MenuOptionStepDef {
     public void iClickDoneButtonOnTheOpenModifiersScreen(){
         new MenuOptionScreen().clickDone();
     }
+
+    @And ("^I click cancel button on the Open modifiers screen$")
+    public void iClickCancelButtonOnTheOpenModifiersScreen(){
+        new MenuOptionScreen().clickCancel();
+    }
+
     @And ("^I swipe the modifiers for Delete in order screen$")
     public void iSwipeTheModifiersForDeleteInOrderScreen() throws InterruptedException {
         new MenuOptionScreen().swipeModifierForDeleteInOrderScreen();
@@ -233,11 +245,11 @@ public class MenuOptionStepDef {
     }
 
     @And ("^I click void item on Menu option$")
-    public void iClickVoidItemOnMenuOption(){
+    public void iClickVoidItemOnMenuOption() throws InterruptedException {
         new MenuOptionScreen().pressVoidBtnMenuOperation();
     }
     @And ("^I click Menu item on order screen$")
-    public void iClickMenuItemOnOrderScreen(){
+    public void iClickMenuItemOnOrderScreen() throws InterruptedException {
         new OrderTypeWindow().clickMenuItem();
     }
 

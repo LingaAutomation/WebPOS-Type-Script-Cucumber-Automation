@@ -72,18 +72,18 @@ public class TGGiftCard extends BasePage{
         }
     }
     public void verifyIfSuspendAccountToggleIsShown(){
-        WebElement element = mergeAndFindMobileElement(giftActivateInactivateToggle);
+        WebElement element = driver.findElement(By.xpath(giftActivateInactivateToggle));
         String value=getAttribute(element,"value");
 
         if (value.contains("0")) {
-            WebElement element2 = mergeAndFindMobileElement(activateAccountToggleText);
+            WebElement element2 =driver.findElement(By.xpath(activateAccountToggleText));
             element2.isDisplayed();
 
-            WebElement element1 = mergeAndFindMobileElement(giftActivateInactivateToggle);
+            WebElement element1 = driver.findElement(By.xpath(giftActivateInactivateToggle));
             elementClick(element1, "click giftActivateInactivateToggle ");
             //toggle activate oldu
         } else if (value.contains("1")) {
-            WebElement element1 = mergeAndFindMobileElement(suspendAccountToggleText);
+            WebElement element1 = driver.findElement(By.xpath(suspendAccountToggleText));
             String actualName=elementGetText(element1,"suspendAccountToggleText");
 
             String expectedName = "Suspend Account";
@@ -107,6 +107,14 @@ public class TGGiftCard extends BasePage{
         String expectedName = "Enter charge amount";
 
         Assert.assertEquals(actualName,expectedName);
+
+        try{
+            WebElement element2 = driver.findElement(By.xpath("(//button[contains(.,' Done ')])[2]"));
+            element2.click();
+            utils.log().info("Done Button");
+        }catch (Exception w){
+
+        }
     }
     public void verifyGiftCardActivatedSuccessfullyInfoPopup(){
         WebElement element1 = mergeAndFindMobileElement(activatedSuccessfullyInfoPopup);
@@ -338,12 +346,13 @@ public class TGGiftCard extends BasePage{
     }
     public void verifyDisableGiveX(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement element = mergeAndFindMobileElement(disableGiveX);
-        String actualName=elementGetText(element,"verify disableGiveX");
-
-        String expectedName = "GiveX";
-
-        Assert.assertEquals(actualName,expectedName);
+        WebElement element = driver.findElement(By.xpath(disableGiveX));
+     if(element.isSelected()){
+         utils.log().info("It's Enabled");
+         int w = 1/0;
+     }else{
+         utils.log().info("It's Disabled");
+     }
     }
     public void clickGiftCardDoneButton(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -352,27 +361,15 @@ public class TGGiftCard extends BasePage{
     }
     public void openActivateAccountToggleIfDisable(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement element = mergeAndFindMobileElement(giftActivateInactivateToggle);
+        WebElement element = driver.findElement(By.xpath(giftActivateInactivateToggle));
         String value=getAttribute(element,"value");
-
+        utils.log().info(value);
         if (value.contains("0")) {
-//            WebElement element2 = mergeAndFindMobileElement(activateAccountToggleText);
-//            element2.isDisplayed();
-
-            WebElement element1 = mergeAndFindMobileElement(giftActivateInactivateToggle);
+            WebElement element1 = driver.findElement(By.xpath(giftActivateInactivateToggle));
             elementClick(element1, "click giftActivateInactivateToggle ");
 
         }
-            //toggle activate oldu
-//         else if (value.contains("1")) {
-//            WebElement element3 = mergeAndFindMobileElement(suspendAccountToggleText);
-//            element3.isDisplayed();
-//
-////            WebElement element1 = mergeAndFindMobileElement(giftActivateInactivateToggle);
-////            elementClick(element1, "click giftActivateInactivateToggle ");
-//
-//            //toggle inactivate oldu
-//        }
+
     }
     public void openActivateAccountToggleIfDisableForGiveX(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -433,20 +430,20 @@ public class TGGiftCard extends BasePage{
 
     public void giftCardChargeAmount(){
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        WebElement element = mergeAndFindMobileElement(giftCardChargeAmountText);
+        WebElement element = driver.findElement(By.xpath(giftCardChargeAmountText));
         elementClick(element, "click giftCardChargeAmountText ");
 
-        WebElement element1 = mergeAndFindMobileElement(BtnNumberOne);
+        WebElement element1 = driver.findElement(By.xpath(BtnNumberOne));
         elementClick(element1, "click numberOne ");
 
-        WebElement element0 = mergeAndFindMobileElement(numberZero);
+        WebElement element0 = driver.findElement(By.xpath(numberZero));
         elementClick(element0, "click numberZero ");
 
         elementClick(element0, "click numberZero ");
 
         elementClick(element0, "click numberZero ");
 
-        WebElement elementContinueGiftCart = mergeAndFindMobileElement(continueGiftCart);
+        WebElement elementContinueGiftCart = driver.findElement(By.xpath(continueGiftCart));
         elementClick(elementContinueGiftCart, "click continueGiftCart ");
 
     }
@@ -571,9 +568,10 @@ public class TGGiftCard extends BasePage{
 
     }
     //nov 19
-    public void verifyCreditCardTxtField(){
-        WebElement element = mergeAndFindElement(cardNumberTxtField,"",TestUtils.XPath);
-        String actualName =getAttribute(element, "value");
+    public void verifyCreditCardTxtField() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//input[@placeholder='XXXXXXXXXXXXXXXX']"));
+        String actualName =element.getText();
 //        String actualName=elementGetText(element,"verify giftCardNumberTextField");
         String expectedName = "XXXXXXXXXXXXXXXX";
 

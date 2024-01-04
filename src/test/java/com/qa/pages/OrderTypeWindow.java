@@ -163,8 +163,9 @@ public class OrderTypeWindow extends ClockInScreen {
         return elementGetText(emptyList, "Got Nothing is Displayed - ");
     }
 
-    public void clickMenuItem(){
-        elementClick(OrderListWithSale,"Tapped Menu Item");
+    public void clickMenuItem() throws InterruptedException {
+        Thread.sleep(2000);
+        elementClick("//p[contains(@class,'orderlist')]/..//div[@class='p-col-4 orderlist-menuname']","Tapped Menu Item");
     }
     public void getOrderList() throws InterruptedException {
         Thread.sleep(300);

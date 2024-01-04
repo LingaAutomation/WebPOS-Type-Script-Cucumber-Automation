@@ -705,6 +705,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(BackBtn, "Tapped Back Button");
     }
 
+    public void pressBack1() throws InterruptedException {
+        elementClick("(//button[.='Back '])", "Tapped Back Button");
+    }
+
     public String getChangesMadeinSplitMag() {
         return elementGetText(SplitPopup, "Changes made in Split Msg is displayed -");
     }

@@ -462,7 +462,7 @@ public class TGCheckOptionPage extends BasePage {
 
     }
     public void clickGiftCardOption() {
-        WebElement element = mergeAndFindMobileElement(giftCardOption);
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Gift Card')]"));
         elementClick(element, "click giftCardOption ");
     }
     public void clickSuspendAccount(){
@@ -478,7 +478,7 @@ public class TGCheckOptionPage extends BasePage {
         elementClick(element, "click holdCheckOption ");
     }
     public void verifyCheckOptionPage(){
-        WebElement element = mergeAndFindMobileElement(checkOptionPageTitle);
+        WebElement element = driver.findElement(By.xpath(checkOptionPageTitle));
         String actualName=elementGetText(element,"verify the checkOptionPageTitle");
         String  expectedName = "Check Option";
 

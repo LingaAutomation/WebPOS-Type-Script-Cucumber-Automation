@@ -136,10 +136,10 @@ public class TGglobalElement {
     String numberOne1 = "1";
 //    String numberOne1 = "//XCUIElementTypeStaticText[@name=\"1\"]";
 
-    String numberFive = "5";
+    String numberFive = "//button[.='5']";
 //    String numberFive = "//XCUIElementTypeStaticText[@name=\"5\"]";
 
-    String numberDoubleZero = "00";
+    String numberDoubleZero = "//button[.='00']";
 //    String numberDoubleZero = "//XCUIElementTypeStaticText[@name=\"00\"]";
 
     String continueButton = "//button[contains(.,' Process Payment ')]";
@@ -340,7 +340,7 @@ public class TGglobalElement {
 
     String paidOrder = "(//ion-row//ion-col[contains(.,' Success')])[3]";
 
-    String deleteButtonOnPayment = "//XCUIElementTypeButton[@name=\"  Delete\"]";
+    String deleteButtonOnPayment = "//button[contains(@id,'ps_delete')]";
 
     @FindBy( xpath = "//button[contains(.,'Cash')]")
     private WebElement Cash;
@@ -379,10 +379,10 @@ public class TGglobalElement {
     String giftCVV = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]";
     String giftZipCode = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[3]";
 
-    String giftProcessButton = "Process";
+    String giftProcessButton = "(//button[.=' Process '])[2]";
 //    String giftProcessButton = "//XCUIElementTypeStaticText[@name=\"Process\"]";
 
-    String manuelButton = "Manual";
+    String manuelButton = "(//button[.=' Manual '])[2]";
 //    String manuelButton = "//XCUIElementTypeStaticText[@name=\"Manual\"]";
 
     String LoyaltyPaymentButton = "//XCUIElementTypeButton[contains(@name, 'Loyalty')]";
@@ -704,25 +704,25 @@ public class TGglobalElement {
     String giveXPaymentMethod = "GiveX";
 //    String giveXPaymentMethod = "//XCUIElementTypeStaticText[@name=\"GiveX\"]";
 
-    String numberZero = "0";
+    String numberZero = "//button[.='0']";
 //    String numberZero = "//XCUIElementTypeStaticText[@name=\"0\"]";
 
-    String numberTwo = "2";
+    String numberTwo = "//button[.='2']";
 //    String numberTwo = "//XCUIElementTypeStaticText[@name=\"2\"]";
 
-    String numberThree = "3";
+    String numberThree = "//button[.='3']";
 //    String numberThree = "//XCUIElementTypeStaticText[@name=\"3\"]";
 
-    String numberFour = "4";
+    String numberFour = "//button[.='4']";
 //    String numberFour = "//XCUIElementTypeStaticText[@name=\"4\"]";
 
-    String numberSix = "6";
+    String numberSix = "//button[.='6']";
 //    String numberSix = "//XCUIElementTypeStaticText[@name=\"6\"]";
 
-    String numberSeven = "7";
+    String numberSeven = "//button[.='7']";
 //    String numberSeven = "//XCUIElementTypeStaticText[@name=\"7\"]";
 
-    String numberEight = "8";
+    String numberEight = "//button[.='8']";
 //    String numberEight = "//XCUIElementTypeStaticText[@name=\"8\"]";
 
     String numberNine = "9";
@@ -734,7 +734,7 @@ public class TGglobalElement {
 
     String giveXChargeAmountText = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField";
 
-    String continueGiftCart = "Continue";
+    String continueGiftCart = "//button[.=' Continue ']";
 //    String continueGiftCart = "//XCUIElementTypeStaticText[@name=\"Continue\"]";
 
     String forceRedemption = "Force Redemption";
@@ -1152,9 +1152,9 @@ public class TGglobalElement {
     //    String giveXactivateMessage = "//XCUIElementTypeTextView[@name=\"Cert already active on 2021-09-23\"]";
     String giveXactivateMessage = "Cert already active on 2021-09-23";
     String giveXHeader = "(//XCUIElementTypeStaticText[@name=\"GiveX\"])[2]";
-    String giftCardScreenTitle = "(//XCUIElementTypeStaticText[@name=\"Gift Card\"])[1]";
+    String giftCardScreenTitle = "//ion-title[.='Gift Card']";
     //    String disableGiveX = "//XCUIElementTypeStaticText[@name=\"GiveX\"]";
-    String disableGiveX = "GiveX";
+    String disableGiveX = "(//div[.=' GiveX '])[2]";
     //    String giftCardDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
     String giftCardDoneButton = "Done";
     //    String missingGiftCardNumber = "//XCUIElementTypeTextView[@name=\"Enter gift card number\"]";
@@ -1163,15 +1163,15 @@ public class TGglobalElement {
     String missingChargeAmountWarning = "Enter charge amount";
     //    String warningPopupDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
     String warningPopupDoneButton = "Done";
-    String giftCardChargeAmountText = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField";
+    String giftCardChargeAmountText = "//div[@class='gcard-recharge__grid_row_col_inpt']";
 
     //    String giftCardCancelButton = "//XCUIElementTypeStaticText[@name=\"Cancel\"]";
-    String giftCardCancelButton = "Cancel";
+    String giftCardCancelButton = "//span[.=' Cancel ']";
     //    String giftCardChargeBalance = "//XCUIElementTypeStaticText[@name=\"10,00\"]";
     String giftCardChargeBalance = "10,00";
     //    String giftCardCardNumberText = "//XCUIElementTypeButton[@name=\"0000  0000  0000  0000\"]";
-    String giftCardCardNumberText = "0000  0000  0000  0000";
-    String giftCardNumberTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
+    String giftCardCardNumberText = "//p[.=' 0000 0000 0000 0000 ']";
+    String giftCardNumberTextField = "//input[@placeholder='XXXXXXXXXXXXXXXX']";
     //    String giftCardInactivateText = "//XCUIElementTypeTextView[@name=\"Gift card inactivated successfully\"]";
     String giftCardInactivateText = "Gift card inactivated successfully";
     //    String inactivateGiftCardDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
@@ -1183,9 +1183,9 @@ public class TGglobalElement {
     String activateAccountToggle = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch";
     //    String activateAccountToggleText = "//XCUIElementTypeStaticText[@name=\"Activate Account\"]";
     String activateAccountToggleText = "Activate Account";
-    String giftActivateInactivateToggle = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeSwitch";
+    String giftActivateInactivateToggle = "//ion-toggle[@mode='ios']";
     //    String suspendAccountToggleText = "//XCUIElementTypeStaticText[@name=\"Suspend Account\"]";
-    String suspendAccountToggleText = "Suspend Account";
+    String suspendAccountToggleText = "//p[.=' Suspend Account ']";
     //String giveXCardNumberText = "//XCUIElementTypeButton[@name=\"0000  0000  0000  0000\"]";
     String giveXCardNumberTextOnPayment = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
     //String giveXChargeAmountText = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeTextField";
@@ -1204,7 +1204,7 @@ public class TGglobalElement {
     //    String activatedSuccessfullyInfoPopup = "//XCUIElementTypeTextView[@name=\"Cert already active on 2021-06-01\"]";
     String activatedSuccessfullyInfoPopup = "Cert already active on 2021-06-01";
     //    String enterChargeAmountWarningPopup = "//XCUIElementTypeTextView[@name=\"Enter charge amount\"]";
-    String enterChargeAmountWarningPopup = "Enter charge amount";
+    String enterChargeAmountWarningPopup = "//p[.='Enter charge amount']";
     //    String giveXCardNumberTextField = "//XCUIElementTypeButton[@name=\"0000  0000  0000  0000\"]";
     String giveXCardNumberTextField = "0000  0000  0000  0000";
 
@@ -2436,18 +2436,18 @@ public class TGglobalElement {
     String continueForCalculator = "//span[contains(.,'Continue')]";
     //    String holdMenuOption = "//XCUIElementTypeStaticText[@name=\"Hold\"]";
     String holdMenuOption = "//label[contains(.,'Hold')]";
-    String holdHeaderText = "(//XCUIElementTypeStaticText[@name=\"Hold\"])[1]";
+    String holdHeaderText = "//ion-col[.='Hold']";
     //    String holdAutomationButton = "//XCUIElementTypeStaticText[@name=\"Automatic\"]";
-    String holdAutomationButton = "Automatic";
+    String holdAutomationButton = "//span[.=' Automatic ']";
     //    String holdManuelButton = "//XCUIElementTypeStaticText[@name=\"Manual\"]";
-    String holdManuelButton = "Manual";
+    String holdManuelButton = "//span[.=' Manual ']";
     //    String fireMenuOption = "//XCUIElementTypeStaticText[@name=\"Fire\"]";
-    String fireMenuOption = "Fire";
+    String fireMenuOption = "//label[.='Fire']";
     //String firstMenuItem = "(//XCUIElementTypeTable[@name=\"Empty list\"])[4]";
     //String repeatedMenuItem = "(//XCUIElementTypeTable[@name=\"Empty list\"])[6]";
     //String quantityOfOrder = "//XCUIElementTypeStaticText[@name=\"2\"]";
 //    String attachMenuOption = "//XCUIElementTypeStaticText[@name=\"Attach\"]";
-    String attachMenuOption = "Attach";
+    String attachMenuOption = "//label[.='Attach']";
     //    String attachNoteTitle = "//XCUIElementTypeStaticText[@name=\"Add Notes\"]";
     String attachNoteTitle = "Add Notes";
     //    String firstAttachNote = "//XCUIElementTypeStaticText[@name=\"Toasted\"]";
@@ -2457,7 +2457,7 @@ public class TGglobalElement {
     //    String attachedNotesOnOrder = "//XCUIElementTypeStaticText[@name=\"Toasted\"]";
     String attachedNotesOnOrder = "Toasted";
     //    String ToGoMenuOption = "//XCUIElementTypeStaticText[@name=\"TOGO\"]";
-    String ToGoMenuOption = "TOGO";
+    String ToGoMenuOption = "//label[.='TOGO']";
 
     // Merge Page
 
@@ -3026,11 +3026,11 @@ public class TGglobalElement {
     String subtotalAmountWithTaxExempt2 = "TL 1.999,80";
     //    String totalAmountWithTaxExempt2 = "//XCUIElementTypeStaticText[@name=\"TL 1.979,80\"]";
     String totalAmountWithTaxExempt2 = "TL 1.979,80";
-    String BtnNumberOne = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton[@name=\"1\"]";
+    String BtnNumberOne = "//button[.='1']";
     //    String editDoneButton = "done DeleteSeats";
 //    String giftCardDone = "//XCUIElementTypeButton[@name=\"Done\"]";
     String giftCardDone = "Done";
-    String giftCardNumberSix = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton[@name=\"6\"]";
+    String giftCardNumberSix = "//button[.='6']";
     //    String partialPaidAmountWithGiftCard1 = "//XCUIElementTypeStaticText[@name=\"20,00\"]";
     String partialPaidAmountWithGiftCard1 = "20,00";
     //    String partialPaidAmountWithGiftCard2 = "//XCUIElementTypeStaticText[@name=\"20,00+10,00\"]";
@@ -3043,7 +3043,7 @@ public class TGglobalElement {
     String firstTable11 = "//XCUIElementTypeStaticText[@name=\"T20\"]";
 
     //    String firstTable1 = "T25";
-    String cardNumberTxtField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
+    String cardNumberTxtField = "//input[@placeholder='XXXXXXXXXXXXXXXX']";
     //    String selectTable2 = "//XCUIElementTypeStaticText[@name=\"T23\"]";
     String selectTable2 = "T23";
     String btnMerge = "//span[contains(.,'Merge')]";
