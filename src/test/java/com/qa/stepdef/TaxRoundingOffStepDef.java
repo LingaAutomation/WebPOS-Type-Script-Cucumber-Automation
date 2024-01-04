@@ -137,6 +137,15 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^Verify if exclusive tax menu \"([^\"]*)\" exclusive tax modifier \"([^\"]*)\" and percentage discount \"([^\"]*)\" are calculated properly normal menu$")
+    public void VerifyIfTheExclusiveTaxAndDiscountArecalculatedProperlyPercBTNormalMenu(double taxPercent, double modifierTaxPercent, double discAmt) {
+        new TaxRoundingOff().VerifyIfExclusiveTaxAndDiscountArecalculatedProperlyPercBTNormalMenu(taxPercent, modifierTaxPercent, discAmt);
+
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^Verify if menu price and subtotal are equal$")
     public void verifyIfMenuItemAndSubtotalAmountAreSame() throws InterruptedException {
         new TaxRoundingOff().verifyIfMenuAmountAndSubtotalAreEqual();
@@ -1473,6 +1482,13 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I selected Print All Button$")
+    public void iSelectThePrintAllButton() throws InterruptedException {
+        new TaxRoundingOff().iSelectPrintAllButton();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^I get check1 number$")
     public void iGetTheCheck1Number() {
         new TaxRoundingOff().iGetCheck1Number();
@@ -1659,6 +1675,48 @@ public class TaxRoundingOffStepDef {
 
         String m = TestUtils.globalTableNumber;
         new TaxRoundingOff().iNowMergeCheck1(m);
+
+    }
+
+    @And("^I now entered the check number in the transfer from table$")
+    public void iNowEnteredTheCheckNumberInTransferFromTable() throws InterruptedException {
+
+        new TaxRoundingOff().iNowEnteredCheckNumberInTransferFromTable();
+
+    }
+
+    @And("^I now entered the check number in the transfer to table$")
+    public void iNowEnteredTheCheckNumberInTransferToTable() throws InterruptedException {
+
+        new TaxRoundingOff().iNowEnteredCheckNumberInTransferToTable();
+
+    }
+
+    @Then("^I selected the menu item in the table$")
+    public void iSelectedTheMenuItemInTheTable() throws InterruptedException {
+
+        new TaxRoundingOff().iSelectedMenuItemInTheTable();
+
+    }
+
+    @Then("^I Selected QSR in table layout screen$")
+    public void iSelectedTheQSROptionInTableLayout() throws InterruptedException {
+
+        new TaxRoundingOff().iSelectedQSROptionInTableLayout();
+
+    }
+
+    @And("^I selected the transfer button$")
+    public void iClickTheTransferButton() throws InterruptedException {
+        ;
+        new TaxRoundingOff().iClickTransferButton();
+
+    }
+
+    @And("^I selected the transfer item tab$")
+    public void iClickTheTransferItemTab() throws InterruptedException {
+        ;
+        new TaxRoundingOff().iClickTransferItemTab();
 
     }
 
@@ -1975,10 +2033,20 @@ public class TaxRoundingOffStepDef {
     public void iClickCancelButton(){
         new TaxRoundingOff().iClickTheCancelButton();
     }
+//
+//    @And ("^I click Check Stats tab$")
+//    public void iClickCheckStatsTab(){
+//        new TaxRoundingOff().iClickOnCheckStatsTab();
+//    }
 
     @Then("^I should see closed check in closed check tab$")
     public void iShouldSeeClosedCheckInClosedCheckTab() throws InterruptedException {
         new TaxRoundingOff().verifyClosedCheckInClosedCheckTab();
+    }
+
+    @Then("^I should see active check in active check tab$")
+    public void iShouldSeeActiveCheckInActiveCheckTab() throws InterruptedException {
+        new TaxRoundingOff().verifyActiveCheckInActiveCheckTab();
     }
 
     @And ("^I click reopen check button on the check stats screen$")

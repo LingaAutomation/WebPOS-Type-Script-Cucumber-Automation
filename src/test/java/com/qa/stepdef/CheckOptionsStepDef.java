@@ -681,6 +681,16 @@ public class CheckOptionsStepDef {
         new TaxRoundingOff().pressDoneOpenItemBtn1();
     }
 
+    @And("^I click Done button on the transfer success window$")
+    public void iClickDoneButtonOnTheTransferWindow() throws InterruptedException {
+        new TaxRoundingOff().pressDoneTransferBtn1();
+    }
+
+    @And("^I select Yes option in the confirmation window$")
+    public void iClickYesOnTheConfirmationWindow() {
+        new TaxRoundingOff().iClickYesOnConfirmationWindow();
+    }
+
     @And("^I click Start Over button on the open item window$")
     public void iClickStartOverButtonOnTheOpenItemWindow() {
         new TaxRoundingOff().pressStartOverOpenItemBtn1();

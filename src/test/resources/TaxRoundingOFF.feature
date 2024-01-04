@@ -2271,22 +2271,6 @@ Feature: TaxRoundOff
     And Verify if the balance due amount is displayed correctly after the payment
     And I click log off button in order screen
 
-    @25
-  Scenario: TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
-    And I have selected category arrow
-    And Select the category "FOOD ITEMS"
-    And Select the menu item "testing menu33"
-    And I selected the modifier "Bbq"
-    And I click Done button on the open item window
-    And I selected quantity as "5"
-    And I selected order button
-    And I click Discount as "20% Discount"
-    And I selected cancel button
-    And I selected menu options
-    And I selected void button in menu options
-    And I selected void quantity as "2"
-    And Select the Void item reason as "Server Error"
-
     @97
   Scenario: TS-97 -> Unable to Create Open modifier, Open Discount for the open menu item
     And Selected Options button
@@ -2327,3 +2311,116 @@ Feature: TaxRoundOff
     #And I verify if the modifier price "2.00" is correct for the second modifier
     And I reduced one quantity of the modifier conversational
     And I selected the modifier "Bbq"
+    And I click Done button on the open item window
+    And Verify if tax "0.20" "0.05623" is calculated properly and calculate round-off
+    And Verify if the total amount is calculated correctly
+    And Verify if the balance due amount is calculated correctly
+    And Verify if the balance due amount is displayed correctly after payment
+    And I click log off button in order screen
+
+  @30
+  Scenario: TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+    And I have selected category arrow
+    And Select the category "Salads"
+    And Select the menu item "Bell pepper Salad"
+    And I selected the modifier "Bell pepper Green"
+    And I click Done button on the open item window
+    And I selected quantity as "5"
+    And I selected order button
+    And I click Discount as "7% Discount"
+    And I selected cancel button
+    And I selected menu options
+    And I selected void button in menu options
+    And I selected void quantity as "2"
+    And Select the Void item reason as "Server Error"
+    And Verify if exclusive tax menu "0.10000" exclusive tax modifier "0.10000" and percentage discount "0.0700" are calculated properly normal menu
+
+    @37
+    Scenario: TS-37 -> Application stays in transfer screen in transfer item
+      And Select the All option
+      And Select table layout option
+      And I selected new check button
+      And I selected the table1
+      And I selected seat number
+      And I get check number
+      And I get table number
+      And I have selected category arrow
+      And Select the category "FOOD ITEMS"
+      And Select the menu item "testing menu33"
+      And I selected the modifier "Bbq"
+      And I click Done button on the open item window
+      And I click Discount as "20% Discount"
+      And I selected cancel button
+      And Verify if tax "0.20" "0.05623" is calculated properly and calculate round-off
+      And User click finish button in split screen
+      And I Selected QSR in table layout screen
+      And I have closed the order type window
+      And User click QSR on Menu Item page in split screen
+      And User select DineIn mode in split screen
+      And I selected the table2
+      And I get table number2
+      And I get check number2
+      And I have selected category arrow
+      And Select the category "FOOD ITEMS"
+      And Select the menu item "testing menu33"
+      And I selected the modifier "Bbq"
+      And I click Done button on the open item window
+      And User click finish button in split screen
+      And I selected the transfer button
+      And I selected the transfer item tab
+      And I now entered the check number in the transfer from table
+      Then I selected the menu item in the table
+      And I now entered the check number in the transfer to table
+      And I click Done button on the open item window
+      And I select Yes option in the confirmation window
+      And I click Done button on the transfer success window
+      And I click Check Stats tab
+      And I should see active check in active check tab
+      And I click open check button on the check stats screen
+#      And Verify if the total amount is calculated correctly
+      And Verify if the balance due amount is calculated correctly
+      And Verify if the balance due value is displayed correctly after payment split merge
+      And I click log off button in order screen
+
+      @40
+    Scenario: TS-40 -> After clicking on Print all in the split by check screen the start over and Add seats buttons are getting grayed out.
+        And I have selected category arrow
+        And Select the category "chicken"
+        And Select the sub category "Rolls"
+        And Select the menu item "chicken roll"
+        And Verify if exclusive tax "0.06220" is calculated properly and calculate roundoff
+        And I have selected category arrow
+        And Select the category "DRINKS"
+        And Select the menu item "blue lagoon"
+        And Verify if exclusive taxes "0.06220" and "0.10255" are calculated properly and calculate roundoff
+        And I selected order button
+        And User click QSR on Menu Item page in split screen
+        And User select DineIn mode in split screen
+        And I selected the table
+        And I selected the split button
+        And I selected the split option as Split Check
+        And Verify if exclusive taxes "0.10255" and "0.06220" are calculated properly in split screen
+        And I selected Print All Button
+        And I selected Add button
+        And I selected the menu1
+        And I transferred the menu to new check
+        And I check if exc tax "0.06220" is calculated properly for first check
+        And I check if exc tax "0.10255" is calculated properly for second check
+        And I select Print button
+        #Above step is to make check number visible
+        And I get check1 number
+        And I get check2 number
+        Then User click save and close in split screen
+        And I check if exc tax "0.06220" is calculated properly in menu screen after split
+        Then User click finish button in split screen
+        And I click Check Stats tab
+        And I click Active tab on the Check stats
+        Then I should see active check2 in active check tab
+        And I click open check button on the check stats screen
+        And I check if exc tax "0.10255" is calculated properly in menu screen after split
+        And Verify if the balance due value is calculated correctly
+        And Verify if the balance due value is displayed correctly after payment split merge
+        And I click log off button in order screen
+
+    Scenario: TS-43 -> Application shows "Balance due" while making payment for the Transferred item check
+

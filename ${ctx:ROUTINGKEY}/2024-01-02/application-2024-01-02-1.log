@@ -1,0 +1,374 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:47.497 Hooks:44 - Start Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:47.668 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:47.725 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:47.775 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:47.820 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:47.878 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:49.090 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:49.164 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:49.275 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:54.416 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:25:59.518 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:26:04.603 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:26:04.686 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:26:04.786 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:26:04.840 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:26:04.928 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:26:09.974 Hooks:56 - Failed Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:07.356 Hooks:44 - Start Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:07.574 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:07.645 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:07.692 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:07.735 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:07.776 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:09.058 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:09.129 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:09.330 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:14.450 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:19.533 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:24.668 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:24.732 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:24.794 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:24.846 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:24.952 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:30:30.043 Hooks:56 - Failed Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:22.605 Hooks:44 - Start Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:22.806 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:22.862 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:22.905 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:22.948 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:22.989 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:24.325 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:24.464 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:24.649 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:29.743 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:34.822 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:39.921 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:39.997 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:40.063 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:40.125 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:40.256 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:35:45.326 Hooks:56 - Failed Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:57.219 Hooks:44 - Start Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:57.379 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:57.452 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:57.510 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:57.570 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:57.635 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:58.924 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:58.989 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:36:59.109 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:04.230 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:09.381 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:14.470 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:14.530 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:14.580 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:14.627 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:14.715 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:37:19.758 Hooks:56 - Failed Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:34.718 Hooks:44 - Start Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:34.914 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:35.014 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:35.070 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:35.187 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:35.242 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:36.545 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:36.628 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:36.746 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:41.857 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:46.947 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:52.040 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:52.187 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:52.255 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:52.352 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:52.502 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:52.583 BasePage:424 - Selected the Back button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 12:47:59.757 Hooks:56 - Failed Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:54.896 Hooks:44 - Start Scenario Name : TS-71 -> If trying to Increase the quantity for the menu item with Mandatory modifier group, allowing to increase the quantity for modifier more than menu quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:55.044 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:55.094 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:55.144 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:55.195 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:55.236 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:56.446 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:56.503 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:38:56.587 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:01.670 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:06.763 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:11.861 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:11.931 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:11.994 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:12.090 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:12.216 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:12.297 BasePage:424 - Selected the Back button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 13:39:12.422 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:52.301 Hooks:44 - Start Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:52.468 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:52.520 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:52.562 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:52.602 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:52.641 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:53.910 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:53.981 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:54.065 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:37:59.150 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:38:04.222 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:38:09.338 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:38:09.398 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:38:09.457 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:38:09.541 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:38:09.626 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:38:14.960 Hooks:56 - Failed Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:36.114 Hooks:44 - Start Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:36.305 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:36.356 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:36.408 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:36.450 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:36.494 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:37.699 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:37.799 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:37.938 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:43.070 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:48.171 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:53.302 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:53.364 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:53.424 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:53.487 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:53.581 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:53.858 BasePage:424 - 7% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:53.954 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:54.029 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:54.150 BasePage:424 - Selected void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:54.231 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:40:59.283 Hooks:56 - Failed Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:04.934 Hooks:44 - Start Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:05.110 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:05.181 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:05.240 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:05.311 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:05.357 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:06.599 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:06.661 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:06.752 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:11.853 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:17.000 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.099 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.171 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.236 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.289 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.394 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.447 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.761 BasePage:424 - 7% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.891 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:22.963 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:23.046 BasePage:424 - Selected void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:23.109 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:23.154 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:23.237 BasePage:424 - Selected void reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:42:23.270 BasePage:424 - Selected void reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:03.900 Hooks:44 - Start Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:04.147 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:04.215 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:04.302 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:04.390 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:04.449 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:06.345 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:06.438 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:06.563 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:11.671 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:16.764 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:46:27.276 Hooks:56 - Failed Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:38.757 Hooks:44 - Start Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:38.929 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:38.984 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:39.064 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:39.137 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:39.235 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:40.594 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:40.762 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:40.888 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:45.993 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:51.092 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:56.285 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:56.395 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:56.472 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:56.538 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:56.650 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:56.735 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.028 BasePage:424 - 7% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.105 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.196 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.293 BasePage:424 - Selected void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.387 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.467 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.580 BasePage:424 - Selected void reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.619 BasePage:424 - Selected void reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.855 TaxRoundingOff:8430 - modifier Amount is 3.72
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.882 TaxRoundingOff:8457 - Exact Tax is 2.148
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.883 TaxRoundingOff:8461 - Tax1 is 2.148
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.883 TaxRoundingOff:8468 - Tax2 is 0.346
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.884 TaxRoundingOff:8477 - Expected Tax is 2.49
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.907 TaxRoundingOff:8482 - Actual tax is 4.94
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:47:57.916 Hooks:56 - Failed Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:47.562 Hooks:44 - Start Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:47.843 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:47.907 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:47.954 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:47.999 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:48.040 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:49.291 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:49.359 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:49.542 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:54.618 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:52:59.702 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:04.797 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:04.876 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:04.961 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.028 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.126 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.179 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.463 BasePage:424 - 7% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.555 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.629 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.707 BasePage:424 - Selected void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.780 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.833 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.921 BasePage:424 - Selected void reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:05.958 BasePage:424 - Selected void reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:06.101 TaxRoundingOff:8497 - modifier Amount is 23.10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:06.130 TaxRoundingOff:8524 - Exact Tax is 4.938000000000001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:06.131 TaxRoundingOff:8528 - Tax1 is 4.938
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:06.131 TaxRoundingOff:8535 - Tax2 is 2.148
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:06.133 TaxRoundingOff:8544 - Expected Tax is 7.09
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:06.160 TaxRoundingOff:8549 - Actual tax is 4.94
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 15:53:06.168 Hooks:56 - Failed Scenario Name : TS-30 -> Application shows "Negative balance due" because of Tax Mismatch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:23.437 Hooks:44 - Start Scenario Name : TS-22 -> Tax value & Total is display wrongly when Apply check tax (Apply on subtotal) with Inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:23.563 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:23.621 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:23.686 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:23.749 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:23.801 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:25.021 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:25.094 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:25.178 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:30.260 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:35.394 TaxRoundingOff:605 - Price of the menu item is520.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:35.399 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.531 TaxRoundingOff:8564 - modifier Amount is 2.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.565 TaxRoundingOff:8593 - Exact Tax is 53.326
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.567 TaxRoundingOff:8600 - Tax1 is 53.326
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.568 TaxRoundingOff:8610 - Tax2 is 0.1593
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.568 TaxRoundingOff:8613 - menu amt is 520.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.569 TaxRoundingOff:8614 - Menu tax is 53.33
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.569 TaxRoundingOff:8615 - Modifier tax is 0.16
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.570 TaxRoundingOff:8616 - Total with Tax is 522.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.571 TaxRoundingOff:8621 - Check Tax is 0.1593
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.573 TaxRoundingOff:8629 - Expected Tax is 118.44
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.606 TaxRoundingOff:8634 - Actual tax is 118.42
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 17:43:40.614 Hooks:56 - Failed Scenario Name : TS-22 -> Tax value & Total is display wrongly when Apply check tax (Apply on subtotal) with Inclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:01.527 Hooks:44 - Start Scenario Name : TS-37 -> Application stays in transfer screen in transfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:01.682 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:01.813 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:01.862 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:01.903 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:01.943 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:03.190 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:03.263 BasePage:424 - I selected the ALL option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:04.639 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:04.689 BasePage:399 - selected 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:05.939 TaxRoundingOff:8225 - 149-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:05.963 TaxRoundingOff:5041 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:05.968 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:06.047 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:11.157 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:16.235 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:21.337 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:21.414 TaxRoundingOff:1239 - Discount amount is 12.68
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:21.441 TaxRoundingOff:1244 - Actual discount is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:01:21.455 Hooks:56 - Failed Scenario Name : TS-37 -> Application stays in transfer screen in transfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:24.424 Hooks:44 - Start Scenario Name : TS-37 -> Application stays in transfer screen in transfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:24.656 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:24.710 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:24.778 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:24.829 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:24.877 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:26.087 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:26.173 BasePage:424 - I selected the ALL option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:27.758 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:27.822 BasePage:399 - selected 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:29.023 TaxRoundingOff:8225 - 152-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:29.050 TaxRoundingOff:5041 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:29.055 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:29.144 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:34.290 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:39.413 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:44.499 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:44.903 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.429 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.730 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.852 TaxRoundingOff:1239 - Discount amount is 12.68
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.890 TaxRoundingOff:1244 - Actual discount is 12.68
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.895 TaxRoundingOff:1251 - subtotal after discount is 50.74
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.896 TaxRoundingOff:1260 - Exact Tax is 2.8531102
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.898 TaxRoundingOff:1266 - Expected Tax is 2.85
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.929 TaxRoundingOff:1271 - Actual tax is 2.85
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.931 TaxRoundingOff:1280 - RoundOff value is -0.0031
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 18:03:45.952 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:09.492 Hooks:44 - Start Scenario Name : TS-37 -> Application stays in transfer screen in transfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:09.649 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:09.704 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:09.743 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:09.782 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:09.822 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:11.045 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:11.104 BasePage:424 - I selected the ALL option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:12.553 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:12.625 BasePage:399 - selected 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:13.801 TaxRoundingOff:8246 - 74-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:13.826 TaxRoundingOff:5041 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:13.830 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:13.916 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:19.003 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:24.081 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.156 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.219 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.469 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.571 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.648 TaxRoundingOff:1240 - Discount amount is 12.68
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.676 TaxRoundingOff:1245 - Actual discount is 12.68
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.681 TaxRoundingOff:1252 - subtotal after discount is 50.74
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.682 TaxRoundingOff:1261 - Exact Tax is 2.8531102
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.683 TaxRoundingOff:1267 - Expected Tax is 2.85
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.704 TaxRoundingOff:1272 - Actual tax is 2.85
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.705 TaxRoundingOff:1281 - RoundOff value is -0.0031
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:29.722 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:37:35.233 Hooks:56 - Failed Scenario Name : TS-37 -> Application stays in transfer screen in transfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:00.437 Hooks:44 - Start Scenario Name : TS-37 -> Application stays in transfer screen in transfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:00.587 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:00.635 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:00.684 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:00.732 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:00.774 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:01.961 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:02.024 BasePage:424 - I selected the ALL option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:03.423 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:03.475 BasePage:399 - selected 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:04.636 TaxRoundingOff:8246 - 75-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:04.665 TaxRoundingOff:5041 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:04.670 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:04.767 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:09.873 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:14.965 BasePage:399 - Tapped modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.056 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.118 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.359 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.452 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.527 TaxRoundingOff:1240 - Discount amount is 12.68
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.553 TaxRoundingOff:1245 - Actual discount is 12.68
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.555 TaxRoundingOff:1252 - subtotal after discount is 50.74
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.556 TaxRoundingOff:1261 - Exact Tax is 2.8531102
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.557 TaxRoundingOff:1267 - Expected Tax is 2.85
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.584 TaxRoundingOff:1272 - Actual tax is 2.85
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.586 TaxRoundingOff:1281 - RoundOff value is -0.0031
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:20.603 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-02 19:40:26.059 Hooks:56 - Failed Scenario Name : TS-37 -> Application stays in transfer screen in transfer item
