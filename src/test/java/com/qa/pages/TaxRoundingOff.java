@@ -271,10 +271,15 @@ public class TaxRoundingOff extends ClockInScreen {
     @FindBy(xpath = "//input[@data-placeholder='Check No']")
     WebElement searchTabClosedTab;
 
+    @FindBy(xpath = "(//div[contains(@class,'searchbar')])[2]//input")
+    WebElement searchTabPhoneOrderTab;
+
     @FindBy(xpath = "//app-check-commonfooter/div/ion-grid[2]/ion-row/ion-col/button[1]")
     WebElement reOpenCheckStats;
 
     String cancelBtn = "//button[contains(.,'Cancel')]";
+
+    String cancelBtn2 = "(//button[contains(.,'Cancel')])[2]";
 
     @FindBy(xpath = "//button[contains(.,'Log Off')]")
     WebElement logOffBtn;
@@ -622,6 +627,10 @@ public class TaxRoundingOff extends ClockInScreen {
 
     public void iClickTheCancelButton() {
         elementClick(cancelBtn, "Tapped cancel Button");
+    }
+
+    public void iClickTheCancelButton2() {
+        elementClick(cancelBtn2, "Tapped cancel Button");
     }
 
     public void loginWebpos() {
@@ -1369,6 +1378,22 @@ public class TaxRoundingOff extends ClockInScreen {
 
     }
 
+    public void VerifyIfBalanceDueAmountIsCalculatedCorrectlyAfterPaymentSeat1() throws InterruptedException {
+        elementClick(cashBtn, "Selected Cash Button");
+        String ExpectedDueAmount = "0.00";
+        utils.log().info("Expected balance due after payment is " + ExpectedDueAmount);
+
+        WebElement BalanceDue = driver.findElement(By.xpath("//div[contains(@class,'balance')]//p/label[2][1]"));
+        String BalanceDueAmount = BalanceDue.getText();
+        String BalanceDueValue = BalanceDueAmount.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual Balance due is " + BalanceDueValue);
+
+
+        Assert.assertEquals(ExpectedDueAmount, BalanceDueValue);
+        elementClick(SubmitBtn, "Selected Submit Button");
+
+    }
+
     public void SelectTheMenuItemWithInclusiveTaxAndDiscount() {
         elementClick(downarrow1, "Selected category arrow");
         elementClick(category1, "Selected FOOD ITEMS category");
@@ -1527,6 +1552,12 @@ public class TaxRoundingOff extends ClockInScreen {
         elementClick(OptionButton, "Selected Option Button");
     }
 
+    public void SelectedTheFireCoursingButton()
+    {
+        WebElement fireCoursing = driver.findElement(By.xpath("//label[contains(.,'fireCoursing')]/.."));
+        fireCoursing.click();
+    }
+
     public void SelectedTheTaxExemptOption() {
         elementClick(taxExemptBtn, "Selected tax exempt Button");
     }
@@ -1558,6 +1589,12 @@ public class TaxRoundingOff extends ClockInScreen {
 //        List<WebElement> course = DatePickerWheel.findElements(By.xpath("//XCUIElementTypePickerWheel"));
 //
 //        course.get(0).sendKeys(Name);
+    }
+
+    public void iSelectedCoursingAs(String name)
+    {
+        WebElement coursingName = driver.findElement(By.xpath("//button[contains(.,'"+name+"')]/.."));
+        coursingName.click();
     }
 
     public void swipeToTheCourseName2(String Name) throws InterruptedException {
@@ -3198,6 +3235,108 @@ public class TaxRoundingOff extends ClockInScreen {
 
         double menuItemAmount4 = Double.parseDouble(menuItemAmount3);
 
+
+        //define tax percentage for 1st menu and calculate tax
+
+        double taxAmount = menuItemAmount4 - (menuItemAmount4 / (1 + taxAmount1));
+
+        utils.log().info("Exact Tax1 is " + taxAmount);
+
+        BigDecimal dd = new BigDecimal(taxAmount).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal tt = new BigDecimal(taxAmount).setScale(4, RoundingMode.HALF_UP);
+
+        double bb = dd.doubleValue();
+        double ss = tt.doubleValue();
+
+        String ExpectedTax = String.valueOf(bb);
+        utils.log().info("Expected Tax1 is " + ExpectedTax);
+
+        //calculate item service charge
+        double itemServiceChargeAmt = menuItemAmount4 * itemServiceCharge;
+        utils.log().info("Item Service Charge is " + itemServiceChargeAmt);
+
+        BigDecimal itemServiceChargeAmt1 = new BigDecimal(itemServiceChargeAmt).setScale(2, RoundingMode.HALF_UP);
+
+        double isc = itemServiceChargeAmt1.doubleValue();
+
+        String isc1 = String.valueOf(isc);
+        utils.log().info("Item Service Charge is " + isc1);
+
+        //calculate tax on item service charge
+        double taxOnItemServiceCharge = isc - (isc / (1 + taxAmount2));
+        utils.log().info("Exact Tax2 (tax on item tax) is " + taxOnItemServiceCharge);
+
+        BigDecimal taxOnItemServiceCharge1 = new BigDecimal(taxOnItemServiceCharge).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal tt2 = new BigDecimal(taxOnItemServiceCharge).setScale(4, RoundingMode.HALF_UP);
+
+        double taxOnItemTax2 = taxOnItemServiceCharge1.doubleValue();
+        double ss2 = tt2.doubleValue();
+
+        String taxOnItemTaxAmount = String.valueOf(taxOnItemTax2);
+        utils.log().info("Expected Tax2 is " + taxOnItemTaxAmount);
+
+        //Calculate total tax
+        double totalExpectedTax = bb + taxOnItemTax2;
+        BigDecimal totalExpectedTax1 = new BigDecimal(totalExpectedTax).setScale(2, RoundingMode.HALF_UP);
+
+        String totalExpectedTaxAmount = String.valueOf(totalExpectedTax1);
+        utils.log().info("Total Expected Tax is " + totalExpectedTaxAmount);
+
+//        //RoundOff Calculation for 1st Tax
+//        double d = bb - taxAmount;
+//        BigDecimal ee = new BigDecimal(d).setScale(4, RoundingMode.HALF_UP);
+//        double ff = ee.doubleValue();
+//        String RoundOffValue = String.valueOf(ff);
+//        utils.log().info("RoundOff value for Tax1 is " + RoundOffValue);
+
+//        //RoundOff Calculation for 2nd Tax
+//        double d2 = taxOnItemTax2 - taxOnItemTax;
+//        BigDecimal ee2 = new BigDecimal(d2).setScale(4, RoundingMode.HALF_UP);
+//        double ff2 = ee2.doubleValue();
+//        String RoundOffValue2 = String.valueOf(ff2);
+//        utils.log().info("RoundOff value for Tax2 is " + RoundOffValue2);
+
+//        /
+
+        //Total RoundOff Calculation
+//        double totalTax4 = taxAmount + taxOnItemTax;
+//        utils.log().info("value1 is " + totalTax4);
+        double totalTax4 = ss + ss2;
+        utils.log().info("value1 is " + totalTax4);
+//          totalTax4 = totalTax4 * 100.0/100.0;
+
+//         double tt3 = Math.round(totalTax4 * 100.0)/100.0;
+        BigDecimal tt3 = new BigDecimal(totalTax4).setScale(2, RoundingMode.HALF_UP);
+        double tt4 = tt3.doubleValue();
+        utils.log().info("value2 is " + tt4);
+
+        double tt5 = tt4 - totalTax4;
+        BigDecimal tt6 = new BigDecimal(tt5).setScale(4, RoundingMode.HALF_UP);
+
+        String tt7 = String.valueOf(tt6);
+//         tt4 = tt4 * 10.0/10.0;
+        utils.log().info("Total RoundOff value is " + tt7);
+
+        //Commenting below steps as there is mismatch in exp and act tax when exclusive and tax on item tax are there (LIN-19736)
+
+        WebElement ActualTaxAmount = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String ActualTax2 = ActualTaxAmount.getAttribute("value");
+        String ActualTax3 = ActualTax2.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual tax is " + ActualTax3);
+
+        Assert.assertEquals(totalExpectedTaxAmount, ActualTax3);
+
+    }
+
+    public void verifyIfTaxIsCalculatedProperlyAndCalculateRoundOffTaxOnItemServiceChargeInclusiveQty2(double taxAmount1, double taxAmount2, double itemServiceCharge) {
+        WebElement menuItemAmount1 = driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
+        String menuItemAmount3 = menuItemAmount1.getText();
+
+        double menuItemAmount44 = Double.parseDouble(menuItemAmount3);
+
+        double menuItemAmount4 = menuItemAmount44 * 2;
+
+
         //define tax percentage for 1st menu and calculate tax
 
         double taxAmount = menuItemAmount4 - (menuItemAmount4 / (1 + taxAmount1));
@@ -3964,6 +4103,11 @@ public class TaxRoundingOff extends ClockInScreen {
         new OrderTypeWindow().pressCancelBtn();
     }
 
+    public void SelectTheSubmitButton() throws InterruptedException {
+        elementClick(SubmitBtn, "Selected Submit Button");
+
+    }
+
     public void verifyIfExcTaxIsCalculatedCorrectlyReopen(Double taxValue) {
         WebElement menuItemAmount1 = driver.findElement(By.xpath("//ion-content/div/div/div//div[5]"));
         String menuItemAmount3 = menuItemAmount1.getText();
@@ -4490,9 +4634,21 @@ public class TaxRoundingOff extends ClockInScreen {
         Thread.sleep(5000);
     }
 
+    public void selectTheSplitBtnInTableLayout() throws InterruptedException {
+        WebElement splitButton = driver.findElement(By.xpath("//button[contains(.,'Split')]"));
+        splitButton.click();
+        Thread.sleep(5000);
+    }
+
     public void SelectSplitOption() {
         WebElement splitOption = driver.findElement(By.xpath("//span[contains(.,'SPLIT CHECK')]"));
         elementClick(splitOption, "Selected the split option as SPLIT CHECK");
+    }
+
+    public void SelectSplitOptionTableLayout()
+    {
+        WebElement splitOption = driver.findElement(By.xpath("//span[contains(.,'Split By Seat')]"));
+        elementClick(splitOption, "Selected the split option as SPLIT BY SEAT");
     }
 
     public void selectTheOrderBtn() {
@@ -4620,6 +4776,111 @@ public class TaxRoundingOff extends ClockInScreen {
 //        WebElement doneOption =  driver.findElement(By.xpath("Done"));
 //        doneOption.click();
 
+    }
+
+    public void selectTheSeatNum2()
+    {
+        WebElement seat2 = driver.findElement(By.xpath("(//ion-row[contains(@class,'seat-header')])[2]"));
+        seat2.click();
+    }
+
+    public void selectTheSeatNum1()
+    {
+        WebElement seat1 = driver.findElement(By.xpath("(//ion-row[contains(@class,'seat-header')])[1]"));
+        seat1.click();
+    }
+
+    public void iGetTheTotalAmountOfSeat2()
+    {
+        WebElement totalAmt = driver.findElement(By.xpath("(//ion-footer[contains(@class,'seat-payment')])[2]//ion-grid//ion-row[4]//ion-col[2]//p"));
+        String ActualTax = totalAmt.getText();
+        String ActualTax2 = ActualTax.replaceAll("[A-Z$ ]", "");
+
+        TestUtils.totalAmountSplit2 = ActualTax2;
+    }
+
+
+    public void iGetTheTotalAmountOfSeat1()
+    {
+        WebElement totalAmt = driver.findElement(By.xpath("(//ion-footer[contains(@class,'seat-payment')])[1]//ion-grid//ion-row[4]//ion-col[2]//p"));
+        String ActualTax = totalAmt.getText();
+        String ActualTax2 = ActualTax.replaceAll("[A-Z$ ]", "");
+        TestUtils.totalAmountSplit1 = ActualTax2;
+    }
+
+    public void iGetTheTotalAmount()
+    {
+        WebElement totalAmt = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String ActualTax = totalAmt.getAttribute("value");
+        String ActualTax2 = ActualTax.replaceAll("[A-Z$ ]", "");
+        TestUtils.totalAmountSplit1 = ActualTax2;
+    }
+
+
+    public void iVerifyIfTheTotalIsDisplayedCorrectlyForTheSeat2()
+    {
+        WebElement BalanceDue = driver.findElement(By.xpath("//div[contains(@class,'balance')]//p/label[2][1]"));
+        String BalanceDueAmount = BalanceDue.getText();
+
+        String BalanceDueValue = BalanceDueAmount.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual Balance due is " + BalanceDueValue);
+
+
+        Assert.assertEquals(TestUtils.totalAmountSplit2, BalanceDueValue);
+    }
+
+    public void iVerifyIfTheTotalIsDisplayedCorrectlyForTheSeat1()
+    {
+        WebElement BalanceDue = driver.findElement(By.xpath("//div[contains(@class,'balance')]//p/label[2][1]"));
+        String BalanceDueAmount = BalanceDue.getText();
+
+        String BalanceDueValue = BalanceDueAmount.replaceAll("[A-Z$ ]", "");
+        utils.log().info("Actual Balance due is " + BalanceDueValue);
+
+
+        Assert.assertEquals(TestUtils.totalAmountSplit1, BalanceDueValue);
+    }
+
+    public void selectThePayCheckOption()
+    {
+        WebElement PayCheckOption = driver.findElement(By.xpath("(//button[contains(.,'Pay')])[2]"));
+        PayCheckOption.click();
+    }
+
+    public void selectThePayCheckOption2()
+    {
+        WebElement PayCheckOption = driver.findElement(By.xpath("//button[contains(.,'Pay Check')]"));
+        PayCheckOption.click();
+    }
+
+    public void selectTheArrivalOption()
+    {
+        WebElement PayCheckOption = driver.findElement(By.xpath("//button[contains(.,'Arrival')]"));
+        PayCheckOption.click();
+    }
+
+    public void selectTheDriver()
+    {
+        WebElement drivername = driver.findElement(By.xpath("(//ion-row[contains(@class,'driverBtn')]//button)[2]"));
+        drivername.click();
+    }
+
+    public void selectTheDriverIcon()
+    {
+        WebElement driverIcon = driver.findElement(By.xpath("(//ion-row[contains(@class,'driverBtn')]//button)[1]"));
+        driverIcon.click();
+    }
+
+    public void selectTheDepartButton()
+    {
+        WebElement departButton = driver.findElement(By.xpath("//button[contains(.,'Depart ')]"));
+        departButton.click();
+    }
+
+    public void selectTheOutButton()
+    {
+        WebElement outButton = driver.findElement(By.xpath("//button[contains(.,'Out')]"));
+        outButton.click();
     }
 
     public String iGetCheck1Number() {
@@ -5102,8 +5363,8 @@ public class TaxRoundingOff extends ClockInScreen {
         FirstItem.click();
     }
 
-    public void iSelectedQSROptionInTableLayout()
-    {
+    public void iSelectedQSROptionInTableLayout() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement qsrButton = driver.findElement(By.xpath("//span[contains(.,'QSR')]"));
         qsrButton.click();
     }
@@ -5155,6 +5416,43 @@ public class TaxRoundingOff extends ClockInScreen {
 
     }
 
+    public void iNowSelectedTheCheckToBeSplitted(String m) throws InterruptedException {
+        Thread.sleep(1000);
+
+        WebElement Table1 =  driver.findElement(By.xpath("//div[@class=\'child\']/button[1]"));
+        if (Table1.isDisplayed()) {
+            elementClick(Table1, "Selected the table " + m + "with check  number " + TestUtils.globalCheckNumber);
+        }
+
+        try {
+            WebElement Check =  driver.findElement(By.xpath("//ion-title[contains(.,'Checks')]"));
+
+            if (Check.isDisplayed()) {
+                String a = TestUtils.globalCheckNumber;
+                WebElement CheckNumm =  driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]/ion-grid//ion-row//div//p[contains(.,'"+TestUtils.globalCheckNumber+"')]"));
+
+                if (CheckNumm.isDisplayed()) {
+                    elementClick(CheckNumm, "Selected the check");
+                }
+
+//                WebElement yes =  driver.findElement(By.xpath("Yes");
+//                if (yes.isDisplayed()) {
+//                    elementClick(yes, "select yes btn");
+//                }
+
+                WebElement Xbtn =  driver.findElement(By.xpath("//ion-toolbar[contains(@class,'toolbar-title')]//ion-title[contains(.,'Checks')]/..//button"));
+
+                if (Xbtn.isDisplayed()) {
+                    Xbtn.click();
+                } else {
+
+                }
+            }
+
+        } catch (Exception w) {
+
+        }
+    }
     public void iNowMergeCheck1WithDiscount(String m) throws InterruptedException {
         Thread.sleep(1000);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -8276,6 +8574,18 @@ public class TaxRoundingOff extends ClockInScreen {
         return checkNumber;
     }
 
+    public void iSelectTheNameOption()
+    {
+        WebElement nameOption = driver.findElement(By.xpath("(//button[contains(.,'Name')])[2]"));
+        nameOption.click();
+    }
+
+    public void iSelectTheCheckOption()
+    {
+        WebElement nameOption = driver.findElement(By.xpath("//button[contains(.,' Check# ')]"));
+        nameOption.click();
+    }
+
 
     public void verifyClosedCheckInClosedCheckTab() throws InterruptedException {
         Thread.sleep(500);
@@ -8290,6 +8600,23 @@ public class TaxRoundingOff extends ClockInScreen {
 
         else {
             utils.log().info("Closed check is not displayed");
+        }
+    }
+
+    public void iShouldSeeTheCheckInPhoneOrderTab() throws InterruptedException {
+        Thread.sleep(500);
+        String globalCheckNumber=TestUtils.globalCheckNumber;
+        searchTabPhoneOrderTab.clear();
+        searchTabPhoneOrderTab.sendKeys(globalCheckNumber);
+        Thread.sleep(2000);
+        WebElement phoneOrders = driver.findElement(By.xpath("(//table[contains(@class,'phoneorder')]//div)[1]"));
+        if (phoneOrders.isDisplayed()){
+            elementClick(phoneOrders,"Tapped Check");
+            utils.log().info(globalCheckNumber + " - Check is displayed in tab");
+        }
+
+        else {
+            utils.log().info("check is not displayed");
         }
     }
 
@@ -8383,6 +8710,38 @@ public class TaxRoundingOff extends ClockInScreen {
     public void pressDoneOpenItemBtn1(){
         WebElement done1Btn = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
         elementClick( done1Btn, "Done button is tapped - ");
+    }
+
+    public void iSelectTheCashPayment()
+    {
+        WebElement cashBtn = driver.findElement(By.xpath("//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,'Cash')]"));
+        elementClick( cashBtn, "Done button is tapped - ");
+    }
+
+    public void iSelectTheByNameTab()
+    {
+        WebElement byNameTab = driver.findElement(By.xpath("//span[contains(.,'By Name')]"));
+        elementClick(byNameTab, "By Name tab is tapped - ");
+    }
+
+    public void iSelectedFirstCustomer()
+    {
+        WebElement customer = driver.findElement(By.xpath("(//div[contains(@role,'listbox')]//div[1])[1]"));
+        customer.click();
+    }
+
+    public void iEnterTheCustomerName(String CustName)
+    {
+        WebElement searchField = driver.findElement(By.xpath("//div[contains(@class,'customer-content-div')]//input"));
+        searchField.click();
+
+        searchField.sendKeys(CustName);
+    }
+
+    public void pressExitOpenItemBtn1()
+    {
+        WebElement exit1Btn = driver.findElement(By.xpath("//ion-footer[contains(@class,'payment_footer')]/..//button[contains(.,'Exit')]"));
+        elementClick( exit1Btn, "Exit button is tapped - ");
     }
 
     public void pressDoneTransferBtn1() throws InterruptedException {

@@ -41,6 +41,11 @@ public class TGSplitCheckStepDef {
         split.saveAndCloseSplitedCheck();
     }
 
+    @And("User click save button in customer screen")
+    public void selectTheSaveButton() throws InterruptedException {
+        split.selectSaveButton();
+    }
+
     @Then("User click Add button")
     public void userClickAddButton() {
         //split.clickAddButton();
@@ -293,6 +298,11 @@ public class TGSplitCheckStepDef {
     @Given("User select DineIn mode in split screen")
     public void userSelectDineInModeInSplitScreen() {
         split.selectDineInOrderType();
+    }
+
+    @Given("User select Delivery mode in split screen")
+    public void userSelectDeliveryModeInSplitScreen() {
+        split.selectDeliveryOrderType();
     }
 
     @Then("User select sixth table in split screen")

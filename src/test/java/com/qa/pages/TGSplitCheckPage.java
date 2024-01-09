@@ -373,6 +373,12 @@ public class TGSplitCheckPage extends BasePage{
         elementClick(element,"Save Splited Check");
     }
 
+    public void selectSaveButton() throws InterruptedException {
+        Thread.sleep(5000);
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Save')]"));
+        elementClick(element,"Save button selected");
+    }
+
     public void addItemToNewCheck(){
         WebElement element = mergeAndFindMobileElement(emtyCheck);
         elementClick(element,"Add Item To New Check");
@@ -446,6 +452,11 @@ public class TGSplitCheckPage extends BasePage{
     public void selectDineInOrderType(){
         WebElement element = driver.findElement(By.xpath("//span[contains(.,'DINE IN')]"));
         elementClick(element,"Select DineIn OrderType");
+    }
+
+    public void selectDeliveryOrderType(){
+        WebElement element = driver.findElement(By.xpath("//span[contains(.,'DELIVERY')]"));
+        elementClick(element,"Select Delivery OrderType");
     }
 
     public void selectSixthTable(){

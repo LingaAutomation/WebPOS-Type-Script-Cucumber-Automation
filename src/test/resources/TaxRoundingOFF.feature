@@ -2422,5 +2422,223 @@ Feature: TaxRoundOff
         And Verify if the balance due value is displayed correctly after payment split merge
         And I click log off button in order screen
 
+        @43
     Scenario: TS-43 -> Application shows "Balance due" while making payment for the Transferred item check
+      And Select the All option
+      And Select table layout option
+      And I selected new check button
+      And I selected the table1
+      And I selected seat number
+      And I get check number
+      And I get table number
+      And I have selected category arrow
+      And Select the category "FOOD ITEMS"
+      And Select the menu item "testing menu13"
+#    And Select the menu item with check tax
+      And Verify if the CheckTax is calculated correctly and calculate round-off
+#      And Verify if the total value is calculated correctly
+#      And Verify if the balance due value is calculated correctly
+#      And Verify if the balance due value is displayed correctly after payment
+#      And I click log off button in order screen
+      And User click finish button in split screen
+      And I Selected QSR in table layout screen
+      And I have closed the order type window
+      And User click QSR on Menu Item page in split screen
+      And User select DineIn mode in split screen
+      And I selected the table2
+      And I get table number2
+      And I get check number2
+      And I have selected category arrow
+      And Select the category "FOOD ITEMS"
+      And Select the menu item "testing menu13"
+      And Verify if the CheckTax is calculated correctly and calculate round-off
+      And User click finish button in split screen
+      And I selected the transfer button
+      And I selected the transfer item tab
+      And I now entered the check number in the transfer from table
+      Then I selected the menu item in the table
+      And I now entered the check number in the transfer to table
+      And I click Done button on the open item window
+      And I select Yes option in the confirmation window
+      And I click Done button on the transfer success window
+      And I click Check Stats tab
+      And I should see active check in active check tab
+      And I click open check button on the check stats screen
+#      And Verify if the total amount is calculated correctly
+      And Verify if the balance due value is calculated correctly
+      And Verify if the balance due value is displayed correctly after payment split merge
+      And I click log off button in order screen
+
+          @47
+     Scenario: TS-47 -> If doing fire coursing after void any menu item in order screen send to kitchen popup is displaying
+      And I have selected category arrow
+       And Select the category "DRINKS"
+       And Select the menu item "blue lagoon"
+       And Verify if exclusive tax "0.10255" is calculated properly and calculate roundoff
+       And I have selected category arrow
+            And Select the category "chicken"
+            And Select the sub category "Rolls"
+            And Select the menu item "chicken roll"
+       And Verify if exclusive taxes "0.10255" and "0.06220" are calculated properly and calculate roundoff
+       And I selected order button
+       And I selected menu options2
+       And I selected void button in menu options
+       And Select the Void item reason as "Server Error"
+       And Verify if exclusive tax "0.10255" is calculated properly and calculate roundoff
+       And Selected Options button
+       And I selected fire coursing button
+       And I selected the coursing as "BEVERAGE"
+       And I selected cancel button2
+       And I selected cancel button
+       And Verify if exclusive tax "0.10255" is calculated properly and calculate roundoff
+       And Verify if the balance due value is calculated correctly
+       And Verify if the balance due amount is displayed correctly after payment
+       And I click log off button in order screen
+
+            @50
+   Scenario: TS-50 -> Application shows "ERROR TypeError: Cannot read properties of undefined (reading 'paymentType')" in console while doing payment for the seat through split screen
+     And I get check number
+     And I have selected category arrow
+     And Select the category "chicken"
+     And Select the sub category "Rolls"
+     And Select the menu item "chicken roll"
+     And Verify if exclusive tax "0.06220" is calculated properly and calculate roundoff
+     And I have selected category arrow
+     And Select the category "DRINKS"
+     And Select the menu item "blue lagoon"
+     And Verify if exclusive taxes "0.06220" and "0.10255" are calculated properly and calculate roundoff
+     And I selected order button
+     And User click QSR on Menu Item page in split screen
+     And User select DineIn mode in split screen
+     And I selected the table
+     And I get table number
+     And User click finish button in split screen
+     And I selected the split button in table layout
+     And I selected the split option as Split Seat in table layout
+     And I selected the check to be splitted
+     And I selected Add button
+     And I selected the menu1
+     And I transferred the menu to new check
+     And I check if exc tax "0.06220" is calculated properly for first check
+     And I check if exc tax "0.10255" is calculated properly for second check
+     And I select seat 2
+     And I get the total amount for seat 2
+     And I selected pay check option
+     And I verify if the balance due is calculated correctly for the check seat 2
+     And Verify if the balance due amount is displayed correctly after payment seat 1
+     And I click Done button on the open item window
+     And I click Exit button on the open item window
+     And I select seat 1
+     And I get the total amount for seat 1
+     And I selected pay check option
+     And I verify if the balance due is calculated correctly for the check seat 1
+     And Verify if the balance due value is displayed correctly after payment split merge
+     And I click log off button in order screen
+
+   @54
+   Scenario: TS-54 -> Application shows balance due while paying the check with cash payment after doing split check
+     And I get check number
+     And I have selected category arrow
+     And Select the category "Sparklers"
+     And Select the sub category "Basic"
+     And Select the menu item "Minty orange"
+     And Verify If Inclusive Tax "0.13450" and tax on item service charge "0.12000" Is Calculated Properly when item service charge "0.13467"
+     And Verify If item service charge "0.13467" Is Calculated Properly
+     And Select the menu item "Minty orange"
+     And Verify If Inclusive Tax "0.13450" and tax on item service charge "0.12000" Is Calculated Properly when item service charge "0.13467" qty 2
+     And I selected order button
+     And User click QSR on Menu Item page in split screen
+     And User select DineIn mode in split screen
+     And I selected the table
+     And I selected the split button
+     And I selected the split option as Split Check
+     And I selected Add button
+     And I selected the menu1
+     And I transferred the menu to new check
+     And I select seat 1
+     And I get the total amount for seat 1
+     Then User click save and close in split screen
+     And User click finish button in split screen
+     And I selected pay check option2
+     And I selected the check to be splitted
+     And I verify if the balance due is calculated correctly for the check seat 1
+     And Verify if the balance due value is displayed correctly after payment split merge
+     And I click log off button in order screen
+
+     @63
+   Scenario: TS-63 -> Application shows Balance due while making payment with cash for the delivery check
+       And I get check number
+     And I have selected category arrow
+       And Select the category "Sparklers"
+       And Select the sub category "Basic"
+       And Select the menu item "Minty orange"
+       And Verify If Inclusive Tax "0.13450" and tax on item service charge "0.12000" Is Calculated Properly when item service charge "0.13467"
+       And Verify If item service charge "0.13467" Is Calculated Properly
+       And I get the total amount
+     And I selected order button
+     And User click QSR on Menu Item page in split screen
+     And User select Delivery mode in split screen
+     And I select By Name tab in customer screen
+     And I enter the customer name "shaun" in search field
+     And I selected the first customer displayed
+     Then User click save button in customer screen
+     Then User click finish button in split screen
+     And I selected name option
+     And I selected the check option
+     Then I should see the check in phone order tab
+       And I selected the driver
+       And I selected the driver icon
+       And I select the depart button
+       And I select the out button
+       Then I should see the check in phone order tab
+       And I selected pay check option2
+     And I verify if the balance due is calculated correctly for the check seat 1
+       And I selected cash payment
+       And I Select submit button
+       And I click Done button on the open item window
+       And I click Exit button on the open item window
+       Then User click finish button in split screen
+       And I select the out button
+       Then I should see the check in phone order tab
+       And I selected arrival option
+       And I Selected QSR in table layout screen
+       And I have closed the order type window
+     And I click log off button in order screen
+
+   Scenario: TS-66 -> Application shows Balance due while making the payment after Transferring the Table
+     And I get check number
+     And I have selected category arrow
+     And Select the category "Sparklers"
+     And Select the sub category "Basic"
+     And Select the menu item "Minty orange"
+     And Verify If Inclusive Tax "0.13450" and tax on item service charge "0.12000" Is Calculated Properly when item service charge "0.13467"
+     And Verify If item service charge "0.13467" Is Calculated Properly
+     And Select the menu item "Minty orange"
+     And Verify If Inclusive Tax "0.13450" and tax on item service charge "0.12000" Is Calculated Properly when item service charge "0.13467" qty 2
+     And I selected order button
+     And User click QSR on Menu Item page in split screen
+     And User select DineIn mode in split screen
+     And I selected the table
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -681,6 +681,31 @@ public class CheckOptionsStepDef {
         new TaxRoundingOff().pressDoneOpenItemBtn1();
     }
 
+    @And("^I selected cash payment$")
+    public void iSelectCashPayment() {
+        new TaxRoundingOff().iSelectTheCashPayment();
+    }
+
+    @And("^I select By Name tab in customer screen$")
+    public void iSelectByNameTab() {
+        new TaxRoundingOff().iSelectTheByNameTab();
+    }
+
+    @And("^I selected the first customer displayed$")
+    public void iSelectedTheFirstCustomer() {
+        new TaxRoundingOff().iSelectedFirstCustomer();
+    }
+
+    @And("^I enter the customer name \"([^\"]*)\" in search field$")
+    public void iEnterCustomerName(String CustName) {
+        new TaxRoundingOff().iEnterTheCustomerName(CustName);
+    }
+
+    @And("^I click Exit button on the open item window$")
+    public void iClickExitButtonOnTheOpenItemWindow() {
+        new TaxRoundingOff().pressExitOpenItemBtn1();
+    }
+
     @And("^I click Done button on the transfer success window$")
     public void iClickDoneButtonOnTheTransferWindow() throws InterruptedException {
         new TaxRoundingOff().pressDoneTransferBtn1();
