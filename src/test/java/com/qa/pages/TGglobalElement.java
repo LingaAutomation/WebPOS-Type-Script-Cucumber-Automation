@@ -416,7 +416,7 @@ public class TGglobalElement {
     String partialPaymentForTenPrice = "TL 10";
 //    String partialPaymentForTenPrice = "//XCUIElementTypeStaticText[@name=\"TL 10\"]";
 
-    String partialPaymentPriceSummary = "990,00+10,00";
+    String partialPaymentPriceSummary = "/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]";
 
     String adjustButton = "Adjust";
 
@@ -991,7 +991,7 @@ public class TGglobalElement {
     //    String openItemDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
     String combinationDiscountWarningText = "//XCUIElementTypeTextView[@name=\"Combined with other discounts is disabled for Item-Based Discount\"]";
 
-    String voidReasonFOrGiftCard = "MISTAKE";
+    String voidReasonFOrGiftCard = "//button[contains(.,' Ordered Wrongly ')]";
 //    String voidReasonFOrGiftCard = "//XCUIElementTypeStaticText[@name=\"Mistake\"]";
 
     String voidItemMenuOption = "Void Item";
@@ -3032,9 +3032,10 @@ public class TGglobalElement {
     String giftCardDone = "Done";
     String giftCardNumberSix = "//button[.='6']";
     //    String partialPaidAmountWithGiftCard1 = "//XCUIElementTypeStaticText[@name=\"20,00\"]";
-    String partialPaidAmountWithGiftCard1 = "20,00";
+    String partialPaidAmountWithGiftCard1 = "/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]";
+
     //    String partialPaidAmountWithGiftCard2 = "//XCUIElementTypeStaticText[@name=\"20,00+10,00\"]";
-    String partialPaidAmountWithGiftCard2 = "20,00+10,00";
+    String partialPaidAmountWithGiftCard2 = "/html/body/div/div[2]/div/mat-dialog-container/app-payment/ion-content/ion-grid/ion-row/ion-col[1]/div[2]/ion-grid/ion-row[2]/ion-col/ion-list/ion-item-sliding/ion-item/ion-row/ion-col[3]";
     //    String orderWillBeSplited1 = "//XCUIElementTypeStaticText[@name=\"T23\"]";
     String orderWillBeSplited1 = "T23";
     String giveXCardNumberOnMenuItemPage1 = "(//XCUIElementTypeStaticText[@name=\"GCX-603628237912001380863 \"])[2]";

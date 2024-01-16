@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -1036,5 +1037,25 @@ elementClick(tillBtn,"Tapped Till Button");
         selectTheEmployeee(TestUtils.cashier_Name4);
         clickTheGenerateButton();
         verifyTheSelectedUserAppearInTheReportScreen(TestUtils.cashier_Name4);
+    }
+    @FindBy(xpath = "//button[contains(.,'Done')]")
+    private WebElement Done1;
+
+    @FindBy(xpath = "/html/body/div/div[2]/div/mat-dialog-container/app-closeday-cashierout/ion-header/ion-label")
+    WebElement cashierOutfullyPopup;
+    public void verifyTheCannotCloseTheShiftStoreHaveTheActiveCheck() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+        try {
+            if (cashierOutfullyPopup.isDisplayed()) {
+                WebElement cashBtn = driver.findElement(By.xpath("//ion-grid[contains(@class,'cashierout-content')]//ion-row//ion-col//button//span[contains(.,'Cash')]"));
+                elementClick(cashBtn, "Selected - " + cashBtn.getText());
+                utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
+                elementClick(Done1, "Tapped Done Button on the Popup");
+
+            }
+        } catch (Exception z) {
+            utils.log().info("Cashier Out Popup is Displayed ");
+
+        }
     }
 }

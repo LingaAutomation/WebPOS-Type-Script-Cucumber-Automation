@@ -30,9 +30,9 @@ public class OrderTypeWindow extends ClockInScreen {
     @FindBy( name = "Order Type")
     private WebElement orderTypeWindow;
 
-
-    @FindBy(name = "Delivery")
+    @FindBy(xpath = "(//button[contains(.,'DELIVERY')])[1]")
     private WebElement deliveryBtn;
+
 
     @FindBy(name = "Phone To Go")
     private WebElement phoneToGoBtnService;//Added Today
@@ -48,7 +48,7 @@ public class OrderTypeWindow extends ClockInScreen {
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Delivery\"])[2]")
     private WebElement phoneDeliveryBtn;//Added Today
 
-    @FindBy(name = "Done")
+    @FindBy(xpath = "//span[contains(.,'Done')]")
     private WebElement doneBtn;
 
     String cancelBtn= "//button[contains(.,'Cancel')]";
@@ -120,7 +120,7 @@ public class OrderTypeWindow extends ClockInScreen {
 
     public void pressCancelBtn() throws InterruptedException {
 
-      Thread.sleep(1000);
+      Thread.sleep(2000);
         elementClick(cancelBtn, "Order type selection is cancelled.");
     }
 

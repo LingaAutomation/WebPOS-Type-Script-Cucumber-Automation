@@ -261,10 +261,11 @@ public class TGCheckStatusPage extends BasePage {
         /*loginPage = new LoginPage((IOSDriver)driver);
         loginPage.clickCancel();*/
     }
-    public void clickVoidChecksTab(){
-//        WebElement element=mergeAndFindMobileElement(voidChecksTab);
-//        elementClick(element,"Click void Checks Tab");
-        findandclickM(By.id(voidChecksTab));
+    public void clickVoidChecksTab() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element=mergeAndFindMobileElement(voidChecksTab);
+        elementClick(element,"Click void Checks Tab");
+//        findandclickM(By.id(voidChecksTab));
     }
     public void verifyVoidChecks(){
         WebElement element=mergeAndFindMobileElement(voidChecksTab);

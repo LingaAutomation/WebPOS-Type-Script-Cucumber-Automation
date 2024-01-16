@@ -486,7 +486,11 @@ public class TGMenuItemStepDef {
     public void userVerifyAddedQuantityTaxRate() {
         new TGMenuItemPage().verifyItemBasedQuantityTax();
     }
+    @And("I click on the Order Button")
+    public void iClickOnTheOrderButton() {
+        new OrderManagementScreen().OrderBtnClick();
 
+    }
     @Given("User select Delivery mode on menu item page")
     public void userSelectDeliveryModeOnMenuItemPage() {
         new TGMenuItemPage().clickQsrOption();
@@ -844,7 +848,7 @@ public class TGMenuItemStepDef {
     }
 
     @Then("User click pizza category")
-    public void userClickPizzaCategory() {
+    public void userClickPizzaCategory() throws InterruptedException {
         new TGMenuItemPage().clickPizzaCategoryTab();
     }
 
@@ -1981,7 +1985,7 @@ public class TGMenuItemStepDef {
     }
 
     @And("^I verify the \"([^\"]*)\" in the check \"([^\"]*)\"$")
-    public void iVerifyTheInTheCheck(String btnDriver, String msg) {
+    public void iVerifyTheInTheCheck(String btnDriver, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(btnDriver,msg);
     }
 

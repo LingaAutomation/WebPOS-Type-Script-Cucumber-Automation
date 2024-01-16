@@ -126,13 +126,13 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(name = "auto loyaltytest 67891234598 ")
     private WebElement loyalCustomer;
 
-    @FindBy(name = "Loyalty Balance")
+    @FindBy(xpath = "//ion-title[contains(.,'Loyalty Balance')]")
     private WebElement loyaltyBalanceScreen;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell")
     private WebElement verifyLoyalty;
 
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"CustomerProfile Close\"])[2]")
+    @FindBy(xpath = "//ion-header[contains(@class,'loyalty-balance-header')]//linga-icon[@symbol='closeButton']")
     WebElement closeLoyaltyBalance;
 
     @FindBy(name = "Enter Email Id or Mobile Number")
@@ -293,7 +293,10 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public void sendCustomerName(String name) {
-        sendKeys(searchField, name, "Customer name is entered - "+ name );}
+
+        WebElement Customer = driver.findElement(By.xpath("//p[@slot='end']"));
+        Customer.click();
+    }
 
 
     public void sendAndSelectCustomerName(String name) {
@@ -302,7 +305,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public void clickRepeatOrderButton(){
-      WebElement repeatOrderBtn = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Repeat Order\"]"));
+      WebElement repeatOrderBtn = (WebElement) driver.findElement(By.xpath("//button[.=' Repeat Order ']"));
       elementClick(repeatOrderBtn,"Selected Repeat Order Btn");
     }
 
@@ -414,7 +417,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
     public void clickLoyaltyButton(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement loyal=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
+        WebElement loyal= driver.findElement(By.xpath("//button[contains(.,'Loyalty')]"));
         String loyal1=loyal.getText();
         elementClick(loyal,loyal1 + " - Tapped Loyalty Button");
 

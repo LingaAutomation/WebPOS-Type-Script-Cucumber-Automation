@@ -32,7 +32,7 @@ public class TGModifierStepDef {
     }
 
     @And("User select \"([^\"]*)\" in the modifier page \"([^\"]*)\"$")
-    public void userSelectInTheModifierPage(String btnModifier, String msg) {
+    public void userSelectInTheModifierPage(String btnModifier, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(btnModifier,msg);
     }
 

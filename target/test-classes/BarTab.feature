@@ -1,4 +1,4 @@
-@BarTab12
+@Regression
 Feature: Bar Tab
 
   Background:

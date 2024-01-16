@@ -42,9 +42,8 @@ public class OrderManagementScreen extends OrderTypeWindow{
     @FindBy(xpath = "//button[@id='os_all']")
              WebElement allBtn;
 //   String allBtn  = "//button[@id='os_all']";
-
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"QSR\"])[2]")
-    private WebElement QSRCombo;
+@FindBy(xpath = "//button[contains(.,'QSR')]//linga-icon[@symbol='down']")
+private WebElement QSRCombo;
 
     @FindBy(xpath = "Dine In")
     private WebElement DineInCombo;
@@ -147,7 +146,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     String appetizersCategoryBtn= "//div[contains(@class,'center-name category-container')]/div[contains(.,'Appetizers')]" ;
 
-    @FindBy(xpath = "Briyani")
+    @FindBy(xpath = "//button[.='Briyani']")
     private WebElement briyaniBtn;
 
     //Open Item Menu Item
@@ -243,7 +242,8 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     @FindBy(xpath = "//input[(@placeholder='Search customer by Name/Email')]")
     private WebElement search;
-
+    @FindBy(xpath = "//input[@placeholder='Search customer by phone']")
+    private WebElement search1;
     String searchOrderScreen = "//label[contains(.,'Search Item')]";
  //   @FindBy(xpath = "Search")
 //    private WebElement searchOrderScreen;
@@ -346,33 +346,32 @@ public class OrderManagementScreen extends OrderTypeWindow{
     private WebElement doneButton;
 
 
-    @FindBy(xpath = "Cancel")
+    @FindBy(xpath = "//span[.='Cancel ']")
     private WebElement cancelBtnConversational;
 
-    //@FindBy(xpath = ""//XCUIElementTypeStaticText[@name=\"Cancel\"]")
 
-    @FindBy(xpath = "Start Over")
+    @FindBy(xpath = "//span[.='Start Over ']")
     private WebElement startOverBtn;
 
-    @FindBy(xpath = "Done")
+    @FindBy(xpath = "//span[.='Done ']")
     private WebElement doneBtnConversational;
 
-    @FindBy(xpath = "Alternate modifier")
+    @FindBy(xpath = "//span[.=' Alternate modifier ']")
     private WebElement alternateModifier;
 
-    @FindBy(xpath = "Alternate Modifier")
+    @FindBy(xpath = "//app-alternate-modifier[contains(.,' Alternate Modifier ')]")
     private WebElement alternateModifierScreen;
 
-    @FindBy(xpath = "Ok")
+    @FindBy(xpath = "//button[.=' Ok ']")
     private WebElement okBtnAlternateModifier;
 
-    @FindBy(xpath = "Revert")
+    @FindBy(xpath = "//button[.=' Revert ']")
     private WebElement revertBtn;
 
     @FindBy(xpath = "Cannot remove customer for Delivery")
     private WebElement cannotRemoveCustomerForDelivery;
 
-    @FindBy (xpath = "You need to pick at least 1 modifiers from this Group")
+    @FindBy (xpath = "//p[.='You need to pick atleast 1 mandatory modifiers from this Add Meats Group']")
     private WebElement youNeedToPickAtLeast1ModifiersFromThisGroup;
 
 
@@ -450,6 +449,11 @@ public class OrderManagementScreen extends OrderTypeWindow{
         sendKeys(search, customerName);
     }
 
+    public void searchForCustomer1(String customerName) {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+//        elementClick("//button[contains(.,'By Name / Email')]","BY Name / Email");
+        sendKeys(search1, customerName);
+    }
     public void clickByNameEmail(){
         elementClick("//button[contains(.,'By Name / Email')]","BY Name / Email");
     }
@@ -570,17 +574,9 @@ public class OrderManagementScreen extends OrderTypeWindow{
     public void selectBreakfastCategory() throws Exception {
         pressArrowDown2();
       //  elementClick(breakFastBtn, "Breakfast Category selected");
-        try {
-            if (find(convertWebElement(breakFastBtn), 2)) {
-                elementClick(breakFastBtn, "Tapped Side CC Button");
-            } else {
-                scrollToElementCategory( "up");
-                elementClick(breakFastBtn, "Tapped Side CC Button");
-            }
-        } catch (Exception e) {
-            scrollToElementCategory( "down");
+
             elementClick(breakFastBtn, "Tapped Side CC Button");
-        }
+
     }
     public void selectBriyaniSubCategory(){
         elementClick(briyaniBtn,"Briyani Sub-Category selected");
@@ -761,6 +757,13 @@ public  void selectCategory (String value) throws Exception {
         Thread.sleep(2000);
             ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
             elementClick(e, "Selected - " + menuItem);
+
+    }
+
+    public void selectMenuItem86(String menuItem) throws Exception {
+        Thread.sleep(2000);
+        WebElement e =  driver.findElement(By.xpath("//div[.='"+menuItem+"']"));
+        elementClick(e, "Selected - " + menuItem);
 
     }
 
@@ -1231,6 +1234,33 @@ public  void selectCategory (String value) throws Exception {
         //searchField.sendKeys(Keys.ENTER);
 
     }
+    public void getMenu() throws InterruptedException {Thread.sleep(1000);
+        WebElement e = driver.findElement(By.xpath("//button[@class='menu-btn subCategoryBtn  active-eff ']//span"));
+       TestUtils.menuCount = e.getAttribute("value");
+       utils.log().info(e.getAttribute("value"));
+    }
+
+    public void selectMenuItemSearch1(String menu_item) throws InterruptedException {
+        Thread.sleep(300);
+        driver.findElement(By.xpath("(//div[.='Search'])[1]")).click();
+        Thread.sleep(500);
+        convertWebElement("(//input[@type='search'])[1]").sendKeys(menu_item);
+        Thread.sleep(300);
+
+        WebElement e = driver.findElement(By.xpath("(//div[contains(@class,'subCategoryBtn-txt noImg')])"));
+        Thread.sleep(300);
+        utils.log().info(e.getText());
+        if (e.getText().equals(menu_item)) {
+//            e.click();
+            utils.log().info("Selected - "+menu_item);
+        }else{
+            utils.log().info("Element Not Displayed - "+menu_item);
+            int w = 1/0;
+        }
+
+        //searchField.sendKeys(Keys.ENTER);
+
+    }
     public void doneForTheMenuItem(){
         elementClick(doneForThisMenuItem, "done for the menu item");
     }
@@ -1522,22 +1552,23 @@ public  void selectCategory (String value) throws Exception {
 
     public void enterMenuQuantity$Store(String Number) throws InterruptedException {
         Thread.sleep(1000);
-        WebElement el1 = driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"1\"]"));
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        WebElement el1 = driver.findElement(By.xpath("//p[contains(@class,'orderlist-courseName')]/../div//div//div[contains(@class,'rderlist-qty text')]"));
         el1.click();
 
         for (int i = 0; i < Number.length(); i++) {
             char c = Number.charAt(i);
             String ch = String.valueOf(c);
-            utils.log().info("i " + c);
+//            utils.log().info("i " + c);
             if (ch.equals("1")) {
-                WebElement e1 =  driver.findElement(By.xpath("(//XCUIElementTypeButton[@name=\"1\"])[2]"));
-            elementClick(e1,"Selected - "+e1);
+                WebElement e1 = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='"+ch+"']"));
+                elementClick(e1,"Selected - "+e1);
             } else {
-                WebElement el21 =  driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + c + "\"]"));
+                WebElement el21 = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='"+ch+"']"));
                 elementClick(el21, c + " selected");
             }
         }
-            elementClick(continueButton, "Tapped Continue");
+        elementClick(continueButton, "Tapped Continue");
 
     }
     public void enterMenuQty(String number){
@@ -1664,6 +1695,11 @@ public  void selectCategory (String value) throws Exception {
         return getText(convertWebElement(closeTheSaleTxt),"close your sale txt is displayed");
     }
 
+    @FindBy(xpath = "//button[contains(@class,'focus-indicator mat-button')]//span[.='X']")
+    private WebElement CrossButton;
+    public void ClickCrossButton(){
+        elementClick(CrossButton,"Tapped log Off Button");
+    }
     public void clickLogOffBtn(){
 
         elementClick(logOffBtn,"Tapped log Off Button");
@@ -1758,9 +1794,9 @@ public  void selectCategory (String value) throws Exception {
 
     public void verifyServingSize() throws IOException {
         try {
-            WebElement modify =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIE)lementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));  //Changed mergeAndFindELement to driver.Findelement ( 3 DEC / Benseron)
+            WebElement modify =  driver.findElement(By.xpath("//p[.='Size']"));  //Changed mergeAndFindELement to driver.Findelement ( 3 DEC / Benseron)
             String modifier = modify.getText();
-            if (find(modify, 2)) {
+            if (modify.isDisplayed()) {
                 elementClick(modify, "Conversational is enabled - " + modifier);
             }
         }
@@ -1771,13 +1807,12 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void getServingSize(){
-        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]
-        List <WebElement> servingSize= (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText"));
+        List <WebElement> servingSize= (List<WebElement>) driver.findElements(By.xpath("//div[@class='group-container'][1]//button"));
         int size=servingSize.size();
         String servingName=" ";
         utils.log().info("Serving Size of The Menu item is - "+size);
         for(int i=1;i<=size;i++) {
-            WebElement serving=driver.findElement(By.xpath( "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText["+i+"]"));
+            WebElement serving=driver.findElement(By.xpath( "//div[@class='group-container'][1]//button["+i+"]"));
             servingName=serving.getText();
             utils.log().info("Serving Sizes - "+servingName);
 
@@ -1788,7 +1823,7 @@ public  void selectCategory (String value) throws Exception {
 
     public void verifySizeCell(){
         try {
-            WebElement size = driver.findElement(By.xpath("Size"));
+            WebElement size = driver.findElement(By.xpath("//ol[@class='breadcrumb']"));
             if (size.isDisplayed()) {
                 utils.log().info("Size Cell is Displayed");
             }
@@ -1802,6 +1837,7 @@ public  void selectCategory (String value) throws Exception {
             utils.log().info("Cancel Button is Displayed in Conversational Modifier Screen");
         }else{
             utils.log().info("Cancel Button is not displayed is Conversational Modifier Screen");
+            int w = 1/0;
         }
     }
     public void verifyStartOverBtnIsEnable(){
@@ -1809,6 +1845,7 @@ public  void selectCategory (String value) throws Exception {
             utils.log().info("Start Over Button is Displayed in Conversational Modifier Screen");
         }else{
             utils.log().info("Start Over Button is not displayed in Conversational Modifier Screen");
+            int w = 1/0;
         }
     }
     public void verifyDoneBtnIsEnable(){
@@ -1816,26 +1853,43 @@ public  void selectCategory (String value) throws Exception {
             utils.log().info("Done Button is Displayed in Conversational Modifier Screen");
         }else{
             utils.log().info("Done Button is not displayed in Conversational Modifier Screen");
+            int w = 1/0;
         }
     }
 
-    public void verifyIncludeModifierIsAdded(){
+    public void verifyIncludeModifierIsAdded(String Modifier){
         try{
-            WebElement modifier=driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell/XCUIElementTypeStaticText[1]"));
+            WebElement modifier=driver.findElement(By.xpath("//div[@class='modifier-section']//div[contains(.,'"+Modifier+"')]"));
             String modi = modifier.getText();
             if (modifier.isDisplayed()) {
                 utils.log().info("Include modifier is added with Menu Item - " + modi);
-            }}catch (Exception h){
+                Assert.assertEquals(modifier.getText(),Modifier);
+            }
+        }catch (Exception h){
             utils.log().info("Include modifier is not added with Menu Item - ");
         }
     }
+
+    public void verifyIncludeModifierIsNotAdded(){
+        try{
+            WebElement modifier=driver.findElement(By.xpath("//div[@class='modifier-section']//div[contains(.,'BQ Chicken')]"));
+            String modi = modifier.getText();
+            if (modifier.isDisplayed()) {
+                utils.log().info("Include modifier is added with Menu Item - " + modi);
+                Assert.assertEquals(modifier.getText(),"BQ Chicken");
+            }
+        }catch (Exception h){
+            utils.log().info("Include modifier is not added with Menu Item - ");
+        }
+    }
+
 
     public void clickStartOverInConversational(){
         elementClick(startOverBtn,"Tapped Start Over button");
     }
 
     public void clickInculdeModifier(){
-        WebElement element=driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
+        WebElement element=driver.findElement(By.xpath("//div[@id='conversational-react']//div[2]//button[1]"));
         String modi = element.getText();
         elementClick(element,"Tapped Include Modifier - "+modi);
     }
@@ -1844,16 +1898,19 @@ public  void selectCategory (String value) throws Exception {
         elementClick(alternateModifier,"Tapped Alternate Modifier button from conversational Screen");
     }
 
-    public void verifyAlternateModifierScreen(){
+    public void verifyAlternateModifierScreen() throws InterruptedException {
+        Thread.sleep(2000);
         if(alternateModifierScreen.isDisplayed()){
             utils.log().info("Alternate Modifier Screen is Visible");
         }else{
             utils.log().info("Alternate Modifier Screen is not Visible");
+            int w = 1/0;
         }
     }
 
-    public void clickModifierFromAlternateModifierScreen(){
-        WebElement alternate=driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeScrollView/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
+    public void clickModifierFromAlternateModifierScreen() throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement alternate=driver.findElement(By.xpath("//button[.=' With Cheese ']"));
         String data=alternate.getText();
         elementClick(alternate,"Tapped Alter modifier - "+data);
 
@@ -1863,11 +1920,13 @@ public  void selectCategory (String value) throws Exception {
         elementClick(okBtnAlternateModifier,"Tapped Ok Button In Alternate Modifier Screen");
     }
 
-    public void verifyIncludeModifier(){
+    public void verifyIncludeModifier(String modifiers) throws InterruptedException {
+        Thread.sleep(2000);
         try {
-            WebElement modify = driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]"));
+            WebElement modify = driver.findElement(By.xpath("//div[@id='conversational-react']//div[2]//button[1]"));
             String modifier = modify.getText();
             if (modify.isDisplayed()) {
+                Assert.assertEquals(modifier,modifiers);
                 elementClick(modify, "Include Modifier in Conversational modifier screen is displayed- " + modifier);
             }
         }catch (Exception e){
@@ -1893,16 +1952,18 @@ public  void selectCategory (String value) throws Exception {
         utils.log().info(checkNumber1);
         return checkNumber1;
     }
-    public void clickPrefixModifierBtn(){
-        WebElement prefixBtn= driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIE)lementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
+    public void clickPrefixModifierBtn() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement prefixBtn= driver.findElement(By.xpath("//button[.=' Extra ']"));
         String prefix=prefixBtn.getText();
         click(prefixBtn,"Tapped prefix Modifier is - "+prefix);
 
     }
 
     public String clickModifierFromConversationalScreen(){
-        WebElement mandatoryModifier= driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIE)lementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
+        WebElement mandatoryModifier= driver.findElement(By.xpath("//div[@id='conversational-react']//div[3]//button[1]"));
         modifier=mandatoryModifier.getText();
+        utils.log().info("Selected - "+modifier);
         TestUtils.modifiers = modifier;
         click(mandatoryModifier,"Tapped Mandatory Modifier in conversational Screen - "+modifier);
         return modifier;
@@ -1943,17 +2004,20 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyMaximumAndMinimumCount(){
-        WebElement maxAndMin= driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIE)lementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
+        WebElement maxAndMin= driver.findElement(By.xpath("//div[@id='conversational-react']//div[3]//p[@class='group-title-counttxt']"));
         String minAndMax=maxAndMin.getText();
+        utils.log().info(minAndMax);
         if(maxAndMin.isDisplayed()){
             utils.log().info("Shown Minimum and Maximum Count - "+minAndMax);
         }else{
             utils.log().info("Not Shown Count of Minimum and Maximum");
+            int w = 1/0;
         }
     }
 
     public String verifyYouNeedToPickAtleastModifierFromThisGroup(){
-        return getText(youNeedToPickAtLeast1ModifiersFromThisGroup,"Popup is displayed as - ");
+        WebElement element1 = driver.findElement(By.xpath("//p[@class='alert-msg ng-star-inserted']"));
+        return getText(element1,"Displayed");
     }
 
     public String cashTxt1 = " ";
@@ -2082,15 +2146,16 @@ public  void selectCategory (String value) throws Exception {
             utils.log().info("Displayed Popup as - "+quantityIsNotEnough.getText());
         }
 
-        @FindBy(xpath = "86 List")
+        @FindBy(xpath = "//button[.='86 List']")
         WebElement listBtn;
 
-        public void click86ListButton(){
+        public void click86ListButton() throws InterruptedException {
+            Thread.sleep(1000);
             elementClick(listBtn,"Selected - "+listBtn.getText());
         }
 
-        public void verify86ListWindow(){
-            Assert.assertEquals(listBtn.getText(),"86 List");
+        public void verify86ListWindow() throws InterruptedException {            Thread.sleep(1000);
+            Assert.assertEquals(driver.findElement(By.xpath("//label[.='86 List']")).getText(),"86 List");
             utils.log().info("Displayed window as - "+listBtn.getText());
         }
 
@@ -2161,12 +2226,7 @@ public  void selectCategory (String value) throws Exception {
     @FindBy(xpath =  "//XCUIElementTypeStaticText[@name=\"86 LIST\"]")
     WebElement listBtn1;
 
-    public void click86ListButtonInLoginScreen(){
-//        elementClick(listBtn1,"Selected - "+listBtn1.getText());
-        WebElement phoneOrdersBtn =  driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeButton[4]/XCUIElementTypeStaticText"));
-        Assert.assertEquals(phoneOrdersBtn.getText(), "86 LIST");
-        elementClick(phoneOrdersBtn, "Selected Btn As - " + phoneOrdersBtn.getText());
-    }
+
 
     @FindBy(xpath = "Pancake")
     WebElement pancake;
@@ -2364,20 +2424,37 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public String getTheNextCheckNumberAfterDoneSplitCheckProcess(){
-        String number = ((TestUtils.globalCheckNumber)).replaceAll("[-]","");
-        utils.log().info("CheckNumber  - "+number);
-        int number1 = Integer.parseInt(number);
-        int number2 = number1+1;
-        String checkNumbers = String.valueOf(number2);
-        int size = checkNumbers.length();
-        String checknumber1 = checkNumbers.charAt(0)+"-"+ checkNumbers.substring(1,size);
+
+
+        String[] number1 = (TestUtils.globalCheckNumber).split("-");
+        int number2 = Integer.parseInt(number1[1])+1;
+
+
+        String checknumber1 = number1[0]+"-"+ number2;
+        utils.log().info("Next checkNumber  - "+checknumber1);
         TestUtils.globalCheckNumber = checknumber1;
         utils.log().info("checkNumber  - "+checknumber1);
-//        for(int i=0;i<=checkNumbers.length();i++) {
-//            char ch = checkNumbers.charAt(i);
-//        }
+
+
+//        String number = ((TestUtils.globalCheckNumber)).replaceAll("[-]","");
+//        utils.log().info("CheckNumber  - "+number);
+//        int number1 = Integer.parseInt(number);
+//        int number2 = number1+1;
+//        String checkNumbers = String.valueOf(number2);
+//        int size = checkNumbers.length();
+//        String checknumber1 = checkNumbers.charAt(0)+"-"+ checkNumbers.substring(1,size);
+//        TestUtils.globalCheckNumber = checknumber1;
+//        utils.log().info("checkNumber  - "+checknumber1);
+////        for(int i=0;i<=checkNumbers.length();i++) {
+////            char ch = checkNumbers.charAt(i);
+////        }
         return checknumber1;
     }
+
+    public void OrderBtnClick(){
+        driver.findElement(By.xpath("//div[.='Order']")).click();
+    }
+
 
 }
 

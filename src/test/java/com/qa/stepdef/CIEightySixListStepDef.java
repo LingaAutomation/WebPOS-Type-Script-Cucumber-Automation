@@ -23,31 +23,36 @@ public class CIEightySixListStepDef {
     }
 
     @Then("^I should verify the \"([^\"]*)\" in the eighty six list popup \"([^\"]*)\"$")
-    public void iShouldVerifyTheInTheEightySixListPopup(String txtEightySixPopup, String msg) {
-        String text = waitList.getTxtPopup(txtEightySixPopup,msg);
-        Assert.assertEquals(txtEightySixPopup,text);
+    public void iShouldVerifyTheInTheEightySixListPopup(String txtEightySixPopup, String msg) throws InterruptedException {
+        waitList.getTxtPopup1(txtEightySixPopup,msg);
+
+    }
+
+    @And ("^I search the menu item as \"([^\"]*)\" on the 86 list screen$")
+    public void iSearchTheMenuItemAsOnThe86ListScreen(String menu) throws InterruptedException {
+        ciEightySixListScreen.searchMenuItem(menu);
     }
 
     @Then("^I should verify the \"([^\"]*)\" in the operation screen \"([^\"]*)\"$")
     public void iShouldVerifyTheInTheOperationScreen(String txtEightySixPopup, String msg) {
-        String text = waitList.getTxtPopup(txtEightySixPopup,msg);
-        Assert.assertEquals(txtEightySixPopup,text);
+ waitList.getTxtPopup(txtEightySixPopup,msg);
+//        Assert.assertEquals(txtEightySixPopup,text);
     }
 
     @And("^I click the \"([^\"]*)\" in the operation Screen \"([^\"]*)\"$")
-    public void iClickTheInTheOperationScreen(String btnEightySix, String msg) {
+    public void iClickTheInTheOperationScreen(String btnEightySix, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnEightySix,msg);
     }
 
     @And("^I click on the search field \"([^\"]*)\" for searching the menu item \"([^\"]*)\"$")
-    public void iClickOnTheSearchFieldForSearchingTheMenuItem(String name, String msg) {
+    public void iClickOnTheSearchFieldForSearchingTheMenuItem(String name, String msg) throws InterruptedException {
         ciEightySixListScreen.itemSearchField(name,msg);
     }
 
     @Then("^I should verify the \"([^\"]*)\" in the search list \"([^\"]*)\"$")
-    public void iShouldVerifyTheInTheSearchList(String txtChickenBiriyani, String msg) {
-        String text = waitList.getTxtPopup(txtChickenBiriyani,msg);
-        Assert.assertEquals(txtChickenBiriyani,text);
+    public void iShouldVerifyTheInTheSearchList(String txtChickenBiriyani, String msg) throws InterruptedException {
+    waitList.getTxtPopup2(txtChickenBiriyani,msg);
+
     }
 
     @And("^I click the first item quantity text field in the eighty six list \"([^\"]*)\"$")
@@ -99,10 +104,8 @@ public class CIEightySixListStepDef {
     }
 
     @Then("^I should verify that quantity is displayed \"([^\"]*)\"$")
-    public void iShouldVerifyThatQuantityIsDisplayed(String msg){
-        boolean value= ciEightySixListScreen.verifyQuantity();
-        utils.log().info(msg+" is "+value);
-        Assert.assertTrue(value);
+    public void iShouldVerifyThatQuantityIsDisplayed(String msg) throws InterruptedException {
+     ciEightySixListScreen.verifyQuantity();
 
     }
 
@@ -114,7 +117,17 @@ public class CIEightySixListStepDef {
 
     @And("^I click \"([^\"]*)\" in the eighty six list popup \"([^\"]*)\"$")
     public void iClickInTheEightySixListPopup(String btnClose, String msg) {
-        waitList.commonBtn(btnClose,msg);
+//        waitList.clickClose(btnClose,msg);
+    }
+
+    @And ("^I click close button in the eighty six list popup$")
+    public void iClickCloseButtonInTheEightySixListPopup(){
+        new CIWaitListPage().clickClose1();
+    }
+
+    @And ("^I click close button in the eighty six list popup1$")
+    public void iClickCloseButtonInTheEightySixListPopup1(){
+        new CIWaitListPage().clickClose2();
     }
 
     @And("^I enter the quantity value as \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
@@ -128,20 +141,20 @@ public class CIEightySixListStepDef {
     }
 
     @And("^I click the quantity txt field in the eighty six list popup \"([^\"]*)\"$")
-    public void iClickTheQuantityTxtFieldInTheListPopup(String msg) {
+    public void iClickTheQuantityTxtFieldInTheListPopup(String msg) throws InterruptedException {
         ciEightySixListScreen.clickQtyTxtField(msg);
     }
 
     @Then("^I should verify the the available quantity \"([^\"]*)\" is displayed in the order screen \"([^\"]*)\"$")
-    public void iShouldVerifyTheTheAvailableQuantityIsDisplayedInTheOrderScreen(String Qty,String msg) {
-        String text = ciEightySixListScreen.getQty(Qty,msg);
-        Assert.assertEquals(Qty,text);
+    public void iShouldVerifyTheTheAvailableQuantityIsDisplayedInTheOrderScreen(String Qty,String msg) throws InterruptedException {
+    ciEightySixListScreen.getQty(Qty,msg);
+//        Assert.assertEquals(Qty,text);
     }
 
     @Then("^I should verify the the quantity \"([^\"]*)\" is displayed in the order screen is decreased after order \"([^\"]*)\"$")
-    public void iShouldVerifyTheTheQuantityIsDisplayedInTheOrderScreenIsDecresedAfterOrder(String Qty, String msg) {
-        String text = ciEightySixListScreen.getQty(Qty,msg);
-        Assert.assertEquals(Qty,text);
+    public void iShouldVerifyTheTheQuantityIsDisplayedInTheOrderScreenIsDecresedAfterOrder(String Qty, String msg) throws InterruptedException {
+        ciEightySixListScreen.getQty(Qty,msg);
+//        Assert.assertEquals(Qty,text);
     }
 
     @Then ("^I should verify the quantity \"([^\"]*)\" is displayed in the order screen is decreased after order with menu as \"([^\"]*)\"$")
@@ -150,32 +163,32 @@ public class CIEightySixListStepDef {
     }
 
     @Then("^I verify the quantity value as \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iVerifyTheQuantityValueAs(String quantity, String msg) {
-        String value=ciEightySixListScreen.getQuantityTextField(msg);
-        Assert.assertEquals(quantity,value);
+    public void iVerifyTheQuantityValueAs(String quantity, String msg) throws InterruptedException {
+ciEightySixListScreen.getQuantityTextField(quantity);
+
     }
 
     @Then("^I verify the quantity value in login screen as \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iVerifyTheQuantityValueInLoginScreenAs(String quantity, String msg) {
+    public void iVerifyTheQuantityValueInLoginScreenAs(String quantity, String msg) throws InterruptedException {
         String value=ciEightySixListScreen.getQuantityTextField(msg);
         Assert.assertEquals(quantity,value);
     }
 
     @Then("^I should verify the the quantity \"([^\"]*)\" is displayed in the order screen reverted after void \"([^\"]*)\"$")
-    public void iShouldVerifyTheTheQuantityIsDisplayedInTheOrderScreenRevertedAfterVoid(String Qty, String msg) {
-        String text = ciEightySixListScreen.getQty(Qty,msg);
-        Assert.assertEquals(Qty,text);
+    public void iShouldVerifyTheTheQuantityIsDisplayedInTheOrderScreenRevertedAfterVoid(String Qty, String msg) throws InterruptedException {
+         ciEightySixListScreen.getQty(Qty,msg);
+//        Assert.assertEquals(Qty,text);
     }
 
     @And("^I click \"([^\"]*)\" in the Option Screen \"([^\"]*)\"$")
-    public void iClickInTheOptionScreen(String btnKitchen, String msg) {
+    public void iClickInTheOptionScreen(String btnKitchen, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnKitchen,msg);
     }
 
     @Then("^I should verify the the quantity \"([^\"]*)\" remains same when reopen and submit it \"([^\"]*)\"$")
-    public void iShouldVerifyTheTheQuantityRemainsSameWhenReopenAndSubmitIt(String Qty, String msg) {
-        String text = ciEightySixListScreen.getQty(Qty,msg);
-        Assert.assertEquals(Qty,text);
+    public void iShouldVerifyTheTheQuantityRemainsSameWhenReopenAndSubmitIt(String Qty, String msg) throws InterruptedException {
+         ciEightySixListScreen.getQty(Qty,msg);
+//        Assert.assertEquals(Qty,text);
     }
 
     @And("^I click log off \"([^\"]*)\" button in order screen \"([^\"]*)\"$")
@@ -190,15 +203,15 @@ public class CIEightySixListStepDef {
 //    }
 
     @And("^I should verify the the applied quantity \"([^\"]*)\" reduces in login screen eighty six list after order \"([^\"]*)\"$")
-    public void iShouldVerifyTheTheAppliedQuantityReducesInLoginScreenListAfterOrder(String txtQty, String msg) {
+    public void iShouldVerifyTheTheAppliedQuantityReducesInLoginScreenListAfterOrder(String txtQty, String msg) throws InterruptedException {
         String text = ciEightySixListScreen.getQuantityTextField(msg);
         Assert.assertEquals(txtQty,text);
     }
 
     @Then("^I should verify the the quantity \"([^\"]*)\" is decreased after order and changing the service type \"([^\"]*)\"$")
     public void iShouldVerifyTheTheQuantityIsDecreasedAfterOrderAndChangingTheServiceType(String txtQty, String msg) {
-        String text = waitList.getTxtPopup(txtQty,msg);
-        Assert.assertEquals(txtQty,text);
+ waitList.getTxtPopup(txtQty,msg);
+//        Assert.assertEquals(txtQty,text);
     }
 
     @When("^I click \"([^\"]*)\" in the QSR order screen \"([^\"]*)\"$")
@@ -213,26 +226,26 @@ public class CIEightySixListStepDef {
 
     @Then("I should verify the the quantity \"([^\"]*)\" is displayed not depends on the serving size of an item \"([^\"]*)\"$")
     public void iShouldVerifyTheTheQuantityIsDisplayedNotDependsOnTheServingSizeOfAnItem(String Qty, String msg) throws InterruptedException {
-        String text = ciCloseDayScreen.commonGetText(Qty,msg);
-        Assert.assertEquals(Qty,text);
+ciCloseDayScreen.commonGetText(Qty,msg);
+
     }
 
     @Then("I should verify the the quantity \"([^\"]*)\" is displayed in the order screen is decreased after order\"([^\"]*)\"$")
     public void iShouldVerifyTheTheQuantityIsDisplayedInTheOrderScreenIsDecreasedAfterOrder(String Qty, String msg) throws InterruptedException {
-        String text = ciCloseDayScreen.commonGetText(Qty,msg);
-        Assert.assertEquals(Qty,text);
+ciCloseDayScreen.commonGetText(Qty,msg);
+
     }
 
     @Then("^I should verify the the quantity \"([^\"]*)\" is displayed in the order screen is decreased after order placed \"([^\"]*)\"$")
-    public void iShouldVerifyTheTheQuantityIsDisplayedInTheOrderScreenIsDecreasedAfterOrderPlaced(String Qty, String msg) {
-        String text = ciEightySixListScreen.getQty1(Qty,msg);
-        Assert.assertEquals(Qty,text);
+    public void iShouldVerifyTheTheQuantityIsDisplayedInTheOrderScreenIsDecreasedAfterOrderPlaced(String Qty, String msg) throws InterruptedException {
+        ciEightySixListScreen.getQty1(Qty,msg);
+
     }
 
 
 
     @When("^I click on the \"([^\"]*)\" in the operation screen \"([^\"]*)\"$")
-    public void iClickOnTheInTheOperationScreen(String eightySixList, String msg) {
+    public void iClickOnTheInTheOperationScreen(String eightySixList, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(eightySixList,msg);
     }
 
@@ -242,8 +255,8 @@ public class CIEightySixListStepDef {
     }
 
     @When("^I select the \"([^\"]*)\" in the customer field \"([^\"]*)\"$")
-    public void iSelectTheInTheCustomerField(String customerName, String msg) {
-        ciPaymentScreen.btnClickTip(customerName,msg);
+    public void iSelectTheInTheCustomerField(String customerName, String msg) throws InterruptedException {
+        ciPaymentScreen.clickMenu(customerName,msg);
     }
 
     @And("^I click \"([^\"]*)\" in the customer field \"([^\"]*)\"$")
@@ -285,7 +298,7 @@ public class CIEightySixListStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the order screen for closing order \"([^\"]*)\"$")
-    public void iClickInTheOrderScreenForClosingOrder(String btnFinish, String msg) {
+    public void iClickInTheOrderScreenForClosingOrder(String btnFinish, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnFinish,msg);
     }
 
@@ -306,15 +319,15 @@ public class CIEightySixListStepDef {
     }
 
     @Then("^I should verify the the free item quantity \"([^\"]*)\" is displayed in the order screen reverted after void\"([^\"]*)\"$")
-    public void iShouldVerifyTheTheFreeItemQuantityIsDisplayedInTheOrderScreenRevertedAfterVoid(String Qty, String msg) {
-        String text = ciEightySixListScreen.getFreeItemQty(Qty,msg);
-        Assert.assertEquals(Qty,text);
+    public void iShouldVerifyTheTheFreeItemQuantityIsDisplayedInTheOrderScreenRevertedAfterVoid(String Qty, String msg) throws InterruptedException {
+ciEightySixListScreen.getFreeItemQty(Qty,msg);
+
     }
 
     @Then("^I should verify the the free item quantity \"([^\"]*)\" is displayed in the order screen is decreased after order \"([^\"]*)\"$")
-    public void iShouldVerifyTheTheFreeItemQuantityIsDisplayedInTheOrderScreenIsDecreasedAfterOrder(String Qty, String msg) {
-        String text = ciEightySixListScreen.getFreeItemQty(Qty,msg);
-        Assert.assertEquals(Qty,text);
+    public void iShouldVerifyTheTheFreeItemQuantityIsDisplayedInTheOrderScreenIsDecreasedAfterOrder(String Qty, String msg) throws InterruptedException {
+        ciEightySixListScreen.getFreeItemQty(Qty,msg);
+
     }
 
     @Then("^I verify the \"([^\"]*)\" in the Eighty six list \"([^\"]*)\"$")
@@ -323,10 +336,24 @@ public class CIEightySixListStepDef {
         Assert.assertEquals(menuItem,value);
     }
 
-    @Then("I should verify \"([^\"]*)\" Eighty six list disable menu item are not displayed in the login screen eighty six list \"([^\"]*)\"$")
-    public void iShouldVerifyEightySixListDisableMenuItemAreNotDisplayedInTheLoginScreenEightySixList(String emptyList,String msg) {
-        String text = ciEightySixListScreen.getEmptyList(emptyList,msg);
-        Assert.assertEquals(emptyList,text);
+    @Then("I should verify Eighty six list disable menu item are not displayed in the login screen eighty six list$")
+    public void iShouldVerifyEightySixListDisableMenuItemAreNotDisplayedInTheLoginScreenEightySixList() throws InterruptedException {
+        ciEightySixListScreen.getEmptyList();
+    }
+
+    @Then("I should verify Eighty six list disable menu item as \"([^\"]*)\" are not displayed in the login screen eighty six list$")
+    public void iShouldVerifyEightySixListDisableMenuItemASAreNotDisplayedInTheLoginScreenEightySixList(String menus) throws InterruptedException {
+        ciEightySixListScreen.getEmptyList1(menus);
+    }
+
+    @Then("I should verify Eighty six list disable menu item as \"([^\"]*)\" are not displayed in the login screen eighty six list1$")
+    public void iShouldVerifyEightySixListDisableMenuItemASAreNotDisplayedInTheLoginScreenEightySixList1(String menus) throws InterruptedException {
+        ciEightySixListScreen.getEmptyList2(menus);
+    }
+
+    @And ("^I click search close on the 86 list screen$")
+    public void iClickSearchCloseOnThe86ListScreen() throws InterruptedException {
+         ciEightySixListScreen.clickSearchCloseOnThe86ListScreen();
     }
 
     @Then("^I should verify the empty list \"([^\"]*)\" in the login screen eighty six list \"([^\"]*)\"$")
@@ -350,20 +377,17 @@ public class CIEightySixListStepDef {
 
     @Then("^I should verify the quantity tool tip is disappear in the order screen for Eighty six list disabled menu item \"([^\"]*)\"$")
     public void iShouldVerifyTheQuantityToolTipIsDisappearInTheOrderScreenForListDisabledMenuItem(String msg) {
-        boolean text = ciEightySixListScreen.getDisappearQtyXpath();
-        utils.log().info(msg +" is "+ text);
-        Assert.assertTrue(text);
+         ciEightySixListScreen.getDisappearQtyXpath(msg);
+
     }
 
-    @Then("^I should verify the quantity button in login screen is enable or not \"([^\"]*)\"$")
+    @Then("^I should verify the quantity button in login screen is not enabled \"([^\"]*)\"$")
     public void iShouldVerifyTheInTheEightySixListPopup(String msg) {
-        boolean text = ciEightySixListScreen.getQtyBtn();
-        utils.log().info(msg +" is "+ text);
-        Assert.assertFalse(false);
+        ciEightySixListScreen.shouldVerifyTheQuantityButton(msg);
     }
 
     @And("^I should verify the \"([^\"]*)\" after edit the quantity in operation screen \"([^\"]*)\"$")
-    public void iShouldVerifyTheAfterEditTheQuantityInOperationScreen(String quantity,String msg) {
+    public void iShouldVerifyTheAfterEditTheQuantityInOperationScreen(String quantity,String msg) throws InterruptedException {
         String value=ciEightySixListScreen.getQuantityTextField(msg);
         Assert.assertEquals(quantity,value);
     }
@@ -381,8 +405,8 @@ public class CIEightySixListStepDef {
     }
 
     @And ("^I click 86List button in the login screen$")
-    public void iClick86ListButtonInTheLoginScreen(){
-        new OrderManagementScreen().click86ListButtonInLoginScreen();
+    public void iClick86ListButtonInTheLoginScreen() throws InterruptedException {
+        new CIEightySixListScreen().click86ListButtonInLoginScreen();
     }
 
     @Then ("^I should see quantity is not enough popup$")

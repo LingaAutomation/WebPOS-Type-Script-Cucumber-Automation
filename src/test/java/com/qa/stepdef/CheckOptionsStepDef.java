@@ -48,8 +48,13 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().shouldSeeGiveXScreen();
     }
     @And ("^I enter gift card number")
-    public void iEnterGiftCardNumberAs() throws InterruptedException {
+    public void iEnterGiftCardNumber() throws InterruptedException {
         new CheckOptions().enterGiftCardNumber();
+    }
+
+    @And ("^I enter gift card number1")
+    public void iEnterGiftCardNumber1As() throws InterruptedException {
+        new CheckOptions().enterGiftCardNumber1();
     }
 
     @And ("^I click charge amount field and pass the amount$")
@@ -65,6 +70,11 @@ public class CheckOptionsStepDef {
     @Then ("^I should see gift card amount add up into order screen$")
     public void iShouldSeeGiftCardAmountAddUpInToOrderScreen() throws InterruptedException {
         Assert.assertEquals(new CheckOptions().verifyGiftCardAddup(),"GC-1111");
+    }
+
+    @Then ("^I should see gift card amount add up into order screen1$")
+    public void iShouldSeeGiftCardAmountAddUpInToOrderScreen1() throws InterruptedException {
+        Assert.assertEquals(new CheckOptions().verifyGiftCardAddup1(),"GC-12345");
     }
 
     @And ("^I click discount on check option screen$")
@@ -190,7 +200,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I click loyalty payment$")
-    public void iClickLoyaltyPayment(){
+    public void iClickLoyaltyPayment() throws InterruptedException {
         new PaymentWindow().clickLoyalty();
     }
 

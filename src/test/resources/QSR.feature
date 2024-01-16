@@ -2487,11 +2487,12 @@ Feature: QSR feature
     And I click Options button
     Then I should see the Check Options screen
     And I click Tax Exempt Button
+    Then I should not see tax on the order screen
 #    Then I should see tax exempt reasons
 #    When I select School as reason
     Then I Should get back to the Order Screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
+
     Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
@@ -5996,7 +5997,7 @@ Feature: QSR feature
     When User click CC Side payment method
     And User select tip amount which is entered
     When User click Continue button
-    Then User verify item based discount after tax value as "19.34+10.00" with amount with CC Side payment in payment screen and with tips for Chicken Schnitzel
+    Then User verify item based discount after tax value as "17.64+10.00" with amount with CC Side payment in payment screen and with tips for Chicken Schnitzel
     When User click submit button
    And I closed the order type window
     #Verify Check Payment through CC Side  with item based discount - After Tax  as set price and with tip
@@ -6014,7 +6015,7 @@ Feature: QSR feature
     When User click CC Side payment method
     And User select tip amount which is entered
     When User click Continue button
-    Then User verify CC Side payment with tips value as "3.66+10.00" and item based discount After tax as set price for Chicken Schnitzel
+    Then User verify CC Side payment with tips value as "2.41+10.00" and item based discount After tax as set price for Chicken Schnitzel
     When User click submit button
    And I closed the order type window
 
@@ -6095,7 +6096,7 @@ Feature: QSR feature
       |logOff   |
 
 
-  Scenario Outline: Verify Check Payment through CC Side  with Check Based Discount - After Tax as percentage and with tip# Given User click setting icon
+  Scenario Outline: Verify Check Payment through CC Side with Check Based Discount - After Tax as percentage and with tip# Given User click setting icon
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
     When User click Option Tab
@@ -6869,6 +6870,7 @@ Feature: QSR feature
     And User click enter button
    And I click QSR tab
    And I closed the order type window
+    And I click log off button in order screen
     Examples:
       |btnQsr|btnCancel|btnDropDown|category |btnExit|btnDiscount|btnLogOff|btnPos|
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |

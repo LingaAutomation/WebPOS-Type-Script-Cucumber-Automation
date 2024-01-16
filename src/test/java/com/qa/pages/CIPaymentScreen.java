@@ -3,6 +3,7 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -116,11 +117,17 @@ public class CIPaymentScreen extends BasePage{
     }
 
     public void commonBtnClick(String btnName, String msg){
-//        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
-//        elementClick(element, msg);
-        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
+        WebElement element =driver.findElement(By.xpath("//button[.=' "+btnName+" ']"));
         elementClick(element, msg);
+
+    }
+
+    public void clickMenu(String menuItem, String msg) throws InterruptedException {
+Thread.sleep(2000);
+        WebElement element =driver.findElement(By.xpath("//div[@class='customer-body-prevOrdr-itm ng-star-inserted']//span[.='"+menuItem+"']"));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",element);
+        elementClick(element, "Selected - "+menuItem);
+
     }
 
     public void commonBtnClickPayment(String btnName, String msg){
@@ -181,13 +188,29 @@ public class CIPaymentScreen extends BasePage{
         findandclick(btnOk, "",TestUtils.Accessibility);
     }
 
-    public void commonBtnClickOption(String optionName, String msg) {
+    public void commonBtnClickOption(String optionName, String msg) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
+        Thread.sleep(1000);
+        WebElement element = driver.findElement(By.xpath("(//input[@placeholder='Search'])[2]"));
+        sendKeys(element,optionName);
+        Thread.sleep(2000);
+        WebElement element1 = driver.findElement(By.xpath("//ion-label[.='"+optionName+"']"));
+        element1.click();
+    }
+
+    public void commonBtnClickOption1(String optionName, String msg) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
 //        WebElement element = mergeAndFindElement(optionName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
-        findandclick(optionName, "",TestUtils.Accessibility);
+        Thread.sleep(2000);
+        WebElement ele = driver.findElement(By.xpath("//button[.='New York']"));
+        ele.click();
     }
 
+    public void clickXBtn(){
+        WebElement element2 = driver.findElement(By.xpath("/html/body/div/div[2]/div/mat-dialog-container/app-clock-in-employees/ion-header/ion-searchbar/div/button/ion-icon"));
+       elementClick(element2,"X");
+    }
     public void btnHideKeyboard(String optionName, String msg) {
 
 
@@ -201,15 +224,11 @@ public class CIPaymentScreen extends BasePage{
     }
 
     public String commonGetText(String Text, String msg) {
-        driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-//        WebElement element = mergeAndFindElement(Text,"" ,TestUtils.Accessibility);
-//        String text =elementGetText(element, msg);
-//        return text;
-        try{
-        return findAndGetText(Text,"" ,TestUtils.Accessibility);}
-        catch(Exception e){
-            return Text;
-        }
+
+        WebElement element = driver.findElement(By.xpath("(//div[contains(@class,'menu-section orderlist-flex ')]/div[contains(.,'"+Text+"')])[1]"));
+        String text =elementGetText(element, msg);
+        return text;
+
     }
 
     public String commonBtnClickCIFood(String optionName, String msg) {
@@ -327,11 +346,11 @@ public class CIPaymentScreen extends BasePage{
 //        elementClick(element,msg);
         findandclick(optCreditCardAmount, "", TestUtils.XPath);
     }
+    @FindBy(xpath = "//button[contains(@id,'ps_delete')]")
+    private WebElement deletePaymentBtn;
 
     public void clickBtnDelete(String msg){
-//        WebElement element = mergeAndFindElement(btnDelete, "", TestUtils.XPath);
-//        elementClick(element,msg);
-        findandclick(btnDelete, "", TestUtils.XPath);
+        elementClick(deletePaymentBtn, "Delete button tapped to delete the payment");
     }
 
     public void clickBtnWrong(String btnWrong,String msg){
@@ -365,6 +384,34 @@ public class CIPaymentScreen extends BasePage{
         elementClick(el5, "Tapped continue Button ");
 //        elementClick(applyBtn, "Tapped Apply button");
     }
+
+    public void clickTheReaonTill(String value) throws InterruptedException {
+        WebElement element = driver.findElement(By.xpath("//span[contains(.,'"+value+"')]"));
+        elementClick(element,"Selected - "+value);
+        Thread.sleep(2000);
+        WebElement element1 = driver.findElement(By.xpath("//span[contains(.,' Add ')]"));
+        elementClick(element1,"Selected - "+value);
+        Thread.sleep(7000);
+    }
+    public void pressPercentagePin2(String value) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+        Thread.sleep(2000);
+        String number = (value.replaceAll("$., ",""));
+        elementClick("//button[.='C']", "Tapped Pin C");
+        utils.log().info(number);
+        for(int i =0;i<number.length();i++) {
+            char ch = number.charAt(i);
+            utils.log().info(ch);
+            WebElement el2=driver.findElement(By.xpath("//button[.='"+ch+"']"));
+            elementClick(el2, "Tapped number as - " + ch);
+
+            Thread.sleep(1500);
+        }
+        WebElement el5 = driver.findElement(By.xpath("//span[contains(.,'Continue')]"));
+        elementClick(el5, "Tapped continue Button ");
+//        elementClick(applyBtn, "Tapped Apply button");
+    }
+
 
     public void pressPercentagePin(String value,String value1, String value2, String value3) {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
@@ -521,4 +568,11 @@ public class CIPaymentScreen extends BasePage{
         elementClick("(//p[contains(.,'"+btn+"')])[1]",msg);
         TestUtils.tableNumberof1 = btn;
     }
+
+    public void clickTillManagement(String txt) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//span[.='"+txt+"']"));
+        elementClick(element,"Selected Operation");
+    }
+
 }

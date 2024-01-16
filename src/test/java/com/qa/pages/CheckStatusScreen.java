@@ -19,8 +19,9 @@ public class CheckStatusScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell")
     private WebElement closedCheck2;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Complete\"]")
+    @FindBy(xpath = "//button[contains(.,'Complete')]")
     private WebElement completeTab;
+
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1])")
     private WebElement storeToGoOrder;
@@ -31,7 +32,7 @@ public class CheckStatusScreen extends OrderManagementScreen {
     @FindBy(name = "Linga")
     private WebElement lingaPage;
 
-    @FindBy(name = "Operation")
+    @FindBy(xpath = "//span[.=' Operation ']")
     private WebElement operationBtnCheckStats;
 
     String qsrTab = "//button//span[text()=' QSR ']";

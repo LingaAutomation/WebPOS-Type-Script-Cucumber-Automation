@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.By;
@@ -8,9 +9,15 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+import java.text.DateFormat;
+import java.text.FieldPosition;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 import static com.qa.utils.TestUtils.driver;
@@ -141,7 +148,7 @@ public class CICloseDayScreen extends BasePage {
 
     String btnPayIn="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[3]";
 
-    String payByTextField="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField";
+    String payByTextField="/html/body/app-root/app-opearion/ion-content/app-till-management-container/ion-app/mat-tab-group/div/mat-tab-body[5]/div/div/ion-grid/ion-row/p/span/input";
 
     String txtPaidIn="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[22]";
 
@@ -245,6 +252,15 @@ public class CICloseDayScreen extends BasePage {
         findandclick(btnOperation, "", TestUtils.XPath);
     }
 
+    public void clickBtnOperation() {
+
+        WebElement element = driver.findElement(By.xpath("//button[@title='Operation']"));
+        elementClick(element,"Selected Operation");
+
+    }
+
+
+
     public String commonAccessibilityIdReturn(String id,String msg){
 //        WebElement element = mergeAndFindElement(id, "", TestUtils.Accessibility);
 //        String txtTotal = getText(element, msg);
@@ -260,6 +276,7 @@ public class CICloseDayScreen extends BasePage {
 //
 //        }
 //    }
+
 
 
     public void commonAccessibilityId(String id,String msg){
@@ -281,32 +298,41 @@ public class CICloseDayScreen extends BasePage {
 //        elementClick(element,msg);
 //    }
 
-    public String getTxtTotalNetSale(String Total, String msg) {
-//        WebElement element = mergeAndFindElement(txtTotalNetSale, Total, TestUtils.XPath);
-//        String txtTotal = getText(element, msg);
-//        return txtTotal;
-        return findAndGetText(txtTotalNetSale, Total, TestUtils.XPath);
+    public void getTxtTotalNetSale(String Total, String msg) throws InterruptedException {
+        Thread.sleep(3000);
+        WebElement element = driver.findElement(By.xpath("(//ion-col[@class='satatusDetail-div-label md hydrated'])[1]//div[2]"));
+        Assert.assertEquals(element.getText(),Total);
+        utils.log().info("Displayed - "+Total+" "+msg);
     }
 
-    public String getTxtGrossSale(String grossSaleAmt, String msg) {
-//        WebElement elementSale = mergeAndFindElement(txtGrossSale, grossSaleAmt, TestUtils.XPath);
-//        String txtSale = getText(elementSale, msg);
-//        return txtSale;
-        return findAndGetText(txtGrossSale, grossSaleAmt, TestUtils.XPath);
+    public void getTxtGrossSale(String grossSaleAmt, String msg) {
+        WebElement element = driver.findElement(By.xpath("(//ion-col[@class='satatusDetail-div-label md hydrated'])[2]//div[2]"));
+        Assert.assertEquals(element.getText(),grossSaleAmt);
+
+        utils.log().info("Displayed - "+grossSaleAmt+" "+msg);
     }
 
-    public String getTxtNewCustomer(String newCustomer, String msg) {
-//        WebElement elementCust = mergeAndFindElement(txtNewCustomer, newCustomer, TestUtils.XPath);
-//        String txtCustomer = getText(elementCust, msg);
-//        return txtCustomer;
-        return findAndGetText(txtNewCustomer, newCustomer, TestUtils.XPath);
+    public void getTxtGrossSale1(String grossSaleAmt, String msg) {
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[2]//ion-label[2]"));
+        Assert.assertEquals(element.getText(),grossSaleAmt);
+
+        utils.log().info("Displayed - "+grossSaleAmt+" "+msg);
     }
 
-    public String getTxtAllEmployees(String msg) {
-//        WebElement element = mergeAndFindElement(txtAllEmployees, "", TestUtils.XPath);
-//        String txtEmployees = getText(element, msg);
-//        return txtEmployees;
-        return findAndGetText(txtAllEmployees, "", TestUtils.XPath);
+
+
+    public void getTxtNewCustomer(String newCustomer, String msg) {
+        WebElement element = driver.findElement(By.xpath("(//ion-col[@class='satatusDetail-div-label md hydrated'])[3]//div[2]"));
+        Assert.assertEquals(element.getText(),newCustomer);
+
+        utils.log().info("Displayed - "+newCustomer+" "+msg);
+    }
+
+    public void getTxtAllEmployees(String employee, String msg) {
+        WebElement element = driver.findElement(By.xpath("(//ion-col[@class='satatusDetail-div-label md hydrated'])[4]//div[2]"));
+        Assert.assertEquals(element.getText(),employee);
+
+        utils.log().info("Displayed - "+employee+" "+msg);
     }
 
     public void btnCloseTheDay(String name, String msg) {
@@ -317,22 +343,37 @@ public class CICloseDayScreen extends BasePage {
         findandclick(btnCloseTheDay, name, TestUtils.XPath);
     }
 
-    public void clickTxtCashier(String msg) {
-//        WebElement elementCashier = mergeAndFindElement(txtCashier, "", TestUtils.XPath);
-//        click(elementCashier, msg);
-        findandclick(txtCashier, "", TestUtils.XPath);
+    public void closeTheDayBtn() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//button[.=' Close The Day ']"));
+        elementClick(element,"Selected - "+ "Close The Day");
+
     }
 
-    public void clickTxtGoknur(String msg) {
-//        WebElement elementChr = mergeAndFindElement(txtGoknurBati, "", TestUtils.XPath);
-//        click(elementChr, msg);
-        findandclick(txtGoknurBati, "", TestUtils.XPath);
+    public void clickTxtCashier(String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement elementCashier = driver.findElement(By.xpath("//ion-label[contains(.,'You Have 1 open cashier(s) ')]"));
+        elementClick(elementCashier, msg);
+
+    }
+
+    public void clickTxtGoknur(String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement elementChr = driver.findElement(By.xpath("//ion-label[.=' Admin user']"));
+        click(elementChr, msg);
+//        findandclick(txtGoknurBati, "", TestUtils.XPath);
+    }
+
+    public void shouldNotSeeOpenCashierPopup(){
+        WebElement elementChrOut = driver.findElement(By.xpath("//ion-label[contains(.,'You Have 0 open cashier(s) ')]"));
+       Assert.assertEquals(elementChrOut.getText(),"You Have 0 open cashier(s)");
+       utils.log().info("Displayed - "+"You Have 0 open cashier(s)");
     }
 
     public void clickBtnCashier(String btnChrOut,String msg) {
-//        WebElement elementChrOut = mergeAndFindElement(btnCloseTheDay, btnChrOut, TestUtils.XPath);
-//        click(elementChrOut, msg);
-        findandclick(btnCloseTheDay, btnChrOut, TestUtils.XPath);
+        WebElement elementChrOut = driver.findElement(By.xpath("//span[.=' "+btnChrOut+" ']"));
+        click(elementChrOut, msg);
+//        findandclick(btnCloseTheDay, btnChrOut, TestUtils.XPath);
     }
 
     public void clickPopupBtnCancel(String msg) {
@@ -349,23 +390,29 @@ public class CICloseDayScreen extends BasePage {
         return findAndGetText(txtZeroOpenCashier, btnZeroCashier, TestUtils.XPath);
     }
 
-    public void clickBtnPrint(String msg) {
-//        WebElement elementPrint = mergeAndFindElement(btnPrint, "", TestUtils.XPath);
-//        elementClick(elementPrint, msg);
-        findandclick(btnPrint, "", TestUtils.XPath);
+    public void clickGenerateBtn(){
+        WebElement elementChrOut = driver.findElement(By.xpath("//span[.=' Generate ']"));
+        Assert.assertEquals(elementChrOut.getText(),"Generate");
+        elementChrOut.click();
+        utils.log().info("Displayed - "+"Genaerate");
     }
 
-    public String getTxtCustomer(String txtXpath, String msg) {
-//        WebElement element = mergeAndFindElement(txtNewCustomer, txtXpath, TestUtils.XPath);
-//        String txtSaleReport = getText(element, msg);
-//        return txtSaleReport;
-        return findAndGetText(txtNewCustomer, txtXpath, TestUtils.XPath);
+    public void clickBtnPrint(String msg) {
+        WebElement elementPrint = driver.findElement(By.xpath("//span[.=' PRINT ']"));
+        elementClick(elementPrint, msg);
+
+    }
+
+    public void getTxtCustomer(String txtXpath, String msg) {
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' "+txtXpath+"']"));
+Assert.assertEquals(element.getText(),txtXpath);
+        utils.log().info("Displayed - "+txtXpath);
     }
 
     public void clickTxtMenuItem(String msg) {
-//        WebElement elementCancel = mergeAndFindElement(txtMenuItem, "", TestUtils.XPath);
-//        elementClick(elementCancel, msg);
-        findandclick(txtMenuItem, "", TestUtils.XPath);
+        WebElement elementCancel = mergeAndFindElement(txtMenuItem, "", TestUtils.XPath);
+        elementClick(elementCancel, msg);
+//        findandclick(txtMenuItem, "", TestUtils.XPath);
     }
 
     public void clickGoknur(String msg) {
@@ -374,48 +421,26 @@ public class CICloseDayScreen extends BasePage {
         findandclick(employeeGoknur, "", TestUtils.XPath);
     }
 
-    public String commonGetText(String Text, String msg) {
-//        String text="Text";
-//        try {
-//            WebElement element = mergeAndFindElement(itemXPath, Text, TestUtils.XPath);
-//            text = getText(element, msg);
-//
-//        }catch(Exception ex){
-//
-//        }
-//        return text;
-        return findAndGetText(itemXPath, Text, TestUtils.XPath);
+    public void commonGetText(String Text, String msg) throws InterruptedException {
+        Thread.sleep(2500);
+        WebElement elementQty = driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+msg+"')])[1]/../span"));
+        String value=elementQty.getText();
+        String value1=elementQty.getAttribute("value");
+        Assert.assertEquals(value,Text);
+        utils.log().info("Displayed  - "+Text);
     }
 
     public void getCashValue(String cashVal) throws Exception {
-//        iOSScrollToElementUsingMobileScroll(txtCashValue);
-        WebElement cashValue = mergeAndFindElement(cashVal, "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement(cashPrice, "", TestUtils.XPath);
-
-        if (cashValue.isDisplayed()) {
-            String data = cashValue.getText();
-            String money = price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element = driver.findElement(By.xpath("//ion-label[.=' Cash']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),cashVal);
+        utils.log().info("Displayed - "+cashVal);
     }
 
     public void getTxtCreditCard(String creditCard) {
-//        WebElement element = mergeAndFindElement(txtCreditCard, "", TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement credit = mergeAndFindElement(creditCard, "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement(creditCardValue, "", TestUtils.XPath);
-
-        if (credit.isDisplayed()) {
-            String data = credit.getText();
-            String money = price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[9]//ion-label[2]"));
+        Assert.assertEquals(element.getText(),creditCard);
+        utils.log().info("Displayed - "+creditCard);
     }
 
     public void getGiftCardValue(String GiftCardAft) {
@@ -435,33 +460,24 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getGratuityValue(String gratuityVal) {
-//        WebElement element = mergeAndFindElement(txtGratuityValue, "", TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement gratuity = mergeAndFindElement(gratuityVal, "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement(gratuityPrice, "", TestUtils.XPath);
-
-        if (gratuity.isDisplayed()) {
-            String data = gratuity.getText();
-            String money = price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' TIP / GRATUITY']/..//div//ion-item//ion-label[(.=' Gratuity')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),gratuityVal);
+        utils.log().info("Displayed - "+gratuityVal);
     }
 
-    public String getGrossRceipt(String msg) {
-//        WebElement elementSale = mergeAndFindElement(txtGrossReceipt, "", TestUtils.XPath);
-//        String Receipt = getText(elementSale, msg);
-//        return Receipt;
-        return findAndGetText(txtGrossReceipt, "", TestUtils.XPath);
+    public void getGrossRceipt(String value, String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[6]//ion-label[2]"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
-    public String getGrossSales(String msg) {
-//        WebElement elementSale = mergeAndFindElement(txtSaleRecapGrossSale, "", TestUtils.XPath);
-//        String Sale = getText(elementSale, msg);
-//        return Sale;
-        return findAndGetText(txtGrossReceipt, "", TestUtils.XPath);
+    public void getGrossSales(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[6]//ion-label[2]"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
     public String getNetSales(String msg) {
@@ -471,25 +487,24 @@ public class CICloseDayScreen extends BasePage {
         return findAndGetText(txtNetSales, "", TestUtils.XPath);
     }
 
-    public String getNetSaleValue(String msg) {
-//        WebElement elementSale = mergeAndFindElement(netTotalValue, "", TestUtils.XPath);
-//        String netValue = getText(elementSale, msg);
-//        return netValue;
-        return findAndGetText(netTotalValue, "", TestUtils.XPath);
+    public void getNetSaleValue(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SALES']/..//div//ion-item//ion-label[(.=' Net Sales')]/..//ion-label[@slot='end']"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
-    public String getTxtNetSale(String msg) {
-//        WebElement elementSale = mergeAndFindElement(txtInitialNetSale, "", TestUtils.XPath);
-//        String txtNetSale = getText(elementSale, msg);
-//        return txtNetSale;
-        return findAndGetText(txtInitialNetSale, "", TestUtils.XPath);
+    public void getTxtNetSale(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+    WebElement element = driver.findElement(By.xpath("//ion-title[.=' SALES']/..//div//ion-item//ion-label[(.=' Net Sales')]/..//ion-label[@slot='end']"));
+    Assert.assertEquals(element.getText(),value);
+    utils.log().info("Displayed - "+value+" "+msg);
     }
 
-    public String getNetVoidValue(String msg) {
-//        WebElement elementSale = mergeAndFindElement(txtNetVoidValue, "", TestUtils.XPath);
-//        String NetVoidValue = getText(elementSale, msg);
-//        return NetVoidValue;
-        return findAndGetText(txtNetVoidValue, "", TestUtils.XPath);
+    public void getNetVoidValue(String value,String msg) {
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SALES']/..//div//ion-item//ion-label[(.=' Net Void')]/..//ion-label[@slot='end']"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
     public void getInitialTaxExemptValue(String initalTaxExp) {
@@ -508,89 +523,71 @@ public class CICloseDayScreen extends BasePage {
         }
     }
 
-    public void getTaxExcemptValue(String initialTaxExempt) {
-//        WebElement element = mergeAndFindElement(txtTaxExempt, "", TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement taxExcempt = mergeAndFindElement(initialTaxExempt, "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement(taxExemptAftPrice, "", TestUtils.XPath);
-
-        if (taxExcempt.isDisplayed()) {
-            String data = taxExcempt.getText();
-            String money = price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+    public void getTaxExcemptValue(String initialTaxExempt) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' TAXES']/..//div//ion-item//ion-label[(.=' Tax Exempt')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),initialTaxExempt);
+        utils.log().info("Displayed - "+initialTaxExempt);
     }
 
-    public String getInitialGrossVoid(String msg) {
-//        WebElement element = mergeAndFindElement(txtInitialGrossVoid, "", TestUtils.XPath);
-//        String txtGrossVoid = getText(element, msg);
-//        return txtGrossVoid;
-        return findAndGetText(txtInitialGrossVoid, "", TestUtils.XPath);
+    public void getInitialGrossVoid(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SALES']/..//div//ion-item//ion-label[(.=' Gross Void')]/..//ion-label[@slot='end']"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
-    public String getGrossVoidValue(String msg) {
-//        WebElement element = mergeAndFindElement(txtGrossVoidValue, "", TestUtils.XPath);
-//        String GrossVoidValue = getText(element, msg);
-//        return GrossVoidValue;
-        return findAndGetText(txtGrossVoidValue, "", TestUtils.XPath);
+    public void getGrossVoidValue(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SALES']/..//div//ion-item//ion-label[(.=' Gross Void')]/..//ion-label[@slot='end']"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
-    public String getInitialGrossSale(String msg) {
-//        WebElement element = mergeAndFindElement(txtInitialGrossSale, "", TestUtils.XPath);
-//        String txtGrossSale = getText(element, msg);
-//        return txtGrossSale;
-        return findAndGetText(txtInitialGrossSale, "", TestUtils.XPath);
+    public void getInitialGrossSale(String value, String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SALES']/..//div//ion-item//ion-label[(.=' Gross Sales')]/..//ion-label[@slot='end']"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
-    public void getPaidInAmountValue(String initialPaidIn) {
-//        WebElement element = mergeAndFindElement(txtPaidInValue, "", TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement paidIn = mergeAndFindElement(initialPaidIn, "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement(paidInPrice, "", TestUtils.XPath);
-
-        if (paidIn.isDisplayed()) {
-            String data = paidIn.getText();
-            String money = price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+    public void getInitialGrandSale(String value, String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[5]//ion-label[2]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
-    public void getPaidOutValue(String initialPaidOut) {
-//        WebElement element = mergeAndFindElement(txtPaidOutValue, "", TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement paidOut = mergeAndFindElement(initialPaidOut, "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement(paidOutPrice, "", TestUtils.XPath);
-
-        if (paidOut.isDisplayed()) {
-            String data = paidOut.getText();
-            String money = price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+    public void getPaidInAmountValue(String value) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Paid In')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value);
     }
 
+    public void getPaidOutValue(String value) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Paid Out')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value);
+    }
+
+    public void verifyEmployee(String employee) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-grid[@class='closeday_detailgrid md hydrated']//button[.=' "+employee+" ']"));
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),employee);
+        utils.log().info("Displayed - "+employee);
+    }
     public void getOverShortageValue(String overShortageInitialVal) {
-//        WebElement element = mergeAndFindElement(txtOverShortage, "", TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement overShortage = mergeAndFindElement(overShortageInitialVal, "", TestUtils.Accessibility);
-        WebElement price = mergeAndFindElement(overShortagePrice, "", TestUtils.XPath);
-
-        if (overShortage.isDisplayed()) {
-            String data = overShortage.getText();
-            String money = price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Over / Shortage')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),overShortageInitialVal);
+        utils.log().info("Displayed - "+overShortageInitialVal);
     }
 
     public void clickBtnFinish(String msg) {
@@ -599,35 +596,38 @@ public class CICloseDayScreen extends BasePage {
         findandclick(btnFinish, "",TestUtils.XPath);
     }
 
-    public void getBtnActiveCheck(String msg) {
+    public void getBtnActiveCheck(String msg) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(btnActiveCheck, "",TestUtils.XPath);
-//        elementClick(element, msg);
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-label[contains(.,'You Have 1 active check(s) ')]"));
+        elementClick(element, msg);
 
-        findandclick(btnActiveCheck, "",TestUtils.XPath);
+//        findandclick(btnActiveCheck, "",TestUtils.XPath);
     }
 
-    public String getTxtActiveCheck(String txtZeroActiveCheck,String msg) {
+    public void getTxtActiveCheck(String txtZeroActiveCheck,String msg) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-//        WebElement element = mergeAndFindElement(txtActiveCheck, txtZeroActiveCheck, TestUtils.XPath);
-//        String txtActive = getText(element, msg);
-//        return txtActive;
-        return findAndGetText(txtActiveCheck, txtZeroActiveCheck, TestUtils.XPath);
+        Thread.sleep(7000);
+        WebElement element = driver.findElement(By.xpath("//ion-label[contains(.,'You Have 0 active check(s) ')]"));
+        Assert.assertEquals(element.getText(),"You Have 0 active check(s)");
+        utils.log().info("Displayed - 0");
+
+
     }
 
     public void clickbtnPopupCancel(String msg) {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(btnPopupCancel, "",TestUtils.XPath);
-//        elementClick(element, msg);
-        findandclick(btnPopupCancel, "",TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//button[.=' Cancel ']"));
+        elementClick(element, msg);
+//        findandclick(btnPopupCancel, "",TestUtils.XPath);
     }
 
-    public String getTxtNoActiveChecks(String msg) {
+    public void getTxtNoActiveChecks(String msg1,String msg) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(txtNoActiveChecks, "", TestUtils.XPath);
-//        String txtNoActive = getText(element, msg);
-//        return txtNoActive;
-        return findAndGetText(txtNoActiveChecks, "", TestUtils.XPath);
+        Thread.sleep(3000);
+        WebElement element = driver.findElement(By.xpath("(//div[@class='check-stats-check']//div[.=' "+msg1+" '])[2]"));
+        Assert.assertEquals(element.getText(),msg1);
+        utils.log().info("Displayed - "+element.getText());
     }
 
     public void clickBtnDropDown(String btnDropDown,String msg) {
@@ -713,40 +713,44 @@ public class CICloseDayScreen extends BasePage {
         return findAndGetText(netTotal, "", TestUtils.XPath);
     }
 
-    public void getCashExpectedValue(String cashExpBf) {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(txtCashExpected, "",TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement cashExpInitialVal = mergeAndFindElement(cashExpBf,"",TestUtils.Accessibility);
-        WebElement cashExpPrice = mergeAndFindElement(cashExpBfVal,"",TestUtils.XPath);
-
-        if (cashExpInitialVal.isDisplayed()) {
-            String data=cashExpInitialVal.getText();
-            String money = cashExpPrice.getText();
-            utils.log().info(data +" - "+ money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+    public void getCashExpectedValue(String value) {
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[18]//ion-label[1]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value);
     }
 
-    public void clickBtnPayIn(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(btnPayIn,"", TestUtils.XPath);
-//        elementClick(element, "Pay in clicked");
-        findandclick(btnPayIn,"", TestUtils.XPath);
+    public void clickBtnPayIn() throws InterruptedException {
+
+        Thread.sleep(3000);
+        WebElement element = driver.findElement(By.xpath("//p[.='Pay In']"));
+        elementClick(element,"Pay out clicked");
+//        findandclick(btnPayIn,"", TestUtils.XPath);
     }
 
     public void clickPayByTextField(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(payByTextField,"", TestUtils.XPath);
-//        elementClick(element, "Pay in Text Field clicked");
-        findandclick(payByTextField,"", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("/html/body/app-root/app-opearion/ion-content/app-till-management-container/ion-app/mat-tab-group/div/mat-tab-body[5]/div/div/ion-grid/ion-row/p/span/input"));
+        elementClick(element, "Pay in Text Field clicked");
+//        findandclick(payByTextField,"", TestUtils.XPath);
     }
 
+    public void clickPayByTextField1(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        WebElement element = driver.findElement(By.xpath("/html/body/app-root/app-opearion/ion-content/app-till-management-container/ion-app/mat-tab-group/div/mat-tab-body[4]/div/div/ion-grid/ion-row/p/span/input"));
+        elementClick(element, "Pay in Text Field clicked");
+//        findandclick(payByTextField,"", TestUtils.XPath);
+    }
+
+    public void passNameBy1(String txtName){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        WebElement element = driver.findElement(By.xpath("/html/body/app-root/app-opearion/ion-content/app-till-management-container/ion-app/mat-tab-group/div/mat-tab-body[4]/div/div/ion-grid/ion-row/p/span/input"));
+        element.sendKeys(txtName);
+//        findandclick_Skeys(payByTextField,"", TestUtils.XPath,"SKeys",txtName);
+    }
     public void passNameBy(String txtName){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement element = mergeAndFindElement(payByTextField,"", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath(payByTextField));
         element.sendKeys(txtName);
 //        findandclick_Skeys(payByTextField,"", TestUtils.XPath,"SKeys",txtName);
     }
@@ -768,10 +772,11 @@ public class CICloseDayScreen extends BasePage {
         }
     }
 
-    public void clickBtnPayOut(){
-//        WebElement element = mergeAndFindElement(btnPayOut,"", TestUtils.XPath);
-//        elementClick(element,"Pay out clicked");
-        findandclick(btnPayOut,"", TestUtils.XPath);
+    public void clickBtnPayOut() throws InterruptedException {
+        Thread.sleep(3000);
+        WebElement element = driver.findElement(By.xpath("//p[.='Pay Out']"));
+        elementClick(element,"Pay out clicked");
+
     }
 
     public void getAftPaidOutValue(String paidOutAft,String paidOutVal) {
@@ -792,26 +797,24 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getGiftCardSoldValue(String giftCardSoldAft) {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(txtGiftCardSold, "",TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement giftCardSold = mergeAndFindElement(giftCardSoldAft, "", TestUtils.Accessibility);
-        WebElement Price = mergeAndFindElement(giftCardSoldAftVal, "", TestUtils.XPath);
-
-        if (giftCardSold.isDisplayed()) {
-            String data = giftCardSold.getText();
-            String money = Price.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' NONSALE REVENUE']/..//div//ion-item//ion-label[(.=' Gift Card Sold')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),giftCardSoldAft);
+        utils.log().info("Displayed - "+giftCardSoldAft);
     }
 
-    public boolean isDateTimeDisplayed(){
-        WebElement element = mergeAndFindElement(txtDateTime, "",TestUtils.XPath);
-        boolean value= element.isDisplayed();
-        return value;
+    public void isDateTimeDisplayed(){
+        WebElement element = driver.findElement(By.xpath("//ion-list[1]//p[1]"));
+       String[] date1 =element.getText().split(" ");
+       utils.log().info(date1[0]);
+        utils.log().info(date1[1]);
+        utils.log().info(date1[2]);
+        utils.log().info(date1[3]);
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy");
+        String strDate= formatter.format(date);
+        utils.log().info(strDate);
+        Assert.assertEquals(strDate,date1[2]);
     }
 
     public String getFullGrossReceipt(){
@@ -948,20 +951,15 @@ public class CICloseDayScreen extends BasePage {
     }
 
     public void getAfterSaleCashExpected(String cashExpPaidOut,String cashExpAft) {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(txtAfterSaleCashExpected, "",TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement cashExpectedPaidOut = mergeAndFindElement(cashExpPaidOut, "", TestUtils.Accessibility);
-        WebElement cashExpectedPaidOutPrice = mergeAndFindElement(commontxtXPathVal, cashExpAft, TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Cash Expected')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),cashExpPaidOut);
+        utils.log().info("Displayed - "+cashExpPaidOut);
 
-        if (cashExpectedPaidOut.isDisplayed()) {
-            String data = cashExpectedPaidOut.getText();
-            String money = cashExpectedPaidOutPrice.getText();
-            utils.log().info(data + "  -  " + money);
-
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element1 = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Cash Expected')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element1);
+        Assert.assertEquals(element1.getText(),cashExpAft);
+        utils.log().info("Displayed - "+cashExpAft+" "+cashExpPaidOut);
     }
 
     public String getTxtAfterGrossSale(){
@@ -972,20 +970,19 @@ public class CICloseDayScreen extends BasePage {
         return findAndGetText(txtAfterGrossSales, "", TestUtils.XPath);
     }
 
-    public String getTxtAfterSaleRecapGrossSale(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(txtAfterSaleRecapGrossSales, "", TestUtils.XPath);
-//        String value = elementGetText(element,"verify gross sale");
-//        return value;
-        return findAndGetText(txtAfterSaleRecapGrossSales, "", TestUtils.XPath);
+    public void getTxtAfterSaleRecapGrossSale(String grossSale) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SALES']/..//div//ion-item//ion-label[(.=' Gross Sales')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),grossSale);
+        utils.log().info("Displayed - "+grossSale);
     }
 
-    public String getTxtCoverCount(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(txtCoverCount, "", TestUtils.XPath);
-//        String value = elementGetText(element,"Verify Cover Count");
-//        return value;
-        return findAndGetText(txtCoverCount, "", TestUtils.XPath);
+    public void getTxtCoverCount(String txtCoverCount){
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[1]//ion-label[2]"));
+        Assert.assertEquals(element.getText(),txtCoverCount);
+
+        utils.log().info("Displayed - "+txtCoverCount);
     }
 
     public void clickNameTextField(String msg){
@@ -1075,47 +1072,84 @@ public class CICloseDayScreen extends BasePage {
         }
     }
 
-    public void getTaxAmountValue(String tenPercentTax,String twentyPercentTax) {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement element = mergeAndFindElement(txtTaxExempt, "",TestUtils.XPath);
-//        iOSScrollToElementUsingMobileScroll(element);
-        WebElement tenPercentPrice = mergeAndFindElement(commontxtXPathVal,tenPercentTax,TestUtils.XPath);
-        WebElement twentyPercentPrice = mergeAndFindElement(commontxtXPathVal,twentyPercentTax,TestUtils.XPath);
+    public void getTaxAmountValue(String tenPercentTax,String twentyPercentTax) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' TAXES']/..//div//ion-item//ion-label[(.=' Twenty percent tax')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),twentyPercentTax);
+        utils.log().info("Displayed - "+twentyPercentTax);
 
-        if (tenPercentPrice.isDisplayed()) {
-            String money = tenPercentPrice.getText();
-            String Price = twentyPercentPrice.getText();
-            utils.log().info("Ten percent tax" +" - "+ money+" , "+"Twenty percent tax" +" - "+Price);
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element1 = driver.findElement(By.xpath("//ion-title[.=' TAXES']/..//div//ion-item//ion-label[(.=' Ten percent tax')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element1);
+        Assert.assertEquals(element1.getText(),tenPercentTax);
+        utils.log().info("Displayed - "+tenPercentTax);
     }
 
     public void getOverShortage(String overShortageVal,String txtOverShortageVal) throws Exception {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        iOSScrollToElementUsingMobileScroll(txtOverShortageAft);
-        WebElement overShortage = mergeAndFindElement(overShortageVal,"",TestUtils.Accessibility);
-        WebElement overShortagePrice = mergeAndFindElement(commontxtXPathVal,txtOverShortageVal,TestUtils.XPath);
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-label[.=' "+overShortageVal+"']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),overShortageVal);
+        utils.log().info("Displayed - "+overShortageVal);
 
-        if (overShortage.isDisplayed()) {
-            String data=overShortage.getText();
-            String money = overShortagePrice.getText();
-            utils.log().info(data +" - "+ money);
-        } else {
-            utils.log().info("not shown");
-        }
+        WebElement element1 = driver.findElement(By.xpath("(//ion-item)[27]//ion-label[2]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element1);
+        Assert.assertEquals(element1.getText(),txtOverShortageVal);
+                utils.log().info("Displayed - "+txtOverShortageVal);
+    }
+
+    public void verifyCrediCardOption(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' PAYMENT SUMMARY']/..//div//ion-item//ion-label[(.=' Credit Card')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
+    }
+
+    public void verifyPaidOutValue(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Paid Out')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),msg);
+        utils.log().info("Displayed - "+value+" "+msg);
+
+        WebElement element1 = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Paid Out')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element1);
+        Assert.assertEquals(element1.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
+    }
+
+    public void verifyPaidInValue(String value,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Paid In')]/..//ion-label[@slot='end']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
+    }
+
+
+    public void verifyCrediCardOption1(String value,String msg){
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[18]//ion-label[1]"));
+        Assert.assertEquals(element.getText(),value);
+        utils.log().info("Displayed - "+value+" "+msg);
     }
 
     public void clickBtnCancel(String msg) {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        WebElement elementCancel = mergeAndFindElement(Cancel, "", TestUtils.XPath);
-//        click(elementCancel, msg);
-        findandclick(Cancel, "", TestUtils.XPath);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        WebElement elementCancel = driver.findElement(By.xpath("//span[.=' Cancel ']"));
+        click(elementCancel, msg);
+//        findandclick(Cancel, "", TestUtils.XPath);
     }
 
     public void VerifycommonBtnLogoff(String btnLogOff){
         WebElement element = mergeAndFindElement(commonBtnLogOff, btnLogOff, TestUtils.XPath);
     }
 
+    public void clickThe86ListButton() throws InterruptedException {
+        WebElement elementCancel = driver.findElement(By.xpath("//button[.='86 List']"));
+        click(elementCancel, "Selected - 86 List");
+        Thread.sleep(2000);
+        Assert.assertEquals(driver.findElement(By.xpath("//label[.='86 List']")).getText(),"86 List");
+    }
 
 }

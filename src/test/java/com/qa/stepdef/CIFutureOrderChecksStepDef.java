@@ -78,7 +78,7 @@ public class CIFutureOrderChecksStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the phone order screen \"([^\"]*)\"$")
-    public void iClickInThePhoneOrderScreen(String btnPayCheck, String msg) {
+    public void iClickInThePhoneOrderScreen(String btnPayCheck, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnPayCheck,msg);
     }
 
@@ -343,7 +343,7 @@ public class CIFutureOrderChecksStepDef {
     }
 
     @And("^I click \"([^\"]*)\" in the refund popup \"([^\"]*)\"$")
-    public void iClickInTheRefundPopup(String btnCash, String msg) {
+    public void iClickInTheRefundPopup(String btnCash, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnCash,msg);
     }
 
@@ -378,7 +378,7 @@ public class CIFutureOrderChecksStepDef {
     }
 
     @And("^I select the payment name \"([^\"]*)\" in the List \"([^\"]*)\"$")
-    public void iSelectThePaymentNameInTheList(String btnMppgAuth, String msg) {
+    public void iSelectThePaymentNameInTheList(String btnMppgAuth, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnMppgAuth,msg);
     }
 

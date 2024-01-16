@@ -1,0 +1,1853 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:34:36.341 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:35:06.452 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:43:59.843 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:44:29.935 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:46:09.959 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:48:40.220 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:49:10.298 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:51:15.004 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:51:45.053 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:53:48.404 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:54:18.477 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:29.177 Hooks:43 - Start Scenario Name : Verify whether application allow to revert the alternate modifier selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:29.223 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:29.257 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:29.283 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:29.309 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:29.335 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:31.453 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:32.523 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:32.567 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:36.641 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:36.715 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:46.763 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:46.792 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:46.825 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:46.867 OrderManagementScreen:1826 - Include modifier is added with Menu Item - No BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:46.887 BasePage:278 - Tapped Alternate Modifier button from conversational Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:48.945 OrderManagementScreen:1865 - Alternate Modifier Screen is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:49.974 BasePage:278 - Tapped Alter modifier - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:50.012 BasePage:278 - Tapped Ok Button In Alternate Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:52.092 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:52.124 OrderManagementScreen:1826 - Include modifier is added with Menu Item - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:52.142 BasePage:278 - Tapped Include Modifier - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:52.169 BasePage:278 - Tapped Alternate Modifier button from conversational Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:54.215 OrderManagementScreen:1865 - Alternate Modifier Screen is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:54.239 BasePage:278 - Tapped Revert Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:57:56.304 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:06.359 OrderManagementScreen:1830 - Include modifier is not added with Menu Item - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:06.386 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:06.395 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:08.478 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:08.526 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:10.575 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:11.650 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:11.698 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:15.786 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:15.854 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:25.869 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:27.934 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:27.976 OrderManagementScreen:1826 - Include modifier is added with Menu Item - No BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:27.993 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:30.059 BasePage:49 - Tapped prefix Modifier is - Extra
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:30.105 OrderManagementScreen:1826 - Include modifier is added with Menu Item - Extra BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:30.115 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:30.119 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:32.176 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:32.220 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:34.262 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:35.329 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:35.369 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:39.446 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:39.498 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:41.547 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:41.575 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:41.579 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 12:58:51.617 Hooks:54 - Failed Scenario Name : Verify whether application allow to revert the alternate modifier selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:39.071 Hooks:43 - Start Scenario Name : Verify application shows Mandatory modifier in the conventional modifier screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:39.116 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:39.150 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:39.178 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:39.205 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:39.232 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:41.351 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:42.424 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:42.466 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:46.537 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:46.608 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:48.665 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:48.700 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:48.705 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:50.766 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:50.808 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:52.858 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:53.921 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:53.958 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:58.017 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:02:58.065 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:00.120 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:00.151 OrderManagementScreen:1970 - Minimum 1,Maximum 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:00.156 OrderManagementScreen:1972 - Shown Minimum and Maximum Count - Minimum 1,Maximum 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:00.164 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:00.169 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:02.223 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:02.260 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:04.296 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:05.353 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:06.417 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:10.503 BasePage:278 - Selected - Pizza Romano 12inch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:10.552 OrderManagementScreen:1826 - Include modifier is added with Menu Item - 1/2 Bbq Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:12.605 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- 1/2 Bbq Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:12.633 OrderManagementScreen:1970 - Minimum 1,Maximum 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:12.637 OrderManagementScreen:1972 - Shown Minimum and Maximum Count - Minimum 1,Maximum 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:12.648 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:03:22.698 Hooks:54 - Failed Scenario Name : Verify application shows Mandatory modifier in the conventional modifier screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:37.488 Hooks:43 - Start Scenario Name : Verify application shows Mandatory modifier in the conventional modifier screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:37.533 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:37.564 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:37.591 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:37.618 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:37.644 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:39.742 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:40.810 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:40.853 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:44.935 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:45.012 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:47.069 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:47.105 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:47.110 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:49.176 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:49.227 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:51.271 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:52.330 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:52.367 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:56.437 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:56.484 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:58.539 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:58.570 OrderManagementScreen:1970 - Minimum 1,Maximum 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:58.574 OrderManagementScreen:1972 - Shown Minimum and Maximum Count - Minimum 1,Maximum 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:58.583 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:08:58.587 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:00.638 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:00.674 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:02.711 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:03.764 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:04.825 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:08.916 BasePage:278 - Selected - Pizza Romano 12inch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:08.965 OrderManagementScreen:1826 - Include modifier is added with Menu Item - 1/2 Bbq Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:11.018 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- 1/2 Bbq Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:11.047 OrderManagementScreen:1970 - Minimum 1,Maximum 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:11.051 OrderManagementScreen:1972 - Shown Minimum and Maximum Count - Minimum 1,Maximum 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:11.062 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:11.089 BasePage:84 - DisplayedYou need to pick atleast 1 mandatory modifiers from this Add Meats Group
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:13.125 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:13.155 OrderManagementScreen:1927 - Selected - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:13.161 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:15.215 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:15.255 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:17.292 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:09:17.327 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:49.913 Hooks:43 - Start Scenario Name : Verify when user enable the conversational option in category level it gets reflected in IPAD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:49.958 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:49.990 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:50.018 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:50.045 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:50.070 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:52.185 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:53.257 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:53.301 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:57.374 BasePage:278 - Selected - Pizza Romano
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:57.452 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:59.486 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:11:59.521 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:01.555 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:02.613 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:02.662 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:06.746 BasePage:278 - Selected - sappthi
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:06.807 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:07.857 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:07.894 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:07.931 BasePage:278 - Briyani Sub-Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:12.011 BasePage:278 - Selected - Chicken Briyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:12.067 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:14.123 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:14.171 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:16.223 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:17.265 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:18.303 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:22.374 BasePage:278 - Selected - Pizza Romano 12inch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:32.462 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:32.491 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:32.516 OrderManagementScreen:1927 - Selected - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:32.520 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:34.586 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:34.626 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:36.663 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:37.720 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:37.756 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:37.788 BasePage:278 - Briyani Sub-Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:41.856 BasePage:278 - Selected - Chicken Briyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:51.944 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:51.981 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:52.006 OrderManagementScreen:1774 - Serving Size of The Menu item is - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:52.015 OrderManagementScreen:1778 - Serving Sizes - Bowl
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:52.024 OrderManagementScreen:1778 - Serving Sizes - EACH
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:54.058 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:54.095 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:56.123 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:57.175 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:12:57.214 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:01.284 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:11.388 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:13.423 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:13.459 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:15.494 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:16.537 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:16.573 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:20.642 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:30.708 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:30.732 OrderManagementScreen:1798 - Cancel Button is Displayed in Conversational Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:30.746 OrderManagementScreen:1806 - Start Over Button is Displayed in Conversational Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:30.757 OrderManagementScreen:1814 - Done Button is Displayed in Conversational Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:32.794 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:32.833 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:34.869 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:35.924 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:35.962 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:40.035 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:40.095 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:50.155 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:52.207 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:52.247 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:52.251 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:54.307 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:54.341 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:56.377 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:57.433 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:13:57.470 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:01.528 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:01.569 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:11.635 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:13.683 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:13.716 BasePage:278 - Tapped Start Over button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:13.757 OrderManagementScreen:1839 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:13.767 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:13.771 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:15.822 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:15.858 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:17.887 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:18.939 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:18.975 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:23.027 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:23.073 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:33.082 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:35.132 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:35.166 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:45.192 OrderManagementScreen:1830 - Include modifier is not added with Menu Item - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:45.208 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:45.215 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:47.271 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:47.309 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:49.345 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:50.393 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:50.441 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:54.506 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:14:54.550 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:04.611 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:04.649 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:04.680 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:04.706 OrderManagementScreen:1826 - Include modifier is added with Menu Item - No BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:04.724 BasePage:278 - Tapped Alternate Modifier button from conversational Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:06.794 OrderManagementScreen:1865 - Alternate Modifier Screen is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:07.835 BasePage:278 - Tapped Alter modifier - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:07.869 BasePage:278 - Tapped Ok Button In Alternate Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:09.939 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:09.972 OrderManagementScreen:1826 - Include modifier is added with Menu Item - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:09.982 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:09.986 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:12.037 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:12.071 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:14.106 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:15:24.153 Hooks:54 - Failed Scenario Name : Verify when user enable the conversational option in category level it gets reflected in IPAD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:01.263 Hooks:43 - Start Scenario Name : Verify when user enable the conversational option in category level it gets reflected in IPAD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:01.309 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:01.341 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:01.369 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:01.396 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:01.422 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:03.541 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:04.613 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:04.658 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:08.737 BasePage:278 - Selected - Pizza Romano
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:08.813 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:10.869 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:10.919 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:12.963 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:14.010 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:14.045 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:18.135 BasePage:278 - Selected - sappthi
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:18.200 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:19.252 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:19.288 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:19.324 BasePage:278 - Briyani Sub-Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:23.403 BasePage:278 - Selected - Chicken Briyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:23.457 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:25.508 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:25.547 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:27.585 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:28.638 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:29.704 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:33.797 BasePage:278 - Selected - Pizza Romano 12inch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:43.860 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:43.891 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:43.914 OrderManagementScreen:1927 - Selected - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:43.919 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:45.984 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:46.031 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:48.068 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:49.128 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:49.169 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:49.205 BasePage:278 - Briyani Sub-Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:19:53.283 BasePage:278 - Selected - Chicken Briyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:03.371 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:03.406 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:03.430 OrderManagementScreen:1774 - Serving Size of The Menu item is - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:03.439 OrderManagementScreen:1778 - Serving Sizes - Bowl
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:03.447 OrderManagementScreen:1778 - Serving Sizes - EACH
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:05.485 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:05.526 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:07.554 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:08.607 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:08.646 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:12.717 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:22.813 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:24.851 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:24.887 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:26.923 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:27.981 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:28.018 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:32.084 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:42.164 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:42.189 OrderManagementScreen:1798 - Cancel Button is Displayed in Conversational Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:42.203 OrderManagementScreen:1806 - Start Over Button is Displayed in Conversational Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:42.215 OrderManagementScreen:1814 - Done Button is Displayed in Conversational Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:44.251 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:44.287 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:46.324 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:47.377 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:47.423 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:51.490 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:20:51.548 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:01.579 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:03.629 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:03.670 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:03.680 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:05.737 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:05.775 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:07.811 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:08.862 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:08.898 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:12.965 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:13.010 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:23.061 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:25.120 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:25.156 BasePage:278 - Tapped Start Over button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:25.195 OrderManagementScreen:1839 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:25.205 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:25.209 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:27.265 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:27.304 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:29.344 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:30.409 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:30.450 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:34.528 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:34.580 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:44.616 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:46.675 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:46.713 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:56.757 OrderManagementScreen:1830 - Include modifier is not added with Menu Item - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:56.778 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:56.788 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:58.861 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:21:58.904 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:00.947 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:02.009 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:02.049 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:06.128 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:06.186 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:16.250 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:16.296 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:16.327 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:16.351 OrderManagementScreen:1826 - Include modifier is added with Menu Item - No BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:16.369 BasePage:278 - Tapped Alternate Modifier button from conversational Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:18.449 OrderManagementScreen:1865 - Alternate Modifier Screen is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:19.502 BasePage:278 - Tapped Alter modifier - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:19.539 BasePage:278 - Tapped Ok Button In Alternate Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:21.618 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:21.653 OrderManagementScreen:1826 - Include modifier is added with Menu Item - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:21.663 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:21.667 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:23.726 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:23.768 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:25.808 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:26.871 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:26.912 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:30.983 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:31.032 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:41.083 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:41.127 BasePage:278 - Conversational is enabled - Size
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:41.158 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:41.183 OrderManagementScreen:1826 - Include modifier is added with Menu Item - No BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:41.198 BasePage:278 - Tapped Alternate Modifier button from conversational Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:43.251 OrderManagementScreen:1865 - Alternate Modifier Screen is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:44.301 BasePage:278 - Tapped Alter modifier - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:44.338 BasePage:278 - Tapped Ok Button In Alternate Modifier Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:46.411 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:46.445 OrderManagementScreen:1826 - Include modifier is added with Menu Item - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:46.461 BasePage:278 - Tapped Include Modifier - With Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:46.488 BasePage:278 - Tapped Alternate Modifier button from conversational Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:48.552 OrderManagementScreen:1865 - Alternate Modifier Screen is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:48.582 BasePage:278 - Tapped Revert Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:22:50.660 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:00.699 OrderManagementScreen:1830 - Include modifier is not added with Menu Item - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:00.720 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:00.730 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:02.804 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:02.847 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:04.886 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:05.948 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:05.989 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:10.057 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:10.110 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:20.126 OrderManagementScreen:1792 - Size Cell Is not displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:22.186 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:22.220 OrderManagementScreen:1826 - Include modifier is added with Menu Item - No BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:22.236 BasePage:278 - Tapped Include Modifier - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:24.295 BasePage:49 - Tapped prefix Modifier is - Extra
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:24.350 OrderManagementScreen:1826 - Include modifier is added with Menu Item - Extra BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:24.360 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:24.364 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:26.421 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:26.463 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:28.504 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:29.570 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:29.612 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:33.686 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:33.739 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:35.800 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:35.831 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:35.835 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:37.893 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:37.933 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:39.970 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:41.032 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:41.073 BasePage:258 - Tapped Side CC Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:45.132 BasePage:278 - Selected - pizzaaa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:45.172 OrderManagementScreen:1826 - Include modifier is added with Menu Item - BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:47.228 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- BQ Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:47.260 OrderManagementScreen:1970 - Minimum 1,Maximum 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:47.264 OrderManagementScreen:1972 - Shown Minimum and Maximum Count - Minimum 1,Maximum 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:47.271 OrderManagementScreen:1927 - Selected - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:47.275 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - FRUIT
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:49.330 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:49.373 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:51.410 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:52.476 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:53.549 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:57.648 BasePage:278 - Selected - Pizza Romano 12inch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:57.706 OrderManagementScreen:1826 - Include modifier is added with Menu Item - 1/2 Bbq Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:59.766 BasePage:278 - Include Modifier in Conversational modifier screen is displayed- 1/2 Bbq Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:59.796 OrderManagementScreen:1970 - Minimum 1,Maximum 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:59.801 OrderManagementScreen:1972 - Shown Minimum and Maximum Count - Minimum 1,Maximum 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:59.811 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:23:59.836 BasePage:84 - DisplayedYou need to pick atleast 1 mandatory modifiers from this Add Meats Group
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:24:01.882 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:24:01.915 OrderManagementScreen:1927 - Selected - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:24:01.919 BasePage:49 - Tapped Mandatory Modifier in conversational Screen - Add Anchovies
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:24:03.974 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:24:04.017 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:24:06.060 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:24:06.099 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:25:36.065 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:25:37.151 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:25:39.215 CIWaitListPage:117 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:25:40.278 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:51:08.120 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:51:09.216 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:51:11.281 CIWaitListPage:117 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:51:12.340 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:53:31.683 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:53:32.771 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:53:34.840 CIWaitListPage:117 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:53:35.904 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:57:10.007 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:57:11.097 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:57:13.164 CIWaitListPage:122 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:57:15.229 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:34.864 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:35.932 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:37.999 CIWaitListPage:122 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:40.090 BasePage:239 - verify the menu itemChicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:40.101 CIEightySixListScreen:239 - Displayed Eight Six
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:40.111 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:02:20.757 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:02:21.845 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:02:23.914 CIWaitListPage:122 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:02:26.001 BasePage:239 - verify the menu itemChicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:02:28.022 CIEightySixListScreen:240 - Displayed Eight Six
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:02:30.061 CIEightySixListScreen:240 - Displayed Eight Six
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:02:30.094 BasePage:239 - verify the menu itemChicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:10:43.772 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:10:44.846 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:10:46.916 CIWaitListPage:123 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:10:49.003 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:11:23.077 CIEightySixListScreen:245 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:11:58.204 CIEightySixListScreen:245 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:12:01.691 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:14:03.550 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:14:04.620 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:14:06.685 CIWaitListPage:123 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:14:36.773 Hooks:54 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:19:30.565 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:19:31.647 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:19:33.705 CIWaitListPage:123 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:19:35.796 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:20:10.885 CIEightySixListScreen:250 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:20:46.038 CIEightySixListScreen:250 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:20:49.507 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:23:34.227 Hooks:43 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:23:35.301 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:23:37.366 CIWaitListPage:123 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:23:39.382 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:23:39.428 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:23:42.494 BasePage:66 - Searched - Idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:24:14.559 CIEightySixListScreen:250 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:24:17.619 BasePage:66 - Searched - Poori
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:24:49.685 CIEightySixListScreen:250 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:24:53.110 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:24:53.154 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:50.943 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:52.995 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:53.024 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:53.049 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:53.074 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:53.103 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:53.152 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:55.216 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:55.267 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:55.278 CIEightySixListStepDef:109 - Verify Quantity is false
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:47:55.284 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:37.015 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:39.070 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:39.104 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:39.133 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:39.160 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:39.192 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:39.247 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:43.343 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:43.402 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:43.417 CIEightySixListScreen:83 - QTY is Not Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:51:43.426 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:39.398 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:41.450 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:41.480 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:41.506 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:41.532 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:41.559 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:41.609 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:45.679 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:45.723 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:45.734 CIEightySixListScreen:83 - QTY is Not Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:55:45.741 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:57.935 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:00.009 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:00.044 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:00.069 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:00.094 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:00.122 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:00.170 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:04.257 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:04.327 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:06.357 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:06.379 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:06.422 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:06.435 CIPaymentScreen:353 - 0012
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:06.436 CIPaymentScreen:356 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:58:14.473 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:38.602 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:40.669 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:40.700 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:40.725 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:40.750 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:40.779 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:40.828 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:44.922 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:44.977 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:47.008 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:47.033 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:47.079 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:47.093 CIPaymentScreen:387 - 0012
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:47.094 CIPaymentScreen:390 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:47.106 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:48.626 CIPaymentScreen:390 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:48.656 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:50.180 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:50.210 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:51.734 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:51.766 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:53.318 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:55.354 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:55.401 CIEightySixListScreen:133 - Verify Quantity 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:00:55.409 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:31.128 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:33.203 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:33.239 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:33.264 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:33.292 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:33.321 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:33.372 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:37.462 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:37.526 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:39.558 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:39.579 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:39.623 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:39.637 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:39.637 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:39.650 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:41.168 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:41.189 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:42.727 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:44.770 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:44.823 CIEightySixListScreen:133 - Verify Quantity 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:02:44.831 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:17.116 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:19.191 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:19.228 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:19.253 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:19.278 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:19.307 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:19.358 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:23.444 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:23.512 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:25.543 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:25.564 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:25.608 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:25.622 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:25.622 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:25.635 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:27.153 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:27.184 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:28.743 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:30.788 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:30.845 CIEightySixListScreen:133 - Verify Quantity 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:04:30.853 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:11.562 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:13.643 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:13.677 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:13.703 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:13.730 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:13.758 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:13.808 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:17.893 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:17.949 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:19.977 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:19.996 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:20.042 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:20.056 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:20.057 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:20.069 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:21.587 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:21.613 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:23.169 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:25.216 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:25.271 CIEightySixListScreen:133 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:08:25.282 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:06.519 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:08.593 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:08.629 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:08.654 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:08.681 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:08.709 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:08.758 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:12.841 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:12.909 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:14.939 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:14.960 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:15.004 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:15.017 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:15.019 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:15.031 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:16.550 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:16.582 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:18.139 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:20.178 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:20.225 CIEightySixListScreen:133 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:12:20.235 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:05.474 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:07.549 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:07.582 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:07.606 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:07.631 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:07.661 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:07.709 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:11.798 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:11.856 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:13.889 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:13.916 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:13.958 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:13.971 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:13.972 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:13.984 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:15.502 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:15.535 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:17.093 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:19.140 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:19.201 CIEightySixListScreen:133 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:15:19.211 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:22.798 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:24.870 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:24.904 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:24.931 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:24.958 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:24.986 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:25.033 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:29.120 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:29.181 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:31.217 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:31.238 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:31.281 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:31.295 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:31.296 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:31.308 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:32.826 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:32.860 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:34.414 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:36.462 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:18:45.569 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:32.431 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:34.506 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:34.540 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:34.566 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:34.591 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:34.619 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:34.666 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:38.752 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:38.829 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:40.859 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:40.879 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:40.923 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:40.937 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:40.937 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:40.950 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:42.469 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:42.501 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:44.062 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:21:46.107 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:31.556 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:33.635 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:33.669 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:33.694 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:33.720 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:33.749 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:33.796 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:37.864 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:37.923 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:39.955 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:39.977 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:40.022 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:40.036 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:40.037 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:40.049 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:41.567 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:41.593 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:43.150 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:23:52.259 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:28:57.885 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:28:59.944 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:28:59.978 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:00.003 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:00.029 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:00.056 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:00.109 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:04.187 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:04.253 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:06.285 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:06.307 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:06.351 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:06.365 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:06.365 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:06.378 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:07.896 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:07.927 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:09.485 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:11.551 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:12.620 CIEightySixListScreen:134 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:29:12.634 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:31:56.133 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:31:58.208 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:31:58.244 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:31:58.268 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:31:58.292 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:31:58.320 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:31:58.371 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:02.457 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:02.529 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:04.561 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:04.583 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:04.627 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:04.640 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:04.641 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:04.654 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:06.173 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:06.205 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:07.755 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:09.813 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:10.868 CIEightySixListScreen:134 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:10.873 CIEightySixListScreen:136 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:32:10.886 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:32.011 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:34.087 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:34.119 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:34.144 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:34.169 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:34.197 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:34.246 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:38.331 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:38.401 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:39.440 CIEightySixListScreen:134 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:39.446 CIEightySixListScreen:136 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:36:39.460 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:40:54.233 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:40:56.305 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:40:56.338 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:40:56.364 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:40:56.389 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:40:56.418 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:40:56.467 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:41:00.555 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:41:00.626 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:41:01.661 CIEightySixListScreen:134 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:41:01.666 CIEightySixListScreen:136 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:41:01.682 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:53.003 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:55.078 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:55.112 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:55.138 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:55.164 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:55.192 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:55.241 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:59.330 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:42:59.404 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:43:01.446 CIEightySixListScreen:134 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:43:01.452 CIEightySixListScreen:136 - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:43:01.469 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:50.842 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:52.919 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:52.954 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:52.979 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:53.004 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:53.031 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:53.080 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:57.165 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:57.227 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:59.250 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:45:59.283 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:46:00.352 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:46:02.467 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:46:02.508 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:46:02.548 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:46:06.603 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:46:08.663 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:46:25.331 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:08.005 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:10.082 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:10.117 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:10.142 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:10.168 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:10.197 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:10.245 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:14.331 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:14.395 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:16.428 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:16.449 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:16.495 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:16.508 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:16.508 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:16.521 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:18.040 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:18.072 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:19.631 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:21.697 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:23.758 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:23.791 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:24.868 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:26.988 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:27.051 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:27.091 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:31.152 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:33.223 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:34.261 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:35.363 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:37.419 CIWaitListPage:123 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:39.443 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:41.518 CIEightySixListScreen:134 - Displayed QTY - Verify Quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:48:41.526 Hooks:54 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:00.972 Hooks:43 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:03.050 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:03.087 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:03.112 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:03.138 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:03.166 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:03.220 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:07.307 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:07.365 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:09.397 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:09.419 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:09.463 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:09.476 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:09.478 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:09.490 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:11.008 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:11.040 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:12.598 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:14.665 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:16.726 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:16.760 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:17.828 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:19.945 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:20.004 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:20.044 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:24.113 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:26.181 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:27.215 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:28.320 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:30.376 CIWaitListPage:123 - Displayed - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:32.399 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:51:34.472 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:07.247 Hooks:43 - Start Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:07.297 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:07.336 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:07.370 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:07.406 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:07.438 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:07.490 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:11.579 BasePage:66 - Searched - Chicken
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:05:41.692 Hooks:54 - Failed Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:16.079 Hooks:43 - Start Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:16.129 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:16.169 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:16.203 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:16.241 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:16.273 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:16.326 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:20.400 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:20.461 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:22.492 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:22.512 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:22.557 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:22.579 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:22.580 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:22.591 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:24.110 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:24.142 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:25.700 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:27.780 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:29.841 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:31.880 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:31.921 CIWaitListPage:115 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:33.947 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:33.969 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:34.013 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:34.024 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:34.024 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:34.034 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:35.551 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:35.578 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:37.129 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:39.188 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:41.254 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:42.293 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:07:47.423 Hooks:54 - Failed Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:18.638 Hooks:43 - Start Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:18.695 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:18.732 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:18.766 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:18.800 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:18.832 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:18.889 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:22.976 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:23.052 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:25.083 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:25.106 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:25.155 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:25.168 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:25.169 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:25.180 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:26.699 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:26.731 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:28.291 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:30.358 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:32.420 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:34.459 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:34.503 CIWaitListPage:115 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:36.514 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:36.527 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:36.568 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:36.580 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:36.580 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:36.591 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:38.108 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:38.140 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:39.695 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:41.756 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:43.812 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:44.840 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:45.941 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:47.980 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:10:53.048 Hooks:54 - Failed Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:12.514 Hooks:43 - Start Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:12.564 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:12.602 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:12.633 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:12.672 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:12.710 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:12.763 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:16.852 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:16.949 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:18.991 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:19.012 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:19.057 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:19.071 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:19.071 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:19.082 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:20.600 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:20.618 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:22.174 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:24.241 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:26.303 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:28.344 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:28.384 CIWaitListPage:115 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:30.412 CIEightySixListScreen:81 - QTY is Selectable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:30.431 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:30.474 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:30.485 CIPaymentScreen:387 - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:30.486 CIPaymentScreen:390 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:30.496 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:32.014 CIPaymentScreen:390 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:32.045 BasePage:278 - Tapped number as - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:33.596 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:35.650 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:37.714 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:38.753 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:39.857 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:41.903 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:43.976 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:47.045 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:47.085 CIWaitListPage:115 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:13:49.116 CIEightySixListScreen:134 - Displayed QTY - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:22:28.675 Hooks:43 - Start Scenario Name : Verify Newly added menu item is available in 86 List in POS login screen and Operation Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:22:29.763 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:22:31.818 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:22:31.887 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:22:34.957 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:22:35.001 CIWaitListPage:115 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:22:38.046 BasePage:66 - Searched - Idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:23:10.105 CIEightySixListScreen:279 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:23:13.232 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:23:13.268 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:23:13.292 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:23:13.318 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:23:13.345 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:23:13.404 Hooks:54 - Failed Scenario Name : Verify Newly added menu item is available in 86 List in POS login screen and Operation Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:26:25.435 Hooks:43 - Start Scenario Name : Verify Newly added menu item is available in 86 List in POS login screen and Operation Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:26:26.525 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:26:28.575 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:26:28.631 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:26:31.697 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:26:31.739 CIWaitListPage:115 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:26:34.788 BasePage:66 - Searched - Idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:06.852 CIEightySixListScreen:279 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:09.974 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:10.010 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:10.035 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:10.061 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:10.088 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:11.187 BasePage:278 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:13.239 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:13.288 CIWaitListPage:115 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:15.325 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:15.358 CIWaitListPage:115 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:17.396 BasePage:66 - Searched - Idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:27:49.461 CIEightySixListScreen:279 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:28:20.514 Hooks:54 - Failed Scenario Name : Verify Newly added menu item is available in 86 List in POS login screen and Operation Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:34:23.342 Hooks:43 - Start Scenario Name : Verify Newly added menu item is available in 86 List in POS login screen and Operation Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:34:24.433 BasePage:278 - Selected Btn As - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:34:26.490 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:34:28.572 CIWaitListPage:116 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:34:31.632 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:34:33.681 CIWaitListPage:116 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:34:36.730 BasePage:66 - Searched - Idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:08.802 CIEightySixListScreen:279 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:11.930 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:11.967 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:11.991 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:12.016 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:12.042 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:13.137 BasePage:278 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:15.189 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:17.255 CIWaitListPage:116 - Displayed - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:19.302 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:21.360 CIWaitListPage:116 - Displayed - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:23.403 BasePage:66 - Searched - Idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:55.453 CIEightySixListScreen:297 - Not Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 18:35:57.529 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:00.874 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:00.924 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:00.960 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:00.993 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:01.025 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:01.055 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:01.109 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:05.204 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:05.275 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:05.314 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:05.330 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:05.330 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:05.342 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:06.860 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:06.877 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:08.429 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:08.482 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:09.568 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:11.667 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:11.698 OrderManagementScreen:1784 - 209-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:13:19.775 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:26.313 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:26.367 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:26.408 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:26.439 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:26.472 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:26.504 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:26.557 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:30.639 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:30.701 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:30.743 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:30.757 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:30.757 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:30.768 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:32.286 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:32.319 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:33.878 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:33.930 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:35.001 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:37.117 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:37.152 OrderManagementScreen:1784 - 210-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:16:37.535 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:45.712 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:45.791 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:45.832 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:45.867 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:45.902 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:45.936 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:48.054 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:48.132 OrderManagementScreen:1786 - 211-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:49.622 OrderManagementScreen:1253 - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:49.627 OrderManagementScreen:1256 - Selected - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:50.677 OrderManagementScreen:1241 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:19:52.721 BasePage:278 - Selected - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:20:02.849 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:03.411 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:03.459 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:03.496 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:03.523 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:03.550 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:03.577 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:05.697 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:05.739 OrderManagementScreen:1786 - 212-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:07.259 OrderManagementScreen:1253 - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:07.269 OrderManagementScreen:1256 - Selected - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:09.312 BasePage:278 - Selected - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:12.390 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:13.948 BasePage:278 - Selected - Ultimate Lunch 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:22:20.040 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:53.778 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:53.827 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:53.864 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:53.899 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:53.934 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:53.967 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:54.019 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:58.109 BasePage:66 - Searched - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:58.188 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:58.235 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:58.248 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:58.248 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:58.260 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:59.779 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:24:59.812 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:01.358 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:01.420 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:02.488 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:04.600 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:04.636 OrderManagementScreen:1786 - 213-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:06.161 OrderManagementScreen:1253 - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:06.167 OrderManagementScreen:1256 - Selected - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:08.195 BasePage:278 - Selected - Chicken Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:11.270 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:25:12.841 BasePage:278 - Selected - Ultimate Lunch 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:05.855 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:05.905 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:05.950 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:05.983 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:06.015 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:06.046 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:06.099 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:10.190 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:10.268 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:10.310 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:10.324 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:10.324 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:10.336 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:11.855 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:11.898 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:13.454 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:13.504 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:14.574 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:16.692 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:16.728 OrderManagementScreen:1786 - 214-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:18.249 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:18.260 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:20.299 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:23.379 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:24.958 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:28:26.547 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:12.717 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:12.765 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:12.802 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:12.834 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:12.867 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:12.899 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:12.956 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:17.046 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:17.123 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:17.173 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:17.188 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:17.188 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:17.200 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:18.778 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:18.806 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:20.363 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:20.415 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:21.496 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:23.598 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:23.632 OrderManagementScreen:1786 - 215-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:25.149 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:25.155 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:27.195 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:30.299 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:31.880 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:33.444 CIEightySixListScreen:167 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:33.460 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:33.473 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:34.532 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:34.558 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:30:41.180 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:42.885 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:42.936 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:42.973 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:43.007 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:43.041 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:43.073 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:43.125 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:47.215 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:47.285 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:47.326 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:47.340 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:47.340 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:47.351 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:48.871 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:48.904 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:50.459 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:50.511 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:51.582 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:53.694 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:53.729 OrderManagementScreen:1786 - 216-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:55.274 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:55.283 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:34:57.321 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:00.406 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:01.987 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:04.554 CIEightySixListScreen:167 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:04.569 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:04.580 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:05.636 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:05.659 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:08.228 CIEightySixListScreen:167 - Displayed  - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:10.268 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:12.349 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:12.387 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:12.432 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:12.505 BasePage:278 - Tapped Customer - customer M
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:12.562 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:35:26.824 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:55:59.626 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:55:59.676 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:55:59.712 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:55:59.748 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:55:59.781 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:55:59.812 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:55:59.862 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:03.952 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:04.020 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:04.061 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:04.075 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:04.075 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:04.087 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:05.606 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:05.638 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:07.184 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:07.232 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:08.298 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:10.416 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:10.451 OrderManagementScreen:1786 - 217-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:11.979 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:11.987 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:14.041 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:17.126 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:18.709 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:21.279 CIEightySixListScreen:167 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:21.294 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:21.306 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:22.347 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:22.367 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:24.927 CIEightySixListScreen:167 - Displayed  - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:24.948 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:24.995 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:25.086 BasePage:278 - Tapped Customer - customer M
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:25.131 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:25.182 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:25.760 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:27.822 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:27.856 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:27.890 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:27.960 BasePage:278 - Tapped Customer - customer M
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:31.021 BasePage:278 - Selected name as - customer M
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:33.097 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:35.141 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:56:36.219 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:58:58.926 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:58:58.975 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:58:59.012 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:58:59.045 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:58:59.077 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:58:59.107 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:58:59.156 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:03.216 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:03.285 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:03.328 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:03.342 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:03.342 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:03.354 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:04.873 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:04.905 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:06.464 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:06.517 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:07.570 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:09.675 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:09.712 OrderManagementScreen:1786 - 218-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:11.240 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:11.251 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:13.303 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:16.388 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:17.968 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 22:59:20.552 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:33.942 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:33.991 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:34.028 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:34.061 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:34.095 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:34.128 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:34.182 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:38.269 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:38.331 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:38.371 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:38.385 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:38.385 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:38.396 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:39.909 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:39.927 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:41.482 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:41.534 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:42.603 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:44.713 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:01:44.740 OrderManagementScreen:1786 - 219-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:49.282 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:49.333 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:49.369 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:49.403 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:49.436 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:49.468 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:49.519 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:53.611 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:55.703 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:57.773 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:57.792 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:57.792 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:57.806 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:59.324 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:03:59.359 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:00.918 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:00.972 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:02.042 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:04.158 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:04.195 OrderManagementScreen:1786 - 220-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:05.748 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:05.757 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:07.798 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:10.873 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:12.451 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:15.022 CIEightySixListScreen:168 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:15.038 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:15.050 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:16.114 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:16.139 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:18.711 CIEightySixListScreen:168 - Displayed  - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:18.733 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:18.780 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:18.853 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:18.914 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:18.966 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:19.540 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:21.598 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:21.637 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:21.681 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:21.745 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:24.802 BasePage:278 - Selected name as - goknur b
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:26.884 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:28.930 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:28.968 BasePage:278 - Selected Repeat Order Btn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:33.017 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:04:35.567 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:24.662 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:24.712 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:24.749 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:24.781 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:24.813 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:24.845 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:24.894 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:28.981 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:31.059 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:33.134 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:33.153 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:33.153 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:33.166 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:34.686 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:34.718 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:36.274 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:36.327 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:37.396 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:39.511 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:39.547 OrderManagementScreen:1786 - 221-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:41.103 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:41.114 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:43.153 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:46.237 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:47.798 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:50.369 CIEightySixListScreen:168 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:50.384 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:50.397 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:51.460 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:51.485 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:54.057 CIEightySixListScreen:168 - Displayed  - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:54.080 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:54.134 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:54.213 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:54.267 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:54.320 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:54.900 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:56.960 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:57.000 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:57.035 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:06:57.101 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:00.165 BasePage:278 - Selected name as - goknur b
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:02.232 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:04.275 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:04.316 BasePage:278 - Selected Repeat Order Btn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:08.349 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:10.892 CIEightySixListScreen:168 - Displayed  - 7
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:10.915 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:10.971 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:11.546 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:13.610 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:16.665 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:18.242 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:22.308 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:07:24.880 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:29.541 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:29.590 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:29.626 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:29.662 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:29.695 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:29.726 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:29.780 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:33.853 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:35.945 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:38.018 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:38.036 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:38.037 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:38.049 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:39.570 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:39.603 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:41.158 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:41.209 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:42.282 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:44.400 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:44.435 OrderManagementScreen:1786 - 222-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:45.982 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:45.992 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:48.047 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:51.129 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:52.710 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:55.286 CIEightySixListScreen:168 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:55.301 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:55.313 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:56.366 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:56.389 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:58.961 CIEightySixListScreen:168 - Displayed  - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:58.984 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:59.031 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:59.109 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:59.163 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:59.216 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:09:59.828 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:01.885 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:01.924 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:01.971 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:02.040 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:05.105 BasePage:278 - Selected name as - goknur b
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:07.174 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:09.217 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:09.254 BasePage:278 - Selected Repeat Order Btn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:13.303 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:15.846 CIEightySixListScreen:168 - Displayed  - 7
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:15.867 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:15.925 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:16.515 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:18.583 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:21.633 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:23.194 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:27.256 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:29.829 CIEightySixListScreen:168 - Displayed  - 6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:29.858 BasePage:278 - Select Qsr Option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:29.895 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:29.946 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:33.018 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:34.580 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:10:37.141 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:41.129 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:41.178 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:41.215 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:41.249 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:41.282 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:41.313 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:41.366 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:45.451 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:47.536 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:49.608 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:49.627 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:49.627 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:49.640 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:51.160 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:51.193 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:52.748 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:52.799 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:53.865 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:55.963 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:55.994 OrderManagementScreen:1786 - 223-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:57.513 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:57.523 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:12:59.576 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:02.667 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:04.231 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:06.799 CIEightySixListScreen:168 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:06.815 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:06.827 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:07.882 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:07.910 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:10.481 CIEightySixListScreen:168 - Displayed  - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:10.502 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:10.549 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:10.625 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:10.688 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:10.742 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:11.319 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:13.375 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:13.414 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:13.460 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:13.523 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:16.584 BasePage:278 - Selected name as - goknur b
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:18.670 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:20.713 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:20.750 BasePage:278 - Selected Repeat Order Btn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:24.793 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:27.320 CIEightySixListScreen:168 - Displayed  - 7
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:27.339 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:27.394 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:27.968 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:30.029 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:33.083 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:34.651 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:38.731 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:41.311 CIEightySixListScreen:168 - Displayed  - 6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:41.340 BasePage:278 - Select Qsr Option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:41.378 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:41.430 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:44.506 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:46.074 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:48.628 CIEightySixListScreen:168 - Displayed  - 6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:51.668 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:53.232 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:55.786 CIEightySixListScreen:168 - Displayed  - 6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:13:58.821 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:14:00.384 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:14:04.454 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:14:07.530 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:14:09.094 BasePage:278 - Selected - Ultimate Lunch 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:14:17.687 Hooks:54 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:12.413 Hooks:43 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:12.461 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:12.497 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:12.529 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:12.561 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:12.602 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:12.653 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:16.740 BasePage:66 - Searched - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:18.820 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:20.896 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:20.915 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:20.916 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:20.929 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:22.448 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:22.475 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:24.030 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:24.087 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:25.142 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:27.251 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:27.287 OrderManagementScreen:1786 - 224-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:28.830 OrderManagementScreen:1253 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:28.840 OrderManagementScreen:1256 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:30.879 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:33.962 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:35.540 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:38.110 CIEightySixListScreen:168 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:38.125 MenuOptionScreen:153 - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:38.136 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:39.183 MenuOptionScreen:159 - Menu Option - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:39.202 BasePage:278 - Tapped Repeat Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:41.770 CIEightySixListScreen:168 - Displayed  - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:41.791 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:41.838 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:41.916 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:41.973 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:42.027 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:42.601 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:44.659 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:44.697 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:44.743 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:44.808 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:47.853 BasePage:278 - Selected name as - goknur b
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:49.931 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:51.972 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:52.008 BasePage:278 - Selected Repeat Order Btn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:56.056 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:58.600 CIEightySixListScreen:168 - Displayed  - 7
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:58.619 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:58.663 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:16:59.234 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:01.288 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:04.358 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:05.935 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:10.017 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:12.594 CIEightySixListScreen:168 - Displayed  - 6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:12.625 BasePage:278 - Select Qsr Option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:12.663 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:12.713 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:15.781 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:17.327 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:19.881 CIEightySixListScreen:168 - Displayed  - 6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:22.923 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:24.479 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:27.028 CIEightySixListScreen:168 - Displayed  - 6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:30.068 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:31.633 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:35.702 BasePage:278 - Selected - Chicken Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:38.778 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:40.340 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:42.898 CIEightySixListScreen:168 - Displayed  - 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:42.919 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:42.963 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:43.543 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:17:44.582 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:51.764 Hooks:43 - Start Scenario Name : verify the available quantity reverted when place menu item and void it before send to the kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:51.817 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:51.856 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:51.890 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:51.922 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:51.953 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:52.006 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:56.094 BasePage:66 - Searched - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:30:58.174 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:00.245 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:00.263 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:00.264 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:00.277 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:01.795 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:01.821 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:03.376 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:03.427 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:04.497 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:06.611 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:09.682 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:11.252 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:15.347 BasePage:278 - Selected - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:31:15.401 Hooks:54 - Failed Scenario Name : verify the available quantity reverted when place menu item and void it before send to the kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:29.718 Hooks:43 - Start Scenario Name : verify the available quantity reverted when place menu item and void it before send to the kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:29.769 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:29.804 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:29.836 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:29.869 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:29.900 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:29.949 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:34.036 BasePage:66 - Searched - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:36.121 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:38.192 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:38.212 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:38.212 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:38.224 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:39.745 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:39.776 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:41.338 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:41.392 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:42.464 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:44.570 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:47.652 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:49.228 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:53.318 BasePage:278 - Selected - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:55.892 CIEightySixListScreen:162 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:55.905 MenuOptionScreen:153 - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:55.916 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:56.971 MenuOptionScreen:159 - Menu Option - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:36:59.012 BasePage:278 - Tapped void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:01.582 CIEightySixListScreen:162 - Displayed  - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:04.629 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:06.202 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:10.271 BasePage:278 - Selected - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:10.311 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:10.363 BasePage:278 - - Resend to kitchen is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:12.923 CIEightySixListScreen:162 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:12.936 MenuOptionScreen:153 - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:12.948 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:13.985 MenuOptionScreen:159 - Menu Option - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:16.028 BasePage:278 - Tapped void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:16.074 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:16.091 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:18.154 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:21.226 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:22.783 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:25.332 CIEightySixListScreen:162 - Displayed  - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:37:25.350 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:19.765 Hooks:43 - Start Scenario Name : verify the available quantity reverted when place menu item and void it before send to the kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:19.816 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:19.853 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:19.886 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:19.919 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:19.951 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:20.006 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:24.097 BasePage:66 - Searched - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:26.195 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:28.275 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:28.295 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:28.295 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:28.308 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:29.826 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:29.858 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:31.414 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:31.467 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:32.533 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:34.648 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:37.729 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:39.299 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:43.375 BasePage:278 - Selected - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:45.960 CIEightySixListScreen:162 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:45.976 MenuOptionScreen:153 - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:45.987 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:47.043 MenuOptionScreen:159 - Menu Option - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:49.089 BasePage:278 - Tapped void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:51.663 CIEightySixListScreen:162 - Displayed  - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:54.707 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:40:56.260 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:00.333 BasePage:278 - Selected - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:00.374 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:00.425 BasePage:278 - - Resend to kitchen is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:02.973 CIEightySixListScreen:162 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:02.984 MenuOptionScreen:153 - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:02.996 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:04.043 MenuOptionScreen:159 - Menu Option - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:06.084 BasePage:278 - Tapped void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:06.130 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:06.145 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:08.217 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:11.292 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:12.858 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:15.417 CIEightySixListScreen:162 - Displayed  - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:41:15.436 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:24.871 Hooks:43 - Start Scenario Name : verify the available quantity reverted when place menu item and void it before send to the kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:24.926 BasePage:278 - Tapped pin1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:24.962 BasePage:278 - Tapped pin2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:24.994 BasePage:278 - Tapped pin3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:25.028 BasePage:278 - Tapped pin4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:25.060 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:25.111 BasePage:49 - Selected - 86 List
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:29.184 BasePage:66 - Searched - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:31.275 BasePage:278 - click qty txt field
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:33.349 BasePage:258 - Tapped Pin C
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:33.367 CIPaymentScreen:396 - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:33.368 CIPaymentScreen:399 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:33.380 BasePage:278 - Tapped number as - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:34.900 CIPaymentScreen:399 - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:34.932 BasePage:278 - Tapped number as - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:36.487 BasePage:278 - Tapped continue Button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:36.540 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:37.609 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:39.745 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:42.831 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:44.411 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:48.496 BasePage:278 - Selected - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:51.085 CIEightySixListScreen:162 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:51.100 MenuOptionScreen:153 - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:51.113 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:52.157 MenuOptionScreen:159 - Menu Option - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:54.202 BasePage:278 - Tapped void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:56.773 CIEightySixListScreen:162 - Displayed  - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:43:59.819 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:01.389 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:05.457 BasePage:278 - Selected - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:05.498 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:05.550 BasePage:278 - - Resend to kitchen is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:08.105 CIEightySixListScreen:162 - Displayed  - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:08.117 MenuOptionScreen:153 - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:08.129 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:09.179 MenuOptionScreen:159 - Menu Option - Veg Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:11.221 BasePage:278 - Tapped void button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:11.269 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:11.285 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:13.347 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:16.424 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:17.989 BasePage:278 - Selected - Ultimate Lunch
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:20.542 CIEightySixListScreen:162 - Displayed  - 10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:22.578 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:22.624 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:22.638 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:24.698 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:26.775 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 23:44:26.809 BasePage:258 - Tapped log Off Button

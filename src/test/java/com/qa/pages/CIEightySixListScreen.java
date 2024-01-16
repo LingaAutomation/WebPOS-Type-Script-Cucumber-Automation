@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import io.cucumber.java.bs.A;
 import org.openqa.selenium.WebElement;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -67,20 +68,22 @@ public class CIEightySixListScreen extends BasePage {
 
     String noCountDownXpath="//XCUIElementTypeStaticText[@name=\"{0}\"]";
 
-    public void itemSearchField(String chickenBiriyani,String msg){
-        WebElement elementSearchField = mergeAndFindElement(itemSearchFieldXpath,"", TestUtils.XPath);
-        elementClick(elementSearchField,msg);
-        elementSearchField.sendKeys(chickenBiriyani);
-//        findandclick_Skeys(itemSearchFieldXpath,"", TestUtils.XPath,"Skeys",chickenBiriyani);
+    public void itemSearchField(String chickenBiriyani,String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement listQty = driver.findElement(By.xpath("(//input[@placeholder='Search'])[1]"));
+        sendKeys(listQty,chickenBiriyani,"Searched - "+chickenBiriyani);
     }
 
-    public Boolean verifyQuantity(){
-        Boolean isDisplayed=false;
-        WebElement element =mergeAndFindElement(quantityTextField,"",testUtils.XPath);
-        if(element.isDisplayed()){
-            isDisplayed=true;
+    public void verifyQuantity() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//table[@class='list86Component-menuList-table ng-star-inserted']//td[2]//input"));
+        if(element.isEnabled()){
+            utils.log().info("QTY is Selectable");
+        }else{
+            utils.log().info("QTY is Not Selectable");
+            int w = 1/0;
         }
-        return isDisplayed;
+
     }
 
     public Boolean verifyQuantityOrderScreen(){
@@ -124,11 +127,17 @@ public class CIEightySixListScreen extends BasePage {
         findandclick(menuItemQtyXpath,"", TestUtils.XPath);
     }
 
-    public String getQuantityTextField(String msg){
-        WebElement element=mergeAndFindElement(quantityTextField,"", TestUtils.XPath);
-        String value= getAttribute(element,"value");
-        utils.log().info(msg);
-        return value;
+    public String getQuantityTextField(String Qty) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element=driver.findElement(By.xpath("//table[@class='list86Component-menuList-table ng-star-inserted']//input[@placeholder='"+Qty+"']"));
+       if(element.isDisplayed()) {
+           utils.log().info("Displayed QTY - "+Qty);
+       }else {
+           utils.log().info("Not Displayed QTY - "+Qty);
+           int w = 1/0;
+       }
+
+        return Qty;
     }
 
     public String getBtnClose(String btnClose,String msg){
@@ -137,22 +146,31 @@ public class CIEightySixListScreen extends BasePage {
         return findAndGetText(btnClose,"", TestUtils.Accessibility);
     }
 
-    public void clickQtyTxtField(String msg){
-//        WebElement elementQty = mergeAndFindElement(qtyTxtFieldXPath,"", TestUtils.XPath);
-//        elementClick(elementQty,msg);
-        findandclick(qtyTxtFieldXPath,"", TestUtils.XPath);
+    public void clickQtyTxtField(String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement elementQty = driver.findElement(By.xpath("//table[@class='list86Component-menuList-table ng-star-inserted']//td[2]"));
+        elementClick(elementQty,msg);
+
     }
 
-    public String getQty(String btnClose,String msg){
-//        WebElement elementQty = mergeAndFindElement(qtyXPath,btnClose, TestUtils.XPath);
-//        String value=elementGetText(elementQty,msg);
-        return findAndGetText(qtyXPath,btnClose, TestUtils.XPath);
+    public void getQty(String btnClose,String menu) throws InterruptedException {
+        Thread.sleep(2500);
+        WebElement elementQty = driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menu+"')])[1]/../span"));
+        String value=elementQty.getText();
+
+        Assert.assertEquals(value,btnClose);
+        utils.log().info("Displayed  - "+btnClose);
+
     }
 
-    public String getQty1(String btnClose,String msg){
-//        WebElement elementQty = mergeAndFindElement(qtyXPath1,btnClose, TestUtils.XPath);
-//        String value=elementGetText(elementQty,msg);
-        return findAndGetText(qtyXPath1,btnClose, TestUtils.XPath);
+    public void getQty1(String btnClose,String menu) throws InterruptedException {
+        Thread.sleep(2500);
+        WebElement elementQty = driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menu+"')])[1]/../span"));
+        String value=elementQty.getText();
+
+        Assert.assertEquals(value,btnClose);
+        utils.log().info("Displayed  - "+btnClose);
+
     }
 
     public String getQty2(String btnClose,String msg){
@@ -168,8 +186,8 @@ public class CIEightySixListScreen extends BasePage {
     }
 
     public String getInsufficientPopUp(String popUp,String msg){
-//        WebElement element =mergeAndFindElement(popUp,"",TestUtils.Accessibility);
-        return findAndGetText(popUp,"",TestUtils.Accessibility);
+        WebElement element =driver.findElement(By.xpath("//p[.='"+popUp+"']"));
+        return element.getText();
     }
 
     public void clickQsrBtn(String btnQsr,String msg){
@@ -211,15 +229,16 @@ public class CIEightySixListScreen extends BasePage {
     }
 
     public void clickEnableLightMode(String msg){
-//        WebElement element =mergeAndFindElement(enableLightModeSwitch,"",TestUtils.XPath);
-//        elementClick(element,msg);
-        findandclick(enableLightModeSwitch,"",TestUtils.XPath);
+        WebElement element =driver.findElement(By.xpath(""));
+        elementClick(element,msg);
+
     }
 
     public String getMenuItemQuantity(String btnValue,String msg){
-//        WebElement element =mergeAndFindElement(menuItemNumber,btnValue,TestUtils.XPath);
-//        String value =elementGetText(element,msg);
-        return findAndGetText(menuItemNumber,btnValue,TestUtils.XPath);
+        WebElement el4 = driver.findElement(By.xpath("//div[contains(@class,'p-col-2 orderlist-qty')]"));
+        Assert.assertEquals(el4.getText(),btnValue);
+        utils.log().info("Quantity is SAME - "+btnValue);
+        return el4.getText();
     }
 
     public void clickLaterButton(String btnButton, String msg) {
@@ -228,17 +247,74 @@ public class CIEightySixListScreen extends BasePage {
         findandclick(btnButtonTwo, btnButton, TestUtils.XPath);
     }
 
-    public String getFreeItemQty(String btnClose,String msg){
-//        WebElement elementQty = mergeAndFindElement(freeItmQtyXpath,btnClose, TestUtils.XPath);
-//        String value=elementGetText(elementQty,msg);
-        return findAndGetText(freeItmQtyXpath,btnClose, TestUtils.XPath);
+    public void getFreeItemQty(String btnClose,String msg) throws InterruptedException {
+        Thread.sleep(2500);
+        WebElement elementQty = driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+msg+"')])[1]/../span"));
+        String value=elementQty.getText();
+
+        Assert.assertEquals(value,btnClose);
+        utils.log().info("Displayed  - "+btnClose);
     }
 
-    public String getEmptyList(String emptyList,String msg){
-//        WebElement elementEmptyList = mergeAndFindElement(emptyList,"", TestUtils.Accessibility);
-//        String value=elementGetText(elementEmptyList,msg);
-        return findAndGetText(emptyList,"", TestUtils.Accessibility);
+    public void clickSearchCloseOnThe86ListScreen() throws InterruptedException {
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[@class='list86Component-searchField list86Component-searchField-pinContainer']//button[@aria-label='reset']")).click();
+
     }
+    public void getEmptyList() throws InterruptedException {
+        Thread.sleep(2000);
+        try {
+            WebElement elementEmptyList = driver.findElement(By.xpath("//ion-grid[@class='list86Component-menuList-pinContainer md hydrated']//tr[.='Chicken Biriyani']"));
+          if(elementEmptyList.isDisplayed()){
+              utils.log().info("Displayed Eight Six");
+              Assert.assertEquals(elementEmptyList.getText(),"Chicken Biriyani");
+
+          }
+        }catch (Exception w){
+          utils.log().info("Not Displayed");
+          Thread.sleep(1000);
+          driver.findElement(By.xpath("//div[@class='list86Component-searchField list86Component-searchField-pinContainer']//button[@aria-label='reset']")).click();
+
+        }
+
+    }
+
+    public void getEmptyList1(String menu) throws InterruptedException {
+        Thread.sleep(2000);
+        try {
+            WebElement elementEmptyList = driver.findElement(By.xpath("//ion-grid[@class='list86Component-menuList-pinContainer md hydrated']//tr[.='"+menu+"']"));
+            if(elementEmptyList.isDisplayed()){
+                utils.log().info("Displayed Eight Six");
+                Assert.assertEquals(elementEmptyList.getText(),"kn");
+
+            }
+        }catch (Exception w){
+            utils.log().info("Not Displayed");
+            Thread.sleep(1000);
+            driver.findElement(By.xpath("//div[@class='list86Component-searchField list86Component-searchField-pinContainer']//button[@aria-label='reset']")).click();
+
+        }
+
+    }
+
+    public void getEmptyList2(String menu) throws InterruptedException {
+        Thread.sleep(2000);
+        try {
+            WebElement elementEmptyList = driver.findElement(By.xpath("//td[.='"+menu+"']"));
+            if(elementEmptyList.isDisplayed()){
+                utils.log().info("Displayed Eight Six");
+                Assert.assertEquals(elementEmptyList.getText(),"Msn");
+
+            }
+        }catch (Exception w){
+            utils.log().info("Not Displayed");
+            Thread.sleep(1000);
+            driver.findElement(By.xpath("//ion-searchbar[@placeholder='Search']//button[@type='button']")).click();
+
+        }
+
+    }
+
 
 
 
@@ -254,16 +330,27 @@ public class CIEightySixListScreen extends BasePage {
         return findAndGetText(txtNoCountDownItems,"", TestUtils.Accessibility);
     }
 
-    public Boolean getDisappearQtyXpath(){
-        Boolean isDisplayed=false;
+    public void shouldVerifyTheQuantityButton(String msg){
+        try{
 
-        List<WebElement> course=(List<WebElement>)driver.findElements(By.xpath(courseXpath1));
-
-        if(course.size()==1)
-        {
-            isDisplayed=true;
+            if(driver.findElement(By.xpath("(//input[@placeholder='0'])[1]")).isSelected()){
+                utils.log().info("Qty Is Enabled");
+                Assert.assertEquals("Mks","NKs");
+            }
+        }catch (Exception h){
+            utils.log().info("Qty Is Not Enabled ");
         }
-        return isDisplayed;
+    }
+
+    public void getDisappearQtyXpath(String msg) {
+        try {
+            if (driver.findElement(By.xpath("//div[@id='react-menu']//div[2]//button//span")).isDisplayed()) {
+                utils.log().info("Displayed 86 List Menus");
+                Assert.assertEquals("mkn", "dss");
+            }
+        } catch (Exception w) {
+            utils.log().info("NOT Displayed 86 List Menus - "+msg);
+        }
     }
 
     public boolean getQtyBtn(){
@@ -297,9 +384,19 @@ public class CIEightySixListScreen extends BasePage {
 
         }
     }
+    public void searchMenuItem(String menuItem) throws InterruptedException {
 
+        Thread.sleep(2000);
+        WebElement listQty = driver.findElement(By.xpath("(//input[@placeholder='Search'])[2]"));
+        sendKeys(listQty,menuItem,"Searched - "+menuItem);
+    }
 
-
+    public void click86ListButtonInLoginScreen() throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement phoneOrdersBtn =  driver.findElement(By.xpath("//button[.=' 86 List ']"));
+        Assert.assertEquals(phoneOrdersBtn.getText(), "86 List");
+        elementClick(phoneOrdersBtn, "Selected Btn As - " + phoneOrdersBtn.getText());
+    }
     public void verify86ListMenuQuantity(String menuName,String QTY){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        WebElement menus = (WebElement) driver.findElementByAccessibilityId(menuName);
@@ -310,6 +407,7 @@ public class CIEightySixListScreen extends BasePage {
         Assert.assertEquals(qtyOfMenu,QTY);
         utils.log().info("86 list menu as - "+menuName+" - "+QTY);
     }
+
 
 
 }

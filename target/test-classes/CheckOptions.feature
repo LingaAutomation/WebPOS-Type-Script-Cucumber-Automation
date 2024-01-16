@@ -1,4 +1,4 @@
-@BarTab12
+@Regression
 
 Feature: Check Options screen operations
 
@@ -274,7 +274,7 @@ Feature: Check Options screen operations
     And I click Options button
     And I click Hold to put order on hold
     And I click Done in the hold window
-    When I click Back to return to Order Management Screen
+    When I click Back button on Check Options Screen
     Then I should see the hold icon over the order section
     When I click Finish button
     Then I should get back to the Table Layout tab
@@ -360,7 +360,7 @@ Feature: Check Options screen operations
     Then I should see the Check Options screen
     And I click Hold to put order on hold
     And I click Done in the hold window
-    When I click Back to return to Order Management Screen
+    When I click Back button on Check Options Screen1
     Then I should see the hold icon over the order section
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
@@ -384,7 +384,7 @@ Feature: Check Options screen operations
     And I click Options button
     And I click Hold to put order on hold
     And I click Done in the hold window
-    When I click Back to return to Order Management Screen
+    When I click Back button on Check Options Screen1
     Then I should see the hold icon over the order section
     When I click Finish button
     Then I should get back to the Table Layout tab
@@ -433,7 +433,7 @@ Feature: Check Options screen operations
     And I click Options button
     And I click Hold to put order on hold
     And I click Done in the hold window
-    When I click Back to return to Order Management Screen
+    When I click Back button on Check Options Screen1
     Then I should see the hold icon over the order section
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
@@ -477,7 +477,7 @@ Feature: Check Options screen operations
     And I click Options button
     And I click Hold to put order on hold
     And I click Done in the hold window
-    When I click Back to return to Order Management Screen
+    When I click Back button on Check Options Screen1
     Then I should see the hold icon over the order section
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
@@ -500,7 +500,7 @@ Feature: Check Options screen operations
     And I click Options button
     And I click Hold to put order on hold
     And I click Done in the hold window
-    When I click Back button on Check Options Screen
+    When I click Back button on Check Options Screen1
     Then I should see the hold icon over the order section
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
@@ -1078,7 +1078,7 @@ Feature: Check Options screen operations
     Then I should see fire coursing
     And I click Coursing Name as "<Course>"
     And I click Back button on the Fire Coursing screen
-    And I click Back button on Check Options Screen
+    And I click Back button on Check Options Screen1
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window

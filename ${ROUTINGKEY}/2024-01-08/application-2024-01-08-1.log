@@ -1,0 +1,608 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 14:53:34.544 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 14:53:34.593 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 14:53:34.626 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 14:53:34.651 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 14:53:34.677 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 14:53:34.702 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:18:04.626 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:22:36.986 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:30:56.027 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:36:08.023 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:39:16.297 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:39:16.341 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:39:16.373 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:39:16.400 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:39:16.426 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:39:16.450 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:42:45.957 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:46:13.962 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:48:34.475 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:51:41.367 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:55:18.412 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:55:18.457 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:55:18.489 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:55:18.517 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:55:18.543 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:55:18.573 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:57:05.684 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:57:05.728 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:57:05.757 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:57:05.783 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:57:05.808 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 16:57:05.833 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:03:16.156 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:05:07.930 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:38:19.850 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:40.178 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:40.222 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:40.255 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:40.281 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:40.309 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:40.334 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:40.460 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:43:41.552 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:06.136 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:06.180 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:06.210 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:06.236 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:06.263 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:06.292 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:07.392 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:07.435 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:45:07.490 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:23.019 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:23.066 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:23.099 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:23.128 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:23.154 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:23.181 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:24.286 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:24.335 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:47:24.389 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:26.798 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:26.843 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:26.876 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:26.901 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:26.926 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:26.951 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:28.061 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:28.109 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:28.161 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:28.208 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:36.245 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:38.288 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:53:40.381 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:55:30.445 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:20.568 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:20.613 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:20.645 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:20.670 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:20.696 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:20.721 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:21.827 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:21.873 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:21.924 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:21.970 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:30.010 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:32.052 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:57:34.147 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:25.653 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:25.697 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:25.728 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:25.756 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:25.781 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:25.806 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:26.907 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:26.953 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:27.005 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:27.049 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:35.128 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:37.170 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 17:59:51.299 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:02:30.627 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:02:40.744 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:05.022 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:05.065 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:05.095 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:05.122 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:05.147 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:05.173 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:06.268 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:06.311 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:06.362 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:06.406 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:14.479 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:16.519 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:06:32.679 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:08.413 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:08.456 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:08.487 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:08.513 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:08.537 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:08.562 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:09.671 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:09.716 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:09.768 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:09.813 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:17.869 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:19.913 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:08:28.088 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:17.851 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:17.895 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:17.929 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:17.955 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:17.980 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:18.005 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:19.115 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:19.162 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:19.211 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:19.257 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:27.332 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:29.376 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:11:52.594 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:15:10.411 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:19.223 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:19.265 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:19.295 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:19.321 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:19.346 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:19.371 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:20.475 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:20.522 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:20.569 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:20.612 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:28.662 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:30.705 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:34.814 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:38.893 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:22:47.982 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:23:04.629 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:34.760 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:34.803 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:34.834 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:34.859 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:34.885 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:34.912 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:36.021 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:36.069 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:36.115 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:36.160 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:44.215 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:46.258 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:50.365 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:25:54.446 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:03.536 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:03.577 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:03.616 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:04.707 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:04.747 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:06.821 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:06.853 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:06.880 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:06.905 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:06.931 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:06.981 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:07.026 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.064 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.084 CICloseDayScreen:303 - Displayed - 0.00 verify the 0.00value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.097 CICloseDayScreen:310 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.107 CICloseDayScreen:326 - Displayed - 0 Check New customer value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.117 CICloseDayScreen:333 - Displayed - 0 Check All employees value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.126 CICloseDayScreen:513 - Displayed - 0.00 verify the total net sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.134 CICloseDayScreen:317 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.143 CICloseDayScreen:1025 - Displayed - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.151 CICloseDayScreen:487 - Displayed - 0.00 Verify Gross Receipt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.159 CICloseDayScreen:557 - Displayed - 0.00 Check gross void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.167 CICloseDayScreen:519 - Displayed - 0.00 Check net void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.173 CICloseDayScreen:569 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.181 CICloseDayScreen:844 - From
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.181 CICloseDayScreen:845 - -
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.181 CICloseDayScreen:846 - 08-Jan-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.181 CICloseDayScreen:847 - 07:56
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:26:15.189 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:41.833 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:41.876 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:41.907 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:41.932 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:41.958 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:41.983 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:43.094 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:43.141 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:43.198 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:43.252 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:51.335 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:53.378 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:28:57.478 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:01.555 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:10.647 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:10.694 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:10.733 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:11.812 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:11.849 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:13.922 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:13.952 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:13.975 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:13.996 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:14.019 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:14.057 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:14.099 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.125 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.147 CICloseDayScreen:303 - Displayed - 0.00 verify the 0.00value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.160 CICloseDayScreen:310 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.171 CICloseDayScreen:326 - Displayed - 0 Check New customer value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.180 CICloseDayScreen:333 - Displayed - 0 Check All employees value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.189 CICloseDayScreen:513 - Displayed - 0.00 verify the total net sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.197 CICloseDayScreen:317 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.205 CICloseDayScreen:1025 - Displayed - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.213 CICloseDayScreen:487 - Displayed - 0.00 Verify Gross Receipt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.221 CICloseDayScreen:557 - Displayed - 0.00 Check gross void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.228 CICloseDayScreen:519 - Displayed - 0.00 Check net void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.235 CICloseDayScreen:569 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.243 CICloseDayScreen:844 - From
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.243 CICloseDayScreen:845 - -
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.243 CICloseDayScreen:846 - 08-Jan-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.243 CICloseDayScreen:847 - 07:59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.244 CICloseDayScreen:851 - 08-Jan-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:29:22.251 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:14.013 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:14.056 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:14.086 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:14.114 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:14.141 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:14.167 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:15.265 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:15.309 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:15.359 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:15.404 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:23.468 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:25.510 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:29.620 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:33.695 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:42.784 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:42.830 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:42.868 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:43.950 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:43.988 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:46.060 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:46.097 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:46.119 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:46.143 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:46.167 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:46.205 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:46.246 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.316 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.339 CICloseDayScreen:303 - Displayed - 0.00 verify the 0.00value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.353 CICloseDayScreen:310 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.370 CICloseDayScreen:326 - Displayed - 0 Check New customer value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.380 CICloseDayScreen:333 - Displayed - 0 Check All employees value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.388 CICloseDayScreen:513 - Displayed - 0.00 verify the total net sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.396 CICloseDayScreen:317 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.404 CICloseDayScreen:1025 - Displayed - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.413 CICloseDayScreen:487 - Displayed - 0.00 Verify Gross Receipt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.420 CICloseDayScreen:557 - Displayed - 0.00 Check gross void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.428 CICloseDayScreen:519 - Displayed - 0.00 Check net void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.434 CICloseDayScreen:569 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.442 CICloseDayScreen:844 - From
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.442 CICloseDayScreen:845 - -
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.443 CICloseDayScreen:846 - 08-Jan-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.443 CICloseDayScreen:847 - 08:01
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.443 CICloseDayScreen:851 - 08-Jan-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:31:54.455 BasePage:278 - Click the Print Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:32:11.130 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:42:31.108 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:45:08.475 Hooks:54 - Failed Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:32.438 Hooks:43 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:32.481 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:32.513 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:32.539 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:32.565 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:32.590 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:33.697 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:33.745 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:33.795 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:33.840 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:41.878 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:43.921 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:48.037 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:46:52.116 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:01.214 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:01.259 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:01.299 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:02.381 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:02.419 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:04.487 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:04.518 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:04.540 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:04.561 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:04.584 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:04.620 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:04.671 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.694 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.714 CICloseDayScreen:303 - Displayed - 0.00 verify the 0.00value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.727 CICloseDayScreen:310 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.737 CICloseDayScreen:326 - Displayed - 0 Check New customer value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.747 CICloseDayScreen:333 - Displayed - 0 Check All employees value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.756 CICloseDayScreen:513 - Displayed - 0.00 verify the total net sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.764 CICloseDayScreen:317 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.772 CICloseDayScreen:1025 - Displayed - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.780 CICloseDayScreen:487 - Displayed - 0.00 Verify Gross Receipt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.789 CICloseDayScreen:557 - Displayed - 0.00 Check gross void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.797 CICloseDayScreen:519 - Displayed - 0.00 Check net void value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.803 CICloseDayScreen:569 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.812 CICloseDayScreen:844 - From
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.812 CICloseDayScreen:845 - -
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.812 CICloseDayScreen:846 - 08-Jan-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.812 CICloseDayScreen:847 - 08:17
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.813 CICloseDayScreen:851 - 08-Jan-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:12.826 BasePage:278 - Click the Print Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 18:47:13.873 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:18.938 Hooks:43 - Start Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:18.982 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:19.013 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:19.038 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:19.063 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:19.088 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:20.199 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:20.247 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:20.297 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:20.341 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:28.427 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:30.468 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:34.576 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:38.652 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:47.744 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:47.783 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:47.824 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:48.909 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:48.948 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.021 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.050 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.078 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.101 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.124 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.161 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.203 CICloseDayScreen:1104 - Displayed - Credit Card scroll close the day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.212 CICloseDayScreen:439 - Displayed - 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:12:51.225 Hooks:54 - Failed Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:51.389 Hooks:43 - Start Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:51.432 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:51.463 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:51.489 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:51.513 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:51.537 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:52.647 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:52.694 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:52.747 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:16:52.791 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:00.831 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:02.875 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:06.981 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:11.049 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:20.134 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:20.181 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:20.221 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:21.305 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:21.344 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.416 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.447 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.469 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.489 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.513 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.550 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.593 CICloseDayScreen:1107 - Displayed - Credit Card scroll close the day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:23.602 CICloseDayScreen:439 - Displayed - 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:17:25.641 Hooks:54 - Failed Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:33.931 Hooks:43 - Start Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:33.974 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:34.002 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:34.027 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:34.053 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:34.079 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:35.182 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:35.227 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:35.275 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:35.320 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:43.370 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:45.411 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:49.520 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:24:53.596 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:02.685 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:02.725 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:03.298 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:04.390 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:04.429 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.506 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.534 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.560 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.581 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.605 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.648 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.692 CICloseDayScreen:1107 - Displayed - Credit Card scroll close the day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:06.700 CICloseDayScreen:439 - Displayed - 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:08.736 CICloseDayScreen:575 - Displayed - Paid In
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:10.768 CICloseDayScreen:583 - Displayed - Paid Out
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:25:10.786 Hooks:54 - Failed Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:51.892 Hooks:43 - Start Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:51.937 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:51.967 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:51.994 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:52.020 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:52.044 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:53.136 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:53.176 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:53.224 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:26:53.268 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:01.351 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:03.392 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:07.506 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:11.586 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:20.677 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:20.719 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:20.761 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:21.841 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:21.889 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:23.961 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:23.995 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:24.018 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:24.039 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:24.063 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:24.100 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:24.149 CICloseDayScreen:1107 - Displayed - Credit Card scroll close the day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:24.159 CICloseDayScreen:439 - Displayed - 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:26.195 CICloseDayScreen:575 - Displayed - Paid In
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:28.232 CICloseDayScreen:583 - Displayed - Paid Out
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:28.248 CICloseDayScreen:717 - Displayed - Cash Expected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:27:28.263 Hooks:54 - Failed Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:00.251 Hooks:43 - Start Scenario Name : verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:00.294 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:00.326 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:00.353 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:00.379 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:00.405 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:01.513 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:01.561 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:01.610 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:01.661 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:09.725 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:11.768 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:15.875 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:19.952 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:29.043 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:29.085 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:29.124 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:30.192 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:30.223 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.290 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.327 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.350 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.372 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.395 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.433 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.476 CICloseDayScreen:1107 - Displayed - Credit Card scroll close the day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:32.485 CICloseDayScreen:439 - Displayed - 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:34.519 CICloseDayScreen:575 - Displayed - Paid In
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:36.553 CICloseDayScreen:583 - Displayed - Paid Out
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:36.570 CICloseDayScreen:717 - Displayed - Cash Expected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:36.591 CICloseDayScreen:590 - Displayed - Over / Shortage
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:29:37.626 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:41.856 Hooks:43 - Start Scenario Name : verify the values in close day screen after creating sales,verify cashierout popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:41.899 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:41.929 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:41.956 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:41.983 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:42.007 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:43.120 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:43.170 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:43.220 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:43.262 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:51.316 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:53.369 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:58:57.510 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:01.599 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:10.711 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:10.758 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:10.797 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:11.888 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:11.932 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:11.982 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:12.006 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:12.027 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:12.048 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:12.070 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:13.150 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:16.233 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:17.829 BasePage:278 - Selected - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:21.929 BasePage:278 - Selected - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:21.988 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:22.033 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:22.082 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:23.137 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:23.179 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:25.256 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:25.293 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:25.317 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:25.340 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:25.364 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:25.404 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 19:59:25.449 Hooks:54 - Failed Scenario Name : verify the values in close day screen after creating sales,verify cashierout popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:18.377 Hooks:43 - Start Scenario Name : verify the values in close day screen after creating sales,verify cashierout popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:18.422 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:18.453 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:18.480 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:18.506 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:18.532 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:19.637 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:19.683 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:19.731 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:19.781 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:27.837 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:29.880 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:33.986 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:38.065 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:47.151 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:47.192 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:47.232 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:48.312 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:48.348 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:48.393 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:48.416 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:48.444 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:48.465 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:48.491 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:49.564 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:52.637 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:54.216 BasePage:278 - Selected - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:58.300 BasePage:278 - Selected - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:58.360 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:58.405 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:58.454 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:59.496 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:59.531 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:59.574 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:02:59.619 Hooks:54 - Failed Scenario Name : verify the values in close day screen after creating sales,verify cashierout popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:27.053 Hooks:43 - Start Scenario Name : verify the values in close day screen after creating sales,verify cashierout popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:27.096 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:27.126 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:27.152 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:27.178 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:27.205 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:28.314 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:28.362 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:28.413 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:28.456 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:36.495 TillManagementScreen:1057 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:38.535 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:42.645 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:46.730 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:55.822 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:55.865 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:55.906 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:56.989 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:57.028 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:57.078 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:57.101 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:57.127 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:57.148 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:57.170 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:06:58.245 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:01.312 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:02.894 BasePage:278 - Selected - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:06.979 BasePage:278 - Selected - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:07.039 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:07.084 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:07.132 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:08.176 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:08.211 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:08.256 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:11.313 CICloseDayScreen:304 - Displayed - 7.14 verify the 50.00value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:11.329 CICloseDayScreen:311 - Displayed - 8.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:11.340 CICloseDayScreen:327 - Displayed - 0 Check New customer value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:11.350 CICloseDayScreen:334 - Displayed - 0 Check All employees value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:13.389 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:17.483 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:19.559 BasePage:278 - Click the text cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:21.618 BasePage:49 - Click the text goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:21.651 BasePage:49 - Click the Cashier out button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:22.235 CICloseDayScreen:369 - Displayed - You Have 0 open cashier(s)
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:22.250 BasePage:49 - click cancel button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-08 20:07:23.549 BasePage:49 - Power button is clicked

@@ -50,6 +50,8 @@ public class LogOuts extends BasePage {
     @FindBy (xpath = "//linga-icon[(@symbol='logout')]")
     private WebElement powerBtn;
 
+    @FindBy (xpath = "//linga-icon[@symbol='powerButton']")
+    private WebElement powerBtn1;
 
     /*Methods*/
 
@@ -102,6 +104,12 @@ public class LogOuts extends BasePage {
         Thread.sleep(1000);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         click(powerBtn, "Power button is clicked");
+    }
+
+    public void pressPowerBtn1() throws InterruptedException {
+        Thread.sleep(1000);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        click(powerBtn1, "Power button is clicked");
     }
 
     public void logOutBeforeClockIn(){

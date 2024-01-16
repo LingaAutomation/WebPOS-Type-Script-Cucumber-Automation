@@ -1,8 +1,11 @@
 package com.qa.stepdef;
 
+import com.qa.pages.ClockInScreen;
 import com.qa.pages.TGLogOuts;
 import com.qa.pages.TGMenuItemPage;
 
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -33,4 +36,8 @@ public class TGLogoutStepDef {
         new TGLogOuts().pressContinue();
     }
 
+    @Given("I enter the Pin number for login")
+    public void iEnterThePinNumberForLogin() throws InterruptedException {
+        new ClockInScreen().clockInScreen();
+    }
 }

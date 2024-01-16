@@ -4,6 +4,7 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
@@ -119,12 +120,12 @@ public class TGOrderTypeWindow extends ClockInScreen {
 // //       WebElement element=mergeAndFindMobileElement(phoneToGoBtn);
 //        elementClick(phoneToGoBtn, "Phone To Go order type is selected.");
 //    }
-    public void selectPhoneToGoOrderType() {
+    public void selectPhoneToGoOrderType() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element=driver.findElement(By.xpath( "//span[.=' PHONE TOGO ']"));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",element);
         elementClick(element, "Phone To Go order type is selected.");
 
-//        driver.findElement(phoneToGoBtn).isDisplayed();
-//        driver.findElement(phoneToGoBtn).click();
     }
     public void selectPhoneDeliveryOrderType() {
         WebElement element=mergeAndFindMobileElement((WebElement) phoneDeliveryBtn);

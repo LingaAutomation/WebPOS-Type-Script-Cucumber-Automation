@@ -1,4 +1,4 @@
-
+@GiftCard
 Feature: Gift Card
 
   Background:
@@ -6,9 +6,6 @@ Feature: Gift Card
     Then I closed the order type window
 
 
-
-
-@GiftCard
   Scenario: Verify gift card tab should open along with Give X
     Given User select QSR mode on menu item page
     When User select DineIn mode
@@ -48,7 +45,7 @@ Feature: Gift Card
 
 
 
-  @GiftCard1
+  @Regression
   Scenario: In Check stats, check should be added in Void Checks and amount should be show as 0.00/Gift Card-Void Recharge
     Given User select QSR mode on menu item page
     Given User select DineIn mode
@@ -95,8 +92,7 @@ Feature: Gift Card
     And I click log off button in order screen
 
 
-#todo
-#  @gift
+  @Regression
   Scenario: Gift Card-Void Recharge after Redeemed
     When User click QSR on Menu Item page
     Then User select DineIn order type
@@ -113,10 +109,11 @@ Feature: Gift Card
     And I select the "T25" in the Table layout screen"click t5 table"
     And I select the number of seats as "1"
     And I tap Continue to finish selecting the number of seats
+    And I get check number
     When User take an order
     Then User click payment button
     When User click gift card payment method
-    Then I click "Continue" in the tip popup "Click Continue Button"
+    Then I click the Continue button on the Total screen
     And User click manuel button
     When User enter gift card number
     #Verify Gift Card- Redeem-Partial Payment
@@ -126,18 +123,18 @@ Feature: Gift Card
     Then User click process
 #    And User click receipt printer button
     When User click Table Layout menu
-    Then User click selected table
+    Then I click the check from the table layout screen
     When User click void button
     Then User select void reason
     And User click add void button
-    And I click the "Done" in the popup screen"click done button"
+    And I click Done button on the Popup
     When I click QSR tab
     And User click cancel button
     And I click log off button in order screen
 
 
 
-#  @gift
+  @Regression
   Scenario: Check should be added in Void Checks and amount should be shown / Gift Card-Void Recharge
     Given User select QSR mode on menu item page
     Given User select DineIn mode
@@ -155,9 +152,8 @@ Feature: Gift Card
     And User click submit button
     When User click Check Status tab
     Then User click Closed Checks tabs
-    And User click Closed Checks tabs
     Then I click the Closed check on check stats
-    And I click "reOpenCheck" in the check stats tab "Click Re-open check button"
+    And I click reopen check button on the check stats screen
     And User click payment button
     Then User select paid order
     And User click delete button
@@ -167,212 +163,217 @@ Feature: Gift Card
     When User click void button
     Then User select void reason
     And User click add void button
-    And I click the "Done" in the popup screen"click done button"
+    And I click Done button on the Popup
     When I click QSR tab
     And User click cancel button
     And I click log off button in order screen
 
 
-  @gi6
-  Scenario: Verify Application Should Be Recharge with GiveX Card
-    When User click QSR on Menu Item page
-    Then User select DineIn order type
-    And I select the "T25" in the Table layout screen"click t5 table"
-    When User click Option Tab
-    Then User click Gift Card tab
-    And User verify Gift Card screen
-    When User select GiveX option
-    Then User enter GiveX card number
-    And I click Done button on the Popup
-    And I click Done button on the Popup
-    Then User enter GiveX charge amount
-    And User verify recurring balance for GiveX Card
-    #Verify Recurring Balance and Beginning Balance with Entered Amount of Give X Card
-    And I click Done button on the Popup
-    And I click the "Done" button in the popup screen "click done button"
-    When I get check number
-    When User click Option Tab
-    Then User click Gift Card tab
-    And User verify Gift Card screen
-    When User select GiveX option
-    Then User enter GiveX card number
-    When User verify recurring balance for GiveX Card after recharge
-    Then User verify previous beginning balance for GiveX Card
-    And User enter GiveX recharge amount
-    And User verify new recurring balance of GiveX Card after recharge
-    And I click Done button on the Popup
-    And I click Done button on the Popup
-    Then User verify GiveX recharge amount on menu item page
-    When User click Cash Tab on Menu Item Page
-    Then User click exact option
-    And User click enter button
-    When I click QSR tab
-    And User click cancel button
-    When User click food category
-    And I click the "Onion Rings" from the menu item "Click item as onion rings"
-    And User click payment button
-    #And I scroll the payment to pay "Scroll payments"
-    Then User select GiveX payment method
-    And User select tip amount which is entered
-    And User click Continue button
-    When User enter GiveX card number on payment page
-    Then User click process
-#    And User click receipt printer button
-    And I click on "Cancel" for closing order screen popup "Click cancel button"
-    When I click "All" in the order screen "Click All button"
-    When User click Check Status tab
-    Then User click Closed Checks tabs
-    Then I click the Closed check on check stats
-    Then I should verify the checks "verify the void check"
-    When User select last closed order detail icon
-    And User verify GiveX charge amount
-    When I click QSR tab
-    And User click cancel button
-    And I click log off button in order screen
+#  @Regression
+#  Scenario: Verify Application Should Be Recharge with GiveX Card
+#    When User click QSR on Menu Item page
+#    Then User select DineIn order type
+#    And I select the "T25" in the Table layout screen"click t5 table"
+#    When User click Option Tab
+#    Then User click Gift Card tab
+#    And User verify Gift Card screen
+#    When User select GiveX option
+#    Then User enter GiveX card number
+#    And I click Done button on the Popup
+#    And I click Done button on the Popup
+#    Then User enter GiveX charge amount
+#    And User verify recurring balance for GiveX Card
+#    #Verify Recurring Balance and Beginning Balance with Entered Amount of Give X Card
+#    And I click Done button on the Popup
+#    And I click the "Done" button in the popup screen "click done button"
+#    When I get check number
+#    When User click Option Tab
+#    Then User click Gift Card tab
+#    And User verify Gift Card screen
+#    When User select GiveX option
+#    Then User enter GiveX card number
+#    When User verify recurring balance for GiveX Card after recharge
+#    Then User verify previous beginning balance for GiveX Card
+#    And User enter GiveX recharge amount
+#    And User verify new recurring balance of GiveX Card after recharge
+#    And I click Done button on the Popup
+#    And I click Done button on the Popup
+#    Then User verify GiveX recharge amount on menu item page
+#    When User click Cash Tab on Menu Item Page
+#    Then User click exact option
+#    And User click enter button
+#    When I click QSR tab
+#    And User click cancel button
+#    When User click food category
+#    And I click the "Onion Rings" from the menu item "Click item as onion rings"
+#    And User click payment button
+#    #And I scroll the payment to pay "Scroll payments"
+#    Then User select GiveX payment method
+#    And User select tip amount which is entered
+#    And User click Continue button
+#    When User enter GiveX card number on payment page
+#    Then User click process
+##    And User click receipt printer button
+#    And I click on "Cancel" for closing order screen popup "Click cancel button"
+#    When I click "All" in the order screen "Click All button"
+#    When User click Check Status tab
+#    Then User click Closed Checks tabs
+#    Then I click the Closed check on check stats
+#    Then I should verify the checks "verify the void check"
+#    When User select last closed order detail icon
+#    And User verify GiveX charge amount
+#    When I click QSR tab
+#    And User click cancel button
+#    And I click log off button in order screen
 
 
-  Scenario: Verify Enter Charge Amount warning popup
-    When User click QSR on Menu Item page
-    Then User select DineIn order type
-    And I select the "T21" in the Table layout screen"click t21 table"
-    When User click Option Tab
-    Then User click Gift Card tab
-    And User verify Gift Card screen
-    When User select GiveX option
-    Then User enter GiveX card number
-    And I click Done button on the Popup
-    Then user verify the enter the charge amount
-    #Verify GiveX Recharge Amount
-    Then User enter GiveX charge amount
-    And I click Done button on the Popup
-    And I click Done button on the Popup
-    When User click Cash Tab on Menu Item Page
-    Then User click exact option
-    And User click enter button
-    And I click the "Power button" in the close the day screen "click Power button"
-
-
-  Scenario: Verify Void Action for GiveX Card
-    When User click QSR on Menu Item page
-    Then User select DineIn order type
-    And I select the "T20" in the Table layout screen"click t5 table"
-    When User click Option Tab
-    Then User click Gift Card tab
-    And User verify Gift Card screen
-    When User select GiveX option
-    Then User enter GiveX card number
-    Then User enter GiveX charge amount
-    #Verify Cancel Button After Entering the GiveX Card Number
-    When User click gift card cancel button
-    Then User click Gift Card tab
-    And User verify Gift Card screen
-    When User select GiveX option
-    Then User enter GiveX card number
-    Then User enter GiveX charge amount
-    And I click Done button on the Popup
-    And I click the "Done" in the popup screen"click done button"
-    When User click Cash Tab on Menu Item Page
-    Then User click exact option
-    And User click enter button
-    When I click QSR tab
-    And User click cancel button
-    When User click food category
-    When I get check number
-    And I click "Onion Rings" from the menu item "Click item as chappathi"
-    When User click payment button
-  #  And I scroll the payment to pay "Scroll payments"
-    Then User select GiveX payment method
-    And I select "10.00" option in the apply tip popup "Tip Amount TL 10.00 is selected"
-    Then I click "Continue" in the tip popup "Click Continue Button"
-    When User enter GiveX card number on payment page
-    Then User click process
-#    And User click receipt printer button
-    And User click cancel button
-    And I click All
-    When User click Check Status tab
-    Then User click Closed Checks tabs
-    Then I click the Closed check on check stats
-    Then User click re-open check button
-    #Verify Void the Check After Deleted the Payment on Give X Card Option
-    When User click payment button
-    Then User verify GiveX payment method and sandwiches total price for Void action
-    When User click submit button
-    And User click cancel button
-    And I click log off button in order screen
-
-
-  Scenario: Verify Application GiveX- Redeem-Forced Redemption
-    When User click QSR on Menu Item page
-    Then User select DineIn order type
-    And I select the "T20" in the Table layout screen"click t5 table"
-    When User click Option Tab
-    Then User click Gift Card tab
-    And User verify Gift Card screen
-    When User select GiveX option
-    Then User enter GiveX card number
-    Then User enter GiveX charge amount
-    And I click Done button on the Popup
-    And I click Done button on the Popup
-    When User click Cash Tab on Menu Item Page
-    Then User click exact option
-    And User click enter button
-    When I click QSR tab
-    And User click cancel button
-    When User click food category
-    And I click "Onion Rings" from the menu item "Click item as Cheesecake"
-    When User click payment button
-  #  And I scroll the payment to pay "Scroll payments"
-    Then User select GiveX payment method
-    And User click Continue button
-    When User enter GiveX card number on payment page
-    Then User click Forced Redemption button
-    And User click process
-#    And User click receipt printer button
-    And User click cancel button
-    And I click log off button in order screen
-
-
-#todo done
-  Scenario: Gift card tab should open along with Give X - Phone Order
-    Given User select QSR mode on menu item page
-    When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
-    And User verify Phone To Go order type
-  #  When User click All button
-  #  Then User click Table Layout menu
-  #  When User click New Check option
-  #  And I select the "T19" in the Table layout screen"click t5 table"
-  #  And I click "1" in the order screen for placing the menu item"click seat one"
-  #  And I click the Continue button on the Total screen
-    When User take an order
-    Then User click Option Tab
-    When User click Gift Card check option
-    And User verify Gift Card screen
-    And User verify Give X option
-    #Application should throw pop-up "Enter the Charge Amount" - Phone Order
-    When User enter gift card number for gift card option
-    And I click Done button on the Popup
-    Then User verify missing charge amount warning popup
-    When User enter gift card charge amount
-    And I click Done button on the Popup
-    When User click payment button
-    Then USer click cash button
-    And User click submit button
-    And I click the "Power button" in the close the day screen "click Power button"
-
-
+#  Scenario: Verify Enter Charge Amount warning popup
+#    When User click QSR on Menu Item page
+#    Then User select DineIn order type
+#    And I select the "T21" in the Table layout screen"click t21 table"
+#    When User click Option Tab
+#    Then User click Gift Card tab
+#    And User verify Gift Card screen
+#    When User select GiveX option
+#    Then User enter GiveX card number
+#    And I click Done button on the Popup
+#    Then user verify the enter the charge amount
+#    #Verify GiveX Recharge Amount
+#    Then User enter GiveX charge amount
+#    And I click Done button on the Popup
+#    And I click Done button on the Popup
+#    When User click Cash Tab on Menu Item Page
+#    Then User click exact option
+#    And User click enter button
+#    And I click power button#
+#
+#  Scenario: Verify Void Action for GiveX Card
+#    When User click QSR on Menu Item page
+#    Then User select DineIn order type
+#    And I select the "T20" in the Table layout screen"click t5 table"
+#    When User click Option Tab
+#    Then User click Gift Card tab
+#    And User verify Gift Card screen
+#    When User select GiveX option
+#    Then User enter GiveX card number
+#    Then User enter GiveX charge amount
+#    #Verify Cancel Button After Entering the GiveX Card Number
+#    When User click gift card cancel button
+#    Then User click Gift Card tab
+#    And User verify Gift Card screen
+#    When User select GiveX option
+#    Then User enter GiveX card number
+#    Then User enter GiveX charge amount
+#    And I click Done button on the Popup
+#    And I click Done button on the Popup
+#    When User click Cash Tab on Menu Item Page
+#    Then User click exact option
+#    And User click enter button
+#    When I click QSR tab
+#    And User click cancel button
+#    When User click food category
+#    When I get check number
+#    And I click "Onion Rings" from the menu item "Click item as chappathi"
+#    When User click payment button
+#  #  And I scroll the payment to pay "Scroll payments"
+#    Then User select GiveX payment method
+#    And I click tip as 10
+#    Then I click the Continue button on the Total screen
+#    When User enter GiveX card number on payment page
+#    Then User click process
+##    And User click receipt printer button
+#    And User click cancel button
+#    And I click All
+#    When User click Check Status tab
+#    Then User click Closed Checks tabs
+#    Then I click the Closed check on check stats
+#    Then User click re-open check button
+#    #Verify Void the Check After Deleted the Payment on Give X Card Option
+#    When User click payment button
+#    Then User verify GiveX payment method and sandwiches total price for Void action
+#    When User click submit button
+#    And User click cancel button
+#    And I click log off button in order screen
+#
+#
+#  Scenario: Verify Application GiveX- Redeem-Forced Redemption
+#    When User click QSR on Menu Item page
+#    Then User select DineIn order type
+#    And I select the "T20" in the Table layout screen"click t5 table"
+#    When User click Option Tab
+#    Then User click Gift Card tab
+#    And User verify Gift Card screen
+#    When User select GiveX option
+#    Then User enter GiveX card number
+#    Then User enter GiveX charge amount
+#    And I click Done button on the Popup
+#    And I click Done button on the Popup
+#    When User click Cash Tab on Menu Item Page
+#    Then User click exact option
+#    And User click enter button
+#    When I click QSR tab
+#    And User click cancel button
+#    When User click food category
+#    And I click "Onion Rings" from the menu item "Click item as Cheesecake"
+#    When User click payment button
+#  #  And I scroll the payment to pay "Scroll payments"
+#    Then User select GiveX payment method
+#    And User click Continue button
+#    When User enter GiveX card number on payment page
+#    Then User click Forced Redemption button
+#    And User click process
+##    And User click receipt printer button
+#    And User click cancel button
+#    And I click log off button in order screen
+#
+#
+##todo done
+#  Scenario: Gift card tab should open along with Give X - Phone Order
+#    Given User select QSR mode on menu item page
+#    When User select Phone ToGo order type
+#    And I click the search field in customer tab "1234567890" "search customer"
+#    And I click the customer name in the list "select customer"
+#    And I click on the save button in the customer field "Save Button Clicked"
+#    And User verify Phone To Go order type
+#  #  When User click All button
+#  #  Then User click Table Layout menu
+#  #  When User click New Check option
+#  #  And I select the "T19" in the Table layout screen"click t5 table"
+#  #  And I click "1" in the order screen for placing the menu item"click seat one"
+#  #  And I click the Continue button on the Total screen
+#    When User take an order
+#    Then User click Option Tab
+#    When User click Gift Card tab
+#    And User verify Gift Card screen
+##    And User verify Give X option
+#    #Application should throw pop-up "Enter the Charge Amount" - Phone Order
+#    When User enter gift card number for gift card option
+#    And I click Done button on the Popup
+#    Then User verify missing charge amount warning popup
+#    When User enter gift card charge amount
+#    And I click Done button on the Popup
+#    When User click payment button
+#    Then USer click cash button
+#    And User click submit button
+#    And I click power button#
+#
 
 #  @gift
 
   Scenario: Gift Card - Void Recharge - Check should be added in Void Checks and amount should be shown - Phone Order xxxxx
+
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
-    And User verify Phone To Go order type
+
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
   #  When User click All button
   #  Then User click Table Layout menu
   #  When User click New Check option
@@ -382,9 +383,9 @@ Feature: Gift Card
   #  And User verify Dine In order type
     When User take an order
     Then User click Option Tab
-    When User click Gift Card check option
+    When User click Gift Card tab
     And User verify Gift Card screen
-    And User verify Give X option
+##    And User verify Give X option
     When User enter gift card number for gift card option
     When User enter gift card charge amount
     And I click Done button on the Popup
@@ -397,17 +398,24 @@ Feature: Gift Card
     When User click void button
     Then User select void reason for gift card
     And User click add void button
-    And I click the "Done" in the popup screen"click done button"
-    And I click the "Power button" in the close the day screen "click Power button"
+    And I click Done button on the Popup
+    And I click power button
 
 
-#  @gift#todo Done
+
   Scenario: Gift Card Void Check - Reopen Closed check from check stats and void the check after deleting payment
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
+
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
   #  When User click All button
   #  Then User click Table Layout menu
@@ -418,9 +426,9 @@ Feature: Gift Card
   #  And User verify Dine In order type
     When User take an order
     Then User click Option Tab
-    When User click Gift Card check option
+    When User click Gift Card tab
     And User verify Gift Card screen
-    And User verify Give X option
+#    And User verify Give X option
     When User enter gift card number for gift card option
     When User enter gift card charge amount
     And I click Done button on the Popup
@@ -433,16 +441,23 @@ Feature: Gift Card
 
 
 
-#  @gift
+
   Scenario: Gift Card - Recuring Balance should be added from the Begining Balance with the Entered amount with Phone Order
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
+
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     Then User click Option Tab
-    When User click Gift Card check option
+    When User click Gift Card tab
     When User enter gift card number for gift card option
     Then User enter gift card charge amount
     And I click Done button on the Popup
@@ -452,28 +467,35 @@ Feature: Gift Card
     When I click QSR tab
     And User click cancel button
     When User click Option Tab
-    Then User click Gift Card check option
+    Then User click Gift Card tab
     When User enter gift card number for gift card option
     And User click cancel button
-    And User click option back button
+#    And User click option back button
     And I click log off button in order screen
 
 
 #  @gift
 
   Scenario: Gift Card-Void Recharge - In Check stats, Check should be added in Void Checks and amount should be show as 0.00
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
+
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     When I get check number
     Then User click Option Tab
-    When User click Gift Card check option
+    When User click Gift Card tab
     And User verify Gift Card screen
-    And User verify Give X option
+#    And User verify Give X option
     When User enter gift card number for gift card option
     Then User enter gift card charge amount
     And I click Done button on the Popup
@@ -486,41 +508,52 @@ Feature: Gift Card
     When User click void button
     Then User select void reason for gift card
     And User click add void button
-    And I click the "Done" in the popup screen"click done button"
+    And I click Done button on the Popup
     Then User click Check Status tab
     When User click Void Checks tabs
     Then I click the Closed check on check stats
-    And I click the "Power button" in the close the day screen "click Power button"
+    And I click power button
 
 
-#todo done
-#  @gift
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
+
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
     When User select payment method with gift card
-    And I select "10.00" option in the apply tip popup "Tip Amount TL 10.00 is selected"
+    And I click tip as 10
     And I click the Continue button on the Total screen
     Then User click manuel button
     When User enter gift card number
     Then User click process
 #    And User click receipt printer button
-    And I click the "Power button" in the close the day screen "click Power button"
+    And I click power button
 
 
-#todo done
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
+
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
@@ -531,22 +564,27 @@ Feature: Gift Card
     When User enter gift card number
     Then User click process
 #    And User click receipt printer button
-    And I click the "Power button" in the close the day screen "click Power button"
+    And I click power button
 
 
-  @85
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip and Partial Payment
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
     And I enter partial payment amount "0","0","2","0"
     When User select payment method with gift card
-    And I select "10.00" option in the apply tip popup "Tip Amount TL 10.00 is selected"
+    And I click tip as 10
     And I click the Continue button on the Total screen
     Then User click manuel button
     When User enter gift card number
@@ -555,15 +593,20 @@ Feature: Gift Card
     Then User verify first paid amount with gift card and tip
     Then USer click cash button
     And User click submit button
-    And I click the "Power button" in the close the day screen "click Power button"
-
+    And I click power button
 
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip and Partial Payment
+    And I click the Settings button
+    And I click the POS settings from Toggle
+    And I enable the required enable phone order tab on the POS settings screen
+    And I click the Toggle Icon button
+    And I click POS Icon from Toggle
+    And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I click the search field in customer tab "1234567890" "search customer"
-    And I click the customer name in the list "select customer"
-    And I click on the save button in the customer field "Save Button Clicked"
+    And I search1 for "1234567890"
+    When I click "Test Automation" to select customer for the seat
+    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
@@ -583,17 +626,17 @@ Feature: Gift Card
     And I click log off button in order screen
 
 
-#  @new
-#todo done
+
   Scenario: Gift Card- Void Item,Gift Card- Void Check,Gift Card- Void
     Given User select QSR mode on menu item page
     When User select DineIn mode
     And I select the "T23" in the Table layout screen"click t4 table"
     When User select first seat on menu item page
     When I get check number
-    When I click the Drop down "arrow down" button in the order screen "click drop down button"
-    And I click "Appetizers" in the top order screen "Select Category as CIMiniFood"
-    When User select Brushetta menu item
+#    When I click the Drop down "arrow down" button in the order screen "click drop down button"
+    And I select category as "Appetizers"
+#    And I click "Appetizers" in the top order screen "Select Category as CIMiniFood"
+    When I select menu item as "BRUSHETTA"
     Then User click order button
     When User click payment button
     Then User select payment method with gift card
@@ -607,20 +650,19 @@ Feature: Gift Card
     Then User click Closed Checks tabs
     Then I click the Closed check on check stats
     When User click re-open check button
-    And I click "Payment" in the order screen for void the credit card amount"Click payment button"
-    And I select the credit card check in the payment screen "Credit card amount clicked"
-    When I click Delete in the payment screen "Delete button clicked"
-    And I click "OK" in the receipt printer popup"Click ok button in the popup"
-    When I click Exit in the payment screen "exit button clicked"
-    And I click "Void" in the order screen "Click void button"
-    And I click the Wrong Item Ordered "Wrong Item Ordered" reason to void my menu item "select reason"
-    And I click "Add" in the void screen"Click add button"
-    And I click the "Done" in the popup screen"click done button"
-    And I click the "Power button" in the close the day screen "click Power button"
+    And I click Payment button in the Order Management Screen
+    And I click payment in the payment window
+    When I click Delete button on the payment window
+#    And I click "OK" in the receipt printer popup"Click ok button in the popup"
+    When I click Exit to return to Order Management Screen
+    And I click Void button on order management screen
+    Then I should see the void reason popup
+    And I click void Reason on the void popup
+    And I click Add Button on the void reason popup
+    Then I should get back to the Table Layout tab
+    And I click power button
 
 
-#  @new
-  #todo
   Scenario: Gift Card-Void Recharge After Redeemed
     Given User select QSR mode on menu item page
     When User select DineIn mode
@@ -661,172 +703,169 @@ Feature: Gift Card
     When User click payment button
     Then User verify paid order with gift card
     And User click submit button
-    When I click QSR tab
-    And User click cancel button
-    And I click log off button in order screen
+
+    And I click power button
 
 
-#todo Done
-#  @new
-  Scenario: GivX Payment - Application should throw pop-up "Enter the Charge Amount"
-    Given User select QSR mode on menu item page
-    When User select DineIn mode
-    And I select the "T14" in the Table layout screen"click t4 table"
-    When User select first seat on menu item page
-    Then User take an order
-    Then User click Option Tab
-    When User click Gift Card tab
-    Then User verify Gift Card screen
-    When User select GiveX option
-    Then User verify GivX Card screen
-    Then User enter GiveX card number
-    #GivX-Activate Account
-    When User enter GiveX charge amount
-    And I click Done button on the Popup
-    Then User verify GiveX Recharge success info popup
-    And I click Done button on the Popup
-    When User click payment button
-    Then USer click cash button
-    And User click submit button
-    When I click QSR tab
-    And User click cancel button
-    And I click log off button in order screen
-
-
-#todo done
-#  @new
-  Scenario: Give X-Recharge - Cancel
-    Given User select QSR mode on menu item page
-    When User select DineIn mode
-    And I click the "Right" in the table layout screen "click right button"
-    And I select the "T15" in the Table layout screen"click t4 table"
-    When User select first seat on menu item page
-    Then User take an order
-    Then User click Option Tab
-    When User click Gift Card tab
-    Then User verify Gift Card screen
-    When User select GiveX option
-    Then User verify GivX Card screen
-    Then User enter GiveX card number
-    When User enter GiveX charge amount
-    Then User click GiveX cancel button
-    And User verify be directed to Check Option page
-    #Give X Tab - Recuring Balance should be added from the Begining Balance with the Entered amount
-    When User click Gift Card tab
-    Then User verify Gift Card screen
-    When User select GiveX option
-    Then User verify GivX Card screen
-    Then User enter GiveX card number
-    When User enter GiveX charge amount
-    And User click cancel button
-    And User click option back button
-    When User click payment button
-    Then USer click cash button
-    And User click submit button
-    When I click QSR tab
-    And User click cancel button
-    And I click log off button in order screen
-
-
-#todo
-  Scenario: Application should takes to the Order screen with GiveX Card
-    Given User select QSR mode on menu item page
-    When User select DineIn mode
-    And I select the "T14" in the Table layout screen"click t14 table"
-    When User select first seat on menu item page
-    Then User take an order
-    Then User click Option Tab
-    When User click Gift Card tab
-    Then User verify Gift Card screen
-    When User select GiveX option
-    Then User verify GivX Card screen
-    Then User enter GiveX card number
-    And I click Done button on the Popup
-    When User enter GiveX charge amount
-    Then User click gift card cancel button
-    #Give X-Void Recharge - Application throws Pop-up should come as "Can't void, GiveX gift Card Present in this check" - xxxx
-    When User click Gift Card tab
-    Then User verify Gift Card screen
-    When User select GiveX option
-    Then User verify GivX Card screen
-    Then User enter GiveX card number
-    And I click Done button on the Popup
-    When User enter GiveX charge amount
-    And I click Done button on the Popup
-    And I click Done button on the Popup
-#    Then I should see recharge successful popup
-    When User take an order
-    When I get check number
-    Then User click payment button
-    And USer click cash button
-    And User click submit button
-    When User click Check Status tab
-    Then User click Closed Checks tabs
-    Then I click the Closed check on check stats
-    And User click re-open check button
-    Then User click payment button
-    Then User select paid order
-    And User click delete button
-#    And User click receipt printer button
-    And User click exit on payment page
-    When User click void button
-    And I click Done button on the Popup
-    Then User click payment button
-    And USer click cash button
-    And User click submit button
-    And I click the "Power button" in the close the day screen "click Power button"
-
-
-#todo done
-  Scenario Outline: Give X-Void Recharge - "Void and Select Void Reason" - Application throws Pop-up should come as "Can't void, GiveX gift Card Present in this check" - xxxx
-    Given User select QSR mode on menu item page
-    When User select DineIn mode
-    And I select the "T11" in the Table layout screen"click t4 table"
-    When User select first seat on menu item page
-    When I click the Drop down "arrow down" button in the order screen "click drop down button"
-    And I click "CIFOOD" in the top order screen "Select Category as CIMiniFood"
-    And I click "Mutton" from the menu item "Click item as MiniIdly"
-    Then User click Option Tab
-    When User click Gift Card tab
-    Then User verify Gift Card screen
-    When User select GiveX option
-    Then User verify GivX Card screen
-    Then User enter GiveX card number
-    When User enter GiveX charge amount
-    And I click Done button on the Popup
-    And I click Done button on the Popup
-    Then User click void button
-    Then user verify the popup "<btnPopup>" "verify the popup"
-    And I click Done button on the Popup
-    And I click Cash button for Complete Sale
-    Then User click exact option
-    And User click enter button
-    And I click the "Power button" in the close the day screen "click Power button"
-
-    Examples:
-      |btnPopup|
-      |Cannot void, GiveX or Factor4 or ValuTec gift card present in this check.|
-
-
-#todo done
-  Scenario: Give X- Payment - Entire amount should be detected from Give X card - xxx
-    Given User select QSR mode on menu item page
-    When User select DineIn mode
-    And I select the "T11" in the Table layout screen"click t11 table"
-    When User click add new seat button on menu item
-    Then User verify added new seat
-    When User select first seat on menu item page
-    When I click the Drop down "arrow down" button in the order screen "click drop down button"
-    And I click "CIFOOD" in the top order screen "Select Category as CIMiniFood"
-    And I click "Mutton" from the menu item "Click item as MiniIdly"
-    When User click payment button
-  #  And I scroll the payment to pay "Scroll payments"
-    Then User select GiveX payment method
-    And User select tip amount which is entered
-    And User click Continue button
-    And I click on the card number text field "enter card number"
-    And I enter the GiveX Number as "603628237912001380863" "enter card number"
-    And I click "Hide keyboard" button in the keyboard "Click Back"
-    And I click "Process" in the Give-X Card popup "Click Process button"
-    Then I click "OK" in the order screen "Click OK button"
-    And I click the "Power button" in the close the day screen "click Power button"
+##todo Done
+##  @new
+#  Scenario: GivX Payment - Application should throw pop-up "Enter the Charge Amount"
+#    Given User select QSR mode on menu item page
+#    When User select DineIn mode
+#    And I select the "T14" in the Table layout screen"click t4 table"
+#    When User select first seat on menu item page
+#    Then User take an order
+#    Then User click Option Tab
+#    When User click Gift Card tab
+#    Then User verify Gift Card screen
+#    When User select GiveX option
+#    Then User verify GivX Card screen
+#    Then User enter GiveX card number
+#    #GivX-Activate Account
+#    When User enter GiveX charge amount
+#    And I click Done button on the Popup
+#    Then User verify GiveX Recharge success info popup
+#    And I click Done button on the Popup
+#    When User click payment button
+#    Then USer click cash button
+#    And User click submit button
+#    When I click QSR tab
+#    And User click cancel button
+#    And I click log off button in order screen
+#
+#
+##todo done
+##  @new
+#  Scenario: Give X-Recharge - Cancel
+#    Given User select QSR mode on menu item page
+#    When User select DineIn mode
+#    And I click the "Right" in the table layout screen "click right button"
+#    And I select the "T15" in the Table layout screen"click t4 table"
+#    When User select first seat on menu item page
+#    Then User take an order
+#    Then User click Option Tab
+#    When User click Gift Card tab
+#    Then User verify Gift Card screen
+#    When User select GiveX option
+#    Then User verify GivX Card screen
+#    Then User enter GiveX card number
+#    When User enter GiveX charge amount
+#    Then User click GiveX cancel button
+#    And User verify be directed to Check Option page
+#    #Give X Tab - Recuring Balance should be added from the Begining Balance with the Entered amount
+#    When User click Gift Card tab
+#    Then User verify Gift Card screen
+#    When User select GiveX option
+#    Then User verify GivX Card screen
+#    Then User enter GiveX card number
+#    When User enter GiveX charge amount
+#    And User click cancel button
+#    And User click option back button
+#    When User click payment button
+#    Then USer click cash button
+#    And User click submit button
+#    When I click QSR tab
+#    And User click cancel button
+#    And I click log off button in order screen
+#
+#
+##todo
+#  Scenario: Application should takes to the Order screen with GiveX Card
+#    Given User select QSR mode on menu item page
+#    When User select DineIn mode
+#    And I select the "T14" in the Table layout screen"click t14 table"
+#    When User select first seat on menu item page
+#    Then User take an order
+#    Then User click Option Tab
+#    When User click Gift Card tab
+#    Then User verify Gift Card screen
+#    When User select GiveX option
+#    Then User verify GivX Card screen
+#    Then User enter GiveX card number
+#    And I click Done button on the Popup
+#    When User enter GiveX charge amount
+#    Then User click gift card cancel button
+#    #Give X-Void Recharge - Application throws Pop-up should come as "Can't void, GiveX gift Card Present in this check" - xxxx
+#    When User click Gift Card tab
+#    Then User verify Gift Card screen
+#    When User select GiveX option
+#    Then User verify GivX Card screen
+#    Then User enter GiveX card number
+#    And I click Done button on the Popup
+#    When User enter GiveX charge amount
+#    And I click Done button on the Popup
+#    And I click Done button on the Popup
+##    Then I should see recharge successful popup
+#    When User take an order
+#    When I get check number
+#    Then User click payment button
+#    And USer click cash button
+#    And User click submit button
+#    When User click Check Status tab
+#    Then User click Closed Checks tabs
+#    Then I click the Closed check on check stats
+#    And User click re-open check button
+#    Then User click payment button
+#    Then User select paid order
+#    And User click delete button
+##    And User click receipt printer button
+#    And User click exit on payment page
+#    When User click void button
+#    And I click Done button on the Popup
+#    Then User click payment button
+#    And USer click cash button
+#    And User click submit button
+#    And I click power button
+#
+##todo done
+#  Scenario Outline: Give X-Void Recharge - "Void and Select Void Reason" - Application throws Pop-up should come as "Can't void, GiveX gift Card Present in this check" - xxxx
+#    Given User select QSR mode on menu item page
+#    When User select DineIn mode
+#    And I select the "T11" in the Table layout screen"click t4 table"
+#    When User select first seat on menu item page
+##    When I click the Drop down "arrow down" button in the order screen "click drop down button"
+#    And I click "CIFOOD" in the top order screen "Select Category as CIMiniFood"
+#    And I click "Mutton" from the menu item "Click item as MiniIdly"
+#    Then User click Option Tab
+#    When User click Gift Card tab
+#    Then User verify Gift Card screen
+#    When User select GiveX option
+#    Then User verify GivX Card screen
+#    Then User enter GiveX card number
+#    When User enter GiveX charge amount
+#    And I click Done button on the Popup
+#    And I click Done button on the Popup
+#    Then User click void button
+#    Then user verify the popup "<btnPopup>" "verify the popup"
+#    And I click Done button on the Popup
+#    And I click Cash button for Complete Sale
+#    Then User click exact option
+#    And User click enter button
+#    And I click power button
+#    Examples:
+#      |btnPopup|
+#      |Cannot void, GiveX or Factor4 or ValuTec gift card present in this check.|
+#
+#
+##todo done
+#  Scenario: Give X- Payment - Entire amount should be detected from Give X card - xxx
+#    Given User select QSR mode on menu item page
+#    When User select DineIn mode
+#    And I select the "T11" in the Table layout screen"click t11 table"
+#    When User click add new seat button on menu item
+#    Then User verify added new seat
+#    When User select first seat on menu item page
+##    When I click the Drop down "arrow down" button in the order screen "click drop down button"
+#    And I click "CIFOOD" in the top order screen "Select Category as CIMiniFood"
+#    And I click "Mutton" from the menu item "Click item as MiniIdly"
+#    When User click payment button
+#  #  And I scroll the payment to pay "Scroll payments"
+#    Then User select GiveX payment method
+#    And User select tip amount which is entered
+#    And User click Continue button
+#    And I click on the card number text field "enter card number"
+#    And I enter the GiveX Number as "603628237912001380863" "enter card number"
+#    And I click "Hide keyboard" button in the keyboard "Click Back"
+#    And I click "Process" in the Give-X Card popup "Click Process button"
+#    Then I click "OK" in the order screen "Click OK button"
+#    And I click power button

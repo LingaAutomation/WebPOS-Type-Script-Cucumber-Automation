@@ -30,14 +30,23 @@ public class PhoneOrderStepDef {
         new PhoneOrderScreen().clickNewTab();
     }
 
-    @And("^I click active  as \"([^\"]*)\"$")
+    @And("^I click active driver as \"([^\"]*)\"$")
     public void iClickActiveDriverAs(String Name ) throws InterruptedException {
         new PhoneOrderScreen().clickActiveDriver(Name);
     }
-
-    @Then("^I should see  is offline popup$")
+    @Then("I should see driver is offline popup")
     public void iShouldSeeDriverIsOfflinePopup() {
         new PhoneOrderScreen().verifyPopup();
+    }
+
+    @And("I click Yes button on driver is offline popup")
+    public void iClickYesButtonOnDriverIsOfflinePopup() {
+        new PhoneOrderScreen().tapYesButton();
+    }
+
+    @And("I click active driver as {string} in the Phone Order Screen")
+    public void iClickActiveDriverAsInThePhoneOrderScreen(String name) throws InterruptedException {
+        new PhoneOrderScreen().clickActiveDriverAfterassigned(name);
     }
 
     @And("^I click No button on  is offline popup$")
@@ -45,10 +54,10 @@ public class PhoneOrderStepDef {
         new PhoneOrderScreen().tapNoButton();
     }
 
-    @And ("^I click Yes button on  is offline popup$")
-    public void iClickYesButtonOnDriverIsOfflinePopup(){
-        new PhoneOrderScreen().tapYesButton();
-    }
+//    @And ("^I click Yes button on is offline popup$")
+//    public void iClickYesButtonOnDriverIsOfflinePopup(){
+//        new PhoneOrderScreen().tapYesButton();
+//    }
 
     @Then ("^I should see  as \"([^\"]*)\" is added$")
     public void iShouldSeeDriverAsIsAdded(String name){
@@ -227,6 +236,7 @@ public class PhoneOrderStepDef {
     public void iClickTheClosedCheckInNewTabWindow() throws InterruptedException {
         new PhoneOrderScreen().selectCloseCheckInNewTab();
     }
+
 
     @And ("^I click the Closed check in complete tab$")
     public void iClickTheClosedCheckInCompleteTab() throws InterruptedException {

@@ -358,6 +358,14 @@ public class ClockInScreen extends UserLoginScreen{
         pressLogin();
     }
 
+    public void clockInScreen() throws InterruptedException {
+        Thread.sleep(2000);
+        pressPin1Time();
+        pressPin2Time();
+        pressPin3Time();
+        pressPin4Time();
+    }
+
     public ClockInScreen ClockInForBarTabUsingBarTabButton(){
         pressPin1();
         pressPin2();

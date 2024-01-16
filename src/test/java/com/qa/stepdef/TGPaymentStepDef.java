@@ -543,7 +543,7 @@ TestUtils utils = new TestUtils();
     //new nov 17
     @And("User verify CC Side payment with tips and check based discount before tax as free item1")
     public void userVerifyCCSidePaymentWithTipsAndCheckBasedDiscountBeforeTaxAsFreeItem1() {
-        new TGPaymentPage().verifySideCCPaymentWithTipsAndOpenItemBeforeTaxAmountSafetyLimitAsDecimal1();
+        new TGPaymentPage().verifySideCCPaymentWithTipsAndOpenItemBeforeTaxAmountSafetyLimitAsDecimal2();
     }
 
     @And("User verify CC Side payment with tips and check based discount before tax as free item for Sandwiches")

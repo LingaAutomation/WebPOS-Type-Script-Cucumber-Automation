@@ -1,4 +1,4 @@
-@MenuOption
+@Regression
 Feature: Menu Option In scenarios
 
   Background:

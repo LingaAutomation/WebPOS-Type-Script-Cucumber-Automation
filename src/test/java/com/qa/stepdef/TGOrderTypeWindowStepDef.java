@@ -31,7 +31,7 @@ public class TGOrderTypeWindowStepDef {
     }
 
     @And("^I select the Phone To Go order types$")
-    public void iSelectThePhoneToGoOrderType() {
+    public void iSelectThePhoneToGoOrderType() throws InterruptedException {
         new TGOrderTypeWindow().selectPhoneToGoOrderType();
     }
 
@@ -82,7 +82,7 @@ public class TGOrderTypeWindowStepDef {
     }
 
     @When("User select Phone ToGo order type")
-    public void userSelectPhoneToGoOrderType() {
+    public void userSelectPhoneToGoOrderType() throws InterruptedException {
         new TGOrderTypeWindow().selectPhoneToGoOrderType();
     }
 

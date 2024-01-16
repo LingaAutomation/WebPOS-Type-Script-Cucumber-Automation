@@ -24,7 +24,12 @@ public class TGTaxExemptStepDef {
     }
 
     @And("I click \"([^\"]*)\" in the Modifier page \"([^\"]*)\"$")
-    public void iClickInTheModifierPage(String btnModifier,String msg) {
+    public void iClickInTheModifierPage(String btnModifier,String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(btnModifier,msg);
+    }
+
+    @And("I click \"([^\"]*)\" in the Modifier page1 \"([^\"]*)\"$")
+    public void iClickInTheModifierPage1(String btnModifier,String msg) throws InterruptedException {
+        new CIPaymentScreen().commonBtnClickOption1(btnModifier,msg);
     }
 }

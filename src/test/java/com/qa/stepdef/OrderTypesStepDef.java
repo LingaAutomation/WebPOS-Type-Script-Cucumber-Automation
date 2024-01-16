@@ -199,12 +199,12 @@ public class OrderTypesStepDef {
     public void iClickTheSettingsButton(){ new BarTabScreen().pressSettings();}
 
     @And ("^I click 86List button in the operation window$")
-    public void iClick86ListButtonInTheOperationWindow(){
+    public void iClick86ListButtonInTheOperationWindow() throws InterruptedException {
         new OrderManagementScreen().click86ListButton();
     }
 
     @Then ("^I should see 86 list window$")
-    public void iShouldSee86ListWindow(){
+    public void iShouldSee86ListWindow() throws InterruptedException {
         new OrderManagementScreen().verify86ListWindow();
     }
 
@@ -215,11 +215,15 @@ public class OrderTypesStepDef {
     @And ("I click the POS settings from Toggle")
     public void iClickThePOSSettingsFromToggle(){ new BarTabScreen().pressPOSset();}
 
+    @And ("^I enable the required enable phone order tab on the POS settings screen$")
+    public void iEnableTheRequiredEnablePhoneOrderTabOnThePosSettingsScreen() throws InterruptedException {
+        new BarTabScreen().enableTheRequiredEnable();
+    }
     @And("I click the Quick Bar Icon")
     public void iClickTheQuickBarIcon() throws Exception {new BarTabScreen().pressQuickBar();}
 
     @And("I click the Toggle Icon button")
-    public void iClickTheToggleIconButton(){new BarTabScreen().pressToggleBtn();}
+    public void iClickTheToggleIconButton() throws InterruptedException {new BarTabScreen().pressToggleBtn();}
 
     @And ("I click POS Icon from Toggle")
     public void iClickPOSIconFromToggle(){new BarTabScreen().pressPOSIcon();}

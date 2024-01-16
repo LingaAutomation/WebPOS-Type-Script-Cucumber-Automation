@@ -2,6 +2,7 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -93,12 +94,30 @@ public class BarTabScreen extends OrderManagementScreen{
 
     public void pressPOSset(){elementClick(POSsettings,"Tapped POS Setting");}
 
+    public void enableTheRequiredEnable() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            WebElement askCustomerName = driver.findElement(By.xpath("//ion-row[4]//ion-list//ion-item[2]//ion-toggle[@aria-checked='false']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
+            if (askCustomerName.isDisplayed()) {
+                Thread.sleep(2000);
+                askCustomerName.click();
+                Thread.sleep(2000);
+            }
+        }catch (Exception w){
+            utils.log().info("Already Enabled");
+        }
+
+    }
+
     public void pressQuickBar() throws Exception {
         new BasePage().click(driver.findElement(By.xpath("//button[contains(.,'BarTab')]")));
         utils.log().info("Tapped Quick bar Icon");
     }
 
-    public void pressToggleBtn(){elementClick(ToggleIcon,"Tapped the Toggle Icon button");}
+    public void pressToggleBtn() throws InterruptedException {
+        elementClick(ToggleIcon,"Tapped the Toggle Icon button");
+        Thread.sleep(1000);}
 
     public void pressPOSIcon(){elementClick(POSIcon,"Tapped POS Icon ");}
 

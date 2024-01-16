@@ -1,6 +1,8 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import io.cucumber.java.bs.A;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.junit.Assert;
@@ -146,6 +148,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     String seat5OrderScreen = "//button[@id='5']";
 
     String Done1 = "//button[contains(.,'Done')]";
+    String Done3 = "//button[(.=' Done ')]";
 
     String Done2 = "//mat-dialog-container[@id='alert-content']//button[contains(.,' Done ')]";
 
@@ -464,6 +467,15 @@ public class TableLayOutScreen extends OrderManagementScreen {
         Thread.sleep(2000);
         try {
             elementClick(Done1, "Tapped Done Button on the Popup");
+        } catch (Exception e) {
+            utils.log().info("Tapped Done");
+        }
+    }
+
+    public void pressDone3() throws InterruptedException {
+        Thread.sleep(2000);
+        try {
+            elementClick(Done3, "Tapped Done Button on the Popup");
         } catch (Exception e) {
             utils.log().info("Tapped Done");
         }
@@ -1065,15 +1077,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
         elementClick(OperationBtnTableLayout, "Tapped Operation Button on the Table Layout");
     }
 
-    public void getOperationScene() {
-        try {
-            if (find(operationScreen, 2)) {
-                utils.log().info("Operation screen is Displayed");
-            }
-        } catch (Exception e) {
-            utils.log().info("Operation screen is not Displayed");
-        }
+    public void getOperationScene() throws InterruptedException {
+        Thread.sleep(2000);
+        Assert.assertEquals(operationScreen.getText(),"Operation");
 
+                utils.log().info("Operation screen is Displayed");
     }
 
     public void verifyAllSeatIsMerged(String numb) throws InterruptedException {
@@ -1404,10 +1412,10 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void verifyDeliveryChargeAddedForLoyalty() {
-        WebElement delivery = driver.findElement(By.xpath("Delivery Charge "));//Prod
+        WebElement delivery = driver.findElement(By.xpath("//div[.='Delivery charge']"));//Prod
         //WebElement delivery = (WebElement) driver.findElement(By.xpath()("Delivery Charge  ");//Staging
         String charge = delivery.getText();
-        WebElement amount = driver.findElement(By.xpath("25,00"));
+        WebElement amount = driver.findElement(By.xpath("//div[.='Delivery charge']/..//div[contains(@class,'pos-end')]"));
         String Price = amount.getText();
         if ((delivery.isDisplayed()) && (amount.isDisplayed())) {
             utils.log().info(charge);
@@ -1417,9 +1425,9 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void verifySubtotalShouldNotChange() {
-        WebElement delivery = driver.findElement(By.xpath("Subtotal"));
+        WebElement delivery = driver.findElement(By.xpath("//p[.=' Subtotal ']"));
         String total = delivery.getText();
-        WebElement amount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"TL 0,00\"])[1]"));
+        WebElement amount = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
         String Price = amount.getText();
         if ((delivery.isDisplayed()) && (amount.isDisplayed())) {
             utils.log().info(total);
@@ -1429,17 +1437,23 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void tapCloseDay() {
-        WebElement closeDay = driver.findElement(By.xpath("Close Day"));
+
+        WebElement closeDay = driver.findElement(By.xpath("//button[.='Close Day']"));
         elementClick(closeDay, "Tapped close day");
     }
 
-    public void verifyCloseDayScreen() {
-        WebElement closeDay = driver.findElement(By.xpath("Close Day"));
-        if (closeDay.isDisplayed()) {
-            utils.log().info("Close day is Displayed");
-        } else {
-            utils.log().info("Not Displayed");
-        }
+    public void clickCloseAllCashierBtn() throws InterruptedException {
+
+        WebElement closeDay = driver.findElement(By.xpath("//span[.=' Close All Cashiers ']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", closeDay);
+        Thread.sleep(3000);
+        elementClick(closeDay, "Tapped Close All Cashier");
+    }
+
+    public void verifyCloseDayScreen() throws InterruptedException {
+        Thread.sleep(3000);
+        WebElement closeDay = driver.findElement(By.xpath("//label[.='Close Day']"));
+        Assert.assertEquals(closeDay.getText(),"Close Day");
     }
 
 
@@ -2208,7 +2222,7 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void clickTableNumberOnTheOrderScreen(){
-        WebElement tableNumber = (WebElement) driver.findElement(By.xpath(""));
+        WebElement tableNumber =  driver.findElement(By.xpath("//button[@id='os_selectedSeat']"));
         elementClick(tableNumber,"Selected - "+tableNumber.getText());
 
     }
@@ -2408,6 +2422,32 @@ Assert.assertEquals(menu.getText(),money);
        String actualGratuity = (Gratuity1.getText().replaceAll("[A-Z$,. ]",""));
         Assert.assertEquals(ExpectedGratuity,actualGratuity);
 
+    }
+
+    public void shouldSeeDoYouWantToCloseTheDayPopup() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element1 = driver.findElement(By.xpath("//p[.='Do you want to close the day']"));
+        Assert.assertEquals(element1.getText(),"Do you want to close the day");
+    }
+
+    public void clickYesBtn() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element1 = driver.findElement(By.xpath("//button[.=' Yes ']"));
+        elementClick(element1,"Selected Yes");
+    }
+
+    public void clickSubmitBtn() throws InterruptedException {
+        Thread.sleep(4000);
+        WebElement element1 = driver.findElement(By.xpath("//span[.=' Submit ']"));
+        Assert.assertEquals(element1.getText(),"Submit");
+
+       elementClick(element1,"Selected Submit");
+    }
+
+    public void shouldSeeCloseDayPerformedSuccessPopup() throws InterruptedException {
+        Thread.sleep(7000);
+        WebElement element1 = driver.findElement(By.xpath("//p[.='Close Day performed successfully ']"));
+        Assert.assertEquals(element1.getText(),"Close Day performed successfully");
     }
 }
 

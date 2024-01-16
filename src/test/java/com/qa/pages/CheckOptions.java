@@ -497,6 +497,13 @@ public class CheckOptions extends OrderManagementScreen {
         return elementGetText(giftCardAddUp, "Gift Card is Add to Order screen - ");
     }
 
+    @FindBy(xpath = "//div[@class='menu-section orderlist-flex ']//div[contains(.,'GC-12345')]")
+    private WebElement giftCardAddUp1;
+    public String verifyGiftCardAddup1() throws InterruptedException {
+        Thread.sleep(2000);
+        return elementGetText(giftCardAddUp1, "Gift Card is Add to Order screen - ");
+    }
+
     public void enterGiftCardNumber() throws InterruptedException {
         Thread.sleep(2000);
         WebElement el1 = driver.findElement(By.xpath("//p[.=' 0000 0000 0000 0000 ']"));
@@ -510,6 +517,22 @@ public class CheckOptions extends OrderManagementScreen {
 //        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
         elementClick("//button[.=' Continue ']", "Tapped Continue ");
     }
+
+    public void enterGiftCardNumber1() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement el1 = driver.findElement(By.xpath("//p[.=' 0000 0000 0000 0000 ']"));
+        elementClick(el1, "Tapped Card Number Field");
+        //click(cardNumber,"Tapped Card Number Field");
+        elementClick("//button[.='1']", "Tapped Pin 1");
+        elementClick("//button[.='2']", "Tapped Pin 2");
+        elementClick("//button[.='3']", "Tapped Pin 3");
+        elementClick("//button[.='4']", "Tapped Pin 4");
+        elementClick("//button[.='5']", "Tapped Pin 5");
+        //WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.XPath);
+//        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
+        elementClick("//button[.=' Continue ']", "Tapped Continue ");
+    }
+
     public void pressOpenCashDrawer() {
         elementClick(openCashDrawerBtn, "Tapped Open Cash Drawer Button");
     }
@@ -521,7 +544,7 @@ public class CheckOptions extends OrderManagementScreen {
     public String verifyFireCoursing() {
         return elementGetText(fireCoursingTxt, "Fire coursing is Displayed - ");
     }
-    @FindBy(xpath = "//button[.=' Cancel ']")
+    @FindBy(xpath = "//button[.='Cancel']")
     WebElement backBtn;
     public void pressBack() throws InterruptedException {
         Thread.sleep(2000);

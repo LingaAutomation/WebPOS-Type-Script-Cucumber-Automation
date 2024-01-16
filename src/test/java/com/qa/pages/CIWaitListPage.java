@@ -1,6 +1,8 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import static com.qa.utils.TestUtils.driver;
 import org.openqa.selenium.By;
@@ -38,7 +40,7 @@ public class CIWaitListPage extends BasePage {
 
     String waitListRow="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell";
 
-    String btnSubmit = "//XCUIElementTypeButton[@name=\"  Submit\"]";
+    String btnSubmit = "//button[contains(.,'Submit')]";
 
     String nameField="//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField[1]";
 
@@ -54,9 +56,11 @@ public class CIWaitListPage extends BasePage {
 
 
     public void commonBtn(String btnName, String msg) {
-//        WebElement elementTxtInPopup = mergeAndFindElement(btnXpath,btnName , TestUtils.XPath);
-//        elementClick(elementTxtInPopup, msg);
-        findandclick(btnXpath,btnName , TestUtils.XPath);
+
+        WebElement elementTxtInPopup = driver.findElement(By.xpath("//linga-icon[@symbol='down']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elementTxtInPopup);
+        elementClick(elementTxtInPopup, msg);
+
     }
 
     public void clickAssign(String id,String msg){
@@ -99,12 +103,27 @@ public class CIWaitListPage extends BasePage {
         findandclick(nameTest, "", TestUtils.XPath);
     }
 
-    public String getTxtPopup(String txtEditPopup, String msg) {
-//        WebElement elementTxtInPopup = mergeAndFindElement(txtEditPopup, "", TestUtils.Accessibility);
+    public void getTxtPopup(String txtEditPopup, String msg) {
+//        WebElement elementTxtInPopup
 //        String text = elementGetText(elementTxtInPopup, msg);
-        return findAndGetText(txtEditPopup, "", TestUtils.Accessibility);
+//        return findAndGetText(txtEditPopup, "", TestUtils.Accessibility);
     }
 
+    public void getTxtPopup2(String txtEditPopup, String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement elementTxtInPopup = driver.findElement(By.xpath("//td[.='"+txtEditPopup+"']"));
+      Assert.assertEquals(elementTxtInPopup.getText(),txtEditPopup);
+      utils.log().info("Displayed - "+txtEditPopup);
+    }
+
+
+    public void getTxtPopup1(String txtEditPopup, String msg) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement elementTxtInPopup = driver.findElement(By.xpath("//div[@class='list86Component']//p[.=' 86 List ']"));
+        Assert.assertEquals(elementTxtInPopup.getText(),txtEditPopup);
+        utils.log().info("Displayed - "+txtEditPopup);
+
+    }
     public String getTxtSeatNumber(String commonWaitList, String msg) {
 //        WebElement elementTxtSeatNo = mergeAndFindElement(commonWaitListXPath, commonWaitList, TestUtils.XPath);
 //        String text = elementGetText(elementTxtSeatNo, msg);
@@ -137,9 +156,9 @@ public class CIWaitListPage extends BasePage {
     }
 
     public void clickBtnSubmit(String msg) {
-//        WebElement elementTxtInPopup = mergeAndFindElement(btnSubmit, "", TestUtils.XPath);
-//        elementClick(elementTxtInPopup, msg);
-        findandclick(btnSubmit, "", TestUtils.XPath);
+        WebElement elementTxtInPopup = driver.findElement(By.xpath(btnSubmit));
+        elementClick(elementTxtInPopup, msg);
+//        findandclick(btnSubmit, "", TestUtils.XPath);
     }
 
     public String getWaitList(String commonwaitList,String msg){
@@ -261,7 +280,12 @@ public class CIWaitListPage extends BasePage {
         return value;
     }
 
+    public void clickClose1(){
+        driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).click();
+    }
 
-
+   public void clickClose2(){
+        driver.findElement(By.xpath("//ion-searchbar[@placeholder='Search']//button[@type='button']")).click();
+   }
 
 }

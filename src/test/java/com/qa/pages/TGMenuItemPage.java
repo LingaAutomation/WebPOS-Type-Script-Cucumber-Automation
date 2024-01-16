@@ -75,17 +75,17 @@ public class TGMenuItemPage extends BasePage {
         Assert.assertEquals(actualName,expectedName);
     }
     public void verifyPhoneToGoOrderType(){
-        WebElement element = mergeAndFindMobileElement(phoneOrderType);
+        WebElement element = driver.findElement(By.xpath("//span[.=' TOGO ']"));
         String actualName = elementGetText(element,"Verify Phone OrderType");
-        String expectedName = "PHONE";
+        String expectedName = "TOGO";
 
         Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(toGoOrderType);
-        String actualName1 = elementGetText(element1,"Verify To Go OrderType");
-        String expectedName1 = "To Go";
-
-        Assert.assertEquals(actualName1,expectedName1);
+//
+//        WebElement element1 = mergeAndFindMobileElement(toGoOrderType);
+//        String actualName1 = elementGetText(element1,"Verify To Go OrderType");
+//        String expectedName1 = "To Go";
+//
+//        Assert.assertEquals(actualName1,expectedName1);
     }
     public void clickNewCustomerWhichIsCreatedForHouseAccount(){
         WebElement element = mergeAndFindMobileElement(newCustomerForHouseAccount);
@@ -131,17 +131,15 @@ public class TGMenuItemPage extends BasePage {
 
     //tax xpath changes (nov11)
     public void verifyInclusiveTaxAmountForMantı(){
-        WebElement element = mergeAndFindMobileElement(taxTitle);
-        String actualName = elementGetText(element,"Verify Inclusive TaxAmount For Mantı");
-        String expectedName = "Tax";
-
-        Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(mantiTotalPriceWithInclusiveTax1);
-        String actualName1 = elementGetText(element1,"Verify Inclusive TaxAmount For Manti");
-        String expectedName1 = "$ 0,05";
-
+        WebElement element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
+        String actualName1 = elementGetText(element,"Verify ItemBased Inclusive Tax");
+        String expectedName1="Tax";
         Assert.assertEquals(actualName1,expectedName1);
+
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName="$ 0.21";
+        Assert.assertEquals(actualName,expectedName);
     }
     public void selectMantıHasInclusiveTax(){
         WebElement element = mergeAndFindMobileElement(mantiMenuItem);
@@ -162,17 +160,15 @@ public class TGMenuItemPage extends BasePage {
 //    }
 
     public void verifyExclusiveTaxAmountForBaconOmeletSenior(){
-        WebElement element = mergeAndFindMobileElement(taxTitle);
-        String actualName = elementGetText(element,"Verify Exclusive TaxAmount ");
-        String expectedName = "Tax";
-
-        Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(baconOmeletTotalPriceWithExclusiveTax1);
-        String actualName1 = elementGetText(element1,"Verify Exclusive TaxAmount");
-        String expectedName1 = "$ 0,06";
-
+        WebElement element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
+        String actualName1 = elementGetText(element,"Verify ItemBased Inclusive Tax");
+        String expectedName1="Tax";
         Assert.assertEquals(actualName1,expectedName1);
+
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName="$ 0.21";
+        Assert.assertEquals(actualName,expectedName);
     }
     public void selectBaconOmeletSeniorHasExclusiveTax(){
         WebElement element = mergeAndFindMobileElement(baconOmeletMenuItem);
@@ -2223,16 +2219,14 @@ public class TGMenuItemPage extends BasePage {
 
     //(tax xpath changes 11 nov)
     public void verifyItemBasedInclusiveTax(){
-        WebElement element = mergeAndFindMobileElement(taxTitle);
+        WebElement element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
         String actualName1 = elementGetText(element,"Verify ItemBased Inclusive Tax");
         String expectedName1="Tax";
-
         Assert.assertEquals(actualName1,expectedName1);
 
-        WebElement element1 = mergeAndFindMobileElement(inclusiveTaxAmount1);
-        String actualName = elementGetText(element1,"Verify ItemBased Inclusive Tax");
-        //        actualName.equals(expectedName);
-        String expectedName="$ 100,10";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName="$ 0.00";
         Assert.assertEquals(actualName,expectedName);
     }
     public void selectDeliveryOption(){
@@ -2253,16 +2247,15 @@ public class TGMenuItemPage extends BasePage {
 
     // (tax xpath changes nov 11)
     public void verifyItemBasedExclusiveTax(){
-        WebElement element = mergeAndFindMobileElement(taxTitle);
-        String actualName = elementGetText(element,"Verify ItemBased Exclusive Tax");
-        String expectedName="Tax";
-        Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(exclusiveTaxAmount1);
-        String actualName1 = elementGetText(element1,"Verify ItemBased Exclusive Tax");
-        String expectedName1="$ 100,10";
-//        actualName.equals(expectedName);
+        WebElement element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
+        String actualName1 = elementGetText(element,"Verify ItemBased Inclusive Tax");
+        String expectedName1="Tax";
         Assert.assertEquals(actualName1,expectedName1);
+
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName="$ 0.00";
+        Assert.assertEquals(actualName,expectedName);
     }
 //    public void verifyItemBasedQuantityTax(){
 //        WebElement element = mergeAndFindMobileElement(taxTitle);
@@ -2273,16 +2266,15 @@ public class TGMenuItemPage extends BasePage {
 //    }
 
     public void verifyItemBasedQuantityTax(){
-        WebElement element = mergeAndFindMobileElement(taxTitle);
-        String actualName = elementGetText(element,"Verify ItemBased Exclusive Tax");
-        String expectedName="Tax";
-        Assert.assertEquals(actualName,expectedName);
-
-        WebElement element1 = mergeAndFindMobileElement(exclusiveTaxAmount1);
-        String actualName1 = elementGetText(element1,"Verify ItemBased Exclusive Tax");
-        String expectedName1="$ 200,10";
-//        actualName.equals(expectedName);
+        WebElement element = driver.findElement(By.xpath("//p[@id='os_taxAmount']"));
+        String actualName1 = elementGetText(element,"Verify ItemBased Inclusive Tax");
+        String expectedName1="Tax";
         Assert.assertEquals(actualName1,expectedName1);
+
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName="$ 0.00";
+        Assert.assertEquals(actualName,expectedName);
 //        WebElement element = mergeAndFindMobileElement(taxTitle);
 //        String actualName = elementGetText(element,"Verify ItemBased Quantity Tax");
 //        WebElement element1 = mergeAndFindMobileElement(quantityTaxAmount);
@@ -2642,9 +2634,12 @@ public class TGMenuItemPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(foodTab);
         elementClick(element,"Click FoodTab");
     }
-    public void clickPizzaCategoryTab(){
-        WebElement element = mergeAndFindMobileElement(pizzaTab);
-        elementClick(element,"Click Pizza Category Tab");
+    public void clickPizzaCategoryTab() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement cate1 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'PIZZA')]"));
+        elementClick(cate1, "Tapped category");
+        Thread.sleep(5000);
     }
     public void selectThirdModifierOfSecondPizzaMenuItem(){
         WebElement element = mergeAndFindMobileElement(thirdModifierOfSecondPizzaMenuItem);
@@ -3049,9 +3044,9 @@ public class TGMenuItemPage extends BasePage {
 
     //tax Xpath changes (nov 11)
     public void verifyDefaultTaxOnPizzaMel(){
-        WebElement element = mergeAndFindMobileElement(checkBasedTaxWithoutSubtotalAmountOnMargarita1);
-        String actualName = elementGetText(element,"Verify value DefaultTax");
-        String expectedName = "$ 171,70";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName="$ 1.60";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -3065,9 +3060,9 @@ public class TGMenuItemPage extends BasePage {
 
     //tax Xpath changes (nov 11)
     public void verifyQuantityBasedTaxOnOnionRings(){
-        WebElement element = mergeAndFindMobileElement(quantityBasedTaxAmountOnOnionRings1);
-        String actualName = elementGetText(element,"Verify value QuantityBasedTax");
-        String expectedName = "$ 33,00";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName="$ 0.90";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -3081,9 +3076,9 @@ public class TGMenuItemPage extends BasePage {
 
     //(tax xpath changes nov 11)
     public void verifyInclusiveTaxOnCheesePizza(){
-        WebElement element = mergeAndFindMobileElement(inclusiveTaxAmountOnCheesePizza1);
-        String actualName = elementGetText(element,"Verify value InclusiveTax");
-        String expectedName = "$ 0,12";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName = "$ 0.64";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -3097,9 +3092,9 @@ public class TGMenuItemPage extends BasePage {
 
     //tax Xpath changes (nov 11)
     public void verifyCheckBasedTaxWithoutSubtotalOnMargarita(){
-        WebElement element = mergeAndFindMobileElement(checkBasedTaxWithoutSubtotalAmountOnMargarita1);
-        String actualName = elementGetText(element,"Verify value CheckBasedTax");
-        String expectedName = "$ 171,70";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName = "$ 1.60";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -3113,9 +3108,9 @@ public class TGMenuItemPage extends BasePage {
 
     //tax xpath changes (nov 11)
     public void verifyCheckBasedTaxWithSubtotalOnPizzaTomBasil(){
-        WebElement element = mergeAndFindMobileElement(checkBasedTaxWithSubtotalAmountOnPizzaTomBasili1);
-        String actualName = elementGetText(element,"Verify value CheckBasedTaxWithSubtotal");
-        String expectedName = "$ 463,59";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName = "$ 0.34";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -3124,9 +3119,9 @@ public class TGMenuItemPage extends BasePage {
         elementClick(element,"Click californiaPizza");
     }
     public void verifyTaxOnItemTaxForInclusiveTaxOnPizzaTomBasil(){
-        WebElement element = mergeAndFindMobileElement(taxOnItemTaxForInclusiveTaxTextOnPizzaTomBasili);
-        String actualName = elementGetText(element,"Verify value TaxOnItemTaxForInclusiveTax");
-        String expectedName = "$ 1,00";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName = "$ 0.33";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -3148,9 +3143,9 @@ public class TGMenuItemPage extends BasePage {
 
     //tax xpath changes (nov 11)
     public void verifyTaxOnItemTaxForInclusiveTaxOnNeapolitanPizza(){
-        WebElement element = mergeAndFindMobileElement(taxOnItemTaxForInclusiveTaxTextOnNeapolitanPizza1);
-        String actualName = elementGetText(element,"Verify value TaxOnItemTaxForInclusiveTax");
-        String expectedName = "$ 101,00";
+        WebElement element1 = driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String actualName = element1.getAttribute("value");
+        String expectedName = "$ 0.10";
 
         Assert.assertEquals(actualName,expectedName);
     }

@@ -359,7 +359,7 @@ public class TillManagementStepDef {
 
     @And ("^I verify the cannot close the shift, store have the active checks$")
     public void iVerifyTheCannotCloseTheShiftStoreHaveTheActiveCheck(){
-        new Regression().verifyTheCannotCloseTheShiftStoreHaveTheActiveCheck();
+        new TillManagementScreen().verifyTheCannotCloseTheShiftStoreHaveTheActiveCheck();
     }
     @Then ("^I should see cashier out saved successfully popup$")
     public void iShouldSeeCashierOutSavedSuccessfullyPopup(){

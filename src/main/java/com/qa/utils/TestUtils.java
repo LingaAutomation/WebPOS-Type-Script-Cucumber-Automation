@@ -27,6 +27,7 @@ public class TestUtils {
     public static String menu =" ";
     public static List<String> menuNames;
     public static String price=" ";
+    public static String menuCount=" ";
     public static String loyaltyBalance=" ";
     public static final String XPath = "XPath";
     public static String tipTotal=" ";

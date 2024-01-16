@@ -50,7 +50,7 @@ public class TGCheckStatusStepDef {
     }
 
     @And("User click Void Checks tabs in check status screen")
-    public void userClickVoidChecksTabsInCheckStatusScreen() {
+    public void userClickVoidChecksTabsInCheckStatusScreen() throws InterruptedException {
         checkStatus.clickVoidChecksTab();
     }
 
@@ -209,7 +209,7 @@ public class TGCheckStatusStepDef {
 
     }
     @And("User click Void Checks tabs")
-    public void userClickVoidChecksTabs() {
+    public void userClickVoidChecksTabs() throws InterruptedException {
         new TGCheckStatusPage().clickVoidChecksTab();
     }
     @Then("User click Closed Checks tabs")

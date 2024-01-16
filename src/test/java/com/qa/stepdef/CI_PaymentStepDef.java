@@ -69,12 +69,12 @@ public class CI_PaymentStepDef {
     }
 
     @When("I click \"([^\"]*)\" in the top order screen \"([^\"]*)\"$")
-    public void iClickInTheTopOrderScreen(String Category, String msg) {
+    public void iClickInTheTopOrderScreen(String Category, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(Category, msg);
     }
 
     @When("^I click \"([^\"]*)\" from the menu item \"([^\"]*)\"$")
-    public void iClickFromTheMenuItem(String item, String msg) {
+    public void iClickFromTheMenuItem(String item, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(item, msg);
     }
 
@@ -84,17 +84,17 @@ public class CI_PaymentStepDef {
     }
 
     @And("I select \"([^\"]*)\" as goknur loyalty \"([^\"]*)\"$")
-    public void iSelectAsGoknurLoyalty(String customer, String msg) {
+    public void iSelectAsGoknurLoyalty(String customer, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(customer, msg);
     }
 
     @And("^I click \"([^\"]*)\" in the order screen for selecting Option \"([^\"]*)\"$")
-    public void iClickInTheOrderScreenForSelectingTaxExempt(String btnOption, String msg) {
+    public void iClickInTheOrderScreenForSelectingTaxExempt(String btnOption, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnOption, msg);
     }
 
     @And("^I select the \"([^\"]*)\" in the Tax exempt screen\"([^\"]*)\"$")
-    public void iSelectTheInTheTaxExemptScreen(String optCharity, String msg) {
+    public void iSelectTheInTheTaxExemptScreen(String optCharity, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(optCharity, msg);
     }
 
@@ -130,7 +130,7 @@ public class CI_PaymentStepDef {
     }
 
     @And("^I select \"([^\"]*)\" payment method \"([^\"]*)\"$")
-    public void iSelectPaymentMethod(String btnCreditCard, String msg) {
+    public void iSelectPaymentMethod(String btnCreditCard, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(btnCreditCard, msg);
     }
 
@@ -207,6 +207,16 @@ public class CI_PaymentStepDef {
         new CIPaymentScreen().pressPercentagePin1(pin1);
     }
 
+    @And("^I enter the percentage2 as \"([^\"]*)\"$")
+    public void iEnterThePercentage2As(String pin1) throws InterruptedException {
+        new CIPaymentScreen().pressPercentagePin2(pin1);
+    }
+
+    @When ("^I click the reason as \"([^\"]*)\" in the Till Management$")
+    public void iClickTheReasonAsInTheTillManagement(String value) throws InterruptedException {
+        new CIPaymentScreen().clickTheReaonTill(value);
+    }
+
     @And("I click on the text field in the varying gratuity popup")
     public void iClickOnTheTextFieldInTheVaryingGratuityPopup() {
         new CIPaymentScreen().clickPercentageTextField();
@@ -264,7 +274,7 @@ public class CI_PaymentStepDef {
     }
 
     @Then("I click on \"([^\"]*)\" to pay the Gift Card amount \"([^\"]*)\"$")
-    public void iClickOnToPayTheGiftCardAmount(String giftCard, String msg) {
+    public void iClickOnToPayTheGiftCardAmount(String giftCard, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(giftCard,msg);
     }
 
@@ -318,7 +328,7 @@ public class CI_PaymentStepDef {
     }
 
     @And("I click \"([^\"]*)\" in the Gift Card Popup \"([^\"]*)\"$")
-    public void iClickInTheGiftCardPopup(String btnManual, String msg) {
+    public void iClickInTheGiftCardPopup(String btnManual, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(btnManual,msg);
     }
 
@@ -460,7 +470,7 @@ public class CI_PaymentStepDef {
     }
 
     @And("^I select the \"([^\"]*)\" as john \"([^\"]*)\"$")
-    public void iSelectTheAsJohn(String customerName, String msg) {
+    public void iSelectTheAsJohn(String customerName, String msg) throws InterruptedException {
         ciPaymentScreen.commonBtnClickOption(customerName,msg);
     }
 

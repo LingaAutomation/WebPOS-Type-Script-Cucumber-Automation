@@ -1,9 +1,6 @@
 package com.qa.stepdef;
 
-import com.qa.pages.CICloseDayScreen;
-import com.qa.pages.CIPaymentScreen;
-import com.qa.pages.CIOrderPage;
-import com.qa.pages.CIWaitListPage;
+import com.qa.pages.*;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
@@ -22,39 +19,80 @@ public class CICloseDayStepDef {
         new CICloseDayScreen().clickBtnOperation(msg);
     }
 
+    @And("^I click the operation button in the login screen$")
+    public void iClickTheOperationButtonInTheLoginScreen() {
+        new CICloseDayScreen().clickBtnOperation();
+    }
+
+    @When ("^I click the 86 list button in the operation screen$")
+    public void iClickThe86ListButtonInTheOperationScreen() throws InterruptedException {
+        new CICloseDayScreen().clickThe86ListButton();
+    }
+
+
     @And("^I click the \"([^\"]*)\" in the operation screen\"([^\"]*)\"$")
     public void iClickTheInTheOperationScreen(String closeDay, String msg) {
         new CICloseDayScreen().commonAccessibilityId(closeDay, msg);
     }
 
-    @And("^I click the Till Management \"([^\"]*)\" in the operation screen\"([^\"]*)\"$")
-    public void iClickTheTillManagementInTheOperationScreen(String tillMangement, String msg) {
-        new CIPaymentScreen().commonBtnClickOption(tillMangement, msg);
+    @And("^I click the Till Management \"([^\"]*)\" in the operation screen$")
+    public void iClickTheTillManagementInTheOperationScreen(String tillMangement) throws InterruptedException {
+        new CIPaymentScreen().clickTillManagement(tillMangement);
     }
 
     @Then("^I should verify the value Net Sale of \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheValueNetSaleOf(String txtTotal, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtTotalNetSale(txtTotal, msg), txtTotal);
+    public void iShouldVerifyTheValueNetSaleOf(String txtTotal, String msg) throws InterruptedException {
+       new CICloseDayScreen().getTxtTotalNetSale(txtTotal, msg);
     }
 
     @And("^I should verify the value of Gross Sale \"([^\"]*)\" \"([^\"]*)\"$")
     public void iShouldVerifyTheGrossSaleShouldDisplayValue(String txtSale, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtGrossSale(txtSale, msg), txtSale);
+      new CICloseDayScreen().getTxtGrossSale(txtSale, msg);
+    }
+
+    @And("^I should verify the value of Gross Sale1 \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iShouldVerifyTheGrossSale1ShouldDisplayValue(String txtSale, String msg) {
+        new CICloseDayScreen().getTxtGrossSale1(txtSale, msg);
     }
 
     @And("^I should verify the value of New Customer \"([^\"]*)\" \"([^\"]*)\"$")
     public void iShouldVerifyTheNewCustomerShouldDisplayValue(String txtCustomer, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtNewCustomer(txtCustomer, msg), txtCustomer);
+       new CICloseDayScreen().getTxtNewCustomer(txtCustomer, msg);
     }
 
     @And("^I should verify the value of All Employees \"([^\"]*)\" \"([^\"]*)\"$")
     public void iShouldVerifyTheAllEmployeesShouldDisplayValue(String txtEmployees, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtAllEmployees(msg), txtEmployees);
+new CICloseDayScreen().getTxtAllEmployees(txtEmployees,msg);
     }
 
     @When("^I click the Close the day button in the operation screen \"([^\"]*)\" \"([^\"]*)\"$")
     public void iClickTheCloseTheDayButtonInTheOperationScreen(String name, String msg) {
         new CICloseDayScreen().btnCloseTheDay(name, msg);
+    }
+
+    @When("^I click the Close the day button in the operation screen$")
+    public void iClickTheCloseTheDayButtonInTheOperationScreen() throws InterruptedException {
+        new CICloseDayScreen().closeTheDayBtn();
+    }
+
+    @Then ("^I should see do you want to close the day popup$")
+    public void iShouldSeeDoYouWantToCloseTheDayPopup() throws InterruptedException {
+        new TableLayOutScreen().shouldSeeDoYouWantToCloseTheDayPopup();
+    }
+
+    @When ("^I click yes button on the do you want close the day popup$")
+    public void iClickYesButtonOnTheDoYouWantCloseTheDayPopup() throws InterruptedException {
+        new TableLayOutScreen().clickYesBtn();
+    }
+
+    @When ("^I click the submit button the close the day checklist$")
+    public void iClickTheSubmitButtonTheCloseTheDayChecklist() throws InterruptedException {
+        new TableLayOutScreen().clickSubmitBtn();
+    }
+
+    @When ("^I should see close day performed successfully popup$")
+    public void iShouldSeeCloseDayPerformedSuccessfullyPopup() throws InterruptedException {
+        new TableLayOutScreen().shouldSeeCloseDayPerformedSuccessPopup();
     }
 
     @And("^I click \"([^\"]*)\" in the close the day Popup window \"([^\"]*)\"$")
@@ -63,13 +101,18 @@ public class CICloseDayStepDef {
     }
 
     @And("^I click Cashier text in the close the day checklist screen \"([^\"]*)\"$")
-    public void iClickCashierTextInTheCloseTheDayChecklistScreen(String msg) {
+    public void iClickCashierTextInTheCloseTheDayChecklistScreen(String msg) throws InterruptedException {
         new CICloseDayScreen().clickTxtCashier(msg);
     }
 
     @And("^I click Goknur Bati in the active cashiers screen \"([^\"]*)\"$")
-    public void iClickGoknurBatiInTheActiveCashiersScreen(String msg) {
+    public void iClickGoknurBatiInTheActiveCashiersScreen(String msg) throws InterruptedException {
         new CICloseDayScreen().clickTxtGoknur(msg);
+    }
+
+    @When("^I should not see open cashier in the close day checklist$")
+    public void iShouldNotSeeOpenCashierInTheCloseDayChecklist(){
+        new CICloseDayScreen().shouldNotSeeOpenCashierPopup();
     }
 
     @When("^I click Cashier Out button \"([^\"]*)\" in the active cashiers screen \"([^\"]*)\"$")
@@ -88,8 +131,8 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I should verify the employee name \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheEmployeeName(String txtEmployee, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().commonGetText(txtEmployee,msg), txtEmployee);
+    public void iShouldVerifyTheEmployeeName(String txtEmployee, String msg) throws InterruptedException {
+new CICloseDayScreen().commonGetText(txtEmployee,msg);
     }
 
     @And("^I click the \"([^\"]*)\" in the close the day screen \"([^\"]*)\"$")
@@ -109,7 +152,7 @@ public class CICloseDayStepDef {
 
     @Then("^I should verify the Report of\"([^\"]*)\"\"([^\"]*)\"$")
     public void iShouldVerifyTheReportOf(String txtSales, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtCustomer(txtSales, msg), txtSales);
+        new CICloseDayScreen().getTxtCustomer(txtSales, msg);
     }
 
     @And("^I click the menu item for void the item \"([^\"]*)\"$")
@@ -128,13 +171,22 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I click the \"([^\"]*)\" in the employees list \"([^\"]*)\"$")
-    public void iClickTheInTheEmployeesList(String employee, String msg) {
+    public void iClickTheInTheEmployeesList(String employee, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(employee, msg);
     }
 
+    @When ("^I click x button employee$")
+    public void iClickXButtonEmployee(){
+        new CIPaymentScreen().clickXBtn();
+    }
+
+    @Then ("^I click generate button$")
+    public void iClickGenerateButton(){
+        new CICloseDayScreen().clickGenerateBtn();
+    }
     @Then("^It should show the \"([^\"]*)\" as \"([^\"]*)\"$")
-    public void itShouldShowTheAs(String employee, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().commonGetText(employee, msg), employee);
+    public void itShouldShowTheAs(String employee, String msg) throws InterruptedException {
+      new CICloseDayScreen().commonGetText(employee, msg);
     }
 
     @Then("^I should verify the cash record in the sale recap after creating sale \"([^\"]*)\"$")
@@ -158,13 +210,13 @@ public class CICloseDayStepDef {
     }
 
     @Then("^It should show the Gross Receipt as \"([^\"]*)\" \"([^\"]*)\"$")
-    public void itShouldShowTheGrossReceiptAs(String grossReceipt, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getGrossRceipt(msg), grossReceipt);
+    public void itShouldShowTheGrossReceiptAs(String grossReceipt, String msg) throws InterruptedException {
+        new CICloseDayScreen().getGrossRceipt(grossReceipt,msg);
     }
 
     @Then("^It should show the Gross Sale \"([^\"]*)\" as \"([^\"]*)\"$")
-    public void itShouldShowTheGrossSaleAs(String grossSale, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getGrossSales(msg),grossSale);
+    public void itShouldShowTheGrossSaleAs(String grossSale, String msg) throws InterruptedException {
+        new CICloseDayScreen().getGrossSales(grossSale,msg);
     }
 
     @Then("^It should show the Net Sale \"([^\"]*)\" as \"([^\"]*)\"$")
@@ -173,18 +225,18 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I should verify the net sale in the sale recap\"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldNetSaleValueInSaleRecapReport(String txtNetSaleValue, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getNetSaleValue(msg),txtNetSaleValue);
+    public void iShouldNetSaleValueInSaleRecapReport(String txtNetSaleValue, String msg) throws InterruptedException {
+     new CICloseDayScreen().getNetSaleValue(txtNetSaleValue,msg);
     }
 
     @Then("^I should verify the value of \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheValueOf(String txtVoidNetSale,String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtNetSale(msg),txtVoidNetSale);
+    public void iShouldVerifyTheValueOf(String txtVoidNetSale,String msg) throws InterruptedException {
+        new CICloseDayScreen().getTxtNetSale(txtVoidNetSale,msg);
     }
 
     @Then("^I should verify the net void in the sale recap after creating sale\"([^\"]*)\" \"([^\"]*)\"$")
     public void iShouldVerifyTheNetVoidInTheSaleRecapAfterCreatingSale(String txtNetVoidValue, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getNetVoidValue(msg),txtNetVoidValue);
+       new CICloseDayScreen().getNetVoidValue(txtNetVoidValue,msg);
     }
 
     @Then("^I should verify the tax exempt in sale recap report before creating sale \"([^\"]*)\"$")
@@ -193,32 +245,43 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I should verify the Tax exempt amount in sale recap report \"([^\"]*)\"$")
-    public void iShouldVerifyTheTaxExemptAmountInSaleRecapReport(String initialTaxExempt) {
+    public void iShouldVerifyTheTaxExemptAmountInSaleRecapReport(String initialTaxExempt) throws InterruptedException {
         new CICloseDayScreen().getTaxExcemptValue(initialTaxExempt);
     }
 
     @Then("^I should verify the value of the \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheValueOfThe(String txtInitialGrossVoid,String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getInitialGrossVoid(msg), txtInitialGrossVoid);
+    public void iShouldVerifyTheValueOfThe(String txtInitialGrossVoid,String msg) throws InterruptedException {
+        new CICloseDayScreen().getInitialGrossVoid(txtInitialGrossVoid,msg);
+    }
+
+    @Then("^I should verify the value Net void of the \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iShouldVerifyTheValueNetVoidOfThe(String txtInitialGrossVoid,String msg) {
+        new CICloseDayScreen().getNetVoidValue(txtInitialGrossVoid,msg);
     }
 
     @Then("^I should verify the gross void value in the sale recap after creating sale\"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheGrossVoidValueInTheSaleRecapAfterCreatingSale(String txtGrossVoidValue, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getGrossVoidValue(msg), txtGrossVoidValue);
+    public void iShouldVerifyTheGrossVoidValueInTheSaleRecapAfterCreatingSale(String txtGrossVoidValue, String msg) throws InterruptedException {
+      new CICloseDayScreen().getGrossVoidValue(txtGrossVoidValue,msg);
     }
 
     @Then("^I should verify the initial Gross sale value as\"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheInitialGrossSaleValueAs(String txtInitialGrossSale, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getInitialGrossSale(msg),txtInitialGrossSale);
+    public void iShouldVerifyTheInitialGrossSaleValueAs(String txtInitialGrossSale, String msg) throws InterruptedException {
+      new CICloseDayScreen().getInitialGrossSale(txtInitialGrossSale,msg);
     }
 
+    @Then("^I should verify the initial Grand sale value as\"([^\"]*)\" \"([^\"]*)\"$")
+    public void iShouldVerifyTheInitialGrandSaleValueAs(String txtInitialGrandSale, String msg) throws InterruptedException {
+        new CICloseDayScreen().getInitialGrandSale(txtInitialGrandSale, msg);
+    }
+
+
     @Then("^I should verify the value of Paid In amount in sale recap report \"([^\"]*)\"$")
-    public void iShouldVerifyTheValueOfPaidOutAmountInSaleRecapReport(String initialPaidIn) {
+    public void iShouldVerifyTheValueOfPaidOutAmountInSaleRecapReport(String initialPaidIn) throws InterruptedException {
         new CICloseDayScreen().getPaidInAmountValue(initialPaidIn);
     }
 
     @Then("^I should verify the value of Paid Out amount in sale recap report \"([^\"]*)\"$")
-    public void iShouldVerifyTheValueOfPaidInAmountInSaleRecapReport(String initialPaidOut) {
+    public void iShouldVerifyTheValueOfPaidInAmountInSaleRecapReport(String initialPaidOut) throws InterruptedException {
         new CICloseDayScreen().getPaidOutValue(initialPaidOut);
     }
 
@@ -227,9 +290,9 @@ public class CICloseDayStepDef {
         new CICloseDayScreen().getOverShortageValue(overShortageInitialVal);
     }
 
-    @And("^I should verify employee \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheEmployee(String txtDate, String msg) {
-        Assert.assertEquals(new CICloseDayScreen().commonGetText(txtDate,msg),txtDate);
+    @And("^I should verify employee \"([^\"]*)\"$")
+    public void iShouldVerifyTheEmployee(String txtDate) throws InterruptedException {
+        new CICloseDayScreen().verifyEmployee(txtDate);
     }
 
     @And("^I click finish button in the order screen \"([^\"]*)\"$")
@@ -238,7 +301,7 @@ public class CICloseDayStepDef {
     }
 
     @And("^I click the Active Check in the close the day checklist \"([^\"]*)\"$")
-    public void iClickTheActiveCheckInTheCloseTheDayChecklist(String msg) {
+    public void iClickTheActiveCheckInTheCloseTheDayChecklist(String msg) throws InterruptedException {
         new CICloseDayScreen().getBtnActiveCheck(msg);
     }
 
@@ -248,8 +311,8 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I should see the Active Check's as\"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldSeeTheActiveCheckSAs(String txtZeroActiveCheck,String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtActiveCheck(txtZeroActiveCheck,msg), txtZeroActiveCheck);
+    public void iShouldSeeTheActiveCheckSAs(String txtZeroActiveCheck,String msg) throws InterruptedException {
+ new CICloseDayScreen().getTxtActiveCheck(txtZeroActiveCheck,msg);
     }
 
     @And("^I click the cancel button close the day check checklist popup \"([^\"]*)\"$")
@@ -258,8 +321,8 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I should see the Active tab with \"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldSeeTheActiveTabWith(String txtNoActiveChecks,String msg) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtNoActiveChecks(msg), txtNoActiveChecks);
+    public void iShouldSeeTheActiveTabWith(String txtNoActiveChecks,String msg) throws InterruptedException {
+      new CICloseDayScreen().getTxtNoActiveChecks(txtNoActiveChecks,msg);
     }
 
     @And("^I click the Drop down \"([^\"]*)\" button in the order screen \"([^\"]*)\"$")
@@ -308,7 +371,7 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I click on the paid in button in Till Management Screen$")
-    public void iClickOnThePaidInButtonInTillManagementScreen() {
+    public void iClickOnThePaidInButtonInTillManagementScreen() throws InterruptedException {
         new CICloseDayScreen().clickBtnPayIn();
     }
 
@@ -317,9 +380,19 @@ public class CICloseDayStepDef {
         new CICloseDayScreen().clickPayByTextField();
     }
 
+    @And("^I click on the form text field1$")
+    public void iClickOnTheFormTextField1() {
+        new CICloseDayScreen().clickPayByTextField1();
+    }
+
     @Then("^I enter the name to pay in as \"([^\"]*)\"$")
     public void iEnterTheNameToPayInAs(String name) {
         new CICloseDayScreen().passNameBy(name);
+    }
+
+    @Then("^I enter the name to pay1 in as \"([^\"]*)\"$")
+    public void iEnterTheNameToPay1InAs(String name) {
+        new CICloseDayScreen().passNameBy1(name);
     }
 
     @Then("^I click \"([^\"]*)\" in the amount popup \"([^\"]*)\"$")
@@ -338,7 +411,7 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I click on the paid out button in Till Management Screen$")
-    public void iClickOnThePaidOutButtonInTillManagementScreen() {
+    public void iClickOnThePaidOutButtonInTillManagementScreen() throws InterruptedException {
         new CICloseDayScreen().clickBtnPayOut();
     }
 
@@ -408,7 +481,7 @@ public class CICloseDayStepDef {
     }
 
     @And("^I click \"([^\"]*)\" Table in the Table Layout screen \"([^\"]*)\"$")
-    public void iClickTableInTheTableLayoutScreen(String T1, String msg) {
+    public void iClickTableInTheTableLayoutScreen(String T1, String msg) throws InterruptedException {
         new CIPaymentScreen().commonBtnClickOption(T1,msg);
     }
 
@@ -418,13 +491,13 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I should see gross sale value as \"([^\"]*)\" in sale recap$")
-    public void iShouldSeeGrossSaleValueAsInSaleRecap(String grossSale) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtAfterSaleRecapGrossSale(),grossSale);
+    public void iShouldSeeGrossSaleValueAsInSaleRecap(String grossSale) throws InterruptedException {
+    new CICloseDayScreen().getTxtAfterSaleRecapGrossSale(grossSale);
     }
 
     @Then("^I should see the close day with \"([^\"]*)\"$")
     public void iShouldSeeTheCloseDayWith(String coverCount) {
-        Assert.assertEquals(new CICloseDayScreen().getTxtCoverCount(),coverCount);
+       new CICloseDayScreen().getTxtCoverCount(coverCount);
     }
 
     @Then("^I should verify the new customer as \"([^\"]*)\" \"([^\"]*)\"$")
@@ -473,7 +546,7 @@ public class CICloseDayStepDef {
     }
 
     @Then("^I should verify the Tax amount in the sale recap report after creating sale\"([^\"]*)\" \"([^\"]*)\"$")
-    public void iShouldVerifyTheTaxAmountInTheSaleRecapReportAfterCreatingSale(String tenPercentTax,String twentyPercentTax) {
+    public void iShouldVerifyTheTaxAmountInTheSaleRecapReportAfterCreatingSale(String tenPercentTax,String twentyPercentTax) throws InterruptedException {
         new CICloseDayScreen().getTaxAmountValue(tenPercentTax,twentyPercentTax);
     }
 
@@ -489,7 +562,17 @@ public class CICloseDayStepDef {
 
     @And("^I scroll the close the day \"([^\"]*)\" \"([^\"]*)\"$")
     public void iScrollTheCloseTheDay(String num,String msg) throws InterruptedException {
-        ciCloseDayScreen.scroll(num,msg);
+        ciCloseDayScreen.verifyCrediCardOption(num,msg);
+    }
+
+    @And("^I verify the paid out value as \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iVerifyThePaidOutValueAs(String num,String msg) throws InterruptedException {
+        ciCloseDayScreen.verifyPaidOutValue(num,msg);
+    }
+
+    @And("^I verify the paid in value as \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iVerifyThePaidInValueAs(String num,String msg) throws InterruptedException {
+        ciCloseDayScreen.verifyPaidInValue(num,msg);
     }
 
 //    @And("^I click cancel button in the till management screen if it appears \"([^\"]*)\"$")

@@ -180,6 +180,10 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().clickLogOffBtn();
     }
 
+    @And("I click on the cross buttin in the customer profile screen")
+    public void iClickOnTheCrossButtinInTheCustomerProfileScreen() {
+        new OrderManagementScreen().ClickCrossButton();
+    }
     @Then ("^I should see Split button is visible$")
     public void iShouldSeeSplitButtonIsVisible(){
         new OrderManagementScreen().visibleSplitButton();
@@ -346,6 +350,11 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().pressDone1();
     }
 
+    @And("^I click Done button on the Popup1$")
+    public void iClickDoneButtonOnThePopup1() throws InterruptedException {
+        new TableLayOutScreen().pressDone3();
+    }
+
     @And("^I click Done button on the Popup from Table Layout$")
     public void iClickDoneButtonOnThePopupFromTableLayout(){
         new TableLayOutScreen().pressDone2();
@@ -441,6 +450,11 @@ public class TableOrderOperationsStepDef {
     @And("^I search for \"([^\"]*)\"$")
     public void iSearchFor(String customerName)  {
         new OrderManagementScreen().searchForCustomer(customerName);
+    }
+
+    @And("^I search1 for \"([^\"]*)\"$")
+    public void iSearch1For(String customerName)  {
+        new OrderManagementScreen().searchForCustomer1(customerName);
     }
     @And("^I click By Name Email Button$")
     public void iClickByNamEmailBtn()  {
@@ -623,6 +637,11 @@ public class TableOrderOperationsStepDef {
     @And("^I select menu item as \"([^\"]*)\"$")
     public void iSelectMenuItemAs(String menuItem) throws Exception {
         new OrderManagementScreen().selectMenuItem(menuItem);
+    }
+
+    @And("^I select 86 menu item as \"([^\"]*)\"$")
+    public void iSelect86MenuItemAs(String menuItem) throws Exception {
+        new OrderManagementScreen().selectMenuItem86(menuItem);
     }
 
     @When ("^I should verify subtotal value as \"([^\"]*)\"$")
@@ -1427,7 +1446,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see operation screen$")
-    public void iShouldSeeOperationScreen(){
+    public void iShouldSeeOperationScreen() throws InterruptedException {
         new TableLayOutScreen().getOperationScene();
     }
 
@@ -1435,8 +1454,14 @@ public class TableOrderOperationsStepDef {
     public void iClickCloseDayTab(){
         new TableLayOutScreen().tapCloseDay();
     }
+
+    @And ("^I click close all cashier button$")
+    public void iClickCloseAllCashierButton() throws InterruptedException {
+        new TableLayOutScreen().clickCloseAllCashierBtn();
+    }
+
     @Then ("^I should see close day screen$")
-    public void iShouldSeeCloseDayScreen(){
+    public void iShouldSeeCloseDayScreen() throws InterruptedException {
         new TableLayOutScreen().verifyCloseDayScreen();
     }
 
@@ -1771,6 +1796,17 @@ public class TableOrderOperationsStepDef {
     public void iPassMenuItemToSearchAndClickTheMenuItem(String menu_item) throws InterruptedException {
         new OrderManagementScreen().selectMenuItemSearch(menu_item);
     }
+
+    @And ("^I pass menu item as \"([^\"]*)\" to search$")
+    public void iPassMenuItemAsToSearch(String menu_item) throws InterruptedException {
+        new OrderManagementScreen().selectMenuItemSearch1(menu_item);
+    }
+
+    @And ("^I get count of menu$")
+    public void iGetCountOfMenu() throws InterruptedException {
+        new OrderManagementScreen().getMenu();
+    }
+
     @Then ("^I should see no menu item found text$")
     public void iShouldSeeNoMenuItemFoundText(){
         Assert.assertEquals(new OrderManagementScreen().verifyNoMenuItemFoundTxt(),"______ NO MENU ITEMS FOUND IN \"PAROTTAS\" ______");
@@ -1815,7 +1851,7 @@ public class TableOrderOperationsStepDef {
 
     }
     @And ("^I click prefix modifier$")
-    public void iClickPrefixModifier(){
+    public void iClickPrefixModifier() throws InterruptedException {
         new OrderManagementScreen().clickPrefixModifierBtn();
     }
 
@@ -1841,9 +1877,14 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().verifyDoneBtnIsEnable();
     }
 
-    @Then ("^I should see include modifier added with menu item$")
-    public void iShouldSeeIncludeModifierAddedWithMenuItem(){
-        new OrderManagementScreen().verifyIncludeModifierIsAdded();
+    @Then ("^I should see include modifier as \"([^\"]*)\" added with menu item$")
+    public void iShouldSeeIncludeModifierAddedWithMenuItem(String Modifier){
+        new OrderManagementScreen().verifyIncludeModifierIsAdded(Modifier);
+    }
+
+    @Then ("^I should not see include modifier added with menu item$")
+    public void iShouldNotSeeIncludeModifierAddedWithMenuItem(){
+        new OrderManagementScreen().verifyIncludeModifierIsNotAdded();
     }
 
     @And ("^I click start over button in coversational modifier screen$")
@@ -1862,11 +1903,11 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see alternate modifier screen$")
-    public void iShouldSeeAlternateModifierScreen(){
+    public void iShouldSeeAlternateModifierScreen() throws InterruptedException {
         new OrderManagementScreen().verifyAlternateModifierScreen();
     }
     @And ("^I click modifier from alternate modifier screen$")
-    public void iClickModifierFromAlternateModifierScreen(){
+    public void iClickModifierFromAlternateModifierScreen() throws InterruptedException {
         new OrderManagementScreen().clickModifierFromAlternateModifierScreen();
     }
     @And ("^I click ok button in alternate modifier screen$")
@@ -1874,9 +1915,9 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().clickOkBtnInAlternateModifierScreen();
     }
 
-    @Then ("^I should see include modifier in conversational modifier screen$")
-    public void iShouldSeeIncludeModifierInConversationalModifierScreen(){
-        new OrderManagementScreen().verifyIncludeModifier();
+    @Then ("^I should see include modifier as \"([^\"]*)\" in conversational modifier screen$")
+    public void iShouldSeeIncludeModifierInConversationalModifierScreen(String Modifier) throws InterruptedException {
+        new OrderManagementScreen().verifyIncludeModifier(Modifier);
     }
 
     @And ("^I click Revert button in alternate modifier screen$")
@@ -1900,7 +1941,7 @@ public class TableOrderOperationsStepDef {
 
     @Then("^I should see you need to pick atleast 1 modifiers from this group popup$")
     public void iShouldSeeYouNeedToPickAtleast1ModifiersFromThisGroupPopup(){
-        Assert.assertEquals(new OrderManagementScreen().verifyYouNeedToPickAtleastModifierFromThisGroup(),"You need to pick at least 1 modifiers from this Group");
+        Assert.assertEquals(new OrderManagementScreen().verifyYouNeedToPickAtleastModifierFromThisGroup(),"You need to pick atleast 1 mandatory modifiers from this Add Meats Group");
     }
 
     @And ("^I do split seat$")

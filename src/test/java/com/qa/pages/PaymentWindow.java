@@ -365,7 +365,7 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void clickContinueBtn() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
         elementClick(continueBtn,"Tapped Continue Button");
     }
@@ -585,16 +585,16 @@ public class PaymentWindow extends OrderManagementScreen{
         }
     }
 
-    public void clickLoyalty(){
-        WebElement loyalPayment=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]//XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
+    public void clickLoyalty() throws InterruptedException {
+        Thread.sleep(3000);
+        WebElement loyalPayment = driver.findElement(By.xpath("//button[contains(.,'Loyalty')]"));
         String payment=loyalPayment.getText();
         elementClick(loyalPayment,"Tapped Loyalty Payment - "+ payment);
-
     }
 
     public String verifyLoyaltyBalanceInPaymentWindow() throws InterruptedException {
         Thread.sleep(1000);
-        WebElement loyalPayment=(WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]//XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
+        WebElement loyalPayment= driver.findElement(By.xpath("//button[contains(.,'Loyalty')]"));
         String payment=loyalPayment.getText();
         return payment;
     }

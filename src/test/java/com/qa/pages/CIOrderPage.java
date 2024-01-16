@@ -78,21 +78,21 @@ public class CIOrderPage  extends BasePage {
     // Enter partial payment amount as 10500
     public void pressPaymentPin(String paymentPin1XPath, String paymentPin0XPath,
                                 String paymentPin5XPath, String paymentPin00XPath) {
-//        MobileElement elementPin1 = mergeAndFindElement(btnPaymentPin1, paymentPin1XPath,TestUtils.XPath);
-//        click(elementPin1, "Tapped pin1");
-//
-//        MobileElement elementPin0 = mergeAndFindElement(btnPaymentPin1, paymentPin0XPath,TestUtils.XPath);
-//        click(elementPin0, "Tapped pin0");
-//
-//        MobileElement elementPin5 = mergeAndFindElement(btnPaymentPin1, paymentPin5XPath,TestUtils.XPath);
-//        click(elementPin5, "Tapped pin5");
-//
-//        MobileElement elementPin00 = mergeAndFindElement(btnPaymentPin1, paymentPin00XPath,TestUtils.XPath);
-//        click(elementPin00, "Tapped pin00");
-        findandclick(btnPaymentPin1, paymentPin1XPath,TestUtils.XPath);
-        findandclick(btnPaymentPin1, paymentPin0XPath,TestUtils.XPath);
-        findandclick(btnPaymentPin1, paymentPin5XPath,TestUtils.XPath);
-        findandclick(btnPaymentPin1, paymentPin00XPath,TestUtils.XPath);
+        WebElement elementPin1 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin1XPath+" ']"));
+        click(elementPin1, paymentPin1XPath);
+
+        WebElement elementPin0 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin0XPath+" ']"));
+        click(elementPin0, paymentPin0XPath);
+
+        WebElement elementPin5 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin5XPath+" ']"));
+        click(elementPin5, paymentPin5XPath);
+
+        WebElement elementPin00 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin00XPath+" ']"));
+        click(elementPin00, paymentPin00XPath);
+//        findandclick(btnPaymentPin1, paymentPin1XPath,TestUtils.XPath);
+//        findandclick(btnPaymentPin1, paymentPin0XPath,TestUtils.XPath);
+//        findandclick(btnPaymentPin1, paymentPin5XPath,TestUtils.XPath);
+//        findandclick(btnPaymentPin1, paymentPin00XPath,TestUtils.XPath);
 
     }
 
