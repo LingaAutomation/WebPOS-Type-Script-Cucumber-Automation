@@ -29,7 +29,7 @@ public class TGOrderTypeWindowStepDef {
 
     @And("^I select the DELIVERY order types$")
     public void iSelectTheDELIVERYOrderType() {
-        new TGOrderTypeWindow(driver).selectDeliveryOrderType();
+        new OrderTypeWindow(driver).selectDeliveryOrderType();
     }
 
     @And("^I select the Phone To Go order types$")
@@ -166,5 +166,10 @@ public class TGOrderTypeWindowStepDef {
     @And("^I click the \"([^\"]*)\" in the customer profile page \"([^\"]*)\"$")
     public void iClickTheInTheCustomerProfilePage(String btnClose, String msg) {
         new CICloseDayScreen().btnCustomerProfileClose(btnClose, msg);
+    }
+
+    @Then("I should not see change Due popup")
+    public void iShouldNotSeeChangeDuePopup() {
+        new TGOrderTypeWindow(driver).notSeeChangeDueMsg();
     }
 }

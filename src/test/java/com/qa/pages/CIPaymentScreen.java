@@ -124,9 +124,9 @@ public class CIPaymentScreen extends BasePage{
     public void commonBtnClick(String btnName, String msg) throws InterruptedException {
 //        WebElement element = mergeAndFindElement(btnName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement element = driver.findElement(By.xpath(btnName));
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
 
         elementClick(element, msg);
     }
@@ -198,7 +198,7 @@ public class CIPaymentScreen extends BasePage{
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
 //        WebElement element = mergeAndFindElement(optionName, "",TestUtils.Accessibility);
 //        elementClick(element, msg);
-        driver.findElement(By.xpath("//button[contains(@id,'menu-item')]//p[.='"+optionName+"']")).click();
+        driver.findElement(By.xpath("//button[contains(@id,'menu-item')]//div[.='"+optionName+"']")).click();
     }
 
     public void btnHideKeyboard(String optionName, String msg) {

@@ -134,8 +134,8 @@ public class Discount extends BasePage{
 
     public void verifyMenuItemTotal1(String value){
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement e11 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String subtotalValue = e11.getText();
+        WebElement e11 = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String subtotalValue = e11.getAttribute("value");
         TestUtils.totalTxt = subtotalValue;
         Assert.assertEquals(subtotalValue,value);
         utils.log().info("Total Value is - "+value);
@@ -143,8 +143,8 @@ public class Discount extends BasePage{
 
     public void verifyMenuItemTotalGratuity1(String value){
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement e11 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String subtotalValue = e11.getText();
+        WebElement e11 = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String subtotalValue = e11.getAttribute("value");
         TestUtils.totalTxt = subtotalValue;
         Assert.assertEquals(subtotalValue,value);
         utils.log().info("Total Value is - "+value);

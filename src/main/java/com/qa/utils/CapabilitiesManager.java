@@ -4,13 +4,15 @@ package com.qa.utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
 import static com.qa.utils.TestUtils.driver;
 
 public class CapabilitiesManager {
 
-    public void setup() throws InterruptedException {
+    public void setup() throws InterruptedException, AWTException {
 
         //Call the chrome driver
         System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64 - 120 Version\\chromedriver.exe");
@@ -27,6 +29,21 @@ public class CapabilitiesManager {
         Thread.sleep(8000);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
+        //Set Size of the Browser
+//        int width = 600;
+//        int height = 400;
+//        Dimension dimension = new Dimension(width, height);
+//        driver.manage().window().setSize(dimension);
+        Robot r = new Robot();
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_SUBTRACT);
+        r.keyRelease(KeyEvent.VK_CONTROL);
+        r.keyRelease(KeyEvent.VK_SUBTRACT);
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_SUBTRACT);
+        r.keyRelease(KeyEvent.VK_CONTROL);
+        r.keyRelease(KeyEvent.VK_SUBTRACT);
+        Thread.sleep(2000);
         try
         {
             if(driver.findElement(By.xpath("//span[contains(.,'Continue Without Plugin')]/..")).isDisplayed())

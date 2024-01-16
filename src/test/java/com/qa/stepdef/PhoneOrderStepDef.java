@@ -287,7 +287,7 @@ public class PhoneOrderStepDef {
         Assert.assertEquals(new BarTabScreen(driver).verifyNoDeviceIsConnected(),"No Device is connected to this iPad");
     }
     @And("^I enter the customer name randomly$")
-    public void iEnterTheCustomerNameRandomly(){
+    public void iEnterTheCustomerNameRandomly() throws InterruptedException {
         new PaymentWindow(driver).enterTheCustomerNameRandomly();
     }
 
@@ -346,7 +346,7 @@ public class PhoneOrderStepDef {
     }
 
     @And ("^I verify the fast cash price value with digital receipt screen$")
-    public void iVerifyTheFastCashPriceValueWithDigitalReceiptScreen(){
+    public void iVerifyTheFastCashPriceValueWithDigitalReceiptScreen() throws InterruptedException {
         new PaymentWindow(driver).verifyTheCashPrice1ValueWithDigitalReceiptScreen();
     }
     @When ("^I verify the Total value with digital printer screen1$")
@@ -399,5 +399,21 @@ public class PhoneOrderStepDef {
     @And ("^I get the paid amount value in the payment window$")
     public void iGetThePaidAmountValueInThePaymentWindow(){
         new PaymentWindow(driver).getThePaidAmountValueInThePaymentWindow();
+    }
+
+    @And("I click active driver as {string} in the Phone Order Screen")
+    public void iClickActiveDriverAsInThePhoneOrderScreen(String name) throws InterruptedException {
+
+        new PhoneOrderScreen().clickActiveDriverAfterassigned(name);
+    }
+
+    @And("I verify the actual cash price with calculated cash price with inclusive tax")
+    public void iVerifyTheActualCashPriceWithCalculatedCashPriceWithInclusiveTax() {
+        new PaymentWindow(driver).verifyTheActualCashPriceWithCalculatedCAshPriceInclisveTax();
+    }
+
+    @And("I verify the side cc value with digital receipt screen value")
+    public void iVerifyTheSideCcValueWithDigitalReceiptScreenValue() throws InterruptedException {
+        new PaymentWindow(driver).verifyTheCashPrice1ValueWithDigitalReceiptScreen();
     }
 }

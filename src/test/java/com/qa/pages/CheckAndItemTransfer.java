@@ -36,7 +36,7 @@ public class CheckAndItemTransfer extends BasePage{
 
     public int itemToSelect1;
 
-    @FindBy(xpath ="(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
+    @FindBy(xpath ="//linga-icon[@symbol='chevron']")
     private WebElement arrowDownForOtherMenuItems;
 
     @FindBy(xpath = "Salad" )
@@ -411,7 +411,7 @@ public class CheckAndItemTransfer extends BasePage{
         elementClick(ele,"Click the first table from the List of table in the Transfer From table");
         ele.sendKeys(TestUtils.tableNumberof01);
 
-        WebElement ele1 = driver.findElement(By.xpath("//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div"));
+        WebElement ele1 = driver.findElement(By.xpath("//ion-col[contains(@class,'transferfrom')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div"));
         ele1.click();
         FTable1 = getText(ele1,"Text");
         FTable1 = FTable1.substring(FTable1.lastIndexOf("-"));
@@ -539,13 +539,13 @@ WebElement searchField;
     public void selectTheTransferredToServerFromTheListOfTransferTo()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        String s = getText(driver.findElement(By.xpath("(//ion-col[contains(@class,'tabletransfer-itemrow-transferto')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div//span)[]1")),"Get the text of Transferred To server");
+        String s = getText(driver.findElement(By.xpath("(//ion-col[contains(@class,'tabletransfer-itemrow-transferto')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div//span)[1]")),"Get the text of Transferred To server");
 
         ServerName2 = s;
 
         TestUtils.ServerName2 = ServerName2;
 
-        elementClick(driver.findElement(By.xpath("(//ion-col[contains(@class,'tabletransfer-itemrow-transferto')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div//span)[]1\"")),"Click the required Transferred To Server");
+        elementClick(driver.findElement(By.xpath("(//ion-col[contains(@class,'tabletransfer-itemrow-transferto')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div//span)[1]")),"Click the required Transferred To Server");
 
         try{
             if(driver.findElement(By.xpath("//p[.='Employee is offline, Still Do you want to continue']")).isDisplayed())

@@ -1,0 +1,14 @@
+[${ROUTINGKEY} INFO ] 2023-12-28 13:59:29.180 Hooks:50 - Failed Scenario Name : Price Level ( Customer Mapped in membership by BO level )
+[${ROUTINGKEY} INFO ] 2023-12-28 15:30:51.535 Hooks:50 - Failed Scenario Name : Price Level ( Customer Mapped in membership by BO level )
+[${ROUTINGKEY} INFO ] 2023-12-28 15:34:28.667 Hooks:50 - Failed Scenario Name : Price Level ( Customer Mapped in membership by BO level )
+[${ROUTINGKEY} INFO ] 2023-12-28 16:13:12.988 Hooks:50 - Failed Scenario Name : Reopen the closed checks and validate the tax, total, Subtotal
+[${ROUTINGKEY} INFO ] 2023-12-28 16:23:31.130 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2023-12-28 16:31:35.366 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2023-12-28 16:40:45.900 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2023-12-28 16:44:41.769 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2023-12-28 16:47:54.214 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2023-12-28 17:19:47.039 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2023-12-28 17:24:47.037 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2023-12-28 17:36:32.134 Hooks:50 - Failed Scenario Name : LIN - 22195 - Application crash : When we delete the repeat order item
+[${ROUTINGKEY} INFO ] 2023-12-28 19:00:58.741 Hooks:50 - Failed Scenario Name : LIN - 22195 - Application crash : When we delete the repeat order item
+[${ROUTINGKEY} INFO ] 2023-12-28 19:09:34.557 Hooks:50 - Failed Scenario Name : LIN - 22195 - Application crash : When we delete the repeat order item

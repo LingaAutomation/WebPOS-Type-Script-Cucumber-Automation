@@ -203,7 +203,8 @@ public class ClockInScreen extends UserLoginScreen{
         return err;
     }
 
-    public OrderTypeWindow ClockIn (){
+    public OrderTypeWindow ClockIn () throws InterruptedException {
+        Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
         driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[1]/button")).click();
         driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[2]/button")).click();
@@ -592,7 +593,7 @@ public class ClockInScreen extends UserLoginScreen{
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
         Thread.sleep(4000);
 //        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]");
-        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'time-version')]//p[1]"));
+        WebElement bussinessDate = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'time-version')]//p[4]"));
         String bussinessTxt = bussinessDate.getText();
 //        utils.log().info("Current "+bussinessTxt);
 

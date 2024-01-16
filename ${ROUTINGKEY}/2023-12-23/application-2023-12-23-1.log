@@ -1,0 +1,4 @@
+[${ctx:ROUTINGKEY} INFO ] 2023-12-23 12:06:02.523 Hooks:38 - Start Scenario Name : Cashier OUT PULL Request
+[${ctx:ROUTINGKEY} INFO ] 2023-12-23 12:06:35.344 Hooks:50 - Failed Scenario Name : Cashier OUT PULL Request
+[${ctx:ROUTINGKEY} INFO ] 2023-12-23 13:08:07.208 Hooks:38 - Start Scenario Name : Cashier OUT PULL Request
+[${ctx:ROUTINGKEY} INFO ] 2023-12-23 13:08:39.440 Hooks:50 - Failed Scenario Name : Cashier OUT PULL Request

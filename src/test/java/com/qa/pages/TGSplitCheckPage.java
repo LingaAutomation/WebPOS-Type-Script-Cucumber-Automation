@@ -1,15 +1,28 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 public class TGSplitCheckPage extends BasePage{
+
+    public WebDriver driver;
+//    TestUtils utils = new TestUtils();
+
+    public TGSplitCheckPage() {
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(driver, this);
+    }
 
     String accessibilityIdForPin1 = "1";
     String accessibilityIdForPin2 = "2";
@@ -397,7 +410,7 @@ public class TGSplitCheckPage extends BasePage{
     WebElement pin3Time1;
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"2\"])[1]")
     WebElement pin2Time1;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[1]")
+    @FindBy(xpath = "")
     WebElement pin1Time1;
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"7\"])[1]")
     WebElement pin7Time1;
@@ -430,11 +443,12 @@ public class TGSplitCheckPage extends BasePage{
     private WebElement loginBtn;
     public void logInWithValidPin() {
 
-        pressPin1Time();
-        pressPin2Time();
-        pressPin3Time();
-        pressPin4Time();
-        pressLogin();
+        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[1]/button")).click();
+        driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[2]/button")).click();
+        driver.findElement(By.xpath("//ion-grid/ion-row[4]/ion-col[3]/button")).click();
+        driver.findElement(By.xpath("//ion-grid/ion-row[5]/ion-col[1]/button")).click();
+        driver.findElement(By.xpath("//button[contains(.,'Login')]")).click();
     }
 
     public void clickQsrOrderType(){

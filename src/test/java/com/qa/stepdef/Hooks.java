@@ -47,7 +47,7 @@ public class Hooks {
 
         if (scenario.isFailed() || i>29){
             ScenarioName = scenario.getName();
-//            utils.log().info("Failed Scenario Name : " + ScenarioName);
+            utils.log().info("Failed Scenario Name : " + ScenarioName);
             File screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
             scenario.attach(fileContent, "image/png", "screenshot");

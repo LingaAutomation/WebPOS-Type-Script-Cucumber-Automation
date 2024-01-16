@@ -12,7 +12,7 @@ import static com.qa.utils.TestUtils.driver;
 public class OrderTypesStepDef {
 
     @And("^I'm logged in$")
-    public void i_m_logged_in() {
+    public void i_m_logged_in() throws InterruptedException {
         new ClockInScreen(driver).ClockIn();
     }
 
@@ -73,6 +73,7 @@ public class OrderTypesStepDef {
     @And("^I select the order type FORHERE$")
     public void iSelectTheOrderTypeFORHERE() {
         new OrderTypeWindow(driver).selectForHereOrderType();
+
     }
 
 
@@ -431,7 +432,7 @@ public class OrderTypesStepDef {
         public void userVerifyTransferToServerTransferToTableTransferItemAreDisplayedOrNot() {
             Assert.assertEquals("Transfer to Server",new CheckAndItemTransfer().verifyTransferToServerBtnInTransferWindow());
             Assert.assertEquals("Transfer to Table", new CheckAndItemTransfer().verifyTransferToTableBtnInTransferWindow());
-            Assert.assertEquals("Transfer Item",new CheckAndItemTransfer().verifyTransferItemBtnInTransferWindow());
+            Assert.assertEquals("Transfer item",new CheckAndItemTransfer().verifyTransferItemBtnInTransferWindow());
         }
 
         @And("^User select the Transfer Item Option$")
@@ -473,7 +474,7 @@ public class OrderTypesStepDef {
 
         @And("^Verify the Successful message of Transfer Item$")
         public void verifyTheSuccessfulMessageOfTransferItem() {
-            Assert.assertEquals("Transferred check success.",new CheckAndItemTransfer().getTheSuccessmessage());
+            Assert.assertEquals("Transferred item success",new CheckAndItemTransfer().getTheSuccessmessage());
         }
 
         @Then ("^I should see the all the menu items will be transferred popup$")
@@ -605,5 +606,35 @@ public class OrderTypesStepDef {
         }
 
 
+    @And("I click on the {string} Service type in the dropdown")
+    public void iClickOnTheServiceTypeInTheDropdown(String order) {
+        new OrderManagementScreen(driver).select_Service_Type(order);
+    }
+
+
+    @When("I should verify Dual price value as {string}")
+    public void iShouldVerifyDualPriceValueAs(String value) {
+        new OrderManagementScreen(driver).verifyCashPriceDualValue1As(value);
+    }
+
+    @And("I click payment in the payment window one")
+    public void iClickPaymentInThePaymentWindowOne() {
+        new PaymentWindow(driver).selectPayment12();
+    }
+
+    @And("I click payment in the payment window two")
+    public void iClickPaymentInThePaymentWindowTwo() {
+        new PaymentWindow(driver).selectPayment2();
+    }
+
+    @And("I get the balance Due Amount on the payment window")
+    public void iGetTheBalanceDueAmountOnThePaymentWindow() throws InterruptedException {
+        new PaymentWindow(driver).getPaymentScreenBalanceDueAmount();
+    }
+
+    @When("I should verify paid amount with payment screen value")
+    public void iShouldVerifyPaidAmountWithPaymentScreenValue() {
+        new PaymentWindow(driver).verifyTheCashPriceValueWithPaidAmountValueIsSame();
+    }
 }
 

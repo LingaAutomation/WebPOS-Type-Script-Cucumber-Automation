@@ -1,0 +1,45 @@
+[${ROUTINGKEY} INFO ] 2024-01-02 08:54:36.844 Hooks:50 - Failed Scenario Name : Refund
+[${ROUTINGKEY} INFO ] 2024-01-02 09:07:08.335 Hooks:50 - Failed Scenario Name : Cashier OUT PULL Request
+[${ROUTINGKEY} INFO ] 2024-01-02 09:15:09.916 Hooks:50 - Failed Scenario Name : Transfer Item from one Check to another Check
+[${ROUTINGKEY} INFO ] 2024-01-02 09:18:40.317 Hooks:50 - Failed Scenario Name : Transfer To Table from one Check to another Check
+[${ROUTINGKEY} INFO ] 2024-01-02 09:29:42.337 OrderManagementScreen:1274 -  Tax is - $ 0.65
+[${ROUTINGKEY} INFO ] 2024-01-02 09:29:42.753 OrderManagementScreen:1274 -  Tax is - $ 6.50
+[${ROUTINGKEY} INFO ] 2024-01-02 09:29:43.128 OrderManagementScreen:1274 -  Tax is - $ 15.60
+[${ROUTINGKEY} INFO ] 2024-01-02 09:29:52.038 OrderManagementScreen:1274 -  Tax is - $ 1.36
+[${ROUTINGKEY} INFO ] 2024-01-02 09:30:03.218 OrderManagementScreen:1274 -  Tax is - $ 96.57
+[${ROUTINGKEY} INFO ] 2024-01-02 09:30:14.331 OrderManagementScreen:1274 -  Tax is - $ 105.35
+[${ROUTINGKEY} INFO ] 2024-01-02 09:30:23.351 OrderManagementScreen:1274 -  Tax is - $ 0.44
+[${ROUTINGKEY} INFO ] 2024-01-02 09:30:34.481 OrderManagementScreen:1274 -  Tax is - $ 8.00
+[${ROUTINGKEY} INFO ] 2024-01-02 09:38:17.285 Hooks:50 - Failed Scenario Name : Sale In Service Types
+[${ROUTINGKEY} INFO ] 2024-01-02 09:42:53.080 OrderManagementScreen:1274 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-01-02 09:42:54.012 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-01-02 09:42:55.371 OrderManagementScreen:1274 -  Tax is - $ 2.40
+[${ROUTINGKEY} INFO ] 2024-01-02 09:42:55.428 OrderManagementScreen:1429 -  Discount is - $ 4.46
+[${ROUTINGKEY} INFO ] 2024-01-02 09:43:26.124 OrderManagementScreen:1274 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-01-02 09:43:32.168 OrderManagementScreen:1274 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-01-02 09:54:37.290 Regression:4923 - Split Check - 6-013
+[${ROUTINGKEY} INFO ] 2024-01-02 09:56:18.128 Regression:4923 - Split Check - 6-015
+[${ROUTINGKEY} INFO ] 2024-01-02 09:58:03.564 Regression:4923 - Split Check - 6-017
+[${ROUTINGKEY} INFO ] 2024-01-02 09:59:41.936 Regression:4923 - Split Check - 6-019
+[${ROUTINGKEY} INFO ] 2024-01-02 09:59:42.022 TableLayOutScreen:1570 - seatNumber - 2
+[${ROUTINGKEY} INFO ] 2024-01-02 09:59:42.022 TableLayOutScreen:1571 - seatNumber11 - 1
+[${ROUTINGKEY} INFO ] 2024-01-02 09:59:42.023 TableLayOutScreen:1573 - Seat Number - 1 is Available
+[${ROUTINGKEY} INFO ] 2024-01-02 10:01:27.343 Regression:4923 - Split Check - 6-021
+[${ROUTINGKEY} INFO ] 2024-01-02 10:03:04.619 Regression:4923 - Split Check - 6-023
+[${ROUTINGKEY} INFO ] 2024-01-02 10:04:49.011 Regression:4923 - Split Check - 6-025
+[${ROUTINGKEY} INFO ] 2024-01-02 10:06:25.225 Regression:4923 - Split Check - 6-027
+[${ROUTINGKEY} INFO ] 2024-01-02 10:06:25.302 TableLayOutScreen:1570 - seatNumber - 2
+[${ROUTINGKEY} INFO ] 2024-01-02 10:06:25.302 TableLayOutScreen:1571 - seatNumber11 - 1
+[${ROUTINGKEY} INFO ] 2024-01-02 10:06:25.303 TableLayOutScreen:1573 - Seat Number - 1 is Available
+[${ROUTINGKEY} INFO ] 2024-01-02 10:08:10.690 TableLayOutScreen:764 - Seat2 is not Added
+[${ROUTINGKEY} INFO ] 2024-01-02 10:09:00.346 TableLayOutScreen:1808 - Seat 1 SubTotal - $ 68.05
+[${ROUTINGKEY} INFO ] 2024-01-02 10:09:00.406 Hooks:50 - Failed Scenario Name : Split Seat from Table layout/bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-01-02 10:11:32.644 TableLayOutScreen:762 - Seat2 is Added 
+[${ROUTINGKEY} INFO ] 2024-01-02 10:12:20.819 TableLayOutScreen:1808 - Seat 1 SubTotal - $ 68.05
+[${ROUTINGKEY} INFO ] 2024-01-02 10:12:20.895 Hooks:50 - Failed Scenario Name : Split Seat from bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-01-02 10:14:46.601 TableLayOutScreen:762 - Seat2 is Added 
+[${ROUTINGKEY} INFO ] 2024-01-02 10:14:54.882 Hooks:50 - Failed Scenario Name : Split Seat from Order Screen
+[${ROUTINGKEY} INFO ] 2024-01-02 10:20:21.122 OrderManagementScreen:994 - Paid Amount Value is SAME - $ 0.00
+[${ROUTINGKEY} INFO ] 2024-01-02 10:20:34.014 OrderManagementScreen:1028 - Cash Price Value is SAME - $ 3.95
+[${ROUTINGKEY} INFO ] 2024-01-02 10:20:34.069 OrderManagementScreen:994 - Paid Amount Value is SAME - $ 3.76
+[${ROUTINGKEY} INFO ] 2024-01-02 10:21:07.999 PaymentWindow:907 - Customer notes - 

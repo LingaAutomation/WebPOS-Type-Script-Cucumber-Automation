@@ -30,10 +30,10 @@ public class OpenItemWindow extends CheckOptionsScreen{
     @FindBy(xpath = "//mat-select[@role='combobox']")
     WebElement CoursingNameTxtFldMenuOption;
 
-    @FindBy(xpath = "//ion-col[contains(@class,'openItem__content_grid-row')]//input[contains(@class,'monitored ng-touched ng-dirty')]")
+    @FindBy(xpath = "(//ion-col[contains(@class,'openItem__content_grid-row')]//input)[1]")
     WebElement ItemNameTxtFldMenuOption;
 
-    @FindBy( xpath = "//ion-col[contains(@class,'openItem__content_grid-row')]//input[contains(@class,'field-autofill-monitored ng-touched')]")
+    @FindBy( xpath = "(//ion-col[contains(@class,'openItem__content_grid-row')]//input)[1]")
     WebElement ItemNameTxtFld;
 
     @FindBy( xpath = "//ion-col[contains(@class,'openItem__content_grid-row')]//input[@readonly='true']")
@@ -156,7 +156,7 @@ public class OpenItemWindow extends CheckOptionsScreen{
 
     public String getValueFromOpenItemFieldTxt1 = " ";
     public void getValueFromOpenItemScreen(){
-        WebElement getValueFromOpenItemField = (WebElement) driver.findElements(By.xpath("//ion-row[contains(@class,'quantity_grid-inputrow')]//input[@readonly='true']"));
+        WebElement getValueFromOpenItemField = driver.findElement(By.xpath("//ion-row[contains(@class,'quantity_grid-inputrow')]//input[@readonly='true']"));
         String getValueFromOpenItemFieldTxt = getValueFromOpenItemField.getAttribute("value");
           getValueFromOpenItemFieldTxt1 = getValueFromOpenItemFieldTxt.replaceAll("[A-Z$,. ]","");
           TestUtils.openItemValue = getValueFromOpenItemFieldTxt1;

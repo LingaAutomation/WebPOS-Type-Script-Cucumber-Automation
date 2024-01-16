@@ -2,6 +2,7 @@ package com.qa.pages;
 
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +22,7 @@ public class PhoneOrderScreen extends BasePage {
     }
 
 
-    @FindBy(xpath = "Phone Order")
+    @FindBy(xpath = "//button[.=' Phone/Web Orders ']")
     private WebElement phoneOrderTab;
 
     @FindBy(xpath = "//th[contains(.,'Driver Status')]")
@@ -101,7 +102,7 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
     WebElement searchTabInBarTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField")
+    @FindBy(xpath = "//input[@placeholder='Search Name or Check Number']")
     WebElement searchTabInBarTab1;
 
     @FindBy(xpath = "//input[@placeholder='Search Name or Check Number']")
@@ -139,9 +140,18 @@ public class PhoneOrderScreen extends BasePage {
     public void clickActiveDriver(String name) throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         Thread.sleep(1000);
-        WebElement serach_driver = driver.findElement(By.xpath("//input[@placeholder='Search driver by name']"));
-        serach_driver.clear();
-        serach_driver.sendKeys(name);
+//        WebElement serach_driver1 = driver.findElement(By.xpath("//linga-icon[@symbol='searchIcon']"));
+//        serach_driver1.click();
+//        WebElement serach_driver = driver.findElement(By.xpath("//input[@placeholder='Search driver by name']"));
+//        serach_driver.clear();
+//        serach_driver.sendKeys(name);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebElement Auto = driver.findElement(By.xpath("//ion-row[contains(@class,'driverBtn')]//button[contains(.,'"+name+"')]"));
+        elementClick(Auto,"Tapped Active Diver as - "+name);
+    }
+
+    public void clickActiveDriverAfterassigned(String name) throws InterruptedException {
+        Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         WebElement Auto = driver.findElement(By.xpath("//ion-row[contains(@class,'driverBtn')]//button[contains(.,'"+name+"')]"));
         elementClick(Auto,"Tapped Active Diver as - "+name);
@@ -249,8 +259,8 @@ public class PhoneOrderScreen extends BasePage {
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
         Thread.sleep(800);
         String globalCheckNumber = TestUtils.globalCheckNumber;
-        searchTabInOutTab.clear();
-        searchTabInOutTab.sendKeys(globalCheckNumber);
+//        searchTabInOutTab.clear();
+//        searchTabInOutTab.sendKeys(globalCheckNumber);
         //  WebElement phoneOrders = mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
         //  );
         // elementClick(phoneOrders,"Tapped Closed Check in out tab - "+ globalCheckNumber);
@@ -275,10 +285,11 @@ public class PhoneOrderScreen extends BasePage {
     }
 
     public void selectCloseCheckInNewTab() throws InterruptedException {
-        Thread.sleep(800);
+        Thread.sleep(2000);
         String globalCheckNumber=TestUtils.globalCheckNumber;
-        searchTabNewTab.clear();
-        searchTabNewTab.sendKeys(globalCheckNumber);
+//        searchTabNewTab.click();
+//        searchTabNewTab.clear();
+//        searchTabNewTab.sendKeys(globalCheckNumber);
         // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
         // );
         //elementClick(phoneOrders,"Tapped Closed Check in New Tab - "+ globalCheckNumber);
@@ -360,7 +371,7 @@ public class PhoneOrderScreen extends BasePage {
 //                utils.log().info("Closed Check be duplicate" + globalCheckNumber);
 //            }
 //        } catch (Exception h) {
-        WebElement phoneOrders1 = (WebElement) driver.findElements(By.xpath("//div[contains(@class,'table-row table-row')]//tr//td[.='"+globalCheckNumber+"']"));
+        WebElement phoneOrders1 = driver.findElement(By.xpath("//div[contains(@class,'table-row table-row')]//tr//td[.='"+globalCheckNumber+"']"));
 
         if (phoneOrders1.isDisplayed()) {
             elementClick(phoneOrders1, "Tapped Closed Check in closed tab - " + globalCheckNumber);
@@ -435,14 +446,26 @@ public class PhoneOrderScreen extends BasePage {
     public void verifyClosedCheckInCompleteTab() throws InterruptedException {
         Thread.sleep(500);
         String globalCheckNumber=TestUtils.globalCheckNumber;
-        searchTabInCompleteTab.clear();
-        searchTabInCompleteTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders = driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div//div//tr//td[.='"+globalCheckNumber+"']"));
-        if (phoneOrders.isDisplayed()){
-//            utils.log().info(globalCheckNumber + " - Closed Check is displayed in complete tab");
-        }else {
-//            utils.log().info("Closed check is not displayed");
+        driver.findElement(By.xpath("//ion-content//ion-row[2]//button[contains(@class,'phone_grid_web')]//span[contains(.,'Name')]")).click();
+        driver.findElement(By.xpath("//button[contains(@class,'matSerach-filter')]//span[contains(.,'Check#')]")).click();
+//        searchTabInCompleteTab.clear();
+//        searchTabInCompleteTab.sendKeys(globalCheckNumber);
+        Thread.sleep(2000);
+        WebElement e =  driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div//div//tr//td[.='"+globalCheckNumber+"']"));
+        Thread.sleep(2000);
+        if(e.isDisplayed()) {
+            elementClick(e, "Selected - ");
         }
+        else{
+            ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
+            elementClick(e, "Selected - " );
+        }
+//        WebElement phoneOrders = driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div//div//tr//td[.='"+globalCheckNumber+"']"));
+//        if (phoneOrders.isDisplayed()){
+////            utils.log().info(globalCheckNumber + " - Closed Check is displayed in complete tab");
+//        }else {
+////            utils.log().info("Closed check is not displayed");
+//        }
     }
 
     public void verifyClosedCheckInNewTab() throws InterruptedException {
@@ -492,7 +515,7 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInActiveTab.clear();
         searchTabInActiveTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  driver.findElement(By.xpath("//div[contains(@class,'table-row table-row')]//tr//td[.='"+globalCheckNumber+"']"));
+        WebElement phoneOrders =  driver.findElement(By.xpath("//table[@id='checkTables']//div[contains(@class,'table')]//tr//td[.='"+globalCheckNumber+"']"));
         if (phoneOrders.isDisplayed()){
 //            utils.log().info(globalCheckNumber + " - Closed Check is displayed in Active tab");
         }else {
@@ -561,8 +584,8 @@ public class PhoneOrderScreen extends BasePage {
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInBarTab1.clear();
         searchTabInBarTab1.sendKeys(globalCheckNumber);                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]
-        WebElement phoneOrders =  mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]","",TestUtils.Accessibility
-        );
+        WebElement phoneOrders =  driver.findElement(By.xpath("//app-bar-tab//ion-grid//ion-row//ion-col[@class='ng-star-inserted md hydrated']"));
+
         elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
     }
 }

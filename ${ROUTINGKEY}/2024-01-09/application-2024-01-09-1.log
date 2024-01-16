@@ -1,0 +1,487 @@
+[${ROUTINGKEY} INFO ] 2024-01-09 11:06:55.727 Hooks:50 - Failed Scenario Name : verifying cash option name changed into cash price
+[${ROUTINGKEY} INFO ] 2024-01-09 11:41:47.316 Hooks:50 - Failed Scenario Name : verifying cash option name changed into cash price
+[${ROUTINGKEY} INFO ] 2024-01-09 11:44:40.371 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 11:44:40.427 Hooks:50 - Failed Scenario Name : verifying cash option name changed into cash price
+[${ROUTINGKEY} INFO ] 2024-01-09 12:11:05.728 Hooks:50 - Failed Scenario Name : verifying cash option name changed into cash price
+[${ROUTINGKEY} INFO ] 2024-01-09 12:13:40.409 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 12:13:40.473 Hooks:50 - Failed Scenario Name : verifying cash option name changed into cash price
+[${ROUTINGKEY} INFO ] 2024-01-09 12:16:52.826 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 12:16:52.844 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 12:19:54.784 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 12:19:54.833 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 13:30:56.476 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 13:30:56.513 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 13:30:56.679 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 13:30:56.786 PaymentWindow:1121 - Cash value is SAME - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 13:30:57.009 Hooks:50 - Failed Scenario Name : verifying changes will be shown in Fast cash screen with the Net payable value ( Cash price)
+[${ROUTINGKEY} INFO ] 2024-01-09 13:33:18.675 Hooks:50 - Failed Scenario Name : verifying changes will be shown in Fast cash screen with the Net payable value ( Cash price)
+[${ROUTINGKEY} INFO ] 2024-01-09 13:47:56.590 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 13:47:56.631 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 13:47:56.824 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 13:47:56.926 PaymentWindow:1121 - Cash value is SAME - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 13:47:57.171 PaymentWindow:1019 - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 13:47:57.172 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 14:01:25.785 Hooks:50 - Failed Scenario Name : verify currently showing If you pay by cash
+[${ROUTINGKEY} INFO ] 2024-01-09 14:05:11.103 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:05:11.151 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:05:11.320 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:05:11.519 Hooks:50 - Failed Scenario Name : verify currently showing If you pay by cash
+[${ROUTINGKEY} INFO ] 2024-01-09 14:07:47.538 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:07:47.559 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:07:47.696 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:07:47.902 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 14:07:48.048 Hooks:50 - Failed Scenario Name : verify currently showing If you pay by cash
+[${ROUTINGKEY} INFO ] 2024-01-09 14:10:18.546 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:10:18.599 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:10:18.737 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 14:10:18.967 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 14:10:19.135 PaymentWindow:1008 - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 14:10:19.136 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:17:39.714 OrderManagementScreen:773 - 0.53
+[${ROUTINGKEY} INFO ] 2024-01-09 15:17:39.761 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 15:17:40.033 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 15:17:40.263 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 9.90
+[${ROUTINGKEY} INFO ] 2024-01-09 15:17:40.533 PaymentWindow:1008 - 9.90
+[${ROUTINGKEY} INFO ] 2024-01-09 15:17:40.535 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 9.90
+[${ROUTINGKEY} INFO ] 2024-01-09 15:23:35.933 OrderManagementScreen:773 - 0.8
+[${ROUTINGKEY} INFO ] 2024-01-09 15:23:35.984 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 15.80
+[${ROUTINGKEY} INFO ] 2024-01-09 15:23:36.116 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 15.80
+[${ROUTINGKEY} INFO ] 2024-01-09 15:23:36.295 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 15.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:23:36.478 PaymentWindow:1008 - 15.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:23:36.480 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 15.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:11.418 OrderManagementScreen:1274 -  Tax is - $ 0.65
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:11.610 OrderManagementScreen:773 - 0.73
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:11.611 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 14.38
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:11.917 OrderManagementScreen:1274 -  Tax is - $ 6.50
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:11.977 OrderManagementScreen:773 - 3.8
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:11.977 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 75.30
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:12.224 OrderManagementScreen:1274 -  Tax is - $ 15.60
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:12.311 OrderManagementScreen:773 - 6.36
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:12.313 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 125.96
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:12.461 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 125.96
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:12.639 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 119.60
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:12.786 PaymentWindow:1008 - 119.60
+[${ROUTINGKEY} INFO ] 2024-01-09 15:27:12.787 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 119.60
+[${ROUTINGKEY} INFO ] 2024-01-09 15:30:50.896 Hooks:50 - Failed Scenario Name : verify cash option with Tax exempt
+[${ROUTINGKEY} INFO ] 2024-01-09 15:34:14.466 Hooks:50 - Failed Scenario Name : verify cash option with Tax exempt
+[${ROUTINGKEY} INFO ] 2024-01-09 15:50:08.351 OrderManagementScreen:705 - Total Value is SAME - $ 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:50:08.417 Hooks:50 - Failed Scenario Name : verify cash option with Tax exempt
+[${ROUTINGKEY} INFO ] 2024-01-09 15:53:17.329 OrderManagementScreen:705 - Total Value is SAME - $ 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:53:17.410 OrderManagementScreen:886 - 0.48
+[${ROUTINGKEY} INFO ] 2024-01-09 15:53:17.431 Hooks:50 - Failed Scenario Name : verify cash option with Tax exempt
+[${ROUTINGKEY} INFO ] 2024-01-09 15:57:52.561 OrderManagementScreen:705 - Total Value is SAME - $ 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:57:52.656 OrderManagementScreen:886 - 0.48
+[${ROUTINGKEY} INFO ] 2024-01-09 15:57:52.658 OrderManagementScreen:891 - Expected Cash Price is SAME with Actual Cash Price - 9.48
+[${ROUTINGKEY} INFO ] 2024-01-09 15:57:52.787 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 9.48
+[${ROUTINGKEY} INFO ] 2024-01-09 15:57:52.954 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:57:53.129 PaymentWindow:1008 - 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 15:57:53.130 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 16:14:48.781 OrderManagementScreen:773 - 0.53
+[${ROUTINGKEY} INFO ] 2024-01-09 16:14:48.839 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 16:14:49.368 OrderManagementScreen:716 - Cash Price is SAME - $ 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 16:14:49.385 PaymentWindow:1381 - 0.5745600000000001
+[${ROUTINGKEY} INFO ] 2024-01-09 16:14:49.386 PaymentWindow:1383 - 11.37456
+[${ROUTINGKEY} INFO ] 2024-01-09 16:14:49.435 Hooks:50 - Failed Scenario Name : verify cash reward with Gratuity
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:23.139 OrderManagementScreen:773 - 0.53
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:23.189 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:24.129 OrderManagementScreen:716 - Cash Price is SAME - $ 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:24.164 PaymentWindow:1381 - 0.5745600000000001
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:24.166 PaymentWindow:1383 - 11.37456
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:24.207 PaymentWindow:1390 - Expected Cash Price is SAME with Actual Cash Price - 11.37
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:24.418 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - $ 11.37
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:24.717 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:25.037 PaymentWindow:1008 - 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 16:18:25.039 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 16:26:59.738 Hooks:50 - Failed Scenario Name : verify cash option with Exclusive tax & item service charge
+[${ROUTINGKEY} INFO ] 2024-01-09 16:33:46.418 OrderManagementScreen:931 - Service Charge Value is - $ 0.23
+[${ROUTINGKEY} INFO ] 2024-01-09 16:33:46.551 OrderManagementScreen:716 - Cash Price is SAME - $ 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 16:33:46.620 OrderManagementScreen:811 - 0.19
+[${ROUTINGKEY} INFO ] 2024-01-09 16:33:46.669 Hooks:50 - Failed Scenario Name : verify cash option with Exclusive tax & item service charge
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:22.724 OrderManagementScreen:931 - Service Charge Value is - $ 0.23
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:22.873 OrderManagementScreen:716 - Cash Price is SAME - $ 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:22.966 OrderManagementScreen:811 - 0.19
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:22.968 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 3.71
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:23.241 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 3.71
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:23.553 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:23.846 PaymentWindow:1008 - 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 16:37:23.847 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:24.084 OrderManagementScreen:931 - Service Charge Value is - $ 0.27
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:24.224 OrderManagementScreen:716 - Cash Price is SAME - $ 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:24.299 OrderManagementScreen:811 - 0.2
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:24.301 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 3.99
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:24.586 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:24.764 PaymentWindow:1121 - Cash value is SAME - $ 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:25.138 PaymentWindow:1019 - 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 16:44:25.139 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.073 OrderManagementScreen:931 - Service Charge Value is - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.214 OrderManagementScreen:716 - Cash Price is SAME - $ 14.81
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.293 OrderManagementScreen:811 - 0.79
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.295 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 15.60
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.806 OrderManagementScreen:931 - Service Charge Value is - $ 4.98
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.874 OrderManagementScreen:716 - Cash Price is SAME - $ 77.28
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.933 OrderManagementScreen:811 - 4.11
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:02.935 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 81.39
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:03.392 OrderManagementScreen:931 - Service Charge Value is - $ 7.96
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:03.482 OrderManagementScreen:716 - Cash Price is SAME - $ 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:03.534 OrderManagementScreen:811 - 6.85
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:03.535 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 135.68
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:03.804 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:03.974 PaymentWindow:1121 - Cash value is SAME - $ 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:04.391 PaymentWindow:1019 - 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 16:52:04.391 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:28.052 OrderManagementScreen:773 - 0.8
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:28.083 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 15.80
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:28.713 OrderManagementScreen:716 - Cash Price is SAME - $ 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:28.748 OrderManagementScreen:792 - 0.87
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:28.749 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 17.23
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:28.957 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 17.23
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:29.195 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:29.415 PaymentWindow:1008 - 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 17:05:29.416 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:20.369 OrderManagementScreen:1274 -  Tax is - $ 0.65
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:20.601 OrderManagementScreen:716 - Cash Price is SAME - $ 14.95
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:20.671 OrderManagementScreen:792 - 0.8
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:20.674 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 15.75
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.068 OrderManagementScreen:1274 -  Tax is - $ 6.50
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.185 OrderManagementScreen:716 - Cash Price is SAME - $ 78.00
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.247 OrderManagementScreen:792 - 4.15
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.248 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 82.15
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.683 OrderManagementScreen:1274 -  Tax is - $ 15.60
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.831 OrderManagementScreen:716 - Cash Price is SAME - $ 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.899 OrderManagementScreen:792 - 6.92
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:21.900 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 136.92
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:22.167 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 136.92
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:22.436 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:22.690 PaymentWindow:1008 - 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 17:09:22.691 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 17:12:14.211 Hooks:50 - Failed Scenario Name : verify cash option with Exclusive tax ,Gratuity& item service charge
+[${ROUTINGKEY} INFO ] 2024-01-09 17:26:07.254 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 17:26:08.290 Hooks:50 - Failed Scenario Name : verify cash option with Exclusive tax ,Gratuity& item service charge
+[${ROUTINGKEY} INFO ] 2024-01-09 17:28:56.673 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 17:28:57.652 OrderManagementScreen:849 - 0.2
+[${ROUTINGKEY} INFO ] 2024-01-09 17:28:57.688 Hooks:50 - Failed Scenario Name : verify cash option with Exclusive tax ,Gratuity& item service charge
+[${ROUTINGKEY} INFO ] 2024-01-09 17:32:36.811 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 17:32:37.822 OrderManagementScreen:849 - 0.2
+[${ROUTINGKEY} INFO ] 2024-01-09 17:32:37.824 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 3.96
+[${ROUTINGKEY} INFO ] 2024-01-09 17:32:38.062 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 17:32:38.251 PaymentWindow:1121 - Cash value is SAME - $ 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 17:32:38.640 PaymentWindow:1019 - 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 17:32:38.641 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 17:35:07.955 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 17:35:08.659 OrderManagementScreen:849 - 0.21
+[${ROUTINGKEY} INFO ] 2024-01-09 17:35:08.660 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 4.25
+[${ROUTINGKEY} INFO ] 2024-01-09 17:35:08.854 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 17:35:08.958 PaymentWindow:1121 - Cash value is SAME - $ 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 17:35:09.249 PaymentWindow:1019 - 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 17:35:09.250 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:42.561 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:43.554 OrderManagementScreen:849 - 0.84
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:43.556 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 16.69
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:44.208 OrderManagementScreen:849 - 4.39
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:44.209 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 86.87
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:45.022 OrderManagementScreen:849 - 7.3
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:45.023 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 144.45
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:45.303 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:45.469 PaymentWindow:1121 - Cash value is SAME - $ 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:45.811 PaymentWindow:1019 - 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 17:38:45.812 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 17:43:40.532 Hooks:50 - Failed Scenario Name : verify cash option with Item based Discount
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:09.271 OrderManagementScreen:911 - Tax Value is - $ 0.32
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:09.397 OrderManagementScreen:716 - Cash Price is SAME - $ 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:09.450 OrderManagementScreen:830 - 0.62
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:09.452 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 12.30
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:09.645 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:09.764 PaymentWindow:1121 - Cash value is SAME - $ 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:10.008 PaymentWindow:1019 - 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 17:51:10.010 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:20.720 OrderManagementScreen:911 - Tax Value is - $ 1.37
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:20.811 OrderManagementScreen:716 - Cash Price is SAME - $ 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:20.852 OrderManagementScreen:830 - 0.57
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:20.852 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 11.20
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:21.026 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:21.123 PaymentWindow:1121 - Cash value is SAME - $ 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:21.378 PaymentWindow:1019 - 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 17:55:21.378 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:16.343 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.231 OrderManagementScreen:911 - Tax Value is - $ 2.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.283 OrderManagementScreen:716 - Cash Price is SAME - $ 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.340 OrderManagementScreen:830 - 0.5
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.342 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 9.82
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.543 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.655 PaymentWindow:1121 - Cash value is SAME - $ 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.946 PaymentWindow:1019 - 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:17.947 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.112 OrderManagementScreen:911 - Tax Value is - $ 1.36
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.157 OrderManagementScreen:716 - Cash Price is SAME - $ 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.192 OrderManagementScreen:830 - 0.73
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.192 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 14.37
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.319 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.409 PaymentWindow:1121 - Cash value is SAME - $ 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.709 PaymentWindow:1019 - 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:28:40.710 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:32:20.488 Hooks:50 - Failed Scenario Name : verifying cash option name changed into cash price
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:00.945 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:00.946 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:24.120 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:24.121 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:24.296 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:24.405 PaymentWindow:1121 - Cash value is SAME - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:24.641 PaymentWindow:1019 - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:24.642 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:45.750 OrderManagementScreen:773 - 0.05
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:45.751 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:45.887 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 1.05
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:46.021 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:46.161 PaymentWindow:1008 - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:34:46.161 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:07.192 OrderManagementScreen:773 - 0.53
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:07.193 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:07.314 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:07.429 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 9.90
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:07.576 PaymentWindow:1008 - 9.90
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:07.577 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 9.90
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:26.746 OrderManagementScreen:773 - 0.8
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:26.746 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 15.80
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:26.844 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 15.80
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:26.943 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 15.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:27.078 PaymentWindow:1008 - 15.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:27.079 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 15.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.051 OrderManagementScreen:1274 -  Tax is - $ 0.65
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.129 OrderManagementScreen:773 - 0.73
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.129 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 14.38
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.352 OrderManagementScreen:1274 -  Tax is - $ 6.50
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.427 OrderManagementScreen:773 - 3.8
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.428 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 75.30
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.632 OrderManagementScreen:1274 -  Tax is - $ 15.60
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.707 OrderManagementScreen:773 - 6.36
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.708 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 125.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.836 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 125.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:48.939 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 119.60
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:49.077 PaymentWindow:1008 - 119.60
+[${ROUTINGKEY} INFO ] 2024-01-09 18:35:49.078 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 119.60
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:10.262 OrderManagementScreen:705 - Total Value is SAME - $ 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:10.289 OrderManagementScreen:886 - 0.48
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:10.289 OrderManagementScreen:891 - Expected Cash Price is SAME with Actual Cash Price - 9.48
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:10.372 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 9.48
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:10.506 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:10.636 PaymentWindow:1008 - 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:10.637 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 9.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:31.692 OrderManagementScreen:773 - 0.53
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:31.693 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.139 OrderManagementScreen:716 - Cash Price is SAME - $ 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.148 PaymentWindow:1381 - 0.5745600000000001
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.149 PaymentWindow:1383 - 11.37456
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.177 PaymentWindow:1390 - Expected Cash Price is SAME with Actual Cash Price - 11.37
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.293 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - $ 11.37
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.422 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.544 PaymentWindow:1008 - 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:32.544 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 10.80
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:53.532 OrderManagementScreen:773 - 0.53
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:53.532 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:53.628 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 10.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:36:53.652 Hooks:50 - Failed Scenario Name : verify if changes when the payment made through Credit card.
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:33.815 OrderManagementScreen:931 - Service Charge Value is - $ 0.23
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:33.852 OrderManagementScreen:716 - Cash Price is SAME - $ 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:33.888 OrderManagementScreen:811 - 0.19
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:33.888 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 3.71
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:33.996 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 3.71
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:34.138 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:34.279 PaymentWindow:1008 - 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:34.280 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 3.52
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.350 OrderManagementScreen:931 - Service Charge Value is - $ 0.27
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.394 OrderManagementScreen:716 - Cash Price is SAME - $ 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.439 OrderManagementScreen:811 - 0.2
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.439 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 3.99
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.574 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.657 PaymentWindow:1121 - Cash value is SAME - $ 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.889 PaymentWindow:1019 - 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 18:38:55.890 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 3.79
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:16.905 OrderManagementScreen:931 - Service Charge Value is - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:16.956 OrderManagementScreen:716 - Cash Price is SAME - $ 14.81
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:16.996 OrderManagementScreen:811 - 0.79
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:16.996 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 15.60
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.262 OrderManagementScreen:931 - Service Charge Value is - $ 4.98
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.304 OrderManagementScreen:716 - Cash Price is SAME - $ 77.28
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.344 OrderManagementScreen:811 - 4.11
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.345 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 81.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.604 OrderManagementScreen:931 - Service Charge Value is - $ 7.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.651 OrderManagementScreen:716 - Cash Price is SAME - $ 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.685 OrderManagementScreen:811 - 6.85
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.685 OrderManagementScreen:816 - Expected Cash Price is SAME with Actual Cash Price - 135.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.802 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:17.864 PaymentWindow:1121 - Cash value is SAME - $ 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:18.082 PaymentWindow:1019 - 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:18.083 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 128.83
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.128 OrderManagementScreen:773 - 0.8
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.128 OrderManagementScreen:778 - Expected Cash Price is SAME with Actual Cash Price - 15.80
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.518 OrderManagementScreen:716 - Cash Price is SAME - $ 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.552 OrderManagementScreen:792 - 0.87
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.552 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 17.23
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.658 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 17.23
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.784 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.894 PaymentWindow:1008 - 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:37.894 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 16.36
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.025 OrderManagementScreen:1274 -  Tax is - $ 0.65
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.090 OrderManagementScreen:716 - Cash Price is SAME - $ 14.95
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.128 OrderManagementScreen:792 - 0.8
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.129 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 15.75
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.399 OrderManagementScreen:1274 -  Tax is - $ 6.50
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.463 OrderManagementScreen:716 - Cash Price is SAME - $ 78.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.499 OrderManagementScreen:792 - 4.15
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.500 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 82.15
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.689 OrderManagementScreen:1274 -  Tax is - $ 15.60
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.745 OrderManagementScreen:716 - Cash Price is SAME - $ 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.786 OrderManagementScreen:792 - 6.92
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.786 OrderManagementScreen:797 - Expected Cash Price is SAME with Actual Cash Price - 136.92
+[${ROUTINGKEY} INFO ] 2024-01-09 18:39:59.892 PaymentWindow:1460 - Total is SAME with Balance Due Payment screen - 136.92
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:00.030 PaymentWindow:1467 - Cash Price is Same with Paid Amount - 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:00.155 PaymentWindow:1008 - 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:00.155 PaymentWindow:1010 - Cash Price Value is Same with the Digital Receipt Screen - 130.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:21.290 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:21.671 OrderManagementScreen:849 - 0.2
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:21.671 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 3.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:21.812 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:21.905 PaymentWindow:1121 - Cash value is SAME - $ 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:22.134 PaymentWindow:1019 - 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:22.134 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 3.76
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:43.281 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:43.637 OrderManagementScreen:849 - 0.21
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:43.638 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 4.25
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:43.806 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:43.878 PaymentWindow:1121 - Cash value is SAME - $ 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:44.073 PaymentWindow:1019 - 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 18:40:44.073 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 4.04
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:05.144 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:05.456 OrderManagementScreen:849 - 0.84
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:05.457 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 16.69
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:05.787 OrderManagementScreen:849 - 4.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:05.788 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 86.87
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:06.081 OrderManagementScreen:849 - 7.3
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:06.081 OrderManagementScreen:854 - Expected Cash Price is SAME with Actual Cash Price - 144.45
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:06.180 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:06.242 PaymentWindow:1121 - Cash value is SAME - $ 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:06.440 PaymentWindow:1019 - 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:06.441 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 137.15
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:27.690 OrderManagementScreen:911 - Tax Value is - $ 0.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:27.719 OrderManagementScreen:716 - Cash Price is SAME - $ 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:27.758 OrderManagementScreen:830 - 0.62
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:27.760 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 12.30
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:27.906 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:27.980 PaymentWindow:1121 - Cash value is SAME - $ 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:28.181 PaymentWindow:1019 - 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:28.182 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 11.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.438 OrderManagementScreen:911 - Tax Value is - $ 1.37
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.465 OrderManagementScreen:716 - Cash Price is SAME - $ 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.497 OrderManagementScreen:830 - 0.57
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.497 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 11.20
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.619 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.709 PaymentWindow:1121 - Cash value is SAME - $ 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.934 PaymentWindow:1019 - 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 18:41:49.935 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 10.63
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.003 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.499 OrderManagementScreen:911 - Tax Value is - $ 2.68
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.519 OrderManagementScreen:716 - Cash Price is SAME - $ 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.539 OrderManagementScreen:830 - 0.5
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.539 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 9.82
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.669 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.731 PaymentWindow:1121 - Cash value is SAME - $ 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.940 PaymentWindow:1019 - 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:11.940 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 9.32
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.391 OrderManagementScreen:911 - Tax Value is - $ 1.36
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.431 OrderManagementScreen:716 - Cash Price is SAME - $ 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.469 OrderManagementScreen:830 - 0.73
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.469 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 14.37
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.594 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.701 PaymentWindow:1121 - Cash value is SAME - $ 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.916 PaymentWindow:1019 - 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:33.917 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 13.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.315 OrderManagementScreen:911 - Tax Value is - $ 5.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.337 OrderManagementScreen:716 - Cash Price is SAME - $ 10.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.358 OrderManagementScreen:830 - 0.53
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.358 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 10.53
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.473 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 10.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.535 PaymentWindow:1121 - Cash value is SAME - $ 10.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.735 PaymentWindow:1019 - 10.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:42:55.735 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 10.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:16.900 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.471 OrderManagementScreen:911 - Tax Value is - $ 3.04
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.494 OrderManagementScreen:716 - Cash Price is SAME - $ 11.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.516 OrderManagementScreen:830 - 0.64
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.517 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 12.60
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.616 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 11.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.681 PaymentWindow:1121 - Cash value is SAME - $ 11.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.869 PaymentWindow:1019 - 11.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:17.870 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 11.96
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.154 OrderManagementScreen:911 - Tax Value is - $ 1.30
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.190 OrderManagementScreen:716 - Cash Price is SAME - $ 12.35
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.225 OrderManagementScreen:830 - 0.66
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.225 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 13.01
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.457 OrderManagementScreen:911 - Tax Value is - $ 6.50
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.482 OrderManagementScreen:716 - Cash Price is SAME - $ 65.00
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.508 OrderManagementScreen:830 - 3.46
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.508 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 68.46
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.746 OrderManagementScreen:911 - Tax Value is - $ 10.40
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.765 OrderManagementScreen:716 - Cash Price is SAME - $ 109.20
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.789 OrderManagementScreen:830 - 5.81
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.790 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 115.01
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.887 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 109.20
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:39.956 PaymentWindow:1121 - Cash value is SAME - $ 109.20
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:40.196 PaymentWindow:1019 - 
+[${ROUTINGKEY} INFO ] 2024-01-09 18:43:40.198 Hooks:50 - Failed Scenario Name : verify cash reward with Item based Discount & Quantity based Tax
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:20.916 OrderManagementScreen:911 - Tax Value is - $ 12.61
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:20.942 OrderManagementScreen:716 - Cash Price is SAME - $ 1.04
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:20.973 OrderManagementScreen:830 - 0.06
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:20.973 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 1.10
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.238 OrderManagementScreen:911 - Tax Value is - $ 64.61
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.283 OrderManagementScreen:716 - Cash Price is SAME - $ 6.89
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.324 OrderManagementScreen:830 - 0.37
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.325 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 7.26
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.550 OrderManagementScreen:911 - Tax Value is - $ 103.61
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.574 OrderManagementScreen:716 - Cash Price is SAME - $ 15.99
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.605 OrderManagementScreen:830 - 0.85
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.606 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 16.84
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.754 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 15.99
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:21.840 PaymentWindow:1121 - Cash value is SAME - $ 15.99
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:22.072 PaymentWindow:1019 - 15.99
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:22.073 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 15.99
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:43.189 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:43.747 OrderManagementScreen:911 - Tax Value is - $ 23.21
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:43.779 OrderManagementScreen:716 - Cash Price is SAME - $ 96.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:43.800 OrderManagementScreen:830 - 5.13
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:43.800 OrderManagementScreen:835 - Expected Cash Price is SAME with Actual Cash Price - 101.52
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:43.899 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 96.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:43.956 PaymentWindow:1121 - Cash value is SAME - $ 96.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:44.143 PaymentWindow:1019 - 96.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:45:44.144 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 96.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:05.516 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:05.782 OrderManagementScreen:911 - Tax Value is - $ 0.30
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:05.815 OrderManagementScreen:1063 - Gratuity Value is - $ 0.21
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:05.895 OrderManagementScreen:738 - Cash Price is SAME - $ 3.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:05.928 OrderManagementScreen:868 - 0.18
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:05.929 OrderManagementScreen:873 - Expected Cash Price is SAME with Actual Cash Price - 3.57
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:06.029 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 3.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:06.084 PaymentWindow:1121 - Cash value is SAME - $ 3.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:06.269 PaymentWindow:1019 - 3.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:06.269 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 3.39
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:27.615 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:27.922 OrderManagementScreen:911 - Tax Value is - $ 3.09
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:27.951 OrderManagementScreen:1063 - Gratuity Value is - $ 0.01
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:28.030 OrderManagementScreen:738 - Cash Price is SAME - $ 0.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:28.071 OrderManagementScreen:868 - 0.02
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:28.071 OrderManagementScreen:873 - Expected Cash Price is SAME with Actual Cash Price - 0.45
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:28.185 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 0.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:28.242 PaymentWindow:1121 - Cash value is SAME - $ 0.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:28.436 PaymentWindow:1019 - 0.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:28.436 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 0.43
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:49.401 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.079 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.326 OrderManagementScreen:911 - Tax Value is - $ 0.66
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.344 OrderManagementScreen:1063 - Gratuity Value is - $ 0.18
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.391 OrderManagementScreen:738 - Cash Price is SAME - $ 2.98
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.424 OrderManagementScreen:868 - 0.16
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.425 OrderManagementScreen:873 - Expected Cash Price is SAME with Actual Cash Price - 3.14
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.522 PaymentWindow:1113 - Fast Cash Value is SAME with cash price - $ 2.98
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.571 PaymentWindow:1121 - Cash value is SAME - $ 2.98
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.737 PaymentWindow:1019 - 2.98
+[${ROUTINGKEY} INFO ] 2024-01-09 18:46:50.737 PaymentWindow:1021 - Cash Price Value is Same with the Digital Receipt Screen - 2.98
+[${ROUTINGKEY} INFO ] 2024-01-09 18:47:35.885 Hooks:50 - Failed Scenario Name : LIN-22326 - Application shows change due while making payment for the delivery check in the out Tab.

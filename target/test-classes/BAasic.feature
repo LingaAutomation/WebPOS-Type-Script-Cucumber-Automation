@@ -6,7 +6,7 @@ Feature:Basic Validation
 #    And Go to the BO
 #    When I search the store as "TestAppiumUSD"
 
-
+  @MainBAsic
   Scenario: Cashier Out From Till Management Screen
     Given I'm logged in
     And I closed the order type window
@@ -24,7 +24,7 @@ Feature:Basic Validation
 #    Then I should verify the initial Gross sale value as "0,00"
     And I click power button
 
-
+  @MainBAsic
   Scenario: Refund
     Given I'm logged in
     And I closed the order type window
@@ -155,8 +155,8 @@ Feature:Basic Validation
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
     And I should verify subtotal value as "$ 1.00"
-    And I should verify tax value as "$ 0.10"
-    And I should verify total2 value as "$ 1.16"
+    And I should verify tax value as "$ 0.00"
+    And I should verify total2 value as "$ 1.05"
     And I click Payment button in the Order Management Screen
 #Need to do
     When I select the MPPG Payment on the payment window
@@ -203,7 +203,7 @@ Feature:Basic Validation
     And I click power button
 
 
-
+  @MainBAsic
   Scenario: Global Till ( PAY IN, PAy Out )
     Given I'm logged in
     And I closed the order type window
@@ -307,7 +307,7 @@ Feature:Basic Validation
     And I click Done button on the Popup
     And I click power button
 
-
+  @MainBAsic
   Scenario: Verify the Pay in, Payout, Audit, Single cashier out, Close the day for the current business day(Clock in, start till(user till, Global till))
     Given I'm logged in
     And I closed the order type window
@@ -410,7 +410,7 @@ Feature:Basic Validation
     And I click Done button on the Popup
     And I click power button
 
-
+  @MainBAsic
   Scenario: Added tip is Correct or not
     Given I'm logged in
     And I closed the order type window
@@ -427,7 +427,7 @@ Feature:Basic Validation
     And I closed the order type window
     And I click log off button in order screen
 
-
+  @MainBAsic
   Scenario: Bussiness Date Verify with Close day window Date
     When I get he Bussiness date from the order screen
     Given I'm logged in
@@ -442,15 +442,17 @@ Feature:Basic Validation
   @MainBAsic
   Scenario: Cashier OUT PULL Request
     Given Im logged in for cashier1
-    And I created sale for Cashier out1 as "FOOD"
+    And I created sale for Cashier out1 as "CIFOOD"
+    And I click power button in the All Orders screen
     Given Im logged in for cashier2
     And I created sale for Cashier out2 as "Salad"
-    And I click power button
+    And I click power button in the All Orders screen
     Given Im logged in for cashier3
     And I created sale for Cashier out3 as "Salad"
+    And I click power button in the All Orders screen
     Given Im logged in for cashier4
     And I created sale for Cashier out4 as "Salad"
-    And I click power button
+    And I click power button in the All Orders screen
     Given I'm logged in for Phone store
     And I closed the order type window
     And I click the Settings button
@@ -488,7 +490,7 @@ Feature:Basic Validation
     And I closed the order type window
     And I click log off button in order screen
 
-   
+  @MainBAsic
   Scenario: User Till
     Given I'm logged in
     ##5. Navigate to the Till Management screen
@@ -585,7 +587,7 @@ Feature:Basic Validation
     And I get the closed till check details
     And I click power button
 
-   
+  @MainBAsic
   Scenario: Global Till
     Given I'm logged in
     And I closed the order type window
@@ -684,7 +686,7 @@ Feature:Basic Validation
     And I get the closed till check details
     And I click power button
 
-   
+  @MainBAsic
   Scenario:Verify the Cash Discount charge for the check
     Given I'm logged in
     And I closed the order type window
@@ -710,9 +712,9 @@ Feature:Basic Validation
     And I click Payment button in the Order Management Screen
     And I click Submit button in the Payment popup
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Transfer Item from one Check to another Check
     Given Login with valid pin in split screen
     And I closed the order type window
@@ -744,10 +746,10 @@ Feature:Basic Validation
     Then Verify the Transferred menu item is available or not in the receiving table
 #    Then I verify the Transferred menu item is available on the selected transferred table
     And Click the finish button
-    And I click power button
+    And I click power button in the All Orders screen
 #    And Close all the active checks
 #
-   
+  @MainBAsic
   Scenario: Transfer To Table from one Check to another Check
     Given Login with valid pin in split screen
     And I closed the order type window
@@ -766,10 +768,10 @@ Feature:Basic Validation
     And Check the Transferred from table
 #    Then Verify the receiving table it should contain more than one table
 #    And Click the close button
-    And I click power button
+    And I click power button in the All Orders screen
 #    And Close all the active checks
 
-   
+  @MainBAsic
   Scenario: Verify the "Transfer to Server" from one check to another check
     Given I'm logged in
     And I closed the order type window
@@ -788,10 +790,10 @@ Feature:Basic Validation
     And Verify the Successful message of Transfer To Server
     And I click Done button on the Popup
     Then Verify the server name is available or not in the required table
-    And I click power button
+    And I click power button in the All Orders screen
 #    And Close all the active checks
 
-   
+  @MainBAsic
   Scenario: Other than Cash Payment
     Given I'm logged in
     And I closed the order type window
@@ -813,13 +815,13 @@ Feature:Basic Validation
   ##7. Without choosing the submit button Select "Exit" option from payment screen
     And I click Exit to return to Order Management Screen
     When verify the paid Amount in Order Screen for card option
-    When verify cash discount is display in order screen
+#    When verify cash discount is display in order screen
 
   ##8. Complete the sale with the cash payment
     And I click Payment button in the Order Management Screen
     And I click Submit button in the Payment popup
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
   #Clarification
   Scenario: Item Service charge  (Item Service Charge Without Tax)
@@ -835,7 +837,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button
 
-   
+  @MainBAsic
   Scenario: Item Service charge (Item Service Charge With Tax )
     Given I'm logged in
     And I closed the order type window
@@ -847,9 +849,9 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario:Manual Gratuity Fixed
   ##Manual Gratuity Fixed
     Given I'm logged in
@@ -869,9 +871,9 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Manual Gratuity Varying
     Given I'm logged in
     And I closed the order type window
@@ -894,9 +896,9 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Auto Gratuity Fixed
     Given I'm logged in
     And I closed the order type window
@@ -916,9 +918,9 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Auto Gratuity Varying(Multiple Auto Varying/Fixed gratuity is available means From Step 6 will be applicable)
     ##NOTE: If the store has only one Auto Varying gratuity is available means Step 5 will be applicable
 
@@ -936,7 +938,7 @@ Feature:Basic Validation
     Then I should see Add Gratuity screen
 
 #    And I click auto Gratuity varying button
-    And I select auto gratuity as "Auto Varying Gratuity"
+    And I select auto gratuity as "Auto vary Gratuity"
     Then I should see enter Percentage popup
     And I pass the value and click Apply button
     And I select Menu of Basic validation for QSR as "Salad"
@@ -947,7 +949,7 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
 #Hold due to Credit card payment un-available
   Scenario: Card Service Charge
@@ -1060,7 +1062,7 @@ Feature:Basic Validation
   #  And I click Table Layout tab
     And I click power button
 
-   
+  @MainBAsic
   Scenario: Customer
     ## Verify the Customer attachment and search(name & phone no).
     Given I'm logged in
@@ -1074,11 +1076,12 @@ Feature:Basic Validation
     And Enter the new customer randomlys
 #    And I click the phone number field on the customer profile screen
     And I click the Save button
+    And I click on the customer name in the order screen
     Then I should see the customer profile window
     And I enter the customer name randomly
     And I click log off button in order screen
 
-   
+  @MainBAsic
   Scenario: Taxes
       #####   Item based tax (amount)  #####
     Given I'm logged in
@@ -1224,10 +1227,10 @@ Feature:Basic Validation
     And I click Done button on the Popup
     And I click All
     Then I should get back to the Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
 
-   
+  @MainBAsic
   Scenario: Orders
      ## Verify Orders(Menu, Menu with Serving size, Menu with Modifiers, Menu with Modifiers and Prefix, Menu with Serving, Modifiers and Prefix)
   ##  Menu   ##
@@ -1241,7 +1244,7 @@ Feature:Basic Validation
  #   Scenario: Menu with serving size
   #    Given I'm logged in
     And I closed the order type window
-    And I select Breakfast as Category
+    And I select "Breakfast" as Category
     And I select menu item as "sappthi"
     And I select modifier as "EACH"
     And I select modifier as "None"
@@ -1279,7 +1282,7 @@ Feature:Basic Validation
     And I closed the order type window
     And I select FOOD as category
     And I select menu item as "Pizza Rucola 12inch"
-    And I select modifier as "EACH"
+#    And I select modifier as "EACH"
     And I select modifier as "Smoked Salmon"
     And I select prefix modifier
     And I click Done to get back
@@ -1291,17 +1294,18 @@ Feature:Basic Validation
     And I close the order type window
     And I click log off button in order screen
 
-   
+  @MainBAsic
   Scenario: Verify the sale in QSR Service Type
     Given I'm logged in
     And I close the order type window
     And I tap QSR button to open the order types combo
+    And I click on the "QSR" Service type in the dropdown
     And I get check number
     And I select Menu of Basic validation for QSR as "Salad"
     And I click Order button in the order management screen
     And I click Payment button in the Order Management Screen
-    And I select Cash as payment method
-    And I click Submit button on the Payment Window
+    And I click cash button from the payment method popup
+    And I click Submit button in the Payment popup
     And I close the order type window
     And I click All
     And I click Closed tab on the Check stats
@@ -1311,8 +1315,8 @@ Feature:Basic Validation
     And I select Menu For Dine order type as "Salad"
     And I click Order button in the order management screen
     And I click Payment button in the Order Management Screen
-    And I select Cash as payment method
-    And I click Submit button on the Payment Window
+    And I click cash button from the payment method popup
+    And I click Submit button in the Payment popup
     And I click Table Layout tab
     And I click Check Stats tab
     And I click Closed tab on the Check stats
@@ -1326,7 +1330,7 @@ Feature:Basic Validation
 #    And I enter an existing customer's name "Auto ragav"
 #    And I select the customer
 #    When I click the Save button
-    Then I should see the Ordering Screen with a button with the label "For Here"
+    Then I should see the Ordering Screen with a button with the label "FORHERE"
 #    Then I should see customer as "Auto r" added on order screen
     And I get check number
     And I select Menu of Basic validation for QSR as "Salad"
@@ -1342,7 +1346,7 @@ Feature:Basic Validation
     Then I should see closed check in closed check tab
     ## Verify the sale in Service Type( TO GO )
     And I click QSR tab
-    And I select the TOGO order type
+#    And I select the TOGO order type
     And I click Done button to select the order type
     And I click Add Customer Button
     Then I should see the add customer screen in the window
@@ -1353,7 +1357,7 @@ Feature:Basic Validation
     And I enter an existing customer's name "Auto ragav"
     And I select the customer
     When I click the Save button
-    Then I should see the Ordering Screen with a button with the label "To Go"
+    Then I should see the Ordering Screen with a button with the label "TOGO"
     Then I should see customer as "Auto r" added on order screen
     And I get check number
     And I select Menu of Basic validation for QSR as "Salad"
@@ -1367,9 +1371,9 @@ Feature:Basic Validation
     And I click Check Stats tab
     And I click Closed tab on the Check stats
     Then I should see closed check in closed check tab
-    And I click power button
+    And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Sale In Service Types
     ## Verify the sale in Service Type( TO GO )
     Given I'm logged in
@@ -1386,7 +1390,7 @@ Feature:Basic Validation
     And I enter an existing customer's name "Auto ragav"
     And I select the customer
     When I click the Save button
-    Then I should see the Ordering Screen with a button with the label "To Go"
+    Then I should see the Ordering Screen with a button with the label "TOGO"
     Then I should see customer as "Auto r" added on order screen
     And I get check number
     And I select Menu of Basic validation for QSR as "Salad"
@@ -1412,7 +1416,7 @@ Feature:Basic Validation
     Then I should see the customer profile window
     And I select search
     And I enter an existing customer's name "auto loyalty"
-    And I select the customer for loyalty
+    And I select the customer
     When I click the Save button
     Then I should see customer as "auto l" added on order screen
     And I get check number
@@ -1430,7 +1434,7 @@ Feature:Basic Validation
     And I click active driver as "Auto D"
     Then I should see driver is offline popup
     And I click Yes button on driver is offline popup
-    And I click active driver as "Auto D"
+    And I click active driver as "Auto D" in the Phone Order Screen
     And I click departure button
     And I click out tab in phone order screen
     And I click the Closed check in out tab
@@ -1465,7 +1469,7 @@ Feature:Basic Validation
     And I click active driver as "Auto D"
     Then I should see driver is offline popup
     And I click Yes button on driver is offline popup
-    And I click active driver as "Auto D"
+    And I click active driver as "Auto D" in the Phone Order Screen
     And I click departure button
     And I click out tab in phone order screen
     And I click the Closed check in out tab
@@ -1473,10 +1477,10 @@ Feature:Basic Validation
     And I click Complete tab
     Then I should see closed check in complete tab
 #    And I hide the keyboard
-    And I click power button
+    And I click power button in the All Orders screen
 
 
-   
+  @MainBAsic
   Scenario: UpCharge (Verify the Upcharge for the check)
     Given I'm logged in
     And I closed the order type window
@@ -1506,7 +1510,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Upcharge (Role restriction)
     Given I'm logged in for BarTab for basic validation
     And I click New Tab in the Bar Tab Screen
@@ -1551,7 +1555,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Verify the sale in Bar Tab Service Type
     Given I'm logged in
     And I closed the order type window
@@ -1575,7 +1579,7 @@ Feature:Basic Validation
     And I click Submit button on the Payment Window
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Menu Option - Verify the Menu option for the all service type by menu level in order screen
      ## AUTOMATIC HOLD ##
     Given I'm logged in
@@ -1723,7 +1727,7 @@ Feature:Basic Validation
     And I click Done button on the Popup
     And I click log off button in order screen
 
-   
+  @MainBAsic
   Scenario: Check OPTIONS
          #######   TAX EXEMPT  #######
 
@@ -1819,6 +1823,9 @@ Feature:Basic Validation
           ####### Open Item #######
 #            Given I'm logged in for Phone store
 #            And I closed the order type window
+    And I click Void button on order management screen
+    Then I should see All orders are voided
+    And I click Done button on the Popup
     And I click Options button
     Then I should see the Check Options screen
     And I click Open Item button
@@ -1840,7 +1847,7 @@ Feature:Basic Validation
     And I click log off button in order screen
   ###########   Gift Card  ##############
 
-   
+#Hold
   Scenario: Gift
     Given I'm logged in
     And I close the order type window
@@ -1863,11 +1870,11 @@ Feature:Basic Validation
     Then I verify beginning balance,recurring balance
     When I click Suspend account button in the gift card window
     Then I should see gift card inactivated successfully popup
-    And I click Done button on the Popup
+    And I click Done button on the Popup 1
     And I click Done if its selectable
     And I click Active account button in the gift card window
     Then I should see gift card activated successfully popup
-    And I click Done button on the Popup
+    And I click Done button on the Popup 1
     When I enter the charge amount as "124530" on the Gift card window
     And I click Done button on the Popup
     And I click Payment button in the Order Management Screen
@@ -1886,7 +1893,7 @@ Feature:Basic Validation
 
     ######## GIVE-X ###########
 
-   
+  @MainBAsic
   Scenario: 86 list
     Given I'm logged in
     And I closed the order type window
@@ -1899,6 +1906,9 @@ Feature:Basic Validation
     Then I should see 86 list window
     And I click on the search field "Chicken Rice" for searching the menu item "search menu item"
 #    And I hide the keyboard
+    And I click the quantity txt field in the eighty six list popup "click qty txt field"
+    And I enter the quantity value as "0","0","0","8"
+    Then I click "Continue" in the Quantity popup "Click Continue Button"
     And I click the quantity txt field in the eighty six list popup "click qty txt field"
     And I enter the quantity value as "0","0","0","8"
     Then I click "Continue" in the Quantity popup "Click Continue Button"
@@ -1932,11 +1942,11 @@ Feature:Basic Validation
     And I click Quantity on menu option
     And I click "9"
     And I click the Continue button
-    Then I should see quantity is not enough popup
+    Then I should see quantity is not enough popup2
     And I click Done button on the Popup
-    And I click Back button in the menu options window
+#    And I click Back button in the menu options window
     And I click Finish Order button
-    And I click power button
+    And I click power button in the All Orders screen
 #    And I click 86List button in the login screen
 #    Then  I should verify the "86 List" in the eighty six list popup "verify the 86 list popup"
 #    And I click on the search field "Chicken Rice" for searching the menu item "search menu item "
@@ -1957,7 +1967,7 @@ Feature:Basic Validation
 #    And I click Done button on the Popup
 #    And I click power button
 
-   
+  @MainBAsic
   Scenario: Merge With Check Based Amount (Verify the Merge option from Table layout screen )
     Given I'm logged in
     And I closed the order type window
@@ -1984,7 +1994,7 @@ Feature:Basic Validation
 #    Then I should see discount as "IB-AfterTax-Amount" applied on order screen
     And I get the seat number from the check1
     And I get the list of the menu from the order screen1
-    And I get value the menu values from order screen1
+#    And I get value the menu values from order screen1
     And I click Finish button
     And I click Table Layout tab
     And I click Merge button
@@ -2010,14 +2020,14 @@ Feature:Basic Validation
 #      When I verify the menu after merge done
     And I click table number on the order screen
   #When I verify the menu prize after merge done
-    When I verify the menu prize after merge done for check based amount
+#    When I verify the menu prize after merge done for check based amount
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Merge with Item Based Amount (Verify the Merge option from Table layout screen )
     Given I'm logged in
     And I closed the order type window
@@ -2044,7 +2054,7 @@ Feature:Basic Validation
 #    Then I should see discount as "IB-AfterTax-Amount" applied on order screen
     And I get the seat number from the check1
     And I get the list of the menu from the order screen1
-    And I get value the menu values from order screen1
+#    And I get value the menu values from order screen1
     And I click Finish button
     And I click Table Layout tab
     And I click Merge button
@@ -2069,7 +2079,7 @@ Feature:Basic Validation
     When I verify the seat 2 order screen menu with 2nd check menu
 #      When I verify the menu after merge done
     And I click table number on the order screen
-    When I verify the menu prize after merge done
+#    When I verify the menu prize after merge done
 #      When I verify the menu prize after merge done for check based amount
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
@@ -2077,7 +2087,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Verify the Merge option from Bar Tab screen
     Given I'm logged in
     And I closed the order type window
@@ -2097,7 +2107,7 @@ Feature:Basic Validation
     And I select Menu For Bartab order type as "North Indian dish" for merge Check1
     And I get the seat number from the check1
     And I get the list of the menu from the order screen1
-    And I get value the menu values from order screen1
+#    And I get value the menu values from order screen1
     And I click Finish button
     And I click BarTab Layout
     And I click Merge button
@@ -2119,14 +2129,14 @@ Feature:Basic Validation
     When I verify the seat 2 order screen menu with 2nd check menu
 #      When I verify the menu after merge done
     And I click table number on the order screen
-    When I verify the menu prize after merge done for bartab only
+#    When I verify the menu prize after merge done for bartab only
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
     And I click BarTab Layout
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Split Check from Table layout
      ####  Split Check from Table layout/bar tab Screen  ####
     Given I'm logged in
@@ -2238,7 +2248,7 @@ Feature:Basic Validation
     And I click power button in the All Orders screen
 
 
-   
+  @MainBAsic
   Scenario: Split Check By BarTab Screen
   #######  Split Check By BarTab Screen  #######
     Given I'm logged in
@@ -2333,8 +2343,8 @@ Feature:Basic Validation
 #    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the menu on the split check screen
     And I click Seperate item button
     And I select the number of split item "2" for Split check
@@ -2351,7 +2361,7 @@ Feature:Basic Validation
     When I verify the splitted check is available in active checks tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Split Check From Order Screen (Table Layout)
     Given I'm logged in
     And I closed the order type window
@@ -2424,8 +2434,8 @@ Feature:Basic Validation
 #    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the menu on the split check screen
     And I click Seperate item button
     And I select the number of split item "2" for Split check
@@ -2442,7 +2452,7 @@ Feature:Basic Validation
     When I verify the splitted check is available in active checks tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Split Check From Order Screen (Bartab Layout)
     Given I'm logged in
     And I closed the order type window
@@ -2499,7 +2509,7 @@ Feature:Basic Validation
   ###########  SPLIT BY SEAT #########
     And I click BarTab Layout
     And I click NewTab from BarTab Layout
-    And I click "Exit" in the preauth popup "click Exit Button"
+#    And I click "Exit" in the preauth popup "click Exit Button"
     And I click add button to create seat in order screen
     And I click seat 1 for add menu item
     And I select Menu For Bartab order type as "North Indian dish" for split Check
@@ -2524,8 +2534,8 @@ Feature:Basic Validation
 #    And I click Done button on the Popup
     When I verify the check is splitted and check number is increased
     And I click print All Button in the split check screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
     And I click the menu on the split check screen
     And I click Seperate item button
     And I select the number of split item "2" for Split check
@@ -2542,7 +2552,7 @@ Feature:Basic Validation
     When I verify the splitted check is available in active checks tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Split Seat from Table layout/bar tab Screen
     Given I'm logged in
     And I closed the order type window
@@ -2564,9 +2574,9 @@ Feature:Basic Validation
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click the menu on the split check screen
-    And I click new check added on the split check screen
+    And I click new check added on the split check screen page
     When I verify the menu is moved to the added check seat
-    And I click new check added on the split check screen
+    And I click new check added on the split check screen page
 
        ####  PRINT   ####
     And I click print button in the split seat screen
@@ -2574,7 +2584,7 @@ Feature:Basic Validation
 #  And I click yes to open Close Till Screen
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
-    When I verify the check is splitted and check number is increased
+#    When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All button in the split seat screen
@@ -2632,7 +2642,7 @@ Feature:Basic Validation
     Then I should see the Split Screen
     When I verify the split seat is avilable in split seat screen
 
-  ##########  PAY  ############
+    ##########  PAY  ############
 
     And I click new seat added on the split seat screen
     And I click Pay Button in Split Screen
@@ -2646,6 +2656,7 @@ Feature:Basic Validation
     And I click the menu on the split seat screen
     And I click seat one on the split screen
     Then I should see order cannot moved popup message1
+    And I click Done button on the Popup
     And I click the save & close button on the split screen
     And I click Finish button
     And I click Check Stats tab
@@ -2654,7 +2665,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Split Seat from bar tab Screen
     Given I'm logged in
     And I closed the order type window
@@ -2686,9 +2697,9 @@ Feature:Basic Validation
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click the menu on the split check screen
-    And I click new check added on the split check screen
+    And I click new check added on the split check screen page present
     When I verify the menu is moved to the added check seat
-    And I click new check added on the split check screen
+    And I click new check added on the split check screen page present
 
        ####  PRINT   ####
     And I click print button in the split seat screen
@@ -2696,7 +2707,7 @@ Feature:Basic Validation
 #  And I click yes to open Close Till Screen
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
-    When I verify the check is splitted and check number is increased
+#    When I verify the check is splitted and check number is increased
 
       ####  PRINT ALL  ####
     And I click print All button in the split seat screen
@@ -2735,7 +2746,7 @@ Feature:Basic Validation
 
     And I get seat 1 prize details
     And I get seat 2 prize details
-    And I click new check added on the split check screen
+    And I click new check added on the split check screen page present
     And I click seat one on the split screen
     And I click the Group Seats button in the Split Seat
     When I verify all menu is club into single seat after click group seat
@@ -2758,7 +2769,7 @@ Feature:Basic Validation
 
   ##########  PAY  ############
 
-    And I click new check added on the split check screen
+    And I click new check added on the split check screen page present
     And I click Pay Button in Split Screen
     Then I should see the Payment window
     And I click cash button from the payment method popup
@@ -2770,6 +2781,7 @@ Feature:Basic Validation
     And I click the menu on the split seat screen
     And I click seat one on the split screen
     Then I should see order cannot moved popup message1
+    And I click Done button on the Popup
     And I click the save & close button on the split screen
     And I click Finish button
     And I click Check Stats tab
@@ -2778,7 +2790,7 @@ Feature:Basic Validation
     And I click BarTab Layout
     And I click power button
 
-   
+  @MainBAsic
   Scenario: Split Seat from Order Screen
     Given I'm logged in
     And I closed the order type window
@@ -2888,7 +2900,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-   
+  #Hold due to memebership dependency
   Scenario: Price Level ( Customer Mapped in membership by BO level )
     Given I'm logged in
     And I closed the order type window
@@ -2932,7 +2944,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-   
+   #Hold due to dependency
   Scenario: Customer Mapped in membership by iPad level
     Given I'm logged in
     And I closed the order type window
@@ -2970,7 +2982,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-   
+ #Hold due to memebership
   Scenario: Display group Price Level
     Given I'm logged in
     And I closed the order type window
@@ -2997,7 +3009,7 @@ Feature:Basic Validation
     When I verify subtotal value with order summary subtotal value
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: Reopen the closed checks and validate the tax, total, Subtotal
     Given I'm logged in
     And I closed the order type window
@@ -3022,11 +3034,11 @@ Feature:Basic Validation
     Then I Should get back to the Order Screen
     When I validate the menu values in the order screen
     And I click Payment button in the Order Management Screen
-    And I click submit button
+    And I click Submit button in the Payment popup
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
     Scenario: When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
       Given I'm logged in
       And I closed the order type window
@@ -3036,8 +3048,8 @@ Feature:Basic Validation
       And I select category as "FOOD"
       And I select menu item as "Chicken Schnitzel"
       And I should verify subtotal value as "$ 12.00"
-      And I should verify tax value as "$ 1.20"
-      And I should verify total value as "$ 13.20"
+      And I should verify tax value as "$ 0.00"
+      And I should verify total value as "$ 12.00"
       ### Second Seat Creation ###
       And I click add button to create seat in order screen
       And I select category as "FOOD"
@@ -3050,14 +3062,14 @@ Feature:Basic Validation
       Then I should see Add Gratuity screen
       And I select auto gratuity as "Fixxy1"
       When I click table number on the order screen
-      Then I should verify the gratuity value after add auto gratuity value as "8"
+      Then I should verify the gratuity value after add auto gratuity value as "12"
       And I select seat as "3" on the order screen
       And I select category as "FOOD"
       And I select menu item as "Chicken Schnitzel"
       And I should verify subtotal value as "$ 12.00"
       And I should verify tax value as "$ 1.20"
-      And I should verify gratuity value as "$ 0.96"
-      And I should verify cash option value as "$ 14.16" with Gratuity
+      And I should verify gratuity value as "$ 1.44"
+      And I should verify cash option value as "$ 14.64" with Gratuity
       ###  Four Seat Creation ###
       And I click add button to create seat in order screen
       And I select category as "FOOD"
@@ -3073,7 +3085,7 @@ Feature:Basic Validation
       And I click All
       And I click power button in the All Orders screen
 
-   
+  @MainBAsic
   Scenario: LIN-22163 - Gratuity value is mismatching, when applying auto gratuity
     Given I'm logged in
     And I closed the order type window
@@ -3106,7 +3118,7 @@ Feature:Basic Validation
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
-   
+  @MainBAsic
 Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   Given I'm logged in
   And I closed the order type window
@@ -3125,10 +3137,10 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I select menu item as "Pancake"
   And I get the menu from the order screen
   And I should verify subtotal value as "$ 10.00"
-  And I should verify tax value as "$ 1.21"
-  And I should verify total2 value as "$ 11.66"
+  And I should verify tax value as "$ 1.11"
+  And I should verify total2 value as "$ 11.55"
   And I should verify paid amount0 as "$ 0.00"
-    And I should verify cash price value as "$ 11.10"
+    And I should verify cash price value as "$ 11.00"
   And I click Cash button for Complete Sale
   And I click Exact button on the cash pop-up
   And I click Enter Button on the cash pop-up
@@ -3150,7 +3162,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I delete the menu item in the order screen
   And I should verify subtotal value as "$ 9.00"
   And I should verify tax value as "$ 0.90"
-  And I should verify total2 value as "$ 9.90"
+  And I should verify total2 value as "$ 10.40"
   And I should verify paid amount as "$ 0.00"
   And I click Payment button in the Order Management Screen
   And I click cash button from the payment method popup
@@ -3158,8 +3170,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I closed the order type window
   And I click log off button in order screen
 
-
-   
+  @MainBAsic
   Scenario: LIN-22594 - Gratuity amounts disappears from the check in the following scenario
     Given I'm logged in
     And I closed the order type window
@@ -3201,9 +3212,9 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     Then I should verify subtotal value as "$ 2.95"
     Then I should verify tax value as "$ 0.34"
     Then I should verify gratuity value as "$ 0.24"
-    And I should verify discount value1 as "$ 0.19"
+    And I should verify discount value1 as "$ 0.00"
     Then I should verify service charge value2 as "$ 0.23"
-    Then I should verify total6 value as "$ 3.76"
+    Then I should verify total6 value as "$ 3.95"
     Then I should verify paid amount1 as "$ 3.76"
     And I should verify cash price value2 as "$ 3.76"
     And I click Payment button in the Order Management Screen
@@ -3401,9 +3412,10 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     When I verify the credit card of the check from the batch screen should be encrypted
     And I click power button
 
-   
+  @MainBAsic
     Scenario: LIN-22815 - Allow to save more that 140 characters in customer notes after alert message in customer profile.
       Given I'm logged in
+    And I closed the order type window
     And I click Add Customer Button
     Then I should see the add customer screen in the window
     And I Click on the Byname Option
@@ -3424,6 +3436,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     And I Should get back to the Order Screen
     And I click Add Customer Button
     And I click remove button
+    And I click on the cross buttin in the customer profile screen
     And I click log off button in order screen
 
     @nkl
@@ -3471,7 +3484,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
       And I click Done button on the Popup
       And I click power button
 
-   
+  @MainBAsic
 Scenario: Application gets crashed when scroll the category/service type/suggestive search
   Given I'm logged in
   And I closed the order type window

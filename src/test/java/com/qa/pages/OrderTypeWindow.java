@@ -80,6 +80,7 @@ public class OrderTypeWindow extends ClockInScreen {
 
     public void selectForHereOrderType() {
         elementClick(forHereBtn, "FORHERE order type is selected.");
+        driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
     }
 
     public void selectToGoOrderType() {
@@ -101,7 +102,7 @@ public class OrderTypeWindow extends ClockInScreen {
     // Nov 15 2021
     public void selectPhoneToGoOrderType() {
         //elementClick(phoneToGoBtn, "Phone To Go order type is selected.");
-        if (find(phoneToGoBtnService, 2)) {
+        if (phoneToGoBtnService.isDisplayed()) {
             elementClick(phoneToGoBtnService, "Phone To Go order type is selected");  //Benseron - (11/11/2021)
         } else {
             elementClick(phoneToGoBtn, "Phone To Go order type is selected.");
@@ -209,9 +210,9 @@ public class OrderTypeWindow extends ClockInScreen {
     }
     public void verifyOrderTypeWindow(){
         if(find(orderTypeWindow,2)){
-            utils.log().info("Order Type Window is displayed");
+//            utils.log().info("Order Type Window is displayed");
         }else{
-            utils.log().info("Order Type Window is not displayed");
+//            utils.log().info("Order Type Window is not displayed");
         }
     }
 

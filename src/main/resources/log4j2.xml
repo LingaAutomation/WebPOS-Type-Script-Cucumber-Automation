@@ -5,14 +5,14 @@
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c:%L - %m%n"/>
         </Console>
         <Routing name="MyRoutingAppender">
-            <Routes pattern="$${ctx:ROUTINGKEY}">
+            <Routes pattern="$${ROUTINGKEY}">
                 <Route>
                     <RollingFile
-                            name="appender-${ctx:ROUTINGKEY}"
-                            fileName="${ctx:ROUTINGKEY}/application.log"
-                            filePattern="${ctx:ROUTINGKEY}/$${date:yyyy-MM-dd}/application-%d{yyyy-MM-dd}-%i.log">
+                            name="appender-${ROUTINGKEY}"
+                            fileName="${ROUTINGKEY}/application.log"
+                            filePattern="${ROUTINGKEY}/$${date:yyyy-MM-dd}/application-%d{yyyy-MM-dd}-%i.log">
                         <PatternLayout>
-                            <Pattern>[${ctx:ROUTINGKEY} %-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c{1}:%L - %m%n</Pattern>
+                            <Pattern>[${ROUTINGKEY} %-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c{1}:%L - %m%n</Pattern>
                         </PatternLayout>
                         <Policies>
                             <TimeBasedTriggeringPolicy />

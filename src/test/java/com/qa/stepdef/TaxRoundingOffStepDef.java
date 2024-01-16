@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 public class TaxRoundingOffStepDef {
     public WebDriver driver = TestUtils.driver;
     @Given("I am logging in")
-    public void i_am_logging_in() {
+    public void i_am_logging_in() throws InterruptedException {
         new ClockInScreen(driver).ClockIn();
     }
     @And("^I have closed the order type window$")

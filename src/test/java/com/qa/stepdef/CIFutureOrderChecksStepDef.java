@@ -8,11 +8,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import static com.qa.utils.TestUtils.driver;
+
 public class CIFutureOrderChecksStepDef {
 
     CIWaitListPage waitList = new CIWaitListPage();
     CIPaymentScreen ciPaymentScreen = new CIPaymentScreen();
-    CIEightySixListScreen ciEightySixListScreen = new CIEightySixListScreen();
+    CIEightySixListScreen ciEightySixListScreen = new CIEightySixListScreen(driver);
     CICloseDayScreen ciCloseDayScreen = new CICloseDayScreen();
     CIFutureOrderChecksScreen ciFutureOrderChecksScreen = new CIFutureOrderChecksScreen();
     TestUtils utils = new TestUtils();

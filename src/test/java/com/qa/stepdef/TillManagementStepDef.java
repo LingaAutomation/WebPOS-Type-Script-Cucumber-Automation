@@ -185,7 +185,7 @@ public class TillManagementStepDef {
 
     @Then("^I should see close till confirmation pop-up$")
     public void iShouldSeeCloseTillConfirmationPopUp() {
-        Assert.assertEquals(new TillManagementScreen(driver).getCloseTillPopUpMsg(), "Do you want to Close this Till ?");
+        Assert.assertEquals(new TillManagementScreen(driver).getCloseTillPopUpMsg(), "Do you want to close the till");
     }
 
     @When("^I click yes to open Close Till Screen$")

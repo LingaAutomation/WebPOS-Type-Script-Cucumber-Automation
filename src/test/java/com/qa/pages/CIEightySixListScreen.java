@@ -3,12 +3,24 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CIEightySixListScreen extends BasePage {
+
+    WebDriver driver;
+
+    public CIEightySixListScreen(WebDriver driver1){
+
+        this.driver = TestUtils.driver;
+
+        PageFactory.initElements(this.driver,this);
+
+    }
 
     TestUtils testUtils=new TestUtils();
 
@@ -135,8 +147,8 @@ public class CIEightySixListScreen extends BasePage {
 
     public void clickQtyTxtField(String msg){
 //        WebElement elementQty = mergeAndFindElement(qtyTxtFieldXPath,"", TestUtils.XPath);
-//        elementClick(elementQty,msg);
-        findandclick(qtyTxtFieldXPath,"", TestUtils.XPath);
+        driver.findElement(By.xpath("//table[contains(@class,'list86Component-menuList')]//tr//td//input")).click();
+        //findandclick(,"", TestUtils.XPath);
     }
 
     public String getQty(String btnClose,String msg){

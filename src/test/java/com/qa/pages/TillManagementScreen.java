@@ -121,7 +121,7 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(xpath = "Submit")
     private WebElement submitCloseTillBtn;
 
-    @FindBy(xpath= "//p[.='Do you want to Close this Till ?']")
+    @FindBy(xpath= "//p[.='Do you want to close the till']")
     private WebElement closeTillPopUpMsg;
 
     @FindBy(xpath = "Closed Till")
@@ -346,9 +346,10 @@ public String cashDropPoint2= " ";
 
         int activeTillValueCurrent = activeTillBalance1-cashDropValueAmount;
         String currentActiveTillBalance = String.valueOf(activeTillValueCurrent);
-
+        Thread.sleep(3000);
         elementClick(tillBtn,"Till Btn Selected");
         WebElement tillBalance = driver.findElement(By.xpath("//tbody//tr//td[contains(@class,'Till-Balance')]"));
+        Thread.sleep(3000);
         String tillBalanceee = tillBalance.getText();
         String tillBalance1 = tillBalanceee.replaceAll("[A-Z$,. ]","");
         Assert.assertEquals(tillBalance1,currentActiveTillBalance);
@@ -497,7 +498,7 @@ public String totalOfActiveTillTxt = " ";
 
     public void clickActiveTillCheck(){
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        WebElement activeTillCheck = (WebElement) driver.findElement(By.xpath("//button[contains(.,'Active Till')]"));
+        WebElement activeTillCheck = (WebElement) driver.findElement(By.xpath("//div[contains(@class,'checktable-table')]//tbody//tr//td[contains(@class,'Till-Name')]"));
         elementClick(activeTillCheck,"Active Till check selected");
 
 
@@ -568,7 +569,7 @@ public String totalOfActiveTillTxt = " ";
         WebElement cashExpect = (WebElement) driver.findElement(By.xpath("//ion-toolbar//ion-title[contains(@class,'title-default')]/..//span[@slot='end']"));
         String cashExpectTxt = cashExpect.getText();
         //  utils.log().info(cashExpectTxt);
-        String amount = cashExpectTxt.replaceAll("\\p{Punct}","");
+        String amount = cashExpectTxt.replaceAll("\\p{Punct}","").substring(15);
         int count = Integer.parseInt(amount);
         int cashTotalNumber = count-1000;
 //        utils.log().info("Small balance - "+cashTotalNumber);
@@ -596,7 +597,7 @@ public String totalOfActiveTillTxt = " ";
 
     public void getDetailsofClosedTill(){
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        List<WebElement> details = (List<WebElement>) driver.findElement(By.xpath("//tbody//tr"));
+        List<WebElement> details = driver.findElements(By.xpath("//tbody//tr"));
         //  int closedTillSize = details.size();
         int leastNumber = details.size();
         WebElement lastOne = (WebElement) driver.findElement(By.xpath("//tbody//tr["+leastNumber+"]"));
@@ -685,9 +686,9 @@ public String totalOfActiveTillTxt = " ";
 
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
         WebElement option = (WebElement) driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input"));
-        String cashOptionTxt = option.getText();
+        String cashOptionTxt = option.getAttribute("value");
         WebElement total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
-        String totalTxt = total.getText();
+        String totalTxt = total.getAttribute("value");
         String cashTxt1 = cashOptionTxt.replaceAll("[$A-Z,.]","");
 //        utils.log().info(cashTxt1);
         //String cashTxt2 = cashTxt1.replace(".","");

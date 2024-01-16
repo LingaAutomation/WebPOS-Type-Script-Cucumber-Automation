@@ -55,7 +55,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     @FindBy(xpath = "//label[.='Tax Exempt']")
     WebElement taxExemptTitle;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[4]/XCUIElementTypeOther")
+    @FindBy(xpath = "")
     WebElement schoolTaxExemptReason;
 
     @FindBy(xpath = "Paid amount exceeds the sale amount") //Changed to xpath by Engin...
@@ -179,6 +179,9 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     @FindBy(xpath = "//label[.='Gift Card']")
     private WebElement giftCardBtn;
+
+    @FindBy(xpath = "//ion-title[.='Gift Card']")
+    private WebElement giftCardBtn1;
 
     @FindBy(xpath = "0000 0000 0000 0000")
     private WebElement cardNumber;
@@ -346,17 +349,18 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public String passPercentageEngin2(String value) {
 
-        WebElement valueBetween = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeTextField"));
-        String valueBetweenTxt = valueBetween.getText();
+        WebElement valueBetween = (WebElement) driver.findElement(By.xpath("//input[contains(@class,'ratuityvarying-gridinput')]"));
+        String valueBetweenTxt = valueBetween.getAttribute("value");
         utils.log().info("Percentage value - " + valueBetweenTxt);
         elementClick(passPercentageValue, "Pass percentage value field is clicked.");
 
-        WebElement el2 = (WebElement) driver.findElement(By.xpath(value));
+        WebElement el2 = (WebElement) driver.findElement(By.xpath("//button//span[.='"+value+"']"));
         TestUtils.percent = value;
         String number = el2.getText();
         elementClick(el2, "Tapped number as - " + number);
+        driver.findElement(By.xpath("//button//span[.='00']")).click();
 
-        WebElement el5 = (WebElement) driver.findElement(By.xpath("Continue"));
+        WebElement el5 = (WebElement) driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
         elementClick(el5, "Tapped continue Button ");
 
         elementClick(applyBtn, "Tapped Apply button");
@@ -555,7 +559,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     }
 
     public String verifyGiftCardWindow() {
-        return getText(giftCardBtn, "Gift card screen is displayed - ");
+        return getText(giftCardBtn1, "Gift card screen is displayed - ");
     }
 
     public void enterGiftCardNumber() throws InterruptedException {
@@ -838,10 +842,10 @@ public class CheckOptionsScreen extends OrderManagementScreen {
     public String element2 = " ";
 
     public String selectPrefixModifier() {
-        List<WebElement> element = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
+        List<WebElement> element = driver.findElements(By.xpath("//div[@class='prefix-content']//button"));
         int sizeOfPrefix = element.size();
-        utils.log().info("Size of the Prefix modifiers - " + sizeOfPrefix);
-        WebElement element1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeStaticText[1]"));
+//        utils.log().info("Size of the Prefix modifiers - " + sizeOfPrefix);
+        WebElement element1 = driver.findElement(By.xpath("//div[@class='prefix-content']//button[1]//span[1]"));
         element2 = element1.getText();
         TestUtils.prefixModi = element2;
         elementClick(element1, " Selected prefix as - " + element2);
@@ -850,22 +854,24 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 
     public void verifyPrefixAddedToTheMenu() {
         try {
-            WebElement prefixModi = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-            String prefixModiTxt = prefixModi.getText();
+            WebElement prefixModi = driver.findElement(By.xpath("//div[contains(@class,'orderlist-container')]//div[@class='modifier-section'][2]//div[contains(@class,'orderlist-menuname')]"));
+            String prefixModiTxt = prefixModi.getText().substring(0, 2).replaceAll(" ", "");
 
-            if (prefixModiTxt.contains(TestUtils.prefixModi)) {
-                utils.log().info("Prefix modifiers is Added with Menu Item - " + prefixModiTxt);
+            String text = TestUtils.prefixModi.replaceAll(" ", "");
+            if (prefixModiTxt.contains(text)) {
+//                utils.log().info("Prefix modifiers is Added with Menu Item - " + prefixModiTxt);
             } else {
-                utils.log().info("Prefix modifiers is NOT Added with Menu Item - " + prefixModiTxt);
+//                utils.log().info("Prefix modifiers is NOT Added with Menu Item - " + prefixModiTxt);
             }
         } catch (Exception h) {
-            WebElement prefixModi = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
+            String text = TestUtils.prefixModi.replaceAll(" ", "");
+            WebElement prefixModi = driver.findElement(By.xpath("//div[contains(@class,'orderlist-container')]//div[@class='modifier-section'][2]//div[contains(@class,'orderlist-menuname')]"));
             String prefixModiTxt = prefixModi.getText();
 
-            if (prefixModiTxt.contains(TestUtils.prefixModi)) {
-                utils.log().info("Prefix modifiers is Added with Menu Item - " + prefixModiTxt);
+            if (prefixModiTxt.contains(text)) {
+//                utils.log().info("Prefix modifiers is Added with Menu Item - " + prefixModiTxt);
             } else {
-                utils.log().info("Prefix modifiers is NOT Added with Menu Item - " + prefixModiTxt);
+//                utils.log().info("Prefix modifiers is NOT Added with Menu Item - " + prefixModiTxt);
             }
         }
     }
@@ -919,7 +925,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 //            utils.log().info(" Expected and Actual Discount is Same - " + Discount2);
             int realTotal = (menuAmount+tax2) - Discount2;  //Subtract menutotal with Discount
             String realTotalTxt = String.valueOf(realTotal);
-            WebElement totalAmount = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+            WebElement totalAmount = driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input\n"));
             String totalAmountTxt = totalAmount.getAttribute("value");
 //            utils.log().info(" Actual Total - " + totalAmountTxt);
             String totalAmountString = totalAmountTxt.replaceAll("[A-Z$,. ]", "");
@@ -1010,7 +1016,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
             int menuAmount = Integer.parseInt(menuPrice1);
 //            utils.log().info("Menu Amount - "+menuAmount);
             WebElement discounts = driver.findElement(By.xpath("//div[@class='discount-section']//div[contains(@class,'discount-section-price')]"));
-            String discounts1 = discounts.getAttribute("value").replaceAll("[A-Z$,. ]", "");
+            String discounts1 = discounts.getText().replaceAll("[A-Z$,. ]", "");
             int Discount1 = Integer.parseInt(discounts1);
             //                int Discount = 10;
 //                int Discount1 = ((menuAmount*Discount)/100);
@@ -1029,7 +1035,7 @@ public class CheckOptionsScreen extends OrderManagementScreen {
 //            utils.log().info(" Expected and Actual Discount is Same - " + Discount2);
             int realTotal = (menuAmount+tax2) - Discount2;  //Subtract menutotal with Discount
             String realTotalTxt = String.valueOf(realTotal);
-            WebElement totalAmount = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+            WebElement totalAmount = driver.findElement(By.xpath("//div[@id='os_cashOptionStr']//input"));
             String totalAmountTxt = totalAmount.getAttribute("value");
 //            utils.log().info(" Actual Total - " + totalAmountTxt);
             String totalAmountString = totalAmountTxt.replaceAll("[A-Z$,. ]", "");

@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@MainBAsic", ] ,
+        labels:  [ "@CashReward1",  "@CashReward123",  "@CashReward12345",  "@CashReward123456",  "@CashRewardRegression",  "@Dual89", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 4.76, ] 
+                data:  [ 100.00,  100.00,  100.00,  86.60,  97.37,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 4.76, ] 
+                data:  [ 0.00,  0.00,  0.00,  1.03,  0.20,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 90.48, ] 
+                data:  [ 0.00,  0.00,  0.00,  12.37,  2.43,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>22 Dec 2023, 16:19</td>
+      <td>12 Jan 2024, 18:56</td>
     </tr>
   </tbody>
 </table>
@@ -195,51 +195,136 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_4180174260.html">@MainBAsic</a></td>
+        <td class="tagname"><a href="report-tag_1730364366.html">@CashReward1</a></td>
 
-        <td      class="passed"    >1</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >19</td>
+        <td      class="passed"    >31</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">21</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">31</td>
 
+        <td  class="passed"    >2</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="47401523500">47.401</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_727814735.html">@CashReward123</a></td>
+
+        <td      class="passed"    >645</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">645</td>
+
+        <td  class="passed"    >23</td>
+        <td >0</td>
+        <td class="total">23</td>
+
+        <td class="duration" data-value="528644219600">8:48.644</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3645261008.html">@CashReward12345</a></td>
+
+        <td      class="passed"    >119</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">119</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="118573919900">1:58.573</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_1333941636.html">@CashReward123456</a></td>
+
+        <td      class="passed"    >168</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >24</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">194</td>
+
+        <td  class="passed"    >4</td>
+        <td  class="failed"    >2</td>
+        <td class="total">6</td>
+
+        <td class="duration" data-value="207378650500">3:27.378</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3115666050.html">@CashRewardRegression</a></td>
+
+        <td      class="passed"    >963</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >24</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">989</td>
+
+        <td  class="passed"    >33</td>
+        <td  class="failed"    >2</td>
+        <td class="total">35</td>
+
+        <td class="duration" data-value="901998313500">15:1.998</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_876006620.html">@Dual89</a></td>
+
+        <td      class="passed"    >20</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">20</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="31344347400">31.344</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="21561895100">21.561</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>1</td>
-      <td>1</td>
-      <td>19</td>
+      <td>1946</td>
+      <td>4</td>
+      <td>48</td>
       <td>0</td>
       <td>0</td>
-      <td>21</td>
+      <td>1998</td>
 
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>34</td>
+      <td>37</td>
+      <td>71</td>
 
-      <td class="duration">31.344</td>
-      <td>1</td>
+      <td class="duration">30:25.558</td>
+      <td>6</td>
     </tr>
     <tr>
       <td></td>
-      <td>4.76%</td>
-      <td>4.76%</td>
-      <td>90.48%</td>
+      <td>97.40%</td>
+      <td>0.20%</td>
+      <td>2.40%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>47.89%</td>
+      <td>52.11%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

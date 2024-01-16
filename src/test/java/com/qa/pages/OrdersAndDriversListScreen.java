@@ -66,7 +66,7 @@ public class OrdersAndDriversListScreen extends BasePage {
     }
 
     public void selectCheckStatsTab() throws InterruptedException {
-        Thread.sleep(1200);
+        Thread.sleep(2000);
 
         elementClick(checkStatsTab1, "Tapped Check Stats Tab");
     }

@@ -120,7 +120,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(xpath = "Loyalty   0,00")
     private WebElement loyaltyBtn;
 
-    @FindBy(xpath = "auto loyaltytest 67891234598 ")
+    @FindBy(xpath = "")
     private WebElement loyalCustomer;
 
     @FindBy(xpath = "Loyalty Balance")
@@ -295,7 +295,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     }
 
     public void clickRepeatOrderButton(){
-      WebElement repeatOrderBtn = (WebElement) driver.findElement(By.xpath("//button[contains(.,'Repeat Order')]"));
+      WebElement repeatOrderBtn = driver.findElement(By.xpath("//button[contains(.,'Repeat Order')]"));
       elementClick(repeatOrderBtn,"Selected Repeat Order Btn");
     }
 

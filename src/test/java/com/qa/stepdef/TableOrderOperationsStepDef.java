@@ -136,7 +136,7 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I select Breakfast as Category$")
     public void iSelectBreakfastAsCategory() throws Exception {
-        new OrderManagementScreen(driver).selectBreakfastCategory();
+//        new Regression(driver).Select_Cate();
     }
 
     @And("^I select Beverages as Category$")
@@ -329,7 +329,7 @@ public class TableOrderOperationsStepDef {
     @And("^I click Done button on the Popup$")
     public void iClickDoneButtonOnThePopup() throws InterruptedException {
         Thread.sleep(3000);
-        new TableLayOutScreen(driver).pressDone2();
+        new TableLayOutScreen(driver).pressDone5();
     }
 
 
@@ -340,7 +340,7 @@ public class TableOrderOperationsStepDef {
     }
     @Then ("^I should see the print or send receipt$")
     public void iShouldSeeThePrintOrSendReceipt(){
-        Assert.assertEquals(new TableLayOutScreen(driver).getPrintOrReceiptMsg(),"Print Or Send Receipt");
+        Assert.assertEquals(new TableLayOutScreen(driver).getPrintOrReceiptMsg(),"How Do You Want To Receive Digital Receipt ?");
     }
 
     @And ("^I verify the Total value with digital receipt screen$")
@@ -1015,7 +1015,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see menu has separated as \"([^\"]*)\"$")
-    public void iShouldSeeMenuHasSeparatedAs(String number){
+    public void iShouldSeeMenuHasSeparatedAs(String number) throws InterruptedException {
         new TableLayOutScreen(driver).verifyMenuHasSeperated(number);
     }
 
@@ -1038,7 +1038,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I click the save & close button on the split screen$")
-    public void iClickTheSaveCloseButtonOnTheSplitScreen(){
+    public void iClickTheSaveCloseButtonOnTheSplitScreen() throws InterruptedException {
         new TableLayOutScreen(driver).clickSaveandClose();
     }
 
@@ -1190,7 +1190,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should get back to the Table Layout tab$")
     public void iShouldGetBackToTheTableLayoutTab() throws InterruptedException {
-        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table Layout");
+        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table layout");
     }
     @Then ("^I should see table layout Screen$")
     public void iShouldSeeTableLayoutScreen() throws InterruptedException {
@@ -1366,7 +1366,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see All orders are voided$")
     public void iShouldSeeAllOrdersAreVoided(){
-        Assert.assertEquals(new OrderManagementScreen(driver).getAllOrdersAreVoidedMsg(),"All orders are voided");
+        Assert.assertEquals(new OrderManagementScreen(driver).getAllOrdersAreVoidedMsg(),"All Orders Are Voided");
     }
 
     @Then ("^I should see the void reason popup$")
@@ -1454,7 +1454,7 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I click payment for all seat in the payment window$")
     public void iClickPaymentForAllInThePaymentWindow(){
-        new PaymentWindow(driver).selectPayment1();
+        new PaymentWindow(driver).selectPayment();
     }
 
     @And ("^I click Ok button in receipt printer popup$")
@@ -1600,7 +1600,7 @@ public class TableOrderOperationsStepDef {
 
 
     @Then ("^I should see menu items has to be sent to the kitchen$")
-    public void iShouldSeeMenuItemsHasToBeSentToKitchen(){
+    public void iShouldSeeMenuItemsHasToBeSentToKitchen() throws InterruptedException {
         Assert.assertEquals(new TableLayOutScreen(driver).MenuItemHasToSentKitchen(),"Menu items(s) has to be sent to the kitchen");
     }
     @Then ("^I should see item need to send to kitchen popup$")
@@ -2005,7 +2005,7 @@ public class TableOrderOperationsStepDef {
         new Regression(driver).clickTheCheckFromTheTableLayoutForMerged1();
     }
     @Then ("^I should see the Split check screen$")
-    public void iShouldSeeTheSplitCheckScreen(){
+    public void iShouldSeeTheSplitCheckScreen() throws InterruptedException {
         new Regression(driver).verifySplitCheckScren();
     }
 
@@ -2036,7 +2036,7 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I click new check added on the split check screen$")
     public void iClickNewCheckAddedOnTheSplitCheckScreen(){
-        new Regression(driver).clickNewCheckOnTheSplitCheckScreen();
+        new Regression(driver).clickNewCheckOnTheSplitCheckScreenpage01();
     }
 
     @When ("^I verify the menu is moved to the added check seat$")
@@ -2085,16 +2085,16 @@ public class TableOrderOperationsStepDef {
     }
 
     @When ("^I click the check from the bartab screen$")
-    public void iClickTheCheckFromTheBartabScreen(){
+    public void iClickTheCheckFromTheBartabScreen() throws InterruptedException {
         new BarTabScreen(driver).clickTheCheckFromTheBartabScreen();
     }
 
     @When ("^I click the check from the bartab screen for merge$")
-    public void iClickTheCheckFromTheBartabScreenForMerge(){
+    public void iClickTheCheckFromTheBartabScreenForMerge() throws InterruptedException {
         new BarTabScreen(driver).clickTheCheckFromTheBarTabScreenForMerge();
     }
     @When ("^I click the check from the bartab screen1 for merge$")
-    public void iClickTheCheckFromTheBartabScreen1ForMerge(){
+    public void iClickTheCheckFromTheBartabScreen1ForMerge() throws InterruptedException {
         new BarTabScreen(driver).clickTheCheckFromTheBartabScreenForMerge1();
     }
 
@@ -2114,12 +2114,12 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I get seat 1 prize details$")
-    public void iGetSeat1PrizeDetails(){
+    public void iGetSeat1PrizeDetails() throws InterruptedException {
         new TableLayOutScreen(driver).getSeat1Prize();
     }
 
     @And ("^I get seat 2 prize details$")
-    public void iGetSeat2PrizeDetails(){
+    public void iGetSeat2PrizeDetails() throws InterruptedException {
         new TableLayOutScreen(driver).getSeat2Prize();
     }
 
@@ -2204,6 +2204,37 @@ public class TableOrderOperationsStepDef {
 
     @And("I click new seat added on the split seat screen")
     public void iClickNewSeatAddedOnTheSplitSeatScreen() {
+        new Regression(driver).clickNewSeatOnTheSplitSeatScreen();
+    }
+
+    @And("I click on the customer name in the order screen")
+    public void iClickOnTheCustomerNameInTheOrderScreen() {
+        new OrderManagementScreen(driver).ClickOnTheCustomer();
+    }
+
+    @And("I select {string} as Category")
+    public void iSelectAsCategory(String cate) throws Exception {
+        new Regression(driver).Select_Cate(cate);
+    }
+
+    @And("I click Done button on the Popup {int}")
+    public void iClickDoneButtonOnThePopup(int arg0) throws InterruptedException {
+        Thread.sleep(3000);
+        new TableLayOutScreen(driver).pressDone3();
+    }
+
+    @And("I click new check added on the split check screen page")
+    public void iClickNewCheckAddedOnTheSplitCheckScreenPage() {
+        new Regression(driver).clickNewCheckOnTheSplitCheckScreen01();
+    }
+
+    @And("I click on the cross buttin in the customer profile screen")
+    public void iClickOnTheCrossButtinInTheCustomerProfileScreen() {
+        new OrderManagementScreen(driver).ClickCrossButton();
+    }
+
+    @And("I click new check added on the split check screen page present")
+    public void iClickNewCheckAddedOnTheSplitCheckScreenPagePresent() {
         new Regression(driver).clickNewSeatOnTheSplitSeatScreen();
     }
 }

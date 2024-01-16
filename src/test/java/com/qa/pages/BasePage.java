@@ -1134,7 +1134,7 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 
 
 
-                    driver.findElement(By.xpath("//div[@class='modifier-decision']/button[contains(.,'Done')]")).click();
+                    driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
                 }
                 if(driver.findElement(By.xpath("//*[contains(@class,'conversational_content')]")).isDisplayed())
                 {
@@ -1157,13 +1157,23 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
 
 
 
-                    driver.findElement(By.xpath("//div[@class='modifier-decision']/button[contains(.,'Done')]")).click();
+                    driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
                 }
 
 
             }
             catch(Exception cj)
             {
+
+                try {
+                    if (driver.findElement(By.xpath("//button[contains(.,'Done')]")).isDisplayed()) {
+
+                        driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
+
+                    }
+                }catch (Exception e) {
+
+                }
 
             }
         }

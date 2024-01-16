@@ -51,7 +51,7 @@ public class MenuOptionStepDef {
 
     @Then ("^I should see \"([^\"]*)\" is Increased$")
     public void iShouldSeeIsIncreased(String number){
-        new MenuOptionScreen(driver).verifyQuantityNumber(number);
+        new MenuOptionScreen(driver).verifyQuantityNumber1(number);
     }
 
     @And ("^I click Attach on menu option$")
@@ -154,7 +154,7 @@ public class MenuOptionStepDef {
     @Then ("^I should see discount applied on order screen$")
     public void iShouldSeeDiscountAppliedOnOrderScreen(){
         //  Assert.assertEquals(new MenuOptionScreen(driver).verifyDiscountAppliedOnOrderScreen(),"open Item Discount"); // Staging
-        Assert.assertEquals(new MenuOptionScreen(driver).verifyDiscountAppliedOnOrderScreen(),"Open-Item Discount");//Production
+        Assert.assertEquals(new MenuOptionScreen(driver).verifyDiscountAppliedOnOrderScreen(),"Open Item Discount");//Production
     }
 
     @And ("^I click Open Modifier on menu option$")

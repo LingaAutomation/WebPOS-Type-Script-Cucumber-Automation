@@ -23,10 +23,10 @@ public class cashOption extends TillManagementScreen{
 
 
     public String getBalanceDueAmount(){
-        WebElement balanceDueAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1]"));
+        WebElement balanceDueAmount = (WebElement) driver.findElement(By.xpath("(//div[contains(@class,'balance')]//p/label[2])[1]"));
         balanceDueCardAmount = balanceDueAmount.getText();
         TestUtils.BalanceCardAmount = balanceDueCardAmount;
-        utils.log().info("Balance Due Amount in Payment Screen - "+balanceDueCardAmount);
+//        utils.log().info("Balance Due Amount in Payment Screen - "+balanceDueCardAmount);
         return balanceDueCardAmount;
     }
     public String getBalanceDueAndCashOptionAmount(){
@@ -190,8 +190,8 @@ public class cashOption extends TillManagementScreen{
     public void verifyBalanceDueAmountSameWithAmount(){
         String balanceAmount = TestUtils.BalanceCardAmount;
         utils.log().info("Balance Amount - "+balanceAmount);
-        WebElement totalAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[2]"));
-        String totalAmountTxt = totalAmount.getText();
+        WebElement totalAmount = (WebElement) driver.findElement(By.xpath(" //ion-toolbar[@mode='ios']//p[@class='main ion-text-center']"));
+        String totalAmountTxt = totalAmount.getText().replaceAll("[A-Z$ ]","");
         utils.log().info(totalAmountTxt);
         if(balanceAmount.equals(totalAmountTxt)){
             utils.log().info("Balance Due Amount Same With Tip Screen Amount - "+ totalAmountTxt);

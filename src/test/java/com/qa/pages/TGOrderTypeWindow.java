@@ -4,11 +4,9 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import static org.apache.commons.collections.CollectionUtils.size;
 
 public class TGOrderTypeWindow extends ClockInScreen {
 
@@ -16,8 +14,8 @@ public class TGOrderTypeWindow extends ClockInScreen {
         super(driver);
     }
 
-//    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"For Here\"]")
-//    private WebElement forHereBtn;
+    @FindBy(xpath = "//p[contains(.,'Change Due')]")
+    private WebElement changeDue;
 //
 //    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"To Go\"]")
 //    private WebElement togoBtn;
@@ -305,6 +303,19 @@ public class TGOrderTypeWindow extends ClockInScreen {
         elementClick(element, "future Button is Clicked.");
 //        driver.findElement(futureButton).isDisplayed();
 //        driver.findElement(futureButton).click();
+    }
+
+    public void notSeeChangeDueMsg(){
+        try {
+            if (changeDue.isDisplayed()) {
+                utils.log().info("Seen Change Due");
+                Assert.assertEquals(changeDue.getText(),"Chanege");
+            } else {
+                utils.log().info("Not See Change Due");
+            }
+        }catch (Exception w)
+        {
+        }
     }
 
     //new (nov 16)

@@ -153,17 +153,18 @@ public class BarTabScreen extends OrderManagementScreen{
         elementClick(splitBtn,"Split Btn Selected");
     }
 
-    public void clickTheCheckFromTheBartabScreen(){
+    public void clickTheCheckFromTheBartabScreen() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         WebElement searchTabBarTab =  driver.findElement(By.xpath("//input[@placeholder='Search Name or Check Number']"));
         searchTabBarTab.clear();
         searchTabBarTab.sendKeys(TestUtils.globalCheckNumber);
+        Thread.sleep(2000);
         WebElement tabCheck =  driver.findElement(By.xpath("//ion-content[contains(@class,'barTabContent')]/app-bar-tab/ion-grid/ion-row/ion-col[1]"));
         elementClick(tabCheck,"Tapped select check - ");
-
     }
 
-    public void clickTheCheckFromTheBarTabScreenForMerge(){
+    public void clickTheCheckFromTheBarTabScreenForMerge() throws InterruptedException {
+        Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
   //      WebElement tabCheck =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]");
 //        WebElement cancelBtn =  driver.findElement(By.xpath()("Clear text");
@@ -172,18 +173,22 @@ public class BarTabScreen extends OrderManagementScreen{
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField
         WebElement searchTabBarTab =  driver.findElement(By.xpath("//input[@placeholder='Search Name or Check Number']"));
         searchTabBarTab.sendKeys(TestUtils.globalCheckNumber);
+        Thread.sleep(2000);
         WebElement tabCheck =  driver.findElement(By.xpath("//ion-content[contains(@class,'barTabContent')]/app-bar-tab/ion-grid/ion-row/ion-col[1]"));
         elementClick(tabCheck,"Tapped select check - "+TestUtils.globalCheckNumber);
 
     }
-    public void clickTheCheckFromTheBartabScreenForMerge1(){
+    public void clickTheCheckFromTheBartabScreenForMerge1() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        Thread.sleep(2000);
         WebElement cancelBtn =  driver.findElement(By.xpath("//button[@class='searchbar-clear-button sc-ion-searchbar-md']//ion-icon[contains(@class,'searchbar-clear-icon')]"));
         elementClick(cancelBtn,"Selected - "+cancelBtn.getText());
 
                                                                                           //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField
         WebElement searchTabBarTab =  driver.findElement(By.xpath("//input[@placeholder='Search Name or Check Number']"));
+        searchTabBarTab.clear();
         searchTabBarTab.sendKeys(TestUtils.globalCheckNumber1);
+        Thread.sleep(2000);
         WebElement tabCheck =  driver.findElement(By.xpath("//ion-content[contains(@class,'barTabContent')]/app-bar-tab/ion-grid/ion-row/ion-col[1]"));
         elementClick(tabCheck,"Tapped select check - "+TestUtils.globalCheckNumber1);
     }

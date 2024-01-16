@@ -28,7 +28,7 @@ public class CheckOptionsStepDef {
 
     @Then("^I should see the Check Options screen$")
     public void iShouldSeeTheCheckOptionsScreen() {
-        Assert.assertEquals(new CheckOptionsScreen(driver).getCheckOptionsTitle(), "Check Options");
+        Assert.assertEquals(new CheckOptionsScreen(driver).getCheckOptionsTitle(), "Check Option");
     }
 
     @When ("^I click Gift card Button$")
@@ -67,7 +67,7 @@ public class CheckOptionsStepDef {
 
     @Then ("^I should see gift card amount add up into order screen$")
     public void iShouldSeeGiftCardAmountAddUpInToOrderScreen(){
-        Assert.assertEquals(new CheckOptionsScreen(driver).verifyGiftCardAddup(),"GC-1111 ");
+        Assert.assertEquals(new CheckOptionsScreen(driver).verifyGiftCardAddup(),"GC-1111");
     }
 
     @And ("^I click discount on check option screen$")
@@ -645,6 +645,7 @@ public class CheckOptionsStepDef {
         new OpenItemWindow(driver).press1ForCheckOpenItem();
         new OpenItemWindow(driver).press00();
         new OpenItemWindow(driver).press00();
+
     }
 
     @And("^I enter the price for Check based tax on Tirmasu$")
@@ -919,7 +920,7 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreen(String cate) throws InterruptedException {
+    public void iSelectMenuForDineInAsForSplitSeatOrderScreen(String cate) throws Exception {
         new Regression(driver).selectTheMenuFromOrderScreenSplitSeat(cate);
     }
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen for merge$")

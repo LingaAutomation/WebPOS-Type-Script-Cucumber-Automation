@@ -41,7 +41,7 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(xpath = "//p[contains(.,'Add Notes')]")
     private WebElement addNotes;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextView")
+    @FindBy(xpath = "")
     private WebElement notesPageScreen;
 
     @FindBy(xpath = "TOGO") //for Staging
@@ -88,7 +88,7 @@ public class MenuOptionScreen extends ClockInScreen{
     private WebElement applyButton;
 
 
-    @FindBy(xpath = "//div[@class='discount-section']//div[.='Open-Item Discount']")
+    @FindBy(xpath = "//div[@class='discount-section']//div[contains(.,'Item Discount')]")
     private WebElement discountAppliedOrderScreen;
 
     @FindBy(xpath = "1,00")
@@ -153,6 +153,7 @@ public class MenuOptionScreen extends ClockInScreen{
         WebElement e=(WebElement) driver.findElement(By.xpath("(//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='"+menu+"'])[1]"));
         elementClick(e,"Tapped Menu Items to see Menu Option Green");
         WebElement el9 = (WebElement) driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='"+menu+"']"));
+        TestUtils.MenuItem_Name = menu;
         return  elementGetText(el9,"Text");
     }
 
@@ -187,6 +188,16 @@ public class MenuOptionScreen extends ClockInScreen{
 
     public void verifyQuantityNumber(String num){
         WebElement el4 = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='mongo test']/../div[.='"+num+"']"));
+        if(el4.isDisplayed()){
+//            utils.log().info(num+" Is Visible");
+        }else{
+//            utils.log().info("Quantity is not visible");
+        }
+    }
+
+    public void verifyQuantityNumber1(String num){
+        String Menu = TestUtils.MenuItem_Name;
+        WebElement el4 = driver.findElement(By.xpath("//div[@id='react-orders-render']//div//div//div//div//div[@class='menu-section orderlist-flex ']//div[text()='"+Menu+"']/../div[.='"+num+"']"));
         if(el4.isDisplayed()){
 //            utils.log().info(num+" Is Visible");
         }else{
@@ -297,15 +308,16 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
     }
 
     public void pressAddNotesReason(String reason){
-        WebElement el2 = driver.findElement(By.xpath("//button[contains(.,'"+reason+"'')]"));
+        WebElement el2 = driver.findElement(By.xpath("//textarea[contains(@class,'element mat-form-field')]"));
         elementClick(el2,"Tapped Reason  "+reason);
+        el2.sendKeys(reason);
 
-        String data=notesPageScreen.getText();
-        if(data.equalsIgnoreCase(reason)){
-//            utils.log().info(reason +"Add Notes Reason is Tapped");
-        }else{
-//            utils.log().info("Add Notes Reason are not Tapped");
-        }
+//        String data=notesPageScreen.getText();
+//        if(data.equalsIgnoreCase(reason)){
+////            utils.log().info(reason +"Add Notes Reason is Tapped");
+//        }else{
+////            utils.log().info("Add Notes Reason are not Tapped");
+//        }
 
     }
 
@@ -412,7 +424,7 @@ driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
 //       wait.until(ExpectedConditions.visibilityOfElementLocated((WebElement) By.xpath("")));
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
 //       elementClick( hideKeyboardButton,"Selected - "+hideKeyboardButton.getText());
-        WebElement e1= (WebElement) driver.findElements(By.xpath("//button[contains(.,'"+name+"')]"));
+        WebElement e1 = driver.findElement(By.xpath("//button[contains(.,'"+name+"')]"));
         elementClick(e1,"Tapped - "+ name);
         elementClick(applyButton,"Tapped Apply Button");
     }

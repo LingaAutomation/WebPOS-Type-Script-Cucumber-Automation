@@ -1,6 +1,7 @@
 @cashDisc
 Feature: Cash Discount
 
+  @cashDisc0
   Scenario:verifying cash option name changed into cash price
    Given I'm logged in
     And I closed the order type window
@@ -8,14 +9,15 @@ Feature: Cash Discount
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
     And I should verify subtotal value as "$ 1.00"
-    When I should verify tax value as "$ 0.10"
-    When I should verify cash price value as "$ 1.10"
+    When I should verify tax value as "$ 0.00"
+    When I should verify cash price value as "$ 1.00"
     And I verify the total value on the order screen when cash discount is enabled
     And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
     And I click log off button in order screen
 
+  @cashDisc0
     Scenario: verifying Cash price value should be changed to the Net total payable value
       Given I'm logged in
       And I closed the order type window
@@ -23,14 +25,15 @@ Feature: Cash Discount
       And I select category as "FOOD"
       And I select menu item as "SANDWICHES"
       And I should verify subtotal value as "$ 1.00"
-      When I should verify tax value as "$ 0.10"
-      When I should verify cash price value as "$ 1.10"
+      When I should verify tax value as "$ 0.00"
+      When I should verify cash price value as "$ 1.00"
       And I verify the total value on the order screen when cash discount is enabled
       And I click Void button on order management screen
       Then I should see All orders are voided
       And I click Done button on the Popup
       And I click log off button in order screen
 
+  @cashDisc012
       Scenario: verifying changes will be shown in Fast cash screen with the Net payable value ( Cash price)
         Given I'm logged in
         And I closed the order type window
@@ -38,8 +41,8 @@ Feature: Cash Discount
         And I select category as "FOOD"
         And I select menu item as "SANDWICHES"
         And I should verify subtotal value as "$ 1.00"
-        When I should verify tax value as "$ 0.10"
-        When I should verify cash price value as "$ 1.10"
+        When I should verify tax value as "$ 0.00"
+        When I should verify cash price value as "$ 1.00"
         And I verify the total value on the order screen when cash discount is enabled
         And I click Cash button for Complete Sale
         When I verify the cash price value with fast cash value

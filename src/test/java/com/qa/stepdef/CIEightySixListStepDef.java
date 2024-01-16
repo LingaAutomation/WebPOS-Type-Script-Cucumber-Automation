@@ -15,7 +15,7 @@ public class CIEightySixListStepDef {
 
     CIWaitListPage waitList=new CIWaitListPage();
     CIPaymentScreen ciPaymentScreen = new CIPaymentScreen();
-    CIEightySixListScreen ciEightySixListScreen=new CIEightySixListScreen();
+    CIEightySixListScreen ciEightySixListScreen=new CIEightySixListScreen(driver);
     CICloseDayScreen ciCloseDayScreen=new CICloseDayScreen();
     TestUtils utils = new TestUtils();
 
@@ -149,7 +149,7 @@ public class CIEightySixListStepDef {
 
     @Then ("^I should verify the quantity \"([^\"]*)\" is displayed in the order screen is decreased after order with menu as \"([^\"]*)\"$")
     public void iShouldVerifyTheQuantityIsDisplayedInTheOrderScreenIsDecreasedAfterOrderWithMenuAs(String qty, String menu){
-        new CIEightySixListScreen().getQtyOf86ListMenu(qty,menu);
+        new CIEightySixListScreen(driver).getQtyOf86ListMenu(qty,menu);
     }
 
     @Then("^I verify the quantity value as \"([^\"]*)\" \"([^\"]*)\"$")
@@ -395,7 +395,12 @@ public class CIEightySixListStepDef {
 
     @Then ("^I should verify 86 list menu as \"([^\"]*)\" with quantity as \"([^\"]*)\"$")
     public void iShouldVerify86ListMenuAsWithQuantityAs(String menu,String qty){
-        new CIEightySixListScreen().verify86ListMenuQuantity(menu,qty);
+        new CIEightySixListScreen(driver).verify86ListMenuQuantity(menu,qty);
+    }
+
+    @Then("I should see quantity is not enough popup{int}")
+    public void iShouldSeeQuantityIsNotEnoughPopup(int arg0) {
+        new OrderManagementScreen(driver).verifyQuantityIsNotEnoughPopup2();
     }
 }
 
