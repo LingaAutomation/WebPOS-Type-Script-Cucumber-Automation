@@ -40,6 +40,9 @@ public class CheckOptionsScreen extends TableLayOutScreen{
     @FindBy(xpath = "//button[.='Cancel']")
     WebElement backBtn1;
 
+    @FindBy(xpath = "//button[.=' Cancel ']")
+    WebElement backBtn2;
+
     @FindBy(xpath = "(//span[(.='Cancel')])[2]")
     WebElement backBtnForFireCoursing;
 
@@ -173,6 +176,11 @@ Thread.sleep(1000);
     public void pressBack1() throws InterruptedException {
         Thread.sleep(2000);
         elementClick(backBtn1, "- Back button is tapped");
+    }
+
+    public void pressBack2() throws InterruptedException {
+        Thread.sleep(2000);
+        elementClick(backBtn2, "- Back button is tapped");
     }
 
 

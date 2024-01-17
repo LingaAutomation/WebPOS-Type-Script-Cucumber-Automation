@@ -63,6 +63,7 @@ Feature: Gift Card
     And User click add void button
 ##    And User click receipt printer button for void check
     And I should get back to the Table Layout tab
+    And I click new check button on the Table layout screen
     And I select table as "T16"
     And I select the number of seats as "1"
     And I tap Continue to finish selecting the number of seats

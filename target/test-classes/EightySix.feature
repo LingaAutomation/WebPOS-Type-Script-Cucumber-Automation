@@ -621,7 +621,7 @@ Feature: Verify the eighty six list
     And I closed the order type window
     And I click All
     And I click Table Layout tab
-    And I select the "<txtTable>" in the Table layout screen"click T2 table"
+    And I click the check from the table layout
     And I click Void button on order management screen
     Then I should see the void reason popup
     And I click void Reason on the void popup

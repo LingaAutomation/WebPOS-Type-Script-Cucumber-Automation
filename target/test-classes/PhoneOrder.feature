@@ -751,7 +751,7 @@ Feature: Order Types
       | FORHERE  | Garlic Bread | 4 BBQ | Auto ragav      | Auto r   |French Friese | Steak   |
 
   #10
-
+  @Ordertype0123
   Scenario Outline:Verify whether application TOGO menu items print the check order from Phone order screen
     Given I'm logged in
     And I select the "TOGO" order type popup
@@ -869,9 +869,9 @@ Feature: Order Types
 #    And I click Done button on the Popup
     Then I should see the Phone Order tab
     And I select order type as "QSR" in phoneorderscreen
-  @Ordertype0123
-  Scenario Outline: Verify whether application allow the user to Delivery check with fast cash payment
-    Given I'm logged in
+
+#  Scenario Outline: Verify whether application allow the user to Delivery check with fast cash payment
+#    Given I'm logged in
     And I select the DELIVERY order type
     When I click Done button to select the order type
     And I search for "<customer_name>"

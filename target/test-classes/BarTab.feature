@@ -697,8 +697,8 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
-  @BarTab
-  Scenario: Transfer  Check To Another Server
+  @BarTab1
+  Scenario: Transfer Check To Another Server
 #
     Given User click setting icon
     And User verify setting options
@@ -796,7 +796,7 @@ Feature: Bar Tab
     When User click Option Tab
     And I click discount on check option screen
     Then I click Discount as "IB-BeforeTax-SetPrice"
-    And I click Back button on Check Options Screen
+    And I click Back button on Check Options Screen2
 #    When User select item discount option tab
 #    Then User select item based discount before tax as set price
     And User verify item based discount before tax as set price

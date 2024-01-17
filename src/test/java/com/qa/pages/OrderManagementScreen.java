@@ -1254,11 +1254,11 @@ public  void selectCategory (String value) throws Exception {
 
     public void selectMenuItemSearch(String menu_item) throws InterruptedException {
 
-        convertWebElement(searchField).sendKeys(menu_item);
-        Thread.sleep(300);
+        driver.findElement(By.xpath(searchField)).sendKeys(menu_item);
+        Thread.sleep(3000);
 
             WebElement e = driver.findElement(By.xpath("(//div[contains(@class,'subCategoryBtn-txt noImg')])"));
-            Thread.sleep(300);
+            Thread.sleep(2000);
             utils.log().info(e.getText());
             if (e.getText().equals(menu_item)) {
               e.click();

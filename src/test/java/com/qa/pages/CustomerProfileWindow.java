@@ -371,8 +371,11 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 
     }
     public void removeTaxExemptCustomerProfile() throws InterruptedException {
+        Thread.sleep(2000);
         try {
-            WebElement element = driver.findElement(By.xpath("//ion-col[@class='customer_grid_form-row-col md hydrated']//mat-slide-toggle//input[@aria-checked='true']"));
+            WebElement element = driver.findElement(By.xpath("//span[@class='mat-slide-toggle-thumb']"));
+            utils.log().info(element.getText());
+            utils.log().info(element.getAttribute("value"));
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
             if (element.isDisplayed()) {
                 Thread.sleep(2000);

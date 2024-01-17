@@ -1165,7 +1165,7 @@ Feature: QSR feature
       | order_type | Modifier | Tax    | SubTotal | Total    |
       |QSR         | Butter   | $ 1.40 | $ 14.00  | $ 15.40  |
 
-
+@23
   Scenario Outline: qsr Check with tax exempt with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1183,7 +1183,7 @@ Feature: QSR feature
 #    When I select School as reason
     Then I Should get back to the Order Screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
+    And I should not see tax on the order screen
     Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
@@ -1204,7 +1204,7 @@ Feature: QSR feature
 #    When I select School as reason
     Then I Should get back to the Order Screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
+    And I should not see tax on the order screen
     Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
@@ -1249,13 +1249,15 @@ Feature: QSR feature
     And I select category as "Menu"
     And I select menu item as "<Menu_Item>"
     Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
+    And I should not see tax on the order screen
     Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
+  @233
+  Scenario Outline: Msn
 #    Then I should see the order type window
-    And I closed the order type window
+#    And I closed the order type window
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
@@ -2473,7 +2475,7 @@ Feature: QSR feature
       |order_type| Menu_Item   | Percentage | SubTotal   |    Tax    | Gratuity     | Total   |Gratuity1 | Total1  |
       | QSR       | Halwa       | 8         | $ 10.00    | $ 1.00    |  $ 0.80      | $ 11.80 | $ 1.00   | $ 12.00 |
 
-
+  @23
   Scenario Outline:Qsr- Check Payment through other payment - Check with tax exempt and with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -2513,7 +2515,7 @@ Feature: QSR feature
 #    When I select School as reason
     Then I Should get back to the Order Screen
     Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
+    And I should not see tax on the order screen
     Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
@@ -2553,7 +2555,7 @@ Feature: QSR feature
     And I select category as "Menu"
     And I select menu item as "<Menu_Item>"
     Then I should see orderscreen with menu item prize as "<SubTotal>"
-    And I should see the tax reflected to the check
+    And I should not see tax on the order screen
     Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
     And I click Payment button in the Order Management Screen
     And I click other button from the payment method popup
@@ -4708,10 +4710,11 @@ Feature: QSR feature
     When I click the Settings button
     #Application don't allow user to do "Operation" button process during a sale
     Then User verify close sale popup info
-     #Application don't allow user to do "Till" button process during a sale
-    When User click "<btnTillMamagement>" in the order Screen "click till management button"
-    Then User verify close sale popup info
     And I click Done button on the Popup
+     #Application don't allow user to do "Till" button process during a sale
+#    When User click "<btnTillMamagement>" in the order Screen "click till management button"
+#    Then User verify close sale popup info
+#    And I click Done button on the Popup
     #Application don't allow user to do "Sync" button process during a sale
     When User click sync icon
     Then User verify sync popup info

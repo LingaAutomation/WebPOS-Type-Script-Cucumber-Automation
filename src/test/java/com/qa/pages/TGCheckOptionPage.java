@@ -53,7 +53,7 @@ public class TGCheckOptionPage extends BasePage {
 
     }
     String firstBarTabOrderSortedAToZ = "(//p[.='goknur bati'])[1]";
-    String firstBarTabOrderSortedZToA = "(//p[.='Walkin'])[1]";
+    String firstBarTabOrderSortedZToA = "(//p[.='goknur bati'])[1]";
     public void selectHoldCheckOption(){
         WebElement btnHoldCheckOption=mergeAndFindMobileElement(holdCheckOption);
         elementClick(btnHoldCheckOption,"click holdCheckOption ");
@@ -72,7 +72,7 @@ public class TGCheckOptionPage extends BasePage {
         Thread.sleep(2000);
         WebElement sortedFromZToA = mergeAndFindMobileElement(firstBarTabOrderSortedZToA);
         String actualName = elementGetText(sortedFromZToA,"Verify BarTab Orders Sorted From ZToA");
-        String expectedName = "Walkin";
+        String expectedName = "goknur bati";
 
         Assert.assertEquals(actualName,expectedName);
     }

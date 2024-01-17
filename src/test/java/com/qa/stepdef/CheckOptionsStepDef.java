@@ -524,6 +524,11 @@ public class CheckOptionsStepDef {
         new CheckOptionsScreen().pressBack1();
     }
 
+    @And("^I click Back button on Check Options Screen2$")
+    public void iClickBackButtonOnCheckOptionsScreen2() throws InterruptedException {
+        new CheckOptionsScreen().pressBack2();
+    }
+
     @And ("^I click Back button on the gratuity screen$")
     public void iClickBackButtonOnTheGratuityScreen(){
         new CheckOptions().pressBack1();
