@@ -103,57 +103,19 @@ public class TGPosSettingsPage extends BasePage {
     }
 
     public void openEnableCashDropOptionIfDisable(String direction) throws Exception {
-//        direction = direction.toLowerCase();
-//
-//        int i = 0;
-//        boolean found = false;
-//
-//        while (i < 3) {
-//            try {
-//                if (isElementExists()) {
-//                    found = true;
-//                    break;
-//                } else {
-//                    scrollToElement(barTabOption, direction);
-//                    i++;
-//                    continue;
-//                }
-//            } catch (Exception e) {
-//                scrollToElement(barTabOption, direction);
-//                i++;
-//                if (i == 3)
-//                    Assert.fail(e.getMessage());
-//                continue;
-//            }
-//        }
-        WebElement element1 = mergeAndFindMobileElement(enableCashDropToggle);
-        String value = getAttribute(element1,"value");
+        Thread.sleep(2000);
 
-        if (value.contains("0")) {
-            WebElement element= mergeAndFindMobileElement(enableCashDropToggle);
-            elementClick(element, "click askCustomerNameToggle ");
-            swipeUntilSaveChangesButton("down");
+        try {
+            WebElement askCustomerName = driver.findElement(By.xpath("(//ion-list)[1]//ion-item[5]//ion-toggle[@aria-checked='false']]"));
 
-            WebElement element2= mergeAndFindMobileElement(saveChangesButton);
-            elementClick(element2, "click saveChangesButton ");
-
-            WebElement element3= mergeAndFindMobileElement(doneButton);
-            elementClick(element3, "click doneButton ");
-
-
-            WebElement menuIcon= mergeAndFindMobileElement(operationMenuIcon);
-            elementClick(menuIcon, "click operationMenuIcon ");
-
-//            WebElement tabPos= mergeAndFindMobileElement(posTab);
-//            elementClick(tabPos, "click operationMenuIcon ");
-
-
-        } else if (value.contains("1")) {
-            WebElement menuIcon= mergeAndFindMobileElement(operationMenuIcon);
-            elementClick(menuIcon, "click operationMenuIcon ");
-
-//            WebElement tabPos= mergeAndFindMobileElement(posTab);
-//            elementClick(tabPos, "click operationMenuIcon ");
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
+            if (askCustomerName.isDisplayed()) {
+                Thread.sleep(2000);
+                askCustomerName.click();
+                Thread.sleep(2000);
+            }
+        }catch (Exception w){
+            utils.log().info("Already Enabled");
         }
     }
 

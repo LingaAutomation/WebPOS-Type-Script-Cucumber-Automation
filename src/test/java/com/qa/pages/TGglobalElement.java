@@ -131,7 +131,7 @@ public class TGglobalElement {
 //    String checkBasedDiscountAfterTaxOpenItem = "//XCUIElementTypeStaticText[@name=\"CB-AfterTax-OpenItem\"]";
 
 
-    String numberOne = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[@name=\"1\"]";
+    String numberOne = "//button[.='1']";
 
     String numberOne1 = "1";
 //    String numberOne1 = "//XCUIElementTypeStaticText[@name=\"1\"]";
@@ -814,7 +814,7 @@ public class TGglobalElement {
     String enterButton = "//button[contains(.,'Enter')]";
 //    String enterButton = "//XCUIElementTypeStaticText[@name=\"Enter\"]";
 
-    String exceedCashAmountPopup = "Cash amount has exceeded the limit.Please make a drop now";
+    String exceedCashAmountPopup = "//p[.='Cash amount has exceeded the limit.Please make a drop now.']";
 //    String exceedCashAmountPopup = "//XCUIElementTypeStaticText[@name=\"Cash amount has exceeded the limit.Please make a drop now\"]";
 
     String yesButton = "//button[.=' Yes ']";

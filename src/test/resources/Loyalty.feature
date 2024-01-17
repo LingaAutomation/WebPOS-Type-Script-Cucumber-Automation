@@ -1,7 +1,7 @@
 @Payment09
 Feature: Loyalty
 
-
+  @Payment091
   Scenario Outline: Loyalty for new customer
     Given I'm logged in
     And I closed the order type window

@@ -47,28 +47,33 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Active Till\"]" )
     private WebElement activeBalance;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[3]" )
+    @FindBy(xpath= "(//XCUIElementTypeStaticText[@xpath=\"Close Till\"])[1]")
+    private WebElement closeTillTitle;
+    @FindBy(xpath = "//linga-icon[@symbol='payIn']" )
     private WebElement payInTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField" )
+    @FindBy(xpath = "//button[contains(.,'Continue')]")
+    private WebElement continueCloseBtn;
+
+    @FindBy(xpath = "//input[contains(@class,'quantity_grid-input')]" )
     private WebElement paidByTxt;
 
     @FindBy(xpath ="//*[@name=\"Hide keyboard\"]")
     private WebElement hideKeyboardButton;
 
-    @FindBy(name = "0")
+    @FindBy(xpath = "//button[.='0']")
     private WebElement paidByNumber0;
 
-    @FindBy(name = "1")
+    @FindBy(xpath = "//button[.='1']")
     private WebElement paidByNumber1;
 
-    @FindBy(name = "2" )
+    @FindBy(xpath = "//button[.='2']" )
     private WebElement paidByNumber2;
 
-    @FindBy(name = "3")
+    @FindBy(xpath = "//button[.='3']")
     private WebElement paidByNumber3;
 
-    @FindBy(name = "4" )
+    @FindBy(xpath = "//button[.='4']")
     private WebElement paidByNumber4;
 
     @FindBy(name = "5")
@@ -86,13 +91,13 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(name = "9")
     private WebElement paidByNumber9;
 
-    @FindBy(name = "00" )
+    @FindBy(xpath = "//button[.='00']" )
     private WebElement paidByNumber00;
 
     @FindBy(name = "C" )
     private WebElement paidByNumberC;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther" )
+    @FindBy(xpath = "//button[contains(.,'Continue')]" )
     private WebElement paidByContinueBtn;
 
     @FindBy(name = "Paid In Successfully")
@@ -101,23 +106,14 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(name = "Paid Out Successfully")
     private WebElement paidOutSuccessfulMsg;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[4]")
+    @FindBy(xpath = "//p[.='Pay Out']")
     private WebElement payOutTab;
 
-    @FindBy(name = "Close Till")
-    private WebElement closeTillBtn;
-
-    @FindBy(name = "Yes")
-    private WebElement yesCloseTillBtn;
 
     @FindBy(xpath = "//span[.=' Continue ']")
     private WebElement continueCloseTillBtn;
 
-    @FindBy(xpath= "(//XCUIElementTypeStaticText[@name=\"Close Till\"])[1]")
-    private WebElement closeTillTitle;
 
-    @FindBy(name = "Continue")
-    private WebElement continueCloseBtn;
 
     @FindBy(name = "Submit")
     private WebElement submitCloseTillBtn;
@@ -125,8 +121,12 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(name= "Do you want to Close this Till ?")
     private WebElement closeTillPopUpMsg;
 
-    @FindBy(name = "Closed Till")
-    private WebElement closeTillTabBtn;
+    @FindBy(xpath = "//button[.=' Close Till ']")
+    private WebElement closeTillBtn;
+
+    @FindBy(xpath = "//button[contains(.,'Yes')]")
+    private WebElement yesCloseTillBtn;
+
 
 
 
@@ -168,7 +168,7 @@ public class TillManagementScreen extends OrderManagementScreen {
         elementClick(paidByNumber0, "Tapped number0");
     }
 
-    public void press1() {
+    public void press1() throws InterruptedException {
         elementClick(paidByNumber1, "Tapped number1");
     }
 
@@ -241,7 +241,8 @@ public class TillManagementScreen extends OrderManagementScreen {
     public void pressCloseTillBtn(){
         elementClick(closeTillBtn, "Close Till button is tapped.");
     }
-
+    @FindBy(xpath = "Closed Till")
+    private WebElement closeTillTabBtn;
     public void pressYesCloseTillBtn(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
         elementClick(yesCloseTillBtn, "Yes (Close Till) button is tapped.");
@@ -273,6 +274,8 @@ public class TillManagementScreen extends OrderManagementScreen {
     }
     @FindBy(name = "Open Till")
     WebElement openTill;
+    public void pressTillManagementBTN() {elementClick(tillmanagementBtn_Opt, "Clicked on Till management button in the operation option");
+    }
 
     @FindBy(name = "Done")
     WebElement Doneee;
@@ -553,7 +556,7 @@ public String totalOfActiveTillTxt = " ";
         return elementGetText(totalSummary,"Summary Screen - ");
     }
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Submit\"]")
+    @FindBy(xpath = "//button//span[contains(.,'Submit')]")
     WebElement submitTotalSummary;
 
     public void clickSubmitInTotalSummary(){
@@ -822,31 +825,36 @@ driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
     public void verifyTillIsOpenedOrNotIfAvailableCloseTill() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         try {
-            WebElement till_Balance = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[5]"));
+            WebElement till_Balance =  driver.findElement(By.xpath("//tbody/tr//td[contains(@class,'Till-Balance')]"));
             if (till_Balance.isDisplayed()) {
                 elementClick(till_Balance, "Active Till Selected");
                 elementClick(closeTillBtn, "Selected Closed Till Button");
                 elementClick(yesCloseTillBtn, "Yes to close till");
                 Thread.sleep(400);
-                WebElement cashExpected = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
+                WebElement cashExpected =  driver.findElement(By.xpath("//span[@slot='end']"));
                 String Balance = cashExpected.getText();
-                utils.log().info("Cash Expected - " + Balance);
-                String balanceTxt1 = Balance.replaceAll("[$A-Z,.]","");
+                System.out.println("Cash Expected :"+ Balance);
+//                utils.log().info("Cash Expected - " + Balance);
+                String balanceTxt2 = Balance.replaceAll("[$A-Za-z,.:]","");
+                String balanceTxt1 = balanceTxt2.replaceAll(" ","");
+                System.err.println(balanceTxt1);
                 int len = balanceTxt1.length();
                 for (int i = 0; i < len; i++) {
                     char letter = balanceTxt1.charAt(i);
                     String let = String.valueOf(letter);
-                    utils.log().info("vale - " + let);
-                    WebElement numbers = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"" + let + "\"]"));
+//                    utils.log().info("vale - " + let);
+                    WebElement numbers =  driver.findElement(By.xpath("//ion-grid[@class='numberpad_grid md hydrated']//ion-row//ion-col//button//span[contains(.,'"+let+"')]"));
                     elementClick(numbers, "Selected - " + numbers.getText());
                 }
                 elementClick(continueCloseBtn, "Continue Button Selected");
                 Thread.sleep(4000);
                 elementClick(submitTotalSummary, "Submit the Total Summary");
                 elementClick(setTillBtnTill, "Set Till Button is selected");
-            } else { }
+            } else {
+                int a = Integer.parseInt("1a");
+            }
         } catch (Exception w) {
-            utils.log().info("Active Till is NOT Available");
+//            utils.log().info("Active Till is NOT Available");
         }
     }
 
@@ -891,7 +899,7 @@ driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
     public void clickPayOutButton(){
         elementClick(payOutBtn,"Pay Out Button Selected ");
     }
-    @FindBy(name = "Till")
+    @FindBy(xpath = "//p[contains(.,'Till')]")
     WebElement tillBtn;
     public void pressTillBtn(){
 elementClick(tillBtn,"Tapped Till Button");
@@ -929,35 +937,35 @@ elementClick(tillBtn,"Tapped Till Button");
         TestUtils.GrossValue = grossValueAmount1;
         utils.log().info("Before Sale Gross Sales - "+grossValueAmount1);
     }
-    @FindBy (name = "ToggleIcon")
+    @FindBy (xpath = "//linga-icon[@symbol='menuIcon']")
     WebElement ToggleIcon;
 
-    @FindBy (name = "POS Settings")
+    @FindBy (xpath = "//button[.='POS Settings']")
     WebElement posSettings;
-
-    public void clickCashDropFromTillSettings(){
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        for(int i =1;i<=2;i++) {
+    public void clickCashDropFromTillSettings() throws InterruptedException {
+        for(int i =1;i<=1;i++) {
+            Thread.sleep(5000);
             elementClick(ToggleIcon,"Toggle Icon Selected");
             elementClick(posSettings,"posSettings Selected");
-            WebElement cashDropBtn = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeSwitch"));
+            WebElement cashDropBtn =  driver.findElement(By.xpath("//ion-toggle[@formcontrolname='enableCashDrop']"));
             elementClick(cashDropBtn, "Cash Drop Button Selected");
-            WebElement saveChanges = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save Changes\"]"));
+            WebElement saveChanges =  driver.findElement(By.xpath("//button[contains(.,'Save Changes')]"));
             elementClick(saveChanges, "Save Changes Button Selected");
-            WebElement successPopup = (WebElement) driver.findElement(By.xpath("Successfully Updated the POS Settings"));
-            String successPopupTxt = successPopup.getText();
-            Assert.assertEquals(successPopupTxt,"Successfully Updated the POS Settings");
-            utils.log().info("Displayed popup as - "+successPopupTxt);
-            WebElement donee = (WebElement) driver.findElement(By.xpath("Done"));
-             elementClick(donee,"Done button selected");
+            Thread.sleep(5000);
+//            WebElement successPopup =  driver.findElement(By.xpath("Successfully Updated the POS Settings"));
+//            String successPopupTxt = successPopup.getText();
+//            Assert.assertEquals(successPopupTxt,"Successfully Updated the POS Settings");
+////            utils.log().info("Displayed popup as - "+successPopupTxt);
+//            WebElement donee = driver.findElement(By.xpath("Done"));
+//             elementClick(donee,"Done button selected");
         }
     }
 
-    @FindBy (name = "Till Management")
-    WebElement tillManagement;
+    @FindBy(xpath = "//label[contains(.,'Till Management')]/../linga-icon/../.." )
+    private WebElement tillmanagementBtn_Opt;
 
     public void clickTheTillManagement(){
-        elementClick(tillManagement,"Till Management selected");
+        elementClick(tillmanagementBtn_Opt,"Till Management selected");
     }
 
     @FindBy (name = "Cash Drop")

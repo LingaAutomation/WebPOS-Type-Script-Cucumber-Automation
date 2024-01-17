@@ -3,6 +3,7 @@ package com.qa.stepdef;
 
 import com.qa.pages.DriverSteup;
 import com.qa.utils.*;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,6 +16,8 @@ import org.junit.Assume;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import com.qa.utils.TestUtils;
@@ -47,18 +50,17 @@ public class Hooks {
     }
 
     @After
-    public static void quit(Scenario scenario) throws IOException {
+    public static void quit(Scenario scenario) throws IOException, AWTException {
 
         if (scenario.isFailed() || i>29){
+
             ScenarioName = scenario.getName();
             utils.log().info("Failed Scenario Name : " + ScenarioName);
             File screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
             scenario.attach(fileContent, "image/png", "screenshot");
             driver.close();
-//            driver.quit();
-
-driver=null;
+            driver = null;
 
             }
 

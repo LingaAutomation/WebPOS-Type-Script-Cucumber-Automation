@@ -15,7 +15,7 @@ public class TGCashPage extends BasePage{
         elementClick(element2,"Click Zero");
         elementClick(element2,"Click Zero");
         elementClick(element1,"Click One");
-        WebElement element3=mergeAndFindMobileElement(continueButton);
+        WebElement element3=driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
         elementClick(element3,"Click Continue Button");
 
     }

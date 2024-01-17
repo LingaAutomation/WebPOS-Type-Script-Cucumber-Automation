@@ -49,7 +49,7 @@ public class PhoneOrderStepDef {
         new PhoneOrderScreen().clickActiveDriverAfterassigned(name);
     }
 
-    @And("^I click No button on  is offline popup$")
+    @And("^I click No button on is offline popup$")
     public void iClickNoButtonOnDriverIsOfflinePopup() {
         new PhoneOrderScreen().tapNoButton();
     }
@@ -125,12 +125,12 @@ public class PhoneOrderStepDef {
 
     @Then ("^I should see delivery orders cannot submitted here warning message$")
     public void iShouldSeeDeliveryOrdersCannotSubmittedHereWarningMessage(){
-        Assert.assertEquals(new PhoneOrderScreen().getWarningMsg(),"Delivery orders cannot be submitted here.");
+        Assert.assertEquals(new PhoneOrderScreen().getWarningMsg(),"Delivery orders cannot be submitted here. Please use the phone order arrival option");
     }
 
     @Then ("^I should see payment made on this check popup message for Phone order$")
     public void iShouldSeePaymentMadeOnThisCheckPopupMessageForPhoneOrder(){
-        Assert.assertEquals(new PhoneOrderScreen().verifyPaymentMadePopup(),"Payment(s) made on this check,Can you return this to Auto r");
+        Assert.assertEquals(new PhoneOrderScreen().verifyPaymentMadePopup(),"Payment(s) made on this Check, Can you return this to Walkin Auto r");
     }
 
     @Then ("^I should see closed check in complete tab$")
@@ -204,6 +204,10 @@ public class PhoneOrderStepDef {
         new PhoneOrderScreen().selectClosedCheckFromClosedTab();
     }
 
+    @And ("^I verify the closed check service type as \"([^\"]*)\"$")
+    public void iVerifyTheClosedCheckServiceTypeAs(String type){
+        new PhoneOrderScreen().verifyClosedCheckServiceTypeAs(type);
+    }
     @And ("^I click the Closed check on check stats11$")
     public void iClickTheClosedCheckOnCheckStats11() throws InterruptedException {
         new PhoneOrderScreen().selectClosedCheckFromClosedTab11();
@@ -301,6 +305,8 @@ public class PhoneOrderStepDef {
     public void iClickTheExitToCloseThePreauthWindow(){
         new PaymentWindow().pressExitBtn();
     }
+
+
 
     @Then ("^I should see preauth window$")
     public void iShouldSeePreAuthWindow(){

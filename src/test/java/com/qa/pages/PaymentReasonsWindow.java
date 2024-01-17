@@ -4,17 +4,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class PaymentReasonsWindow extends TillManagementScreen{
-    @FindBy(name = "Reasons" )
+    @FindBy(xpath = "//ion-title[.='Reasons']" )
     private WebElement reasonsWindowTitle;
 
-    @FindBy(name = "Paid In" )
+    @FindBy(xpath = "//button[.='Paid In']" )
     private WebElement paidInReasonBtn;
 
-    @FindBy(name = "Paid Out" )
+    @FindBy(xpath = "//button[.='Paid Out']" )
     private WebElement paidOutReasonBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Ok\"]" )
+    @FindBy(xpath = "//span[contains(.,'Add')]" )
     private WebElement okBtn;
+
 
 
     public String getReasonsWindowTitle() {

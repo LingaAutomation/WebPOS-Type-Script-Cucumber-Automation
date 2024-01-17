@@ -122,7 +122,7 @@ public class OrderTypesStepDef {
 
     @And("^I should see that \"([^\"]*)\" and \"([^\"]*)\" are added to the check$")
     public void iShouldSeeThatAndAreAddedToTheCheck(String menuItem, String modifier) {
-        new OrderManagementScreen().verifyOrderedItemExists(menuItem);
+        new OrderManagementScreen().verifyOrderedItemExists1(menuItem);
         new OrderManagementScreen().verifyOrderedItemExists(modifier);
     }
 
@@ -193,7 +193,7 @@ public class OrderTypesStepDef {
 
     @And("^I should see that \"([^\"]*)\" is added to the check$")
     public void iShouldSeeThatIsAddedToTheCheck(String menuItem) {
-        new OrderManagementScreen().verifyOrderedItemExists(menuItem);
+        new OrderManagementScreen().verifyOrderedItemExists1(menuItem);
     }
     @And ("I click the Settings button")
     public void iClickTheSettingsButton(){ new BarTabScreen().pressSettings();}
@@ -331,6 +331,11 @@ public class OrderTypesStepDef {
         new OrderManagementScreen().selectQSRCombo();
     }
 
+    @And("I select order type as {string} method")
+    public void iSelectOrderTypeAsMethod(String arg0) throws InterruptedException {
+        new OrderManagementScreen().selectOrderTypeMethod();
+    }
+
     @And ("^I select service type as \"([^\"]*)\" on the order screen$")
     public void iSelectServiceTypeAsOnTheOrderScreen(String type){
         new OrderTypeWindow().selectServiceTypeAs(type);
@@ -389,7 +394,7 @@ public class OrderTypesStepDef {
     }
 
     @And ("^I click cash drop from Till settings$")
-    public void iClickCashDropFromTillSettings(){
+    public void iClickCashDropFromTillSettings() throws InterruptedException {
         new TillManagementScreen().clickCashDropFromTillSettings();
     }
 

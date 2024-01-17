@@ -52,7 +52,7 @@ public class TGTillManagementStepDef {
     }
 
     @When("User verify Open Till page")
-    public void userVerifyOpenTillPage() {
+    public void userVerifyOpenTillPage() throws InterruptedException {
         new TGTillManagementScreen().verifyOpenTillPage();
     }
 
@@ -62,7 +62,7 @@ public class TGTillManagementStepDef {
     }
 
     @Then("User verify last active till")
-    public void userVerifyLastActiveTill() {
+    public void userVerifyLastActiveTill() throws InterruptedException {
         new TGTillManagementScreen().verifyLastActiveTill();
     }
 
@@ -97,7 +97,7 @@ public class TGTillManagementStepDef {
     }
 
     @And("User select Paid Reason")
-    public void userSelectPaidReason() {
+    public void userSelectPaidReason() throws InterruptedException {
         new TGTillManagementScreen().selectPaidReason();
     }
 
@@ -137,7 +137,7 @@ public class TGTillManagementStepDef {
     }
 
     @Then("User select last active till if exist")
-    public void userSelectLastActiveTillIfExist() {
+    public void userSelectLastActiveTillIfExist() throws InterruptedException {
         new TGTillManagementScreen().selectLastActiveTillIfExist();
     }
 

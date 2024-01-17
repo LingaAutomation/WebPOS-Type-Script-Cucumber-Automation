@@ -1,9 +1,6 @@
 package com.qa.stepdef;
 
-import com.qa.pages.CIPaymentScreen;
-import com.qa.pages.CICloseDayScreen;
-import com.qa.pages.CIWaitListPage;
-import com.qa.pages.CheckOptionsScreen;
+import com.qa.pages.*;
 import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -118,7 +115,10 @@ public class CI_PaymentStepDef {
     public void iClickNewTabInTheBarTabScreen() {
         new CIPaymentScreen().clickNewTab();
     }
-
+    @And("I select the {string} order type popup")
+    public void iSelectTheOrderTypePopup(String text) {
+        new OrderTypeWindow().selectToGoOrderTypepopup(text);
+    }
     @And("^I click \"([^\"]*)\" in the preauth popup \"([^\"]*)\"$")
     public void iClickInThePreauthPopup(String btnExit, String msg) {
         new CIPaymentScreen().commonBtnClick(btnExit,msg);

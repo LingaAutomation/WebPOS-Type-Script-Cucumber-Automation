@@ -44,14 +44,16 @@ public class TillManagementStepDef {
     /*Pay In*/
     @Given("^I'm displaying Open Till window$")
     public void iMDisplayingOpenTillWindow() throws InterruptedException {
-//        new ClockInScreen().ClockIn();
+        new ClockInScreen().ClockIn();
         new OrderTypeWindow().pressCancelBtn();
+//        new OrderTypeWindow().pressCancelBtn();
         new OrderManagementScreen().pressCountingMachineBtn();
+        new TillManagementScreen().pressTillManagementBTN();
 
     }
 
     @And("^I press first number of the total$")
-    public void iPressFirstNumberOfTheTotal() {
+    public void iPressFirstNumberOfTheTotal() throws InterruptedException {
         new OpenTillWindow().press1();
     }
 
@@ -114,7 +116,7 @@ public class TillManagementStepDef {
     }
 
     @And("^I enter first number of the payment$")
-    public void iEnterFirstNumberOfThePayment() {
+    public void iEnterFirstNumberOfThePayment() throws InterruptedException {
         new TillManagementScreen().press1();
     }
 

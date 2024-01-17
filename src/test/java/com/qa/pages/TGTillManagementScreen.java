@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -209,31 +210,30 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
         elementClick(btnSubmit,"click tillSubmitButton ");
     }
 
-    public void selectLastActiveTillIfExist(){
-
-        List<WebElement> list = (List<WebElement>) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTable"));
+    public void selectLastActiveTillIfExist() throws InterruptedException {
+        List<WebElement> list =  driver.findElements(By.xpath("//tbody[@role='rowgroup']//tr//td[contains(@class,'Till-Balance')]"));
 
         if (list != null && list.isEmpty()){
-            driver.findElement(By.id(setTillButton)).click();
+            driver.findElement(By.xpath(setTillButton)).click();
         }
         else{
-            WebElement element=mergeAndFindMobileElement(activeTill);
+            WebElement element= driver.findElement(By.xpath("(//tbody[@role='rowgroup']//tr//td[contains(@class,'Till-Balance')])["+list.size()+"]"));
             elementClick(element,"click activeTill ");
 
-            WebElement element1=mergeAndFindMobileElement(closeTillButton);
+            WebElement element1= driver.findElement(By.xpath("//button[contains(.,'Close Till')]"));
             elementClick(element1,"click closeTillButton ");
 
-            WebElement element2=mergeAndFindMobileElement(yesOptionOnPopup);
+            WebElement element2= driver.findElement(By.xpath("//button[contains(.,'Yes')]"));
             elementClick(element2,"click closeTillButton ");
 
-            WebElement element3=mergeAndFindMobileElement(numberOne1);
+            WebElement element3= driver.findElement(By.xpath("//button[contains(.,'1')]"));
             elementClick(element3,"click numberOne ");
 
-            WebElement element0=mergeAndFindMobileElement(numberDoubleZero);
+            WebElement element0= driver.findElement(By.xpath("//button[contains(.,'00')]"));
             elementClick(element0,"click numberDoubleZero ");
             elementClick(element0,"click numberDoubleZero ");
 
-            WebElement btnContinue=mergeAndFindMobileElement(continued);
+            WebElement btnContinue= driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
             elementClick(btnContinue,"click continued ");
 
 //            String overShortageTitle =  "OVER SHORTAGE";
@@ -253,7 +253,8 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
 //                WebElement btnSubmit=mergeAndFindMobileElement(tillSubmitButton);
 //                elementClick(btnSubmit,"click tillSubmitButton ");
 //            }
-            WebElement btnSubmit=mergeAndFindMobileElement(tillSubmitButton);
+            Thread.sleep(4000);
+            WebElement btnSubmit= driver.findElement(By.xpath("//button[contains(.,'Submit')]"));
             elementClick(btnSubmit,"click tillSubmitButton ");
         }
     }
@@ -272,10 +273,10 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
     }
 
     public void selectPaidOutReason(){
-        WebElement btnDone=mergeAndFindMobileElement(paidOutReason);
+        WebElement btnDone=driver.findElement(By.xpath("//button[.='GROCERY']"));
         elementClick(btnDone,"click paidOutReason");
 
-        WebElement element=mergeAndFindMobileElement(okButton);
+        WebElement element=driver.findElement(By.xpath("//button[.=' Add ']"));
         elementClick(element,"click okButton");
     }
 
@@ -291,26 +292,26 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
     }
 
     public void enterPaidOutAmount(){
-        WebElement element3=mergeAndFindMobileElement(numberOne1);
+        WebElement element3=driver.findElement(By.xpath("//button[.='1']"));
         elementClick(element3,"click numberOne ");
 
-        WebElement element0=mergeAndFindMobileElement(numberDoubleZero);
+        WebElement element0=driver.findElement(By.xpath("//button[.='00']"));
         elementClick(element0,"click numberDoubleZero ");
         elementClick(element0,"click numberDoubleZero ");
 
-        WebElement btnContinue=mergeAndFindMobileElement(continued);
+        WebElement btnContinue=driver.findElement(By.xpath("//button[.=' Continue ']"));;
         elementClick(btnContinue,"click continued ");
     }
 
     public void enterPaidTo(){
-        WebElement element=mergeAndFindMobileElement(paidToTextBox);
+        WebElement element=driver.findElement(By.xpath("//input[contains(@class,'quantity_grid-input')]"));
         elementClick(element,"click paidToTextBox ");
         element.sendKeys("Test Automation Cafe");
 //        driver.hideKeyboard();
     }
 
     public void clickPayOutTab(){
-        WebElement element=mergeAndFindMobileElement(payOutTab);
+        WebElement element= driver.findElement(By.xpath("//p[. ='Pay Out']"));
         elementClick(element,"click payOutTab ");
     }
 
@@ -325,12 +326,13 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
         elementClick(btnDone,"click doneButton");
     }
 
-    public void selectPaidReason(){
-        WebElement element=mergeAndFindMobileElement(paidInReason);
-        elementClick(element,"click paidInReason ");
+    public void selectPaidReason() throws InterruptedException {
+        Thread.sleep(4000);
 
-        WebElement btnOk=mergeAndFindMobileElement(okButton);
-        elementClick(btnOk,"click okButton");
+        driver.findElement(By.xpath("//textarea[contains(@class,'payReason_content')]")).click();
+        driver.findElement(By.xpath("//textarea[contains(@class,'payReason_content')]")).clear();
+        driver.findElement(By.xpath("//textarea[contains(@class,'payReason_content')]")).sendKeys("Paid In");
+
     }
 
     public void enterPaidInAmount(){
@@ -345,15 +347,14 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
         elementClick(btnContinue,"click continued ");
     }
 
+    @FindBy(xpath = "//input[contains(@class,'quantity_grid-input')]" )
+    private WebElement paidByTxt1;
     public void enterPaidBy(){
-        WebElement element=mergeAndFindMobileElement(paidByTextBox);
-        elementClick(element,"click paidByTextBox ");
-        element.sendKeys("Test Automation Cafe");
-//        driver.hideKeyboard();
+        sendKeys(paidByTxt1, "KamilT", "Paid By text is entered.");
     }
 
     public void clickPayInTab(){
-        WebElement element=mergeAndFindMobileElement(payInButton);
+        WebElement element=driver.findElement(By.xpath("//linga-icon[@symbol='payIn']"));
         elementClick(element,"click payInButton ");
     }
 
@@ -372,84 +373,87 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
 //        }
     }
     public void closeUserGlobalOptionIfEnable() throws Exception {
-        WebElement element=mergeAndFindMobileElement(globalTillToggleText);
+        Thread.sleep(2000);
+        WebElement element= driver.findElement(By.xpath("//ion-label[contains(.,'Global Till')]"));
         String actualName = elementGetText(element,"verify globalTillToggleText");
         String expectedName = "Global Till";
 
         Assert.assertEquals(actualName, expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(globalTillToggle);
+        WebElement element1=driver.findElement(By.xpath("//ion-label[contains(.,'Global Till')]/..//ion-toggle"));
         String value = getAttribute(element1,"value");
 
         if (value.contains("1")) {
-            WebElement element2=mergeAndFindMobileElement(globalTillToggle);
+            WebElement element2=driver.findElement(By.xpath("//ion-label[contains(.,'Global Till')]/..//ion-toggle"));
             elementClick(element2,"click globalTillToggle ");
 
         } else if (value.contains("0")) {
-            WebElement element3=mergeAndFindMobileElement(openTillHeader);
+            WebElement element3=driver.findElement(By.xpath("//ion-title[contains(.,'OPEN TILL')]"));
             String actualName1 = elementGetText(element3,"verify openTillHeader");
-            String expectedName1 = "Open Till";
+            String expectedName1 = "OPEN TILL";
 
             Assert.assertEquals(actualName1,expectedName1);
         }
     }
     public void openUserGlobalOptionIfDisable() throws Exception {
-        WebElement element=mergeAndFindMobileElement(globalTillToggleText);
-        String actualName = elementGetText(element,"verify globalTillToggleText");
+        Thread.sleep(2000);
+        String actualName = driver.findElement(By.xpath("//ion-label[contains(.,'Global Till')]")).getText();
         String expectedName = "Global Till";
 
         Assert.assertEquals(actualName, expectedName);
 
-        WebElement element1=mergeAndFindMobileElement(globalTillToggle);
+        WebElement element1=driver.findElement(By.xpath("//ion-label[contains(.,'Global Till')]/..//ion-toggle"));
         String value = getAttribute(element1,"value");
 
         if (value.contains("1")) {
-            WebElement element3=mergeAndFindMobileElement(openTillHeader);
+            WebElement element3=driver.findElement(By.xpath("//ion-title[contains(.,'OPEN TILL')]"));
             String actualName1 = elementGetText(element3,"verify openTillHeader");
             String expectedName1 = "Open Till";
 
             Assert.assertEquals(actualName1,expectedName1);
         } else if (value.contains("0")) {
-            WebElement element2=mergeAndFindMobileElement(globalTillToggle);
+            WebElement element2=driver.findElement(By.xpath("//ion-label[contains(.,'Global Till')]/..//ion-toggle"));
             elementClick(element2,"click globalTillToggle ");
         }
     }
 
-    public void verifyLastActiveTill(){
-        WebElement element3=mergeAndFindMobileElement(tillBalanceText);
+    public void verifyLastActiveTill() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element3 = driver.findElement(By.xpath("//th[contains(.,'Till Balance')]"));
         String actualName = elementGetText(element3,"verify tillBalanceText");
         String expectedName = "Till Balance";
 
         Assert.assertEquals(actualName,expectedName);
 
-        WebElement element=mergeAndFindMobileElement(newTillBalance);
+        WebElement element= driver.findElement(By.xpath("//tbody[@role='rowgroup']//tr//td[contains(@class,'Till-Balance')]"));
         String actualName1 = elementGetText(element,"verify newTillBalance");
 
-        String expectedName1 = "TL 100,00";
+        String expectedName1 = "$ 100,00";
 
         Assert.assertEquals(actualName,expectedName);
     }
     public void enterTillAmount(){
-        WebElement element3=mergeAndFindMobileElement(numberOne1);
+        WebElement element3 = driver.findElement(By.xpath("//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'1')]"));
         elementClick(element3,"click numberOne ");
 
-        WebElement element0=mergeAndFindMobileElement(numberDoubleZero);
+        WebElement element0= driver.findElement(By.xpath("//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'00')]"));
         elementClick(element0,"click numberDoubleZero ");
         elementClick(element0,"click numberDoubleZero ");
 
-        WebElement btnContinue=mergeAndFindMobileElement(tillContinueButton);
+        WebElement btnContinue=driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
         elementClick(btnContinue,"click tillContinueButton ");
     }
 
-    public void verifyOpenTillPage(){
-        WebElement element3=mergeAndFindMobileElement(openTillHeader);
+    public void verifyOpenTillPage() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element3= driver.findElement(By.xpath("//ion-title[contains(.,'OPEN TILL')]"));
         String actualName = elementGetText(element3,"verify openTillHeader");
-        String expectedName = "Open Till";
+        String expectedName = "OPEN TILL";
 
         Assert.assertEquals(actualName,expectedName);
     }
     public void clickSetTillButton(){
-        WebElement element=mergeAndFindMobileElement(setTillButton);
+        WebElement element= driver.findElement(By.xpath("//button[contains(.,'Set Till')]"));
         elementClick(element,"click setTillButton ");
     }
 

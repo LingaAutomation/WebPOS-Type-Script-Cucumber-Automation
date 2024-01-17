@@ -21,8 +21,15 @@ public class TableOrderOperationsStepDef {
     public void iShouldSeeNextFloor(){
         Assert.assertEquals(new TableLayOutScreen().verifyFloor2(),"Floor 2");
     }
+    @And("^I should verify paid amount value as \"([^\"]*)\"$")
+    public void iShouldVerifyPaidAmountValueAs(String value) throws InterruptedException {
+        new OrderManagementScreen().verifyPaidAmountValueAs(value);
+    }
 
-
+    @When ("^I verify the balance Due amount same as \"([^\"]*)\"")
+    public void iVerifyTheBalanceDueAmountSameAs(String value){
+        new AskSeatNumber().verifyBalanceDueAmountAs(value);
+    }
     @And ("^I click Left symbol$")
     public void iClickLeftSymbol(){
         new TableLayOutScreen().clickLeftBtn();
@@ -290,7 +297,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then("^I should see Check already added pop-up message$")
-    public void iShouldSeeCheckAlreadyAddedPopUpMessage() {
+    public void iShouldSeeCheckAlreadyAddedPopUpMessage() throws InterruptedException {
         Assert.assertEquals( new TableLayOutScreen().getCheckAlreadyMergedString(), "Check already added");
     }
     @Then ("^I should see select at least 2 checks$")
@@ -298,7 +305,7 @@ public class TableOrderOperationsStepDef {
         Assert.assertEquals(new TableLayOutScreen().Atleast2Chceks(),"Select at least 2 checks");
     }
     @Then ("^I click cancel button on the pop-up for disappear merge box$")
-    public void iClickCancelButtonOnThePopUPForDisappearMergeBox(){ new TableLayOutScreen().PressCancelBtn();}
+    public void iClickCancelButtonOnThePopUPForDisappearMergeBox() throws InterruptedException { new TableLayOutScreen().PressCancelBtn();}
 
     @And ("^I click Cash button for Complete Sale$")
     public void iClickCashButtonForCompleteSale(){
@@ -348,6 +355,12 @@ public class TableOrderOperationsStepDef {
     @And("^I click Done button on the Popup$")
     public void iClickDoneButtonOnThePopup() throws InterruptedException {
         new TableLayOutScreen().pressDone1();
+    }
+
+    @Then ("^I should see please enter valid number popup$")
+    public void iShouldSeePleaseEnterValidNumberPopup(){
+        new TableLayOutScreen().shouldSeePleaseEnterValidNumberPopup();
+
     }
 
     @And("^I click Done button on the Popup1$")
@@ -637,6 +650,20 @@ public class TableOrderOperationsStepDef {
     @And("^I select menu item as \"([^\"]*)\"$")
     public void iSelectMenuItemAs(String menuItem) throws Exception {
         new OrderManagementScreen().selectMenuItem(menuItem);
+    }
+
+    @And("^I select menu1 item as \"([^\"]*)\"$")
+    public void iSelectMenuItem1As(String menuItem) throws Exception {
+        new OrderManagementScreen().selectMenuItem1(menuItem);
+    }
+
+    @And("^I select seat three$")
+    public void iSelectSeatThree() {
+        new OrderManagementScreen().selectSeat3();
+    }
+    @And("^I select menu2 item as \"([^\"]*)\"$")
+    public void iSelectMenuItem2As(String menuItem) throws Exception {
+        new OrderManagementScreen().selectMenuItem2(menuItem);
     }
 
     @And("^I select 86 menu item as \"([^\"]*)\"$")
@@ -1145,6 +1172,14 @@ public class TableOrderOperationsStepDef {
     public void iShouldGetBackToTheOrderScreen() throws InterruptedException {
         new TableLayOutScreen().orderScreen();
     }
+
+
+    @And("I select the order type FORHERE in dropdown")
+    public void iSelectTheOrderTypeFORHEREInDropdown() throws InterruptedException {
+        new OrderManagementScreen().selectOrderType_Forhere();
+    }
+
+
 
     @And ("^I wait sometimes$")
     public void iWaitSometimes() throws InterruptedException {

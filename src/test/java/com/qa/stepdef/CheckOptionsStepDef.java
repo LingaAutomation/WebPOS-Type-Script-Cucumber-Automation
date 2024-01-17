@@ -1260,4 +1260,15 @@ public class CheckOptionsStepDef {
     public void iSearchTheClosedCheckInTheBatchScreenField(){
         new PaymentWindow().searchTheClosedCheckInBatchScreen();
     }
+
+    @And("I select order type as {string} in phoneorderscreen")
+    public void iSelectOrderTypeAsInPhoneorderscreen(String arg0) throws InterruptedException {
+        new OrderManagementScreen().selectOrderTypeINQSR();
+    }
+
+    @And("I select order type as {string} in order screen")
+    public void iSelectOrderTypeAsInOrderScreen(String orderType) throws InterruptedException {
+        new OrderManagementScreen().selectOrderTypeDelivery(orderType);
+    }
+
 }

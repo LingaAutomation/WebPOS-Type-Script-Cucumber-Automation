@@ -26,10 +26,10 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(name = "To Go")
     private WebElement toGoBtnPhoneOrderScreen;
 
-    @FindBy(name = "Edit")
+    @FindBy(xpath = "//div[.='Edit']")
     private WebElement editBtn;
 
-    @FindBy(name = "Cancel Order")
+    @FindBy(xpath = "//div[.='Cancel Order']")
     private  WebElement cancelOrderBtn;
 
     @FindBy(name = "Print")
@@ -38,8 +38,9 @@ public class PhoneOrderScreen extends BasePage {
 //    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Driver is offline Still Do you want to continue\"]")
 //    private WebElement driverOffline;
 
-    @FindBy(name = "No")
+    @FindBy(xpath = "//button[contains(.,'No')]")
     private WebElement noBtn;
+
 
     @FindBy(xpath = "//button[contains(.,'Yes')]")
     private WebElement YesBtn;
@@ -56,13 +57,16 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(name = "Cash")
     private WebElement cashBtn;
 
-    @FindBy(name = "Delivery orders cannot be submitted here.")
+    @FindBy(xpath = "//p[contains(.,'Delivery orders cannot be submitted here')]")
     private WebElement deliveryOrderCannot;
 
-    @FindBy(name = "Payment(s) made on this check,Can you return this to Auto r")
+    @FindBy(xpath = "//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin')]")
     private WebElement paymentMadeOnThisCheckPopup;
 
-    @FindBy(name = "Future")
+//    @FindBy(name = "Payment(s) made on this check,Can you return this to Auto r")
+//    private WebElement paymentMadeOnThisCheckPopup;
+
+    @FindBy(xpath = "//span[contains(.,'Future')]")
     private WebElement futureTab;
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"New\"])")
@@ -378,6 +382,20 @@ public class PhoneOrderScreen extends BasePage {
             elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }
     }
+
+
+    public void verifyClosedCheckServiceTypeAs(String value){
+        WebElement serviceType = driver.findElement(By.xpath("//td[.=' "+value+" ']"));
+        String serviceTypeTxt = serviceType.getText();
+        if(serviceTypeTxt.equals(value)){
+            utils.log().info("Service Type as SAME - "+value);
+        }else{
+            utils.log().info("Service Type as NOT SAME - "+value);
+            int w = 1/0;
+        }
+
+    }
+
     public void selectClosedCheckFromClosedTab() throws InterruptedException {
         //   driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
         Thread.sleep(5000);

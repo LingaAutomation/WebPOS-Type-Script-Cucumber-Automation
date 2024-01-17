@@ -14,19 +14,19 @@ public class OpenTillWindow extends TillManagementScreen{
 
 
 
-    @FindBy(name = "Open Till" )
+    @FindBy(xpath = "//ion-title[contains(.,'OPEN TILL')]" )
     private WebElement openTillWindowTitle;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"0\"]" )
     private WebElement number0;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"1\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'1')]" )
     private WebElement number1;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"2\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'2')]" )
     private WebElement number2;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"3\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'3')]" )
     private WebElement number3;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"4\"]" )
@@ -47,13 +47,13 @@ public class OpenTillWindow extends TillManagementScreen{
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"9\"]" )
     private WebElement number9;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"00\"]" )
+    @FindBy(xpath = "//ion-col[contains(@class,'numberpad_grid-row-col')]//button//span[contains(.,'00')]" )
     private WebElement number00;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"C\"]" )
     private WebElement numberC;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Continue\"]" )
+    @FindBy(xpath = "//button[contains(.,'Continue')]")
     private WebElement continueBtn;
 
 
@@ -66,7 +66,8 @@ public class OpenTillWindow extends TillManagementScreen{
         elementClick(number0, "Tapped number0");
     }
 
-    public void press1() {
+    public void press1() throws InterruptedException {
+        Thread.sleep(2000);
         click(number1, "Tapped number1");
     }
 

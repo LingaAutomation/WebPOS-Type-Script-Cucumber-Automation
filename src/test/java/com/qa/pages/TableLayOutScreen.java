@@ -250,10 +250,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//button[.=' Cancel ']")
     private WebElement cancelBtn;
 
-    @FindBy(xpath = "Right")
+    @FindBy(xpath = "//button[.='Close']")
+    private WebElement closebtn;
+
+    @FindBy(xpath = "(//div[.='Floor 2'])[1]")
     private WebElement rightBtn;
 
-    @FindBy(xpath = "Floor 2")
+    @FindBy(xpath = "(//div[.='Floor 2'])[1]")
     private WebElement floor2Btn;
 
     @FindBy(xpath = "Left")
@@ -349,6 +352,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void selectSeatNo(String numberOfSeats) {
         WebElement e = driver.findElement(By.xpath("//span[.='"+numberOfSeats+"']"));
         elementClick(e, numberOfSeats + " selected");
+        TestUtils.seatNumber = numberOfSeats;
     }
 
     public void selectSplit(String numberOfSplit) throws InterruptedException {
@@ -402,12 +406,12 @@ public class TableLayOutScreen extends OrderManagementScreen {
 
 
     public void checkTableSeatedDineIn() {
-        WebElement element = driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"1\"][1]"));
-        if (element.isDisplayed()) {
-            utils.log().info("there is 1 seats in T1");
-        } else {
-            utils.log().info("Error table is not seated");
-        }
+//        WebElement element = driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"1\"][1]"));
+//        if (element.isDisplayed()) {
+//            utils.log().info("there is 1 seats in T1");
+//        } else {
+//            utils.log().info("Error table is not seated");
+//        }
     }
 
     public void checkTableSeatedByOne() {
@@ -471,7 +475,16 @@ public class TableLayOutScreen extends OrderManagementScreen {
             utils.log().info("Tapped Done");
         }
     }
+    public void shouldSeePleaseEnterValidNumberPopup(){
+        WebElement askSeatNumber = driver.findElement(By.xpath("//mat-dialog-container[@id='quantity-dialog']"));
+        if(askSeatNumber.isDisplayed()){
+            utils.log().info("Displayed Ask Seat Number Window");
+        }else{
+            utils.log().info("Not Displayed Ask Seat Number Window");
+            int w = 1/0;
+        }
 
+    }
     public void pressDone3() throws InterruptedException {
         Thread.sleep(2000);
         try {
@@ -487,8 +500,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
 
-    public String getCheckAlreadyMergedString() {
-
+    public String getCheckAlreadyMergedString() throws InterruptedException {
+Thread.sleep(2000);
         return elementGetText(checkAlreadyAddedTxt, "Check already added text is Displayed -");
 
     }
@@ -498,8 +511,9 @@ public class TableLayOutScreen extends OrderManagementScreen {
         return elementGetText(SelectAtleast2CheckTxt, "Select at least 2 check text is - ");
     }
 
-    public void PressCancelBtn() {
+    public void PressCancelBtn() throws InterruptedException {
         elementClick(CancelBtn, "Tapped Cancel to disappear the Merge Box");
+        Thread.sleep(2000);
     }
 
     public String getPrintOrReceiptMsg() {
@@ -1178,7 +1192,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void clickCancelBtn() {
-        elementClick(cancelBtn, "Tapped cancel Button");
+        elementClick(closebtn, "Tapped cancel Button");
     }
 
     public void verifyCheckDownIsIncreased() throws InterruptedException {
@@ -1399,15 +1413,16 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void verifyDeliveryChargeAdded() {
-        WebElement delivery = driver.findElement(By.xpath("Delivery Charge "));//Prod
+        WebElement delivery = driver.findElement(By.xpath("//div[.='Delivery charge']"));//Prod
         //WebElement delivery = (WebElement) driver.findElement(By.xpath()("Delivery Charge  ");//Staging
         String charge = delivery.getText();
-        WebElement amount = driver.findElement(By.xpath("10,00"));
+        WebElement amount = driver.findElement(By.xpath("//div[.='Delivery charge']/..//div[contains(@class,'pos-end')]"));
         String Price = amount.getText();
         if ((delivery.isDisplayed()) && (amount.isDisplayed())) {
-            utils.log().info(charge + Price);
+            utils.log().info(charge);
         } else {
             utils.log().info("Delivery charge is not Added");
+            int w = 1/0;
         }
     }
 

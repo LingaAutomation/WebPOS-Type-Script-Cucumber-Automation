@@ -21,23 +21,27 @@ public class OrderTypeWindow extends ClockInScreen {
 //        PageFactory.initElements(this.driver,this);
 //    }
 
-    @FindBy(name = "For Here")
+    @FindBy(xpath = "(//span[contains(.,'FORHERE')])[1]")
     private WebElement forHereBtn;
 
-    @FindBy(name = "To Go")
+    @FindBy(xpath = "(//button[@id='os_tableMenu']//span[contains(.,'TOGO')])[1]")
     private WebElement togoBtn;
 
-    @FindBy( name = "Order Type")
+    @FindBy( xpath = "//p[.='Order Type']")
     private WebElement orderTypeWindow;
 
     @FindBy(xpath = "(//button[contains(.,'DELIVERY')])[1]")
     private WebElement deliveryBtn;
 
 
-    @FindBy(name = "Phone To Go")
-    private WebElement phoneToGoBtnService;//Added Today
 
-    @FindBy(name = "QSR")
+    @FindBy(xpath = "//button[@id='os_tableMenu']//span[contains(.,'PHONE TOGO')]")
+    private WebElement phoneToGoBtnService;   //Added Today
+
+//    @FindBy(xpath = "(//button[@id='os_tableMenu']//span[contains(.,'QSR')])[1]")
+//    private  WebElement qsrServiceType;
+//
+    @FindBy(xpath = "/html/body/div/div[2]/div/div/div/div/button[1]")
     private  WebElement qsrServiceType;
 
     @FindBy(name = "Phone Delivery")
@@ -45,7 +49,7 @@ public class OrderTypeWindow extends ClockInScreen {
 
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"To Go\"])[2]")
     private WebElement phoneToGoBtn;//Added Today
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Delivery\"])[2]")
+    @FindBy(xpath = "//button[@id='os_tableMenu']//span[contains(.,'PHONE DELIVERY')]")
     private WebElement phoneDeliveryBtn;//Added Today
 
     @FindBy(xpath = "//span[contains(.,'Done')]")
@@ -209,7 +213,7 @@ Thread.sleep(300);
     }
 
     public void clickServiceTypeBtn(){
-        WebElement e=mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]","",TestUtils.XPath);
+        WebElement e=driver.findElement(By.xpath("//button[contains(@id,'os_menu')]"));
         String orderType = e.getText();
         elementClick(e,"Tapped Order Type as - "+orderType);
     }
@@ -235,9 +239,14 @@ Thread.sleep(300);
     }
 
     public void selectServiceTypeAs(String name){
-        WebElement serviceType = (WebElement) driver.findElement(By.xpath(name));
+        WebElement serviceType = driver.findElement(By.xpath("//button[.=' "+name+" ']"));
         elementClick(serviceType,"Selected - "+name);
     }
+
+    public void selectToGoOrderTypepopup(String text) {
+        driver.findElement(By.xpath("(//span[contains(.,'"+text+"')])[1]")).click();
+    }
+
 
 }
 

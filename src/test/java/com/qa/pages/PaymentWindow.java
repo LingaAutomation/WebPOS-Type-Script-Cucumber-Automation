@@ -22,7 +22,7 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"1\"])[3]")
     WebElement paymentPin1;
 
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
+    @FindBy(xpath = "//ion-row[contains(@class,'payment-types')]//ion-col//button//span[contains(.,'Cash')]")
     WebElement cashPaymentBtn;
 
     @FindBy(xpath = "//button[.=' Yes ']")
@@ -737,7 +737,12 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void pressExitBtn(){
-        elementClick(exitPreAuth,"Exit Button is tapped");
+
+        try{
+            elementClick(exitPreAuth,"Exit Button is tapped");
+        }catch (Exception w){
+
+        }
     }
     @FindBy(xpath = "//span[contains(.,'Exit')]")
     WebElement exitPreAuth;

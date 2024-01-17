@@ -25,6 +25,8 @@ public class TestUtils {
     public static final long WAIT = 5;
     public static String globalCheckNumber=" ";
     public static String menu =" ";
+    public static String menu1 =" ";
+    public static String menu2 =" ";
     public static List<String> menuNames;
     public static String price=" ";
     public static String menuCount=" ";

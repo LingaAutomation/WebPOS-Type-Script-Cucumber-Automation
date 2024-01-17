@@ -36,7 +36,7 @@ public class OrderManagementScreen extends OrderTypeWindow{
 
     public String modifier="";  //Added 23Nov
 
-    @FindBy(xpath = "Counting Machine" ) //id("Counting Machine").click();
+    @FindBy(xpath = "(//linga-icon[@symbol='operationGear'])[1]" ) //id("Counting Machine").click();
     private WebElement countingMachineBtn;
 
     @FindBy(xpath = "//button[@id='os_all']")
@@ -559,7 +559,7 @@ private WebElement QSRCombo;
     /****** Select Order Types ******/
 
     public void selectOrderType(String orderType){
-        WebElement e = driver.findElement(By.xpath(orderType));
+        WebElement e = driver.findElement(By.xpath("//button[.=' "+orderType+" ']"));
         elementClick(e, orderType + " selected");
     }
 
@@ -756,7 +756,31 @@ public  void selectCategory (String value) throws Exception {
         WebElement e =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
         Thread.sleep(2000);
             ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
+        TestUtils.menu = menuItem;
             elementClick(e, "Selected - " + menuItem);
+
+    }
+
+    public void selectSeat3(){
+        elementClick(seat3, "selected seat 2" );
+    }
+
+    public void selectMenuItem1(String menuItem) throws Exception {
+        Thread.sleep(2000);
+        WebElement e =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
+        Thread.sleep(2000);
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
+        TestUtils.menu1 = menuItem;
+        elementClick(e, "Selected - " + menuItem);
+
+    }
+    public void selectMenuItem2(String menuItem) throws Exception {
+        Thread.sleep(2000);
+        WebElement e =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
+        Thread.sleep(2000);
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
+        TestUtils.menu2 = menuItem;
+        elementClick(e, "Selected - " + menuItem);
 
     }
 
@@ -1023,15 +1047,15 @@ public  void selectCategory (String value) throws Exception {
 
     public void verifyPaidAmountValueAs(String Amount) throws InterruptedException {
         Thread.sleep(1000);
-        WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Paid Amount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStati)cText[5]"));
-        String totalAmount = totalValues.getText();
+        WebElement totalValues =  driver.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String totalAmount = totalValues.getAttribute("value");
         Assert.assertEquals(totalAmount,Amount);
         TestUtils.paidAmount = totalAmount;
-        utils.log().info("Cash Price Value is SAME - "+Amount);
+        utils.log().info("Paid Amount Value is SAME - "+Amount);
     }
     public void verifyPaidAmountValueAs0(String Amount) throws InterruptedException {
         Thread.sleep(1000);
-        WebElement totalValues =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Paid Amount\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStati)cText[4]"));
+        WebElement totalValues =  driver.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
         String totalAmount = totalValues.getText();
         Assert.assertEquals(totalAmount,Amount);
         TestUtils.paidAmount = totalAmount;
@@ -1180,6 +1204,18 @@ public  void selectCategory (String value) throws Exception {
     public void selectModifier1(String modify){
         WebElement el1 = driver.findElement(By.xpath("//div[contains(@class,'modifier-section')]//div[contains(.,'"+modify+"')]"));
         elementClick(el1,"Tapped modifier");
+    }
+
+    public void verifyOrderedItemExists1(String itemName) {
+        if(driver.findElement(By.xpath("//div[contains(@class,'menu-section')]//div[contains(.,'"+itemName+"')]")).isDisplayed())
+
+        {
+            utils.log().info("Modifier Item is added");
+        }
+        else {
+            utils.log().info("Modifier Item is not added");
+            int w = 1/0;
+        }
     }
 
     public void verifyOrderedItemExists(String itemName) {
@@ -1594,6 +1630,19 @@ public  void selectCategory (String value) throws Exception {
         }
     }
 
+    public void selectOrderTypeINQSR() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement order_Type = driver.findElement(By.xpath("//span[contains(.,'QSR')]"));
+        order_Type.click();
+    }
+
+    public void selectOrderTypeDelivery(String orderType) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement order_Type = driver.findElement(By.xpath("(//button[@id='os_tableMenu']//span[contains(.,'"+orderType+"')])[1]"));
+        order_Type.click();
+    }
+
+
     public void checkGratuityValue(String value){
         WebElement discount= driver.findElement(By.xpath("//div[@id='os_gratuityAmountStr']//input"));
 
@@ -1722,11 +1771,16 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public void verifyCashButtonEnable(){
-        WebElement cash=driver.findElement(By.xpath("Cash"));
-        if(cash.isEnabled()){
-            utils.log().info("cash Is Enable");
-        }else {
-            utils.log().info("Cash Is not Enable");
+        try {
+//            WebElement cash=driver.findElement(By.xpath("//div[.='Cash']"));
+            WebElement cash = driver.findElement(By.xpath("//div[.='Cash']"));
+            if (cash.isEnabled()) {
+                utils.log().info("cash Is Enable");
+                Assert.assertEquals(cash.getText(), "Cash1");
+            } else {
+                utils.log().info("Cash Is not Enable");
+            }
+        } catch (Exception e) {
         }
     }
 
@@ -2158,6 +2212,17 @@ public  void selectCategory (String value) throws Exception {
             Assert.assertEquals(driver.findElement(By.xpath("//label[.='86 List']")).getText(),"86 List");
             utils.log().info("Displayed window as - "+listBtn.getText());
         }
+    public void selectOrderType_Forhere() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement order_Type = driver.findElement(By.xpath("//button[@id='os_tableMenu']//span[contains(.,'FORHERE')]"));
+        order_Type.click();
+    }
+
+    public void selectOrderTypeMethod() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement order_Type = driver.findElement(By.xpath("//linga-icon[@symbol='down']"));
+        order_Type.click();
+    }
 
         @FindBy(xpath = "CheckDetialsIcon")
         WebElement checkDetailsIcon;

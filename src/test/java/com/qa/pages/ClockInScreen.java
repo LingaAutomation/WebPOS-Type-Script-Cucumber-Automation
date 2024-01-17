@@ -84,7 +84,7 @@ public class ClockInScreen extends UserLoginScreen{
     private WebElement errTxt;
 
     //XCUIElementTypeButton[@name=\"    Bar Tab\"]
-    @FindBy(name = "    Bar Tab")
+    @FindBy(xpath = "//p[.=' BarTab ']")
     WebElement barTabBtn;
 
     @FindBy (xpath = "//button[contains(.,' Continue ')]")
@@ -328,6 +328,7 @@ public class ClockInScreen extends UserLoginScreen{
     }
 
     public void clockInForDineIn(){
+
         pressPin0();
         pressPin0();
         pressPin0();
@@ -343,10 +344,10 @@ public class ClockInScreen extends UserLoginScreen{
 
     }
     public void clockInForEachSale(){
-       pressPin6();
-       pressPin5();
-        pressPin6();
-        pressPin5();
+        driver.findElement(By.xpath("//button[.='6']")).click();
+        driver.findElement(By.xpath("//button[.='5']")).click();
+        driver.findElement(By.xpath("//button[.='6']")).click();
+        driver.findElement(By.xpath("//button[.='5']")).click();
         pressLogin();
     }
     public void ClockIn (){

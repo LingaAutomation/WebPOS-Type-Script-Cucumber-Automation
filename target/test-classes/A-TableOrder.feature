@@ -2173,7 +2173,6 @@ Feature:Table Order Operations
 #    And I click already selected table as "<table_no>"
     Then I should see Check already added pop-up message
     And I click Done button on the Popup1
-
     And I click cancel button on the pop-up for disappear merge box
     And I select table as "<table_no>"
     And I click Cash button for Complete Sale
