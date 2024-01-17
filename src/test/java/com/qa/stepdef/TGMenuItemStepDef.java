@@ -822,6 +822,11 @@ public class TGMenuItemStepDef {
         new TGMenuItemPage().selectBarTabOrderType();
     }
 
+    @Then("User select QSR in order types")
+    public void userSelectQSRInOrderTypes() {
+        new TGMenuItemPage().selectQSROrderType();
+    }
+
     @Then("User click pizza category")
     public void userClickPizzaCategory() {
         new TGMenuItemPage().clickPizzaCategoryTab();

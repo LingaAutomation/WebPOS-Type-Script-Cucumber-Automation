@@ -1,0 +1,648 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:20:40.855 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:20:41.028 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:20:42.193 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:20.719 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:20.946 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:21.020 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:21.089 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:21.164 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:21.237 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:22.709 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:22.854 TaxRoundingOff:8623 - 83-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:22.866 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:23.027 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:28.129 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:33.262 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:39.151 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:39.154 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:39.187 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:39.192 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:39.208 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:39.278 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:39.366 BasePage:424 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:40.502 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:40.634 TaxRoundingOff:5320 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:40.669 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:40.910 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:41.223 TaxRoundingOff:8623 - 83-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:41.228 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:41.305 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:46.422 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:51.485 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:56.558 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:56.559 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:56.578 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:56.578 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:56.588 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:56.628 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:22:57.949 BasePage:424 - Selected the table T4with check  number 83-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:23:03.044 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 11:23:04.111 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:39.231 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:39.547 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:39.651 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:39.720 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:39.780 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:39.827 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:41.235 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:41.340 TaxRoundingOff:8629 - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:41.351 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:41.472 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:46.587 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:51.688 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:56.801 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:56.805 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:56.849 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:56.855 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:56.877 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:57.030 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:57.131 BasePage:424 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:58.308 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:58.425 TaxRoundingOff:5320 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:58.451 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:58.722 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:59.152 TaxRoundingOff:8629 - 84-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:59.158 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:08:59.259 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:04.382 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:09.477 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:14.627 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:14.630 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:14.664 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:14.665 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:14.684 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:14.747 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:16.208 BasePage:424 - Selected the table T4with check  number 84-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:21.447 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:09:22.559 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:33.129 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:33.804 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:33.977 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:34.057 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:34.147 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:34.205 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:35.708 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:35.843 TaxRoundingOff:8629 - 85-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:35.859 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:36.075 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:41.306 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:46.757 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:51.954 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:51.958 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:52.006 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:52.010 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:52.034 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:52.136 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:52.294 BasePage:424 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:53.455 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:53.617 TaxRoundingOff:5320 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:53.782 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:54.171 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:54.783 TaxRoundingOff:8629 - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:54.872 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:12:55.316 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:00.485 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:05.635 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:10.723 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:10.726 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:10.756 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:10.758 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:10.778 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:10.837 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:12.644 BasePage:424 - Selected the table T4with check  number 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:18.203 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:13:19.328 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:55.772 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:55.954 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:56.008 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:56.048 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:56.086 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:56.124 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:57.352 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:57.457 TaxRoundingOff:8629 - 45-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:57.469 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:58:57.593 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:02.689 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:07.764 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:12.877 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:12.879 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:12.912 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:12.917 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:12.933 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:13.030 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:13.147 BasePage:424 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:14.771 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:15.025 TaxRoundingOff:5320 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:15.114 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:15.397 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:15.856 TaxRoundingOff:8629 - 45-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:16.175 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:16.324 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:21.391 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:26.441 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:31.528 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:31.530 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:31.557 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:31.557 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:31.574 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:31.624 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:33.069 BasePage:424 - Selected the table T4with check  number 45-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:38.202 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 12:59:39.289 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:33.872 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:34.089 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:34.160 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:34.215 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:34.260 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:34.308 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:35.509 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:35.649 TaxRoundingOff:8629 - 0-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:35.661 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:35.789 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:40.878 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:45.964 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:51.099 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:51.101 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:51.127 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:51.130 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:51.145 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:51.203 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:51.287 BasePage:424 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:52.441 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:52.566 TaxRoundingOff:5320 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:52.588 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:52.832 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:53.223 TaxRoundingOff:8629 - 0-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:53.228 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:53.312 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:02:58.389 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:03.453 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:08.517 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:08.517 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:08.535 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:08.536 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:08.545 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:08.582 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:09.922 BasePage:424 - Selected the table T4with check  number 0-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:15.078 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:03:16.173 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:34.055 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:34.245 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:34.299 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:34.345 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:34.391 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:34.531 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:35.722 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:35.822 TaxRoundingOff:8629 - 4-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:35.831 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:35.965 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:41.085 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:46.158 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:51.281 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:51.283 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:51.314 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:51.317 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:51.332 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:51.408 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:51.490 BasePage:424 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:52.649 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:52.762 TaxRoundingOff:5320 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:52.780 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:52.969 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:53.339 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:53.433 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:06:58.535 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:03.612 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:08.695 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:08.696 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:08.722 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:08.723 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:08.740 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:08.820 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:10.281 BasePage:424 - Selected the table T4with check  number 4-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:10.399 BasePage:424 - Selected the check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:10.530 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:07:11.642 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:43.445 Hooks:44 - Start Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:43.630 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:43.686 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:43.739 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:43.797 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:43.842 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:45.057 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:45.149 TaxRoundingOff:8629 - 47-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:45.156 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:45.240 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:50.340 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:12:55.415 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:00.492 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:00.493 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:00.524 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:00.526 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:00.544 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:00.611 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:00.675 BasePage:424 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:01.841 BasePage:424 - Selected the table 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:01.944 TaxRoundingOff:5320 - T4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:01.968 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:02.161 BasePage:424 - Click BarTab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:02.493 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:02.582 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:07.657 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:12.708 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:17.767 TaxRoundingOff:3676 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:17.768 TaxRoundingOff:3682 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:17.786 TaxRoundingOff:3687 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:17.787 TaxRoundingOff:3696 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:17.798 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:17.846 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:19.205 BasePage:424 - Selected the table T4with check  number 47-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:19.337 BasePage:424 - Selected the check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:13:20.533 Hooks:56 - Failed Scenario Name : TS-129 -> When merge the check dine in and bar tab its not allowing to merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:40.810 Hooks:44 - Start Scenario Name : TS-41 -> Unable to change the QSR service type any delivery service type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:41.041 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:41.112 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:41.165 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:41.213 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:41.259 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:42.610 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:42.716 TaxRoundingOff:8635 - 74-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:42.730 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:42.858 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:47.993 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:53.093 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.392 TaxRoundingOff:3255 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.395 TaxRoundingOff:3264 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.396 TaxRoundingOff:3268 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.397 TaxRoundingOff:3275 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.399 TaxRoundingOff:3279 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.400 TaxRoundingOff:3288 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.407 TaxRoundingOff:3295 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.408 TaxRoundingOff:3317 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.409 TaxRoundingOff:3323 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.410 TaxRoundingOff:3330 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.461 TaxRoundingOff:3337 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.495 TaxRoundingOff:1167 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.496 TaxRoundingOff:1174 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.532 TaxRoundingOff:1180 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.581 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:30:58.880 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:31:09.981 Hooks:56 - Failed Scenario Name : TS-41 -> Unable to change the QSR service type any delivery service type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:36.616 Hooks:44 - Start Scenario Name : TS-41 -> Unable to change the QSR service type any delivery service type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:36.941 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:36.998 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:37.053 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:37.107 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:37.162 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:38.407 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:38.519 TaxRoundingOff:8635 - 75-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:38.532 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:38.648 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:43.828 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:48.909 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.042 TaxRoundingOff:3255 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.045 TaxRoundingOff:3264 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.047 TaxRoundingOff:3268 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.048 TaxRoundingOff:3275 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.049 TaxRoundingOff:3279 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.050 TaxRoundingOff:3288 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.051 TaxRoundingOff:3295 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.052 TaxRoundingOff:3317 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.053 TaxRoundingOff:3323 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.054 TaxRoundingOff:3330 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.119 TaxRoundingOff:3337 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.151 TaxRoundingOff:1167 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.152 TaxRoundingOff:1174 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.183 TaxRoundingOff:1180 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.260 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:54.496 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:56.016 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:56.113 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:34:56.187 BasePage:424 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 13:35:01.302 Hooks:56 - Failed Scenario Name : TS-41 -> Unable to change the QSR service type any delivery service type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:51.465 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:51.726 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:51.790 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:51.902 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:52.048 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:52.181 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:53.610 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:53.767 TaxRoundingOff:8635 - 76-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:53.778 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:53.977 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:22:59.111 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:04.200 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.310 TaxRoundingOff:3156 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.312 TaxRoundingOff:3165 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.313 TaxRoundingOff:3169 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.314 TaxRoundingOff:3176 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.314 TaxRoundingOff:3180 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.315 TaxRoundingOff:3189 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.317 TaxRoundingOff:3196 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.318 TaxRoundingOff:3218 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.319 TaxRoundingOff:3224 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.320 TaxRoundingOff:3231 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.354 TaxRoundingOff:3238 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.382 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.383 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.415 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.444 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:09.445 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:10.586 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:10.612 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:10.804 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 15:23:15.939 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:38.495 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:38.863 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:38.979 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:39.049 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:39.123 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:39.189 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:40.818 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:40.962 TaxRoundingOff:8635 - 77-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:40.976 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:41.553 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:46.912 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:52.019 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.185 TaxRoundingOff:3156 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.189 TaxRoundingOff:3165 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.190 TaxRoundingOff:3169 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.191 TaxRoundingOff:3176 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.192 TaxRoundingOff:3180 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.193 TaxRoundingOff:3189 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.195 TaxRoundingOff:3196 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.196 TaxRoundingOff:3218 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.197 TaxRoundingOff:3224 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.198 TaxRoundingOff:3231 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.233 TaxRoundingOff:3238 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.281 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.282 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.318 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.367 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:57.368 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:58.541 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:58.570 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:59.202 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:59.301 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:59.640 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:59.915 TaxRoundingOff:1068 - Exact tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:59.921 TaxRoundingOff:1075 - Expected tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:16:59.994 TaxRoundingOff:1080 - Actual tax is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:17:00.015 TaxRoundingOff:1089 - RoundOff value is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:17:00.096 TaxRoundingOff:1113 - Expected total is 63.56
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:17:00.125 TaxRoundingOff:1118 - Actual total is 63.56
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:17:00.157 TaxRoundingOff:1127 - Expected Balance due is 63.56
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:17:00.158 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:17:01.319 TaxRoundingOff:1135 - Actual Balance due is -5.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:17:01.338 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:18:28.527 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:49.036 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:49.381 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:49.450 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:49.520 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:49.612 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:49.703 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:51.160 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:51.426 TaxRoundingOff:8635 - 78-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:51.444 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:51.831 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:19:56.944 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:02.035 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.154 TaxRoundingOff:3156 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.157 TaxRoundingOff:3165 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.158 TaxRoundingOff:3169 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.159 TaxRoundingOff:3176 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.160 TaxRoundingOff:3180 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.161 TaxRoundingOff:3189 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.163 TaxRoundingOff:3196 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.164 TaxRoundingOff:3218 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.165 TaxRoundingOff:3224 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.166 TaxRoundingOff:3231 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.203 TaxRoundingOff:3238 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.244 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.246 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.285 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.326 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:07.327 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:08.495 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:08.583 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:08.782 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:08.901 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:09.422 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:09.531 TaxRoundingOff:1068 - Exact tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:09.532 TaxRoundingOff:1075 - Expected tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:09.620 TaxRoundingOff:1080 - Actual tax is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:09.622 TaxRoundingOff:1089 - RoundOff value is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:09.696 TaxRoundingOff:1127 - Expected Balance due is 63.56
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:09.706 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:10.891 TaxRoundingOff:1135 - Actual Balance due is -5.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:20:10.928 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:47.976 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:48.201 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:48.289 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:48.352 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:48.435 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:48.488 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:49.771 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:49.875 TaxRoundingOff:8635 - 79-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:49.885 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:49.999 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:21:55.145 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:00.226 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.431 TaxRoundingOff:3156 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.435 TaxRoundingOff:3165 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.436 TaxRoundingOff:3169 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.436 TaxRoundingOff:3176 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.437 TaxRoundingOff:3180 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.438 TaxRoundingOff:3189 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.440 TaxRoundingOff:3196 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.441 TaxRoundingOff:3218 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.442 TaxRoundingOff:3224 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.443 TaxRoundingOff:3231 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.491 TaxRoundingOff:3238 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.517 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.518 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.544 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.574 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:05.574 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:06.749 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:06.774 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.020 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.090 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.310 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.382 TaxRoundingOff:1068 - Exact tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.383 TaxRoundingOff:1075 - Expected tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.410 TaxRoundingOff:1080 - Actual tax is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.411 TaxRoundingOff:1089 - RoundOff value is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.416 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:07.511 BasePage:424 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:08.664 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:08.759 BasePage:424 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:22:16.856 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:22.045 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:22.381 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:22.437 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:22.531 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:22.605 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:22.662 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:23.980 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:24.111 TaxRoundingOff:8650 - 80-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:24.124 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:24.296 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:29.387 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:34.465 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.573 TaxRoundingOff:3171 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.577 TaxRoundingOff:3180 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.577 TaxRoundingOff:3184 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.578 TaxRoundingOff:3191 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.579 TaxRoundingOff:3195 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.581 TaxRoundingOff:3204 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.582 TaxRoundingOff:3211 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.583 TaxRoundingOff:3233 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.584 TaxRoundingOff:3239 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.585 TaxRoundingOff:3246 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.622 TaxRoundingOff:3253 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.659 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.660 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.690 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.728 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:39.728 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:41.536 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:41.561 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:41.753 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:41.852 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:42.112 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:42.204 TaxRoundingOff:1068 - Exact tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:42.205 TaxRoundingOff:1075 - Expected tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:42.231 TaxRoundingOff:1080 - Actual tax is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:42.232 TaxRoundingOff:1089 - RoundOff value is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:42.241 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:42.341 BasePage:424 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:43.575 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:43.687 TaxRoundingOff:1203 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:27:51.778 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:10.060 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:10.440 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:10.522 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:10.581 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:10.670 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:10.738 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:12.082 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:12.218 TaxRoundingOff:8650 - 81-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:12.233 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:12.507 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:17.675 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:22.800 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.938 TaxRoundingOff:3171 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.943 TaxRoundingOff:3180 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.943 TaxRoundingOff:3184 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.944 TaxRoundingOff:3191 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.945 TaxRoundingOff:3195 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.946 TaxRoundingOff:3204 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.947 TaxRoundingOff:3211 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.949 TaxRoundingOff:3233 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.950 TaxRoundingOff:3239 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:27.951 TaxRoundingOff:3246 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:28.001 TaxRoundingOff:3253 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:28.035 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:28.036 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:28.072 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:28.119 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:28.120 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:29.332 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:29.424 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:29.765 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:29.862 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:30.426 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:30.551 TaxRoundingOff:1068 - Exact tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:30.553 TaxRoundingOff:1075 - Expected tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:30.598 TaxRoundingOff:1080 - Actual tax is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:30.599 TaxRoundingOff:1089 - RoundOff value is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:30.613 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:30.719 BasePage:424 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:31.854 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:31.941 TaxRoundingOff:1203 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:31:40.495 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:20.123 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:20.617 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:20.701 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:20.763 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:20.825 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:20.904 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:22.318 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:22.445 TaxRoundingOff:8650 - 82-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:22.461 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:22.607 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:27.760 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:32.922 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.042 TaxRoundingOff:3171 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.046 TaxRoundingOff:3180 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.047 TaxRoundingOff:3184 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.049 TaxRoundingOff:3191 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.050 TaxRoundingOff:3195 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.051 TaxRoundingOff:3204 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.052 TaxRoundingOff:3211 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.053 TaxRoundingOff:3233 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.054 TaxRoundingOff:3239 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.055 TaxRoundingOff:3246 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.098 TaxRoundingOff:3253 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.141 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.142 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.178 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.240 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:38.241 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:39.393 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:39.421 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:39.596 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:39.673 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:39.903 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:39.982 TaxRoundingOff:1068 - Exact tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:39.982 TaxRoundingOff:1075 - Expected tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:40.010 TaxRoundingOff:1080 - Actual tax is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:40.011 TaxRoundingOff:1089 - RoundOff value is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:40.020 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:40.093 BasePage:424 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:41.289 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:41.380 TaxRoundingOff:1203 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:41:49.458 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:52.501 Hooks:44 - Start Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:52.709 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:52.794 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:52.868 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:52.922 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:52.975 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:54.195 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:54.339 TaxRoundingOff:8655 - 83-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:54.345 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:54.462 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:44:59.569 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:04.660 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.745 TaxRoundingOff:3171 - Exact Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.747 TaxRoundingOff:3180 - Expected Tax1 is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.748 TaxRoundingOff:3184 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.749 TaxRoundingOff:3191 - Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.749 TaxRoundingOff:3195 - Exact Tax2 (tax on item tax) is 0.6935319999999999
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.750 TaxRoundingOff:3204 - Expected Tax2 is 0.69
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.751 TaxRoundingOff:3211 - Total Expected Tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.751 TaxRoundingOff:3233 - value1 is 7.5035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.752 TaxRoundingOff:3239 - value2 is 7.5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.753 TaxRoundingOff:3246 - Total RoundOff value is -0.0035
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.781 TaxRoundingOff:3253 - Actual tax is 7.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.811 TaxRoundingOff:1167 - Item Service Charge is 4.3436449999999995
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.812 TaxRoundingOff:1174 - Expected Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.837 TaxRoundingOff:1180 - Actual Item Service Charge is 4.34
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.874 TaxRoundingOff:1146 - Expected Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:09.875 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.018 TaxRoundingOff:1154 - Actual Balance due is 68.59
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.082 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.281 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.333 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.558 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.641 TaxRoundingOff:1068 - Exact tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.642 TaxRoundingOff:1075 - Expected tax amount is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.672 TaxRoundingOff:1080 - Actual tax is 6.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.673 TaxRoundingOff:1089 - RoundOff value is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.676 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.802 TaxRoundingOff:1203 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.833 TaxRoundingOff:1208 - Actual Balance due is -5.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-10 18:45:11.847 Hooks:56 - Failed Scenario Name : TS-38 -> Allowing to do Service Exempt For the paid check, in payment screen Change Due and No Due is showing in Negative value

@@ -2468,10 +2468,18 @@ public class TGMenuItemPage extends BasePage {
 
         Assert.assertEquals(actualName,expectedName);
     }
+
     public void selectBarTabOrderType(){
-        WebElement element = mergeAndFindMobileElement(barTabOrderTypeButton);
-        elementClick(element,"Click BarTab OrderType");
+        WebElement element = driver.findElement(By.xpath("//span[contains(.,'Bar')]"));
+        elementClick(element,"Clicked BarTab Order Type");
     }
+
+    public void selectQSROrderType()
+    {
+        WebElement element = driver.findElement(By.xpath("//span[contains(.,'QSR')]"));
+        elementClick(element,"Clicked QSR Order Type");
+    }
+
     public void verifyItemBasedDiscountAfterTax(){
         WebElement element = mergeAndFindMobileElement(itemBasedAfterTaxDiscountAmount);
         String actualName = elementGetText(element,"Verify ItemBasedDiscountAfterTax");

@@ -1,0 +1,445 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 11:57:46.481 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 11:57:46.789 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 11:57:47.962 Hooks:56 - Failed Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:22.303 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:22.626 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:22.691 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:22.763 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:22.849 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:22.922 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:24.196 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:24.336 TaxRoundingOff:8655 - 95-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:24.350 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:24.573 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:29.707 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:34.810 BasePage:424 - Selected quantity option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:34.979 BasePage:399 - Entered the quantity
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.048 BasePage:424 - Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.146 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.596 BasePage:424 - 45% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.728 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.866 TaxRoundingOff:3047 - Exact tax amount is 41.813419486481905
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.890 TaxRoundingOff:3053 - Expected tax amount is 41.81
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.945 TaxRoundingOff:3058 - Actual tax is 70.05
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:08:35.981 Hooks:56 - Failed Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:03.778 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:04.047 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:04.109 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:04.193 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:04.251 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:04.301 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:05.552 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:05.781 TaxRoundingOff:8655 - 96-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:05.791 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:05.908 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:11.068 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.149 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.521 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.672 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.904 TaxRoundingOff:1265 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.943 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.948 TaxRoundingOff:1277 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.950 TaxRoundingOff:1286 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.951 TaxRoundingOff:1292 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.986 TaxRoundingOff:1297 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:16.987 TaxRoundingOff:1306 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:17.008 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:17.100 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:17.330 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 12:11:22.894 BasePage:424 - Save button selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:16:58.362 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:16:58.887 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:16:59.001 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:16:59.102 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:16:59.175 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:16:59.266 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:00.684 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:00.884 TaxRoundingOff:8655 - 97-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:00.904 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:01.080 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:06.234 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:11.343 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:11.912 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.088 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.242 TaxRoundingOff:1265 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.307 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.315 TaxRoundingOff:1277 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.316 TaxRoundingOff:1286 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.317 TaxRoundingOff:1292 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.370 TaxRoundingOff:1297 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.371 TaxRoundingOff:1306 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.408 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.525 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:12.710 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:18.309 BasePage:424 - Save button selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:18.477 TaxRoundingOff:1265 - Discount amount is 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:18.565 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:17:18.606 Hooks:56 - Failed Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:23.511 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:23.900 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:23.959 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:24.012 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:24.067 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:24.120 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:25.458 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:25.566 TaxRoundingOff:8655 - 98-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:25.575 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:25.698 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:30.850 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:35.929 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.553 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.719 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.875 TaxRoundingOff:1265 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.912 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.916 TaxRoundingOff:1277 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.918 TaxRoundingOff:1286 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.919 TaxRoundingOff:1292 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.953 TaxRoundingOff:1297 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.954 TaxRoundingOff:1306 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:36.975 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:37.065 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:37.346 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:42.986 BasePage:424 - Save button selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:43.223 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:46.753 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:46.881 TaxRoundingOff:8703 - 98-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:47.031 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:47.513 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:47.636 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:47.743 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:51.694 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:21:52.418 TaxRoundingOff:8703 - 98-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:48.569 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:48.932 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:49.040 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:49.238 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:49.321 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:49.388 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:50.725 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:51.363 TaxRoundingOff:8655 - 99-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:51.378 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:51.761 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:30:57.115 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:02.489 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.136 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.311 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.538 TaxRoundingOff:1265 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.602 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.618 TaxRoundingOff:1277 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.619 TaxRoundingOff:1286 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.620 TaxRoundingOff:1292 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.666 TaxRoundingOff:1297 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.667 TaxRoundingOff:1306 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.711 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:03.989 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:04.343 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:10.350 BasePage:424 - Save button selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:10.840 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:15.202 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:15.284 TaxRoundingOff:8703 - 99-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:15.483 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:15.879 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:16.071 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:16.475 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:20.580 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:20.654 TaxRoundingOff:8703 - 99-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:23.961 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:24.023 TaxRoundingOff:8703 - 99-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:24.397 TaxRoundingOff:4876 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:31:24.454 Hooks:56 - Failed Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:18.475 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:18.810 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:18.900 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:18.958 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:19.018 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:19.081 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:20.411 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:20.564 TaxRoundingOff:8655 - 100-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:20.580 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:20.777 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:25.909 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:33.885 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.359 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.620 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.805 TaxRoundingOff:1265 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.865 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.883 TaxRoundingOff:1277 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.885 TaxRoundingOff:1286 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.886 TaxRoundingOff:1292 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.945 TaxRoundingOff:1297 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.947 TaxRoundingOff:1306 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:36.987 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:37.172 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:37.478 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:43.206 BasePage:424 - Save button selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:33:45.620 Hooks:56 - Failed Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:06.849 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:07.236 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:07.329 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:07.392 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:07.451 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:07.520 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:08.969 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:09.133 TaxRoundingOff:8655 - 101-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:09.158 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:09.562 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:14.698 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:19.789 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.166 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.295 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.453 TaxRoundingOff:1265 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.494 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.503 TaxRoundingOff:1277 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.504 TaxRoundingOff:1286 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.505 TaxRoundingOff:1292 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.537 TaxRoundingOff:1297 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.537 TaxRoundingOff:1306 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.566 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:20.750 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:21.002 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:26.572 BasePage:424 - Save button selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:26.701 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:30.121 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:30.187 TaxRoundingOff:8703 - 101-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:30.397 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:30.730 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:30.944 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:31.144 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:34.614 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:34.678 TaxRoundingOff:8703 - 101-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:36:39.906 Hooks:56 - Failed Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:38:27.316 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:38:27.848 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:40.293 Hooks:44 - Start Scenario Name : TS-122 -> Paid Sale displaying as Unpaid check in Phone order sales
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:40.738 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:40.840 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:40.933 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:40.999 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:41.064 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:42.464 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:42.619 TaxRoundingOff:8655 - 102-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:42.660 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:42.869 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:41:56.733 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:02.667 BasePage:399 - selected discount button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.125 BasePage:424 - 20% Discount Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.456 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.775 TaxRoundingOff:1265 - Discount amount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.862 TaxRoundingOff:1270 - Actual discount is 9.84
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.880 TaxRoundingOff:1277 - subtotal after discount is 39.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.881 TaxRoundingOff:1286 - Exact Tax is 2.449436
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.882 TaxRoundingOff:1292 - Expected Tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.911 TaxRoundingOff:1297 - Actual tax is 2.45
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.913 TaxRoundingOff:1306 - RoundOff value is 6.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:06.941 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:07.044 BasePage:424 - Select Delivery OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:07.228 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:12.943 BasePage:424 - Save button selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:13.122 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:16.543 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:16.619 TaxRoundingOff:8703 - 102-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:16.775 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:17.267 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:17.771 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:17.928 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:21.617 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:21.661 TaxRoundingOff:8703 - 102-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:24.986 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:25.044 TaxRoundingOff:8703 - 102-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:25.336 BasePage:424 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:25.876 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:26.123 BasePage:424 - Exit button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:26.675 BasePage:424 - Click Finish Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:29.751 BasePage:424 - Tapped Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:29.812 TaxRoundingOff:8703 - 102-001 - Check is displayed in tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:33.876 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 13:42:33.957 BasePage:424 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:08:17.604 Hooks:56 - Failed Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:27.016 Hooks:44 - Start Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:27.225 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:27.280 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:27.332 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:27.380 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:27.433 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:28.710 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:28.781 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:28.914 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:29.126 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:29.527 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:29.660 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:29.785 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:29.843 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:29.896 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:29.945 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:30.005 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:30.090 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:30.162 BasePage:424 -  I Selected exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:30.258 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:30.346 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:09:30.430 BasePage:424 - Selected Repeat Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:52.559 Hooks:44 - Start Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:52.912 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:52.968 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:53.020 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:53.072 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:53.127 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:54.419 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:54.531 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:54.640 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:54.840 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.352 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.496 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.605 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.669 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.719 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.767 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.832 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.917 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:55.981 BasePage:424 -  I Selected exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:53:56.091 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:30.177 Hooks:44 - Start Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:30.352 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:30.407 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:30.463 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:30.510 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:30.554 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:31.760 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:31.826 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:31.910 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.098 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.402 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.502 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.560 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.626 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.677 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.721 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.756 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.813 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:32.874 BasePage:424 -  I Selected exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.003 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.156 TaxRoundingOff:9207 - Exact Tax is 91.154644
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.158 TaxRoundingOff:9214 - Tax1 is 91.1546
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.159 TaxRoundingOff:9219 - menu amt is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.160 TaxRoundingOff:9220 - Menu tax is 91.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.161 TaxRoundingOff:9221 - Total with Tax is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.162 TaxRoundingOff:9226 - Check Tax is 110.6122
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.164 TaxRoundingOff:9234 - Expected Tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.199 TaxRoundingOff:9239 - Actual tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.206 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 19:56:33.279 BasePage:424 - Selected Repeat Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:46.804 Hooks:44 - Start Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:46.998 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:47.050 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:47.089 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:47.128 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:47.166 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:48.370 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:48.427 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:48.514 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:48.674 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:48.951 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.042 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.086 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.131 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.184 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.226 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.267 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.323 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.369 BasePage:424 -  I Selected exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.465 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.601 TaxRoundingOff:9207 - Exact Tax is 91.154644
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.604 TaxRoundingOff:9214 - Tax1 is 91.1546
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.604 TaxRoundingOff:9219 - menu amt is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.605 TaxRoundingOff:9220 - Menu tax is 91.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.605 TaxRoundingOff:9221 - Total with Tax is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.605 TaxRoundingOff:9226 - Check Tax is 110.6122
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.607 TaxRoundingOff:9234 - Expected Tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.632 TaxRoundingOff:9239 - Actual tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.638 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.715 BasePage:424 - Selected Repeat Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:08:49.866 Hooks:56 - Failed Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:43.457 Hooks:44 - Start Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:43.687 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:43.792 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:43.842 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:43.888 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:43.943 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:45.270 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:45.347 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:45.495 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:45.660 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.123 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.309 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.383 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.452 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.506 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.561 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.628 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.703 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.785 BasePage:424 -  I Selected exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:46.893 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.035 TaxRoundingOff:9207 - Exact Tax is 91.154644
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.036 TaxRoundingOff:9214 - Tax1 is 91.1546
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.037 TaxRoundingOff:9219 - menu amt is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.038 TaxRoundingOff:9220 - Menu tax is 91.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.038 TaxRoundingOff:9221 - Total with Tax is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.039 TaxRoundingOff:9226 - Check Tax is 110.6122
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.041 TaxRoundingOff:9234 - Expected Tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.064 TaxRoundingOff:9239 - Actual tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.071 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.200 BasePage:424 - Selected Repeat Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.354 TaxRoundingOff:9259 - Exact Tax is 182.309288
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.355 TaxRoundingOff:9266 - Tax1 is 182.3093
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.356 TaxRoundingOff:9269 - menu amt is 1777.76
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.357 TaxRoundingOff:9270 - Menu tax is 182.31
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.357 TaxRoundingOff:9271 - Total with Tax is 1777.76
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.358 TaxRoundingOff:9276 - Check Tax is 221.2245
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.358 TaxRoundingOff:9284 - Expected Tax is 403.53
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:10:47.390 TaxRoundingOff:9289 - Actual tax is 403.53
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:49.187 Hooks:44 - Start Scenario Name : TS-21 -> In open item check tax is getting mismatched when repeat the order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:50.087 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:50.386 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:50.949 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:51.045 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:51.155 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:52.708 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:52.840 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:53.017 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:53.423 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.079 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.314 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.410 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.492 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.574 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.663 BasePage:399 - Entered menu amount
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.744 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.885 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:54.977 BasePage:424 -  I Selected exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.154 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.408 TaxRoundingOff:9207 - Exact Tax is 91.154644
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.410 TaxRoundingOff:9214 - Tax1 is 91.1546
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.412 TaxRoundingOff:9219 - menu amt is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.413 TaxRoundingOff:9220 - Menu tax is 91.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.414 TaxRoundingOff:9221 - Total with Tax is 888.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.415 TaxRoundingOff:9226 - Check Tax is 110.6122
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.417 TaxRoundingOff:9234 - Expected Tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.544 TaxRoundingOff:9239 - Actual tax is 201.77
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.558 BasePage:424 - I selected Menu Options
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.699 BasePage:424 - Selected Repeat Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.867 TaxRoundingOff:9259 - Exact Tax is 182.309288
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.868 TaxRoundingOff:9266 - Tax1 is 182.3093
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.869 TaxRoundingOff:9269 - menu amt is 1777.76
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.870 TaxRoundingOff:9270 - Menu tax is 182.31
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.874 TaxRoundingOff:9271 - Total with Tax is 1777.76
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.875 TaxRoundingOff:9276 - Check Tax is 221.2245
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.877 TaxRoundingOff:9284 - Expected Tax is 403.53
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.909 TaxRoundingOff:9289 - Actual tax is 403.53
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.961 TaxRoundingOff:1130 - Expected Balance due is 2,181.29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:55.962 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:57.154 TaxRoundingOff:1138 - Actual Balance due is 2,181.29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:57.168 BasePage:424 - Selected Cash Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:57.373 TaxRoundingOff:1191 - Expected balance due after payment is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:57.414 TaxRoundingOff:1196 - Actual Balance due is 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:57.434 BasePage:424 - Selected Submit Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:58.713 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-11 20:12:59.012 BasePage:424 - Tapped log Off Button

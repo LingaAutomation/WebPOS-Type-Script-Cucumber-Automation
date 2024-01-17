@@ -305,6 +305,11 @@ public class TGSplitCheckStepDef {
         split.selectDeliveryOrderType();
     }
 
+    @Given("User select Phone Delivery mode in split screen")
+    public void userSelectPhoneDeliveryModeInSplitScreen() {
+        split.selectPhoneDeliveryOrderType();
+    }
+
     @Then("User select sixth table in split screen")
     public void userSelectSixthTableInSplitScreen() {
         split.selectSixthTable();

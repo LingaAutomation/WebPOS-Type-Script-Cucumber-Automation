@@ -1,0 +1,465 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:54.309 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:54.484 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:54.541 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:54.590 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:54.630 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:54.685 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:55.951 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:56.126 TaxRoundingOff:8663 - 45-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:56.135 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:40:56.292 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:01.373 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:06.450 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.537 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.539 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.540 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.541 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.541 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.542 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.543 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.544 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.544 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.544 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.575 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.632 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.633 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.660 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.703 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:11.902 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:13.045 BasePage:399 - I tapped 1.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 13:41:18.419 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:30.230 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:30.939 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:31.057 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:31.148 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:31.684 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:31.920 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:34.414 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:34.554 TaxRoundingOff:8663 - 47-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:34.567 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:34.944 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:40.241 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:45.838 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.979 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.981 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.982 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.983 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.983 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.984 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.986 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.987 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.988 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:50.989 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:51.023 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:51.071 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:51.072 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:51.104 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:51.157 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:51.407 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:53.215 BasePage:399 - I tapped 1.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 14:02:58.266 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:58.047 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:58.236 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:58.301 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:58.348 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:58.409 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:58.452 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:59.670 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:59.765 TaxRoundingOff:8663 - 48-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:59.772 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:39:59.880 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:04.971 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:10.054 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.145 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.147 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.147 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.148 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.148 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.149 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.151 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.152 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.153 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.154 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.182 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.213 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.214 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.241 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.285 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:15.509 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:40:17.245 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:41.862 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:42.141 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:42.234 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:42.317 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:42.390 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:42.507 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:43.754 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:43.856 TaxRoundingOff:8663 - 49-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:43.867 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:43.985 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:49.111 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:54.240 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.383 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.386 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.387 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.388 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.389 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.390 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.391 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.392 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.392 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.393 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.432 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.462 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.463 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.491 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.554 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:41:59.889 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:42:01.882 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:20.043 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:20.248 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:20.302 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:20.359 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:20.414 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:20.498 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:21.746 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:21.844 TaxRoundingOff:8663 - 72-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:21.853 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:21.962 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:27.065 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:32.145 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.043 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.044 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.045 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.045 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.046 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.046 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.047 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.048 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.049 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.050 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.081 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.107 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.108 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.137 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.185 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:38.376 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:40.014 BasePage:399 - I tapped 1.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 15:43:45.586 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:35.026 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:35.195 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:35.250 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:35.296 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:35.379 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:35.431 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:36.750 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:36.855 TaxRoundingOff:8663 - 171-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:36.863 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:36.982 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:42.077 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:47.159 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.271 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.274 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.275 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.276 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.276 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.277 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.278 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.279 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.280 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.281 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.311 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.337 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.338 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.363 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.404 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:52.603 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:00:55.122 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:14.796 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:14.942 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:14.988 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:15.058 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:15.096 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:15.137 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:16.368 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:16.477 TaxRoundingOff:8663 - 173-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:16.483 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:16.579 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:21.660 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:26.734 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.817 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.820 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.821 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.822 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.823 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.823 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.824 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.825 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.826 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.827 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.868 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.913 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.913 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.938 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:31.983 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:32.161 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:34.213 BasePage:399 - I tapped 0.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:04:39.568 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:55.025 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:55.172 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:55.216 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:55.266 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:55.330 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:55.370 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:56.686 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:56.778 TaxRoundingOff:8663 - 174-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:56.789 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:06:56.905 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:02.005 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:07.086 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.177 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.180 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.181 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.182 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.183 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.184 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.186 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.187 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.187 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.188 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.220 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.250 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.251 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.287 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.335 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:12.545 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:07:14.541 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:46.972 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:47.187 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:47.240 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:47.315 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:47.387 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:47.443 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:48.748 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:48.845 TaxRoundingOff:8663 - 175-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:48.855 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:48.973 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:54.091 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:08:59.278 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.399 TaxRoundingOff:3278 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.401 TaxRoundingOff:3287 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.402 TaxRoundingOff:3291 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.403 TaxRoundingOff:3298 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.404 TaxRoundingOff:3302 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.405 TaxRoundingOff:3311 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.407 TaxRoundingOff:3318 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.408 TaxRoundingOff:3340 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.408 TaxRoundingOff:3346 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.409 TaxRoundingOff:3353 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.440 TaxRoundingOff:3360 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.466 TaxRoundingOff:1170 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.467 TaxRoundingOff:1177 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.494 TaxRoundingOff:1183 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.548 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:04.755 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:05.909 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:05.964 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:06.028 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:09:06.081 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:06.649 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:06.801 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:06.860 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:06.911 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:06.951 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:06.991 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:08.187 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:08.285 TaxRoundingOff:8665 - 178-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:08.291 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:08.377 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:13.523 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:18.595 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.685 TaxRoundingOff:3280 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.686 TaxRoundingOff:3289 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.687 TaxRoundingOff:3293 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.687 TaxRoundingOff:3300 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.688 TaxRoundingOff:3304 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.688 TaxRoundingOff:3313 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.689 TaxRoundingOff:3320 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.690 TaxRoundingOff:3342 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.690 TaxRoundingOff:3348 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.692 TaxRoundingOff:3355 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.721 TaxRoundingOff:3362 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.748 TaxRoundingOff:1172 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.749 TaxRoundingOff:1179 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.776 TaxRoundingOff:1185 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:23.822 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:24.041 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:17:25.903 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:23.745 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:23.932 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:23.991 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:24.038 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:24.079 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:24.120 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:25.338 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:25.441 TaxRoundingOff:8665 - 1-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:25.447 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:25.533 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:30.635 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:35.714 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.141 TaxRoundingOff:3280 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.143 TaxRoundingOff:3289 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.143 TaxRoundingOff:3293 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.144 TaxRoundingOff:3300 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.145 TaxRoundingOff:3304 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.145 TaxRoundingOff:3313 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.146 TaxRoundingOff:3320 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.147 TaxRoundingOff:3342 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.148 TaxRoundingOff:3348 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.149 TaxRoundingOff:3355 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.179 TaxRoundingOff:3362 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.206 TaxRoundingOff:1172 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.207 TaxRoundingOff:1179 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.229 TaxRoundingOff:1185 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.274 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:57:41.511 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:00.000 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:00.266 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:00.361 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:00.421 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:00.493 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:00.553 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:01.930 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:02.062 TaxRoundingOff:8665 - 4-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:02.069 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:02.165 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:07.272 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:12.385 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.513 TaxRoundingOff:3280 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.515 TaxRoundingOff:3289 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.516 TaxRoundingOff:3293 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.516 TaxRoundingOff:3300 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.517 TaxRoundingOff:3304 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.517 TaxRoundingOff:3313 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.518 TaxRoundingOff:3320 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.519 TaxRoundingOff:3342 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.520 TaxRoundingOff:3348 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.521 TaxRoundingOff:3355 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.552 TaxRoundingOff:3362 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.576 TaxRoundingOff:1172 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.577 TaxRoundingOff:1179 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.603 TaxRoundingOff:1185 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.650 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 16:59:17.844 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:17.674 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:17.917 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:17.981 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:18.032 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:18.088 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:18.170 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:19.479 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:19.590 TaxRoundingOff:8665 - 46-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:19.600 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:19.730 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:24.817 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:29.888 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.981 TaxRoundingOff:3280 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.984 TaxRoundingOff:3289 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.985 TaxRoundingOff:3293 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.986 TaxRoundingOff:3300 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.986 TaxRoundingOff:3304 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.988 TaxRoundingOff:3313 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.989 TaxRoundingOff:3320 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.989 TaxRoundingOff:3342 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.990 TaxRoundingOff:3348 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:34.991 TaxRoundingOff:3355 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:35.022 TaxRoundingOff:3362 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:35.055 TaxRoundingOff:1172 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:35.056 TaxRoundingOff:1179 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:35.085 TaxRoundingOff:1185 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:35.145 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:35.504 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:37.003 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:37.116 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:37.192 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:01:37.279 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:09.700 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:09.920 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:10.044 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:10.238 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:10.328 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:10.476 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:12.006 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:12.190 TaxRoundingOff:8665 - 184-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:12.208 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:12.334 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:17.418 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:22.515 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.632 TaxRoundingOff:3280 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.635 TaxRoundingOff:3289 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.636 TaxRoundingOff:3293 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.637 TaxRoundingOff:3300 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.639 TaxRoundingOff:3304 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.640 TaxRoundingOff:3313 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.641 TaxRoundingOff:3320 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.642 TaxRoundingOff:3342 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.643 TaxRoundingOff:3348 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.644 TaxRoundingOff:3355 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.679 TaxRoundingOff:3362 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.730 TaxRoundingOff:1172 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.731 TaxRoundingOff:1179 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.773 TaxRoundingOff:1185 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:27.846 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:28.098 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:30.480 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:30.616 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:30.674 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:03:30.732 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:05:59.638 Hooks:44 - Start Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:05:59.795 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:05:59.849 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:05:59.909 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:05:59.971 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:00.047 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:01.342 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:01.460 TaxRoundingOff:8665 - 186-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:01.468 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:01.595 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:06.718 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:11.811 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.904 TaxRoundingOff:3280 - Exact Tax1 is 7.4037241075363625
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.906 TaxRoundingOff:3289 - Expected Tax1 is 7.4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.907 TaxRoundingOff:3293 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.908 TaxRoundingOff:3300 - Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.909 TaxRoundingOff:3304 - Exact Tax2 (tax on item tax) is 0.901071428571429
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.910 TaxRoundingOff:3313 - Expected Tax2 is 0.9
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.911 TaxRoundingOff:3320 - Total Expected Tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.912 TaxRoundingOff:3342 - value1 is 8.3048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.914 TaxRoundingOff:3348 - value2 is 8.3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.915 TaxRoundingOff:3355 - Total RoundOff value is -0.0048
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.947 TaxRoundingOff:3362 - Actual tax is 8.30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.977 TaxRoundingOff:1172 - Item Service Charge is 8.410141500000002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:16.978 TaxRoundingOff:1179 - Expected Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:17.005 TaxRoundingOff:1185 - Actual Item Service Charge is 8.41
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:17.050 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:17.250 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:18.535 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:18.641 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:18.710 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:18.761 BasePage:399 - I tapped 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 17:06:28.662 Hooks:56 - Failed Scenario Name : TS-59 -> Allowing to add/Edit Store credit to the customer profile from order screen in Web POS without clicking on Save
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:54.367 Hooks:44 - Start Scenario Name : TS-130 - Deleting the Special combo menu item Warning message display
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:54.674 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:54.761 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:54.817 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:54.871 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:54.926 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:56.308 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:56.428 TaxRoundingOff:8671 - 208-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:56.444 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:00:56.613 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:01:01.704 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:01:06.845 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:01:11.952 BasePage:399 - Tapped cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:01:12.130 BasePage:424 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-12 19:01:13.254 Hooks:56 - Failed Scenario Name : TS-130 - Deleting the Special combo menu item Warning message display

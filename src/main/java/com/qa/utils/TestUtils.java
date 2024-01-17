@@ -108,6 +108,7 @@ public class TestUtils {
     public static String subtotalAfterDiscount4 = "";
     public static String totalAmountSplit1 ="";
     public static String totalAmountSplit2 ="";
+    public static String balanceStoreCreditAmt = "";
     public static String subtotalAfterDiscount8 = "";
     public static String subtotalAfterDiscount10 = "";
     public static String subtotalAfterDiscount12 = "";

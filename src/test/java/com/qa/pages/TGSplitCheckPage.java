@@ -459,6 +459,11 @@ public class TGSplitCheckPage extends BasePage{
         elementClick(element,"Select Delivery OrderType");
     }
 
+    public void selectPhoneDeliveryOrderType(){
+        WebElement element = driver.findElement(By.xpath("//span[contains(.,'PHONE DELIVERY')]"));
+        elementClick(element,"Select Delivery OrderType");
+    }
+
     public void selectSixthTable(){
         WebElement element = mergeAndFindMobileElement(tableNoSix);
         elementClick(element, "click tableNoSix");

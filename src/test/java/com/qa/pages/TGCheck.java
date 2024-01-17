@@ -398,7 +398,7 @@ public class TGCheck extends BasePage{
         //driver.findElement(subTotalOnOrderSummary).equals(driver.findElement(subTotalBalanceOnOrderSummary));
     }
     public void clickBarTab(){
-        WebElement element=mergeAndFindMobileElement(barTabButton);
+        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Bar')]"));
         elementClick(element,"Click BarTab Button");
     }
     public void clickQSROrderType(){

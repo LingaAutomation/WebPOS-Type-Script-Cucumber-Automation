@@ -1,7 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.*;
-import io.cucumber.java.bs.A;
+import io.cucumber.java.cs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,6 +10,8 @@ import com.qa.utils.TestUtils;
 import io.cucumber.java.en_scouse.An;
 
 import org.junit.Assert;
+
+import java.awt.*;
 
 //import javax.management.remote.rmi._RMIConnection_Stub;
 
@@ -681,6 +683,12 @@ public class CheckOptionsStepDef {
         new TaxRoundingOff().pressDoneOpenItemBtn1();
     }
 
+    @And("^Verify if the error message is displayed correctly when coursing is not entered$")
+    public void verifyErrorMessageWhenCoursingIsNotEntered()
+    {
+        new TaxRoundingOff().verifyTheErrorMessageWhenCoursingIsNotEntered();
+    }
+
     @And("^I selected cash payment$")
     public void iSelectCashPayment() {
         new TaxRoundingOff().iSelectTheCashPayment();
@@ -694,6 +702,40 @@ public class CheckOptionsStepDef {
     @And("^I selected the first customer displayed$")
     public void iSelectedTheFirstCustomer() {
         new TaxRoundingOff().iSelectedFirstCustomer();
+    }
+
+    @And("^I selected the customer in the qsr screen$")
+    public void selectCustInQSRScreen()
+    {
+        new TaxRoundingOff().selectCustomeInQSRScreen();
+    }
+
+    @And("^I verify if the balance is not updated without saving$")
+    public void verifyTheBalanceIsNotUpdatedWithoutSaving() throws InterruptedException {
+        new TaxRoundingOff().verifyBalanceIsNotUpdatedWithoutSaving();
+    }
+
+    @And("^I get the store credit balance amount$")
+    public void iGetTheStoreCreditBalance()
+    {
+        new TaxRoundingOff().iGetStoreCreditBalance();
+    }
+
+    @And("^I selected add credit option$")
+    public void selectAddCreditOption()
+    {
+        new TaxRoundingOff().selectTheAddCreditOption();
+    }
+
+    @And("^I selected add credit button")
+    public void selectAddCreditButton() throws InterruptedException, AWTException {
+        new TaxRoundingOff().selectTheAddCreditButton();
+    }
+
+    @And("^I closed the customer window$")
+    public void iClosedTheCustomerWindow()
+    {
+        new TaxRoundingOff().iClosedCustomerWindow();
     }
 
     @And("^I enter the customer name \"([^\"]*)\" in search field$")

@@ -6,6 +6,7 @@ import com.qa.utils.TestUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en_scouse.An;
 
 public class TaxRoundingOffStepDef {
     @Given("I am logging in")
@@ -122,6 +123,24 @@ public class TaxRoundingOffStepDef {
     @And("^Verify if exclusive tax menu \"([^\"]*)\" inclusive tax modifier \"([^\"]*)\" check tax \"([^\"]*)\" are calculated properly$")
     public void VerifyIfTheInclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTax(double taxPercent, double modifierTaxPercent, double checkTaxPercent) {
         new TaxRoundingOff().VerifyIfInclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTax(taxPercent, modifierTaxPercent, checkTaxPercent);
+
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^Verify if exclusive tax menu \"([^\"]*)\" check tax \"([^\"]*)\" are calculated properly$")
+    public void VerifyIfTheExclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTax(double taxPercent, double checkTaxPercent) {
+        new TaxRoundingOff().VerifyIfExclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTax(taxPercent, checkTaxPercent);
+
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^Verify if exclusive tax menu \"([^\"]*)\" check tax \"([^\"]*)\" are calculated properly multiple menu$")
+    public void VerifyIfTheExclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTaxMultipleMenu(double taxPercent, double checkTaxPercent) {
+        new TaxRoundingOff().VerifyIfExclusiveTaxAndCheckTaxArecalculatedProperlyWithCheckTaxMultipleMenu(taxPercent, checkTaxPercent);
 
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
 
@@ -334,6 +353,13 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^Verify if the balance due value is displayed correctly after payment already made$")
+    public void VerifyIfTheBalanceDueValueIsCalculatedCorrectlyAfterPaymentAlreadyMade() throws InterruptedException {
+        new TaxRoundingOff().VerifyIfBalanceDueValueIsCalculatedCorrectlyAfterPaymentAlreadyMade();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^Verify if the balance due value is displayed correctly after payment split merge$")
     public void VerifyIfTheBalanceDueValueIsCalculatedCorrectlyAfterPaymentSplitMerge() throws InterruptedException {
         new TaxRoundingOff().VerifyIfBalanceDueValueIsCalculatedCorrectlyAfterPaymentSplitMerge();
@@ -451,6 +477,13 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().SelectOptionsButton();
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxR
+    }
+
+    @And("^I select service exempt button$")
+    public void selectServiceExemptButton()
+    {
+        new TaxRoundingOff().selectTheServiceExemptButton();
+
     }
 
     @And("^I selected fire coursing button$")
@@ -600,7 +633,7 @@ public class TaxRoundingOffStepDef {
 
     @And("^I selected the exclusive tax$")
     public void iSelectedExclusiveTax() throws Exception {
-//        new TaxRoundingOff().iSelectedTheExclusiveTax();
+        new TaxRoundingOff().iSelectedTheExclusiveTax();
     }
 
     @And("^I selected the inclusive tax$")
@@ -828,6 +861,13 @@ public class TaxRoundingOffStepDef {
     @And("^I entered the discount amount")
     public void iEnteredTheDiscountAmount() {
         new TaxRoundingOff().iEneteredDiscountAmount();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^I entered the discount amount as \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"")
+    public void iEnteredTheDiscountAmountAs(String digit1, String digit2, String digit3, String digit4) {
+        new TaxRoundingOff().iEneteredDiscountAmountAs(digit1, digit2, digit3, digit4);
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
@@ -1286,6 +1326,13 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I Selected the payment button$")
+    public void SelectThePaymentButton1() throws InterruptedException {
+        new TaxRoundingOff().SelectedThePaymentButton1();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
     @And("^I Selected submit button$")
     public void SelectTheSubmitButton() throws InterruptedException {
         new TaxRoundingOff().SelectedTheSubmitButton();
@@ -1476,6 +1523,13 @@ public class TaxRoundingOffStepDef {
     @And("^I selected order button$")
     public void selectOrderBtn() {
         new TaxRoundingOff().selectTheOrderBtn();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^I select add customer button$")
+    public void selectAddCustomerBtn() {
+        new TaxRoundingOff().selectAddNewCustomerBtn();
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
@@ -1771,6 +1825,32 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I selected seat number as 100$")
+    public void selectedSeatNumberAs100() throws InterruptedException {
+        new TaxRoundingOff().selectedTheSeatNumberAs100();
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+
+    @And("^Select the exit button$")
+    public void selectExitbutton()
+    {
+        new TaxRoundingOff().SelectTheExitButton();
+    }
+
+    @And("^Select the modify button on order screen$")
+    public void selectModifyBtn()
+    {
+        new TaxRoundingOff().selectTheModifyBtn();
+    }
+
+    @And("^Select the anytime pre auth button$")
+    public void selectAnytimePreAuthBtn()
+    {
+        new TaxRoundingOff().selectTheAnytimePreAuthBtn();
+    }
+
     @And("^I selected the table1 order$")
     public void selectTable1Order() throws InterruptedException {
         new TaxRoundingOff().selectTheTable1Order();
@@ -1838,10 +1918,24 @@ public class TaxRoundingOffStepDef {
 
     }
 
+    @And("^I now entered the table number in the transfer from table$")
+    public void iNowEnteredTheTableNumberInTransferFromTable() throws InterruptedException {
+
+        new TaxRoundingOff().iNowEnteredTableNumberInTransferFromTable();
+
+    }
+
     @And("^I now entered the check number in the transfer to table$")
     public void iNowEnteredTheCheckNumberInTransferToTable() throws InterruptedException {
 
         new TaxRoundingOff().iNowEnteredCheckNumberInTransferToTable();
+
+    }
+
+    @And("^I now entered the table number in the transfer to table$")
+    public void iNowEnteredTheTableNumberInTransferToTable() throws InterruptedException {
+
+        new TaxRoundingOff().iNowEnteredTableNumberInTransferToTable();
 
     }
 
@@ -1851,6 +1945,14 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().iSelectedMenuItemInTheTable();
 
     }
+
+    @Then("^I selected the check number in the table$")
+    public void iSelectedTheCheckNumberInTheTable() throws InterruptedException {
+
+        new TaxRoundingOff().iSelectedCheckNumberInTheTable();
+
+    }
+
 
     @Then("^I Selected QSR in table layout screen$")
     public void iSelectedTheQSROptionInTableLayout() throws InterruptedException {
@@ -1870,6 +1972,13 @@ public class TaxRoundingOffStepDef {
     public void iClickTheTransferItemTab() throws InterruptedException {
         ;
         new TaxRoundingOff().iClickTransferItemTab();
+
+    }
+
+    @And("^I selected the transfer to table tab$")
+    public void iClickTheTransferToTableTab() throws InterruptedException {
+        ;
+        new TaxRoundingOff().iClickTransferToTableTab();
 
     }
 
@@ -1911,10 +2020,22 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().selectTheNewCheck();
     }
 
+    @And("^I selected new check button in bar tab$")
+    public void selectNewCheckInBarTab() {
+
+        new TaxRoundingOff().selectTheNewCheckInBarTab();
+    }
+
     @And("^Select table layout option$")
     public void selectTheTableLayout() {
 
         new TaxRoundingOff().selectTableLayout();
+    }
+
+    @And("^Select bar tab option$")
+    public void selectTheBarTab() {
+
+        new TaxRoundingOff().selectBarTab();
     }
 
     @And("^Verify if the tax is calculated correctly after 100% discount$")
@@ -2187,6 +2308,12 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().iClickTheCancelButton();
     }
 
+    @And("^I removed the menu item$")
+    public void iRemovedTheMenuItem()
+    {
+      new TaxRoundingOff().iRemovedMenuItem();
+    }
+
     @And ("^I selected cancel button2$")
     public void iClickCancelButton2(){
         new TaxRoundingOff().iClickTheCancelButton2();
@@ -2216,6 +2343,18 @@ public class TaxRoundingOffStepDef {
     @Then("^I should see the check in phone order tab$")
     public void iShouldSeeCheckInPhoneOrderTab() throws InterruptedException {
         new TaxRoundingOff().iShouldSeeTheCheckInPhoneOrderTab();
+    }
+
+    @And("^I verified if pay status is paid$")
+    public void verifyIfStatusIsPaid()
+    {
+        new TaxRoundingOff().verifyIfTheStatusIsPaid();
+    }
+
+    @And("^I selected the edit button in phone order$")
+    public void  selectEditButton()
+    {
+        new TaxRoundingOff().selectTheEditButton();
     }
 
     @Then("^I should see active check in active check tab$")
