@@ -872,6 +872,13 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I entered the partial amount as \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"")
+    public void iEnteredThePartialAmountAs(String digit1, String digit2, String digit3, String digit4) {
+        new TaxRoundingOff().iEneteredPartialAmountAs(digit1, digit2, digit3, digit4);
+        // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
+        //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
 
     @And("^I tapped reason and entered the reason$")
     public void iTappedReasonAndEnteredTheReason() {
@@ -1331,6 +1338,12 @@ public class TaxRoundingOffStepDef {
         new TaxRoundingOff().SelectedThePaymentButton1();
         // new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax2(quantity);
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
+    }
+
+    @And("^I select process button$")
+    public void selectProcessButton()
+    {
+        new TaxRoundingOff().selectTheProcessButton();
     }
 
     @And("^I Selected submit button$")

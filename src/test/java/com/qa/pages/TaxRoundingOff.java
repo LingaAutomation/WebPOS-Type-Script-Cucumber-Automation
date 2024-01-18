@@ -2834,6 +2834,18 @@ public class TaxRoundingOff extends ClockInScreen {
         elementClick(selectNumber4, "I tapped " +digit4);
     }
 
+    public void iEneteredPartialAmountAs(String digit1, String digit2, String digit3, String digit4) {
+        String selectNumber1 = "//span[.="+digit1+"]";
+        String selectNumber2 = "//span[.="+digit2+"]";
+        String selectNumber3 = "//span[.="+digit3+"]";
+        String selectNumber4 = "//span[.="+digit4+"]";
+        elementClick(selectNumber1, "I tapped " +digit1);
+        elementClick(selectNumber2, "I tapped " +digit2);
+        elementClick(selectNumber3, "I tapped " +digit3);
+        elementClick(selectNumber4, "I tapped " +digit4);
+    }
+
+
     public void iTheTappedReasonAndEnteredTheReason() {
         elementClick(reasonField, "I tapped reason field");
         reasonField.sendKeys("Open Item Discount");
@@ -4144,6 +4156,12 @@ public class TaxRoundingOff extends ClockInScreen {
     public void SelectedThePaymentButton1()
     {
         elementClick(PaymentBtn, "Selected Payment Button");
+    }
+
+    public void selectTheProcessButton()
+    {
+        WebElement processBtn = driver.findElement(By.xpath("(//button[contains(.,'Process')])[1]"));
+        processBtn.click();
     }
 
     public void SelectedTheSubmitButton() throws InterruptedException {
@@ -8872,6 +8890,20 @@ public class TaxRoundingOff extends ClockInScreen {
     {
         WebElement cashBtn = driver.findElement(By.xpath("//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,'Cash')]"));
         elementClick( cashBtn, "Done button is tapped - ");
+    }
+
+    public void iSelectTheHouseAccountPayment(String paymentName)
+    {
+        WebElement paymentType = driver.findElement(By.xpath("//span[.='Payment methods']/../ion-grid/ion-row/ion-col/button/span[contains(.,'"+paymentName+"')]"));
+        paymentType.click();
+    }
+
+    public void verifyIfHouseAccountNumIsDisplayedCorrectly(String houseAccNum)
+    {
+        WebElement houseAccNumField = driver.findElement(By.xpath("//div[contains(@class,'card-details')]//ion-row//ion-col//input"));
+        String ActualNumber  = houseAccNumField.getText();
+
+        Assert.assertEquals(ActualNumber,houseAccNum);
     }
 
     public void iSelectTheByNameTab()

@@ -694,6 +694,17 @@ public class CheckOptionsStepDef {
         new TaxRoundingOff().iSelectTheCashPayment();
     }
 
+    @And("^I selected \"([^\"]*)\" payment$")
+    public void iSelectHouseAccountPayment(String paymentName) {
+        new TaxRoundingOff().iSelectTheHouseAccountPayment(paymentName);
+    }
+
+    @And("^I verify if the house account is displayed as \"([^\"]*)\" in card screen$")
+    public void verifyIfHouseAccountNumIsDisplayedCorrectly(String houseAccNum)
+    {
+        new TaxRoundingOff().verifyIfHouseAccountNumIsDisplayedCorrectly(houseAccNum);
+    }
+
     @And("^I select By Name tab in customer screen$")
     public void iSelectByNameTab() {
         new TaxRoundingOff().iSelectTheByNameTab();

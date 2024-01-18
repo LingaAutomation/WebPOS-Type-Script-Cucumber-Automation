@@ -2993,10 +2993,39 @@ Feature: TaxRoundOff
 
    Scenario: TS-157 - POS allow to complete the payment with Multi cash - even if it's disabled in Admin level
 
+     @133
+   Scenario: TS-133 - HA card number not displaying in card screen page
+    And I have selected category arrow
+    And Select the category "chicken"
+    And Select the sub category "Rolls"
+    And Select the menu item "chicken roll"
+    And Verify if exclusive tax "0.06220" is calculated properly and calculate roundoff
+    And I selected order button
+    And I select add customer button
+    And I select By Name tab in customer screen
+    And I enter the customer name "shaun" in search field
+    And I selected the first customer displayed
+    And I Selected the payment button
+    And I selected "House Account" payment
+    And I verify if the house account is displayed as "77777" in card screen
+    And I select process button
+    And I have closed the order type window
+    And I click log off button in order screen
 
-
-
-
+       @157
+   Scenario: TS-157 - POS allow to complete the payment with Multi cash - even if it's disabled in Admin level
+     And I have selected category arrow
+     And Select the category "chicken"
+     And Select the sub category "Rolls"
+     And Select the menu item "chicken roll"
+     And Verify if exclusive tax "0.06220" is calculated properly and calculate roundoff
+     And I selected order button
+     And I Selected the payment button
+     And I entered the partial amount as "2" "0" "0" "0"
+     And I selected "Cash" payment
+     And I selected "Pay" payment
+     And I Selected submit button
+     And I click log off button in order screen
 
 
 

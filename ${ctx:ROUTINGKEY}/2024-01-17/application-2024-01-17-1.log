@@ -1,0 +1,132 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:38.897 Hooks:44 - Start Scenario Name : TS-144 - Text needs to be updated for the "Open item" as "Select a Coursing"
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:39.102 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:39.154 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:39.200 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:39.243 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:39.281 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:40.500 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:40.559 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:40.643 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:40.964 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.074 BasePage:399 - I tapped 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.138 BasePage:399 - I tapped 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.187 BasePage:399 - I tapped 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.234 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.275 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.338 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.388 BasePage:424 - Quantity Tax is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 11:57:41.439 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:42.767 Hooks:44 - Start Scenario Name : TS-144 - Text needs to be updated for the "Open item" as "Select a Coursing"
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:43.087 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:43.148 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:43.208 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:43.269 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:43.337 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:44.688 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:44.759 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:44.862 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:45.391 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:45.619 BasePage:399 - I tapped 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:45.769 BasePage:399 - I tapped 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:45.850 BasePage:399 - I tapped 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:45.917 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:45.992 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:46.087 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:46.179 BasePage:424 - Quantity Tax is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:46.264 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 12:06:54.473 Hooks:56 - Failed Scenario Name : TS-144 - Text needs to be updated for the "Open item" as "Select a Coursing"
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:45.167 Hooks:44 - Start Scenario Name : TS-144 - Text needs to be updated for the "Open item" as "Select a Coursing"
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:45.356 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:45.421 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:45.470 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:45.516 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:45.561 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:46.814 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:46.883 BasePage:424 - Selected Option Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:46.964 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.298 BasePage:424 - Selected Open Item option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.404 BasePage:399 - I tapped 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.451 BasePage:399 - I tapped 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.499 BasePage:399 - I tapped 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.548 BasePage:399 - I tapped 5
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.594 BasePage:424 -  I Selected continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.681 BasePage:424 -  I Selected default tax to disable that tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.743 BasePage:424 - Quantity Tax is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.811 BasePage:424 - Done button is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 13:05:47.903 Hooks:56 - Failed Scenario Name : TS-144 - Text needs to be updated for the "Open item" as "Select a Coursing"
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:56.020 Hooks:44 - Start Scenario Name : TS-149 - Modify option not displaying for the Other service type>> When Bartab has Any time preauth setting
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:56.245 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:56.302 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:56.357 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:56.406 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:56.455 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:57.704 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:57.798 TaxRoundingOff:5407 - 147-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:57.804 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:48:57.895 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:03.007 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:08.084 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:13.153 TaxRoundingOff:3707 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:13.156 TaxRoundingOff:3713 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:13.181 TaxRoundingOff:3718 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:13.184 TaxRoundingOff:3727 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:13.198 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:13.267 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:13.380 BasePage:424 - Clicked BarTab Order Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:14.610 BasePage:424 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:14.683 BasePage:424 - Clicked QSR Order Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 16:49:19.860 Hooks:56 - Failed Scenario Name : TS-149 - Modify option not displaying for the Other service type>> When Bartab has Any time preauth setting
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:23.844 Hooks:44 - Start Scenario Name : TS-133 - HA card number not displaying in card screen page
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:24.219 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:24.284 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:24.339 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:24.388 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:24.458 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:25.753 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:25.827 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:25.955 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:31.117 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:36.271 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:41.411 TaxRoundingOff:3707 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:41.417 TaxRoundingOff:3713 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:41.453 TaxRoundingOff:3718 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:41.466 TaxRoundingOff:3727 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:41.489 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:36:41.699 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:06.775 Hooks:44 - Start Scenario Name : TS-133 - HA card number not displaying in card screen page
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:07.006 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:07.063 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:07.117 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:07.167 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:07.218 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:08.453 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:08.539 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:08.649 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:13.738 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:18.816 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:23.933 TaxRoundingOff:3707 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:23.935 TaxRoundingOff:3713 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:23.963 TaxRoundingOff:3718 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:23.967 TaxRoundingOff:3727 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:23.987 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:24.150 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 17:52:24.630 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:12.284 Hooks:44 - Start Scenario Name : TS-133 - HA card number not displaying in card screen page
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:12.490 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:12.548 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:12.610 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:12.675 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:12.726 BasePage:399 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:13.948 BasePage:399 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:14.026 BasePage:399 - Selected category arrow
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:14.137 BasePage:424 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:19.235 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:24.306 BasePage:424 - Tapped menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:29.432 TaxRoundingOff:3707 - Exact tax amount is 2.149632
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:29.434 TaxRoundingOff:3713 - Expected tax amount is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:29.474 TaxRoundingOff:3718 - Actual tax is 2.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:29.477 TaxRoundingOff:3727 - RoundOff value is 4.0E-4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:29.495 BasePage:424 - Click Order
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:29.653 BasePage:424 - By Name tab is tapped - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:29.924 BasePage:424 - Selected Payment Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-17 18:48:32.920 Hooks:56 - Failed Scenario Name : TS-133 - HA card number not displaying in card screen page
