@@ -368,6 +368,12 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().pressDone3();
     }
 
+    @And("^I click Done button on the Popup2$")
+    public void iClickDoneButtonOnThePopup2() throws InterruptedException {
+        new TableLayOutScreen().pressDone4();
+    }
+
+
     @And("^I click Done button on the Popup from Table Layout$")
     public void iClickDoneButtonOnThePopupFromTableLayout(){
         new TableLayOutScreen().pressDone2();
@@ -1868,6 +1874,11 @@ public class TableOrderOperationsStepDef {
     @And ("^I click cancel button on the table layout screen$")
     public void iClickCancelButtonOnTheTableLayoutScreen(){
         new TableLayOutScreen().clickCancelBtn();
+    }
+
+    @And ("^I click cancel button on the table layout screen1$")
+    public void iClickCancelButtonOnTheTableLayoutScreen1(){
+        new TableLayOutScreen().clickCancelBtn1();
     }
 
     @Then("^I should see the serving size screen$")

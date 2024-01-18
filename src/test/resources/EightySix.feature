@@ -607,6 +607,7 @@ Feature: Verify the eighty six list
 #    And I click the "Right" in the table layout screen1 "click right button"
 #    And I select the "T16" in the Table layout screen1"click t4 table"
     And I select the "<txtTable>" in the Table layout screen"click T2 table"
+  And I get check number
      And I select category as "<category>"
     And I select menu item as "<menuItem>"
     And I click Finish Order button
@@ -621,7 +622,7 @@ Feature: Verify the eighty six list
     And I closed the order type window
     And I click All
     And I click Table Layout tab
-    And I click the check from the table layout
+    And I click the check from the table layout for merged
     And I click Void button on order management screen
     Then I should see the void reason popup
     And I click void Reason on the void popup

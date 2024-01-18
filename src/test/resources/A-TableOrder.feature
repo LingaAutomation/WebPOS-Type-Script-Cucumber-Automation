@@ -2172,7 +2172,7 @@ Feature:Table Order Operations
     And I click the check from the table layout for merged
 #    And I click already selected table as "<table_no>"
     Then I should see Check already added pop-up message
-    And I click Done button on the Popup1
+    And I click Done button on the Popup2
     And I click cancel button on the pop-up for disappear merge box
     And I select table as "<table_no>"
     And I click Cash button for Complete Sale
@@ -2222,7 +2222,7 @@ Feature:Table Order Operations
     And I click Done button on the pop-up to complete merging
     Then I should see select at least 2 checks
      And I click Done button on the Popup from Table Layout
-    And I click cancel button on the table layout screen
+    And I click cancel button on the table layout screen1
     And I click the check from the table layout for merged
 #    And I select table as "<table_no>"
     Then I Should get back to the Order Screen
@@ -4362,7 +4362,7 @@ Feature:Table Order Operations
       | T19      |1                |  French Friese | Steak      | $ 15.00  | $ 15.00 | $ 25.00 | Auto ragav    |
 
 
-
+  @34
   Scenario Outline: Verify whether application display Transfer server screen when user clicks the Transfer button present in the table layout screen
    # Given I'm logged in
     #And I close the order type window
@@ -4371,7 +4371,7 @@ Feature:Table Order Operations
 #    And I click Table Layout tab
     And I click Transfer button
     Then I should see transfer to server
-    And I click cancel button on the table layout screen
+    And I click cancel button on the table layout screen1
     And I click QSR tab
     And I close the order type window
 
@@ -4380,7 +4380,7 @@ Feature:Table Order Operations
     Then I should see the Check Options screen
     When I click Gift card Button
     Then I should see Gift card window
-    And I click cancel button on the table layout screen
+    And I click cancel button on the table layout screen1
 #    And I click Back button on Check Options Screen
 
   # Verify whether application can allow to select cancel in gift card screen
@@ -4388,7 +4388,7 @@ Feature:Table Order Operations
     Then I should see the Check Options screen
     When I click Gift card Button
     Then I should see Gift card window
-    And I click cancel button on the table layout screen
+    And I click cancel button on the table layout screen1
 #    Then I should see the Check Options screen
 #    And I click Back button on Check Options Screen
 
@@ -4413,7 +4413,7 @@ Feature:Table Order Operations
     Then I should see the Check Options screen
     And I click Open Item button
     Then I should see open item screen
-    And I click cancel button on the table layout screen
+    And I click cancel button on the table layout screen1
 #    And I click Back button on Check Options Screen
 
   # Verify whether application can allow user to click back button in Gratuity screen
@@ -4429,7 +4429,7 @@ Feature:Table Order Operations
     Then I should see the Check Options screen
     And I click Open Item button
     Then I should see open item screen
-    And I click cancel button on the table layout screen
+    And I click cancel button on the table layout screen1
 #    Then I should see the Check Options screen
 #    And I click Back button on Check Options Screen
 
@@ -4541,7 +4541,7 @@ Feature:Table Order Operations
     Then I should see the Check Options screen
     And I click Hold to put order on hold
     And I click Done in the hold window
-    When I click Back to return to Order Management Screen
+    When I click Back button on Check Options Screen
     Then I should see the hold icon over the order section
     And I click menu item as "<Menu_Item>" to see Menu option screen
     And I click Fire to send menu item to kitchen

@@ -311,6 +311,7 @@ public class TGTillManagementScreen extends TGOrderManagementScreen {
     }
 
     public void clickPayOutTab(){
+
         WebElement element= driver.findElement(By.xpath("//p[. ='Pay Out']"));
         elementClick(element,"click payOutTab ");
     }

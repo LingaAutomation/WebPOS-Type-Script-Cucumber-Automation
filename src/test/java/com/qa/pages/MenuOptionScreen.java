@@ -618,7 +618,7 @@ try {
     public void pressSyncBtn() throws InterruptedException {
 
         elementClick(syncBtn,"Tapped Sync Button");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     }
 
     public String getPopupTxt(){

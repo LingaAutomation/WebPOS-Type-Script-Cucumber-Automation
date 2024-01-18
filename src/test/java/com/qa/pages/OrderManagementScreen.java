@@ -2395,7 +2395,7 @@ public  void selectCategory (String value) throws Exception {
                         Thread.sleep(1000);
                         elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
                         Thread.sleep(1000);
-                        WebElement x =  driver.findElement(By.xpath("//*[@id=\"multiple-Check\"]/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
+                        WebElement x =  driver.findElement(By.xpath("//*[@id='multiple-Check']/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
                         elementClick(x, "Tapped X Button");
                     } else {
 

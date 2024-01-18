@@ -150,6 +150,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
     String Done1 = "//button[contains(.,'Done')]";
     String Done3 = "//button[(.=' Done ')]";
 
+    String Done4 = "(//button[(.=' Done ')])[2]";
+
     String Done2 = "//mat-dialog-container[@id='alert-content']//button[contains(.,' Done ')]";
 
     @FindBy(xpath = "Delete")
@@ -489,6 +491,15 @@ public class TableLayOutScreen extends OrderManagementScreen {
         Thread.sleep(2000);
         try {
             elementClick(Done3, "Tapped Done Button on the Popup");
+        } catch (Exception e) {
+            utils.log().info("Tapped Done");
+        }
+    }
+
+    public void pressDone4() throws InterruptedException {
+        Thread.sleep(2000);
+        try {
+            elementClick(Done4, "Tapped Done Button on the Popup");
         } catch (Exception e) {
             utils.log().info("Tapped Done");
         }
@@ -1193,6 +1204,10 @@ Thread.sleep(2000);
 
     public void clickCancelBtn() {
         elementClick(closebtn, "Tapped cancel Button");
+    }
+
+    public void clickCancelBtn1() {
+        elementClick(cancelBtn, "Tapped cancel Button");
     }
 
     public void verifyCheckDownIsIncreased() throws InterruptedException {

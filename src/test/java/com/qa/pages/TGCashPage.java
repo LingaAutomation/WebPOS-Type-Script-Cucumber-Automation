@@ -22,7 +22,7 @@ public class TGCashPage extends BasePage{
     public void clickCashAmountExceedAmountPopoup(){
         WebElement element3=mergeAndFindMobileElement(exceedCashAmountPopup);
         String actualName =elementGetText(element3,"Get Exceed Cash Amount Popup");
-        String expectedName = "Cash amount has exceeded the limit.Please make a drop now";
+        String expectedName = "Cash amount has exceeded the limit.Please make a drop now.";
 
         Assert.assertEquals(actualName,expectedName);
         WebElement element=mergeAndFindMobileElement(yesButton);
