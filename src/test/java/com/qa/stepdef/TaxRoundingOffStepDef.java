@@ -1353,6 +1353,18 @@ public class TaxRoundingOffStepDef {
         //new TaxRoundingOff().verifyIfTaxIsCalculatedAsPerTheQuantityTax3(quantity);
     }
 
+    @And("^I selected the POS operations button$")
+    public void selectThePOSOperationsBtn()
+    {
+        new TaxRoundingOff().selectPOSOperationsBtn();
+    }
+
+    @And("^Selected Till Management option$")
+    public void selectTheTillManagementBtn()
+    {
+        new TaxRoundingOff().selectTillManagementBtn();
+    }
+
     @And("^I Select submit button$")
     public void SelectSubmitButton() throws InterruptedException {
         new TaxRoundingOff().SelectTheSubmitButton();
@@ -2320,6 +2332,8 @@ public class TaxRoundingOffStepDef {
     public void iClickCancelButton(){
         new TaxRoundingOff().iClickTheCancelButton();
     }
+
+    @And("^I selected the operations window$")
 
     @And("^I removed the menu item$")
     public void iRemovedTheMenuItem()

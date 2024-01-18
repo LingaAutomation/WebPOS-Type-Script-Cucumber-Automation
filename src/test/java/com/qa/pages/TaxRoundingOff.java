@@ -4169,6 +4169,18 @@ public class TaxRoundingOff extends ClockInScreen {
         new OrderTypeWindow().pressCancelBtn();
     }
 
+    public void selectPOSOperationsBtn()
+    {
+        WebElement POSOperationsBtn = driver.findElement(By.xpath("(//ion-footer)[2]//button[2]"));
+        POSOperationsBtn.click();
+    }
+
+    public void selectTillManagementBtn()
+    {
+        WebElement TillManagementBtn = driver.findElement(By.xpath("//label[contains(.,'Till Management')]/../linga-icon/../.."));
+        TillManagementBtn.click();
+    }
+
     public void SelectTheSubmitButton() throws InterruptedException {
         elementClick(SubmitBtn, "Selected Submit Button");
 
