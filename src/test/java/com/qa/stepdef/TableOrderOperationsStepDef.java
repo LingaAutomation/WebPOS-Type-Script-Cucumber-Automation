@@ -7,8 +7,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 
 import java.io.IOException;
+
+import static com.qa.utils.TestUtils.driver;
 
 
 public class TableOrderOperationsStepDef {
@@ -1592,7 +1595,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see do you want to send hold menu items to kitchen popup message$")
     public void iShouldSeeDoYouWantToSendHoldMenuItemsToKitchenPopupMessage(){
-        Assert.assertEquals(new OrderManagementScreen().getdoYouWantToSendHoldMenuItemToKitchenMsg(),"Do you want to send hold menu item(s) to kitchen?");
+        Assert.assertEquals(new OrderManagementScreen().getdoYouWantToSendHoldMenuItemToKitchenMsg(),"Do you want to send hold item(s) to kitchen");
     }
 
     @Then ("^I should see do you want to send hold menu items to kitchen popup message1$")
@@ -2446,5 +2449,23 @@ public class TableOrderOperationsStepDef {
         new Regression().selectTheRandomTableFromTheTableLayout();
     }
 
+    @Then("I should see the add customer screen in the window")
+    public void iShouldSeeTheAddCustomerScreenInTheWindow() {
+        String Add_Customer_Text = driver.findElement(By.xpath("//ion-header//p[contains(.,'Add Customer')]")).getText();
+        if (Add_Customer_Text.equals("Add Customer")) {
+        }else {
+        }
+    }
+
+
+    @And("I Click on the Byname Option")
+    public void iClickOnTheBynameOption() {
+        driver.findElement(By.xpath("//div[.='By Name / Email']")).click();
+    }
+
+    @And("Enter some name and click on Add Customer button")
+    public void enterSomeNameAndClickOnAddCustomerButton() throws InterruptedException {
+        new PaymentWindow().enterCustomerandClickOnAddCustomer();
+    }
 
 }

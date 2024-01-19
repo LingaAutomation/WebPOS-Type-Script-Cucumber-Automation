@@ -89,8 +89,8 @@ public class AskSeatNumber extends BasePage {
 
     public int itemToSelect;
 
-    public void selectRandomTable() {
-
+    public void selectRandomTable() throws InterruptedException {
+Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
         WebElement New =  driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
         elementClick(New, "Tapped New Check");

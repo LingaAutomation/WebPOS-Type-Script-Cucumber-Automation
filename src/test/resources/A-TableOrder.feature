@@ -4561,8 +4561,8 @@ Feature:Table Order Operations
     And I click Add Button on the void reason popup
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
-    And I closed the order type window
-    And I click All
+#    And I closed the order type window
+#    And I click All
     Then I should see check stats Screen
 #    And I click power button
 

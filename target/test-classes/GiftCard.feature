@@ -5,7 +5,6 @@ Feature: Gift Card
     Given I'm logged in
     Then I closed the order type window
 
-
   Scenario: Verify gift card tab should open along with Give X
     Given User select QSR mode on menu item page
     When User select DineIn mode

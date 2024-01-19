@@ -32,7 +32,7 @@ public class AskSeatCountStepDef {
     }
 
     @And ("^I select random table on the table layout$")
-    public void iSelectRandomTableOnTheTableLayout(){
+    public void iSelectRandomTableOnTheTableLayout() throws InterruptedException {
         new AskSeatNumber().selectRandomTable();
     }
 

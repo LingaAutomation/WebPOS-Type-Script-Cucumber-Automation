@@ -148,8 +148,9 @@ public class MenuOptionScreen extends ClockInScreen{
 //    }
 
     public String pressMenuItems(String menu) throws InterruptedException {
+        Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement e= driver.findElement(By.xpath("//div[contains(@class,'p-col-4 orderlist-menuname')]"));
+        WebElement e= driver.findElement(By.xpath("//div[@class='menu-section orderlist-flex ']//div[contains(.,'"+menu+"')]"));
         utils.log().info(e.getText());
         if(e.getText().equals(menu)) {
             elementClick(e, "Tapped Menu Items to see Menu Option Screen");

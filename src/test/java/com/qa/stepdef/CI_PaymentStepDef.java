@@ -7,6 +7,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import com.qa.utils.TestUtils;
+import org.openqa.selenium.By;
+
+import static com.qa.utils.TestUtils.driver;
 
 public class CI_PaymentStepDef {
 
@@ -471,7 +474,8 @@ public class CI_PaymentStepDef {
 
     @And("^I select the \"([^\"]*)\" as john \"([^\"]*)\"$")
     public void iSelectTheAsJohn(String customerName, String msg) throws InterruptedException {
-        ciPaymentScreen.commonBtnClickOption(customerName,msg);
+        new OrderManagementScreen().pressNewCustomerTab();
+//        driver.findElement(By.xpath("//button[.=' Ok ']")).click();
     }
 
     //nov 15

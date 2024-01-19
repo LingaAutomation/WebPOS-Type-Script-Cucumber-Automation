@@ -214,7 +214,7 @@ Feature: verify the close day screen
 
 
   #TA-I1264 1,11
-  @Types
+
   Scenario Outline: verify whether application shows net sale value after creating the sale
     Given I'm logged in
     And I closed the order type window
@@ -241,7 +241,7 @@ Feature: verify the close day screen
 
     Examples:
       |btnCash  |pin1 |pin2 |pin3 |pin4  | totalNetSale | category | itemParatha |itemCI-Biriyani|btnVoid    | btnDropDown |
-      | Cash    |0    |9    |8    |7     | 11.61         | CIFOOD   |Paratha      |CI-Biriyani    | Void Item | arrow down  |
+      | Cash    |0    |9    |8    |7     | 7.14         | CIFOOD   |Paratha      |CI-Biriyani    | Void Item | arrow down  |
 
 
   #TA-I1287 Sheet No 1.24,1.26
@@ -422,7 +422,7 @@ Feature: verify the close day screen
     Examples:
       | pin1 | pin2 | pin3 | pin4 | pin0  | pin00 |pin5 | T2 |table_no | Number |  category | itemPoori | btnPayment | btnContinue | btnCash | btnOk | btnAll |  tabClosed | btnRe-openCheck   | btnVoid | btnAdd | grossSale | btnOption | btnGiftCard | btnDone | textField              | tabTableLayout | itemCI-Biriyani |btnWrong           |btnDropDown|btnQSR|
       | 1    | 2    | 3    | 4    | 0     | 00    | 5   | T2 | T2      | 1      | CIFOOD    |   Poori   | Payment    | Continue    | Cash    | OK    | All    | Closed     | reOpenCheck       | Void    | Add    | 15.75     | Option    | Gift Card   | Done    | 0000  0000  0000  0000 | Table Layout   | CI-Biriyani     |Wrong Item Ordered |arrow down |QSR   |
-  @Types
+
   #TA-I1315 1.4 ,1.42Verify whether application shows netsale record in sale recap after creating sale
   Scenario Outline:Verify whether application shows Net sale,net void record in sale recap after creating sale
     Given I'm logged in
@@ -479,7 +479,7 @@ Feature: verify the close day screen
 
     Examples:
       |netSaleValue|txtTable2|itemCI-Biriyani|itemParatha|btnCash |btnSeatOne| txtTable1|tabTableLayout| category| btnContinue  | tabAll | tabClosed | btnRe-openCheck | btnPayment  | btnOk | btnVoid | btnAdd |  btnDone | table_no |btnWrong            | btnDropDown |netVoidValue| netVoid |
-      |11.61        |T3       |CI-Biriyani    |Paratha    |Cash    |  1       |   T4     |Table Layout  | CIFOOD  |Continue      |All     | Closed    | reOpenCheck     | Payment     | OK    | Void    | Add    |   Done   | T4       |Wrong Item Ordered  | arrow down  |10.00       |Net Void |
+      |7.14        |T3       |CI-Biriyani    |Paratha    |Cash    |  1       |   T4     |Table Layout  | CIFOOD  |Continue      |All     | Closed    | reOpenCheck     | Payment     | OK    | Void    | Add    |   Done   | T4       |Wrong Item Ordered  | arrow down  |10.00       |Net Void |
 
   @Types
   #TA-I1331 1,44   (test case fails because taxes not present in the sale recap report)

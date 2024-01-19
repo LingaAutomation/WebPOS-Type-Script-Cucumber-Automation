@@ -498,7 +498,8 @@ public class TGMenuItemStepDef {
     }
 
     @Then("User verify new customer")
-    public void userVerifyNewCustomer() {
+    public void userVerifyNewCustomer() throws InterruptedException {
+        Thread.sleep(5000);
         new TGMenuItemPage().verifyNewlyAddedCustomer();
     }
 
@@ -1909,12 +1910,14 @@ public class TGMenuItemStepDef {
     }
 
     @Then("User verify new customer for House Account")
-    public void userVerifyNewCustomerForHouseAccount() {
+    public void userVerifyNewCustomerForHouseAccount() throws InterruptedException {
+        Thread.sleep(5000);
         new TGMenuItemPage().verifyNewCustomerForHouseAccount();
     }
 
     @And("User click new customer which is created for House Account")
-    public void userClickNewCustomerWhichIsCreatedForHouseAccount() {
+    public void userClickNewCustomerWhichIsCreatedForHouseAccount() throws InterruptedException {
+        Thread.sleep(5000);
         new TGMenuItemPage().clickNewCustomerWhichIsCreatedForHouseAccount();
     }
 

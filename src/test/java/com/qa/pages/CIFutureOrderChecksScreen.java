@@ -205,11 +205,12 @@ public class CIFutureOrderChecksScreen extends BasePage {
     public void clickCustomer(String msg) {
 //        WebElement element = mergeAndFindElement(customerName, "", TestUtils.XPath);
 //        elementClick(element, msg);
-        findandclick(customerName, "", TestUtils.XPath);
+        driver.findElement(By.xpath(" //mat-option[contains(@class,'customer-content-item')]//span//span[.='"+msg+"']")).click();
+
     }
 
     public void passName(String customerName, String msg) {
-        WebElement element = mergeAndFindElement(search, "Search", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//input[@placeholder='Search customer by phone']"));
         elementClick(element, msg);
         element.sendKeys(customerName);
 //        findandclick_Skeys(search, "Search", TestUtils.XPath,"SKeys",customerName);

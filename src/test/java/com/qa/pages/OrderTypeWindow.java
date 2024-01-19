@@ -73,9 +73,9 @@ public class OrderTypeWindow extends ClockInScreen {
     private WebElement eggWhite;
 
 
-    public String orderTypeName(String name){
-        WebElement order=mergeAndFindElement(name,"",TestUtils.Accessibility);
-        return elementGetText(order,"Order Type name is - ");
+    public String orderTypeName(String xpath){
+        WebElement order = driver.findElement(By.xpath("(//span[contains(.,'"+xpath+"')])[1]"));
+        return elementGetText(order,"Order Type xpath is - ");
     }
 
     public String getTitle() {

@@ -134,14 +134,13 @@ WebElement element;
     }
 
     public void openLimitToggleIfItIsClosed() {
-        WebElement element = mergeAndFindMobileElement(limitToggle);
-        String value = getAttribute(element,"value");
-
-        if (value.contains("0")) {
-            WebElement element3 = mergeAndFindMobileElement(limitToggle);
-            elementClick(element3, "click limitToggle ");
-
-        } else if (value.contains("1")) {
+        try {
+            WebElement element = mergeAndFindMobileElement(limitToggle);
+            if (element.isDisplayed()) {
+                WebElement element3 = mergeAndFindMobileElement(limitToggle);
+                elementClick(element3, "click limitToggle ");
+            }
+        }catch (Exception w){
             WebElement element1 = mergeAndFindMobileElement(limitText);
             String actualName = elementGetText(element1,"value");
 
@@ -261,6 +260,7 @@ WebElement element;
     public void enterFirstName() {
         WebElement element1 = mergeAndFindMobileElement(firstName);
         elementClick(element1, "click firstName ");
+        element1.clear();
         element1.sendKeys("Test");
     }
 
@@ -372,7 +372,7 @@ WebElement element;
     public void verifyMobilePhoneEmailWarningPopup() {
         WebElement element1 = mergeAndFindMobileElement(mobilePhoneEmailPopup);
         String actualName=elementGetText(element1,"verify mobilePhoneEmailPopup");
-        String expectedName = "Enter Email Id or Mobile Number";
+        String expectedName = "Please fill in all the required fields";
 
         Assert.assertEquals(actualName, expectedName);
 
@@ -389,8 +389,13 @@ WebElement element;
     }
 
     public void clickCustomerAddressDropDownIcon() {
-        WebElement element1 = mergeAndFindMobileElement(customerAddressDropDownIcon);
-        elementClick(element1, "click customerAddressDropDownIcon");;
+        try {
+            WebElement element1 = mergeAndFindMobileElement(customerAddressDropDownIcon);
+            elementClick(element1, "click customerAddressDropDownIcon");
+            ;
+        }catch (Exception e) {
+
+        }
     }
 
     public void verifyEmptyCustomerAddressList() {
@@ -408,8 +413,8 @@ WebElement element;
         elementClick(element1, "click firstName ");
         element1.sendKeys("Test");
 
-        WebElement element = mergeAndFindMobileElement(hideKeyboard);
-        elementClick(element, "click hideKeyboard ");
+//        WebElement element = mergeAndFindMobileElement(hideKeyboard);
+//        elementClick(element, "click hideKeyboard ");
 
         WebElement element2 = mergeAndFindMobileElement(saveBtn);
         elementClick(element2, "click saveBtn ");

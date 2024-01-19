@@ -290,7 +290,7 @@ public class CICloseDayScreen extends BasePage {
 
 //            WebElement element = mergeAndFindElement(id, "", TestUtils.Accessibility);
 //            elementClick(element, msg);
-            findandclick(id, "", TestUtils.Accessibility);
+        driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).click();
 
     }
 //    public void commonAccessibilityId(String id,String msg){
@@ -1004,12 +1004,12 @@ Assert.assertEquals(element.getText(),txtXpath);
     }
 
     public void passNumber(String number) {
-        WebElement element = mergeAndFindElement(txtNumberTextField,"", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//input[contains(@class,'quantity_grid-inputrow')]"));
         element.sendKeys(new TestUtils().dateTime()+ " - "+number );
 //        findandclick_Skeys(txtNumberTextField,"", TestUtils.XPath,"SKeys",new TestUtils().dateTime()+ " - "+number);
     }
     public void passEmail(String number) {
-        WebElement element = mergeAndFindElement(passEmailID,"", TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//input[@data-placeholder='Email ID']"));
         element.sendKeys(new TestUtils().dateTime(),number );
     }
 
@@ -1018,7 +1018,7 @@ Assert.assertEquals(element.getText(),txtXpath);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        WebElement element = mergeAndFindElement(btnSave1,"", TestUtils.XPath);
 //        elementClick(element, msg);
-        findandclick(passEmailID,"", TestUtils.XPath);
+        driver.findElement(By.xpath("//span[contains(.,' Continue ')]")).click();
     }
 
     public void clickSave2(String msg) {

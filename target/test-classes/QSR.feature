@@ -1254,10 +1254,10 @@ Feature: QSR feature
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
-  @233
-  Scenario Outline: Msn
-#    Then I should see the order type window
-#    And I closed the order type window
+
+#  Scenario Outline: Msn
+    Then I should see the order type window
+    And I closed the order type window
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat

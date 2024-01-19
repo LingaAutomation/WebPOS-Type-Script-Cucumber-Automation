@@ -215,7 +215,7 @@ public class TGCheckOptionsStepDef {
 
 
     @And("User verify option page")
-    public void userVerifyOptionPage() {
+    public void userVerifyOptionPage() throws InterruptedException {
         new TGCheckOptionPage().verifyCheckOptionPage();
     }
 

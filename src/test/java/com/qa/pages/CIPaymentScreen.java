@@ -533,8 +533,9 @@ Thread.sleep(2000);
         findandclick(cardNameField,"",TestUtils.XPath);
     }
     public void enterName(String customerName,String msg){
-        WebElement element = mergeAndFindElement(Search,"",TestUtils.XPath);
+        WebElement element = driver.findElement(By.xpath("//input[@placeholder='Name']"));
         element.sendKeys(customerName);
+        driver.findElement(By.xpath("//button[.=' Ok ']")).click();
 //        findandclick_Skeys(Search,"",TestUtils.XPath,"SKeys",customerName);
         utils.log().info(msg);
     }

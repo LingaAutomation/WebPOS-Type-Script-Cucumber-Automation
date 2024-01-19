@@ -477,7 +477,8 @@ public class TGCheckOptionPage extends BasePage {
         WebElement element = mergeAndFindMobileElement(holdCheckOption);
         elementClick(element, "click holdCheckOption ");
     }
-    public void verifyCheckOptionPage(){
+    public void verifyCheckOptionPage() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath(checkOptionPageTitle));
         String actualName=elementGetText(element,"verify the checkOptionPageTitle");
         String  expectedName = "Check Option";

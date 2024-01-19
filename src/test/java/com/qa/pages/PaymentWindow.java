@@ -1854,6 +1854,18 @@ elementClick(orderMenu,"Selected Order Menu - "+orderMenu.getText());
             utils.log().info("Apply total toggle is enabled");
         }
     }
+
+    public void enterCustomerandClickOnAddCustomer() throws InterruptedException {
+
+        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+
+        WebElement Name_Input = driver.findElement(By.xpath("//input[@role='combobox']"));
+        Name_Input.clear();
+        Name_Input.sendKeys(RandomStringUtils.randomAlphabetic(6));
+        driver.findElement(By.xpath("//span[contains(.,' + Add customer ')]")).click();
+        Thread.sleep(4000);
+    }
+
 }
 
 

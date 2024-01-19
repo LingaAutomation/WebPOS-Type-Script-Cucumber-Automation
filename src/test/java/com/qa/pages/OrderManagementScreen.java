@@ -94,11 +94,14 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
     private WebElement holdIcon;
 
-    @FindBy(xpath = "//p[.='Hold item(s) has to be sent to kitchen']")
+    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen']")
     private WebElement doYouWantToSendHoldMenuItemToKitchen;
 
     @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen ?']")
     private WebElement doYouWantToSendHoldMenuItemToKitchen2;
+
+    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen ?']")
+    private WebElement doYouWantToSendHoldMenuItemToKitchen3;
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div/mat-dialog-container/app-alertcontent/mat-dialog-content")
     private WebElement doYouWantToSendHoldMenuItemToKitchen1;
@@ -368,7 +371,7 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//button[.=' Revert ']")
     private WebElement revertBtn;
 
-    @FindBy(xpath = "Cannot remove customer for Delivery")
+    @FindBy(xpath = "//p[.='Cannot remove customer for Delivery']")
     private WebElement cannotRemoveCustomerForDelivery;
 
     @FindBy (xpath = "//p[.='You need to pick atleast 1 mandatory modifiers from this Add Meats Group']")
@@ -1723,7 +1726,7 @@ public  void selectCategory (String value) throws Exception {
 
 
     public String verifyCustomerProfile() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         return elementGetText(customerProfileWindow,"Customer profile window is displayed - ");
     }
 
@@ -2202,6 +2205,11 @@ public  void selectCategory (String value) throws Exception {
 
         @FindBy(xpath = "//button[.='86 List']")
         WebElement listBtn;
+    String NewCustomerTab = "//p[@slot='end']";
+    public void pressNewCustomerTab() throws InterruptedException {
+        Thread.sleep(2000);
+        elementClick(NewCustomerTab, "Void button tapped" );
+    }
 
         public void click86ListButton() throws InterruptedException {
             Thread.sleep(1000);

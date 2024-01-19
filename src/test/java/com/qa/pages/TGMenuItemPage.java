@@ -2412,7 +2412,7 @@ public class TGMenuItemPage extends BasePage {
     public void verifyNoSelectedCustomer(){
         WebElement element = mergeAndFindMobileElement(noSelectedCustomer);
         String actualName = elementGetText(element,"Verify No Selected Customer");
-        String expectedName = "Walkin";
+        String expectedName = "Walk-in";
 
         Assert.assertEquals(actualName,expectedName);
     }

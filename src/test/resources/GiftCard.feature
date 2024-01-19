@@ -4,7 +4,6 @@ Feature: Gift Card
   Background:
     Given I'm logged in
     Then I closed the order type window
-And I click Process button on card screen
 
   Scenario: Verify gift card tab should open along with Give X
     Given User select QSR mode on menu item page

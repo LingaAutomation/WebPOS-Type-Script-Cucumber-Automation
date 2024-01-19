@@ -1,6 +1,6 @@
 
 @eighty
-Feature: Verify the eighty six list
+Feature: Eighty six list
 
 
   #TA-I1397 sheet number : 16,18,19,30,31

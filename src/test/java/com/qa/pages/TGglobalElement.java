@@ -1119,29 +1119,29 @@ public class TGglobalElement {
     String customerEmailAddressTextBox = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[7]";
     //    String hideKeyboard = "//XCUIElementTypeButton[@name=\"Hide keyboard\"]";
     String hideKeyboard = "Hide keyboard";
-    String closeButtonForMobile = "Customer MobileNo close";
-    String mobilePhoneEmailPopup = "Enter Email Id or Mobile Number";
+    String closeButtonForMobile = "(//button[(.='X')])[1]";
+    String mobilePhoneEmailPopup = "//p[.='Please fill in all the required fields']";
     //    String warningDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
     String warningDoneButton = "Done";
-    String customerAddressDropDownIcon = "(//XCUIElementTypeButton[@name=\"CustomerProfile DownArrow\"])[2]";
+    String customerAddressDropDownIcon = "//button[contains(@class,'addressDetail mat-button')]";
     //    String emptyAddressList = "Empty list";
     String emptyAddressList = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable[@name=\"Empty list\"]";
     String customer = "(//XCUIElementTypeStaticText[@name=\"Test Automation\"])[last()]";
     //    String customerPlanButton = "//XCUIElementTypeStaticText[@name=\"Customer Plan\"]";
-    String customerPlanButton = "Customer Plan";
+    String customerPlanButton = "//button[contains(.,'Customer Plan')]";
     String accountType = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[1]";
     //    String updateButton = "//XCUIElementTypeSearchField[@name=\"Update\"]";
     String updateButton = "Update";
     String rechargeTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[3]";
     //    String rechargeAmount = "//XCUIElementTypeStaticText[@name=\"1,000,00\"]";
     String rechargeAmount = "1,000,00";
-    String houseAccountCardNumberTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[2]";
-    String limitToggle = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSwitch[1]";
+    String houseAccountCardNumberTextField = "//input[@formcontrolname='accountNumber']";
+    String limitToggle = "//ion-toggle[@formcontrolname='enableLimit']/../ion-toggle[@aria-checked='false']";
     //    String limitText = "//XCUIElementTypeStaticText[@name=\"Limit\"]";
-    String limitText = "Limit";
-    String limitTextField = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[4]";
-    String maxLimitText = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[5]";
-    String maxLimitToggle = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSwitch[2]";
+    String limitText = "//ion-label[.=' Limit ']";
+    String limitTextField = "//ion-input[@formcontrolname='limitinput']//input";
+    String maxLimitText = "//ion-label[.='Max Limit']";
+    String maxLimitToggle = "//ion-toggle[@formcontrolname='enableMaxLimit']";
     String searchedCustomerOnCustomerProfile = "//XCUIElementTypeStaticText[@name=\"Test Automation 1234567890 \"]";
 
     // Gift Card
@@ -1220,13 +1220,13 @@ public class TGglobalElement {
     String phoneDeliveryOrderOption = "Delivery";
 //    String phoneDeliveryOrderOption = "//XCUIElementTypeStaticText[@name=\"Delivery\"]";
 
-    String phoneOrderOrderOption = "To Go";
+    String phoneOrderOrderOption = "(//button[@id='os_tableMenu']//span[contains(.,'TOGO')])[1]";
 //    String phoneOrderOrderOption = "//XCUIElementTypeStaticText[@name=\"To Go\"]";
 
     String barTabOrderOption = "Bar Tab";
 //    String barTabOrderOption = "//XCUIElementTypeStaticText[@name=\"Bar Tab\"]";
 
-    String forHereOrderOption = "For Here";
+    String forHereOrderOption = "(//button[@id='os_tableMenu']//span[contains(.,'FORHERE')])[1]";
 //    String forHereOrderOption = "//XCUIElementTypeStaticText[@name=\"For Here\"]";
 
 
@@ -1654,7 +1654,7 @@ public class TGglobalElement {
 
     String selectedBarTabOption = "(//XCUIElementTypeStaticText[@name=\"BarTab\"])[2]";
 
-    String newlyAddedCustomer = "Test A";
+    String newlyAddedCustomer = "//p[@slot='end']";
 //    String newlyAddedCustomer = "//XCUIElementTypeButton[@name=\"Test A\"]";
 
     String removeCustomerButton = "Remove";
@@ -1678,7 +1678,7 @@ public class TGglobalElement {
     String selectFirstCustomer = "Test";
 //    String selectFirstCustomer = "//XCUIElementTypeButton[@name=\"Test\"]";
 
-    String firstCustomer = "Test A";
+    String firstCustomer = "//p[@slot='end']";
 //    String firstCustomer = "//XCUIElementTypeButton[@name=\"Test A\"]";
 
     String editedCustomer = "Test";
@@ -1705,7 +1705,7 @@ public class TGglobalElement {
     String selectedDelivery = "DELIVERY";
 //    String selectedDelivery = "//XCUIElementTypeStaticText[@name=\"DELIVERY\"]";
 
-    String noSelectedCustomer = "Walkin";
+    String noSelectedCustomer = "//p[@slot='end']";
 //    String noSelectedCustomer = "//XCUIElementTypeButton[@name=\"Walkin\"]";
 
     String firstOrderedMenuItem = "//XCUIElementTypeStaticText[@name=\"SANDWICHES \"]";
@@ -2396,16 +2396,16 @@ public class TGglobalElement {
     String mantiTotalPriceWithInclusiveTax = "TL 50,06";
 
     //    String selectedCustomerNameForBarTab = "//XCUIElementTypeButton[@name=\"Test A\"]";
-    String selectedCustomerNameForBarTab = "Test A";
+    String selectedCustomerNameForBarTab = "//p[@slot='end']";
 
     //    String selectedCustomerForHouseAccount = "//XCUIElementTypeButton[@name=\"Test A\"]";
-    String selectedCustomerForHouseAccount = "Test A";
+    String selectedCustomerForHouseAccount = "//p[@slot='end']";
 
     //    String voidReasonForHA = "//XCUIElementTypeStaticText[@name=\"Ordered Wrongly\"]";
     String voidReasonForHA = "Ordered Wrongly";
 
     //    String newCustomerForHouseAccount = "//XCUIElementTypeButton[@name=\"Test A\"]";
-    String newCustomerForHouseAccount = "Test A";
+    String newCustomerForHouseAccount = "//p[@slot='end']";
 
     //    String toGoOrderType = "//XCUIElementTypeStaticText[@name=\"To Go\"]";
     String toGoOrderType = "To Go";
@@ -2891,12 +2891,12 @@ public class TGglobalElement {
     //    String numberoneinHA = "//XCUIElementTypeButton[@name=\"1\"]";
     String numberoneinHA = "1";
     //    String numberZeroInHa = "//XCUIElementTypeButton[@name=\"0\"]";
-    String numberZeroInHa = "0";
+    String numberZeroInHa = "//button[.='0']";
     //    String numberDoubleZeroInHa = "//XCUIElementTypeButton[@name=\"00\"]";
-    String numberDoubleZeroInHa = "00";
+    String numberDoubleZeroInHa = "//button[.='00']";
     //    String numberTwoInHa = "//XCUIElementTypeButton[@name=\"2\"]";
-    String numberTwoInHa = "2";
-    String rechargeTxtFieldInHa = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField[3]";
+    String numberTwoInHa = "//button[.='2']";
+    String rechargeTxtFieldInHa = "//ion-input[@formcontrolname='recharge']//input";
     //    String existingCustomerName = "//XCUIElementTypeButton[@name=\"goknur b\"]";
     String existingCustomerName = "goknur b";
     String addedModifierInMenuItemPage = "(//div[@class='modifier-section']//div[contains(.,'Add Veggies')])[2]";
