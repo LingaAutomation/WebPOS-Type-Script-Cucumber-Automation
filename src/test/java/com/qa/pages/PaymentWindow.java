@@ -251,7 +251,9 @@ public class PaymentWindow extends OrderManagementScreen{
         elementClick(submitBtn, "Submit button is tapped" );
     }
 
-    public void pressCashBtn(){ elementClick(Cash,"Tapped Cash button for Close Sale");}
+    public void pressCashBtn(){
+
+        elementClick(Cash,"Tapped Cash button for Close Sale");}
 
     public void pressExact(){ elementClick(Exact,"Tapped Exact button ");}
 

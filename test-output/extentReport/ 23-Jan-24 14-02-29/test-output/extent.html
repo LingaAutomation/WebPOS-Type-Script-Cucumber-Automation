@@ -1,0 +1,2720 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 23, 2024 02:02:29 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@AskSeatCount018</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Ask Seat Number Feature</p>
+            <p class="text-sm">
+              <span>2:02:29 pm</span> / <span>00:16:40:908</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Ask Seat Number Feature</h5>
+<span class='badge badge-success'>01.23.2024 2:02:29 pm</span>
+<span class='badge badge-danger'>01.23.2024 2:19:10 pm</span>
+<span class='badge badge-default'>00:16:40:908</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Verify the transfer</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()">
+                <span>And I click All</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectTheRandomTableFromTheTableLayout()">
+                <span>And I select the random table from the table layout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuOfBasicValidationForQsrAs(java.lang.String)">
+                <span>And I select Menu of Basic validation for QSR as "Menu"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickFinishOrderButton()">
+                <span>And I click Finish Order button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.userSelectTheTransferButton()">
+                <span>And User select the Transfer button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.userVerifyTransferToServerTransferToTableTransferItemAreDisplayedOrNot()">
+                <span>And User verify Transfer to Server, Transfer to Table and Transfer Item are displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.userSelectTheTransferItemOption()">
+                <span>And User select the Transfer Item Option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectCheckForTransferred()">
+                <span>When I select check for transferred</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.selectTheRequiredMenuItemFromTheMenuItemTable()">
+                <span>And Select the required menu item from the Menu Item Table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectCheckForTransferred1()">
+                <span>When I select check for transferred1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.clickTheDoneButton()">
+                <span>And Click the Done button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.verifyTheSuccessfulMessageOfTransferItemOne()">
+                <span>And Verify the Successful message of Transfer Item One</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(.,'Transferred item success')]"}
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49ab11b185a0402227ca20681198a605, findElement {using=xpath, value=//p[contains(.,'Transferred item success')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54066/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49ab11b185a0402227ca20681198a605
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.qa.pages.CheckAndItemTransfer.getTheSuccessmessage(CheckAndItemTransfer.java:247)
+	at com.qa.stepdef.TableOrderOperationsStepDef.verifyTheSuccessfulMessageOfTransferItemOne(TableOrderOperationsStepDef.java:364)
+	at ✽.Verify the Successful message of Transfer Item One(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:578)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickTransferredTableAfterDoneTransferProcess()">
+                <span>When I click transferred table after done transfer process</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.OrderTypesStepDef.verifyTheTransferredMenuItemIsAvailableOrNotInTheReceivingTable()">
+                <span>Then Verify the Transferred menu item is available or not in the receiving table</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.OrderTypesStepDef.clickTheFinishButton()">
+                <span>And Click the finish button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log fail-bg mr-2">Fail</span>Verify the merge</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()">
+                <span>And I click All</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iSelectMenuForDineInAsForSplitSeatOrderScreenForMerge(java.lang.String)">
+                <span>And I select Menu for DineIn as "North Indian dish" for split seat order screen for merge</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetTheSeatNumberFromTheCheck()">
+                <span>And I get the seat number from the check</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetTheListOfTheMenuFromTheOrderScreen()">
+                <span>And I get the list of the menu from the order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iGetValueTheMenuValuesFromOrderScreen()">
+                <span>And I get value the menu values from order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickFinishButton()">
+                <span>And I click Finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iSelectMenuForDineInAsForSplitSeatOrderScreen1(java.lang.String)">
+                <span>And I select Menu for DineIn as "North Indian dish" for split seat order screen1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetTheSeatNumberFromTheCheck1()">
+                <span>And I get the seat number from the check1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetTheListOfTheMenuFromTheOrderScreen1()">
+                <span>And I get the list of the menu from the order screen1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iGetValueTheMenuValuesFromOrderScreen1()">
+                <span>And I get value the menu values from order screen1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickFinishButton()">
+                <span>And I click Finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickMergeButton()">
+                <span>And I click Merge button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTheCheckFromTheTableLayoutForMerged()">
+                <span>When I click the check from the table layout for merged</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTheCheckFromTheTableLayoutForMerged1()">
+                <span>When I click the check from the table layout for merged1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopUpToCompleteMerging()">
+                <span>And I click Done button on the pop-up to complete merging</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeetheMergedPopupAfterMerge()">
+                <span>Then I should see the merged popup after merge</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTheCheckFromTheTableLayoutForMerged()">
+                <span>When I click the check from the table layout for merged</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iVerifyCheckNumberFromTheOrderScreen()">
+                <span>And I verify check number from the order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iVerifyTheSeatNumberFromTheOrderScreen()">
+                <span>When I verify the seat number from the order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectSeatOne()">
+                <span>And I select seat one</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iVerifyTheMenuWithSeat1()">
+                <span>When I verify the seat 1 order screen menu with 1st check menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectSeatTwo()">
+                <span>And I select seat two</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iVerifyTheMenuWithSeat2()">
+                <span>When I verify the seat 2 order screen menu with 2nd check menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableNumberOnTheOrderScreen()">
+                <span>And I click table number on the order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iVerifyTheMenuPrizeAfterMergeDone()">
+                <span>When I verify the menu prize after merge done</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='os_cashOptionStr']//input"}
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8312953e6d9530e08e0bd0d68fd9e186, findElement {using=xpath, value=//div[@id='os_cashOptionStr']//input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54119/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8312953e6d9530e08e0bd0d68fd9e186
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.qa.pages.TableLayOutScreen.verifyTheMenuPrizeAfterMergeDone(TableLayOutScreen.java:69)
+	at com.qa.stepdef.TableOrderOperationsStepDef.iVerifyTheMenuPrizeAfterMergeDone(TableOrderOperationsStepDef.java:2223)
+	at ✽.I verify the menu prize after merge done(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:627)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonForCompleteSale()">
+                <span>And I click Cash button for Complete Sale</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickExactButtonOnTheCashPopup()">
+                <span>And I click Exact button on the cash pop-up</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickEnterButtonOnTheCashPopup()">
+                <span>And I click Enter Button on the cash pop-up</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>Disable the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickTheSettingsButton()">
+                <span>And I click the Settings button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickThePOSSettingsFromToggle()">
+                <span>And I click the POS settings from Toggle</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.AskSeatCountStepDef.iVerifyThatAskSeatCountToggleIsDisabled()">
+                <span>And I verify that ask seat count toggle is disabled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.AskSeatCountStepDef.iClickPowerButtonInOperation()">
+                <span>And I click power button in operation</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log fail-bg mr-2">Fail</span>Disable Ask Customer - Verify the active checks</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()">
+                <span>And I click All</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.AskSeatCountStepDef.iSelectRandomTableOnTheTableLayout()">
+                <span>And I select random table on the table layout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectTheNumberOfSeatsAs(java.lang.String)">
+                <span>And I select the number of seats as "1"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='1']"}
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4fec261201cc76dedb85b4cac28185d2, findElement {using=xpath, value=//span[.='1']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54185/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fec261201cc76dedb85b4cac28185d2
+	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.qa.pages.TableLayOutScreen.selectSeatNo(TableLayOutScreen.java:498)
+	at com.qa.stepdef.TableOrderOperationsStepDef.iSelectTheNumberOfSeatsAs(TableOrderOperationsStepDef.java:122)
+	at ✽.I select the number of seats as "1"(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:786)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iTapContinueToFinishSelectingTheNumberOfSeats()">
+                <span>And I tap Continue to finish selecting the number of seats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iVerifyTheSeatCountOnTheOrderScreenAs(java.lang.String)">
+                <span>When I verify the seat count on the order screen as "1"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Onion Rings"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickFinishOrderButton()">
+                <span>And I click Finish Order button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()">
+                <span>And I click Check Stats tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickTheActiveCheckOnCheckStats()">
+                <span>And I click the active check on check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickOpenCheckButton()">
+                <span>And I click open check button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iVerifyTheSeatCountOnTheOrderScreenAs(java.lang.String)">
+                <span>When I verify the seat count on the order screen as "1"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()">
+                <span>And I click service type button in order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectServiceTypeAsQsr()">
+                <span>And I select service type as qsr</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeServiceTypeAs(java.lang.String)">
+                <span>And I should see service type as "QSR"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()">
+                <span>And I click All</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()">
+                <span>And I click Closed tab on the Check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickTheClosedCheckOnCheckStats()">
+                <span>And I click the Closed check on check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iVerifyTheClosedCheckServiceTypeAs(java.lang.String)">
+                <span>And I verify the closed check service type as "QSR"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.ClockInStepDef.iClickPowerButton()">
+                <span>And I click power button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="110"><span class="badge log fail-bg mr-2">Fail</span>Verify the ask Customer name toggle enabled status and ask seat count enabled status</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickTheSettingsButton()">
+                <span>And I click the Settings button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickThePOSSettingsFromToggle()">
+                <span>And I click the POS settings from Toggle</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.AskSeatCountStepDef.iVerifyThatAskSeatCountToggleIsEnabled()">
+                <span>And I verify that ask seat count toggle is enabled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.AskSeatCountStepDef.iVerifyThatAskCustomerForDineInIsEnabled()">
+                <span>And I verify that ask customer for Dine In is enabled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickTheToggleIconButton()">
+                <span>And I click the Toggle Icon button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickPOSIconFromToggle()">
+                <span>And I click POS Icon from Toggle</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()">
+                <span>And I click All</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.AskSeatCountStepDef.iSelectRandomTableOnTheTableLayout()">
+                <span>And I select random table on the table layout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.AskSeatCountStepDef.iShouldVerifyTheAskSeatNumberOnTheTableLayout()">
+                <span>When I should verify the ask seat number on the table layout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectTheNumberOfSeatsAs(java.lang.String)">
+                <span>And I select the number of seats as "1"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iTapContinueToFinishSelectingTheNumberOfSeats()">
+                <span>And I tap Continue to finish selecting the number of seats</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()">
+                <span>And I click Add Customer Button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-serverapp-c275="" id="os_customer" mat-button="" slot="end" class="mat-focus-indicator btnBorder tablecommon-header customer mat-button mat-button-base _mat-animation-noopable">...</button> is not clickable at point (414, 32). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-backdrop-noop-animation cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=120.0.6099.234)
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74b6c1e0a9bf26af8f8801c5fc61a6be, clickElement {id=7414C93AA80742E12117B56105910E81_element_275}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54239}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54239/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (74b6c1e0a9bf26af8f8801c5fc61a6be)] -> xpath: //button[@id='os_customer']]
+Session ID: 74b6c1e0a9bf26af8f8801c5fc61a6be
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor111.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.click(Unknown Source)
+	at com.qa.pages.BasePage.elementClick(BasePage.java:279)
+	at com.qa.pages.OrderManagementScreen.openCustomerSelectionMenu(OrderManagementScreen.java:430)
+	at com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton(TableOrderOperationsStepDef.java:422)
+	at ✽.I click Add Customer Button(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:832)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()">
+                <span>Then I should see the add customer screen in the window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()">
+                <span>And I Click on the Byname Option</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()">
+                <span>And Enter some name and click on Add Customer button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()">
+                <span>Then I should see the customer profile window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectSearch()">
+                <span>And I select search</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iEnterAnExistingCustomerSName(java.lang.String)">
+                <span>And I enter an existing customer's name "Auto ragav"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer()">
+                <span>And I select the customer</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()">
+                <span>When I click the Save button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCustomerAsAddedOnOrderScreen(java.lang.String)">
+                <span>Then I should see customer as "Auto r" added on order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()">
+                <span>And I click Table Layout tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="147"><span class="badge log pass-bg mr-2">Pass</span>Verify the QSR type</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()">
+                <span>And I click service type button in order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectServiceTypeAsQsr()">
+                <span>And I select service type as qsr</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()">
+                <span>And I click All</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()">
+                <span>And I click Check Stats tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()">
+                <span>And I click Closed tab on the Check stats</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInClosedCheckTab()">
+                <span>And I should see closed check in closed check tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="166"><span class="badge log fail-bg mr-2">Fail</span>Verify the To Go</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()">
+                <span>And I click service type button in order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectOrderTypeAs(java.lang.String)">
+                <span>And I select order type as "TOGO"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()">
+                <span>And I click Add Customer Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()">
+                <span>Then I should see the add customer screen in the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()">
+                <span>And I Click on the Byname Option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()">
+                <span>And Enter some name and click on Add Customer button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()">
+                <span>Then I should see the customer profile window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectSearch()">
+                <span>And I select search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iEnterAnExistingCustomerSName(java.lang.String)">
+                <span>And I enter an existing customer's name "Auto ragav"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer()">
+                <span>And I select the customer</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4af957897d111dd53eaddf65cd329a99, findElement {using=name, value=//mat-option[@role='option']//span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54277/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4af957897d111dd53eaddf65cd329a99
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.qa.pages.BasePage.elementClick(BasePage.java:277)
+	at com.qa.pages.CustomerProfileWindow.selectCustomer(CustomerProfileWindow.java:317)
+	at com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer(CustomerProfileStepDef.java:45)
+	at ✽.I select the customer(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:885)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()">
+                <span>When I click the Save button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeServiceTypeAs(java.lang.String)">
+                <span>And I should see service type as "TOGO"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPhoneOrderTab()">
+                <span>And I click phone order tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()">
+                <span>And I click Check Stats tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()">
+                <span>And I click Closed tab on the Check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInClosedCheckTab()">
+                <span>And I should see closed check in closed check tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded5.png' src="../Screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="195"><span class="badge log fail-bg mr-2">Fail</span>Verify the For here</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()">
+                <span>And I click service type button in order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectOrderTypeAs(java.lang.String)">
+                <span>And I select order type as "FORHERE"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()">
+                <span>And I click Add Customer Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()">
+                <span>Then I should see the add customer screen in the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()">
+                <span>And I Click on the Byname Option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()">
+                <span>And Enter some name and click on Add Customer button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()">
+                <span>Then I should see the customer profile window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectSearch()">
+                <span>And I select search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iEnterAnExistingCustomerSName(java.lang.String)">
+                <span>And I enter an existing customer's name "Auto ragav"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer()">
+                <span>And I select the customer</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2c4df6efc0a3ffb956a2b6e94e8c6d5, findElement {using=name, value=//mat-option[@role='option']//span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54328/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2c4df6efc0a3ffb956a2b6e94e8c6d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.qa.pages.BasePage.elementClick(BasePage.java:277)
+	at com.qa.pages.CustomerProfileWindow.selectCustomer(CustomerProfileWindow.java:317)
+	at com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer(CustomerProfileStepDef.java:45)
+	at ✽.I select the customer(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:914)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()">
+                <span>When I click the Save button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeServiceTypeAs(java.lang.String)">
+                <span>And I should see service type as "FORHERE"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPhoneOrderTab()">
+                <span>And I click phone order tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()">
+                <span>And I click Check Stats tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()">
+                <span>And I click Closed tab on the Check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInClosedCheckTab()">
+                <span>And I should see closed check in closed check tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded6.png' src="../Screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="224"><span class="badge log fail-bg mr-2">Fail</span>Verify the Delivery</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()">
+                <span>And I click service type button in order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectTheDELIVERYOrderType()">
+                <span>And I select the DELIVERY order type</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()">
+                <span>Then I should see the add customer screen in the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()">
+                <span>And I Click on the Byname Option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()">
+                <span>And Enter some name and click on Add Customer button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()">
+                <span>Then I should see the customer profile window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectSearch()">
+                <span>And I select search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iEnterAnExistingCustomerSName(java.lang.String)">
+                <span>And I enter an existing customer's name "Auto test"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer()">
+                <span>And I select the customer</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9dcfc843fbcd8fb104271a5466be981e, findElement {using=name, value=//mat-option[@role='option']//span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54386/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dcfc843fbcd8fb104271a5466be981e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.qa.pages.BasePage.elementClick(BasePage.java:277)
+	at com.qa.pages.CustomerProfileWindow.selectCustomer(CustomerProfileWindow.java:317)
+	at com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer(CustomerProfileStepDef.java:45)
+	at ✽.I select the customer(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:971)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()">
+                <span>When I click the Save button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeServiceTypeAs(java.lang.String)">
+                <span>And I should see service type as "DELIVERY"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickExitToReturnToOrderManagementScreen()">
+                <span>And I click Exit to return to Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickFinishOrderButton()">
+                <span>And I click Finish Order button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPhoneOrderTab()">
+                <span>And I click phone order tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickTheClosedCheckInNewTabWindow()">
+                <span>And I click the Closed check in new tab window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickActiveDriverAs(java.lang.String)">
+                <span>And I click active driver as "Auto D"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeDriverIsOfflinePopup()">
+                <span>Then I should see driver is offline popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickYesButtonOnDriverIsOfflinePopup()">
+                <span>And I click Yes button on driver is offline popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickActiveDriverAsInThePhoneOrderScreen(java.lang.String)">
+                <span>And I click active driver as "Auto D" in the Phone Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickDepartureButton()">
+                <span>And I click departure button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickOutTabInPhoneOrderScreen()">
+                <span>And I click out tab in phone order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickTheClosedCheckInOutTab()">
+                <span>And I click the Closed check in out tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickArrivalButtonInPhoneOrderScreen()">
+                <span>And I click Arrival button in phone order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatusStepDef.iClickCompleteTab()">
+                <span>And I click Complete tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickOutTabInPhoneOrderScreen()">
+                <span>And I click out tab in phone order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatusStepDef.iClickCompleteTab()">
+                <span>And I click Complete tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInCompleteTab()">
+                <span>Then I should see closed check in complete tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()">
+                <span>And I click Check Stats tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()">
+                <span>And I click Closed tab on the Check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInClosedCheckTab()">
+                <span>And I should see closed check in closed check tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded7.png' src="../Screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="268"><span class="badge log fail-bg mr-2">Fail</span>Verify the phone togo</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()">
+                <span>And I click service type button in order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectOrderTypeAs(java.lang.String)">
+                <span>And I select order type as "PHONE TOGO"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()">
+                <span>And I click Add Customer Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()">
+                <span>Then I should see the add customer screen in the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()">
+                <span>And I Click on the Byname Option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()">
+                <span>And Enter some name and click on Add Customer button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()">
+                <span>Then I should see the customer profile window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectSearch()">
+                <span>And I select search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iEnterAnExistingCustomerSName(java.lang.String)">
+                <span>And I enter an existing customer's name "Auto test"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer()">
+                <span>And I select the customer</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91e5b2925d379c369bc1750b1c7a24c1, findElement {using=name, value=//mat-option[@role='option']//span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54440/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91e5b2925d379c369bc1750b1c7a24c1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.qa.pages.BasePage.elementClick(BasePage.java:277)
+	at com.qa.pages.CustomerProfileWindow.selectCustomer(CustomerProfileWindow.java:317)
+	at com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer(CustomerProfileStepDef.java:45)
+	at ✽.I select the customer(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:1017)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()">
+                <span>When I click the Save button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeServiceTypeAs(java.lang.String)">
+                <span>And I should see service type as "TOGO"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPhoneOrderTab()">
+                <span>And I click phone order tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()">
+                <span>And I click Check Stats tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()">
+                <span>And I click Closed tab on the Check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInClosedCheckTab()">
+                <span>And I should see closed check in closed check tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded8.png' src="../Screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="297"><span class="badge log fail-bg mr-2">Fail</span>Verify the phone delivery</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()">
+                <span>Given I'm logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()">
+                <span>And I closed the order type window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()">
+                <span>And I click service type button in order screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.OrderTypesStepDef.iSelectOrderTypeAs(java.lang.String)">
+                <span>And I select order type as "PHONE DELIVERY"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()">
+                <span>Then I should see the add customer screen in the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()">
+                <span>And I Click on the Byname Option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()">
+                <span>And Enter some name and click on Add Customer button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()">
+                <span>Then I should see the customer profile window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectSearch()">
+                <span>And I select search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.qa.stepdef.CustomerProfileStepDef.iEnterAnExistingCustomerSName(java.lang.String)">
+                <span>And I enter an existing customer's name "Auto test"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer()">
+                <span>And I select the customer</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.1', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4048c44f61c3c4bf67e22ac97be89312, findElement {using=name, value=//mat-option[@role='option']//span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/tp/d_f17nks5bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54492}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54492/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4048c44f61c3c4bf67e22ac97be89312
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.qa.pages.BasePage.elementClick(BasePage.java:277)
+	at com.qa.pages.CustomerProfileWindow.selectCustomer(CustomerProfileWindow.java:317)
+	at com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer(CustomerProfileStepDef.java:45)
+	at ✽.I select the customer(file:///Users/shaunmatthew/Documents/WebPOS%20TypeScript/src/test/resources/AskSeatCount.feature:1050)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()">
+                <span>When I click the Save button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()">
+                <span>Then I Should get back to the Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeServiceTypeAs(java.lang.String)">
+                <span>And I should see service type as "DELIVERY"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()">
+                <span>And I get check number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)">
+                <span>And I select category as "FOOD"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)">
+                <span>And I select menu item as "Chicken Schnitzel"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()">
+                <span>And I click Payment button in the Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()">
+                <span>And I click cash button from the payment method popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()">
+                <span>And I click Submit button on the Payment Window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()">
+                <span>And I click Done button on the Popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckOptionsStepDef.iClickExitToReturnToOrderManagementScreen()">
+                <span>And I click Exit to return to Order Management Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickFinishOrderButton()">
+                <span>And I click Finish Order button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPhoneOrderTab()">
+                <span>And I click phone order tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickTheClosedCheckInNewTabWindow()">
+                <span>And I click the Closed check in new tab window</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickActiveDriverAs(java.lang.String)">
+                <span>And I click active driver as "Auto D"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeDriverIsOfflinePopup()">
+                <span>Then I should see driver is offline popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickYesButtonOnDriverIsOfflinePopup()">
+                <span>And I click Yes button on driver is offline popup</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickActiveDriverAsInThePhoneOrderScreen(java.lang.String)">
+                <span>And I click active driver as "Auto D" in the Phone Order Screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickDepartureButton()">
+                <span>And I click departure button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickOutTabInPhoneOrderScreen()">
+                <span>And I click out tab in phone order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickTheClosedCheckInOutTab()">
+                <span>And I click the Closed check in out tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickArrivalButtonInPhoneOrderScreen()">
+                <span>And I click Arrival button in phone order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatusStepDef.iClickCompleteTab()">
+                <span>And I click Complete tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickOutTabInPhoneOrderScreen()">
+                <span>And I click out tab in phone order screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatusStepDef.iClickCompleteTab()">
+                <span>And I click Complete tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInCompleteTab()">
+                <span>Then I should see closed check in complete tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()">
+                <span>And I click Check Stats tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()">
+                <span>And I click Closed tab on the Check stats</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInClosedCheckTab()">
+                <span>And I should see closed check in closed check tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()">
+                <span>And I click power button in the All Orders screen</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded9.png' src="../Screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:04:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>And Verify the Successful message of Transfer Item One</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the transfer.And Verify the Successful message of Transfer Item One</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:09:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>When I verify the menu prize after merge done</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the merge.When I verify the menu prize after merge done</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:10:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='82'>And I select the number of seats as "1"</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Disable Ask Customer - Verify the active checks.And I select the number of seats as "1"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:11:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='127'>And I click Add Customer Button</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the ask Customer name toggle enabled status and ask seat count enabled status.And I click Add Customer Button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">org.openqa.selenium.InvalidSelectorException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.InvalidSelectorException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:13:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='179'>And I select the customer</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the To Go.And I select the customer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:15:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='208'>And I select the customer</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the For here.And I select the customer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:16:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='236'>And I select the customer</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the Delivery.And I select the customer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:17:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='281'>And I select the customer</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the phone togo.And I select the customer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:19:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='309'>And I select the customer</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the phone delivery.And I select the customer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>9</span>
+</span>
+<p class="name">@AskSeatCount018</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AskSeatCount018</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>9 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:02:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify the transfer</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the transfer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:04:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Verify the merge</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the merge</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:09:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>Disable the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Disable the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:10:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>Disable Ask Customer - Verify the active checks</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Disable Ask Customer - Verify the active checks</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:10:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='110'>Verify the ask Customer name toggle enabled status and ask seat count enabled status</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the ask Customer name toggle enabled status and ask seat count enabled status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:11:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='147'>Verify the QSR type</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the QSR type</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:13:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='166'>Verify the To Go</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the To Go</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:13:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='195'>Verify the For here</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the For here</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:15:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='224'>Verify the Delivery</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the Delivery</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:16:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='268'>Verify the phone togo</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the phone togo</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:17:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='297'>Verify the phone delivery</a>
+<div class="">
+<span class="badge badge-default">Ask Seat Number Feature.Verify the phone delivery</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 23, 2024 02:02:29 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 23, 2024 02:19:10 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='18%'><b>2</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='81%'><b>9</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='47%'><b>150</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>9</b> steps failed,
+<b>156</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Ask Seat Number Feature":1000.908
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@AskSeatCount018</td>
+<td>2</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>18.182%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 9,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 150,
+failGrandChild: 9,
+warningGrandChild: 0,
+skipGrandChild: 156,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

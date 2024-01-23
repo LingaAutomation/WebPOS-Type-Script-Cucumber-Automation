@@ -117,7 +117,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Modifier |Discount            |Discount1  | SubTotal    | Tax       | Total       |
       | QSR       | Ravioli  | Butter   | IB-AfterTax-Amount |$ 1.00     | $ 14.00     | $ 1.40    | $ 14.40     |
 
-
+@MNKJ
   Scenario Outline: Check with normal bill without discount/Gratuity/upcharge
     Then I should see service type as "<order_type>"
     And I get check number
@@ -125,6 +125,10 @@ Feature: QSR feature
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
+    And I select menu item as "<Menu_Item>"
+    And I select modifier as "<Modifier>"
+    And I click Done to get back
+#    And I get count of menu1
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
@@ -4330,6 +4334,7 @@ Feature: QSR feature
     And User click option back button
     Then User click finish button
     And I click power button
+
 
   Scenario: Check number gets changed after completing the sale in QSR Screen --verify changing check number
 

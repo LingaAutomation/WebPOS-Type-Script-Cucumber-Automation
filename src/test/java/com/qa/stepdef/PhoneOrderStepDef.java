@@ -159,6 +159,12 @@ public class PhoneOrderStepDef {
         new PhoneOrderScreen().verifyClosedCheckInClosedCheckTab();
     }
 
+    @And("I click power button in the All Orders screen")
+    public void iClickPowerButtonInTheAllOrdersScreen() throws InterruptedException {
+        new LogOuts().pressPowerBtn_AllOrders();
+    }
+
+
     @And ("^I click closed checks details icon button$")
     public void iClickClosedChecksDetailsIconButton(){
         new OrderManagementScreen().clickClosedChecksDetailsIcon();
@@ -330,7 +336,15 @@ public class PhoneOrderStepDef {
         new PaymentWindow().selectCategory1(category);
     }
 
+    @And("I select menu two item as {string}")
+    public void iSelectMenutwoItemAs(String menuItem) throws Exception {
+        new OrderManagementScreen().selectMenuItem2(menuItem);
+    }
 
+    @And("I verify menu two item on the order screen")
+    public void iVerifyMenutwoItemOnTheOrderScreen() {
+        new OrderManagementScreen().verifyMenu2ItemOnTheOrderScreen();
+    }
     @And ("^I select uzumaki category$")
     public void iSelectUzumakiCategory() throws Exception {
 //        new PaymentWindow().categorySelection(category);

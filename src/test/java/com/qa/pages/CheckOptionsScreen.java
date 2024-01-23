@@ -3,6 +3,7 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 
@@ -921,7 +923,8 @@ Thread.sleep(4000);
     @FindBy(xpath = "Done")
     WebElement doneee;
 
-    public void clickDoneIfItsSelectable() {
+
+   public void clickDoneIfItsSelectable() {
         if (doneee.isSelected()) {
             utils.log().info("Done is selectable");
         } else {

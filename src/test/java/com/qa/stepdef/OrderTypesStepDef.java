@@ -442,7 +442,7 @@ public class OrderTypesStepDef {
         public void userVerifyTransferToServerTransferToTableTransferItemAreDisplayedOrNot() {
             Assert.assertEquals("Transfer to Server",new CheckAndItemTransfer().verifyTransferToServerBtnInTransferWindow());
             Assert.assertEquals("Transfer to Table", new CheckAndItemTransfer().verifyTransferToTableBtnInTransferWindow());
-            Assert.assertEquals("Transfer Item",new CheckAndItemTransfer().verifyTransferItemBtnInTransferWindow());
+            Assert.assertEquals("Transfer item",new CheckAndItemTransfer().verifyTransferItemBtnInTransferWindow());
         }
 
         @And("^User select the Transfer Item Option$")

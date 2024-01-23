@@ -1,11 +1,9 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-import org.openqa.selenium.WebElement;
+import org.junit.Assert;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
 
 import java.time.Duration;
 import java.util.List;
@@ -464,15 +462,21 @@ public class PhoneOrderScreen extends BasePage {
 
 
     public void verifyClosedCheckInCompleteTab() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(3000);
         String globalCheckNumber=TestUtils.globalCheckNumber;
-        searchTabInCompleteTab.clear();
-        searchTabInCompleteTab.sendKeys(globalCheckNumber);
-        WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility);
-        if (phoneOrders.isDisplayed()){
-            utils.log().info(globalCheckNumber + " - Closed Check is displayed in complete tab");
-        }else {
-            utils.log().info("Closed check is not displayed");
+        driver.findElement(By.xpath("//ion-content//ion-row[2]//button[contains(@class,'phone_grid_web')]//span[contains(.,'Name')]")).click();
+        driver.findElement(By.xpath("//button[contains(@class,'matSerach-filter')]//span[contains(.,'Check#')]")).click();
+//        searchTabInCompleteTab.clear();
+//        searchTabInCompleteTab.sendKeys(globalCheckNumber);
+        Thread.sleep(2000);
+        WebElement e =  driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div//div//tr//td[.='"+globalCheckNumber+"']"));
+//        Thread.sleep(2000);
+        if(e.isDisplayed()) {
+            elementClick(e, "Selected - ");
+        }
+        else{
+            ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",e);
+            elementClick(e, "Selected - " );
         }
     }
 
@@ -528,7 +532,7 @@ public class PhoneOrderScreen extends BasePage {
 //            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }else{
             utils.log().info("closed check is not available - "+ globalCheckNumber);
-            int w = 1/0;
+//            int w = 1/0;
 //            elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
         }
     }
@@ -563,6 +567,12 @@ public class PhoneOrderScreen extends BasePage {
             utils.log().info("Closed check is not displayed");
         }
 
+    }
+
+    public void clickNewCheckOnTheSplitCheckScreen01() {
+        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        WebElement checkSeat = driver.findElement(By.xpath("//ion-app[@id='seat2']//ion-header//ion-row//ion-col[1]"));
+        elementClick(checkSeat, "Selected Added Check");
     }
 
     //    Added Today
@@ -621,5 +631,19 @@ public void shouldSeeClosedCheckInBArTab() throws InterruptedException {
         Thread.sleep(2500);//XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]
         WebElement phoneOrders =  mergeAndFindMobileElement("//div[@class='bartab-row-col seated']");
         elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
+    }
+
+    public void iVerifyTheSeatCountOnTheOrderScreen(String value) throws Exception {
+        try {
+            WebElement ele = driver.findElement(By.xpath("//ion-title[.='Add Gratuity']"));
+            if (ele.isDisplayed()) {
+                driver.findElement(By.xpath("//button[contains(.,'Back')]")).click();
+            }
+        } catch (Exception e) {}
+
+        List<WebElement> listofseats = driver.findElements(By.xpath("//ion-col[contains(@class,'qsrSeats_row-col')]//button[contains(@class,'qsrSeats_row-col-btn')]"));
+        int count = listofseats.size();
+        String Countvalue = String.valueOf(count);
+        Assert.assertEquals(Countvalue, value);
     }
 }

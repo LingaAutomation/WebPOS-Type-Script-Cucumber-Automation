@@ -16,6 +16,7 @@ import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -25,6 +26,9 @@ public class TestUtils {
     public static final long WAIT = 5;
     public static String globalCheckNumber=" ";
     public static String menu =" ";
+    public static ArrayList<String> menuName;
+    public static int countOfMenuSeat1;
+    public static int countOfMenuSeat2;
     public static String menu1 =" ";
     public static String menu2 =" ";
     public static List<String> menuNames;
@@ -104,6 +108,8 @@ public class TestUtils {
     public static String cashDropPoint = "";
     public static int seatCount;
     public static int seatCount1;
+    public static String MergecheckTableNO1;
+    public static String MergecheckTableNO2;
     public static String giveXvalue=" ";
     public static String seatNumber= " ";
     public static String[] SplitSeatMenus = {" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "};

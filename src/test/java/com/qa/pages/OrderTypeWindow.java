@@ -246,8 +246,11 @@ Thread.sleep(300);
     public void selectToGoOrderTypepopup(String text) {
         driver.findElement(By.xpath("(//span[contains(.,'"+text+"')])[1]")).click();
     }
-
-
+    @FindBy(xpath = "//input[@role='combobox']")
+    private WebElement searchField;
+    public void pressSearchField() throws InterruptedException {
+        elementClick(searchField, "Tapped search Phone");
+    }
 }
 
 

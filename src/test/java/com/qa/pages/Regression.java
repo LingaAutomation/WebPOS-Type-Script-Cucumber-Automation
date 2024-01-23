@@ -6080,57 +6080,7 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    public void getTheListOfTheMenuFromTheOrderScreen1() {
 
-        List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        utils.log().info("orderMenu.size() - " + orderMenu.size());
-        for (int i = 2; i <= orderMenu.size(); i++) {
-
-            WebElement orderMenuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            orderMenuName2[i - 1] = orderMenuName.getText();
-            TestUtils.orderMenuName2[i - 1] = orderMenuName2[i - 1];
-
-            WebElement orderMenuPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-            orderMenuPrize2[i - 1] = orderMenuPrize1.getText();
-            TestUtils.orderMenuPrize2[i - 1] = orderMenuPrize2[i - 1];
-            utils.log().info("Order Screen menu SAME with Split Menu 2 - " + (i - 1) + " " + orderMenuName2[i - 1] + " Prize " + orderMenuPrize2[i - 1]);
-            try {
-                List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
-                for (int m = 1; m <= modifier.size(); m++) {
-                    WebElement modifier1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
-                    // modifieR2[m] = modifier1.getText();
-                    TestUtils.modifier2[m] = modifier1.getText();
-                    WebElement modifierPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[3]"));
-                    modifierPrize2[m] = modifierPrize1.getText();
-                    TestUtils.modifierPrize2[m] = modifierPrize2[m];
-                    utils.log().info("Modifier 2 - " + TestUtils.modifier2[m] + " Prize - " + modifierPrize2[m]);
-                }
-                List<WebElement> discount =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
-                for (int h = 1; h <= discount.size(); h++) {
-                    WebElement discountName1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[1]"));
-                    discountName11[h] = discountName1.getText();
-                    TestUtils.discountName1[h] = discountName11[h];
-                    WebElement discountCount1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[2]"));
-                    discountCount11[h] = discountCount1.getText();
-                    TestUtils.discountCount1[h] = discountCount11[h];
-                    WebElement discountPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[3]"));
-                    discountPrize11[h] = discountPrize1.getText();
-                    TestUtils.discountPrize1[h] = discountPrize11[h];
-                    utils.log().info("Discount as 2 - " + discountName11[h] + " Qty - " + discountCount11[h] + " Amount - " + discountPrize11[h]);
-                }
-
-            } catch (Exception g) {
-
-            }
-            try {
-
-
-            } catch (Exception w) {
-
-            }
-        }
-
-    }
 
     public String selectTheMenuFromOrderScreen(String cate) {
 
@@ -6529,139 +6479,6 @@ public class Regression extends TableLayOutScreen {
         return check;
     }
 
-    public String selectTheMenuFromOrderScreenSplitSeat1(String cate) {
-
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt1();
-            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
-            elementClick(arrowDownn, "Arrow Done on iPad 1");
-
-            /*** Random Select Category ***/
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof1 = check;
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 1; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        TestUtils.menu = menuName.getText();
-                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                        try {
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            if ((mainModi1.isDisplayed())) {
-                                List<WebElement> mainModi10 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                                int count2 = mainModi10.size();
-                                Random rand2 = new Random();
-                                for (int k = 1; k <= 1; k++) {
-                                    int itemToSelect2 = rand2.nextInt(count2);
-
-                                    if (itemToSelect2 == 0) {
-                                        itemToSelect2 = 1;
-                                    }
-                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
-                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
-                                }
-                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                                elementClick(donee, "Done Selected");
-                            }else{ }
-
-                        }catch (Exception x) {
-                        }
-                    }
-                }
-            } catch (Exception h) {
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 1; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info("Random Number - "+itemToSelect1);
-                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    TestUtils.menu = menuName.getText();
-                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                    try {
-                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                        if ((mainModdii.isDisplayed())) {
-                            List<WebElement> mainModi =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            int count2 = mainModi.size();
-                            Random rand2 = new Random();
-                            for (int jk = 1; jk <= 1; jk++) {
-                                int itemToSelect2 = rand2.nextInt(count2);
-
-                                if (itemToSelect2 == 0) {
-                                    itemToSelect2 = 1;
-                                }
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
-                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
-                            }
-
-                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                            elementClick(donee, "Tapped Done");
-                        } else {
-                        }
-                    } catch (Exception M) {
-                    }
-                }
-            }
-        }
-        return check1;
-    }
-
-
 
 
 
@@ -6694,25 +6511,9 @@ public class Regression extends TableLayOutScreen {
 
     }
 
-    public void ClickTheMenuOnTheSplitCheckScreen() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement menuItem = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-        elementClick(menuItem, "Selected Menu Item As - " + menuItem.getText());
-        TestUtils.menuNameSplitCheck = menuItem.getText();
-    }
 
-    public void ClickTheMenuOnTheNewSplitSeatScreen() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement menuItem = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-        elementClick(menuItem, "Selected Menu Item As - " + menuItem.getText());
-        TestUtils.menuNameSplitCheck = menuItem.getText();
-    }
 
-    public void clickNewCheckOnTheSplitCheckScreen() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement checkSeat = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        elementClick(checkSeat, "Selected Added Check");
-    }
+
 
     public void verifyTheMenuIsMovedToTheAddedCheckSeat() {
         List<WebElement> checkMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
@@ -6731,26 +6532,10 @@ public class Regression extends TableLayOutScreen {
         Assert.assertEquals(pleaseSaveAllTheChangesPopup.getText(), "Please save all the changes to print. Do you wish to save the changes?");
     }
 
-    public void verifyCheckNumberIsSplittedAndCheckNumberIsIncreased() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement checkNumber = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        String IncreasedCheckNumber = checkNumber.getText();
-        TestUtils.globalCheckNumber1 = IncreasedCheckNumber;
-        String IncreasedCheckNumberTxt = IncreasedCheckNumber.replaceAll("[A-Za-z- ]", "");
-        int checkNumberrr = Integer.parseInt(IncreasedCheckNumberTxt);
-        WebElement CheckNumber1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        String defaultCheckNumber = CheckNumber1.getText();
-        String defaultCheckNumberTxt = defaultCheckNumber.replaceAll("[A-Za-z- ]", "");
-        int defaultCheckNumberrrr = Integer.parseInt(defaultCheckNumberTxt);
-        int increaedNumber = defaultCheckNumberrrr + 1;
-        Assert.assertEquals(increaedNumber, checkNumberrr);
-        utils.log().info("Split Check Number - " + IncreasedCheckNumber);
-
-    }
 
     public void verifyPrimaryCheckIsOpened() {
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement checkNumber = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
+        WebElement checkNumber = (WebElement) driver.findElement(By.xpath("//div[@id='os_check']//p[contains(@class,'checkno')]"));
         Assert.assertEquals((checkNumber.getText()), TestUtils.globalCheckNumber);
         utils.log().info("Primary Check is SAME After Split Check - " + checkNumber.getText());
     }

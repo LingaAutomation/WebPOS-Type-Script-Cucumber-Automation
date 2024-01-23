@@ -3,32 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 219917000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I\u0027m logged in",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-01-19T10:40:42.807Z",
+        "start_timestamp": "2024-01-23T12:25:27.348Z",
         "before": [
           {
             "result": {
-              "duration": 68022796000,
+              "duration": 68053168000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 117,
-        "name": "Customer Profile Feature File",
+        "line": 668,
+        "name": "Disable Ask Customer - Verify the order screen ALL button",
         "description": "",
-        "id": "customer-profile;customer-profile-feature-file;;2",
+        "id": "ask-seat-number-feature;disable-ask-customer---verify-the-order-screen-all-button",
         "after": [
           {
             "result": {
-              "duration": 889000,
+              "duration": 776000,
               "status": "passed"
             },
             "match": {
@@ -52,1105 +31,26 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 72417000,
+              "duration": 212825000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I select the order type FORHERE",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectTheOrderTypeFORHERE()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41774000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I click Done button to select the order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iClickDoneButtonToSelectTheOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54060000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 90056000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I search for \"Auto ragav\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 57549000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I click \"Auto ragav\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4044282000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I Should get back to the Order Screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 14557000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I should see the Ordering Screen with a button with the label \"FORHERE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "FORHERE",
-                  "offset": 63
-                }
-              ],
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iShouldSeeTheOrderingScreenWithAButtonWithTheLabel(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1036727000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I should see customer as \"Auto r\" added on order screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto r",
-                  "offset": 26
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCustomerAsAddedOnOrderScreen(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 49694000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45353000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 36549000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 42256000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I click service type button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40668000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I select the TOGO order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectTheTOGOOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40619000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 77728000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I search for \"Auto ragav\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37072000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I click \"Auto ragav\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4028870000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I Should get back to the Order Screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15673000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I should see the Ordering Screen with a button with the label \"TOGO\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TOGO",
-                  "offset": 63
-                }
-              ],
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iShouldSeeTheOrderingScreenWithAButtonWithTheLabel(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1027479000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I should see customer as \"Auto r\" added on order screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto r",
-                  "offset": 26
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCustomerAsAddedOnOrderScreen(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 48350000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32658000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34393000,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32092000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "I click service type button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41143000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "I select the DELIVERY order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectTheDELIVERYOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 74243000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I search for \"Auto ragav\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 67669000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "I click \"Auto ragav\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3081964000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4032081000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "I Should get back to the Order Screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 18132000,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "I should see the Ordering Screen with a button with the label \"DELIVERY\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "DELIVERY",
-                  "offset": 63
-                }
-              ],
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iShouldSeeTheOrderingScreenWithAButtonWithTheLabel(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 40807000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32114000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9887000,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "I should see cannot remove customer for delivery popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCannotRemoveCustomerForDeliveryPopup()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2055052000,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "I click Done button on the Popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35825000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 42034000,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I click Yes button on driver is offline popup",
-            "match": {
-              "location": "com.qa.stepdef.PhoneOrderStepDef.iClickYesButtonOnDriverIsOfflinePopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32124000,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "I click service type button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 42665000,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I select the Phone To Go order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectThePhoneToGoOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37936000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41792000,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33700000,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30823000,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "I click service type button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40821000,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "I select the Phone To Go order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectThePhoneToGoOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37303000,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 72918000,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "I search for \"Auto ragav\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 43473000,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "I click \"Auto ragav\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4031025000,
-              "status": "passed"
-            },
-            "line": 65,
-            "name": "I Should get back to the Order Screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 14672000,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "I should see the Ordering Screen with a button with the label \"TOGO\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TOGO",
-                  "offset": 63
-                }
-              ],
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iShouldSeeTheOrderingScreenWithAButtonWithTheLabel(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1026203000,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "I should see customer as \"Auto r\" added on order screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto r",
-                  "offset": 26
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCustomerAsAddedOnOrderScreen(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 47001000,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 31539000,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30990000,
-              "status": "passed"
-            },
-            "line": 70,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29376000,
-              "status": "passed"
-            },
-            "line": 74,
-            "name": "I click service type button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 47270000,
-              "status": "passed"
-            },
-            "line": 75,
-            "name": "I select the Phone Delivery order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectThePhoneDeliveryOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 67992000,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "I search for \"Auto ragav\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 53622000,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "I click \"Auto ragav\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3082903000,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "I click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8755000,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "I should see the Ordering Screen with a button with the label \"DELIVERY\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "DELIVERY",
-                  "offset": 63
-                }
-              ],
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iShouldSeeTheOrderingScreenWithAButtonWithTheLabel(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1028644000,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "I should see customer as \"Auto r\" added on order screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto r",
-                  "offset": 26
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCustomerAsAddedOnOrderScreen(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 48853000,
-              "status": "passed"
-            },
-            "line": 81,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 31439000,
-              "status": "passed"
-            },
-            "line": 82,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7836000,
-              "status": "passed"
-            },
-            "line": 83,
-            "name": "I should see cannot remove customer for delivery popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCannotRemoveCustomerForDeliveryPopup()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2056993000,
-              "status": "passed"
-            },
-            "line": 84,
-            "name": "I click Done button on the Popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35038000,
-              "status": "passed"
-            },
-            "line": 85,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33242000,
-              "status": "passed"
-            },
-            "line": 86,
-            "name": "I click Yes button on driver is offline popup",
-            "match": {
-              "location": "com.qa.stepdef.PhoneOrderStepDef.iClickYesButtonOnDriverIsOfflinePopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32523000,
-              "status": "passed"
-            },
-            "line": 87,
-            "name": "I click service type button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 36556000,
-              "status": "passed"
-            },
-            "line": 88,
-            "name": "I select service type as qsr",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectServiceTypeAsQsr()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 47584000,
-              "status": "passed"
-            },
-            "line": 91,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 61964000,
-              "status": "passed"
-            },
-            "line": 92,
-            "name": "I search for \"Auto ragav\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35282000,
-              "status": "passed"
-            },
-            "line": 93,
-            "name": "I click \"Auto ragav\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto ragav",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4024576000,
-              "status": "passed"
-            },
-            "line": 94,
-            "name": "I Should get back to the Order Screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1027385000,
-              "status": "passed"
-            },
-            "line": 95,
-            "name": "I should see customer as \"Auto r\" added on order screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Auto r",
-                  "offset": 26
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeCustomerAsAddedOnOrderScreen(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 46819000,
-              "status": "passed"
-            },
-            "line": 96,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30008000,
-              "status": "passed"
-            },
-            "line": 97,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30844000,
-              "status": "passed"
-            },
-            "line": 98,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54256000,
-              "status": "passed"
-            },
-            "line": 99,
-            "name": "I click log off button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickLogOffButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@MNK"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 156790000,
-              "status": "passed"
-            },
-            "line": 5,
+            "line": 669,
             "name": "I\u0027m logged in",
             "match": {
               "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
             },
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-01-19T10:42:29.287Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 36000,
+              "duration": 2064395000,
               "status": "passed"
             },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 181,
-        "name": "Select an existing customer for a FORHERE order",
-        "description": "",
-        "id": "customer-profile;select-an-existing-customer-for-a-forhere-order;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 132000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2056791000,
-              "status": "passed"
-            },
-            "line": 122,
+            "line": 670,
             "name": "I closed the order type window",
             "match": {
               "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
@@ -1159,2280 +59,192 @@
           },
           {
             "result": {
-              "duration": 35928000,
+              "duration": 64987000,
               "status": "passed"
             },
-            "line": 123,
-            "name": "User click QSR on Menu Item page",
+            "line": 671,
+            "name": "I click All",
             "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userClickQSROnMenuItemPage()"
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()"
             },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 32299000,
-              "status": "passed"
-            },
-            "line": 124,
-            "name": "User select ForHere order option",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userSelectForHereOrderOption()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 44172000,
-              "status": "passed"
-            },
-            "line": 125,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 56216000,
-              "status": "passed"
-            },
-            "line": 126,
-            "name": "I click the search field in customer tab \"1234567890\" \"search customer\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1234567890",
-                  "offset": 42
-                },
-                {
-                  "val": "search customer",
-                  "offset": 55
-                }
-              ],
-              "location": "com.qa.stepdef.CIFutureOrderChecksStepDef.iClickTheSearchFieldInCustomerTab(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29970000,
-              "status": "passed"
-            },
-            "line": 127,
-            "name": "I click the customer name in the list \"1234567890\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1234567890",
-                  "offset": 39
-                }
-              ],
-              "location": "com.qa.stepdef.CIFutureOrderChecksStepDef.iClickTheCustomerNameInTheList(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 75558000,
-              "status": "passed"
-            },
-            "line": 130,
-            "name": "I click Finish button",
-            "match": {
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickFinishButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2081949000,
-              "status": "passed"
-            },
-            "line": 131,
-            "name": "I select order type as \"QSR\" in phoneorderscreen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"QSR\"",
-                  "offset": 23
-                }
-              ],
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iSelectOrderTypeAsInPhoneorderscreen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2060516000,
-              "status": "passed"
-            },
-            "line": 132,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33751000,
-              "status": "passed"
-            },
-            "line": 133,
-            "name": "User click QSR on Menu Item page",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userClickQSROnMenuItemPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 34241000,
-              "status": "passed"
-            },
-            "line": 134,
-            "name": "I select the TOGO order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectTheTOGOOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37475000,
-              "status": "passed"
-            },
-            "line": 135,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 51667000,
-              "status": "passed"
-            },
-            "line": 136,
-            "name": "I click the search field in customer tab \"1234567890\" \"search customer\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1234567890",
-                  "offset": 42
-                },
-                {
-                  "val": "search customer",
-                  "offset": 55
-                }
-              ],
-              "location": "com.qa.stepdef.CIFutureOrderChecksStepDef.iClickTheSearchFieldInCustomerTab(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27462000,
-              "status": "passed"
-            },
-            "line": 137,
-            "name": "I click the customer name in the list \"1234567890\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1234567890",
-                  "offset": 39
-                }
-              ],
-              "location": "com.qa.stepdef.CIFutureOrderChecksStepDef.iClickTheCustomerNameInTheList(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 57565000,
-              "status": "passed"
-            },
-            "line": 143,
-            "name": "I click Finish button",
-            "match": {
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickFinishButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2073253000,
-              "status": "passed"
-            },
-            "line": 144,
-            "name": "I select order type as \"QSR\" in phoneorderscreen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"QSR\"",
-                  "offset": 23
-                }
-              ],
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iSelectOrderTypeAsInPhoneorderscreen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2058707000,
-              "status": "passed"
-            },
-            "line": 145,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33535000,
-              "status": "passed"
-            },
-            "line": 146,
-            "name": "User click QSR on Menu Item page",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userClickQSROnMenuItemPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 39668000,
-              "status": "passed"
-            },
-            "line": 147,
-            "name": "I select the Phone To Go order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectThePhoneToGoOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 36609000,
-              "status": "passed"
-            },
-            "line": 148,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 61972000,
-              "status": "passed"
-            },
-            "line": 149,
-            "name": "I click the search field in customer tab \"1234567890\" \"search customer\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1234567890",
-                  "offset": 42
-                },
-                {
-                  "val": "search customer",
-                  "offset": 55
-                }
-              ],
-              "location": "com.qa.stepdef.CIFutureOrderChecksStepDef.iClickTheSearchFieldInCustomerTab(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23966000,
-              "status": "passed"
-            },
-            "line": 150,
-            "name": "I click the customer name in the list \"1234567890\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1234567890",
-                  "offset": 39
-                }
-              ],
-              "location": "com.qa.stepdef.CIFutureOrderChecksStepDef.iClickTheCustomerNameInTheList(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35376000,
-              "status": "passed"
-            },
-            "line": 154,
-            "name": "I click Finish button",
-            "match": {
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickFinishButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2077088000,
-              "status": "passed"
-            },
-            "line": 155,
-            "name": "I select order type as \"QSR\" in phoneorderscreen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"QSR\"",
-                  "offset": 23
-                }
-              ],
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iSelectOrderTypeAsInPhoneorderscreen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2058890000,
-              "status": "passed"
-            },
-            "line": 156,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33928000,
-              "status": "passed"
-            },
-            "line": 157,
-            "name": "User click QSR on Menu Item page",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userClickQSROnMenuItemPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 38370000,
-              "status": "passed"
-            },
-            "line": 158,
-            "name": "I select the DELIVERY order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectTheDELIVERYOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 69265000,
-              "status": "passed"
-            },
-            "line": 159,
-            "name": "I search for \"thomas a\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thomas a",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 51343000,
-              "status": "passed"
-            },
-            "line": 160,
-            "name": "I click \"thomas a\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thomas a",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3078012000,
-              "status": "passed"
-            },
-            "line": 161,
-            "name": "I click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 58884000,
-              "status": "passed"
-            },
-            "line": 165,
-            "name": "I click Finish button",
-            "match": {
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickFinishButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2072844000,
-              "status": "passed"
-            },
-            "line": 166,
-            "name": "I select order type as \"QSR\" in phoneorderscreen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"QSR\"",
-                  "offset": 23
-                }
-              ],
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iSelectOrderTypeAsInPhoneorderscreen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2058634000,
-              "status": "passed"
-            },
-            "line": 167,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34513000,
-              "status": "passed"
-            },
-            "line": 168,
-            "name": "User click QSR on Menu Item page",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userClickQSROnMenuItemPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 44993000,
-              "status": "passed"
-            },
-            "line": 169,
-            "name": "I select the Phone Delivery order type",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectThePhoneDeliveryOrderType()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 78190000,
-              "status": "passed"
-            },
-            "line": 170,
-            "name": "I search for \"thomas a\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thomas a",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 47862000,
-              "status": "passed"
-            },
-            "line": 171,
-            "name": "I click \"thomas a\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thomas a",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3078660000,
-              "status": "passed"
-            },
-            "line": 172,
-            "name": "I click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 67395000,
-              "status": "passed"
-            },
-            "line": 174,
-            "name": "I click Finish button",
-            "match": {
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickFinishButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2075900000,
-              "status": "passed"
-            },
-            "line": 175,
-            "name": "I select order type as \"QSR\" in phoneorderscreen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"QSR\"",
-                  "offset": 23
-                }
-              ],
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iSelectOrderTypeAsInPhoneorderscreen(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2053495000,
-              "status": "passed"
-            },
-            "line": 176,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44642000,
-              "status": "passed"
-            },
-            "line": 177,
-            "name": "I click log off button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickLogOffButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@MNK"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 148535000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I\u0027m logged in",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-01-19T10:42:59.702Z",
-        "before": [
-          {
-            "result": {
-              "duration": 42000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 215,
-        "name": "Application allow user to save after entering first-last name without mobile number/E-mail",
-        "description": "",
-        "id": "customer-profile;application-allow-user-to-save-after-entering-first-last-name-without-mobile-number/e-mail;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 104000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2059721000,
-              "status": "passed"
-            },
-            "line": 189,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38103000,
-              "status": "passed"
-            },
-            "line": 190,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9673000,
-              "status": "passed"
-            },
-            "line": 191,
-            "name": "I should see the add customer screen in the window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 24845000,
-              "status": "passed"
-            },
-            "line": 192,
-            "name": "I Click on the Byname Option",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4086795000,
-              "status": "passed"
-            },
-            "line": 193,
-            "name": "Enter some name and click on Add Customer button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4034104000,
-              "status": "passed"
-            },
-            "line": 194,
-            "name": "I should see the customer profile window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 80996000,
-              "status": "passed"
-            },
-            "line": 195,
-            "name": "User enter customer first name",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerFirstName()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 53136000,
-              "status": "passed"
-            },
-            "line": 196,
-            "name": "User enter customer last name",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerLastName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41595000,
-              "status": "passed"
-            },
-            "line": 197,
-            "name": "User click add button for phone number",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickAddButtonForPhoneNumber()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 38309000,
-              "status": "passed"
-            },
-            "line": 198,
-            "name": "User click close button for add customer mobile phone",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickCloseButtonForAddCustomerMobilePhone()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 32893000,
-              "status": "passed"
-            },
-            "line": 199,
-            "name": "User click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 16898000,
-              "status": "passed"
-            },
-            "line": 201,
-            "name": "User verify mobile number and email popup",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userVerifyMobileNumberAndEmailPopup()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2056646000,
-              "status": "passed"
-            },
-            "line": 202,
-            "name": "I click Done button on the Popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37268000,
-              "status": "passed"
-            },
-            "line": 203,
-            "name": "User click add button for phone number",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickAddButtonForPhoneNumber()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 225727000,
-              "status": "passed"
-            },
-            "line": 204,
-            "name": "User enter phone number",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterPhoneNumber()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49168000,
-              "status": "passed"
-            },
-            "line": 206,
-            "name": "User enter customer email address \"@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "@gmail.com",
-                  "offset": 35
-                }
-              ],
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerEmailAddress(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33788000,
-              "status": "passed"
-            },
-            "line": 209,
-            "name": "User click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5044590000,
-              "status": "passed"
-            },
-            "line": 210,
-            "name": "User verify new customer",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userVerifyNewCustomer()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 55432000,
-              "status": "passed"
-            },
-            "line": 211,
-            "name": "I click log off button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickLogOffButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@MNK"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 150644000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I\u0027m logged in",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-01-19T10:43:17.913Z",
-        "before": [
-          {
-            "result": {
-              "duration": 43000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 249,
-        "name": "Application is not displaying the Customer address in the drop down list it shows as empty in the following scenario",
-        "description": "",
-        "id": "customer-profile;application-is-not-displaying-the-customer-address-in-the-drop-down-list-it-shows-as-empty-in-the-following-scenario;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 128000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2061347000,
-              "status": "passed"
-            },
-            "line": 220,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40222000,
-              "status": "passed"
-            },
-            "line": 221,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 63617000,
-              "status": "passed"
-            },
-            "line": 222,
-            "name": "I search for \"thomas a\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thomas a",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 36675000,
-              "status": "passed"
-            },
-            "line": 223,
-            "name": "I click \"thomas a\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thomas a",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 37477000,
-              "status": "passed"
-            },
-            "line": 224,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40892000,
-              "status": "passed"
-            },
-            "line": 225,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35405000,
-              "status": "passed"
-            },
-            "line": 226,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45657000,
-              "status": "passed"
-            },
-            "line": 228,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 12188000,
-              "status": "passed"
-            },
-            "line": 229,
-            "name": "I should see the add customer screen in the window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 19077000,
-              "status": "passed"
-            },
-            "line": 230,
-            "name": "I Click on the Byname Option",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4086691000,
-              "status": "passed"
-            },
-            "line": 231,
-            "name": "Enter some name and click on Add Customer button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4032225000,
-              "status": "passed"
-            },
-            "line": 232,
-            "name": "I should see the customer profile window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8023792000,
-              "status": "passed"
-            },
-            "line": 233,
-            "name": "User click customer address dropdown list",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickCustomerAddressDropdownList()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 40461000,
-              "status": "passed"
-            },
-            "line": 235,
-            "name": "I click the \"CustomerProfile Close\" in the customer profile page \"click close button\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "CustomerProfile Close",
-                  "offset": 13
-                },
-                {
-                  "val": "click close button",
-                  "offset": 66
-                }
-              ],
-              "location": "com.qa.stepdef.TGOrderTypeWindowStepDef.iClickTheInTheCustomerProfilePage(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34501000,
-              "status": "passed"
-            },
-            "line": 237,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 63759000,
-              "status": "passed"
-            },
-            "line": 238,
-            "name": "I search for \"Test Automation\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Test Automation",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35886000,
-              "status": "passed"
-            },
-            "line": 239,
-            "name": "I click \"Test Automation\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Test Automation",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3072720000,
-              "status": "passed"
-            },
-            "line": 240,
-            "name": "I click the customer name on the order screen",
-            "match": {
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickTheCustomerNameOnTheOrderScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 686195000,
-              "status": "passed"
-            },
-            "line": 241,
-            "name": "I click Yes button on the popup for Hold item",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickYesButtonOnThePopupForHoldItem()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1069894000,
-              "status": "passed"
-            },
-            "line": 242,
-            "name": "User click selected first customer",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userClickSelectedFirstCustomer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 146613000,
-              "status": "passed"
-            },
-            "line": 243,
-            "name": "User edit customer first name",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEditCustomerFirstName()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 12767000,
-              "status": "passed"
-            },
-            "line": 244,
-            "name": "User verify edited customer on menu item page",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userVerifyEditedCustomerOnMenuItemPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 39324000,
-              "status": "passed"
-            },
-            "line": 245,
-            "name": "I click log off button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickLogOffButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@MNK"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 147557000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I\u0027m logged in",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-01-19T10:43:41.840Z",
-        "before": [
-          {
-            "result": {
-              "duration": 42000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 283,
-        "name": "Application allow to remove the new customer in the order screen",
-        "description": "",
-        "id": "customer-profile;application-allow-to-remove-the-new-customer-in-the-order-screen;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 84000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2055147000,
-              "status": "passed"
-            },
-            "line": 253,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35798000,
-              "status": "passed"
-            },
-            "line": 254,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9204000,
-              "status": "passed"
-            },
-            "line": 255,
-            "name": "I should see the add customer screen in the window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 18605000,
-              "status": "passed"
-            },
-            "line": 256,
-            "name": "I Click on the Byname Option",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4088458000,
-              "status": "passed"
-            },
-            "line": 257,
-            "name": "Enter some name and click on Add Customer button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4027470000,
-              "status": "passed"
-            },
-            "line": 258,
-            "name": "I should see the customer profile window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 75937000,
-              "status": "passed"
-            },
-            "line": 259,
-            "name": "User enter customer first name",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerFirstName()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 54072000,
-              "status": "passed"
-            },
-            "line": 260,
-            "name": "User enter customer last name",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerLastName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41005000,
-              "status": "passed"
-            },
-            "line": 261,
-            "name": "User click add button for phone number",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickAddButtonForPhoneNumber()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 36802000,
-              "status": "passed"
-            },
-            "line": 262,
-            "name": "User click close button for add customer mobile phone",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickCloseButtonForAddCustomerMobilePhone()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 31327000,
-              "status": "passed"
-            },
-            "line": 263,
-            "name": "User click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17148000,
-              "status": "passed"
-            },
-            "line": 265,
-            "name": "User verify mobile number and email popup",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userVerifyMobileNumberAndEmailPopup()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2049103000,
-              "status": "passed"
-            },
-            "line": 266,
-            "name": "I click Done button on the Popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickDoneButtonOnThePopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35166000,
-              "status": "passed"
-            },
-            "line": 267,
-            "name": "User click add button for phone number",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickAddButtonForPhoneNumber()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 281358000,
-              "status": "passed"
-            },
-            "line": 268,
-            "name": "User enter phone number",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterPhoneNumber()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 46206000,
-              "status": "passed"
-            },
-            "line": 270,
-            "name": "User enter customer email address \"@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "@gmail.com",
-                  "offset": 35
-                }
-              ],
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerEmailAddress(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32606000,
-              "status": "passed"
-            },
-            "line": 273,
-            "name": "User click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5028500000,
-              "status": "passed"
-            },
-            "line": 274,
-            "name": "User verify new customer",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userVerifyNewCustomer()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 40013000,
-              "status": "passed"
-            },
-            "line": 275,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37305000,
-              "status": "passed"
-            },
-            "line": 276,
-            "name": "I click remove button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickRemoveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54811000,
-              "status": "passed"
-            },
-            "line": 277,
-            "name": "I click on the cross buttin in the customer profile screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheCrossButtinInTheCustomerProfileScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14487000,
-              "status": "passed"
-            },
-            "line": 278,
-            "name": "User verify no customer on menu item page",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userVerifyNoCustomerOnMenuItemPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34524000,
-              "status": "passed"
-            },
-            "line": 279,
-            "name": "I click log off button in order screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickLogOffButtonInOrderScreen()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@MNK"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 138674000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I\u0027m logged in",
-            "match": {
-              "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-01-19T10:44:00.177Z",
-        "before": [
-          {
-            "result": {
-              "duration": 40000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 346,
-        "name": "Create House Account for New Customers ----",
-        "description": "",
-        "id": "customer-profile;create-house-account-for-new-customers-----;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 121000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2058609000,
-              "status": "passed"
-            },
-            "line": 288,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34281000,
-              "status": "passed"
-            },
-            "line": 289,
-            "name": "I click Add Customer Button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10419000,
-              "status": "passed"
-            },
-            "line": 290,
-            "name": "I should see the add customer screen in the window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15612000,
-              "status": "passed"
-            },
-            "line": 291,
-            "name": "I Click on the Byname Option",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4080358000,
-              "status": "passed"
-            },
-            "line": 292,
-            "name": "Enter some name and click on Add Customer button",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4032051000,
-              "status": "passed"
-            },
-            "line": 293,
-            "name": "I should see the customer profile window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 76452000,
-              "status": "passed"
-            },
-            "line": 294,
-            "name": "User enter customer first name",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerFirstName()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 51137000,
-              "status": "passed"
-            },
-            "line": 295,
-            "name": "User enter customer last name",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerLastName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41145000,
-              "status": "passed"
-            },
-            "line": 296,
-            "name": "User click add button for phone number",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickAddButtonForPhoneNumber()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 32140000,
-              "status": "passed"
-            },
-            "line": 297,
-            "name": "I enter the number as \"98\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "98",
-                  "offset": 23
-                }
-              ],
-              "location": "com.qa.stepdef.CICloseDayStepDef.iEnterTheNumberAs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23736000,
-              "status": "passed"
-            },
-            "line": 299,
-            "name": "I click on the save field in the phone number \"Save Button Clicked\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Save Button Clicked",
-                  "offset": 47
-                }
-              ],
-              "location": "com.qa.stepdef.CICloseDayStepDef.iClickOnTheSaveFieldInThePhoneNumber(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 47402000,
-              "status": "passed"
-            },
-            "line": 300,
-            "name": "User enter customer email address \"@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "@gmail.com",
-                  "offset": 35
-                }
-              ],
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterCustomerEmailAddress(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54513000,
-              "status": "passed"
-            },
-            "line": 302,
-            "name": "User click the Save button",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickTheSaveButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5039433000,
-              "status": "passed"
-            },
-            "line": 303,
-            "name": "User verify new customer for House Account",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userVerifyNewCustomerForHouseAccount()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5075045000,
-              "status": "passed"
-            },
-            "line": 304,
-            "name": "User click new customer which is created for House Account",
-            "match": {
-              "location": "com.qa.stepdef.TGMenuItemStepDef.userClickNewCustomerWhichIsCreatedForHouseAccount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1123506000,
-              "status": "passed"
-            },
-            "line": 305,
-            "name": "User click Customer Plan button",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickCustomerPlanButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 57821000,
-              "status": "passed"
-            },
-            "line": 306,
-            "name": "User enter house account card number \"12\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "12",
-                  "offset": 38
-                }
-              ],
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterHouseAccountCardNumber(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 446220000,
-              "status": "passed"
-            },
-            "line": 307,
-            "name": "User enter recharge amount for House Account",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterRechargeAmountForHouseAccount()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 145769000,
-              "status": "passed"
-            },
-            "line": 308,
-            "name": "I enter the percentage in Ha screen as \"2\",\"2\",\"00\",\"00\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 40
-                },
-                {
-                  "val": "2",
-                  "offset": 44
-                },
-                {
-                  "val": "00",
-                  "offset": 48
-                },
-                {
-                  "val": "00",
-                  "offset": 53
-                }
-              ],
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.iEnterThePercentageInHaScreenAs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35608000,
-              "status": "passed"
-            },
-            "line": 309,
-            "name": "I click the Continue button",
-            "match": {
-              "location": "com.qa.stepdef.TillManagementStepDef.iClickTheContinueButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 47507000,
-              "status": "passed"
-            },
-            "line": 310,
-            "name": "User open Limit toggle if it is closed",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userOpenLimitToggleIfItIsClosed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38490000,
-              "status": "passed"
-            },
-            "line": 311,
-            "name": "User enter limit amount for house account",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterLimitAmountForHouseAccount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 665037000,
-              "status": "passed"
-            },
-            "line": 312,
-            "name": "I enter the percentage in Ha screen as \"2\",\"2\",\"00\",\"00\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 40
-                },
-                {
-                  "val": "2",
-                  "offset": 44
-                },
-                {
-                  "val": "00",
-                  "offset": 48
-                },
-                {
-                  "val": "00",
-                  "offset": 53
-                }
-              ],
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.iEnterThePercentageInHaScreenAs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27414000,
-              "status": "passed"
-            },
-            "line": 313,
-            "name": "I click \"Continue\" in the percentage apply screen \"Click Continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Continue",
-                  "offset": 9
-                },
-                {
-                  "val": "Click Continue",
-                  "offset": 51
-                }
-              ],
-              "location": "com.qa.stepdef.CI_PaymentStepDef.iClickInThePercentageApplyScreen(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34261000,
-              "status": "passed"
-            },
-            "line": 314,
-            "name": "User click the Save button for house account",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickTheSaveButtonForHouseAccount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2068637000,
-              "status": "passed"
-            },
-            "line": 315,
-            "name": "I click Void button on order management screen",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickVoidButtonOnOrderManagementScreen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 53266000,
-              "status": "passed"
-            },
-            "line": 316,
-            "name": "I click void Reason on the void popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickVoidReasonOnTheVoidPopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2086734000,
-              "status": "passed"
-            },
-            "line": 317,
-            "name": "I click Add Button on the void reason popup",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddButtonOnTheVoidReasonPopup()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2055257000,
-              "status": "passed"
-            },
-            "line": 319,
-            "name": "I closed the order type window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
-            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 38845000,
+              "duration": 1392491000,
               "status": "passed"
             },
-            "line": 325,
-            "name": "I click Add Customer Button",
+            "line": 672,
+            "name": "I click Table Layout tab",
             "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 66767000,
+              "duration": 2122029000,
               "status": "passed"
             },
-            "line": 326,
-            "name": "I search for \"goknur bati\"",
+            "line": 673,
+            "name": "I select random table on the table layout",
             "match": {
-              "arguments": [
-                {
-                  "val": "goknur bati",
-                  "offset": 14
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSearchFor(java.lang.String)"
+              "location": "com.qa.stepdef.AskSeatCountStepDef.iSelectRandomTableOnTheTableLayout()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35544000,
-              "status": "passed"
-            },
-            "line": 327,
-            "name": "I click \"goknur bati\" to select customer for the seat",
-            "match": {
-              "arguments": [
-                {
-                  "val": "goknur bati",
-                  "offset": 9
-                }
-              ],
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickToSelectCustomerForTheSeat(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3078143000,
-              "status": "passed"
-            },
-            "line": 328,
-            "name": "I click the customer name on the order screen",
-            "match": {
-              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickTheCustomerNameOnTheOrderScreen()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4024632000,
-              "status": "passed"
-            },
-            "line": 329,
-            "name": "I should see the customer profile window",
-            "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 51620000,
-              "status": "passed"
-            },
-            "line": 330,
-            "name": "User click Customer Plan button",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userClickCustomerPlanButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 562317000,
-              "status": "passed"
-            },
-            "line": 331,
-            "name": "User enter recharge amount for House Account",
-            "match": {
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.userEnterRechargeAmountForHouseAccount()"
-            },
-            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 134143000,
+              "duration": 34602000,
               "status": "passed"
             },
-            "line": 332,
-            "name": "I enter the percentage in Ha screen as \"1\",\"2\",\"00\",\"00\"",
+            "line": 674,
+            "name": "I select the number of seats as \"1\"",
             "match": {
               "arguments": [
                 {
                   "val": "1",
-                  "offset": 40
-                },
-                {
-                  "val": "2",
-                  "offset": 44
-                },
-                {
-                  "val": "00",
-                  "offset": 48
-                },
-                {
-                  "val": "00",
-                  "offset": 53
+                  "offset": 33
                 }
               ],
-              "location": "com.qa.stepdef.TGCustomerProfileStepDef.iEnterThePercentageInHaScreenAs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSelectTheNumberOfSeatsAs(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 24126000,
+              "duration": 39289000,
               "status": "passed"
             },
-            "line": 333,
-            "name": "I click \"Continue\" in the percentage apply screen \"Click Continue\"",
+            "line": 675,
+            "name": "I tap Continue to finish selecting the number of seats",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iTapContinueToFinishSelectingTheNumberOfSeats()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4035603000,
+              "status": "passed"
+            },
+            "line": 676,
+            "name": "I Should get back to the Order Screen",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10056384000,
+              "status": "passed"
+            },
+            "line": 677,
+            "name": "I verify the seat count on the order screen as \"1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Continue",
-                  "offset": 9
-                },
-                {
-                  "val": "Click Continue",
-                  "offset": 51
+                  "val": "\"1\"",
+                  "offset": 47
                 }
               ],
-              "location": "com.qa.stepdef.CI_PaymentStepDef.iClickInThePercentageApplyScreen(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1060838000,
-              "status": "passed"
-            },
-            "line": 334,
-            "name": "I click update button",
-            "match": {
-              "location": "com.qa.stepdef.CustomerProfileStepDef.iClickUpdateButton()"
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iVerifyTheSeatCountOnTheOrderScreenAs(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2062620000,
+              "duration": 71710000,
               "status": "passed"
             },
-            "line": 337,
-            "name": "I click Void button on order management screen",
+            "line": 678,
+            "name": "I click All",
             "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickVoidButtonOnOrderManagementScreen()"
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAll()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 47991000,
+              "duration": 1368857000,
               "status": "passed"
             },
-            "line": 338,
-            "name": "I click void Reason on the void popup",
+            "line": 679,
+            "name": "I click Table Layout tab",
             "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickVoidReasonOnTheVoidPopup()"
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickTableLayoutTab()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2085320000,
+              "duration": 6084623000,
               "status": "passed"
             },
-            "line": 339,
-            "name": "I click Add Button on the void reason popup",
+            "line": 680,
+            "name": "I click power button in the All Orders screen",
             "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddButtonOnTheVoidReasonPopup()"
+              "location": "com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Askseat"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-23T12:27:03.107Z",
+        "before": [
+          {
+            "result": {
+              "duration": 70000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 868,
+        "name": "Verify the To Go",
+        "description": "",
+        "id": "ask-seat-number-feature;verify-the-to-go",
+        "after": [
+          {
+            "result": {
+              "duration": 136000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 159429000,
+              "status": "passed"
+            },
+            "line": 869,
+            "name": "I\u0027m logged in",
+            "match": {
+              "location": "com.qa.stepdef.OrderTypesStepDef.i_m_logged_in()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2047648000,
+              "duration": 2065092000,
               "status": "passed"
             },
-            "line": 341,
+            "line": 870,
             "name": "I closed the order type window",
             "match": {
               "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClosedTheOrderTypeWindow()"
@@ -3441,38 +253,335 @@
           },
           {
             "result": {
-              "duration": 51236000,
+              "duration": 37985000,
               "status": "passed"
             },
-            "line": 342,
-            "name": "I click log off button in order screen",
+            "line": 871,
+            "name": "I click service type button in order screen",
             "match": {
-              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickLogOffButtonInOrderScreen()"
+              "location": "com.qa.stepdef.OrderTypesStepDef.iClickServiceTypeButtonInOrderScreen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30079000,
+              "status": "passed"
+            },
+            "line": 872,
+            "name": "I select order type as \"TOGO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TOGO",
+                  "offset": 24
+                }
+              ],
+              "location": "com.qa.stepdef.OrderTypesStepDef.iSelectOrderTypeAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44591000,
+              "status": "passed"
+            },
+            "line": 873,
+            "name": "I click Add Customer Button",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickAddCustomerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11613000,
+              "status": "passed"
+            },
+            "line": 874,
+            "name": "I should see the add customer screen in the window",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheAddCustomerScreenInTheWindow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20832000,
+              "status": "passed"
+            },
+            "line": 875,
+            "name": "I Click on the Byname Option",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickOnTheBynameOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4119765000,
+              "status": "passed"
+            },
+            "line": 876,
+            "name": "Enter some name and click on Add Customer button",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.enterSomeNameAndClickOnAddCustomerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4036590000,
+              "status": "passed"
+            },
+            "line": 877,
+            "name": "I should see the customer profile window",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeTheCustomerProfileWindow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57034000,
+              "status": "passed"
+            },
+            "line": 878,
+            "name": "I select search",
+            "match": {
+              "location": "com.qa.stepdef.CustomerProfileStepDef.iSelectSearch()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1067972000,
+              "status": "passed"
+            },
+            "line": 879,
+            "name": "I enter an existing customer\u0027s name \"Auto ragav\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Auto ragav",
+                  "offset": 37
+                }
+              ],
+              "location": "com.qa.stepdef.CustomerProfileStepDef.iEnterAnExistingCustomerSName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2081616000,
+              "status": "passed"
+            },
+            "line": 880,
+            "name": "I select the customer",
+            "match": {
+              "location": "com.qa.stepdef.CustomerProfileStepDef.iSelectTheCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3080559000,
+              "status": "passed"
+            },
+            "line": 881,
+            "name": "I click the Save button",
+            "match": {
+              "location": "com.qa.stepdef.CustomerProfileStepDef.iClickTheSaveButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4033791000,
+              "status": "passed"
+            },
+            "line": 882,
+            "name": "I Should get back to the Order Screen",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldGetBackToTheOrderScreen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2031753000,
+              "status": "passed"
+            },
+            "line": 883,
+            "name": "I should see service type as \"TOGO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TOGO",
+                  "offset": 30
+                }
+              ],
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iShouldSeeServiceTypeAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15768000,
+              "status": "passed"
+            },
+            "line": 884,
+            "name": "I get check number",
+            "match": {
+              "location": "com.qa.stepdef.CheckOptionsStepDef.iGetCheckNumber()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4650265000,
+              "status": "passed"
+            },
+            "line": 885,
+            "name": "I select category as \"FOOD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FOOD",
+                  "offset": 22
+                }
+              ],
+              "location": "com.qa.stepdef.PhoneOrderStepDef.iSelectCategoryAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4087572000,
+              "status": "passed"
+            },
+            "line": 886,
+            "name": "I select menu item as \"Chicken Schnitzel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chicken Schnitzel",
+                  "offset": 23
+                }
+              ],
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iSelectMenuItemAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46556000,
+              "status": "passed"
+            },
+            "line": 887,
+            "name": "I click Payment button in the Order Management Screen",
+            "match": {
+              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickPaymentButtonInTheOrderManagementScreen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53738000,
+              "status": "passed"
+            },
+            "line": 888,
+            "name": "I click cash button from the payment method popup",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickCashButtonFromThePaymentMethodPopup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 572275000,
+              "status": "passed"
+            },
+            "line": 889,
+            "name": "I click Submit button on the Payment Window",
+            "match": {
+              "location": "com.qa.stepdef.CheckOptionsStepDef.iClickSubmitButtonOnThePaymentWindow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80773000,
+              "status": "passed"
+            },
+            "line": 890,
+            "name": "I click phone order tab",
+            "match": {
+              "location": "com.qa.stepdef.PhoneOrderStepDef.iClickPhoneOrderTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1272682000,
+              "status": "passed"
+            },
+            "line": 891,
+            "name": "I click Check Stats tab",
+            "match": {
+              "location": "com.qa.stepdef.CheckStatsStepDef.iClickCheckStatsTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48327000,
+              "status": "passed"
+            },
+            "line": 892,
+            "name": "I click Closed tab on the Check stats",
+            "match": {
+              "location": "com.qa.stepdef.TableOrderOperationsStepDef.iClickClosedTabOnTheCheckStats()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5087090000,
+              "status": "passed"
+            },
+            "line": 893,
+            "name": "I should see closed check in closed check tab",
+            "match": {
+              "location": "com.qa.stepdef.PhoneOrderStepDef.iShouldSeeClosedCheckInClosedCheckTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6086343000,
+              "status": "passed"
+            },
+            "line": 894,
+            "name": "I click power button in the All Orders screen",
+            "match": {
+              "location": "com.qa.stepdef.PhoneOrderStepDef.iClickPowerButtonInTheAllOrdersScreen()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@MNK"
+            "name": "@Askseat"
           }
         ]
       }
     ],
-    "name": "Customer Profile",
+    "name": "Ask Seat Number Feature",
     "description": "",
-    "id": "customer-profile",
+    "id": "ask-seat-number-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/CustomerProfile.feature",
-    "tags": [
-      {
-        "name": "@MNK",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/AskSeatCount.feature",
+    "tags": []
   }
 ]

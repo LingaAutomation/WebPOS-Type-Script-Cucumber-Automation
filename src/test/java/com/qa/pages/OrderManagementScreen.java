@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static com.qa.utils.TestUtils.driver;
+
 public class OrderManagementScreen extends OrderTypeWindow{
 
 //    public static WebDriver driver=TestUtils.driver;
@@ -754,6 +756,12 @@ public  void selectCategory (String value) throws Exception {
         Assert.assertEquals(totalAmount,Amount);
         utils.log().info("Cash Price is SAME - "+Amount);
     }
+
+    public void getVau(){
+        List<WebElement> elements = driver.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')]"));
+        utils.log().info(elements.size());
+    }
+
     public void selectMenuItem(String menuItem) throws Exception {
         Thread.sleep(2000);
         WebElement e =  driver.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'"+menuItem+"')])[1]"));
@@ -787,6 +795,15 @@ public  void selectCategory (String value) throws Exception {
 
     }
 
+    public void verifyMenu2ItemOnTheOrderScreen(){
+        WebElement menu1 =  driver.findElement(By.xpath("(//div[contains(@class,'menu-section orderlist-flex ')]//div[contains(.,'"+TestUtils.menu2+"')])[1]"));
+        if(menu1.isDisplayed()){
+            utils.log().info("Seat -3 Menu item is Displayed - "+menu1.getText());
+        }else{
+            utils.log().info("Seat -3 Menu Item is NOT Displayed - "+menu1.getText());
+            int w = 1/0;
+        }
+    }
     public void selectMenuItem86(String menuItem) throws Exception {
         Thread.sleep(2000);
         WebElement e =  driver.findElement(By.xpath("//div[.='"+menuItem+"']"));
@@ -1277,6 +1294,11 @@ public  void selectCategory (String value) throws Exception {
         WebElement e = driver.findElement(By.xpath("//button[@class='menu-btn subCategoryBtn  active-eff ']//span"));
        TestUtils.menuCount = e.getAttribute("value");
        utils.log().info(e.getAttribute("value"));
+    }
+
+    public void getMenu1() throws InterruptedException {Thread.sleep(1000);
+       List<WebElement> mens = driver.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[@class='p-col-4 orderlist-menuname']"));
+       utils.log().info(mens.size());
     }
 
     public void selectMenuItemSearch1(String menu_item) throws InterruptedException {
@@ -2421,6 +2443,15 @@ public  void selectCategory (String value) throws Exception {
         }
     }
 
+
+    @FindBy(xpath = "//linga-icon[(@symbol='powerButton')]")
+    private WebElement PowerOffBtn;
+
+    public void clickLogOffBtnINOPERATION() throws InterruptedException {
+
+        Thread.sleep(3000);
+        elementClick(PowerOffBtn,"Tapped log Off Button");
+    }
     public void verifyTableMergeeTable(String m) throws InterruptedException {
 
         utils.log().info("M - "+m);

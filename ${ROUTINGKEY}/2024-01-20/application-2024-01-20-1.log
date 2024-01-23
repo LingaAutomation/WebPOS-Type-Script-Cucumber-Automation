@@ -1,0 +1,262 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:10.531 Hooks:46 - Start Scenario Name : Customer Profile Feature File
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:10.579 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:10.609 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:10.636 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:10.661 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:10.686 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:12.836 BasePage:278 - FORHERE order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:12.871 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:12.924 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:12.970 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:13.063 BasePage:278 - Tapped Customer - Auto ragav
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:17.132 TableLayOutScreen:770 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:17.147 BasePage:239 - Order Type xpath is - FORHERE
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.181 OrderManagementScreen:1716 - Auto r - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.204 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.254 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.301 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.339 BasePage:278 - Tapped Order Type as - FORHERE
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.374 BasePage:278 - TOGO order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.408 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.443 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:18.517 BasePage:278 - Tapped Customer - Auto ragav
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:22.566 TableLayOutScreen:770 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:22.585 BasePage:239 - Order Type xpath is - TOGO
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.616 OrderManagementScreen:1716 - Auto r - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.640 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.683 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.714 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.747 BasePage:278 - Tapped Order Type as - TOGO
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.778 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.826 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:23.902 BasePage:278 - Tapped Customer - Auto ragav
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:26.990 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:31.062 TableLayOutScreen:770 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:31.081 BasePage:239 - Order Type xpath is - DELIVERY
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:31.098 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:31.137 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:31.166 BasePage:84 - Cannot Remove Customer is displayed - Cannot remove customer for Delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.204 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.248 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.284 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.325 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.365 BasePage:278 - Phone To Go order type is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.401 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.446 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.478 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.512 BasePage:278 - Tapped Order Type as - TOGO
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.549 BasePage:278 - Phone To Go order type is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.582 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.619 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:33.698 BasePage:278 - Tapped Customer - Auto ragav
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:37.748 TableLayOutScreen:770 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:37.763 BasePage:239 - Order Type xpath is - TOGO
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:38.790 OrderManagementScreen:1716 - Auto r - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:38.812 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:38.852 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:38.883 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:38.914 BasePage:278 - Tapped Order Type as - TOGO
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:38.950 BasePage:278 - Phone Delivery order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:38.989 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:39.052 BasePage:278 - Tapped Customer - Auto ragav
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:42.134 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:42.182 BasePage:239 - Order Type xpath is - DELIVERY
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:43.206 OrderManagementScreen:1716 - Auto r - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:43.228 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:43.269 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:43.293 BasePage:84 - Cannot Remove Customer is displayed - Cannot remove customer for Delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.327 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.365 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.398 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.435 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.465 BasePage:278 - Tapped QSR Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.509 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.542 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:45.602 BasePage:278 - Tapped Customer - Auto ragav
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:49.649 TableLayOutScreen:770 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.677 OrderManagementScreen:1716 - Auto r - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.699 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.739 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.769 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.798 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.912 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.938 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.962 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:50.987 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:51.011 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:53.091 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:53.136 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:53.167 BasePage:278 - Click ForHere Order Option
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:53.198 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:53.244 BasePage:278 - search customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:53.327 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:57.498 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:57.543 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:57.573 BasePage:278 - TOGO order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:57.607 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:57.639 BasePage:278 - search customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:12:57.738 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:01.892 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:01.934 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:01.970 BasePage:278 - Phone To Go order type is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:02.004 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:02.035 BasePage:278 - search customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:02.106 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:06.252 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:06.293 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:06.322 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:06.363 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:06.450 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:09.535 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:09.600 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:13.749 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:13.791 BasePage:278 - Click qsrOption
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:13.826 BasePage:278 - Phone Delivery order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:13.863 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:13.922 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:16.995 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:17.041 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:21.191 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:21.227 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:21.310 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:21.335 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:21.358 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:21.392 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:21.419 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:23.490 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:23.530 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:31.717 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:31.746 BasePage:278 - click firstName 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:31.845 BasePage:278 - click lastName 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:31.896 BasePage:278 - click addPhoneNumberButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:31.941 BasePage:278 - click closeButtonForMobile 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:31.975 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:32.004 BasePage:239 - verify mobilePhoneEmailPopupPlease fill in all the required fields
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.042 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.083 BasePage:278 - click addPhoneNumberButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.108 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'0')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.127 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'2')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.144 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'3')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.160 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'3')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.177 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'6')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.194 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'2')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.212 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'9')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.228 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'0')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.245 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.278 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'4')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.303 BasePage:258 - Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:34.383 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:39.443 BasePage:239 - Verify Newly Added CustomerTest A
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:39.459 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:39.552 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:39.577 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:39.602 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:39.625 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:39.646 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.717 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.758 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.793 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.857 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.894 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.930 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.962 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:41.994 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:50.169 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:58.303 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:58.335 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:13:58.399 BasePage:278 - Tapped Customer - Test Automation
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:01.454 BasePage:278 - Selected name as - Test A
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:02.118 BasePage:278 - Tapped Yes Button on the Hold Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.230 BasePage:335 - XpathBy.xpath: //p[@slot='end']element not found
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.282 BasePage:278 - click firstName 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.350 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.390 BasePage:239 - verify customerTest A
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.401 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.474 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.499 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.523 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.547 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:03.569 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:05.645 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:05.684 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:13.841 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:13.868 BasePage:278 - click firstName 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:13.936 BasePage:278 - click lastName 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:13.987 BasePage:278 - click addPhoneNumberButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:14.026 BasePage:278 - click closeButtonForMobile 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:14.059 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:14.088 BasePage:239 - verify mobilePhoneEmailPopupPlease fill in all the required fields
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.123 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.163 BasePage:278 - click addPhoneNumberButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.186 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'3')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.205 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'2')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.223 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'2')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.240 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'6')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.256 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'2')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.278 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'9')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.303 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'6')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.319 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'7')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.336 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'0')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.353 TGCustomerProfilePage:63 - [[ChromeDriver: chrome on mac (01a7443aa01f6984bd0851c139585afc)] -> xpath: //ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.377 BasePage:258 - Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:16.455 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.510 BasePage:239 - Verify Newly Added CustomerTest A
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.528 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.569 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.610 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.659 BasePage:239 - Verify No Selected CustomerWalk-in
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.669 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.743 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.765 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.786 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.807 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:21.827 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:23.894 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:23.932 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:32.086 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:32.114 BasePage:278 - click firstName 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:32.192 BasePage:278 - click lastName 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:32.241 BasePage:278 - click addPhoneNumberButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:32.397 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:37.451 BasePage:239 - Verify NewCustomer For House AccountTest A
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:42.492 BasePage:278 - Click New Customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.087 BasePage:278 - click customerPlanButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.202 BasePage:278 - click rechargeTextField 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.670 BasePage:278 - click numberOne 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.703 BasePage:278 - click numberDoubleZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.722 BasePage:278 - click numberDoubleZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.752 BasePage:278 - click numberZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.779 BasePage:278 - click continueButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.808 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.855 BasePage:278 - click limitToggle 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:43.887 BasePage:278 - click limitTextField 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:44.449 BasePage:278 - click numberOne 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:44.485 BasePage:278 - click numberDoubleZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:44.504 BasePage:278 - click numberDoubleZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:44.530 BasePage:278 - click numberZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:44.556 BasePage:278 - click continueButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:44.578 BasePage:278 - Click Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:44.610 BasePage:278 - click saveBtn 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:46.664 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:46.712 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:48.768 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:50.852 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:50.887 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:51.446 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:51.526 BasePage:278 - Tapped Customer - goknur bati
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:54.589 BasePage:278 - Selected name as - goknur b
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:58.652 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:58.679 BasePage:278 - click customerPlanButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:58.723 BasePage:278 - click rechargeTextField 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:59.348 BasePage:278 - click numberOne 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:59.377 BasePage:278 - click numberDoubleZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:59.394 BasePage:278 - click numberDoubleZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:59.420 BasePage:278 - click numberZero 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:59.446 BasePage:278 - click continueButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:14:59.467 BasePage:278 - Click Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:15:00.522 BasePage:278 - Tapped Update Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:15:02.579 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:15:02.623 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:15:04.675 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:15:06.736 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 13:15:06.770 BasePage:258 - Tapped log Off Button

@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
+import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
@@ -27,11 +28,11 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"*\"])[2]")
     private WebElement addressAsterisk;
 
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
+    @FindBy(xpath = "//input[@role='combobox']")
     private WebElement searchField;
 
     //    @FindBy(name = "Auto ragav  +919080344 ")
-    @FindBy(name = "Auto ragav 9876887899 ")   // Nov 16
+    @FindBy(xpath = "//mat-option[@role='option']//span")   // Nov 16
     // @FindBy (name = "Engin  Basarand +905012345 ")
     private WebElement customerToSelect;
 
@@ -198,9 +199,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
         return elementGetText(addressAsterisk, "* next to Phone field - ");
     }
 
-    public void pressSearchField() {
-        elementClick(searchField, "Tapped search Phone");
-    }
+
     @FindBy(xpath ="//*[@name=\"Hide keyboard\"]")
     private WebElement hideKeyboardButton;
 
@@ -292,10 +291,10 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 
     }
 
-    public void sendCustomerName(String name) {
-
-        WebElement Customer = driver.findElement(By.xpath("//p[@slot='end']"));
-        Customer.click();
+    public void sendCustomerName(String name) throws InterruptedException {
+        Thread.sleep(1000);
+        WebElement Customer = driver.findElement(By.xpath("//input[@role='combobox']"));
+        Customer.sendKeys(name);
     }
 
 
@@ -314,16 +313,19 @@ public class CustomerProfileWindow extends OrderTypeWindow{
         elementClick(lastCustomer,"Selected Latest sale of customer");
      }
 
-    public void selectCustomer() {
-        elementClick(customerToSelect, "Customer selected ");
+    public void selectCustomer() throws InterruptedException {
+
+        Thread.sleep(2000);elementClick(customerToSelect, "Customer selected ");
     }
 
-    public void selectCustomerForMembership(){
+    public void selectCustomerForMembership() throws InterruptedException {
+        Thread.sleep(2000);
         elementClick(customerToSelectForMembership,"Selected Customer - "+customerToSelectForMembership.getText());
     }
 
-    public void selectCustomerforTaxExempt(){
-        elementClick(customerToSelectForTaxExempt, "Customer selected ");
+    public void selectCustomerforTaxExempt() throws InterruptedException {
+
+        Thread.sleep(2000);elementClick(customerToSelectForTaxExempt, "Customer selected ");
     }
 
     public void selectCustomerForNmi() {

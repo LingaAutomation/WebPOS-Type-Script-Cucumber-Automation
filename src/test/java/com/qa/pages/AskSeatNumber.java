@@ -3,6 +3,7 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 
@@ -74,23 +75,31 @@ public class AskSeatNumber extends BasePage {
     }
 
     public void verifyThatAskSeatCountIsDisabled() throws Exception {
-        WebElement askSeatCount =  driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askSeatCount);
-        String askSeatCountTxt = askSeatCount.getText();
-        Assert.assertEquals(askSeatCountTxt, "Ask Seat Count in Table Layout");
-        WebElement askSeatCountToggle =  driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeSwitch"));
-        utils.log().info("Ask Seat Count Toggle Value as - " + askSeatCountToggle.getAttribute("value"));
-        if (askSeatCountToggle.getAttribute("value").equals("1")) {
-            elementClick(askSeatCountToggle, "Disabled Ask Seat Count Toggle");
-        } else {
-            utils.log().info("Already Ask Seat Count Toggle is Disabled");
+        Thread.sleep(2000);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebElement Auto = driver.findElement(By.xpath("//p[.='Enable Order Types']"));
+        driver.findElement(By.tagName("html")).sendKeys(Keys.ARROW_DOWN);
+        driver.findElement(By.tagName("html")).sendKeys(Keys.ARROW_DOWN);
+        driver.findElement(By.tagName("html")).sendKeys(Keys.ARROW_DOWN);
+        try{
+            if (Auto.isDisplayed()) {
+                WebElement AskSeatNumber = driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']/..//ion-toggle[@aria-checked='true']"));
+                if (AskSeatNumber.isDisplayed())   {
+                    AskSeatNumber.click();
+                }
+            }
+        }
+        catch (Exception e) {
+            WebElement AskSeatNumber = driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']/..//ion-toggle[@aria-checked='false']"));
+            if (AskSeatNumber.isDisplayed())   {
+            }
         }
     }
 
     public int itemToSelect;
 
     public void selectRandomTable() throws InterruptedException {
-Thread.sleep(2000);
+         Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
         WebElement New =  driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
         elementClick(New, "Tapped New Check");

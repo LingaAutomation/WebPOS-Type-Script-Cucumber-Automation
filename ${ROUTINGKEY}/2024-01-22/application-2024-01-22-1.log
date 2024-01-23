@@ -1,0 +1,1017 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:09.189 Hooks:46 - Start Scenario Name : Check with normal bill without discount/Gratuity/upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:09.243 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:09.277 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:09.306 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:09.335 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:09.363 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:11.465 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:13.511 OrderManagementScreen:1750 - Service Type - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:13.523 OrderManagementScreen:1861 - 101-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:15.545 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:16.596 BasePage:258 - Tapped PAsta Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:20.644 BasePage:278 - Selected - Ravioli
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:23.722 BasePage:278 - Selected - Butter
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:23.764 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:27.833 BasePage:278 - Selected - Ravioli
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:30.923 BasePage:278 - Selected - Butter
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:30.962 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:32.013 OrderManagementScreen:1292 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:32.040 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:32.099 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:32.133 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:34.183 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:34.225 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:34.602 OrdersAndDriversListScreen:88 - Check Status
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:34.631 BasePage:278 - Tapped closed Tab button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:39.755 PhoneOrderScreen:407 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:39.768 BasePage:258 - Tapped Closed Check in closed tab - 101-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:39.800 BasePage:278 - Tapped Reopen check stats button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:43.863 TableLayOutScreen:770 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:45.901 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:45.962 BasePage:84 - Payment made on this check is Displayed - Payment(s) made on this Check, Can you return this to Walkin Walkin
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:47.983 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:48.018 BasePage:278 - Payment  selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:48.051 BasePage:278 - Delete button tapped to delete the payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:50.115 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:52.161 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:52.193 BasePage:84 - void Reason txt is displayed - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 10:43:52.202 Hooks:58 - Failed Scenario Name : Check with normal bill without discount/Gratuity/upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:23.899 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:23.955 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:23.997 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:24.032 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:24.065 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:24.093 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:26.190 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:26.235 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:26.277 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:34.551 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:49:59.141 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:44.685 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:44.730 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:44.763 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:44.790 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:44.816 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:44.842 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:46.952 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:47.000 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:47.038 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:52:55.280 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:53:19.953 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:21.967 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:22.015 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:22.045 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:22.071 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:22.096 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:22.121 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:24.233 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:24.282 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:24.320 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:32.577 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:55:57.218 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:16.085 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:16.131 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:16.165 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:16.192 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:16.220 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:16.246 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:18.362 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:18.411 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:18.449 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:26.688 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 16:58:51.366 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:11.766 Hooks:46 - Start Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:11.816 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:11.847 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:11.872 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:11.897 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:11.922 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:14.033 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:14.083 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:14.122 BasePage:278 - PHONE TOGO selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:14.161 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:22.403 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:25.447 BasePage:278 - Tapped search Phone
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:02:26.570 Hooks:58 - Failed Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:14.940 Hooks:46 - Start Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:14.987 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:15.019 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:15.044 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:15.068 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:15.093 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:17.208 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:17.258 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:17.294 BasePage:278 - PHONE TOGO selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:17.333 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:25.555 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:28.596 BasePage:278 - Tapped search Phone
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:06:29.749 Hooks:58 - Failed Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:12.430 Hooks:46 - Start Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:12.480 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:12.511 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:12.534 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:12.560 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:12.585 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:14.681 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:14.725 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:14.763 BasePage:278 - PHONE TOGO selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:14.800 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:23.027 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:26.062 BasePage:278 - Tapped search Phone
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:30:26.141 Hooks:58 - Failed Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:47.541 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:47.587 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:47.622 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:47.650 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:47.676 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:47.703 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:49.799 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:49.851 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:49.893 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:37:58.131 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:38:01.181 BasePage:278 - Tapped search Phone
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:38:01.246 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:41.630 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:41.678 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:41.713 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:41.738 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:41.763 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:41.789 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:43.908 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:43.955 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:43.992 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:52.211 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:55.255 BasePage:278 - Tapped search Phone
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:51:55.326 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:21.465 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:21.510 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:21.541 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:21.568 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:21.593 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:21.618 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:23.720 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:23.767 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:23.804 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:32.026 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:35.073 BasePage:278 - Tapped search Phone
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:53:35.145 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:05.419 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:05.464 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:05.495 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:05.519 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:05.545 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:05.570 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:07.676 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:07.724 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:07.760 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:15.989 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 17:57:16.037 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:16.644 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:16.687 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:16.718 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:16.743 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:16.768 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:16.793 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:18.903 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:18.951 BasePage:278 - Tapped Order Type as - QSR
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:18.988 BasePage:278 - PHONE DELIVERY selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:27.226 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:30.270 BasePage:278 - Tapped search Phone
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:02:30.340 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:16.780 Hooks:46 - Start Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:16.823 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:16.856 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:16.883 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:16.909 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:16.935 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:19.042 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:19.090 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:20.476 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:18:20.545 Hooks:58 - Failed Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:07.948 Hooks:46 - Start Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:07.990 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:08.021 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:08.046 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:08.071 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:08.096 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:10.192 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:10.233 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:11.618 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:22:11.680 Hooks:58 - Failed Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:13.178 Hooks:46 - Start Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:13.221 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:13.249 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:13.273 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:13.298 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:13.324 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:15.429 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:15.477 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:16.865 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:16.952 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:20.657 OrderManagementScreen:1861 - 73-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:20.678 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:25:20.717 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:26:08.405 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:26:09.715 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:26:10.338 PhoneOrderScreen:524 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:26:10.339 PhoneOrderScreen:530 - closed check is not available - 73-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:26:10.351 Hooks:58 - Failed Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:20.946 Hooks:46 - Start Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:20.989 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:21.020 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:21.044 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:21.071 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:21.097 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:23.210 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:23.258 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:24.636 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:24.713 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:28.411 OrderManagementScreen:1861 - 74-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:28.431 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:28:28.469 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:29:16.150 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:29:17.462 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:29:18.083 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:29:18.083 PhoneOrderScreen:527 - closed check is available - 74-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:29:19.425 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:29:19.488 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:29:19.533 Hooks:58 - Failed Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:15.305 Hooks:46 - Start Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:15.350 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:15.386 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:15.414 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:15.440 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:15.465 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:17.561 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:17.602 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:18.990 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:19.075 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:22.773 OrderManagementScreen:1861 - 75-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:22.792 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:31:22.830 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:10.468 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:11.752 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:12.377 PhoneOrderScreen:524 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:12.377 PhoneOrderScreen:530 - closed check is not available - 75-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:13.720 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:13.788 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:13.835 BasePage:278 - Tapped the Split Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:13.858 OrderManagementScreen:2400 - M - T10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:15.935 BasePage:278 - Selected Table - T10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.032 TableLayOutScreen:644 - Displayed Screen as - Split Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.045 TableLayOutScreen:651 - Split Check - 75-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.064 BasePage:278 - Selected Add Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.116 TableLayOutScreen:564 - Extra one Checks is ADDED
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.136 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.173 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.276 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.309 BasePage:278 - Selcted Button as - Print
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.367 BasePage:278 - Yes (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:32:33.410 Hooks:58 - Failed Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:50.772 Hooks:46 - Start Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:50.816 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:50.845 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:50.870 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:50.896 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:50.921 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:53.013 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:53.056 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:54.443 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:54.529 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:58.223 OrderManagementScreen:1861 - 76-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:58.240 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:34:58.280 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:46.014 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:47.325 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:47.957 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:47.957 PhoneOrderScreen:527 - closed check is available - 76-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:49.301 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:49.366 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:49.415 BasePage:278 - Tapped the Split Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:49.436 OrderManagementScreen:2400 - M - T10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:51.505 BasePage:278 - Selected Table - T10
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:35:53.607 BasePage:278 - Selected Check Number - 76-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.710 TableLayOutScreen:661 - Displayed Screen as - Split Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.722 TableLayOutScreen:668 - Split Check - 76-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.743 BasePage:278 - Selected Add Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.787 TableLayOutScreen:564 - Extra one Checks is ADDED
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.804 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.841 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.892 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.925 BasePage:278 - Selcted Button as - Print
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:11.974 BasePage:278 - Yes (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:12.037 TableLayOutScreen:626 - Split Check Number - 76-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:12.059 BasePage:278 - Selected Button as - Print All
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:12.105 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:12.141 BasePage:278 - Tapped Seperate Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:12.180 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:12.210 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:19.341 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:23.434 TableLayOutScreen:815 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:23.454 TableLayOutScreen:1631 - Primary Check is SAME After Split Check - 76-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:23.474 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:23.518 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:23.550 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:24.910 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:26.177 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:26.264 BasePage:278 - Selected - 76-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:27.619 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:27.676 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:31.355 OrderManagementScreen:1861 - 76-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:31.375 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:36:31.412 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:18.984 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:20.286 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:20.904 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:20.905 PhoneOrderScreen:527 - closed check is available - 76-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:22.243 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:22.311 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:22.351 BasePage:278 - Tapped the Split Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:22.370 OrderManagementScreen:2400 - M - T28
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:24.438 BasePage:278 - Selected Table - T28
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.526 TableLayOutScreen:661 - Displayed Screen as - Split Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.538 TableLayOutScreen:668 - Split Check - 76-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.562 BasePage:278 - Selected Button as - Split By Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.609 TableLayOutScreen:564 - Extra one Checks is ADDED
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.634 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.669 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.767 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.798 BasePage:278 - Selcted Button as - Print
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.840 BasePage:278 - Yes (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.886 TableLayOutScreen:626 - Split Check Number - 76-004
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.908 BasePage:278 - Selected Button as - Print All
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.945 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:41.973 BasePage:278 - Tapped Seperate Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:42.009 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:42.038 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:49.186 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:53.274 TableLayOutScreen:815 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:53.294 TableLayOutScreen:1631 - Primary Check is SAME After Split Check - 76-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:53.311 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:53.368 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:53.398 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:54.755 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:56.021 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:37:56.116 BasePage:278 - Selected - 76-004
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:38:02.167 BasePage:278 - Text
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:45.312 Hooks:46 - Start Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:45.356 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:45.387 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:45.414 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:45.441 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:45.466 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:47.575 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:47.623 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:49.009 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:49.095 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:52.800 OrderManagementScreen:1861 - 77-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:52.820 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:56:52.857 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:40.521 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:41.831 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:42.455 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:42.456 PhoneOrderScreen:527 - closed check is available - 77-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:43.798 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:43.866 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:43.908 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:43.930 OrderManagementScreen:2400 - M - T7
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:57:46.007 BasePage:278 - Selected Table - T7
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:58:03.095 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 18:58:03.128 Hooks:58 - Failed Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:02.515 Hooks:46 - Start Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:02.559 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:02.589 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:02.614 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:02.639 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:02.664 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:04.774 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:04.823 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:06.191 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:06.267 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:09.979 OrderManagementScreen:1861 - 78-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:10.004 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:10.045 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:57.698 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:59.008 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:59.636 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:00:59.637 PhoneOrderScreen:527 - closed check is available - 78-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:00.981 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:01.047 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:01.090 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:01.111 OrderManagementScreen:2400 - M - T18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:03.186 BasePage:278 - Selected Table - T18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:20.307 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:20.334 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:22.380 BasePage:278 - Tapped Add Button in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:22.432 TableLayOutScreen:891 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:22.450 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:22.482 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:26.566 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:28.638 BasePage:278 - Tapped Print Button in the Split Seat Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:28.682 BasePage:278 - Tapped Print All Button in the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:28.714 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:28.744 BasePage:278 - Tapped Seperate Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:28.781 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:28.814 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:35.953 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:40.019 TableLayOutScreen:822 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:40.044 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:41.440 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:41.481 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:41.519 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:41.540 OrderManagementScreen:2400 - M - T18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:01:43.607 BasePage:278 - Selected Table - T18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:00.709 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:00.732 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:00.750 BasePage:278 - Tapped Split Evenly in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:01.810 TableLayOutScreen:942 - false
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:01.820 TableLayOutScreen:943 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:01.831 TableLayOutScreen:944 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:01.838 TableLayOutScreen:949 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.901 TableLayOutScreen:2048 - Seat 1 SubTotal - $ 48.18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.904 TableLayOutScreen:2060 - Tax Value After Format - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.913 TableLayOutScreen:2073 - taxTxt - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.913 TableLayOutScreen:2074 - ActualValueTax3 - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.913 TableLayOutScreen:2076 - Seat 1 Tax - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.919 TableLayOutScreen:2079 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.925 TableLayOutScreen:2088 - subTotalTxt2 4818.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:06.925 TableLayOutScreen:2096 - Seat 1 Total - $ 52.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:11.986 TableLayOutScreen:2048 - Seat 1 SubTotal - $ 48.18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:11.987 TableLayOutScreen:2060 - Tax Value After Format - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:11.997 TableLayOutScreen:2073 - taxTxt - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:11.997 TableLayOutScreen:2074 - ActualValueTax3 - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:11.997 TableLayOutScreen:2076 - Seat 1 Tax - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:12.004 TableLayOutScreen:2079 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:12.010 TableLayOutScreen:2088 - subTotalTxt2 4818.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:12.010 TableLayOutScreen:2096 - Seat 1 Total - $ 52.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.060 TableLayOutScreen:2152 - Seat 1 SubTotal - $ 48.18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.065 TableLayOutScreen:2173 - Seat 2 Tax - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.069 TableLayOutScreen:2176 - Seat 2 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.072 TableLayOutScreen:2185 - subTotalTxt2 4818.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.073 TableLayOutScreen:2193 - Seat 2 Total - $ 52.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.088 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.100 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.110 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.121 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.124 TableLayOutScreen:2109 - List of the Menu in the Seat 1 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.136 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.147 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.158 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.169 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.173 TableLayOutScreen:2123 - List of the Menu in the Seat 2 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:15.183 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:18.229 BasePage:258 - Tapped Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.292 BasePage:278 - Tapped the Group Seats Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.340 TableLayOutScreen:998 - Menu Items count in the Seat - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.340 TableLayOutScreen:999 - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.340 TableLayOutScreen:1000 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.349 TableLayOutScreen:1003 - 5 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.349 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.353 TableLayOutScreen:1006 - 5 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.362 TableLayOutScreen:1003 - 6 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.362 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.365 TableLayOutScreen:1006 - 6 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.375 TableLayOutScreen:1003 - 7 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.375 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.378 TableLayOutScreen:1006 - 7 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.386 TableLayOutScreen:1003 - 8 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.386 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:19.389 TableLayOutScreen:1006 - 8 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:24.413 TableLayOutScreen:2024 - Seat 1 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:29.444 TableLayOutScreen:2027 - Seat 2 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:34.459 TableLayOutScreen:2523 - menus1.size - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:02:39.483 Hooks:58 - Failed Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:25.963 Hooks:46 - Start Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:26.007 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:26.037 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:26.062 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:26.086 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:26.111 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:28.213 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:28.262 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:29.643 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:29.737 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:33.444 OrderManagementScreen:1861 - 79-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:33.464 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:05:33.501 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:21.124 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:22.437 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:23.054 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:23.055 PhoneOrderScreen:527 - closed check is available - 79-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:24.398 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:24.461 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:24.504 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:24.527 OrderManagementScreen:2400 - M - T1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:26.605 BasePage:278 - Selected Table - T1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:43.727 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:43.753 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:45.798 BasePage:278 - Tapped Add Button in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:45.852 TableLayOutScreen:891 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:45.870 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:45.900 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:49.983 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:52.051 BasePage:278 - Tapped Print Button in the Split Seat Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:52.094 BasePage:278 - Tapped Print All Button in the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:52.126 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:52.158 BasePage:278 - Tapped Seperate Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:52.245 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:52.279 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:06:59.418 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:03.480 TableLayOutScreen:822 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:03.503 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:04.905 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:04.944 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:04.981 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:05.002 OrderManagementScreen:2400 - M - T1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:07.069 BasePage:278 - Selected Table - T1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:24.184 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:24.207 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:24.225 BasePage:278 - Tapped Split Evenly in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:25.283 TableLayOutScreen:942 - false
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:25.294 TableLayOutScreen:943 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:25.305 TableLayOutScreen:944 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:25.312 TableLayOutScreen:949 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.379 TableLayOutScreen:2048 - Seat 1 SubTotal - $ 45.39
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.382 TableLayOutScreen:2060 - Tax Value After Format - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.391 TableLayOutScreen:2073 - taxTxt - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.391 TableLayOutScreen:2074 - ActualValueTax3 - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.392 TableLayOutScreen:2076 - Seat 1 Tax - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.398 TableLayOutScreen:2079 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.404 TableLayOutScreen:2088 - subTotalTxt2 4539.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:30.405 TableLayOutScreen:2096 - Seat 1 Total - $ 49.02
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.462 TableLayOutScreen:2048 - Seat 1 SubTotal - $ 45.39
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.463 TableLayOutScreen:2060 - Tax Value After Format - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.472 TableLayOutScreen:2073 - taxTxt - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.472 TableLayOutScreen:2074 - ActualValueTax3 - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.472 TableLayOutScreen:2076 - Seat 1 Tax - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.478 TableLayOutScreen:2079 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.484 TableLayOutScreen:2088 - subTotalTxt2 4539.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:35.484 TableLayOutScreen:2096 - Seat 1 Total - $ 49.02
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.537 TableLayOutScreen:2152 - Seat 1 SubTotal - $ 45.39
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.541 TableLayOutScreen:2173 - Seat 2 Tax - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.545 TableLayOutScreen:2176 - Seat 2 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.549 TableLayOutScreen:2185 - subTotalTxt2 4539.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.549 TableLayOutScreen:2193 - Seat 2 Total - $ 49.02
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.564 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.575 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.586 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.597 TableLayOutScreen:2106 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.600 TableLayOutScreen:2109 - List of the Menu in the Seat 1 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.613 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.624 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.634 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.645 TableLayOutScreen:2120 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.648 TableLayOutScreen:2123 - List of the Menu in the Seat 2 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:38.658 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:41.703 BasePage:258 - Tapped Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.767 BasePage:278 - Tapped the Group Seats Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.817 TableLayOutScreen:998 - Menu Items count in the Seat - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.817 TableLayOutScreen:999 - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.817 TableLayOutScreen:1000 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.826 TableLayOutScreen:1003 - 5 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.826 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.829 TableLayOutScreen:1006 - 5 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.838 TableLayOutScreen:1003 - 6 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.838 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.842 TableLayOutScreen:1006 - 6 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.849 TableLayOutScreen:1003 - 7 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.849 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.853 TableLayOutScreen:1006 - 7 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.860 TableLayOutScreen:1003 - 8 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.861 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:42.864 TableLayOutScreen:1006 - 8 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:47.911 TableLayOutScreen:2024 - Seat 1 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:52.973 TableLayOutScreen:2027 - Seat 2 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:57.987 TableLayOutScreen:2523 - menus1.size - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:58.005 TableLayOutScreen:2237 - Subtotal is SAME After Group Seats Done - $ 90.78
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:58.015 TableLayOutScreen:2259 - Tax is SAME After Group Seats Done - $ 7.26
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:58.023 TableLayOutScreen:2277 - Paid AMount is SAME After Group Seats Done - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:58.031 TableLayOutScreen:2301 - TOTAL is SAME After Group Seats Done - $ 98.04
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:07:59.072 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:03.147 TableLayOutScreen:822 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:05.186 BasePage:278 - Down Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:10.274 TableLayOutScreen:2361 - orderMenu.size() 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:10.308 TableLayOutScreen:2309 - Subtotal is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:10.325 TableLayOutScreen:2313 - Tax is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:10.337 TableLayOutScreen:2317 - Total is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:10.349 TableLayOutScreen:2321 - Paid Amount is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:10.363 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:11.749 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:11.785 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:11.823 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:11.842 OrderManagementScreen:2400 - M - T1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:13.908 BasePage:278 - Selected Table - T1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:31.031 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:31.055 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:08:39.112 Hooks:58 - Failed Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:26.092 Hooks:46 - Start Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:26.134 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:26.166 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:26.190 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:26.215 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:26.240 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:28.334 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:28.373 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:29.752 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:29.832 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:33.532 OrderManagementScreen:1861 - 80-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:33.555 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:15:33.592 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:21.283 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:22.595 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:23.219 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:23.219 PhoneOrderScreen:527 - closed check is available - 80-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:24.563 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:24.633 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:24.675 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:24.699 OrderManagementScreen:2400 - M - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:26.780 BasePage:278 - Selected Table - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:43.879 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:43.903 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:45.949 BasePage:278 - Tapped Add Button in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:46.003 TableLayOutScreen:891 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:46.020 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:46.051 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:50.148 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:52.214 BasePage:278 - Tapped Print Button in the Split Seat Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:52.259 BasePage:278 - Tapped Print All Button in the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:52.292 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:52.326 BasePage:278 - Tapped Seperate Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:52.364 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:52.398 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:16:59.539 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:03.609 TableLayOutScreen:822 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:03.633 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:05.036 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:05.077 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:05.115 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:05.135 OrderManagementScreen:2400 - M - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:07.200 BasePage:278 - Selected Table - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:24.328 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:24.351 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:24.369 BasePage:278 - Tapped Split Evenly in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:25.426 TableLayOutScreen:942 - false
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:25.437 TableLayOutScreen:943 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:25.448 TableLayOutScreen:944 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:25.455 TableLayOutScreen:949 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.524 TableLayOutScreen:2049 - Seat 1 SubTotal - $ 48.18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.528 TableLayOutScreen:2061 - Tax Value After Format - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.537 TableLayOutScreen:2074 - taxTxt - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.537 TableLayOutScreen:2075 - ActualValueTax3 - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.537 TableLayOutScreen:2077 - Seat 1 Tax - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.544 TableLayOutScreen:2080 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.550 TableLayOutScreen:2089 - subTotalTxt2 4818.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:30.550 TableLayOutScreen:2097 - Seat 1 Total - $ 52.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.612 TableLayOutScreen:2049 - Seat 1 SubTotal - $ 48.18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.613 TableLayOutScreen:2061 - Tax Value After Format - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.623 TableLayOutScreen:2074 - taxTxt - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.623 TableLayOutScreen:2075 - ActualValueTax3 - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.624 TableLayOutScreen:2077 - Seat 1 Tax - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.630 TableLayOutScreen:2080 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.635 TableLayOutScreen:2089 - subTotalTxt2 4818.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:35.636 TableLayOutScreen:2097 - Seat 1 Total - $ 52.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.689 TableLayOutScreen:2153 - Seat 1 SubTotal - $ 48.18
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.693 TableLayOutScreen:2174 - Seat 2 Tax - 385.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.698 TableLayOutScreen:2177 - Seat 2 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.701 TableLayOutScreen:2186 - subTotalTxt2 4818.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.702 TableLayOutScreen:2194 - Seat 2 Total - $ 52.03
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.717 TableLayOutScreen:2107 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.728 TableLayOutScreen:2107 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.739 TableLayOutScreen:2107 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.751 TableLayOutScreen:2107 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.754 TableLayOutScreen:2110 - List of the Menu in the Seat 1 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.767 TableLayOutScreen:2121 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.778 TableLayOutScreen:2121 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.789 TableLayOutScreen:2121 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.800 TableLayOutScreen:2121 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.803 TableLayOutScreen:2124 - List of the Menu in the Seat 2 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:38.814 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:41.867 BasePage:258 - Tapped Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:42.930 BasePage:278 - Tapped the Group Seats Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:42.978 TableLayOutScreen:998 - Menu Items count in the Seat - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:42.979 TableLayOutScreen:999 - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:42.979 TableLayOutScreen:1000 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:42.994 TableLayOutScreen:1003 - 5 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:42.994 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.003 TableLayOutScreen:1006 - 5 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.012 TableLayOutScreen:1003 - 6 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.012 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.015 TableLayOutScreen:1006 - 6 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.024 TableLayOutScreen:1003 - 7 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.024 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.027 TableLayOutScreen:1006 - 7 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.035 TableLayOutScreen:1003 - 8 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.036 TableLayOutScreen:1004 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:43.039 TableLayOutScreen:1006 - 8 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:48.065 TableLayOutScreen:2025 - Seat 1 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:53.081 TableLayOutScreen:2028 - Seat 2 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:58.123 TableLayOutScreen:2524 - menus1.size - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:58.140 TableLayOutScreen:2238 - Subtotal is SAME After Group Seats Done - $ 96.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:58.149 TableLayOutScreen:2260 - Tax is SAME After Group Seats Done - $ 7.71
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:58.158 TableLayOutScreen:2278 - Paid AMount is SAME After Group Seats Done - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:58.165 TableLayOutScreen:2302 - TOTAL is SAME After Group Seats Done - $ 104.07
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:17:59.208 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:03.270 TableLayOutScreen:822 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:05.309 BasePage:278 - Down Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:10.370 TableLayOutScreen:2362 - orderMenu.size() 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:10.400 TableLayOutScreen:2310 - Subtotal is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:10.416 TableLayOutScreen:2314 - Tax is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:10.430 TableLayOutScreen:2318 - Total is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:10.441 TableLayOutScreen:2322 - Paid Amount is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:10.456 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:11.851 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:11.891 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:11.928 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:11.948 OrderManagementScreen:2400 - M - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:14.013 BasePage:278 - Selected Table - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:31.100 TableLayOutScreen:701 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:31.126 TableLayOutScreen:735 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:18:40.239 Hooks:58 - Failed Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:48.437 Hooks:46 - Start Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:48.477 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:48.511 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:48.537 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:48.560 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:48.584 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:50.689 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:50.731 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:52.114 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:19:52.169 Hooks:58 - Failed Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:27.875 Hooks:46 - Start Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:27.919 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:27.949 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:27.974 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:28.000 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:28.025 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:30.137 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:30.184 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:31.571 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:31.658 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:35.357 OrderManagementScreen:1861 - 82-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:35.379 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:27:35.417 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:23.001 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:24.316 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:24.941 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:24.941 PhoneOrderScreen:527 - closed check is available - 82-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:26.284 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:26.360 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:26.402 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:26.423 OrderManagementScreen:2400 - M - T8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:28.500 BasePage:278 - Selected Table - T8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:30.603 BasePage:278 - Selected Check Number - 82-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:48.703 TableLayOutScreen:710 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:48.728 TableLayOutScreen:744 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:50.776 BasePage:278 - Tapped Add Button in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:50.830 TableLayOutScreen:900 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:50.847 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:50.878 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:54.980 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:57.049 BasePage:278 - Tapped Print Button in the Split Seat Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:57.092 BasePage:278 - Tapped Print All Button in the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:57.125 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:57.157 BasePage:278 - Tapped Seperate Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:57.195 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:28:57.228 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:04.368 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:08.438 TableLayOutScreen:831 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:08.462 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:09.859 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:09.899 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:09.941 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:09.962 OrderManagementScreen:2400 - M - T8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:12.032 BasePage:278 - Selected Table - T8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:14.128 BasePage:278 - Selected Check Number - 82-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:32.223 TableLayOutScreen:710 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:32.248 TableLayOutScreen:744 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:32.265 BasePage:278 - Tapped Split Evenly in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:33.329 TableLayOutScreen:951 - false
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:33.339 TableLayOutScreen:952 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:33.350 TableLayOutScreen:953 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:33.359 TableLayOutScreen:958 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.424 TableLayOutScreen:2090 - Seat 1 SubTotal - $ 45.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.428 TableLayOutScreen:2102 - Tax Value After Format - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.436 TableLayOutScreen:2115 - taxTxt - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.437 TableLayOutScreen:2116 - ActualValueTax3 - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.437 TableLayOutScreen:2118 - Seat 1 Tax - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.443 TableLayOutScreen:2121 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.450 TableLayOutScreen:2130 - subTotalTxt2 4538.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:38.450 TableLayOutScreen:2138 - Seat 1 Total - $ 49.01
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.515 TableLayOutScreen:2090 - Seat 1 SubTotal - $ 45.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.516 TableLayOutScreen:2102 - Tax Value After Format - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.526 TableLayOutScreen:2115 - taxTxt - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.526 TableLayOutScreen:2116 - ActualValueTax3 - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.526 TableLayOutScreen:2118 - Seat 1 Tax - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.533 TableLayOutScreen:2121 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.538 TableLayOutScreen:2130 - subTotalTxt2 4538.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:43.538 TableLayOutScreen:2138 - Seat 1 Total - $ 49.01
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.595 TableLayOutScreen:2194 - Seat 1 SubTotal - $ 45.38
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.599 TableLayOutScreen:2215 - Seat 2 Tax - 363.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.603 TableLayOutScreen:2218 - Seat 2 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.607 TableLayOutScreen:2227 - subTotalTxt2 4538.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.607 TableLayOutScreen:2235 - Seat 2 Total - $ 49.01
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.622 TableLayOutScreen:2148 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.633 TableLayOutScreen:2148 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.644 TableLayOutScreen:2148 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.654 TableLayOutScreen:2148 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.657 TableLayOutScreen:2151 - List of the Menu in the Seat 1 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.670 TableLayOutScreen:2162 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.680 TableLayOutScreen:2162 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.690 TableLayOutScreen:2162 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.702 TableLayOutScreen:2162 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.705 TableLayOutScreen:2165 - List of the Menu in the Seat 2 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:46.717 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:49.775 BasePage:258 - Tapped Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:50.835 BasePage:278 - Tapped the Group Seats Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:29:50.890 Hooks:58 - Failed Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:30:59.500 Hooks:46 - Start Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:30:59.538 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:30:59.572 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:30:59.595 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:30:59.619 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:30:59.643 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:01.747 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:01.789 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:03.173 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:03.261 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:05.390 BasePage:278 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:06.973 OrderManagementScreen:2022 - 83-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:06.993 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:07.031 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:42.486 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:43.893 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:43.929 BasePage:278 - Click the Transfer Button in Table Layout tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:43.972 BasePage:84 - TextTransfer to Server
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:43.980 BasePage:84 - TextTransfer to Table
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:43.988 BasePage:84 - TextTransfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:31:43.991 Hooks:58 - Failed Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:15.700 Hooks:46 - Start Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:15.745 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:15.777 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:15.803 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:15.827 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:15.852 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:17.959 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:18.005 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:19.391 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:19.477 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:23.176 OrderManagementScreen:1861 - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:23.195 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:52:23.234 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:10.892 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:12.206 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:12.825 PhoneOrderScreen:524 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:12.825 PhoneOrderScreen:527 - closed check is available - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:14.165 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:14.242 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:14.283 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:14.303 OrderManagementScreen:2400 - M - T15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:16.378 BasePage:278 - Selected Table - T15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:18.478 BasePage:278 - Selected Check Number - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:36.619 TableLayOutScreen:986 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:36.645 TableLayOutScreen:1020 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:38.695 BasePage:278 - Tapped Add Button in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:38.748 TableLayOutScreen:1176 - Seat2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:38.765 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:38.796 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:42.883 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:44.951 BasePage:278 - Tapped Print Button in the Split Seat Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:44.995 BasePage:278 - Tapped Print All Button in the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:45.027 BasePage:278 - Selected Menu Item As - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:45.059 BasePage:278 - Tapped Seperate Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:45.096 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:45.130 BasePage:278 - Continue (Close Till) button is tapped.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:52.264 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:56.332 TableLayOutScreen:1107 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:56.357 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:57.753 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:57.793 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:57.830 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:57.851 OrderManagementScreen:2400 - M - T15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:53:59.915 BasePage:278 - Selected Table - T15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:02.013 BasePage:278 - Selected Check Number - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:20.115 TableLayOutScreen:986 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:20.140 TableLayOutScreen:1020 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:20.158 BasePage:278 - Tapped Split Evenly in the Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:21.221 TableLayOutScreen:1227 - false
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:21.232 TableLayOutScreen:1228 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:21.243 TableLayOutScreen:1229 - true
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:21.251 TableLayOutScreen:1234 - Seperate Icon Is Disable
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.315 TableLayOutScreen:2369 - Seat 1 SubTotal - $ 50.96
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.319 TableLayOutScreen:2381 - Tax Value After Format - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.328 TableLayOutScreen:2394 - taxTxt - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.328 TableLayOutScreen:2395 - ActualValueTax3 - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.328 TableLayOutScreen:2397 - Seat 1 Tax - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.334 TableLayOutScreen:2400 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.340 TableLayOutScreen:2409 - subTotalTxt2 5096.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:26.341 TableLayOutScreen:2417 - Seat 1 Total - $ 55.04
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.394 TableLayOutScreen:2369 - Seat 1 SubTotal - $ 50.96
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.395 TableLayOutScreen:2381 - Tax Value After Format - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.404 TableLayOutScreen:2394 - taxTxt - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.405 TableLayOutScreen:2395 - ActualValueTax3 - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.405 TableLayOutScreen:2397 - Seat 1 Tax - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.412 TableLayOutScreen:2400 - Seat 1 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.417 TableLayOutScreen:2409 - subTotalTxt2 5096.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:31.417 TableLayOutScreen:2417 - Seat 1 Total - $ 55.04
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.471 TableLayOutScreen:2473 - Seat 1 SubTotal - $ 50.96
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.476 TableLayOutScreen:2494 - Seat 2 Tax - 408.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.480 TableLayOutScreen:2497 - Seat 2 Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.484 TableLayOutScreen:2506 - subTotalTxt2 5096.0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.485 TableLayOutScreen:2514 - Seat 2 Total - $ 55.04
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.500 TableLayOutScreen:2427 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.511 TableLayOutScreen:2427 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.522 TableLayOutScreen:2427 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.532 TableLayOutScreen:2427 - Menu Items in the Seat 1- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.536 TableLayOutScreen:2430 - List of the Menu in the Seat 1 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.548 TableLayOutScreen:2441 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.559 TableLayOutScreen:2441 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.570 TableLayOutScreen:2441 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.581 TableLayOutScreen:2441 - Menu Items in the Seat 2- Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.584 TableLayOutScreen:2444 - List of the Menu in the Seat 2 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:34.596 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:37.654 BasePage:258 - Tapped Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:38.716 BasePage:278 - Tapped the Group Seats Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.780 TableLayOutScreen:1282 - Menu Items count in the Seat - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.782 TableLayOutScreen:1286 - Menu Items count in the Seat - 8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.782 TableLayOutScreen:1287 - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.783 TableLayOutScreen:1288 - [Bhaw pajji, Bhaw pajji, Bhaw pajji, Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.807 TableLayOutScreen:1291 - 5 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.808 TableLayOutScreen:1292 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.814 TableLayOutScreen:1294 - 5 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.828 TableLayOutScreen:1291 - 6 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.828 TableLayOutScreen:1292 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.832 TableLayOutScreen:1294 - 6 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.842 TableLayOutScreen:1291 - 7 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.842 TableLayOutScreen:1292 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.845 TableLayOutScreen:1294 - 7 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.854 TableLayOutScreen:1291 - 8 Menu Items in the Seat - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.854 TableLayOutScreen:1292 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:40.857 TableLayOutScreen:1294 - 8 Al Menu Items Are clubbed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:45.878 TableLayOutScreen:2345 - Seat 1 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:50.895 TableLayOutScreen:2348 - Seat 2 Menu Count - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:55.935 TableLayOutScreen:2846 - menus1.size - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:55.954 TableLayOutScreen:2558 - Subtotal is SAME After Group Seats Done - $ 101.92
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:55.964 TableLayOutScreen:2580 - Tax is SAME After Group Seats Done - $ 8.15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:55.972 TableLayOutScreen:2598 - Paid AMount is SAME After Group Seats Done - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:55.980 TableLayOutScreen:2622 - TOTAL is SAME After Group Seats Done - $ 110.07
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:54:57.021 BasePage:278 - Tapped Save&Close on Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:01.081 TableLayOutScreen:1107 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:03.118 BasePage:278 - Down Btn Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:08.214 TableLayOutScreen:2682 - orderMenu.size() 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:08.246 TableLayOutScreen:2630 - Subtotal is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:08.263 TableLayOutScreen:2634 - Tax is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:08.275 TableLayOutScreen:2638 - Total is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:08.287 TableLayOutScreen:2642 - Paid Amount is - 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:08.301 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:09.687 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:09.726 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:09.763 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:09.784 OrderManagementScreen:2400 - M - T15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:11.850 BasePage:278 - Selected Table - T15
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:13.952 BasePage:278 - Selected Check Number - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:32.093 TableLayOutScreen:986 - Split Seat Page is Visible
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:32.118 TableLayOutScreen:1020 - Available - Seat 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:32.132 BasePage:278 - Selected Added Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:32.172 BasePage:278 - Tapped Pay Button in Split Seat Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:34.274 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:34.299 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:36.377 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:55:40.502 Hooks:58 - Failed Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:48.722 Hooks:46 - Start Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:48.761 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:48.793 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:48.817 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:48.842 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:48.866 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:50.967 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:51.009 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:52.393 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:52.475 BasePage:278 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:54.601 BasePage:278 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:56.169 OrderManagementScreen:2022 - 85-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:56.190 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:56:56.227 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:31.701 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.107 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.144 BasePage:278 - Click the Transfer Button in Table Layout tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.187 BasePage:84 - TextTransfer to Server
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.196 BasePage:84 - TextTransfer to Table
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.205 BasePage:84 - TextTransfer item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.215 BasePage:278 - Click the Transfer Item button in the Transfer window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.246 BasePage:66 - Enter the Check number - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.299 BasePage:278 - Selected - 2-002 - T8
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.336 BasePage:278 - Click the first menu item from the List of menu items in the Menu Item table - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.355 BasePage:84 - TextBhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.388 BasePage:278 - Selected - - T7
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:33.414 BasePage:278 - Click the Done button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:57:41.486 Hooks:58 - Failed Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:49.689 Hooks:46 - Start Scenario Name : Verify the merge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:49.727 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:49.761 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:49.785 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:49.808 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:49.830 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:51.931 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:51.972 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:53.355 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-22 19:58:53.414 Hooks:58 - Failed Scenario Name : Verify the merge

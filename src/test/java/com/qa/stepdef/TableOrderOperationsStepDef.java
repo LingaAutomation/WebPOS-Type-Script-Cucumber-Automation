@@ -359,7 +359,10 @@ public class TableOrderOperationsStepDef {
     public void iClickDoneButtonOnThePopup() throws InterruptedException {
         new TableLayOutScreen().pressDone1();
     }
-
+    @And("Verify the Successful message of Transfer Item One")
+    public void verifyTheSuccessfulMessageOfTransferItemOne() {
+        Assert.assertEquals("Transferred item success",new CheckAndItemTransfer().getTheSuccessmessage());
+    }
     @Then ("^I should see please enter valid number popup$")
     public void iShouldSeePleaseEnterValidNumberPopup(){
         new TableLayOutScreen().shouldSeePleaseEnterValidNumberPopup();
@@ -659,6 +662,12 @@ public class TableOrderOperationsStepDef {
     @And("^I select menu item as \"([^\"]*)\"$")
     public void iSelectMenuItemAs(String menuItem) throws Exception {
         new OrderManagementScreen().selectMenuItem(menuItem);
+    }
+
+    @And ("^I get value$")
+    public void iGetValue(){
+        new OrderManagementScreen().getVau();
+
     }
 
     @And("^I select menu1 item as \"([^\"]*)\"$")
@@ -1146,7 +1155,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see menu has separated as \"([^\"]*)\"$")
-    public void iShouldSeeMenuHasSeparatedAs(String number){
+    public void iShouldSeeMenuHasSeparatedAs(String number) throws InterruptedException {
         new TableLayOutScreen().verifyMenuHasSeperated(number);
     }
 
@@ -1182,7 +1191,15 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().orderScreen();
     }
 
+    @When("I verify the seat count on the order screen as {string}")
+    public void iVerifyTheSeatCountOnTheOrderScreenAs(String value) throws Exception {
+        new PhoneOrderScreen().iVerifyTheSeatCountOnTheOrderScreen(value);
+    }
 
+    @And("I click Seat {int} for add menu item")
+    public void iClickSeatForAddMenuItem(int arg0) throws InterruptedException {
+        new TableLayOutScreen().iClickSeatForAddMenuItem();
+    }
     @And("I select the order type FORHERE in dropdown")
     public void iSelectTheOrderTypeFORHEREInDropdown() throws InterruptedException {
         new OrderManagementScreen().selectOrderType_Forhere();
@@ -1285,6 +1302,11 @@ public class TableOrderOperationsStepDef {
     @And ("^I click the Group Seats button in the Split Seat$")
     public void iClickTheGroupSeatsButtonInTheSplitSeat() throws InterruptedException {
         new TableLayOutScreen().pressGroupSeat();
+    }
+
+    @And("I verify menu item are clubbed in seat {int}")
+    public void iVerifyMenuItemAreClubbedInSeat(int arg0) throws InterruptedException {
+        new TableLayOutScreen().verifyMenuItemAreClubbedInSeat2();
     }
 
     @Then ("^I should see the Select the Seats to Merge Popup message$")
@@ -1851,6 +1873,11 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().getMenu();
     }
 
+    @And ("^I get count of menu1$")
+    public void iGetCountOfMenu1() throws InterruptedException {
+        new OrderManagementScreen().getMenu1();
+    }
+
     @Then ("^I should see no menu item found text$")
     public void iShouldSeeNoMenuItemFoundText(){
         Assert.assertEquals(new OrderManagementScreen().verifyNoMenuItemFoundTxt(),"______ NO MENU ITEMS FOUND IN \"PAROTTAS\" ______");
@@ -2088,8 +2115,8 @@ public class TableOrderOperationsStepDef {
         new OrderManagementScreen().getTheMenuInTheOrderScreen();
     }
     @And("^I select Menu of Basic validation for QSR as \"([^\"]*)\"")
-    public void iSelectMenuOfBasicValidationForQsrAs(String cate){
-        new Regression().selectMenuBasicValidationForQsr(cate);
+    public void iSelectMenuOfBasicValidationForQsrAs(String cate) throws Exception {
+        new TableLayOutScreen().selectMenuBasicValidationForQsr(cate);
     }
 
     @When ("^I click batch/Tip adjustment button$")
@@ -2168,7 +2195,7 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I get value the menu values from order screen$")
     public void iGetValueTheMenuValuesFromOrderScreen(){
-        new Regression().getMenuValues();
+        new TableLayOutScreen().getMenuValues();
     }
 
     @And ("^I get order screen value the menu values from order screen$")
@@ -2183,7 +2210,7 @@ public class TableOrderOperationsStepDef {
 
     @And ("^I get value the menu values from order screen1$")
     public void iGetValueTheMenuValuesFromOrderScreen1(){
-        new Regression().getMenuValues1();
+        new TableLayOutScreen().getMenuValues1();
     }
 
     @When ("^I verify the menu after merge done$")
@@ -2193,7 +2220,7 @@ public class TableOrderOperationsStepDef {
 
     @When ("^I verify the menu prize after merge done$")
     public void iVerifyTheMenuPrizeAfterMergeDone(){
-        new Regression().verifyTheMenuPrizeAfterMergeDone();
+        new TableLayOutScreen().verifyTheMenuPrizeAfterMergeDone();
     }
 
     @When ("^I verify the menu prize after merge done for bartab only$")
@@ -2254,52 +2281,57 @@ public class TableOrderOperationsStepDef {
 
     @When ("^I verify the Active check with split check$")
     public void iVerifyTheActiveCheckWithSplitCheck(){
-        new Regression().verifyActiveCheckWithSplitCheck();
+        new TableLayOutScreen().verifyActiveCheckWithSplitCheck();
     }
 
     @And ("^I click Add Button on the split check screen$")
     public void iClickAddButtonOnTheSplitCheckScreen(){
-        new Regression().clickAddButtonOntheSplitCheckScreen();
+        new TableLayOutScreen().clickAddButtonOntheSplitCheckScreen();
     }
 
     @Then ("^I should see new check added on the split check screen$")
     public void iShouldSeeNewCheckAddedOnTheSplitCheckScreen(){
-        new Regression().VerifyNewCheckAddedOnTheSplitCheckScreen();
+        new TableLayOutScreen().VerifyNewCheckAddedOnTheSplitCheckScreen();
     }
 
     @And ("^I click the menu on the split check screen$")
     public void iClickTheMenuOnTheSplitCheckScreen(){
-        new Regression().ClickTheMenuOnTheSplitCheckScreen();
+        new TableLayOutScreen().ClickTheMenuOnTheSplitCheckScreen();
     }
 
     @And("^I click the menu on the split seat screen$")
     public void iClickTheMenuOnTheSplitSeatScreen(){
-        new Regression().ClickTheMenuOnTheNewSplitSeatScreen();
+        new TableLayOutScreen().ClickTheMenuOnTheNewSplitSeatScreen();
     }
 
     @And ("^I click new check added on the split check screen$")
-    public void iClickNewCheckAddedOnTheSplitCheckScreen(){
-        new Regression().clickNewCheckOnTheSplitCheckScreen();
+    public void iClickNewCheckAddedOnTheSplitCheckScreen() throws InterruptedException {
+        new TableLayOutScreen().clickNewCheckOnTheSplitCheckScreen();
     }
 
     @When ("^I verify the menu is moved to the added check seat$")
     public void iVerifyTheMenuIsMovedToTheAddedCheckSeat(){
-    new Regression().verifyTheMenuIsMovedToTheAddedCheckSeat();
+    new TableLayOutScreen().verifyTheMenuIsMovedToTheAddedCheckSeat();
+    }
+
+    @And("I click new check added on the split check screen page")
+    public void iClickNewCheckAddedOnTheSplitCheckScreenPage() {
+        new PhoneOrderScreen().clickNewCheckOnTheSplitCheckScreen01();
     }
 
     @Then ("^I should see please save all the changes to print popup$")
     public void iShouldSeePleaseSaveAllTheChangesToPrintPopup(){
-        new Regression().verifyThePleaseSaveAlltheChangesToPrintPopup();
+        new TableLayOutScreen().verifyThePleaseSaveAlltheChangesToPrintPopup();
     }
 
     @When ("^I verify the check is splitted and check number is increased$")
     public void iVerifyTheCheckIsSplittedAndCheckNumberIsIncreased(){
-        new Regression().verifyCheckNumberIsSplittedAndCheckNumberIsIncreased();
+        new TableLayOutScreen().verifyCheckNumberIsSplittedAndCheckNumberIsIncreased();
     }
 
     @When ("^I verify primary check is opened after split check is done$")
     public void iVerifyPrimaryCheckIsOpenedAfterSplitCheckIsDone(){
-        new Regression().verifyPrimaryCheckIsOpened();
+        new TableLayOutScreen().verifyPrimaryCheckIsOpened();
     }
 
     @And ("^I click split by seat in the split check screen$")
@@ -2362,13 +2394,23 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I get seat 1 prize details$")
-    public void iGetSeat1PrizeDetails(){
+    public void iGetSeat1PrizeDetails() throws InterruptedException {
         new TableLayOutScreen().getSeat1Prize();
     }
 
     @And ("^I get seat 2 prize details$")
-    public void iGetSeat2PrizeDetails(){
+    public void iGetSeat2PrizeDetails() throws InterruptedException {
         new TableLayOutScreen().getSeat2Prize();
+    }
+
+    @And("I get the menu item on the split seat_One")
+    public void iGetTheMenuItemOnTheSplitSeat_One() {
+        new TableLayOutScreen().getTheAllMenuInTheSeat();
+    }
+
+    @And("I get the menu item on the split seat_Two")
+    public void iGetTheMenuItemOnTheSplitSeat_Two() {
+        new TableLayOutScreen().getTheAllMenuInTheSeat2();
     }
 
     @And ("^I verify prize details after group seats done$")
@@ -2445,8 +2487,8 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I select the random table from the table layout$")
-    public void iSelectTheRandomTableFromTheTableLayout(){
-        new Regression().selectTheRandomTableFromTheTableLayout();
+    public void iSelectTheRandomTableFromTheTableLayout() throws Exception {
+        new TableLayOutScreen().selectTheRandomTableFromTheTableLayout();
     }
 
     @Then("I should see the add customer screen in the window")

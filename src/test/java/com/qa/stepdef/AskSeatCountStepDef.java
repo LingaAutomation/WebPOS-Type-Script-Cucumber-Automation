@@ -1,7 +1,10 @@
 package com.qa.stepdef;
 
 import com.qa.pages.AskSeatNumber;
+import com.qa.pages.OrderManagementScreen;
+import com.qa.pages.TGPosSettingsPage;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class AskSeatCountStepDef {
@@ -36,6 +39,15 @@ public class AskSeatCountStepDef {
         new AskSeatNumber().selectRandomTable();
     }
 
+    @And("I click power button in operation")
+    public void iClickPowerButtonInOperation() throws InterruptedException {
+        new OrderManagementScreen().clickLogOffBtnINOPERATION();
+    }
+
+//    @Then("User close Enable Cash Drop option if enable")
+//    public void userCloseEnableCashDropOptionIfEnable() throws Exception {
+//        new TGPosSettingsPage().openEnableCashDropOptionIfDisable("up");
+//    }
     @When("^I should verify the ask seat number on the table layout$")
     public void iShouldVerifyTheAskSeatNumberOnTheTableLayout(){
         new AskSeatNumber().shouldVerifyTheAskSeatNumberOnTheTableLayout();

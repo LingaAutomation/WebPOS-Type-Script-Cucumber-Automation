@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -91,7 +92,10 @@ public class BarTabScreen extends OrderManagementScreen{
 
     public void pressNewTabBtn(){ elementClick(newTab,"Tapped Newtab from BarTab Layout");}
 
-    public void pressSettings(){elementClick(settings,"Tapped the settings button");}
+    public void pressSettings(){
+
+        elementClick(settings,"Tapped the settings button");
+        }
 
     public void pressPOSset(){elementClick(POSsettings,"Tapped POS Setting");}
 

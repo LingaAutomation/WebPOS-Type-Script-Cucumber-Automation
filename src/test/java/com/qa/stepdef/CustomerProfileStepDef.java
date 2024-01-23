@@ -21,8 +21,8 @@ public class CustomerProfileStepDef {
     }
 
     @And("^I select search$")
-    public void iSelectSearch() {
-        new CustomerProfileWindow().pressSearchField();
+    public void iSelectSearch() throws InterruptedException {
+        new OrderTypeWindow().pressSearchField();
     }
 
     @When ("^I verify the customer as \"([^\"]*)\" is available in the customer profile window$")
@@ -31,7 +31,7 @@ public class CustomerProfileStepDef {
     }
 
     @And("^I enter an existing customer's name \"([^\"]*)\"$")
-    public void iEnterAnExistingCustomerSName(String customerName) {
+    public void iEnterAnExistingCustomerSName(String customerName) throws InterruptedException {
         new CustomerProfileWindow().sendCustomerName(customerName);
     }
 
@@ -41,7 +41,7 @@ public class CustomerProfileStepDef {
     }
 
     @And("^I select the customer")
-    public void iSelectTheCustomer() {
+    public void iSelectTheCustomer() throws InterruptedException {
         new CustomerProfileWindow().selectCustomer();
     }
 
@@ -56,12 +56,12 @@ public class CustomerProfileStepDef {
     }
 
     @And("^I select the customer for autoMembership")
-    public void iSelectTheCustomerForAutoMembership() {
+    public void iSelectTheCustomerForAutoMembership() throws InterruptedException {
         new CustomerProfileWindow().selectCustomerForMembership();
     }
 
     @And ("^I select the customer for tax exempt$")
-    public void iSelectTheCustomerForTaxExempt(){
+    public void iSelectTheCustomerForTaxExempt() throws InterruptedException {
         new CustomerProfileWindow().selectCustomerforTaxExempt();
     }
 

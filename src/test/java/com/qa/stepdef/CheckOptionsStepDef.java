@@ -956,8 +956,8 @@ public class CheckOptionsStepDef {
     }
 
     @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split Check$")
-    public void iSelectMenuForDineOrderTypeAsForSplitCheck(String Cate){
-        new Regression().selectMenuForDineInForSplitCheck(Cate);
+    public void iSelectMenuForDineOrderTypeAsForSplitCheck(String Cate) throws Exception {
+        new CheckOptions().selectMenuForDineInForSplitCheck(Cate);
     }
 
     @And ("^I select Menu For Dine order type as \"([^\"]*)\" for split seat$")
@@ -993,13 +993,13 @@ public class CheckOptionsStepDef {
         new Regression().selectTheMenuFromOrderScreenSplitSeat(cate);
     }
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen for merge$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreenForMerge(String cate){
-        new Regression().selectTheMenuFromOrderScreenSplitSeatForMerge(cate);
+    public void iSelectMenuForDineInAsForSplitSeatOrderScreenForMerge(String cate) throws Exception {
+        new TableLayOutScreen().selectTheMenuFromOrderScreenSplitSeatForMerge(cate);
     }
 
     @And ("^I select Menu for DineIn as \"([^\"]*)\" for split seat order screen1$")
-    public void iSelectMenuForDineInAsForSplitSeatOrderScreen1(String cate){
-        new Regression().selectTheMenuFromOrderScreenSplitSeat1(cate);
+    public void iSelectMenuForDineInAsForSplitSeatOrderScreen1(String cate) throws Exception {
+        new TableLayOutScreen().selectTheMenuFromOrderScreenSplitSeat1(cate);
     }
 
     @And("^I select Menu for Bartab as \"([^\"]*)\" for split check order screen$")
@@ -1013,31 +1013,31 @@ public class CheckOptionsStepDef {
 
     @And ("^I get the list of the menu from the order screen$")
     public void iGetTheListOfTheMenuFromTheOrderScreen(){
-        new Regression().getTheListOfTheMenuFromTheOrderScreen();
+        new CheckAndItemTransfer().getTheListOfTheMenuFromTheOrderScreen();
     }
 
     @And ("^I get the seat number from the check$")
     public void iGetTheSeatNumberFromTheCheck(){
-        new Regression().getSeatNumberFromCheck();
+        new TableLayOutScreen().getSeatNumberFromCheck();
     }
 
     @And ("^I get the seat number from the check1$")
     public void iGetTheSeatNumberFromTheCheck1(){
-        new Regression().getSeatNumberFromCheck1();
+        new TableLayOutScreen().getSeatNumberFromCheck1();
     }
     @And ("^I get the list of the menu from the order screen1$")
     public void iGetTheListOfTheMenuFromTheOrderScreen1(){
-        new Regression().getTheListOfTheMenuFromTheOrderScreen1();
+        new TableLayOutScreen().getTheListOfTheMenuFromTheOrderScreen1();
     }
 
     @When ("^I verify the seat number from the order screen$")
     public void iVerifyTheSeatNumberFromTheOrderScreen(){
-        new Regression().verifySeatNumberFromTheOrderScreen();
+        new TableLayOutScreen().verifySeatNumberFromTheOrderScreen();
     }
 
     @And ("^I verify check number from the order screen$")
     public void iVerifyCheckNumberFromTheOrderScreen(){
-        new Regression().verifyCheckNumber();
+        new TableLayOutScreen().verifyCheckNumber();
     }
 
 

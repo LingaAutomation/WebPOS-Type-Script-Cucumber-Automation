@@ -171,39 +171,35 @@ public class CheckAndItemTransfer extends BasePage{
     }
 
     public void selectTheTransferOption(){
-        WebElement ele = mergeAndFindMobileElement(transferBtn);
+        WebElement ele = driver.findElement(By.xpath("//button[contains(.,'Transfer')]"));
         elementClick(ele,"Click the Transfer Button in Table Layout tab");
     }
 
+
     public void selectTheTransferItemBtn(){
-        WebElement ele = mergeAndFindMobileElement(transferItemBtn);
+        WebElement ele = driver.findElement(By.xpath("//p[contains(.,'Transfer item')]"));
         elementClick(ele,"Click the Transfer Item button in the Transfer window");
     }
 
     public String verifyTransferToServerBtnInTransferWindow()
     {
-        WebElement ele1 = mergeAndFindMobileElement(transferToServerBtn);
-        String TrnsSer = elementGetText(ele1,"Get the text of Transfer to Server button");
-
-        return TrnsSer;
+        WebElement ele1 = driver.findElement(By.xpath("//p[contains(.,'Transfer to Server')]"));
+        return getText(ele1,"Text");
     }
 
     public String verifyTransferToTableBtnInTransferWindow()
     {
-        WebElement ele2 = mergeAndFindMobileElement(transferToTableBtn);
-        String TrnsTble = elementGetText(ele2,"Get the text of Transfer to Table button");
-
-        return TrnsTble;
+        WebElement ele2 = driver.findElement(By.xpath("//p[contains(.,'Transfer to Table')]"));
+        return getText(ele2,"Text");
     }
 
     public String verifyTransferItemBtnInTransferWindow()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        WebElement ele3 = mergeAndFindMobileElement(transferItemBtn);
-        String TrnsItem = elementGetText(ele3,"Get the Text of Transfer Item");
-
-        return TrnsItem;
+        WebElement ele3 = driver.findElement(By.xpath("//p[contains(.,'Transfer item')]"));
+        return getText(ele3,"Text");
     }
+
 
     public void selectTheFirstTableFromTheTransferFromTable()
     {
@@ -220,12 +216,11 @@ public class CheckAndItemTransfer extends BasePage{
     public void selectTheFirstOptionFromTheMenuItemTable()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        WebElement ele = mergeAndFindMobileElement(firstIteminMenuItemTable);
+        WebElement ele = driver.findElement(By.xpath("(//div[contains(@class,'transfer-items-grid')]//ul[contains(@class,'transfer-items-grid-list')]//ion-row[contains(@class,'transfer-items-grid-list')]//ion-col//p)[1]"));
         elementClick(ele,"Click the first menu item from the List of menu items in the Menu Item table - "+ele.getText());
-        String el = elementGetText(ele,"Get the text of First Menu Item from the list");
+        String el = getText(ele,"Text");
         FirstMenuItem = el;
         TestUtils.FirstMenuItem = FirstMenuItem;
-        utils.log().info(FirstMenuItem);
     }
 
     public void selectTheFirstTableFromTheTransferToTable()
@@ -242,17 +237,15 @@ public class CheckAndItemTransfer extends BasePage{
     public void clickTheDoneBtn()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        WebElement ele = mergeAndFindMobileElement(doneBtnInTransferWindow);
+        WebElement ele = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
         elementClick(ele,"Click the Done button");
     }
 
     public String getTheSuccessmessage()
     {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        WebElement ele = mergeAndFindMobileElement(successmessageOfTransfer);
-        String d = elementGetText(ele,"Get the Successful message of Transfer");
-
-        return d;
+        WebElement ele = driver.findElement(By.xpath("//p[contains(.,'Transferred item success')]"));
+        return getText(ele,"Text");
     }
 
     public void clickTheFromTableFromTheListOfTables()
@@ -523,14 +516,13 @@ WebElement searchField;
     }
 
     public void selectTheCheckForTransfer() throws InterruptedException {
-       driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-       WebElement searchField = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeTextField"));
-       sendKeys(searchField,TestUtils.globalCheckNumber,"Enter the Check number - "+TestUtils.globalCheckNumber);
+        driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
+        WebElement searchField = (WebElement) driver.findElement(By.xpath("//div[contains(@class,'transfer-list-header')]//p[contains(.,'Transfer From')]/../..//div[contains(@class,'tabletransfer')]//ion-searchbar//div//input"));
+        sendKeys(searchField,TestUtils.globalCheckNumber,"Enter the Check number - "+TestUtils.globalCheckNumber);
 
-       WebElement selectCheck = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText"));
-       String selectCheckTxt = selectCheck.getText();
-       elementClick(selectCheck,"Selected - "+selectCheckTxt);
-
+        WebElement selectCheck = (WebElement) driver.findElement(By.xpath("//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div"));
+        String selectCheckTxt = selectCheck.getText();
+        elementClick(selectCheck,"Selected - "+selectCheckTxt);
     }
 
     public int itemToSelect;
@@ -538,9 +530,9 @@ WebElement searchField;
     public void selectTheCheckForTransfer1() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 
-        List<WebElement> tablee = (List<WebElement>) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Transfer To\"]/../XCUIElementTypeTable/XCUIElementTypeCell"));
+        List<WebElement> tablee = driver.findElements(By.xpath("//ion-col[contains(@class,'tabletransfer-itemrow-transferto')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div"));
         int count = tablee.size();
-        utils.log().info(String.valueOf(count));
+//        utils.log().info(String.valueOf(count));
 
         Random rand = new Random();
 
@@ -550,21 +542,21 @@ WebElement searchField;
             if (itemToSelect == 0) {
                 itemToSelect = 1;
             }
-            utils.log().info(String.valueOf(itemToSelect));
-             selectedCheck();
+//            utils.log().info(String.valueOf(itemToSelect));
+            selectedCheck();
         }
     }
 
     public void selectedCheck() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
-        WebElement selectCheck = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Transfer To\"]/../XCUIElementTypeTable/XCUIElementTypeCell[" + itemToSelect + "]/XCUIElementTypeStaticText"));
+        WebElement selectCheck = (WebElement) driver.findElement(By.xpath("(//ion-col[contains(@class,'tabletransfer-itemrow-transferto')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div)["+itemToSelect+"]//span"));
         String selectCheckTxt= (selectCheck.getText()).substring(7);
         TestUtils.Transfertable = selectCheckTxt.replaceAll(" ","");
-        utils.log().info("TestUtils.Transfertable - "+TestUtils.Transfertable);
+//        utils.log().info("TestUtils.Transfertable - "+TestUtils.Transfertable);
         TestUtils.TransferCheckNumber = (selectCheck.getText()).substring(0,5);
-        utils.log().info("TestUtils.TransferCheckNumber - "+TestUtils.TransferCheckNumber);
+//        utils.log().info("TestUtils.TransferCheckNumber - "+TestUtils.TransferCheckNumber);
         if(selectCheckTxt.contains("T")) {
-           if((!"ToG".equals(selectCheckTxt)&&(!"Bar".equals(selectCheckTxt)))) {
+            if((!"ToG".equals(selectCheckTxt)&&(!"Bar".equals(selectCheckTxt)))) {
                 elementClick(selectCheck, "Selected - " + selectCheckTxt);
             }else{ }
         }else{
@@ -573,30 +565,30 @@ WebElement searchField;
     }
 
     public void clickTheTransferredTable() throws InterruptedException {
-    driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
-    String m = (TestUtils.Transfertable).replaceAll("[- ]","");
+        driver.manage().timeouts().implicitlyWait(6,TimeUnit.SECONDS);
+        String m = (TestUtils.Transfertable).replaceAll("[- ]","");
 
-        utils.log().info("m - "+m);
-        WebElement tableSelect = (WebElement) driver.findElement(By.xpath(m));
+//        utils.log().info("m - "+m);
+        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("//p[@id='tableNameId']//label[contains(.,'"+m+"')]"));
         if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
 
             Thread.sleep(100);
             elementClick(tableSelect, "Selected Table - " + tableSelect.getText());
             try {
-                WebElement checks = (WebElement) driver.findElement(By.xpath("Checks"));
+                WebElement checks = (WebElement) driver.findElement(By.xpath("//ion-title[.='Checks']"));
 
                 if (checks.isDisplayed()) {
                     Thread.sleep(200);
                     String globalCheckNumber = TestUtils.TransferCheckNumber;
 
-                    WebElement checkNumberrr = (WebElement) driver.findElement(By.xpath(globalCheckNumber));
+                    WebElement checkNumberrr = driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks-content')]//ion-grid//ion-row//div//p[contains(.,'"+globalCheckNumber+"')]"));
                     if (checkNumberrr.isDisplayed()) {
                         elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
                     } else {
                     }
 
                 } else {
-                    WebElement table1 = (WebElement) driver.findElement(By.xpath(m));
+                    WebElement table1 = (WebElement) driver.findElement(By.xpath("//button[contains(.,'"+m+"')]"));
                     elementClick(table1, "table SELECTED - " + m);
 
                 }
@@ -605,6 +597,114 @@ WebElement searchField;
             }
         }
     }
+
+    public String[] orderMenuName1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifieR = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] orderMenuPrize = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifierPrize = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifieR1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifierPrize1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifierCheck1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifierPrizeCheck1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+    public String[] orderMenuName2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifieR2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] orderMenuPrize2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifierPrize2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+    public String[] discountName = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountCount = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountPrize = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+    public String[] discountName11 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountCount11 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountPrize11 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+    public String[] discountNameVerify1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountCountVerify1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountPrizeVerify1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountNameVerify2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountCountVerify2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountPrizeVerify2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+    public String[] discountName111 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountCount111 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] discountPrize111 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+
+    public void getTheListOfTheMenuFromTheOrderScreen() {
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu = (List<WebElement>) driver.findElements(By.xpath("//div[contains(@class,'orderlist-container ordr-border')]"));
+        utils.log().info("orderMenu.size() " + orderMenu.size());
+        for (int i = 1; i <= orderMenu.size(); i++) {
+
+            WebElement orderMenuName = driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')]//div[contains(@class,'menu-section orderlist')]//div[contains(@class,'orderlist-menuname')])["+i+"]"));
+            orderMenuName1[i] = orderMenuName.getText();
+            TestUtils.orderMenuName[i] = orderMenuName1[i];
+            WebElement orderMenuPrize1 = driver.findElement(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')]//div[contains(@class,'menu-section orderlist')]//div[contains(@class,'text-pos-end')])["+i+"]"));
+            orderMenuPrize[i] = orderMenuPrize1.getText();
+            TestUtils.orderMenuPrize[i] = orderMenuPrize[i];
+            utils.log().info("Order Screen menu SAME with Split Menu 1 - " + (i) + " " + orderMenuName1[i] + " Prize " + orderMenuPrize[i]);
+            try {
+                List<WebElement> modifier = (List<WebElement>) driver.findElements(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'menuname qsr-mod')]"));
+                utils.log().info(" MOdifier 1 Size - " + modifier.size());
+                for (int m = 1; m <= modifier.size(); m++) {
+                    WebElement modifier1 = (WebElement) driver.findElements(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'menuname qsr-mod')])["+m+"]"));
+                    modifierCheck1[m] = modifier1.getText();
+                    TestUtils.modifier[m] = modifierCheck1[m];
+                    utils.log().info("modifier1.getText() - " + modifier1.getText());
+                    WebElement modifierPrize1 = (WebElement) driver.findElements(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'modifier-section')]//div[contains(@class,'pos-end qsr-mod')])["+m+"]"));
+                    modifierPrizeCheck1[m] = modifierPrize1.getText();
+                    TestUtils.modifierPrize[m] = modifierPrizeCheck1[m];
+                    utils.log().info("  TestUtils.modifierPrize[m] - " + TestUtils.modifierPrize[m]);
+                    utils.log().info("Modifier  - " + m + modifierCheck1[m] + " Prize - " + modifierPrizeCheck1[m]);
+                }
+
+                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTable[2]
+                List<WebElement> discount = (List<WebElement>) driver.findElements(By.xpath("(//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-name')]"));
+                utils.log().info("discount.size() - "+discount.size());
+                for (int h = 1; h <= discount.size(); h++) {
+                    WebElement discountName1 = (WebElement) driver.findElements(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-name')])["+h+"]"));
+                    discountName[h] = discountName1.getText();
+                    TestUtils.discountName[h] = discountName[h];
+                    WebElement discountCount1 = (WebElement) driver.findElements(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-quantity')])["+h+"]"));
+                    discountCount[h] = discountCount1.getText();
+                    TestUtils.discountCount1[h] = discountCount[h];
+                    WebElement discountPrize1 = (WebElement) driver.findElements(By.xpath("((//div[contains(@class,'orderlist-container ordr-border')])["+i+"]//div[contains(@class,'discount-section')]//div[contains(@class,'discount-section-price')])["+h+"]"));
+                    discountPrize[h] = discountPrize1.getText();
+                    utils.log().info("Discount 1 as - " + discountName[h] + " Qty - " + discountCount[h] + " Amount - " + discountPrize[h]);
+                }
+            } catch (Exception g) {
+
+            }
+//            try{
+//
+//
+//            }catch (Exception w){
+//
+//            }
+        }
+
+    }
+
+    public String[] MenuNameTxt = {" ", " ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
+    public String[] MenuNamePrize = {" ", " ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
+
+    public String[] MenuNameTxt2 = {" ", " ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
+    public String[] MenuNamePrize2 = {" ", " ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
+
+    public String[] ModifierName = {" ", " ", " ", " ", " ", " "," "," "," "," "," "," "};
+    public String[] ModifierPrize = {" ", " ", " ", " ", " ", " "," "," "," "," "," "," "};
+
+    public String[] ModifierName2 = {" ", " ", " ", " ", " ", " "," "," "," "," "," "," "};
+    public String[] ModifierPrize2 = {" ", " ", " ", " ", " ", " "," "," "," "," "," "," "};
+
+    public String[] MenuQty = {" ", " ", " ", " ", " ", " ", " "," "," "," "," "," "," "};
+    public String[] MenuQty2 = {" ", " ", " ", " ", " ", " ", " "," "," "," "," "," "," "};
+
+    public String[] ModifierQty = {" ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
+    public String[] ModifierQty2 = {" ", " ", " "," "," "," "," "," "," "," "," "," "," "," "," "};
+
 
 
 

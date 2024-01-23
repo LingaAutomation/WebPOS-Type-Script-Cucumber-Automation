@@ -5,12 +5,14 @@ import com.qa.utils.TestUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 public class CheckOptions extends OrderManagementScreen {
@@ -125,6 +127,202 @@ public class CheckOptions extends OrderManagementScreen {
         elementClick(applyBtn, "Tapped Apply button");
     }
     public String a = " ";
+
+    public WebElement Select_RandomTable() throws Exception
+    {
+
+//		if(driver.findElement(By.xpath(Utility.getXpathProperty(""))).isDisplayed())
+//		{
+//
+//		}
+        WebElement randomTab;
+
+
+
+        if(driver.findElement(By.xpath("//div[@class='child']/button")).isDisplayed())
+        {
+//            test.log(LogStatus.INFO, "Table Layout is displayed");
+        }
+        else
+        {
+            if(driver.findElement(By.xpath("//p[.='You not created any Floors in your Store']")).isDisplayed())
+            {
+
+                //Click the Done button
+                driver.findElement(By.xpath("//span[.='Done']/..")).click();
+
+//                test.log(LogStatus.INFO, "Here Floor is not created");
+            }
+
+        }
+
+        List<WebElement> TableList=driver.findElements(By.xpath("//div[@class='child']/button"));
+
+
+        int tableSize=TableList.size();
+
+
+        int randomTable= ThreadLocalRandom.current().nextInt(1, tableSize);
+
+        System.out.println("Table No is : "+randomTable);
+        try
+        {
+            Thread.sleep(2000);
+            driver.findElement(By.xpath("//div[@class='child']/button["+randomTable+"]")).click();
+        }
+        catch(Exception lk) {}
+        randomTab=driver.findElement(By.xpath("//div[@class='child']/button["+randomTable+"]"));
+
+        return randomTab;
+
+    }
+
+
+
+    public String selectMenuForDineInForSplitCheck(String cate) throws Exception {
+
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
+        elementClick(New, "Tapped New");
+        Select_RandomTable();
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        try
+        {
+            if(driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']")).isDisplayed())
+            {
+//                test.log(LogStatus.INFO, "Seat Quantity entering Screen displayed successfully");
+            }
+        }
+        catch(Exception w)
+        {
+//            test.log(LogStatus.FAIL, "Seat Quantity entering Screen is not displayed");
+        }
+
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        //Click the required number seat from numpad
+        String seatcount = driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='2']")).getText();
+        driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='2']")).click();
+        TestUtils.seatNumber = seatcount;
+        //Click the Continue button
+        driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
+        Thread.sleep(1500);
+
+        getCheckNumberTxt();
+        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
+        WebElement cate2 = driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]//div[contains(.,'"+cate+"')]"));
+        elementClick(cate2, "Tapped category");
+        Thread.sleep(5000);
+        WebElement seatNum = driver.findElement(By.xpath("//button[@id='os_selectedSeat']//span[1]"));
+        TestUtils.tableNumberof = seatNum.getText();
+        /***  RandOm Select Menu **/
+        Select_RandomMenuItems(driver);
+        return check;
+    }
+    String check = null;
+    public void Select_RandomMenuItems(WebDriver driver) throws Exception
+    {
+
+        for(int i=1;i<=3;i++)
+        {
+            List<WebElement> MenuList=driver.findElements(By.xpath("//button[contains(@id,'menu-item')]"));
+
+
+            int MenusSize=MenuList.size()-1;
+
+
+            int randomMenu= ThreadLocalRandom.current().nextInt(1, MenusSize-1);
+
+            //Remove Comment lines
+	/*	Thread.sleep(1000);
+	    JavascriptExecutor js=(JavascriptExecutor)driver;
+		WebElement menuEle=driver.findElement(By.xpath("//button[@id='menu-item-"+randomMenu+"']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", menuEle);
+		menuEle.click();
+		*/
+		/*
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		WebElement menuEle=driver.findElement(By.xpath("//div[@id='catAndMenuDiv']/div/div[3]/button["+randomMenu+"]"));
+		js.executeScript("arguments[0].scrollIntoView(true);", menuEle);
+		menuEle.click();
+	*/
+
+            JavascriptExecutor js=(JavascriptExecutor)driver;
+            WebElement menuEle=driver.findElement(By.xpath("//div[contains(@class,'menuItem')]/button["+randomMenu+"]"));
+            js.executeScript("arguments[0].scrollIntoView(true);", menuEle);
+            menuEle.click();
+		/*
+		Reading_Excel_With_2_Menu_Item sw = new Reading_Excel_With_2_Menu_Item();
+		sw.select_Some_MenuItems(driver, test);
+		*/
+            try
+            {
+
+                if(driver.findElement(By.xpath("//*[contains(@class,'modifier_content')]")).isDisplayed())
+                {
+
+
+                    List<WebElement> ModList=driver.findElements(By.xpath("//*[contains(@class,'modifier_content')]/ion-col[1]/button"));
+
+
+                    int ModSize=ModList.size();
+
+
+                    int randomMod=ThreadLocalRandom.current().nextInt(1, ModSize);
+
+
+
+                    JavascriptExecutor js1=(JavascriptExecutor)driver;
+                    WebElement modEle=driver.findElement(By.xpath("//*[contains(@class,'modifier_content')]/ion-col[1]/button["+randomMod+"]"));
+                    js1.executeScript("arguments[0].scrollIntoView(true);", modEle);
+                    modEle.click();
+
+
+
+                    driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
+                }
+                if(driver.findElement(By.xpath("//*[contains(@class,'conversational_content')]")).isDisplayed())
+                {
+
+
+                    List<WebElement> ModList=driver.findElements(By.xpath("//*[contains(@class,'conversational_content')]/ion-col[1]/button"));
+
+
+                    int ModSize=ModList.size();
+
+
+                    int randomMod=ThreadLocalRandom.current().nextInt(1, ModSize);
+
+
+
+                    JavascriptExecutor js1=(JavascriptExecutor)driver;
+                    WebElement modEle=driver.findElement(By.xpath("//*[contains(@class,'conversational_content')]/ion-col[1]/button["+randomMod+"]"));
+                    js1.executeScript("arguments[0].scrollIntoView(true);", modEle);
+                    modEle.click();
+
+
+
+                    driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
+                }
+
+
+            }
+            catch(Exception cj)
+            {
+
+                try {
+                    if (driver.findElement(By.xpath("//button[contains(.,'Done')]")).isDisplayed()) {
+
+                        driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
+
+                    }
+                }catch (Exception e) {
+
+                }
+
+            }
+        }
+
+    }
 
     public String passPercentageEngin1() {
         a = "8";
