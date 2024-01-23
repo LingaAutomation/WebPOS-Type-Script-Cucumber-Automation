@@ -216,7 +216,10 @@ public class OrderTypesStepDef {
     public void iClickTheQuickBarIcon() throws Exception {new BarTabScreen(driver).pressQuickBar();}
 
     @And("I click the Toggle Icon button")
-    public void iClickTheToggleIconButton(){new BarTabScreen(driver).pressToggleBtn();}
+    public void iClickTheToggleIconButton() throws InterruptedException {
+        Thread.sleep(2000);
+        new BarTabScreen(driver).pressToggleBtn();
+    }
 
     @And ("I click POS Icon from Toggle")
     public void iClickPOSIconFromToggle(){new BarTabScreen(driver).pressPOSIcon();}
@@ -522,7 +525,7 @@ public class OrderTypesStepDef {
         }
 
         @Then("^Select anyone Table from the Transfer From Table$")
-        public void selectAnyoneTableFromTheTransferFromTable() {
+        public void selectAnyoneTableFromTheTransferFromTable() throws InterruptedException {
             new CheckAndItemTransfer().selectTheTransferToTableFromTheTransferFromTable();
         }
 

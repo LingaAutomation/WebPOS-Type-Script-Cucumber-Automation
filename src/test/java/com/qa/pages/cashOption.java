@@ -173,6 +173,48 @@ public class cashOption extends TillManagementScreen{
         // int subtotal=subTotalOfMenuTxt.replace(".","");
     }
 
+    public void getServiceChargeWith_out_Tax(){
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        WebElement subTotalOfMenu = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalOfMenuTxt = subTotalOfMenu.getAttribute("value");
+        WebElement tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxTxt = tax.getAttribute("value");
+//        WebElement serviceCharge = (WebElement) driver.findElement(By.xpath("//div[@id='os_serviceChargeStr']//input"));
+//        String serviceChargeTxt = serviceCharge.getAttribute("value");
+        WebElement Total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalTxt = Total.getAttribute("value");
+        String serviceTax = subTotalOfMenuTxt.replaceAll("[$A-Z,.]","");
+
+        double serviceTax1 = Double.parseDouble(serviceTax);
+
+        double percentage = (serviceTax1*10)/100;
+
+        String percentage1 = String.valueOf(percentage);
+
+        String percentage2 = "$ "+percentage1;
+
+//        utils.log().info("Subtotal Of Menu - "+subTotalOfMenuTxt);
+
+        double taxPercentage = (percentage*10)/100;
+
+        double taxCalculation = taxPercentage+percentage;
+//        utils.log().info(" Divide 10 Percentage from service charge "+taxPercentage);
+        String taxPercentageTxt = String.valueOf(taxCalculation);
+//        utils.log().info("Tax Percentage of Menu - $ "+taxPercentageTxt);
+        //  utils.log().info("Tax Of Menu - "+taxTxt);
+//        utils.log().info("Expected Service Charge Of Menu - "+serviceChargeTxt);
+
+        if(subTotalOfMenu.isDisplayed() && tax.isDisplayed() && Total.isDisplayed()){
+            utils.log().info("Actual Service Charge Of Menu (With Tax)-  "+percentage2);
+        }else{
+            utils.log().info("Actual Service Charge Of Menu is not Equal (With Tax)  "+percentage2);
+        }
+        utils.log().info("Total of Menu - "+totalTxt);
+
+
+        // int subtotal=subTotalOfMenuTxt.replace(".","");
+    }
+
     public void verifyTheBalanceDueAmountSameWithTipScreenAmountAfterSelectedTip(){
         String balanceAmount = TestUtils.BalanceCardAmount;
         utils.log().info("Balance Amount - "+balanceAmount);

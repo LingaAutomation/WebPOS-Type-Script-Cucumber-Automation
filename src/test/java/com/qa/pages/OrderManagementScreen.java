@@ -1529,7 +1529,8 @@ public  void selectCategory (String value) throws Exception {
         return elementGetText(customerProfileWindow,"Text");
     }
 
-    public void ClickOnTheCustomer(){
+    public void ClickOnTheCustomer() throws InterruptedException {
+        Thread.sleep(3000);
          WebElement ele = driver.findElement(By.xpath("//button[@id='os_selectedSeat']/../p[@slot='end']"));
          ele.click();
     }

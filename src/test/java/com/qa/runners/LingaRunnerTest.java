@@ -22,7 +22,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
         ,dryRun = false //to check whether all feature file steps have corresponding step definitions
         ,monochrome = true //console logs readable format
 //        ,strict = true //to skip undefined steps from execution
-       ,tags = "@CashRewardRegression" //filtering scenarios to run
+       ,tags = "@MainBasicValidation" //filtering scenarios to run
 )
 
 public class LingaRunnerTest{

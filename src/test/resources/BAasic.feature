@@ -1,4 +1,4 @@
-
+@MainBasicValidation
 
 Feature:Basic Validation
 
@@ -111,11 +111,11 @@ Feature:Basic Validation
 #    And I click Yes button on the popup for Hold item
 #    And I click Ok button in receipt printer popup
 #    Then I should see refund success popup
-    And I click Done button on the Popup
+    And I click Done button on the Popup in refund screen
     ########  13. Select "Refund check" option from order screen  #########
     And I click the refund check button on the refund order screen
     Then I should see check is refunded already popup
-    And I click Done button on the Popup
+    And I click Done button on the Popup in refund screen
     And I click Done button on the refund order screen
     And I search the closed check in refund screen
     And I click refund menu items button on the refund screen
@@ -136,71 +136,71 @@ Feature:Basic Validation
     And I click power button
 
 ##Hold Due to unable to do MPPG payment
-  Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Refund Screen"
-    Given I'm logged in
-    And I closed the order type window
-    And I select order type as QSR in order screen
-    And I select service type as "BarTab" on the order screen
-#    And I click the Exit to close the preauth window
-    And I click Add Customer Button
-#    And I click Add new button
-#    Then I should see the customer profile window
-    Then I should see the add customer screen in the window
-    And I Click on the Byname Option
-    And Enter the new customer randomlys
-    And I click the phone number field on the customer profile screen
-    And I get the mobile number from the customer profile screen
-    And I click the Save button
-    And I get check number
-    And I select category as "FOOD"
-    And I select menu item as "SANDWICHES"
-    And I should verify subtotal value as "$ 1.00"
-    And I should verify tax value as "$ 0.00"
-    And I should verify total2 value as "$ 1.05"
-    And I click Payment button in the Order Management Screen
-#Need to do
-    When I select the MPPG Payment on the payment window
-    Then I should see tip screen
-    And I select the tip from the tip screen
-    And I click the Continue button on the Total screen
-    Then I should see the card details entry screen
-    When I verify subtotal,tax and total value with card details screen value
-    When I verify the tip value with card details screen value
-    When I verify the paid amount value is zero
-    And I get the pay amount value from the card details screen value
-    Then I verify card reader is not connected popup or not
-    And I verify the Calculation pay amount with the card details pay amount
-    And I click manual button on the your order screen
-    And I pass the Amex card number as "4111111111111111"
-    And I pass card name as "Visa"
-    And I pass expire date as "1224"
-    And I click Process button on card screen
-    Then I should see the do you want to tokenize your card popup
-    And I click Yes button on the tokenize popup
-    And I click Ok button in receipt printer popup
-    And I click Submit button on the Payment Window
-    And I click QSR tab
-    And I closed the order type window
-    And I click the Settings button
-    And I click close day tab
-    Then I should see close day screen
-    And I click "Close All Cashiers" in the close the day Popup window "Click Close All Cashiers"
-    When I verify the cannot close the shift, store have the active checks
-#    Then I should see cashier out saved successfully popup
+#  Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Refund Screen"
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I select order type as QSR in order screen
+#    And I select service type as "BarTab" on the order screen
+##    And I click the Exit to close the preauth window
+#    And I click Add Customer Button
+##    And I click Add new button
+##    Then I should see the customer profile window
+#    Then I should see the add customer screen in the window
+#    And I Click on the Byname Option
+#    And Enter the new customer randomlys
+#    And I click the phone number field on the customer profile screen
+#    And I get the mobile number from the customer profile screen
+#    And I click the Save button
+#    And I get check number
+#    And I select category as "FOOD"
+#    And I select menu item as "SANDWICHES"
+#    And I should verify subtotal value as "$ 1.00"
+#    And I should verify tax value as "$ 0.00"
+#    And I should verify total2 value as "$ 1.05"
+#    And I click Payment button in the Order Management Screen
+##Need to do
+#    When I select the MPPG Payment on the payment window
+#    Then I should see tip screen
+#    And I select the tip from the tip screen
+#    And I click the Continue button on the Total screen
+#    Then I should see the card details entry screen
+#    When I verify subtotal,tax and total value with card details screen value
+#    When I verify the tip value with card details screen value
+#    When I verify the paid amount value is zero
+#    And I get the pay amount value from the card details screen value
+#    Then I verify card reader is not connected popup or not
+#    And I verify the Calculation pay amount with the card details pay amount
+#    And I click manual button on the your order screen
+#    And I pass the Amex card number as "4111111111111111"
+#    And I pass card name as "Visa"
+#    And I pass expire date as "1224"
+#    And I click Process button on card screen
+#    Then I should see the do you want to tokenize your card popup
+#    And I click Yes button on the tokenize popup
+#    And I click Ok button in receipt printer popup
+#    And I click Submit button on the Payment Window
+#    And I click QSR tab
+#    And I closed the order type window
+#    And I click the Settings button
+#    And I click close day tab
+#    Then I should see close day screen
+#    And I click "Close All Cashiers" in the close the day Popup window "Click Close All Cashiers"
+#    When I verify the cannot close the shift, store have the active checks
+##    Then I should see cashier out saved successfully popup
+##    And I click Done button on the Popup
+#    And I click "Close The Day" in the close the day Popup window "Click Close The Day"
+#    When I click the Close the day button in the operation screen "Close The Day" "Click Close the day Button"
+#    And I click Yes button on the popup for Hold item
+##    And I click "Yes" in the close the day Popup window "click yes button"
+#    When I click the "Submit" in the close the day screen "click submit button"
+##    And I click "No" in the close the day Popup window "click No button"
+##    And I click No button on send to kitchen popup
 #    And I click Done button on the Popup
-    And I click "Close The Day" in the close the day Popup window "Click Close The Day"
-    When I click the Close the day button in the operation screen "Close The Day" "Click Close the day Button"
-    And I click Yes button on the popup for Hold item
-#    And I click "Yes" in the close the day Popup window "click yes button"
-    When I click the "Submit" in the close the day screen "click submit button"
-#    And I click "No" in the close the day Popup window "click No button"
-#    And I click No button on send to kitchen popup
-    And I click Done button on the Popup
-    And I click the Toggle Icon button
-    And I click Refund button in the operation window
-    When I search the closed check in refund screen
-    When I verify the credit card of the check from the refund screen should be encrypted
-    And I click power button
+#    And I click the Toggle Icon button
+#    And I click Refund button in the operation window
+#    When I search the closed check in refund screen
+#    When I verify the credit card of the check from the refund screen should be encrypted
+#    And I click power button
 
 
   @MainBAsic
@@ -468,27 +468,27 @@ Feature:Basic Validation
 # Need to add the GIveX and exectue this
 
   ## Hold Due to GiveX funtionality is not available
-  Scenario: GiveX
-    Given I'm logged in
-    And I closed the order type window
-    And I click Options button
-    And I click Gift card Button
-    Then I should see Gift card window
-    And I click GiveX option
-    Then I should see givex screen
-    And I Enter the GiveX Number value as "603628237912001380863"
-    Then I verify beginning balance,recurring balance for GiveX
+#  Scenario: GiveX
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I click Options button
+#    And I click Gift card Button
+#    Then I should see Gift card window
+#    And I click GiveX option
+#    Then I should see givex screen
+#    And I Enter the GiveX Number value as "603628237912001380863"
+#    Then I verify beginning balance,recurring balance for GiveX
+##    And I click Done button on the Popup
+#    And I enter the charge amount as "12580" on the Gift card window
 #    And I click Done button on the Popup
-    And I enter the charge amount as "12580" on the Gift card window
-    And I click Done button on the Popup
-    Then User verify GiveX Recharge success info popup
-    And I click Done button on the Popup
-    When I verify recharge givex amount is same with order screen givex amount
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    And I closed the order type window
-    And I click log off button in order screen
+#    Then User verify GiveX Recharge success info popup
+#    And I click Done button on the Popup
+#    When I verify recharge givex amount is same with order screen givex amount
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+#    And I closed the order type window
+#    And I click log off button in order screen
 
   @MainBAsic
   Scenario: User Till
@@ -952,115 +952,115 @@ Feature:Basic Validation
     And I click power button in the All Orders screen
 
 #Hold due to Credit card payment un-available
-  Scenario: Card Service Charge
-    Given I'm logged in
-    And I closed the order type window
-    And I click All
-    And I click Table Layout tab
-    And I select Menu For Basic validation as "Salad"
-    And I click Payment button in the Order Management Screen
-    When I get the balance Due Amount and cash option amount in payment window
-    And I click credit card payment on payment window
-    When I should not see card type screen
-    And I should see tip screen
-    And I click the Continue button on the Total screen
-    And I click manual button on the your order screen
-    And I pass the card number as "4111111111111111"
-    And I pass card name as "Visa"
-    And I pass expire date as "1223"
-    And I click Process button on card screen
-    And I click Ok button in receipt printer popup
-    And I click Table Layout tab
-    And I click power button
+#  Scenario: Card Service Charge
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I click All
+#    And I click Table Layout tab
+#    And I select Menu For Basic validation as "Salad"
+#    And I click Payment button in the Order Management Screen
+#    When I get the balance Due Amount and cash option amount in payment window
+#    And I click credit card payment on payment window
+#    When I should not see card type screen
+#    And I should see tip screen
+#    And I click the Continue button on the Total screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "4111111111111111"
+#    And I pass card name as "Visa"
+#    And I pass expire date as "1223"
+#    And I click Process button on card screen
+#    And I click Ok button in receipt printer popup
+#    And I click Table Layout tab
+#    And I click power button
 
   #Hold due to Credit card payment un-available
-  Scenario: Batch process
-    #Manual Batch
-    Given I'm logged in
-    And I closed the order type window
-    And I click All
-    And I click Table Layout tab
-    And I select Menu For Basic validation as "Salad"
-    And I click Payment button in the Order Management Screen
-    When I get the balance Due Amount and cash option amount in payment window
-    And I click mppg auth payment in the payment window
-    Then I should see tip screen
-    And I select the tip from the tip screen
-    And I click the Continue button on the Total screen
-    Then I should see the card details entry screen
-    When I verify subtotal,tax and total value with card details screen value
-    When I verify the tip value with card details screen value
-    When I verify the paid amount value is zero
-    And I get the pay amount value from the card details screen value
-    Then I verify card reader is not connected popup or not
-    And I verify the Calculation pay amount with the card details pay amount
-    And I click manual button on the your order screen
-    And I pass the card number as "4111111111111111"
-    And I pass card name as "Visa"
-    And I pass expire date as "1223"
-    And I click Process button on card screen
-    And I click Ok button in receipt printer popup
-    And I click Submit button on the Payment Window
-    Then I should get back to the Table Layout tab
-    And I click the Operation button on the Table Layout
-    When I click batch/Tip adjustment button
-    And I click the device drop down button on the batch screen
+#  Scenario: Batch process
+#    #Manual Batch
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I click All
+#    And I click Table Layout tab
+#    And I select Menu For Basic validation as "Salad"
+#    And I click Payment button in the Order Management Screen
+#    When I get the balance Due Amount and cash option amount in payment window
+#    And I click mppg auth payment in the payment window
+#    Then I should see tip screen
+#    And I select the tip from the tip screen
+#    And I click the Continue button on the Total screen
+#    Then I should see the card details entry screen
+#    When I verify subtotal,tax and total value with card details screen value
+#    When I verify the tip value with card details screen value
+#    When I verify the paid amount value is zero
+#    And I get the pay amount value from the card details screen value
+#    Then I verify card reader is not connected popup or not
+#    And I verify the Calculation pay amount with the card details pay amount
+#    And I click manual button on the your order screen
+#    And I pass the card number as "4111111111111111"
+#    And I pass card name as "Visa"
+#    And I pass expire date as "1223"
+#    And I click Process button on card screen
+#    And I click Ok button in receipt printer popup
+#    And I click Submit button on the Payment Window
+#    Then I should get back to the Table Layout tab
+#    And I click the Operation button on the Table Layout
+#    When I click batch/Tip adjustment button
+#    And I click the device drop down button on the batch screen
+##    And I click the device drop down "Down Arrow Black" button in the batch screen "click drop down button"
+#   # And I select the payment name "MPPG AUTH" in the List "select payment"
+#    And I select the MPPG Payment name in the device list
+#    Then I should see the list of checks in batch screen
+#    And I click "Submit Batch" in the batch screen "click submit batch button"
+#    Then I should see batch has been initiated popup
+#    And I click Done button on the Popup
+#    When I check the all check has been batch
+
+  #Hold due to Credit card payment un-available
+#  Scenario: Verify the Tip Adjustment for Online Sale in Batch Screen
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I click All
+#    And I click Table Layout tab
+#    And I select Menu For Basic validation as "Salad"
+#    And I click Payment button in the Order Management Screen
+#    When I get the balance Due Amount and cash option amount in payment window
+#    ## need to implement
+#    And I click mppg auth payment in the payment window
+#    Then I should see total screen
+#    And I click tip as 10
+#    And I click the Continue button on the Total screen
+#    Then I should see your order card screen
+#    And I click manual button on the your order screen
+#    And I pass the card number as "4111111111111111"
+#    And I pass card name as "Visa"
+#    And I pass expire date as "1223"
+#    And I click Process button on card screen
+#    And I click Ok button in receipt printer popup
+#    ## need to implement
+#    And I click Submit button on the Payment Window
+#    Then I should get back to the Table Layout tab
+#    And I click the Operation button on the Table Layout
+#    When I click batch/Tip adjustment button
 #    And I click the device drop down "Down Arrow Black" button in the batch screen "click drop down button"
-   # And I select the payment name "MPPG AUTH" in the List "select payment"
-    And I select the MPPG Payment name in the device list
-    Then I should see the list of checks in batch screen
-    And I click "Submit Batch" in the batch screen "click submit batch button"
-    Then I should see batch has been initiated popup
-    And I click Done button on the Popup
-    When I check the all check has been batch
-
-  #Hold due to Credit card payment un-available
-  Scenario: Verify the Tip Adjustment for Online Sale in Batch Screen
-    Given I'm logged in
-    And I closed the order type window
-    And I click All
-    And I click Table Layout tab
-    And I select Menu For Basic validation as "Salad"
-    And I click Payment button in the Order Management Screen
-    When I get the balance Due Amount and cash option amount in payment window
-    ## need to implement
-    And I click mppg auth payment in the payment window
-    Then I should see total screen
-    And I click tip as 10
-    And I click the Continue button on the Total screen
-    Then I should see your order card screen
-    And I click manual button on the your order screen
-    And I pass the card number as "4111111111111111"
-    And I pass card name as "Visa"
-    And I pass expire date as "1223"
-    And I click Process button on card screen
-    And I click Ok button in receipt printer popup
-    ## need to implement
-    And I click Submit button on the Payment Window
-    Then I should get back to the Table Layout tab
-    And I click the Operation button on the Table Layout
-    When I click batch/Tip adjustment button
-    And I click the device drop down "Down Arrow Black" button in the batch screen "click drop down button"
-   # And I select the payment name "MPPG AUTH" in the List "select payment"
-    And I select the MPPG Payment name in the device list
-    Then I should see the list of checks in batch screen
-    When I click the check from batch screen
-#    And I hide the keyboard
-    And I change tip amount in batch screen
-    Then I should see tip Amount is applied or not
-#    And I hide the keyboard
-    And I click "Submit Batch" in the batch screen "click submit batch button"
-    Then I should see batch has been initiated popup
-    And I click Done button on the Popup
-    And I click the Toggle Icon button
-    And I click the POS settings from Toggle
-    And I click the Toggle Icon button
-    When I click batch/Tip adjustment button
-    Then I should see the list of checks in batch screen
-#    Then I should see last batch started text
-#    Then I have verify check in the batch screen
-  #  And I click Table Layout tab
-    And I click power button
+#   # And I select the payment name "MPPG AUTH" in the List "select payment"
+#    And I select the MPPG Payment name in the device list
+#    Then I should see the list of checks in batch screen
+#    When I click the check from batch screen
+##    And I hide the keyboard
+#    And I change tip amount in batch screen
+#    Then I should see tip Amount is applied or not
+##    And I hide the keyboard
+#    And I click "Submit Batch" in the batch screen "click submit batch button"
+#    Then I should see batch has been initiated popup
+#    And I click Done button on the Popup
+#    And I click the Toggle Icon button
+#    And I click the POS settings from Toggle
+#    And I click the Toggle Icon button
+#    When I click batch/Tip adjustment button
+#    Then I should see the list of checks in batch screen
+##    Then I should see last batch started text
+##    Then I have verify check in the batch screen
+#  #  And I click Table Layout tab
+#    And I click power button
 
   @MainBAsic
   Scenario: Customer
@@ -1097,7 +1097,8 @@ Feature:Basic Validation
     And I select menu item as "Burger"
     Then I should verify subtotal value as "$ 7.58"
     Then I should verify tax value as "$ 1.78"
-    Then I should verify total value as "$ 9.36"
+    Then I should verify total value as "$ 14.36"
+    Then I should verify cash price value as "$ 9.36"
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
@@ -1112,7 +1113,8 @@ Feature:Basic Validation
     And I select menu item as "Default Menu"
     Then I should verify subtotal value as "$ 4.88"
     Then I should verify tax value as "$ 0.37"
-    Then I should verify total value as "$ 5.25"
+    Then I should verify total value as "$ 10.25"
+    Then I should verify cash price value as "$ 5.25"
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
@@ -1440,6 +1442,8 @@ Feature:Basic Validation
     And I click the Closed check in out tab
     And I click Arrival button in phone order screen
     And I click Complete tab
+    And I click out tab in phone order screen
+    And I click Complete tab
     Then I should see closed check in complete tab
     # Verify the sale in Service Type(Phone Delivery)
     And I click QSR tab
@@ -1475,6 +1479,8 @@ Feature:Basic Validation
     And I click the Closed check in out tab
     And I click Arrival button in phone order screen
     And I click Complete tab
+    And I click out tab in phone order screen
+    And I click Complete tab
     Then I should see closed check in complete tab
 #    And I hide the keyboard
     And I click power button in the All Orders screen
@@ -1495,7 +1501,8 @@ Feature:Basic Validation
     And I select menu item as "Jelabi"
     Then I should verify subtotal value as "$ 2.58"
     Then I should verify tax value as "$ 0.26"
-    Then I should verify total value as "$ 2.84"
+    Then I should verify total value as "$ 7.84"
+    Then I should verify cash price value as "$ 2.84"
     And I get Total of menu while cash discount applied
     And I click Cash button for Complete Sale
     When I verify total Menu same with Fast cash total when Cash discount applied
@@ -1519,7 +1526,8 @@ Feature:Basic Validation
     And I select menu item as "Bubble Gum"
     Then I should verify subtotal value as "$ 5.72"
     Then I should verify tax value as "$ 0.57"
-    Then I should verify total value as "$ 6.29"
+    Then I should verify total value as "$ 11.29"
+    Then I should verify cash price value as "$ 6.29"
     And I get Total of menu while cash discount applied
     And I click Cash button for Complete Sale
     When I verify total Menu same with Fast cash total when Cash discount applied
@@ -1540,7 +1548,8 @@ Feature:Basic Validation
     And I select menu item as "Bubble Gum"
     Then I should verify subtotal value as "$ 5.55"
     Then I should verify tax value as "$ 0.56"
-    Then I should verify total value as "$ 6.11"
+    Then I should verify total value as "$ 11.11"
+    Then I should verify cash price value as "$ 6.11"
     And I get Total of menu while cash discount applied
     And I click Cash button for Complete Sale
     When I verify total Menu same with Fast cash total when Cash discount applied
@@ -1908,10 +1917,10 @@ Feature:Basic Validation
 #    And I hide the keyboard
     And I click the quantity txt field in the eighty six list popup "click qty txt field"
     And I enter the quantity value as "0","0","0","8"
-    Then I click "Continue" in the Quantity popup "Click Continue Button"
+    Then I click "//button[contains(.,'Continue')]" in the Quantity popup "Click Continue Button"
     And I click the quantity txt field in the eighty six list popup "click qty txt field"
     And I enter the quantity value as "0","0","0","8"
-    Then I click "Continue" in the Quantity popup "Click Continue Button"
+    Then I click "//button[contains(.,'Continue')]" in the Quantity popup "Click Continue Button"
     And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And I closed the order type window
@@ -2626,14 +2635,14 @@ Feature:Basic Validation
     And I click seat one on the split screen
     And I click the Group Seats button in the Split Seat
     When I verify all menu is club into single seat after click group seat
-#    And I get menu details from the group seat 2
-#    And I verify prize details after group seats done
+    And I get menu details from the group seat 2
+    And I verify prize details after group seats done
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Seat 2 for add menu item
 #  And I select Menu of Basic validation for QSR as "Appetizers"
-#    When I verify split seat menu with order screen menu
-#    And I verify split seat prize with order screen prize
+    When I verify split seat menu with order screen menu
+    And I verify split seat prize with order screen prize
     And I click Finish button
     And I click Table Layout tab
     And I click the Split Button from the Table Layout Screen
@@ -2674,7 +2683,7 @@ Feature:Basic Validation
     And I click NewTab from BarTab Layout
 #    And I click "Exit" in the preauth popup "click Exit Button"
 #    And I click add button to create seat in order screen
-#    And I click seat 1 for add menu item
+    And I click seat 1 for add menu item
     And I select Menu For Bartab order type as "North Indian dish" for split Check
     And I click Finish button
     And I click Check Stats tab
@@ -2724,7 +2733,7 @@ Feature:Basic Validation
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
 #  And I select Menu of Basic validation for QSR as "Appetizers"
-#  And I verify split seat prize with order screen prize
+  And I verify split seat prize with order screen prize
     And I click Finish button
     And I click BarTab Layout
 #    And I click the Split Button from the Table Layout Screen
@@ -2750,14 +2759,14 @@ Feature:Basic Validation
     And I click seat one on the split screen
     And I click the Group Seats button in the Split Seat
     When I verify all menu is club into single seat after click group seat
-#    And I get menu details from the group seat 2
-#    And I verify prize details after group seats done
+    And I get menu details from the group seat 2
+    And I verify prize details after group seats done
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Seat 2 for add menu item
 #  And I select Menu of Basic validation for QSR as "Appetizers"
-#    When I verify split seat menu with order screen menu
-#    And I verify split seat prize with order screen prize
+    When I verify split seat menu with order screen menu
+    And I verify split seat prize with order screen prize
     And I click Finish button
     And I click BarTab Layout
 #    And I click the Split Button from the Table Layout Screen
@@ -2809,7 +2818,7 @@ Feature:Basic Validation
     And I click Add Button to create Seat
     Then I should see created new seat
     And I click the menu on the split check screen
-    And I click new check added on the split check screen
+    And I click new check added on the split check screen page
     When I verify the menu is moved to the added check seat
     And I click new check added on the split check screen
 
@@ -2860,14 +2869,14 @@ Feature:Basic Validation
     And I click seat one on the split screen
     And I click the Group Seats button in the Split Seat
     When I verify all menu is club into single seat after click group seat
-#    And I get menu details from the group seat 2
-#    And I verify prize details after group seats done
+    And I get menu details from the group seat 2
+    And I verify prize details after group seats done
     And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
     And I click Seat 2 for add menu item
 #  And I select Menu of Basic validation for QSR as "Appetizers"
-#    When I verify split seat menu with order screen menu
-#    And I verify split seat prize with order screen prize
+    When I verify split seat menu with order screen menu
+    And I verify split seat prize with order screen prize
 #    And I click Finish button
 #    And I click Table Layout tab
 #    And I click the Split Button from the Table Layout Screen
@@ -2896,118 +2905,118 @@ Feature:Basic Validation
     And I click Finish button
     And I click Check Stats tab
     Then I should see active check
-    And I hide the keyboard
+#    And I hide the keyboard
     And I click Table Layout tab
     And I click power button in the All Orders screen
 
   #Hold due to memebership dependency
-  Scenario: Price Level ( Customer Mapped in membership by BO level )
-    Given I'm logged in
-    And I closed the order type window
-    And I click All
-    And I click Table Layout tab
-    And I click new check button on the Table layout screen
-    And I select table as "T22"
-    And I select the number of seats as "1"
-    And I tap Continue to finish selecting the number of seats
-    And I select category as "Menu"
-    And I select menu item as "lattoos"
-    When I should verify subtotal value as "$ 5.15"
-    And I click Void button on order management screen
-    Then I should see All orders are voided
-    And I click Done button on the Popup
-    And I click Add Customer Button
-    Then I should see the add customer screen in the window
-    And I Click on the Byname Option
-    And Enter some name and click on Add Customer button
-    Then I should see the customer profile window
-    And I select search
-    And I enter an existing customer's name "auto membership"
-    And I select the customer
-    When I click the Save button
-    Then I Should get back to the Order Screen
-    Then I should see customer as "auto m" added on order screen
-    And I get check number
-    And I select category as "Menu"
-    And I select menu item as "lattoos"
-    When I should verify subtotal value as "$ 7.51"
-    And I should verify tax value as "$ 0.75"
-    And I click Payment button in the Order Management Screen
-    And I verify subtotal value with cash value in payemnt screen
-    And I click cash button from the payment method popup
-    And I click Submit button in the Payment popup
-    And I click Check Stats tab
-    And I click Closed tab on the Check stats
-    Then I should see closed check in closed check tab
-    And I click closed checks details icon button
-    Then I should see order summary screen
-    When I verify subtotal value with order summary subtotal value
-    And I click power button in the All Orders screen
+#  Scenario: Price Level ( Customer Mapped in membership by BO level )
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I click All
+#    And I click Table Layout tab
+#    And I click new check button on the Table layout screen
+#    And I select table as "T22"
+#    And I select the number of seats as "1"
+#    And I tap Continue to finish selecting the number of seats
+#    And I select category as "Menu"
+#    And I select menu item as "lattoos"
+#    When I should verify subtotal value as "$ 5.15"
+#    And I click Void button on order management screen
+#    Then I should see All orders are voided
+#    And I click Done button on the Popup
+#    And I click Add Customer Button
+#    Then I should see the add customer screen in the window
+#    And I Click on the Byname Option
+#    And Enter some name and click on Add Customer button
+#    Then I should see the customer profile window
+#    And I select search
+#    And I enter an existing customer's name "auto membership"
+#    And I select the customer
+#    When I click the Save button
+#    Then I Should get back to the Order Screen
+#    Then I should see customer as "auto m" added on order screen
+#    And I get check number
+#    And I select category as "Menu"
+#    And I select menu item as "lattoos"
+#    When I should verify subtotal value as "$ 7.51"
+#    And I should verify tax value as "$ 0.75"
+#    And I click Payment button in the Order Management Screen
+#    And I verify subtotal value with cash value in payemnt screen
+#    And I click cash button from the payment method popup
+#    And I click Submit button in the Payment popup
+#    And I click Check Stats tab
+#    And I click Closed tab on the Check stats
+#    Then I should see closed check in closed check tab
+#    And I click closed checks details icon button
+#    Then I should see order summary screen
+#    When I verify subtotal value with order summary subtotal value
+#    And I click power button in the All Orders screen
 
    #Hold due to dependency
-  Scenario: Customer Mapped in membership by iPad level
-    Given I'm logged in
-    And I closed the order type window
-    And I click All
-    And I click Table Layout tab
-    And I click new check button on the Table layout screen
-    And I select table as "T22"
-    And I select the number of seats as "1"
-    And I tap Continue to finish selecting the number of seats
-    And I click Add Customer Button
-    Then I should see the add customer screen in the window
-    And I Click on the Byname Option
-    And Enter some name and click on Add Customer button
-    Then I should see the customer profile window
-    And I select search
-    And I enter an existing customer's name "auto membership1"
-    And I select the customer
-    When I click the Save button
-#     And I select search
-    Then I should see customer as "auto m" added on order screen
-    And I get check number
-    And I select category as "Menu"
-    And I select menu item as "lattoos"
-    When I should verify subtotal value as "$ 7.51"
-    And I should verify tax value as "$ 0.75"
-    And I click Payment button in the Order Management Screen
-    And I verify subtotal value with cash value in payemnt screen
-    And I click cash button from the payment method popup
-    And I click Submit button in the Payment popup
-    And I click Check Stats tab
-    And I click Closed tab on the Check stats
-    Then I should see closed check in closed check tab
-    And I click closed checks details icon button
-    Then I should see order summary screen
-    When I verify subtotal value with order summary subtotal value
-    And I click power button in the All Orders screen
+#  Scenario: Customer Mapped in membership by iPad level
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I click All
+#    And I click Table Layout tab
+#    And I click new check button on the Table layout screen
+#    And I select table as "T22"
+#    And I select the number of seats as "1"
+#    And I tap Continue to finish selecting the number of seats
+#    And I click Add Customer Button
+#    Then I should see the add customer screen in the window
+#    And I Click on the Byname Option
+#    And Enter some name and click on Add Customer button
+#    Then I should see the customer profile window
+#    And I select search
+#    And I enter an existing customer's name "auto membership1"
+#    And I select the customer
+#    When I click the Save button
+##     And I select search
+#    Then I should see customer as "auto m" added on order screen
+#    And I get check number
+#    And I select category as "Menu"
+#    And I select menu item as "lattoos"
+#    When I should verify subtotal value as "$ 7.51"
+#    And I should verify tax value as "$ 0.75"
+#    And I click Payment button in the Order Management Screen
+#    And I verify subtotal value with cash value in payemnt screen
+#    And I click cash button from the payment method popup
+#    And I click Submit button in the Payment popup
+#    And I click Check Stats tab
+#    And I click Closed tab on the Check stats
+#    Then I should see closed check in closed check tab
+#    And I click closed checks details icon button
+#    Then I should see order summary screen
+#    When I verify subtotal value with order summary subtotal value
+#    And I click power button in the All Orders screen
 
  #Hold due to memebership
-  Scenario: Display group Price Level
-    Given I'm logged in
-    And I closed the order type window
-    And I click All
-    And I click Table Layout tab
-    And I click new check button on the Table layout screen
-    And I select table as "T22"
-    And I select the number of seats as "1"
-    And I tap Continue to finish selecting the number of seats
-    And I get check number
-    And I select category as "Membership"
-    And I select menu item as "lattoos"
-    When I should verify subtotal value as "$ 7.51"
-    And I should verify tax value as "$ 0.75"
-    And I click Payment button in the Order Management Screen
-    And I verify subtotal value with cash value in payemnt screen
-    And I click cash button from the payment method popup
-    And I click Submit button in the Payment popup
-    And I click Check Stats tab
-    And I click Closed tab on the Check stats
-    Then I should see closed check in closed check tab
-    And I click closed checks details icon button
-    Then I should see order summary screen
-    When I verify subtotal value with order summary subtotal value
-    And I click power button in the All Orders screen
+#  Scenario: Display group Price Level
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I click All
+#    And I click Table Layout tab
+#    And I click new check button on the Table layout screen
+#    And I select table as "T22"
+#    And I select the number of seats as "1"
+#    And I tap Continue to finish selecting the number of seats
+#    And I get check number
+#    And I select category as "Membership"
+#    And I select menu item as "lattoos"
+#    When I should verify subtotal value as "$ 7.51"
+#    And I should verify tax value as "$ 0.75"
+#    And I click Payment button in the Order Management Screen
+#    And I verify subtotal value with cash value in payemnt screen
+#    And I click cash button from the payment method popup
+#    And I click Submit button in the Payment popup
+#    And I click Check Stats tab
+#    And I click Closed tab on the Check stats
+#    Then I should see closed check in closed check tab
+#    And I click closed checks details icon button
+#    Then I should see order summary screen
+#    When I verify subtotal value with order summary subtotal value
+#    And I click power button in the All Orders screen
 
   @MainBAsic
   Scenario: Reopen the closed checks and validate the tax, total, Subtotal
@@ -3049,14 +3058,16 @@ Feature:Basic Validation
       And I select menu item as "Chicken Schnitzel"
       And I should verify subtotal value as "$ 12.00"
       And I should verify tax value as "$ 0.00"
-      And I should verify total value as "$ 12.00"
+      And I should verify total value as "$ 17.00"
+    And I should verify cash price value as "$ 12.00"
       ### Second Seat Creation ###
       And I click add button to create seat in order screen
       And I select category as "FOOD"
       And I select menu item as "Chicken Schnitzel"
       And I should verify subtotal value as "$ 12.00"
       And I should verify tax value as "$ 1.20"
-      And I should verify total value as "$ 13.20"
+      And I should verify total value as "$ 18.20"
+    And I should verify cash price value as "$ 13.20"
             ### Third Seat Creation ###
       And I click add button to create seat in order screen
       Then I should see Add Gratuity screen
@@ -3070,6 +3081,7 @@ Feature:Basic Validation
       And I should verify tax value as "$ 1.20"
       And I should verify gratuity value as "$ 1.44"
       And I should verify cash option value as "$ 14.64" with Gratuity
+      And I should verify total value as "$ 19.64"
       ###  Four Seat Creation ###
       And I click add button to create seat in order screen
       And I select category as "FOOD"
@@ -3079,6 +3091,7 @@ Feature:Basic Validation
       And I should verify tax value as "$ 1.20"
       And I should verify gratuity value as "$ 1.44"
       And I should verify cash option value as "$ 14.64" with Gratuity
+      And I should verify total value as "$ 19.64"
       And I click Void button on order management screen
       Then I should see All orders are voided
       And I click Done button on the Popup
@@ -3138,7 +3151,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I get the menu from the order screen
   And I should verify subtotal value as "$ 10.00"
   And I should verify tax value as "$ 1.11"
-  And I should verify total2 value as "$ 11.55"
+  And I should verify total2 value as "$ 16.00"
   And I should verify paid amount0 as "$ 0.00"
     And I should verify cash price value as "$ 11.00"
   And I click Cash button for Complete Sale
@@ -3223,194 +3236,194 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     And I click power button in the All Orders screen
 
   @Cryptos
-  Scenario: LIN - 21416 - The Already Tokenized Credit card number is allowed to save once again while manually tokenize the credit card in customer profile screen
-    Given I'm logged in
-    And I closed the order type window
-    And I select order type as QSR in order screen
-    And I select service type as "Bar Tab" on the order screen
-    And I click the Exit to close the preauth window
-    And I click Add Customer Button
-    And I click Add new button
-    Then I should see the customer profile window
-    And Enter the new customer randomlys
-    And I click the phone number field on the customer profile screen
-    And I get the mobile number from the customer profile screen
-    And I click the Save button
-    And I get check number
-    And I select category as "FOOD"
-    And I select menu item as "SANDWICHES"
-    And I should verify subtotal value as "$ 1.00"
-    And I should verify tax value as "$ 0.10"
-    And I should verify total2 value as "$ 1.16"
-    And I click Payment button in the Order Management Screen
-    When I select the MPPG Payment on the payment window
-    Then I should see tip screen
-    And I select the tip from the tip screen
-    And I click the Continue button on the Total screen
-    Then I should see the card details entry screen
-    When I verify subtotal,tax and total value with card details screen value
-    When I verify the tip value with card details screen value
-    When I verify the paid amount value is zero
-    And I get the pay amount value from the card details screen value
-    Then I verify card reader is not connected popup or not
-    And I verify the Calculation pay amount with the card details pay amount
-    And I click manual button on the your order screen
-    And I pass the Amex card number as "4111111111111111"
-    And I pass card name as "Visa"
-    And I pass expire date as "1224"
-    And I click Process button on card screen
-    Then I should see the do you want to tokenize your card popup
-    And I click Yes button on the tokenize popup
-    And I click Ok button in receipt printer popup
-    And I click Submit button on the Payment Window
-    And I click QSR tab
-    And I closed the order type window
-    And I get check number
-    And I click Add Customer Button
-    And I search the existing customer on the order screen
-    And I click the customer name on the order screen
-    Then I should see the customer profile window
-    And I verify the applied existing customer name and phone number
-    And I get the credit card number from the customer
-    And I verify the encrypted credit card number with new credit card number
-    And I click add button of the credit card to the customer
-    Then I should see add card popup
-    When I have entered the card number as "3530111333300000" and expiry date "1224" on the add card popup
-    And I hide the keyboard
-    And I click process token button
-    And I verify the newly added credit card number with customer
-    And I click the Save button
-    And I click All
-    And I click power button
+#  Scenario: LIN - 21416 - The Already Tokenized Credit card number is allowed to save once again while manually tokenize the credit card in customer profile screen
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I select order type as QSR in order screen
+#    And I select service type as "Bar Tab" on the order screen
+#    And I click the Exit to close the preauth window
+#    And I click Add Customer Button
+#    And I click Add new button
+#    Then I should see the customer profile window
+#    And Enter the new customer randomlys
+#    And I click the phone number field on the customer profile screen
+#    And I get the mobile number from the customer profile screen
+#    And I click the Save button
+#    And I get check number
+#    And I select category as "FOOD"
+#    And I select menu item as "SANDWICHES"
+#    And I should verify subtotal value as "$ 1.00"
+#    And I should verify tax value as "$ 0.10"
+#    And I should verify total2 value as "$ 1.16"
+#    And I click Payment button in the Order Management Screen
+#    When I select the MPPG Payment on the payment window
+#    Then I should see tip screen
+#    And I select the tip from the tip screen
+#    And I click the Continue button on the Total screen
+#    Then I should see the card details entry screen
+#    When I verify subtotal,tax and total value with card details screen value
+#    When I verify the tip value with card details screen value
+#    When I verify the paid amount value is zero
+#    And I get the pay amount value from the card details screen value
+#    Then I verify card reader is not connected popup or not
+#    And I verify the Calculation pay amount with the card details pay amount
+#    And I click manual button on the your order screen
+#    And I pass the Amex card number as "4111111111111111"
+#    And I pass card name as "Visa"
+#    And I pass expire date as "1224"
+#    And I click Process button on card screen
+#    Then I should see the do you want to tokenize your card popup
+#    And I click Yes button on the tokenize popup
+#    And I click Ok button in receipt printer popup
+#    And I click Submit button on the Payment Window
+#    And I click QSR tab
+#    And I closed the order type window
+#    And I get check number
+#    And I click Add Customer Button
+#    And I search the existing customer on the order screen
+#    And I click the customer name on the order screen
+#    Then I should see the customer profile window
+#    And I verify the applied existing customer name and phone number
+#    And I get the credit card number from the customer
+#    And I verify the encrypted credit card number with new credit card number
+#    And I click add button of the credit card to the customer
+#    Then I should see add card popup
+#    When I have entered the card number as "3530111333300000" and expiry date "1224" on the add card popup
+#    And I hide the keyboard
+#    And I click process token button
+#    And I verify the newly added credit card number with customer
+#    And I click the Save button
+#    And I click All
+#    And I click power button
 
   @Cryptos
-  Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Choose Card Pop-up"
-    Given I'm logged in
-    And I closed the order type window
-    And I select order type as QSR in order screen
-    And I select service type as "Bar Tab" on the order screen
-    And I click the Exit to close the preauth window
-    And I click Add Customer Button
-    And I click Add new button
-    Then I should see the customer profile window
-    And Enter the new customer randomlys
-    And I click the phone number field on the customer profile screen
-    And I get the mobile number from the customer profile screen
-    And I click the Save button
-    And I get check number
-    And I select category as "FOOD"
-    And I select menu item as "SANDWICHES"
-    And I should verify subtotal value as "$ 1.00"
-    And I should verify tax value as "$ 0.10"
-    And I should verify total2 value as "$ 1.16"
-    And I click Payment button in the Order Management Screen
-    When I select the MPPG Payment on the payment window
-    Then I should see tip screen
-    And I select the tip from the tip screen
-    And I click the Continue button on the Total screen
-    Then I should see the card details entry screen
-    When I verify subtotal,tax and total value with card details screen value
-    When I verify the tip value with card details screen value
-    When I verify the paid amount value is zero
-    And I get the pay amount value from the card details screen value
-    Then I verify card reader is not connected popup or not
-    And I verify the Calculation pay amount with the card details pay amount
-    And I click manual button on the your order screen
-    And I pass the Amex card number as "4111111111111111"
-    And I pass card name as "Visa"
-    And I pass expire date as "1224"
-    And I click Process button on card screen
-    Then I should see the do you want to tokenize your card popup
-    And I click Yes button on the tokenize popup
-    And I click Ok button in receipt printer popup
-    And I click Submit button on the Payment Window
-    And I click QSR tab
-    And I closed the order type window
-    And I select order type as QSR in order screen
-    And I select service type as "Bar Tab" on the order screen
-    And I click the Exit to close the preauth window
-    And I get check number
-    And I click Add Customer Button
-    And I search the existing customer on the order screen
-    And I select category as "FOOD"
-    And I select menu item as "SANDWICHES"
-    And I should verify subtotal value as "$ 1.00"
-    And I should verify tax value as "$ 0.10"
-    And I should verify total value as "$ 1.10"
-    And I click Order button in the order management screen
-    And I click print button on the order screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    And I click Options button
-    Then I should see the Check Options screen
-    And I click print button on the order screen
-    Then I should see Receipt Printer popup
-    And I click Done button on the Popup
-    And I click Payment button in the Order Management Screen
-    When I select the MPPG Payment on the payment window
-    Then I should see tip screen
-    And I select the tip from the tip screen
-    And I click the Continue button on the Total screen
-    Then I should see choose card window
-    When I verify the credit card number on the choose card window should be encrypted
-    And I select credit card from choose card window
-    And I click pay button in choose card window
-    And I click Ok button in receipt printer popup
-    And I click Submit button on the Payment Window
-    And I click power button
+#  Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Choose Card Pop-up"
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I select order type as QSR in order screen
+#    And I select service type as "Bar Tab" on the order screen
+#    And I click the Exit to close the preauth window
+#    And I click Add Customer Button
+#    And I click Add new button
+#    Then I should see the customer profile window
+#    And Enter the new customer randomlys
+#    And I click the phone number field on the customer profile screen
+#    And I get the mobile number from the customer profile screen
+#    And I click the Save button
+#    And I get check number
+#    And I select category as "FOOD"
+#    And I select menu item as "SANDWICHES"
+#    And I should verify subtotal value as "$ 1.00"
+#    And I should verify tax value as "$ 0.10"
+#    And I should verify total2 value as "$ 1.16"
+#    And I click Payment button in the Order Management Screen
+#    When I select the MPPG Payment on the payment window
+#    Then I should see tip screen
+#    And I select the tip from the tip screen
+#    And I click the Continue button on the Total screen
+#    Then I should see the card details entry screen
+#    When I verify subtotal,tax and total value with card details screen value
+#    When I verify the tip value with card details screen value
+#    When I verify the paid amount value is zero
+#    And I get the pay amount value from the card details screen value
+#    Then I verify card reader is not connected popup or not
+#    And I verify the Calculation pay amount with the card details pay amount
+#    And I click manual button on the your order screen
+#    And I pass the Amex card number as "4111111111111111"
+#    And I pass card name as "Visa"
+#    And I pass expire date as "1224"
+#    And I click Process button on card screen
+#    Then I should see the do you want to tokenize your card popup
+#    And I click Yes button on the tokenize popup
+#    And I click Ok button in receipt printer popup
+#    And I click Submit button on the Payment Window
+#    And I click QSR tab
+#    And I closed the order type window
+#    And I select order type as QSR in order screen
+#    And I select service type as "Bar Tab" on the order screen
+#    And I click the Exit to close the preauth window
+#    And I get check number
+#    And I click Add Customer Button
+#    And I search the existing customer on the order screen
+#    And I select category as "FOOD"
+#    And I select menu item as "SANDWICHES"
+#    And I should verify subtotal value as "$ 1.00"
+#    And I should verify tax value as "$ 0.10"
+#    And I should verify total value as "$ 1.10"
+#    And I click Order button in the order management screen
+#    And I click print button on the order screen
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+#    And I click Options button
+#    Then I should see the Check Options screen
+#    And I click print button on the order screen
+#    Then I should see Receipt Printer popup
+#    And I click Done button on the Popup
+#    And I click Payment button in the Order Management Screen
+#    When I select the MPPG Payment on the payment window
+#    Then I should see tip screen
+#    And I select the tip from the tip screen
+#    And I click the Continue button on the Total screen
+#    Then I should see choose card window
+#    When I verify the credit card number on the choose card window should be encrypted
+#    And I select credit card from choose card window
+#    And I click pay button in choose card window
+#    And I click Ok button in receipt printer popup
+#    And I click Submit button on the Payment Window
+#    And I click power button
 
   @Cryptos
-  Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Batch Screen"
-    Given I'm logged in
-    And I closed the order type window
-    And I select order type as QSR in order screen
-    And I select service type as "Bar Tab" on the order screen
-    And I click the Exit to close the preauth window
-    And I click Add Customer Button
-    And I click Add new button
-    Then I should see the customer profile window
-    And Enter the new customer randomlys
-    And I click the phone number field on the customer profile screen
-    And I get the mobile number from the customer profile screen
-    And I click the Save button
-    And I get check number
-    And I select category as "FOOD"
-    And I select menu item as "SANDWICHES"
-    And I should verify subtotal value as "$ 1.00"
-    And I should verify tax value as "$ 0.10"
-    And I should verify total2 value as "$ 1.16"
-    And I click Payment button in the Order Management Screen
-    When I select the MPPG Payment on the payment window
-    Then I should see tip screen
-    And I select the tip from the tip screen
-    And I click the Continue button on the Total screen
-    Then I should see the card details entry screen
-    When I verify subtotal,tax and total value with card details screen value
-    When I verify the tip value with card details screen value
-    When I verify the paid amount value is zero
-    And I get the pay amount value from the card details screen value
-    Then I verify card reader is not connected popup or not
-    And I verify the Calculation pay amount with the card details pay amount
-    And I click manual button on the your order screen
-    And I pass the Amex card number as "4111111111111111"
-    And I pass card name as "Visa"
-    And I pass expire date as "1224"
-    And I click Process button on card screen
-    Then I should see the do you want to tokenize your card popup
-    And I click Yes button on the tokenize popup
-    And I click Ok button in receipt printer popup
-    And I click Submit button on the Payment Window
-    And I click QSR tab
-    And I closed the order type window
-    And I click the Settings button
-    And I click batch/Tip adjustment button
-    And I click the device drop down "Down Arrow Black" button in the batch screen "click drop down button"
-    And I select the MPPG Payment name in the device list
-    Then I should see the list of checks in batch screen
-    And I search the closed check in the Batch screen field
-    And I hide the keyboard
-    When I verify the credit card of the check from the batch screen should be encrypted
-    And I click power button
+#  Scenario: Verify the Tokenized credit Card number is displayed as Encrypted in the "Batch Screen"
+#    Given I'm logged in
+#    And I closed the order type window
+#    And I select order type as QSR in order screen
+#    And I select service type as "Bar Tab" on the order screen
+#    And I click the Exit to close the preauth window
+#    And I click Add Customer Button
+#    And I click Add new button
+#    Then I should see the customer profile window
+#    And Enter the new customer randomlys
+#    And I click the phone number field on the customer profile screen
+#    And I get the mobile number from the customer profile screen
+#    And I click the Save button
+#    And I get check number
+#    And I select category as "FOOD"
+#    And I select menu item as "SANDWICHES"
+#    And I should verify subtotal value as "$ 1.00"
+#    And I should verify tax value as "$ 0.10"
+#    And I should verify total2 value as "$ 1.16"
+#    And I click Payment button in the Order Management Screen
+#    When I select the MPPG Payment on the payment window
+#    Then I should see tip screen
+#    And I select the tip from the tip screen
+#    And I click the Continue button on the Total screen
+#    Then I should see the card details entry screen
+#    When I verify subtotal,tax and total value with card details screen value
+#    When I verify the tip value with card details screen value
+#    When I verify the paid amount value is zero
+#    And I get the pay amount value from the card details screen value
+#    Then I verify card reader is not connected popup or not
+#    And I verify the Calculation pay amount with the card details pay amount
+#    And I click manual button on the your order screen
+#    And I pass the Amex card number as "4111111111111111"
+#    And I pass card name as "Visa"
+#    And I pass expire date as "1224"
+#    And I click Process button on card screen
+#    Then I should see the do you want to tokenize your card popup
+#    And I click Yes button on the tokenize popup
+#    And I click Ok button in receipt printer popup
+#    And I click Submit button on the Payment Window
+#    And I click QSR tab
+#    And I closed the order type window
+#    And I click the Settings button
+#    And I click batch/Tip adjustment button
+#    And I click the device drop down "Down Arrow Black" button in the batch screen "click drop down button"
+#    And I select the MPPG Payment name in the device list
+#    Then I should see the list of checks in batch screen
+#    And I search the closed check in the Batch screen field
+#    And I hide the keyboard
+#    When I verify the credit card of the check from the batch screen should be encrypted
+#    And I click power button
 
   @MainBAsic
     Scenario: LIN-22815 - Allow to save more that 140 characters in customer notes after alert message in customer profile.
@@ -3439,50 +3452,50 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
     And I click on the cross buttin in the customer profile screen
     And I click log off button in order screen
 
-    @nkl
-    Scenario: LIN-22431 - In batch screen when the Apply Total Toggle is enabled Tip is accepting for the lesser amount than check total.
-      Given I'm logged in
-      And I closed the order type window
-      And I click All
-      And I click Table Layout tab
-      And I select Menu For Basic validation as "Salad"
-      And I click Payment button in the Order Management Screen
-      When I get the balance Due Amount and cash option amount in payment window
-      And I click mppg auth payment in the payment window
-      Then I should see tip screen
-      And I select the tip from the tip screen
-      And I click the Continue button on the Total screen
-      Then I should see the card details entry screen
-      When I verify subtotal,tax and total value with card details screen value
-      When I verify the tip value with card details screen value
-      When I verify the paid amount value is zero
-      And I get the pay amount value from the card details screen value
-      Then I verify card reader is not connected popup or not
-      And I verify the Calculation pay amount with the card details pay amount
-      And I click manual button on the your order screen
-      And I pass the card number as "4111111111111111"
-      And I pass card name as "Visa"
-      And I pass expire date as "1223"
-      And I click Process button on card screen
-      And I click Ok button in receipt printer popup
-      And I click Submit button on the Payment Window
-      Then I should get back to the Table Layout tab
-      And I click the Operation button on the Table Layout
-      When I click batch/Tip adjustment button
-      And I click the device drop down button on the batch screen
-#    And I click the device drop down "Down Arrow Black" button in the batch screen "click drop down button"
-   # And I select the payment name "MPPG AUTH" in the List "select payment"
-      And I select the MPPG Payment name in the device list
-      Then I should see the list of checks in batch screen
-      And I enable the apply total in the batch screen
-      And I search the closed check in the Batch screen field
-      And I hide the keyboard
-      When I verify the credit card of the check from the batch screen should be encrypted
-      And I click the check from batch screen1
-      And I change tip amount in batch screen1
-      Then I should see invalid tip amount popup
-      And I click Done button on the Popup
-      And I click power button
+#    @nkl
+#    Scenario: LIN-22431 - In batch screen when the Apply Total Toggle is enabled Tip is accepting for the lesser amount than check total.
+#      Given I'm logged in
+#      And I closed the order type window
+#      And I click All
+#      And I click Table Layout tab
+#      And I select Menu For Basic validation as "Salad"
+#      And I click Payment button in the Order Management Screen
+#      When I get the balance Due Amount and cash option amount in payment window
+#      And I click mppg auth payment in the payment window
+#      Then I should see tip screen
+#      And I select the tip from the tip screen
+#      And I click the Continue button on the Total screen
+#      Then I should see the card details entry screen
+#      When I verify subtotal,tax and total value with card details screen value
+#      When I verify the tip value with card details screen value
+#      When I verify the paid amount value is zero
+#      And I get the pay amount value from the card details screen value
+#      Then I verify card reader is not connected popup or not
+#      And I verify the Calculation pay amount with the card details pay amount
+#      And I click manual button on the your order screen
+#      And I pass the card number as "4111111111111111"
+#      And I pass card name as "Visa"
+#      And I pass expire date as "1223"
+#      And I click Process button on card screen
+#      And I click Ok button in receipt printer popup
+#      And I click Submit button on the Payment Window
+#      Then I should get back to the Table Layout tab
+#      And I click the Operation button on the Table Layout
+#      When I click batch/Tip adjustment button
+#      And I click the device drop down button on the batch screen
+##    And I click the device drop down "Down Arrow Black" button in the batch screen "click drop down button"
+#   # And I select the payment name "MPPG AUTH" in the List "select payment"
+#      And I select the MPPG Payment name in the device list
+#      Then I should see the list of checks in batch screen
+#      And I enable the apply total in the batch screen
+#      And I search the closed check in the Batch screen field
+#      And I hide the keyboard
+#      When I verify the credit card of the check from the batch screen should be encrypted
+#      And I click the check from batch screen1
+#      And I change tip amount in batch screen1
+#      Then I should see invalid tip amount popup
+#      And I click Done button on the Popup
+#      And I click power button
 
   @MainBAsic
 Scenario: Application gets crashed when scroll the category/service type/suggestive search

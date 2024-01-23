@@ -47,7 +47,7 @@ public class CashOptionStepDef {
 
     @When ("^i verify service charge without tax of menu$")
     public void iVerifyServiceChargeWithoutTaxOfMenu(){
-        new cashOption(driver).getServiceCharge();
+        new cashOption(driver).getServiceChargeWith_out_Tax();
     }
     @When ("^i verify service charge with tax of menu$")
     public void iVerifyServiceChargeWithTaxOfMenu(){

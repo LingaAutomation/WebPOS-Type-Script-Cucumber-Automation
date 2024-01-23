@@ -948,20 +948,23 @@ elementClick(tillBtn,"Tapped Till Button");
 
     public void clickCashDropFromTillSettings() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        for(int i =1;i<=2;i++) {
-            Thread.sleep(5000);
-            elementClick(ToggleIcon,"Toggle Icon Selected");
-            elementClick(posSettings,"posSettings Selected");
-            WebElement cashDropBtn = (WebElement) driver.findElement(By.xpath("//ion-toggle[@formcontrolname='enableCashDrop']"));
-            elementClick(cashDropBtn, "Cash Drop Button Selected");
-            WebElement saveChanges = (WebElement) driver.findElement(By.xpath("//button[contains(.,'Save Changes')]"));
-            elementClick(saveChanges, "Save Changes Button Selected");
-//            WebElement successPopup = (WebElement) driver.findElement(By.xpath("Successfully Updated the POS Settings"));
-//            String successPopupTxt = successPopup.getText();
-//            Assert.assertEquals(successPopupTxt,"Successfully Updated the POS Settings");
-////            utils.log().info("Displayed popup as - "+successPopupTxt);
-//            WebElement donee = driver.findElement(By.xpath("Done"));
-//             elementClick(donee,"Done button selected");
+
+        WebElement Auto = driver.findElement(By.xpath("//ion-label[contains(.,'Enable Cash Drop')]"));
+        for(int i =1; i<=2; i++){
+            try {
+                if (Auto.isDisplayed()) {
+                    WebElement EnableCashDrop = driver.findElement(By.xpath("//ion-label[contains(.,'Enable Cash Drop')]/..//ion-toggle[@aria-checked='true']"));
+                    if (EnableCashDrop.isDisplayed()) {
+                    }
+                }
+            } catch (Exception e) {
+                WebElement EnableCashDrop = driver.findElement(By.xpath("//ion-label[contains(.,'Enable Cash Drop')]/..//ion-toggle[@aria-checked='false']"));
+                if (EnableCashDrop.isDisplayed()) {
+                    EnableCashDrop.click();
+                }
+            }
+            driver.findElement(By.xpath("(//button[contains(.,'Save Changes')])[1]")).click();
+            Thread.sleep(3000);
         }
     }
 

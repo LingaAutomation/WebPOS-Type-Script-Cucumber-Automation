@@ -1338,3 +1338,14 @@ Feature: Instant Cash Reward Feature
     And I click No thanks Button on the print receipt
     And I closed the order type window
     And I click log off button in order screen
+
+    Scenario: Partial payment application displays Menu item sent to kitchen even already items are ordered
+      Given I'm logged in
+      And I closed the order type window
+      And I get check number
+      And I select category as "FOOD"
+      And I select menu item as "Chicken Schnitzel"
+      And I click Add Button to create Seat
+      And I click Add Button to create Seat
+      And I click Add Button to create Seat
+      And

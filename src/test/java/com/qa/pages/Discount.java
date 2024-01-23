@@ -97,9 +97,9 @@ public class Discount extends BasePage{
     public void verifyMenuItemTotal(String value){
         WebElement e11 = driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
         if(e11.isDisplayed()){
-//            utils.log().info("Total of Menu Item is - "+ value);
+            utils.log().info("Total of Menu Item is - "+ value);
         }else{
-//            utils.log().info("Total Of Menu Item is not displayed");
+            utils.log().info("Total Of Menu Item is not displayed");
             int i =  1/0;
         }
     }

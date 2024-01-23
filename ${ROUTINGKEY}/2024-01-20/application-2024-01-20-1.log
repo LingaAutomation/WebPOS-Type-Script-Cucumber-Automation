@@ -1,0 +1,26 @@
+[${ROUTINGKEY} INFO ] 2024-01-20 13:29:10.026 Hooks:50 - Failed Scenario Name : verifying cash reward name changed into cash price
+[${ROUTINGKEY} INFO ] 2024-01-20 13:30:50.651 Hooks:50 - Failed Scenario Name : verifying Change due is displaying for fast cash payment.
+[${ROUTINGKEY} INFO ] 2024-01-20 13:32:31.273 Hooks:50 - Failed Scenario Name : verify currently showing If you pay by cash
+[${ROUTINGKEY} INFO ] 2024-01-20 13:34:15.622 Hooks:50 - Failed Scenario Name : verify cash reward with Exclusive tax
+[${ROUTINGKEY} INFO ] 2024-01-20 13:35:53.673 Hooks:50 - Failed Scenario Name : verify cash reward with Inclusive tax
+[${ROUTINGKEY} INFO ] 2024-01-20 13:37:35.280 OrderManagementScreen:1303 -  Tax is - $ 0.65
+[${ROUTINGKEY} INFO ] 2024-01-20 13:37:35.355 Hooks:50 - Failed Scenario Name : verify cash reward with Quantity based tax
+[${ROUTINGKEY} INFO ] 2024-01-20 13:39:17.448 Hooks:50 - Failed Scenario Name : verify cash reward with Tax exempt
+[${ROUTINGKEY} INFO ] 2024-01-20 13:40:57.883 Hooks:50 - Failed Scenario Name : verify cash reward with Gratuity
+[${ROUTINGKEY} INFO ] 2024-01-20 13:42:36.922 Hooks:50 - Failed Scenario Name : verify cash reward with Inclusive tax& Gratuity
+[${ROUTINGKEY} INFO ] 2024-01-20 13:44:18.231 OrderManagementScreen:1303 -  Tax is - $ 0.65
+[${ROUTINGKEY} INFO ] 2024-01-20 13:44:18.370 Hooks:50 - Failed Scenario Name : verify cash reward with Quantity based tax & Gratuity
+[${ROUTINGKEY} INFO ] 2024-01-20 13:46:00.672 OrderManagementScreen:960 - Service Charge Value is - $ 0.23
+[${ROUTINGKEY} INFO ] 2024-01-20 13:46:00.754 Hooks:50 - Failed Scenario Name : verify cash reward with Exclusive tax & service charge
+[${ROUTINGKEY} INFO ] 2024-01-20 13:47:47.236 OrderManagementScreen:960 - Service Charge Value is - $ 0.27
+[${ROUTINGKEY} INFO ] 2024-01-20 13:47:47.308 Hooks:50 - Failed Scenario Name : verify cash reward with Inclusive tax& service charge
+[${ROUTINGKEY} INFO ] 2024-01-20 13:49:34.364 OrderManagementScreen:960 - Service Charge Value is - $ 1.00
+[${ROUTINGKEY} INFO ] 2024-01-20 13:49:34.455 Hooks:50 - Failed Scenario Name : verify cash reward with Quantity based tax & service charge
+[${ROUTINGKEY} INFO ] 2024-01-20 13:51:18.985 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-20 13:51:20.115 Hooks:50 - Failed Scenario Name : verify cash reward with Exclusive tax ,Gratuity& service charge
+[${ROUTINGKEY} INFO ] 2024-01-20 13:53:06.152 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-20 13:53:07.303 Hooks:50 - Failed Scenario Name : verify cash reward with Inclusive tax,Gratuity& service charge
+[${ROUTINGKEY} INFO ] 2024-01-20 13:55:01.275 CheckOptionsScreen:354 - Percentage value - 
+[${ROUTINGKEY} INFO ] 2024-01-20 13:55:02.566 Hooks:50 - Failed Scenario Name : verify cash reward with Quantity based tax ,Gratuity& service charge
+[${ROUTINGKEY} INFO ] 2024-01-20 13:56:48.717 OrderManagementScreen:940 - Tax Value is - $ 0.32
+[${ROUTINGKEY} INFO ] 2024-01-20 13:56:48.822 Hooks:50 - Failed Scenario Name : verify cash reward with Item based Discount

@@ -59,11 +59,11 @@ public class CapabilitiesManager {
         //Clear the text from the user name text box
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name
-        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("basicautotest@mail.com");
+        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("basicautotest12@mail.com");
         //Clear the password from the password text box
         driver.findElement(By.xpath("//input[@name='password']")).clear();
         //Enter the password
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("welcome123");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("BasicTest@12");
         Thread.sleep(5000);
         //Click the login button
         driver.findElement(By.xpath("//ion-button[@type='submit']")).click();

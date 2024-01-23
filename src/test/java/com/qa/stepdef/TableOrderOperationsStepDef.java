@@ -2208,7 +2208,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And("I click on the customer name in the order screen")
-    public void iClickOnTheCustomerNameInTheOrderScreen() {
+    public void iClickOnTheCustomerNameInTheOrderScreen() throws InterruptedException {
         new OrderManagementScreen(driver).ClickOnTheCustomer();
     }
 
@@ -2236,5 +2236,11 @@ public class TableOrderOperationsStepDef {
     @And("I click new check added on the split check screen page present")
     public void iClickNewCheckAddedOnTheSplitCheckScreenPagePresent() {
         new Regression(driver).clickNewSeatOnTheSplitSeatScreen();
+    }
+
+    @And("I click Done button on the Popup in refund screen")
+    public void iClickDoneButtonOnThePopupInRefundScreen() throws InterruptedException {
+        Thread.sleep(3000);
+        new TableLayOutScreen(driver).pressDone6();
     }
 }

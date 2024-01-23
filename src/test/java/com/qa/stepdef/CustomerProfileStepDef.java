@@ -115,7 +115,7 @@ public class CustomerProfileStepDef {
 
     @When("^I click the Save button$")
     public void iClickTheSaveButton() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(8000);
         new CustomerProfileWindow(driver).pressSaveBtn();
     }
 

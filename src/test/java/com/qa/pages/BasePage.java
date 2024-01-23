@@ -1082,11 +1082,9 @@ public void findAndClickMobileElement(String selectorPath,String injector, Strin
         {
             List<WebElement> MenuList=driver.findElements(By.xpath("//button[contains(@id,'menu-item')]"));
 
+            int MenusSize=MenuList.size();
 
-            int MenusSize=MenuList.size()-1;
-
-
-            int randomMenu= ThreadLocalRandom.current().nextInt(1, MenusSize-1);
+            int randomMenu= ThreadLocalRandom.current().nextInt(1, MenusSize);
 
             //Remove Comment lines
 	/*	Thread.sleep(1000);

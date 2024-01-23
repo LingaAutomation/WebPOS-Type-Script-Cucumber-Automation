@@ -1,0 +1,64 @@
+[${ROUTINGKEY} INFO ] 2024-01-22 18:25:07.599 Hooks:50 - Failed Scenario Name : Cashier Out From Till Management Screen
+[${ROUTINGKEY} INFO ] 2024-01-22 18:46:07.287 Hooks:50 - Failed Scenario Name : Refund
+[${ROUTINGKEY} INFO ] 2024-01-22 18:47:43.298 Hooks:50 - Failed Scenario Name : Global Till ( PAY IN, PAy Out )
+[${ROUTINGKEY} INFO ] 2024-01-22 19:06:54.293 Hooks:50 - Failed Scenario Name : Refund
+[${ROUTINGKEY} INFO ] 2024-01-22 19:09:42.302 Hooks:50 - Failed Scenario Name : Global Till ( PAY IN, PAy Out )
+[${ROUTINGKEY} INFO ] 2024-01-22 19:30:08.076 Hooks:50 - Failed Scenario Name : Global Till ( PAY IN, PAy Out )
+[${ROUTINGKEY} INFO ] 2024-01-22 19:32:53.025 Hooks:50 - Failed Scenario Name : Verify the Pay in, Payout, Audit, Single cashier out, Close the day for the current business day(Clock in, start till(user till, Global till))
+[${ROUTINGKEY} INFO ] 2024-01-22 19:34:34.509 Hooks:50 - Failed Scenario Name : Added tip is Correct or not
+[${ROUTINGKEY} INFO ] 2024-01-22 19:41:17.687 Hooks:50 - Failed Scenario Name : Cashier OUT PULL Request
+[${ROUTINGKEY} INFO ] 2024-01-22 19:43:50.386 Hooks:50 - Failed Scenario Name : User Till
+[${ROUTINGKEY} INFO ] 2024-01-22 19:46:20.297 Hooks:50 - Failed Scenario Name : Global Till
+[${ROUTINGKEY} INFO ] 2024-01-22 19:49:10.824 Hooks:50 - Failed Scenario Name : Transfer Item from one Check to another Check
+[${ROUTINGKEY} INFO ] 2024-01-22 19:52:46.596 Hooks:50 - Failed Scenario Name : Transfer To Table from one Check to another Check
+[${ROUTINGKEY} INFO ] 2024-01-22 19:56:35.117 Hooks:50 - Failed Scenario Name : Other than Cash Payment
+[${ROUTINGKEY} INFO ] 2024-01-22 19:58:52.388 Hooks:50 - Failed Scenario Name : Item Service charge  (Item Service Charge Without Tax)
+[${ROUTINGKEY} INFO ] 2024-01-22 20:01:10.650 Hooks:50 - Failed Scenario Name : Item Service charge (Item Service Charge With Tax )
+[${ROUTINGKEY} INFO ] 2024-01-22 20:08:10.861 Hooks:50 - Failed Scenario Name : Customer
+[${ROUTINGKEY} INFO ] 2024-01-22 20:09:49.831 Hooks:50 - Failed Scenario Name : Taxes
+[${ROUTINGKEY} INFO ] 2024-01-22 20:18:18.060 Hooks:50 - Failed Scenario Name : Sale In Service Types
+[${ROUTINGKEY} INFO ] 2024-01-22 20:19:54.902 Hooks:50 - Failed Scenario Name : UpCharge (Verify the Upcharge for the check)
+[${ROUTINGKEY} INFO ] 2024-01-22 20:21:43.504 Hooks:50 - Failed Scenario Name : Upcharge (Role restriction)
+[${ROUTINGKEY} INFO ] 2024-01-22 20:24:53.086 OrderManagementScreen:1303 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-01-22 20:24:53.573 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-01-22 20:24:54.067 OrderManagementScreen:1303 -  Tax is - $ 2.40
+[${ROUTINGKEY} INFO ] 2024-01-22 20:24:54.089 OrderManagementScreen:1458 -  Discount is - $ 4.46
+[${ROUTINGKEY} INFO ] 2024-01-22 20:25:24.493 OrderManagementScreen:1303 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-01-22 20:25:30.032 OrderManagementScreen:1303 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-01-22 20:26:03.238 Hooks:50 - Failed Scenario Name : Gift
+[${ROUTINGKEY} INFO ] 2024-01-22 20:27:50.888 Hooks:50 - Failed Scenario Name : 86 list
+[${ROUTINGKEY} INFO ] 2024-01-22 20:36:32.055 Hooks:50 - Failed Scenario Name : Verify the Merge option from Bar Tab screen
+[${ROUTINGKEY} INFO ] 2024-01-22 20:39:05.024 Regression:4923 - Split Check - 31-001
+[${ROUTINGKEY} INFO ] 2024-01-22 20:39:05.616 Regression:5019 - Split Check Number - 31-002
+[${ROUTINGKEY} INFO ] 2024-01-22 20:40:47.353 Hooks:50 - Failed Scenario Name : Split Check from Table layout
+[${ROUTINGKEY} INFO ] 2024-01-22 20:43:17.482 Regression:4923 - Split Check - 32-001
+[${ROUTINGKEY} INFO ] 2024-01-22 20:43:18.157 Regression:5019 - Split Check Number - 32-002
+[${ROUTINGKEY} INFO ] 2024-01-22 20:44:52.518 Regression:4923 - Split Check - 32-003
+[${ROUTINGKEY} INFO ] 2024-01-22 20:44:52.554 TableLayOutScreen:1579 - seatNumber - 2
+[${ROUTINGKEY} INFO ] 2024-01-22 20:44:52.555 TableLayOutScreen:1580 - seatNumber11 - 1
+[${ROUTINGKEY} INFO ] 2024-01-22 20:44:52.556 TableLayOutScreen:1582 - Seat Number - 1 is Available
+[${ROUTINGKEY} INFO ] 2024-01-22 20:44:53.168 Regression:5019 - Split Check Number - 32-004
+[${ROUTINGKEY} INFO ] 2024-01-22 20:46:35.989 Regression:4923 - Split Check - 32-005
+[${ROUTINGKEY} INFO ] 2024-01-22 20:46:36.562 Regression:5019 - Split Check Number - 32-006
+[${ROUTINGKEY} INFO ] 2024-01-22 20:48:10.000 Regression:4923 - Split Check - 32-007
+[${ROUTINGKEY} INFO ] 2024-01-22 20:48:10.582 Regression:5019 - Split Check Number - 32-008
+[${ROUTINGKEY} INFO ] 2024-01-22 20:49:52.669 Regression:4923 - Split Check - 32-009
+[${ROUTINGKEY} INFO ] 2024-01-22 20:49:53.287 Regression:5019 - Split Check Number - 32-010
+[${ROUTINGKEY} INFO ] 2024-01-22 20:51:25.832 Regression:4923 - Split Check - 32-011
+[${ROUTINGKEY} INFO ] 2024-01-22 20:51:25.852 TableLayOutScreen:1579 - seatNumber - 2
+[${ROUTINGKEY} INFO ] 2024-01-22 20:51:25.853 TableLayOutScreen:1580 - seatNumber11 - 1
+[${ROUTINGKEY} INFO ] 2024-01-22 20:51:25.853 TableLayOutScreen:1582 - Seat Number - 1 is Available
+[${ROUTINGKEY} INFO ] 2024-01-22 20:51:26.362 Regression:5019 - Split Check Number - 32-012
+[${ROUTINGKEY} INFO ] 2024-01-22 20:53:08.613 TableLayOutScreen:773 - Seat2 is not Added
+[${ROUTINGKEY} INFO ] 2024-01-22 20:53:16.950 Hooks:50 - Failed Scenario Name : Split Seat from Table layout/bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-01-22 20:55:43.739 TableLayOutScreen:771 - Seat2 is Added 
+[${ROUTINGKEY} INFO ] 2024-01-22 20:55:52.131 Hooks:50 - Failed Scenario Name : Split Seat from bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-01-22 20:58:15.295 TableLayOutScreen:771 - Seat2 is Added 
+[${ROUTINGKEY} INFO ] 2024-01-22 20:58:23.452 Hooks:50 - Failed Scenario Name : Split Seat from Order Screen
+[${ROUTINGKEY} INFO ] 2024-01-22 20:59:53.201 Hooks:50 - Failed Scenario Name : Reopen the closed checks and validate the tax, total, Subtotal
+[${ROUTINGKEY} INFO ] 2024-01-22 21:01:28.380 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2024-01-22 21:02:58.548 Hooks:50 - Failed Scenario Name : LIN-22163 - Gratuity value is mismatching, when applying auto gratuity
+[${ROUTINGKEY} INFO ] 2024-01-22 21:04:54.312 Hooks:50 - Failed Scenario Name : LIN - 22195 - Application crash : When we delete the repeat order item
+[${ROUTINGKEY} INFO ] 2024-01-22 21:06:24.605 Hooks:50 - Failed Scenario Name : LIN-22594 - Gratuity amounts disappears from the check in the following scenario
+[${ROUTINGKEY} INFO ] 2024-01-22 21:08:11.115 PaymentWindow:928 - Customer notes - 
+[${ROUTINGKEY} INFO ] 2024-01-22 21:08:39.955 Hooks:50 - Failed Scenario Name : Application gets crashed when scroll the category/service type/suggestive search

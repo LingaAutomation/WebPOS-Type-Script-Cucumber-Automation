@@ -126,8 +126,7 @@ public class CIPaymentScreen extends BasePage{
 //        elementClick(element, msg);
         Thread.sleep(6000);
         driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-        WebElement element = driver.findElement(By.xpath("//button[contains(.,'Continue')]"));
-
+        WebElement element = driver.findElement(By.xpath(btnName));
         elementClick(element, msg);
     }
 

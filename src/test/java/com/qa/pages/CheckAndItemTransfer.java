@@ -343,10 +343,10 @@ public class CheckAndItemTransfer extends BasePage{
         String[] actualMenuItem1 = actualMenuItem.split(" ");
         try {
             if (driver.findElement(By.xpath("//div[contains(@class,'menu-section')]/div[contains(.,'"+actualMenuItem1[0]+"')]")).getText().contains(FirstMenuItem)) {
-//                utils.log().info("Transferred Menu item is available in the transferred to table - "+actualMenuItem1[0]);
+                utils.log().info("Transferred Menu item is available in the transferred to table - "+actualMenuItem1[0]);
             }
         } catch (Exception e) {
-//            utils.log().info("Menu item is not available in the Transferred to Table");
+            utils.log().info("Menu item is not available in the Transferred to Table");
         }
     }
 
@@ -404,13 +404,13 @@ public class CheckAndItemTransfer extends BasePage{
         elementClick(ele,"Click the Transferred To Table button");
     }
 
-    public void selectTheTransferToTableFromTheTransferFromTable()
-    {
+    public void selectTheTransferToTableFromTheTransferFromTable() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         WebElement ele = driver.findElement(By.xpath("//div[contains(@class,'transfer-list-header')]//p[contains(.,'Transfer From')]/../..//div[contains(@class,'tabletransfer')]//ion-searchbar//div//input"));
         elementClick(ele,"Click the first table from the List of table in the Transfer From table");
         ele.sendKeys(TestUtils.tableNumberof01);
 
+        Thread.sleep(3000);
         WebElement ele1 = driver.findElement(By.xpath("//ion-col[contains(@class,'transferfrom')]//ul[contains(@class,'ion-no-padding')]//div[@class='ng-star-inserted']//div//div"));
         ele1.click();
         FTable1 = getText(ele1,"Text");

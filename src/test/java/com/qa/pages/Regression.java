@@ -4831,7 +4831,7 @@ public class Regression extends TableLayOutScreen {
 
     public void verifySplitCheckScren() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Thread.sleep(4000);
+        Thread.sleep(8000);
         Assert.assertEquals(splitCheckBtn.getText(), "Split Check");
 //        utils.log().info("Displayed Screen as - " + splitCheckBtn.getText());
     }
@@ -5016,7 +5016,7 @@ public class Regression extends TableLayOutScreen {
         int defaultCheckNumberrrr = Integer.parseInt(defaultCheckNumberTxt);
         int increaedNumber = defaultCheckNumberrrr + 1;
         Assert.assertEquals(increaedNumber, checkNumberrr);
-//        utils.log().info("Split Check Number - " + IncreasedCheckNumber);
+        utils.log().info("Split Check Number - " + IncreasedCheckNumber);
 
     }
 
@@ -5718,14 +5718,13 @@ public class Regression extends TableLayOutScreen {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         try {
             if (cashierOutfullyPopup.isDisplayed()) {
+                WebElement cashBtn = driver.findElement(By.xpath("//ion-grid[contains(@class,'cashierout-content')]//ion-row//ion-col//button//span[contains(.,'Cash')]"));
+                elementClick(cashBtn, "Selected - " + cashBtn.getText());
                 utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
                 elementClick(Done1, "Tapped Done Button on the Popup");
             }
         } catch (Exception z) {
-            WebElement cashBtn = driver.findElement(By.xpath("//ion-grid[contains(@class,'cashierout-content')]//ion-row//ion-col//button//span[contains(.,'Cash')]"));
-            elementClick(cashBtn, "Selected - " + cashBtn.getText());
-            utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
-            elementClick(Done1, "Tapped Done Button on the Popup");
+
         }
     }
 }
