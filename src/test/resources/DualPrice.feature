@@ -1348,4 +1348,9 @@ Feature: Instant Cash Reward Feature
       And I click Add Button to create Seat
       And I click Add Button to create Seat
       And I click Add Button to create Seat
-      And
+      And I should verify the Auto Gratuity is opened and click on Back button
+      And I click Add Button to create Seat
+      And I should verify the Auto Gratuity is opened and click on Back button
+      And I Click on the Seats arrow button in the order screen
+      And Delete seat as "2" in the seats screen
+      And I click Seat 3 for add menu item

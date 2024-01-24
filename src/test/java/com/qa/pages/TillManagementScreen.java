@@ -28,6 +28,9 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(xpath = "//label[contains(.,'Till Management')]/../linga-icon/../.." )
     private WebElement tillmanagementBtn_Opt;
 
+    @FindBy(xpath = "//linga-icon[@symbol='arrow']" )
+    private WebElement SeatsArrowbutn;
+
     @FindBy(xpath = "" )
     private WebElement tillTab;
 
@@ -143,6 +146,33 @@ public class TillManagementScreen extends OrderManagementScreen {
     }
 
     public void pressTillManagementBTN() {elementClick(tillmanagementBtn_Opt, "Clicked on Till management button in the operation option");
+    }
+
+    public void ClickArrowdownbuttoninseat() {
+        elementClick(SeatsArrowbutn, "Clicked on Till management button in the operation option");
+    }
+
+    public void VerifyAutoGratuitypopup() {
+        try {
+            WebElement auto = driver.findElement(By.xpath("//ion-title[.='Add Gratuity']"));
+        if (auto.isDisplayed()) {
+            driver.findElement(By.xpath("//button[contains(.,'Back')]")).click();
+        }
+        }
+        catch (Exception e) {
+
+        }
+    }
+
+    public void DeleteTheSeat(String value) {
+
+            WebElement auto = driver.findElement(By.xpath("//button[contains(@class,'seatDropDown_row-footer-btn')]"));
+            auto.click();
+            int count = Integer.parseInt(value);
+            int count1 = count -1;
+        WebElement auto1 = driver.findElement(By.xpath("(//div[@class='seatDropDown_row-seatCountButton']//button[contains(.,'X')]//span//div)["+count1+"]"));
+        auto1.click();
+
     }
 
     public void setPaidBy(){

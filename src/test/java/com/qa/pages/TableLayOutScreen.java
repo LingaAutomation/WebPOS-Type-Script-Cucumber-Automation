@@ -151,7 +151,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//ion-col[contains(@class,'qsrSeats_row')]//p[.='Seats']/..//button//span[.=' 2 ']")
     private WebElement seat2OrderScreen;
 
-    @FindBy(xpath = "3")
+    @FindBy(xpath = "")
     private WebElement seat3OrderScreen;
 
     @FindBy(xpath = "4")

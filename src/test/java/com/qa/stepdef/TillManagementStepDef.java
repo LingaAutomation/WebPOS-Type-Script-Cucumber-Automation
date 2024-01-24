@@ -432,4 +432,19 @@ public class TillManagementStepDef {
     public void iClickOnTheTillManagementButton() throws InterruptedException{
         new TillManagementScreen(driver).pressTillManagementBTN();
     }
+
+    @And("I should verify the Auto Gratuity is opened and click on Back button")
+    public void iShouldVerifyTheAutoGratuityIsOpenedAndClickOnBackButton() {
+        new TillManagementScreen(driver).VerifyAutoGratuitypopup();
+    }
+
+    @And("I Click on the Seats arrow button in the order screen")
+    public void iClickOnTheSeatsArrowButtonInTheOrderScreen() {
+        new TillManagementScreen(driver).ClickArrowdownbuttoninseat();
+    }
+
+    @And("Delete seat as {string} in the seats screen")
+    public void deleteSeatAsInTheSeatsScreen(String arg0) {
+        new TillManagementScreen(driver).ClickArrowdownbuttoninseat();
+    }
 }
