@@ -1,0 +1,448 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:04.224 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@de7e193
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:10.261 SyncClass1:42 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:10.304 SyncClass1:42 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:10.328 SyncClass1:42 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:10.353 SyncClass1:42 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:10.377 SyncClass1:42 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:13.486 SyncClass1:42 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:13.520 SyncClass1:42 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:13.576 SyncClass1:42 - Table layout Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:20.742 SyncClass2:32 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:20.777 SyncClass2:32 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:20.801 SyncClass2:32 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:20.825 SyncClass2:32 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:20.849 SyncClass2:32 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:23.952 SyncClass2:32 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:23.990 SyncClass2:32 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:24.044 SyncClass2:32 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:25.137 SyncClass2:32 - Tapped Check Stats Tab - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:29.255 Regression:1188 - Sync Count - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.295 SyncClass1:49 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.327 Regression:616 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.327 Regression:628 - 20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.338 Regression:630 - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.345 SyncClass1:49 - Tapped Table 20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.388 SyncClass1:49 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.416 SyncClass1:49 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.500 Regression:535 - 78-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.512 SyncClass1:49 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.550 SyncClass1:49 - Tapped category - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.585 Regression:1105 - Table Number from the order screen - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.603 SyncClass1:49 - 1 - Tapped Menu - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.645 SyncClass1:49 - 1 - Tapped MenuMini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.673 Regression:1118 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.682 Regression:1123 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.691 Regression:1128 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:31.699 Regression:1133 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.722 Regression:158 - 1 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.741 Regression:163 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.756 Regression:168 - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.756 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota] Prize [9.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.769 Regression:163 - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.780 Regression:168 - 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.781 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota, Mini idly] Prize [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.781 Regression:194 - Menu name - [Mini parota, Mini idly]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.781 Regression:195 - Menu Prize - [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.781 Regression:196 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.781 Regression:197 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:32.792 SyncClass1:49 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:34.873 SyncClass2:32 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:36.971 Regression:688 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:36.984 SyncClass2:32 - Tapped Active Check in closed tab - 78-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:37.010 SyncClass2:52 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.047 Regression:723 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.073 Regression:728 - 1 Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.087 Regression:732 - 1 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.101 Regression:739 - Verified -  Mini parota Prize 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.112 Regression:728 - 2 Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.123 Regression:732 - 2 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.135 Regression:739 - Verified -  Mini idly Prize 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.145 Regression:763 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.155 Regression:768 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.163 Regression:773 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.171 Regression:778 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:40.182 SyncClass2:52 - Finish Order selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:16:48.452 Hooks:49 - Failed Scenario Name : Split with Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:14.910 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@de7e193
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:20.686 SyncClass1:42 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:20.723 SyncClass1:42 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:20.747 SyncClass1:42 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:20.772 SyncClass1:42 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:20.797 SyncClass1:42 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:23.904 SyncClass1:42 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:23.950 SyncClass1:42 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:24.006 SyncClass1:42 - Table layout Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:31.170 SyncClass2:32 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:31.205 SyncClass2:32 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:31.229 SyncClass2:32 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:31.253 SyncClass2:32 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:31.278 SyncClass2:32 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:34.382 SyncClass2:32 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:34.422 SyncClass2:32 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:34.476 SyncClass2:32 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:38.615 Regression:1188 - Sync Count - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.657 SyncClass1:49 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.690 Regression:616 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.691 Regression:628 - 26
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.702 Regression:630 - T26
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.709 SyncClass1:49 - Tapped Table 26
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.751 SyncClass1:49 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.778 SyncClass1:49 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.863 Regression:535 - 80-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.875 SyncClass1:49 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.912 SyncClass1:49 - Tapped category - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.947 Regression:1105 - Table Number from the order screen - T26
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:40.965 SyncClass1:49 - 1 - Tapped Menu - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:41.008 SyncClass1:49 - 1 - Tapped MenuMini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:41.035 Regression:1118 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:41.045 Regression:1123 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:41.053 Regression:1128 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:41.062 Regression:1133 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.085 Regression:158 - 1 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.106 Regression:163 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.122 Regression:168 - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.122 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota] Prize [9.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.136 Regression:163 - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.148 Regression:168 - 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.148 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota, Mini idly] Prize [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.148 Regression:194 - Menu name - [Mini parota, Mini idly]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.148 Regression:195 - Menu Prize - [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.148 Regression:196 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.148 Regression:197 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:42.159 SyncClass1:49 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:44.231 SyncClass2:32 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:46.342 Regression:688 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:46.354 SyncClass2:32 - Tapped Active Check in closed tab - 80-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:46.380 SyncClass2:52 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.420 Regression:723 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.446 Regression:728 - 1 Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.460 Regression:732 - 1 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.474 Regression:739 - Verified -  Mini parota Prize 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.485 Regression:728 - 2 Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.497 Regression:732 - 2 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.518 Regression:739 - Verified -  Mini idly Prize 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.528 Regression:763 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.537 Regression:768 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.546 Regression:773 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.554 Regression:778 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:49.565 SyncClass2:52 - Finish Order selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:51.622 SyncClass2:52 - Selected - Table 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:51.683 SyncClass2:52 - Split Button Selected - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:53.748 Regression:1225 - Split window - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:55.790 SyncClass2:52 - Selected Button as - Split By Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:56.019 Regression:493 - M2 - T26
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:21:58.083 SyncClass2:52 - 2 - Selected Table - T26
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:06.414 Regression:1235 - Split Seat Screen - Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:06.431 SyncClass2:52 - Add Button Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.495 Regression:1247 - Seat 2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.535 SyncClass2:52 - Select Item - Mini parota - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.570 SyncClass2:52 - Seat 2 - selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.653 Regression:1267 - Menu Item is moved from seat 1 to seat 2 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.676 Regression:1279 - Subtotal Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.680 Regression:1282 - Tax Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.684 Regression:1285 - Paid Amount Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:08.688 Regression:1288 - Total Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:13.698 Regression:264 - orderMenu.size() 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:22:18.742 Hooks:49 - Failed Scenario Name : Split with Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:31.396 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@13e5d243
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:37.197 SyncClass1:42 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:37.239 SyncClass1:42 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:37.265 SyncClass1:42 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:37.289 SyncClass1:42 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:37.314 SyncClass1:42 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:40.408 SyncClass1:42 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:40.452 SyncClass1:42 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:40.511 SyncClass1:42 - Table layout Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:47.670 SyncClass2:32 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:47.705 SyncClass2:32 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:47.730 SyncClass2:32 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:47.755 SyncClass2:32 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:47.780 SyncClass2:32 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:50.881 SyncClass2:32 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:50.918 SyncClass2:32 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:50.974 SyncClass2:32 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:55.115 Regression:1188 - Sync Count - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.140 SyncClass1:49 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.167 Regression:616 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.168 Regression:628 - 29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.178 Regression:630 - T29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.185 SyncClass1:49 - Tapped Table 29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.227 SyncClass1:49 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.255 SyncClass1:49 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.339 Regression:535 - 82-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.352 SyncClass1:49 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.387 SyncClass1:49 - Tapped category - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.421 Regression:1105 - Table Number from the order screen - T29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.440 SyncClass1:49 - 1 - Tapped Menu - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.483 SyncClass1:49 - 1 - Tapped MenuMini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.510 Regression:1118 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.520 Regression:1123 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.528 Regression:1128 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:57.536 Regression:1133 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.565 Regression:158 - 1 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.586 Regression:163 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.601 Regression:168 - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.601 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota] Prize [9.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.615 Regression:163 - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.627 Regression:168 - 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.627 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota, Mini idly] Prize [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.627 Regression:194 - Menu name - [Mini parota, Mini idly]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.627 Regression:195 - Menu Prize - [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.627 Regression:196 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.628 Regression:197 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:24:58.638 SyncClass1:49 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:00.722 SyncClass2:32 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:02.818 Regression:688 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:02.830 SyncClass2:32 - Tapped Active Check in closed tab - 82-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:02.855 SyncClass2:52 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.880 Regression:723 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.896 Regression:728 - 1 Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.907 Regression:732 - 1 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.919 Regression:739 - Verified -  Mini parota Prize 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.930 Regression:728 - 2 Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.940 Regression:732 - 2 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.953 Regression:739 - Verified -  Mini idly Prize 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.963 Regression:763 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.972 Regression:768 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.980 Regression:773 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.988 Regression:778 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:05.999 SyncClass2:52 - Finish Order selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:08.051 SyncClass2:52 - Selected - Table 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:08.114 SyncClass2:52 - Split Button Selected - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:10.170 Regression:1225 - Split window - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:12.219 SyncClass2:52 - Selected Button as - Split By Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:12.452 Regression:493 - M2 - T29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:14.524 SyncClass2:52 - 2 - Selected Table - T29
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:25:31.877 Hooks:49 - Failed Scenario Name : Split with Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:29.267 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@de7e193
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:35.065 SyncClass1:42 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:35.101 SyncClass1:42 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:35.124 SyncClass1:42 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:35.150 SyncClass1:42 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:35.175 SyncClass1:42 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:38.284 SyncClass1:42 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:38.323 SyncClass1:42 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:38.379 SyncClass1:42 - Table layout Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:45.540 SyncClass2:32 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:45.576 SyncClass2:32 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:45.601 SyncClass2:32 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:45.625 SyncClass2:32 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:45.649 SyncClass2:32 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:48.748 SyncClass2:32 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:48.786 SyncClass2:32 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:48.841 SyncClass2:32 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:52.971 Regression:1188 - Sync Count - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.013 SyncClass1:49 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.044 Regression:616 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.044 Regression:628 - 24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.055 Regression:630 - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.062 SyncClass1:49 - Tapped Table 24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.104 SyncClass1:49 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.132 SyncClass1:49 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.213 Regression:535 - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.225 SyncClass1:49 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.262 SyncClass1:49 - Tapped category - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.297 Regression:1105 - Table Number from the order screen - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.315 SyncClass1:49 - 1 - Tapped Menu - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.357 SyncClass1:49 - 1 - Tapped MenuMini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.384 Regression:1118 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.394 Regression:1123 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.402 Regression:1128 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:55.410 Regression:1133 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.437 Regression:158 - 1 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.459 Regression:163 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.474 Regression:168 - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.474 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota] Prize [9.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.487 Regression:163 - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.498 Regression:168 - 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.498 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota, Mini idly] Prize [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.499 Regression:194 - Menu name - [Mini parota, Mini idly]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.499 Regression:195 - Menu Prize - [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.499 Regression:196 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.499 Regression:197 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:56.510 SyncClass1:49 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:29:58.582 SyncClass2:32 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:00.692 Regression:688 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:00.705 SyncClass2:32 - Tapped Active Check in closed tab - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:00.731 SyncClass2:52 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.773 Regression:723 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.800 Regression:728 - 1 Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.814 Regression:732 - 1 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.828 Regression:739 - Verified -  Mini parota Prize 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.839 Regression:728 - 2 Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.850 Regression:732 - 2 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.862 Regression:739 - Verified -  Mini idly Prize 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.872 Regression:763 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.882 Regression:768 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.890 Regression:773 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.898 Regression:778 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:03.909 SyncClass2:52 - Finish Order selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:05.971 SyncClass2:52 - Selected - Table 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:06.036 SyncClass2:52 - Split Button Selected - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:08.097 Regression:1225 - Split window - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:10.139 SyncClass2:52 - Selected Button as - Split By Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:10.367 Regression:420 - M - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:12.922 SyncClass2:52 - Selected Table - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:16.036 SyncClass2:52 -  Selected Check Number - 84-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:27.650 Regression:1235 - Split Seat Screen - Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:27.668 SyncClass2:52 - Add Button Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.735 Regression:1247 - Seat 2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.767 SyncClass2:52 - Select Item - Mini parota - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.805 SyncClass2:52 - Seat 2 - selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.834 Regression:1267 - Menu Item is moved from seat 1 to seat 2 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.856 Regression:1279 - Subtotal Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.861 Regression:1282 - Tax Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.865 Regression:1285 - Paid Amount Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:29.869 Regression:1288 - Total Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:30:34.933 Hooks:49 - Failed Scenario Name : Split with Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:35.877 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@7ae0cc89
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:41.649 SyncClass1:42 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:41.680 SyncClass1:42 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:41.704 SyncClass1:42 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:41.728 SyncClass1:42 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:41.752 SyncClass1:42 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:44.861 SyncClass1:42 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:44.907 SyncClass1:42 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:44.963 SyncClass1:42 - Table layout Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:52.122 SyncClass2:32 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:52.157 SyncClass2:32 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:52.182 SyncClass2:32 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:52.206 SyncClass2:32 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:52.230 SyncClass2:32 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:55.331 SyncClass2:32 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:55.367 SyncClass2:32 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:55.423 SyncClass2:32 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:32:59.566 Regression:1188 - Sync Count - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.609 SyncClass1:49 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.642 Regression:616 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.642 Regression:628 - 11
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.653 Regression:630 - T11
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.660 SyncClass1:49 - Tapped Table 11
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.702 SyncClass1:49 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.728 SyncClass1:49 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.814 Regression:535 - 86-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.826 SyncClass1:49 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.861 SyncClass1:49 - Tapped category - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.896 Regression:1105 - Table Number from the order screen - T11
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.914 SyncClass1:49 - 1 - Tapped Menu - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.958 SyncClass1:49 - 1 - Tapped MenuMini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.985 Regression:1118 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:01.994 Regression:1123 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:02.003 Regression:1128 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:02.011 Regression:1133 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.025 Regression:158 - 1 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.038 Regression:163 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.050 Regression:168 - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.050 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota] Prize [9.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.061 Regression:163 - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.072 Regression:168 - 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.072 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota, Mini idly] Prize [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.072 Regression:194 - Menu name - [Mini parota, Mini idly]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.072 Regression:195 - Menu Prize - [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.073 Regression:196 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.073 Regression:197 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:03.083 SyncClass1:49 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:05.170 SyncClass2:32 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:07.277 Regression:688 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:07.291 SyncClass2:32 - Tapped Active Check in closed tab - 86-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:07.317 SyncClass2:52 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.357 Regression:723 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.384 Regression:728 - 1 Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.398 Regression:732 - 1 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.413 Regression:739 - Verified -  Mini parota Prize 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.424 Regression:728 - 2 Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.435 Regression:732 - 2 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.447 Regression:739 - Verified -  Mini idly Prize 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.456 Regression:763 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.465 Regression:768 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.474 Regression:773 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.483 Regression:778 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:10.494 SyncClass2:52 - Finish Order selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:12.552 SyncClass2:52 - Selected - Table 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:12.612 SyncClass2:52 - Split Button Selected - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:14.674 Regression:1225 - Split window - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:16.718 SyncClass2:52 - Selected Button as - Split By Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:16.948 Regression:420 - M - T11
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:19.514 SyncClass2:52 - Selected Table - T11
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:22.632 SyncClass2:52 -  Selected Check Number - 86-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:34.247 Regression:1235 - Split Seat Screen - Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:34.264 SyncClass2:52 - Add Button Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.332 Regression:1247 - Seat 2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.363 SyncClass2:52 - Select Item - Mini parota - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.395 SyncClass2:52 - Seat 2 - selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.424 Regression:1267 - Menu Item is moved from seat 1 to seat 2 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.447 Regression:1279 - Subtotal Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.452 Regression:1282 - Tax Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.456 Regression:1285 - Paid Amount Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.459 Regression:1288 - Total Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:36.473 SyncClass1:49 - Selected - Save & Close
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:38.526 SyncClass2:32 - Selected Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:38.576 SyncClass2:32 - Selected Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:38.615 SyncClass2:32 - Selected Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:40.634 Regression:1188 - Sync Count - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.668 SyncClass1:49 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.697 Regression:616 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.697 Regression:628 - 24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.706 Regression:630 - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.712 SyncClass1:49 - Tapped Table 24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.747 SyncClass1:49 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.773 SyncClass1:49 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.857 Regression:535 - 86-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.869 SyncClass1:49 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.903 SyncClass1:49 - Tapped category - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.929 Regression:1105 - Table Number from the order screen - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.947 SyncClass1:49 - 1 - Tapped Menu - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:42.984 SyncClass1:49 - 1 - Tapped MenuMini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:43.009 Regression:1118 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:43.018 Regression:1123 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:43.027 Regression:1128 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:43.035 Regression:1133 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.059 Regression:158 - 1 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.081 Regression:163 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.095 Regression:168 - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.095 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota] Prize [9.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.108 Regression:163 - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.119 Regression:168 - 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.119 Regression:171 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Mini parota, Mini idly] Prize [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.119 Regression:194 - Menu name - [Mini parota, Mini idly]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.119 Regression:195 - Menu Prize - [9.00, 8.00]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.119 Regression:196 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.119 Regression:197 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:44.131 SyncClass1:49 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:46.201 SyncClass2:32 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:48.318 Regression:688 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:48.329 SyncClass2:32 - Tapped Active Check in closed tab - 86-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:48.354 SyncClass2:52 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.393 Regression:723 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.414 Regression:728 - 1 Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.427 Regression:732 - 1 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.441 Regression:739 - Verified -  Mini parota Prize 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.452 Regression:728 - 2 Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.462 Regression:732 - 2 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.474 Regression:739 - Verified -  Mini idly Prize 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.482 Regression:763 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.490 Regression:768 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.498 Regression:773 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.506 Regression:778 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:51.516 SyncClass2:52 - Finish Order selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:53.584 SyncClass2:52 - Selected - Table 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:53.662 SyncClass2:52 - Split Button Selected - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:55.716 Regression:1225 - Split window - Split
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:57.757 SyncClass2:52 - Selected Button as - Split By Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:33:57.985 Regression:420 - M - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:00.545 SyncClass2:52 - Selected Table - T24
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:03.655 SyncClass2:52 -  Selected Check Number - 86-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:15.256 Regression:1235 - Split Seat Screen - Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:15.275 SyncClass2:52 - Add Button Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.337 Regression:1247 - Seat 2 is Added 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.370 SyncClass2:52 - Select Item - Mini parota - 9.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.400 SyncClass2:52 - Seat 2 - selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.482 Regression:1267 - Menu Item is moved from seat 1 to seat 2 - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.506 Regression:1279 - Subtotal Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.510 Regression:1282 - Tax Seat 2 - null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.513 Regression:1285 - Paid Amount Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.517 Regression:1288 - Total Seat 2- null
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:17.530 SyncClass1:49 - Selected - Save & Close
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:19.584 SyncClass2:32 - Selected Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:19.631 SyncClass2:32 - Selected Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-23 19:34:19.667 SyncClass2:32 - Selected Payment

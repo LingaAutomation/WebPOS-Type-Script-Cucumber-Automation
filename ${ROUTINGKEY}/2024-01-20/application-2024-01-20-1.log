@@ -1,0 +1,47 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:40.843 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@3ddb774f
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:46.631 SyncClass1:42 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:46.673 SyncClass1:42 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:46.698 SyncClass1:42 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:46.723 SyncClass1:42 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:46.747 SyncClass1:42 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:49.855 SyncClass1:42 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:49.894 SyncClass1:42 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:49.949 SyncClass1:42 - Table layout Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:57.112 SyncClass2:32 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:57.145 SyncClass2:32 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:57.171 SyncClass2:32 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:57.194 SyncClass2:32 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:33:57.218 SyncClass2:32 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:00.317 SyncClass2:32 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:00.354 SyncClass2:32 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:00.410 SyncClass2:32 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:01.493 SyncClass2:32 - Tapped Check Stats Tab - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.612 Regression:26 - Sync Count - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.640 SyncClass1:49 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.670 Regression:510 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.671 Regression:522 - 20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.681 Regression:524 - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.688 SyncClass1:49 - Tapped Table 20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.730 SyncClass1:49 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.757 SyncClass1:49 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.840 Regression:430 - 99-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.852 SyncClass1:49 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.889 SyncClass1:49 - Tapped category - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.923 Regression:732 - Table Number from the order screen - T20
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.941 SyncClass1:49 - 1 - Tapped Menu - Mini parota
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:05.983 SyncClass1:49 - 1 - Tapped MenuMini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:06.012 Regression:745 - SubTotal Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:06.022 Regression:750 - Tax - $ 1.82
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:06.030 Regression:755 - Total Amount - $ 17.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:06.038 Regression:760 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:06.050 SyncClass1:49 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:11.129 Regression:58 - orderMenu.size() 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:11.130 Regression:94 - Menu name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:11.130 Regression:95 - Menu Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:11.130 Regression:96 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:11.130 Regression:97 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:18.789 Regression:546 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:18.801 SyncClass2:32 - Tapped Active Check in closed tab - 99-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:18.827 SyncClass2:52 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:21.865 Regression:581 - orderMenu.size() 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-20 14:34:21.898 Hooks:49 - Failed Scenario Name : Merge With Direct Menu

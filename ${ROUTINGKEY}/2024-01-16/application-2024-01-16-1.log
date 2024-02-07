@@ -1,0 +1,2003 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:57.535 Hooks:43 - Start Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:57.585 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:57.620 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:57.648 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:57.675 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:57.701 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:59.816 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:19:59.865 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:01.240 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:01.324 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:01.365 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:01.406 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:01.441 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:01.519 OrderManagementScreen:1786 - 46-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:04.560 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:06.140 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:10.221 BasePage:278 - Selected - Burger
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:11.294 OrderManagementScreen:776 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:11.296 OrderManagementScreen:779 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:11.321 OrderManagementScreen:918 -  Tax is - $ 1.78
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:11.336 OrderManagementScreen:984 - Discount is - $ 9.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:11.356 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:11.404 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:11.440 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:12.792 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:12.829 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:12.858 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:12.892 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:12.922 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:13.008 OrderManagementScreen:1786 - 46-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:16.051 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:17.623 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:21.700 BasePage:278 - Selected - Default Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:22.750 OrderManagementScreen:776 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:22.751 OrderManagementScreen:779 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:22.770 OrderManagementScreen:918 -  Tax is - $ 0.86
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:20:22.789 Hooks:54 - Failed Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:00.628 Hooks:43 - Start Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:00.673 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:00.705 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:00.732 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:00.757 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:00.783 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:02.887 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:02.933 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:04.308 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:04.391 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:04.430 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:04.469 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:04.503 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:04.574 OrderManagementScreen:1786 - 47-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:07.618 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:09.204 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:13.285 BasePage:278 - Selected - Burger
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:14.368 OrderManagementScreen:776 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:14.369 OrderManagementScreen:779 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:14.392 OrderManagementScreen:918 -  Tax is - $ 1.78
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:14.408 OrderManagementScreen:984 - Discount is - $ 9.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:14.428 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:14.472 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:14.508 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:15.866 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:15.903 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:15.931 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:15.962 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:15.989 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:16.045 OrderManagementScreen:1786 - 47-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:19.088 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:20.657 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:24.739 BasePage:278 - Selected - Default Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:25.789 OrderManagementScreen:776 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:25.789 OrderManagementScreen:779 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:25.811 OrderManagementScreen:918 -  Tax is - $ 0.86
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:25:25.831 Hooks:54 - Failed Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:33.805 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:33.842 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:33.874 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:33.898 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:33.923 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:33.946 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:36.036 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:39.098 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:40.674 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:44.760 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:26:50.862 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:51.305 Hooks:43 - Start Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:51.351 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:51.381 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:51.409 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:51.435 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:51.459 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:53.574 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:53.623 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:55.004 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:55.089 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:55.133 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:55.173 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:55.207 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:55.277 OrderManagementScreen:1786 - 49-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:58.322 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:34:59.900 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:03.991 BasePage:278 - Selected - Burger
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:05.067 OrderManagementScreen:776 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:05.069 OrderManagementScreen:779 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:05.090 OrderManagementScreen:918 -  Tax is - $ 1.78
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:05.106 OrderManagementScreen:984 - Discount is - $ 9.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:05.126 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:05.171 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:05.205 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:06.551 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:06.585 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:06.612 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:06.643 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:06.670 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:06.751 OrderManagementScreen:1786 - 49-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:09.791 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:11.362 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:15.444 BasePage:278 - Selected - Default Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:16.501 OrderManagementScreen:776 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:16.501 OrderManagementScreen:779 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:16.521 OrderManagementScreen:918 -  Tax is - $ 0.37
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:16.536 OrderManagementScreen:984 - Discount is - $ 5.25
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:16.554 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:16.590 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:16.619 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:17.959 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:17.993 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:18.022 BasePage:278 - T7 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:18.057 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:18.085 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:21.132 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:22.695 BasePage:278 - Selected - Appetizers
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:26.774 BasePage:278 - Selected - RAPINI
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:27.844 Discount:88 - SubTotal of Menu Item - $ 13.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:28.889 OrderManagementScreen:1383 -  Tax is - $ 0.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:29.925 Discount:189 - Total Value is - $ 13.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:29.926 Discount:192 - Total Value is - $ 13.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:31.004 BasePage:278 - 5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:31.033 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:32.090 Discount:88 - SubTotal of Menu Item - $ 65.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:33.130 OrderManagementScreen:1383 -  Tax is - $ 6.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:34.167 Discount:189 - Total Value is - $ 71.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:34.167 Discount:192 - Total Value is - $ 71.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:35.235 BasePage:278 - 8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:35.270 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:36.328 Discount:88 - SubTotal of Menu Item - $ 104.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:37.372 OrderManagementScreen:1383 -  Tax is - $ 15.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:38.405 Discount:189 - Total Value is - $ 119.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:38.406 Discount:192 - Total Value is - $ 119.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:38.428 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:38.466 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:38.495 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:39.839 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:39.874 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:39.911 BasePage:278 - T8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:39.943 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:39.969 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:43.032 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:44.614 BasePage:278 - Selected - Pasta
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:44.656 BasePage:278 - Tapped Ravioli Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:47.742 BasePage:278 - Selected - Butter
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:47.788 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:48.839 Discount:88 - SubTotal of Menu Item - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:49.883 OrderManagementScreen:1383 -  Tax is - $ 1.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:50.921 Discount:189 - Total Value is - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:50.921 Discount:192 - Total Value is - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:50.943 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:50.982 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:51.009 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:52.348 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:52.378 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:52.405 BasePage:278 - T9 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:52.435 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:52.460 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:55.520 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:35:57.090 BasePage:278 - Selected - Arab Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:36:01.158 BasePage:278 - Selected - sambar
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:36:08.217 Hooks:54 - Failed Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:37:16.235 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:37:16.261 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:37:16.294 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:37:16.322 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:37:16.345 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:37:16.369 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:37:28.878 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:09.984 Hooks:43 - Start Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:10.030 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:10.060 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:10.087 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:10.113 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:10.138 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:12.251 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:12.299 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:13.683 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:13.768 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:13.807 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:13.846 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:13.881 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:13.950 OrderManagementScreen:1787 - 73-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:16.997 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:18.582 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:22.661 BasePage:278 - Selected - Burger
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:23.741 OrderManagementScreen:776 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:23.742 OrderManagementScreen:779 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:23.764 OrderManagementScreen:918 -  Tax is - $ 1.78
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:23.780 OrderManagementScreen:984 - Discount is - $ 9.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:23.799 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:23.843 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:23.877 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:25.235 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:25.273 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:25.300 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:25.331 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:25.359 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:25.444 OrderManagementScreen:1787 - 73-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:28.486 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:30.061 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:34.136 BasePage:278 - Selected - Default Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:35.183 OrderManagementScreen:776 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:35.183 OrderManagementScreen:779 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:35.204 OrderManagementScreen:918 -  Tax is - $ 0.37
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:35.219 OrderManagementScreen:984 - Discount is - $ 5.25
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:35.238 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:35.276 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:35.306 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:36.659 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:36.693 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:36.722 BasePage:278 - T7 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:36.757 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:36.788 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:39.852 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:41.421 BasePage:278 - Selected - Appetizers
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:45.504 BasePage:278 - Selected - RAPINI
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:46.564 Discount:88 - SubTotal of Menu Item - $ 13.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:47.609 OrderManagementScreen:1383 -  Tax is - $ 0.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:48.643 Discount:189 - Total Value is - $ 13.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:48.644 Discount:192 - Total Value is - $ 13.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:49.723 BasePage:278 - 5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:49.751 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:50.813 Discount:88 - SubTotal of Menu Item - $ 65.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:51.855 OrderManagementScreen:1383 -  Tax is - $ 6.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:52.892 Discount:189 - Total Value is - $ 71.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:52.892 Discount:192 - Total Value is - $ 71.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:53.959 BasePage:278 - 8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:53.996 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:55.051 Discount:88 - SubTotal of Menu Item - $ 104.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:56.092 OrderManagementScreen:1383 -  Tax is - $ 15.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:57.127 Discount:189 - Total Value is - $ 119.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:57.127 Discount:192 - Total Value is - $ 119.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:57.149 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:57.190 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:57.218 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:58.569 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:58.603 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:58.640 BasePage:278 - T8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:58.672 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:40:58.698 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:01.763 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:03.337 BasePage:278 - Selected - Pasta
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:03.378 BasePage:278 - Tapped Ravioli Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:06.458 BasePage:278 - Selected - Butter
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:06.505 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:07.557 Discount:88 - SubTotal of Menu Item - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:08.601 OrderManagementScreen:1383 -  Tax is - $ 1.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:09.637 Discount:189 - Total Value is - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:09.638 Discount:192 - Total Value is - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:09.661 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:09.700 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:09.728 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:11.070 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:11.104 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:11.130 BasePage:278 - T9 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:11.160 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:11.184 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:14.246 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:15.811 BasePage:278 - Selected - Arab Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:19.898 BasePage:278 - Selected - sambar
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:20.998 BasePage:278 - Selected - [[ChromeDriver: chrome on mac (5efc4ca6cb626e49eb057bf0518ac149)] -> xpath: //ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:21.022 BasePage:278 - Selected - [[ChromeDriver: chrome on mac (5efc4ca6cb626e49eb057bf0518ac149)] -> xpath: //ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:21.046 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:22.100 Discount:88 - SubTotal of Menu Item - $ 1,100.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:23.145 OrderManagementScreen:1383 -  Tax is - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:24.180 Discount:189 - Total Value is - $ 1,100.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:24.180 Discount:192 - Total Value is - $ 1,100.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:24.201 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:24.238 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:24.263 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:25.612 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:25.645 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:25.671 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:25.704 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:25.730 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:28.783 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:30.352 BasePage:278 - Selected - Arab Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:34.425 BasePage:278 - Selected - sambar
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:35.512 BasePage:278 - Selected - [[ChromeDriver: chrome on mac (5efc4ca6cb626e49eb057bf0518ac149)] -> xpath: //ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:35.536 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:35.568 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:36.620 Discount:88 - SubTotal of Menu Item - $ 1,200.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:37.668 OrderManagementScreen:1383 -  Tax is - $ 105.35
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:41:37.683 Hooks:54 - Failed Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:45.591 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:45.626 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:45.656 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:45.679 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:45.702 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:45.726 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:47.827 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:50.894 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:52.471 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:42:56.555 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 12:43:02.629 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:49.502 Hooks:43 - Start Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:49.546 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:49.576 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:49.605 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:49.633 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:49.659 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:51.770 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:51.817 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:53.203 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:53.290 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:53.337 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:53.376 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:53.410 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:53.480 OrderManagementScreen:1787 - 75-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:56.523 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:16:58.100 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:02.184 BasePage:278 - Selected - Burger
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:03.266 OrderManagementScreen:776 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:03.268 OrderManagementScreen:779 - Subtotal Value is - $ 7.58
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:03.289 OrderManagementScreen:918 -  Tax is - $ 1.78
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:03.305 OrderManagementScreen:984 - Discount is - $ 9.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:03.326 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:03.371 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:03.404 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:04.763 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:04.801 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:04.827 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:04.859 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:04.886 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:04.967 OrderManagementScreen:1787 - 75-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:08.008 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:09.578 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:13.660 BasePage:278 - Selected - Default Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:14.715 OrderManagementScreen:776 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:14.716 OrderManagementScreen:779 - Subtotal Value is - $ 4.88
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:14.735 OrderManagementScreen:918 -  Tax is - $ 0.37
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:14.750 OrderManagementScreen:984 - Discount is - $ 5.25
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:14.770 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:14.807 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:14.839 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:16.187 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:16.220 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:16.249 BasePage:278 - T7 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:16.282 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:16.311 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:19.368 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:20.939 BasePage:278 - Selected - Appetizers
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:25.023 BasePage:278 - Selected - RAPINI
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:26.091 Discount:88 - SubTotal of Menu Item - $ 13.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:27.133 OrderManagementScreen:1383 -  Tax is - $ 0.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:28.168 Discount:189 - Total Value is - $ 13.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:28.168 Discount:192 - Total Value is - $ 13.65
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:29.246 BasePage:278 - 5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:29.275 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:30.330 Discount:88 - SubTotal of Menu Item - $ 65.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:31.363 OrderManagementScreen:1383 -  Tax is - $ 6.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:32.398 Discount:189 - Total Value is - $ 71.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:32.398 Discount:192 - Total Value is - $ 71.50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:33.465 BasePage:278 - 8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:33.500 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:34.558 Discount:88 - SubTotal of Menu Item - $ 104.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:35.605 OrderManagementScreen:1383 -  Tax is - $ 15.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:36.640 Discount:189 - Total Value is - $ 119.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:36.640 Discount:192 - Total Value is - $ 119.60
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:36.662 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:36.701 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:36.728 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:38.079 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:38.113 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:38.150 BasePage:278 - T8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:38.181 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:38.207 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:41.266 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:42.848 BasePage:278 - Selected - Pasta
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:42.889 BasePage:278 - Tapped Ravioli Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:45.972 BasePage:278 - Selected - Butter
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:46.029 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:47.080 Discount:88 - SubTotal of Menu Item - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:48.123 OrderManagementScreen:1383 -  Tax is - $ 1.36
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:49.157 Discount:189 - Total Value is - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:49.157 Discount:192 - Total Value is - $ 15.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:49.177 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:49.218 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:49.246 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:50.601 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:50.636 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:50.662 BasePage:278 - T9 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:50.693 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:50.719 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:53.776 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:55.341 BasePage:278 - Selected - Arab Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:17:59.426 BasePage:278 - Selected - sambar
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:00.524 BasePage:278 - Selected - [[ChromeDriver: chrome on mac (adb1a5a540643247ca032d64760c8377)] -> xpath: //ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:00.547 BasePage:278 - Selected - [[ChromeDriver: chrome on mac (adb1a5a540643247ca032d64760c8377)] -> xpath: //ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:00.573 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:01.626 Discount:88 - SubTotal of Menu Item - $ 1,100.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:02.669 OrderManagementScreen:1383 -  Tax is - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:03.703 Discount:189 - Total Value is - $ 1,100.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:03.704 Discount:192 - Total Value is - $ 1,100.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:03.726 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:03.762 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:03.788 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:05.136 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:05.170 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:05.195 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:05.227 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:05.252 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:08.309 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:09.875 BasePage:278 - Selected - Arab Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:13.951 BasePage:278 - Selected - sambar
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:15.043 BasePage:278 - Selected - [[ChromeDriver: chrome on mac (adb1a5a540643247ca032d64760c8377)] -> xpath: //ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']]
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:15.067 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:15.098 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:16.145 Discount:88 - SubTotal of Menu Item - $ 1,200.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:17.185 OrderManagementScreen:1383 -  Tax is - $ 105.35
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:18.219 Discount:189 - Total Value is - $ 1,305.35
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:18.219 Discount:192 - Total Value is - $ 1,305.35
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:18.240 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:18.276 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:18.303 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:19.654 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:19.690 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:19.717 BasePage:278 - T11 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:19.747 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:19.772 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:22.827 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:24.394 BasePage:278 - Selected - Pasta
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:24.448 BasePage:278 -  Tapped Ling Meatballs Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:27.532 BasePage:278 - Selected - Butter
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:27.585 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:28.634 Discount:88 - SubTotal of Menu Item - $ 4.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:29.677 OrderManagementScreen:1383 -  Tax is - $ 0.44
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:30.710 Discount:189 - Total Value is - $ 4.44
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:30.711 Discount:192 - Total Value is - $ 4.44
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:30.734 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:30.773 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:30.799 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:32.147 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:32.180 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:32.207 BasePage:278 - T8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:32.238 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:32.263 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:35.319 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:36.884 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:40.962 BasePage:278 - Selected - Halwa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:42.058 BasePage:278 - 8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:42.090 BasePage:278 - Tapped Continue
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:43.144 Discount:88 - SubTotal of Menu Item - $ 80.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:44.185 OrderManagementScreen:1383 -  Tax is - $ 8.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:45.217 Discount:189 - Total Value is - $ 88.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:45.217 Discount:192 - Total Value is - $ 88.00
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:47.255 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:47.305 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:49.341 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:49.380 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:52.461 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:53.496 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:53.624 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:53.651 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:53.676 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:53.699 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:53.723 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:55.797 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:18:58.858 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:00.419 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:04.491 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:04.542 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:04.558 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:04.578 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:04.621 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:04.742 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:19:06.839 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:21.273 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:21.319 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:21.349 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:21.376 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:21.402 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:21.428 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:23.541 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:26.631 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:28.209 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:32.293 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:32.340 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:32.360 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:32.387 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:32.433 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:32.550 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:32.584 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:34.658 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:34.700 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:34.717 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:36.778 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:38.855 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:24:40.922 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:04.034 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:04.079 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:04.107 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:04.134 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:04.160 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:04.185 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:06.303 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:09.393 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:10.980 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:15.082 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:15.132 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:15.151 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:15.175 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:15.219 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:15.322 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:15.358 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:17.442 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:17.490 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:17.507 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:19.581 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:21.674 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:21.723 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:22.281 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:27.374 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:27.435 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:40.077 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:40.134 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:42.207 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:45.283 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:46.870 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:50.970 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:51.034 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:51.061 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:53.104 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:53.142 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:28:53.697 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:29:05.779 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:02.136 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:02.180 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:02.211 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:02.238 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:02.264 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:02.292 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:04.400 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:07.460 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:09.044 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:13.109 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:13.160 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:13.179 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:13.204 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:13.249 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:13.357 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:13.390 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:15.464 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:15.507 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:15.523 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:17.588 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:19.671 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:19.714 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:19.745 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:24.811 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:24.876 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:37.478 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:37.529 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:39.598 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:42.661 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:44.236 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:48.300 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:48.358 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:48.386 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:50.423 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:50.457 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:40:51.007 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:41:00.093 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:41:09.188 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:36.274 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:36.351 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:36.380 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:36.406 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:36.433 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:36.459 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:38.553 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:41.624 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:43.211 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:47.288 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:47.335 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:47.354 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:47.379 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:47.425 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:47.554 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:47.591 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:49.663 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:49.705 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:49.721 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:51.786 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:53.865 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:53.907 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:53.938 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:59.004 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:45:59.065 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:11.649 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:11.690 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:13.750 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:16.809 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:18.378 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:22.464 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:22.522 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:22.549 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:24.586 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:24.619 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:24.649 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:33.726 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:37.875 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:37.930 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:37.956 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:39.992 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:40.025 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:40.052 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:45.110 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:45.155 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:57.765 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:57.821 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:57.856 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:59.893 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:59.927 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:46:59.955 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:09.035 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:11.105 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:11.150 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:11.174 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:13.208 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:13.240 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:13.268 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:22.345 BasePage:278 - Selected - California Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 13:47:22.407 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:36.248 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:36.294 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:36.324 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:36.352 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:36.381 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:36.409 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:38.518 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:41.596 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:43.173 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:47.262 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:47.309 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:47.328 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:47.355 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:47.400 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:47.500 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:47.532 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:49.612 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:49.655 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:49.671 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:51.733 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:53.811 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:53.858 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:53.887 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:58.953 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:03:59.012 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:11.633 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:11.680 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:13.739 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:16.800 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:18.372 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:22.458 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:22.517 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:22.544 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:24.581 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:24.615 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:24.643 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:33.721 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:37.862 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:37.917 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:37.939 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:39.975 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:40.009 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:40.038 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:45.100 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:45.146 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:57.751 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:57.793 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:57.821 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:59.858 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:59.892 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:04:59.920 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:08.994 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:11.071 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:11.121 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:11.144 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:13.178 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:13.213 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:13.240 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:22.311 BasePage:278 - Selected - California Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:22.371 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:22.395 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:24.431 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:24.463 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:24.498 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:33.573 BasePage:278 - Selected - Neapolitan Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:33.632 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:33.661 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:35.694 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:35.731 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:35.799 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:05:35.869 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:11.222 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:11.270 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:11.302 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:11.328 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:11.353 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:11.378 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:13.472 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:16.541 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:18.126 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:22.212 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:22.258 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:22.277 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:22.302 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:22.347 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:22.455 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:22.488 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:24.571 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:24.614 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:24.630 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:26.695 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:28.772 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:28.814 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:28.845 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:33.912 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:33.972 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:46.611 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:46.658 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:48.721 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:51.780 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:53.351 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:57.435 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:57.498 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:57.524 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:59.560 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:09:59.591 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:00.141 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:09.226 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:13.369 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:13.425 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:13.450 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:15.484 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:15.517 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:15.545 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:20.602 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:20.647 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:33.270 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:33.308 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:33.334 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:35.371 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:35.404 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:35.431 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:44.504 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:46.584 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:46.634 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:46.657 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:48.688 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:48.720 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:48.748 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:57.821 BasePage:278 - Selected - California Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:57.880 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:57.903 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:59.939 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:59.970 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:10:59.999 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:09.071 BasePage:278 - Selected - Neapolitan Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:09.131 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:09.155 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:11.189 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:11.227 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:11.291 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:11.362 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:16.991 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:18.067 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:18.661 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:18.709 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:19.790 BasePage:278 - Tapped BarTab Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:19.846 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:20.935 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:22.530 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:11:23.590 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:17.430 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:17.483 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:17.512 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:17.538 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:17.563 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:17.588 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:19.700 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:22.782 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:24.367 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:28.452 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:28.497 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:28.516 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:28.541 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:28.587 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:28.694 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:28.727 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:30.812 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:30.854 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:30.870 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:32.933 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:35.017 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:35.062 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:35.092 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:40.155 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:40.215 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:52.825 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:52.868 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:54.931 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:57.992 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:15:59.558 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:03.632 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:03.692 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:03.717 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:05.752 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:05.784 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:06.334 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:15.419 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:19.571 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:19.622 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:19.646 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:21.680 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:21.714 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:21.742 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:26.796 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:26.840 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:39.468 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:39.509 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:39.535 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:41.571 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:41.603 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:41.632 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:50.702 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:52.771 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:52.812 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:52.836 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:54.870 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:54.904 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:16:54.932 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:04.007 BasePage:278 - Selected - California Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:04.067 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:04.089 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:06.125 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:06.158 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:06.186 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:15.259 BasePage:278 - Selected - Neapolitan Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:15.315 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:15.339 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:17.374 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:17.412 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:17.476 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:17.541 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:23.171 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:24.241 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:24.838 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:24.887 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:25.968 BasePage:278 - Tapped BarTab Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:26.024 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:27.112 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:28.709 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:17:29.786 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:06.265 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:06.309 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:06.339 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:06.367 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:06.393 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:06.421 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:08.533 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:11.613 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:13.187 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:17.270 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:17.315 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:17.334 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:17.367 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:17.415 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:17.516 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:17.548 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:19.617 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:19.659 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:19.676 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:21.739 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:23.821 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:23.865 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:23.895 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:28.960 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:29.019 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:41.679 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:41.727 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:43.789 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:46.851 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:48.424 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:52.504 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:52.566 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:52.592 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:54.628 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:54.660 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:19:54.688 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:03.766 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:07.918 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:07.974 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:07.998 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:10.031 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:10.065 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:10.092 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:15.152 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:15.198 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:27.825 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:27.864 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:27.891 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:29.923 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:29.955 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:30.504 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:39.587 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:41.662 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:41.713 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:41.737 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:43.773 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:43.806 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:44.358 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:53.442 BasePage:278 - Selected - California Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:53.504 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:53.526 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:55.562 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:55.595 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:20:55.623 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:04.696 BasePage:278 - Selected - Neapolitan Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:04.755 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:04.777 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:06.812 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:06.849 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:06.913 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:06.979 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:12.601 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:13.671 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:14.267 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:14.313 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:15.396 BasePage:278 - Tapped BarTab Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:15.450 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:15.530 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:16.590 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:18.181 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:21.243 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:22.818 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:26.896 BasePage:278 - Selected - Bacon Omelet Senior
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:28.962 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:29.003 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:29.025 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:29.067 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:29.098 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:29.230 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:30.313 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:31.898 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:21:32.957 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:51.076 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:51.124 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:51.154 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:51.182 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:51.209 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:51.235 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:53.351 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:56.428 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:23:58.016 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:02.101 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:02.148 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:02.168 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:02.194 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:02.240 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:02.334 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:02.367 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:04.455 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:04.497 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:04.513 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:06.576 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:08.661 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:08.706 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:08.736 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:13.799 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:13.856 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:26.506 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:26.547 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:28.608 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:31.671 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:33.240 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:37.319 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:37.379 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:37.406 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:39.441 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:39.473 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:39.502 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:48.577 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:52.726 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:52.777 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:52.801 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:54.834 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:54.867 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:54.895 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:59.951 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:24:59.997 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:12.602 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:12.643 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:12.670 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:14.707 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:14.740 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:14.767 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:23.844 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:25.922 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:25.971 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:25.995 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:28.031 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:28.064 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:28.610 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:37.691 BasePage:278 - Selected - California Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:37.753 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:37.776 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:39.810 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:39.842 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:39.872 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:48.943 BasePage:278 - Selected - Neapolitan Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:48.997 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:49.019 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:51.054 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:51.091 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:51.155 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:51.219 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:56.843 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:57.914 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:58.513 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:58.562 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:59.647 BasePage:278 - Tapped BarTab Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:59.700 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:25:59.775 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:00.837 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:02.432 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:05.491 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:07.066 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:11.141 BasePage:278 - Selected - Bacon Omelet Senior
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:13.206 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:13.248 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:13.269 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:13.311 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:13.341 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:13.475 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:26:19.587 Hooks:54 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:27:58.898 Hooks:43 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:27:58.944 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:27:58.973 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:27:58.999 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:27:59.025 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:27:59.050 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:01.155 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:04.235 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:05.814 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:09.900 BasePage:278 - Selected - SANDWICHES
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:09.946 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:09.965 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:09.991 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:10.036 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:10.144 BasePage:278 - Tapped Customer - thomas a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:10.177 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:12.251 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:12.292 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:12.309 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:14.371 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:16.450 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:16.492 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:16.522 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:21.586 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:21.644 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:34.222 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:34.265 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:36.328 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:39.394 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:40.963 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:45.045 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:45.105 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:45.131 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:47.167 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:47.200 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:47.228 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:28:56.308 BasePage:278 - Selected - Cheese Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:00.462 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:00.514 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:00.539 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:02.577 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:02.609 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:02.637 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:07.695 BasePage:278 - Click pizzaMel
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:07.740 BasePage:278 - Click Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:20.381 TableLayOutScreen:471 - Tapped Done
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:20.422 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:20.449 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:22.483 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:22.516 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:23.065 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:32.150 BasePage:278 - Selected - Pizza Rucola
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:34.227 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:34.278 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:34.302 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:36.338 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:36.372 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:36.400 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:45.472 BasePage:278 - Selected - California Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:45.535 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:45.557 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:47.593 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:47.625 BasePage:258 - Arrow Down
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:47.653 BasePage:278 - Tapped category
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:56.720 BasePage:278 - Selected - Neapolitan Pizza
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:56.770 BasePage:278 - Click Void Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:56.795 BasePage:239 - All Orders are voided is Displayed - All Orders Are Voided
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:58.830 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:58.867 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:58.931 BasePage:278 - Pos Settings Clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:29:58.998 BasePage:239 - verify posSettingHeaderTill Settings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:04.627 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:05.698 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:06.294 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:06.345 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:07.428 BasePage:278 - Tapped BarTab Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:07.480 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:07.558 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:08.621 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:10.211 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:13.275 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:14.853 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:18.924 BasePage:278 - Selected - Bacon Omelet Senior
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:20.988 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:21.031 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:21.052 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:21.094 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:21.124 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:21.255 BasePage:258 - Click New tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:21.312 BasePage:278 - Exit Button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:22.368 BasePage:239 - Verify Enter the Customer NameEnter the Customer Name
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:23.953 BasePage:278 - Click dineIn
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:27.008 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:28.572 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:32.648 BasePage:278 - Selected - MANTI
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:34.730 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:34.768 BasePage:239 - Verify ItemBased Inclusive TaxTax
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:34.788 BasePage:278 - Tapped Cash button for Close Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:34.822 BasePage:278 - Tapped Exact button 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:34.850 BasePage:278 - Tapped Enter for Finish Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:30:35.899 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:42.432 Hooks:43 - Start Scenario Name : Loyalty for new customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:42.478 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:42.508 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:42.534 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:42.559 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:42.584 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:44.702 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:44.750 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.118 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.197 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.232 BasePage:278 - T9 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.271 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.306 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.399 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.453 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:46.539 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:49.609 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:51.189 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:55.258 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:58.367 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:58.417 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:58.456 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:57:59.535 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:00.119 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:03.171 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:03.197 BasePage:278 - Tapped Operation Button on the Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:03.250 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:05.332 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:05.381 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:05.420 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:05.499 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:05.523 BasePage:66 - Customer name is entered - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:58:07.553 Hooks:54 - Failed Scenario Name : Loyalty for new customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 14:59:10.340 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:38.638 Hooks:43 - Start Scenario Name : Loyalty for new customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:38.682 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:38.710 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:38.737 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:38.762 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:38.787 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:40.895 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:40.942 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.311 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.394 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.430 BasePage:278 - T9 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.470 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.504 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.588 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.645 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:42.742 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:45.821 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:47.396 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:51.464 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:54.572 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:54.630 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:54.668 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:55.749 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:56.342 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:59.401 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:59.428 BasePage:278 - Tapped Operation Button on the Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:57:59.483 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:01.563 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:01.616 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:01.656 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:01.734 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:01.844 BasePage:278 - Loyalty $6,965,140.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:03.529 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:03.547 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:06.743 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:06.806 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:06.848 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:06.887 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:06.923 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:07.047 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:07.075 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:07.101 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:07.126 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:07.152 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 15:58:27.299 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.077 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.122 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.152 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.179 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.207 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.234 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.351 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.388 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.453 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:12.552 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:15.674 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:18.789 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:22.867 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:22.883 OrderManagementScreen:1792 - 240-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:23.925 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:01:23.973 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.547 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.593 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.625 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.652 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.679 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.706 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.828 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.868 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:20.923 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:21.030 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:24.133 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:27.261 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:31.324 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:31.340 OrderManagementScreen:1792 - 241-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:32.375 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:32.419 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:32.447 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:35.488 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:37.070 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:41.160 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:44.264 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:44.324 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:44.371 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:44.474 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:06:48.372 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:37.863 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:37.909 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:37.942 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:37.967 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:37.992 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:38.018 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:38.138 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:38.174 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:38.231 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:38.334 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:41.439 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:44.562 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:48.642 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:48.657 OrderManagementScreen:1792 - 242-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:49.694 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:49.741 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:49.767 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:52.814 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:54.389 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:11:58.475 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:12:01.582 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:12:01.651 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:12:01.688 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:12:01.783 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:12:03.828 BasePage:278 - Tapped Closed Check in New tab - 242-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:12:04.914 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.211 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.257 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.287 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.319 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.346 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.371 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.487 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.523 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.580 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:26:57.681 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:00.796 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:03.919 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:08.004 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:08.018 OrderManagementScreen:1792 - 243-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:09.054 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:09.094 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:09.121 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:12.167 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:13.748 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:17.834 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:20.938 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:21.007 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:21.045 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:21.136 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:23.184 BasePage:278 - Tapped Closed Check in New tab - 243-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:27:24.273 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:49.968 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.014 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.046 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.074 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.103 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.129 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.246 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.283 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.340 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:50.443 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:53.540 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:31:56.653 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:00.730 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:00.746 OrderManagementScreen:1792 - 244-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:01.781 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:01.827 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:01.855 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:04.900 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:06.482 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:10.568 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:13.674 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:13.731 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:13.783 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:13.883 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:15.928 BasePage:278 - Tapped Closed Check in New tab - 244-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:17.066 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:19.123 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:32:20.230 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.378 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.425 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.456 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.481 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.507 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.532 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.652 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.688 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.745 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:55.863 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:35:58.963 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:02.091 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:06.158 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:06.171 OrderManagementScreen:1792 - 245-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:07.204 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:07.241 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:07.276 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:10.322 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:11.904 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:15.988 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:19.096 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:19.153 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:19.191 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:19.289 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:21.334 BasePage:278 - Tapped Closed Check in New tab - 245-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:22.468 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:22.504 PhoneOrderScreen:167 - Driver Offline Popup is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:22.520 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:24.582 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:24.619 BasePage:278 - Tapped Departure Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:25.585 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:26.459 BasePage:278 - Tapped Closed Check in Out tab - 245-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:26.496 BasePage:278 - Pay check button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:28.547 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:36:28.582 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:37.867 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:37.913 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:37.944 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:37.971 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:37.998 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:38.023 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:38.143 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:38.181 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:38.235 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:38.345 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:41.460 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:44.586 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:48.671 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:48.686 OrderManagementScreen:1792 - 246-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:49.716 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:49.763 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:49.788 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:52.836 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:54.413 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:39:58.499 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:01.605 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:01.672 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:01.711 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:01.812 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:03.853 BasePage:278 - Tapped Closed Check in New tab - 246-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:04.996 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:05.037 PhoneOrderScreen:167 - Driver Offline Popup is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:05.052 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:07.113 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:07.149 BasePage:278 - Tapped Departure Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:08.116 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:08.972 BasePage:278 - Tapped Closed Check in Out tab - 246-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:09.003 BasePage:278 - Pay check button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:11.053 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:14.099 BasePage:278 - Tapped Loyalty Payment -  Loyalty $6,965,165.00 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:17.196 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:17.257 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:17.338 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:18.280 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:19.151 BasePage:278 - Tapped Closed Check in Out tab - 246-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:19.185 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:40:33.474 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:03.731 Hooks:43 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:03.777 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:03.807 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:03.835 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:03.861 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:03.888 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:04.007 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:04.044 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:04.100 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:04.201 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:07.314 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:10.435 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:14.501 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:14.516 OrderManagementScreen:1792 - 247-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:15.544 OrderManagementScreen:1657 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:15.584 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:15.612 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:18.657 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:20.238 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:24.322 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:27.432 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:27.491 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:27.529 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:27.627 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:29.673 BasePage:278 - Tapped Closed Check in New tab - 247-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:30.806 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:30.841 PhoneOrderScreen:167 - Driver Offline Popup is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:30.857 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:32.919 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:32.957 BasePage:278 - Tapped Departure Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:33.921 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:34.796 BasePage:278 - Tapped Closed Check in Out tab - 247-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:34.834 BasePage:278 - Pay check button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:36.889 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:39.934 BasePage:278 - Tapped Loyalty Payment -  Loyalty $6,965,144.00 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:43.031 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:43.076 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:43.155 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:44.096 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:44.968 BasePage:278 - Tapped Closed Check in Out tab - 247-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:45.001 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:46.047 BasePage:278 - Complete tab is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:46.081 BasePage:258 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:48.160 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:48.204 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:48.243 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:48.322 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:48.455 BasePage:278 - Loyalty $6,965,144.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:49.847 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:49.866 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:53.062 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:44:57.133 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:45:17.278 Hooks:54 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:08.780 Hooks:43 - Start Scenario Name : Loyalty Payment - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:08.825 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:08.854 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:08.880 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:08.905 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:08.930 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:11.024 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:11.082 BasePage:278 - Order type combo is pressed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:11.125 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:11.175 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:11.277 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:14.386 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:18.469 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:18.485 OrderManagementScreen:1791 - 248-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:19.518 OrderManagementScreen:1656 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:19.562 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:19.590 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:22.640 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:24.219 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:28.304 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:31.404 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:31.452 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:31.489 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:31.591 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:33.638 BasePage:278 - Tapped Closed Check in New tab - 248-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:34.771 BasePage:278 - Tapped Active Diver as - Auto D
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:34.805 PhoneOrderScreen:167 - Driver Offline Popup is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:34.821 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:36.887 BasePage:278 - Tapped Active Diver as - Auto D
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:36.924 BasePage:278 - Tapped Departure Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:37.890 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:38.761 BasePage:278 - Tapped Closed Check in Out tab - 248-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:38.801 BasePage:278 - Pay check button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:40.854 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:43.898 BasePage:278 - Tapped Loyalty Payment -  Loyalty $6,965,123.00 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:46.995 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:47.054 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:47.130 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:48.075 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:48.948 BasePage:278 - Tapped Closed Check in Out tab - 248-001
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:48.983 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:50.047 BasePage:278 - Complete tab is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:50.089 BasePage:258 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:52.175 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:52.219 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:52.259 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:52.339 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:52.452 BasePage:278 - Loyalty $6,965,123.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:53.296 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:53.314 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:56.484 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:56.539 OrderManagementScreen:1791 - 248-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:48:59.576 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:01.144 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:05.228 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:08.321 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:08.360 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:08.403 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:09.471 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:10.059 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:12.109 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:12.140 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:12.178 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:12.254 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:12.390 BasePage:278 - Loyalty $6,965,102.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:13.163 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:13.181 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:16.372 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:20.449 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:20.473 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:20.523 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:20.602 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:20.699 BasePage:278 - Loyalty $6,965,127.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:21.461 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:21.476 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:24.646 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:24.688 OrderManagementScreen:1791 - 248-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:27.730 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:29.299 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:33.369 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:36.470 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:36.526 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:36.561 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:36.606 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:37.184 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:39.245 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:39.286 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:39.336 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:39.411 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:39.538 BasePage:278 - Loyalty $6,965,127.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:40.343 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:40.360 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:43.554 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:47.621 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:47.641 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:47.679 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:47.744 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:47.834 BasePage:278 - Loyalty $6,965,152.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:48.628 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:48.644 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:51.829 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:51.871 OrderManagementScreen:1791 - 248-004
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:54.912 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:49:56.492 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:00.573 BasePage:278 - Selected - Dosa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:04.657 BasePage:278 - Selected - Dosa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:04.707 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:04.756 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:05.325 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:07.388 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:07.428 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:07.466 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:07.538 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:07.662 BasePage:278 - Loyalty $6,965,152.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:08.444 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:08.461 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:11.628 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:15.697 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:15.719 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:15.756 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:15.825 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:15.914 BasePage:278 - Loyalty $6,965,162.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:16.725 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:16.740 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:19.904 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:19.949 OrderManagementScreen:1791 - 248-005
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:22.987 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:24.564 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:28.650 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:32.727 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:32.776 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:33.843 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:34.429 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:36.490 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:36.527 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:36.560 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:36.626 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:36.740 BasePage:278 - Loyalty $6,965,162.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:37.516 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:37.534 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:40.699 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:44.769 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:44.791 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:44.827 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:44.893 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:44.982 BasePage:278 - Loyalty $6,965,187.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:45.744 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:45.759 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:48.918 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:48.960 OrderManagementScreen:1791 - 248-006
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:52.000 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:53.581 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:50:57.644 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:01.730 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:01.779 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:02.852 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:03.435 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:05.493 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:05.534 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:05.571 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:05.646 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:05.745 BasePage:278 - Loyalty $6,965,187.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:06.517 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:06.537 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:09.721 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:13.788 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:13.809 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:13.846 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:13.911 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:14.000 BasePage:278 - Loyalty $6,965,212.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:14.788 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:14.803 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:17.983 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:18.025 OrderManagementScreen:1791 - 248-007
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:21.063 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:22.636 BasePage:278 - Selected - Salad
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:26.715 BasePage:278 - Selected - BLUE CHEESE
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:26.771 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:27.838 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:28.416 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:30.476 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:30.517 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:30.554 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:30.628 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:30.752 BasePage:278 - Loyalty $6,965,212.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:31.528 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:31.545 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:34.736 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:38.811 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:38.832 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:38.868 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:38.932 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:39.019 BasePage:278 -  - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:39.825 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:39.840 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:43.017 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:43.058 OrderManagementScreen:1791 - 248-008
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:46.100 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:47.676 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:51.757 BasePage:278 - Selected - Dosa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:51.813 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:52.883 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:53.463 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:55.518 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:55.556 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:55.592 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:55.667 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:55.772 BasePage:278 - Loyalty $6,965,227.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:56.552 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:56.573 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:51:59.759 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:52:03.835 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:52:03.854 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:31.333 Hooks:43 - Start Scenario Name : Loyalty for new customer
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:31.378 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:31.410 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:31.435 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:31.461 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:31.488 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:33.601 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:33.648 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.039 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.128 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.164 BasePage:278 - T9 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.204 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.239 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.323 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.383 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:35.482 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:38.542 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:40.113 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:44.184 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:47.291 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:47.351 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:47.391 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:48.475 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:49.064 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:52.122 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:52.148 BasePage:278 - Tapped Operation Button on the Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:52.201 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:54.286 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:54.327 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:54.368 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:54.447 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:54.574 BasePage:278 - Loyalty $6,965,237.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:56.479 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:56.497 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:59.678 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:59.738 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:59.779 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:59.816 BasePage:278 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:59.849 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:59.962 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:55:59.990 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:00.015 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:00.040 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:00.064 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:00.190 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:00.225 BasePage:278 - Order type selection is done.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:00.270 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:00.349 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:03.430 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:06.545 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:10.609 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:10.625 OrderManagementScreen:1791 - 249-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:11.657 OrderManagementScreen:1656 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:11.692 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:11.718 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:14.750 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:16.322 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:20.405 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:23.509 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:23.568 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:23.605 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:23.697 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:25.745 BasePage:278 - Tapped Closed Check in New tab - 249-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:26.873 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:26.906 PhoneOrderScreen:167 - Driver Offline Popup is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:26.921 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:28.979 BasePage:278 - Tapped Active Diver as - cashier3 0
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:29.015 BasePage:278 - Tapped Departure Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:29.981 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:30.855 BasePage:278 - Tapped Closed Check in Out tab - 249-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:30.891 BasePage:278 - Pay check button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:32.941 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:35.988 BasePage:278 - Tapped Loyalty Payment -  Loyalty $6,965,262.00 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:39.087 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:39.133 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:39.200 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:40.141 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:41.012 BasePage:278 - Tapped Closed Check in Out tab - 249-002
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:41.047 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:42.099 BasePage:278 - Complete tab is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:42.136 BasePage:258 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:44.216 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:44.257 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:44.295 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:44.388 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:44.495 BasePage:278 - Loyalty $6,965,262.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:45.953 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:45.971 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:49.145 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:53.223 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:53.248 BasePage:278 - Order type combo is pressed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:53.287 BasePage:278 - DELIVERY order type is selected.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:53.331 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:53.401 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:56:56.480 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:00.542 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:00.559 OrderManagementScreen:1791 - 249-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:01.591 OrderManagementScreen:1656 - auto l - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:01.626 TableLayOutScreen:1421 - Delivery charge
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:01.651 TableLayOutScreen:1433 - Subtotal
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:04.694 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:06.264 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:10.345 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:13.445 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:13.493 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:13.546 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:13.635 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:15.682 BasePage:278 - Tapped Closed Check in New tab - 249-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:16.814 BasePage:278 - Tapped Active Diver as - Auto D
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:16.843 PhoneOrderScreen:167 - Driver Offline Popup is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:16.858 BasePage:278 - Tapped No Button in the Driver offline popup
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:18.915 BasePage:278 - Tapped Active Diver as - Auto D
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:18.962 BasePage:278 - Tapped Departure Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:19.926 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:20.799 BasePage:278 - Tapped Closed Check in Out tab - 249-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:20.835 BasePage:278 - Pay check button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:22.886 BasePage:239 - Payment window title is -Payment methods
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:25.929 BasePage:278 - Tapped Loyalty Payment -  Loyalty $6,965,241.00 
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:29.024 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:29.068 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:29.128 BasePage:239 - Phone order Tab is displayed - Future
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:30.070 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:30.938 BasePage:278 - Tapped Closed Check in Out tab - 249-003
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:30.971 BasePage:278 - Tapped Out Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:32.030 BasePage:278 - Complete tab is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:32.071 BasePage:258 - Tapped QSR button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:34.154 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:34.195 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:34.232 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:34.325 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:34.429 BasePage:278 - Loyalty $6,965,241.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:35.443 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:35.460 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:38.635 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:38.682 OrderManagementScreen:1791 - 249-004
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:41.706 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:43.269 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:47.346 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:50.446 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:50.492 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:50.531 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:51.591 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:52.187 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:54.254 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:54.295 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:54.332 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:54.428 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:54.545 BasePage:278 - Loyalty $6,965,220.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:55.481 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:55.499 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:57:58.672 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:02.742 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:02.762 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:02.799 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:02.867 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:02.958 BasePage:278 - Loyalty $6,965,245.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:03.726 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:03.742 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:06.909 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:06.951 OrderManagementScreen:1791 - 249-005
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:09.992 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:11.569 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:15.646 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:18.746 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:18.794 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:18.832 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:19.397 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:19.988 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:22.058 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:22.108 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:22.151 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:22.227 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:22.354 BasePage:278 - Loyalty $6,965,245.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:23.108 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:23.125 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:26.314 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:30.383 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:30.404 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:30.442 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:30.509 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:30.599 BasePage:278 - Loyalty $6,965,270.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:31.373 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:31.389 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:34.577 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:34.619 OrderManagementScreen:1791 - 249-006
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:37.655 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:39.232 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:43.316 BasePage:278 - Selected - Dosa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:47.394 BasePage:278 - Selected - Dosa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:47.443 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:47.491 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:48.056 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:50.121 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:50.162 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:50.200 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:50.275 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:50.388 BasePage:278 - Loyalty $6,965,270.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:51.152 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:51.169 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:54.359 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:58.429 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:58.450 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:58.487 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:58.554 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:58.655 BasePage:278 - Loyalty $6,965,280.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:59.419 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:58:59.457 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:02.642 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:02.687 OrderManagementScreen:1791 - 249-007
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:05.725 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:07.301 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:11.383 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:15.458 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:15.509 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:16.582 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:17.167 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:19.272 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:19.310 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:19.346 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:19.421 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:19.550 BasePage:278 -  - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:20.319 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:20.335 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:23.526 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:27.600 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:27.621 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:27.659 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:27.727 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:27.815 BasePage:278 - Loyalty $6,965,305.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:28.576 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:28.607 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:31.791 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:31.833 OrderManagementScreen:1791 - 249-008
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:34.876 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:36.448 BasePage:278 - Selected - FOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:40.535 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:44.629 BasePage:278 - Selected - Onion Rings
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:44.672 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:45.744 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:46.333 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:48.404 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:48.444 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:48.480 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:48.555 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:48.661 BasePage:278 - Loyalty $6,965,305.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:49.432 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:49.452 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:52.649 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:56.724 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:56.745 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:56.782 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:56.850 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:56.934 BasePage:278 - Loyalty $6,965,330.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:57.698 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 16:59:57.727 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:00.916 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:00.958 OrderManagementScreen:1791 - 249-009
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:03.996 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:05.570 BasePage:278 - Selected - Salad
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:09.663 BasePage:278 - Selected - BLUE CHEESE
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:09.717 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:10.781 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:11.369 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:13.441 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:13.482 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:13.519 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:13.592 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:13.720 BasePage:278 - Loyalty $6,965,330.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:14.483 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:14.502 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:17.684 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:21.759 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:21.782 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:21.817 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:21.880 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:21.966 BasePage:278 - Loyalty $6,965,345.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:22.732 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:22.762 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:25.952 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:25.994 OrderManagementScreen:1791 - 249-010
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:29.033 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:30.610 BasePage:278 - Selected - Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:34.697 BasePage:278 - Selected - Dosa
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:34.746 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:35.808 BasePage:278 - Tapped others button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:36.394 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:38.465 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:38.505 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:38.541 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:38.617 BasePage:278 - Tapped Customer - auto loyaltytest
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:38.720 BasePage:278 - Loyalty $6,965,345.0000 - Tapped Loyalty Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:39.493 BasePage:239 - Loyalty Balance window is displayed - Loyalty Balance
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:39.511 BasePage:278 - Closed Loyalty balance Window
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:42.699 BasePage:278 - pressed Save button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:46.777 TableLayOutScreen:745 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 17:00:46.796 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:14:06.872 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:14:06.924 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:14:06.958 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:14:06.984 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:14:07.010 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:14:07.036 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:17:05.333 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:17:05.382 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-16 20:17:06.439 Hooks:54 - Failed Scenario Name : Merge With Direct Menu

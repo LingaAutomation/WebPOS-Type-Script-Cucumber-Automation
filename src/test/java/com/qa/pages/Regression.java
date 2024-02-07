@@ -1,7241 +1,2507 @@
 package com.qa.pages;
 
 import com.qa.utils.TestUtils;
-
-import io.cucumber.java.bs.A;
-import io.cucumber.java.hu.De;
+import io.cucumber.java.sl.In;
+import io.opentelemetry.api.internal.ApiUsageLogger;
+import org.apache.poi.ss.formula.functions.T;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.sql.Time;
-import java.text.DecimalFormat;
-import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import static com.qa.utils.TestUtils.driver;
-
-public class Regression extends TableLayOutScreen {
-    public String checkNumber = "";
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
-    private WebElement searchFldDiscount;
-
-    @FindBy(name = "Garlic Bread")
-    private WebElement Menu;
-
-    @FindBy(name = "4 BBQ")
-    private WebElement modifier;
-
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
-    private WebElement CashbtnPaymentWindow;
-
-
-    @FindBy(name = "Credit Card")
-    WebElement creditCardBtn;
-
-    @FindBy(name = "JCB")
-    WebElement jcbBtn;
-
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Total\"])[1]")
-    WebElement totalScreen;
-
-    @FindBy(name = "Continue")
-    WebElement continueBtn;
-
-    @FindBy(name = "Your Order")
-    WebElement yourOrder;
-
-    @FindBy(name = "Process")
-    WebElement processBtn;
-
-    @FindBy(name = "Card Type")
-    WebElement cardTypeScreen;
-
-    @FindBy(name = "Ok")
-    WebElement okButtonCardTypeWindow;
-
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Manual\"]")
-    WebElement manualButton;
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
-    WebElement cardNumberTxtField;
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[1]")
-    WebElement expireNumTxtField;
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]")
-    WebElement cvvTxtField;
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[3]")
-    WebElement zipCodeTxtField;
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField")
-    WebElement cardNameField;
-
-    @FindBy(name = "Finish")
-    WebElement FinishBtn;
-
-    @FindBy(name = "finish")
-    private WebElement finishOrderBtn;
-
-    @FindBy(name = "Signature Pad")
-    WebElement signaturePadScreen;
-
-    @FindBy(name = "Others")
-    WebElement otherBtn;
-
-    @FindBy(name = "No Thanks")
-    WebElement noThanks;
-
-    @FindBy(name = "  Submit")
-    WebElement submit;
-
-    @FindBy(name = "T1")
-    WebElement secondTable;
-
-    @FindBy(name = "1")
-    WebElement singleSeat;
-
-    @FindBy(name = "Corona Extra")
-    WebElement coronaExtra;
-
-    @FindBy(name = "Ultra")
-    WebElement ultra;
-
-    @FindBy(name = "Havana Lager")
-    WebElement havana;
-
-    @FindBy(name = "Lagunitas (IPA)")
-    WebElement lagunitas;
-
-    @FindBy(name = "Corona Light")
-    WebElement coronaLight;
-
-    @FindBy(name = "Blue Moon")
-    WebElement blueMoon;
-
-
-    @FindBy(name = "Angry Orchard (Cider)")
-    WebElement angryOrchard;
-
-
-    @FindBy(name = "Virgin Frozen")
-    WebElement heinken;
-
-
-    @FindBy(name = "Water")
-    WebElement budweiser;
-
-
-    @FindBy(name = "Hot Tea")
-    WebElement budLight;
-
-    @FindBy(name = "Heineken Double Zero")
-    WebElement heinkenDouble;
-
-    @FindBy(name = "Decaf Coffee")
-    WebElement gingerBeer;
-
-    @FindBy(name = "Virgin Mojito")
-    WebElement miller;
-
-    @FindBy(name = "Apple Juice")
-    WebElement solaIPA;
-
-    @FindBy(name = "Yuengling (Lager)")
-    WebElement yuenglingLager;
-
-
-    @FindBy(name = "Un-Holly (Belgian Ale)")
-    WebElement unHolly;
-
-
-    @FindBy(name = "Schofferhofer")
-    WebElement schofferhofer;
-
-    @FindBy(name = "All")
-    private WebElement allBtn;
-
-    @FindBy(name = "Table Layout")
-    private WebElement tableLayoutTab;
-
-    @FindBy(name = "MPPG AUTH")
-    private WebElement mppgPayment;
-
-    @FindBy(name = "MPPG")
-    private WebElement mppgSal;
-
-    @FindBy(name = "New Tab")
-    private WebElement newTab;
-
-    @FindBy(name = "New Check")
-    private WebElement newCheck;
-
-    @FindBy(name = "Exit")
-    WebElement exitPreauth;
-
-    @FindBy(name = "Check")
-    private WebElement Order1;
-
-    @FindBy(name = "Payment receipt did not print to TCP:192.168.2.161")
-    private WebElement paymentPrint;
-
-    @FindBy(name = "Done")
-    private WebElement done;
-
-    @FindBy(name = "OK")
-    private WebElement okBtn;
-
-    @FindBy(name = "Ok")
-    private WebElement okBtn1;
-
-
-    @FindBy(name = "BerryFruit Cup")
-    private WebElement berrry;
-    @FindBy(name = "Side Sweet Fries")
-    private WebElement sideSweet;
-    @FindBy(name = "Oyster Cracker,")
-    private WebElement oyster;
-
-    @FindBy(name = "Side ColeSlaw")
-    private WebElement sideCole;
-    @FindBy(name = "Fries")
-    private WebElement fries;
-    @FindBy(name = "1Pc Bana Bread")
-    private WebElement banaBread;
-    @FindBy(name = "Add 1 Egg")
-    private WebElement addEgg;
-    @FindBy(name = "Bacon Side")
-    private WebElement baconSide;
-    @FindBy(name = "1Pc Toast")
-    private WebElement Toast;
-    @FindBy(name = "Home Fries")
-    private WebElement homeFries;
-    @FindBy(name = "2Pcs BanaBread")
-    private WebElement PcsBana;
-    @FindBy(name = "Side Fruit")
-    private WebElement sideFruit;
-
-    @FindBy(name = "Cheesecake")
-    private WebElement cheese;
-
-    @FindBy(name = "Cannoli")
-    private WebElement cannoli;
-
-    @FindBy(name = "Tiramisu")
-    private WebElement tiramisu;
-
-    @FindBy(name = "Choc Torte")
-    private WebElement choc;
-
-    @FindBy(name = "Key Lime Pie")
-    private WebElement keyLime;
-
-    @FindBy(name = "Potatoes")
-    private WebElement potatoes;
-    @FindBy(name = "cake")
-    private WebElement cake;
-    @FindBy(name = "Halwa")
-    private WebElement halwa;
-    @FindBy(name = "Dosa")
-    private WebElement dosa;
-    @FindBy(name = "Donut")
-    private WebElement donut;
-
-    @FindBy(name = "Melon Ball")
-    private WebElement menu1;
-    @FindBy(name = "Lemon Drop")
-    private WebElement mymenu1;
-    @FindBy(name = "Ketel 1.")
-    private WebElement mobmenu;
-    @FindBy(name = "Jager Bomb")
-    private WebElement dummy;
-    @FindBy(name = "Jager")
-    private WebElement rsMenu;
-    @FindBy(name = "Fireball.")
-    private WebElement gmenu;
-
-    @FindBy(name = "test13")
-    private WebElement test13;
-    @FindBy(name = "Test321")
-    private WebElement test321;
-    @FindBy(name = "Retail")
-    private WebElement retail;
-    @FindBy(name = "Test456")
-    private WebElement test4;
-    @FindBy(name = "Child Retail")
-    private WebElement childRetail;
-
-
-    @FindBy(name = "Cash")
-    private WebElement cashPayment;
-
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Cash\"])[2]")
-    private WebElement cashPayment1;
-
-    @FindBy(name = "Exact")
-    private WebElement exactBtn;
-
-
-    @FindBy(name = "Enter")
-    private WebElement Enter;
-
-    @FindBy(name = "MPPG AUTH")
-    private WebElement mppgAuth2;
-
-    @FindBy(name = "mppg auth")
-    private WebElement mppgAuth;
-
-    @FindBy(name = "MPPG Auth")
-    private WebElement mppgAuth1;
-
-    @FindBy(name = "Beverages")
-    private WebElement bever;
-
-    @FindBy(name = "Pineapple Juice")
-    private WebElement pineapple;
-    @FindBy(name = "Grapefruit")
-    private WebElement grape;
-    @FindBy(name = "Milk")
-    private WebElement milk;
-    @FindBy(name = "Virgin Mojito")
-    private WebElement virginMo;
-    @FindBy(name = "Hot Tea")
-    private WebElement hotTea;
-    @FindBy(name = "Soda")
-    private WebElement soda;
-    @FindBy(name = "coffee")
-    private WebElement coffee;
-    @FindBy(name = "Espresso")
-    private WebElement esp;
-    @FindBy(name = "Party Drink")
-    private WebElement partyDrink;
-    @FindBy(name = "Apple Juice")
-    private WebElement apple;
-    @FindBy(name = "Cappuccino")
-    private WebElement cap;
-
-    @FindBy(name = "Coke Products")
-    private WebElement cakeProd;
-    @FindBy(name = "Salgam")
-    private WebElement salgam;
-    @FindBy(name = "Ayran")
-    private WebElement Ayran;
-    @FindBy(name = "Ayran 3")
-    private WebElement Ayran3;
-    @FindBy(name = "Turkish Tea")
-    private WebElement turkishteapot;
-    @FindBy(name = "Cofeeee")
-    private WebElement cofeee;
-
-
-    @FindBy(name = "cc")
-    private WebElement cc;
-
-    @FindBy(name = "HA")
-    private WebElement ha;
-
-    @FindBy(name = "5.00%")
-    WebElement tipss;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
-    private WebElement doneButton;
-
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"arrow down\"])[2]")
-    public WebElement arrowDownForOtherMenuItems;
-
-    @FindBy(name = "Cancel")
-    private WebElement cancelBtn;
-    @FindBy(name = "parent")
-    WebElement parent;
-    @FindBy(name = "VegBiriyani")
-    WebElement VegBri;
-    @FindBy(name = "incluse")
-    WebElement incluse;
-    @FindBy(name = "normal")
-    WebElement normal;
-    @FindBy(name = "taxmenu")
-    WebElement taxMenu;
-    @FindBy(name = "EggBiriyani")
-    WebElement EggB;
-    @FindBy(name = "New2")
-    WebElement new2;
-    @FindBy(name = "Cate-Menu 1")
-    WebElement cateMe;
-    @FindBy(name = "Cate-Menu 2")
-    WebElement cateMe2;
-
-    @FindBy(name = "Arab Biriyani")
-    WebElement ArabBr;
-    @FindBy(name = "5.00")
-    WebElement tipAs10;
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Payment\"]")
-    private WebElement paymentBtn;
-
-    public void mppgSale() throws Exception {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        for (int i = 1; i <= 150; i++) {
-
-            pressPayment();
-            try {
-
-                scrollToElementPayments(mppgAuth, "up");
-                click(mppgAuth);
-            } catch (Exception z) {
-                scrollToElementPayments(mppgAuth, "down");
-                click(mppgAuth);
-            }
-            click(continueBtn);
-            click(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-
-            cardNameField.sendKeys("GFT");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            click(processBtn, "Tapped process Button");
-
-            try {
-                click(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-            click(cancelBtn);
-        }
-    }
-
-    public void makeSaleForTipStore() throws Exception {
-
-        for (int z = 1; z <= 40; z++) {
-            utils.log().info("Sale Count - " + z);
-//            if (tableLayoutTab.isDisplayed()) {
-//                utils.log().info("Table Layout visible");
-//            }
-//            elementClick(newCheck,"Tapped new check");
-//            WebElement table3 = (WebElement) driver.findElements(By.xpath()("T9");
-//            elementClick(table3,"");
-//            elementClick(singleSeat, "Tapped Single ");
-//            elementClick(continueBtn, "Tapped Continue");
-//            if (Order1.isDisplayed()){
-//                utils.log().info("Order screen is visible");
-//            }
-            pressArrowDown2();
-//            elementClick(ArabBr, "bever");
-//            elementClick(normal, "Pine");
-//            elementClick(new2, "");
-//            elementClick(cateMe2, "");
-//            elementClick(EggB, "");
-//            elementClick(taxMenu, "");
-//            elementClick(parent, "");
-//            elementClick(cateMe, "");
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("SHOTS"));
-            elementClick(rbg, "");
-            elementClick(mobmenu, "");
-            elementClick(menu1, "");
-            elementClick(gmenu, "");
-            elementClick(mymenu1, "");
-            elementClick(dummy, "");
-            elementClick(paymentBtn, "Payment button is tapped");
-            try {
-                if (find(mppgAuth, 2)) {
-                    elementClick(mppgAuth, "Tapped NMI Payment");
-                } else {
-                    scrollToElementPayments(mppgAuth, "up");
-                    elementClick(mppgAuth, "Tapped NMI Payment");
-                }
-            } catch (Exception w) {
-                scrollToElementPayments(mppgAuth, "down");
-                elementClick(mppgAuth, "Tapped NMI Payment");
-            }
-            //scrollToElementPayment(mppgAuth, "up");
-            //elementClick(mppgAuth, "");
-
-            elementClick(tipAs10, "Tapped tip As 10");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-
-            elementClick(cancelBtn, "");
-        }
-        for (int z = 31; z <= 70; z++) {
-            utils.log().info("Sale Count - " + z);
-//            if (tableLayoutTab.isDisplayed()) {
-//                utils.log().info("Table Layout visible");
-//            }
-//            elementClick(newCheck,"Tapped new check");
-//            WebElement table3 = (WebElement) driver.findElements(By.xpath()("T9");
-//            elementClick(table3,"");
-//            elementClick(singleSeat, "Tapped Single ");
-//            elementClick(continueBtn, "Tapped Continue");
-//            if (Order1.isDisplayed()){
-//                utils.log().info("Order screen is visible");
-//            }
-            //   pressArrowDown2();
-            elementClick(ArabBr, "bever");
-            elementClick(normal, "Pine");
-            elementClick(new2, "");
-            elementClick(cateMe2, "");
-            elementClick(new2, "");
-            elementClick(taxMenu, "");
-            elementClick(incluse, "");
-            elementClick(parent, "");
-            elementClick(cateMe, "");
-            elementClick(paymentBtn, "Payment button is tapped");
-
-            scrollToElementPayments(mppgAuth1, "up");
-            elementClick(mppgAuth1, "");
-
-            elementClick(tipAs10, "Tapped tip As 10");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-
-            elementClick(cancelBtn, "");
-        }
-
-
-    }
-
-    public void saleForTestStatePost1() throws InterruptedException {
-        for (int z = 1; z <= 32; z++) {
-            utils.log().info("Table Count - " + z);
-            elementClick(newCheck, "Tapped new check");
-            // elementClick(exitPreauth,"");
-            WebElement table3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + z + "\"]"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            // For get check number
-            getCheckNumberTxt();
-            // utils.log().info( TestUtils.globalCheckNumber);
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("SHOTS"));
-            elementClick(rbg, "");
-            elementClick(mobmenu, "");
-            elementClick(menu1, "");
-            elementClick(gmenu, "");
-            elementClick(mymenu1, "");
-            elementClick(dummy, "");
-
-
-//            pressPayment();
-//            click(mppgSale, "Tapped mppg");
-//            WebElement visa = (WebElement) driver.findElement(By.xpath()("Visa");
-//            click(visa);
-//            click(okBtn1);
-//            click(continueBtn);
-//            click(manualButton, "Tapped Manual Button");
-//
-//            cardNumberTxtField.sendKeys("4111111111111111");
-//
-//            cardNameField.sendKeys("JCB");
-//            cardNameField.sendKeys(Keys.ENTER);
-//
-//            expireNumTxtField.sendKeys("1222");
-//
-//            cvvTxtField.sendKeys(Keys.ENTER);
-//
-//            zipCodeTxtField.sendKeys(Keys.ENTER);
-//
-//            click(processBtn, "Tapped process Button");
-//
-//            try {
-//                click(okBtn, "Tapped Ok Button on the Popup");
-//            } catch (Exception e) {
-//            }
-            elementClick(finishOrderBtn, "");
-        }
-        for (int y = 31; y > 1; y--) {
-            utils.log().info("table count - " + y);
-            elementClick(newCheck, "Tapped new check");
-            //  elementClick(exitPreauth,"");
-            WebElement table31 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + y + "\"]"));
-            elementClick(table31, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("SHOTS"));
-            elementClick(rbg, "");
-            elementClick(mobmenu, "");
-            elementClick(menu1, "");
-            elementClick(rsMenu, "");
-            elementClick(mymenu1, "");
-            elementClick(dummy, "");
-            elementClick(gmenu, "");
-            elementClick(finishOrderBtn, "");
-        }
-
-    }
-
-    public void PalaceStore() throws Exception {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        for (int j = 1; j <= 50; j++) {
-            utils.log().info("Sale - " + j);
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("Beverages"));
-            elementClick(rbg, "");
-            elementClick(solaIPA, "");
-            elementClick(budLight, "");
-            elementClick(budweiser, "");
-            elementClick(heinken, "");
-            elementClick(miller, "");
-            elementClick(gingerBeer, "");
-
-
-//                    pressPayment();
-//                    click(otherBtn);
-//                    click(submit);
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgPayment, "");
-
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-
-
-        }
-        for (int j = 51; j <= 100; j++) {
-            utils.log().info("Sale - " + j);
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("Beverages"));
-            elementClick(rbg, "");
-            elementClick(solaIPA, "");
-            elementClick(budLight, "");
-            elementClick(budweiser, "");
-            elementClick(heinken, "");
-            elementClick(gingerBeer, "");
-
-//                    pressPayment();
-//                    click(otherBtn);
-//                    click(submit);
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgPayment, "");
-
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-
-        for (int j = 101; j <= 180; j++) {
-            utils.log().info("Sale - " + j);
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("Beverages"));
-            elementClick(rbg, "");
-            elementClick(solaIPA, "");
-            elementClick(gingerBeer, "");
-
-            elementClick(budLight, "");
-            elementClick(budweiser, "");
-            elementClick(heinken, "");
-            elementClick(gingerBeer, "");
-
-
-//                    pressPayment();
-//                    click(otherBtn);
-//                    click(submit);
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgPayment, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-        for (int k = 181; k <= 250; k++) {
-            utils.log().info("Sale - " + k);
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("Beverages"));
-            elementClick(rbg, "");
-            elementClick(solaIPA, "");
-            elementClick(budLight, "");
-            elementClick(budweiser, "");
-            elementClick(heinken, "");
-            elementClick(budLight, "");
-            elementClick(gingerBeer, "");
-
-
-//                    pressPayment();
-//                    click(otherBtn);
-//                    click(submit);
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgPayment, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-
-        for (int j = 251; j <= 320; j++) {
-            utils.log().info("Sale - " + j);
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("Beverages"));
-            elementClick(rbg, "");
-            elementClick(solaIPA, "");
-            elementClick(budLight, "");
-            elementClick(budweiser, "");
-            elementClick(heinken, "");
-            elementClick(gingerBeer, "");
-            elementClick(heinken, "");
-
-
-//                    pressPayment();
-//                    click(otherBtn);
-//                    click(submit);
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgPayment, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-
-        }
-    }
-
-    public void makeTableSale() throws Exception {
-        for (int m = 1; m <= 25; m++) {
-
-            utils.log().info("Sale Count - " + m);
-//                  if (tableLayoutTab.isDisplayed()) {
-//                        utils.log().info("Table Layout visible");
-//                    }
-//                    elementClick(newCheck,"Tapped new check");
-//                    WebElement table = (WebElement) driver.findElement(By.xpath()("T8");
-//                    elementClick(table,"");
-//                    elementClick(singleSeat, "Tapped Single ");
-//                    elementClick(continueBtn, "Tapped Continue");
-
-            pressArrowDown2();
-            elementClick(bever, "Tapped bever");
-            //elementClick(pineapple,"pinapple");
-            elementClick(grape, "grapes");
-            elementClick(hotTea, "hot Tea");
-            // elementClick(milk,"milk");
-            elementClick(coffee, "coffee");
-            elementClick(soda, "soda");
-            elementClick(esp, "esp");
-
-
-//                      pressPayment();
-//                    scrollToElementPayment(otherBtn,"up");
-//                    elementClick(otherBtn,"");
-//                    elementClick(submit,"");
-//                    pressPayment();
-//
-//                    elementClick(cashPayment1,"");
-            // elementClick(exactBtn,"");
-            // elementClick(Enter,"");
-            //   elementClick(submit,"");
-//Thread.sleep(50);
-            //      elementClick(cancelBtn,"");
-//                    pressPayment();
-//                    scrollToElementPayment(cc,"up");
-//                    elementClick(cc,"");
-//                    elementClick(continueBtn,"");
-//                    elementClick(submit,"");
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgAuth, "");
-            elementClick(tipss, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            elementClick(cancelBtn, "");
-        }
-        for (int m = 26; m <= 70; m++) {
-
-            utils.log().info("Sale Count - " + m);
-//                  if (tableLayoutTab.isDisplayed()) {
-//                        utils.log().info("Table Layout visible");
-//                    }
-//                    elementClick(newCheck,"Tapped new check");
-//                    WebElement table = (WebElement) driver.findElement(By.xpath()("T8");
-//                    elementClick(table,"");
-//                    elementClick(singleSeat, "Tapped Single ");
-//                    elementClick(continueBtn, "Tapped Continue");
-
-            pressArrowDown2();
-            elementClick(bever, "Tapped bever");
-            //elementClick(pineapple,"pinapple");
-            elementClick(grape, "grapes");
-            elementClick(hotTea, "hot Tea");
-            // elementClick(milk,"milk");
-            elementClick(coffee, "coffee");
-            elementClick(esp, "esp");
-            elementClick(soda, "soda");
-            elementClick(esp, "esp");
-
-
-//                      pressPayment();
-//                    scrollToElementPayment(otherBtn,"up");
-//                    elementClick(otherBtn,"");
-//                    elementClick(submit,"");
-//                    pressPayment();
-//
-//                    elementClick(cashPayment1,"");
-            // elementClick(exactBtn,"");
-            // elementClick(Enter,"");
-            //   elementClick(submit,"");
-//Thread.sleep(50);
-            //      elementClick(cancelBtn,"");
-//                    pressPayment();
-//                    scrollToElementPayment(cc,"up");
-//                    elementClick(cc,"");
-//                    elementClick(continueBtn,"");
-//                    elementClick(submit,"");
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgAuth, "");
-            elementClick(tipss, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-
-            try {
-                driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-            driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-            elementClick(cancelBtn, "");
-        }
-        for (int m = 71; m <= 100; m++) {
-
-            utils.log().info("Sale Count - " + m);
-//                  if (tableLayoutTab.isDisplayed()) {
-//                        utils.log().info("Table Layout visible");
-//                    }
-//                    elementClick(newCheck,"Tapped new check");
-//                    WebElement table = (WebElement) driver.findElement(By.xpath()("T8");
-//                    elementClick(table,"");
-//                    elementClick(singleSeat, "Tapped Single ");
-//                    elementClick(continueBtn, "Tapped Continue");
-
-            pressArrowDown2();
-            elementClick(bever, "Tapped bever");
-            //elementClick(pineapple,"pinapple");
-            elementClick(grape, "grapes");
-            elementClick(hotTea, "hot Tea");
-            elementClick(hotTea, "hot Tea");
-            // elementClick(milk,"milk");
-            elementClick(coffee, "coffee");
-            elementClick(soda, "soda");
-            elementClick(esp, "esp");
-
-
-//                      pressPayment();
-//                    scrollToElementPayment(otherBtn,"up");
-//                    elementClick(otherBtn,"");
-//                    elementClick(submit,"");
-//                    pressPayment();
-//
-//                    elementClick(cashPayment1,"");
-            // elementClick(exactBtn,"");
-            // elementClick(Enter,"");
-            //   elementClick(submit,"");
-//Thread.sleep(50);
-            //      elementClick(cancelBtn,"");
-//                    pressPayment();
-//                    scrollToElementPayment(cc,"up");
-//                    elementClick(cc,"");
-//                    elementClick(continueBtn,"");
-//                    elementClick(submit,"");
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgAuth, "");
-            elementClick(tipss, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-
-            try {
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            elementClick(cancelBtn, "");
-        }
-        for (int m = 21; m <= 40; m++) {
-            utils.log().info("Sale Count - " + m);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-
-            elementClick(newCheck, "Tapped new check");
-            WebElement table = (WebElement) driver.findElement(By.xpath("T2"));
-            elementClick(table, "");
-
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            if (Order1.isDisplayed()) {
-                utils.log().info("Order screen is visible");
-            }
-            pressArrowDown2();
-            elementClick(bever, "Tapped bever");
-            elementClick(pineapple, "pinapple");
-            elementClick(grape, "grapes");
-            elementClick(hotTea, "hot Tea");
-            elementClick(milk, "milk");
-            elementClick(coffee, "coffee");
-            elementClick(soda, "soda");
-            elementClick(esp, "esp");
-            elementClick(partyDrink, "partyDrink");
-            elementClick(apple, "Apple");
-
-
-            elementClick(cashPayment, "");
-            elementClick(exactBtn, "");
-            elementClick(Enter, "");
-
-        }
-
-        for (int n = 41; n <= 60; n++) {
-            utils.log().info("Sale Count - " + n);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-            elementClick(newCheck, "Tapped new check");
-            WebElement table1 = (WebElement) driver.findElement(By.xpath("T3"));
-            click(table1);
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            if (Order1.isDisplayed()) {
-                utils.log().info("Order screen is visible");
-            }
-            pressArrowDown2();
-            elementClick(bever, "");
-            elementClick(pineapple, "");
-            elementClick(grape, "");
-            elementClick(hotTea, "");
-            elementClick(milk, "");
-            elementClick(coffee, "");
-            elementClick(soda, "");
-            elementClick(esp, "");
-            elementClick(partyDrink, "");
-            elementClick(virginMo, "");
-
-            pressPayment();
-            elementClick(otherBtn, "");
-            elementClick(submit, "");
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-
-        }
-
-        for (int w = 61; w <= 80; w++) {
-            utils.log().info("Sale Count - " + w);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-            elementClick(newCheck, "Tapped new check");
-            WebElement table3 = (WebElement) driver.findElement(By.xpath("T13"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            if (Order1.isDisplayed()) {
-                utils.log().info("Order screen is visible");
-            }
-            pressArrowDown2();
-            elementClick(bever, "");
-            elementClick(pineapple, "");
-            elementClick(grape, "");
-            elementClick(hotTea, "");
-            elementClick(milk, "");
-            elementClick(coffee, "");
-            elementClick(soda, "");
-            elementClick(esp, "");
-            elementClick(partyDrink, "");
-            pressPayment();
-            elementClick(cc, "");
-            elementClick(continueBtn, "");
-            elementClick(submit, "");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-
-        for (int z = 81; z <= 100; z++) {
-            utils.log().info("Sale Count - " + z);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-            elementClick(newCheck, "Tapped new check");
-            WebElement table3 = (WebElement) driver.findElements(By.xpath("T9"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            if (Order1.isDisplayed()) {
-                utils.log().info("Order screen is visible");
-            }
-            pressArrowDown2();
-            elementClick(bever, "bever");
-            elementClick(pineapple, "Pine");
-            elementClick(grape, "");
-            elementClick(hotTea, "");
-            elementClick(milk, "");
-            elementClick(coffee, "");
-            elementClick(soda, "");
-            elementClick(esp, "");
-            elementClick(partyDrink, "");
-            pressPayment();
-
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgAuth, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-        for (int y = 1; y <= 15; y++) {
-            utils.log().info("Sale Count - " + y);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-            elementClick(newCheck, "Tapped new check");
-            WebElement table3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + y + "\"]"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            if (Order1.isDisplayed()) {
-                utils.log().info("Order screen is visible");
-            }
-            pressArrowDown2();
-            click(bever);
-            click(pineapple);
-            click(grape);
-            click(hotTea);
-            click(milk);
-            click(coffee);
-            click(soda);
-            click(esp);
-            click(partyDrink);
-            click(virginMo);
-            click(apple);
-
-        }
-    }
-
-    public void batchProd() throws Exception {
-        driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
-        for (int z = 1; z <= 50; z++) {
-            utils.log().info("Table Count - " + z);
-            elementClick(newTab, "Tapped new check");
-            elementClick(cancelBtn, "");
-            pressArrowDown2();
-            WebElement rbg = (WebElement) driver.findElement(By.xpath("WheatGrass"));
-            elementClick(rbg, "");
-
-            elementClick(test4, "");
-            elementClick(test13, "");
-            elementClick(retail, "");
-            elementClick(childRetail, "");
-
-            elementClick(retail, "");
-            elementClick(test321, "");
-            elementClick(paymentBtn, "Payment button is tapped");
-
-            scrollToElementPayments(mppgAuth1, "up");
-            elementClick(mppgAuth1, "");
-            WebElement rbg1 = (WebElement) driver.findElement(By.xpath("Visa"));
-            elementClick(rbg1, "");
-
-            WebElement rbg2 = (WebElement) driver.findElement(By.xpath("Ok"));
-            elementClick(rbg2, "");
-
-
-            elementClick(tipAs10, "Tapped tip As 10");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-
-        }
-    }
-
-    public void saleForTestzamBar() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        for (int z = 1; z <= 40; z++) {
-            utils.log().info("Bar Count - " + z);
-            //  elementClick(barTab,"");
-            elementClick(newTab, "Tapped new check");
-            elementClick(cancelBtn, "");
-            //elementClick(exitPreauth, "");
-            //    WebElement table3 = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeStaticText[@name=\"T" + z + "\"]");
-            //    elementClick(table3,"");
-            //   elementClick(singleSeat, "Tapped Single ");
-            //  elementClick(continueBtn, "Tapped Continue");
-            // For get check number
-            getCheckNumberTxt();
-            // utils.log().info( TestUtils.globalCheckNumber);
-
-            pressArrowDown2();
-            elementClick(bever, "");
-            //elementClick(pineapple, "");
-            elementClick(grape, "");
-            elementClick(hotTea, "");
-
-            //  elementClick(coffee, "");
-            elementClick(esp, "");
-            elementClick(partyDrink, "");
-            elementClick(apple, "");
-
-            elementClick(finishOrderBtn, "");
-
-        }
-
-    }
-
-    public void saleForTestzam() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-        for (int z = 1; z <= 16; z++) {
-            utils.log().info("Table Count - " + z);
-            elementClick(newCheck, "Tapped new check");
-            // elementClick(exitPreauth,"");
-            WebElement table3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + z + "\"]"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            // For get check number
-            getCheckNumberTxt();
-            // utils.log().info( TestUtils.globalCheckNumber);
-            pressArrowDown2();
-            elementClick(bever, "");
-            // elementClick(pineapple, "");
-            elementClick(grape, "");
-            elementClick(hotTea, "");
-
-            //      elementClick(coffee, "");
-            elementClick(grape, "");
-            elementClick(esp, "");
-            elementClick(partyDrink, "");
-            elementClick(apple, "");
-            elementClick(finishOrderBtn, "");
-        }
-        for (int y = 16; y >= 1; y--) {
-            utils.log().info("table count - " + y);
-            elementClick(newCheck, "Tapped new check");
-            //  elementClick(exitPreauth,"");
-            WebElement table31 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + y + "\"]"));
-            elementClick(table31, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-            getCheckNumberTxt();
-            pressArrowDown2();
-            elementClick(bever, "");
-            //  elementClick(pineapple, "");
-            elementClick(grape, "");
-            elementClick(hotTea, "");
-
-            //elementClick(coffee, "");
-            elementClick(grape, "");
-            elementClick(esp, "");
-            elementClick(partyDrink, "");
-            elementClick(apple, "");
-            elementClick(finishOrderBtn, "");
-        }
-
-    }
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[4]")
-    private WebElement SplitBtn;
-
-    @FindBy(name = "Split By Seat")
-    private WebElement splitSeat;
-    public int itemToSelect;
-    public int itemToSelect1;
-    public int itemToSelect3;
-    public int itemToSelect4;
-
-
-    public void selectMenuForSplitEvenly() {
-        selectMenu();
-        //   verifyTableSeat(itemToSelect);
-        splitEvenlyAction();
-        // verifyTableSeat(r);
-    }
-
-    public void selectMenuForSplitAction() {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        selectMenu();
-        doSplitAction();
-        elementClick(SaveClose, "");
-        elementClick(paymentBtn, "");
-        elementClick(cashPayment1, "");
-        elementClick(submit, "");
-        //  splitEvenlyAction(itemToSelect);
-    }
-
-
-    public void verifyTableSeat(int h) {
-        String m = Integer.toString(h);
-        utils.log().info("TAble number - " + m);
-        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther
-        WebElement table = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + m + "]/XCUIElementTypeStaticText[4]"));
-        String number = table.getText();
-        utils.log().info(number);
-        try {
-            if (number != "1") {
-                elementClick(table, "");
-//              WebElement clickTable = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-//              String seatNumberTable = clickTable.getText();
-//              utils.log().info("Seat num - "+seatNumberTable);
-                WebElement tableClick = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + number + "]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]"));
-                elementClick(tableClick, "Click the Table - " + number);
-                //  elementClick(clickTable, "Click the Table" + seatNumberTable);
-            } else {
-                WebElement table1 = (WebElement) driver.findElement(By.xpath("T" + m + ""));
-                elementClick(table1, "");
-            }
-        } catch (Exception w) {
-
-        }
-    }
-
-    public void verifyTableMerge(String m) {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-//        utils.log().info("Table num - " + m);
-//
-//
-        //     String m=Integer.toString(h);
-        utils.log().info("m - " + m);
-        String data = m.replaceAll("[A-Z]", "");
-        utils.log().info("Table num after regex - " + data);
-        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther
-        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[18]
-        WebElement table = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]/XCUIElementTypeStaticText[4]"));
-        //   WebElement table = (WebElement) driver.findElement(By.xpath()(m);
-        String number1 = table.getText();
-        int number = Integer.parseInt(number1);
-        utils.log().info("Seat Number - " + number);
-
-        try {
-            if (number != 1) {
-                elementClick(table, "Table Selected - " + number);
-//              WebElement clickTable = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-//              String seatNumberTable = clickTable.getText();
-//              utils.log().info("Seat num - "+seatNumberTable);
-                //  int no = number -1;
-
-                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell
-                List<WebElement> checksCollect =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int countofCollect = checksCollect.size();
-                utils.log().info("Check count in the table - " + countofCollect);
-                WebElement lastOne = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + countofCollect + "]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[4]"));
-                String lastOneTxt = lastOne.getText();
-                elementClick(lastOne, "Selected the last check in the table & check number as - " + lastOneTxt);
-
-//                WebElement tableClick = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + number + "]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-//                elementClick(tableClick, "selected the seat Number - " + number +" - - "+tableClick.getText());
-
-                WebElement x = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"X\"]"));
-                if (x.isDisplayed()) {
-                    elementClick(x, "Tapped X");
-                } else {
-
-                }
-                //  elementClick(clickTable, "Click the Table" + seatNumberTable);
-            } else {
-                WebElement table1 = (WebElement) driver.findElement(By.xpath(m));
-                elementClick(table1, "table SELECTED - " + m);
-            }
-        } catch (Exception w) {
-
-        }
-    }
-
-    public void afterMergeOpenSeat(String m) {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        utils.log().info("Table num - " + m);
-        String data = m.replaceAll("[A-Z]", "");
-        utils.log().info("Table num after regex - " + data);
-        //     String m=Integer.toString(h);
-        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther
-        WebElement table = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]/XCUIElementTypeStaticText[4]"));
-        //  WebElement table = (WebElement) driver.findElement(By.xpath()(m);
-        String number1 = table.getText();
-        int number = Integer.parseInt(number1);
-        utils.log().info(String.valueOf(number));
-        try {
-            if (number != 1) {
-                elementClick(table, "table selected - " + number);
-
-                int no = number - 1;
-                utils.log().info(" After subtract 1 seat from Table Seat count- " + no);
-//              WebElement clickTable = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-//              String seatNumberTable = clickTable.getText();
-//              utils.log().info("Seat num - "+seatNumberTable);
-                //XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther
-//                WebElement tableClick = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + no + "]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-//                elementClick(tableClick, "Click the Table - " + number+" - - "+tableClick.getText());
-//
-//  elementClick(clickTable, "Click the Table" + seatNumberTable);
-
-                List<WebElement> checksCollect =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int countofCollect = checksCollect.size();
-                utils.log().info("Merged Table - " + m + " - check count - " + countofCollect);
-                WebElement lastOne = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + countofCollect + "]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[4]"));
-                String lastOneTxt = lastOne.getText();
-                elementClick(lastOne, "Selected the last check in the table & check number as - " + lastOneTxt);
-
-            } else {
-            }
-        } catch (Exception w) {
-            WebElement table1 = (WebElement) driver.findElement(By.xpath(m));
-            elementClick(table1, "table Selected - " + m);
-        }
-    }
-
-    public void verifyTableSeat1(String m) {
-        utils.log().info("Table num - " + m);
-        String data = m.replaceAll("[A-Z]", "");
-        utils.log().info("Table num after regex - " + data);
-        //     String m=Integer.toString(h);
-        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther
-        WebElement table = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + data + "]/XCUIElementTypeStaticText[4]"));
-        String number = table.getText();
-        utils.log().info(number);
-        try {
-            if (number != "1") {
-                elementClick(table, "");
-//              WebElement clickTable = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-//              String seatNumberTable = clickTable.getText();
-//              utils.log().info("Seat num - "+seatNumberTable);
-                WebElement tableClick = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + number + "]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]"));
-                elementClick(tableClick, "Click the Table - " + number);
-                //  elementClick(clickTable, "Click the Table" + seatNumberTable);
-            } else {
-                WebElement table1 = (WebElement) driver.findElement(By.xpath("T" + data + ""));
-                elementClick(table1, "");
-            }
-        } catch (Exception w) {
-
-        }
-    }
-
-    public void RandomClickTable() {
-
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-        Random rand = new Random();
-        WebElement New = (WebElement) driver.findElement(By.xpath("New"));
-        elementClick(New, "Tapped New");
-        for (int i = 1; i <= 2; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]", "", TestUtils.XPath);
-            utils.log().info(tableNum.getText());
-            elementClick(tableNum, "Tapped Table Number");
-        }
-        WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-        elementClick(seat, "Tapped seat Number");
-        WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-        elementClick(cont, "Tapped continue");
-        elementClick(arrowDownForOtherMenuItems, "");
-    }
-
-    @FindBy(xpath = "//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]")
-    private WebElement item;
-
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[1]")
-    private WebElement verifyItem;
-
-    @FindBy(name = "Seat 2")
-    private WebElement seat2;
-
-    public void doSplitAction() {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-        elementClick(AddBtn, "Add Button Selected");
-        String itemName = item.getText();
-        WebElement price = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[2]"));
-        String price1 = price.getText();
-
-        elementClick(item, "Select Item - " + itemName + " - " + price1);
-
-        String seatName = seat2.getText();
-        elementClick(seat2, seatName + " - selected");
-
-        String itemName2 = verifyItem.getText();
-        if (itemName.equalsIgnoreCase(itemName2)) {
-            utils.log().info("Menu Item is moved from seat 1 to seat 2 - " + itemName2);
-        } else {
-            utils.log().info("Menu Item is not moved");
-        }
-
-    }
-
-    public void splitEvenlyAction() {
-        elementClick(AddBtn, "");
-        WebElement splitEvenly = (WebElement) driver.findElement(By.xpath("Split Evenly"));
-        elementClick(splitEvenly, "Split Evenly Selected");
-        List<WebElement> coll =  driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-        int cell = coll.size();
-        utils.log().info("split seat - " + cell);
-        for (int i = 1; i <= cell; i++) {
-            List<WebElement> seat1Table =  driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + i + "]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
-            int cells = seat1Table.size();
-            utils.log().info("seat " + i + " menu items - " + cells);
-            for (int a = 1; a <= cells; a++) {
-                WebElement type = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + a + "]/XCUIElementTypeStaticText[1]"));
-                String name = type.getText();
-                WebElement prices = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + a + "]/XCUIElementTypeStaticText[2]"));
-                String price11 = prices.getText();
-                utils.log().info("Menus are - " + name + " - " + price11);
-            }
-        }
-//    List<WebElement> seat2Table =  driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell");
-//    int cells1 = seat2Table.size();
-//    utils.log().info("seat 2 menu items - "+cells1);
-//    for(int a = 1;a<=cells1;a++){
-//                                                                               //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[1]
-//        WebElement type1 = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+a+"]/XCUIElementTypeStaticText[1]");
-//        String name1 = type1.getText();
-//        utils.log().info("Menus - "+name1);
-//    }
-
-    }
-
-    public void splitSeperateItem(String noOfSplit) {
-
-        selectMenu();
-        elementClick(tableLayoutTab, "");
-
-        elementClick(SplitBtn, "");
-        elementClick(splitSeat, "");
-
-        verifyTableSeat(itemToSelect);
-        //  splitEvenlyAction(itemToSelect);
-        doSeperate(noOfSplit);
-        elementClick(SaveClose, "");
-        elementClick(paymentBtn, "");
-        elementClick(cashPayment1, "");
-        elementClick(submit, "");
-
-    }
-
-    public void doSeperate(String no) {
-        elementClick(item, "");
-        String data = item.getText();
-        WebElement price = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[2]"));
-        String price1 = price.getText();
-        utils.log().info("Menu for Seperate - " + data + " - " + price1);
-        WebElement seperateItem = (WebElement) driver.findElement(By.xpath("Seperate Item"));
-        elementClick(seperateItem, "");
-
-        WebElement num = (WebElement) driver.findElement(By.xpath(no));
-        elementClick(num, "");
-
-        elementClick(continueBtn, "");
-
-        List<WebElement> tale =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        int count = tale.size();
-
-        utils.log().info("Counts of menu Item - " + count);
-        for (int i = 1; i <= count; i++) {
-            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-            WebElement menuss = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            String nameOfMenu = menuss.getText();
-            WebElement prices = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-            String price11 = prices.getText();
-            utils.log().info("Menus are - " + nameOfMenu + " - " + price11);
-        }
-    }
-
-    public void selectMenu() {
-
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/*****  RandOm Select Table ****/
-
-        Random rand = new Random();
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[3]"));
-            utils.log().info(tableNum.getText());
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            elementClick(seat, "Tapped seat Number");
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-            getCheckNumberTxt();
-            WebElement cate = (WebElement) driver.findElement(By.xpath("FOOD"));
-            elementClick(cate, "Tapped category");
-
-            /*****  RandOm Select Menu ****/
-
-            List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-            int count1 = menuCollection.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 2; j++) {
-                itemToSelect1 = rand1.nextInt(count1);
-
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-                utils.log().info(String.valueOf(itemToSelect1));
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                        try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                            WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if (remainingModi.isDisplayed()) {
-                                String SubModifier1 = subModi1.getText();
-                                elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                String SubModifier2 = subModi2.getText();
-                                elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                String SubModifier3 = subModi3.getText();
-                                elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                elementClick(doneButton, "Tapped Done");
-
-                            } else {
-
-                            }
-                        } catch (Exception h) {
-                            elementClick(doneButton, "Tapped Done");
-                        }
-                    } else {
-
-                    }
-
-                } catch (Exception x) {
-                    try {
-                        WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                        WebElement size2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]"));
-                        WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                        String mini = minimum.getText();
-                        if (find(size2, 1)) {
-                            String data = size1.getText();
-                            elementClick(size1, data + " - selected");
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String mainModi = mainModi1.getText();
-                            elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                            elementClick(doneButton, "Tapped Done");
-                        } else if (find(minimum, 1)) {
-                            utils.log().info(mini + " - Additional Modifiers ");
-                            //             if (find(minimum, 2)) {
-                            WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                            String modiname = addMeats.getText();
-                            elementClick(addMeats, "Modifier selected - " + modiname);
-                            elementClick(doneButton, "Tapped Done");
-                        } else {
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-                        }
-                    } catch (Exception z) {
-
-                    }
-                }
-
-
-            }
-            elementClick(finishOrderBtn, "Finish Button");
-        }
-        elementClick(tableLayoutTab, "Table Layout");
-
-        elementClick(SplitBtn, "Split Button");
-        elementClick(splitSeat, "Split Seat button");
-
-        verifyTableSeat(itemToSelect);
-
-    }
-
-    @FindBy(name = "Group Seats")
-    WebElement groupSeat;
-
-    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Seat 1\"])[2]")
-    WebElement seat1;
-
-    public String check = " ";
-
-    public String selectMenuForDineIn(String cate) throws Exception {
-
-        //   utils.log().info("First iPad Menu - "+k);
-
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/*****  RandOm Select Table ****/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            elementClick(seat, "Tapped seat Number");
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-            getCheckNumberTxt();
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-
-            /*****  RandOm Select Menu ****/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-            //  utils.log().info(tableNumber+" - Table Number");
-
-            List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-            int count1 = menuCollection.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 2; j++) {
-                itemToSelect1 = rand1.nextInt(count1);
-
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-
-                utils.log().info(String.valueOf(itemToSelect1));
-
-
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                        try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                            WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if (remainingModi.isDisplayed()) {
-                                String SubModifier1 = subModi1.getText();
-                                elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                String SubModifier2 = subModi2.getText();
-                                elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                String SubModifier3 = subModi3.getText();
-                                elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                elementClick(doneButton, "Tapped Done");
-
-                            } else {
-
-                            }
-                        } catch (Exception h) {
-                            elementClick(doneButton, "Tapped Done");
-                        }
-                    } else {
-
-                    }
-
-                } catch (Exception x) {
-                    try {
-
-
-                        //  utils.log().info(size2.getText());
-                        WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                        String data = size1.getText();
-                        WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                        if (size2.isDisplayed()) {
-                            elementClick(size1, data + " - selected");
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String mainModi = mainModi1.getText();
-                            elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                            elementClick(doneButton, "Tapped Done");
-                        } else {
-                            WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                            String mini = minimum.getText();
-                            utils.log().info(mini + " - Additional Modifiers ");
-                            //             if (find(minimum, 2)) {
-                            WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                            String modiname = addMeats.getText();
-                            elementClick(addMeats, "Modifier selected - " + modiname);
-                            elementClick(doneButton, "Tapped Done");
-                        }
-
-                        //          }
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                    } catch (Exception v) {
-
-                    }
-                }
-
-
-            }
-            // elementClick(finishOrderBtn, "Finish Button");
-        }
-        return check;
-    }
-
-    @FindBy(name = "Check Stats")
-    WebElement checkStatsTab;
-
-    public String selectMenuForDineInMerge() throws Exception {
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
-
-        for (int k = 1; k <= 2; k++) {
-
-            WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-            elementClick(New, "Tapped New");
-            List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-            int count = tablee.size();
-            utils.log().info("Total Count of the Table - " + count);
-
-/*****  RandOm Select Table ****/
-
-            Random rand = new Random();
-
-            for (int i = 1; i <= 1; i++) {
-                itemToSelect = rand.nextInt(count);
-
-                if (itemToSelect == 0) {
-                    itemToSelect = 1;
-                }
-                utils.log().info(String.valueOf(itemToSelect));
-                WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-                elementClick(tableNum, "Tapped Table " + itemToSelect);
-
-                WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-                elementClick(seat, "Tapped seat Number");
-                WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-                elementClick(cont, "Tapped continue");
-                getCheckNumberTxt();
-                elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-                /**** Random Select Category ****/
-
-                WebElement cate = (WebElement) driver.findElement(By.xpath("APPETIZERS"));
-                elementClick(cate, "Tapped category");
-//                List<WebElement> categories =  driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
-//                int cateSize = categories.size();
-//                utils.log().info("Category Available count in this Store - " + cateSize);
-//
-//                for (int m = 1; m <= 1; m++) {
-//                    itemToSelect3 = rand.nextInt(cateSize);
-//
-//                    if (itemToSelect3 == 0) {
-//                        itemToSelect3 = 1;
-//                    }
-//
-//                    WebElement categoryName = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect3 + "]/XCUIElementTypeStaticText[1]");
-//                    String categoryNameTxt = categoryName.getText();
-//                    elementClick(categoryName, "Category place - " + itemToSelect3 + " Selected Category - " + categoryNameTxt);
-
-                /*****  RandOm Select Menu ****/
-
-                WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-                check = order.getText();
-                TestUtils.tableNumberof = check;
-                utils.log().info("Table Number from the order screen - " + check);
-                ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-                try {
-                    WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                    if (find(menuCollection1, 2)) {
-                        List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                        int count1 = menuCollection.size();
-                        Random rand1 = new Random();
-                        for (int j = 1; j <= 2; j++) {
-                            itemToSelect1 = rand1.nextInt(count1);
-
-                            if (itemToSelect1 == 0) {
-                                itemToSelect1 = 1;
-                            }
-
-                            utils.log().info(String.valueOf(itemToSelect1));
-
-
-                            WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                            utils.log().info(menu.getText());
-                            elementClick(menu, "Tapped Menu");
-                            try {
-                                WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if ((mainModi.isDisplayed())) {
-                                    String mainModifier = mainModi.getText();
-                                    elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                                    try {
-                                        WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                        WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                        WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                        WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                        if (remainingModi.isDisplayed()) {
-                                            String SubModifier1 = subModi1.getText();
-                                            elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                            String SubModifier2 = subModi2.getText();
-                                            elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                            String SubModifier3 = subModi3.getText();
-                                            elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                            elementClick(doneButton, "Tapped Done");
-
-                                        } else {
-
-                                        }
-                                    } catch (Exception h) {
-                                        elementClick(doneButton, "Tapped Done");
-                                    }
-                                } else {
-
-                                }
-
-                            } catch (Exception x) {
-                                try {
-
-
-                                    //  utils.log().info(size2.getText());
-                                    WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                    String data = size1.getText();
-                                    WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                                    if (size2.isDisplayed()) {
-                                        elementClick(size1, data + " - selected");
-                                        WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                        String mainModi = mainModi1.getText();
-                                        elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                        elementClick(doneButton, "Tapped Done");
-                                    } else {
-                                        WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                        String mini = minimum.getText();
-                                        utils.log().info(mini + " - Additional Modifiers ");
-                                        //             if (find(minimum, 2)) {
-                                        WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                        String modiname = addMeats.getText();
-                                        elementClick(addMeats, "Modifier selected - " + modiname);
-                                        elementClick(doneButton, "Tapped Done");
-                                    }
-
-                                    //          }
-                                    ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                                    ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                                    //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                                    //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                                } catch (Exception v) {
-
-                                }
-                            }
-
-
-                        }
-                    }
-
-                    elementClick(finishOrderBtn, "Finish Button");
-                } catch (Exception h) {
-                    List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                    int count1 = menuCollection2.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-
-                        WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        utils.log().info(menu.getText());
-                        elementClick(menu, "Tapped Menu");
-                        try {
-                            WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if ((mainModi.isDisplayed())) {
-                                String mainModifier = mainModi.getText();
-                                elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                                try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                    WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    if (remainingModi.isDisplayed()) {
-                                        String SubModifier1 = subModi1.getText();
-                                        elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                        String SubModifier2 = subModi2.getText();
-                                        elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                        String SubModifier3 = subModi3.getText();
-                                        elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                        elementClick(doneButton, "Tapped Done");
-
-                                    } else {
-
-                                    }
-                                } catch (Exception M) {
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-                            } else {
-
-                            }
-
-                        } catch (Exception x) {
-                            try {
-
-
-                                //  utils.log().info(size2.getText());
-                                WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String data = size1.getText();
-                                WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                                if (size2.isDisplayed()) {
-                                    elementClick(size1, data + " - selected");
-                                    WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                    String mainModi = mainModi1.getText();
-                                    elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                    elementClick(doneButton, "Tapped Done");
-                                } else {
-                                    WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                    String mini = minimum.getText();
-                                    utils.log().info(mini + " - Additional Modifiers ");
-                                    //             if (find(minimum, 2)) {
-                                    WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                    String modiname = addMeats.getText();
-                                    elementClick(addMeats, "Modifier selected - " + modiname);
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-
-                                //          }
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            } catch (Exception v) {
-
-                            }
-                        }
-
-                    }
-                    elementClick(finishOrderBtn, "Tapped finish Button");
-
-                }
-            }
-
-
-            Thread.sleep(50000);
-            elementClick(checkStatsTab, "Check Stats");
-            Thread.sleep(50000);
-            elementClick(tableLayoutTab, "Table Layout");
-            Thread.sleep(15000);
-            elementClick(checkStatsTab, "Check Stats");
-            Thread.sleep(12000);
-            elementClick(tableLayoutTab, "Table Layout");
-        }
-        return check;
-
-    }
-
-
-    public void selectMenuForBasicValidation(String category) {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-/*****  Random Select Table ****/
-        Random rand = new Random();
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            elementClick(seat, "Tapped seat Number");
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
-            elementClick(arrowDownn, "Arrow Done on iPad 1");
-            /*** Random Select Category ***/
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(category));
-            elementClick(cate1, "Tapped category");
-            /****  RandOm Select Menu ***/
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-                        utils.log().info(String.valueOf(itemToSelect1));
-                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        TestUtils.menu = menuName.getText();
-                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
-                        try {
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            if ((mainModi1.isDisplayed())) {
-                                List<WebElement> mainModi10 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                                int count2 = mainModi10.size();
-                                Random rand2 = new Random();
-                                for (int k = 1; k <= 1; k++) {
-                                    int itemToSelect2 = rand2.nextInt(count2);
-
-                                    if (itemToSelect2 == 0) {
-                                        itemToSelect2 = 1;
-                                    }
-                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
-                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
-                                }
-                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                                elementClick(donee, "Done Selected");
-                            }else{ }
-                        }catch (Exception x) {
-                        }
-                    }
-                }
-            } catch (Exception h) {
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info("Random Number - "+itemToSelect1);
-                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    TestUtils.menu = menuName.getText();
-                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
-                    try {
-                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                        if ((mainModdii.isDisplayed())) {
-                            List<WebElement> mainModi =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            int count2 = mainModi.size();
-                            Random rand2 = new Random();
-                            for (int jk = 1; jk <= 1; jk++) {
-                                int itemToSelect2 = rand2.nextInt(count2);
-                                if (itemToSelect2 == 0) {
-                                    itemToSelect2 = 1;
-                                }
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
-                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
-                            }
-                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                            elementClick(donee, "Tapped Done");
-                        } else {
-                        }
-                    } catch (Exception M) {
-                    }
-                }
-            }
-        }
-
-        WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Subtotal\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subTotalAmount = subtotalValues.getText();
-        TestUtils.subtotalTxt = subTotalAmount;
-        utils.log().info("Subtotal Value as Same with Price Level 2 - "+subTotalAmount);
-        WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Tax\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxAmount = taxValues.getText();
-        TestUtils.taxTxt = taxAmount;
-        utils.log().info("Tax Value is SAME - "+taxAmount);
-        WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Total\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String totalAmount = totalValues.getText();
-        TestUtils.totalTxt = totalAmount;
-        utils.log().info("Tptal Value is SAME - "+totalAmount);
-        WebElement cashValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-//        WebElement cashValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeStaticText[@name=\"Cash Price\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]");
-        String totalAmount1 = cashValues.getText();
-        TestUtils.cashDiscountTxt = totalAmount1;
-        utils.log().info("Cash Discount Value is SAME - "+totalAmount1);
-    }
-
-    public String[] a = {};
-
-    public void selectMenuBasicValidationForQsr(String category) {
-
-        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-        WebElement cate = (WebElement) driver.findElement(By.xpath(category));
-        elementClick(cate, "Tapped category");
-        /*****  RandOm Select Menu ****/
-        WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-        check = order.getText();
-        TestUtils.tableNumberof = check;
-        try {
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    itemToSelect1 = rand1.nextInt(count1);
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info(String.valueOf(itemToSelect1));
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-                                elementClick(doneButton, "Tapped Done");
-                        } else {}
-                    } catch (Exception x) {}
-                }
-            }
-        } catch (Exception h) {
-            List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-            int count1 = menuCollection2.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 1; j++) {
-                itemToSelect1 = rand1.nextInt(count1);
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-                utils.log().info(String.valueOf(itemToSelect1));
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-                            elementClick(doneButton, "Tapped Done");
-                    } else {
-                    }
-                } catch (Exception x) { }
-            }
-        }
-    }
-
-
-    public String check1 = " ";
-
-    public String selectMenuForDineIn1() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-        // for(int w=1;w<=2;w++) {
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info("Total Count of the Table - " + count);
-/*****  RandOm Select Table ****/
-        Random rand = new Random();
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info("Selected the number of Table - " + itemToSelect);
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            elementClick(seat, "Tapped seat Number");
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-            /**** Random Select Category ****/
-            WebElement cate = (WebElement) driver.findElement(By.xpath("APPETIZERS"));
-            elementClick(cate, "Tapped category");
-//                List<WebElement> categories =  driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
-//                int cateSize = categories.size();
-//                utils.log().info("Category Available count in this Store - " + cateSize);
-//
-//                for (int m = 1; m <= 1; m++) {
-//                    itemToSelect3 = rand.nextInt(cateSize);
-//
-//                    if (itemToSelect3 == 0) {
-//                        itemToSelect3 = 1;
-//                    }
-//
-//                    WebElement categoryName = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect3 + "]/XCUIElementTypeStaticText[1]");
-//                    String categoryNameTxt = categoryName.getText();
-//                    elementClick(categoryName, "Category place - " + itemToSelect3 + " Selected Category - " + categoryNameTxt);
-
-            /*****  RandOm Select Menu ****/
-//                WebElement tableNO1 = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]");
-//                String tableNO1Txt = tableNO1.getText();
-//                utils.log().info("Table Number - "+tableNO1Txt);
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check1 = order.getText();
-            TestUtils.tableNumberof1 = check1;
-            utils.log().info("Table Number from the order Screen - " + check1);
-            //  utils.log().info(tableNumber+" - Table Number");
-            ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-
-                        WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        utils.log().info(menu.getText());
-                        elementClick(menu, "Tapped Menu");
-                        try {
-                            WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if ((mainModi.isDisplayed())) {
-                                String mainModifier = mainModi.getText();
-                                elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                                try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                    WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    if (remainingModi.isDisplayed()) {
-                                        String SubModifier1 = subModi1.getText();
-                                        elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                        String SubModifier2 = subModi2.getText();
-                                        elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                        String SubModifier3 = subModi3.getText();
-                                        elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                        elementClick(doneButton, "Tapped Done");
-
-                                    } else {
-
-                                    }
-                                } catch (Exception h) {
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-                            } else {
-
-                            }
-
-                        } catch (Exception x) {
-                            try {
-
-
-                                //  utils.log().info(size2.getText());
-                                WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String data = size1.getText();
-                                WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                                if (size2.isDisplayed()) {
-                                    elementClick(size1, data + " - selected");
-                                    WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                    String mainModi = mainModi1.getText();
-                                    elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                    elementClick(doneButton, "Tapped Done");
-                                } else {
-                                    WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                    String mini = minimum.getText();
-                                    utils.log().info(mini + " - Additional Modifiers ");
-                                    //             if (find(minimum, 2)) {
-                                    WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                    String modiname = addMeats.getText();
-                                    elementClick(addMeats, "Modifier selected - " + modiname);
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-
-                                //          }
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            } catch (Exception v) {
-
-                            }
-                        }
-
-
-                    }
-                }
-                elementClick(finishOrderBtn, "Tapped finish Button");
-            } catch (Exception h) {
-
-
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    itemToSelect4 = rand1.nextInt(count1);
-
-                    if (itemToSelect4 == 0) {
-                        itemToSelect4 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect4));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect4 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception M) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                            }
-                            elementClick(doneButton, "Tapped Done");
-
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-                }
-                elementClick(finishOrderBtn, "Tapped finish Button");
-
-            }
-        }
-
-        //}
-        return check1;
-    }
-
-
-    public void selectMenuForQSR() {
-
-
-        try {
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception h) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-
-                }
-            }
-            //   elementClick(finishOrderBtn, "Tapped finish Button");
-        } catch (Exception h) {
-
-
-            List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-            int count1 = menuCollection2.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 2; j++) {
-                itemToSelect4 = rand1.nextInt(count1);
-
-                if (itemToSelect4 == 0) {
-                    itemToSelect4 = 1;
-                }
-
-                utils.log().info(String.valueOf(itemToSelect4));
-
-
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect4 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                        try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                            WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if (remainingModi.isDisplayed()) {
-                                String SubModifier1 = subModi1.getText();
-                                elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                String SubModifier2 = subModi2.getText();
-                                elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                String SubModifier3 = subModi3.getText();
-                                elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                elementClick(doneButton, "Tapped Done");
-
-                            } else {
-
-                            }
-                        } catch (Exception M) {
-                            elementClick(doneButton, "Tapped Done");
-                        }
-                    } else {
-                    }
-
-                } catch (Exception x) {
-                    try {
-
-                        //  utils.log().info(size2.getText());
-                        WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                        String data = size1.getText();
-                        WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                        if (size2.isDisplayed()) {
-                            elementClick(size1, data + " - selected");
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String mainModi = mainModi1.getText();
-                            elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                        } else {
-                            WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                            String mini = minimum.getText();
-                            utils.log().info(mini + " - Additional Modifiers ");
-                            //             if (find(minimum, 2)) {
-                            WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                            String modiname = addMeats.getText();
-                            elementClick(addMeats, "Modifier selected - " + modiname);
-                        }
-                        elementClick(doneButton, "Tapped Done");
-
-                        //          }
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                    } catch (Exception v) {
-
-                    }
-                }
-
-            }
-            //  elementClick(finishOrderBtn, "Tapped finish Button");
-
-        }
-    }
-
-
-    public void selectMenuForGroupSeat() {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        selectMenu();
-        doSplitAction();
-        elementClick(seat1, "Seat 1 selected");
-        elementClick(seat2, "Seat 2 selected");
-        elementClick(groupSeat, "Group seat Button Selected");
-        List<WebElement> tale =  driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        int count = tale.size();
-
-        utils.log().info("Counts of menu Item - " + count);
-        for (int i = 1; i <= count; i++) {
-            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-            WebElement menuss = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            String nameOfMenu = menuss.getText();
-            WebElement prices = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-            String price11 = prices.getText();
-            utils.log().info("Menus are - " + nameOfMenu + " - " + price11);
-        }
-        elementClick(SaveClose, "save And Close");
-        elementClick(paymentBtn, "Payment");
-        elementClick(cashPayment1, "Cash Button");
-        elementClick(submit, "Submit ");
-    }
-
-    @FindBy(name = "Open check")
-    WebElement OpenCheckStats;
-
-    public void openTheCheckByTableNum() {
-
-        WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[8]"));
-        String number = tableNum.getText();
-
-        elementClick(OpenCheckStats, "opened Check");
-        selectMenuForQSR();
-
-        elementClick(finishOrderBtn, "Finish button");
-        elementClick(tableLayoutTab, "Table Layout Tab");
-        elementClick(SplitBtn, "Split Button");
-        elementClick(splitSeat, "Split Seat button");
-
-        verifyTableSeat1(number);
-        doSplitAction();
-        splitEvenlyAction();
-    }
-
-    public void makeSaleForNewUser() throws Exception {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-        for (int w = 6; w <= 19; w++) {
-            utils.log().info("Sale Count - " + w);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-            elementClick(newCheck, "Tapped new check");
-            WebElement table3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + w + "\"]"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement table31 = (WebElement) driver.findElement(By.xpath("Soft Drinks"));
-            elementClick(table31, "");
-            elementClick(cakeProd, "");
-            elementClick(salgam, "");
-            elementClick(Ayran, "");
-            elementClick(Ayran3, "");
-            elementClick(turkishteapot, "");
-            elementClick(cofeee, "");
-            elementClick(turkishteapot, "");
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgAuth, "");
-            elementClick(tipAs10, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-        for (int w = 20; w <= 37; w++) {
-            utils.log().info("Sale Count - " + w);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-            elementClick(newCheck, "Tapped new check");
-            WebElement table3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + w + "\"]"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement table31 = (WebElement) driver.findElement(By.xpath("Soft Drinks"));
-            elementClick(table31, "");
-            elementClick(cakeProd, "");
-            elementClick(salgam, "");
-            elementClick(Ayran3, "");
-            elementClick(Ayran, "");
-            elementClick(cofeee, "");
-            elementClick(Ayran3, "");
-            elementClick(cofeee, "");
-            elementClick(turkishteapot, "");
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgAuth, "");
-            elementClick(tipAs10, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-
-        }
-        for (int w = 38; w <= 50; w++) {
-            utils.log().info("Sale Count - " + w);
-            if (tableLayoutTab.isDisplayed()) {
-                utils.log().info("Table Layout visible");
-            }
-            elementClick(newCheck, "Tapped new check");
-            WebElement table3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeStaticText[@name=\"T" + w + "\"]"));
-            elementClick(table3, "");
-            elementClick(singleSeat, "Tapped Single ");
-            elementClick(continueBtn, "Tapped Continue");
-
-            getCheckNumberTxt();
-            pressArrowDown2();
-            WebElement table31 = (WebElement) driver.findElement(By.xpath("Soft Drinks"));
-            elementClick(table31, "");
-            elementClick(cakeProd, "");
-            elementClick(salgam, "");
-            elementClick(Ayran, "");
-            elementClick(Ayran3, "");
-            elementClick(cakeProd, "");
-            elementClick(cofeee, "");
-            elementClick(salgam, "");
-            elementClick(turkishteapot, "");
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth, "up");
-            elementClick(mppgAuth, "");
-            elementClick(tipAs10, "");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-    }
-
-    public void needToWait() throws InterruptedException {
-        Thread.sleep(50000);
-
-    }
-
-    public void dogroupSeat() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        elementClick(seat1, "Seat 1 selected");
-        elementClick(seat2, "Seat 2 selected");
-        elementClick(groupSeat, "Group seat Button Selected");
-
-        List<WebElement> coll =  driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-        int cell = coll.size();
-        utils.log().info("split seat - " + cell);
-        for (int a = 1; a <= cell; a++) {
-            List<WebElement> seat1Table =  driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + a + "]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
-            int cells = seat1Table.size();
-            utils.log().info("seat " + a + " menu items - " + cells);
-            for (int i = 1; i <= cells; i++) {
-                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-                WebElement menuss = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-                String nameOfMenu = menuss.getText();
-                WebElement prices = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-                String price11 = prices.getText();
-                utils.log().info(" Group Menus are - " + nameOfMenu + " - " + price11);
-            }
-        }
-    }
-
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Merge\"]")
-    private WebElement mergeBtn;
-
-    @FindBy(name = "Done")
-    WebElement doneBtnn;
-
-    public void doMerge() {
-
-
-        elementClick(mergeBtn, "Merge Button Selected");
-
-        verifyTableMerge(TestUtils.tableNumberof);
-
-        verifyTableMerge(TestUtils.tableNumberof1);
-
-
-        elementClick(doneBtnn, "Merge Done");
-
-        WebElement LingaPopup = (WebElement) driver.findElement(By.xpath("Linga"));
-        String Txt = LingaPopup.getText();
-        utils.log().info("Merge popup is Displayed");
-        elementClick(doneBtnn, "Popup Done");
-
-        afterMergeOpenSeat(TestUtils.tableNumberof);
-
-    }
-
-    @FindBy(name = "openCheck")
-    private WebElement openCheckBtn;
-
-    @FindBy(name = "Cash")
-    private WebElement Cash;
-
-    @FindBy(name = "Exact")
-    private WebElement Exact;
-
-    @FindBy(name = "Enter")
-    private WebElement Enter1;
-
-    @FindBy(name = "Delivery")
-    private WebElement deliveryBtn;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Button\"])[2]")
-    private WebElement laterBtn;
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"Done\"])[1]")
-    private WebElement doneButton1;
-    @FindBy(name = "Customer Profile")
-    private WebElement customerProfileWindow;
-    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search\"]")
-    private WebElement searchField;
-
-
-    public void mergeAction1() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        Thread.sleep(50000);
-        elementClick(allBtn, "Tapped All button");
-        Thread.sleep(18000);
-        for (int i = 1; i <= 2; i++) {
-            utils.log().info("Merge Count - " + i);
-            elementClick(checkStatsTab, "Tapped Check Stats Tab");
-            //   new PhoneOrderScreen().selectActiveCheckForMulti();
-            elementClick(openCheckBtn, "Open Check button is tapped");
-            orderScreen();
-            selectMenuForQSR();
-            elementClick(finishOrderBtn, "finish button tapped");
-            elementClick(tableLayoutTab, "Tapped Table Layout Tab");
-            selectMenuForDineIn1();
-            doMerge();
-            orderScreen();
-            elementClick(Cash, "Tapped Cash button for Close Sale");
-            elementClick(Exact, "Tapped Exact button ");
-            elementClick(Enter1, "Tapped Enter button ");
-
-        }
-    }
-
-    @FindBy(name = "QSR")
-    private WebElement qsrTab;
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Save\"]")
-    private WebElement saveBtn;
-    @FindBy(name = "  Exit")
-    WebElement exitBtn;
-
-    @FindBy(name = "Future")
-    WebElement futureTab;
-
-    @FindBy(name = "Done")
-    private WebElement doneBtn;
-
-    public void makeSaleForBatchInPhoneStore(String category) throws Exception {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-        for (int k = 1; k <= 100; k++) {
-            elementClick(deliveryBtn, "Delivery selected");
-            elementClick(laterBtn, "Delivery later selected");
-
-            elementClick(doneButton1, "Delivery selected");
-            elementClick(doneBtn, "done button selected");
-            sendKeys(searchField, "aaron czx");
-            WebElement cust = (WebElement) driver.findElement(By.xpath("aaron czx 567998654688 "));
-            elementClick(cust, "Selected customer");
-            elementClick(saveBtn, "Save selected");
-            getCheckNumberTxt();
-            selectMenuBasicValidationForQsr(category);
-
-            pressPayment();
-            scrollToElementPayments(mppgAuth2, "up");
-            elementClick(mppgAuth2, "Mppg Auth Selected");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-            elementClick(exitBtn, "Exit selected");
-            elementClick(finishOrderBtn, "Finish selected");
-            elementClick(futureTab, "Future Button selected");
-            elementClick(qsrTab, "Qsr Selected");
-        }
-
-        elementClick(allBtn, "Selected All");
-        for (int i = 21; i <= 50; i++) {
-            utils.log().info("count - " + i);
-
-            elementClick(tableLayoutTab, "Table Layout Selected");
-            //getCheckNumberTxt();
-            selectMenuForBasicValidation(category);
-            pressPayment();
-            scrollToElementPayments(mppgAuth2, "up");
-            elementClick(mppgAuth2, "Mppg Auth Selected");
-            elementClick(continueBtn, "");
-            elementClick(manualButton, "Tapped Manual Button");
-
-            cardNumberTxtField.sendKeys("4111111111111111");
-
-            cardNameField.sendKeys("JCB");
-            cardNameField.sendKeys(Keys.ENTER);
-
-            expireNumTxtField.sendKeys("1222");
-
-            cvvTxtField.sendKeys(Keys.ENTER);
-
-            zipCodeTxtField.sendKeys(Keys.ENTER);
-
-            elementClick(processBtn, "Tapped process Button");
-
-            try {
-                elementClick(okBtn, "Tapped Ok Button on the Popup");
-            } catch (Exception e) {
-            }
-        }
-    }
-
-    @FindBy(name = "Batch In Progress")
-    WebElement batchInProgress;
-    @FindBy(name = "Batch Completed")
-    WebElement batchComplete;
-    @FindBy(name = "ToggleIcon")
-    WebElement ToggleIcon;
-    @FindBy(name = "Batch/Tip Adjustment")
-    WebElement batchTipAdjustBtn;
-
-    public void verifyBatchCheckAvailable() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-        List<WebElement> check =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        int checkCount = check.size();
-        utils.log().info("Batch Check count - " + checkCount);
-//        String batchText = batchInProgress.getText();
-        String batchCompleteText = batchComplete.getText();
-        while (true) {
-            elementClick(ToggleIcon, "Toggle Icon Selected");
-            Thread.sleep(1000);
-            elementClick(batchTipAdjustBtn, "Batch/Tip Selected");
-            Thread.sleep(1000);
-            if (find(batchInProgress, 2)) {
-                utils.log().info("Batch IN Process - "  + " - Check Count - " + checkCount);
-            } else {
-                utils.log().info("Batch Process Has been Completed - " + batchCompleteText + " - Check count - " + checkCount);
-                break;
-            }
-        }
-
-
-    }
-
-    public void doBatchForVourl(String catego) {
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
-        selectMenuForBasicValidation(catego);
-    }
-
-
-    public String selectMenuForDineOrderType(String cate1) throws InterruptedException {
-
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            elementClick(seat, "Tapped seat Number");
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-            /*** Random Select Category ***/
-
-            WebElement cate = (WebElement) driver.findElement(By.xpath(cate1));
-            elementClick(cate, "Tapped category");
-//            List<WebElement> categories =  driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
-//            int cateSize = categories.size();
-//            utils.log().info("Category Available count in this Store - " + cateSize);
-//
-//            for (int m = 1; m <= 1; m++) {
-//                itemToSelect3 = rand.nextInt(cateSize);
-//
-//                if (itemToSelect3 == 0) {
-//                    itemToSelect3 = 1;
-//                }
-//
-//                WebElement categoryName = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect3 + "]/XCUIElementTypeStaticText[1]");
-//                String categoryNameTxt = categoryName.getText();
-//                elementClick(categoryName, "Category place - " + itemToSelect3 + " Selected Category - " + categoryNameTxt);
-
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof1 = check;
-            //  utils.log().info(tableNumber+" - Table Number");
-            ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-
-                        WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        utils.log().info(menu.getText());
-                        elementClick(menu, "Tapped Menu");
-                        try {
-                            WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if ((mainModi.isDisplayed())) {
-                                String mainModifier = mainModi.getText();
-                                elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                                try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                    WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    if (remainingModi.isDisplayed()) {
-                                        String SubModifier1 = subModi1.getText();
-                                        elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                        String SubModifier2 = subModi2.getText();
-                                        elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                        String SubModifier3 = subModi3.getText();
-                                        elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                        elementClick(doneButton, "Tapped Done");
-
-                                    } else {
-
-                                    }
-                                } catch (Exception h) {
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-                            } else {
-
-                            }
-
-                        } catch (Exception x) {
-                            try {
-
-
-                                //  utils.log().info(size2.getText());
-                                WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String data = size1.getText();
-                                WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                                if (size2.isDisplayed()) {
-                                    elementClick(size1, data + " - selected");
-                                    WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                    String mainModi = mainModi1.getText();
-                                    elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                    elementClick(doneButton, "Tapped Done");
-                                } else {
-                                    WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                    String mini = minimum.getText();
-                                    utils.log().info(mini + " - Additional Modifiers ");
-                                    //             if (find(minimum, 2)) {
-                                    WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                    String modiname = addMeats.getText();
-                                    elementClick(addMeats, "Modifier selected - " + modiname);
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-
-                                //          }
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            } catch (Exception v) {
-
-                            }
-                        }
-
-
-                    }
-                }
-                // elementClick(finishOrderBtn, "Finish Button");
-            } catch (Exception h) {
-
-
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception M) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-                }
-                //    elementClick(finishOrderBtn,"Tapped finish Button");
-
-            }
-        }
-        return check;
-    }
-
-
-    public void getMenuValues() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("Size of Field " + countOfListValues);
-        if (countOfListValues == 5) {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            TestUtils.subtotalTxt = subtotalValues1;
-            String subTotal1 = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            int subTotal2 = Integer.parseInt(subTotal1);
-            utils.log().info(" Subtotal Values - " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-
-            TestUtils.taxTxt = taxValues1;
-            int taxxxx = (subTotal2 * 8) / 100;
-
-            TestUtils.MergeTax = String.valueOf(taxxxx);
-            String tax1 = taxValues1.replaceAll("[A-Z$,. ]", "");
-            int tax2 = Integer.parseInt(tax1);
-            utils.log().info(" Tax Values - " + taxValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String totalValues1 = totalValues.getText();
-            TestUtils.totalTxt = totalValues1;
-            utils.log().info(" Total Values - " + totalValues1);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            TestUtils.cashOptionOrderScreen = cashOptionValues1;
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-            int CashDiscountValue = ((subTotal2 + tax2) * 5) / 100;
-            utils.log().info("Cash Discount Value - " + CashDiscountValue);
-            String cashDiscountt = String.valueOf(CashDiscountValue);
-            utils.log().info("Cash Discount Values - " + cashDiscountt);
-            TestUtils.cashDiscountTxt = cashDiscountt;
-
-
-        } else {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            TestUtils.subtotalTxt = subtotalValues1;
-            String subTotal1 = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            int subTotal2 = Integer.parseInt(subTotal1);
-            utils.log().info(" Subtotal Values - " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            TestUtils.taxTxt = taxValues1;
-            int taxxxx = (subTotal2 * 8) / 100;
-            TestUtils.MergeTax = String.valueOf(taxxxx);
-            String tax1 = taxValues1.replaceAll("[A-Z$,. ]", "");
-            int tax2 = Integer.parseInt(tax1);
-            utils.log().info(" Tax Values - " + taxValues1);
-
-            /////  Discount VALUES  ///////
-            WebElement discountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String discountValues1 = discountValues.getText();
-            TestUtils.discountTxt = discountValues1;
-            utils.log().info(" Discount Values - " + discountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String totalValues1 = totalValues.getText();
-            TestUtils.totalTxt = totalValues1;
-            utils.log().info(" Total Values - " + totalValues1);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            TestUtils.cashOptionOrderScreen = cashOptionValues1;
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-            int CashDiscountValue = ((subTotal2 + tax2) * 5) / 100;
-            utils.log().info("Cash Discount Value - " + CashDiscountValue);
-            String cashDiscountt = String.valueOf(CashDiscountValue);
-            utils.log().info("Cash Discount Values - " + cashDiscountt);
-            TestUtils.cashDiscountTxt = cashDiscountt;
-
-
-        }
-    }
-
-    public void getMenuValues1() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("Size of Field " + countOfListValues);
-        if (countOfListValues == 5) {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            TestUtils.subtotalTxt1 = subtotalValues1;
-            String subTotal1 = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            int subTotal2 = Integer.parseInt(subTotal1);
-            utils.log().info(" Subtotal Values - " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            TestUtils.taxTxt1 = taxValues1;
-            int taxxxx = (subTotal2 * 8) / 100;
-
-            TestUtils.MergeTax1 = String.valueOf(taxxxx);
-            String tax1 = taxValues1.replaceAll("[A-Z$,. ]", "");
-            int tax2 = Integer.parseInt(tax1);
-            utils.log().info(" Tax Values - " + taxValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String totalValues1 = totalValues.getText();
-            TestUtils.totalTxt1 = totalValues1;
-            utils.log().info(" Total Values - " + totalValues1);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            TestUtils.cashOptionOrderScreen1 = cashOptionValues1;
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-            int CashDiscountValue = ((subTotal2 + tax2) * 5) / 100;
-            utils.log().info("Cash Discount Value - " + CashDiscountValue);
-            String cashDiscountt = String.valueOf(CashDiscountValue);
-            utils.log().info("Cash Discount Values - " + cashDiscountt);
-            TestUtils.cashDiscountTxt1 = cashDiscountt;
-
-
-        } else {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            TestUtils.subtotalTxt1 = subtotalValues1;
-            String subTotal1 = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            int subTotal2 = Integer.parseInt(subTotal1);
-            utils.log().info(" Subtotal Values - " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            TestUtils.taxTxt1 = taxValues1;
-            int taxxxx = (subTotal2 * 8) / 100;
-            TestUtils.MergeTax1 = String.valueOf(taxxxx);
-            String tax1 = taxValues1.replaceAll("[A-Z$,. ]", "");
-            int tax2 = Integer.parseInt(tax1);
-            utils.log().info(" Tax Values - " + taxValues1);
-
-            /////  Discount VALUES  ///////
-            WebElement discountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String discountValues1 = discountValues.getText();
-            TestUtils.discountTxt1 = discountValues1;
-            utils.log().info(" Discount Values - " + discountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String totalValues1 = totalValues.getText();
-            TestUtils.totalTxt1 = totalValues1;
-            utils.log().info(" Total Values - " + totalValues1);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            TestUtils.cashOptionOrderScreen1 = cashOptionValues1;
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-            int CashDiscountValue = ((subTotal2 + tax2) * 5) / 100;
-            String cashDiscountt = String.valueOf(CashDiscountValue);
-            utils.log().info("Cash Discount Values - " + cashDiscountt);
-            TestUtils.cashDiscountTxt1 = cashDiscountt;
-
-        }
-    }
-
-    public void getOrderScreenMenuValues1() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("Size of Field " + countOfListValues);
-
-        /////  SubTotal VALUES  ///////
-        WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subtotalValues1 = subtotalValues.getText();
-        TestUtils.subtotalTxt1 = subtotalValues1;
-        String subTotal1 = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-        int subTotal2 = Integer.parseInt(subTotal1);
-        utils.log().info(" Subtotal Values - " + subtotalValues1);
-
-        /////  TAX VALUES  ///////
-        WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxValues1 = taxValues.getText();
-        TestUtils.taxTxt1 = taxValues1;
-        String tax1 = taxValues1.replaceAll("[A-Z$,. ]", "");
-        int tax2 = Integer.parseInt(tax1);
-        utils.log().info(" Tax Values - " + taxValues1);
-
-        /////  Total VALUES  ///////
-        WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String totalValues1 = totalValues.getText();
-        TestUtils.totalTxt1 = totalValues1;
-        utils.log().info(" Total Values - " + totalValues1);
-
-        /////  Total VALUES  ///////
-        WebElement paidAmount = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String paidAmount11 = paidAmount.getText();
-        TestUtils.paidAmount1 = paidAmount11;
-        utils.log().info(" paidAmount Value - " + paidAmount11);
-    }
-
-    public void getOrderScreenMenuValues() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("Size of Field " + countOfListValues);
-
-        /////  SubTotal VALUES  ///////
-        WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subtotalValues1 = subtotalValues.getText();
-        TestUtils.subtotalTxt = subtotalValues1;
-        String subTotal1 = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-        int subTotal2 = Integer.parseInt(subTotal1);
-        utils.log().info(" Subtotal Values - " + subtotalValues1);
-
-        /////  TAX VALUES  ///////
-        WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxValues1 = taxValues.getText();
-        TestUtils.taxTxt = taxValues1;
-        String tax1 = taxValues1.replaceAll("[A-Z$,. ]", "");
-        int tax2 = Integer.parseInt(tax1);
-        utils.log().info(" Tax Values - " + taxValues1);
-
-        /////  Total VALUES  ///////
-        WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String totalValues1 = totalValues.getText();
-        TestUtils.totalTxt = totalValues1;
-        utils.log().info(" Total Values - " + totalValues1);
-
-        /////  Paid Amount  ///////
-        WebElement paidAmount = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String paidAmount11 = paidAmount.getText();
-        TestUtils.paidAmount = paidAmount11;
-        utils.log().info(" paidAmount Value - " + paidAmount11);
-    }
-
-    public void verifyMenuAfterMergeDone() {
-
-
-        List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        utils.log().info("orderMenu.size() " + orderMenu.size());
-        for (int i = 2; i <= orderMenu.size(); i++) {
-
-
-            WebElement orderMenuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            orderMenuName1[i - 1] = orderMenuName.getText();
-            if (TestUtils.orderMenuName[i - 1].equalsIgnoreCase(orderMenuName1[i - 1])) {
-                TestUtils.orderMenuName[i - 1] = orderMenuName1[i - 1];
-
-                WebElement orderMenuPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-                orderMenuPrize[i - 1] = orderMenuPrize1.getText();
-                TestUtils.orderMenuPrize[i - 1] = orderMenuPrize[i - 1];
-                Assert.assertEquals(TestUtils.orderMenuName[i - 1], orderMenuName1[i - 1]);
-                Assert.assertEquals(TestUtils.orderMenuPrize[i - 1], orderMenuPrize[i - 1]);
-                utils.log().info("Order Screen menu SAME with Seat 1 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
-                try {
-                    List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + (i) + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
-                    for (int m = 1; m <= modifier.size(); m++) {
-                        WebElement modifier1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
-                        modifieR[m] = modifier1.getText();
-                        // TestUtils.modifier[m] = modifieR[m];
-                        WebElement modifierPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[3]"));
-                        modifierPrize[m] = modifierPrize1.getText();
-                        //   TestUtils.modifierPrize[m] = modifierPrize[m];
-                        Assert.assertEquals(TestUtils.modifier[m], modifieR[m]);
-                        Assert.assertEquals(TestUtils.modifierPrize[m], modifierPrize[m]);
-                        utils.log().info("Seat 1 Modifier - " + modifieR[m] + " Prize - " + modifierPrize[m]);
-                    }
-
-                } catch (Exception g) {
-
-                }
-            } else if (TestUtils.orderMenuName2[i - 1].equalsIgnoreCase(orderMenuName1[i - 1])) {
-                TestUtils.orderMenuName2[i - 1] = orderMenuName1[i - 1];
-
-                WebElement orderMenuPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-                orderMenuPrize[i - 1] = orderMenuPrize1.getText();
-                TestUtils.orderMenuPrize2[i - 1] = orderMenuPrize[i - 1];
-                Assert.assertEquals(TestUtils.orderMenuName2[i - 1], orderMenuName1[i - 1]);
-                Assert.assertEquals(TestUtils.orderMenuPrize2[i - 1], orderMenuPrize[i - 1]);
-                utils.log().info("Order Screen menu SAME with SEAT 2 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
-                try {
-                    List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + (i) + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
-                    for (int m = 1; m <= modifier.size(); m++) {
-                        WebElement modifier1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
-                        modifieR2[m] = modifier1.getText();
-                        // TestUtils.modifier[m] = modifieR[m];
-                        WebElement modifierPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[3]"));
-                        modifierPrize2[m] = modifierPrize1.getText();
-                        //   TestUtils.modifierPrize[m] = modifierPrize[m];
-                        Assert.assertEquals(TestUtils.modifier2[m], modifieR2[m]);
-                        Assert.assertEquals(TestUtils.modifierPrize2[m], modifierPrize2[m]);
-                        utils.log().info("Seat 2 Modifier - " + modifieR2[m] + " Prize - " + modifierPrize2[m]);
-                    }
-
-                } catch (Exception g) {
-
-                }
-            } else {
-                utils.log().info("Menu is NOT Merged");
-            }
-        }
-    }
-
-    public void verifyTheMenuPrizeAfterMergeDoneForCheckBasedAmount() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("countOfListValues - " + countOfListValues);
-        if (countOfListValues == 5) {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotalValueTxt = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            String subTotal = (TestUtils.subtotalTxt).replaceAll("[A-Z$,. ]", "");
-            int subTotalValue = Integer.parseInt(subTotal);
-            String subTotal1 = (TestUtils.subtotalTxt1).replaceAll("[A-Z$., ]", "");
-            int subTotalValue1 = Integer.parseInt(subTotal1);
-            int subTotalFinalValue = subTotalValue + subTotalValue1;
-            String subTotalFinalValue1 = String.valueOf(subTotalFinalValue);
-            Assert.assertEquals(subTotalValueTxt, subTotalFinalValue1);
-            utils.log().info(" Subtotal Values same  " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String taxValues11 = taxValues1.replaceAll("[A-Z$., ]", "");
-            String tax = (TestUtils.taxTxt).replaceAll("[A-Z$,. ]", "");
-            int taxValuee = Integer.parseInt(tax);
-            String tax1 = (TestUtils.taxTxt1).replaceAll("[A-Z$,. ]", "");
-            int taxValuee1 = Integer.parseInt(tax1);
-            int taxValueees = taxValuee + taxValuee1;
-//            BigDecimal taxx=new BigDecimal(taxValueees).setScale(2, RoundingMode.HALF_UP);
-//            double a=taxx.doubleValue();
-            String taxValueees1 = String.valueOf(taxValueees);
-            Assert.assertEquals(taxValues11, taxValueees1);
-            utils.log().info(" Tax Values same - " + taxValues1);
-
-
-//            /////  Cash Discount VALUES  ///////
-//            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
-//            String cashDiscountValues1 = cashDiscountValues.getText();
-//            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z,. ]", "");
-//            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-////            utils.log().info("cashDiscount1 - "+cashDiscount1);
-//            int cashDiscount = Integer.parseInt(TestUtils.cashDiscountTxt);
-//            Assert.assertEquals(cashDiscount, cashDiscount1);
-//            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String totalValues1 = totalValues.getText();
-            String totalValuess1 = totalValues1.replaceAll("[A-Z$,. ]", "");
-            String total = TestUtils.totalTxt;
-            String totall = total.replaceAll("[A-Z$,. ]", "");
-            int totalValue1 = Integer.parseInt(totall);
-            String total1 = TestUtils.totalTxt1;
-            String total2 = total1.replaceAll("[A-Z$., ]", "");
-            int totalValue2 = Integer.parseInt(total2);
-            int totalValueTotal = totalValue1 + totalValue2 - 1000;
-            String totalValueTotalTxt = String.valueOf(totalValueTotal);
-            Assert.assertEquals(totalValuess1, totalValueTotalTxt);
-            utils.log().info(" Total Values - " + totalValues1);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]", "");
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-            int cashOptionValue1 = cashOptionTxt1 + cashOptionTxtt2 - 1000;
-            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-        } else {
-
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotalValueTxt = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            String subTotal = (TestUtils.subtotalTxt).replaceAll("[A-Z$,. ]", "");
-            int subTotalValue = Integer.parseInt(subTotal);
-            String subTotal1 = (TestUtils.subtotalTxt1).replaceAll("[A-Z$., ]", "");
-            int subTotalValue1 = Integer.parseInt(subTotal1);
-            int subTotalFinalValue = subTotalValue + subTotalValue1;
-            String subTotalFinalValue1 = String.valueOf(subTotalFinalValue);
-            Assert.assertEquals(subTotalValueTxt, subTotalFinalValue1);
-            utils.log().info(" Subtotal Values same  " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues111 = taxValues.getText();
-            String taxValues1111 = taxValues111.replaceAll("[A-Z$., ]", "");
-            DecimalFormat df =new DecimalFormat("0.00");
-            String taxValues11 = df.format(Double.parseDouble(taxValues1111));
-            String tax = (TestUtils.MergeTax).replaceAll("[A-Z$,. ]", "");
-            double taxx = Double.parseDouble(tax);
-//            DecimalFormat df1 =new DecimalFormat("0.00");
-//           double taxxx = Double.parseDouble(df1.format(taxx));
-            utils.log().info("taxValuee - " + taxx);
-            String tax1 = (TestUtils.MergeTax1).replaceAll("[A-Z$,. ]", "");
-            double taxx1 = Double.parseDouble(tax1);
-//            DecimalFormat df2 =new DecimalFormat("0.00");
-//            double taxxx1 = Double.parseDouble(df2.format(taxx1));
-            utils.log().info("taxValuee1 - " + taxx1);
-            double taxValueees = taxx + taxx1;
-            DecimalFormat df3 =new DecimalFormat("0.00");
-            String taxValueees1 = String.valueOf(df3.format(taxValueees));
-            Assert.assertEquals(taxValues11, taxValueees1);
-            utils.log().info(" Tax Values same - " + taxValues111);
-
-            /////  Discount VALUES  ///////
-            WebElement discountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String discountValues1 = discountValues.getText();
-            String discountValuesTxt1 = discountValues1.replaceAll("[A-Z$,. ]", "");
-            String discount = TestUtils.discountTxt;
-            String discount1 = discount.replaceAll("[A-Z$,. ]", "");
-            int discountValue1 = Integer.parseInt(discount1);
-            String discount2 = TestUtils.discountTxt1;
-            String discount22 = discount2.replaceAll("[A-Z$,. ]", "");
-            int discountValue2 = Integer.parseInt(discount22);
-            // int discountWholeValue = discountValue1 + discountValue2;
-            String discountWholeValueTxt = String.valueOf(discountValue1);
-            Assert.assertEquals(discountValuesTxt1, discountWholeValueTxt);
-            utils.log().info(" Discount Values Same - " + discountValuesTxt1);
-
-            /////  Cash Discount VALUES  ///////
-//            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-//            String cashDiscountValues1 = cashDiscountValues.getText();
-//            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z,. ]", "");
-//            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-//            String cashDiscount2 = TestUtils.cashDiscountTxt;
-//            int cashDiscount = Integer.parseInt(cashDiscount2);
-//            Assert.assertEquals(cashDiscount, cashDiscount1);
-//            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            // WebElement totalValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]", "");
-            int cashOptionValueAmount = Integer.parseInt(cashOptionValuesTxt);
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-            String cashOptionTxt11 = cashOption.replaceAll("[A-Z$. ]", "");
-            String cashOptionTxt111 = cashOptionTxt11.replaceAll("[,]", ".");
-            double cashOptionDouble = Double.parseDouble(cashOptionTxt111);
-
-            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-            String cashOptionTxt22 = cashOption2.replaceAll("[A-Z$. ]", "");
-            String cashOptionTxt222 = cashOptionTxt22.replaceAll("[,]", ".");
-            double cashOptionDouble1 = Double.parseDouble(cashOptionTxt222);
-            double cashOptionTotal = cashOptionDouble + cashOptionDouble1 + 10.00;
-
-//            BigDecimal dd=new BigDecimal(cashOptionTotal).setScale(2, RoundingMode.HALF_UP);
-//            double a1=dd.doubleValue();
-            //  utils.log().info("Double CAsh Option Value - "+cashOptionTotal);
-            int cashOptionValue1 = cashOptionTxt1 + cashOptionTxtt2 + 1000;
-
-            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String totalValues1 = totalValues.getText();
-            String totalValuess1 = totalValues1.replaceAll("[A-Z$. ]", "");
-            String totalValuess11 = totalValuess1.replaceAll("[,]", ".");
-            double totalValues11 = Double.parseDouble(totalValuess11);
-            String totalValues11Txt = String.valueOf(totalValues11);
-            //  double totalValues22 = ((a*5)/100)+a;
-            BigDecimal dd1 = new BigDecimal(totalValues11Txt).setScale(2, RoundingMode.HALF_UP);
-            double a1 = dd1.doubleValue();
-            String totalValues22Txt = String.valueOf(a1);
-            Assert.assertEquals(totalValues11Txt, totalValues22Txt);
-
-
-//            int totalValuess2 = Integer.parseInt(totalValuess1) ;
-//            String totalValuess21 = String.valueOf(totalValuess2);
-//           utils.log().info("totalValuess21 "+totalValuess21);
-//            int AfterCashOptionTotal = (cashOptionValueAmount*5)/100;
-//            int totalValuesDone = cashOptionValueAmount+AfterCashOptionTotal;
-//
-//            String totalValueDonee1 = String.valueOf(totalValuesDone);
-//            utils.log().info("totalValueDonee1 "+totalValueDonee1);
-//            Assert.assertEquals(totalValueDonee1,totalValuess21);
-
-//            String totalValuess3 = String.valueOf(totalValuess2);
-//            String total = TestUtils.totalTxt;
-//            String totall = total.replaceAll("[A-Z$,. ]", "");
-//            int totalValue1 = Integer.parseInt(totall);
-//            String total1 = TestUtils.totalTxt1;
-//            String total2 = total1.replaceAll("[A-Z$., ]", "");
-//            int totalValue2 = Integer.parseInt(total2);
-//            int totalValueTotal = totalValue1 + totalValue2;
-//            String totalValueTotalTxt = String.valueOf(totalValuesDone);
-//            Assert.assertEquals(totalValuess3, totalValueTotalTxt);
-            utils.log().info("Total Values - " + totalValues11Txt);
-
-        }
-    }
-
-    public void verifyTheMenuPrizeAfterMergeDone() {
-
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("countOfListValues - " + countOfListValues);
-        if (countOfListValues == 5) {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotalValueTxt = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            String subTotal = (TestUtils.subtotalTxt).replaceAll("[A-Z$,. ]", "");
-            int subTotalValue = Integer.parseInt(subTotal);
-            String subTotal1 = (TestUtils.subtotalTxt1).replaceAll("[A-Z$., ]", "");
-            int subTotalValue1 = Integer.parseInt(subTotal1);
-            int subTotalFinalValue = subTotalValue + subTotalValue1;
-            String subTotalFinalValue1 = String.valueOf(subTotalFinalValue);
-            Assert.assertEquals(subTotalValueTxt, subTotalFinalValue1);
-            utils.log().info(" Subtotal Values same  " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String taxValues11 = taxValues1.replaceAll("[A-Z$., ]", "");
-            String tax = (TestUtils.MergeTax).replaceAll("[A-Z$,. ]", "");
-            int taxValuee = Integer.parseInt(tax);
-            String tax1 = (TestUtils.MergeTax1).replaceAll("[A-Z$,. ]", "");
-            int taxValuee1 = Integer.parseInt(tax1);
-            int taxValueees = taxValuee + taxValuee1;
-            String taxValueees1 = String.valueOf(taxValueees);
-            Assert.assertEquals(taxValues11, taxValueees1);
-            utils.log().info(" Tax Values same - " + taxValues1);
-
-
-//            /////  Cash Discount VALUES  ///////
-//            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
-//            String cashDiscountValues1 = cashDiscountValues.getText();
-//            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z,. ]", "");
-//            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-////            utils.log().info("cashDiscount1 - "+cashDiscount1);
-//            int cashDiscount = Integer.parseInt(TestUtils.cashDiscountTxt);
-//            Assert.assertEquals(cashDiscount, cashDiscount1);
-//            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String totalValues1 = totalValues.getText();
-            String totalValuess1 = totalValues1.replaceAll("[A-Z$,. ]", "");
-            String total = TestUtils.totalTxt;
-            String totall = total.replaceAll("[A-Z$,. ]", "");
-            int totalValue1 = Integer.parseInt(totall);
-            String total1 = TestUtils.totalTxt1;
-            String total2 = total1.replaceAll("[A-Z$., ]", "");
-            int totalValue2 = Integer.parseInt(total2);
-            // int totalValueTotal = totalValue1;
-            String totalValueTotalTxt = String.valueOf(totalValue2);
-            Assert.assertEquals(totalValuess1, totalValueTotalTxt);
-            utils.log().info(" Total Values - " + totalValues1);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]", "");
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-            int cashOptionValue1 = cashOptionTxt1 + cashOptionTxtt2;
-            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-        } else {
-
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotalValueTxt = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            String subTotal = (TestUtils.subtotalTxt).replaceAll("[A-Z$,. ]", "");
-            int subTotalValue = Integer.parseInt(subTotal);
-            String subTotal1 = (TestUtils.subtotalTxt1).replaceAll("[A-Z$., ]", "");
-            int subTotalValue1 = Integer.parseInt(subTotal1);
-            int subTotalFinalValue = subTotalValue + subTotalValue1;
-            String subTotalFinalValue1 = String.valueOf(subTotalFinalValue);
-            Assert.assertEquals(subTotalValueTxt, subTotalFinalValue1);
-            utils.log().info(" Subtotal Values same  " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String taxValues11 = taxValues1.replaceAll("[A-Z$., ]", "");
-            String tax = (TestUtils.taxTxt).replaceAll("[A-Z$,. ]", "");
-            int taxValuee = Integer.parseInt(tax);
-            String tax1 = (TestUtils.taxTxt1).replaceAll("[A-Z$,. ]", "");
-            int taxValuee1 = Integer.parseInt(tax1);
-            int taxValueees = taxValuee + taxValuee1;
-            String taxValueees1 = String.valueOf(taxValueees);
-            Assert.assertEquals(taxValues11, taxValueees1);
-            utils.log().info(" Tax Values same - " + taxValues1);
-
-            /////  Discount VALUES  ///////
-            WebElement discountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String discountValues1 = discountValues.getText();
-            String discountValuesTxt1 = discountValues1.replaceAll("[A-Z$,. ]", "");
-            String discount = TestUtils.discountTxt;
-            String discount1 = discount.replaceAll("[A-Z$,. ]", "");
-            int discountValue1 = Integer.parseInt(discount1);
-            String discount2 = TestUtils.discountTxt1;
-            String discount22 = discount2.replaceAll("[A-Z$,. ]", "");
-            int discountValue2 = Integer.parseInt(discount22);
-            int discountWholeValue = discountValue1 + discountValue2;
-            String discountWholeValueTxt = String.valueOf(discountWholeValue);
-            Assert.assertEquals(discountValuesTxt1, discountWholeValueTxt);
-            utils.log().info(" Discount Values Same - " + discountValuesTxt1);
-
-            /////  Cash Discount VALUES  ///////
-//            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-//            String cashDiscountValues1 = cashDiscountValues.getText();
-//            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z,. ]", "");
-//            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-//            String cashDiscount2 = TestUtils.cashDiscountTxt;
-//            int cashDiscount = Integer.parseInt(cashDiscount2);
-//            Assert.assertEquals(cashDiscount, cashDiscount1);
-//            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            // WebElement totalValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-
-
-            /////  Cash Price VALUES  ///////
-//            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]");
-//            String cashOptionValues1 = cashOptionValues.getText();
-//            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]","");
-//            String cashOption = TestUtils.cashOptionOrderScreen;
-//            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]","");
-//            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-//            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-//            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]","");
-//            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-//            int cashOptionValue1 = cashOptionTxt1+cashOptionTxtt2;
-//            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-//            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-//            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-//
-//            /////  Total VALUES  ///////
-//            WebElement totalValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-//            String totalValues1 = totalValues.getText();
-//            String totalValuess1 = totalValues1.replaceAll("[A-Z$,. ]","");
-//            String total = TestUtils.totalTxt;
-//            String totall = total.replaceAll("[A-Z$,. ]","");
-//            int totalValue1 = Integer.parseInt(totall);
-//            String total1 = TestUtils.totalTxt1;
-//            String total2 = total1.replaceAll("[A-Z$., ]","");
-//            int totalValue2 = Integer.parseInt(total2);
-//            int totalValueTotal = totalValue1+totalValue2;
-//            String totalValueTotalTxt = String.valueOf(totalValueTotal);
-//            Assert.assertEquals(totalValuess1, totalValueTotalTxt);
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]", "");
-            int cashOptionValueAmount = Integer.parseInt(cashOptionValuesTxt);
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-            String cashOptionTxt11 = cashOption.replaceAll("[A-Z$. ]", "");
-            String cashOptionTxt111 = cashOptionTxt11.replaceAll("[,]", "");
-            double cashOptionDouble = Double.parseDouble(cashOptionTxt111);
-
-            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-            String cashOptionTxt22 = cashOption2.replaceAll("[A-Z$. ]", "");
-            String cashOptionTxt222 = cashOptionTxt22.replaceAll("[,]", "");
-            double cashOptionDouble1 = Double.parseDouble(cashOptionTxt222);
-            double cashOptionTotal = cashOptionDouble + cashOptionDouble1;
-
-            BigDecimal dd = new BigDecimal(cashOptionTotal).setScale(2, RoundingMode.HALF_UP);
-            double a = dd.doubleValue();
-            //  utils.log().info("Double CAsh Option Value - "+cashOptionTotal);
-            int cashOptionValue1 = cashOptionTxt1 + cashOptionTxtt2;
-
-            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String totalValues1 = totalValues.getText();
-            String totalValuess1 = totalValues1.replaceAll("[A-Z$. ]", "");
-            String totalValuess11 = totalValuess1.replaceAll("[,]", "");
-            double totalValues11 = Double.parseDouble(totalValuess11);
-            String totalValues11Txt = String.valueOf((int) Math.round(totalValues11));
-
-            double totalValues22 = ((a * 5) / 100) + a;
-//            BigDecimal dd1=new BigDecimal(totalValues22).setScale(2, RoundingMode.HALF_UP);
-//            double a1=dd1.doubleValue();
-            String totalValues22Txt = String.valueOf((int) Math.round(totalValues22));
-            Assert.assertEquals(totalValues11Txt, totalValues22Txt);
-            utils.log().info("Total Values - " + totalValues11Txt);
-
-        }
-    }
-
-
-    public void verifyTheMenuPrizeAfterMergeDoneForBarTabOnly() {
-
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("countOfListValues - " + countOfListValues);
-        if (countOfListValues == 5) {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotalValueTxt = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            String subTotal = (TestUtils.subtotalTxt).replaceAll("[A-Z$,. ]", "");
-            int subTotalValue = Integer.parseInt(subTotal);
-            String subTotal1 = (TestUtils.subtotalTxt1).replaceAll("[A-Z$., ]", "");
-            int subTotalValue1 = Integer.parseInt(subTotal1);
-            int subTotalFinalValue = subTotalValue + subTotalValue1;
-            String subTotalFinalValue1 = String.valueOf(subTotalFinalValue);
-            Assert.assertEquals(subTotalValueTxt, subTotalFinalValue1);
-            utils.log().info(" Subtotal Values same  " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String taxValues11 = taxValues1.replaceAll("[A-Z$., ]", "");
-            String tax = (TestUtils.taxTxt).replaceAll("[A-Z$,. ]", "");
-            int taxValuee = Integer.parseInt(tax);
-            utils.log().info("taxValuee - " + taxValuee);
-            String tax1 = (TestUtils.taxTxt1).replaceAll("[A-Z$,. ]", "");
-            int taxValuee1 = Integer.parseInt(tax1);
-            utils.log().info("taxValuee 1- " + taxValuee1);
-            int taxValueees = taxValuee + taxValuee1;
-            String taxValueees1 = String.valueOf(taxValueees);
-            Assert.assertEquals(taxValues11, taxValueees1);
-            utils.log().info(" Tax Values same - " + taxValues1);
-
-
-//            /////  Cash Discount VALUES  ///////
-//            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]");
-//            String cashDiscountValues1 = cashDiscountValues.getText();
-//            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z,. ]", "");
-//            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-////            utils.log().info("cashDiscount1 - "+cashDiscount1);
-//            int cashDiscount = Integer.parseInt(TestUtils.cashDiscountTxt);
-//            Assert.assertEquals(cashDiscount, cashDiscount1);
-//            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String totalValues1 = totalValues.getText();
-            String totalValuess1 = totalValues1.replaceAll("[A-Z$,. ]", "");
-            String total = TestUtils.totalTxt;
-            String totall = total.replaceAll("[A-Z$,. ]", "");
-            int totalValue1 = Integer.parseInt(totall);
-            String total1 = TestUtils.totalTxt1;
-            String total2 = total1.replaceAll("[A-Z$., ]", "");
-            int totalValue2 = Integer.parseInt(total2);
-            int totalValueTotal = totalValue1 + totalValue2;
-            String totalValueTotalTxt = String.valueOf(totalValueTotal);
-            Assert.assertEquals(totalValuess1, totalValueTotalTxt);
-            utils.log().info(" Total Values - " + totalValues1);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]", "");
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-            int cashOptionValue1 = cashOptionTxt1 + cashOptionTxtt2;
-            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-        } else {
-
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotalValueTxt = subtotalValues1.replaceAll("[A-Z$,. ]", "");
-            String subTotal = (TestUtils.subtotalTxt).replaceAll("[A-Z$,. ]", "");
-            int subTotalValue = Integer.parseInt(subTotal);
-            String subTotal1 = (TestUtils.subtotalTxt1).replaceAll("[A-Z$., ]", "");
-            int subTotalValue1 = Integer.parseInt(subTotal1);
-            int subTotalFinalValue = subTotalValue + subTotalValue1;
-            String subTotalFinalValue1 = String.valueOf(subTotalFinalValue);
-            Assert.assertEquals(subTotalValueTxt, subTotalFinalValue1);
-            utils.log().info(" Subtotal Values same  " + subtotalValues1);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String taxValues11 = taxValues1.replaceAll("[A-Z$., ]", "");
-            String tax = (TestUtils.taxTxt).replaceAll("[A-Z$,. ]", "");
-            int taxValuee = Integer.parseInt(tax);
-            String tax1 = (TestUtils.taxTxt1).replaceAll("[A-Z$,. ]", "");
-            int taxValuee1 = Integer.parseInt(tax1);
-            int taxValueees = taxValuee + taxValuee1;
-            String taxValueees1 = String.valueOf(taxValueees);
-            Assert.assertEquals(taxValues11, taxValueees1);
-            utils.log().info(" Tax Values same - " + taxValues1);
-
-            /////  Discount VALUES  ///////
-            WebElement discountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String discountValues1 = discountValues.getText();
-            String discountValuesTxt1 = discountValues1.replaceAll("[A-Z$,. ]", "");
-            String discount = TestUtils.discountTxt;
-            String discount1 = discount.replaceAll("[A-Z$,. ]", "");
-            int discountValue1 = Integer.parseInt(discount1);
-            String discount2 = TestUtils.discountTxt1;
-            String discount22 = discount2.replaceAll("[A-Z$,. ]", "");
-            int discountValue2 = Integer.parseInt(discount22);
-            int discountWholeValue = discountValue1 + discountValue2;
-            String discountWholeValueTxt = String.valueOf(discountWholeValue);
-            Assert.assertEquals(discountValuesTxt1, discountWholeValueTxt);
-            utils.log().info(" Discount Values Same - " + discountValuesTxt1);
-
-            /////  Cash Discount VALUES  ///////
-//            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-//            String cashDiscountValues1 = cashDiscountValues.getText();
-//            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z,. ]", "");
-//            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-//            String cashDiscount2 = TestUtils.cashDiscountTxt;
-//            int cashDiscount = Integer.parseInt(cashDiscount2);
-//            Assert.assertEquals(cashDiscount, cashDiscount1);
-//            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            // WebElement totalValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-
-
-            /////  Cash Price VALUES  ///////
-//            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]");
-//            String cashOptionValues1 = cashOptionValues.getText();
-//            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]","");
-//            String cashOption = TestUtils.cashOptionOrderScreen;
-//            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]","");
-//            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-//            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-//            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]","");
-//            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-//            int cashOptionValue1 = cashOptionTxt1+cashOptionTxtt2;
-//            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-//            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-//            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-//
-//            /////  Total VALUES  ///////
-//            WebElement totalValues = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]");
-//            String totalValues1 = totalValues.getText();
-//            String totalValuess1 = totalValues1.replaceAll("[A-Z$,. ]","");
-//            String total = TestUtils.totalTxt;
-//            String totall = total.replaceAll("[A-Z$,. ]","");
-//            int totalValue1 = Integer.parseInt(totall);
-//            String total1 = TestUtils.totalTxt1;
-//            String total2 = total1.replaceAll("[A-Z$., ]","");
-//            int totalValue2 = Integer.parseInt(total2);
-//            int totalValueTotal = totalValue1+totalValue2;
-//            String totalValueTotalTxt = String.valueOf(totalValueTotal);
-//            Assert.assertEquals(totalValuess1, totalValueTotalTxt);
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOptionValuesTxt = cashOptionValues1.replaceAll("[A-Z$,. ]", "");
-            int cashOptionValueAmount = Integer.parseInt(cashOptionValuesTxt);
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            String cashOptionTxt = cashOption.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxt1 = Integer.parseInt(cashOptionTxt);
-            String cashOptionTxt11 = cashOption.replaceAll("[A-Z$. ]", "");
-            String cashOptionTxt111 = cashOptionTxt11.replaceAll("[,]", ".");
-            double cashOptionDouble = Double.parseDouble(cashOptionTxt111);
-
-            String cashOption2 = TestUtils.cashOptionOrderScreen1;
-            String cashOptionTxt2 = cashOption2.replaceAll("[A-Z$,. ]", "");
-            int cashOptionTxtt2 = Integer.parseInt(cashOptionTxt2);
-            String cashOptionTxt22 = cashOption2.replaceAll("[A-Z$. ]", "");
-            String cashOptionTxt222 = cashOptionTxt22.replaceAll("[,]", ".");
-            double cashOptionDouble1 = Double.parseDouble(cashOptionTxt222);
-            double cashOptionTotal = cashOptionDouble + cashOptionDouble1;
-
-            BigDecimal dd = new BigDecimal(cashOptionTotal).setScale(2, RoundingMode.HALF_UP);
-            double a = dd.doubleValue();
-            //  utils.log().info("Double CAsh Option Value - "+cashOptionTotal);
-            int cashOptionValue1 = cashOptionTxt1 + cashOptionTxtt2;
-
-            String cashOptionValue2 = String.valueOf(cashOptionValue1);
-            Assert.assertEquals(cashOptionValuesTxt, cashOptionValue2);
-            utils.log().info(" Cash Price Values - " + cashOptionValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String totalValues1 = totalValues.getText();
-            String totalValuess1 = totalValues1.replaceAll("[A-Z$. ]", "");
-            String totalValuess11 = totalValuess1.replaceAll("[,]", ".");
-            double totalValues11 = Double.parseDouble(totalValuess11);
-            String totalValues11Txt = String.valueOf(totalValues11);
-            double totalValues22 = ((a * 5) / 100) + a;
-            BigDecimal dd1 = new BigDecimal(totalValues22).setScale(2, RoundingMode.HALF_UP);
-            double a1 = dd1.doubleValue();
-            String totalValues22Txt = String.valueOf(a1);
-            Assert.assertEquals(totalValues11Txt, totalValues22Txt);
-
-
-            utils.log().info("Total Values - " + totalValues11Txt);
-
-        }
-    }
-
-    public void validateTheMenuValueInOrderScreen() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-        List<WebElement> listOfValues =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
-        int countOfListValues = listOfValues.size();
-        utils.log().info("countOfListValues - " + countOfListValues);
-        if (countOfListValues == 6) {
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotal = TestUtils.subtotalTxt;
-            Assert.assertEquals(subTotal, subtotalValues1);
-            utils.log().info(" Subtotal Values same  " + subTotal);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String tax = TestUtils.taxTxt;
-            Assert.assertEquals(tax, taxValues1);
-            utils.log().info(" Tax Values same - " + tax);
-
-
-            /////  Cash Discount VALUES  ///////
-            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String cashDiscountValues1 = cashDiscountValues.getText();
-            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z$,. ]", "");
-            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-//            utils.log().info("cashDiscount1 - "+cashDiscount1);
-            int cashDiscount = Integer.parseInt(TestUtils.cashDiscountTxt);
-            Assert.assertEquals(cashDiscount, cashDiscount1);
-            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String totalValues1 = totalValues.getText();
-            String total = TestUtils.cashOptionOrderScreen;
-            Assert.assertEquals(totalValues1, total);
-            utils.log().info(" Total Values - " + total);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[6]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            Assert.assertEquals(cashOption, cashOptionValues1);
-            utils.log().info(" Cash Price Values - " + cashOption);
-
-        } else {
-
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotal = TestUtils.subtotalTxt;
-            Assert.assertEquals(subTotal, subtotalValues1);
-            utils.log().info(" Subtotal Values Same  " + subTotal);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String tax = TestUtils.taxTxt;
-            Assert.assertEquals(tax, taxValues1);
-            utils.log().info(" Tax Values Same - " + tax);
-
-            /////  Discount VALUES  ///////
-            WebElement discountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String discountValues1 = discountValues.getText();
-            String discount = TestUtils.discountTxt;
-            Assert.assertEquals(discount, discountValues1);
-            utils.log().info(" Discount Values Same - " + discountValues1);
-
-            /////  Cash Discount VALUES  ///////
-            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String cashDiscountValues1 = cashDiscountValues.getText();
-            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z$,. ]", "");
-            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-            String cashDiscount2 = TestUtils.cashDiscountTxt;
-            int cashDiscount = Integer.parseInt(cashDiscount2);
-            Assert.assertEquals(cashDiscount, cashDiscount1);
-            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-            String totalValues1 = totalValues.getText();
-            String total = TestUtils.totalTxt;
-            Assert.assertEquals(totalValues1, total);
-            utils.log().info(" Total Values Same - " + total);
-
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[7]"));
-            String cashOptionValues1 = cashOptionValues.getText();
-            String cashOption = TestUtils.cashOptionOrderScreen;
-            Assert.assertEquals(cashOption, cashOptionValues1);
-            utils.log().info(" Cash Price Values Same- " + cashOption);
-
-        }
-    }
-    public void validateTheMenuValueInOrderScreen2() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-        /////  SubTotal VALUES  ///////
-        WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        String subtotalValues1 = subtotalValues.getText();
-        String subTotal = TestUtils.subtotalTxt;
-        Assert.assertEquals(subTotal, subtotalValues1);
-        utils.log().info(" Subtotal Values same  " + subTotal);
-
-        /////  TAX VALUES  ///////
-        WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        String taxValues1 = taxValues.getText();
-        String tax = TestUtils.taxTxt;
-        Assert.assertEquals(tax, taxValues1);
-        utils.log().info(" Tax Values same - " + tax);
-
-
-        /////  Cash Discount VALUES  ///////
-        WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        String cashDiscountValues1 = cashDiscountValues.getText();
-        String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z$,. ]", "");
-        int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-//            utils.log().info("cashDiscount1 - "+cashDiscount1);
-        int cashDiscount = Integer.parseInt(TestUtils.gratutiy.replaceAll("[$. ]",""));
-        Assert.assertEquals(cashDiscount, cashDiscount1);
-        utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-        /////  Total VALUES  ///////
-        WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-        String totalValues1 = totalValues.getText().replaceAll("[$ ]","");
-        String total = TestUtils.totalTxt.replaceAll("[$ ]","");
-        Assert.assertEquals(totalValues1, total);
-        utils.log().info(" Total Values - " + total);
-
-        /////  Cash Price VALUES  ///////
-        WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-        String cashOptionValues1 = cashOptionValues.getText().replaceAll("[$ ]","");
-        String cashOption = TestUtils.totalTxt1.replaceAll("[$ ]","");
-        Assert.assertEquals(cashOption, cashOptionValues1);
-        utils.log().info(" Cash Price Values - " + cashOption);
-
-    }
-    public void validateTheMenuValueInOrderScreen1() {
-        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-
-            /////  SubTotal VALUES  ///////
-            WebElement subtotalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-            String subtotalValues1 = subtotalValues.getText();
-            String subTotal = TestUtils.subtotalTxt;
-            Assert.assertEquals(subTotal, subtotalValues1);
-            utils.log().info(" Subtotal Values same  " + subTotal);
-
-            /////  TAX VALUES  ///////
-            WebElement taxValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-            String taxValues1 = taxValues.getText();
-            String tax = TestUtils.taxTxt;
-            Assert.assertEquals(tax, taxValues1);
-            utils.log().info(" Tax Values same - " + tax);
-
-
-            /////  Cash Discount VALUES  ///////
-            WebElement cashDiscountValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-            String cashDiscountValues1 = cashDiscountValues.getText();
-            String cashDiscountValues2 = cashDiscountValues1.replaceAll("[A-Z$,. ]", "");
-            int cashDiscount1 = Integer.parseInt(cashDiscountValues2);
-//            utils.log().info("cashDiscount1 - "+cashDiscount1);
-            int cashDiscount = Integer.parseInt(TestUtils.totalTxt.replaceAll("[$. ]",""));
-            Assert.assertEquals(cashDiscount, cashDiscount1);
-            utils.log().info(" Cash Discount Values Same - " + cashDiscountValues1);
-
-            /////  Total VALUES  ///////
-            WebElement totalValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
-            String totalValues1 = totalValues.getText().replaceAll("[$ ]","");
-            String total = TestUtils.totalTxt1.replaceAll("[$ ]","");
-            Assert.assertEquals(totalValues1, total);
-            utils.log().info(" Total Values - " + total);
-
-            /////  Cash Price VALUES  ///////
-            WebElement cashOptionValues = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[5]"));
-            String cashOptionValues1 = cashOptionValues.getText().replaceAll("[$ ]","");
-            String cashOption = TestUtils.totalTxt1.replaceAll("[$ ]","");
-            Assert.assertEquals(cashOption, cashOptionValues1);
-            utils.log().info(" Cash Price Values - " + cashOption);
-
-
-    }
-
-    public String seatNumber = " ";
-
-    public String selectMenuForDineInForSplitCheck(String cate) {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("2"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-            /*** Random Select Category ***/
-
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-//            List<WebElement> categories =  driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
-//            int cateSize = categories.size();
-//            utils.log().info("Category Available count in this Store - " + cateSize);
-//
-//            for (int m = 1; m <= 1; m++) {
-//                itemToSelect3 = rand.nextInt(cateSize);
-//
-//                if (itemToSelect3 == 0) {
-//                    itemToSelect3 = 1;
-//                }
-//
-//                WebElement categoryName = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect3 + "]/XCUIElementTypeStaticText[1]");
-//                String categoryNameTxt = categoryName.getText();
-//                elementClick(categoryName, "Category place - " + itemToSelect3 + " Selected Category - " + categoryNameTxt);
-
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-            //  utils.log().info(tableNumber+" - Table Number");
-            ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-
-                        WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        utils.log().info(menu.getText());
-                        elementClick(menu, "Tapped Menu");
-                        try {
-                            WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if ((mainModi.isDisplayed())) {
-                                String mainModifier = mainModi.getText();
-                                elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                                try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                    WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    if (remainingModi.isDisplayed()) {
-                                        String SubModifier1 = subModi1.getText();
-                                        elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                        String SubModifier2 = subModi2.getText();
-                                        elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                        String SubModifier3 = subModi3.getText();
-                                        elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                        elementClick(doneButton, "Tapped Done");
-
-                                    } else {
-
-                                    }
-                                } catch (Exception h) {
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-                            } else {
-
-                            }
-
-                        } catch (Exception x) {
-                            try {
-
-
-                                //  utils.log().info(size2.getText());
-                                WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String data = size1.getText();
-                                WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                                if (size2.isDisplayed()) {
-                                    elementClick(size1, data + " - selected");
-                                    WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                    String mainModi = mainModi1.getText();
-                                    elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                    elementClick(doneButton, "Tapped Done");
-                                } else {
-                                    WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                    String mini = minimum.getText();
-                                    utils.log().info(mini + " - Additional Modifiers ");
-                                    //             if (find(minimum, 2)) {
-                                    WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                    String modiname = addMeats.getText();
-                                    elementClick(addMeats, "Modifier selected - " + modiname);
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-
-                                //          }
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            } catch (Exception v) {
-
-                            }
-                        }
-
-
-                    }
-                }
-                // elementClick(finishOrderBtn, "Finish Button");
-            } catch (Exception h) {
-
-
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception M) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-                }
-                //    elementClick(finishOrderBtn,"Tapped finish Button");
-
-            }
-        }
-        return check;
-    }
-
-
-    public String selectMenuForDineInForSplitSeat(String cate) {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-            /*** Random Select Category ***/
-
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-//            List<WebElement> categories =  driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
-//            int cateSize = categories.size();
-//            utils.log().info("Category Available count in this Store - " + cateSize);
-//
-//            for (int m = 1; m <= 1; m++) {
-//                itemToSelect3 = rand.nextInt(cateSize);
-//
-//                if (itemToSelect3 == 0) {
-//                    itemToSelect3 = 1;
-//                }
-//
-//                WebElement categoryName = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect3 + "]/XCUIElementTypeStaticText[1]");
-//                String categoryNameTxt = categoryName.getText();
-//                elementClick(categoryName, "Category place - " + itemToSelect3 + " Selected Category - " + categoryNameTxt);
-
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-            //  utils.log().info(tableNumber+" - Table Number");
-            ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-
-                        WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        utils.log().info(menu.getText());
-                        elementClick(menu, "Tapped Menu");
-                        try {
-                            WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if ((mainModi.isDisplayed())) {
-                                String mainModifier = mainModi.getText();
-                                elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                                try {
-                                    WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                    WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                    WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                    if (remainingModi.isDisplayed()) {
-                                        String SubModifier1 = subModi1.getText();
-                                        elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                        String SubModifier2 = subModi2.getText();
-                                        elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                        String SubModifier3 = subModi3.getText();
-                                        elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                        elementClick(doneButton, "Tapped Done");
-
-                                    } else {
-
-                                    }
-                                } catch (Exception h) {
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-                            } else {
-
-                            }
-
-                        } catch (Exception x) {
-                            try {
-
-
-                                //  utils.log().info(size2.getText());
-                                WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String data = size1.getText();
-                                WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                                if (size2.isDisplayed()) {
-                                    elementClick(size1, data + " - selected");
-                                    WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                    String mainModi = mainModi1.getText();
-                                    elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                    elementClick(doneButton, "Tapped Done");
-                                } else {
-                                    WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                    String mini = minimum.getText();
-                                    utils.log().info(mini + " - Additional Modifiers ");
-                                    //             if (find(minimum, 2)) {
-                                    WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                    String modiname = addMeats.getText();
-                                    elementClick(addMeats, "Modifier selected - " + modiname);
-                                    elementClick(doneButton, "Tapped Done");
-                                }
-
-                                //          }
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                                ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            } catch (Exception v) {
-
-                            }
-                        }
-
-
-                    }
-                }
-                // elementClick(finishOrderBtn, "Finish Button");
-            } catch (Exception h) {
-
-
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception M) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-                }
-                //    elementClick(finishOrderBtn,"Tapped finish Button");
-
-            }
-        }
-        return check;
-    }
-
-    public String selectMenuForBarTabForSplitCheck1(String cate) {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-        getCheckNumberTxt1();
-        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-        /*** Random Select Category ***/
-
-        WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-        elementClick(cate1, "Tapped category");
-
-        /****  RandOm Select Menu ***/
-
-        WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-        check = order.getText();
-        TestUtils.tableNumberof1 = check1;
-        //  utils.log().info(tableNumber+" - Table Number");
-        ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-        try {
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 1; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception h) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-
-                }
-            }
-            // elementClick(finishOrderBtn, "Finish Button");
-        } catch (Exception h) {
-
-
-            List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-            int count1 = menuCollection2.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 1; j++) {
-                int itemToSelect1 = rand1.nextInt(count1);
-
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-
-                utils.log().info(String.valueOf(itemToSelect1));
-
-
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                        try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                            WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if (remainingModi.isDisplayed()) {
-                                String SubModifier1 = subModi1.getText();
-                                elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                String SubModifier2 = subModi2.getText();
-                                elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                String SubModifier3 = subModi3.getText();
-                                elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                elementClick(doneButton, "Tapped Done");
-
-                            } else {
-
-                            }
-                        } catch (Exception M) {
-                            elementClick(doneButton, "Tapped Done");
-                        }
-                    } else {
-
-                    }
-
-                } catch (Exception x) {
-                    try {
-
-
-                        //  utils.log().info(size2.getText());
-                        WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                        String data = size1.getText();
-                        WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                        if (size2.isDisplayed()) {
-                            elementClick(size1, data + " - selected");
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String mainModi = mainModi1.getText();
-                            elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                            elementClick(doneButton, "Tapped Done");
-                        } else {
-                            WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                            String mini = minimum.getText();
-                            utils.log().info(mini + " - Additional Modifiers ");
-                            //             if (find(minimum, 2)) {
-                            WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                            String modiname = addMeats.getText();
-                            elementClick(addMeats, "Modifier selected - " + modiname);
-                            elementClick(doneButton, "Tapped Done");
-                        }
-
-
-                    } catch (Exception v) {
-
-                    }
-                }
-
-            }
-            //    elementClick(finishOrderBtn,"Tapped finish Button");
-
-        }
-
-        return check1;
-    }
-
-
-    public String selectMenuForBarTabForMergeCheck1(String cate) {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-        getCheckNumberTxt1();
-        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-        /*** Random Select Category ***/
-
-        WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-        elementClick(cate1, "Tapped category");
-
-        /****  RandOm Select Menu ***/
-
-        WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-        check = order.getText();
-        TestUtils.tableNumberof1 = check1;
-        //  utils.log().info(tableNumber+" - Table Number");
-        ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-        try {
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 1; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception h) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-
-                }
-            }
-            // elementClick(finishOrderBtn, "Finish Button");
-        } catch (Exception h) {
-
-
-            List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-            int count1 = menuCollection2.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 1; j++) {
-                int itemToSelect1 = rand1.nextInt(count1);
-
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-
-                utils.log().info(String.valueOf(itemToSelect1));
-
-
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                        try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                            WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if (remainingModi.isDisplayed()) {
-                                String SubModifier1 = subModi1.getText();
-                                elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                String SubModifier2 = subModi2.getText();
-                                elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                String SubModifier3 = subModi3.getText();
-                                elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                elementClick(doneButton, "Tapped Done");
-
-                            } else {
-
-                            }
-                        } catch (Exception M) {
-                            elementClick(doneButton, "Tapped Done");
-                        }
-                    } else {
-
-                    }
-
-                } catch (Exception x) {
-                    try {
-
-
-                        //  utils.log().info(size2.getText());
-                        WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                        String data = size1.getText();
-                        WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                        if (size2.isDisplayed()) {
-                            elementClick(size1, data + " - selected");
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String mainModi = mainModi1.getText();
-                            elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                            elementClick(doneButton, "Tapped Done");
-                        } else {
-                            WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                            String mini = minimum.getText();
-                            utils.log().info(mini + " - Additional Modifiers ");
-                            //             if (find(minimum, 2)) {
-                            WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                            String modiname = addMeats.getText();
-                            elementClick(addMeats, "Modifier selected - " + modiname);
-                            elementClick(doneButton, "Tapped Done");
-                        }
-
-
-                    } catch (Exception v) {
-
-                    }
-                }
-
-            }
-            //    elementClick(finishOrderBtn,"Tapped finish Button");
-
-        }
-
-        return check1;
-    }
-
-    public String selectMenuForBarTabForSplitCheck(String cate) {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-        getCheckNumberTxt();
-        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-        /*** Random Select Category ***/
-
-        WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-        elementClick(cate1, "Tapped category");
-//            List<WebElement> categories =  driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
-//            int cateSize = categories.size();
-//            utils.log().info("Category Available count in this Store - " + cateSize);
-//
-//            for (int m = 1; m <= 1; m++) {
-//                itemToSelect3 = rand.nextInt(cateSize);
-//
-//                if (itemToSelect3 == 0) {
-//                    itemToSelect3 = 1;
-//                }
-//
-//                WebElement categoryName = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect3 + "]/XCUIElementTypeStaticText[1]");
-//                String categoryNameTxt = categoryName.getText();
-//                elementClick(categoryName, "Category place - " + itemToSelect3 + " Selected Category - " + categoryNameTxt);
-
-        /****  RandOm Select Menu ***/
-
-        WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-        check = order.getText();
-        TestUtils.tableNumberof = check;
-        //  utils.log().info(tableNumber+" - Table Number");
-        ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-        try {
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception h) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-
-                }
-            }
-            // elementClick(finishOrderBtn, "Finish Button");
-        } catch (Exception h) {
-
-
-            List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-            int count1 = menuCollection2.size();
-            Random rand1 = new Random();
-            for (int j = 1; j <= 2; j++) {
-                int itemToSelect1 = rand1.nextInt(count1);
-
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-
-                utils.log().info(String.valueOf(itemToSelect1));
-
-
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                        try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                            WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if (remainingModi.isDisplayed()) {
-                                String SubModifier1 = subModi1.getText();
-                                elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                String SubModifier2 = subModi2.getText();
-                                elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                String SubModifier3 = subModi3.getText();
-                                elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                elementClick(doneButton, "Tapped Done");
-
-                            } else {
-
-                            }
-                        } catch (Exception M) {
-                            elementClick(doneButton, "Tapped Done");
-                        }
-                    } else {
-
-                    }
-
-                } catch (Exception x) {
-                    try {
-
-
-                        //  utils.log().info(size2.getText());
-                        WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                        String data = size1.getText();
-                        WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                        if (size2.isDisplayed()) {
-                            elementClick(size1, data + " - selected");
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String mainModi = mainModi1.getText();
-                            elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                            elementClick(doneButton, "Tapped Done");
-                        } else {
-                            WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                            String mini = minimum.getText();
-                            utils.log().info(mini + " - Additional Modifiers ");
-                            //             if (find(minimum, 2)) {
-                            WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                            String modiname = addMeats.getText();
-                            elementClick(addMeats, "Modifier selected - " + modiname);
-                            elementClick(doneButton, "Tapped Done");
-                        }
-
-                        //          }
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                    } catch (Exception v) {
-
-                    }
-                }
-
-            }
-            //    elementClick(finishOrderBtn,"Tapped finish Button");
-
-        }
-
-        return check;
-    }
-
-    public String selectMenuForBarTabForSplitCheckMerge(String cate) {
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-//        WebElement New = (WebElement) driver.findElement(By.xpath()("New Check");
-//        elementClick(New, "Tapped New");
-//        List<WebElement> tablee =  driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton");
-//        int count = tablee.size();
-//        utils.log().info(count);
-//
-///****  RandOm Select Table ***/
-//
-//        Random rand = new Random();
-//
-//        for (int i = 1; i <= 1; i++) {
-//            itemToSelect = rand.nextInt(count);
-//
-//            if (itemToSelect == 0) {
-//                itemToSelect = 1;
-//            }
-//            utils.log().info(itemToSelect);
-//            WebElement tableNum = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]");
-//            String tableNumber = "T" + itemToSelect;
-//
-//            utils.log().info("Table Number  - " + tableNumber);
-//            elementClick(tableNum, "Tapped Table Number");
-//
-//            WebElement seat = (WebElement) driver.findElement(By.xpath()("2");
-//            seatNumber = seat.getText();
-//            elementClick(seat, "Tapped seat Number");
-//            TestUtils.seatNumber = seatNumber;
-//            WebElement cont = (WebElement) driver.findElement(By.xpath()("Continue");
-//            elementClick(cont, "Tapped continue");
-        getCheckNumberTxt();
-        elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-        /*** Random Select Category ***/
-
-        WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-        elementClick(cate1, "Tapped category");
-//            List<WebElement> categories =  driver.findElements(By.xpath()("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
-//            int cateSize = categories.size();
-//            utils.log().info("Category Available count in this Store - " + cateSize);
-//
-//            for (int m = 1; m <= 1; m++) {
-//                itemToSelect3 = rand.nextInt(cateSize);
-//
-//                if (itemToSelect3 == 0) {
-//                    itemToSelect3 = 1;
-//                }
-//
-//                WebElement categoryName = (WebElement) driver.findElements(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect3 + "]/XCUIElementTypeStaticText[1]");
-//                String categoryNameTxt = categoryName.getText();
-//                elementClick(categoryName, "Category place - " + itemToSelect3 + " Selected Category - " + categoryNameTxt);
-
-        /****  RandOm Select Menu ***/
-
-        WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-        check = order.getText();
-        TestUtils.tableNumberof = check;
-        //  utils.log().info(tableNumber+" - Table Number");
-        ///XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-
-        try {
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 1; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    utils.log().info(menu.getText());
-                    elementClick(menu, "Tapped Menu");
-                    try {
-                        WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                        if ((mainModi.isDisplayed())) {
-                            String mainModifier = mainModi.getText();
-                            elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                            try {
-                                WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                                WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                                WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                                if (remainingModi.isDisplayed()) {
-                                    String SubModifier1 = subModi1.getText();
-                                    elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                    String SubModifier2 = subModi2.getText();
-                                    elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                    String SubModifier3 = subModi3.getText();
-                                    elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                    elementClick(doneButton, "Tapped Done");
-
-                                } else {
-
-                                }
-                            } catch (Exception h) {
-                                elementClick(doneButton, "Tapped Done");
-                            }
-                        } else {
-
-                        }
-
-                    } catch (Exception x) {
-                        try {
-
-
-                            //  utils.log().info(size2.getText());
-                            WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String data = size1.getText();
-                            WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                            if (size2.isDisplayed()) {
-                                elementClick(size1, data + " - selected");
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                                String mainModi = mainModi1.getText();
-                                elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                                elementClick(doneButton, "Tapped Done");
-                            } else {
-                                WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                                String mini = minimum.getText();
-                                utils.log().info(mini + " - Additional Modifiers ");
-                                //             if (find(minimum, 2)) {
-                                WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                                String modiname = addMeats.getText();
-                                elementClick(addMeats, "Modifier selected - " + modiname);
-                                elementClick(doneButton, "Tapped Done");
-                            }
-
-                            //          }
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                            ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                            //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        } catch (Exception v) {
-
-                        }
-                    }
-
-
-                }
-            }
-            // elementClick(finishOrderBtn, "Finish Button");
-        } catch (Exception h) {
-
-
-            List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-            int count1 = menuCollection2.size();
-            utils.log().info(String.valueOf(count1));
-            Random rand1 = new Random();
-            for (int j = 1; j <= 1; j++) {
-                int itemToSelect1 = rand1.nextInt(count1);
-
-                if (itemToSelect1 == 0) {
-                    itemToSelect1 = 1;
-                }
-
-                utils.log().info(String.valueOf(itemToSelect1));
-
-
-                WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                utils.log().info(menu.getText());
-                elementClick(menu, "Tapped Menu");
-                try {
-                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                    if ((mainModi.isDisplayed())) {
-                        String mainModifier = mainModi.getText();
-                        elementClick(mainModi, mainModifier + " - Tapped Main Modifier");
-
-                        try {
-                            WebElement remainingModi = mergeAndFindElement(" Remaining Modifiers  :", "", TestUtils.Accessibility);
-                            WebElement subModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi2 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]"));
-                            WebElement subModi3 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-                            if (remainingModi.isDisplayed()) {
-                                String SubModifier1 = subModi1.getText();
-                                elementClick(subModi1, SubModifier1 + " - SubModifier");
-                                String SubModifier2 = subModi2.getText();
-                                elementClick(subModi2, SubModifier2 + " - SubModifier");
-                                String SubModifier3 = subModi3.getText();
-                                elementClick(subModi3, SubModifier3 + " - SubModifier");
-                                elementClick(doneButton, "Tapped Done");
-
-                            } else {
-
-                            }
-                        } catch (Exception M) {
-                            elementClick(doneButton, "Tapped Done");
-                        }
-                    } else {
-
-                    }
-
-                } catch (Exception x) {
-                    try {
-
-
-                        //  utils.log().info(size2.getText());
-                        WebElement size1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                        String data = size1.getText();
-                        WebElement size2 = (WebElement) driver.findElement(By.xpath("Size"));
-
-                        if (size2.isDisplayed()) {
-                            elementClick(size1, data + " - selected");
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//XCUIElementTypeStaticText[1]"));
-                            String mainModi = mainModi1.getText();
-                            elementClick(mainModi1, mainModi + " - Tapped Main Modifier -2 ");
-                            elementClick(doneButton, "Tapped Done");
-                        } else {
-                            WebElement minimum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]"));
-                            String mini = minimum.getText();
-                            utils.log().info(mini + " - Additional Modifiers ");
-                            //             if (find(minimum, 2)) {
-                            WebElement addMeats = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]"));
-                            String modiname = addMeats.getText();
-                            elementClick(addMeats, "Modifier selected - " + modiname);
-                            elementClick(doneButton, "Tapped Done");
-                        }
-
-                        //          }
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView
-                        ////XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
-                        //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]
-
-                    } catch (Exception v) {
-
-                    }
-                }
-
-            }
-            //    elementClick(finishOrderBtn,"Tapped finish Button");
-
-        }
-
-        return check;
-    }
-
-    public void getTheListOfTheMenuFromTheOrderScreen() {
-
-        List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        utils.log().info("orderMenu.size() " + orderMenu.size());
-        for (int i = 2; i <= orderMenu.size(); i++) {
-
-            WebElement orderMenuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            orderMenuName1[i - 1] = orderMenuName.getText();
-            TestUtils.orderMenuName[i - 1] = orderMenuName1[i - 1];
-            WebElement orderMenuPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-            orderMenuPrize[i - 1] = orderMenuPrize1.getText();
-            TestUtils.orderMenuPrize[i - 1] = orderMenuPrize[i - 1];
-            utils.log().info("Order Screen menu SAME with Split Menu 1 - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
-            try {
-                List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
-                utils.log().info(" MOdifier 1 Size - " + modifier.size());
-                for (int m = 1; m <= modifier.size(); m++) {
-                    WebElement modifier1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
-                    modifierCheck1[m] = modifier1.getText();
-                    TestUtils.modifier[m] = modifierCheck1[m];
-                    utils.log().info("modifier1.getText() - " + modifier1.getText());
-                    WebElement modifierPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[3]"));
-                    modifierPrizeCheck1[m] = modifierPrize1.getText();
-                    TestUtils.modifierPrize[m] = modifierPrizeCheck1[m];
-                    utils.log().info("  TestUtils.modifierPrize[m] - " + TestUtils.modifierPrize[m]);
-                    utils.log().info("Modifier  - " + m + modifierCheck1[m] + " Prize - " + modifierPrizeCheck1[m]);
-                }
-
-                //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTable[2]
-                List<WebElement> discount =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
-                //utils.log().info("discount.size() - "+discount.size());
-                for (int h = 1; h <= discount.size(); h++) {
-                    WebElement discountName1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[1]"));
-                    discountName[h] = discountName1.getText();
-                    TestUtils.discountName[h] = discountName[h];
-                    WebElement discountCount1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[2]"));
-                    discountCount[h] = discountCount1.getText();
-                    TestUtils.discountCount1[h] = discountCount[h];
-                    WebElement discountPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[3]"));
-                    discountPrize[h] = discountPrize1.getText();
-                    utils.log().info("Discount 1 as - " + discountName[h] + " Qty - " + discountCount[h] + " Amount - " + discountPrize[h]);
-                }
-            } catch (Exception g) {
-
-            }
-//            try{
-//
-//
-//            }catch (Exception w){
-//
-//            }
-        }
-
-    }
-
-    public int seatNumberCount;
-
-    public void getSeatNumberFromCheck() {
-        List<WebElement> seatNumbers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-        seatNumberCount = seatNumbers.size();
-        TestUtils.seatCount = seatNumberCount;
-    }
-
-    public int seatNumberCount1;
-
-    public void getSeatNumberFromCheck1() {
-        List<WebElement> seatNumbers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-        seatNumberCount1 = seatNumbers.size();
-        TestUtils.seatCount1 = seatNumberCount1;
-    }
-
-    public void verifySeatNumberFromTheOrderScreen() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        List<WebElement> seatNumbers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-        int seatNumberCount2 = seatNumbers.size();
-        String SeatCountTxt1 = String.valueOf(seatNumberCount2);
-        int seat = TestUtils.seatCount;
-        int seat1 = TestUtils.seatCount1;
-        int seatCount = seat + seat1;
-        String seatCountTxt = String.valueOf(seatCount);
-        Assert.assertEquals(SeatCountTxt1, seatCountTxt);
-        utils.log().info("Seat Number Count is SAME - " + seatNumberCount2);
-    }
-
-    public void verifyCheckNumber() {
-        WebElement checkNumber = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
-        String checkNumber1 = checkNumber.getText();
-        String checkNumber2 = TestUtils.globalCheckNumber;
-        Assert.assertEquals(checkNumber1, checkNumber2);
-        utils.log().info("After Merged open check - " + checkNumber1);
-
-    }
-
-    public void getTheListOfTheMenuFromTheOrderScreen1() {
-
-        List<WebElement> orderMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        utils.log().info("orderMenu.size() - " + orderMenu.size());
-        for (int i = 2; i <= orderMenu.size(); i++) {
-
-            WebElement orderMenuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            orderMenuName2[i - 1] = orderMenuName.getText();
-            TestUtils.orderMenuName2[i - 1] = orderMenuName2[i - 1];
-
-            WebElement orderMenuPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
-            orderMenuPrize2[i - 1] = orderMenuPrize1.getText();
-            TestUtils.orderMenuPrize2[i - 1] = orderMenuPrize2[i - 1];
-            utils.log().info("Order Screen menu SAME with Split Menu 2 - " + (i - 1) + " " + orderMenuName2[i - 1] + " Prize " + orderMenuPrize2[i - 1]);
-            try {
-                List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
-                for (int m = 1; m <= modifier.size(); m++) {
-                    WebElement modifier1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[1]"));
-                    // modifieR2[m] = modifier1.getText();
-                    TestUtils.modifier2[m] = modifier1.getText();
-                    WebElement modifierPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + m + "]/XCUIElementTypeStaticText[3]"));
-                    modifierPrize2[m] = modifierPrize1.getText();
-                    TestUtils.modifierPrize2[m] = modifierPrize2[m];
-                    utils.log().info("Modifier 2 - " + TestUtils.modifier2[m] + " Prize - " + modifierPrize2[m]);
-                }
-                List<WebElement> discount =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell"));
-                for (int h = 1; h <= discount.size(); h++) {
-                    WebElement discountName1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[1]"));
-                    discountName11[h] = discountName1.getText();
-                    TestUtils.discountName1[h] = discountName11[h];
-                    WebElement discountCount1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[2]"));
-                    discountCount11[h] = discountCount1.getText();
-                    TestUtils.discountCount1[h] = discountCount11[h];
-                    WebElement discountPrize1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable[2]/XCUIElementTypeCell[" + h + "]/XCUIElementTypeStaticText[3]"));
-                    discountPrize11[h] = discountPrize1.getText();
-                    TestUtils.discountPrize1[h] = discountPrize11[h];
-                    utils.log().info("Discount as 2 - " + discountName11[h] + " Qty - " + discountCount11[h] + " Amount - " + discountPrize11[h]);
-                }
-
-            } catch (Exception g) {
-
-            }
-            try {
-
-
-            } catch (Exception w) {
-
-            }
-        }
-
-    }
-
-    public String selectTheMenuFromOrderScreen(String cate) {
-
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("2"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
-            elementClick(arrowDownn, "Arrow Done on iPad 1");
-
-            /*** Random Select Category ***/
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        TestUtils.menu = menuName.getText();
-                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                        try {
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            if ((mainModi1.isDisplayed())) {
-                                List<WebElement> mainModi10 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                                int count2 = mainModi10.size();
-                                Random rand2 = new Random();
-                                for (int k = 1; k <= 2; k++) {
-                                    int itemToSelect2 = rand2.nextInt(count2);
-
-                                    if (itemToSelect2 == 0) {
-                                        itemToSelect2 = 1;
-                                    }
-                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
-                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
-                                }
-                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                                elementClick(donee, "Done Selected");
-                            }else{ }
-
-                        }catch (Exception x) {
-                        }
-                    }
-                }
-            } catch (Exception h) {
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info("Random Number - "+itemToSelect1);
-                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    TestUtils.menu = menuName.getText();
-                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                    try {
-                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                        if ((mainModdii.isDisplayed())) {
-                            List<WebElement> mainModi =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            int count2 = mainModi.size();
-                            Random rand2 = new Random();
-                            for (int jk = 1; jk <= 2; jk++) {
-                                int itemToSelect2 = rand2.nextInt(count2);
-
-                                if (itemToSelect2 == 0) {
-                                    itemToSelect2 = 1;
-                                }
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
-                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
-                            }
-
-                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                            elementClick(donee, "Tapped Done");
-                        } else {
-                        }
-                    } catch (Exception M) {
-                    }
-                }
-            }
-        }
-        return check;
-    }
-
-
-    public String selectTheMenuFromOrderScreenSplitSeat(String cate) {
-
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
-            elementClick(arrowDownn, "Arrow Done on iPad 1");
-
-            /*** Random Select Category ***/
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 2; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        TestUtils.menu = menuName.getText();
-                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                        try {
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            if ((mainModi1.isDisplayed())) {
-                                List<WebElement> mainModi10 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                                int count2 = mainModi10.size();
-                                Random rand2 = new Random();
-                                for (int k = 1; k <= 1; k++) {
-                                    int itemToSelect2 = rand2.nextInt(count2);
-
-                                    if (itemToSelect2 == 0) {
-                                        itemToSelect2 = 1;
-                                    }
-                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
-                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
-                                }
-                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                                elementClick(donee, "Done Selected");
-                            }else{ }
-
-                        }catch (Exception x) {
-                        }
-                    }
-                }
-            } catch (Exception h) {
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 2; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info("Random Number - "+itemToSelect1);
-                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    TestUtils.menu = menuName.getText();
-                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                    try {
-                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                        if ((mainModdii.isDisplayed())) {
-                            List<WebElement> mainModi =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            int count2 = mainModi.size();
-                            Random rand2 = new Random();
-                            for (int jk = 1; jk <= 1; jk++) {
-                                int itemToSelect2 = rand2.nextInt(count2);
-
-                                if (itemToSelect2 == 0) {
-                                    itemToSelect2 = 1;
-                                }
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
-                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
-                            }
-
-                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                            elementClick(donee, "Tapped Done");
-                        } else {
-                        }
-                    } catch (Exception M) {
-                    }
-                }
-            }
-        }
-        return check;
-    }
-
-    public String selectTheMenuFromOrderScreenSplitSeatForMerge(String cate) {
-
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt();
-            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
-            elementClick(arrowDownn, "Arrow Done on iPad 1");
-
-            /*** Random Select Category ***/
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof = check;
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 1; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        TestUtils.menu = menuName.getText();
-                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                        try {
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            if ((mainModi1.isDisplayed())) {
-                                List<WebElement> mainModi10 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                                int count2 = mainModi10.size();
-                                Random rand2 = new Random();
-                                for (int k = 1; k <= 1; k++) {
-                                    int itemToSelect2 = rand2.nextInt(count2);
-
-                                    if (itemToSelect2 == 0) {
-                                        itemToSelect2 = 1;
-                                    }
-                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
-                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
-                                }
-                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                                elementClick(donee, "Done Selected");
-                            }else{ }
-
-                        }catch (Exception x) {
-                        }
-                    }
-                }
-            } catch (Exception h) {
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 1; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info("Random Number - "+itemToSelect1);
-                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    TestUtils.menu = menuName.getText();
-                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                    try {
-                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                        if ((mainModdii.isDisplayed())) {
-                            List<WebElement> mainModi =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            int count2 = mainModi.size();
-                            Random rand2 = new Random();
-                            for (int jk = 1; jk <= 1; jk++) {
-                                int itemToSelect2 = rand2.nextInt(count2);
-
-                                if (itemToSelect2 == 0) {
-                                    itemToSelect2 = 1;
-                                }
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
-                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
-                            }
-
-                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                            elementClick(donee, "Tapped Done");
-                        } else {
-                        }
-                    } catch (Exception M) {
-                    }
-                }
-            }
-        }
-        return check;
-    }
-
-    public String selectTheMenuFromOrderScreenSplitSeat1(String cate) {
-
-
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt1();
-            driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT,TimeUnit.SECONDS);
-            WebElement arrowDownn = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"arrow down\"])[2]"));
-            elementClick(arrowDownn, "Arrow Done on iPad 1");
-
-            /*** Random Select Category ***/
-            WebElement cate1 = (WebElement) driver.findElement(By.xpath(cate));
-            elementClick(cate1, "Tapped category");
-            /****  RandOm Select Menu ***/
-
-            WebElement order = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]/XCUIElementTypeStaticText[1]"));
-            check = order.getText();
-            TestUtils.tableNumberof1 = check;
-
-            try {
-                WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[1]"));
-
-                if (find(menuCollection1, 2)) {
-                    List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell"));
-                    int count1 = menuCollection.size();
-                    Random rand1 = new Random();
-                    for (int j = 1; j <= 1; j++) {
-                        int itemToSelect1 = rand1.nextInt(count1);
-
-                        if (itemToSelect1 == 0) {
-                            itemToSelect1 = 1;
-                        }
-
-                        utils.log().info(String.valueOf(itemToSelect1));
-
-                        WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                        TestUtils.menu = menuName.getText();
-                        elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                        try {
-                            WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            if ((mainModi1.isDisplayed())) {
-                                List<WebElement> mainModi10 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                                int count2 = mainModi10.size();
-                                Random rand2 = new Random();
-                                for (int k = 1; k <= 1; k++) {
-                                    int itemToSelect2 = rand2.nextInt(count2);
-
-                                    if (itemToSelect2 == 0) {
-                                        itemToSelect2 = 1;
-                                    }
-                                    WebElement mainModi = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect2 + "]/XCUIElementTypeStaticText[1]"));
-                                    elementClick(mainModi, mainModi.getText() + " - Tapped Main Modifier");
-                                }
-                                WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                                elementClick(donee, "Done Selected");
-                            }else{ }
-
-                        }catch (Exception x) {
-                        }
-                    }
-                }
-            } catch (Exception h) {
-                List<WebElement> menuCollection2 =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                int count1 = menuCollection2.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 1; j++) {
-                    int itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-                    utils.log().info("Random Number - "+itemToSelect1);
-                    WebElement menuName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-                    TestUtils.menu = menuName.getText();
-                    elementClick(menuName, "Tapped Menu - "+menuName.getText());
-
-                    try {
-                        WebElement mainModdii = (WebElement)  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                        if ((mainModdii.isDisplayed())) {
-                            List<WebElement> mainModi =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell"));
-                            int count2 = mainModi.size();
-                            Random rand2 = new Random();
-                            for (int jk = 1; jk <= 1; jk++) {
-                                int itemToSelect2 = rand2.nextInt(count2);
-
-                                if (itemToSelect2 == 0) {
-                                    itemToSelect2 = 1;
-                                }
-                                WebElement mainModi1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell["+itemToSelect2+"]/XCUIElementTypeStaticText[1]"));
-                                elementClick(mainModi1, mainModi1.getText() + " - Tapped Main Modifier");
-                            }
-
-                            WebElement donee = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeButton[@name=\"Done\"])[1]"));
-                            elementClick(donee, "Tapped Done");
-                        } else {
-                        }
-                    } catch (Exception M) {
-                    }
-                }
-            }
-        }
-        return check1;
-    }
-
-
-
-
-
-
-
-
-    public void verifyActiveCheckWithSplitCheck() {
-        WebElement activeCheck = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        String expectedActiveChecks = activeCheck.getText();
-        String actualActiveChecks = TestUtils.globalCheckNumber;
-        Assert.assertEquals(expectedActiveChecks, actualActiveChecks);
-        utils.log().info("Split Check - " + expectedActiveChecks);
-    }
-
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Add\"]")
-    WebElement addBtnSplitCheck;
-
-    public void clickAddButtonOntheSplitCheckScreen() {
-        elementClick(addBtnSplitCheck, "Selected Add Button");
-    }
-
-
-    public void VerifyNewCheckAddedOnTheSplitCheckScreen() {
-
-        WebElement checkSeat = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        String checkSeatTxt = checkSeat.getText();
-        Assert.assertEquals(checkSeatTxt, "Check");
-        utils.log().info("Extra one Checks is ADDED");
-
-
-    }
-
-    public void ClickTheMenuOnTheSplitCheckScreen() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement menuItem = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-        elementClick(menuItem, "Selected Menu Item As - " + menuItem.getText());
-        TestUtils.menuNameSplitCheck = menuItem.getText();
-    }
-
-    public void ClickTheMenuOnTheNewSplitSeatScreen() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement menuItem = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]"));
-        elementClick(menuItem, "Selected Menu Item As - " + menuItem.getText());
-        TestUtils.menuNameSplitCheck = menuItem.getText();
-    }
-
-    public void clickNewCheckOnTheSplitCheckScreen() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement checkSeat = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        elementClick(checkSeat, "Selected Added Check");
-    }
-
-    public void verifyTheMenuIsMovedToTheAddedCheckSeat() {
-        List<WebElement> checkMenu =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
-        for (int i = 1; i <= checkMenu.size(); i++) {
-            WebElement menuNames = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
-            String menuNameTxt = menuNames.getText();
-            Assert.assertEquals(menuNameTxt, TestUtils.menuNameSplitCheck);
-            utils.log().info("Menu item is Same - " + menuNames.getText());
-        }
-    }
-
-    @FindBy(name = "Please save all the changes to print. Do you wish to save the changes?")
-    WebElement pleaseSaveAllTheChangesPopup;
-
-    public void verifyThePleaseSaveAlltheChangesToPrintPopup() {
-        Assert.assertEquals(pleaseSaveAllTheChangesPopup.getText(), "Please save all the changes to print. Do you wish to save the changes?");
-    }
-
-    public void verifyCheckNumberIsSplittedAndCheckNumberIsIncreased() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement checkNumber = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        String IncreasedCheckNumber = checkNumber.getText();
-        TestUtils.globalCheckNumber1 = IncreasedCheckNumber;
-        String IncreasedCheckNumberTxt = IncreasedCheckNumber.replaceAll("[A-Za-z- ]", "");
-        int checkNumberrr = Integer.parseInt(IncreasedCheckNumberTxt);
-        WebElement CheckNumber1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText"));
-        String defaultCheckNumber = CheckNumber1.getText();
-        String defaultCheckNumberTxt = defaultCheckNumber.replaceAll("[A-Za-z- ]", "");
-        int defaultCheckNumberrrr = Integer.parseInt(defaultCheckNumberTxt);
-        int increaedNumber = defaultCheckNumberrrr + 1;
-        Assert.assertEquals(increaedNumber, checkNumberrr);
-        utils.log().info("Split Check Number - " + IncreasedCheckNumber);
-
-    }
-
-    public void verifyPrimaryCheckIsOpened() {
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement checkNumber = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
-        Assert.assertEquals((checkNumber.getText()), TestUtils.globalCheckNumber);
-        utils.log().info("Primary Check is SAME After Split Check - " + checkNumber.getText());
-    }
-
-    public void selectMenuCloudPOSSs(String category) {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        for (int o = 1; o <= 180; o++) {
-            utils.log().info("Sync - " + o);
-
-            elementClick(newTab, "Tapped new Tab");
-            getCheckNumberTxt();
-            elementClick(arrowDownForOtherMenuItems, "Arrow Down");
-
-            /**** Random Select Category ****/
-
-            WebElement cate = (WebElement) driver.findElement(By.xpath(category));
-            elementClick(cate, "Tapped category");
-
-            /*****  RandOm Select Menu ****/
-
-            WebElement menuCollection1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]"));
-
-            if (find(menuCollection1, 2)) {
-                List<WebElement> menuCollection =  driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell"));
-
-                int count1 = menuCollection.size();
-                Random rand1 = new Random();
-                for (int j = 1; j <= 4; j++) {
-                    itemToSelect1 = rand1.nextInt(count1);
-
-                    if (itemToSelect1 == 0) {
-                        itemToSelect1 = 1;
-                    }
-
-                    utils.log().info(String.valueOf(itemToSelect1));
-
-                    WebElement menu = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[" + itemToSelect1 + "]/XCUIElementTypeStaticText[1]"));
-
-                    elementClick(menu, "Tapped Menu " + menu.getText());
-                }
-            }
-
-
-            elementClick(cashPayment, "Tapped Cash");
-            elementClick(Exact, "Exact ");
-            elementClick(Enter, "Enter ");
-        }
-    }
-
-    public void createdSaleForCashierOut1(String Cate) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
-
-        elementClick(cancelBtn, "Closed the Order Type window");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
-        String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
-        TestUtils.cashier_Name1 = name;
-
-        elementClick(allBtn, "Selected All");
-        elementClick(tableLayoutTab, "Table Layout");
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-
-            selectMenuForDineOrderType(Cate);
-//        elementClick(finishOrderBtn,"Finish Button");
-            elementClick(cash, "Cash Button");
-            elementClick(Exact, "Exact Button");
-            elementClick(enter, "Enter Button");
-            elementClick(tableLayoutTab, "Selected Table Layout Screen");
-        }
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Active Sale Count - " + i);
-            selectMenuForDineOrderType(Cate);
-            elementClick(finishOrderBtn, "Finish Button");
-
-        }
-
-    }
-
-
-    public void createdSaleForCashierOut2(String Cate) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
-
-        elementClick(cancelBtn, "Cancel selected");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
-        String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
-        TestUtils.cashier_Name2 = name;
-
-        elementClick(allBtn, "Selected All");
-        elementClick(tableLayoutTab, "Table Layout");
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-
-            selectMenuForDineOrderType(Cate);
-//            elementClick(finishOrderBtn,"Finish Button");
-            elementClick(cash, "Cash Button");
-            elementClick(Exact, "Exact Button");
-            elementClick(enter, "Enter Button");
-            elementClick(tableLayoutTab, "Selected Table Layout Screen");
-        }
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-//            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
-            elementClick(finishOrderBtn, "Finish Button");
-
-        }
-    }
-
-    public void createdSaleForCashierOut3(String cate) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
-        elementClick(cancelBtn, "Cancel selected");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
-        String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
-        TestUtils.cashier_Name3 = name;
-        elementClick(allBtn, "Selected All");
-        elementClick(tableLayoutTab, "Table Layout");
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-//            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(cate);
-//            elementClick(finishOrderBtn,"Finish Button");
-            elementClick(cash, "Cash Button");
-            elementClick(Exact, "Exact Button");
-            elementClick(enter, "Enter Button");
-            elementClick(tableLayoutTab, "Selected Table Layout Screen");
-
-        }
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-//            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(cate);
-            elementClick(finishOrderBtn, "Finish Button");
-
-        }
-    }
-
-    public void createdSaleForCashierOut4(String Cate) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
-        elementClick(cancelBtn, "Cancel selected");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
-        String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
-        TestUtils.cashier_Name4 = name;
-        elementClick(allBtn, "Selected All");
-        elementClick(tableLayoutTab, "Table Layout");
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-//            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
-//            elementClick(finishOrderBtn,"Finish Button");
-            elementClick(cash, "Cash Button");
-            elementClick(Exact, "Exact Button");
-            elementClick(enter, "Enter Button");
-            elementClick(tableLayoutTab, "Selected Table Layout Screen");
-        }
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-//            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
-            elementClick(finishOrderBtn, "Finish Button");
-
-        }
-    }
-
-    public void createdSaleForCashierOut5(String Cate) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
-        elementClick(cancelBtn, "Cancel selected");
-        WebElement cashierName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeStaticText[1]"));
-        String name = (cashierName.getText()).substring(9);
-        utils.log().info("Cashier Name - " + name);
-        TestUtils.cashier_Name5 = name;
-        elementClick(allBtn, "Selected All");
-        elementClick(tableLayoutTab, "Table Layout");
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-//            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
-//            elementClick(finishOrderBtn,"Finish Button");
-            elementClick(cash, "Cash Button");
-            elementClick(Exact, "Exact Button");
-            elementClick(enter, "Enter Button");
-            elementClick(tableLayoutTab, "Selected Table Layout Screen");
-        }
-
-        for (int i = 1; i <= 1; i++) {
-            utils.log().info("Sale Count - " + i);
-
-//            elementClick(tableLayoutTab,"Selected Table Layout Screen");
-            selectMenuForDineOrderType(Cate);
-            elementClick(finishOrderBtn, "Finish Button");
-
-        }
-    }
-
-    public void selectTheRandomTableFromTheTableLayout() {
-        driver.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
-        WebElement New = (WebElement) driver.findElement(By.xpath("New Check"));
-        elementClick(New, "Tapped New");
-        List<WebElement> tablee =  driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton"));
-        int count = tablee.size();
-        utils.log().info(String.valueOf(count));
-
-/****  RandOm Select Table ***/
-
-        Random rand = new Random();
-
-        for (int i = 1; i <= 1; i++) {
-            itemToSelect = rand.nextInt(count);
-
-            if (itemToSelect == 0) {
-                itemToSelect = 1;
-            }
-            utils.log().info(String.valueOf(itemToSelect));
-            WebElement tableNum = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[" + itemToSelect + "]/XCUIElementTypeStaticText[2]"));
-            String tableNumber = "T" + itemToSelect;
-
-            utils.log().info("Table Number  - " + tableNumber);
-            elementClick(tableNum, "Tapped Table Number");
-
-            WebElement seat = (WebElement) driver.findElement(By.xpath("1"));
-            seatNumber = seat.getText();
-            elementClick(seat, "Tapped seat Number");
-            TestUtils.seatNumber = seatNumber;
-            WebElement cont = (WebElement) driver.findElement(By.xpath("Continue"));
-            elementClick(cont, "Tapped continue");
-            getCheckNumberTxt1();
-        }
-
-    }
-
-
-
-    public void verifyTip1ValueWithCardDetailsScreenValue(){
-        WebElement tipValue = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[8]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(tipValue.getText().replaceAll("[A-Z$ ,.]",""),TestUtils.tipAmount1.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Tip Value Same With Card Details Screen - "+tipValue.getText());
-    }
-
-    public void verifyPaidAmountValueWithCardDetailsScreenValue(){
-        WebElement paidAmountValue = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[14]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(paidAmountValue.getText().replaceAll("[A-Z$ ,.]",""),TestUtils.paidAmount.replaceAll("[A-Z$ ,.]",""));
-
-        utils.log().info("Paid Amount Value Same With Card Details Screen - "+paidAmountValue.getText());
-    }
-
-    public void verifyCardReaderIsNotConnectedPopup(){
-        WebElement cardReader = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]"));
-        org.testng.Assert.assertEquals(cardReader.getText(),"Card reader is not connected");
-        utils.log().info("Displayed - "+cardReader.getText());
-    }
-
-    public void getTheCardNameOnTheCardDetailScreen(){
-        WebElement getTheCardName = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeImage"));
-        utils.log().info("Card Name - "+getTheCardName.getText());
-    }
-
-    public void verifyManualClearProcessButtonIsEnabledOrNot(){
-        WebElement manualButton = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"Manual\"]"));
-        WebElement ClearButton = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"Clear\"]"));
-        WebElement ProcessEmvButton = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"Process EMV\"]"));
-
-        if(manualButton.isEnabled() && ClearButton.isEnabled() && ProcessEmvButton.isEnabled()){
-            utils.log().info("Manual , Clear , Process EMV Button is Enabled");
-        }else{
-            utils.log().info("Manual , Clear , Process EMV Button is NOT Enabled");
-            int i =1/0;
-        }
-    }
-
-
-    public void VerifiedPayAmountWithAllDataInTheCardDetailScreen(){
-
-        double serviceCharge = Double.parseDouble(TestUtils.ServiceCharge.replaceAll("[A-Z$, ]",""));
-
-        double tipValue = Double.parseDouble(TestUtils.tipAmount.replaceAll("[A-Z$, ]",""));
-
-        double checkTotal = Double.parseDouble(TestUtils.totalTxt.replaceAll("[A-Z$, ]",""));
-
-        double payAmount1 = checkTotal +  tipValue;
-        double cardAmount = checkTotal+serviceCharge;
-        DecimalFormat ss = new DecimalFormat("0.00");
-        TestUtils.amountForSale = ss.format(cardAmount);
-        utils.log().info("Amount for Sale - "+ss.format(cardAmount));
-//        utils.log().info("Calculation subTotal - "+ (ss.format(subTotal)));
-//        utils.log().info("Calculation tax - "+(ss.format(tax)));
-        utils.log().info("Calculation check total - "+(ss.format(checkTotal)));
-        utils.log().info("Calculation service charge - "+(ss.format(serviceCharge)));
-        utils.log().info("Calculation tipValue - "+ss.format(tipValue));
-        utils.log().info("Calculation PayAmount - "+ss.format(payAmount1));
-
-        org.testng.Assert.assertEquals(ss.format(payAmount1).replaceAll("[A-Z$,. ]",""),TestUtils.payAmount.replaceAll("[A-Z$,. ]",""));
-        utils.log().info("Calculation Pay Amount is Same With the Card details Screen Pay amount - "+payAmount1);
-
-    }
-
-    public void verifyPayAmountWithTipAmountOnCardDetailsScreen(){
-        double calculatedPayAmount = Double.parseDouble(TestUtils.tipTotal.replaceAll("[$ ]",""));
-        DecimalFormat dc = new DecimalFormat("0.00");
-        WebElement payAmount = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
-        String payAmountTxt = payAmount.getText();
-        utils.log().info("Need to Pay AMount " +payAmountTxt);
-        Assert.assertEquals(dc.format(calculatedPayAmount),payAmountTxt.replaceAll("[$ ]",""));
-        utils.log().info("Pay Amount is Same with Tip Screen amount - "+payAmountTxt);
-    }
-
-    public void verifyDiscountValueWithCardDetailsScreenValue(){
-        WebElement discountValue = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[6]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(discountValue.getText().replaceAll("[A-Z$ ,.]",""),TestUtils.discountTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Subtotal Value Same With Card Details Screen - "+discountValue.getText());
-
-    }
-
-    public void verifyPaidAmountValueIsZero(){
-        WebElement paidAmount = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[14]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(paidAmount.getText().replaceAll("[A-Z$., ]",""),"000");
-        utils.log().info(" paid amount is Zero - "+paidAmount.getText());
-    }
-
-
-    public void verifyTipValueWithCardDetailsScreenValue(){
-        WebElement tipValue = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[8]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(tipValue.getText().replaceAll("[A-Z$ ,.]",""),TestUtils.tipAmount.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Tip Value Same With Card Details Screen - "+tipValue.getText());
-    }
-
-    public void shouldSeeTheCardDetailsEntryScreen(){
-        WebElement cardDetailsScreen = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[1]"));
-        org.testng.Assert.assertEquals(cardDetailsScreen.getText(),"Your Order");
-        utils.log().info("Card Details Entry Screen - "+cardDetailsScreen.getText());
-    }
-
-    public void verifySubtotalTaxAndTotalValueWithCardDetailsScreenValue(){
-        WebElement subtotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(subtotal.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.subtotalTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Subtotal Value Same With Card Details Screen - "+subtotal.getText());
-        WebElement tax = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(tax.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.taxTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Tax Value Same With Card Details Screen - "+tax.getText());
-        WebElement serviceCharge = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[10]/XCUIElementTypeStaticText[2]"));
-        TestUtils.ServiceCharge = serviceCharge.getText();
-        utils.log().info("Service Charge - "+serviceCharge.getText());
-        WebElement CheckTotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[12]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(CheckTotal.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.totalTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Total Value Same With Card Details Screen - "+CheckTotal.getText());
-    }
-
-    public void verifySubtotalTaxAndTotalValueWithCardDetailsScreenValue1(){
-        WebElement subtotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(subtotal.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.subtotalTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Subtotal Value Same With Card Details Screen - "+subtotal.getText());
-        WebElement tax = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(tax.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.taxTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Tax Value Same With Card Details Screen - "+tax.getText());
-        WebElement serviceCharge = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[10]/XCUIElementTypeStaticText[2]"));
-        TestUtils.ServiceCharge = serviceCharge.getText();
-        utils.log().info("Service Charge - "+serviceCharge.getText());
-        WebElement CheckTotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[12]/XCUIElementTypeStaticText[2]"));
-        double fastCashAmount = Double.parseDouble(TestUtils.fastCash.replaceAll("[$ ]",""));
-        double paidAmount = Double.parseDouble(TestUtils.paidAmount1.replaceAll("[$ ]",""));
-        double totalTxt = fastCashAmount - paidAmount ;
-        double totalAmount = Double.parseDouble(TestUtils.totalTxt.replaceAll("[$ ]",""));
-        double totalTxt1 = totalAmount - totalTxt;
-        utils.log().info(String.valueOf(totalTxt1));
-        DecimalFormat dc = new DecimalFormat("0.00");
-
-        org.testng.Assert.assertEquals(CheckTotal.getText().replaceAll("[A-Z$ ]",""), dc.format(totalTxt1));
-        TestUtils.totalTxt1 = dc.format(totalTxt1);
-        utils.log().info("Total Value Same With Card Details Screen - "+CheckTotal.getText());
-    }
-
-    public void verifySubtotalTaxAndTotal1ValueWithCardDetailsScreenValue(){
-        WebElement subtotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(subtotal.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.subtotalTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Subtotal Value Same With Card Details Screen - "+subtotal.getText());
-        WebElement tax = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(tax.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.taxTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Tax Value Same With Card Details Screen - "+tax.getText());
-        WebElement serviceCharge = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[10]/XCUIElementTypeStaticText[2]"));
-        TestUtils.ServiceCharge1 = serviceCharge.getText();
-        utils.log().info("Service Charge - "+serviceCharge.getText());
-        WebElement CheckTotal = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[12]/XCUIElementTypeStaticText[2]"));
-        org.testng.Assert.assertEquals(CheckTotal.getText().replaceAll("[A-Z$ ,.]",""), TestUtils.totalTxt.replaceAll("[A-Z$ ,.]",""));
-        utils.log().info("Total Value Same With Card Details Screen - "+CheckTotal.getText());
-    }
-
-    public void getThePayAmountValueOnTheCardDetailsScreen(){
-        WebElement payAmount = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
-        String payAmountTxt = payAmount.getText();
-        utils.log().info("Need to Pay AMount " +payAmountTxt);
-        TestUtils.payAmount = payAmountTxt;
-    }
-
-    public void getThePayAmount1ValueOnTheCardDetailsScreen(){
-        WebElement payAmount = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]"));
-        String payAmountTxt = payAmount.getText();
-        utils.log().info("Need to Pay AMount " +payAmountTxt);
-        TestUtils.payAmount1 = payAmountTxt;
-    }
-
-    public void shouldSeeTipScreen(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        WebElement checkTotal = (WebElement) driver.findElements(By.xpath("(//XCUIElementTypeStaticText[@name=\"Check Total\"])[1]"));
-        org.testng.Assert.assertEquals(checkTotal.getText(),"Check Total");
-        utils.log().info("Tip Screen is displayed");
-    }
-
-    public void selectTipFromTheTipScreen() throws InterruptedException {
+import static com.qa.utils.TestUtils.*;
+import static com.qa.utils.TestUtils.modifierQtySeat1;
+
+
+public class Regression extends ClockInScreen{
+    TestUtils utils = new TestUtils();
+    public void mergeBothIpad(String Cate) throws Exception {
+
+        for(int i =1;i<=2;i++) {
+            utils.log().info("Sync Count - "+i);
+            selectMenuForDineInMerge(Cate);
+//            getTheMenuNamesFromWindow1();
+
+            new SyncClass2().moveToTheSecond();
+            openTheActiveCheckFromIpad2();
+            verifyIPad1MenuInIpad2();
+
+            WebElement finishOrder =  driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick2(finishOrder, "Finish Order selected - 2");
+
+            selectMenuForDineIn2();
+//            getTheMenuNamesFromWindow2();
+            doMerge1();
+            WebElement seat1 =  driver2.findElement(By.xpath("//button[@id='1']"));
+            elementClick2(seat1,"selected seat - "+seat1.getText());
+            orderScreenForiPad2();
+            WebElement seat2 =  driver2.findElement(By.xpath("//button[@id='2']"));
+            elementClick2(seat2,"selected seat - "+seat2.getText());
+            verifyIPad1MenuInIpad2Seat2AfterMergeDone();
+            verifyCheckValueAfterMergeDone();
+            elementClick2(payment,"Selected Payment");
+            elementClick2(cash,"Selected Payment");
+            elementClick2(submit,"Selected Payment");
+            Thread.sleep(1500);
+        }
+    }
+
+    public void verifyCheckValueAfterMergeDone() throws InterruptedException {
+
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        int actualSubTotal = Integer.parseInt(subTotalAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1Subtotal = Integer.parseInt(TestUtils.subTotal.replaceAll("[A-Z$., ]",""));
+                int seat2Subtotal = Integer.parseInt(TestUtils.subTotal1.replaceAll("[A-Z$., ]",""));
+                int checkSubTotal = seat1Subtotal + seat2Subtotal ;
+        utils.log().info("Check SubTotal Amount - "+checkSubTotal);
+        Assert.assertEquals(actualSubTotal,checkSubTotal);
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+
+        Thread.sleep(2000);
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        int actualTax = Integer.parseInt(taxAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1Tax = Integer.parseInt(TestUtils.tax.replaceAll("[A-Z$., ]",""));
+        int seat2Tax = Integer.parseInt(TestUtils.tax1.replaceAll("[A-Z$., ]",""));
+        int checkTax = seat1Tax + seat2Tax ;
+        utils.log().info("Tax - "+taxAmountTxt);
+        utils.log().info("Check Tax Amount - "+checkTax);
+        Assert.assertEquals(checkTax,actualTax);
+        utils.log().info("Tax - "+taxAmountTxt);
+
+        Thread.sleep(2000);
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        int actualTotal = Integer.parseInt(totalAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1Total = Integer.parseInt(TestUtils.totalAmount.replaceAll("[A-Z$., ]",""));
+        int seat2Total = Integer.parseInt(TestUtils.totalAmount1.replaceAll("[A-Z$., ]",""));
+        int checkTotal = seat1Total + seat2Total ;
+        utils.log().info("Check Total Amount - "+checkTax);
+        Assert.assertEquals(checkTotal,actualTotal);
+        utils.log().info("Total Amount - "+totalAmountTxt);
+
+        Thread.sleep(2000);
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        int actualPaidAmount = Integer.parseInt(paidAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1PaidAmount = Integer.parseInt(TestUtils.paidAmount.replaceAll("[A-Z$., ]",""));
+        int seat2PaidAmount = Integer.parseInt(TestUtils.paidAmount1.replaceAll("[A-Z$., ]",""));
+        int checkPaidAmount = seat1PaidAmount + seat2PaidAmount ;
+        utils.log().info("Check Paid Amount - "+checkPaidAmount);
+        Assert.assertEquals(checkPaidAmount,actualPaidAmount);
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+        Thread.sleep(1000);
+
+        WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        String check = order.getText();
+        utils.log().info("2 - Selected - "+check);
+        elementClick2(order,"Selected - "+check);
         Thread.sleep(2500);
 
-        WebElement tipAmount1 = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[9]"));
-        String tipAmount1Txt = tipAmount1.getText();
-        utils.log().info("Tip Amount - "+tipAmount1.getText());
-//        Assert.assertEquals(tipTxt,tipAmount1Txt);
-        TestUtils.tipAmount = tipAmount1Txt;
-        elementClick(tipAmount1,"Selected TIP as - "+tipAmount1.getText());
     }
-    public void shouldSeeBatchScreen() throws InterruptedException {
-       Thread.sleep(2000);
-        WebElement batchScreen = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[6]//XCUIElementTypeOther/XCUIElementTypeStaticText[1]"));
-        Assert.assertEquals(batchScreen.getText(),"Last Batch Started");
-        utils.log().info("Displayed Screen as- "+"Last Batch Started");
-    }
-    @FindBy (name = "Power button")
-    private WebElement powerBtn;
 
-    public void checkAllTheCheckHasBeenBatch() throws Exception {
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        WebElement checkNumber = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[5]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[2]"));
-        String checkNumberTxt = checkNumber.getText();
-        int number = Integer.parseInt(checkNumberTxt);
-        utils.log().info("Current Check count on batch screen - "+checkNumberTxt);
-        if(number != 0){
-            elementClick(ToggleIcon,"Selected - "+ToggleIcon.getText());
-            Thread.sleep(2000);
-            elementClick(batchTipAdjustBtn,"selected Btn as - "+batchTipAdjustBtn.getText());
-            clickDeviceDropDownButtonBatchScreen();
-            selectTheMppgPaymentInDevice();
-            shouldSeeBatchScreen();
-            checkAllTheCheckHasBeenBatch();
-        }else{
-            Thread.sleep(1000);
-            WebElement batchStatus = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeStaticText"));
-            utils.log().info("Batch Status Should - "+batchStatus.getText());
-            elementClick(powerBtn,"Selected - "+powerBtn.getText());
+    public void verifyCheckValueAfterSplitDone() throws InterruptedException {
+
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        int actualSubTotal = Integer.parseInt(subTotalAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1Subtotal = Integer.parseInt(subTotalFromSplitSeat1.replaceAll("[A-Z$., ]",""));
+        int seat2Subtotal = Integer.parseInt(TestUtils.subTotalFromSplitSeat2.replaceAll("[A-Z$., ]",""));
+        int checkSubTotal = seat1Subtotal + seat2Subtotal ;
+        utils.log().info("Check SubTotal Amount - "+checkSubTotal);
+        Assert.assertEquals(actualSubTotal,checkSubTotal);
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+
+        Thread.sleep(2000);
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        int actualTax = Integer.parseInt(taxAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1Tax = Integer.parseInt(taxFromSplitSeat1.replaceAll("[A-Z$., ]",""));
+        int seat2Tax = Integer.parseInt(taxFromSplitSeat2.replaceAll("[A-Z$., ]",""));
+        int checkTax = seat1Tax + seat2Tax ;
+        utils.log().info("Tax - "+taxAmountTxt);
+        utils.log().info("Check Tax Amount - "+checkTax);
+        Assert.assertEquals(checkTax,actualTax);
+        utils.log().info("Tax - "+taxAmountTxt);
+
+        Thread.sleep(2000);
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        int actualTotal = Integer.parseInt(totalAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1Total = Integer.parseInt(totalAmountFromSplitSeat1.replaceAll("[A-Z$., ]",""));
+        int seat2Total = Integer.parseInt(totalAmountFromSplitSeat2.replaceAll("[A-Z$., ]",""));
+        int checkTotal = seat1Total + seat2Total ;
+        utils.log().info("Check Total Amount - "+checkTax);
+        Assert.assertEquals(checkTotal,actualTotal);
+        utils.log().info("Total Amount - "+totalAmountTxt);
+
+        Thread.sleep(2000);
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        int actualPaidAmount = Integer.parseInt(paidAmountTxt.replaceAll("[A-Z$., ]",""));
+        int seat1PaidAmount = Integer.parseInt(paidAmountFromSplitSeat1.replaceAll("[A-Z$., ]",""));
+        int seat2PaidAmount = Integer.parseInt(paidAmountFromSplitSeat2.replaceAll("[A-Z$., ]",""));
+        int checkPaidAmount = seat1PaidAmount + seat2PaidAmount ;
+        utils.log().info("Check Paid Amount - "+checkPaidAmount);
+        Assert.assertEquals(checkPaidAmount,actualPaidAmount);
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+        Thread.sleep(1500);
+
+//        WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+//        String check = order.getText();
+//        utils.log().info("2 - Selected - "+check);
+//        elementClick2(order,"Selected - "+check);
+//        Thread.sleep(2500);
+
+    }
+
+    public void mergeBothIpad1(String Cate) throws Exception {
+
+        for(int i =1;i<=2;i++) {
+            utils.log().info("Sync Count - "+i);
+            selectRandomMenuForDineInMerge(Cate);
+//            getTheMenuNamesFromWindow1();
+
+            new SyncClass2().moveToTheSecond();
+            openTheActiveCheckFromIpad2();
+            verifyIPad1MenuInIpad2();
+
+            WebElement finishOrder =  driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick2(finishOrder, "Finish Order selected - 2");
+
+            selectRandomMenuForDineInMerge2(Cate);
+//            getTheMenuNamesFromWindow2();
+            doMerge1();
+            WebElement seat1 =  driver2.findElement(By.xpath("//button[@id='1']"));
+            elementClick2(seat1,"selected seat - "+seat1.getText());
+            orderScreenForiPad2();
+            WebElement seat2 =  driver2.findElement(By.xpath("//button[@id='2']"));
+            elementClick2(seat2,"selected seat - "+seat2.getText());
+            verifyIPad1MenuInIpad2Seat2AfterMergeDone();
+
+            verifyCheckValueAfterMergeDone();
+            elementClick2(payment,"Selected Payment");
+            elementClick2(cash,"Selected Payment");
+            elementClick2(submit,"Selected Payment");
+            Thread.sleep(1500);
+            new SyncClass2().moveToTheFirst();
         }
     }
 
-    @FindBy(name = "Cashier out saved successfully")
-    WebElement cashierOutSavedSuccessfullyPopup;
-    @FindBy(name = "Done")
-    private WebElement Done1;
 
-    public void verifyTheCannotCloseTheShiftStoreHaveTheActiveCheck() {
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    public void selectTableNumberOnTheOrderScreen2() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        String check = order.getText();
+        utils.log().info("Selected - "+check);
+
+    }
+public void getTheMenuNamesFromWindow1() throws InterruptedException {
+    ArrayList<String> menuName1=new ArrayList<String>();
+    ArrayList<String> modifierName1=new ArrayList<String>();
+    ArrayList<String> menuPrize1=new ArrayList<String>();
+    ArrayList<String> modifierPrize1=new ArrayList<String>();
+     Thread.sleep(1000);
+    driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    List<WebElement> orderMenu =  driver1.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[@class='p-col-4 orderlist-menuname']"));
+    utils.log().info("1 - orderMenu.size - " + orderMenu.size());
+    for (int i = 1; i <= orderMenu.size(); i++) {
+
+        WebElement orderMenuName =  driver1.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[@class='p-col-4 orderlist-menuname'])["+i+"]"));
+        menuName1.add(orderMenuName.getText());
+        utils.log().info(orderMenuName.getText());
+        TestUtils.menuName1 = menuName1;
+
+        WebElement orderMenuPrize1 =  driver1.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[@class='p-col-4 orderlist-menuname'])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+        menuPrize1.add(orderMenuPrize1.getText());
+        utils.log().info(orderMenuPrize1.getText());
+        TestUtils.menuPrize1 = menuPrize1;
+
+        utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Menu - " + menuName1+ " Prize " + menuPrize1);
         try {
-            if (cashierOutSavedSuccessfullyPopup.isDisplayed()) {
-                utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
-                elementClick(Done1, "Tapped Done Button on the Popup");
+            List<WebElement> modifier =  driver1.findElements(By.xpath("//div[contains(@class,'menu-section')]//div[text()='"+ menuName1.get(i-1) +"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+            for (int m = 1; m <= modifier.size(); m++) {
+                WebElement modifier1 = driver1.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName1.get(i-1) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]"));
+                if (modifier1.isDisplayed()) {
+                    modifierName1.add(modifier1.getText());
+                    TestUtils.modifierName1 = modifierName1;
+                    WebElement modifierPrize1s = driver1.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName1.get(i-1) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                    modifierPrize1.add(modifierPrize1s.getText());
+                    TestUtils.modifierPrize1 = modifierPrize1;
+                    utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName1.get(m) + " Prize - " + modifierPrize1.get(m));
+                }else {
+                    modifierName1.add(null);
+                    modifierPrize1.add(null);
+                }
             }
-        } catch (Exception z) {
-            WebElement cashBtn = (WebElement) driver.findElements(By.xpath("//XCUIElementTypeButton[@name=\"Cash\"]"));
-            elementClick(cashBtn, "Selected - " + cashBtn.getText());
-            utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());
-            elementClick(Done1, "Tapped Done Button on the Popup");
+
+
+        } catch (Exception g) {
+
         }
     }
+    utils.log().info("Menu name - "+menuName1);
+    utils.log().info("Menu Prize - "+menuPrize1);
+    utils.log().info("Modifier name - "+modifierName1);
+    utils.log().info("Modifier Prize - "+modifierPrize1);
+
+}
+    public void getTheMenuNamesFromWindow2() throws InterruptedException {
+        Thread.sleep(1000);
+        List<String> menuName2=new ArrayList<String>();
+        List<String> modifierName2=new ArrayList<String>();
+        List<String> menuPrize2=new ArrayList<String>();
+        List<String> modifierPrize2s=new ArrayList<String>();
+
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')]"));
+        utils.log().info("orderMenu.size() " + orderMenu.size());
+        for (int i = 1; i <= orderMenu.size(); i++) {
+
+            WebElement orderMenuName =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]"));
+            menuName2.add( orderMenuName.getText());
+
+            TestUtils.menuName2 = menuName2;
+
+            WebElement orderMenuPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+            menuPrize2.add(orderMenuPrize1.getText());
+            TestUtils.menuPrize2 = menuPrize2;
+
+            utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Menu - " + menuName2+ " Prize " + menuPrize2);
+            try {
+                List<WebElement> modifier =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]//div[text()='"+ menuName2.get(i-1) +"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+                for (int m = 1; m <= modifier.size(); m++) {
+                    WebElement modifier1 = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName2.get(i-1) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]"));
+//                    if (modifier1.isDisplayed()) {
+                        modifierName2.add(modifier1.getText());
+                        TestUtils.modifierName2 = modifierName2;
+                        WebElement modifierPrize1s = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName2.get(i-1) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                        modifierPrize2s.add(modifierPrize1s.getText());
+                        TestUtils.modifierPrize2 = modifierPrize2s;
+                        utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName2.get(m) + " Prize - " + modifierPrize2s.get(m));
+//                    }else {
+//                        modifierName2.add(null);
+//                        modifierPrize2s.add(null);
+//                    }
+                }
+
+
+            } catch (Exception g) {
+
+            }
+        }
+        utils.log().info("Menu name - "+menuName2);
+        utils.log().info("Menu Prize - "+menuPrize2);
+        utils.log().info("Modifier name - "+modifierName2);
+        utils.log().info("Modifier Prize - "+modifierPrize2s);
+
+    }
+ String payment = "//button[contains(.,'Payment')]";
+
+    String cash = "//span[contains(.,' Cash ')]";
+    String submit = "//button[contains(.,'Submit')]";
+
+    public void orderScreenForiPad2AfterSplitMenu1() throws InterruptedException {
+        Thread.sleep(2000);
+
+        List<String> menuName11=new ArrayList<String>();
+        List<String> modifierName11=new ArrayList<String>();
+        List<String> menuPrize11=new ArrayList<String>();
+        List<String> modifierPrize11=new ArrayList<String>();
+        List<String> menuQty11=new ArrayList<String>();
+        List<String> modifierQty11=new ArrayList<String>();
+
+
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')]"));
+        utils.log().info("orderMenu.size() 1 - " + orderMenu.size());
+        for (int i = 1; i <=orderMenu.size(); i++) {
+
+            WebElement orderMenuName =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')])["+i+"]"));
+            menuName11.add(orderMenuName.getText());
+             utils.log().info(orderMenuName.getText());
+
+            WebElement orderMenuPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+            menuPrize11.add(orderMenuPrize1.getText());
+
+            WebElement orderMenuQty1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')])["+i+"]/..//div[@class='p-col-2 orderlist-qty text-pos-center  '][1]"));
+            menuQty11.add(orderMenuQty1.getText());
+
+
+            Assert.assertEquals(TestUtils.menuNameSeat1.get(i-1), orderMenuName.getText());
+            Assert.assertEquals(TestUtils.menuPrize1.get(i-1), orderMenuPrize1.getText());
+            Assert.assertEquals(TestUtils.menuQtySeat1.get(i-1), orderMenuQty1.getText());
+            TestUtils.menuName11 = menuName11;
+            TestUtils.menuPrize11 = menuPrize11;
+            TestUtils.menuQty11 = menuQty11;
+            utils.log().info(menuName11);
+            utils.log().info( menuName11.get(i-1));
+            utils.log().info("Verified - " + " " + orderMenuName.getText() + " Prize " + orderMenuPrize1.getText()+" "+orderMenuQty1.getText());
+
+            try {
+                List<WebElement> modifier =  driver2.findElements(By.xpath("(//div[contains(@class,'menu-section')]//div[contains(.,'"+menuName11.get(i-1)+"')])["+i+"]/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+                 utils.log().info(modifier.size());
+                for (int w = 0; w < modifier.size(); w++) {
+                   int m = w+1;
+                    WebElement modifier1 = driver2.findElement(By.xpath("((//div[contains(@class,'menu-section')]//div[contains(.,'" + menuName11.get(i-1) + "')])["+i+"]/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]"));
+                    modifierName11.add(modifier1.getText());
+
+                    utils.log().info("Order Screen 1 Modifier Name "+modifier1.getText());
+
+                    WebElement modifierPrize1s = driver2.findElement(By.xpath("((//div[contains(@class,'menu-section')]//div[contains(.,'" + menuName11.get(i-1) + "')])["+i+"]/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                    modifierPrize11.add(modifierPrize1s.getText());
+
+                    utils.log().info("Order Screen 1 Modifier Prize "+modifierPrize1s.getText());
+                    utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName11.get(w) + " Prize - " + modifierPrize11.get(w));
+                    utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + TestUtils.modifierNameSeat1.get(w) + " Prize - " + TestUtils.modifierPrizeSeat1.get(w));
+
+                    Assert.assertEquals(TestUtils.modifierNameSeat1.get(w), modifier1.getText());
+                    Assert.assertEquals(TestUtils.modifierPrizeSeat1.get(w), modifierPrize1s.getText());
+
+                    utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName11.get(w) + " Prize - " + modifierPrize11.get(w));
+                    TestUtils.modifierName11 = modifierName11;
+                    TestUtils.modifierPrize11 = modifierPrize11;
+                }
+            } catch (Exception g) {
+
+            }
+        }
+
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+        Assert.assertEquals(subTotalAmountTxt,TestUtils.subTotalFromSplitSeat1);
+
+
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        Assert.assertEquals(taxAmountTxt,TestUtils.taxFromSplitSeat1);
+        utils.log().info("Tax - "+taxAmountTxt);
+
+
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        Assert.assertEquals(totalAmountTxt,TestUtils.totalAmountFromSplitSeat1);
+        utils.log().info("Total Amount - "+totalAmountTxt);
+
+
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        Assert.assertEquals(paidAmountTxt,TestUtils.paidAmountFromSplitSeat1);
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+
+
+    }
+
+    public void orderScreenForiPad2AfterSplitMenu2() throws InterruptedException {
+        List<String> menuName11=new ArrayList<String>();
+        List<String> modifierName11=new ArrayList<String>();
+        List<String> menuPrize11=new ArrayList<String>();
+        List<String> modifierPrize11=new ArrayList<String>();
+        List<String> menuQty11=new ArrayList<String>();
+        List<String> modifierQty11=new ArrayList<String>();
+
+        Thread.sleep(2000);
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu =  driver2.findElements(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')])"));
+        utils.log().info("orderMenu.size() 2 - " + orderMenu.size());
+        for (int i = 1; i <=orderMenu.size(); i++) {
+
+            WebElement orderMenuName =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')])["+i+"]"));
+            menuName11.add( orderMenuName.getText());
+
+            WebElement orderMenuPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+            menuPrize11.add(orderMenuPrize1.getText());
+
+            WebElement orderMenuQty1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'p-col-4 orderlist-menuname')])["+i+"]/..//div[@class='p-col-2 orderlist-qty text-pos-center  '][1]"));
+            menuQty11.add(orderMenuQty1.getText());
+
+           utils.log().info(TestUtils.menuNameSeat2.get(i-1));
+            Assert.assertEquals(TestUtils.menuNameSeat2.get(i-1), orderMenuName.getText());
+            Assert.assertEquals(TestUtils.menuPrize2.get(i-1), orderMenuPrize1.getText());
+            Assert.assertEquals(TestUtils.menuQtySeat2.get(i-1), orderMenuQty1.getText());
+            TestUtils.menuName12 = menuName11;
+            TestUtils.menuPrize12 = menuPrize11;
+            TestUtils.menuQty12 = menuQty11;
+
+
+            utils.log().info("Verified - " + " " + orderMenuName.getText() + " Prize " + orderMenuPrize1.getText()+" "+orderMenuQty1.getText());
+
+            try {
+
+                List<WebElement> modifier =  driver2.findElements(By.xpath("(//div[contains(@class,'menu-section')]//div[contains(.,'"+menuName11.get(i-1)+"')])["+i+"]/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+                utils.log().info(modifier.size());
+                for (int w = 0; w < modifier.size(); w++) {
+                    int m = w+1;
+                    WebElement modifier1 = driver2.findElement(By.xpath("((//div[contains(@class,'menu-section')]//div[contains(.,'" + menuName11.get(i-1) + "')])["+i+"]/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]"));
+                    modifierName11.add(modifier1.getText());
+                    utils.log().info("Order Screen 1 Modifier Name "+modifier1.getText());
+                    TestUtils.modifierName12 = modifierName11;
+                    WebElement modifierPrize1s = driver2.findElement(By.xpath("((//div[contains(@class,'menu-section')]//div[contains(.,'" + menuName11.get(i-1) + "')])["+i+"]/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                    modifierPrize11.add(modifierPrize1s.getText());
+                    TestUtils.modifierPrize12 = modifierPrize11;
+                    utils.log().info("Order Screen 2 Modifier Prize "+modifierPrize1s.getText());
+                    utils.log().info("Seat 2 Modifier - " + modifierName11.get(w) + " Prize - " + modifierPrize11.get(w));
+                    utils.log().info("SEat 2 Modifiers - " + TestUtils.modifierName12.get(w) + " Prize - " + TestUtils.modifierPrize12.get(w));
+
+
+                    Assert.assertEquals(TestUtils.modifierNameSeat2.get(w), modifier1.getText());
+                    Assert.assertEquals(TestUtils.modifierPrizeSeat2.get(w), modifierPrize1s.getText());
+                    utils.log().info("iPad -2 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName11.get(w) + " Prize - " + modifierPrize11.get(w));
+
+                }
+            } catch (Exception g) {
+
+            }
+        }
+
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+        Assert.assertEquals(subTotalAmountTxt,TestUtils.subTotalFromSplitSeat2);
+
+
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        Assert.assertEquals(taxAmountTxt,TestUtils.taxFromSplitSeat2);
+        utils.log().info("Tax - "+taxAmountTxt);
+
+
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        Assert.assertEquals(totalAmountTxt,TestUtils.totalAmountFromSplitSeat2);
+        utils.log().info("Total Amount - "+totalAmountTxt);
+
+
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        Assert.assertEquals(paidAmountTxt,TestUtils.paidAmountFromSplitSeat2);
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+
+
+    }
+    public void orderScreenForiPad2() throws InterruptedException {
+
+        List<String> menuName11=new ArrayList<String>();
+        List<String> modifierName11=new ArrayList<String>();
+        List<String> menuPrize11=new ArrayList<String>();
+        List<String> modifierPrize11=new ArrayList<String>();
+
+
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')]"));
+        utils.log().info("orderMenu.size() " + orderMenu.size());
+        for (int i = 1; i < orderMenu.size(); i++) {
+
+            WebElement orderMenuName =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]"));
+            menuName11.add( orderMenuName.getText());
+
+            WebElement orderMenuPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+            menuPrize11.add(orderMenuPrize1.getText());
+
+            Assert.assertEquals(TestUtils.menuName1.get(i-1), orderMenuName.getText());
+            Assert.assertEquals(TestUtils.menuPrize1.get(i-1), orderMenuPrize1.getText());
+            TestUtils.menuName11 = menuName11;
+            TestUtils.menuPrize11 = menuPrize11;
+
+            utils.log().info("Verified - " + " " + orderMenuName.getText() + " Prize " + orderMenuPrize1.getText());
+            try {
+                List<WebElement> modifier =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]//div[text()='"+ menuName11.get(i) +"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+                for (int m = 1; m <= modifier.size(); m++) {
+                    WebElement modifier1 = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName11.get(i) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]"));
+
+                    modifierName11.add(modifier1.getText());
+                    TestUtils.modifierName11 = modifierName11;
+                    WebElement modifierPrize1s = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName11.get(i) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                    modifierPrize11.add(modifierPrize1s.getText());
+                    TestUtils.modifierPrize11 = modifierPrize11;
+                    Assert.assertEquals(TestUtils.menuName1.get(i-1), orderMenuName.getText());
+                    Assert.assertEquals(TestUtils.menuPrize1.get(i-1), orderMenuPrize1.getText());
+                    utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName11.get(m) + " Prize - " + modifierPrize11.get(m));
+                }
+
+            } catch (Exception g) {
+
+            }
+        }
+
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+        Assert.assertEquals(subTotalAmountTxt,TestUtils.subTotal);
+
+
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        Assert.assertEquals(taxAmountTxt,TestUtils.tax);
+        utils.log().info("Tax - "+taxAmountTxt);
+
+
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        Assert.assertEquals(totalAmountTxt,TestUtils.totalAmount);
+        utils.log().info("Total Amount - "+totalAmountTxt);
+
+
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        Assert.assertEquals(paidAmountTxt,TestUtils.paidAmount);
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+
+
+    }
+
+
+    public void orderScreenForiPad22() throws InterruptedException {
+
+
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')]"));
+        utils.log().info("orderMenu.size() " + orderMenu.size());
+        for (int i = 1; i <= orderMenu.size(); i++) {
+
+            WebElement orderMenuName =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]"));
+            orderMenuName1[i - 1] = orderMenuName.getText();
+
+            TestUtils.orderMenuName[i - 1] = orderMenuName1[i - 1];
+
+            WebElement orderMenuPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+            orderMenuPrize[i - 1] = orderMenuPrize1.getText();
+            TestUtils.orderMenuPrize[i - 1] = orderMenuPrize[i - 1];
+            Assert.assertEquals(TestUtils.orderMenuName[i - 1], orderMenuName1[i - 1]);
+            Assert.assertEquals(TestUtils.orderMenuPrize[i - 1], orderMenuPrize[i - 1]);
+            utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Menu - " + (i - 1) + " " + orderMenuName1[i - 1] + " Prize " + orderMenuPrize[i - 1]);
+            try {
+                List<WebElement> modifier =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]//div[text()='"+orderMenuName1[i]+"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+                for (int m = 1; m <= modifier.size(); m++) {
+                    WebElement modifier1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='"+orderMenuName1[i]+"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])["+m+"]"));
+                    modifieR[m] = modifier1.getText();
+                    // TestUtils.modifier[m] = modifieR[m];
+                    WebElement modifierPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='"+orderMenuName1[i]+"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])["+m+"]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                    modifierPrize[m] = modifierPrize1.getText();
+                    //   TestUtils.modifierPrize[m] = modifierPrize[m];
+                    Assert.assertEquals(TestUtils.modifier[m], modifieR[m]);
+                    Assert.assertEquals(TestUtils.modifierPrize[m], modifierPrize[m]);
+                    utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifieR[m] + " Prize - " + modifierPrize[m]);
+                }
+
+            } catch (Exception g) {
+
+            }
+        }
+        WebElement subTotalAmount =  driver2.findElement(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        Assert.assertEquals(subTotalAmountTxt,TestUtils.subTotal1);
+        utils.log().info("SubTotal Amount Is SAME in iPad1 & iPad2 - "+subTotalAmountTxt);
+
+
+        WebElement taxAmount =  driver2.findElement(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        Assert.assertEquals(taxAmountTxt,TestUtils.tax1);
+        utils.log().info("Tax Is SAME in iPad1 & iPad2 - "+taxAmountTxt);
+
+
+        WebElement totalAmount =  driver2.findElement(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        Assert.assertEquals(totalAmountTxt,TestUtils.totalAmount1);
+        utils.log().info("Total AmountIs SAME in iPad1 & iPad2 - "+totalAmountTxt);
+
+
+        WebElement paidAmount =  driver2.findElement(By.xpath("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        Assert.assertEquals(paidAmountTxt,TestUtils.paidAmount1);
+        utils.log().info("Paid Amount Is SAME in iPad1 & iPad2 - "+paidAmountTxt);
+
+
+
+    }
+
+
+    public void doMerge1() throws InterruptedException {
+        driver2.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+        Thread.sleep(200);
+        WebElement mergeBtnn =  driver2.findElement(By.xpath("//span[contains(.,'Merge')]"));
+        elementClick1(mergeBtnn, "Merge Button Selected");
+        String tableNo = TestUtils.tableNumberof;
+        verifyTableMergee2(tableNo);
+        String tableNo1 = TestUtils.tableNumberof1;
+        utils.log().info("tableNo1 "+tableNo1);
+        verifyTableMergee3(tableNo1);
+
+        WebElement doneBtnn =  driver2.findElement(By.xpath("//button[contains(.,' Done ')]"));
+        elementClick1(doneBtnn, "Merge Done Button Selected");
+
+        Thread.sleep(2000);
+try {
+    WebElement doneBtnn1 = driver2.findElement(By.xpath("//button[contains(.,'Done')]"));
+    elementClick1(doneBtnn1, "POPUP Done Button Selected");
+}catch (Exception w){
+
+}
+        //   afterMergeOpenSeat(tableNo);
+        afterMergeOpenCheck(tableNo);
+    }
+
+
+
+    public void verifyTableMergee2(String m) throws InterruptedException {
+
+        utils.log().info("M - "+m);
+        Thread.sleep(1000);
+        WebElement tableSelect =  driver2.findElement(By.xpath("(//label[.='"+m+"'])[1]"));
+        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
+            Thread.sleep(1500);
+            elementClick2(tableSelect, "Selected Table - " + tableSelect.getText());
+            try {
+                WebElement checks =  driver2.findElement(By.xpath("//ion-title[.='Checks']"));
+
+                if (checks.isDisplayed()) {
+                    Thread.sleep(1500);
+                    String globalCheckNumber = TestUtils.globalCheckNumber;
+
+                    WebElement checkNumberrr =  driver2.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+globalCheckNumber+"']"));
+                    if (checkNumberrr.isDisplayed()) {
+                        Thread.sleep(1500);
+                        elementClick2(checkNumberrr, " Selected Check Number - " + checkNumberrr.getText());
+                        Thread.sleep(1500);
+                        WebElement x =  driver2.findElement(By.xpath("//*[@id='multiple-Check']/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
+                        elementClick2(x, "Tapped X Button");
+                    } else {
+
+                    }
+
+
+
+                } else {
+//                    WebElement table1 =  driver.findElement(By.xpath("//p[@id='tableNameId']//label[.='"+m+"']"));
+//                    elementClick(table1, "table SELECTED - " + m);
+                }
+            } catch (Exception w) {
+
+            }
+        }
+    }
+
+    public void verifyTableMergee1(String m) throws InterruptedException {
+
+        utils.log().info("M - "+m);
+        Thread.sleep(1000);
+        WebElement tableSelect =  driver1.findElement(By.xpath("(//label[.='"+m+"'])[1]"));
+        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
+
+            Thread.sleep(1500);
+            elementClick1(tableSelect, "Selected Table - " + tableSelect.getText());
+            try {
+                WebElement checks =  driver1.findElement(By.xpath("//ion-title[.='Checks']"));
+
+                if (checks.isDisplayed()) {
+                    Thread.sleep(1500);
+                    String globalCheckNumber = TestUtils.globalCheckNumber;
+
+                    WebElement checkNumberrr =  driver1.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+globalCheckNumber+"']"));
+                    if (checkNumberrr.isDisplayed()) {
+                        Thread.sleep(1500);
+                        elementClick1(checkNumberrr, " Selected Check Number - " + checkNumberrr.getText());
+                        Thread.sleep(1500);
+                        WebElement x =  driver1.findElement(By.xpath("//*[@id='multiple-Check']/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
+                        elementClick1(x, "Tapped X Button");
+                    } else {
+
+                    }
+
+
+
+                } else {
+//                    WebElement table1 =  driver.findElement(By.xpath("//p[@id='tableNameId']//label[.='"+m+"']"));
+//                    elementClick(table1, "table SELECTED - " + m);
+                }
+            } catch (Exception w) {
+
+            }
+        }
+    }
+
+    public void afterMergeOpenCheck(String m) throws InterruptedException {
+        utils.log().info("M - "+m);
+        Thread.sleep(1000);
+        WebElement tableSelect =  driver2.findElement(By.xpath("(//label[.='"+m+"'])[1]"));
+        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
+
+            Thread.sleep(1000);
+            elementClick2(tableSelect, "1 -Selected Table - " + tableSelect.getText());
+            try {
+                WebElement checks =  driver2.findElement(By.xpath("//ion-title[.='Checks']"));
+
+                if (checks.isDisplayed()) {
+                    Thread.sleep(1000);
+                    String globalCheckNumber = TestUtils.globalCheckNumber;
+
+                    WebElement checkNumberrr =  driver2.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+globalCheckNumber+"']"));
+                    if (checkNumberrr.isDisplayed()) {
+                        Thread.sleep(1000);
+                        elementClick2(checkNumberrr, "1 -Selected Check Number - " + checkNumberrr.getText());
+                        Thread.sleep(1000);
+                        WebElement x =  driver2.findElement(By.xpath("//*[@id='multiple-Check']/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
+                        elementClick2(x, "1 -Tapped X Button");
+                    } else {
+
+                    }
+                } else {
+                }
+            } catch (Exception w) {
+
+            }
+        }
+    }
+
+
+    public void verifyTableMergee3(String m) throws InterruptedException {
+
+        utils.log().info("M2 - "+m);
+        Thread.sleep(1000);
+        WebElement tableSelect =  driver2.findElement(By.xpath("(//label[.='"+m+"'])[1]"));
+        if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
+
+            Thread.sleep(1000);
+            elementClick2(tableSelect, "2 - Selected Table - " + tableSelect.getText());
+            try {
+                WebElement checks =  driver2.findElement(By.xpath("//ion-title[.='Checks']"));
+
+                if (checks.isDisplayed()) {
+                    Thread.sleep(1000);
+                    String globalCheckNumber = TestUtils.globalCheckNumber1;
+
+                    WebElement checkNumberrr =  driver2.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+globalCheckNumber+"']"));
+                    if (checkNumberrr.isDisplayed()) {
+                        Thread.sleep(1000);
+                        elementClick2(checkNumberrr, " 2 - Selected Check Number - " + checkNumberrr.getText());
+                        Thread.sleep(1000);
+                        WebElement x =  driver2.findElement(By.xpath("//*[@id='multiple-Check']/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
+                        elementClick2(x, "2 - Tapped X Button");
+                    } else {
+
+                    }
+
+                } else {
+//                    WebElement table1 =  driver.findElement(By.xpath("//p[@id='tableNameId']//label[.='"+m+"']"));
+//                    elementClick(table1, "table SELECTED - " + m);
+                }
+            } catch (Exception w) {
+
+            }
+        }
+    }
+
+
+    String arrowDownForOtherMenuItems ="//button[@id='os_catMenu']";
+    public String checkNumber="";
+    public String getCheckNumberTxt(){
+        WebElement checkNum=driver1.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
+        checkNumber=checkNum.getText();
+        TestUtils.globalCheckNumber=checkNumber;
+        utils.log().info(checkNumber);
+        return checkNumber;
+    }
+
+    public String getCheckNumberTxt1(){
+        WebElement checkNum=driver2.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
+        checkNumber=checkNum.getText();
+        TestUtils.globalCheckNumber1=checkNumber;
+        utils.log().info(checkNumber);
+        return checkNumber;
+    }
+
+    public int itemToSelect;
+    public String selectMenuForDineIn2() throws Exception {
+            selectRandomTable1("1");
+            getCheckNumberTxt1();
+
+            WebElement arrowDonwForCate = driver2.findElement(By.xpath("//button[@id='os_catMenu']"));
+            elementClick1(arrowDonwForCate, "Arrow Done");
+
+            /**** Random Select Category ****/
+
+            WebElement cate =  driver2.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'CIMiniFood')]"));
+            elementClick1(cate, "Tapped category - " + cate.getText());
+
+            /*****  RandOm Select Menu ****/
+
+            WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+             check = order.getText();
+            TestUtils.tableNumberof1 = check;
+            utils.log().info("Table Number from the order screen - " + check);
+
+
+            WebElement miniParota = driver2.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Mini parota')])[1]"));
+             TestUtils.menu3 = miniParota.getText();
+            elementClick1(miniParota, "2 - Tapped Menu - " + miniParota.getText());
+            WebElement miniIdly = driver2.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Mini idly')])[1]"));
+            TestUtils.menu4 = miniIdly.getText();
+            elementClick1(miniIdly, "2 - Tapped Menu" + miniIdly.getText());
+
+            /////////     GET THE DETAILS OF MENU VALUES  ////////////
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+        TestUtils.subTotal1 = subTotalAmountTxt;
+
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        utils.log().info("Tax - "+taxAmountTxt);
+        TestUtils.tax1 = taxAmountTxt;
+
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        utils.log().info("Total Amount - "+totalAmountTxt);
+        TestUtils.totalAmount1 = totalAmountTxt;
+
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+        TestUtils.paidAmount1 = paidAmountTxt;
+        //getTheMenuFromOrderScreen();
+        //  getTheListOfTheMenuFromTheOrderScreen();
+getTheMenuNamesFromWindow2();
+        WebElement finishOrder = driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+        elementClick1(finishOrder, "Finish Order selected");
+
+        return check;
+        }
+
+
+
+    public String check=" ";
+
+    public String tableNumber = " ";
+    public String selectRandomTable(String number) throws InterruptedException {
+        Thread.sleep(2000);
+        driver1.manage().timeouts().implicitlyWait(TestUtils.driverWAIT, TimeUnit.SECONDS);
+        WebElement New =  driver1.findElement(By.xpath("//div[contains(.,'New Check')]"));
+        elementClick1(New, "Tapped New");
+        List<WebElement> tablee = driver1.findElements(By.xpath("//div[@class='table-layout-block ng-star-inserted']//button"));
+        int count = tablee.size();
+        utils.log().info("Total Count of the Table - " + count);
+
+/*****  RandOm Select Table ****/
+
+        Random rand = new Random();
+
+        for (int i = 1; i <= 1; i++) {
+            itemToSelect = rand.nextInt(count);
+
+            if (itemToSelect == 0) {
+                itemToSelect = 1;
+            }
+            utils.log().info(itemToSelect);
+            WebElement tableNum =  driver1.findElement(By.xpath("//div[@class='table-layout-block ng-star-inserted']//button["+itemToSelect+"]//div[1]//label[1]"));
+            utils.log().info(tableNum.getText());
+            elementClick1(tableNum, "Tapped Table " + itemToSelect);
+
+            WebElement seat =  driver1.findElement(By.xpath("//span[.='"+number+"']"));
+            elementClick1(seat, "Tapped seat Number");
+            WebElement cont =  driver1.findElement(By.xpath("//span[.=' Continue ']"));
+            elementClick1(cont, "Tapped continue");
+
+        }
+        return tableNumber;
+    }
+
+    public String selectRandomTable1(String number) throws InterruptedException {
+        Thread.sleep(2000);
+        elementClick2(tableLayoutTab, "Table layout Selected - 2");
+        Thread.sleep(1000);
+        WebElement New =  driver2.findElement(By.xpath("//div[contains(.,'New Check')]"));
+        elementClick1(New, "Tapped New");
+        List<WebElement> tablee = driver2.findElements(By.xpath("//div[@class='table-layout-block ng-star-inserted']//button"));
+        int count = tablee.size();
+        utils.log().info("Total Count of the Table - " + count);
+
+/*****  RandOm Select Table ****/
+
+        Random rand = new Random();
+
+        for (int i = 1; i <= 1; i++) {
+            itemToSelect = rand.nextInt(count);
+
+            if (itemToSelect == 0) {
+                itemToSelect = 1;
+            }
+            utils.log().info(itemToSelect);
+            WebElement tableNum =  driver2.findElement(By.xpath("//div[@class='table-layout-block ng-star-inserted']//button["+itemToSelect+"]//div[1]//label[1]"));
+            utils.log().info(tableNum.getText());
+            elementClick1(tableNum, "Tapped Table " + itemToSelect);
+
+            WebElement seat =  driver2.findElement(By.xpath("//span[.='"+number+"']"));
+            elementClick1(seat, "Tapped seat Number");
+            WebElement cont =  driver2.findElement(By.xpath("//span[.=' Continue ']"));
+            elementClick1(cont, "Tapped continue");
+
+        }
+        return tableNumber;
+    }
+
+    String searchTabInActiveTab = "//input[@data-placeholder='Check No']";
+
+    String searchTabClosedTab = "//input[@data-placeholder='Check No']";
+    public void openTheActiveCheckFromIpad2() throws InterruptedException {
+        Thread.sleep(2000);
+        String globalCheckNumber=TestUtils.globalCheckNumber;
+        elementClick2("//span[contains(.,' Check Status ')]","check");
+        Thread.sleep(2000);
+        WebElement searchActive = driver2.findElement(By.xpath(searchTabInActiveTab));
+        searchActive.clear();
+        searchActive.sendKeys(globalCheckNumber);
+        List<WebElement> phoneOrders1 = driver2.findElements(By.xpath("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div"));
+        utils.log().info(phoneOrders1.size());
+        if(phoneOrders1.size() == 1)
+        {
+            elementClick2("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Active Check in closed tab - " + globalCheckNumber);
+        }else{
+            utils.log().info("Active check is not available - "+ globalCheckNumber);
+//            int w = 1/0;
+            elementClick2("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
+        }
+        WebElement openCheck = driver2.findElement(By.xpath("(//button[(.=' Open Check ')])"));
+        elementClick2(openCheck,"Selected - Open Check");
+
+
+    }
+
+    public String[] orderMenuName1 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifieR = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] orderMenuPrize = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifierPrize = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+    public String[] orderMenuName2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] modifieR2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] orderMenuPrize2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    public String[] OmodifierPrize2 = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+
+    public void verifyIPad1MenuInIpad2() throws InterruptedException {
+        Thread.sleep(3000);
+        List<String> menuName11=new ArrayList<String>();
+        List<String> modifierName11=new ArrayList<String>();
+        List<String> menuPrize11=new ArrayList<String>();
+        List<String> modifierPrize11=new ArrayList<String>();
+
+
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[@class='p-col-4 orderlist-menuname']"));
+        utils.log().info("orderMenu.size - " + orderMenu.size());
+        for (int i = 1; i <= orderMenu.size(); i++) {
+
+            WebElement orderMenuName =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[@class='p-col-4 orderlist-menuname'])["+i+"]"));
+            menuName11.add( orderMenuName.getText());
+            utils.log().info(i+" "+orderMenuName.getText());
+
+            WebElement orderMenuPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[@class='p-col-4 orderlist-menuname'])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+            menuPrize11.add(orderMenuPrize1.getText());
+            utils.log().info(i+" "+orderMenuPrize1.getText());
+
+            Assert.assertEquals(TestUtils.menuName1.get(i-1), orderMenuName.getText());
+            Assert.assertEquals(TestUtils.menuPrize1.get(i-1), orderMenuPrize1.getText());
+            TestUtils.menuName11 = menuName11;
+            TestUtils.menuPrize11 = menuPrize11;
+
+            utils.log().info("Verified - " + " " + orderMenuName.getText() + " Prize " + orderMenuPrize1.getText());
+            try {
+                List<WebElement> modifier =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]//div[text()='"+ menuName11.get(i) +"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+                for (int m = 1; m <= modifier.size(); m++) {
+                    WebElement modifier1 = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName11.get(i) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]"));
+
+                        modifierName11.add(modifier1.getText());
+                        TestUtils.modifierName11 = modifierName11;
+                        WebElement modifierPrize1s = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName11.get(i) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                        modifierPrize11.add(modifierPrize1s.getText());
+                        TestUtils.modifierPrize11 = modifierPrize11;
+                        Assert.assertEquals(TestUtils.menuName1.get(i), orderMenuName.getText());
+                        Assert.assertEquals(TestUtils.menuPrize1.get(i), orderMenuPrize1.getText());
+                        utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName11.get(m) + " Prize - " + modifierPrize11.get(m));
+                }
+
+            } catch (Exception g) {
+
+            }
+        }
+
+
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+        TestUtils.subTotal = subTotalAmountTxt;
+
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        utils.log().info("Tax - "+taxAmountTxt);
+        TestUtils.tax = taxAmountTxt;
+
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        utils.log().info("Total Amount - "+totalAmountTxt);
+        TestUtils.totalAmount = totalAmountTxt;
+
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+        TestUtils.paidAmount = paidAmountTxt;
+
+    }
+
+
+
+    public void verifyIPad1MenuInIpad2Seat2AfterMergeDone() throws InterruptedException {
+        List<String> menuName11=new ArrayList<String>();
+        List<String> modifierName11=new ArrayList<String>();
+        List<String> menuPrize11=new ArrayList<String>();
+        List<String> modifierPrize11=new ArrayList<String>();
+
+
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        List<WebElement> orderMenu =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')]"));
+        utils.log().info("orderMenu.size() " + orderMenu.size());
+        for (int i = 1; i <= orderMenu.size(); i++) {
+
+            WebElement orderMenuName =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]"));
+            menuName11.add( orderMenuName.getText());
+
+            WebElement orderMenuPrize1 =  driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]/div[contains(@class,'menuname')])["+i+"]/..//div[@class='p-col-3 text-pos-end '][1]"));
+            menuPrize11.add(orderMenuPrize1.getText());
+
+            Assert.assertEquals(TestUtils.menuName2.get(i-1), orderMenuName.getText());
+            Assert.assertEquals(TestUtils.menuPrize2.get(i-1), orderMenuPrize1.getText());
+//            TestUtils.menuName11 = menuName11;
+//            TestUtils.menuPrize11 = menuPrize11;
+
+            utils.log().info("Verified - " + " " + orderMenuName.getText() + " Prize " + orderMenuPrize1.getText());
+            try {
+                List<WebElement> modifier =  driver2.findElements(By.xpath("//div[contains(@class,'menu-section')]//div[text()='"+ menuName11.get(i) +"']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')]"));
+                for (int m = 1; m <= modifier.size(); m++) {
+                    WebElement modifier1 = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName11.get(i) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]"));
+                    modifierName11.add(modifier1.getText());
+                    utils.log().info("Modifier Name - "+modifier1.getText());
+//                    TestUtils.modifierName11 = modifierName11;
+                    WebElement modifierPrize1s = driver2.findElement(By.xpath("(//div[contains(@class,'menu-section')]//div[text()='" + menuName11.get(i) + "']/../..//div[contains(@class,'modifier-section')]/div[contains(@class,'menuname')])[" + m + "]/../div[@class='p-col-3 text-pos-end qsr-mod-padding '][1]"));
+                    modifierPrize11.add(modifierPrize1s.getText());
+                    utils.log().info("Modifier Prize - "+modifierPrize1s.getText());
+//                    TestUtils.modifierPrize11 = modifierPrize11;
+                    Assert.assertEquals(TestUtils.modifierName2.get(i-1), modifier1.getText());
+                    Assert.assertEquals(TestUtils.modifierPrize2.get(i-1), modifierPrize1s.getText());
+                    utils.log().info("iPad -1 Order Screen Menu SAME with iPad-2 Modifier - " + modifierName11.get(m) + " Prize - " + modifierPrize11.get(m));
+                }
+
+            } catch (Exception g) {
+
+            }
+        }
+
+
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        Assert.assertEquals(subTotalAmountTxt,TestUtils.subTotal1);
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+
+
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        Assert.assertEquals(taxAmountTxt,TestUtils.tax1);
+        utils.log().info("Tax - "+taxAmountTxt);
+
+
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        Assert.assertEquals(totalAmountTxt,TestUtils.totalAmount1);
+        utils.log().info("Total Amount - "+totalAmountTxt);
+
+
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        Assert.assertEquals(paidAmountTxt,TestUtils.paidAmount1);
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+        Thread.sleep(1000);
+
+        WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        String check = order.getText();
+        utils.log().info("2 - Selected - "+check);
+        elementClick2(order,"Selected - "+check);
+        Thread.sleep(2500);
+    }
+
+    public String selectRandomMenu2(String category) {
+
+        WebElement arrowDonwForCate = driver2.findElement(By.xpath("//button[@id='os_catMenu']"));
+        elementClick1(arrowDonwForCate, "Arrow Done");
+
+        /**** Random Select Category ****/
+
+        WebElement cate = driver2.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'" + category + "')]"));
+        elementClick1(cate, "Tapped category - " + cate.getText());
+
+        /****  RandOm Select Menu ***/
+
+        WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        String check = order.getText();
+        utils.log().info("2 - Selected - "+check);
+
+
+
+        WebElement menuCollection1 =  driver2.findElement(By.xpath("//div[@class='ion-col fill-container   menuItem-col']"));
+        if (menuCollection1.isDisplayed()) {
+            List<WebElement > menuCollection =  driver2.findElements(By.xpath("//div[@class='ion-col fill-container   menuItem-col']//button"));
+            int count1 = menuCollection.size();
+            Random rand1 = new Random();
+
+            for (int j = 1; j <= 2; j++) {
+                int itemToSelect1 = rand1.nextInt(count1);
+
+                if (itemToSelect1 == 0) {
+                    itemToSelect1 = 1;
+                }
+
+                utils.log().info(itemToSelect1);
+
+                WebElement menuName =  driver2.findElement(By.xpath("//div[@class='ion-col fill-container   menuItem-col']//button["+itemToSelect1+"]//div"));
+                TestUtils.menu1 = menuName.getText();
+                elementClick1(menuName, "Tapped Menu - " + menuName.getText());
+
+                try {
+                    WebElement mainModi1 =  driver2.findElement(By.xpath("//ion-col[@class='mod-but md hydrated']"));
+                    if ((mainModi1.isDisplayed())) {
+                        List<WebElement > mainModi10 =  driver2.findElements(By.xpath("//ion-col[@class='mod-but md hydrated']//button"));
+                        int count2 = mainModi10.size();
+                        Random rand2 = new Random();
+                        for (int k = 1; k <= 1; k++) {
+                            int itemToSelect2 = rand2.nextInt(count2);
+
+                            if (itemToSelect2 == 0) {
+                                itemToSelect2 = 1;
+                            }
+                            WebElement mainModi =  driver2.findElement(By.xpath("//ion-col[@class='mod-but md hydrated']//button["+itemToSelect2+"]//span[1]"));
+                            elementClick1(mainModi, mainModi.getText() + " - Tapped Main Modifier");
+                        }
+                        WebElement donee =  driver2.findElement(By.xpath("//button[contains(.,'Done')]"));
+                        elementClick1(donee, "1 - Done Selected");
+                    } else {
+                    }
+
+                } catch (Exception x) {
+                }
+            }
+        }
+
+        return category;
+    }
+
+
+    public String selectRandomMenu(String category) {
+
+        WebElement arrowDonwForCate = driver1.findElement(By.xpath("//button[@id='os_catMenu']"));
+        elementClick1(arrowDonwForCate, "Arrow Done");
+
+        /**** Random Select Category ****/
+
+        WebElement cate = driver1.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'" + category + "')]"));
+        elementClick1(cate, "Tapped category - " + cate.getText());
+
+        /****  RandOm Select Menu ***/
+
+        WebElement order =  driver1.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        String check = order.getText();
+        utils.log().info("2 - Selected - "+check);
+
+
+
+            WebElement menuCollection1 =  driver1.findElement(By.xpath("//div[@class='ion-col fill-container   menuItem-col']"));
+            if (menuCollection1.isDisplayed()) {
+                List<WebElement > menuCollection =  driver1.findElements(By.xpath("//div[@class='ion-col fill-container   menuItem-col']//button"));
+                int count1 = menuCollection.size();
+                Random rand1 = new Random();
+
+                for (int j = 1; j <= 2; j++) {
+                    int itemToSelect1 = rand1.nextInt(count1);
+
+                    if (itemToSelect1 == 0) {
+                        itemToSelect1 = 1;
+                    }
+
+                    utils.log().info(itemToSelect1);
+
+                    WebElement menuName =  driver1.findElement(By.xpath("//div[@class='ion-col fill-container   menuItem-col']//button["+itemToSelect1+"]//div"));
+                    TestUtils.menu = menuName.getText();
+                    elementClick1(menuName, "Tapped Menu - " + menuName.getText());
+
+                    try {
+                        WebElement mainModi1 =  driver1.findElement(By.xpath("//ion-col[@class='mod-but md hydrated']"));
+                        if ((mainModi1.isDisplayed())) {
+                            List<WebElement > mainModi10 =  driver1.findElements(By.xpath("//ion-col[@class='mod-but md hydrated']//button"));
+                            int count2 = mainModi10.size();
+                            Random rand2 = new Random();
+                            for (int k = 1; k <= 1; k++) {
+                                int itemToSelect2 = rand2.nextInt(count2);
+
+                                if (itemToSelect2 == 0) {
+                                    itemToSelect2 = 1;
+                                }
+                                WebElement mainModi =  driver1.findElement(By.xpath("//ion-col[@class='mod-but md hydrated']//button["+itemToSelect2+"]//span[1]"));
+                                elementClick1(mainModi, mainModi.getText() + " - Tapped Main Modifier");
+                            }
+                            WebElement donee =  driver1.findElement(By.xpath("//button[contains(.,'Done')]"));
+                            elementClick1(donee, "1 - Done Selected");
+                        } else {
+                        }
+
+                    } catch (Exception x) {
+                    }
+                }
+            }
+
+        return category;
+    }
+
+
+
+    public String selectRandomMenuForDineInMerge(String cate1) throws Exception {
+        selectRandomTable("1");
+        getCheckNumberTxt();
+
+        WebElement arrowDonwForCate = driver1.findElement(By.xpath("//button[@id='os_catMenu']"));
+        elementClick1(arrowDonwForCate, "Arrow Done");
+
+        /**** Random Select Category ****/
+
+        WebElement cate = driver1.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'" + cate1 + "')]"));
+        elementClick1(cate, "Tapped category - " + cate.getText());
+
+        /*****  RandOm Select Menu ****/
+
+        WebElement order = driver1.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        check = order.getText();
+        TestUtils.tableNumberof = check;
+        utils.log().info("Table Number from the order screen - " + check);
+             selectRandomMenu(cate1);
+           getTheMenuNamesFromWindow1();
+            /////////     GET THE DETAILS OF MENU VALUES  ////////////
+            WebElement subTotalAmount = driver1.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+            String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+            utils.log().info("SubTotal Amount - " + subTotalAmountTxt);
+            TestUtils.subTotal = subTotalAmountTxt;
+
+            WebElement taxAmount = driver1.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+            String taxAmountTxt = taxAmount.getAttribute("value");
+            utils.log().info("Tax - " + taxAmountTxt);
+            TestUtils.tax = taxAmountTxt;
+
+            WebElement totalAmount = driver1.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+            String totalAmountTxt = totalAmount.getAttribute("value");
+            utils.log().info("Total Amount - " + totalAmountTxt);
+            TestUtils.totalAmount = totalAmountTxt;
+
+            WebElement paidAmount = driver1.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+            String paidAmountTxt = paidAmount.getAttribute("value");
+            utils.log().info("Paid Amount - " + paidAmountTxt);
+            TestUtils.paidAmount = paidAmountTxt;
+            //getTheMenuFromOrderScreen();
+            //  getTheListOfTheMenuFromTheOrderScreen();
+            getTheMenuNamesFromWindow1();
+            WebElement finishOrder = driver1.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick1(finishOrder, "Finish Order selected");
+
+        return check;
+    }
+
+    public String selectRandomMenuForDineInMerge2(String cate1) throws Exception {
+        selectRandomTable1("1");
+        getCheckNumberTxt1();
+
+        WebElement arrowDonwForCate = driver2.findElement(By.xpath("//button[@id='os_catMenu']"));
+        elementClick1(arrowDonwForCate, "Arrow Done");
+
+        /**** Random Select Category ****/
+
+        WebElement cate =  driver2.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'CIMiniFood')]"));
+        elementClick1(cate, "Tapped category - " + cate.getText());
+
+        /*****  RandOm Select Menu ****/
+
+        WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        check = order.getText();
+        TestUtils.tableNumberof1 = check;
+        selectRandomMenu2(cate1);
+
+        /////////     GET THE DETAILS OF MENU VALUES  ////////////
+        WebElement subTotalAmount = driver2.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+        TestUtils.subTotal1 = subTotalAmountTxt;
+
+        WebElement taxAmount = driver2.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        utils.log().info("Tax - "+taxAmountTxt);
+        TestUtils.tax1 = taxAmountTxt;
+
+        WebElement totalAmount = driver2.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        utils.log().info("Total Amount - "+totalAmountTxt);
+        TestUtils.totalAmount1 = totalAmountTxt;
+
+        WebElement paidAmount = driver2.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+        TestUtils.paidAmount1 = paidAmountTxt;
+        //getTheMenuFromOrderScreen();
+        //  getTheListOfTheMenuFromTheOrderScreen();
+        getTheMenuNamesFromWindow2();
+        WebElement finishOrder = driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+        elementClick1(finishOrder, "Finish Order selected");
+
+        return check;
+    }
+
+    public String selectMenuForDineInMerge(String cate1) throws Exception {
+        selectRandomTable("1");
+        getCheckNumberTxt();
+
+        WebElement arrowDonwForCate = driver1.findElement(By.xpath("//button[@id='os_catMenu']"));
+        elementClick1(arrowDonwForCate, "Arrow Done");
+
+        /**** Random Select Category ****/
+
+        WebElement cate =  driver1.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'"+cate1+"')]"));
+        elementClick1(cate, "Tapped category - " + cate.getText());
+
+        /*****  RandOm Select Menu ****/
+
+        WebElement order =  driver1.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+        check = order.getText();
+        TestUtils.tableNumberof = check;
+        utils.log().info("Table Number from the order screen - " + check);
+
+
+        WebElement miniParota = driver1.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Mini parota')])[1]"));
+        TestUtils.menu1 = miniParota.getText();
+        elementClick1(miniParota, "1 - Tapped Menu - " + miniParota.getText());
+        WebElement miniIdly = driver1.findElement(By.xpath("(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'Mini idly')])[1]"));
+        TestUtils.menu2 = miniIdly.getText();
+        elementClick1(miniIdly, "1 - Tapped Menu" + miniIdly.getText());
+
+        /////////     GET THE DETAILS OF MENU VALUES  ////////////
+        WebElement subTotalAmount = driver1.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        String subTotalAmountTxt = subTotalAmount.getAttribute("value");
+        utils.log().info("SubTotal Amount - "+subTotalAmountTxt);
+        TestUtils.subTotal = subTotalAmountTxt;
+
+        WebElement taxAmount = driver1.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        String taxAmountTxt = taxAmount.getAttribute("value");
+        utils.log().info("Tax - "+taxAmountTxt);
+        TestUtils.tax = taxAmountTxt;
+
+        WebElement totalAmount = driver1.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        String totalAmountTxt = totalAmount.getAttribute("value");
+        utils.log().info("Total Amount - "+totalAmountTxt);
+        TestUtils.totalAmount = totalAmountTxt;
+
+        WebElement paidAmount = driver1.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        String paidAmountTxt = paidAmount.getAttribute("value");
+        utils.log().info("Paid Amount - "+paidAmountTxt);
+        TestUtils.paidAmount = paidAmountTxt;
+        //getTheMenuFromOrderScreen();
+        //  getTheListOfTheMenuFromTheOrderScreen();
+        getTheMenuNamesFromWindow1();
+        WebElement finishOrder = driver1.findElement(By.xpath("//button[(@id='os_finish')]"));
+        elementClick1(finishOrder, "Finish Order selected");
+
+        return check;
+    }
+    @FindBy (xpath = "//linga-icon[(@symbol='logout')]")
+    private WebElement powerBtn;
+public void clickPower(){
+        elementClick1("//linga-icon[(@symbol='logout')]","1 - Power");
 }
 
+    public void clickPower1(){
+        elementClick2("//linga-icon[(@symbol='logout')]","2 - Power");
+    }
+
+    public void splitGroupBothIpad(String cate) throws Exception {
+        for(int i =1;i<=2;i++) {
+            utils.log().info("Sync Count - "+i);
+            selectMenuForDineInMerge(cate);
+            openTheActiveCheckFromIpad2();
+            verifyIPad1MenuInIpad2();
+            WebElement finishOrder =  driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick2(finishOrder, "Finish Order selected - 2");
+
+            doSplit();
+
+            WebElement saveAndClose =  driver2.findElement(By.xpath("(//button[.=' Save & Close '])"));
+            elementClick1(saveAndClose,"Selected - "+saveAndClose.getText());
+
+            WebElement seat1 =  driver2.findElement(By.xpath("//button[@id='1']"));
+            elementClick2(seat1,"selected seat - "+seat1.getText());
+
+            orderScreenForiPad2AfterSplitMenu1();
+
+            WebElement seat2 =  driver2.findElement(By.xpath("//button[@id='2']"));
+            elementClick2(seat2,"selected seat - "+seat2.getText());
+
+            orderScreenForiPad2AfterSplitMenu2();
+
+            WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+            String check = order.getText();
+
+            elementClick2(order,"Selected - "+check);
+
+            verifyCheckValueAfterSplitDone();
+
+            WebElement finishOrder1 =  driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick2(finishOrder1, "Finish Order selected - 2");
+
+            Thread.sleep(1000);
+
+            moveToTheFirst();
+
+            new SyncClass1().openTheActiveCheckFromIpad1();
+
+            WebElement seat11 =  driver1.findElement(By.xpath("//button[@id='1']"));
+            elementClick1(seat11,"selected seat - "+seat11.getText());
+
+            new SyncClass1().verifyIPad2MenuInIpad1Seat1();
+
+//            new SyncClass1().verifyIPad2MenuInIpad1();
+
+            WebElement seat12 =  driver1.findElement(By.xpath("//button[@id='2']"));
+            elementClick1(seat12,"selected seat - "+seat12.getText());
+
+            new SyncClass1().verifyIPad2MenuInIpad1Seat2();
+
+            WebElement finishOrder2 =  driver1.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick1(finishOrder2, "Finish Order selected - 1");
+
+            doGroupActionInIpad1();
+
+            WebElement seat111 =  driver1.findElement(By.xpath("//button[@id='1']"));
+            elementClick2(seat111,"selected seat - "+seat111.getText());
+
+            new SyncClass1().orderScreenForiPad2AfterSplitMenu1();
+
+            WebElement seat21 =  driver1.findElement(By.xpath("//button[@id='2']"));
+            elementClick2(seat21,"selected seat - "+seat21.getText());
+
+            new SyncClass1().orderScreenForiPad2AfterSplitMenu2();
+
+            WebElement order1 =  driver1.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+            String check1 = order1.getText();
+            elementClick1(order1,"Selected - "+check1);
+
+            elementClick1(payment,"Selected Payment");
+            elementClick1(cash,"Selected Payment");
+            elementClick1(submit,"Selected Payment");
+
+            Thread.sleep(500);
+        }
+    }
+
+    public void splitGroupBothIpadRandom(String cate) throws Exception {
+        for(int i =1;i<=1;i++) {
+            utils.log().info("Sync Count - "+i);
+            selectRandomMenuForDineInMerge(cate);
+            openTheActiveCheckFromIpad2();
+            verifyIPad1MenuInIpad2();
+            WebElement finishOrder =  driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick2(finishOrder, "Finish Order selected - 2");
+
+            doSplitRandom();
+
+            WebElement saveAndClose =  driver2.findElement(By.xpath("(//button[.=' Save & Close '])"));
+            elementClick1(saveAndClose,"Selected - "+saveAndClose.getText());
+
+            WebElement seat1 =  driver2.findElement(By.xpath("//button[@id='1']"));
+            elementClick2(seat1,"selected seat - "+seat1.getText());
+
+            orderScreenForiPad2AfterSplitMenu1();
+
+            WebElement seat2 =  driver2.findElement(By.xpath("//button[@id='2']"));
+            elementClick2(seat2,"selected seat - "+seat2.getText());
+
+            orderScreenForiPad2AfterSplitMenu2();
+
+            WebElement order =  driver2.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+            String check = order.getText();
+
+            elementClick2(order,"Selected - "+check);
+
+            verifyCheckValueAfterSplitDone();
+
+            WebElement finishOrder1 =  driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick2(finishOrder1, "Finish Order selected - 2");
+
+            Thread.sleep(1000);
+
+            moveToTheFirst();
+
+            new SyncClass1().openTheActiveCheckFromIpad1();
+
+            WebElement seat11 =  driver1.findElement(By.xpath("//button[@id='1']"));
+            elementClick1(seat11,"selected seat - "+seat11.getText());
+
+            new SyncClass1().verifyIPad2MenuInIpad1Seat1();
+
+//            new SyncClass1().verifyIPad2MenuInIpad1();
+
+            WebElement seat12 =  driver1.findElement(By.xpath("//button[@id='2']"));
+            elementClick1(seat12,"selected seat - "+seat12.getText());
+
+            new SyncClass1().verifyIPad2MenuInIpad1Seat2();
+
+            WebElement finishOrder2 =  driver1.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick1(finishOrder2, "Finish Order selected - 1");
+
+            doGroupActionInIpad1();
+
+            WebElement seat111 =  driver1.findElement(By.xpath("//button[@id='1']"));
+            elementClick2(seat111,"selected seat - "+seat111.getText());
+
+            new SyncClass1().orderScreenForiPad2AfterSplitMenu1();
+
+            WebElement seat21 =  driver1.findElement(By.xpath("//button[@id='2']"));
+            elementClick2(seat21,"selected seat - "+seat21.getText());
+
+            new SyncClass1().orderScreenForiPad2AfterSplitMenu2();
+
+            WebElement order1 =  driver1.findElement(By.xpath("//button[@id='os_selectedSeat']"));
+            String check1 = order1.getText();
+            elementClick1(order1,"Selected - "+check1);
+
+            elementClick1(payment,"Selected Payment");
+            elementClick1(cash,"Selected Payment");
+            elementClick1(submit,"Selected Payment");
+
+            Thread.sleep(500);
+        }
+    }
+
+
+    public void doGroupActionInIpad1() throws Exception {
+        WebElement table = driver1.findElement(By.xpath("//button[contains(.,' Table layout ')]"));
+        elementClick1(table,"Selected - Table 2");
+        Thread.sleep(1000);
+        WebElement splitBtnn =  driver1.findElement(By.xpath("//button[contains(.,'Split')]"));
+        elementClick1(splitBtnn, "Split Button Selected - "+splitBtnn.getText());
+        Thread.sleep(2000);
+        WebElement splitBtnn1 =  driver1.findElement(By.xpath("//ion-label[.='Split']"));
+        Assert.assertEquals(splitBtnn1.getText(),"Split");
+        utils.log().info("Split window - "+splitBtnn1.getText());
+        Thread.sleep(2000);
+        WebElement splitSeat1 =  driver1.findElement(By.xpath("//button[contains(.,' Split By Seat ')]"));
+        elementClick1(splitSeat1, "Selected Button as - "+splitSeat1.getText());
+        Thread.sleep(200);
+        String tableNo = TestUtils.tableNumberof;
+        verifyTableMergee1(tableNo);
+        Thread.sleep(2000);
+        WebElement splitSeatScreen =  driver1.findElement(By.xpath("//p[.=' Split Seat ']"));
+        Assert.assertEquals(splitSeatScreen.getText(),"Split Seat");
+        utils.log().info("Split Seat Screen - "+splitSeatScreen.getText());
+
+        doGroup();
+    }
+
+    public void getMenuNameSeat1() throws InterruptedException {
+        ArrayList<String> menuNameSeat1 = new ArrayList<>();
+        ArrayList<String> modifierName1=new ArrayList<String>();
+        ArrayList<String> menuPrize1=new ArrayList<String>();
+        ArrayList<String> modifierPrize1=new ArrayList<String>();
+        ArrayList<String> modifierQtySeat1=new ArrayList<String>();
+        List<WebElement> menuItem = driver1.findElements(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')]"));
+        Thread.sleep(1000);
+        utils.log().info("Menu Items count in the Seat 1 - " + menuItem.size());
+        TestUtils.countOfMenuSeat1 = menuItem.size();
+
+        for (int i = 1; i < menuItem.size(); i++) {
+            WebElement menuItems = driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')][" + i + "]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info(i + " Menu Items in the Seat 1 - " + menuItems.getText());
+            menuNameSeat1.add(menuItems.getText());
+            TestUtils.menuNameSeat1 = menuNameSeat1;
+            utils.log().info(i + " Menu Items in the Seat 1 Lists - " + menuNameSeat1.get(i-1));
+            utils.log().info(i + " Menu Items in the Seat 1 List - " + menuNameSeat1);
+            WebElement menuPrize = driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info(i+" Menu Prize in the Seat 1 - "+menuPrize.getText());
+            menuPrize1.add(menuPrize.getText());
+            TestUtils.menuPrizeSeat1 = menuPrize1;
+            Thread.sleep(1000);
+            try {
+                WebElement modifierNameItem12 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuNameSeat1.get(i-1)+"    ')])["+i+"]/../../ion-row[1]//ion-col[1]"));
+                String modifierItem12 = modifierNameItem12.getText();
+                utils.log().info("Window 23 Seat 1 Modifier Name - " + modifierItem12);
+                List<WebElement> modifierItem1 =  driver2.findElements(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuNameSeat1.get(i-1)+"    ')])["+i+"]/../../ion-row"));
+                utils.log().info(modifierItem1.size());
+                for (int w = 0; w < modifierItem1.size(); w++) {
+                    int m = w + 1;
+                    WebElement modifierNameItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuNameSeat1.get(i-1)+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[1]"));
+                    String modifierItem11 = modifierNameItem1.getText();
+                    modifierName1.add(modifierItem11);
+                    TestUtils.modifierNameSeat1 = modifierName1;
+                    utils.log().info("Window 2 Seat 1 Modifier Name - " + modifierName1);
+                    WebElement modifierPrizeItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuNameSeat1.get(i-1)+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[4]"));
+                    String modifierPrizeItem11 = modifierPrizeItem1.getText();
+                    modifierPrize1.add(modifierPrizeItem11);
+                    TestUtils.modifierPrizeSeat1 = modifierPrize1;
+                    utils.log().info("Window 2 Seat 1 Modifier Prize - " + modifierPrize1);
+                    WebElement modifierQtyItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuNameSeat1.get(i-1)+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[2]"));
+                    String modifierQtyItem11 = modifierQtyItem1.getText();
+                    modifierQtySeat1.add(modifierQtyItem11);
+                    utils.log().info("Window 2 Seat 1 Modifier Qty- " + modifierQtySeat1);
+                }
+
+            } catch (Exception w) {
+//                utils.log().info(" Menu Items in the Seat 1- " + menuNameSeat1);
+            }
+        }
+    }
+
+    public void getMenuNameSeat2() throws InterruptedException {
+        ArrayList<String> menuNameSeat2=new ArrayList<>();
+        ArrayList<String> modifierName2=new ArrayList<String>();
+        ArrayList<String> menuPrize2=new ArrayList<String>();
+        ArrayList<String> modifierPrize2=new ArrayList<String>();
+        ArrayList<String> modifierQtySeat2=new ArrayList<String>();
+        List<WebElement> menuItem = driver1.findElements(By.xpath("//ion-app[@id='seat2']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')]"));
+        Thread.sleep(1000);
+        utils.log().info("Menu Items count in the Seat 2- "+menuItem.size());
+        TestUtils.countOfMenuSeat2 = menuItem.size();
+        for(int i=1; i<=menuItem.size();i++){  //ion-app[@id='seat2']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')][1]//ion-col[contains(@class,'menu-name')]/../ion-col[2]
+            WebElement menuItems = driver1.findElement(By.xpath("//ion-app[@id='seat2']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info(i+" Menu Items in the Seat 2 - "+menuItems.getText());
+            menuNameSeat2.add(menuItems.getText());
+            TestUtils.menuNameSeat2 = menuNameSeat2;
+
+            WebElement menuPrize = driver1.findElement(By.xpath("//ion-app[@id='seat2']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info(i+" Menu Prize in the Seat 2 - "+menuPrize.getText());
+            menuPrize2.add(menuPrize.getText());
+            TestUtils.menuPrizeSeat2 = menuPrize2;
+            utils.log().info(" Menu Items in the Seat 2- "+menuNameSeat2+ " Prize - "+menuPrize2);
+            try {
+
+                List<WebElement> modifierItem1 =  driver2.findElements(By.xpath("(//ion-app[@id='seat2']//p[contains(.,' "+menuNameSeat2.get(i-1)+"    ')])["+i+"]/../../ion-row"));
+                utils.log().info(modifierItem1.size());
+                for (int w = 0; w < modifierItem1.size(); w++) {
+                    int m = w + 1;
+                    WebElement modifierNameItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat2']//p[contains(.,' "+menuNameSeat2.get(i-1)+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[1]"));
+                    String modifierItem11 = modifierNameItem1.getText();
+                    modifierName2.add(modifierItem11);
+                    TestUtils.modifierNameSeat2 = modifierName2;
+                    utils.log().info("Window 2 Seat 2 Modifier Name 2 - " + modifierName2);
+                    WebElement modifierPrizeItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat2']//p[contains(.,' "+menuNameSeat2.get(i-1)+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[4]"));
+                    String modifierPrizeItem11 = modifierPrizeItem1.getText();
+                    modifierPrize2.add(modifierPrizeItem11);
+                    TestUtils.modifierPrizeSeat2 = modifierPrize2;
+                    utils.log().info("Window 2 Seat 2 Modifier Prize 2 - " + modifierPrize2);
+                    WebElement modifierQtyItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat2']//p[contains(.,' "+menuNameSeat1.get(i-1)+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[2]"));
+                    String modifierQtyItem11 = modifierQtyItem1.getText();
+                    modifierQtySeat2.add(modifierQtyItem11);
+                    utils.log().info("Window 2 Seat 2 Modifier Qty 2 - " + modifierQtySeat2);
+                }
+
+            } catch (Exception w) {
+//                utils.log().info(" Menu Items in the Seat 1- " + menuNameSeat1);
+            }
+
+        }
+//        utils.log().info(" Menu Items in the Seat 2- "+menuNameSeat2+ " Prize - "+menuPrize2);
+    }
+
+    public void verifyMenuItemAreClubbedInSeat1() throws InterruptedException {
+      Thread.sleep(2000);
+        ArrayList<String> menuNameSeat1 = new ArrayList<>();
+        ArrayList<String> modifierName1=new ArrayList<String>();
+        ArrayList<String> menuPrize1=new ArrayList<String>();
+        ArrayList<String> modifierPrize1=new ArrayList<String>();
+        ArrayList<String> modifierQtySeat1=new ArrayList<String>();
+        List<WebElement> menuItem =  driver1.findElements(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')]"));
+        int countOfMenuSeat = TestUtils.countOfMenuSeat2 + TestUtils.countOfMenuSeat1;
+        utils.log().info("Menu Items count in the Seats - "+countOfMenuSeat);
+        utils.log().info("Menu Items count in the Seat - "+menuItem.size());
+        Assert.assertEquals(menuItem.size(),countOfMenuSeat);
+        utils.log().info("Menu Items count in the Seat - "+menuItem.size());
+        for(int i=3; i<=menuItem.size();i++){
+            WebElement menuItems =  driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info("Menu Items in the Seat - "+menuItems.getText());
+            utils.log().info(TestUtils.menuNameSeat2.get(i - 3));
+            Assert.assertEquals(TestUtils.menuNameSeat2.get(i - 3),menuItems.getText());
+
+
+            WebElement menuPrize = driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info(i+" Menu Prize in the Seat 1 - "+menuPrize.getText());
+//            menuPrize1.add(menuPrize.getText());
+//            TestUtils.menuPrizeSeat1 = menuPrize1;
+            utils.log().info(TestUtils.menuPrizeSeat2.get(i - 3));
+            Assert.assertEquals(TestUtils.menuPrizeSeat2.get(i - 3),menuPrize.getText());
+            utils.log().info("Al Menu Items Are clubbed - "+i+" "+menuItems.getText()+"  Prize - "+menuPrize.getText());
+
+            try {
+
+                List<WebElement> modifierItem1 =  driver1.findElements(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuItems.getText()+"    ')])["+i+"]/../../ion-row"));
+                utils.log().info(modifierItem1.size());
+                for (int w = 0; w < modifierItem1.size(); w++) {
+                    int m = w + 1;
+                    WebElement modifierNameItem1 = driver1.findElement(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuItems.getText()+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[1]"));
+                    String modifierItem11 = modifierNameItem1.getText();
+//                    modifierName1.add(modifierItem11);
+                    Assert.assertEquals(TestUtils.modifierNameSeat2.get(i - 3),modifierItem11);
+//                    TestUtils.modifierNameSeat1 = modifierName1;
+                    utils.log().info("Window 2 Seat 1 Modifier Name - " + modifierItem11);
+                    WebElement modifierPrizeItem1 = driver1.findElement(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuItems.getText()+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[4]"));
+                    String modifierPrizeItem11 = modifierPrizeItem1.getText();
+//                    modifierPrize1.add(modifierPrizeItem11);
+                    Assert.assertEquals(TestUtils.modifierPrizeSeat2.get(i - 3),modifierPrizeItem11);
+//                    TestUtils.modifierPrizeSeat1 = modifierPrize1;
+                    utils.log().info("Window 2 Seat 1 Modifier Prize - " + modifierPrizeItem11);
+                    WebElement modifierQtyItem1 = driver1.findElement(By.xpath("(//ion-app[@id='seat1']//p[contains(.,' "+menuItems.getText()+"    ')])["+i+"]/../../ion-row["+m+"]//ion-col[2]"));
+                    String modifierQtyItem11 = modifierQtyItem1.getText();
+                    modifierQtySeat1.add(modifierQtyItem11);
+                    Assert.assertEquals(TestUtils.modifierQtySeat2.get(i - 3),modifierQtyItem11);
+                    utils.log().info("Window 2 Seat 1 Modifier Qty- " + modifierQtyItem11);
+                }
+
+            } catch (Exception w) {
+//                utils.log().info(" Menu Items in the Seat 1- " + menuNameSeat1);
+            }
+        }
+
+    }
+    public void doGroup() throws InterruptedException {
+        driver1.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
+
+
+        WebElement SplitEvenly =  driver1.findElement(By.xpath("//div[.='Split Evenly']"));
+        elementClick1(SplitEvenly, "Tapped Split Evenly in the Split Seat");
+        getMenuNameSeat1();
+        getMenuNameSeat2();
+        verifyMenuIsSplittedEvenly();
+        getMenuNameSeat1();
+        getMenuNameSeat2();
+//        getSeat1Prize();
+        getSeat1Prize1();
+        getSeat2Prize1();
+//        getSeat2Prize();
+
+        WebElement seat1 =  driver1.findElement(By.xpath("//ion-col[.='Seat 1']"));
+        elementClick1(seat1,"Selected - Seat -1 in iPad-1");
+        WebElement seat2 =  driver1.findElement(By.xpath("//ion-col[.='Seat 2']"));
+        elementClick1(seat2,"Selected - Seat -2 in iPad-1");
+        WebElement groupSeat =  driver1.findElement(By.xpath("//div[.='Group Seats']"));
+        elementClick1(groupSeat,"Selected Group Seat iPad -1");
+        verifyMenuItemAreClubbedInSeat1();
+//        verifyPrizeDetailsAfterGroupSeats();
+        verifyAllClubbedSeatPrizeAfterGroupSeatDoneDirect();
+//        getMenuNameSeat1();
+        getMenuDetailsGroupSeat1();
+        WebElement saveAndClose =  driver1.findElement(By.xpath("(//button[.=' Save & Close '])"));
+        elementClick1(saveAndClose,"Selected - "+saveAndClose.getText()+"in iPad -1");
+
+    }
+
+    public void getMenuDetailsGroupSeat1() {
+
+        ArrayList<String> menuItemSeat = new ArrayList<>();
+        ArrayList<String> menuPrizeSeat = new ArrayList<>();
+        ArrayList<String> menuQtySeat = new ArrayList<>();
+        ArrayList<String> modifierNameSeat1 = new ArrayList<>();
+        ArrayList<String> modifierPrizeSeat1 = new ArrayList<>();
+        ArrayList<String> modifierQtySeat1 = new ArrayList<>();
+        List<WebElement> menuItem = driver1.findElements(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')]"));
+        TestUtils.countOfMenuSeat1 = menuItem.size();
+        for(int i=1; i<=menuItem.size();i++){
+            WebElement menuItems = driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[1]"));
+            utils.log().info("Menu Items in the Seat 1- "+menuItems.getText());
+            menuItemSeat.add(menuItems.getText());
+            WebElement price =  driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[4]"));
+            String price1 = price.getText();
+            menuPrizeSeat.add(price1);
+            utils.log().info("Menu Prize in the Seat 1- "+price1);
+            WebElement Qty =  driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[2]"));
+            String Qty1 = Qty.getText();
+            menuQtySeat.add(Qty1);
+            utils.log().info("Menu Qty in the Seat 1- "+Qty1);
+            try{
+                WebElement modifierItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])["+i+"]/../ion-row[1]//ion-col[1]"));
+               if(modifierItem1.isDisplayed()) {
+                   String modifierItem11 = modifierItem1.getText();
+                   modifierNameSeat1.add(modifierItem11);
+                   utils.log().info("Seat 1 Modifier Qty- " + modifierNameSeat1);
+                   WebElement modifierPrizeItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])[" + i + "]/../ion-row[1]//ion-col[4]"));
+                   String modifierPrizeItem11 = modifierPrizeItem1.getText();
+                   modifierPrizeSeat1.add(modifierPrizeItem11);
+                   utils.log().info("Seat 1 Modifier Qty- " + modifierPrizeSeat1);
+                   WebElement modifierQtyItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])[" + i + "]/../ion-row[1]//ion-col[2]"));
+                   String modifierQtyItem11 = modifierQtyItem1.getText();
+                   modifierQtySeat1.add(modifierQtyItem11);
+                   utils.log().info("Seat 1 Modifier Qty- " + modifierQtySeat1);
+               }else {
+                   modifierNameSeat1.add(null);
+                   modifierPrizeSeat1.add(null);
+                   modifierQtySeat1.add(null);
+               }
+                TestUtils.modifierNameGroup = modifierNameSeat1;
+                TestUtils.modifierPrizeGroup = modifierPrizeSeat1;
+                TestUtils.modifierQtyGroup = modifierQtySeat1;
+            }catch (Exception w){
+
+            }
+        }
+        utils.log().info("List of the Menu in the Seat 1 - "+menuItemSeat);
+        TestUtils.menuNamesGroup = menuItemSeat;
+        TestUtils.menuPrizeGroup = menuPrizeSeat;
+        TestUtils.menuQtyGroup = menuQtySeat;
+    }
+
+    public void verifyMenuIsSplittedEvenly() throws InterruptedException {
+
+        ArrayList<String> menuNameSeat2=new ArrayList<>();
+        ArrayList<String> menuNameSeat1=new ArrayList<>();
+        ArrayList<String> menuQty1=new ArrayList<>();
+        ArrayList<String> menuQty2=new ArrayList<>();
+        List<WebElement> menuItem = driver1.findElements(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')]"));
+        Thread.sleep(1000);
+        utils.log().info("Menu Items count in the Seat 1 - "+menuItem.size());
+
+        for(int i=1; i<=menuItem.size();i++){
+            WebElement menuItems = driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info(i+" Menu Items in the Seat - "+menuItems.getText());
+            menuNameSeat1.add(menuItems.getText());
+            WebElement menuQty = driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]/../ion-col[2]"));
+            utils.log().info(i+" Menu Items Seat 1 in the Qty - "+menuQty.getText());
+            menuQty1.add(menuQty.getText());
+            TestUtils.menuNameSeat1 = menuNameSeat1;
+            TestUtils.menuQtySeat1 = menuQty1;
+        }
+        utils.log().info(" Menu Items in the Seat 1- "+menuNameSeat1);
+
+
+
+        List<WebElement> menuItem1 = driver1.findElements(By.xpath("//ion-app[@id='seat2']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]//ion-col[contains(@class,'menu-name')]"));
+        Thread.sleep(1000);
+        utils.log().info("Menu Items count in the Seat 2- "+menuItem1.size());
+
+        for(int i=1; i<=menuItem1.size();i++){
+            WebElement menuItems = driver1.findElement(By.xpath("//ion-app[@id='seat2']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]"));
+            utils.log().info(i+" Menu Items in the Seat - "+menuItems.getText());
+            menuNameSeat2.add(menuItems.getText());
+            WebElement menuQty = driver1.findElement(By.xpath("//ion-app[@id='seat2']//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')]["+i+"]//ion-col[contains(@class,'menu-name')]/../ion-col[2]"));
+            utils.log().info(i+" Menu Items Seat 2 in the Qty - "+menuQty.getText());
+            menuQty2.add(menuQty.getText());
+            TestUtils.menuNameSeat2 = menuNameSeat2;
+            TestUtils.menuQtySeat2 = menuQty2;
+
+        }
+        utils.log().info(" Menu Items in the Seat 2- "+menuNameSeat2);
+
+
+        Assert.assertEquals(String.valueOf(menuItem.size()), String.valueOf(menuItem1.size()));
+        utils.log().info("Menu Size is SAME - " + menuItem1.size());
+        for (int i = 0; i < menuItem1.size(); i++) {
+            Assert.assertEquals(menuNameSeat1.get(i), menuNameSeat2.get(i));
+            //    utils.log().info("Splitted Menu is SAME - " + MenuNameTxt[i]);
+            Assert.assertEquals(menuQty1.get(i),menuQty2.get(i));
+//            Assert.assertEquals(MenuNamePrize[i], MenuNamePrize2[i]);
+            utils.log().info("Splitted Menu is SAME - " +i+" "+ menuNameSeat1.get(i) +" Qty - "+menuQty1.get(i) );
+            try {
+                Assert.assertEquals(ModifierName[i], ModifierName2[i]);
+                //Assert.assertEquals(ModifierPrize[i], ModifierPrize2[i]);
+                Assert.assertEquals(ModifierQty[i], ModifierQty2[i]);
+                utils.log().info("Splitted Modifier is SAME - "+i+" " + ModifierName[i] + " Qty - " + ModifierQty[i] + " Price - " + ModifierPrize[i]);
+            } catch (Exception s) {
+
+            }
+        }
+    }
+
+    public void verifyPrizeDetailsAfterGroupSeats() {
+        driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //////  SUBTOTAL AFTER GROUP SEATS  /////////
+        String subTotalTxt1 = TestUtils.subtotalTxt;
+        String subTotalTxt2 = subTotalTxt1.replaceAll("[A-Z$,. ]", "");
+        int subTotalAmount1 = Integer.parseInt(subTotalTxt2);
+        String subTotalTxt11 = TestUtils.subtotalTxt1;
+        String subTotalTxt22 = subTotalTxt11.replaceAll("[A-Z$,. ]", "");
+        int subTotalAmount2 = Integer.parseInt(subTotalTxt22);
+        int subTotalAmount = subTotalAmount1 + subTotalAmount2;
+        //XCUIElementTypeApplication[@name="Cloud POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]
+        WebElement subTotal =  driver1.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Cloud POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
+        String subtotal = subTotal.getText();
+        TestUtils.subtotalTxt = subtotal;
+        String subtotal1 = subtotal.replaceAll("[A-Z$., ]", "");
+        int subtotalAmount = Integer.parseInt(subtotal1);
+        Assert.assertEquals(String.valueOf(subTotalAmount), String.valueOf(subtotalAmount));
+        utils.log().info("Subtotal is SAME After Group Seats Done - " + subtotal);
+
+        //////  TAX AFTER GROUP SEATS  /////////
+
+        String taxTxt1 = TestUtils.taxTxtOfBeforeRound1;
+        // String taxTxt2 = taxTxt1.replaceAll("[A-Z$ ]", "");
+        double taxAmount1 = Double.parseDouble(taxTxt1);
+        String taxTxt11 = TestUtils.taxTxtOfBeforeRound2;
+        //  String taxTxt22 = taxTxt11.replaceAll("[A-Z$ ]", "");
+        double taxAmount2 = Double.parseDouble(taxTxt11);
+        double taxAmount11 = taxAmount1 + taxAmount2;
+        BigDecimal taxAmount111=new BigDecimal(taxAmount11).setScale(2, RoundingMode.HALF_UP);
+        double taxAmount= taxAmount111.doubleValue();
+
+        WebElement tax =  driver1.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Cloud POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
+        String taX = tax.getText();
+        TestUtils.taxTxtGroup = taX;
+        String taX1 = taX.replaceAll("[A-Z$. ]", "");
+        String tax11 = taX1.replaceAll(",",".");
+        double taXAmount = Double.parseDouble(tax11);
+        Assert.assertEquals(String.valueOf(taxAmount), String.valueOf(taXAmount));
+        utils.log().info("Tax is SAME After Group Seats Done - " + taX);
+
+        //////  PAID AMOUNT AFTER GROUP SEATS  /////////
+
+        String paidAmounT = TestUtils.paidAmount;
+        String paidAmounT2 = paidAmounT.replaceAll("[A-Z$,. ]", "");
+        int paidAmounT1 = Integer.parseInt(paidAmounT2);
+        String paidAmounT11 = TestUtils.paidAmount1;
+        String paidAmounT22 = paidAmounT11.replaceAll("[A-Z$,. ]", "");
+        int paidAmounT12 = Integer.parseInt(paidAmounT22);
+        int paidAmount = paidAmounT1 + paidAmounT12;
+
+        WebElement paidAmountt =  driver1.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Cloud POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
+        String paidAmountt1 = paidAmountt.getText();
+        TestUtils.paidAmount1 = paidAmountt1;
+        String paidAmountt11 = paidAmountt1.replaceAll("[A-Z$., ]", "");
+        int paidAmounTT = Integer.parseInt(paidAmountt11);
+        Assert.assertEquals(String.valueOf(paidAmount), String.valueOf(paidAmounTT));
+        utils.log().info("Paid AMount is SAME After Group Seats Done - " + paidAmountt1);
+
+        //////  TOTAL AMOUNT AFTER GROUP SEATS  /////////
+
+        String totalTxt1 = TestUtils.totalTxt;
+        String totalTxt12 = totalTxt1.replaceAll("[A-Z$ ]", "");
+        double totalTxt = Double.parseDouble(totalTxt12);
+        String totalTxt11 = TestUtils.totalTxt1;
+        String totalTxt22 = totalTxt11.replaceAll("[A-Z$ ]", "");
+        double totalTxT2 = Double.parseDouble(totalTxt22);
+        double totalTxTT2 = totalTxt + totalTxT2;
+        BigDecimal  totalTxTT3=new BigDecimal(totalTxTT2).setScale(2, RoundingMode.HALF_UP);
+        double totalTxTT= totalTxTT3.doubleValue();
+
+
+        WebElement Total =  driver1.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Cloud POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
+        String Total1 = Total.getText();
+        TestUtils.totalTxt = Total1;
+        String Total11 = Total1.replaceAll("[A-Z$. ]", "");
+        String Total111 = Total11.replaceAll(",",".");
+        double TotaL = Double.parseDouble(Total111);
+        Assert.assertEquals(String.valueOf(totalTxTT), String.valueOf(TotaL));
+        utils.log().info("TOTAL is SAME After Group Seats Done - " + Total1);
+
+    }
+
+    public void splitBothIpad(String Cate) throws Exception {
+
+
+        for(int i =1;i<=2;i++) {
+            utils.log().info("Sync Count - "+i);
+            selectMenuForDineInMerge(Cate);
+            openTheActiveCheckFromIpad2();
+            verifyIPad1MenuInIpad2();
+            WebElement finishOrder =  driver2.findElement(By.xpath("//button[(@id='os_finish')]"));
+            elementClick2(finishOrder, "Finish Order selected - 2");
+            doSplit();
+            WebElement saveAndClose =  driver2.findElement(By.xpath("(//button[.=' Save & Close '])"));
+            elementClick1(saveAndClose,"Selected - "+saveAndClose.getText());
+
+            Thread.sleep(2000);
+            elementClick2(payment,"Selected Payment");
+            elementClick2(cash,"Selected Payment");
+            elementClick2(submit,"Selected Payment");
+            Thread.sleep(2000);
+        }
+
+
+    }
+    public void doSplitRandom() throws Exception {
+        driver2.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+        Thread.sleep(2000);
+        WebElement table = driver2.findElement(By.xpath("//button[contains(.,' Table layout ')]"));
+        elementClick2(table,"Selected - Table 2");
+        WebElement splitBtnn =  driver2.findElement(By.xpath("//button[contains(.,'Split')]"));
+        elementClick2(splitBtnn, "Split Button Selected - "+splitBtnn.getText());
+        Thread.sleep(2000);
+        WebElement splitBtnn1 =  driver2.findElement(By.xpath("//ion-label[.='Split']"));
+        Assert.assertEquals(splitBtnn1.getText(),"Split");
+        utils.log().info("Split window - "+splitBtnn1.getText());
+        Thread.sleep(2000);
+        WebElement splitSeat1 =  driver2.findElement(By.xpath("//button[contains(.,' Split By Seat ')]"));
+        elementClick2(splitSeat1, "Selected Button as - "+splitSeat1.getText());
+        Thread.sleep(200);
+        String tableNo = TestUtils.tableNumberof;
+        verifyTableMergee2(tableNo);
+        Thread.sleep(2000);
+        WebElement splitSeatScreen =  driver2.findElement(By.xpath("//p[.=' Split Seat ']"));
+        Assert.assertEquals(splitSeatScreen.getText(),"Split Seat");
+        utils.log().info("Split Seat Screen - "+splitSeatScreen.getText());
+        doSplitActionRandom();
+
+    }
+
+public void getSeat1MenuDetailsForSplitAction() throws InterruptedException {
+
+    ArrayList<String> menuNameSeat1 = new ArrayList<>();
+    ArrayList<String> menuPrizeSeat1 = new ArrayList<>();
+    ArrayList<String> modifierPrizeSeat1 = new ArrayList<>();
+    ArrayList<String> modifierQtySeat1 = new ArrayList<>();
+    ArrayList<String> menuQtySeat1 = new ArrayList<>();
+    ArrayList<String> modifierNameSeat1 = new ArrayList<>();
+Thread.sleep(2000);
+   List<WebElement> listOfMEnus =  driver2.findElements(By.xpath("//ion-app[@id='seat1']//ion-item//ion-grid[1]//ion-row"));
+    utils.log().info("Size of Seat 1 - "+listOfMEnus.size());
+    for(int i =1;i<listOfMEnus.size();i++) {
+        WebElement verifyItem1 = driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-item["+i+"]//ion-grid[1]//ion-row[1]//ion-col[1]"));
+    String itemName2 = verifyItem1.getText();
+//        Assert.assertEquals(itemName2,itemName);
+    menuNameSeat1.add(itemName2);
+    utils.log().info("Seat 1 Menu - " + menuNameSeat1);
+    WebElement verifyItemPrize1 = driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-item["+i+"]//ion-grid[1]//ion-row[1]//ion-col[4]"));
+    String itemNamePrize2 = verifyItemPrize1.getText();
+    menuPrizeSeat1.add(itemNamePrize2);
+    utils.log().info("Seat 1 Menu Prize - " + menuPrizeSeat1);
+    WebElement verifyItemQty1 = driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-item["+i+"]//ion-grid[1]//ion-row[1]//ion-col[2]"));
+    String itemNameQty2 = verifyItemQty1.getText();
+//        Assert.assertEquals(itemNameQty2,Qty1);
+    menuQtySeat1.add(itemNameQty2);
+    utils.log().info("Seat 1 Menu Qty- " + menuQtySeat1);
+    TestUtils.menuNameSeat1 = menuNameSeat1;
+    TestUtils.menuPrize1 = menuPrizeSeat1;
+    TestUtils.menuQtySeat1 = menuQtySeat1;
+    try {
+        WebElement modifierItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])["+i+"]/../ion-row[1]//ion-col[1]"));
+        if(modifierItem1.isDisplayed()) {
+            String modifierItem11 = modifierItem1.getText();
+            modifierNameSeat1.add(modifierItem11);
+            utils.log().info("Seat 1 Modifier Name - " + modifierNameSeat1);
+            WebElement modifierPrizeItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])[" + i + "]/../ion-row[1]//ion-col[4]"));
+            String modifierPrizeItem11 = modifierPrizeItem1.getText();
+            modifierPrizeSeat1.add(modifierPrizeItem11);
+            utils.log().info("Seat 1 Modifier Prize - " + modifierPrizeSeat1);
+            WebElement modifierQtyItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])[" + i + "]/../ion-row[1]//ion-col[2]"));
+            String modifierQtyItem11 = modifierQtyItem1.getText();
+            modifierQtySeat1.add(modifierQtyItem11);
+            utils.log().info("Seat 1 Modifier Qty - " + modifierQtySeat1);
+        }else {
+            modifierNameSeat1.add(null);
+            modifierPrizeSeat1.add(null);
+            modifierQtySeat1.add(null);
+        }
+
+        TestUtils.modifierNameSeat1 = modifierNameSeat1;
+        utils.log().info(TestUtils.modifierNameSeat1);
+        TestUtils.modifierPrizeSeat1 = modifierPrizeSeat1;
+        utils.log().info(TestUtils.modifierPrizeSeat1 );
+        TestUtils.modifierQtySeat1 = modifierQtySeat1;
+        utils.log().info(TestUtils.modifierQtySeat1);
+    } catch (Exception w) {
+
+    }
+}
+    ///   GET SEAT 1 FOOTER VALUES  ///
+    WebElement subTotal1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[1]//ion-col[2]"));
+    WebElement tax1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[2]//ion-col[2]"));
+    WebElement paidAmount1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[3]//ion-col[2]"));
+    WebElement Total1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[4]//ion-col[2]"));
+    String subtotalTxt = subTotal1.getText();
+    TestUtils.subTotalFromSplitSeat1 = subtotalTxt;
+    utils.log().info("Subtotal Seat 1 - "+subtotalTxt);
+    String taxTxt = tax1.getText();
+    TestUtils.taxFromSplitSeat1 = taxTxt;
+    utils.log().info("Tax Seat 1 - "+taxTxt);
+    String paidAmountTxt = paidAmount1.getText();
+    TestUtils.paidAmountFromSplitSeat1 = paidAmountTxt;
+    utils.log().info("Paid Amount Seat 1 - "+paidAmountTxt);
+    String totalTxt = Total1.getText();
+    TestUtils.totalAmountFromSplitSeat1 = totalTxt;
+    utils.log().info("Total Seat 1 - "+totalTxt);
+
+}
+
+    public void getSeat2MenuDetailsForSplitAction() throws InterruptedException {
+        ArrayList<String> menuNameSeat2 = new ArrayList<>();
+        ArrayList<String> menuPrizeSeat2 = new ArrayList<>();
+        ArrayList<String> modifierPrizeSeat2 = new ArrayList<>();
+        ArrayList<String> modifierQtySeat2 = new ArrayList<>();
+        ArrayList<String> menuQtySeat2 = new ArrayList<>();
+        ArrayList<String> modifierNameSeat2 = new ArrayList<>();
+        Thread.sleep(2000);
+        List<WebElement> listOfMEnus =  driver2.findElements(By.xpath("//ion-app[@id='seat2']//ion-item//ion-grid[1]//ion-row"));
+        utils.log().info("Size of Seat 2 - "+listOfMEnus.size());
+        for(int i =1;i<listOfMEnus.size();i++) {
+            WebElement verifyItem1 = driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-item["+i+"]//ion-grid[1]//ion-row[1]//ion-col[1]"));
+            String itemName2 = verifyItem1.getText();
+//        Assert.assertEquals(itemName2,itemName);
+            menuNameSeat2.add(itemName2);
+            utils.log().info("Seat 2 Menu - " + menuNameSeat2);
+            WebElement verifyItemPrize1 = driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-item["+i+"]//ion-grid[1]//ion-row[1]//ion-col[4]"));
+            String itemNamePrize2 = verifyItemPrize1.getText();
+            menuPrizeSeat2.add(itemNamePrize2);
+            utils.log().info("Seat 2 Menu Prize - " + menuPrizeSeat2);
+            WebElement verifyItemQty1 = driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-item["+i+"]//ion-grid[1]//ion-row[1]//ion-col[2]"));
+            String itemNameQty2 = verifyItemQty1.getText();
+//        Assert.assertEquals(itemNameQty2,Qty1);
+            menuQtySeat2.add(itemNameQty2);
+            utils.log().info("Seat 2 Menu Qty- " + menuQtySeat2);
+            TestUtils.menuNameSeat2 = menuNameSeat2;
+            TestUtils.menuPrize2 = menuPrizeSeat2;
+            TestUtils.menuQtySeat2 = menuQtySeat2;
+            try {
+                WebElement modifierItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated'])["+i+"]/../ion-row[1]//ion-col[1]"));
+                if(modifierItem1.isDisplayed()) {
+                    String modifierItem11 = modifierItem1.getText();
+                    modifierNameSeat2.add(modifierItem11);
+                    utils.log().info("Seat 2 Modifier Qty- " + modifierNameSeat2);
+                    WebElement modifierPrizeItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated'])[" + i + "]/../ion-row[1]//ion-col[4]"));
+                    String modifierPrizeItem11 = modifierPrizeItem1.getText();
+                    modifierPrizeSeat2.add(modifierPrizeItem11);
+                    utils.log().info("Seat 2 Modifier Qty- " + modifierPrizeSeat2);
+                    WebElement modifierQtyItem1 = driver2.findElement(By.xpath("(//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated'])[" + i + "]/../ion-row[1]//ion-col[2]"));
+                    String modifierQtyItem11 = modifierQtyItem1.getText();
+                    modifierQtySeat2.add(modifierQtyItem11);
+                    utils.log().info("Seat 2 Modifier Qty- " + modifierQtySeat2);
+                }else {
+                    modifierNameSeat2.add(null);
+                    modifierPrizeSeat2.add(null);
+                    modifierQtySeat2.add(null);
+                }
+                TestUtils.modifierNameSeat2 = modifierNameSeat2;
+                utils.log().info(TestUtils.modifierNameSeat2);
+                TestUtils.modifierPrizeSeat2 = modifierPrizeSeat2;
+                utils.log().info(TestUtils.modifierPrizeSeat2 );
+                TestUtils.modifierQtySeat2 = modifierQtySeat2;
+                utils.log().info(TestUtils.modifierQtySeat2);
+            } catch (Exception w) {
+
+            }
+        }
+        ///   GET SEAT 2 FOOTER VALUES  ///
+        WebElement subTotal1 =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]"));
+        WebElement tax1 =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[2]//ion-col[2]"));
+        WebElement paidAmount1 =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[3]//ion-col[2]"));
+        WebElement Total1 =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[4]//ion-col[2]"));
+        String subtotalTxt = subTotal1.getText();
+        TestUtils.subTotalFromSplitSeat2 = subtotalTxt;
+        utils.log().info("Subtotal Seat 2 - "+subtotalTxt);
+        String taxTxt = tax1.getText();
+        TestUtils.taxFromSplitSeat2 = taxTxt;
+        utils.log().info("Tax Seat 2 - "+taxTxt);
+        String paidAmountTxt = paidAmount1.getText();
+        TestUtils.paidAmountFromSplitSeat2 = paidAmountTxt;
+        utils.log().info("Paid Amount Seat 2 - "+paidAmountTxt);
+        String totalTxt = Total1.getText();
+        TestUtils.totalAmountFromSplitSeat2 = totalTxt;
+        utils.log().info("Total Seat 2 - "+totalTxt);
+
+    }
+    public void doSplitActionRandom() throws InterruptedException {
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        WebElement addBtnSync1 =  driver2.findElement(By.xpath("//button[@class='add-seat']"));
+        elementClick2(addBtnSync1, "Add Button Selected");
+        Thread.sleep(2000);
+        WebElement newSeat = driver2.findElement(By.xpath("//span[.=' 2 ']"));
+        if (newSeat.isDisplayed()) {
+            utils.log().info("Seat 2 is Added ");
+        } else {
+            utils.log().info("Seat2 is not Added");
+            int w = 1/0;
+        }
+
+        WebElement item1 =  driver2.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]"));
+        String itemName = item1.getText();
+        WebElement price =  driver2.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]/../ion-col[4]"));
+        String price1 = price.getText();
+        WebElement Qty =  driver2.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]/../ion-col[2]"));
+        String Qty1 = Qty.getText();
+
+        elementClick2(item1, "Select Item - " + itemName + " - " + price1);
+
+        WebElement seat21 =  driver2.findElement(By.xpath("//ion-col[.='Seat 2']"));
+        String seatName = seat21.getText();
+        elementClick2(seat21, seatName + " - selected");
+
+
+        ///   GET SEAT 1 MENU VALUES  ///
+        getSeat1MenuDetailsForSplitAction();
+        ///   GET SEAT 2 MENU VALUES  ///
+        getSeat2MenuDetailsForSplitAction();
+    }
+
+
+    public void doSplit() throws Exception {
+        driver2.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+        Thread.sleep(2000);
+        WebElement table = driver2.findElement(By.xpath("//button[contains(.,' Table layout ')]"));
+        elementClick2(table,"Selected - Table 2");
+        WebElement splitBtnn =  driver2.findElement(By.xpath("//button[contains(.,'Split')]"));
+        elementClick2(splitBtnn, "Split Button Selected - "+splitBtnn.getText());
+        Thread.sleep(2000);
+        WebElement splitBtnn1 =  driver2.findElement(By.xpath("//ion-label[.='Split']"));
+        Assert.assertEquals(splitBtnn1.getText(),"Split");
+        utils.log().info("Split window - "+splitBtnn1.getText());
+        Thread.sleep(2000);
+        WebElement splitSeat1 =  driver2.findElement(By.xpath("//button[contains(.,' Split By Seat ')]"));
+        elementClick2(splitSeat1, "Selected Button as - "+splitSeat1.getText());
+        Thread.sleep(200);
+        String tableNo = TestUtils.tableNumberof;
+        verifyTableMergee2(tableNo);
+        Thread.sleep(2000);
+        WebElement splitSeatScreen =  driver2.findElement(By.xpath("//p[.=' Split Seat ']"));
+        Assert.assertEquals(splitSeatScreen.getText(),"Split Seat");
+        utils.log().info("Split Seat Screen - "+splitSeatScreen.getText());
+        doSplitAction();
+
+    }
+
+    public void doSplitAction() throws InterruptedException {
+    ArrayList<String> menuNameSeat1 = new ArrayList<>();
+        ArrayList<String> menuNameSeat2 = new ArrayList<>();
+        ArrayList<String> menuPrizeSeat1 = new ArrayList<>();
+        ArrayList<String> menuPrizeSeat2 = new ArrayList<>();
+        ArrayList<String> modifierPrizeSeat1 = new ArrayList<>();
+        ArrayList<String> modifierPrizeSeat2 = new ArrayList<>();
+        ArrayList<String> modifierQtySeat1 = new ArrayList<>();
+        ArrayList<String> modifierQtySeat2 = new ArrayList<>();
+        ArrayList<String> menuQtySeat1 = new ArrayList<>();
+        ArrayList<String> menuQtySeat2 = new ArrayList<>();
+        ArrayList<String> modifierNameSeat1 = new ArrayList<>();
+        ArrayList<String> modifierNameSeat2 = new ArrayList<>();
+        driver2.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        WebElement addBtnSync1 =  driver2.findElement(By.xpath("//button[@class='add-seat']"));
+        elementClick2(addBtnSync1, "Add Button Selected");
+        Thread.sleep(2000);
+        WebElement newSeat = driver2.findElement(By.xpath("//span[.=' 2 ']"));
+        if (newSeat.isDisplayed()) {
+            utils.log().info("Seat 2 is Added ");
+        } else {
+            utils.log().info("Seat2 is not Added");
+            int w = 1/0;
+        }
+
+        WebElement item1 =  driver2.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]"));
+        String itemName = item1.getText();
+        WebElement price =  driver2.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]/../ion-col[4]"));
+        String price1 = price.getText();
+        WebElement Qty =  driver2.findElement(By.xpath("(//ion-col[@class='menu-name ion-text-left md hydrated'])[1]/../ion-col[2]"));
+        String Qty1 = Qty.getText();
+
+        elementClick2(item1, "Select Item - " + itemName + " - " + price1);
+
+        WebElement seat21 =  driver2.findElement(By.xpath("//ion-col[.='Seat 2']"));
+        String seatName = seat21.getText();
+        elementClick2(seat21, seatName + " - selected");
+
+
+        ///   GET SEAT 1 MENU VALUES  ///
+        WebElement verifyItem1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated']"));
+        String itemName2 = verifyItem1.getText();
+//        Assert.assertEquals(itemName2,itemName);
+        menuNameSeat1.add(itemName2);
+        utils.log().info("Seat 1 Menu - "+menuNameSeat1);
+        WebElement verifyItemPrize1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated']/../ion-col[4]"));
+        String itemNamePrize2 = verifyItemPrize1.getText();
+//        Assert.assertEquals(itemNamePrize2,price1);
+        menuPrizeSeat1.add(itemNamePrize2);
+        utils.log().info("Seat 1 Menu Prize - "+menuPrizeSeat1);
+        WebElement verifyItemQty1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated']/../ion-col[2]"));
+        String itemNameQty2 = verifyItemQty1.getText();
+//        Assert.assertEquals(itemNameQty2,Qty1);
+        menuQtySeat1.add(itemNameQty2);
+        utils.log().info("Seat 1 Menu Qty- "+menuQtySeat1);
+        TestUtils.menuNameSeat1 = menuNameSeat1;
+        TestUtils.menuPrize1 = menuPrizeSeat1;
+        TestUtils.menuQtySeat1 = menuQtySeat1;
+        try{
+            WebElement modifierItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])[2]/../ion-row[1]//ion-col[1]"));
+            String modifierItem11 = modifierItem1.getText();
+            modifierNameSeat1.add(modifierItem11);
+            utils.log().info("Seat 1 Modifier Qty- "+modifierNameSeat1);
+            WebElement modifierPrizeItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])[2]/../ion-row[1]//ion-col[4]"));
+            String modifierPrizeItem11 = modifierPrizeItem1.getText();
+            modifierPrizeSeat1.add(modifierPrizeItem11);
+            utils.log().info("Seat 1 Modifier Qty- "+modifierPrizeSeat1);
+            WebElement modifierQtyItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat1']//ion-col[@class='menu-name ion-text-left md hydrated'])[2]/../ion-row[1]//ion-col[2]"));
+            String modifierQtyItem11 = modifierQtyItem1.getText();
+            modifierQtySeat1.add(modifierQtyItem11);
+            utils.log().info("Seat 1 Modifier Qty- "+modifierQtySeat1);
+            TestUtils.modifierNameSeat1 = modifierNameSeat1;
+            TestUtils.modifierPrizeSeat1 = modifierPrizeSeat1;
+            TestUtils.modifierQtySeat1 = modifierQtySeat1;
+
+        }catch (Exception w){
+
+        }
+        ///   GET SEAT 1 FOOTER VALUES  ///
+        WebElement subTotal1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[1]//ion-col[2]"));
+        WebElement tax1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[2]//ion-col[2]"));
+        WebElement paidAmount1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[3]//ion-col[2]"));
+        WebElement Total1 =  driver2.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[4]//ion-col[2]"));
+        String subtotalTxt = subTotal1.getText();
+        TestUtils.subTotalFromSplitSeat1 = subtotalTxt;
+        utils.log().info("Subtotal Seat 1 - "+subtotalTxt);
+        String taxTxt = tax1.getText();
+        TestUtils.taxFromSplitSeat1 = taxTxt;
+        utils.log().info("Tax Seat 1 - "+taxTxt);
+        String paidAmountTxt = paidAmount1.getText();
+        TestUtils.paidAmountFromSplitSeat1 = paidAmountTxt;
+        utils.log().info("Paid Amount Seat 1 - "+paidAmountTxt);
+        String totalTxt = Total1.getText();
+        TestUtils.totalAmountFromSplitSeat1 = totalTxt;
+        utils.log().info("Total Seat 1 - "+totalTxt);
+
+        ///   GET SEAT 2 MENU VALUES  ///
+        WebElement verifyItem2 =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated']"));
+        String itemName22 = verifyItem2.getText();
+        Assert.assertEquals(itemName22,itemName);
+        menuNameSeat2.add(itemName22);
+        utils.log().info("Moved Menu - "+menuNameSeat2);
+        WebElement verifyItemPrize2 =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated']/../ion-col[4]"));
+        String itemNamePrize22 = verifyItemPrize2.getText();
+        Assert.assertEquals(itemNamePrize22,price1);
+        menuPrizeSeat2.add(itemNamePrize22);
+        utils.log().info("Moved Menu Prize - "+menuPrizeSeat2);
+        WebElement verifyItemQty2 =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated']/../ion-col[2]"));
+        String itemNameQty22 = verifyItemQty2.getText();
+        Assert.assertEquals(itemNameQty22,Qty1);
+        menuQtySeat2.add(itemNameQty22);
+        utils.log().info("Moved Menu Qty- "+menuQtySeat2);
+            TestUtils.menuNameSeat2 = menuNameSeat2;
+            TestUtils.menuPrize2 = menuPrizeSeat2;
+            TestUtils.menuQtySeat2 = menuQtySeat2;
+
+        try{
+            WebElement modifierItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated'])[2]/../ion-row[1]//ion-col[1]"));
+            String modifierItem11 = modifierItem1.getText();
+            modifierNameSeat2.add(modifierItem11);
+            utils.log().info("Seat 2 Modifier Qty- "+modifierNameSeat1);
+            WebElement modifierPrizeItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated'])[2]/../ion-row[1]//ion-col[4]"));
+            String modifierPrizeItem11 = modifierPrizeItem1.getText();
+            modifierPrizeSeat2.add(modifierPrizeItem11);
+            utils.log().info("Seat 2 Modifier Qty- "+modifierPrizeSeat2);
+            WebElement modifierQtyItem1 =  driver2.findElement(By.xpath("(//ion-app[@id='seat2']//ion-col[@class='menu-name ion-text-left md hydrated'])[2]/../ion-row[1]//ion-col[2]"));
+            String modifierQtyItem11 = modifierQtyItem1.getText();
+            modifierQtySeat2.add(modifierQtyItem11);
+            utils.log().info("Seat 2 Modifier Qty- "+modifierQtySeat2);
+            TestUtils.modifierNameSeat2 = modifierNameSeat2;
+            TestUtils.modifierPrizeSeat2 = modifierPrizeSeat2;
+            TestUtils.modifierQtySeat2 = modifierQtySeat2;
+
+        }catch (Exception w){
+
+        }
+            ///   GET SEAT 2 FOOTER VALUES  ///
+        WebElement subTotal =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]"));
+        WebElement tax =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[2]//ion-col[2]"));
+        WebElement paidAmount =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[3]//ion-col[2]"));
+        WebElement Total =  driver2.findElement(By.xpath("//ion-app[@id='seat2']//ion-footer//ion-row[4]//ion-col[2]"));
+        String subtotalTxt2 = subTotal.getText();
+        TestUtils.subTotalFromSplitSeat2 = subtotalTxt2;
+        utils.log().info("Subtotal Seat 2 - "+subtotalTxt2);
+        String taxTxt2 = tax.getText();
+        TestUtils.taxFromSplitSeat2 = taxTxt2;
+        utils.log().info("Tax Seat 2 - "+taxTxt2);
+        String paidAmountTxt2 = paidAmount.getText();
+        TestUtils.paidAmountFromSplitSeat2 = paidAmountTxt2;
+        utils.log().info("Paid Amount Seat 2- "+paidAmountTxt2);
+        String totalTxt2 = Total.getText();
+        TestUtils.totalAmountFromSplitSeat2 = totalTxt2;
+        utils.log().info("Total Seat 2- "+totalTxt2);
+    }
+
+    public void verifyAllClubbedSeatPrizeAfterGroupSeatDoneDirect(){
+        driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //////  SUBTOTAL AFTER GROUP SEATS  /////////
+        String subTotalTxt1 = TestUtils.subtotalSeat2;
+        String subTotalTxt2 = subTotalTxt1.replaceAll("[A-Z$,. ]", "");
+        int subTotalAmount1 = Integer.parseInt(subTotalTxt2);
+        String subTotalTxt11 = TestUtils.subtotalSeat1;
+        String subTotalTxt22 = subTotalTxt11.replaceAll("[A-Z$,. ]", "");
+        int subTotalAmount2 = Integer.parseInt(subTotalTxt22);
+        int subTotalAmount = subTotalAmount1 + subTotalAmount2;
+        utils.log().info("Subtotal Merged Seat 1 After Group - " + subTotalAmount);
+        WebElement subTotal =  driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[1]//ion-col[2]"));
+        String subtotal = subTotal.getText();
+        TestUtils.subTotalTxtGroup = subtotal;
+        String subtotal1 = subtotal.replaceAll("[A-Z$., ]", "");
+        int subtotalAmount = Integer.parseInt(subtotal1);
+        utils.log().info("Subtotal AMount Seat 1 After Group - " + subtotalAmount);
+        Assert.assertEquals(String.valueOf(subTotalAmount), String.valueOf(subtotalAmount));
+        utils.log().info("Subtotal is SAME After Group Seats Done - " + subtotal);
+
+        //////  TAX AFTER GROUP SEATS  /////////
+
+        String taxSeat2 = taxTxtSeat2;
+        String taxTxt2 = taxSeat2.replaceAll("[A-Z$,. ]", "");
+        int tax2 = Integer.parseInt(taxTxt2);
+        String taxSeat1 = taxTxtSeat2;
+        String taxTxt1 = taxSeat1.replaceAll("[A-Z$,. ]", "");
+        int tax1 = Integer.parseInt(taxTxt1);
+        int taxAmount = tax2 + tax1;
+        utils.log().info("tax Merged Seat 1 After Group - " + taxAmount);
+
+        WebElement tax =  driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[2]//ion-col[2]"));
+        String taX = tax.getText();
+        TestUtils.taxTxtGroup = taX;
+        String taX1 = taX.replaceAll("[A-Z$,. ]", "");
+        int taXAmount = Integer.parseInt(taX1);
+        utils.log().info("Tax AMount Seat 1 After Group - " + taXAmount);
+        Assert.assertEquals(taxAmount, taXAmount);
+        utils.log().info("Tax is SAME After Group Seats Done - " + taX);
+
+        //////  PAID AMOUNT AFTER GROUP SEATS  /////////
+
+        String paidAmounT = TestUtils.paidAmountSeat1;
+        String paidAmounT2 = paidAmounT.replaceAll("[A-Z$,. ]", "");
+        int paidAmounT1 = Integer.parseInt(paidAmounT2);
+        String paidAmounT11 = TestUtils.paidAmountSeat2;
+        String paidAmounT22 = paidAmounT11.replaceAll("[A-Z$,. ]", "");
+        int paidAmounT12 = Integer.parseInt(paidAmounT22);
+        int paidAmount = paidAmounT1 + paidAmounT12;
+        utils.log().info("Paid AMount Merged Seat 1 After Group - " + paidAmount);
+        WebElement paidAmountt =  driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[3]//ion-col[2]"));
+        String paidAmountt1 = paidAmountt.getText();
+        TestUtils.paidAmountTxtGroup = paidAmountt1;
+        TestUtils.paidAmount1 = paidAmountt1;
+        String paidAmountt11 = paidAmountt1.replaceAll("[A-Z$., ]", "");
+        int paidAmounTT = Integer.parseInt(paidAmountt11);
+        utils.log().info("Paid AMount Seat 1 After Group - " + paidAmounTT);
+        Assert.assertEquals(String.valueOf(paidAmount), String.valueOf(paidAmounTT));
+        utils.log().info("Paid AMount is SAME After Group Seats Done - " + paidAmountt1);
+
+        //////  TOTAL AMOUNT AFTER GROUP SEATS  /////////
+
+        String totalTxt1 = TestUtils.totalSeat1;
+        String totalTxt12 = totalTxt1.replaceAll("[A-Z$., ]", "");
+        int totalTxt = Integer.parseInt(totalTxt12);
+        String totalTxt11 = TestUtils.totalSeat2;
+        String totalTxt22 = totalTxt11.replaceAll("[A-Z$., ]", "");
+        int totalTxt2 = Integer.parseInt(totalTxt22);
+        int totalTxTT = totalTxt2 + totalTxt;
+        utils.log().info("Total AMount Merged Seat 1 After Group - " + totalTxTT);
+
+        WebElement Total =  driver1.findElement(By.xpath("//ion-app[@id='seat1']//ion-footer//ion-row[4]//ion-col[2]"));
+        String Total1 = Total.getText();
+        TestUtils.totalTxtGroup = Total1;
+        TestUtils.totalAmount1 = Total1;
+        String Total11 = Total1.replaceAll("[A-Z$., ]", "");
+        int TotaL = Integer.parseInt(Total11);
+        utils.log().info("Total Seat 1 After Group - " + TotaL);
+        Assert.assertEquals(totalTxTT, TotaL);
+        utils.log().info("TOTAL is SAME After Group Seats Done - " + Total1);
+    }
+
+}
