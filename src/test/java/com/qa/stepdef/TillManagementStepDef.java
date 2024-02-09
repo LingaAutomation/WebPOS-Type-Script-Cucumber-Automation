@@ -339,7 +339,7 @@ public class TillManagementStepDef {
         new TillManagementScreen(driver).verifyAmountWithTillBalance();
     }
     @Then ("^verify active till as global till$")
-    public void verifyActiveTillAsGlobalTill(){
+    public void verifyActiveTillAsGlobalTill() throws InterruptedException {
         new TillManagementScreen(driver).verifyActiveTillAsGlobal();
     }
 
@@ -444,7 +444,7 @@ public class TillManagementStepDef {
     }
 
     @And("Delete seat as {string} in the seats screen")
-    public void deleteSeatAsInTheSeatsScreen(String arg0) {
-        new TillManagementScreen(driver).ClickArrowdownbuttoninseat();
+    public void deleteSeatAsInTheSeatsScreen(String seat) throws InterruptedException {
+        new TillManagementScreen(driver).DeleteTheSeat(seat);
     }
 }

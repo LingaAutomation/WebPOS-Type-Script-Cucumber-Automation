@@ -181,11 +181,12 @@ public class BarTabScreen extends OrderManagementScreen{
     public void clickTheCheckFromTheBartabScreenForMerge1() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         Thread.sleep(2000);
-        WebElement cancelBtn =  driver.findElement(By.xpath("//button[@class='searchbar-clear-button sc-ion-searchbar-md']//ion-icon[contains(@class,'searchbar-clear-icon')]"));
-        elementClick(cancelBtn,"Selected - "+cancelBtn.getText());
+//        WebElement cancelBtn =  driver.findElement(By.xpath("//button[@class='searchbar-clear-button sc-ion-searchbar-md']//ion-icon[contains(@class,'searchbar-clear-icon')]"));
+//        elementClick(cancelBtn,"Selected - "+cancelBtn.getText());
 
                                                                                           //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField
         WebElement searchTabBarTab =  driver.findElement(By.xpath("//input[@placeholder='Search Name or Check Number']"));
+        searchTabBarTab.click();
         searchTabBarTab.clear();
         searchTabBarTab.sendKeys(TestUtils.globalCheckNumber1);
         Thread.sleep(2000);

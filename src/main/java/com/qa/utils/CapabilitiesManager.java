@@ -25,7 +25,7 @@ public class CapabilitiesManager {
         //launch the URL
         Thread.sleep(5000);
         //Launch the URL
-        driver.get("https://staging-webpos-india.lingapos.com/");
+        driver.get("https://pre-webpos.lingapos.com/#/auth/pin");
         Thread.sleep(8000);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Thread.sleep(5000);
@@ -59,11 +59,11 @@ public class CapabilitiesManager {
         //Clear the text from the user name text box
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name
-        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("basicautotest12@mail.com");
+        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("basicautotest@mail.com");
         //Clear the password from the password text box
         driver.findElement(By.xpath("//input[@name='password']")).clear();
         //Enter the password
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("BasicTest@12");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("autotest123");
         Thread.sleep(5000);
         //Click the login button
         driver.findElement(By.xpath("//ion-button[@type='submit']")).click();

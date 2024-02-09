@@ -4794,11 +4794,9 @@ public class Regression extends TableLayOutScreen {
         try {
 
             if (driver.findElement(By.xpath("//ion-title[.='Checks']")).isDisplayed()) {
-
                 String Check = TestUtils.globalCheckNumber;
-
                 driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+Check+"']")).click();
-
+                driver.findElement(By.xpath("//ion-header//linga-icon[@symbol='closeButton']")).click();
             }
 
         }catch (Exception e) {

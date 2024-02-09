@@ -1,38 +1,63 @@
-[${ROUTINGKEY} INFO ] 2024-01-23 16:18:03.380 Hooks:50 - Failed Scenario Name : Global Till ( PAY IN, PAy Out )
-[${ROUTINGKEY} INFO ] 2024-01-23 16:21:31.937 Hooks:50 - Failed Scenario Name : Verify the Pay in, Payout, Audit, Single cashier out, Close the day for the current business day(Clock in, start till(user till, Global till))
-[${ROUTINGKEY} INFO ] 2024-01-23 16:28:51.483 Hooks:50 - Failed Scenario Name : Cashier OUT PULL Request
-[${ROUTINGKEY} INFO ] 2024-01-23 16:37:12.702 CheckAndItemTransfer:346 - Transferred Menu item is available in the transferred to table - ChilliParatha142
-[${ROUTINGKEY} INFO ] 2024-01-23 16:39:36.052 Hooks:50 - Failed Scenario Name : Transfer To Table from one Check to another Check
-[${ROUTINGKEY} INFO ] 2024-01-23 16:44:23.123 cashOption:208 - Actual Service Charge Of Menu (With Tax)-  $ 235.0
-[${ROUTINGKEY} INFO ] 2024-01-23 16:44:23.123 cashOption:212 - Total of Menu - $ 30.85
-[${ROUTINGKEY} INFO ] 2024-01-23 16:44:34.917 Hooks:50 - Failed Scenario Name : Item Service charge  (Item Service Charge Without Tax)
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:44.885 OrderManagementScreen:1303 -  Tax is - $ 0.65
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:44.900 Discount:100 - Total of Menu Item is - $ 13.65
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:45.058 OrderManagementScreen:1303 -  Tax is - $ 6.50
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:45.074 Discount:100 - Total of Menu Item is - $ 71.50
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:45.230 OrderManagementScreen:1303 -  Tax is - $ 15.60
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:45.250 Discount:100 - Total of Menu Item is - $ 119.60
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:53.136 OrderManagementScreen:1303 -  Tax is - $ 1.36
-[${ROUTINGKEY} INFO ] 2024-01-23 16:53:53.151 Discount:100 - Total of Menu Item is - $ 15.00
-[${ROUTINGKEY} INFO ] 2024-01-23 16:54:07.871 Hooks:50 - Failed Scenario Name : Taxes
-[${ROUTINGKEY} INFO ] 2024-01-23 17:02:50.705 Hooks:50 - Failed Scenario Name : Sale In Service Types
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:18.480 OrderManagementScreen:1303 -  Tax is - $ 1.20
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:18.498 Discount:100 - Total of Menu Item is - $ 11.20
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:18.918 MenuOptionScreen:343 - Open Discount Screen Is Visible
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:19.458 OrderManagementScreen:1303 -  Tax is - $ 2.40
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:19.499 OrderManagementScreen:1458 -  Discount is - $ 4.46
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:19.529 Discount:100 - Total of Menu Item is - $ 17.94
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:49.957 OrderManagementScreen:1303 -  Tax is - $ 1.20
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:49.991 Discount:100 - Total of Menu Item is - $ 13.20
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:55.254 Discount:100 - Total of Menu Item is - $ 12.00
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:55.479 OrderManagementScreen:1303 -  Tax is - $ 1.20
-[${ROUTINGKEY} INFO ] 2024-01-23 17:07:55.495 Discount:100 - Total of Menu Item is - $ 13.20
-[${ROUTINGKEY} INFO ] 2024-01-23 17:08:28.702 Hooks:50 - Failed Scenario Name : Gift
-[${ROUTINGKEY} INFO ] 2024-01-23 17:12:40.455 Hooks:50 - Failed Scenario Name : Merge With Check Based Amount (Verify the Merge option from Table layout screen )
-[${ROUTINGKEY} INFO ] 2024-01-23 17:14:05.366 Hooks:50 - Failed Scenario Name : Merge with Item Based Amount (Verify the Merge option from Table layout screen )
-[${ROUTINGKEY} INFO ] 2024-01-23 17:15:31.069 Hooks:50 - Failed Scenario Name : Verify the Merge option from Bar Tab screen
-[${ROUTINGKEY} INFO ] 2024-01-23 17:16:55.273 Hooks:50 - Failed Scenario Name : Split Check from Table layout
-[${ROUTINGKEY} INFO ] 2024-01-23 17:18:20.737 Hooks:50 - Failed Scenario Name : Split Check By BarTab Screen
-[${ROUTINGKEY} INFO ] 2024-01-23 17:19:47.143 Hooks:50 - Failed Scenario Name : Split Check From Order Screen (Table Layout)
-[${ROUTINGKEY} INFO ] 2024-01-23 17:21:12.374 Hooks:50 - Failed Scenario Name : Split Check From Order Screen (Bartab Layout)
-[${ROUTINGKEY} INFO ] 2024-01-23 17:22:36.827 Hooks:50 - Failed Scenario Name : Split Seat from Table layout/bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-02-06 11:51:57.716 Hooks:50 - Failed Scenario Name : Split Seat from Table layout/bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-02-06 12:11:07.693 Hooks:50 - Failed Scenario Name : Refund
+[${ROUTINGKEY} INFO ] 2024-02-06 13:02:00.707 OrderManagementScreen:1023 - Paid Amount Value is SAME - $ 0.00
+[${ROUTINGKEY} INFO ] 2024-02-06 13:02:12.770 OrderManagementScreen:1057 - Cash Price Value is SAME - $ 3.95
+[${ROUTINGKEY} INFO ] 2024-02-06 13:02:12.794 OrderManagementScreen:1023 - Paid Amount Value is SAME - $ 3.76
+[${ROUTINGKEY} INFO ] 2024-02-06 13:34:51.483 Hooks:50 - Failed Scenario Name : Added tip is Correct or not
+[${ROUTINGKEY} INFO ] 2024-02-06 13:35:54.620 Hooks:50 - Failed Scenario Name : Bussiness Date Verify with Close day window Date
+[${ROUTINGKEY} INFO ] 2024-02-06 13:42:19.725 Hooks:50 - Failed Scenario Name : Cashier OUT PULL Request
+[${ROUTINGKEY} INFO ] 2024-02-06 13:47:02.416 Hooks:50 - Failed Scenario Name : Global Till
+[${ROUTINGKEY} INFO ] 2024-02-06 13:50:07.874 CheckAndItemTransfer:346 - Transferred Menu item is available in the transferred to table - ButterNaan143
+[${ROUTINGKEY} INFO ] 2024-02-06 13:55:42.460 cashOption:208 - Actual Service Charge Of Menu (With Tax)-  $ 280.0
+[${ROUTINGKEY} INFO ] 2024-02-06 13:55:42.461 cashOption:212 - Total of Menu - $ 32.34
+[${ROUTINGKEY} INFO ] 2024-02-06 14:02:41.141 Hooks:50 - Failed Scenario Name : Customer
+[${ROUTINGKEY} INFO ] 2024-02-06 14:04:12.623 Hooks:50 - Failed Scenario Name : Taxes
+[${ROUTINGKEY} INFO ] 2024-02-06 14:09:22.325 Hooks:50 - Failed Scenario Name : Verify the sale in QSR Service Type
+[${ROUTINGKEY} INFO ] 2024-02-06 14:10:36.279 Hooks:50 - Failed Scenario Name : Sale In Service Types
+[${ROUTINGKEY} INFO ] 2024-02-06 14:11:49.263 Hooks:50 - Failed Scenario Name : UpCharge (Verify the Upcharge for the check)
+[${ROUTINGKEY} INFO ] 2024-02-06 14:13:20.432 Hooks:50 - Failed Scenario Name : Upcharge (Role restriction)
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:07.836 OrderManagementScreen:1303 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:07.854 Discount:100 - Total of Menu Item is - $ 11.20
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:08.408 MenuOptionScreen:343 - Open Discount Screen Is Visible
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:09.055 OrderManagementScreen:1303 -  Tax is - $ 2.40
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:09.088 OrderManagementScreen:1458 -  Discount is - $ 4.46
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:09.122 Discount:100 - Total of Menu Item is - $ 17.94
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:40.007 OrderManagementScreen:1303 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:40.038 Discount:100 - Total of Menu Item is - $ 13.20
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:45.350 Discount:100 - Total of Menu Item is - $ 12.00
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:45.571 OrderManagementScreen:1303 -  Tax is - $ 1.20
+[${ROUTINGKEY} INFO ] 2024-02-06 14:16:45.606 Discount:100 - Total of Menu Item is - $ 13.20
+[${ROUTINGKEY} INFO ] 2024-02-06 14:17:42.959 Hooks:50 - Failed Scenario Name : Gift
+[${ROUTINGKEY} INFO ] 2024-02-06 14:21:44.580 Hooks:50 - Failed Scenario Name : Merge With Check Based Amount (Verify the Merge option from Table layout screen )
+[${ROUTINGKEY} INFO ] 2024-02-06 14:29:37.707 Regression:4921 - Split Check - 13-005
+[${ROUTINGKEY} INFO ] 2024-02-06 14:29:38.452 Regression:5017 - Split Check Number - 13-006
+[${ROUTINGKEY} INFO ] 2024-02-06 14:31:19.102 Regression:4921 - Split Check - 13-007
+[${ROUTINGKEY} INFO ] 2024-02-06 14:31:19.699 Regression:5017 - Split Check Number - 13-008
+[${ROUTINGKEY} INFO ] 2024-02-06 14:33:06.695 Regression:4921 - Split Check - 13-009
+[${ROUTINGKEY} INFO ] 2024-02-06 14:33:07.259 Regression:5017 - Split Check Number - 13-010
+[${ROUTINGKEY} INFO ] 2024-02-06 14:34:45.564 Regression:4921 - Split Check - 13-011
+[${ROUTINGKEY} INFO ] 2024-02-06 14:34:45.586 TableLayOutScreen:1599 - seatNumber - 2
+[${ROUTINGKEY} INFO ] 2024-02-06 14:34:45.586 TableLayOutScreen:1600 - seatNumber11 - 1
+[${ROUTINGKEY} INFO ] 2024-02-06 14:34:45.587 TableLayOutScreen:1602 - Seat Number - 1 is Available
+[${ROUTINGKEY} INFO ] 2024-02-06 14:34:46.178 Regression:5017 - Split Check Number - 13-012
+[${ROUTINGKEY} INFO ] 2024-02-06 14:36:33.088 Regression:4921 - Split Check - 13-013
+[${ROUTINGKEY} INFO ] 2024-02-06 14:36:33.648 Regression:5017 - Split Check Number - 13-014
+[${ROUTINGKEY} INFO ] 2024-02-06 14:38:11.028 Regression:4921 - Split Check - 13-015
+[${ROUTINGKEY} INFO ] 2024-02-06 14:38:11.582 Regression:5017 - Split Check Number - 13-016
+[${ROUTINGKEY} INFO ] 2024-02-06 14:39:57.501 Regression:4921 - Split Check - 13-017
+[${ROUTINGKEY} INFO ] 2024-02-06 14:39:58.035 Regression:5017 - Split Check Number - 13-018
+[${ROUTINGKEY} INFO ] 2024-02-06 14:41:34.300 Regression:4921 - Split Check - 13-019
+[${ROUTINGKEY} INFO ] 2024-02-06 14:41:34.321 TableLayOutScreen:1599 - seatNumber - 2
+[${ROUTINGKEY} INFO ] 2024-02-06 14:41:34.322 TableLayOutScreen:1600 - seatNumber11 - 1
+[${ROUTINGKEY} INFO ] 2024-02-06 14:41:34.322 TableLayOutScreen:1602 - Seat Number - 1 is Available
+[${ROUTINGKEY} INFO ] 2024-02-06 14:41:34.844 Regression:5017 - Split Check Number - 13-020
+[${ROUTINGKEY} INFO ] 2024-02-06 14:43:22.099 Hooks:50 - Failed Scenario Name : Split Seat from Table layout/bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-02-06 14:45:29.285 Hooks:50 - Failed Scenario Name : Split Seat from bar tab Screen
+[${ROUTINGKEY} INFO ] 2024-02-06 14:47:29.055 Hooks:50 - Failed Scenario Name : Split Seat from Order Screen
+[${ROUTINGKEY} INFO ] 2024-02-06 14:49:18.580 Hooks:50 - Failed Scenario Name : When applying 2 different fixed gratuity for 3 seat it taking only one fixed gratuity
+[${ROUTINGKEY} INFO ] 2024-02-06 14:50:11.263 Hooks:50 - Failed Scenario Name : LIN-22163 - Gratuity value is mismatching, when applying auto gratuity
+[${ROUTINGKEY} INFO ] 2024-02-06 14:52:14.169 Hooks:50 - Failed Scenario Name : LIN - 22195 - Application crash : When we delete the repeat order item
+[${ROUTINGKEY} INFO ] 2024-02-06 14:53:28.929 OrderManagementScreen:1023 - Paid Amount Value is SAME - $ 0.00
+[${ROUTINGKEY} INFO ] 2024-02-06 14:53:44.688 OrderManagementScreen:1057 - Cash Price Value is SAME - $ 3.95
+[${ROUTINGKEY} INFO ] 2024-02-06 14:53:44.710 OrderManagementScreen:1023 - Paid Amount Value is SAME - $ 3.76
+[${ROUTINGKEY} INFO ] 2024-02-06 14:54:21.568 PaymentWindow:928 - Customer notes - 

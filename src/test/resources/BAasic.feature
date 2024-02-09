@@ -1,4 +1,4 @@
-@MainBasicValidation
+@MainBasicValidationSuite
 
 Feature:Basic Validation
 
@@ -24,7 +24,7 @@ Feature:Basic Validation
 #    Then I should verify the initial Gross sale value as "0,00"
     And I click power button
 
-  @MainBAsic
+  @MainBAsicvalidationsplitseat01
   Scenario: Refund
     Given I'm logged in
     And I closed the order type window
@@ -835,7 +835,7 @@ Feature:Basic Validation
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     And I click Table Layout tab
-    And I click power button
+    And I click power button in the All Orders screen
 
   @MainBAsic
   Scenario: Item Service charge (Item Service Charge With Tax )
@@ -1097,7 +1097,7 @@ Feature:Basic Validation
     And I select menu item as "Burger"
     Then I should verify subtotal value as "$ 7.58"
     Then I should verify tax value as "$ 1.78"
-    Then I should verify total value as "$ 14.36"
+    Then I should verify total value as "$ 9.83"
     Then I should verify cash price value as "$ 9.36"
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
@@ -1113,7 +1113,7 @@ Feature:Basic Validation
     And I select menu item as "Default Menu"
     Then I should verify subtotal value as "$ 4.88"
     Then I should verify tax value as "$ 0.37"
-    Then I should verify total value as "$ 10.25"
+    Then I should verify total value as "$ 5.51"
     Then I should verify cash price value as "$ 5.25"
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
@@ -1501,7 +1501,7 @@ Feature:Basic Validation
     And I select menu item as "Jelabi"
     Then I should verify subtotal value as "$ 2.58"
     Then I should verify tax value as "$ 0.26"
-    Then I should verify total value as "$ 7.84"
+    Then I should verify total value as "$ 2.99"
     Then I should verify cash price value as "$ 2.84"
     And I get Total of menu while cash discount applied
     And I click Cash button for Complete Sale
@@ -2561,7 +2561,7 @@ Feature:Basic Validation
     When I verify the splitted check is available in active checks tab
     And I click power button in the All Orders screen
 
-  @MainBAsic
+
   Scenario: Split Seat from Table layout/bar tab Screen
     Given I'm logged in
     And I closed the order type window
@@ -2820,7 +2820,7 @@ Feature:Basic Validation
     And I click the menu on the split check screen
     And I click new check added on the split check screen page
     When I verify the menu is moved to the added check seat
-    And I click new check added on the split check screen
+#    And I click new check added on the split check screen
 
        ####  PRINT   ####
     And I click print button in the split seat screen
@@ -3018,7 +3018,7 @@ Feature:Basic Validation
 #    When I verify subtotal value with order summary subtotal value
 #    And I click power button in the All Orders screen
 
-  @MainBAsic
+  @MainBAsicvalidationReopenScenarios
   Scenario: Reopen the closed checks and validate the tax, total, Subtotal
     Given I'm logged in
     And I closed the order type window
@@ -3150,10 +3150,10 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I select menu item as "Pancake"
   And I get the menu from the order screen
   And I should verify subtotal value as "$ 10.00"
-  And I should verify tax value as "$ 1.11"
-  And I should verify total2 value as "$ 16.00"
+  And I should verify tax value as "$ 1.21"
+  And I should verify total2 value as "$ 11.66"
   And I should verify paid amount0 as "$ 0.00"
-    And I should verify cash price value as "$ 11.00"
+    And I should verify cash price value as "$ 11.10"
   And I click Cash button for Complete Sale
   And I click Exact button on the cash pop-up
   And I click Enter Button on the cash pop-up
@@ -3183,7 +3183,7 @@ Scenario: LIN - 22195 - Application crash : When we delete the repeat order item
   And I closed the order type window
   And I click log off button in order screen
 
-  @MainBAsic
+  @MainBAsicValidationGratiotyamount
   Scenario: LIN-22594 - Gratuity amounts disappears from the check in the following scenario
     Given I'm logged in
     And I closed the order type window

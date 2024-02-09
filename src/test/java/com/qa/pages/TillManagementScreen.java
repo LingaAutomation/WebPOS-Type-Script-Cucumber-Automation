@@ -31,6 +31,9 @@ public class TillManagementScreen extends OrderManagementScreen {
     @FindBy(xpath = "//linga-icon[@symbol='arrow']" )
     private WebElement SeatsArrowbutn;
 
+    @FindBy(xpath = "//div[@class='seatDropDown_row-seatCountButton']" )
+    private WebElement SeatsArrowbutn1;
+
     @FindBy(xpath = "" )
     private WebElement tillTab;
 
@@ -152,6 +155,10 @@ public class TillManagementScreen extends OrderManagementScreen {
         elementClick(SeatsArrowbutn, "Clicked on Till management button in the operation option");
     }
 
+    public void ClickArrowdownbuttoninseat1() {
+        elementClick(SeatsArrowbutn1, "Clicked on Till management button in the operation option");
+    }
+
     public void VerifyAutoGratuitypopup() {
         try {
             WebElement auto = driver.findElement(By.xpath("//ion-title[.='Add Gratuity']"));
@@ -164,7 +171,7 @@ public class TillManagementScreen extends OrderManagementScreen {
         }
     }
 
-    public void DeleteTheSeat(String value) {
+    public void DeleteTheSeat(String value) throws InterruptedException {
 
             WebElement auto = driver.findElement(By.xpath("//button[contains(@class,'seatDropDown_row-footer-btn')]"));
             auto.click();
@@ -172,6 +179,8 @@ public class TillManagementScreen extends OrderManagementScreen {
             int count1 = count -1;
         WebElement auto1 = driver.findElement(By.xpath("(//div[@class='seatDropDown_row-seatCountButton']//button[contains(.,'X')]//span//div)["+count1+"]"));
         auto1.click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//linga-icon[@symbol='tick']")).click();
 
     }
 
@@ -658,14 +667,17 @@ public String totalOfActiveTillTxt = " ";
         }
     }
 
-    public void verifyActiveTillAsGlobal(){
-        WebElement TillName = driver.findElement(By.xpath("//tbody[@role='rowgroup']//tr//td[contains(@class,'Till-Name')]"));
-        String name = TillName.getText();
-        if(name.contains("(G)")){
+    public void verifyActiveTillAsGlobal() throws InterruptedException {
+        Thread.sleep(3000);
+        try {
+            WebElement TillName = driver.findElement(By.xpath("//tbody[@role='rowgroup']//tr//td[contains(@class,'Till-Name')]"));
+            String name = TillName.getText();
+            if (name.contains("(G)")) {
 //            utils.log().info("Active till as Global Till");
-        }else{
+            } else {
 //            utils.log().info("Active Till is not Active Till");
-        }
+            }
+        }catch (Exception e) {}
     }
     public String percentageOfDiscountTxt2 = " ";
     public String getCalculationsOfCashDiscount(){

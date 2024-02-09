@@ -1,0 +1,4 @@
+[${ROUTINGKEY} INFO ] 2024-01-29 11:40:33.390 Hooks:50 - Failed Scenario Name : Partial payment application displays Menu item sent to kitchen even already items are ordered
+[${ROUTINGKEY} INFO ] 2024-01-29 12:04:08.515 Hooks:50 - Failed Scenario Name : Application shows balance due after applying discount when Dual price is enabled.
+[${ROUTINGKEY} INFO ] 2024-01-29 12:22:13.512 Hooks:50 - Failed Scenario Name : Application shows balance due after applying discount when Dual price is enabled.
+[${ROUTINGKEY} INFO ] 2024-01-29 12:24:31.049 Hooks:50 - Failed Scenario Name : Application shows balance due after applying discount when Dual price is enabled.

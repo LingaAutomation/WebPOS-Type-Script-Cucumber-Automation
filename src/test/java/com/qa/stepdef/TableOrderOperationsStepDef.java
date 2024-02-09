@@ -2243,4 +2243,19 @@ public class TableOrderOperationsStepDef {
         Thread.sleep(3000);
         new TableLayOutScreen(driver).pressDone6();
     }
+
+    @And("I click on Order button in the check option")
+    public void iClickOnOrderButtonInTheCheckOption() {
+        new TableLayOutScreen(driver).OrderButton();
+    }
+
+    @And("I click on the table no in order screen")
+    public void iClickOnTheTableNoInOrderScreen() {
+        new TableLayOutScreen(driver).Tabel_NO_OrderScreen();
+    }
+
+    @And("I verify the Kitchen Pop_up")
+    public void iVerifyTheKitchenPop_up() {
+        new TableLayOutScreen(driver).KitchenPopupvalidation();
+    }
 }

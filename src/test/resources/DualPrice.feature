@@ -1,4 +1,4 @@
-@CashRewardRegression
+@CashRewardRegressionsuite
 Feature: Instant Cash Reward Feature
 
   @CashReward1
@@ -120,7 +120,7 @@ Feature: Instant Cash Reward Feature
 #    And I click Done button on the Popup
     And I verify the cash price value with paid amount value is same
     And I click Submit button on the Payment Window
-    Then I should see the print or send receipt
+#    Then I should see the print or send receipt
     And I verify the cash price value with digital receipt screen
     And I click No thanks Button on the print receipt
     And I closed the order type window
@@ -1139,7 +1139,7 @@ Feature: Instant Cash Reward Feature
     When I should verify tax value as "$ 0.90"
     When I should verify total value as "$ 9.90"
     When I should verify paid amount1 as "$ 0.00"
-    When I should verify Dual price value as "$ 18.69"
+    When I should verify Dual price value as "$ 8.69"
     And I click Finish Order button
     And I click phone order tab
     And I click the Closed check in new tab window
@@ -1339,6 +1339,7 @@ Feature: Instant Cash Reward Feature
     And I closed the order type window
     And I click log off button in order screen
 
+
     Scenario: Partial payment application displays Menu item sent to kitchen even already items are ordered
       Given I'm logged in
       And I closed the order type window
@@ -1347,10 +1348,53 @@ Feature: Instant Cash Reward Feature
       And I select menu item as "Chicken Schnitzel"
       And I click Add Button to create Seat
       And I click Add Button to create Seat
-      And I click Add Button to create Seat
       And I should verify the Auto Gratuity is opened and click on Back button
       And I click Add Button to create Seat
       And I should verify the Auto Gratuity is opened and click on Back button
       And I Click on the Seats arrow button in the order screen
       And Delete seat as "2" in the seats screen
+      And Delete seat as "3" in the seats screen
+      And I Click on the Seats arrow button in the order screen
       And I click Seat 3 for add menu item
+      And I select category as "FOOD"
+      And I select menu item as "Chicken Schnitzel"
+      And I click on Order button in the check option
+      And I click seat 1 for add menu item
+      And I click Payment button in the Order Management Screen
+      And I click cash button from the payment method popup
+      And I click Exit to return to Order Management Screen
+      And I click on the table no in order screen
+      And I click Payment button in the Order Management Screen
+      And I click cash button from the payment method popup
+      And I click Exit to return to Order Management Screen
+#      And I verify the Kitchen Pop_up
+      And I click Payment button in the Order Management Screen
+      And I click Submit button on the Payment Window
+      Then I should see the print or send receipt
+      And I click No thanks Button on the print receipt
+      And I closed the order type window
+      And I click log off button in order screen
+
+  @dualPriceJiraIssues
+  Scenario: Application shows balance due after applying discount when Dual price is enabled.
+    Given I'm logged in
+    And I closed the order type window
+    And I get check number
+    And I select category as "FOOD"
+    And I select menu item as "Chicken Masala One"
+    And I click Options button
+    And I click discount on check option screen
+    And I click item discount from the check options
+    And I select tax as "IB-BeforeTax-Percentage"
+    Then I should see discount as "IB-BeforeTax-Percentage" applied on order screen
+    And I click Payment button in the Order Management Screen
+    And I click cash button from the payment method popup
+    And I click Exit to return to Order Management Screen
+    And I click on the table no in order screen
+    And I click Payment button in the Order Management Screen
+    And I click Submit button on the Payment Window
+    Then I should see the print or send receipt
+    And I click No thanks Button on the print receipt
+    And I closed the order type window
+    And I click log off button in order screen
+

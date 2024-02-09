@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@Cryptos",  "@MainBAsic",  "@MainBasicValidation", ] ,
+        labels:  [ "@Cryptos",  "@MainBAsic",  "@MainBAsicValidationGratiotyamount",  "@MainBAsicvalidationReopenScenarios",  "@MainBAsicvalidationsplitseat01",  "@MainBasicValidationSuite", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  58.31,  57.40, ] 
+                data:  [ 100.00,  71.21,  100.00,  100.00,  100.00,  71.38, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  1.24,  1.30, ] 
+                data:  [ 0.00,  0.77,  0.00,  0.00,  0.00,  0.76, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  40.45,  41.30, ] 
+                data:  [ 0.00,  28.02,  0.00,  0.00,  0.00,  27.85, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>22 Jan 2024, 21:08</td>
+      <td>06 Feb 2024, 14:55</td>
     </tr>
   </tbody>
 </table>
@@ -208,41 +208,92 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="122973098400">2:2.973</td>
+        <td class="duration" data-value="140372257500">2:20.372</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_4180174260.html">@MainBAsic</a></td>
 
-        <td      class="passed"    >1267</td>
-        <td      class="failed"    >27</td>
-        <td     class="skipped"   >879</td>
+        <td      class="passed"    >1395</td>
+        <td      class="failed"    >15</td>
+        <td     class="skipped"   >549</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">2173</td>
+        <td class="total">1959</td>
 
-        <td  class="passed"    >20</td>
-        <td  class="failed"    >27</td>
-        <td class="total">47</td>
+        <td  class="passed"    >27</td>
+        <td  class="failed"    >16</td>
+        <td class="total">43</td>
 
-        <td class="duration" data-value="3919797999600">1:5:19.797</td>
+        <td class="duration" data-value="3934592373200">1:5:34.592</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-tag_3612532717.html">@MainBasicValidation</a></td>
+        <td class="tagname"><a href="report-tag_2825462478.html">@MainBAsicValidationGratiotyamount</a></td>
 
-        <td      class="passed"    >1276</td>
-        <td      class="failed"    >29</td>
-        <td     class="skipped"   >918</td>
+        <td      class="passed"    >46</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">2223</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">46</td>
 
-        <td  class="passed"    >20</td>
-        <td  class="failed"    >29</td>
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="42965017400">42.965</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3184629399.html">@MainBAsicvalidationReopenScenarios</a></td>
+
+        <td      class="passed"    >26</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">26</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="39089415700">39.089</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_1646122417.html">@MainBAsicvalidationsplitseat01</a></td>
+
+        <td      class="passed"    >74</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">74</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="164360425900">2:44.360</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_260721577.html">@MainBasicValidationSuite</a></td>
+
+        <td      class="passed"    >1594</td>
+        <td      class="failed"    >17</td>
+        <td     class="skipped"   >622</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">2233</td>
+
+        <td  class="passed"    >31</td>
+        <td  class="failed"    >18</td>
         <td class="total">49</td>
 
-        <td class="duration" data-value="3990427311700">1:6:30.427</td>
+        <td class="duration" data-value="4354609978000">1:12:34.609</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -250,30 +301,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>2612</td>
-      <td>56</td>
-      <td>1797</td>
+      <td>3204</td>
+      <td>32</td>
+      <td>1171</td>
       <td>0</td>
       <td>0</td>
-      <td>4465</td>
+      <td>4407</td>
 
-      <td>23</td>
-      <td>76</td>
-      <td>99</td>
+      <td>33</td>
+      <td>65</td>
+      <td>98</td>
 
-      <td class="duration">2:13:53.198</td>
-      <td>3</td>
+      <td class="duration">2:24:35.989</td>
+      <td>6</td>
     </tr>
     <tr>
       <td></td>
-      <td>58.50%</td>
-      <td>1.25%</td>
-      <td>40.25%</td>
+      <td>72.70%</td>
+      <td>0.73%</td>
+      <td>26.57%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>23.23%</td>
-      <td>76.77%</td>
+      <td>33.67%</td>
+      <td>66.33%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

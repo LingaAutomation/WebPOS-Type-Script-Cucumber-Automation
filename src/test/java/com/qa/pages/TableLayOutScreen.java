@@ -124,7 +124,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Select the Order to Proceed")
     private WebElement selectOrder;
 
-    @FindBy(xpath = "//button[@class='add-seat']")
+    @FindBy(xpath = "//button[@id='os_addSeat']")
     public WebElement AddBtn;
 
     @FindBy(xpath = "//div[.='Split Evenly']")
@@ -151,7 +151,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//ion-col[contains(@class,'qsrSeats_row')]//p[.='Seats']/..//button//span[.=' 2 ']")
     private WebElement seat2OrderScreen;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ion-col[@class='qsrSeats_row-col md hydrated']//button[contains(@class,'qsrSeats_row-col')]//span[@class='mat-button-wrapper'])[3]")
     private WebElement seat3OrderScreen;
 
     @FindBy(xpath = "4")
@@ -502,6 +502,26 @@ public class TableLayOutScreen extends OrderManagementScreen {
         } catch (Exception e) {
 //            utils.log().info("Tapped Done");
         }
+    }
+
+    public void OrderButton() {
+        try {
+            driver.findElement(By.xpath("//button[.='Order']")).click();
+        } catch (Exception e) {
+//            utils.log().info("Tapped Done");
+        }
+    }
+
+    public void Tabel_NO_OrderScreen() {
+            driver.findElement(By.xpath("//button[@id='os_selectedSeat']")).click();
+    }
+
+    public void KitchenPopupvalidation() {
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+            WebElement e11 = driver.findElement(By.xpath("//p[.='Menu items already sent to kitchen']"));
+            String subtotalValue = e11.getText();
+            Assert.assertEquals(subtotalValue,"Menu items already sent to kitchen");
+            WebElement donebtn = driver.findElement(By.xpath("//button[.=' Done ']"));
     }
 
 
