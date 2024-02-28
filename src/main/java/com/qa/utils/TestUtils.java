@@ -24,6 +24,7 @@ import java.util.List;
 
 public class TestUtils {
     public static final long WAIT = 5;
+    public static String serverName = " ";
     public static String globalCheckNumber=" ";
     public static String menu =" ";
     public static ArrayList<String> menuName;

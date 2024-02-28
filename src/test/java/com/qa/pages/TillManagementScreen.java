@@ -1055,6 +1055,7 @@ elementClick(tillBtn,"Tapped Till Button");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         try {
             if (cashierOutfullyPopup.isDisplayed()) {
+                Thread.sleep(3000);
                 WebElement cashBtn = driver.findElement(By.xpath("//ion-grid[contains(@class,'cashierout-content')]//ion-row//ion-col//button//span[contains(.,'Cash')]"));
                 elementClick(cashBtn, "Selected - " + cashBtn.getText());
                 utils.log().info("Displayed Popup as - " + cashierOutSavedSuccessfullyPopup.getText());

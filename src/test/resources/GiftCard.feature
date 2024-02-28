@@ -44,7 +44,7 @@ Feature: Gift Card
 
 
 
-  @Regression
+  @Regression90
   Scenario: In Check stats, check should be added in Void Checks and amount should be show as 0.00/Gift Card-Void Recharge
     Given User select QSR mode on menu item page
     Given User select DineIn mode
@@ -540,13 +540,14 @@ Feature: Gift Card
 #    And User click receipt printer button
     And I click power button
 
-
+@MJ
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip
     And I click the Settings button
     And I click the POS settings from Toggle
     And I enable the required enable phone order tab on the POS settings screen
     And I click the Toggle Icon button
     And I click POS Icon from Toggle
+
     And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type

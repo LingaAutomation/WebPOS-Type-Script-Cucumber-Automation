@@ -359,8 +359,11 @@ public class CICloseDayScreen extends BasePage {
 
     public void clickTxtGoknur(String msg) throws InterruptedException {
         Thread.sleep(2000);
-        WebElement elementChr = driver.findElement(By.xpath("//ion-label[.=' Admin user']"));
+        WebElement elementChr = driver.findElement(By.xpath("(//ion-row//ion-col[@class='opencashier_content-row-col ion-no-padding md hydrated']//ion-list[@role='list']//ion-item[@role='listitem']//ion-label)[1]"));
+        TestUtils.serverName = elementChr.getText();
+        utils.log().info(TestUtils.serverName);
         click(elementChr, msg);
+
 //        findandclick(txtGoknurBati, "", TestUtils.XPath);
     }
 
@@ -578,10 +581,11 @@ Assert.assertEquals(element.getText(),txtXpath);
 
     public void verifyEmployee(String employee) throws InterruptedException {
         Thread.sleep(2000);
-        WebElement element = driver.findElement(By.xpath("//ion-grid[@class='closeday_detailgrid md hydrated']//button[.=' "+employee+" ']"));
+        WebElement element = driver.findElement(By.xpath("//ion-grid[@class='closeday_detailgrid md hydrated']//button[1]"));
 //        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
         Assert.assertEquals(element.getText(),employee);
-        utils.log().info("Displayed - "+employee);
+        utils.log().info("Displayed - "+TestUtils.serverName);
     }
     public void getOverShortageValue(String overShortageInitialVal) {
         WebElement element = driver.findElement(By.xpath("//ion-title[.=' SUMMARY']/..//div//ion-item//ion-label[(.=' Over / Shortage')]"));
@@ -714,7 +718,7 @@ Assert.assertEquals(element.getText(),txtXpath);
     }
 
     public void getCashExpectedValue(String value) {
-        WebElement element = driver.findElement(By.xpath("(//ion-item)[18]//ion-label[1]"));
+        WebElement element = driver.findElement(By.xpath("(//ion-item)[17]//ion-label[1]"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         Assert.assertEquals(element.getText(),value);
         utils.log().info("Displayed - "+value);
@@ -796,7 +800,8 @@ Assert.assertEquals(element.getText(),txtXpath);
         }
     }
 
-    public void getGiftCardSoldValue(String giftCardSoldAft) {
+    public void getGiftCardSoldValue(String giftCardSoldAft) throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//ion-title[.=' NONSALE REVENUE']/..//div//ion-item//ion-label[(.=' Gift Card Sold')]/..//ion-label[@slot='end']"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         Assert.assertEquals(element.getText(),giftCardSoldAft);
@@ -1092,7 +1097,7 @@ Assert.assertEquals(element.getText(),txtXpath);
         Assert.assertEquals(element.getText(),overShortageVal);
         utils.log().info("Displayed - "+overShortageVal);
 
-        WebElement element1 = driver.findElement(By.xpath("(//ion-item)[27]//ion-label[2]"));
+        WebElement element1 = driver.findElement(By.xpath("//ion-label[.=' Over / Shortage']/../ion-label[2]"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element1);
         Assert.assertEquals(element1.getText(),txtOverShortageVal);
                 utils.log().info("Displayed - "+txtOverShortageVal);

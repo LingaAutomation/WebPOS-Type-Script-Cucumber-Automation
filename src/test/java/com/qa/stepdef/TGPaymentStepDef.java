@@ -124,7 +124,7 @@ TestUtils utils = new TestUtils();
     }
 
     @And("User click manuel button")
-    public void userClickManuelButton() {
+    public void userClickManuelButton() throws InterruptedException {
         new TGPaymentPage().clickManuelButton();
     }
 
@@ -155,7 +155,7 @@ TestUtils utils = new TestUtils();
     }
 
     @When("User click process")
-    public void userClickProcess() {
+    public void userClickProcess() throws InterruptedException {
         new TGPaymentPage().clickProcessButton();
     }
 

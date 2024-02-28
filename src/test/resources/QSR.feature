@@ -54,7 +54,7 @@ Feature: QSR feature
     #Operation Button - During sale
     And I click the Settings button
 #    Then I should see close your sale
-    And I should see close the sale
+    And I should see close your sale
     And I click Done button on the Popup
     #Log off Button - During sale
     And I click log off button in order screen
@@ -4714,7 +4714,7 @@ Feature: QSR feature
     And I click Done button on the Popup
     When I click the Settings button
     #Application don't allow user to do "Operation" button process during a sale
-    Then User verify close sale popup info
+    Then I should see close your sale
     And I click Done button on the Popup
      #Application don't allow user to do "Till" button process during a sale
 #    When User click "<btnTillMamagement>" in the order Screen "click till management button"

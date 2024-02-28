@@ -558,7 +558,7 @@ public class CheckOptionsStepDef {
     }
 
     @Then ("^I should see total amount as \"([^\"]*)\" on total screen$")
-    public void iShouldSeeTotalAmountAsOnTotalScreen(String number){
+    public void iShouldSeeTotalAmountAsOnTotalScreen(String number) throws InterruptedException {
         new PaymentWindow().verifyTotalValue(number);
     }
 

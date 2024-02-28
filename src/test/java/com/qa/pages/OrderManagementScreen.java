@@ -130,15 +130,15 @@ private WebElement QSRCombo;
 
     /****** Categories ******/
 
-    String pizzaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'PIZZA')]";
+    String pizzaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[.='PIZZA']";
 
-    String breakFastBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Breakfast')]";
+    String breakFastBtn = "//div[contains(@class,'center-name category-container')]/div[.='Breakfast']";
 
-    String upchargeBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'upcharge category')]";
+    String upchargeBtn = "//div[contains(@class,'center-name category-container')]/div[.='upcharge category']";
 
-    String beveragesBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Beverages')]";
+    String beveragesBtn = "//div[contains(@class,'center-name category-container')]/div[.='Beverages']";
 
-    String foodCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'FOOD')]" ;
+    String foodCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[.='FOOD']" ;
 
 
     String pastaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Pasta')]";
@@ -231,7 +231,7 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//button[contains(.,' Ordered Wrongly ')]")
     private WebElement orderedWronglyReason;
 
-    @FindBy(xpath = "/html/body/div/div[2]/div/mat-dialog-container/app-voidreason/ion-footer/div[2]/button[2]")
+    @FindBy(xpath = "//span[.=' Add ']")
     private WebElement addVoidReasonBtn;
 
     @FindBy(xpath = "(//button[contains(.,' Add ')])[1]")
@@ -426,7 +426,8 @@ private WebElement QSRCombo;
         elementClick(addSeatBtn, "added a new seat to the table");
     }
 
-    public void openCustomerSelectionMenu(){
+    public void openCustomerSelectionMenu() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(addCustomerToTableBtn, "customer list is opened");
     }
 
@@ -468,8 +469,8 @@ private WebElement QSRCombo;
         elementClick("//button[contains(.,' + Add customer ')]","Selected Add Customer");
     }
 
-    public void selectCustomerNameToAddToTheTable(String customerName){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+    public void selectCustomerNameToAddToTheTable(String customerName) throws InterruptedException {
+        Thread.sleep(2000);
         WebElement customer = driver.findElement(By.xpath("(//span[contains(.,'"+customerName+"')])[1]"));
         elementClick(customer,"Tapped Customer - "+customerName);
     }
@@ -670,7 +671,7 @@ private WebElement QSRCombo;
         Thread.sleep(2000);
         pressArrowDown2();
         Thread.sleep(1500);
-        cate =  driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'"+category+"')]"));
+        cate =  driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[.='"+category+"']"));
         elementClick(cate,"Selected - "+cate.getText());
     }
 String xpath = "//XCUIElementTypeStaticText[@name=\"{0}\"]";
@@ -697,7 +698,7 @@ public  void selectCategory (String value) throws Exception {
 
     public void selectFoodCategory() throws InterruptedException {
         pressArrowDown2();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         elementClick(foodCategoryBtn, "Food Category selected");
     }
 
@@ -2002,7 +2003,7 @@ public  void selectCategory (String value) throws Exception {
     public void verifyIncludeModifier(String modifiers) throws InterruptedException {
         Thread.sleep(2000);
         try {
-            WebElement modify = driver.findElement(By.xpath("//div[@id='conversational-react']//div[2]//button[1]"));
+            WebElement modify = driver.findElement(By.xpath("(//div[@class='group-container'])[2]//div[2]//button[1]"));
             String modifier = modify.getText();
             if (modify.isDisplayed()) {
                 Assert.assertEquals(modifier,modifiers);

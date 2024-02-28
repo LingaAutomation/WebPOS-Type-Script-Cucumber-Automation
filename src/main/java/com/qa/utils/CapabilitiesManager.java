@@ -52,7 +52,7 @@ public class CapabilitiesManager {
 
         //Call the chrome driver
 //    System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/Users/shaunmatthew/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/Ragav-QA-Mac-IN/Downloads/chromedriver");
         //Open the Chrome window
         driver = new ChromeDriver();
         //Wait for 30 seconds
@@ -83,8 +83,12 @@ public class CapabilitiesManager {
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
+//        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
+
         //Clear the password from the password text box
         driver.findElement(By.xpath("//input[@name='password']")).clear();
+//        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
+
         //Enter the password
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
         Thread.sleep(5000);

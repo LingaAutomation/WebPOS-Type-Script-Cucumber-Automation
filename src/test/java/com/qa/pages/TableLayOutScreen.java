@@ -26,7 +26,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         utils.log().info("countOfListValues - " + countOfListValues);
 
         /////  SubTotal VALUES  ///////
-        WebElement subtotalValues = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        WebElement subtotalValues =  driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
         String subtotalValues1 = subtotalValues.getAttribute("value");
         String subTotalValueTxt = subtotalValues1.replaceAll("[A-Z$,. ]", "");
         String subTotal = (TestUtils.subtotalTxt).replaceAll("[A-Z$,. ]", "");
@@ -39,7 +39,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         utils.log().info(" Subtotal Values same  " + subtotalValues1);
 
         /////  TAX VALUES  ///////
-        WebElement taxValues = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        WebElement taxValues =  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
         String taxValues1 = taxValues.getAttribute("value");
         String taxValues11 = taxValues1.replaceAll("[A-Z$., ]", "");
         String tax = (TestUtils.taxTxt).replaceAll("[A-Z$,. ]", "");
@@ -52,7 +52,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         utils.log().info(" Tax Values same - " + taxValues1);
 
         /////  Discount VALUES  ///////
-        WebElement discountValues = (WebElement) driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
+        WebElement discountValues =  driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
         String discountValues1 = discountValues.getAttribute("value");
         String discountValuesTxt1 = discountValues1.replaceAll("[A-Z$,. ]", "");
         String discount = TestUtils.discountTxt;
@@ -269,9 +269,8 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//p[.='Select the order to proceed']")
     private WebElement selectOrder;
 
-    @FindBy(xpath = "//button[@class='add-seat']")
+    @FindBy(xpath = "//span[.=' Add ']")
     public WebElement AddBtn;
-
     @FindBy(xpath = "//div[.='Split Evenly']")
     private WebElement SplitEvenly;
 
@@ -651,7 +650,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     public void verifyMergedPopupAfterMerge(){
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextView
-        WebElement mergedPopup = (WebElement) driver.findElement(By.xpath("//mat-dialog-content[@id='alert-done-popup']//p"));
+        WebElement mergedPopup =  driver.findElement(By.xpath("//mat-dialog-content[@id='alert-done-popup']//p"));
         String mergePopupTxt = mergedPopup.getText();
         utils.log().info("Displayed popup as - "+mergePopupTxt);
     }
@@ -849,7 +848,7 @@ Thread.sleep(2000);
     public String seatNumber = " ";
     public void ClickTheMenuOnTheSplitCheckScreen() {
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement menuItem = (WebElement) driver.findElement(By.xpath("(//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')][1]//ion-col[contains(@class,'menu-name')])[1]"));
+        WebElement menuItem =  driver.findElement(By.xpath("(//ion-grid[contains(@class,'orderDetails')]//ion-list//ion-item[contains(@class,'inserted item md item-lines')][1]//ion-col[contains(@class,'menu-name')])[1]"));
         elementClick(menuItem, "Selected Menu Item As - " + menuItem.getText());
         TestUtils.menuNameSplitCheck = menuItem.getText();
     }
@@ -860,7 +859,7 @@ Thread.sleep(2000);
         Assert.assertEquals(checkSeatTxt, "Check");
         utils.log().info("Extra one Checks is ADDED");
     }
-    @FindBy(xpath = "//button[@class='add-seat']")
+    @FindBy(xpath = "//span[.=' Add ']")
     WebElement addBtnSplitCheck;
 
     public void clickAddButtonOntheSplitCheckScreen() {
@@ -1002,7 +1001,7 @@ Thread.sleep(2000);
     }
 
     public void verifySplitScreen() throws InterruptedException {
-        Thread.sleep(7000);
+        Thread.sleep(9000);
         if (splitSeatPage.isDisplayed()) {
             utils.log().info("Split Seat Page is Visible");
         } else {
@@ -1117,7 +1116,7 @@ Thread.sleep(2000);
 
     public void iClickSeatForAddMenuItem() throws InterruptedException {
         Thread.sleep(2000);
-        WebElement downBtn = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'qsrSeats_row-col')]//button[contains(.,'2')]"));
+        WebElement downBtn =  driver.findElement(By.xpath("//ion-col[contains(@class,'qsrSeats_row-col')]//button[contains(.,'2')]"));
         elementClick(downBtn, "Down Btn Selected");
 
     }
@@ -1130,8 +1129,8 @@ Thread.sleep(2000);
 //            List<WebElement> Listmenu =  driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell");
 //            int countOfMenu = Listmenu.size();
 //            for (int i = 2; i <= countOfMenu; i++) {
-//                WebElement menu = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
-//                WebElement prize = (WebElement) driver.findElement(By.xpath()("///XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]");
+//                WebElement menu =  driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
+//                WebElement prize =  driver.findElement(By.xpath()("///XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]");
 //                String menuName = menu.getText();
 //                String priceOfPrize = prize.getText();
 //                utils.log().info("Menus Are - " + menuName + " - " + priceOfPrize);
@@ -1139,8 +1138,8 @@ Thread.sleep(2000);
 //                    List<WebElement> modifier =  driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeTable/XCUIElementTypeCell");
 //                    int sizeOfModifier = modifier.size();
 //                    for (int w = 1; w <= sizeOfModifier; w++) {
-//                        WebElement modi = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
-//                        WebElement Modiprize = (WebElement) driver.findElement(By.xpath()("///XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[3]");
+//                        WebElement modi =  driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
+//                        WebElement Modiprize =  driver.findElement(By.xpath()("///XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[3]");
 //                        String modiName = modi.getText();
 //                        String priceOfModi = Modiprize.getText();
 //                        utils.log().info("Modifiers Are - " + modiName + " - " + priceOfModi);
@@ -1152,8 +1151,8 @@ Thread.sleep(2000);
 //            List<WebElement> ListofTotals =  driver.findElements(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText");
 //            int totals = ListofTotals.size();
 //            for (int j = 1; j <= totals; j++) {
-//                WebElement menu1 = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[" + j + "]");
-//                WebElement prize1 = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[" + j + "]");
+//                WebElement menu1 =  driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[" + j + "]");
+//                WebElement prize1 =  driver.findElement(By.xpath()("//XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[" + j + "]");
 //                String menuName1 = menu1.getText();
 //                String priceOfPrize1 = prize1.getText();
 //                utils.log().info(" " + menuName1 + " - " + priceOfPrize1);
@@ -1622,7 +1621,7 @@ Thread.sleep(2000);
 
 
 //            utils.log().info(String.valueOf(itemToSelect));
-        WebElement seat = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']"));
+        WebElement seat =  driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']"));
         seatNumber = seat.getText();
         elementClick(seat, "Tapped seat Number");
         TestUtils.seatNumber = seatNumber;
@@ -1738,7 +1737,7 @@ Thread.sleep(2000);
 
         utils.log().info(element.getText());
        Assert.assertEquals(element.getText(),"Ravioli");
-       Assert.assertEquals(convertWebElement("(//ion-col//p[.=' $ 14.00 '])").getText(),"$ 14.00");
+       Assert.assertEquals(convertWebElement("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 14.00");
 
     }
 
@@ -1756,7 +1755,7 @@ Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//ion-app[@id='seat2']//p[.=' Ravioli Pesto    ']"));
         utils.log().info(element.getText());
         Assert.assertEquals(element.getText(),"Ravioli Pesto");
-        Assert.assertEquals(convertWebElement("(//ion-col//p[.=' $ 15.00 '])[2]").getText(),"$ 15.00");
+        Assert.assertEquals(convertWebElement("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 15.00");
     }
 
     public void verifyMenuAddedIntoNextSeat21() throws InterruptedException {
@@ -1764,7 +1763,7 @@ Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//ion-app[@id='seat2']//p[.=' Ravioli    ']"));
         utils.log().info(element.getText());
         Assert.assertEquals(element.getText(),"Ravioli");
-        Assert.assertEquals(convertWebElement("(//ion-row//p[.=' $ 14.00 '])").getText(),"$ 14.00");
+        Assert.assertEquals(convertWebElement("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 14.00");
     }
 
     public void verifyMenuAddedIntoNextSeat3() throws InterruptedException {
@@ -1772,7 +1771,7 @@ Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//ion-app[@id='seat2']//p[.=' Cheesecake    ']"));
         utils.log().info(element.getText());
         Assert.assertEquals(element.getText(),"Cheesecake");
-        Assert.assertEquals(convertWebElement("(//ion-col//p[.=' $ 15.00 '])[2]").getText(),"$ 15.00");
+        Assert.assertEquals(convertWebElement("//ion-app[@id='seat3']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 15.00");
 
     }
 
@@ -1790,7 +1789,7 @@ Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//ion-app[@id='seat2']//p[.=' Ravioli    ']"));
         utils.log().info(element.getText());
         Assert.assertEquals(element.getText(),"Ravioli");
-        Assert.assertEquals(convertWebElement("(//ion-col//p[.=' $ 14.00 '])[2]").getText(),"$ 14.00");
+        Assert.assertEquals(convertWebElement("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 14.00");
     }
 
     public void verifyMenuAddedIntoNextSeat42() throws InterruptedException {
@@ -1798,7 +1797,7 @@ Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//ion-app[@id='seat2']//p[.=' Ravioli    ']"));
         utils.log().info(element.getText());
         Assert.assertEquals(element.getText(),"Ravioli");
-        Assert.assertEquals(convertWebElement("(//ion-col//p[.=' $ 14.00 '])[1]").getText(),"$ 14.00");
+        Assert.assertEquals(convertWebElement("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 14.00");
     }
 
     public String verifyCashApplied() {
@@ -1849,13 +1848,14 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void verifyDiscountIsApplied(String Discount) {
-        WebElement discount = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[3]"));
-        WebElement discount1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[5]"));
+        WebElement discount = driver.findElement(By.xpath("//ion-item[3]//ion-row//ion-col[.='"+Discount+"']"));
+//        WebElement discount1 = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name=\"" + Discount + "\"])[5]"));
 
-        if ((discount.isDisplayed()) && (discount1.isDisplayed())) {
-            utils.log().info("Discount is split - " + Discount);
+        if (discount.isDisplayed()) {
+            utils.log().info("Discount is split displayed- " + Discount);
         } else {
             utils.log().info("Discount is not split");
+            int w = 1/0;
         }
     }
 
@@ -1871,7 +1871,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifyDeliveryChargeAdded() {
         WebElement delivery = driver.findElement(By.xpath("//div[.='Delivery charge']"));//Prod
-        //WebElement delivery = (WebElement) driver.findElement(By.xpath()("Delivery Charge  ");//Staging
+        //WebElement delivery =  driver.findElement(By.xpath()("Delivery Charge  ");//Staging
         String charge = delivery.getText();
         WebElement amount = driver.findElement(By.xpath("//div[.='Delivery charge']/..//div[contains(@class,'pos-end')]"));
         String Price = amount.getText();
@@ -1885,7 +1885,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifyDeliveryChargeAddedForLoyalty() {
         WebElement delivery = driver.findElement(By.xpath("//div[.='Delivery charge']"));//Prod
-        //WebElement delivery = (WebElement) driver.findElement(By.xpath()("Delivery Charge  ");//Staging
+        //WebElement delivery =  driver.findElement(By.xpath()("Delivery Charge  ");//Staging
         String charge = delivery.getText();
         WebElement amount = driver.findElement(By.xpath("//div[.='Delivery charge']/..//div[contains(@class,'pos-end')]"));
         String Price = amount.getText();
@@ -1981,7 +1981,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void clickDeviceDropDownButtonBatchScreen() throws InterruptedException {
         Thread.sleep(4000);
-        WebElement dropDown = (WebElement) driver.findElement(By.xpath("Down Arrow Black"));
+        WebElement dropDown =  driver.findElement(By.xpath("Down Arrow Black"));
         elementClick(dropDown,"Selected - Drop Down Black");
     }
 
@@ -1993,7 +1993,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifyBatchInitiatedPopup() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement batchPopup = (WebElement) driver.findElement(By.xpath("Batch process has been initiated and it may take some time to complete. Please check back after few minutes."));
+        WebElement batchPopup =  driver.findElement(By.xpath("Batch process has been initiated and it may take some time to complete. Please check back after few minutes."));
 
         if (batchPopup.isDisplayed()) {
             utils.log().info("Batch initiated popup is shown");
@@ -2003,7 +2003,7 @@ Assert.assertEquals(menu.getText(),money);
     }
     public void verifyPrimaryCheckIsOpened() {
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-        WebElement checkNumber = (WebElement) driver.findElement(By.xpath("//div[@id='os_check']//p[contains(@class,'checkno')]"));
+        WebElement checkNumber =  driver.findElement(By.xpath("//div[@id='os_check']//p[contains(@class,'checkno')]"));
         Assert.assertEquals((checkNumber.getText()), TestUtils.globalCheckNumber);
         utils.log().info("Primary Check is SAME After Split Check - " + checkNumber.getText());
     }
@@ -2012,7 +2012,7 @@ Assert.assertEquals(menu.getText(),money);
         List<WebElement> deviceList =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
         int deviceListCount = deviceList.size();
         utils.log().info("List of device - " + deviceListCount);
-        WebElement listDevice = (WebElement) driver.findElement(By.xpath("MPPG Auth"));
+        WebElement listDevice =  driver.findElement(By.xpath("MPPG Auth"));
         String listDeviceTxt = listDevice.getText();
 
         try {
@@ -2032,16 +2032,16 @@ Assert.assertEquals(menu.getText(),money);
     public void verifyLastBatchStartedText() throws Exception {
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         Thread.sleep(2000);
-        WebElement downBtn = (WebElement) driver.findElement(By.xpath("(//XCUIElementTypeButton[@name=\"Down Arrow Black\"])[1]"));
+        WebElement downBtn =  driver.findElement(By.xpath("(//XCUIElementTypeButton[@name=\"Down Arrow Black\"])[1]"));
         elementClick(downBtn, "Down Btn Selected");
         selectTheMppgPaymentInDevice();
-        WebElement lastBatchStarted = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]"));
+        WebElement lastBatchStarted =  driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]"));
         String lastBatchStartedTxt = lastBatchStarted.getText();
-        WebElement dateTime = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeOther/XCUIElementTypeStaticText[2]"));
+        WebElement dateTime =  driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[6]/XCUIElementTypeOther/XCUIElementTypeStaticText[2]"));
         String dateTimeTxt = dateTime.getText();
         try {
             verifyBatchCheckAvailable1();
-            WebElement batchComplete = (WebElement) driver.findElement(By.xpath("Batch Completed"));
+            WebElement batchComplete =  driver.findElement(By.xpath("Batch Completed"));
             String batchText = batchComplete.getText();
             if (lastBatchStarted.isDisplayed()) {
                 utils.log().info("Seen " + lastBatchStartedTxt + " - " + dateTimeTxt + " " + batchText);
@@ -2088,10 +2088,10 @@ Assert.assertEquals(menu.getText(),money);
     WebElement searchTextField;
 
     public void clickTheCheckFromBatchScreen() {
-        WebElement search = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeTextField[@value='Search']"));
+        WebElement search =  driver.findElement(By.xpath("//XCUIElementTypeTextField[@value='Search']"));
         String globalCheckNumber = TestUtils.globalCheckNumber;
         sendKeys(search, globalCheckNumber);
-        WebElement phoneOrders1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"]"));
+        WebElement phoneOrders1 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + globalCheckNumber + "\"]"));
 
         if (phoneOrders1.isDisplayed()) {
             elementClick(phoneOrders1, "Tapped Batch Check in Batch Screen - " + globalCheckNumber);
@@ -2102,10 +2102,10 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void clickTheCheckFromBatchScreen1() {
-//        WebElement search = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeTextField[@value='Search']");
+//        WebElement search =  driver.findElement(By.xpath()("//XCUIElementTypeTextField[@value='Search']");
 //        String globalCheckNumber = TestUtils.globalCheckNumber;
 //        sendKeys(search, globalCheckNumber);
-        WebElement phoneOrders1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + TestUtils.globalCheckNumber + "\"]"));
+        WebElement phoneOrders1 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"" + TestUtils.globalCheckNumber + "\"]"));
 
         if (phoneOrders1.isDisplayed()) {
             elementClick(phoneOrders1, "Tapped Batch Check in Batch Screen - " + TestUtils.globalCheckNumber);
@@ -2122,7 +2122,7 @@ Assert.assertEquals(menu.getText(),money);
         pressPinC();
         pressPin5();
         pressPin00();
-        WebElement field = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField"));
+        WebElement field =  driver.findElement(By.xpath("//XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField"));
         String fieldTxt = field.getText();
         fieldTxt1 = fieldTxt.replace("$", "");
         TestUtils.tipAmount = fieldTxt1;
@@ -2141,7 +2141,7 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void shouldSeeInvalidTipAmountPopup(){
-        WebElement invalidTipAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeTextView[@name=\"Total amount must be greater than check amount.\"]"));
+        WebElement invalidTipAmount =  driver.findElement(By.xpath("//XCUIElementTypeTextView[@name=\"Total amount must be greater than check amount.\"]"));
         Assert.assertEquals(invalidTipAmount.getText(),"Total amount must be greater than check amount.");
         utils.log().info("Displayed as - "+"Total amount must be greater than check amount.");
     }
@@ -2150,10 +2150,10 @@ Assert.assertEquals(menu.getText(),money);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String tipAmount1 = TestUtils.tipAmount;
         utils.log().info("tipAmount1 - " + tipAmount1);
-        WebElement search = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeTextField[@value=\"Search\"]"));
+        WebElement search =  driver.findElement(By.xpath("//XCUIElementTypeTextField[@value=\"Search\"]"));
         String globalCheckNumber = TestUtils.globalCheckNumber;
         sendKeys(search, globalCheckNumber);
-        WebElement checkkk = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell//XCUIElementTypeStaticText[7]"));
+        WebElement checkkk =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell//XCUIElementTypeStaticText[7]"));
         String CheckTxt = checkkk.getText();
         utils.log().info("CheckTxt - " + CheckTxt);
         if (tipAmount1.equalsIgnoreCase(CheckTxt)) {
@@ -2167,19 +2167,19 @@ Assert.assertEquals(menu.getText(),money);
     public void verifyAmountWithDeliveryCharge() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-        WebElement deliveryAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[2]"));
+        WebElement deliveryAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[2]"));
         String deliveryAmountTxt = deliveryAmount.getText();
 
-        WebElement subtotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
+        WebElement subtotal =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         String subtotalTxt = subtotal.getText();
         String subtotalTxt1 = subtotalTxt.replace("$", "");
-        WebElement Tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
+        WebElement Tax =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
         String taxTxt = Tax.getText();
         String taxTxt1 = taxTxt.replace("$", "");
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
+        WebElement Total =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
         String totalTxt = Total.getText();
         String totalTxt1 = totalTxt.replace("$", "");
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
+        WebElement paidAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
         String paidAmountTxt = paidAmount.getText();
         String paidAmountTxt1 = paidAmountTxt.replace("$", "");
         if (subtotalTxt1.equalsIgnoreCase(deliveryAmountTxt)) {
@@ -2209,7 +2209,7 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void clickSplitBySeatInSplitCheck() {
-        WebElement splitBySeat = (WebElement) driver.findElement(By.xpath("//div[.='Split By Seat']"));
+        WebElement splitBySeat =  driver.findElement(By.xpath("//div[.='Split By Seat']"));
         elementClick(splitBySeat, "Selected Button as - " + splitBySeat.getText());
     }
 
@@ -2227,7 +2227,7 @@ Assert.assertEquals(menu.getText(),money);
     public void verifySeatsAvaliableInSplitCheck1() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String seatNumber = TestUtils.seatNumberOrderScreen;
-        WebElement getSeatNumber = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
+        WebElement getSeatNumber =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeOther[2]/XCUIElementTypeStaticText"));
         String seatNumber1 = getSeatNumber.getText();
         String seatNumber11 = seatNumber1.replaceAll("[A-Za-z ]", "");
         utils.log().info("seatNumber - " + seatNumber);
@@ -2271,15 +2271,15 @@ Assert.assertEquals(menu.getText(),money);
     public void verifyMenuIsSplittedEvenly() {
         List<WebElement> menus =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         for (int i = 1; i <= menus.size(); i++) {
-            WebElement menuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
+            WebElement menuName =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]"));
             MenuNameTxt[i] = menuName.getText();
             TestUtils.SplitSeatMenus[i] = MenuNameTxt[i];
-            WebElement menuQuantity = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeButton/XCUIElementTypeStaticText"));
+            WebElement menuQuantity =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeButton/XCUIElementTypeStaticText"));
             MenuQty[i] = menuQuantity.getText();
             TestUtils.MenuQuantity[i] = MenuQty[i];
 
             //    utils.log().info("Seat 1 Menu Name - " + MenuNameTxt[i]);
-            WebElement menuPrize = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
+            WebElement menuPrize =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[2]"));
             MenuNamePrize[i] = menuPrize.getText();
             TestUtils.SplitSeatMenusPrize[i] = MenuNamePrize[i];
             utils.log().info("Seat 1 Menu Name  - "+i+" " + MenuNameTxt[i] + " Quantity - " + MenuQty[i] + " Prize - " + MenuNamePrize[i]);
@@ -2288,14 +2288,14 @@ Assert.assertEquals(menu.getText(),money);
                 for (int k = 1; k <= modifers.size(); k++) {
 
                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]
-                    WebElement modifierName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
+                    WebElement modifierName =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
                     ModifierName[i] = modifierName.getText();
                     TestUtils.ModifierName[i] = ModifierName[i];
                     //  utils.log().info("Seat 1 Modifier Name - "+ ModifierName[i]);
-                    WebElement ModifierQtyy = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[2]"));
+                    WebElement ModifierQtyy =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[2]"));
                     ModifierQty[i] = ModifierQtyy.getText();
                     TestUtils.ModifierQty[i] = ModifierQty[i];
-                    WebElement modifierPrize = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[3]"));
+                    WebElement modifierPrize =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[3]"));
                     ModifierPrize[i] = modifierPrize.getText();
                     TestUtils.ModifierPrize[i] = ModifierPrize[i];
                     utils.log().info("Seat 1 Modifier - "+i+" " + ModifierName[i] + " Qty - " + ModifierQty[i] + " Prize - " + ModifierPrize[i]);
@@ -2307,14 +2307,14 @@ Assert.assertEquals(menu.getText(),money);
         }
         List<WebElement> menus1 =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         for (int j = 1; j <= menus1.size(); j++) {
-            WebElement menuName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[1]"));
+            WebElement menuName1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[1]"));
             MenuNameTxt2[j] = menuName1.getText();
             TestUtils.SplitSeatMenus2[j] = MenuNameTxt2[j];
             // utils.log().info(" Seat 2 Menu Name - "+ MenuNameTxt2[j]);
-            WebElement menuQuantity = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeButton/XCUIElementTypeStaticText"));
+            WebElement menuQuantity =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeButton/XCUIElementTypeStaticText"));
             MenuQty2[j] = menuQuantity.getText();
             TestUtils.MenuQuantity2[j] = MenuQty2[j];
-            WebElement menuPrize1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[2]"));
+            WebElement menuPrize1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[2]"));
             MenuNamePrize2[j] = menuPrize1.getText();
             TestUtils.SplitSeatMenusPrize2[j] = MenuNamePrize2[j];
             utils.log().info("Seat 2 Menu Name - "+j+" " + MenuNameTxt2[j] + " Quantity - " + MenuQty2[j] + " Prize - " + MenuNamePrize2[j]);
@@ -2322,15 +2322,15 @@ Assert.assertEquals(menu.getText(),money);
                 //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]
                 List<WebElement> modifers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for (int k = 1; k <= modifers.size(); k++) {
-                    WebElement modifierName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
+                    WebElement modifierName =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
                     ModifierName2[j] = modifierName.getText();
                     TestUtils.ModifierName2[j] = ModifierName2[j];
                     //  utils.log().info("Seat 1 Modifier Name - "+ ModifierName[i]);
-                    WebElement ModifierQty22 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[2]"));
+                    WebElement ModifierQty22 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[2]"));
                     ModifierQty2[j] = ModifierQty22.getText();
                     TestUtils.ModifierQty2[j] = ModifierQty2[j];
 
-                    WebElement modifierPrize = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[3]"));
+                    WebElement modifierPrize =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[3]"));
                     ModifierPrize2[j] = modifierPrize.getText();
                     TestUtils.ModifierPrize2[j] = ModifierPrize2[j];
                     utils.log().info("Seat 2 Modifier - "+j+" " + ModifierName2[j] + " Qty - " + ModifierQty2[j] + " Prize - " + ModifierPrize2[j]);
@@ -2369,7 +2369,7 @@ Assert.assertEquals(menu.getText(),money);
         int sizeOfCount1 = seat1TableMenuCount1.size();
         utils.log().info("Seat 2 Menu Count - " + sizeOfCount1);
 //        for (int i = 1; i <= sizeOfCount1; i++) {
-//            WebElement menus = (WebElement) driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
+//            WebElement menus =  driver.findElement(By.xpath()("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + i + "]/XCUIElementTypeStaticText[1]");
 //            String menuTxt = menus.getText();
 //            utils.log().info("After done Group Seats, Seat 2 Menus - " + menuTxt);
 //        }
@@ -2378,10 +2378,10 @@ Assert.assertEquals(menu.getText(),money);
     public void getSeat1Prize() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         Thread.sleep(3000);
-        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Tax']/../..//ion-col//p[@class='ion-float-right']"));
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Paid Amount']/../..//ion-col//p[@class='ion-float-right']"));
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement subTotal =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement tax =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Tax']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement paidAmount =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Paid Amount']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement Total =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 1']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
         Thread.sleep(2000);
         String subTotalTxt = subTotal.getText();
         String subTotalTxt1 = subTotalTxt.replaceAll("[A-Z$. ]","");
@@ -2470,10 +2470,10 @@ Assert.assertEquals(menu.getText(),money);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         Thread.sleep(3000);
-        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Tax']/../..//ion-col//p[@class='ion-float-right']"));
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Paid Amount']/../..//ion-col//p[@class='ion-float-right']"));
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement subTotal =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement tax =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Tax']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement paidAmount =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Paid Amount']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement Total =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
 //          String subTotalTxt = subTotal.getText();
 //        TestUtils.subtotalTxt1 = subTotalTxt;
 //        utils.log().info("Seat 2 SubTotal - " + subTotalTxt);
@@ -2582,10 +2582,10 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifySeat1PrizeAndSeat2PrizeIsSame() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
+        WebElement subTotal =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
+        WebElement tax =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[2]"));
+        WebElement paidAmount =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
+        WebElement Total =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText[4]"));
         // Assert.assertEquals(subTotal.getText(), TestUtils.subtotalTxt);
         utils.log().info("Subtotal of Seat 1 & Seat 2 is SAME - " + subTotal.getText());
         String tax1 = tax.getText();
@@ -2615,7 +2615,7 @@ Assert.assertEquals(menu.getText(),money);
         int subTotalAmount2 = Integer.parseInt(subTotalTxt22);
         int subTotalAmount = subTotalAmount1 + subTotalAmount2;
 
-        WebElement subTotal = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement subTotal =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Subtotal']/../..//ion-col//p[@class='ion-float-right']"));
         String subtotal = subTotal.getText();
         TestUtils.subtotalTxt = subtotal;
         String subtotal1 = subtotal.replaceAll("[A-Z$., ]", "");
@@ -2677,7 +2677,7 @@ Assert.assertEquals(menu.getText(),money);
         String totalTxTT = String.valueOf(Double.parseDouble(String.valueOf((int)Math.round(totalTxTT9))));
 
 
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
+        WebElement Total =  driver.findElement(By.xpath("//app-split-seat-orders//ion-header[@role='banner']//ion-col[.='Seat 2']/../../..//ion-footer//ion-row//ion-col//p[.='Total']/../..//ion-col//p[@class='ion-float-right']"));
         String Total1 = Total.getText();
         TestUtils.totalTxt = Total1;
         String Total11 = Total1.replaceAll("[A-Z$. ]", "");
@@ -2691,19 +2691,19 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifySplitSeatPrizeWithOrderScreenPrize() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement subtotal = (WebElement) driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+        WebElement subtotal =  driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
         Assert.assertEquals(subtotal.getAttribute("value"), TestUtils.subtotalTxt);
         utils.log().info("Subtotal is - " + subtotal.getText());
 
-        WebElement tax = (WebElement) driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
+        WebElement tax =  driver.findElement(By.xpath("//div[@id='os_taxAmountStr']//input"));
         Assert.assertEquals(tax.getAttribute("value"), TestUtils.taxTxtGroup);
         utils.log().info("Tax is - " + tax.getText());
 
-        WebElement Total = (WebElement) driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
+        WebElement Total =  driver.findElement(By.xpath("//div[@id='os_totalAmountStr']//input"));
         Assert.assertEquals(Total.getAttribute("value"), TestUtils.totalTxt);
         utils.log().info("Total is - " + Total.getText());
 
-        WebElement paidAmount = (WebElement) driver.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
+        WebElement paidAmount =  driver.findElement(By.xpath("//div[@id='os_paidAmountStr']//input"));
         Assert.assertEquals(paidAmount.getAttribute("value"), TestUtils.paidAmount);
         utils.log().info("Paid Amount is - " + paidAmount.getText());
 
@@ -2748,7 +2748,7 @@ Assert.assertEquals(menu.getText(),money);
         utils.log().info("orderMenu.size() "+orderMenu.size());
         for (int i = 2; i <= orderMenu.size(); i++) {
 
-            WebElement orderMenuName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" +i+ "]/XCUIElementTypeStaticText[1]"));
+            WebElement orderMenuName =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[" +i+ "]/XCUIElementTypeStaticText[1]"));
             orderMenuName1[i-1] = orderMenuName.getText();
 //            utils.log().info("Order Screen menu SAME with Split Menu1 - "+orderMenuName1[i]);
 ////            orderMenuNamee[i] = TestUtils.SplitSeatMenus2[i];
@@ -2758,7 +2758,7 @@ Assert.assertEquals(menu.getText(),money);
             try{
                 List<WebElement> modifier =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+(i)+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for(int m=1;m<=modifier.size();m++){
-                    WebElement modifier1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell["+m+"]/XCUIElementTypeStaticText[1]"));
+                    WebElement modifier1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell["+m+"]/XCUIElementTypeStaticText[1]"));
                     modifieR[m] = modifier1.getText();
                     Assert.assertEquals(modifieR[m],TestUtils.ModifierName2[i-1]);
                     utils.log().info("Modifier - "+modifieR[m]);
@@ -2954,29 +2954,29 @@ Assert.assertEquals(menu.getText(),money);
         List<WebElement> menus1 =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell"));
         utils.log().info("menus1.size - "+menus1.size());
         for (int j = 1; j <= menus1.size(); j++) {
-            WebElement menuName1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[1]"));
+            WebElement menuName1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[1]"));
             MenuNameTxt2[j] = menuName1.getText();
             TestUtils.SplitSeatMenus2[j] = MenuNameTxt2[j];
             // utils.log().info(" Seat 2 Menu Name - "+ MenuNameTxt2[j]);
-            WebElement menuQuantity = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeButton/XCUIElementTypeStaticText"));
+            WebElement menuQuantity =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeButton/XCUIElementTypeStaticText"));
             MenuQty2[j] = menuQuantity.getText();
             TestUtils.MenuQuantity2[j] = MenuQty[j];
-            WebElement menuPrize1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[2]"));
+            WebElement menuPrize1 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell[" + j + "]/XCUIElementTypeStaticText[2]"));
             MenuNamePrize2[j] = menuPrize1.getText();
             TestUtils.SplitSeatMenusPrize2[j] = MenuNamePrize2[j];
             utils.log().info("Seat 2 Menu Name - " +j+" "+ MenuNameTxt2[j] + " Quantity - " + MenuQty2[j] + " Prize - " + MenuNamePrize2[j]);
             try {
                 List<WebElement> modifers =  driver.findElements(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell"));
                 for (int k = 1; k <= modifers.size(); k++) {
-                    WebElement modifierName = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
+                    WebElement modifierName =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[1]"));
                     ModifierName2[j] = modifierName.getText();
                     TestUtils.ModifierName2[j] = ModifierName2[j];
                     //  utils.log().info("Seat 1 Modifier Name - "+ ModifierName[i]);
-                    WebElement ModifierQty22 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[2]"));
+                    WebElement ModifierQty22 =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[2]"));
                     ModifierQty2[j] = ModifierQty22.getText();
                     TestUtils.ModifierQty2[j] = ModifierQty2[j];
 
-                    WebElement modifierPrize = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[3]"));
+                    WebElement modifierPrize =  driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+j+"]/XCUIElementTypeTable[1]/XCUIElementTypeCell[" + k + "]/XCUIElementTypeStaticText[3]"));
                     ModifierPrize2[j] = modifierPrize.getText();
                     TestUtils.ModifierPrize2[j] = ModifierPrize2[j];
                     utils.log().info("Seat 2 Modifier - "+j + ModifierName2[j] + " Qty - " + ModifierQty2[j] + " Prize - " + ModifierPrize2[j]);
@@ -2990,7 +2990,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifySeatAsPaid(){
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
-        WebElement seats = (WebElement) driver.findElement(By.xpath("//ion-header//ion-col[.='Paid']"));
+        WebElement seats =  driver.findElement(By.xpath("//ion-header//ion-col[.='Paid']"));
         Assert.assertEquals(seats.getText(),"Paid");
         utils.log().info("Displayed as - "+seats.getText());
     }
@@ -3006,14 +3006,14 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifyGratuityValueAfterAddAutoGratuity(String value){
 
-        WebElement e11 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Subtotal\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
+        WebElement e11 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Subtotal\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[1]"));
         int subtotalValue = Integer.parseInt(e11.getText().replaceAll("[A-Z$., ]",""));
 
         int gratuityValue = Integer.parseInt(value);
        int gratuity = ( subtotalValue * gratuityValue )/100 ;
         String ExpectedGratuity = String.valueOf(gratuity);
         utils.log().info("Gratuity as - "+ gratuity);
-        WebElement Gratuity1 = (WebElement) driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Gratuity\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
+        WebElement Gratuity1 =  driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Gratuity\"]/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText[3]"));
        String actualGratuity = (Gratuity1.getText().replaceAll("[A-Z$,. ]",""));
         Assert.assertEquals(ExpectedGratuity,actualGratuity);
 
@@ -3032,7 +3032,7 @@ Assert.assertEquals(menu.getText(),money);
     }
 
     public void clickSubmitBtn() throws InterruptedException {
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         WebElement element1 = driver.findElement(By.xpath("//span[.=' Submit ']"));
         Assert.assertEquals(element1.getText(),"Submit");
 

@@ -342,7 +342,7 @@ Feature: Bar Tab
     And I click the Exit to close the preauth window
     And I get check number
     And I add a new seat
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     When User take an order as "Burger ind"
 
     When User select first seat on menu item page in split screen

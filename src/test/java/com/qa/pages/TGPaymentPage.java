@@ -807,7 +807,7 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName,expectedName);
     }
     public void clickExitButton(){
-        WebElement element = mergeAndFindMobileElement(exitButtonOnPayment);
+        WebElement element = driver.findElement(By.xpath(exitButtonOnPayment));
         elementClick(element, "click exitButtonOnPayment ");
     }
 
@@ -822,13 +822,13 @@ public class TGPaymentPage extends BasePage {
     }
 
     public void paySeat(){
-        WebElement element = mergeAndFindMobileElement(exactButton);
+        WebElement element = driver.findElement(By.xpath(exactButton));
         elementClick(element, "click exactButton ");
 
         WebElement element1 = mergeAndFindMobileElement(cashButtonOnPayment);
         elementClick(element1, "click cashButtonOnPayment ");
 
-        WebElement element2 = mergeAndFindMobileElement(exitButtonOnPayment);
+        WebElement element2 = driver.findElement(By.xpath(exitButtonOnPayment));
         elementClick(element2, "click exitButtonOnPayment ");
     }
 
@@ -868,13 +868,15 @@ public class TGPaymentPage extends BasePage {
         elementClick(element1, "click giftCardOption ");
     }
 
-    public void clickManuelButton(){
-        WebElement element = mergeAndFindMobileElement(manuelButton);
+    public void clickManuelButton() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath(manuelButton));
         elementClick(element, "click manuelButton ");
     }
 
-    public void clickProcessButton(){
-        WebElement element = mergeAndFindMobileElement(giftProcessButton);
+    public void clickProcessButton() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath(giftProcessButton));
         elementClick(element, "click giftProcessButton ");
     }
 

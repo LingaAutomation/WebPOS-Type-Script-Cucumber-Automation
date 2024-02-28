@@ -111,7 +111,7 @@ public class AskSeatNumber extends BasePage {
 
         Random rand = new Random();
 
-        for (int i = 1; i == 1; i++) {
+        for (int i = 1; i <= 1; i++) {
             itemToSelect = rand.nextInt(count);
 
             if (itemToSelect == 0) {
@@ -234,4 +234,6 @@ public class AskSeatNumber extends BasePage {
         WebElement lingaCloseBtn =  driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']"));
         elementClick(lingaCloseBtn,"Selected - "+"Linga Close");
     }
+
+
 }

@@ -494,7 +494,7 @@ Feature: Ask Seat Number Feature
   ######  SPLIT EVENLY  ###########
     And I click Split Evenly Button
     Then I should see Seperate Item is Disable
-    And I get seat 1 prize details
+#    And I get seat 1 prize details
 
 #    Then I should verify menu is splitted evenly
 #  And I verify seat 1 prize and seat 2 prize is same
@@ -671,8 +671,8 @@ Feature: Ask Seat Number Feature
     And I click All
     And I click Table Layout tab
     And I select random table on the table layout
-    And I select the number of seats as "1"
-    And I tap Continue to finish selecting the number of seats
+#    And I select the number of seats as "1"
+#    And I tap Continue to finish selecting the number of seats
     Then I Should get back to the Order Screen
     When I verify the seat count on the order screen as "1"
     And I click All

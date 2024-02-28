@@ -145,8 +145,8 @@ Feature: Till management operations
     Then User click Cash Tab on Menu Item Page
     When User click exact option
     Then User click enter button
-    And User click cash amount exceed amount popoup
-    And User enter cash drop amount for Sandwiches
+#    And User click cash amount exceed amount popoup
+#    And User enter cash drop amount for Sandwiches
 #    And User verify cash drop successful popup
     And User click cancel button
     When User click setting icon

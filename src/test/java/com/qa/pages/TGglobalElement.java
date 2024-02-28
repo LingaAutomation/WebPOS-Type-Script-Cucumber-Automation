@@ -332,7 +332,7 @@ public class TGglobalElement {
 //    String voidAfterPaymentPopupInfo = "//XCUIElementTypeStaticText[@name=\"Payment(s) made on this check,Can you return this to Walkin\"]";
 
 
-    String exitButtonOnPayment = "//button[contains(.,'Exit')]";
+    String exitButtonOnPayment = "//button[contains(@id,'ps_exit')]";
 
     String paymentMethodTitle = "Select Payment Method";
 //    String paymentMethodTitle = "//XCUIElementTypeStaticText[@name=\"Select Payment Method\"]";
@@ -379,10 +379,10 @@ public class TGglobalElement {
     String giftCVV = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[2]";
     String giftZipCode = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]/XCUIElementTypeTextField[3]";
 
-    String giftProcessButton = "(//button[.=' Process '])[2]";
+    String giftProcessButton = "(//button[.=' Process '])[1]";
 //    String giftProcessButton = "//XCUIElementTypeStaticText[@name=\"Process\"]";
 
-    String manuelButton = "(//button[.=' Manual '])[2]";
+    String manuelButton = "(//button[.=' Manual '])[1]";
 //    String manuelButton = "//XCUIElementTypeStaticText[@name=\"Manual\"]";
 
     String LoyaltyPaymentButton = "//XCUIElementTypeButton[contains(@name, 'Loyalty')]";
@@ -1308,7 +1308,7 @@ public class TGglobalElement {
     String foodTab = "//div[contains(@class,'center-name category-container')]/div[contains(.,'FOOD')]";
 //    String foodTab = "//XCUIElementTypeStaticText[@name=\"FOOD\"]";
 
-    String firstMenuItem = "(//button[contains(@class,'menu-btn subCategoryBtn')]/div[contains(.,'SANDWICHES')])[1]";
+    String firstMenuItem = "//button[.='SANDWICHES']";
 
     String orderButton = "//ion-row/button[contains(.,'Order')]";
 //    String orderButton = "//XCUIElementTypeStaticText[@name=\"Order\"]";
@@ -2607,7 +2607,7 @@ public class TGglobalElement {
     String splitedOrderForFirstCheck = "(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[3]";
     String splitedOrderForSecondCheck = "(//XCUIElementTypeStaticText[@name=\"SANDWICHES \"])[4]";
     //    String addButtonForSplit = "//XCUIElementTypeStaticText[@name=\"Add\"]";
-    String addButtonForSplit = "//button[@class='add-seat']";
+    String addButtonForSplit = "//span[.=' Add ']";
     String firstOrderForSplit = "(//XCUIElementTypeStaticText[@name=\"HAMBURGER \"])[2]";
     String seatForSplit = "(//XCUIElementTypeStaticText[@name=\"Seat 1\"])[3]";
     //    String hamburgerPrice = "//XCUIElementTypeStaticText[@name=\"1.500,00\"]";

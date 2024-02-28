@@ -670,7 +670,7 @@ public class TGMenuItemStepDef {
         new TGMenuItemPage().addModifiersOverMaximumCount();
     }
     @Then("User add modifiers over maximum count")
-    public void userAddModifiersOverMaximumCount() {
+    public void userAddModifiersOverMaximumCount() throws InterruptedException {
         new TGMenuItemPage().addModifierOverMaximumCount();
     }
 

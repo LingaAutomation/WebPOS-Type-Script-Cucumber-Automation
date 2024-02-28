@@ -1,4 +1,3 @@
-@Types2
 
 # Close the day test cases
 Feature: verify the close day screen
@@ -60,7 +59,7 @@ Feature: verify the close day screen
 
     Examples:
       |pin1 |pin2 |pin3 |pin4  |totalNetSale |grossSale | newCustomer | allEmployees |totalNetSale|coverCount|txtGrossReceipt|txtGrossSales|txtNetSales|netVoidValue|initialGrossVoid|initialGrandSales|chkCloseDay    |btnNo |
-      |0    |9    |8    |7     | 0.00        | 0.00     | 0           | 0            |0.00        | 0        |0.00           |0.00         |0.00       |0.00        |0.00            |0.00             |Close The Day  |No    |
+      |0    |9    |8    |7     | 0.00        | 0.00     | 0           | 0            |0.00        | 0.00        |0.00           |0.00         |0.00       |0.00        |0.00            |0.00             |Close The Day  |No    |
 
   @Types
   Scenario Outline: verify the initial creditCard ,paidIn ,paidOut,cashExp,overShortage,taxExpt,taxAmt
@@ -82,10 +81,12 @@ Feature: verify the close day screen
       |0    |9    |8    |7     |Credit Card|Paid In         |Paid Out      |Cash Expected|Over / Shortage       |
 
   #TA-I1251 1.02,1.40
-  @Types
+
+
   Scenario Outline: verify the values in close day screen after creating sales,verify cashierout popup
     Given I'm logged in
     And I closed the order type window
+    And I get the server name
    And I select category as "<category>"
     And I select menu item as "<itemMiniIdly>"
     And I click Payment button in the Order Management Screen
@@ -118,11 +119,12 @@ Feature: verify the close day screen
       |allEmployees | btnCash |category     |itemMiniIdly |pin1 |pin2 |pin3 |pin4  |totalNetSale |GrossSale |newCustomer |btnDropDown |chkCloseDay     |btnYes |btnChrOut  |
       |0            | Cash    |  CIMiniFood |Mini idly    |0    |9    |8    |7     |     7.14    | 8.00     |0           | arrow down |Close The Day   |Yes    |Cashier Out|
 
-  @Types
+  @Closed
  #TA-I1257 1.08,1.46,1.63,1.64,166,1.57,1.59,1.06,1.68,1.18 unable to print the sale recap report, #1.68 verify employee, #1.63 cash expected paid out,#1,64 cash expected paid in,#1,06 close the day
   Scenario Outline: Verify whether the system allow to sale recap after sale,grossvoid value,overshortage,cash record,verify employee,cashexpected paidout,paidin,close the day.
     Given I'm logged in
     And I closed the order type window
+    And I get the server name
    And I select category as "<category>"
     And I select menu item as "<itemPoori>"
     And I click Payment button in the Order Management Screen
@@ -218,7 +220,7 @@ Feature: verify the close day screen
   Scenario Outline: verify whether application shows net sale value after creating the sale
     Given I'm logged in
     And I closed the order type window
-
+    And I get the server name
     And I select category as "<category>"
     And I select menu item as "<itemCI-Biriyani>"
     And I select menu item as "<itemParatha>"
@@ -282,7 +284,7 @@ Feature: verify the close day screen
 
   #TA-I1308 Sheet No 1.31
 
-   @Types
+  @Closed1
   Scenario Outline: Verify the Gift Card Sold after creating sale
     Given I'm logged in
     And I closed the order type window
@@ -595,7 +597,7 @@ Feature: verify the close day screen
 
     Examples:
       | pin1 | pin2 | pin3 | pin4 | btnDropDown | employees | txtEmployee | btnGenerate | totalNetSale |employee2|employee3    |employee4    |employeeNumber     |employee1|
-      | 1    | 2    | 3    | 4    | downarrow   | Admin u   | Admin u     | Generate    |          0.00|bartab 0 |Cashier1 6   |auto l   | Multiple Employee  |Appium l  |
+      | 1    | 2    | 3    | 4    | downarrow   | Admin u   | Admin u     | Generate    |          0.00|bartab 0 |Cashier1 6   |auto l   | All Employees  |Appium l  |
 
   @Types1
   #TA-I1290 1.71,1.7

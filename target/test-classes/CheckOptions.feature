@@ -1523,7 +1523,7 @@ Feature: Check Options screen operations
     And I click power button
     Examples:
       | table_no | number_of_seats | Menu_Item | Modifier |Menu_Item1|Menu_Item2|Discount                 | SubTotal    | Tax       | Discount1 |Total     |Discount2                 | SubTotal2    | Tax2      | txtDiscount2 |Total2       |  Discount3               | SubTotal3   | Tax3      | txtDiscount3   |Total3    |  Discount4              | SubTotal4   | Tax4   |Total4   |
-      | T12      | 1               | Ravioli | Butter     |cake      |Cheesecake|CB-AfterTax-Percentage10 | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00  |CB-AfterTax-Amount1000    | $ 16.00      | $ 1.60    | $ 1.00       | $ 16.60     | CB-AfterTaxSetPrice2500  | $ 16.00     | $ 1.60    | $ 0.56         | $ 17.04  |CB-AfterTax-Free300      | $ 17.00     | $ 1.70 | $ 18.70 |
+      | T12      | 1               | Ravioli | Butter     |cake      |Cheesecake|CB-AfterTax-Percentage10 | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00  |CB-AfterTax-Amount1000    | $ 16.00      | $ 1.60    | $ 1.00       | $ 16.60     | CB-AfterTaxSetPrice2500  | $ 16.00     | $ 1.60    | $ 0.55         | $ 17.05  |CB-AfterTax-Free300      | $ 17.00     | $ 1.70 | $ 18.70 |
 
 
   Scenario Outline: Check Based Before Tax Discount as Percentage
@@ -3225,7 +3225,7 @@ Feature: Check Options screen operations
     And I click power button
     Examples:
       | table_no | number_of_seats | Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Discount1 |Total        |   Menu_Item1   |Discount2              | SubTotal2   | Tax2      | txtDiscount2 |Total2         |Discount3               | SubTotal3   | Tax3     | txtDiscount3 |Total3       |  Menu_Item2      |Discount4            | SubTotal4    | Tax4       | Total4    |
-      | T12      | 1               | Ravioli   | Butter   |CB-AfterTax-Percentage10  | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00     | cake           |CB-AfterTax-Amount1000 | $ 16.00     | $ 1.60    | $ 1.00       | $ 16.60       |CB-AfterTaxSetPrice2500 | $ 16.00     | $ 1.60   | $ 0.56       | $ 17.04     |  Cheesecake      | CB-AfterTax-Free300 | $ 17.00      | $ 1.70     | $ 18.70   |
+      | T12      | 1               | Ravioli   | Butter   |CB-AfterTax-Percentage10  | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00     | cake           |CB-AfterTax-Amount1000 | $ 16.00     | $ 1.60    | $ 1.00       | $ 16.60       |CB-AfterTaxSetPrice2500 | $ 16.00     | $ 1.60   | $ 0.55       | $ 17.05     |  Cheesecake      | CB-AfterTax-Free300 | $ 17.00      | $ 1.70     | $ 18.70   |
 
 
   Scenario Outline: Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
@@ -4443,7 +4443,7 @@ Feature: Check Options screen operations
     And I click power button
     Examples:
       |table_no| number_of_seats |Menu_Item|Menu_Item1 |price    |price1  |  SubTotal | Tax    | Discount  | Total  | Discount1                 |Discount2                 | total   | expensive|  Menu_Item2   |Menu_Item3         | price2   |price3   | SubTotal3    | Tax3    | txtDiscount3 | Total3  | Discount3                 | Discount4                  |  total3      | expensive1 |
-      | T15     |1               |  Halwa  |cake       | 10.00   |8.00    |  $ 18.00  | $ 0.80 | $ 10.00   | $ 8.80 | CheckMixMatchSPerM(After) | CheckMixMatchSPerM(Befor)|$ 18.80  |Most      |   Cheesecake  |Pumpkin Cheese Cake|15.00     |11.00    |  $ 26.00     | $ 1.50  | $ 11.00      | $ 16.50 | CheckMixMatchSPerL(After) | CheckMixMatchSPerL(Befor)  | $ 26.50      |Least      |
+      | T15     |1               |  Halwa  |cake       | 10.00   |8.00    |  $ 18.00  | $ 1.05 | $ 7.50   | $ 11.55 | CheckMixMatchSPerM(After) | CheckMixMatchSPerM(Befor)|$ 18.80  |Most      |   Cheesecake  |Pumpkin Cheese Cake|15.00     |11.00    |  $ 26.00     | $ 1.50  | $ 11.00      | $ 16.50 | CheckMixMatchSPerL(After) | CheckMixMatchSPerL(Befor)  | $ 26.50      |Least      |
 
 
   Scenario Outline: Check Payment through Side CC with Gratuity(Fixed) and with tips

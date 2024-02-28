@@ -467,7 +467,7 @@ public class PaymentWindow extends OrderManagementScreen{
     }
 
     public void verifyTipAdded(String num){
-        WebElement tip=driver.findElement(By.xpath("//ion-title[contains(.,' "+num+" + $ 10.00')]"));
+        WebElement tip=driver.findElement(By.xpath("//ion-title[contains(.,'"+num+" + $ 10.00 Tip')]"));
         if (tip.isDisplayed()){
             utils.log().info("Tip is added with menu total");
         }else {
@@ -502,11 +502,17 @@ public class PaymentWindow extends OrderManagementScreen{
 //        elementClick(applyTipBtn,"Tapped Apply Tip");
 //    }
 
-    public void verifyTotalValue(String value){
-        WebElement total=driver.findElement(By.xpath("//p[@class='main ion-text-center']"));
+    public void verifyTotalValue(String value) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement total=driver.findElement(By.xpath("(//p[@class='main ion-text-center'])[2]"));
+        utils.log().info("Tip value is displayed - "+total.getText());
+        String[] tipss = total.getText().split(" ");
+        utils.log().info(tipss[2].replaceAll("[()$\n ]",""));
+        System.err.println(tipss[2].replaceAll("[()$\n ]",""));
         if(total.isDisplayed()){
-            utils.log().info("Total value is displayed - "+total.getText());
-            Assert.assertEquals(total.getText(),value);
+            utils.log().info("Total value is displayed - "+tipss[2].replaceAll("[()$\n ]",""));
+            utils.log().info("Total value is displayed - "+value.replaceAll("[$ ]",""));
+            Assert.assertEquals(tipss[2].replaceAll("[()$\n ]",""),value.replaceAll("[$ ]",""));
         }else {
             utils.log().info("Total value is not displayed - "+value);
         }

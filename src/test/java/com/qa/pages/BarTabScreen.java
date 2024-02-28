@@ -121,6 +121,7 @@ public class BarTabScreen extends OrderManagementScreen{
     }
 
     public void pressToggleBtn() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(ToggleIcon,"Tapped the Toggle Icon button");
         Thread.sleep(1000);}
 

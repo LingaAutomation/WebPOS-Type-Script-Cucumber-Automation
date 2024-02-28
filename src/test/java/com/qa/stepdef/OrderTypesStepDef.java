@@ -284,7 +284,7 @@ public class OrderTypesStepDef {
 
     @Then ("^I should see orderscreen with as Dosa EACH$")
     public void iShouldSeeOrderScreenWithAsDosaEach(){
-        Assert.assertEquals(new OrderManagementScreen().dosaEach(),"(F) Dosa EACH");
+        Assert.assertEquals(new OrderManagementScreen().dosaEach(),"(F)Dosa EACH");
     }
     @Then ("^I should see discount as \"([^\"]*)\" on the order screen$")
     public void iShouldSeeDiscountAsOnTheOrderScreen(String num){

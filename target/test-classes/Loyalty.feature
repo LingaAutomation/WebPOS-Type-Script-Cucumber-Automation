@@ -1,7 +1,7 @@
-@Payment09
+@Payment0910
 Feature: Loyalty
 
-  @Payment091
+
   Scenario Outline: Loyalty for new customer
     Given I'm logged in
     And I closed the order type window
@@ -30,7 +30,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -54,7 +54,7 @@ Feature: Loyalty
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
     And I click the Save button
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
     And I click the Save button
     Then I Should get back to the Order Screen
     And I get check number
@@ -92,7 +92,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -151,7 +151,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -172,7 +172,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -187,7 +187,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -208,7 +208,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -223,7 +223,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -243,7 +243,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -259,7 +259,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -279,7 +279,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -294,7 +294,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -314,7 +314,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -330,7 +330,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -350,7 +350,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -367,7 +367,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window
@@ -386,7 +386,7 @@ Feature: Loyalty
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
 #    And I select the customer for loyalty
     And I click loyalty button on the customer profile window
     Then I should see loyalty balance window

@@ -2472,12 +2472,19 @@ public class TGMenuItemPage extends BasePage {
         WebElement element1 = mergeAndFindMobileElement(forHereServiceType);
         elementClick(element1,"Select ForHere From DineIn");
     }
-    public void addModifierOverMaximumCount(){
-        for (int i = 0; i < 3; i++){
+    public void addModifierOverMaximumCount() throws InterruptedException {
+//        for (int i = 1; i <= 3; i++){
             //click the button
+            Thread.sleep(1000);
             WebElement element = mergeAndFindMobileElement(firstModifierOfFirstOrderName);
             elementClick(element,"Add Modifier Over Maximum Count");
-        }
+        Thread.sleep(1000);
+        WebElement element1 = mergeAndFindMobileElement(firstModifierOfFirstOrderName);
+        elementClick(element1,"Add Modifier Over Maximum Count");
+        Thread.sleep(1000);
+        WebElement element2 = mergeAndFindMobileElement(firstModifierOfFirstOrderName);
+        elementClick(element2,"Add Modifier Over Maximum Count");
+//        }
     }
 
     public void addModifiersOverMaximumCount(){

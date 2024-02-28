@@ -625,7 +625,8 @@ try {
     public String getPopupTxt(){
         return elementGetText(convertWebElement(pleaseCloseTheSaleToSyncTheData),"Close then Sale to sync the Data - ");
     }
-    public String verifyOpenItemScreen(){
+    public String verifyOpenItemScreen() throws InterruptedException {
+        Thread.sleep(1000);
         return elementGetText(openItemScreen,"Open item Screen txt is Displayed - ");
     }
 

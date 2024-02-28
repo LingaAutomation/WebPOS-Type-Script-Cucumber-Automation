@@ -240,7 +240,7 @@ public class MenuOptionStepDef {
         Assert.assertEquals(new MenuOptionScreen().getPopupTxt(),"Please close the sale to sync the data");
     }
     @Then ("^I should see open item screen$")
-    public void iShouldSeeOpenItemScreen(){
+    public void iShouldSeeOpenItemScreen() throws InterruptedException {
         Assert.assertEquals(new MenuOptionScreen().verifyOpenItemScreen(),"Open Item");
     }
 

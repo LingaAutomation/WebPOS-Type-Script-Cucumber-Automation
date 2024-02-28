@@ -53,6 +53,11 @@ public class TableOrderOperationsStepDef {
         new OrderTypeWindow().pressCancelBtn();
     }
 
+    @And ("^I get the server name$")
+    public void iGetTheServerName(){
+        new OrderTypeWindow().getTheServerName();
+    }
+
     @And ("^I make a sale for Dummy$")
     public void iMakeASaleForDummy() throws InterruptedException {
         new OrderManagementScreen().createSAle();
@@ -72,7 +77,7 @@ public class TableOrderOperationsStepDef {
         new OrderTypeWindow().clickSeat1ForAddMenuItem();
     }
 
-    @And ("^I click seat 2 for add menu item$")
+    @And ("^I click Seat 2 for add menu item$")
     public void iClickSeat2ForAddMenuItem(){
         new OrderTypeWindow().clickSeat2ForAddMenuItem();
     }
@@ -418,7 +423,7 @@ public class TableOrderOperationsStepDef {
     /****** Add customer to table ******/
 
     @And("^I click Add Customer Button$")
-    public void iClickAddCustomerButton() {
+    public void iClickAddCustomerButton() throws InterruptedException {
         new OrderManagementScreen().openCustomerSelectionMenu();
     }
 
@@ -492,7 +497,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And("^I click \"([^\"]*)\" to select customer for the seat$")
-    public void iClickToSelectCustomerForTheSeat(String customerName) {
+    public void iClickToSelectCustomerForTheSeat(String customerName) throws InterruptedException {
         new OrderManagementScreen().selectCustomerNameToAddToTheTable(customerName);
     }
 
@@ -1196,7 +1201,7 @@ public class TableOrderOperationsStepDef {
         new PhoneOrderScreen().iVerifyTheSeatCountOnTheOrderScreen(value);
     }
 
-    @And("I click Seat {int} for add menu item")
+    @And("I click Seat \"([^\"]*)\" for add menu item")
     public void iClickSeatForAddMenuItem(int arg0) throws InterruptedException {
         new TableLayOutScreen().iClickSeatForAddMenuItem();
     }

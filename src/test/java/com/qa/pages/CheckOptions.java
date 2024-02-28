@@ -681,12 +681,14 @@ public class CheckOptions extends OrderManagementScreen {
         Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         elementClick("/html/body/div[1]/div[2]/div/mat-dialog-container/app-gift-card/ion-grid/mat-tab-group/div/mat-tab-body[1]/div/div/app-gift-card-recharge/ion-grid/ion-row[1]/ion-col[2]/div[2]", "Tapped Charge Amount Field");
+        Thread.sleep(2000);
         elementClick("//span[.='1']", "Tapped Pin 1");
         elementClick("//span[.='00']", "Tapped Pin 00");
         elementClick("//span[.='00']", "Tapped Pin 00");
         // WebElement el2 = mergeAndFindElement("//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]","",TestUtils.XPath);
 //        WebElement el2 = mergeAndFindElement("//XCUIElementTypeStaticText[@name=\"Continue\"]", "", TestUtils.XPath);
         elementClick("//span[.=' Continue ']", "Tapped ");
+        Thread.sleep(2000);
     }
     @FindBy(xpath = "//div[@class='menu-section orderlist-flex ']//div[contains(.,'GC-1111')]")
     private WebElement giftCardAddUp;

@@ -1,4 +1,4 @@
-@Regression
+@TableOrd
 
 Feature:Table Order Operations
 
@@ -44,7 +44,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -65,7 +65,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -86,7 +86,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -107,7 +107,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -128,7 +128,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -298,12 +298,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-#    And I click power button
-#    Examples:
- #     | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
- #     | T1    | T2   | T3   | T4  | T5  | 1               |French Friese | Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5        |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4  | T5  | 1               |French Friese | Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5        |
 
-#  Scenario Outline: Merge 5 Checks without Pay (Print in Table Layout)
+  Scenario Outline: Merge 5 Checks without Pay (Print in Table Layout)
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -441,12 +441,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-  #  Examples:
-  #    | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
-  #    | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
 
-  #Scenario Outline: Merge 5 Check without pay (print in Order Screen)
+  Scenario Outline: Merge 5 Check without pay (print in Order Screen)
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -585,13 +585,13 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
-   #   | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5         |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5         |
 
 
- # Scenario Outline: Merge 5 Check without pay (complete the Payment and Print)
+  Scenario Outline: Merge 5 Check without pay (complete the Payment and Print)
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -725,12 +725,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
- #   And I click power button
-  #  Examples:
-  #    | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
-  #    | T1    | T2   | T3   | T4| T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak| 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5            |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4| T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak| 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5            |
 
-  #Scenario Outline: Merge 5 checks- Paid checks and Without paid check
+  Scenario Outline: Merge 5 checks- Paid checks and Without paid check
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -873,13 +873,13 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-  #  Examples:
-  #    | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
-  #    | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5         |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato    | 5         |
 
 
- # Scenario Outline: Merge 5 checks- Paid checks and Without paid check(Print in Table Layout Screen)
+  Scenario Outline: Merge 5 checks- Paid checks and Without paid check(Print in Table Layout Screen)
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -1026,12 +1026,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
-   #   | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
 
-  #Scenario Outline: Merge 5 checks- Paid checks and Without paid check(Print in Order Layout Screen)
+  Scenario Outline: Merge 5 checks- Paid checks and Without paid check(Print in Order Layout Screen)
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -1177,11 +1177,11 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
- #   And I click power button
- #   Examples:
- #     | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
- #     | T1    | T2   | T3   | T4  | T5  | 1               |French Friese | Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak| 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
-  #Scenario Outline: Merge 5 checks with Paid checks
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4  | T5  | 1               |French Friese | Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak| 4 BBQ | Croutons | 1/2 Cheese | Tomato  | 5           |
+  Scenario Outline: Merge 5 checks with Paid checks
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -1334,12 +1334,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
-   #   | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato   | 5          |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2   | T3   | T4  | T5  | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato   | 5          |
 
- # Scenario Outline: Merge 5 checks with Paid checks(Print in Table Layout Screen)
+  Scenario Outline: Merge 5 checks with Paid checks(Print in Table Layout Screen)
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -1493,12 +1493,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
-   #   | T1    | T2    | T3   | T4   | T5   | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato | 5            |
+    And I click power button
+    Examples:
+      | first |second |third | Four | Five | number_of_seats | Menu_Item | Menu_Item1 | Menu_Item2 | Menu_Item3 | Menu_Item4 | Modifier | Modifier1 | Modifier2 | Modifier3 | Modifier4 | Merge_seat |
+      | T1    | T2    | T3   | T4   | T5   | 1               |French Friese| Garlic Bread | Tuna Tacos |Cheesy Bacon Fries | B.I. Wings | Steak | 4 BBQ | Croutons | 1/2 Cheese | Tomato | 5            |
 
- # Scenario Outline: Merge 5 checks with Paid checks(Print Order Screen)
+  Scenario Outline: Merge 5 checks with Paid checks(Print Order Screen)
     And I click new check button on the Table layout screen
     And I select a table to be merged as "<first>"
     And I select the number of seats as "<number_of_seats>"
@@ -1668,7 +1668,7 @@ Feature:Table Order Operations
     And I select menu item as RavioliPesto for Item Based Inclusive Tax
     And I select modifier as "<Modifier1>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select Pasta as category
     And I select menu item as RavioliPesto for Item Based Inclusive Tax
     And I select modifier as "<Modifier1>"
@@ -1690,12 +1690,12 @@ Feature:Table Order Operations
 #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Modifier |SubTotal   |  Tax     | Gratuity | Total  |
-     # | T6       | 2              | Butter    |TL 3.800,00|TL 345,46 |TL 345,46 | TL 4.145,46 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats |Menu_Item      | Modifier |  Modifier1 |SubTotal   |  Tax     | Gratuity | Total   |
+      | T8       | 3               | French Friese | Steak    | Butter     |$ 30.00    |$ 2.72    |$ 2.72    | $ 32.72 |
 
-  #Scenario Outline: Check whether the menu item are missing in the split screen or not
+  Scenario Outline: Check whether the menu item are missing in the split screen or not
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -1706,7 +1706,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -1759,12 +1759,12 @@ Feature:Table Order Operations
     And I click x button on the Add customer window
     And I click All
     And I click Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no | number_of_seats |customer_name | customer| customer_name1 | customer1 |
-     # | T6          |1              | Auto ragav  | Auto r  | auto number1  | auto n    |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats |customer_name | customer| customer_name1 | customer1 |
+      | T6          |1              | Auto ragav  | Auto r  | auto number1  | auto n    |
 
- # Scenario Outline:Remove Customer
+  Scenario Outline:Remove Customer
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -1811,12 +1811,12 @@ Feature:Table Order Operations
     Then I Should get back to the Order Screen
     And I click All
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no | number_of_seats |
-  #    | T6          |1             |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats |
+      | T6          |1             |
 
- # Scenario Outline: Table should not change into seated status
+  Scenario Outline: Table should not change into seated status
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -1891,12 +1891,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-   #   | T8          |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T8          |1              | French Friese | Tomato|
 
-  #Scenario Outline: Print All Split Screen
+  Scenario Outline: Print All Split Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -1926,12 +1926,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T9         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T9         |1              | French Friese | Steak  |
 
-  #Scenario Outline: Print one seat from Table layout screen
+  Scenario Outline: Print one seat from Table layout screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -1957,12 +1957,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-   #   | table_no | number_of_seats | Menu_Item     | Modifier |
-  #    | T8       |2                | French Friese | Steak    |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item     | Modifier |
+      | T8       |2                | French Friese | Steak    |
 
- # Scenario Outline: Print Split screen, click Back on split screen
+  Scenario Outline: Print Split screen, click Back on split screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2010,12 +2010,12 @@ Feature:Table Order Operations
     Then I should see as "<number_of_seats>" on the order screen
     And I click All
     And I click Table Layout tab
-    #And I click power button
-   # Examples:
-    #  |table_no|number_of_seats|
-   #   |T9      |2              |
+    And I click power button
+    Examples:
+      |table_no|number_of_seats|
+      |T9      |2              |
 
-  #Scenario Outline: Multiple checks
+  Scenario Outline: Multiple checks
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2056,13 +2056,13 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
 #    Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-  #    |table_no|number_of_seats| Menu_Item | Modifier |
-   #   |T11      |1              | Garlic Bread | 4 BBQ |
+    And I click power button
+    Examples:
+      |table_no|number_of_seats| Menu_Item | Modifier |
+      |T11      |1              | Garlic Bread | 4 BBQ |
 
 
- # Scenario Outline: Cash On - Empty Checks
+  Scenario Outline: Cash On - Empty Checks
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2129,7 +2129,7 @@ Feature:Table Order Operations
     And I click Done to get back
     When I click Finish Order button
     Then I should get back to the Table Layout tab
-    When I click on table "<table_no>"
+    When I click the check from the table layout for merged
     And I click Cash button for Complete Sale
     And I click Exact button on the cash pop-up
     And I click Enter Button on the cash pop-up
@@ -2371,12 +2371,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-   # Examples:
-  #    | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
-    #  | T10          |1              | French Friese | Steak  | 2          |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
+      | T10          |1              | French Friese | Steak  | 2          |
 
- # Scenario Outline: Split - Without Select item to Seperate Item
+  Scenario Outline: Split - Without Select item to Seperate Item
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2403,12 +2403,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-   #   | T7          |1              | French Friese | Tomato |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7          |1              | French Friese | Tomato |
 
-  #Scenario Outline: Split-Add
+  Scenario Outline: Split-Add
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2434,12 +2434,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-      #| T8          |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T8          |1              | French Friese | Steak  |
 
- #Scenario Outline: Split Screen - Do Seperate Item, Split Evenly, Group Seats by click START OVER to should come back original stage of all scenarios
+ Scenario Outline: Split Screen - Do Seperate Item, Split Evenly, Group Seats by click START OVER to should come back original stage of all scenarios
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2486,12 +2486,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
-     # | T9          |1              | French Friese | Tomato | 2               |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
+      | T9          |1              | French Friese | Tomato | 2               |
 
-  #Scenario Outline: Back Split Screen - Click Back to get back OrderScreen
+  Scenario Outline: Back Split Screen - Click Back to get back OrderScreen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2514,12 +2514,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-      #| T11          |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T11          |1              | French Friese | Steak  |
 
- # Scenario Outline: Back Split Screen - click back to see "Changes made in split, save and close"
+  Scenario Outline: Back Split Screen - click back to see "Changes made in split, save and close"
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2551,12 +2551,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
- #   And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
-    #  | T12          |1              | French Friese | Steak  | 2          |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
+      | T12          |1              | French Friese | Steak  | 2          |
 
- # Scenario Outline: Start Over - Click Back to see order screen when made some action
+  Scenario Outline: Start Over - Click Back to see order screen when made some action
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2585,12 +2585,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
-     # | T13          |1              | French Friese | Steak  | 2          |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
+      | T13          |1              | French Friese | Steak  | 2          |
 
-  #Scenario Outline: Save & Close-Split Screen
+  Scenario Outline: Save & Close-Split Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2626,12 +2626,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
-  #    | T10          |1              | French Friese | Steak  | 2          |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier | number_of_split |
+      | T10          |1              | French Friese | Steak  | 2          |
 
- # Scenario Outline: Split - Split Evently
+  Scenario Outline: Split - Split Evently
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2663,12 +2663,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-  #    | T14          |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T14          |1              | French Friese | Steak  |
 
- # Scenario Outline: Split - Group Seats by Without selecting seats
+  Scenario Outline: Split - Group Seats by Without selecting seats
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2695,12 +2695,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T18          |1              | French Friese | Steak   |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T18          |1              | French Friese | Steak   |
 
- # Scenario Outline: Split - Group Seats
+  Scenario Outline: Split - Group Seats
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats2>"
@@ -2710,7 +2710,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -2770,12 +2770,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-      #| T11          |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T11          |1              | French Friese | Steak  |
 
-  #Scenario Outline: Print-Split Screen Click Print button to get Receipt Printer for Selected seat & "item(s) need to send Kitchen" pop up
+  Scenario Outline: Print-Split Screen Click Print button to get Receipt Printer for Selected seat & "item(s) need to send Kitchen" pop up
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2803,12 +2803,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T8          |1              | French Friese | Tomato  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T8          |1              | French Friese | Tomato  |
 
-  #Scenario Outline: Print Split Screen, when Select Multi seat for Print should see Select any one seat/check for print
+  Scenario Outline: Print Split Screen, when Select Multi seat for Print should see Select any one seat/check for print
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2842,12 +2842,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T7         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7         |1              | French Friese | Steak  |
 
- # Scenario Outline: Print split screen- when Print the Empty seat, nothing should happen
+  Scenario Outline: Print split screen- when Print the Empty seat, nothing should happen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2912,12 +2912,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T10          |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T10          |1              | French Friese | Steak  |
 
-  #Scenario Outline: Print All Split Screen, Receipt Print Should come for the all the seats seperately at single shot
+  Scenario Outline: Print All Split Screen, Receipt Print Should come for the all the seats seperately at single shot
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -2945,12 +2945,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-      #| T7          |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7          |1              | French Friese | Tomato|
 
- # Scenario Outline: Print All split Screen,when Select Multi seat for Print All receipt should come & click Start Over, everything should be undo
+  Scenario Outline: Print All split Screen,when Select Multi seat for Print All receipt should come & click Start Over, everything should be undo
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3017,12 +3017,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | 2          |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T21          |1              | French Friese | Tomato|
 
- # Scenario Outline: Pay-Split Screen, When click Pay Button without select Seat
+  Scenario Outline: Pay-Split Screen, When click Pay Button without select Seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3049,12 +3049,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T8         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T8         |1              | French Friese | Steak  |
 
- # Scenario Outline: Pay-Split Screen, When click Pay Button with multi Seat
+  Scenario Outline: Pay-Split Screen, When click Pay Button with multi Seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3098,14 +3098,14 @@ Feature:Table Order Operations
   Scenario Outline: Touch & Paste on Split Screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats3>"
+    And I select the number of seats as "3"
     And I tap Continue to finish selecting the number of seats
     And I get check number
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item1>"
     And I select modifier as "<Modifier1>"
@@ -3132,14 +3132,14 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier | Menu_Item1 | Modifier1 | Menu_Item2 | Modifier2 |
-     # | T6          |3             | French Friese | Tomato| Garlic Bread | 4 BBQ    | B.I. Wings | Tomato  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier | Menu_Item1 | Modifier1 | Menu_Item2 | Modifier2 |
+      | T6          |3             | French Friese | Tomato| Garlic Bread | 4 BBQ    | B.I. Wings | Tomato  |
 
-  #Scenario Outline: Split screen from Order screen, should navigate to Split Screen from order Screen
+  Scenario Outline: Split screen from Order screen, should navigate to Split Screen from order Screen
     And I click new check button on the Table layout screen
-    And I select table as "<table_no1>"
+    And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
     And I get check number
@@ -3157,12 +3157,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T7         |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7         |1              | French Friese | Tomato|
 
- # Scenario Outline: Split screen from Order Screen, Should see Split is not allowed, no order in this Check
+  Scenario Outline: Split screen from Order Screen, Should see Split is not allowed, no order in this Check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3173,12 +3173,12 @@ Feature:Table Order Operations
     And I click Done button on the Popup
     And I click All
     And I click Table Layout tab
-    #And I click power button
-    #Examples:
-    #  | table_no | number_of_seats |
-     # | T17         |1              |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats |
+      | T17         |1              |
 
-#  Scenario Outline: Split screen From order Screen, Should see Split is not allow, payment in this check
+  Scenario Outline: Split screen From order Screen, Should see Split is not allow, payment in this check
     And I click new check button on the Table layout screen
     And I select table as "<table_no1>"
     And I select the number of seats as "<number_of_seats>"
@@ -3229,12 +3229,12 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-      #| T9         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T9         |1              | French Friese | Steak  |
 
-  #Scenario Outline: Pay check-Table layout, see select valid check
+  Scenario Outline: Pay check-Table layout, see select valid check
     And I click new check button on the Table layout screen
     And I click Pay Check button
 
@@ -3273,12 +3273,12 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-      #| T14         |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T14         |1              | French Friese | Tomato|
 
- # Scenario Outline: Print Table Layout, see Receipt printer with order
+  Scenario Outline: Print Table Layout, see Receipt printer with order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3305,12 +3305,12 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-   # And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T16         |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T16         |1              | French Friese | Tomato|
 
-  #Scenario Outline: Open the Created Sales
+  Scenario Outline: Open the Created Sales
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3352,12 +3352,12 @@ Feature:Table Order Operations
     And I click Done button on the Popup
     And I click All
     And I click Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T19         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T19         |1              | French Friese | Steak  |
 
-  #Scenario Outline: Void - After Order
+  Scenario Outline: Void - After Order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3374,13 +3374,13 @@ Feature:Table Order Operations
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
-   # And I click power button
+    And I click power button
 
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T17         |1              | French Friese | Steak  |
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T17         |1              | French Friese | Steak  |
 
- # Scenario Outline: Void - After Payment
+  Scenario Outline: Void - After Payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3400,12 +3400,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T22          |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T22          |1              | French Friese | Steak  |
 
- # Scenario Outline: Search
+  Scenario Outline: Search
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3420,12 +3420,12 @@ Feature:Table Order Operations
     And I click Done button on the Popup
     And I click All
     And I click Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_item1 | Menu_Item | Modifier |
-     # | T7      | 1               | Onion Rings |French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_item1 | Menu_Item | Modifier |
+      | T7      | 1               | Onion Rings |French Friese | Steak  |
 
- # Scenario Outline: When Order,Tick Mark Shown
+  Scenario Outline: When Order,Tick Mark Shown
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3466,12 +3466,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T7         |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7         |1              | French Friese | Tomato|
 
-  #Scenario Outline: Cash (Paid Huge Amount then Get Change Duo Popup)
+  Scenario Outline: Cash (Paid Huge Amount then Get Change Duo Popup)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3488,12 +3488,12 @@ Feature:Table Order Operations
     And I click Done button on the Popup
     #And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-   #   | T8         |1              | Garlic Bread | 4 BBQ|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T8         |1              | Garlic Bread | 4 BBQ|
 
-  #Scenario Outline: Cash - No more payment need Popup
+  Scenario Outline: Cash - No more payment need Popup
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3516,12 +3516,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T13         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T13         |1              | French Friese | Steak  |
 
- # Scenario Outline: Cash Reopen check After Payment
+  Scenario Outline: Cash Reopen check After Payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3582,12 +3582,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T7         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7         |1              | French Friese | Steak  |
 
-  #Scenario Outline: Delete payment - Payment should be deleted
+  Scenario Outline: Delete payment - Payment should be deleted
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3608,12 +3608,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T16         |1              | French Friese | Steak   |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T16         |1              | French Friese | Steak   |
 
- # Scenario Outline: Delete Payment - select payment and try again
+  Scenario Outline: Delete Payment - select payment and try again
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3633,12 +3633,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-    #And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item | Modifier |
-      #| T7         |1              | French Friese | Steak   |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7         |1              | French Friese | Steak   |
 
-  #Scenario Outline: Payment- Balance Due should be changed
+  Scenario Outline: Payment- Balance Due should be changed
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3657,12 +3657,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T16         |1              | French Friese | Steak   |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T16         |1              | French Friese | Steak   |
 
- # Scenario Outline: Payment - When enter amount Manually
+  Scenario Outline: Payment - When enter amount Manually
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3682,12 +3682,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T9         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T9         |1              | French Friese | Steak  |
 
-  #Scenario Outline: Payment - when do partial payment to get Please pay balance amount popup
+  Scenario Outline: Payment - when do partial payment to get Please pay balance amount popup
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3709,22 +3709,22 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
- #   And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T10         |1              | French Friese | Steak |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T10         |1              | French Friese | Steak |
 
-  #Scenario Outline: Payment - Create multi seat and do partial payment to get Please pay balance amount popup for multi seat
+  Scenario Outline: Payment - Create multi seat and do partial payment to get Please pay balance amount popup for multi seat
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats2>"
+    And I select the number of seats as "2"
     And I tap Continue to finish selecting the number of seats
     And I get check number
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -3743,12 +3743,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-   #   | T7        |2              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7        |2              | French Friese | Steak  |
 
-  #Scenario Outline: Payment - Checks Should be Closed
+  Scenario Outline: Payment - Checks Should be Closed
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3764,12 +3764,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T7        |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7        |1              | French Friese | Tomato|
 
-  #Scenario Outline: Payment - No more payment needed
+  Scenario Outline: Payment - No more payment needed
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3806,7 +3806,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -3840,7 +3840,7 @@ Feature:Table Order Operations
   Scenario Outline: Adjust Payment- Select payment and try again
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats1>"
+    And I select the number of seats as "1"
     And I tap Continue to finish selecting the number of seats
     And I get check number
     And I select FOOD as category
@@ -3856,15 +3856,15 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-   #   | T7        |1              | French Friese | Tomato|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7        |1              | French Friese | Tomato|
 
-#  Scenario Outline: Adjust Payment Balance Due field Box should be changed according to adjusted amount.
+  Scenario Outline: Adjust Payment Balance Due field Box should be changed according to adjusted amount.
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats1>"
+    And I select the number of seats as "<number_of_seats>"
     And I tap Continue to finish selecting the number of seats
     And I get check number
     And I select FOOD as category
@@ -3885,15 +3885,15 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T7        |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7        |1              | French Friese | Steak  |
 
- # Scenario Outline: Adjust payment - create a sale with 2 seat to see balance duo becomes No due and change duo popup should not come
+  Scenario Outline: Adjust payment - create a sale with 2 seat to see balance duo becomes No due and change duo popup should not come
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats2>"
+    And I select the number of seats as "2"
     And I tap Continue to finish selecting the number of seats
     And I get check number
     And I select FOOD as category
@@ -3903,7 +3903,7 @@ Feature:Table Order Operations
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click the Exit button in the payment window
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select FOOD as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -3918,12 +3918,12 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-   #   | T7        |2              | French Friese | Steak |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T7        |2              | French Friese | Steak |
 
-#  Scenario Outline: Adjust Payment - Create a sale with 3 seat to see change due popup should not come
+  Scenario Outline: Adjust Payment - Create a sale with 3 seat to see change due popup should not come
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats3>"
@@ -3949,7 +3949,7 @@ Feature:Table Order Operations
     And I click the Exit button in the payment window
 #    And I click the save & close button on the split screen
     Then I Should get back to the Order Screen
-#    And I click seat 2 for add menu item
+#    And I click Seat 2 for add menu item
 
     And I click table number on the Order Screen as "<table_no>"
     And I click Payment button in the Order Management Screen
@@ -3987,13 +3987,13 @@ Feature:Table Order Operations
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T8        |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T8        |1              | French Friese | Steak  |
 
 
-  #Scenario Outline: Finish - In Table layout screen, color of the table should be changed to seated color
+  Scenario Outline: Finish - In Table layout screen, color of the table should be changed to seated color
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -4122,12 +4122,12 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T14         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item | Modifier |
+      | T14         |1              | French Friese | Steak  |
 
-  #Scenario Outline: Normal check with CC payment
+  Scenario Outline: Normal check with Side CC payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -4151,10 +4151,10 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats |  Menu_Item | Modifier | card_type |  Total |
-     # | T13       |1              |  French Friese | Steak |  JCB      |TL 65,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats |  Menu_Item | Modifier | card_type |  Total |
+      | T13       |1              |  French Friese | Steak |  JCB      |$ 15.00 |
 
   #Scenario Outline: Normal check with CC payment with tips and without service charge
 #    And I click new check button on the Table layout screen
@@ -4192,10 +4192,10 @@ Feature:Table Order Operations
 ##    And I click No thanks Button on the print receipt
 #    Then I should get back to the Table Layout tab
 #    And I click Table Layout tab
-    And I click power button
-    Examples:
-      | table_no | number_of_seats |  Menu_Item     | Modifier |  card_number      | expire_date | card_name | Total    | service_charge |
-      | T14      |1                |  French Friese | Steak    |  3530111333300000 | 1224        | JCB       | $ 15.00  | $ 0.00         |
+#    And I click power button
+#    Examples:
+#      | table_no | number_of_seats |  Menu_Item     | Modifier |  card_number      | expire_date | card_name | Total    | service_charge |
+#      | T14      |1                |  French Friese | Steak    |  3530111333300000 | 1224        | JCB       | $ 15.00  | $ 0.00         |
 
 #
 #  Scenario Outline: Normal check with CC payment with tips and with service charge
@@ -4265,12 +4265,12 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-   # And I click power button
-    #Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier   | SubTotal |  Total | customer_name |
-  #    | T8       |1                |  French Friese | Steak | TL 65,00 | TL 65,00 | Auto ragav  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item      | Modifier   | SubTotal |  Total  | total   | customer_name |
+      | T19      |1                |  French Friese | Steak      | $ 15.00  | $ 15.00 | $ 25.00 | Auto ragav    |
 
- # Scenario Outline: Normal check with HA payment with tips
+  Scenario Outline: Normal check with HA payment with tips
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -4299,12 +4299,12 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier   | SubTotal |  Total | total | customer_name |
-     # | T8       |1                |  French Friese | Steak | TL 65,00 | TL 65,00 | TL 75,00 | Auto ragav |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item      | Modifier   | SubTotal |  Total  | total   | customer_name |
+      | T19      |1                |  French Friese | Steak      | $ 15.00  | $ 15.00 | $ 25.00 | Auto ragav    |
 
-  #Scenario Outline: Normal check with Side CC payment
+  Scenario Outline: Normal check with Side CC payment
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -4327,12 +4327,13 @@ Feature:Table Order Operations
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats |  Menu_Item | Modifier |card_type|
-    #  | T15       |1              |  French Friese | Steak | JCB     |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item      | Modifier   | SubTotal |  Total  | total   | customer_name |
+      | T19      |1                |  French Friese | Steak      | $ 15.00  | $ 15.00 | $ 25.00 | Auto ragav    |
 
- # Scenario Outline: Normal check with Side CC payment with tips and without service charge
+
+  Scenario Outline: Normal check with Side CC payment with tips and without service charge
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -4565,13 +4566,14 @@ Feature:Table Order Operations
 #    And I closed the order type window
 #    And I click All
     Then I should see check stats Screen
-#    And I click power button
+    And I click power button
 
-#    Examples:
-#      |order_Type| Menu_Item | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 |
-#      |QSR   | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons|
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
-  #Scenario Outline: Verify whether application allows the user to void Menu Items without asking the Void reason
+
+  Scenario Outline: Verify whether application allows the user to void Menu Items without asking the Void reason
    # And I click All
     #Then I should see check stats Screen
     And I click Table Layout tab
@@ -4585,7 +4587,7 @@ Feature:Table Order Operations
     And I select modifier as "<Modifier3>"
     And I click Done to get back
     And I select menu item as "<Menu_Item2>"
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
@@ -4600,7 +4602,7 @@ Feature:Table Order Operations
     Then I should see the Split Screen
     And I click the Back button on Split Screen
     Then I Should get back to the Order Screen
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I click Void button on order management screen
     Then I should see payment made on this check popup message
     And I click Done button on the Popup
@@ -4609,13 +4611,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier | Menu_Item1 |
-     # | T14         |2              | French Friese | Steak  | Onion Rings |
 
-  #Scenario Outline: Verify whether user can able to navigate to the split seat screen when user clicks the split seat button in order screen without ordering the placed menu items
+  Scenario Outline: Verify whether user can able to navigate to the split seat screen when user clicks the split seat button in order screen without ordering the placed menu items
    # And I click All
     #Then I should see check stats Screen
     And I click Table Layout tab
@@ -4636,15 +4638,13 @@ Feature:Table Order Operations
     And I click Done button on the Popup
     And I click All
     Then I should get back to the Table Layout tab
-   # And I click power button
-
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T14         |2              | French Friese | Steak  |
-
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
 
-  #Scenario Outline: Verify whether user can able to navigate to the split seat screen when user clicks the split seat button in order screen after ordering menu items
+  Scenario Outline: Verify whether user can able to navigate to the split seat screen when user clicks the split seat button in order screen after ordering menu items
    # And I click All
     #Then I should see check stats Screen
     And I click Table Layout tab
@@ -4667,15 +4667,15 @@ Feature:Table Order Operations
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
-   # And I click power button
+    And I click power button
 
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T14      |2              | French Friese | Steak  |
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
 
 
- # Scenario Outline: Verify whether user can able to navigate to the split seat screen when user create the check with multiple seats and pay amount for one seat
+  Scenario Outline: Verify whether user can able to navigate to the split seat screen when user create the check with multiple seats and pay amount for one seat
   #  And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -4688,7 +4688,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
@@ -4707,13 +4707,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T14      |2              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
 
-  #Scenario Outline: Verify whether menu items present in their repective seats when user navigate to the split seat screen before ordering menu items
+  Scenario Outline: Verify whether menu items present in their repective seats when user navigate to the split seat screen before ordering menu items
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -4737,14 +4737,14 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T14      |         1     | French Friese | Steak  |
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
 
 
-  #Scenario Outline: Verify whether menu items present in their repective seats when user navigate to the split seat screen after odering menu items
+  Scenario Outline: Verify whether menu items present in their repective seats when user navigate to the split seat screen after odering menu items
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -4769,14 +4769,14 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |
-     # | T14      | 1             | French Friese | Steak  |
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
 
 
-  #Scenario Outline: Verify whether user able to view all the seats by navigating the seats in split seat screen if more than 4 seats present
+  Scenario Outline: Verify whether user able to view all the seats by navigating the seats in split seat screen if more than 4 seats present
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -4789,7 +4789,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
@@ -4819,12 +4819,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T14      | 5            | French Friese | Steak  |
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
- # Scenario Outline: Verify whether user can able to drag the unordered menu item from one seat to another seat
+
+  Scenario Outline: Verify whether user can able to drag the unordered menu item from one seat to another seat
    # And I click All
     #Then I should see check stats Screen
     #And I click Table Layout tab
@@ -4837,7 +4838,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
@@ -4854,14 +4855,14 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
- #   And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-    #  | T13      | 2            | French Friese | Steak  |
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
 
 
- # Scenario Outline: Verify whether user can able to drag the ordered menu item from one seat to another seat
+  Scenario Outline: Verify whether user can able to drag the ordered menu item from one seat to another seat
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -4874,7 +4875,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
@@ -4893,14 +4894,14 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |Menu_Item1| Modifier1 |
-   #   | T13      | 2            | French Friese | Steak  | Garlic Bread | 4 BBQ  |
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
 
 
- # Scenario Outline: Verify whether user can able to drag paid seat menu items to unpaid seat when user create the check with multiple seats and pay amount for one seat
+  Scenario Outline: Verify whether user can able to drag paid seat menu items to unpaid seat when user create the check with multiple seats and pay amount for one seat
   #  And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -4913,7 +4914,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
@@ -4939,13 +4940,12 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-  #    | table_no | number_of_seats | Menu_Item | Modifier |Menu_Item1| Modifier1 |
-   #   | T13      | 2            | French Friese | Steak  | Garlic Bread | 4 BBQ  |
+    And I click power button
+    Examples:
+      |order_Type| table_no |table_no1 |number_of_seats1| number_of_seats2 |number_of_seats5 | Menu_Item    | Menu_Item1 | Modifier | Menu_Item2 | Modifier1 | Menu_Item3  | Modifier3 |
+      |QSR       |T14       |T15       |1               |2                 |5                | Garlic Bread | Tuna Tacos | 4 BBQ | Onion Rings | Croutons    |French Friese | Steak  |
 
-
-#  Scenario Outline: Verify whether user can able to drag unpaid seat menu items to paid seat when user create the check with multiple seats and pay amount for one seat
+  Scenario Outline: Verify whether user can able to drag unpaid seat menu items to paid seat when user create the check with multiple seats and pay amount for one seat
   #  And I click All
   #  Then I should see check stats Screen
 #    And I click Table Layout tab
@@ -4958,7 +4958,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item3>"
     And I select modifier as "<Modifier3>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
@@ -5030,9 +5030,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     #And I click Table Layout tab
- #   And I click power button
+    And I click power button
+    Examples:
+      | table_no |table_no1  |number_of_seats2 | Menu_Item | Modifier |Discount                | SubTotal    | Tax       | txtDiscount |Total         | Menu_Item1  |Discount1              | SubTotal1    | Tax1       | txtDiscount1 |Total1        | Tax2       | SubTotal2    | Total2       | Discount2              |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
+      | T12      |T13        |2               |  Ravioli | Butter     |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.70    | $ 1.00      | $ 29.70      |cake         |CB-AfterTax-Amount1000 | $ 16.00      | $ 1.60     | $ 1.00       | $ 16.60      | $ 2.64     | $ 30.00      | $ 29.00      |CB-BeforeTax-Amount1000 | $ 1.00      |$ 2.73     | $ 30.00      | $ 29.00      |CB-AfterTax-Amount1000  | $ 1.00      |
 
-  #Scenario Outline: Verify whether application allow to split the check based amount discount with type After tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+
+  Scenario Outline: Verify whether application allow to split the check based amount discount with type After tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -5066,14 +5070,14 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item1  |Discount1            | SubTotal1    | Tax1       | txtDiscount1 |Total1       |
-    #  | T12      | 2               |  cake    |CB-AfterTax-Amount1000 | TL 3.000,00 | TL 300,00 | TL 1.000,00 | TL 2.300,00 |
+    And I click power button
+    Examples:
+      | table_no |table_no1  |number_of_seats2 | Menu_Item | Modifier |Discount                | SubTotal    | Tax       | txtDiscount |Total         | Menu_Item1  |Discount1              | SubTotal1    | Tax1       | txtDiscount1 |Total1        | Tax2       | SubTotal2    | Total2       | Discount2              |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
+      | T12      |T13        |2               |  Ravioli | Butter     |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.70    | $ 1.00      | $ 29.70      |cake         |CB-AfterTax-Amount1000 | $ 16.00      | $ 1.60     | $ 1.00       | $ 16.60      | $ 2.64     | $ 30.00      | $ 29.00      |CB-BeforeTax-Amount1000 | $ 1.00      |$ 2.73     | $ 30.00      | $ 29.00      |CB-AfterTax-Amount1000  | $ 1.00      |
 
 
 
- # Scenario Outline: Verify whether application allow to split the check based amount discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline: Verify whether application allow to split the check based amount discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
   #  And I click All
    # Then I should see check stats Screen
    # And I click Table Layout tab
@@ -5112,13 +5116,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
    # And I click Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Modifier2 | Tax2       | SubTotal2    | Total2       | Discount2              |txtDiscount2 |
-    #  | T8       |2                | Butter   | TL 254,54 | TL 3.800,00 | TL 2.800,00 |CB-BeforeTax-Amount1000| TL 1.000,00|
+    And I click power button
+    Examples:
+      | table_no |table_no1  |number_of_seats2 | Menu_Item | Modifier |Discount                | SubTotal    | Tax       | txtDiscount |Total         | Menu_Item1  |Discount1              | SubTotal1    | Tax1       | txtDiscount1 |Total1        | Tax2       | SubTotal2    | Total2       | Discount2              |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
+      | T12      |T13        |2               |  Ravioli | Butter     |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.70    | $ 1.00      | $ 29.70      |cake         |CB-AfterTax-Amount1000 | $ 16.00      | $ 1.60     | $ 1.00       | $ 16.60      | $ 2.64     | $ 30.00      | $ 29.00      |CB-BeforeTax-Amount1000 | $ 1.00      |$ 2.73     | $ 30.00      | $ 29.00      |CB-AfterTax-Amount1000  | $ 1.00      |
 
 
-  #Scenario Outline: Verify whether application allow to split the check based amount discount with type after tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline: Verify whether application allow to split the check based amount discount with type after tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
    # And I click All
     #Then I should see check stats Screen
     #And I click Table Layout tab
@@ -5204,10 +5208,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   #And I click power button
+   And I click power button
+    Examples:
+      | table_no |table_no1 | number_of_seats2| Menu_Item| Modifier |Discount                   | SubTotal    | Tax       | txtDiscount |Total       |Discount1                | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 | Tax3       | SubTotal3    | Total3      | Discount3              |txtDiscount3 |
+      | T13      |T16       | 2               |  Ravioli | Butter   | CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.52    | $ 2.80      |$ 27.72      |CB-AfterTax-Percentage10 | $ 28.00    | $ 2.80    | $ 2.80       | $ 28.00     |$ 2.45     | $ 30.00      | $ 27.00      |CB-BeforeTax-Percentage10 | $ 3.00      | $ 2.73     | $ 30.00      | $ 27.28     |CB-AfterTax-Percentage10| $ 2.72      |
 
 
-  #Scenario Outline: Verify whether application allow to split the check based percentage discount with type after tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline: Verify whether application allow to split the check based percentage discount with type after tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -5245,13 +5252,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item | Modifier |Discount            | SubTotal    | Tax       | Discount1 |Total       |
-    #  | T12      | 2               |  Ravioli | Butter   | CB-AfterTax-Percentage10 | TL 3.800,00 | TL 380,00 | TL 380,00 | TL 3.800,00 |
+    And I click power button
+    Examples:
+      | table_no |table_no1 | number_of_seats2| Menu_Item| Modifier |Discount                   | SubTotal    | Tax       | txtDiscount |Total       |Discount1                | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 | Tax3       | SubTotal3    | Total3      | Discount3              |txtDiscount3 |
+      | T13      |T16       | 2               |  Ravioli | Butter   | CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.52    | $ 2.80      |$ 27.72      |CB-AfterTax-Percentage10 | $ 28.00    | $ 2.80    | $ 2.80       | $ 28.00     |$ 2.45     | $ 30.00      | $ 27.00      |CB-BeforeTax-Percentage10 | $ 3.00      | $ 2.73     | $ 30.00      | $ 27.28     |CB-AfterTax-Percentage10| $ 2.72      |
 
 
-  #Scenario Outline:Verify whether application allow to split the check based percentage discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline:Verify whether application allow to split the check based percentage discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
   #  And I click All
   #  Then I should see check stats Screen
     #  And I click Table Layout tab
@@ -5290,13 +5297,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Modifier | Tax       | SubTotal    | Total       | Discount                |Discount1 |
-    #  | T8       |2                | Butter   | TL 310,90 | TL 3.800,00 | TL 3.420,00 |CB-BeforeTax-Percentage10 | TL 380,00|
+    And I click power button
+    Examples:
+      | table_no |table_no1 | number_of_seats2| Menu_Item| Modifier |Discount                   | SubTotal    | Tax       | txtDiscount |Total       |Discount1                | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 | Tax3       | SubTotal3    | Total3      | Discount3              |txtDiscount3 |
+      | T13      |T16       | 2               |  Ravioli | Butter   | CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.52    | $ 2.80      |$ 27.72      |CB-AfterTax-Percentage10 | $ 28.00    | $ 2.80    | $ 2.80       | $ 28.00     |$ 2.45     | $ 30.00      | $ 27.00      |CB-BeforeTax-Percentage10 | $ 3.00      | $ 2.73     | $ 30.00      | $ 27.28     |CB-AfterTax-Percentage10| $ 2.72      |
 
 
- # Scenario Outline: Verify whether application allow to split the check based percentage discount with type after tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline: Verify whether application allow to split the check based percentage discount with type after tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -5376,10 +5383,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-  #  And I click power button
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item|Modifier1|Discount                  | SubTotal    | Tax       | txtDiscount   |Total       |Discount1                  | SubTotal1    | Tax1       | txtDiscount1   |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
+      | T17      | 2               |  cake    |Butter   |CB-BeforeTax-SetPrice1000 | $ 16.00     | $ 1.00    | $ 6.00        | $ 11.00    |CB-AfterTax-SetPrice1000   | $ 16.00      | $ 1.60     | $ 6.00         | $ 11.60     |$ 0.91     | $ 30.00      | $ 10.00      |CB-BeforeTax-SetPrice1000 | $ 20.00     |$ 2.73     | $ 30.00      | $ 10.00      |CB-AfterTax-SetPrice1000|$ 20.00      |
 
 
-  #Scenario Outline: Verify whether application allow to split the check based set price discount with type After tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline: Verify whether application allow to split the check based set price discount with type After tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
   #  And I click All
   #  Then I should see check stats Screen
     #And I click Table Layout tab
@@ -5412,13 +5422,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item|Discount                  | SubTotal    | Tax       | Discount1   |Total       |
-    #  | T17      | 2               |  cake    |CB-AfterTax-SetPrice1000 | TL 3.000,00 | TL 300,00 | TL 2.000,00 | TL 1.300,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item|Modifier1|Discount                  | SubTotal    | Tax       | txtDiscount   |Total       |Discount1                  | SubTotal1    | Tax1       | txtDiscount1   |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
+      | T17      | 2               |  cake    |Butter   |CB-BeforeTax-SetPrice1000 | $ 16.00     | $ 1.00    | $ 6.00        | $ 11.00    |CB-AfterTax-SetPrice1000   | $ 16.00      | $ 1.60     | $ 6.00         | $ 11.60     |$ 0.91     | $ 30.00      | $ 10.00      |CB-BeforeTax-SetPrice1000 | $ 20.00     |$ 2.73     | $ 30.00      | $ 10.00      |CB-AfterTax-SetPrice1000|$ 20.00      |
 
 
- # Scenario Outline: Verify whether application allow to split the check based set price discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline: Verify whether application allow to split the check based set price discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
  #   And I click All
  #   Then I should see check stats Screen
  #   And I click Table Layout tab
@@ -5457,14 +5467,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
- #   And I click power button
-   ## Examples:
-     # | table_no | number_of_seats | Modifier | Tax       | SubTotal    | Total       | Discount                |Discount1 |
-     # | T8       |2                | Butter   | TL 90,90 | TL 3.800,00 | TL 1.000,00 |CB-BeforeTax-SetPrice1000| TL 2.800,00|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item|Modifier1|Discount                  | SubTotal    | Tax       | txtDiscount   |Total       |Discount1                  | SubTotal1    | Tax1       | txtDiscount1   |Total1       |Tax2       | SubTotal2    | Total2       | Discount2                |txtDiscount2 |Tax3       | SubTotal3    | Total3       | Discount3              |txtDiscount3 |
+      | T17      | 2               |  cake    |Butter   |CB-BeforeTax-SetPrice1000 | $ 16.00     | $ 1.00    | $ 6.00        | $ 11.00    |CB-AfterTax-SetPrice1000   | $ 16.00      | $ 1.60     | $ 6.00         | $ 11.60     |$ 0.91     | $ 30.00      | $ 10.00      |CB-BeforeTax-SetPrice1000 | $ 20.00     |$ 2.73     | $ 30.00      | $ 10.00      |CB-AfterTax-SetPrice1000|$ 20.00      |
 
 
-
-#  Scenario Outline: Verify whether application allow to split the check based set price discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+  Scenario Outline: Verify whether application allow to split the check based set price discount with type before tax based on the inclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
  #   And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -5544,12 +5553,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-  # And I click power button
- #  Examples:
-  #   | table_no |number_of_seats|Menu_Item   |Discount              | SubTotal    | Tax      | Total     |
-  #   | T19      |2              | Cheesecake | CB-BeforeTax-Free300 | TL 900,00   | TL 90,00 | TL 990,00 |
+   And I click power button
+    Examples:
+      | table_no |number_of_seats|Menu_Item   |Menu_Item1 |Discount              |Discount1             | SubTotal    | Tax      | Total     |Modifier2 | Tax2       | SubTotal2   | Total2       |SubTotal3   | Tax3       | Gratuity3   | Total3       |
+      | T19      |2              | Cheesecake |Halwa      | CB-BeforeTax-Free300 |CB-AfterTax-Free300   | $ 32.00     | $ 3.20   | $ 35.20   | Butter   | $ 2.93     | $ 32.00     | $ 32.20      |$ 12.00     | $ 1.20     |  $ 1.20     | $ 14.40      |
 
-# Scenario Outline: verify whether application allow to split the check based free item (exclusive tax menu item) discount with type after tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
+
+ Scenario Outline: verify whether application allow to split the check based free item (exclusive tax menu item) discount with type after tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
  #  And I click All
  #  Then I should see check stats Screen
  #  And I click Table Layout tab
@@ -5583,13 +5593,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   #And I click power button
- #  Examples:
-  #   | table_no |number_of_seats|Menu_Item   |Discount1             | SubTotal    | Tax      | Total     |
-  #   | T12      |2              | Cheesecake | CB-AfterTax-Free300 | TL 900,00   | TL 90,00 | TL 990,00 |
+   And I click power button
+    Examples:
+      | table_no |number_of_seats|Menu_Item   |Menu_Item1 |Discount              |Discount1             | SubTotal    | Tax      | Total     |Modifier2 | Tax2       | SubTotal2   | Total2       |SubTotal3   | Tax3       | Gratuity3   | Total3       |
+      | T19      |2              | Cheesecake |Halwa      | CB-BeforeTax-Free300 |CB-AfterTax-Free300   | $ 32.00     | $ 3.20   | $ 35.20   | Butter   | $ 2.93     | $ 32.00     | $ 32.20      |$ 12.00     | $ 1.20     |  $ 1.20     | $ 14.40      |
 
 
-# Scenario Outline: verify whether application allow to split the check based free item (inclusive tax menu item) discount with type before tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
+ Scenario Outline: verify whether application allow to split the check based free item (inclusive tax menu item) discount with type before tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
  #  And I click All
   # Then I should see check stats Screen
    #And I click Table Layout tab
@@ -5626,14 +5636,14 @@ Feature:Table Order Operations
     And I click Done button on the Popup
     And I click All
     And I click Table Layout tab
- #  And I click power button
-  #Examples:
-  #   | table_no | number_of_seats | Modifier | Tax       | SubTotal   | Total       | Discount          |
-  #   | T8       |2                | Butter   | TL 355,46 | TL 3.900,00 | TL 3.910,00 |CB-BeforeTax-Free300|
+   And I click power button
+    Examples:
+      | table_no |number_of_seats|Menu_Item   |Menu_Item1 |Discount              |Discount1             | SubTotal    | Tax      | Total     |Modifier2 | Tax2       | SubTotal2   | Total2       |SubTotal3   | Tax3       | Gratuity3   | Total3       |
+      | T19      |2              | Cheesecake |Halwa      | CB-BeforeTax-Free300 |CB-AfterTax-Free300   | $ 32.00     | $ 3.20   | $ 35.20   | Butter   | $ 2.93     | $ 32.00     | $ 32.20      |$ 12.00     | $ 1.20     |  $ 1.20     | $ 14.40      |
 
 
 
- #Scenario Outline: verify whether application allow to split the check based free item (inclusive tax menu item) discount with type after tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
+ Scenario Outline: verify whether application allow to split the check based free item (inclusive tax menu item) discount with type after tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
    #And I click All
    #Then I should see check stats Screen
    #And I click Table Layout tab
@@ -5671,14 +5681,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-  # And I click power button
-  # Examples:
-  #   | table_no | number_of_seats | Modifier | Tax       | SubTotal   | Total       | Discount          |
-  #   | T8       |2                | Butter   | TL 355,46 | TL 3.900,00 | TL 3.910,00 |CB-AfterTax-Free300|
+   And I click power button
+    Examples:
+      | table_no |number_of_seats|Menu_Item   |Menu_Item1 |Discount              |Discount1             | SubTotal    | Tax      | Total     |Modifier2 | Tax2       | SubTotal2   | Total2       |SubTotal3   | Tax3       | Gratuity3   | Total3       |
+      | T19      |2              | Cheesecake |Halwa      | CB-BeforeTax-Free300 |CB-AfterTax-Free300   | $ 32.00     | $ 3.20   | $ 35.20   | Butter   | $ 2.93     | $ 32.00     | $ 32.20      |$ 12.00     | $ 1.20     |  $ 1.20     | $ 14.40      |
 
 
-
- #Scenario Outline: verify whether application allow to calculate discount for gratuity when user move to the split seat screen
+  Scenario Outline: verify whether application allow to calculate discount for gratuity when user move to the split seat screen
   # And I click All
   # Then I should see check stats Screen
   # And I click Table Layout tab
@@ -5695,6 +5704,8 @@ Feature:Table Order Operations
     Then I should see Add Gratuity screen
     And I click Gratuity Fixed button
     Then I Should get back to the Order Screen
+    And I click Options button
+    Then I should see the Check Options screen
     And I click discount on check option screen
     Then I should see Check Based Discount Screen
     And I click Discount as "<Discount>"
@@ -5758,10 +5769,14 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
    # And I click Table Layout tab
-   # And I click power button
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount             |txtDiscount | SubTotal    | Tax       | Total       | Discount1         | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2      | SubTotal2   | Total2      | txtDiscount2 | Tax3     | SubTotal3   | Total3      | txtDiscount3  |
+      | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-Amount |$ 2.00      | $ 28.00     | $ 2.60    | $ 28.60     |IB-AfterTax-Amount | $ 28.00     | $ 2.80    | $ 2.00       | $ 28.80     |$ 2.55    | $ 30.00     | $ 28.00     | $ 2.00       |$ 2.73    | $ 30.00     | $ 28.00     | $ 2.00        |
 
 
-  #Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based amount discount with type after tax which is assigned to that menu item
+
+  Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based amount discount with type after tax which is assigned to that menu item
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -5798,12 +5813,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats |Menu_Item | Modifier  |Discount           | SubTotal    | Tax       | Discount1 |Total        |
-   #   | T12      | 2               | Ravioli  | Butter    |IB-AfterTax-Amount | TL 3.800,00 | TL 380,00 | TL 20,00 | TL 4.160,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount             |txtDiscount | SubTotal    | Tax       | Total       | Discount1         | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2      | SubTotal2   | Total2      | txtDiscount2 | Tax3     | SubTotal3   | Total3      | txtDiscount3  |
+      | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-Amount |$ 2.00      | $ 28.00     | $ 2.60    | $ 28.60     |IB-AfterTax-Amount | $ 28.00     | $ 2.80    | $ 2.00       | $ 28.80     |$ 2.55    | $ 30.00     | $ 28.00     | $ 2.00       |$ 2.73    | $ 30.00     | $ 28.00     | $ 2.00        |
 
-   #  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based amount discount with type before tax which is assigned to that menu item
+
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based amount discount with type before tax which is assigned to that menu item
    # And I click All
    # Then I should see check stats Screen
     #And I click Table Layout tab
@@ -5842,15 +5858,16 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-  #  And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Modifier | Tax       | SubTotal    | Total       | Discount1 |   Discount       |
-    #  | T8       |2                | Butter   | TL 343,64 | TL 3.800,00 | TL 3.780,00 |TL 20,00  |IB-BeforeTax-Amount|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount             |txtDiscount | SubTotal    | Tax       | Total       | Discount1         | SubTotal1   | Tax1      | txtDiscount1 |Total1       |Tax2      | SubTotal2   | Total2      | txtDiscount2 | Tax3     | SubTotal3   | Total3      | txtDiscount3  |
+      | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-Amount |$ 2.00      | $ 28.00     | $ 2.60    | $ 28.60     |IB-AfterTax-Amount | $ 28.00     | $ 2.80    | $ 2.00       | $ 28.80     |$ 2.55    | $ 30.00     | $ 28.00     | $ 2.00       |$ 2.73    | $ 30.00     | $ 28.00     | $ 2.00        |
 
 
 
 
- # Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based amount discount with type after tax which is assigned to that menu item
+
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based amount discount with type after tax which is assigned to that menu item
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -5934,12 +5951,12 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |Discount1    | SubTotal    | Tax      | Total       |
-   #   | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-Percentage |TL 380,00  | TL 3.800,00 | TL 342,00 | TL 3.762,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount    | SubTotal    | Tax      | Total       |Discount1                |txtDiscount1    | SubTotal1    | Tax1      | Total1       | Tax2          | SubTotal2    | Total2       | txtDiscount2 |Tax3           | SubTotal3    | Total3       | txtDiscount3    |
+      | T12       |2                | Ravioli  | Butter   | IB-BeforeTax-Percentage  |$ 2.80         | $ 28.00     | $ 2.52   | $ 27.72     |IB-AfterTax-Percentage   |$ 2.80          | $ 28.00      | $ 2.80    | $ 28.00      |$ 2.45         | $ 30.00      | $ 27.00      | $ 3.00       |$ 2.73         | $ 30.00      | $ 27.28      | $ 2.72          |
 
-#  Scenario Outline:Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based percentage discount with type After tax which is assigned to that menu item
+  Scenario Outline:Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based percentage discount with type After tax which is assigned to that menu item
  #   And I click All
  #   Then I should see check stats Screen
     And I click Table Layout tab
@@ -5976,13 +5993,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats  |Menu_Item | Modifier |Discount                |Discount1    | SubTotal    | Tax      | Total       |
-    #  | T12       |2              | Ravioli    | Butter   | IB-AfterTax-Percentage |TL 380,00   | TL 3.800,00 | TL 380,00  |TL 3.800,00  |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount    | SubTotal    | Tax      | Total       |Discount1                |txtDiscount1    | SubTotal1    | Tax1      | Total1       | Tax2          | SubTotal2    | Total2       | txtDiscount2 |Tax3           | SubTotal3    | Total3       | txtDiscount3    |
+      | T12       |2                | Ravioli  | Butter   | IB-BeforeTax-Percentage  |$ 2.80         | $ 28.00     | $ 2.52   | $ 27.72     |IB-AfterTax-Percentage   |$ 2.80          | $ 28.00      | $ 2.80    | $ 28.00      |$ 2.45         | $ 30.00      | $ 27.00      | $ 3.00       |$ 2.73         | $ 30.00      | $ 27.28      | $ 2.72          |
 
 
- # Scenario Outline:Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based percentage discount with type before tax which is assigned to that menu item
+  Scenario Outline:Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based percentage discount with type before tax which is assigned to that menu item
  #   And I click All
  #   Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -6021,14 +6038,14 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-    #And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Modifier | Tax       | SubTotal    | Total       | Discount1 |   Discount       |
-   #   | T8       |2                | Butter   | TL 310,90 | TL 3.800,00 | TL 3.420,00 |TL 380,00  |IB-BeforeTax-Percentage|
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount    | SubTotal    | Tax      | Total       |Discount1                |txtDiscount1    | SubTotal1    | Tax1      | Total1       | Tax2          | SubTotal2    | Total2       | txtDiscount2 |Tax3           | SubTotal3    | Total3       | txtDiscount3    |
+      | T12       |2                | Ravioli  | Butter   | IB-BeforeTax-Percentage  |$ 2.80         | $ 28.00     | $ 2.52   | $ 27.72     |IB-AfterTax-Percentage   |$ 2.80          | $ 28.00      | $ 2.80    | $ 28.00      |$ 2.45         | $ 30.00      | $ 27.00      | $ 3.00       |$ 2.73         | $ 30.00      | $ 27.28      | $ 2.72          |
 
 
 
- # Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based percentage discount with type after tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based percentage discount with type after tax which is assigned to that menu item
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -6111,12 +6128,12 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |Discount1    | SubTotal    | Tax       | Total       |
-   #   | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-SetPrice500 |TL 2.800,00  | TL 3.800,00 | TL 100,00 | TL 1.100,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount  | SubTotal    | Tax       | Total       | Discount1               |txtDiscount1 | SubTotal1   | Tax1      | Total1      | Tax2    | SubTotal2   | Total2      | txtDiscount2 | Tax3       | SubTotal3    | Total3       | txtDiscount3 |
+      | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-SetPrice500 |$ 26.00      | $ 28.00     | $ 0.20    | $ 2.20      | IB-AfterTax-SetPrice500 |$ 25.00      | $ 28.00     | $ 2.80    | $ 5.80      |$ 0.18   | $ 30.00     | $ 2.00      | $ 28.00      |$ 2.73      | $ 30.00      | $ 3.00       | $ 27.00      |
 
-#  Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
  #   And I click All
   #  Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6154,13 +6171,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-  #    | table_no | number_of_seats  |Menu_Item | Modifier |Discount                 |Discount1    | SubTotal    | Tax       | Total       |
-   #   | T12       |2               | Ravioli    | Butter   | IB-AfterTax-SetPrice500 |TL 2.800,00  | TL 3.800,00 | TL 380,00 | TL 1.380,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount  | SubTotal    | Tax       | Total       | Discount1               |txtDiscount1 | SubTotal1   | Tax1      | Total1      | Tax2    | SubTotal2   | Total2      | txtDiscount2 | Tax3       | SubTotal3    | Total3       | txtDiscount3 |
+      | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-SetPrice500 |$ 26.00      | $ 28.00     | $ 0.20    | $ 2.20      | IB-AfterTax-SetPrice500 |$ 25.00      | $ 28.00     | $ 2.80    | $ 5.80      |$ 0.18   | $ 30.00     | $ 2.00      | $ 28.00      |$ 2.73      | $ 30.00      | $ 3.00       | $ 27.00      |
 
 
-  #Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
   #  And I click All
     #Then I should see check stats Screen
     #And I click Table Layout tab
@@ -6199,14 +6216,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Modifier | Tax       | SubTotal    | Total       | Discount1 |Discount               |
-    #  | T8       |2                | Butter   | TL 90,90 | TL 3.800,00 | TL 1.000,00 | TL 2.800,00 |IB-BeforeTax-SetPrice500 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  |txtDiscount  | SubTotal    | Tax       | Total       | Discount1               |txtDiscount1 | SubTotal1   | Tax1      | Total1      | Tax2    | SubTotal2   | Total2      | txtDiscount2 | Tax3       | SubTotal3    | Total3       | txtDiscount3 |
+      | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-SetPrice500 |$ 26.00      | $ 28.00     | $ 0.20    | $ 2.20      | IB-AfterTax-SetPrice500 |$ 25.00      | $ 28.00     | $ 2.80    | $ 5.80      |$ 0.18   | $ 30.00     | $ 2.00      | $ 28.00      |$ 2.73      | $ 30.00      | $ 3.00       | $ 27.00      |
 
 
-
- # Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
    # And I click All
    # Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6289,12 +6305,12 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       |
-    #  | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | TL 4.000,00 | TL 400,00 | TL 4.400,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       |
+      | T12       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | $ 30.00 | $ 3.00 | $ 33.00 |
 
-  #Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type after tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type after tax which is assigned to that menu item
    # And I click All
    # Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6332,14 +6348,14 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-    #And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats  |Menu_Item | Modifier |Discount                 | SubTotal   | Tax       | Total       |
-    #  | T12       |2              | Ravioli    | Butter   | IB-AfterTax-AsFreeItem |TL 4.000,00 | TL 400,00 | TL 4.400,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       | Discount1              | Tax2       | SubTotal2    | Total2      |Discount2    | Discount3     | SubTotal3   | Tax3       | Total3       |Discount4      | SubTotal4   | Tax4       | Total4       |
+      | T16       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | $ 30.00     | $ 3.00    | $ 33.00     |IB-AfterTax-AsFreeItem  | $ 2.93     | $ 32.00      | $ 32.20     |IB-BF-AsFree |IB-BF-AsFree   | $ 30.00     | $ 3.00     | $ 33.00      |  IB-AF-AsFree | $ 31.00     | $ 3.10     | $ 34.10      |
 
 
 
-  #Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type before tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type before tax which is assigned to that menu item
    # And I click All
     #Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6378,13 +6394,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Modifier | Tax       | SubTotal    | Total        |Discount    |
-   #   | T8       |2                | Butter   | TL 363,64 | TL 4.000,00 | TL 4.000,00 |IB-BF-AsFree |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       | Discount1              | Tax2       | SubTotal2    | Total2      |Discount2    | Discount3     | SubTotal3   | Tax3       | Total3       |Discount4      | SubTotal4   | Tax4       | Total4       |
+      | T16       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | $ 30.00     | $ 3.00    | $ 33.00     |IB-AfterTax-AsFreeItem  | $ 2.93     | $ 32.00      | $ 32.20     |IB-BF-AsFree |IB-BF-AsFree   | $ 30.00     | $ 3.00     | $ 33.00      |  IB-AF-AsFree | $ 31.00     | $ 3.10     | $ 34.10      |
 
 
- # Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type after tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type after tax which is assigned to that menu item
   #  And I click All
   #  Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6423,13 +6439,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Modifier | Tax      | SubTotal    | Total       |Discount     |
-   #   | T8       |2                | Butter   |TL 363,64 | TL 4.000,00 | TL 4.000,00 |IB-BF-AsFree |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       | Discount1              | Tax2       | SubTotal2    | Total2      |Discount2    | Discount3     | SubTotal3   | Tax3       | Total3       |Discount4      | SubTotal4   | Tax4       | Total4       |
+      | T16       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | $ 30.00     | $ 3.00    | $ 33.00     |IB-AfterTax-AsFreeItem  | $ 2.93     | $ 32.00      | $ 32.20     |IB-BF-AsFree |IB-BF-AsFree   | $ 30.00     | $ 3.00     | $ 33.00      |  IB-AF-AsFree | $ 31.00     | $ 3.10     | $ 34.10      |
 
 
-  #Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type before tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type before tax which is assigned to that menu item
    # And I click All
    # Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6466,13 +6482,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
- #   And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats  |Menu_Item | Modifier |Discount      | SubTotal   | Tax       | Total       |
-   #   | T12       |2              | Ravioli    | Butter   | IB-BF-AsFree |TL 4.000,00 | TL 398,18 | TL 4.380,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Total       | Discount1              | Tax2       | SubTotal2    | Total2      |Discount2    | Discount3     | SubTotal3   | Tax3       | Total3       |Discount4      | SubTotal4   | Tax4       | Total4       |
+      | T16       |2              | Ravioli    | Butter   | IB-BeforeTax-AsFreeItem  | $ 30.00     | $ 3.00    | $ 33.00     |IB-AfterTax-AsFreeItem  | $ 2.93     | $ 32.00      | $ 32.20     |IB-BF-AsFree |IB-BF-AsFree   | $ 30.00     | $ 3.00     | $ 33.00      |  IB-AF-AsFree | $ 31.00     | $ 3.10     | $ 34.10      |
 
 
- #Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type after tax which is assigned to that menu item
+ Scenario Outline: Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(inclusive tax menu item) discount with type after tax which is assigned to that menu item
   #  And I click All
    # Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6555,12 +6571,12 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-  #  And I click power button
-    #Examples:
-    #  | table_no | number_of_seats | Modifier | Tax      | SubTotal    | Total       |Discount     |
-    #  | T8       |2                | Butter   |TL 365,46 | TL 4.000,00 | TL 4.020,00 |IB-BeforeTax-AsFreeItem |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Modifier | Tax        | SubTotal     | Total       |Discount                | Tax1       | SubTotal1    | Total1      |Discount1              |
+      | T8       |2                | Butter   | $ 2.93     | $ 32.00      | $ 32.20     |IB-BeforeTax-AsFreeItem | $ 2.93     | $ 32.00      | $ 32.20     |IB-AfterTax-AsFreeItem |
 
- # Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type after tax which is assigned to that menu item
+  Scenario Outline: Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type after tax which is assigned to that menu item
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -6641,12 +6657,12 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-  #  And I click power button
- #  Examples:
-  #    | table_no | number_of_seats | Menu_Item |Modifier  |SubTotal    | Tax       |  Gratuity  | Total       |
-  #    | T9         |2              |  Ravioli  | Butter   |TL 1.900,00 | TL 190,00 |  TL 190,00 | TL 2.280,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | number_of_seats1|Menu_Item |Modifier  |SubTotal    | Tax       |  Gratuity  | Total       |  SubTotal1   | Tax1       | Total1       |
+      | T9         |2              | 1               | Ravioli  | Butter   |$ 14.00     | $ 1.40    |  $ 1.40    | $ 16.80     | $ 14.00      | $ 1.40     | $ 15.40      |
 
-  #Scenario Outline: Verify whether application allow move menu item from one seat to another seat along with their modifiers if user move menu item which has modifiers
+  Scenario Outline: Verify whether application allow move menu item from one seat to another seat along with their modifiers if user move menu item which has modifiers
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -6676,15 +6692,15 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
+    And I click power button
 
 
-  #  Examples:
-   #   | table_no | number_of_seats|Menu_Item   | Modifier  | SubTotal   | Tax       | Total       |
-   #   | T12       |2              | Ravioli    | Butter    |TL 1.900,00 | TL 190,00 | TL 2.090,00 |
+    Examples:
+      | table_no | number_of_seats | number_of_seats1|Menu_Item |Modifier  |SubTotal    | Tax       |  Gratuity  | Total       |  SubTotal1   | Tax1       | Total1       |
+      | T9         |2              | 1               | Ravioli  | Butter   |$ 14.00     | $ 1.40    |  $ 1.40    | $ 16.80     | $ 14.00      | $ 1.40     | $ 15.40      |
 
 
-  #Scenario Outline:Verify application allow to revert changes to initial stage when user clicks the Start Over button after made changed in Split seat screen
+  Scenario Outline:Verify application allow to revert changes to initial stage when user clicks the Start Over button after made changed in Split seat screen
    # And I click All
    # Then I should see check stats Screen
    # And I click Table Layout tab
@@ -6735,7 +6751,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -6759,12 +6775,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-  #  And I click power button
-   # Examples:
-    #  | table_no | number_of_seats|Menu_Item         | Modifier  |
-    #  | T12      |2               | French Friese    | Steak     |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
- # Scenario Outline: Verify whether start over button is enabled when user made changes in split screen after done the payment
+
+  Scenario Outline: Verify whether start over button is enabled when user made changes in split screen after done the payment
  #   And I click All
  #   Then I should see check stats Screen
     And I click Table Layout tab
@@ -6777,7 +6794,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -6804,12 +6821,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no | number_of_seats|Menu_Item         | Modifier  |
-   #   | T12      |2               | French Friese    | Steak     |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
- # Scenario Outline: verify whether application allow to do payment for empty check
+
+  Scenario Outline: verify whether application allow to do payment for empty check
  #   And I click All
  #   Then I should see check stats Screen
     And I click Table Layout tab
@@ -6836,12 +6854,13 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no | number_of_seats|Menu_Item     | Modifier  |
-   #   | T12      |2               |French Friese | Steak     |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
- # Scenario Outline: verify whether application navigate back to the split seat screen when user done the payment for particular seat
+
+  Scenario Outline: verify whether application navigate back to the split seat screen when user done the payment for particular seat
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -6873,13 +6892,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no |number_of_seats| number_of_seats1|Menu_Item     | Modifier  |
-   #   | T12      |2              |1               |French Friese | Steak     |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
 
- # Scenario Outline: verify whether application displaying the paid amount for seat in split seat screen after done the payment for particular seat
+  Scenario Outline: verify whether application displaying the paid amount for seat in split seat screen after done the payment for particular seat
  #   And I click All
  #   Then I should see check stats Screen
     And I click Table Layout tab
@@ -6911,13 +6930,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats|Menu_Item     | Modifier  | Paid_Amount |
-    #  | T12      |1               |French Friese | Steak     | TL 65,00    |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
 
-  #Scenario Outline: Verify whether application allow to do payment more than the seat total
+  Scenario Outline: Verify whether application allow to do payment more than the seat total
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -6944,14 +6963,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no | number_of_seats | Menu_Item     | Modifier |amount     |
-     # | T7         |1              | French Friese | Steak    |  65,00  |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
 
-
-  #Scenario Outline:Verify whether application allow to do partial payment for selected seat
+  Scenario Outline:Verify whether application allow to do partial payment for selected seat
     #And I click All
     #Then I should see check stats Screen
     And I click Table Layout tab
@@ -6980,13 +6998,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-   #   | table_no | number_of_seats | Menu_Item     | Modifier |
-   #   | T7         |1              | French Friese | Steak    |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
 
-#  Scenario Outline: Verify whether application allow to do payment for already paid seat
+  Scenario Outline: Verify whether application allow to do payment for already paid seat
   #  And I click All
   #  Then I should see check stats Screen
     And I click Table Layout tab
@@ -7019,12 +7037,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-  #  Examples:
-   #   | table_no | number_of_seats | Menu_Item | Modifier |
-   #   | T7         |1              | French Friese | Steak  |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats| number_of_seats1|number_of_seats3|Menu_Item     | Modifier  | Paid_Amount| amount | SubTotal   | Gratuity  | Total   |
+      | T19      |2              |1               |3                |French Friese | Steak     |$ 15.00     | 15.00|$ 45.00     | $ 4.50    | $ 49.50 |
 
-  #Scenario Outline: verify whether application allow to merge all selected seats gratuity
+
+  Scenario Outline: verify whether application allow to merge all selected seats gratuity
   #  And I click All
   #  Then I should see check stats Screen
     And I click Table Layout tab
@@ -7037,7 +7056,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7090,7 +7109,7 @@ Feature:Table Order Operations
 #    And I get check number
 #    And I select Menu as category
 #    And I select menu item as "<Menu_Item>"
-#    And I click seat 2 for add menu item
+#    And I click Seat 2 for add menu item
 #    And I select Menu as category
 #    And I select menu item as "<Menu_Item1>"
 #    And I click table number on the Order Screen as "<table_no>"
@@ -7166,12 +7185,12 @@ Feature:Table Order Operations
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
-   # And I click power button
-    #Examples:
-     # | table_no |number_of_seats|Menu_Item   |Discount              | SubTotal    | Tax      | Total     | SubTotal1  |  SubTotal2  |
-      #| T12      |2              | Cheesecake | CB-BeforeTax-Free300 | TL 900,00   | TL 90,00 | TL 990,00 | TL 500,00  | TL 400,00   |
+    And I click power button
+    Examples:
+      | table_no |number_of_seats|Menu_Item   |Discount              | SubTotal    | Tax      | Total     | SubTotal1  |  SubTotal2  |
+      | T12      |2              | Cheesecake | CB-BeforeTax-Free300 | $ 32.00     | $ 3.20   | $ 35.20   | $ 17.00    |  $ 15.00    |
 
-  #Scenario Outline: Verify whether the menu item quantity gets splitted evenly when the user clicks on the split evenly button from the split screen
+  Scenario Outline: Verify whether the menu item quantity gets splitted evenly when the user clicks on the split evenly button from the split screen
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -7228,7 +7247,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7256,12 +7275,13 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
-   # And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item     | Modifier |amount     | Paid_Amount |
-    #  | T7         |2              | French Friese | Steak    |  65,00    | TL 65,00    |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats |number_of_seats1| Menu_Item     | Modifier |amount     | Paid_Amount | Menu_Item1   |Discount1              | SubTotal1    | Tax1      | Total1     |
+      | T7       |2                |1               | French Friese | Steak    | 15.00  | $ 15.00     | Cheesecake   | CB-BeforeTax-Free300  | $ 32.00      | $ 3.20    | $ 35.20    |
 
-  #Scenario Outline: Verify whether the application allows to send the Menu Items to the Kitchen more than 1 time unless otherwise user clicks on the Resend To Kitchen
+
+  Scenario Outline: Verify whether the application allows to send the Menu Items to the Kitchen more than 1 time unless otherwise user clicks on the Resend To Kitchen
    # And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -7274,7 +7294,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7301,13 +7321,14 @@ Feature:Table Order Operations
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
-  #  And I click power button
- #   Examples:
-  ##    | table_no | number_of_seats | Menu_Item     | Modifier |
-   #   | T7         |2              | French Friese | Steak    |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats |number_of_seats1| Menu_Item     | Modifier |amount     | Paid_Amount | Menu_Item1   |Discount1              | SubTotal1    | Tax1      | Total1     |
+      | T7       |2                |1               | French Friese | Steak    | 15.00  | $ 15.00     | Cheesecake   | CB-BeforeTax-Free300  | $ 32.00      | $ 3.20    | $ 35.20    |
 
 
-#  Scenario Outline: Verify whether application displays the Ordered Free Items are UnOrdered Free Items when the user tries to Print the Seat from the Split Screen
+
+  Scenario Outline: Verify whether application displays the Ordered Free Items are UnOrdered Free Items when the user tries to Print the Seat from the Split Screen
   #  And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -7420,12 +7441,12 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
- #   And I click power button
-   # Examples:
-    #  | table_no | number_of_seats | Menu_Item  | Modifier | SubTotal    | Tax       | Total     | Discount    | Discount1               |
-     # | T13      |2                | Ravioli    | Butter   | TL 1.900,00 | TL 190,00 | TL 690,00 | TL 1.400,00 | IB-AfterTax-SetPrice500 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats | Menu_Item  | Modifier | SubTotal    | Tax       | Total     | Discount    | Discount1               | Menu_Item1   |Discount2                 | SubTotal1    | Tax1      | Total1     | Discount3 |
+      | T13      |2                | Ravioli    | Butter   | $ 14.00     | $ 1.40    | $ 2.90    | $ 12.50     | IB-AfterTax-SetPrice500 |Cheesecake    | IB-BeforeTax-SetPrice500 | $ 130.00     | $ 0.20    | $ 102.20   | $ 28.00   |
 
- # Scenario Outline: verify whether application allow to calculate discount for gift card amount when user move to the split seat screen
+  Scenario Outline: verify whether application allow to calculate discount for gift card amount when user move to the split seat screen
   #  And I click All
   #  Then I should see check stats Screen
   #  And I click Table Layout tab
@@ -7487,7 +7508,7 @@ Feature:Table Order Operations
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
     And I click Done to get back
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
 
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
@@ -7512,12 +7533,12 @@ Feature:Table Order Operations
     #  Then I should see the print or send receipt
      # And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
- #   And I click power button
-  #  Examples:
-  #    | table_no | number_of_seats | Menu_Item  | Modifier |
-  #    | T13      |2                | French Friese    | Steak   |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item1 | Menu_Item      | Modifier | qty | SubTotalQty |  TaxQty  |  TotalQty  | SubTotalQty1 | TotalQty1 | SubTotal  | Tax    | Total     |
+      | T13      |2                 |Cheesecake | French Friese  | Steak    | 3   | $ 15.00     | $ 0.00   | $ 15.00    | $ 45.00      | $ 45.00   | $ 100.00  |$ 0.00  | $ 100.00  |
 
-  #Scenario Outline:Application allows to Increase or Decrease the Menu item Quantity
+  Scenario Outline:Application allows to Increase or Decrease the Menu item Quantity
 
     And I click QSR tab
     And I closed the order type window
@@ -7538,14 +7559,14 @@ Feature:Table Order Operations
     And I click All
     Then I should see check stats Screen
     And I click Table Layout tab
-   # And I click power button
+    And I click power button
 
- #   Examples:
-  #    | table_no | number_of_seats  | Menu_Item      | Modifier | qty | SubTotalQty |  TaxQty  |  TotalQty  | SubTotalQty1 | TotalQty1 |
-   #   | T13      |2             | French Friese  | Steak    | 3    | TL 65,00   | TL 0,00  | TL 65,00   | TL 195,00    | TL 195,00 |
+    Examples:
+      | table_no | number_of_seats  |Menu_Item1 | Menu_Item      | Modifier | qty | SubTotalQty |  TaxQty  |  TotalQty  | SubTotalQty1 | TotalQty1 | SubTotal  | Tax    | Total     |
+      | T13      |2                 |Cheesecake | French Friese  | Steak    | 3   | $ 15.00     | $ 0.00   | $ 15.00    | $ 45.00      | $ 45.00   | $ 100.00  |$ 0.00  | $ 100.00  |
 
 
- # Scenario Outline: Verify whether application allow to move the gift card from one seat to another seat along with gift card amount
+  Scenario Outline: Verify whether application allow to move the gift card from one seat to another seat along with gift card amount
   #  And I click All
    # Then I should see check stats Screen
     #And I click Table Layout tab
@@ -7580,12 +7601,12 @@ Feature:Table Order Operations
 #    Then I should see Receipt Printer popup
 #    And I click Done button on the Popup
     Then I should get back to the Table Layout tab
-    #And I click power button
-   # Examples:
-    #  | table_no |number_of_seats| SubTotal  | Tax    | Total     |
-     # | T12      |2              | TL 100,00 |TL 0,00 | TL 100,00 |
+    And I click power button
+    Examples:
+      | table_no | number_of_seats  |Menu_Item1 | Menu_Item      | Modifier | qty | SubTotalQty |  TaxQty  |  TotalQty  | SubTotalQty1 | TotalQty1 | SubTotal  | Tax    | Total     |
+      | T13      |2                 |Cheesecake | French Friese  | Steak    | 3   | $ 15.00     | $ 0.00   | $ 15.00    | $ 45.00      | $ 45.00   | $ 100.00  |$ 0.00  | $ 100.00  |
 
- # Scenario Outline: Verify whether application allow to merge the gift card along with gift card amount
+  Scenario Outline: Verify whether application allow to merge the gift card along with gift card amount
   #  And I click All
    # Then I should see check stats Screen
     And I click Table Layout tab
@@ -7597,7 +7618,7 @@ Feature:Table Order Operations
     Then I Should get back to the Order Screen
     And I select Desserts as category
     And I select menu item as "<Menu_Item1>"
-    And I click seat 2 for add menu item
+    And I click Seat 2 for add menu item
     And I select Desserts as category
     And I select menu item as "<Menu_Item1>"
     And I click Options button
@@ -7851,8 +7872,9 @@ Feature:Table Order Operations
     Then I click cash button from the payment method popup
     And I click Submit button on the Payment Window
     Then I should get back to the Table Layout tab
+    And I click power button
 
-#     Scenario: Merge check with pay - xxxxxx
+     Scenario: Merge check with pay - xxxxxx
     And I click new check button on the Table layout screen
     And I select table as "T9"
     And I select the number of seats as "1"
@@ -8012,10 +8034,14 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click QSR tab
-    Then User click cancel button
-    #Scenario Outline: Merge with Discount
-    Given User click All button
+#    And I click QSR tab
+#    Then User click cancel button
+    And I click power button
+    Examples:
+      |customer_name|customer|customer_name1|customer1 | menu |
+      |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
+    Scenario Outline: Merge with Discount
+#    Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
   When User click cancel button for customer name popup
@@ -8076,10 +8102,14 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click QSR tab
-    Then User click cancel button
-    #Scenario Outline: Merge without Discount - Cancel Button
-    Given User click All button
+#    And I click QSR tab
+#    Then User click cancel button
+      And I click power button
+      Examples:
+        |customer_name|customer|customer_name1|customer1 | menu |
+        |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
+    Scenario Outline: Merge without Discount - Cancel Button
+#    Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
   When User click cancel button for customer name popup
@@ -8126,11 +8156,14 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click QSR tab
-    Then User click cancel button
-
-#    Scenario Outline: Merge with Tax Exempt
-    Given User click All button
+#    And I click QSR tab
+#    Then User click cancel button
+      And I click power button
+    Examples:
+      |customer_name|customer|customer_name1|customer1 | menu |
+      |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
+    Scenario Outline: Merge with Tax Exempt
+#    Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
   When User click cancel button for customer name popup
@@ -8182,10 +8215,15 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click QSR tab
-    Then User click cancel button
-    #Scenario Outline: Merge with Tax Exempt and Discount
-    Given User click All button
+#    And I click QSR tab
+#    Then User click cancel button
+      And I click power button
+      Examples:
+        |customer_name|customer|customer_name1|customer1 | menu |
+        |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
+
+    Scenario Outline: Merge with Tax Exempt and Discount
+#    Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
   When User click cancel button for customer name popup
@@ -8244,11 +8282,14 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click QSR tab
-    Then User click cancel button
-
-#    Scenario Outline: Merge with Tax Exempt and Fix Gratuity
-    Given User click All button
+#    And I click QSR tab
+#    Then User click cancel button
+      And I click power button
+      Examples:
+        |customer_name|customer|customer_name1|customer1 | menu |
+        |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
+    Scenario Outline: Merge with Tax Exempt and Fix Gratuity
+#    Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
   When User click cancel button for customer name popup
@@ -8305,10 +8346,14 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click QSR tab
-    Then User click cancel button
-     # Scenario: Merge with Tax Exempt and Varying Gratuity
-    Given User click All button
+#    And I click QSR tab
+#    Then User click cancel button
+      And I click power button
+      Examples:
+        |customer_name|customer|customer_name1|customer1 | menu |
+        |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
+      Scenario Outline: Merge with Tax Exempt and Varying Gratuity
+#    Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
   When User click cancel button for customer name popup
@@ -8369,11 +8414,16 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And User click submit button
     Then I should get back to the Table Layout tab
-    And I click QSR tab
-    Then I closed the order type window
-#    Scenario Outline: : Merge with Fix Gratuity
+#    And I click QSR tab
+#    Then I closed the order type window
+      And I click power button
+      Examples:
+        |customer_name|customer|customer_name1|customer1 | menu |
+        |Auto ragav   |Auto r  |auto loyaltytest  |auto l  |Onion Rings|
 
-    Given User click All button
+    Scenario Outline: : Merge with Fix Gratuity
+
+#    Given User click All button
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
   When User click cancel button for customer name popup

@@ -128,6 +128,12 @@ public class OrderTypeWindow extends ClockInScreen {
         elementClick(cancelBtn, "Order type selection is cancelled.");
     }
 
+    public void getTheServerName(){
+        WebElement element = driver.findElement(By.xpath("//span[@class='qsrusername']"));
+        TestUtils.serverName = element.getText();
+        utils.log().info("Server NAme as - "+TestUtils.serverName);
+    }
+
     @FindBy(name = "ADD")
     WebElement addBtnOrderScreen;
 

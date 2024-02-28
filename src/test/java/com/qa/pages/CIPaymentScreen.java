@@ -192,9 +192,10 @@ Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
         Thread.sleep(1000);
         WebElement element = driver.findElement(By.xpath("(//input[@placeholder='Search'])[2]"));
-        sendKeys(element,optionName);
+        sendKeys(element,TestUtils.serverName);
         Thread.sleep(2000);
-        WebElement element1 = driver.findElement(By.xpath("//ion-label[.='"+optionName+"']"));
+        utils.log().info("Server NAme - "+TestUtils.serverName);
+        WebElement element1 = driver.findElement(By.xpath("//ion-label[.='"+TestUtils.serverName+"']"));
         element1.click();
     }
 
