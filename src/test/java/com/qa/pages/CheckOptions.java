@@ -638,7 +638,12 @@ public class CheckOptions extends OrderManagementScreen {
 
     public void clickProcessButton() throws InterruptedException {
         Thread.sleep(3000);
-       elementClick("/html/body/div/div[4]/div/mat-dialog-container/app-pay/ion-footer/ion-toolbar/div/button[4]","Selected Process");
+       elementClick("(//button[.=' Process '])[1]","Selected Process");
+    }
+
+    public void clickProcessButton1() throws InterruptedException {
+        Thread.sleep(3000);
+        elementClick("(//button[.=' Process '])[1]","Selected Process");
     }
     @FindBy(xpath = "//button[.='Gift Card']")
     private WebElement giftCardBtn;

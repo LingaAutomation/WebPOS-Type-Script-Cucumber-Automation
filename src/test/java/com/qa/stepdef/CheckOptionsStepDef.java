@@ -500,6 +500,10 @@ public class CheckOptionsStepDef {
     public void iClickProcessButtonOnCardScreen() throws InterruptedException {
         new CheckOptions().clickProcessButton();
     }
+    @And("^I click Process button on card screen1$")
+    public void iClickProcessButtonOnCardScreen1() throws InterruptedException {
+        new CheckOptions().clickProcessButton1();
+    }
 
     @Then("^I should see Paid amount exceeds the sale amount popup$")
     public void iShouldSeePaidAmountExceedsTheSaleAmountPopup() {

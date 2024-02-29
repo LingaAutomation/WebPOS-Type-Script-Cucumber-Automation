@@ -4,8 +4,11 @@ package com.qa.utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -48,13 +51,14 @@ public class CapabilitiesManager {
     }
 
 
-    public void setup() throws InterruptedException {
+    public void setup() throws InterruptedException, AWTException {
 
         //Call the chrome driver
 //    System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/Users/Ragav-QA-Mac-IN/Downloads/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "/Users/Ragav-QA-Mac-IN/Downloads/chromedriver");
+        System.setProperty("webdriver.gecko.driver", "/Users/Ragav-QA-Mac-IN/Downloads/geckodriver");
         //Open the Chrome window
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         //Wait for 30 seconds
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         //Maximize the Firefox window
@@ -79,6 +83,16 @@ public class CapabilitiesManager {
 
         }
         Thread.sleep(2000);
+
+        Robot r = new Robot();
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_SUBTRACT);
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_SUBTRACT);
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_SUBTRACT);
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_SUBTRACT);
         //Clear the text from the user name text box
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name

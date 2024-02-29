@@ -15,7 +15,7 @@ public class TGPaymentStepDef {
 
 TestUtils utils = new TestUtils();
     @And("USer click cash button")
-    public void userClickCashButton() {
+    public void userClickCashButton() throws InterruptedException {
         new TGPaymentPage().clickCashButton();
     }
     @And("User click submit button")

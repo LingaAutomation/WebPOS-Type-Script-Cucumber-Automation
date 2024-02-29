@@ -1771,7 +1771,7 @@ Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//ion-app[@id='seat2']//p[.=' Cheesecake    ']"));
         utils.log().info(element.getText());
         Assert.assertEquals(element.getText(),"Cheesecake");
-        Assert.assertEquals(convertWebElement("//ion-app[@id='seat3']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 15.00");
+        Assert.assertEquals(convertWebElement("//ion-app[@id='seat2']//ion-footer//ion-row[1]//ion-col[2]").getText(),"$ 15.00");
 
     }
 

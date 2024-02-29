@@ -1746,7 +1746,7 @@ Feature:Table Order Operations
     And I get check number
     And I click Add Customer Button
     And I search for "<customer_name>"
-    When I click "Ragavan P" to select customer for the seat
+    When I click "Auto ragav" to select customer for the seat
     Then I should see customer as "<customer>" added on order screen
     And I click Add Customer Button
     Then I should see the add customer window
@@ -3601,7 +3601,7 @@ Feature:Table Order Operations
     And I click cash button from the payment method popup
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     Then I should see Cash payment is deleted
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
@@ -4090,7 +4090,7 @@ Feature:Table Order Operations
     And I click Done button on the Popup
     And I click payment in the payment window
     And I click Delete button on the payment window
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
     And I click Exit to return to Order Management Screen
     And I click Void button on order management screen
     Then I should see the void reason popup
@@ -4259,8 +4259,8 @@ Feature:Table Order Operations
     Then I should see total screen
     And I click the Continue button on the Total screen
     Then I should see your order card screen
-    And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+    And I click Process button on card screen1
+#    And I click Ok button in receipt printer popup
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
@@ -4294,7 +4294,7 @@ Feature:Table Order Operations
     And I click the Continue button on the Total screen
     Then I should see your order card screen
     And I click Process button on card screen
-    And I click Ok button in receipt printer popup
+#    And I click Ok button in receipt printer popup
    #    Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab

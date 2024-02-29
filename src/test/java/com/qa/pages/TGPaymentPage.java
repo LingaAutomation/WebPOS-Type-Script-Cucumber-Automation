@@ -748,18 +748,19 @@ public class TGPaymentPage extends BasePage {
         Assert.assertEquals(actualName1,expectedName1);
     }
 
-    public void clickCashButton(){
-        try {
-            WebElement element = mergeAndFindMobileElement(cashButton);
+    public void clickCashButton() throws InterruptedException {
+//        try {
+        Thread.sleep(4000);
+            WebElement element = driver.findElement(By.xpath(cashButton));
             elementClick(element, "click cashButton ");
-        }
-        catch(Exception e){
-            utils.log().info("cash button not clicked");
-        }
+//        }
+//        catch(Exception e){
+//            utils.log().info("cash button not clicked");
+//        }
     }
 
     public void clickSubmitButton() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
             WebElement element = mergeAndFindMobileElement(submitButton);
                element.click();
