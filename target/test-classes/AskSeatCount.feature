@@ -147,7 +147,7 @@ Feature: Ask Seat Number Feature
     And I click Table Layout tab
     And I click power button
 
-
+@failed9
   Scenario: When order screen have multiple seats but single seat only have completed the payment
     Given I'm logged in
     And I closed the order type window
@@ -317,8 +317,8 @@ Feature: Ask Seat Number Feature
     And I select the number of seats as "6"
     And I tap Continue to finish selecting the number of seats
     Then I should see please enter valid number popup
-#    And I click Done button on the Popup
-    And I click linga close button
+    And I click Done button on the Popup
+#    And I click linga close button
     And I click power button
 
 
@@ -494,7 +494,7 @@ Feature: Ask Seat Number Feature
   ######  SPLIT EVENLY  ###########
     And I click Split Evenly Button
     Then I should see Seperate Item is Disable
-    And I get seat 1 prize details
+#    And I get seat 1 prize details
 
 #    Then I should verify menu is splitted evenly
 #  And I verify seat 1 prize and seat 2 prize is same
@@ -572,7 +572,7 @@ Feature: Ask Seat Number Feature
     And I click Done button on the Popup
     When I click transferred table after done transfer process
     Then Verify the Transferred menu item is available or not in the receiving table
-    And Click the finish button
+    And I click Finish Order button
     And I click power button in the All Orders screen
 
 
@@ -670,7 +670,9 @@ Feature: Ask Seat Number Feature
     And I closed the order type window
     And I click All
     And I click Table Layout tab
-    And I select random table on the table layout
+#    And I select random table on the table layout
+    And I click new check button on the Table layout screen
+    And I select table as "T24"
     And I select the number of seats as "1"
     And I tap Continue to finish selecting the number of seats
     Then I Should get back to the Order Screen

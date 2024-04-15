@@ -118,9 +118,9 @@ public class CIWaitListPage extends BasePage {
 
 
     public void getTxtPopup1(String txtEditPopup, String msg) throws InterruptedException {
-        Thread.sleep(2000);
-        WebElement elementTxtInPopup = driver.findElement(By.xpath("//div[@class='list86Component']//p[.=' 86 List ']"));
-        Assert.assertEquals(elementTxtInPopup.getText(),txtEditPopup);
+        Thread.sleep(3000);
+        WebElement elementTxtInPopup = driver.findElement(By.xpath("//ion-label[.=' 86 List']"));
+        Assert.assertEquals(elementTxtInPopup.getText(),txtEditPopup); //
         utils.log().info("Displayed - "+txtEditPopup);
 
     }

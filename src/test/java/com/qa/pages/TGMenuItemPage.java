@@ -2473,27 +2473,40 @@ public class TGMenuItemPage extends BasePage {
         elementClick(element1,"Select ForHere From DineIn");
     }
     public void addModifierOverMaximumCount(){
-        for (int i = 0; i < 3; i++){
+//        for (int i = 0; i < 3; i++){
             //click the button
             WebElement element = mergeAndFindMobileElement(firstModifierOfFirstOrderName);
             elementClick(element,"Add Modifier Over Maximum Count");
-        }
+            WebElement element1 = mergeAndFindMobileElement("(//span[contains(.,'1/2 Romano')])[2]");
+//            WebElement element1 = mergeAndFindMobileElement(firstModifierOfFirstOrderName);
+            elementClick(element1,"Add Modifier Over Maximum Count");
+            elementClick(element1,"Add Modifier Over Maximum Count");
+//        }
     }
 
     public void addModifiersOverMaximumCount(){
-        for (int i = 0; i < 3; i++){
+//        for (int i = 0; i < 3; i++){
             //click the button
             WebElement element = mergeAndFindMobileElement(firstModifierForSecondMenuItem);
             elementClick(element,"Add Modifier Over Maximum Count");
-        }
+        WebElement element1 = mergeAndFindMobileElement("(//span[contains(.,'RYE BREAD')])[2]");
+        elementClick(element1,"Add Modifier Over Maximum Count");
+//        WebElement element = mergeAndFindMobileElement(firstModifierForSecondMenuItem);
+        elementClick(element1,"Add Modifier Over Maximum Count");
+//        }
     }
 
     public void addSecondMenuItemThirdModifierOverMaximumCount(){
-        for (int i = 0; i < 3; i++){
+//        for (int i = 0; i < 3; i++){
             //click the button
             WebElement element = mergeAndFindMobileElement(secondItemThirdModifier);
             elementClick(element,"Add SecondMenuItem Third Modifier Maximum Count");
-        }
+
+            WebElement element1 = mergeAndFindMobileElement("(//span[contains(.,'Wheat Bread')])[2]");
+            elementClick(element1,"Add Second MenuItem Third Modifier Maximum Count");
+            elementClick(element1,"Add Second MenuItem Third Modifier Maximum Count");
+
+//        }
     }
     public void emptyOrderList(){
         WebElement element = mergeAndFindMobileElement(emptyOrderList);

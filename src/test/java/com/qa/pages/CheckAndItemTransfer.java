@@ -241,9 +241,16 @@ public class CheckAndItemTransfer extends BasePage{
         elementClick(ele,"Click the Done button");
     }
 
-    public String getTheSuccessmessage()
-    {
+    public String getTheSuccessmessage() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS);
+        try {
+            WebElement yesBtn = driver.findElement(By.xpath("//button[.=' Yes ']"));
+            yesBtn.click();
+            Thread.sleep(1000);
+            utils.log().info("Displayed Yes");
+        }catch (Exception w){
+            utils.log().info("Not Displayed Yes");
+        }
         WebElement ele = driver.findElement(By.xpath("//p[contains(.,'Transferred item success')]"));
         return getText(ele,"Text");
     }

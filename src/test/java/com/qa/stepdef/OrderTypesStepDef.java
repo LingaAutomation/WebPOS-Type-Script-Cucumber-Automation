@@ -151,7 +151,7 @@ public class OrderTypesStepDef {
     /****** Order Types ******/
 
     @And("^I tap QSR button to open the order types combo$")
-    public void iTapQSRButtonToOpenTheOrderTypesCombo() {
+    public void iTapQSRButtonToOpenTheOrderTypesCombo() throws InterruptedException {
         new OrderManagementScreen().selectQSRCombo();
     }
 
@@ -181,7 +181,7 @@ public class OrderTypesStepDef {
     }
 
     @And("^I select order type as QSR$")
-    public void iSelectOrderTypeAsQSR() {
+    public void iSelectOrderTypeAsQSR() throws InterruptedException {
         new OrderManagementScreen().selectQSRCombo();
         new OrderManagementScreen().selectQSROrderType();
     }
@@ -284,7 +284,7 @@ public class OrderTypesStepDef {
 
     @Then ("^I should see orderscreen with as Dosa EACH$")
     public void iShouldSeeOrderScreenWithAsDosaEach(){
-        Assert.assertEquals(new OrderManagementScreen().dosaEach(),"(F) Dosa EACH");
+        Assert.assertEquals(new OrderManagementScreen().dosaEach(),"(F)Dosa EACH");
     }
     @Then ("^I should see discount as \"([^\"]*)\" on the order screen$")
     public void iShouldSeeDiscountAsOnTheOrderScreen(String num){
@@ -327,7 +327,7 @@ public class OrderTypesStepDef {
     }
 
     @And ("^I select order type as QSR in order screen$")
-    public void iSelectOrderTypeAsQsrInOrderScreen(){
+    public void iSelectOrderTypeAsQsrInOrderScreen() throws InterruptedException {
         new OrderManagementScreen().selectQSRCombo();
     }
 
@@ -483,7 +483,7 @@ public class OrderTypesStepDef {
         }
 
         @And("^Verify the Successful message of Transfer Item$")
-        public void verifyTheSuccessfulMessageOfTransferItem() {
+        public void verifyTheSuccessfulMessageOfTransferItem() throws InterruptedException {
             Assert.assertEquals("Transferred check success.",new CheckAndItemTransfer().getTheSuccessmessage());
         }
 

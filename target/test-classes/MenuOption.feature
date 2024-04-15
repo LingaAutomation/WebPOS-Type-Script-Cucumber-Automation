@@ -1,4 +1,4 @@
-@Regression
+
 Feature: Menu Option In scenarios
 
   Background:
@@ -7,7 +7,7 @@ Feature: Menu Option In scenarios
     And I click All
     And I click Table Layout tab
 
-
+  @Regression12
   Scenario Outline: Upcharge Reopen Check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"

@@ -77,19 +77,19 @@ public class PhoneOrderScreen extends BasePage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField[3]")
     private WebElement searchTabInFutureTab;
 
-    @FindBy(xpath = "//input[@data-placeholder='Check No']")
+    @FindBy(xpath = "//input[@placeholder='Check No']")
     private WebElement searchTabInActiveTab;
 
-    @FindBy(xpath = "//input[@data-placeholder='Check No']")
+    @FindBy(xpath = "//input[@placeholder='Check No']")
     private WebElement searchTabClosedTab;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
     private WebElement searchTabInOutTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "//ion-col[@class='phone_grid_web md hydrated']//input[@placeholder='Search']")
     private WebElement searchTabInCompleteTab;
 
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeTextField")
+    @FindBy(xpath = "(//input[@placeholder='Search'])[2]")
     private WebElement searchTabNewTab;
 
     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeSearchField
@@ -278,15 +278,20 @@ public class PhoneOrderScreen extends BasePage {
     public void selectCloseCheckInNewTab() throws InterruptedException {
         Thread.sleep(2000);
         String globalCheckNumber=TestUtils.globalCheckNumber;
-//        searchTabNewTab.click();
-//        searchTabNewTab.clear();
-//        searchTabNewTab.sendKeys(globalCheckNumber);
+
         // WebElement phoneOrders =  mergeAndFindElement(globalCheckNumber,"",TestUtils.Accessibility
         // );
         //elementClick(phoneOrders,"Tapped Closed Check in New Tab - "+ globalCheckNumber);
 //      //  try {
-//            WebElement phoneOrders = (WebElement) driver.findElement(By.xpath()("(//XCUIElementTypeStaticText[@xpath=\"" + globalCheckNumber + "\"])[2]");
-//
+            WebElement phoneOrderss = (WebElement) driver.findElement(By.xpath("//ion-col[@class='phone_grid_web md hydrated']//button[@aria-haspopup='menu']"));
+              phoneOrderss.click();
+              Thread.sleep(2000);
+              WebElement checkN = driver.findElement(By.xpath("//span[.=' Check# ']"));
+              checkN.click();
+        Thread.sleep(2000);
+        searchTabNewTab.click();
+        searchTabNewTab.clear();
+        searchTabNewTab.sendKeys(globalCheckNumber);
 //            //   (//XCUIElementTypeStaticText[@xpath="Auto Ragav"])[1]
 //
 //            if (phoneOrders.isDisplayed()) {
@@ -294,13 +299,17 @@ public class PhoneOrderScreen extends BasePage {
 //                utils.log().info("New Tab Check be duplicate" + globalCheckNumber);
 //            }
         //  } catch (Exception h) {
-        WebElement phoneOrders1 = (WebElement) driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div//div//tr//td[.='"+globalCheckNumber+"']"));
+        Thread.sleep(2000);
+        WebElement phoneOrders1 = (WebElement) driver.findElement(By.xpath("//tr[@id='selectCheckDriverOrder']//td[.='"+globalCheckNumber+"']"));
 
         if (phoneOrders1.isDisplayed()) {
             elementClick(phoneOrders1, "Tapped Closed Check in New tab - " + globalCheckNumber);
-        }else{
-//            utils.log().info("closed check is not available"+ globalCheckNumber);
         }
+        else{
+            utils.log().info("closed check is not available"+ globalCheckNumber);
+
+        }
+        Thread.sleep(2000);
         //elementClick(phoneOrders,"Tapped Closed Check in closed tab - "+ globalCheckNumber);
         // }
 
@@ -396,11 +405,11 @@ public class PhoneOrderScreen extends BasePage {
 
     public void selectClosedCheckFromClosedTab() throws InterruptedException {
         //   driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-        Thread.sleep(5000);
+        Thread.sleep(6000);
         String globalCheckNumber = TestUtils.globalCheckNumber;
         searchTabClosedTab.clear();
         searchTabClosedTab.sendKeys(globalCheckNumber);
-
+        Thread.sleep(2000);
             List<WebElement> phoneOrders1 = driver.findElements(By.xpath("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div"));
             utils.log().info(phoneOrders1.size());
             if(phoneOrders1.size() == 1)
@@ -413,13 +422,14 @@ public class PhoneOrderScreen extends BasePage {
             }
     }
     public void selectClosedCheckFromActiveTab() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1500);
         String globalCheckNumber=TestUtils.globalCheckNumber;
         searchTabInActiveTab.clear();
         searchTabInActiveTab.sendKeys(globalCheckNumber);
-
+        Thread.sleep(800);
         List<WebElement> phoneOrders1 = driver.findElements(By.xpath("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div"));
         utils.log().info(phoneOrders1.size());
+        Thread.sleep(1000);
         if(phoneOrders1.size() == 1)
         {
             elementClick("//div[(@class='cdk-virtual-scroll-content-wrapper')]//div[1]", "Tapped Closed Check in closed tab - " + globalCheckNumber);
@@ -464,10 +474,16 @@ public class PhoneOrderScreen extends BasePage {
     public void verifyClosedCheckInCompleteTab() throws InterruptedException {
         Thread.sleep(3000);
         String globalCheckNumber=TestUtils.globalCheckNumber;
-        driver.findElement(By.xpath("//ion-content//ion-row[2]//button[contains(@class,'phone_grid_web')]//span[contains(.,'Name')]")).click();
-        driver.findElement(By.xpath("//button[contains(@class,'matSerach-filter')]//span[contains(.,'Check#')]")).click();
+        try {
+            driver.findElement(By.xpath("//ion-content//ion-row[2]//button[contains(@class,'phone_grid_web')]//span[contains(.,'Name')]")).click();
+        }catch (Exception w) {
+            driver.findElement(By.xpath("//ion-content//ion-row[2]//button[contains(@class,'phone_grid_web')]//span[contains(.,' Check# ')]")).click();
+
+        }
+//            driver.findElement(By.xpath("//ion-col[@class='phone_grid_web md hydrated']//input[@placeholder='Search']")).click();
+
 //        searchTabInCompleteTab.clear();
-//        searchTabInCompleteTab.sendKeys(globalCheckNumber);
+        searchTabInCompleteTab.sendKeys(globalCheckNumber);
         Thread.sleep(2000);
         WebElement e =  driver.findElement(By.xpath("//div[@class='cdk-virtual-scroll-content-wrapper']//div//div//tr//td[.='"+globalCheckNumber+"']"));
 //        Thread.sleep(2000);

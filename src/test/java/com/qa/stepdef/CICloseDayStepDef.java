@@ -421,7 +421,7 @@ new CICloseDayScreen().commonGetText(txtEmployee,msg);
     }
 
     @Then("^I scroll down to verify gift card sold \"([^\"]*)\"$")
-    public void iScrollDownToVerifyGiftCardSold(String giftCardSoldAft) {
+    public void iScrollDownToVerifyGiftCardSold(String giftCardSoldAft) throws InterruptedException {
         new CICloseDayScreen().getGiftCardSoldValue(giftCardSoldAft);
     }
 

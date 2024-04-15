@@ -93,7 +93,7 @@ public class TGMenuOption extends BasePage{
     }
 
     public void verifyQuantityOfOrder(){
-        WebElement element1 = driver.findElement(By.xpath(quantityOfOrder));
+        WebElement element1 = driver.findElement(By.xpath("(//div[@class=\"p-col-2 orderlist-qty text-pos-center  \"])[1]"));
         String actualName=elementGetText(element1,"verify quantityOfOrder");
         String expectedName = "2";
 

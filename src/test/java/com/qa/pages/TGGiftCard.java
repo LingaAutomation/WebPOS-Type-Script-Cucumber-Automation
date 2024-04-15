@@ -570,8 +570,11 @@ public class TGGiftCard extends BasePage{
     //nov 19
     public void verifyCreditCardTxtField() throws InterruptedException {
         Thread.sleep(2000);
-        WebElement element = driver.findElement(By.xpath("//input[@placeholder='XXXXXXXXXXXXXXXX']"));
+        WebElement element = driver.findElement(By.xpath("//input[@id='cardInput']"));
         String actualName =element.getText();
+        utils.log().info(actualName);
+        utils.log().info(element.getAttribute("value"));
+        utils.log().info(element.getAttribute("name"));
 //        String actualName=elementGetText(element,"verify giftCardNumberTextField");
         String expectedName = "XXXXXXXXXXXXXXXX";
 

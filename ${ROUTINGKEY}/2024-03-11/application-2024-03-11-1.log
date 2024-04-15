@@ -1,0 +1,936 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:33.872 Hooks:46 - Start Scenario Name : Gift Card- Void Item,Gift Card- Void Check,Gift Card- Void
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:33.983 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:34.041 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:34.107 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:34.158 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:34.217 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:37.246 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:37.358 BasePage:278 - Select Qsr Option
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:37.428 BasePage:278 - Select DineIn OrderType
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:37.536 BasePage:258 - click t4 table
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:37.643 BasePage:278 - Select First Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:37.703 OrderManagementScreen:1871 - 229-001
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:40.769 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:42.339 BasePage:278 - Selected - Appetizers
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:46.469 BasePage:278 - Selected - BRUSHETTA
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:46.644 BasePage:278 - Click Order Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:46.717 BasePage:278 - Click Payment Button On MenuItem Page
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:46.808 BasePage:278 - click giftCardOption 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:46.920 BasePage:278 - click noTipButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:46.986 BasePage:278 - click continueButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:49.085 BasePage:278 - click manuelButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:49.174 BasePage:278 - click giftCardNumberTextField 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:51.308 BasePage:278 - click giftProcessButton 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:52.792 BasePage:278 - Click Check Status Tab Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:06:52.889 BasePage:278 - Click Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:01.076 PhoneOrderScreen:414 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:01.100 BasePage:258 - Tapped Closed Check in closed tab - 229-001
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:01.179 BasePage:278 - Click reopenCheck
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:03.393 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:03.494 BasePage:278 - Payment  selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:03.563 BasePage:278 - Delete button tapped to delete the payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:05.662 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:07.761 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:07.849 BasePage:84 - void Reason txt is displayed - Void Reason
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:07.889 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:09.969 BasePage:278 - Add (void reason) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:13.166 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 12:07:14.199 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:09.722 Hooks:46 - Start Scenario Name : Change Floors
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:09.838 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:09.884 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:09.929 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:09.971 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:09.999 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:12.174 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:12.233 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:13.625 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:13.735 BasePage:278 - Tapped Operation Button on the Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:15.835 TableLayOutScreen:1496 - Operation screen is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:15.869 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:17.965 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:18.025 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:19.407 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:20.487 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:20.790 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:20.822 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:20.853 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:20.896 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:20.926 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:23.005 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:23.054 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:24.436 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:24.518 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:24.558 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:24.618 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:24.652 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:24.722 OrderManagementScreen:1871 - 4-001
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:25.764 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:27.856 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:31.948 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:35.069 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:35.129 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:35.186 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:36.242 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:38.312 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:42.411 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:45.530 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:45.611 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:45.659 BasePage:278 - selected seat - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:46.719 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:48.782 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:52.873 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:55.983 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:56.033 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:56.084 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:59.201 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:59.229 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:59.270 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:59.309 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:59.346 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:36:59.413 OrderManagementScreen:1871 - 4-002
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:00.451 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:02.529 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:06.631 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:09.739 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:09.812 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:09.864 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:10.931 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:12.998 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:17.083 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:20.174 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:20.223 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:20.264 BasePage:278 - selected seat - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:21.317 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:23.399 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:27.472 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:30.560 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:30.616 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:30.661 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:33.762 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:33.790 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:33.832 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:33.878 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:33.914 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:33.995 OrderManagementScreen:1871 - 4-003
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:35.033 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:37.102 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:41.199 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:44.291 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:44.336 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:44.379 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:45.437 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:47.490 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:51.563 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:54.653 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:54.701 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:54.773 BasePage:278 - selected seat - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:55.823 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:37:57.888 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:01.968 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:05.057 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:05.104 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:05.150 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:08.238 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:08.254 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:08.285 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:08.319 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:08.354 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:08.436 OrderManagementScreen:1871 - 4-004
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:09.471 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:11.526 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:15.607 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:18.700 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:18.750 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:18.810 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:19.862 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:21.929 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:26.006 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:29.098 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:29.151 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:29.197 BasePage:278 - selected seat - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:30.249 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:32.313 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:36.391 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:39.481 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:39.529 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:39.593 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:42.675 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:42.711 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:42.777 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:42.817 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:42.852 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:42.918 OrderManagementScreen:1871 - 4-005
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:43.955 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:46.019 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:50.123 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:53.208 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:53.257 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:53.295 BasePage:278 - selected seat - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:54.345 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:38:56.411 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:00.493 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:03.581 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:03.651 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:03.717 BasePage:278 - selected seat - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:04.769 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:06.832 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:10.916 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:14.076 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:14.137 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:14.183 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.291 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.321 BasePage:278 - Merge button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.366 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.402 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.436 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.470 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.508 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:17.559 BasePage:278 - Done (Merge) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:31.624 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:31.679 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:31.808 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:33.882 TableLayOutScreen:1505 - 15 Seats are Merged with menu Items 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:35.964 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:36.028 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:36.651 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:39.717 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:40.750 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:40.902 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:40.932 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:40.960 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:40.988 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:41.018 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:43.123 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:43.174 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:44.559 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:44.651 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:44.685 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:44.720 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:44.754 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:44.846 OrderManagementScreen:1871 - 4-006
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:45.888 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:47.955 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:52.047 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:55.154 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:55.211 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:39:59.282 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:02.354 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:02.411 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:06.510 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:09.611 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:09.690 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:13.768 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:16.867 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:16.917 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:21.007 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:24.102 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:24.156 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:24.224 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:27.341 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:27.372 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:27.410 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:27.448 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:27.483 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:27.577 OrderManagementScreen:1871 - 4-007
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:28.624 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:30.699 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:34.795 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:37.906 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:37.953 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:42.040 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:45.144 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:45.198 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:49.304 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:52.430 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:52.486 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:56.567 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:59.655 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:40:59.701 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:03.815 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:06.913 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:06.965 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:07.004 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:10.096 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:10.112 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:10.152 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:10.189 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:10.217 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:10.305 OrderManagementScreen:1871 - 4-008
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:11.345 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:13.415 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:17.512 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:20.641 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:20.688 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:24.768 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:27.869 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:27.921 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:32.001 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:35.114 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:35.166 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:39.252 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:42.341 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:42.387 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:46.509 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:49.611 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:49.660 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:49.696 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:52.796 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:52.823 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:52.866 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:52.898 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:52.932 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:53.026 OrderManagementScreen:1871 - 4-009
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:54.057 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:41:56.123 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:00.205 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:03.321 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:03.368 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:07.453 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:10.551 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:10.598 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:14.680 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:17.775 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:17.822 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:21.903 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:25.004 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:25.052 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:29.176 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:32.278 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:32.329 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:32.367 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:35.476 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:35.511 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:35.554 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:36.114 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:36.162 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:36.248 OrderManagementScreen:1871 - 4-010
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:37.287 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:39.357 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:43.459 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:46.665 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:46.722 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:50.817 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:53.893 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:53.951 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:42:58.042 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:01.142 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:01.199 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:05.287 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:08.397 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:08.448 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:12.528 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:15.656 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:15.712 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:15.751 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:18.856 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:18.876 BasePage:278 - Merge button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:18.936 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:18.987 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:19.025 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:19.086 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:19.128 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:19.169 BasePage:278 - Done (Merge) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:33.236 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:33.304 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:33.497 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:35.558 TableLayOutScreen:1505 - 5 Seats are Merged with menu Items 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:37.661 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:37.737 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:38.336 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:41.392 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:42.433 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:42.565 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:42.593 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:42.622 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:42.651 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:42.678 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:44.767 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:44.815 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:46.204 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:46.302 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:46.341 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:46.388 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:46.421 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:46.508 OrderManagementScreen:1871 - 4-011
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:47.551 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:49.626 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:53.722 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:56.844 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:43:56.916 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:01.004 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:04.113 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:04.179 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:08.269 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:11.363 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:11.428 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:15.513 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:18.659 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:18.710 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:22.796 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:25.902 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:25.952 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:25.996 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:29.115 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:29.144 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:29.182 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:29.221 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:29.254 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:29.345 OrderManagementScreen:1871 - 4-012
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:30.390 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:32.466 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:36.562 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:39.681 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:39.727 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:43.808 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:46.906 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:46.954 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:51.044 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:54.143 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:54.191 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:44:58.293 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:01.427 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:01.483 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:05.563 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:08.651 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:08.701 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:08.792 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:11.842 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:11.869 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:11.909 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:11.970 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:11.999 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:12.089 OrderManagementScreen:1871 - 4-013
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:13.129 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:15.201 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:19.288 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:22.390 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:22.437 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:26.522 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:29.613 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:29.662 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:33.743 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:36.862 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:36.914 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:40.995 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:44.091 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:44.146 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:48.259 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:51.421 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:51.481 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:51.538 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:54.708 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:54.742 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:54.782 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:54.815 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:54.850 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:54.918 OrderManagementScreen:1871 - 4-014
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:55.959 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:45:58.017 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:02.118 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:05.213 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:05.293 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:09.373 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:12.470 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:12.524 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:16.603 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:19.692 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:19.741 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:23.825 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:26.920 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:26.982 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:31.068 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:34.192 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:34.244 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:34.282 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:37.394 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:37.420 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:37.464 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:37.499 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:37.527 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:37.617 OrderManagementScreen:1871 - 4-015
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:38.656 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:40.724 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:44.806 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:47.903 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:47.957 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:52.038 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:55.140 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:55.189 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:46:59.268 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:02.365 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:02.446 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:06.523 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:09.611 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:09.664 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:13.753 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:16.858 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:16.911 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:16.954 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.067 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.096 BasePage:278 - Merge button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.144 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.178 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.213 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.247 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.309 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:20.346 BasePage:278 - Done (Merge) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:34.412 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:34.467 BasePage:278 - Print button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:34.501 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:34.585 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:34.734 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:36.803 TableLayOutScreen:1505 - 5 Seats are Merged with menu Items 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:38.889 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:38.945 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:39.570 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:42.635 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:43.673 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:43.803 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:43.830 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:43.857 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:43.892 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:43.925 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:46.017 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:46.067 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:47.478 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:47.551 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:47.594 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:47.628 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:47.662 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:47.726 OrderManagementScreen:1871 - 4-016
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:48.779 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:50.849 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:54.938 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:58.061 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:47:58.118 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:02.197 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:05.281 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:05.334 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:09.418 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:12.522 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:12.572 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:16.654 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:19.757 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:19.808 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:23.886 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:26.990 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:27.042 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:27.081 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:30.238 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:30.266 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:30.304 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:30.337 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:30.367 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:30.456 OrderManagementScreen:1871 - 4-017
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:31.489 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:33.557 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:37.649 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:40.761 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:40.807 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:44.888 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:47.987 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:48.035 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:52.109 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:55.205 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:55.253 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:48:59.339 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:02.467 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:02.533 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:06.620 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:09.755 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:09.813 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:09.855 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:12.963 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:12.991 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:13.062 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:13.109 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:13.142 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:13.227 OrderManagementScreen:1871 - 4-018
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:14.263 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:16.328 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:20.420 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:23.536 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:23.595 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:27.677 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:30.769 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:30.822 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:34.905 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:38.002 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:38.052 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:42.136 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:45.232 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:45.284 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:49.362 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:52.460 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:52.509 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:52.549 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:55.667 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:55.693 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:55.740 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:56.298 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:56.345 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:56.431 OrderManagementScreen:1871 - 4-019
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:57.470 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:49:59.539 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:03.622 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:06.720 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:06.766 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:10.852 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:13.949 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:14.007 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:18.089 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:21.191 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:21.238 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:25.315 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:28.412 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:28.477 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:32.593 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:35.696 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:35.745 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:35.784 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:38.889 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:38.915 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:38.958 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:39.036 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:39.065 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:39.157 OrderManagementScreen:1871 - 4-020
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:40.196 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:42.266 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:46.353 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:49.478 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:49.534 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:53.659 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:56.778 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:50:56.832 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:00.920 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:04.012 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:04.074 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:08.161 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:11.267 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:11.323 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:15.422 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:18.575 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:18.636 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:18.699 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:21.798 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:21.830 BasePage:278 - Merge button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:21.878 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:21.966 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:21.997 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:22.035 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:22.101 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:22.137 BasePage:278 - Done (Merge) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:36.210 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:36.270 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:40.328 TableLayOutScreen:1128 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:40.353 BasePage:278 - Print button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:40.398 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:42.439 TableLayOutScreen:1505 - 5 Seats are Merged with menu Items 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:44.570 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:44.641 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:45.255 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:48.322 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:49.362 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:49.494 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:49.522 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:49.548 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:49.574 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:49.601 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:51.693 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:51.743 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:53.120 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:53.194 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:53.240 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:53.280 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:53.321 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:53.445 OrderManagementScreen:1871 - 4-021
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:54.489 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:51:56.561 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:00.659 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:03.771 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:03.834 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:07.922 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:11.022 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:11.072 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:15.149 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:18.241 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:18.327 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:22.456 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:25.605 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:25.656 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:29.765 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:32.870 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:32.958 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:33.026 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:36.127 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:36.161 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:36.200 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:36.237 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:36.302 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:36.389 OrderManagementScreen:1871 - 4-022
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:37.428 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:39.498 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:43.587 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:46.690 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:46.739 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:50.820 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:53.921 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:53.966 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:52:58.061 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:01.153 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:01.212 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:05.304 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:08.422 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:08.472 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:12.563 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:15.667 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:15.722 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:15.759 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:18.865 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:18.890 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:18.930 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:18.964 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:18.994 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:19.090 OrderManagementScreen:1871 - 4-023
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:20.130 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:22.198 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:26.286 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:29.381 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:29.440 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:33.521 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:36.619 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:36.676 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:40.753 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:43.848 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:43.898 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:47.981 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:51.085 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:51.132 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:55.216 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:58.311 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:58.362 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:53:58.401 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:01.555 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:01.582 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:01.623 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:01.666 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:01.703 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:01.822 OrderManagementScreen:1871 - 4-024
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:02.862 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:04.934 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:09.030 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:12.170 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:12.220 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:16.335 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:19.480 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:19.549 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:23.658 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:26.821 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:26.939 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:31.030 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:34.129 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:34.196 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:38.277 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:41.371 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:41.421 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:41.465 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:44.611 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:44.635 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:44.675 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:44.711 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:44.738 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:44.824 OrderManagementScreen:1871 - 4-025
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:45.873 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:47.944 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:52.035 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:55.136 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:55.187 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:54:59.265 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:02.366 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:02.423 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:06.516 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:09.603 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:09.652 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:13.743 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:16.832 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:16.879 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:20.958 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:24.065 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:24.124 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:24.178 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.329 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.359 BasePage:278 - Merge button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.406 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.441 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.473 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.506 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.545 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:27.620 BasePage:278 - Done (Merge) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:41.706 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:41.762 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:41.950 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:44.006 TableLayOutScreen:1505 - 5 Seats are Merged with menu Items 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:46.127 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:46.193 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:46.810 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:49.870 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:50.908 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:51.163 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:51.198 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:51.226 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:51.253 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:51.284 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:53.401 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:53.479 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:54.894 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:54.985 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:55.028 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:55.066 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:55.100 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:55.161 OrderManagementScreen:1871 - 4-026
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:56.197 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:55:58.289 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:02.376 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:05.489 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:05.562 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:09.653 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:12.755 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:12.806 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:16.902 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:20.039 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:20.087 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:24.184 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:27.291 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:27.342 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:31.419 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:34.527 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:34.581 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:34.682 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:34.751 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:36.850 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:36.904 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:40.005 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:40.034 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:40.075 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:40.130 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:40.165 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:40.257 OrderManagementScreen:1871 - 4-027
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:41.297 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:43.370 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:47.466 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:50.587 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:50.640 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:54.731 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:57.831 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:56:57.888 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:01.971 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:05.071 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:05.119 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:09.202 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:12.292 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:12.342 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:16.418 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:19.524 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:19.580 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:19.625 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:22.768 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:22.796 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:22.838 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:22.872 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:22.901 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:22.989 OrderManagementScreen:1871 - 4-028
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:24.024 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:26.090 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:30.173 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:33.273 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:33.321 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:37.408 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:40.513 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:40.572 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:44.657 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:47.753 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:47.814 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:51.904 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:55.004 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:55.053 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:57:59.126 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:02.227 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:02.285 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:02.328 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:05.439 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:05.466 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:05.514 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:05.548 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:05.578 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:05.664 OrderManagementScreen:1871 - 4-029
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:06.704 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:08.775 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:12.856 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:15.956 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:16.003 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:20.090 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:23.180 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:23.229 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:27.294 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:30.370 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:30.424 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:34.499 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:37.595 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:37.643 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:41.724 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:44.822 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:44.872 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:44.911 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:45.061 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:47.155 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:47.206 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:50.309 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:50.362 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:50.393 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:50.425 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:50.454 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:50.545 OrderManagementScreen:1871 - 4-030
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:51.580 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:53.644 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:58:57.735 BasePage:278 - Selected - French Friese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:00.834 BasePage:278 - Selected - Steak
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:00.882 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:04.965 BasePage:278 - Selected - Garlic Bread
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:08.061 BasePage:278 - Selected - 4 BBQ
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:08.112 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:12.197 BasePage:278 - Selected - Tuna Tacos
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:15.298 BasePage:278 - Selected - Croutons
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:15.368 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:19.460 BasePage:278 - Selected - Cheesy Bacon Fries
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:22.560 BasePage:278 - Selected - 1/2 Cheese
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:22.610 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:26.694 BasePage:278 - Selected - B.I. Wings
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:29.785 BasePage:278 - Selected - Tomato
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:29.837 BasePage:258 - done for the menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:29.874 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:30.017 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:32.102 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:32.151 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.240 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.269 BasePage:278 - Merge button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.352 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.383 BasePage:278 - T2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.424 BasePage:278 - T3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.456 BasePage:278 - T4 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.487 BasePage:278 - T5 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:35.570 BasePage:278 - Done (Merge) button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:49.649 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:49.707 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:49.871 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:51.939 TableLayOutScreen:1505 - 5 Seats are Merged with menu Items 
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:54.027 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:54.077 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:54.695 BasePage:278 - Submit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:57.772 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:58.813 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:58.940 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:58.967 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:58.994 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:59.021 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-03-11 23:59:59.049 BasePage:258 - Tapped Login.

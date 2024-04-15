@@ -75,8 +75,8 @@ public class CIEightySixListScreen extends BasePage {
     }
 
     public void verifyQuantity() throws InterruptedException {
-        Thread.sleep(2000);
-        WebElement element = driver.findElement(By.xpath("//table[@class='list86Component-menuList-table ng-star-inserted']//td[2]//input"));
+        Thread.sleep(2000); //
+        WebElement element = driver.findElement(By.xpath("//table[@class='list86Component-86list-menuList-table ng-star-inserted']/tr/td[2]/div"));
         if(element.isEnabled()){
             utils.log().info("QTY is Selectable");
         }else{
@@ -129,7 +129,7 @@ public class CIEightySixListScreen extends BasePage {
 
     public String getQuantityTextField(String Qty) throws InterruptedException {
         Thread.sleep(2000);
-        WebElement element=driver.findElement(By.xpath("//table[@class='list86Component-menuList-table ng-star-inserted']//input[@placeholder='"+Qty+"']"));
+        WebElement element=driver.findElement(By.xpath("//table[@class='list86Component-86list-menuList-table ng-star-inserted']/tr/td/div[.=' "+Qty+" ']"));
        if(element.isDisplayed()) {
            utils.log().info("Displayed QTY - "+Qty);
        }else {
@@ -148,8 +148,9 @@ public class CIEightySixListScreen extends BasePage {
 
     public void clickQtyTxtField(String msg) throws InterruptedException {
         Thread.sleep(2000);
-        WebElement elementQty = driver.findElement(By.xpath("//table[@class='list86Component-menuList-table ng-star-inserted']//td[2]"));
-        elementClick(elementQty,msg);
+        WebElement elementQty = driver.findElement(By.xpath("//ion-grid[@class='list86Component-86list-menuList-comp md hydrated']//table//tr//td[2]//div"));
+        Thread.sleep(1000);
+        elementQty.click();
 
     }
 
@@ -258,11 +259,19 @@ public class CIEightySixListScreen extends BasePage {
 
     public void clickSearchCloseOnThe86ListScreen() throws InterruptedException {
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//div[@class='list86Component-searchField list86Component-searchField-pinContainer']//button[@aria-label='reset']")).click();
+        driver.findElement(By.xpath("//table[@class='list86Component-86list-menuList-table ng-star-inserted']/tr/td[2]")).click();
 
     }
     public void getEmptyList() throws InterruptedException {
         Thread.sleep(2000);
+//        List<WebElement> menu = driver.findElements(By.xpath("//ion-grid[@class='list86Component-86list menuList-pinContainer md hydrated']//table[1]"));
+//        if(menu.isEmpty()){
+//            utils.log().info("EMplty List");
+//        }else{
+//            utils.log().info("Not EMplty List");
+//
+//        }
+
         try {
             WebElement elementEmptyList = driver.findElement(By.xpath("//ion-grid[@class='list86Component-menuList-pinContainer md hydrated']//tr[.='Chicken Biriyani']"));
           if(elementEmptyList.isDisplayed()){
@@ -273,7 +282,7 @@ public class CIEightySixListScreen extends BasePage {
         }catch (Exception w){
           utils.log().info("Not Displayed");
           Thread.sleep(1000);
-          driver.findElement(By.xpath("//div[@class='list86Component-searchField list86Component-searchField-pinContainer']//button[@aria-label='reset']")).click();
+          driver.findElement(By.xpath("//div[@class='list86Component-86list-searchField']//button[@aria-label='reset']")).click();
 
         }
 
@@ -281,8 +290,16 @@ public class CIEightySixListScreen extends BasePage {
 
     public void getEmptyList1(String menu) throws InterruptedException {
         Thread.sleep(2000);
+////        Thread.sleep(2000);
+//        List<WebElement> menu1 = driver.findElements(By.xpath("//ion-grid[@class='list86Component-86list menuList-pinContainer md hydrated']//table[1]"));
+//        if(menu1.isEmpty()){
+//            utils.log().info("Not EMplty List "+menu1.isEmpty());
+//        }else{
+//            utils.log().info("Not EMplty List - "+menu1.isEmpty());
+//
+//        }
         try {
-            WebElement elementEmptyList = driver.findElement(By.xpath("//ion-grid[@class='list86Component-menuList-pinContainer md hydrated']//tr[.='"+menu+"']"));
+            WebElement elementEmptyList = driver.findElement(By.xpath("//ion-grid[@class='list86Component-86list menuList-pinContainer md hydrated']//tr//td[.='"+menu+"']"));
             if(elementEmptyList.isDisplayed()){
                 utils.log().info("Displayed Eight Six");
                 Assert.assertEquals(elementEmptyList.getText(),"kn");
@@ -291,7 +308,7 @@ public class CIEightySixListScreen extends BasePage {
         }catch (Exception w){
             utils.log().info("Not Displayed");
             Thread.sleep(1000);
-            driver.findElement(By.xpath("//div[@class='list86Component-searchField list86Component-searchField-pinContainer']//button[@aria-label='reset']")).click();
+            driver.findElement(By.xpath("//div[@class='list86Component-86list-searchField']//button[@aria-label='reset']")).click();
 
         }
 
@@ -299,6 +316,15 @@ public class CIEightySixListScreen extends BasePage {
 
     public void getEmptyList2(String menu) throws InterruptedException {
         Thread.sleep(2000);
+//        try{
+//        List<WebElement> menu1 = driver.findElements(By.xpath("//ion-grid[@class='list86Component-86list-menuList-comp md hydrated']//table[1]"));
+//        if(menu1.isEmpty()){
+//            utils.log().info("EMplty List "+menu1.isEmpty());
+//        }else {
+//            utils.log().info("Not EMplty List - " + menu1.isEmpty());
+//        }ca
+//        }
+//        Thread.sleep(2000);
         try {
             WebElement elementEmptyList = driver.findElement(By.xpath("//td[.='"+menu+"']"));
             if(elementEmptyList.isDisplayed()){
@@ -309,7 +335,7 @@ public class CIEightySixListScreen extends BasePage {
         }catch (Exception w){
             utils.log().info("Not Displayed");
             Thread.sleep(1000);
-            driver.findElement(By.xpath("//ion-searchbar[@placeholder='Search']//button[@type='button']")).click();
+            driver.findElement(By.xpath("//div[@class='list86Component-86list-searchField']//button[@aria-label='reset']")).click();
 
         }
 
@@ -388,6 +414,8 @@ public class CIEightySixListScreen extends BasePage {
 
         Thread.sleep(2000);
         WebElement listQty = driver.findElement(By.xpath("(//input[@placeholder='Search'])[2]"));
+        listQty.clear();
+        Thread.sleep(1000);
         sendKeys(listQty,menuItem,"Searched - "+menuItem);
     }
 

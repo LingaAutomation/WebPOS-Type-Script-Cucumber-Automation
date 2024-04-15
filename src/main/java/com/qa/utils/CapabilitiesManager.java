@@ -4,6 +4,7 @@ package com.qa.utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import java.io.File;
@@ -41,7 +42,7 @@ public class CapabilitiesManager {
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
         Thread.sleep(5000);
         //Click the login button
-        driver.findElement(By.xpath("//ion-button[@type='submit']")).click();
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
 
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         Thread.sleep(20000);
@@ -52,9 +53,13 @@ public class CapabilitiesManager {
 
         //Call the chrome driver
 //    System.setProperty("webdriver.chrome.driver","C:\\Automation\\WebPos\\Automation Driver\\chromedriver-win64\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/Users/shaunmatthew/Downloads/chromedriver");
-        //Open the Chrome window
+//        System.setProperty("webdriver.chrome.driver", "/Users/shaunmatthew/Downloads/chromedriver");
+//        //Open the Chrome window
+//        driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "/Users/shaunmatthew/Downloads/geckodriver");
+//
         driver = new ChromeDriver();
+
         //Wait for 30 seconds
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         //Maximize the Firefox window
@@ -83,13 +88,17 @@ public class CapabilitiesManager {
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
+//        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
+
         //Clear the password from the password text box
         driver.findElement(By.xpath("//input[@name='password']")).clear();
+//        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
+
         //Enter the password
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
         Thread.sleep(5000);
         //Click the login button
-        driver.findElement(By.xpath("//ion-button[@type='submit']")).click();
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));

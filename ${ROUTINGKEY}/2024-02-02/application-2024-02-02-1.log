@@ -1,0 +1,402 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:00:52.839 Hooks:46 - Start Scenario Name : Hold on empty check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:01:02.879 Hooks:58 - Failed Scenario Name : Hold on empty check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:02:10.530 Hooks:46 - Start Scenario Name : Hold AutoMatic/Manual Payment - Confirm Send Kitchen On Order Management Screen(Manual Hold)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:02:20.564 Hooks:58 - Failed Scenario Name : Hold AutoMatic/Manual Payment - Confirm Send Kitchen On Order Management Screen(Manual Hold)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:03:28.286 Hooks:46 - Start Scenario Name : On Hold to Check Down - Do you want send Hold menu to Kitchen popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:03:38.339 Hooks:58 - Failed Scenario Name : On Hold to Check Down - Do you want send Hold menu to Kitchen popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:04:46.134 Hooks:46 - Start Scenario Name : order menu Resend to kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:04:56.180 Hooks:58 - Failed Scenario Name : order menu Resend to kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:06:03.888 Hooks:46 - Start Scenario Name : Tax exempt should be cancelled when a customer is chosen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:06:13.939 Hooks:58 - Failed Scenario Name : Tax exempt should be cancelled when a customer is chosen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:07:21.588 Hooks:46 - Start Scenario Name : Tax Exempt- From Order Screen/Payment Screen - Paid amount Exceeding sale amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:07:31.629 Hooks:58 - Failed Scenario Name : Tax Exempt- From Order Screen/Payment Screen - Paid amount Exceeding sale amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:08:40.122 Hooks:46 - Start Scenario Name : Remove- Tax Exempt from Order Screen/Payment Screen.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:08:50.197 Hooks:58 - Failed Scenario Name : Remove- Tax Exempt from Order Screen/Payment Screen.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:09:57.824 Hooks:46 - Start Scenario Name : Adding an open item to an existing check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:10:07.865 Hooks:58 - Failed Scenario Name : Adding an open item to an existing check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:11:15.539 Hooks:46 - Start Scenario Name : Gratuity - Should available based on the BO
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:11:25.568 Hooks:58 - Failed Scenario Name : Gratuity - Should available based on the BO
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:12:33.275 Hooks:46 - Start Scenario Name : Check - Reduce Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:12:43.360 Hooks:58 - Failed Scenario Name : Check - Reduce Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:13:51.054 Hooks:46 - Start Scenario Name : Modify Cancel,Fire Coursing
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:14:01.099 Hooks:58 - Failed Scenario Name : Modify Cancel,Fire Coursing
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:15:08.688 Hooks:46 - Start Scenario Name : Verify whether application can allow to remove the applied Discount for the check when user click appliedDiscount from discount screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:15:18.726 Hooks:58 - Failed Scenario Name : Verify whether application can allow to remove the applied Discount for the check when user click appliedDiscount from discount screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:16:27.190 Hooks:46 - Start Scenario Name : Check with discount(item based - Before tax) as percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:16:37.268 Hooks:58 - Failed Scenario Name : Check with discount(item based - Before tax) as percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:17:44.939 Hooks:46 - Start Scenario Name : Check with discount(item based - After tax) as Set Price 500
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:17:54.967 Hooks:58 - Failed Scenario Name : Check with discount(item based - After tax) as Set Price 500
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:19:02.644 Hooks:46 - Start Scenario Name : Check Based After Tax Discount as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:19:12.710 Hooks:58 - Failed Scenario Name : Check Based After Tax Discount as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:20:20.429 Hooks:46 - Start Scenario Name : Check Based Before Tax Discount as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:20:30.476 Hooks:58 - Failed Scenario Name : Check Based Before Tax Discount as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:21:38.111 Hooks:46 - Start Scenario Name : Check with Mix&Match discount as Set Price as 600(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:21:48.144 Hooks:58 - Failed Scenario Name : Check with Mix&Match discount as Set Price as 600(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:22:55.819 Hooks:46 - Start Scenario Name : Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:23:05.900 Hooks:58 - Failed Scenario Name : Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:24:13.629 Hooks:46 - Start Scenario Name : Check with tax exempt with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:24:23.700 Hooks:58 - Failed Scenario Name : Check with tax exempt with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:25:31.244 Hooks:46 - Start Scenario Name : Check With upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:25:41.277 Hooks:58 - Failed Scenario Name : Check With upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:26:49.049 Hooks:46 - Start Scenario Name : Check Payment through Other payment - Check with discount(item based - After tax) as amount 10
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:26:59.106 Hooks:58 - Failed Scenario Name : Check Payment through Other payment - Check with discount(item based - After tax) as amount 10
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:28:07.590 Hooks:46 - Start Scenario Name : Check Payment through others payment - Check with discount(Item based - Before tax) as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:28:17.620 Hooks:58 - Failed Scenario Name : Check Payment through others payment - Check with discount(Item based - Before tax) as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:29:25.328 Hooks:46 - Start Scenario Name : Check Payment through Other payment - Check with discount(check based - After tax) as percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:29:35.373 Hooks:58 - Failed Scenario Name : Check Payment through Other payment - Check with discount(check based - After tax) as percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:30:43.052 Hooks:46 - Start Scenario Name : Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:30:53.119 Hooks:58 - Failed Scenario Name : Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:32:00.835 Hooks:46 - Start Scenario Name : Check Payment through Other payment - Check with Mix&Match discount as Set Price(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:32:10.896 Hooks:58 - Failed Scenario Name : Check Payment through Other payment - Check with Mix&Match discount as Set Price(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:33:18.484 Hooks:46 - Start Scenario Name : Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:33:28.556 Hooks:58 - Failed Scenario Name : Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:34:36.278 Hooks:46 - Start Scenario Name : Check Payment through Other payment - Check with Exclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:34:46.371 Hooks:58 - Failed Scenario Name : Check Payment through Other payment - Check with Exclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:35:54.204 Hooks:46 - Start Scenario Name : Check Payment through other payment - Check with tax exempt and with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:36:04.261 Hooks:58 - Failed Scenario Name : Check Payment through other payment - Check with tax exempt and with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:37:11.981 Hooks:46 - Start Scenario Name : Check Payment through side CC and customer & Merchant copy enabled without tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:37:22.050 Hooks:58 - Failed Scenario Name : Check Payment through side CC and customer & Merchant copy enabled without tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:38:30.214 Hooks:46 - Start Scenario Name : Check Payment through Side CC and customer & Merchant copy enabled tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:38:40.289 Hooks:58 - Failed Scenario Name : Check Payment through Side CC and customer & Merchant copy enabled tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:39:48.030 Hooks:46 - Start Scenario Name : Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:39:58.059 Hooks:58 - Failed Scenario Name : Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:41:05.818 Hooks:46 - Start Scenario Name : Check Payment through Side CC with discount(item based - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:41:15.843 Hooks:58 - Failed Scenario Name : Check Payment through Side CC with discount(item based - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:42:23.575 Hooks:46 - Start Scenario Name : Check Payment through side CC with discount(item based - After tax/Before) as set price and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:42:33.645 Hooks:58 - Failed Scenario Name : Check Payment through side CC with discount(item based - After tax/Before) as set price and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:43:41.358 Hooks:46 - Start Scenario Name : Check Payment through side CC with discount(Check based - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:43:51.386 Hooks:58 - Failed Scenario Name : Check Payment through side CC with discount(Check based - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:44:59.159 Hooks:46 - Start Scenario Name : Check Payment through side CC with discount(Check based - After tax/Before) as set price and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:45:09.215 Hooks:58 - Failed Scenario Name : Check Payment through side CC with discount(Check based - After tax/Before) as set price and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:46:16.858 Hooks:46 - Start Scenario Name : Check Payment through Side CC with discount(Mix&Match - After/before tax) as set price and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:46:26.918 Hooks:58 - Failed Scenario Name : Check Payment through Side CC with discount(Mix&Match - After/before tax) as set price and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:47:34.496 Hooks:46 - Start Scenario Name : Check Payment through side CC with discount(Mix&Match - After/before tax) as set price(Most Expensive) and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:47:44.569 Hooks:58 - Failed Scenario Name : Check Payment through side CC with discount(Mix&Match - After/before tax) as set price(Most Expensive) and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:48:52.414 Hooks:46 - Start Scenario Name : Check Payment through Side CC with Gratuity(Fixed) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:49:02.472 Hooks:58 - Failed Scenario Name : Check Payment through Side CC with Gratuity(Fixed) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:50:10.374 Hooks:46 - Start Scenario Name : Check Payment through side CC with tax Exempt(Not select customer) and also with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:50:20.433 Hooks:58 - Failed Scenario Name : Check Payment through side CC with tax Exempt(Not select customer) and also with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:51:28.438 Hooks:46 - Start Scenario Name : Operation on Check Stats Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:51:38.465 Hooks:58 - Failed Scenario Name : Operation on Check Stats Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:52:46.187 Hooks:46 - Start Scenario Name : Verify Active Checks, Verify Closed Checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:52:56.223 Hooks:58 - Failed Scenario Name : Verify Active Checks, Verify Closed Checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:54:04.090 Hooks:46 - Start Scenario Name : Verify when user enable the conversational option in category level it gets reflected in IPAD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:54:14.158 Hooks:58 - Failed Scenario Name : Verify when user enable the conversational option in category level it gets reflected in IPAD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:55:21.805 Hooks:46 - Start Scenario Name : Customer Profile Feature File
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:55:31.886 Hooks:58 - Failed Scenario Name : Customer Profile Feature File
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:56:39.656 Hooks:46 - Start Scenario Name : Select an existing customer for a FORHERE order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:56:49.691 Hooks:58 - Failed Scenario Name : Select an existing customer for a FORHERE order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:57:58.259 Hooks:46 - Start Scenario Name : Application allow user to save after entering first-last name without mobile number/E-mail
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:58:08.324 Hooks:58 - Failed Scenario Name : Application allow user to save after entering first-last name without mobile number/E-mail
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:59:16.056 Hooks:46 - Start Scenario Name : Application is not displaying the Customer address in the drop down list it shows as empty in the following scenario
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 00:59:26.121 Hooks:58 - Failed Scenario Name : Application is not displaying the Customer address in the drop down list it shows as empty in the following scenario
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:00:33.979 Hooks:46 - Start Scenario Name : Application allow to remove the new customer in the order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:00:44.067 Hooks:58 - Failed Scenario Name : Application allow to remove the new customer in the order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:01:51.731 Hooks:46 - Start Scenario Name : Create House Account for New Customers ----
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:02:01.778 Hooks:58 - Failed Scenario Name : Create House Account for New Customers ----
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:03:09.820 Hooks:46 - Start Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:03:40.862 Hooks:58 - Failed Scenario Name : verify the 86 list will be displayed on the top of the login screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:04:48.596 Hooks:46 - Start Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:05:20.670 Hooks:58 - Failed Scenario Name : Verify application allows to Enter the Qty directly for input field update.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:06:28.488 Hooks:46 - Start Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:07:28.592 Hooks:58 - Failed Scenario Name : Verify multiple menu's applied qty in '86 List' Operation screen & Changes in 86 List of Login screen,Verify edited menu's qty in '86 List' Operation screen & Changes in 86 List of Login screen..
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:08:36.774 Hooks:46 - Start Scenario Name : Verify Newly added menu item is available in 86 List in POS login screen and Operation Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:09:07.845 Hooks:58 - Failed Scenario Name : Verify Newly added menu item is available in 86 List in POS login screen and Operation Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:10:15.476 Hooks:46 - Start Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:11:15.605 Hooks:58 - Failed Scenario Name : verify the available quantity decreased after ordering menu item in the order screen,Verify available qty is reduced when repeat order through menu option,Verify available qty is reduced when repeat order through Customer Profile screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:12:23.277 Hooks:46 - Start Scenario Name : verify the available quantity reverted when place menu item and void it before send to the kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:13:23.379 Hooks:58 - Failed Scenario Name : verify the available quantity reverted when place menu item and void it before send to the kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:14:31.062 Hooks:46 - Start Scenario Name : Verify application allows to repeat order up to its maximum qty.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:15:31.172 Hooks:58 - Failed Scenario Name : Verify application allows to repeat order up to its maximum qty.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:16:38.865 Hooks:46 - Start Scenario Name : verify the available quantity when reopen the closed check from check stats
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:17:38.936 Hooks:58 - Failed Scenario Name : verify the available quantity when reopen the closed check from check stats
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:18:46.847 Hooks:46 - Start Scenario Name : verify the available quantity when reopen the closed check and void item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:19:46.932 Hooks:58 - Failed Scenario Name : verify the available quantity when reopen the closed check and void item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:20:54.739 Hooks:46 - Start Scenario Name : verify the available quantity should not reduce again when reopen the closed check and submit it again
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:21:54.795 Hooks:58 - Failed Scenario Name : verify the available quantity should not reduce again when reopen the closed check and submit it again
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:23:02.574 Hooks:46 - Start Scenario Name : verify the available quantity when reopen the closed check and void item and submit it
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:24:02.643 Hooks:58 - Failed Scenario Name : verify the available quantity when reopen the closed check and void item and submit it
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:25:10.264 Hooks:46 - Start Scenario Name : verify the applied quantity displayed on the menu name in order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:26:10.345 Hooks:58 - Failed Scenario Name : verify the applied quantity displayed on the menu name in order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:27:18.046 Hooks:46 - Start Scenario Name : verify the quantity of menu item changes when change the quantity in 86 list
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:28:18.152 Hooks:58 - Failed Scenario Name : verify the quantity of menu item changes when change the quantity in 86 list
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:29:27.216 Hooks:46 - Start Scenario Name : verify the quantity of menu item is reduces in login screen 86 list when place the order and close the sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:30:27.312 Hooks:58 - Failed Scenario Name : verify the quantity of menu item is reduces in login screen 86 list when place the order and close the sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:31:35.046 Hooks:46 - Start Scenario Name : Verify Qty of menu item is reduces in Login screen 86 List, when place the menu item and click on All.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:32:35.146 Hooks:58 - Failed Scenario Name : Verify Qty of menu item is reduces in Login screen 86 List, when place the menu item and click on All.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:33:43.935 Hooks:46 - Start Scenario Name : verify the quantity tool tip is disappear on the menu item in the order screen when disable the 86 list button in BO
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:33:53.989 Hooks:58 - Failed Scenario Name : verify the quantity tool tip is disappear on the menu item in the order screen when disable the 86 list button in BO
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:35:01.666 Hooks:46 - Start Scenario Name : Verify Qty is appear on the '86 List' menu item in Lite Mode.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:35:33.728 Hooks:58 - Failed Scenario Name : Verify Qty is appear on the '86 List' menu item in Lite Mode.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:36:41.458 Hooks:46 - Start Scenario Name : Verify QTY is displays on the menu under display groups.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:37:41.592 Hooks:58 - Failed Scenario Name : Verify QTY is displays on the menu under display groups.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:38:49.394 Hooks:46 - Start Scenario Name : verify the quantity of an item not depends on the serving size of an item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:39:49.444 Hooks:58 - Failed Scenario Name : verify the quantity of an item not depends on the serving size of an item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:40:57.108 Hooks:46 - Start Scenario Name : verify the discount free item count in 86 list
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:41:57.216 Hooks:58 - Failed Scenario Name : verify the discount free item count in 86 list
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:43:04.941 Hooks:46 - Start Scenario Name : verify the available quantity reverted when void the free item after applied free item discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:44:05.082 Hooks:58 - Failed Scenario Name : verify the available quantity reverted when void the free item after applied free item discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:45:12.813 Hooks:46 - Start Scenario Name : verify applications displays the 86 list enabled menu items but applicable time applied menu item in login and operations screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:45:43.880 Hooks:58 - Failed Scenario Name : verify applications displays the 86 list enabled menu items but applicable time applied menu item in login and operations screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:46:51.629 Hooks:46 - Start Scenario Name : Verify gift card tab should open along with Give X
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:47:01.700 Hooks:58 - Failed Scenario Name : Verify gift card tab should open along with Give X
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:48:10.231 Hooks:46 - Start Scenario Name : In Check stats, check should be added in Void Checks and amount should be show as 0.00/Gift Card-Void Recharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:48:20.296 Hooks:58 - Failed Scenario Name : In Check stats, check should be added in Void Checks and amount should be show as 0.00/Gift Card-Void Recharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:49:28.269 Hooks:46 - Start Scenario Name : Gift Card-Void Recharge after Redeemed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:49:38.296 Hooks:58 - Failed Scenario Name : Gift Card-Void Recharge after Redeemed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:50:45.952 Hooks:46 - Start Scenario Name : Check should be added in Void Checks and amount should be shown / Gift Card-Void Recharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:50:55.996 Hooks:58 - Failed Scenario Name : Check should be added in Void Checks and amount should be shown / Gift Card-Void Recharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:52:03.971 Hooks:46 - Start Scenario Name : Gift Card - Void Recharge - Check should be added in Void Checks and amount should be shown - Phone Order xxxxx
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:52:14.041 Hooks:58 - Failed Scenario Name : Gift Card - Void Recharge - Check should be added in Void Checks and amount should be shown - Phone Order xxxxx
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:53:21.772 Hooks:46 - Start Scenario Name : Gift Card Void Check - Reopen Closed check from check stats and void the check after deleting payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:53:31.852 Hooks:58 - Failed Scenario Name : Gift Card Void Check - Reopen Closed check from check stats and void the check after deleting payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:54:39.658 Hooks:46 - Start Scenario Name : Gift Card - Recuring Balance should be added from the Begining Balance with the Entered amount with Phone Order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:54:49.686 Hooks:58 - Failed Scenario Name : Gift Card - Recuring Balance should be added from the Begining Balance with the Entered amount with Phone Order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:55:57.542 Hooks:46 - Start Scenario Name : Gift Card-Void Recharge - In Check stats, Check should be added in Void Checks and amount should be show as 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:56:07.580 Hooks:58 - Failed Scenario Name : Gift Card-Void Recharge - In Check stats, Check should be added in Void Checks and amount should be show as 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:57:15.310 Hooks:46 - Start Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:57:25.383 Hooks:58 - Failed Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:58:33.065 Hooks:46 - Start Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:58:43.140 Hooks:58 - Failed Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 01:59:50.847 Hooks:46 - Start Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip and Partial Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:00:00.914 Hooks:58 - Failed Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip and Partial Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:01:08.593 Hooks:46 - Start Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip and Partial Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:01:18.639 Hooks:58 - Failed Scenario Name : Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip and Partial Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:02:26.471 Hooks:46 - Start Scenario Name : Gift Card- Void Item,Gift Card- Void Check,Gift Card- Void
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:02:36.503 Hooks:58 - Failed Scenario Name : Gift Card- Void Item,Gift Card- Void Check,Gift Card- Void
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:03:44.148 Hooks:46 - Start Scenario Name : Gift Card-Void Recharge After Redeemed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:03:54.196 Hooks:58 - Failed Scenario Name : Gift Card-Void Recharge After Redeemed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:05:02.198 Hooks:46 - Start Scenario Name : Loyalty for new customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:05:12.271 Hooks:58 - Failed Scenario Name : Loyalty for new customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:06:20.020 Hooks:46 - Start Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:06:30.083 Hooks:58 - Failed Scenario Name : Loyalty For New Customer - Delivery Service Type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:07:38.823 Hooks:46 - Start Scenario Name : Upcharge Reopen Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:07:48.887 Hooks:58 - Failed Scenario Name : Upcharge Reopen Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:08:56.672 Hooks:46 - Start Scenario Name : Void open item - Reopen check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:09:06.742 Hooks:58 - Failed Scenario Name : Void open item - Reopen check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:10:14.376 Hooks:46 - Start Scenario Name : Menu Option - Hold, Fire, Repeat, Quantity, Attach, Togo, Deselected from an Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:10:24.446 Hooks:58 - Failed Scenario Name : Menu Option - Hold, Fire, Repeat, Quantity, Attach, Togo, Deselected from an Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:11:32.138 Hooks:46 - Start Scenario Name : Menu Options - Open Discount, Remove Open Discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:11:42.204 Hooks:58 - Failed Scenario Name : Menu Options - Open Discount, Remove Open Discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:12:49.512 Hooks:46 - Start Scenario Name : Menu Option - Open Modifier , Open Modifier not Apply when Sale sent to kitchecn
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:12:59.583 Hooks:58 - Failed Scenario Name : Menu Option - Open Modifier , Open Modifier not Apply when Sale sent to kitchecn
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:14:07.393 Hooks:46 - Start Scenario Name : Upcharge Items , Additional Modifiers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:14:17.454 Hooks:58 - Failed Scenario Name : Upcharge Items , Additional Modifiers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:15:26.273 Hooks:46 - Start Scenario Name : Sync icon on Order Screen, Sync icon on Order Screen, should see close the sale popup, Settings icon on Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:15:36.344 Hooks:58 - Failed Scenario Name : Sync icon on Order Screen, Sync icon on Order Screen, should see close the sale popup, Settings icon on Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:16:44.128 Hooks:46 - Start Scenario Name : Menu Option - Open Item,  void open item - Check should void, Open Item - Void Item, Void Item After Order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:16:54.214 Hooks:58 - Failed Scenario Name : Menu Option - Open Item,  void open item - Check should void, Open Item - Void Item, Void Item After Order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:18:02.028 Hooks:46 - Start Scenario Name : Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:18:12.117 Hooks:58 - Failed Scenario Name : Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:19:20.694 Hooks:46 - Start Scenario Name : Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:19:30.739 Hooks:58 - Failed Scenario Name : Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:20:38.367 Hooks:46 - Start Scenario Name : Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:20:48.457 Hooks:58 - Failed Scenario Name : Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:21:56.163 Hooks:46 - Start Scenario Name : Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:22:06.211 Hooks:58 - Failed Scenario Name : Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:23:14.014 Hooks:46 - Start Scenario Name : Check Payment through Side CC with discount(Open item - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:23:24.102 Hooks:58 - Failed Scenario Name : Check Payment through Side CC with discount(Open item - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:24:31.860 Hooks:46 - Start Scenario Name : Menu Option - Remove Open Modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:24:41.924 Hooks:58 - Failed Scenario Name : Menu Option - Remove Open Modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:25:49.745 Hooks:46 - Start Scenario Name : Open Modifiers Tab, Delete modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:25:59.844 Hooks:58 - Failed Scenario Name : Open Modifiers Tab, Delete modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:27:07.627 Hooks:46 - Start Scenario Name : Application allow user to Hold automatic/Hold Manual Tab should appear ------execute Menu Option
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:27:17.696 Hooks:58 - Failed Scenario Name : Application allow user to Hold automatic/Hold Manual Tab should appear ------execute Menu Option
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:28:25.511 Hooks:46 - Start Scenario Name : BarTab login as initial screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:29:25.610 Hooks:58 - Failed Scenario Name : BarTab login as initial screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:30:33.421 Hooks:46 - Start Scenario Name : Log-OFF Each Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:31:03.467 Hooks:58 - Failed Scenario Name : Log-OFF Each Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:32:11.234 Hooks:46 - Start Scenario Name : Cancel - Dine in Service type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:32:21.283 Hooks:58 - Failed Scenario Name : Cancel - Dine in Service type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:33:28.973 Hooks:46 - Start Scenario Name : Selecting QSR order type from combo and placing an order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:33:39.046 Hooks:58 - Failed Scenario Name : Selecting QSR order type from combo and placing an order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:34:47.203 Hooks:46 - Start Scenario Name : Verify whether IPad allow the user to billing option through NMI without selecting customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:34:57.230 Hooks:58 - Failed Scenario Name : Verify whether IPad allow the user to billing option through NMI without selecting customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:36:05.307 Hooks:46 - Start Scenario Name : Service Type changing Table Layout To For Here Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:37:05.411 Hooks:58 - Failed Scenario Name : Service Type changing Table Layout To For Here Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:38:14.032 Hooks:46 - Start Scenario Name : Service Type changing ToGo To For Here screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:38:24.109 Hooks:58 - Failed Scenario Name : Service Type changing ToGo To For Here screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:39:31.851 Hooks:46 - Start Scenario Name : Verify whether application TOGO menu items print the check order from Phone order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:39:41.941 Hooks:58 - Failed Scenario Name : Verify whether application TOGO menu items print the check order from Phone order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:40:50.157 Hooks:46 - Start Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:41:00.227 Hooks:58 - Failed Scenario Name : Service Type  in Order Screen,Seats
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:42:07.883 Hooks:46 - Start Scenario Name : All Button - During Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:42:17.945 Hooks:58 - Failed Scenario Name : All Button - During Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:43:25.682 Hooks:46 - Start Scenario Name : Discount - Order Screen,Discount for Menu Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:43:35.743 Hooks:58 - Failed Scenario Name : Discount - Order Screen,Discount for Menu Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:44:43.353 Hooks:46 - Start Scenario Name : Check with normal bill without discount/Gratuity/upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:44:53.384 Hooks:58 - Failed Scenario Name : Check with normal bill without discount/Gratuity/upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:46:01.189 Hooks:46 - Start Scenario Name : QSR -  Check with discount(item based - Before tax) as percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:46:11.251 Hooks:58 - Failed Scenario Name : QSR -  Check with discount(item based - Before tax) as percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:47:18.920 Hooks:46 - Start Scenario Name : Qsr - Check with discount(item based - After tax) as Set Price 500
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:47:28.981 Hooks:58 - Failed Scenario Name : Qsr - Check with discount(item based - After tax) as Set Price 500
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:48:37.374 Hooks:46 - Start Scenario Name : Check with discount(Check based - After tax) as Percentage-Discount - Check based
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:48:47.447 Hooks:58 - Failed Scenario Name : Check with discount(Check based - After tax) as Percentage-Discount - Check based
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:49:55.170 Hooks:46 - Start Scenario Name : Qsr  Check with discount(Check based - After tax) as Amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:50:05.206 Hooks:58 - Failed Scenario Name : Qsr  Check with discount(Check based - After tax) as Amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:51:12.977 Hooks:46 - Start Scenario Name : Qsr Check with discount(Check based - After tax) as Free
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:51:23.006 Hooks:58 - Failed Scenario Name : Qsr Check with discount(Check based - After tax) as Free
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:52:30.792 Hooks:46 - Start Scenario Name : Qsr Check with discount(Check based - Before tax) as Amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:52:40.880 Hooks:58 - Failed Scenario Name : Qsr Check with discount(Check based - Before tax) as Amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:53:49.049 Hooks:46 - Start Scenario Name : qsr - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:53:59.143 Hooks:58 - Failed Scenario Name : qsr - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:55:06.859 Hooks:46 - Start Scenario Name : qsr Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:55:16.909 Hooks:58 - Failed Scenario Name : qsr Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:56:24.584 Hooks:46 - Start Scenario Name : qsr Check with Mix&Match discount as Set Price as 600(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:56:34.649 Hooks:58 - Failed Scenario Name : qsr Check with Mix&Match discount as Set Price as 600(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:57:42.404 Hooks:46 - Start Scenario Name : Qsr Check with Mix&Match discount as Set Percentage(Least Expensive)(After tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:57:52.465 Hooks:58 - Failed Scenario Name : Qsr Check with Mix&Match discount as Set Percentage(Least Expensive)(After tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:59:00.203 Hooks:46 - Start Scenario Name : qsr Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 02:59:10.239 Hooks:58 - Failed Scenario Name : qsr Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:00:18.022 Hooks:46 - Start Scenario Name : qsr Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:00:28.079 Hooks:58 - Failed Scenario Name : qsr Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:01:35.724 Hooks:46 - Start Scenario Name : qsr Check with Mix&Match discount as Set Percentage Least Expensive (Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:01:45.794 Hooks:58 - Failed Scenario Name : qsr Check with Mix&Match discount as Set Percentage Least Expensive (Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:02:53.540 Hooks:46 - Start Scenario Name : qsr Check with vary gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:03:03.590 Hooks:58 - Failed Scenario Name : qsr Check with vary gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:04:11.470 Hooks:46 - Start Scenario Name : qsr Check With Fixed Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:04:21.552 Hooks:58 - Failed Scenario Name : qsr Check With Fixed Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:05:30.475 Hooks:46 - Start Scenario Name : qsr Check With Exclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:05:40.513 Hooks:58 - Failed Scenario Name : qsr Check With Exclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:06:48.328 Hooks:46 - Start Scenario Name : qsr Check with tax exempt with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:06:58.415 Hooks:58 - Failed Scenario Name : qsr Check with tax exempt with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:08:06.348 Hooks:46 - Start Scenario Name : qsr Check With upcharge(Amount)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:08:16.406 Hooks:58 - Failed Scenario Name : qsr Check With upcharge(Amount)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:09:24.144 Hooks:46 - Start Scenario Name : qsr check payment by HA for New created customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:09:34.195 Hooks:58 - Failed Scenario Name : qsr check payment by HA for New created customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:10:42.005 Hooks:46 - Start Scenario Name : qsr Void HA payment check and again add menu item & Payment through HA
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:10:52.061 Hooks:58 - Failed Scenario Name : qsr Void HA payment check and again add menu item & Payment through HA
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:11:59.771 Hooks:46 - Start Scenario Name : qsr Check Payment through Other payment - Check with discount(item based - After tax) as amount 10, as set Price 500, as Free ,
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:12:09.790 Hooks:58 - Failed Scenario Name : qsr Check Payment through Other payment - Check with discount(item based - After tax) as amount 10, as set Price 500, as Free ,
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:13:17.577 Hooks:46 - Start Scenario Name : Check Payment through others payment - Check with discount(Item based - Before tax) as Percentage, as amount 10 , as Set Price 500 , as Free
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:13:27.656 Hooks:58 - Failed Scenario Name : Check Payment through others payment - Check with discount(Item based - Before tax) as Percentage, as amount 10 , as Set Price 500 , as Free
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:14:35.407 Hooks:46 - Start Scenario Name : Check Payment through Other payment - Check with discount(check based - After tax) as percentage, as Amount,as set price, as Free
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:14:45.475 Hooks:58 - Failed Scenario Name : Check Payment through Other payment - Check with discount(check based - After tax) as percentage, as Amount,as set price, as Free
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:15:53.362 Hooks:46 - Start Scenario Name : qsr Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:16:03.399 Hooks:58 - Failed Scenario Name : qsr Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:17:11.324 Hooks:46 - Start Scenario Name : qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:17:21.377 Hooks:58 - Failed Scenario Name : qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:18:29.097 Hooks:46 - Start Scenario Name : qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:18:39.167 Hooks:58 - Failed Scenario Name : qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:19:46.944 Hooks:46 - Start Scenario Name : qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:19:57.022 Hooks:58 - Failed Scenario Name : qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price(After Tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:21:04.810 Hooks:46 - Start Scenario Name : qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage(Most Expensive)(After tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:21:14.897 Hooks:58 - Failed Scenario Name : qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage(Most Expensive)(After tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:22:22.647 Hooks:46 - Start Scenario Name : qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:22:32.689 Hooks:58 - Failed Scenario Name : qsr - Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:23:40.479 Hooks:46 - Start Scenario Name : qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:23:50.540 Hooks:58 - Failed Scenario Name : qsr -Check Payment through Other payment - Check with Mix&Match discount as Set Percentage Most Expensive (Before tax)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:24:58.210 Hooks:46 - Start Scenario Name : qsr -Check with vary gratuity - other payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:25:08.277 Hooks:58 - Failed Scenario Name : qsr -Check with vary gratuity - other payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:26:15.927 Hooks:46 - Start Scenario Name : Qsr- Check Payment through other payment - Check with tax exempt and with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:26:26.001 Hooks:58 - Failed Scenario Name : Qsr- Check Payment through other payment - Check with tax exempt and with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:27:33.793 Hooks:46 - Start Scenario Name : qsr Check Payment through other payment - Check With upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:27:43.855 Hooks:58 - Failed Scenario Name : qsr Check Payment through other payment - Check With upcharge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:28:51.545 Hooks:46 - Start Scenario Name : qsr- Check Payment through side CC and customer & Merchant copy enabled without tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:29:01.580 Hooks:58 - Failed Scenario Name : qsr- Check Payment through side CC and customer & Merchant copy enabled without tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:30:08.854 Hooks:46 - Start Scenario Name : qsr Check Payment through Side CC and customer & Merchant copy enabled tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:30:18.901 Hooks:58 - Failed Scenario Name : qsr Check Payment through Side CC and customer & Merchant copy enabled tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:31:26.588 Hooks:46 - Start Scenario Name : qsr Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:31:36.689 Hooks:58 - Failed Scenario Name : qsr Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:33:44.290 Hooks:58 - Failed Scenario Name : qsr Check Payment through Side CC with discount(item based - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:34:52.381 Hooks:46 - Start Scenario Name : qsr Check Payment through side CC with discount(Check based - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:35:02.464 Hooks:58 - Failed Scenario Name : qsr Check Payment through side CC with discount(Check based - After tax/Before) as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:36:10.180 Hooks:46 - Start Scenario Name : qsr Modify with option
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:36:20.208 Hooks:58 - Failed Scenario Name : qsr Modify with option
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:37:27.981 Hooks:46 - Start Scenario Name : Application showing the service type in Order Screen,Verify menu categories,Verify add new seat button,When User click add new customer icon,Delete any seat,Verify select Upcharge MenuItems,Verify select Upcharge MenuItems with Modifiers,Verify Reopen Upcharge Order.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:37:38.047 Hooks:58 - Failed Scenario Name : Application showing the service type in Order Screen,Verify menu categories,Verify add new seat button,When User click add new customer icon,Delete any seat,Verify select Upcharge MenuItems,Verify select Upcharge MenuItems with Modifiers,Verify Reopen Upcharge Order.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:38:45.713 Hooks:46 - Start Scenario Name : Verify check options tab should open at all scenarios,Verify Finish button for order / menu item screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:38:55.767 Hooks:58 - Failed Scenario Name : Verify check options tab should open at all scenarios,Verify Finish button for order / menu item screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:40:03.450 Hooks:46 - Start Scenario Name : Check number gets changed after completing the sale in QSR Screen --verify changing check number
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:40:13.490 Hooks:58 - Failed Scenario Name : Check number gets changed after completing the sale in QSR Screen --verify changing check number
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:41:21.216 Hooks:46 - Start Scenario Name : Menu item with - mandatory modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:41:31.248 Hooks:58 - Failed Scenario Name : Menu item with - mandatory modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:42:39.013 Hooks:46 - Start Scenario Name : Verify menu item and modifier with inclusive tax,Verify menu item and modifier with exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:42:49.041 Hooks:58 - Failed Scenario Name : Verify menu item and modifier with inclusive tax,Verify menu item and modifier with exclusive tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:43:56.764 Hooks:46 - Start Scenario Name : Check number gets changed after changing a service type in QSR Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:44:06.844 Hooks:58 - Failed Scenario Name : Check number gets changed after changing a service type in QSR Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:45:15.351 Hooks:46 - Start Scenario Name : Void before order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:45:25.402 Hooks:58 - Failed Scenario Name : Void before order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:46:33.131 Hooks:46 - Start Scenario Name : Void reopen check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:46:43.210 Hooks:58 - Failed Scenario Name : Void reopen check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:47:51.745 Hooks:46 - Start Scenario Name : Void Normal Check — Select from CheckStatus/Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:48:01.829 Hooks:58 - Failed Scenario Name : Void Normal Check — Select from CheckStatus/Closed Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:49:09.566 Hooks:46 - Start Scenario Name : Verify Tax Exempt- From Order Screen,Application  should removed Tax Exempt and Tax should applied for that Entire Check from Order Screen,Verify Application should not allow to do Tax Exempt after Payment Done Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:49:19.625 Hooks:58 - Failed Scenario Name : Verify Tax Exempt- From Order Screen,Application  should removed Tax Exempt and Tax should applied for that Entire Check from Order Screen,Verify Application should not allow to do Tax Exempt after Payment Done Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:50:27.231 Hooks:46 - Start Scenario Name : Verify Check Payment through Side CC with Tax Exempt and also with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:50:37.261 Hooks:58 - Failed Scenario Name : Verify Check Payment through Side CC with Tax Exempt and also with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:51:45.023 Hooks:46 - Start Scenario Name : Verify Check Payment through Side CC with Tax Exempt not select customer in payment screen and also with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:51:55.104 Hooks:58 - Failed Scenario Name : Verify Check Payment through Side CC with Tax Exempt not select customer in payment screen and also with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:53:03.483 Hooks:46 - Start Scenario Name : Settings Icon on Order Screen,Sync Icon on Order Screen,Application allow user to sync the change through order screen sync button,Add Customer' Icon,Application don't allow user to do "Log off","Operation","Till Management","Sync Icon","All" button process during a sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:53:13.572 Hooks:58 - Failed Scenario Name : Settings Icon on Order Screen,Sync Icon on Order Screen,Application allow user to sync the change through order screen sync button,Add Customer' Icon,Application don't allow user to do "Log off","Operation","Till Management","Sync Icon","All" button process during a sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:54:21.349 Hooks:46 - Start Scenario Name : Application allow user to login through operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:54:31.399 Hooks:58 - Failed Scenario Name : Application allow user to login through operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:55:39.094 Hooks:46 - Start Scenario Name : Cash-On Empty Checks- empty
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:55:49.131 Hooks:58 - Failed Scenario Name : Cash-On Empty Checks- empty
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:56:56.842 Hooks:46 - Start Scenario Name : Normal check with Fast cash payment and Service Charge,Normal check with cash payment and Service Charge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:57:06.907 Hooks:58 - Failed Scenario Name : Normal check with Fast cash payment and Service Charge,Normal check with cash payment and Service Charge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:58:14.558 Hooks:46 - Start Scenario Name : Normal Check Cancel - Cancel “Enter Customer Name” popup todo
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:58:24.596 Hooks:58 - Failed Scenario Name : Normal Check Cancel - Cancel “Enter Customer Name” popup todo
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:59:32.453 Hooks:46 - Start Scenario Name : Normal check with Side CC payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 03:59:42.515 Hooks:58 - Failed Scenario Name : Normal check with Side CC payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:00:50.309 Hooks:46 - Start Scenario Name : Check Discount for item based
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:01:00.376 Hooks:58 - Failed Scenario Name : Check Discount for item based
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:02:08.140 Hooks:46 - Start Scenario Name : Check with discount(Check based - After tax) as Amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:02:18.193 Hooks:58 - Failed Scenario Name : Check with discount(Check based - After tax) as Amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:03:25.861 Hooks:46 - Start Scenario Name : Check with discount(item based - After tax) as amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:03:35.925 Hooks:58 - Failed Scenario Name : Check with discount(item based - After tax) as amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:04:43.738 Hooks:46 - Start Scenario Name : Not allows to Remove the Auto Discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:04:53.812 Hooks:58 - Failed Scenario Name : Not allows to Remove the Auto Discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:06:01.699 Hooks:46 - Start Scenario Name : Verify item based discount after tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:06:11.781 Hooks:58 - Failed Scenario Name : Verify item based discount after tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:07:19.668 Hooks:46 - Start Scenario Name : Verify check based discount after tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:07:29.747 Hooks:58 - Failed Scenario Name : Verify check based discount after tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:08:37.568 Hooks:46 - Start Scenario Name : Verify check based discount after tax with open item (amount only)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:08:47.608 Hooks:58 - Failed Scenario Name : Verify check based discount after tax with open item (amount only)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:09:55.317 Hooks:46 - Start Scenario Name : Verify check with fix gratuity on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:10:05.387 Hooks:58 - Failed Scenario Name : Verify check with fix gratuity on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:11:13.099 Hooks:46 - Start Scenario Name : Verify check with tax exempt and with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:11:23.145 Hooks:58 - Failed Scenario Name : Verify check with tax exempt and with customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:12:31.549 Hooks:46 - Start Scenario Name : Verify check with vary gratuity through Payment screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:12:41.574 Hooks:58 - Failed Scenario Name : Verify check with vary gratuity through Payment screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:13:49.389 Hooks:46 - Start Scenario Name : Verify Check Payment through CC Side with Item Based Discount - After Tax as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:13:59.476 Hooks:58 - Failed Scenario Name : Verify Check Payment through CC Side with Item Based Discount - After Tax as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:15:07.293 Hooks:46 - Start Scenario Name : Verify check with tax exempt for pre defined customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:15:17.368 Hooks:58 - Failed Scenario Name : Verify check with tax exempt for pre defined customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:16:25.078 Hooks:46 - Start Scenario Name : Verify Check Payment through CC Side with Check Based Discount - After Tax as percentage and with tip# Given User click setting icon
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:16:35.158 Hooks:58 - Failed Scenario Name : Verify Check Payment through CC Side with Check Based Discount - After Tax as percentage and with tip# Given User click setting icon
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:17:42.896 Hooks:46 - Start Scenario Name : Verify Check Payment through CC Side with Open item Discount- After Tax as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:17:52.930 Hooks:58 - Failed Scenario Name : Verify Check Payment through CC Side with Open item Discount- After Tax as percentage and with tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:19:00.851 Hooks:46 - Start Scenario Name : Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - After Tax as Percentage and with Tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:19:10.935 Hooks:58 - Failed Scenario Name : Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - After Tax as Percentage and with Tip
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:20:18.559 Hooks:46 - Start Scenario Name : Discount - Item Based After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:20:28.613 Hooks:58 - Failed Scenario Name : Discount - Item Based After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:21:36.437 Hooks:46 - Start Scenario Name : Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:21:46.473 Hooks:58 - Failed Scenario Name : Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:22:54.252 Hooks:46 - Start Scenario Name : Discount - Check Based with After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:23:04.297 Hooks:58 - Failed Scenario Name : Discount - Check Based with After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:24:11.973 Hooks:46 - Start Scenario Name : Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:24:22.065 Hooks:58 - Failed Scenario Name : Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:25:29.811 Hooks:46 - Start Scenario Name : Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:25:39.859 Hooks:58 - Failed Scenario Name : Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:26:48.546 Hooks:46 - Start Scenario Name : Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:26:58.580 Hooks:58 - Failed Scenario Name : Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:28:06.244 Hooks:46 - Start Scenario Name : Open Gratuity Page
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:28:16.301 Hooks:58 - Failed Scenario Name : Open Gratuity Page
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:29:24.121 Hooks:46 - Start Scenario Name : Reduce Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:29:34.167 Hooks:58 - Failed Scenario Name : Reduce Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:30:41.867 Hooks:46 - Start Scenario Name : Verify Check Payment through CC with Gratuity(Fixed) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:30:51.911 Hooks:58 - Failed Scenario Name : Verify Check Payment through CC with Gratuity(Fixed) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:31:59.753 Hooks:46 - Start Scenario Name : Verify Check Payment through CC with Gratuity(Varying) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:32:09.824 Hooks:58 - Failed Scenario Name : Verify Check Payment through CC with Gratuity(Varying) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:34:17.930 Hooks:58 - Failed Scenario Name : Delete Modifier,Add Modifier,Cancel Modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:35:25.700 Hooks:46 - Start Scenario Name : Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:35:35.776 Hooks:58 - Failed Scenario Name : Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:36:44.478 Hooks:46 - Start Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:36:54.520 Hooks:58 - Failed Scenario Name : Item Based and Check based Taxes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:38:01.774 Hooks:46 - Start Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:38:11.857 Hooks:58 - Failed Scenario Name : Item Based Inclusive Tax
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:39:19.621 Hooks:46 - Start Scenario Name : Displaying the Open Till window
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:39:29.703 Hooks:58 - Failed Scenario Name : Displaying the Open Till window
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:40:37.392 Hooks:46 - Start Scenario Name : Application Set Till(User/Global) -- Enable User Global
+[${ctx:ROUTINGKEY} INFO ] 2024-02-02 04:40:47.460 Hooks:58 - Failed Scenario Name : Application Set Till(User/Global) -- Enable User Global

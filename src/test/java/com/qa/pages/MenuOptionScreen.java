@@ -606,7 +606,7 @@ try {
     }
     public void swipeModifierForDeleteInOrderScreen() throws InterruptedException {
 //        swipe( 32, 320, -42, 320,5000);
-        elementClick("/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div[4]/div[1]/div","Tapped Delete Button");
+        elementClick("(//div[@class='p-col-1 remove qsr-mod-padding']//div[.='x'])[2]","Tapped Delete Button");
     }
 
     public void getAmount(String numb){

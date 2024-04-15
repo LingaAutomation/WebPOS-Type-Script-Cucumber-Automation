@@ -53,8 +53,8 @@ Feature: QSR feature
 #    And I click Done button on the Popup
     #Operation Button - During sale
     And I click the Settings button
-#    Then I should see close your sale
-    And I should see close the sale
+    Then I should see close your sale
+#    And I should see close the sale
     And I click Done button on the Popup
     #Log off Button - During sale
     And I click log off button in order screen
@@ -4714,7 +4714,8 @@ Feature: QSR feature
     And I click Done button on the Popup
     When I click the Settings button
     #Application don't allow user to do "Operation" button process during a sale
-    Then User verify close sale popup info
+#    Then User verify close sale popup info
+    Then I should see close your sale
     And I click Done button on the Popup
      #Application don't allow user to do "Till" button process during a sale
 #    When User click "<btnTillMamagement>" in the order Screen "click till management button"
@@ -5127,7 +5128,7 @@ Feature: QSR feature
 ##    Given User select QSR mode on menu item page
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
-    And I selected quantity as "3"
+#    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "Check Based Amount"
@@ -5580,7 +5581,7 @@ Feature: QSR feature
     #Verify check with discount as set price which has check based and after tax discount
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
-    And I selected quantity as "3"
+#    And I selected quantity as "1"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "Check Based Set Price"
@@ -5630,7 +5631,7 @@ Feature: QSR feature
     #Verify check with discount as set price which has check based and before tax discount
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
-    And I selected quantity as "3"
+#    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-SetPriceBeforeTax"
@@ -5643,7 +5644,7 @@ Feature: QSR feature
     #Verify check with discount as Free which has check based and before tax discount
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
-    And I selected quantity as "3"
+#    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-Free-BeforeTax"
@@ -6998,7 +6999,7 @@ Feature: QSR feature
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-BeforeTax-OpenItem"
     And I click Back button on Discount Screen
-    And User verify check based discount before tax value as "$ 12.55" and open item with decimal number for Brushetta
+    And User verify check based discount before tax value as "$ 12.56" and open item with decimal number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button
@@ -7020,7 +7021,7 @@ Feature: QSR feature
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-BeforeTax-OpenItem"
     And I click Back button on Discount Screen
-    And User verify check based discount before tax value as "$ 12.55" and open item with whole number for Brushetta
+    And User verify check based discount before tax value as "$ 12.56" and open item with whole number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button

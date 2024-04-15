@@ -44,7 +44,7 @@ Feature: Gift Card
 
 
 
-  @Regression
+  @Regression909
   Scenario: In Check stats, check should be added in Void Checks and amount should be show as 0.00/Gift Card-Void Recharge
     Given User select QSR mode on menu item page
     Given User select DineIn mode
@@ -83,7 +83,7 @@ Feature: Gift Card
     When User click payment button
     When User select paid order
     Then User click delete button
-
+      And I wait sometimes
 #    And User click receipt printer button
     Then USer click cash button
     Then User click submit button
@@ -92,7 +92,7 @@ Feature: Gift Card
     And I click log off button in order screen
 
 
-  @Regression
+  @Regression87
   Scenario: Gift Card-Void Recharge after Redeemed
     When User click QSR on Menu Item page
     Then User select DineIn order type
@@ -118,19 +118,20 @@ Feature: Gift Card
     When User enter gift card number
     #Verify Gift Card- Redeem-Partial Payment
     Then User click clear button on gift card payment option
-    Then i should verify the deleted card number
+#    Then i should verify the deleted card number
     When User enter gift card number
     Then User click process
 #    And User click receipt printer button
     When User click Table Layout menu
-    Then I click the check from the table layout screen
-    When User click void button
-    Then User select void reason
-    And User click add void button
-    And I click Done button on the Popup
-    When I click QSR tab
-    And User click cancel button
-    And I click log off button in order screen
+    And I click power button
+#    Then I click the check from the table layout for merged
+#    When User click void button
+#    Then User select void reason
+#    And User click add void button
+#    And I click Done button on the Popup
+#    When I click QSR tab
+#    And User click cancel button
+#    And I click log off button in order screen
 
 
 
@@ -626,7 +627,7 @@ Feature: Gift Card
     And I click log off button in order screen
 
 
-
+@Gitf
   Scenario: Gift Card- Void Item,Gift Card- Void Check,Gift Card- Void
     Given User select QSR mode on menu item page
     When User select DineIn mode

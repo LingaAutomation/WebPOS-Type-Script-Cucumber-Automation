@@ -1,0 +1,1166 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:54.167 Hooks:46 - Start Scenario Name : verify the values in closeday screen before creating a sales,netsale value,gross sale value,Cover count,creditcard,gross receipt,gross sale,netsale,netvoid,initialTaxExempt,initial grossvoid,
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:54.222 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:54.257 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:54.311 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:54.342 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:54.370 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:56.471 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:56.516 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:56.577 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:09:59.637 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:07.683 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:09.715 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:13.804 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:17.863 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:26.933 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:26.977 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:28.033 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:30.110 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:30.142 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:32.201 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:32.226 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:32.250 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:32.274 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:32.300 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:32.344 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:35.415 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:43.492 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:46.517 CICloseDayScreen:305 - Displayed - 0.00 verify the 0.00value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:46.527 CICloseDayScreen:312 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:46.536 CICloseDayScreen:328 - Displayed - 0 Check New customer value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:46.546 CICloseDayScreen:335 - Displayed - 0 Check All employees value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:48.569 CICloseDayScreen:501 - Displayed - 0.00 verify the total net sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:48.579 CICloseDayScreen:319 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:48.588 CICloseDayScreen:985 - Displayed - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:50.610 CICloseDayScreen:473 - Displayed - 0.00 Verify Gross Receipt
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:52.633 CICloseDayScreen:538 - Displayed - 0.00 Check gross void value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:52.643 CICloseDayScreen:507 - Displayed - 0.00 Check net void value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:54.667 CICloseDayScreen:552 - Displayed - 0.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:54.677 CICloseDayScreen:809 - From
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:54.677 CICloseDayScreen:810 - -
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:54.678 CICloseDayScreen:811 - 07-Feb-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:54.678 CICloseDayScreen:812 - 10:40
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:54.678 CICloseDayScreen:816 - 07-Feb-2024
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:54.691 BasePage:278 - Click the Print Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:55.736 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:55.876 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:55.921 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:55.946 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:55.970 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:55.999 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:58.079 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:58.113 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:10:58.162 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:01.225 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:09.273 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:11.302 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:15.379 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:19.434 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:28.503 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:28.548 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:29.600 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:31.673 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:31.703 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:33.761 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:33.786 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:33.812 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:33.836 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:33.861 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:33.901 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:35.946 CICloseDayScreen:1106 - Displayed - Credit Card scroll close the day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:35.954 CICloseDayScreen:443 - Displayed - 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:37.981 CICloseDayScreen:568 - Displayed - Paid In
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:40.008 CICloseDayScreen:576 - Displayed - Paid Out
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:40.020 CICloseDayScreen:720 - Displayed - Cash Expected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:40.031 CICloseDayScreen:590 - Displayed - Over / Shortage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:41.055 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:41.155 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:41.180 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:41.205 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:41.234 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:41.261 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:43.329 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:43.356 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:43.397 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:46.454 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:54.486 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:11:56.509 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:00.578 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:04.633 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:13.700 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:13.760 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:14.817 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:16.893 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:16.922 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:16.987 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:17.015 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:17.041 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:17.068 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:17.094 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:19.163 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:22.213 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:23.772 BasePage:278 - Selected - CIMiniFood
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:27.836 BasePage:278 - Selected - Mini idly
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:27.897 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:27.946 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:28.001 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:30.044 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:30.074 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:30.120 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:33.176 CICloseDayScreen:305 - Displayed - 7.14 verify the 50.00value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:33.186 CICloseDayScreen:312 - Displayed - 8.00 Check gross sale value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:33.195 CICloseDayScreen:328 - Displayed - 0 Check New customer value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:33.203 CICloseDayScreen:335 - Displayed - 0 Check All employees value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:35.225 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:39.312 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:41.363 BasePage:278 - Click the text cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:12:49.424 Hooks:58 - Failed Scenario Name : verify the values in close day screen after creating sales,verify cashierout popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:13:57.779 Hooks:46 - Start Scenario Name : Verify whether the system allow to sale recap after sale,grossvoid value,overshortage,cash record,verify employee,cashexpected paidout,paidin,close the day.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:13:57.805 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:13:57.835 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:13:57.863 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:13:57.890 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:13:57.917 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:00.004 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:00.037 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:00.089 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:03.149 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:11.208 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:13.236 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:17.336 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:21.397 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:30.464 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:30.505 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:31.562 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:33.637 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:33.666 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:33.715 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:33.738 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:33.764 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:33.787 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:33.811 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:35.877 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:38.925 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:40.484 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:44.549 BasePage:278 - Selected - Poori
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:44.607 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:44.663 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:44.718 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:46.758 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:46.786 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:48.843 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:48.868 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:48.890 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:48.913 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:48.938 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:48.985 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:49.033 BasePage:278 - Click the Print Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:49.074 CICloseDayScreen:409 - Displayed - SALES
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:51.092 CICloseDayScreen:545 - Displayed - 0.00 Check gross Void value
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:51.104 CICloseDayScreen:437 - Displayed - Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:53.131 CICloseDayScreen:1093 - Displayed - Over / Shortage
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:53.141 CICloseDayScreen:1098 - Displayed - -4.75
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:14:53.157 BasePage:278 - Click DropDown
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:15:04.300 Hooks:58 - Failed Scenario Name : Verify whether the system allow to sale recap after sale,grossvoid value,overshortage,cash record,verify employee,cashexpected paidout,paidin,close the day.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:12.428 Hooks:46 - Start Scenario Name : verify whether application shows net sale value after creating the sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:12.456 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:12.485 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:12.511 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:12.558 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:12.584 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:14.676 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:14.709 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:14.759 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:17.818 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:25.865 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:27.891 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:31.971 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:36.025 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:45.091 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:45.129 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:46.191 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:48.310 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:48.353 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:48.403 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:48.427 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:48.450 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:48.474 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:48.498 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:50.570 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:53.621 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:55.178 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:16:59.236 BasePage:278 - Selected - CI-Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:03.307 BasePage:278 - Selected - Paratha
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:05.360 MenuOptionScreen:154 - CI-Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:05.371 BasePage:278 - Tapped Menu Items to see Menu Option Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:06.417 MenuOptionScreen:160 - Menu Option - CI-Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:08.447 BasePage:278 - Tapped void button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:08.499 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:08.561 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:08.616 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:10.655 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:10.685 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:10.748 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:10.777 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:10.805 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:10.831 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:10.858 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:12.934 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:12.963 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:13.022 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:17:16.072 Hooks:58 - Failed Scenario Name : verify whether application shows net sale value after creating the sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:24.017 Hooks:46 - Start Scenario Name : Verify the Gift Card Sold after creating sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:24.041 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:24.073 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:24.099 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:24.125 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:24.150 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:26.255 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:26.288 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:26.343 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:29.408 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:37.467 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:39.487 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:43.575 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:47.634 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:56.708 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:56.766 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:57.831 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:59.910 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:59.941 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:18:59.991 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:00.015 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:00.038 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:00.061 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:00.084 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:02.154 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:02.183 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:02.229 BasePage:278 - Tapped Gift Card Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:02.272 BasePage:239 - Gift card screen is displayed - Gift Card
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:04.305 BasePage:278 - Tapped Card Number Field
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:04.341 BasePage:258 - Tapped Pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:04.368 BasePage:258 - Tapped Pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:04.406 BasePage:258 - Tapped Pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:04.434 BasePage:258 - Tapped Pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:04.461 BasePage:258 - Tapped Pin 5
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:04.487 BasePage:258 - Tapped Continue 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:06.539 BasePage:258 - Tapped Charge Amount Field
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:06.573 BasePage:258 - Tapped Pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:06.600 BasePage:258 - Tapped Pin 00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:06.626 BasePage:258 - Tapped Pin 00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:06.649 BasePage:258 - Tapped 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:08.697 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:10.751 BasePage:239 - Gift Card is Add to Order screen - GC-12345
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:10.767 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:10.827 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:10.876 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:12.917 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:12.943 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:14.991 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:15.015 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:15.038 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:15.061 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:15.086 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:15.145 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:16.044 CICloseDayScreen:803 - Displayed - 100.00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:17.072 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:17.209 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:17.232 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:17.255 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:17.279 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:17.303 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:19.379 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:19.408 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:19.450 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:22.506 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:30.543 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:32.565 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:36.647 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:40.707 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:49.783 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:49.822 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:50.877 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:52.966 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:52.996 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:53.045 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:53.073 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:53.097 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:53.122 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:53.161 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:55.231 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:58.283 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:19:59.841 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:20:03.910 BasePage:278 - Selected - OnionDosa144
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:20:03.956 BasePage:258 - Options button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:20:03.996 BasePage:278 - Tapped Gratuity Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:20:04.031 BasePage:239 - Add Gratuity Screen is Displayed - Add Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:20:22.628 Hooks:58 - Failed Scenario Name : verify Gratuity value,giftcard payment after sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:30.608 Hooks:46 - Start Scenario Name : Verify the Gross Sale value in sale recap, in mini dashboard after creating sale partial payment,
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:30.632 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:30.661 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:30.687 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:30.716 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:30.746 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:32.847 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:32.881 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:32.930 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:35.993 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:44.032 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:46.058 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:50.145 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:21:54.191 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:03.266 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:03.304 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:04.366 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:06.444 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:06.473 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:06.537 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:06.560 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:06.583 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:06.605 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:06.630 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:08.695 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:11.755 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:13.318 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:17.390 BasePage:278 - Selected - Poori
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:17.447 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:17.498 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:17.563 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:19.608 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:19.639 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:21.014 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:21.093 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:21.126 BasePage:278 - T17 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:21.164 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:21.195 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:21.288 OrderManagementScreen:1870 - 20-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:24.321 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:25.870 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:29.945 BasePage:278 - Selected - CI-Biriyani
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:29.986 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:30.025 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:30.065 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:31.310 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:31.657 OrdersAndDriversListScreen:88 - Check Status
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:31.675 BasePage:278 - Tapped closed Tab button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:36.779 PhoneOrderScreen:405 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:36.792 BasePage:258 - Tapped Closed Check in closed tab - 20-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:36.826 BasePage:278 - Tapped Reopen check stats button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:38.631 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:38.731 BasePage:278 - Payment  selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:38.780 BasePage:278 - Delete button tapped to delete the payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:40.839 BasePage:278 - Exit button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:42.892 BasePage:258 - Void button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:22:42.936 BasePage:278 - Ordered wrongly is selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:23:03.576 Hooks:58 - Failed Scenario Name : Verify the Gross Sale value in sale recap, in mini dashboard after creating sale partial payment,
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:12.878 Hooks:46 - Start Scenario Name : Verify whether application shows Net sale,net void record in sale recap after creating sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:12.899 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:12.927 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:12.953 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:12.978 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:13.004 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:15.104 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:15.135 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:15.185 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:18.237 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:20.295 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:24:21.326 Hooks:58 - Failed Scenario Name : Verify whether application shows Net sale,net void record in sale recap after creating sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:29.370 Hooks:46 - Start Scenario Name : Verify whether application shows Tax Excempt record in sale recap after creating sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:29.388 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:29.416 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:29.441 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:29.476 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:29.502 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:31.599 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:31.631 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:31.681 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:34.743 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:36.803 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:25:37.875 Hooks:58 - Failed Scenario Name : Verify whether application shows Tax Excempt record in sale recap after creating sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:46.732 Hooks:46 - Start Scenario Name : Verify whether application shows the Tax Amount in sale recap report after creating sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:46.756 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:46.785 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:46.810 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:46.837 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:46.868 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:48.971 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:49.002 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:49.053 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:52.116 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:26:52.167 BasePage:278 - Selected - Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:00.219 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:02.251 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:06.335 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:10.388 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:19.465 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:19.503 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:20.563 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:22.644 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:22.673 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:22.722 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:22.745 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:22.768 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:22.790 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:22.812 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:24.961 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:24.986 OrderManagementScreen:1870 - 23-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:28.024 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:29.589 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:33.658 BasePage:278 - Selected - Mushroom Noodles
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:33.709 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:33.757 BasePage:278 - Tapped Cash Payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:33.810 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:35.854 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:35.881 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:37.939 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:37.962 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:37.985 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:38.007 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:38.032 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:38.074 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:40.135 CICloseDayScreen:1080 - Displayed - 2.6667
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:40.146 CICloseDayScreen:1085 - Displayed - 1.4545
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:41.173 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:41.254 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:41.278 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:41.300 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:41.323 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:41.349 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:43.423 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:43.458 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:43.516 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:46.572 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:54.627 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:27:56.646 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:00.722 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:04.781 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:13.853 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:13.894 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:14.953 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:17.023 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:17.067 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:19.122 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:19.145 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:19.167 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:19.189 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:19.211 BasePage:278 - Selected Operation
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:19.249 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:19.307 BasePage:278 - Click DropDown
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:28:30.451 Hooks:58 - Failed Scenario Name : Verify whether application show the employees in the employees drop down list who have performed sales,verify the number of employees
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:39.245 Hooks:46 - Start Scenario Name : verify whether the user re-open a forced close check by clicking on the submit button,verfiy the force void check by clicking on void button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:39.275 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:39.303 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:39.336 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:39.367 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:39.395 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:41.498 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:41.531 BasePage:258 - Tapped the settings button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:41.584 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:44.648 BasePage:278 - Tapped Close All Cashier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:52.705 TillManagementScreen:1065 - Cashier Out Popup is Displayed 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:54.734 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:29:58.817 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:02.886 BasePage:278 - Selected Submit
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:11.962 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:12.001 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:13.050 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:15.124 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:15.154 BasePage:258 - Tapped log Off Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:15.203 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:15.225 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:15.248 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:15.270 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:15.293 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:17.363 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:17.394 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:18.762 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:18.845 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:18.878 BasePage:278 - T18 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:18.913 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:18.945 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:19.036 OrderManagementScreen:1870 - 24-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:22.071 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:23.625 BasePage:278 - Selected - CIFOOD
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:27.697 BasePage:278 - Selected - Chappathi
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:27.746 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:27.831 BasePage:278 - Tapped Operation Button on the Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:27.881 BasePage:278 - Tapped close day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:29.951 BasePage:278 - Selected - Close The Day
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:34.027 BasePage:278 - Selected Yes
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:36.082 BasePage:278 - Click the Active check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:36.118 BasePage:278 - click void button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:43.173 CICloseDayScreen:613 - Displayed - 0
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:43.186 BasePage:278 - Click the cancel Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:43.223 BasePage:278 - Tapped the Toggle Icon button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:44.280 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:46.367 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:46.402 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:47.667 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:47.701 BasePage:278 - Tapped closed Tab button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:52.813 PhoneOrderScreen:405 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:52.826 BasePage:258 - Tapped Closed Check in closed tab - 24-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:52.858 BasePage:278 - Tapped Reopen check stats button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:54.943 BasePage:278 - Payment button is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:54.991 BasePage:278 - click submit button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:56.243 BasePage:278 - Tapped Check Stats Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:30:59.286 CICloseDayScreen:630 - Displayed - No active checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:00.304 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:00.532 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:00.561 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:00.589 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:00.619 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:00.648 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:02.736 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:02.830 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:04.313 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:04.394 BasePage:278 - Tapped Operation Button on the Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:06.463 TableLayOutScreen:1497 - Operation screen is Displayed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:06.479 BasePage:278 - Tapped POS Icon 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:08.557 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:08.586 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:09.953 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:11.016 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:11.107 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:11.167 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:11.207 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:11.231 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:11.256 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:13.324 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:13.354 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:14.719 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:14.795 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:14.826 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:14.862 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:14.896 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:14.989 OrderManagementScreen:1870 - 24-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:16.014 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:31:17.042 Hooks:58 - Failed Scenario Name : Merge Checks - Rare Scenarios
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:25.023 Hooks:46 - Start Scenario Name : Merge 5 check without pay
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:25.047 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:25.075 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:25.105 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:25.133 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:25.159 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:27.261 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:27.296 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:28.663 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:28.741 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:28.780 BasePage:278 - T1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:28.816 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:28.854 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:28.953 OrderManagementScreen:1870 - 25-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:29.986 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:31.041 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:32:43.126 Hooks:58 - Failed Scenario Name : Merge 5 check without pay
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:51.897 Hooks:46 - Start Scenario Name : Check whether the gratuity amount show correctly when both the seats are placed with inclusive tax menu items and gratuity applied
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:51.922 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:51.950 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:51.977 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:52.003 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:52.030 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:54.140 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:54.175 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:55.542 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:55.627 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:55.665 BasePage:278 - T8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:55.702 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:55.734 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:59.787 TableLayOutScreen:1129 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:33:59.795 OrderManagementScreen:1870 - 26-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:34:01.835 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:34:02.886 Hooks:58 - Failed Scenario Name : Check whether the gratuity amount show correctly when both the seats are placed with inclusive tax menu items and gratuity applied
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:10.807 Hooks:46 - Start Scenario Name : Replace Customers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:10.831 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:10.864 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:10.890 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:10.917 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:10.943 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:13.043 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:13.078 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.458 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.545 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.580 BasePage:278 - T6 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.617 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.651 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.732 OrderManagementScreen:1870 - 27-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.759 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.805 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:14.879 BasePage:278 - Tapped Customer - Ragavan P
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:15.940 OrderManagementScreen:1730 - Ragavan P - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:15.953 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:17.997 OrderManagementScreen:436 - Displayed Add Customer WIndow
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:18.008 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:18.081 BasePage:278 - Tapped Customer - auto number1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:19.127 OrderManagementScreen:1730 - auto n - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:19.140 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:19.185 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:21.239 OrderManagementScreen:436 - Displayed Add Customer WIndow
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:21.252 BasePage:258 - Selected X
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:21.285 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.654 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.688 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.717 BasePage:278 - T6 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.748 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.774 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.863 OrderManagementScreen:1870 - 27-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.882 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:22.932 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:23.007 BasePage:278 - Tapped Customer - Ragavan P
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:24.050 OrderManagementScreen:1730 - Ragavan P - Customer Is added on Order Screen 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:24.063 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:26.111 OrderManagementScreen:436 - Displayed Add Customer WIndow
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:26.125 BasePage:278 - Tapped remove button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:26.154 BasePage:258 - Selected X
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:29.183 OrderManagementScreen:1712 - Walk-in
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:29.190 BasePage:239 - Customer name is displayed - Walk-in
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:29.203 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:30.574 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:31.617 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:31.704 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:31.743 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:31.769 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:31.795 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:31.820 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:33.883 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:33.918 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:35.286 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:35.342 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:35.371 BasePage:278 - T6 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:35.411 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:35.453 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:35.520 OrderManagementScreen:1870 - 27-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:35.535 BasePage:278 - customer list is opened
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:37.577 OrderManagementScreen:436 - Displayed Add Customer WIndow
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:37.589 BasePage:258 - BY Name / Email
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:37.652 BasePage:258 - Selected Add Customer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:41.730 BasePage:239 - Customer profile window is displayed - Customer Profile
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:41.748 BasePage:278 - Tapped close button of Customer profile
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:45.800 TableLayOutScreen:1129 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:45.817 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:47.193 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:47.227 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:47.255 BasePage:278 - T6 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:47.304 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:47.332 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:51.379 TableLayOutScreen:1129 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:51.386 OrderManagementScreen:1870 - 27-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:51.402 BasePage:278 - finish button tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:54.490 BasePage:84 - Table layout screen is displayed - Table layout
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:55.517 BasePage:49 - Power button is clicked
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:55.608 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:55.636 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:55.662 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:55.687 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:55.713 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:57.782 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:57.814 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:59.167 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:59.736 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:35:59.763 BasePage:278 - T6 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:36:00.311 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:36:00.338 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:36:04.384 TableLayOutScreen:1129 - I should see Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:36:04.391 OrderManagementScreen:1870 - 27-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:36:05.418 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:36:06.472 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:36:18.562 Hooks:58 - Failed Scenario Name : Check Down
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:26.489 Hooks:46 - Start Scenario Name : Print - Table Layout Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:26.512 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:26.540 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:26.565 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:26.589 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:26.614 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:28.712 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:28.746 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:30.124 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:30.210 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:30.244 BasePage:278 - T28 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:30.282 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:30.319 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:30.418 OrderManagementScreen:1870 - 28-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:31.434 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:32.495 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:37:44.554 Hooks:58 - Failed Scenario Name : Print - Table Layout Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:52.548 Hooks:46 - Start Scenario Name : New Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:52.573 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:52.601 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:52.626 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:52.652 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:52.676 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:54.771 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:54.805 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:56.177 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:56.257 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:56.290 BasePage:278 - T22 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:56.327 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:56.358 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:56.456 BasePage:239 - Got Nothing is Displayed - Seats
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:56.476 OrderManagementScreen:1870 - 29-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:57.505 OrderManagementScreen:1599 - Seat added in Order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:57.518 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:58.893 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:58.937 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:58.986 BasePage:278 - T22 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:59.017 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:59.044 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:38:59.132 OrderManagementScreen:1870 - 29-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:39:00.163 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:39:01.213 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:39:13.279 Hooks:58 - Failed Scenario Name : New Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:21.279 Hooks:46 - Start Scenario Name : Creating a table order for 2 and then add & delete a seat, select menu items to order for each seats and then finish order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:21.302 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:21.333 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:21.358 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:21.386 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:21.411 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:23.505 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:23.547 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:24.923 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:25.009 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:25.047 BasePage:278 - T13 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:25.084 BasePage:278 - 2 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:25.117 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:25.195 OrderManagementScreen:1870 - 30-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:25.212 BasePage:278 - added a new seat to the table
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:25.268 BasePage:258 - ArrowDown Button 1 is tapped
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:40:26.290 Hooks:58 - Failed Scenario Name : Creating a table order for 2 and then add & delete a seat, select menu items to order for each seats and then finish order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:35.033 Hooks:46 - Start Scenario Name : Creating another table order to be merged
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:35.052 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:35.082 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:35.108 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:35.134 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:35.159 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:37.243 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:37.278 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:38.650 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:38.760 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:38.807 BasePage:278 - T11 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:38.845 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:38.899 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:38.994 OrderManagementScreen:1870 - 31-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:40.023 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:41.074 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:41:53.124 Hooks:58 - Failed Scenario Name : Creating another table order to be merged
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:01.097 Hooks:46 - Start Scenario Name : Create 2 Table Order then Merge and Click already selected Check to see "Check already added" pop-up
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:01.122 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:01.151 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:01.175 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:01.199 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:01.224 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:03.319 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:03.355 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:04.730 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:04.815 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:04.844 BasePage:278 - T15 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:04.883 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:04.914 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:05.008 OrderManagementScreen:1870 - 32-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:06.040 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:07.106 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:43:19.148 Hooks:58 - Failed Scenario Name : Create 2 Table Order then Merge and Click already selected Check to see "Check already added" pop-up
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:27.018 Hooks:46 - Start Scenario Name : Create 2 Table Order then Merge 1 Order click Done to see "Select Atleast 2 Check" pop-up
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:27.042 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:27.071 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:27.096 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:27.122 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:27.147 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:29.239 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:29.277 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:30.654 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:30.735 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:30.772 BasePage:278 - T8 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:30.815 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:30.847 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:30.944 OrderManagementScreen:1870 - 33-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:31.977 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:33.039 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:44:45.121 Hooks:58 - Failed Scenario Name : Create 2 Table Order then Merge 1 Order click Done to see "Select Atleast 2 Check" pop-up
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:53.049 Hooks:46 - Start Scenario Name : Create 2 Table Order then Merge after that click Cancel button should merge box disappered
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:53.070 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:53.098 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:53.124 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:53.148 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:53.173 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:55.270 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:55.305 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:56.676 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:56.755 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:56.790 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:56.826 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:56.856 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:56.952 OrderManagementScreen:1870 - 34-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:57.978 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:45:59.043 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:46:11.114 Hooks:58 - Failed Scenario Name : Create 2 Table Order then Merge after that click Cancel button should merge box disappered
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:18.990 Hooks:46 - Start Scenario Name : Create Sale in Table Layout Screen then click the Split to see Split Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:19.011 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:19.039 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:19.067 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:19.092 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:19.117 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:21.212 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:21.246 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:22.613 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:22.695 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:22.734 BasePage:278 - T17 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:22.778 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:22.808 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:22.899 OrderManagementScreen:1870 - 35-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:23.932 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:24.985 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:47:37.050 Hooks:58 - Failed Scenario Name : Create Sale in Table Layout Screen then click the Split to see Split Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:44.921 Hooks:46 - Start Scenario Name : Split Check Without Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:44.940 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:44.967 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:44.994 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:45.019 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:45.044 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:47.122 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:47.156 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:48.533 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:48.609 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:48.645 BasePage:278 - Tapped the Split Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:48.687 BasePage:278 - Tapped Split Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:48.722 BasePage:278 - T7 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:48.753 BasePage:239 -  Select Valid Check Msg is displayed - Select valid check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:50.783 BasePage:258 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:50.814 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:50.842 BasePage:278 - T15 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:50.889 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:50.920 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:51.013 OrderManagementScreen:1870 - 36-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:52.043 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:48:53.093 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:49:05.137 Hooks:58 - Failed Scenario Name : Split Check Without Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:13.063 Hooks:46 - Start Scenario Name : Print Split Screen for Without Select seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:13.087 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:13.115 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:13.139 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:13.164 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:13.188 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:15.285 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:15.320 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:16.693 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:16.775 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:16.805 BasePage:278 - T22 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:16.843 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:16.875 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:16.966 OrderManagementScreen:1870 - 37-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:17.991 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:19.049 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:50:31.098 Hooks:58 - Failed Scenario Name : Print Split Screen for Without Select seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:39.006 Hooks:46 - Start Scenario Name : Print All Split Screen,when click Print All application should as Items need to send kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:39.030 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:39.059 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:39.084 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:39.111 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:39.136 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:41.224 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:41.256 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:42.630 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:42.712 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:42.745 BasePage:278 - T23 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:42.783 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:42.814 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:42.902 OrderManagementScreen:1870 - 38-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:43.923 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:44.989 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:51:57.061 Hooks:58 - Failed Scenario Name : Print All Split Screen,when click Print All application should as Items need to send kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:05.018 Hooks:46 - Start Scenario Name : Pay-Split Screen, When click Pay Button application should navigate to the order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:05.039 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:05.071 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:05.099 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:05.123 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:05.148 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:07.249 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:07.284 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:08.660 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:08.744 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:08.776 BasePage:278 - T11 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:08.813 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:08.845 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:08.936 OrderManagementScreen:1870 - 39-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:09.976 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:11.031 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:53:23.077 Hooks:58 - Failed Scenario Name : Pay-Split Screen, When click Pay Button application should navigate to the order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:30.965 Hooks:46 - Start Scenario Name : Touch & Paste on Split Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:30.988 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:31.017 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:31.042 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:31.069 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:31.094 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:33.196 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:33.231 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:34.605 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:34.686 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:34.719 BasePage:278 - T17 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:34.756 BasePage:278 - 3 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:34.787 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:34.882 OrderManagementScreen:1870 - 42-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:35.912 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:54:36.982 Hooks:58 - Failed Scenario Name : Touch & Paste on Split Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:44.916 Hooks:46 - Start Scenario Name : Pay Check-Table Layout, Should navigate to Payment Window
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:44.938 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:44.966 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:44.991 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:45.016 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:45.042 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:47.140 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:47.175 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:48.550 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:48.643 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:48.677 BasePage:278 - T23 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:48.713 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:48.744 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:48.838 OrderManagementScreen:1870 - 45-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:49.863 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:55:50.907 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:56:02.974 Hooks:58 - Failed Scenario Name : Pay Check-Table Layout, Should navigate to Payment Window
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:11.668 Hooks:46 - Start Scenario Name : Print Table Layout, see Receipt printer without order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:11.693 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:11.720 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:11.752 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:11.777 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:11.801 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:13.906 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:13.942 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:15.318 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:15.403 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:15.439 BasePage:278 - T17 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:15.476 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:15.506 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:15.598 OrderManagementScreen:1870 - 46-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:16.626 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:17.686 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:57:29.744 Hooks:58 - Failed Scenario Name : Print Table Layout, see Receipt printer without order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:37.723 Hooks:46 - Start Scenario Name : Void - Before Order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:37.745 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:37.773 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:37.799 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:37.830 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:37.855 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:39.951 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:39.985 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:41.351 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:41.432 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:41.465 BasePage:278 - T10 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:41.502 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:41.534 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:41.627 OrderManagementScreen:1870 - 47-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:42.652 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:43.707 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 21:58:55.788 Hooks:58 - Failed Scenario Name : Void - Before Order
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:03.819 Hooks:46 - Start Scenario Name : Cash (Paid Exact Amount)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:03.845 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:03.874 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:03.899 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:03.924 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:03.948 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:06.041 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:06.075 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:07.448 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:07.523 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:07.556 BasePage:278 - T12 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:07.594 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:07.625 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:07.713 OrderManagementScreen:1870 - 48-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:08.740 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:09.799 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:00:21.869 Hooks:58 - Failed Scenario Name : Cash (Paid Exact Amount)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:29.769 Hooks:46 - Start Scenario Name : Payment -Adjust Payment Should not Allow Except cash payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:29.787 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:29.815 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:29.841 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:29.867 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:29.892 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:31.986 BasePage:258 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:32.025 BasePage:278 - Tapped All button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:33.405 BasePage:278 - Tapped Table Layout Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:33.495 BasePage:278 - Tapped New Check Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:33.528 BasePage:278 - T7 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:33.566 BasePage:278 - 1 selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:33.597 BasePage:278 - Tapped Continue button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:33.685 OrderManagementScreen:1870 - 49-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:34.717 BasePage:258 - the rest of the categories is listed
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:35.782 BasePage:258 - Food Category selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:01:47.873 Hooks:58 - Failed Scenario Name : Payment -Adjust Payment Should not Allow Except cash payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:02:55.822 Hooks:46 - Start Scenario Name : Cash reopen check After Payment for 2 checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:03:05.884 Hooks:58 - Failed Scenario Name : Cash reopen check After Payment for 2 checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:04:13.895 Hooks:46 - Start Scenario Name : Adjust Payment- Select payment and try again
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:04:23.923 Hooks:58 - Failed Scenario Name : Adjust Payment- Select payment and try again
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:05:31.873 Hooks:46 - Start Scenario Name : Exit Payment , Finish - In Table layout screen, color of the table should be changed to seated color
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:05:41.891 Hooks:58 - Failed Scenario Name : Exit Payment , Finish - In Table layout screen, color of the table should be changed to seated color
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:06:49.842 Hooks:46 - Start Scenario Name : Create 2 Table order then Merge after that click Arrow to see Merge box Hide
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:06:59.890 Hooks:58 - Failed Scenario Name : Create 2 Table order then Merge after that click Arrow to see Merge box Hide
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:08:07.975 Hooks:46 - Start Scenario Name : Void - Reopen Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:08:17.997 Hooks:58 - Failed Scenario Name : Void - Reopen Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:09:25.978 Hooks:46 - Start Scenario Name : Normal check with cash payment,Normal check with CC payment, Normal check with CC payment with tips and without service charge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:09:36.002 Hooks:58 - Failed Scenario Name : Normal check with cash payment,Normal check with CC payment, Normal check with CC payment with tips and without service charge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:10:44.100 Hooks:46 - Start Scenario Name : Normal check with HA payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:10:54.158 Hooks:58 - Failed Scenario Name : Normal check with HA payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:12:02.067 Hooks:46 - Start Scenario Name : Verify whether application display Transfer server screen when user clicks the Transfer button present in the table layout screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:12:12.142 Hooks:58 - Failed Scenario Name : Verify whether application display Transfer server screen when user clicks the Transfer button present in the table layout screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:13:20.086 Hooks:46 - Start Scenario Name : Verify whether application allow user to view sub total in ordering screen after adding menu item to the order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:13:30.128 Hooks:58 - Failed Scenario Name : Verify whether application allow user to view sub total in ordering screen after adding menu item to the order screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:14:38.183 Hooks:46 - Start Scenario Name : Verify whether application allows the user to Fire the Hold Menu Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:14:48.237 Hooks:58 - Failed Scenario Name : Verify whether application allows the user to Fire the Hold Menu Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:15:56.260 Hooks:46 - Start Scenario Name : Verify whether application allow to split the check based amount discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:16:06.312 Hooks:58 - Failed Scenario Name : Verify whether application allow to split the check based amount discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:17:14.267 Hooks:46 - Start Scenario Name : Verify whether application allow to split the check based percentage discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:17:24.335 Hooks:58 - Failed Scenario Name : Verify whether application allow to split the check based percentage discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:18:32.226 Hooks:46 - Start Scenario Name : Verify whether application allow to split the check based set price discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:18:42.283 Hooks:58 - Failed Scenario Name : Verify whether application allow to split the check based set price discount with type before tax based on the exclusive tax menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:19:50.344 Hooks:46 - Start Scenario Name : verify whether application allow to split the check based free item (exclusive tax menu item) discount with type before tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:20:00.406 Hooks:58 - Failed Scenario Name : verify whether application allow to split the check based free item (exclusive tax menu item) discount with type before tax based on the menu item price present in the seat if user move the menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:21:08.429 Hooks:46 - Start Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based amount discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:21:18.453 Hooks:58 - Failed Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based amount discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:22:26.431 Hooks:46 - Start Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based percentage discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:22:36.476 Hooks:58 - Failed Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based percentage discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:23:44.362 Hooks:46 - Start Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:23:54.437 Hooks:58 - Failed Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based set price discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:25:02.399 Hooks:46 - Start Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:25:12.485 Hooks:58 - Failed Scenario Name : Verify whether application allow user to move the exclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:26:20.495 Hooks:46 - Start Scenario Name : Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:26:30.503 Hooks:58 - Failed Scenario Name : Verify whether application allow user to move the inclusive tax menu item from one seat to another seat along with Item based free item(exclusive tax menu item) discount with type before tax which is assigned to that menu item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:27:38.420 Hooks:46 - Start Scenario Name : Verify whether application calculate the gratuity based on the net sale of the seat if user move menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:27:48.456 Hooks:58 - Failed Scenario Name : Verify whether application calculate the gratuity based on the net sale of the seat if user move menu item from one seat to another seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:28:56.452 Hooks:46 - Start Scenario Name : Verify whether user can revert changes when user create the check with multiple seats and done the payment for any one seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:29:06.491 Hooks:58 - Failed Scenario Name : Verify whether user can revert changes when user create the check with multiple seats and done the payment for any one seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:30:14.453 Hooks:46 - Start Scenario Name : Verify whether application removes the applied check based discount when the user does Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:30:24.508 Hooks:58 - Failed Scenario Name : Verify whether application removes the applied check based discount when the user does Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:31:32.540 Hooks:46 - Start Scenario Name : Verify whether the application allows the user to close the check before doing the payment for the seat 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:31:42.577 Hooks:58 - Failed Scenario Name : Verify whether the application allows the user to close the check before doing the payment for the seat 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:32:50.657 Hooks:46 - Start Scenario Name : Verify whether the Application shows the seat total in the split screen shows less amount than  the seat's subtotal when the user does split evenly for the menu item which has priced  modifier to it
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:33:00.701 Hooks:58 - Failed Scenario Name : Verify whether the Application shows the seat total in the split screen shows less amount than  the seat's subtotal when the user does split evenly for the menu item which has priced  modifier to it
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:34:08.771 Hooks:46 - Start Scenario Name : Verify whether application allow user to move the menu item from one seat to another seat along with Item based free item discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:34:18.844 Hooks:58 - Failed Scenario Name : Verify whether application allow user to move the menu item from one seat to another seat along with Item based free item discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:35:26.734 Hooks:46 - Start Scenario Name : Verify whether application allow to close the check if user paid the total check amount by selecting a single seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:35:36.784 Hooks:58 - Failed Scenario Name : Verify whether application allow to close the check if user paid the total check amount by selecting a single seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:36:44.793 Hooks:46 - Start Scenario Name : Create New Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:36:54.842 Hooks:58 - Failed Scenario Name : Create New Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:38:02.827 Hooks:46 - Start Scenario Name : Open Cash Drawer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:38:12.897 Hooks:58 - Failed Scenario Name : Open Cash Drawer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:39:20.911 Hooks:46 - Start Scenario Name : Merge Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:39:30.964 Hooks:58 - Failed Scenario Name : Merge Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:40:40.428 Hooks:46 - Start Scenario Name : Merge without Discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:40:50.456 Hooks:58 - Failed Scenario Name : Merge without Discount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:41:58.443 Hooks:46 - Start Scenario Name : Verify the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN is available
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:42:08.493 Hooks:58 - Failed Scenario Name : Verify the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN is available
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:43:16.697 Hooks:46 - Start Scenario Name : Verify the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN is Enabled
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:43:26.740 Hooks:58 - Failed Scenario Name : Verify the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN is Enabled
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:44:34.598 Hooks:46 - Start Scenario Name : Verify the order screen and click the Dine in as service type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:44:44.627 Hooks:58 - Failed Scenario Name : Verify the order screen and click the Dine in as service type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:45:52.547 Hooks:46 - Start Scenario Name : Verify the order screen ALL button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:46:02.591 Hooks:58 - Failed Scenario Name : Verify the order screen ALL button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:47:10.513 Hooks:46 - Start Scenario Name : Verify the multi seats
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:47:20.574 Hooks:58 - Failed Scenario Name : Verify the multi seats
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:48:28.594 Hooks:46 - Start Scenario Name : Verify the multi floor's
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:48:38.613 Hooks:58 - Failed Scenario Name : Verify the multi floor's
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:49:46.603 Hooks:46 - Start Scenario Name : Verify the closed checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:49:56.642 Hooks:58 - Failed Scenario Name : Verify the closed checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:51:04.616 Hooks:46 - Start Scenario Name : When order screen have multiple seats but single seat only have completed the payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:51:14.690 Hooks:58 - Failed Scenario Name : When order screen have multiple seats but single seat only have completed the payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:52:22.647 Hooks:46 - Start Scenario Name : Table layout and service type combination
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:52:32.660 Hooks:58 - Failed Scenario Name : Table layout and service type combination
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:53:40.605 Hooks:46 - Start Scenario Name : Verify the active checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:53:50.626 Hooks:58 - Failed Scenario Name : Verify the active checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:54:58.523 Hooks:46 - Start Scenario Name : Verify the table layout seat count's popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:55:08.536 Hooks:58 - Failed Scenario Name : Verify the table layout seat count's popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:56:16.504 Hooks:46 - Start Scenario Name : Verify the table layout have 0 seat count
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:56:26.545 Hooks:58 - Failed Scenario Name : Verify the table layout have 0 seat count
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:57:34.611 Hooks:46 - Start Scenario Name : Verify the table layout have more numbers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:57:44.641 Hooks:58 - Failed Scenario Name : Verify the table layout have more numbers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:58:52.609 Hooks:46 - Start Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 22:59:02.643 Hooks:58 - Failed Scenario Name : Verify the Split check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:00:10.671 Hooks:46 - Start Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:00:20.720 Hooks:58 - Failed Scenario Name : Verify the Split seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:01:28.658 Hooks:46 - Start Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:01:38.680 Hooks:58 - Failed Scenario Name : Verify the transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:02:46.610 Hooks:46 - Start Scenario Name : Verify the merge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:02:56.646 Hooks:58 - Failed Scenario Name : Verify the merge
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:04:04.654 Hooks:46 - Start Scenario Name : Verify the Ask seat count toggle and customer name enabled status
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:04:14.712 Hooks:58 - Failed Scenario Name : Verify the Ask seat count toggle and customer name enabled status
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:05:22.627 Hooks:46 - Start Scenario Name : Disable the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:05:32.660 Hooks:58 - Failed Scenario Name : Disable the "Ask Seat count in Table Layout" new toggle in Pos settings under DINE IN
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:06:40.652 Hooks:46 - Start Scenario Name : Verify the order screen and click the Dine in as service types
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:06:50.711 Hooks:58 - Failed Scenario Name : Verify the order screen and click the Dine in as service types
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:07:58.710 Hooks:46 - Start Scenario Name : Disable Ask Customer - Verify the order screen ALL button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:08:08.766 Hooks:58 - Failed Scenario Name : Disable Ask Customer - Verify the order screen ALL button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:09:16.796 Hooks:46 - Start Scenario Name : Verify the multi seats After disabling ask Seat Count in Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:09:26.868 Hooks:58 - Failed Scenario Name : Verify the multi seats After disabling ask Seat Count in Table Layout
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:10:35.161 Hooks:46 - Start Scenario Name : Disable Ask Customer - Verify the multi floor's
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:10:45.207 Hooks:58 - Failed Scenario Name : Disable Ask Customer - Verify the multi floor's
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:11:53.216 Hooks:46 - Start Scenario Name : Disable Ask Customer - Verify the closed checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:12:03.246 Hooks:58 - Failed Scenario Name : Disable Ask Customer - Verify the closed checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:13:11.313 Hooks:46 - Start Scenario Name : Disable Ask Customer - Verify the active checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:13:21.333 Hooks:58 - Failed Scenario Name : Disable Ask Customer - Verify the active checks
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:14:29.994 Hooks:46 - Start Scenario Name : Verify the ask Customer name toggle enabled status and ask seat count enabled status
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:14:40.052 Hooks:58 - Failed Scenario Name : Verify the ask Customer name toggle enabled status and ask seat count enabled status
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:15:47.966 Hooks:46 - Start Scenario Name : Verify the QSR type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:15:58.017 Hooks:58 - Failed Scenario Name : Verify the QSR type
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:17:06.278 Hooks:46 - Start Scenario Name : Verify the To Go
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:17:16.328 Hooks:58 - Failed Scenario Name : Verify the To Go
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:18:24.267 Hooks:46 - Start Scenario Name : Verify the For here
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:18:34.519 Hooks:58 - Failed Scenario Name : Verify the For here
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:19:42.835 Hooks:46 - Start Scenario Name : Verify the Delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:19:52.900 Hooks:58 - Failed Scenario Name : Verify the Delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:21:00.950 Hooks:46 - Start Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:21:10.972 Hooks:58 - Failed Scenario Name : Verify the phone togo
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:22:18.986 Hooks:46 - Start Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:22:29.016 Hooks:58 - Failed Scenario Name : Verify the phone delivery
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:23:36.923 Hooks:46 - Start Scenario Name : Verify Bar Tab to Split
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:23:46.969 Hooks:58 - Failed Scenario Name : Verify Bar Tab to Split
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:24:56.077 Hooks:46 - Start Scenario Name : Verify Merge with Discount on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:25:06.117 Hooks:58 - Failed Scenario Name : Verify Merge with Discount on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:26:14.192 Hooks:46 - Start Scenario Name : Verify search option with check number on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:26:24.218 Hooks:58 - Failed Scenario Name : Verify search option with check number on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:27:32.239 Hooks:46 - Start Scenario Name : Application display the entered name or updated name
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:27:42.296 Hooks:58 - Failed Scenario Name : Application display the entered name or updated name
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:28:50.576 Hooks:46 - Start Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:29:00.650 Hooks:58 - Failed Scenario Name : Application display the check in blue color  - on hold
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:30:09.573 Hooks:46 - Start Scenario Name : Application can sort customer name  also bar tab check from A to Z
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:30:19.632 Hooks:58 - Failed Scenario Name : Application can sort customer name  also bar tab check from A to Z
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:31:28.511 Hooks:46 - Start Scenario Name : Application should ask customer name enable Ask customer name option
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:31:38.591 Hooks:58 - Failed Scenario Name : Application should ask customer name enable Ask customer name option
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:32:46.599 Hooks:46 - Start Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:32:56.670 Hooks:58 - Failed Scenario Name : Split without Selected Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:34:04.787 Hooks:46 - Start Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:34:14.812 Hooks:58 - Failed Scenario Name : Split Evenly
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:35:22.783 Hooks:46 - Start Scenario Name : Split Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:35:32.802 Hooks:58 - Failed Scenario Name : Split Item
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:36:40.727 Hooks:46 - Start Scenario Name : Split without Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:36:50.799 Hooks:58 - Failed Scenario Name : Split without Sale
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:37:59.572 Hooks:46 - Start Scenario Name : Split from Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:38:09.593 Hooks:58 - Failed Scenario Name : Split from Order Screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:39:17.561 Hooks:46 - Start Scenario Name : Application allows the user to navigate the split seat screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:39:27.617 Hooks:58 - Failed Scenario Name : Application allows the user to navigate the split seat screen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:40:35.730 Hooks:46 - Start Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:40:45.791 Hooks:58 - Failed Scenario Name : Split By Seat on BarTab with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:41:53.759 Hooks:46 - Start Scenario Name : Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:42:03.823 Hooks:58 - Failed Scenario Name : Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:43:12.629 Hooks:46 - Start Scenario Name : Split By Seat - Separate Item on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:43:22.652 Hooks:58 - Failed Scenario Name : Split By Seat - Separate Item on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:44:31.466 Hooks:46 - Start Scenario Name : Split By Seat - Split Evenly on Bar Tab - with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:44:41.516 Hooks:58 - Failed Scenario Name : Split By Seat - Split Evenly on Bar Tab - with Add Button
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:45:49.653 Hooks:46 - Start Scenario Name : Split By Seat - Split Evenly on Bar Tab - with More Than One Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:45:59.701 Hooks:58 - Failed Scenario Name : Split By Seat - Split Evenly on Bar Tab - with More Than One Seat
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:47:07.733 Hooks:46 - Start Scenario Name : Split By Seat - Group Seat on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:47:17.770 Hooks:58 - Failed Scenario Name : Split By Seat - Group Seat on Bar Tab
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:48:25.710 Hooks:46 - Start Scenario Name : Transfer Check To Another Server
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:48:35.739 Hooks:58 - Failed Scenario Name : Transfer Check To Another Server
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:49:43.858 Hooks:46 - Start Scenario Name : Create House account for new customers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:49:53.929 Hooks:58 - Failed Scenario Name : Create House account for new customers
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:51:01.940 Hooks:46 - Start Scenario Name : Hold on empty check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:51:11.971 Hooks:58 - Failed Scenario Name : Hold on empty check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:52:20.011 Hooks:46 - Start Scenario Name : Hold AutoMatic/Manual Payment - Confirm Send Kitchen On Order Management Screen(Manual Hold)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:52:30.065 Hooks:58 - Failed Scenario Name : Hold AutoMatic/Manual Payment - Confirm Send Kitchen On Order Management Screen(Manual Hold)
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:53:38.118 Hooks:46 - Start Scenario Name : On Hold to Check Down - Do you want send Hold menu to Kitchen popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:53:48.171 Hooks:58 - Failed Scenario Name : On Hold to Check Down - Do you want send Hold menu to Kitchen popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:54:56.078 Hooks:46 - Start Scenario Name : order menu Resend to kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:55:06.096 Hooks:58 - Failed Scenario Name : order menu Resend to kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:56:14.165 Hooks:46 - Start Scenario Name : Tax exempt should be cancelled when a customer is chosen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:56:24.228 Hooks:58 - Failed Scenario Name : Tax exempt should be cancelled when a customer is chosen
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:57:32.347 Hooks:46 - Start Scenario Name : Tax Exempt- From Order Screen/Payment Screen - Paid amount Exceeding sale amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:57:42.373 Hooks:58 - Failed Scenario Name : Tax Exempt- From Order Screen/Payment Screen - Paid amount Exceeding sale amount
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:58:50.354 Hooks:46 - Start Scenario Name : Remove- Tax Exempt from Order Screen/Payment Screen.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 23:59:00.384 Hooks:58 - Failed Scenario Name : Remove- Tax Exempt from Order Screen/Payment Screen.

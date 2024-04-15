@@ -291,6 +291,11 @@ public class CustomerProfileWindow extends OrderTypeWindow{
 
     }
 
+//    public void sendCustomerName(String name) throws InterruptedException {
+//        Thread.sleep(1000);
+//        WebElement Customer = driver.findElement(By.xpath("//p[@slot='end']"));
+//        Customer.sendKeys(name);
+//    }
     public void sendCustomerName(String name) throws InterruptedException {
         Thread.sleep(1000);
         WebElement Customer = driver.findElement(By.xpath("//input[@role='combobox']"));

@@ -90,7 +90,7 @@ private WebElement QSRCombo;
     private WebElement taxLbl;
 
                               //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]
-    @FindBy(xpath = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img")
+    @FindBy(xpath = "/html/body/app-root/ion-app/ion-content/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img")
     private WebElement TickIcon;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
@@ -130,15 +130,15 @@ private WebElement QSRCombo;
 
     /****** Categories ******/
 
-    String pizzaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'PIZZA')]";
+    String pizzaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[.='PIZZA']";
 
-    String breakFastBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Breakfast')]";
+    String breakFastBtn = "//div[contains(@class,'center-name category-container')]/div[.='Breakfast']";
 
-    String upchargeBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'upcharge category')]";
+    String upchargeBtn = "//div[contains(@class,'center-name category-container')]/div[.='upcharge category']";
 
-    String beveragesBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Beverages')]";
+    String beveragesBtn = "//div[contains(@class,'center-name category-container')]/div[.='Beverages']";
 
-    String foodCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'FOOD')]" ;
+    String foodCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[.='FOOD']" ;
 
 
     String pastaCategoryBtn = "//div[contains(@class,'center-name category-container')]/div[contains(.,'Pasta')]";
@@ -210,13 +210,13 @@ private WebElement QSRCombo;
     @FindBy(xpath ="//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Test Automation')]")
     private WebElement paymentMadeOnThisCheckPopup1;
 
-    @FindBy(xpath = "Payment(s) made on this check,Can you return this to Auto ragav")
+    @FindBy(xpath = "//p[.='Payment(s) made on this Check, Can you return this to Walkin Auto ragav']")
     private WebElement paymentMadeOnThisCheckPopupForHouseAccount;
 
     @FindBy(xpath = "//button//div[contains(.,'Print')]")
     private WebElement printBtn;
 
-    @FindBy(xpath = "/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img")
+    @FindBy(xpath = "/html/body/app-root/ion-app/ion-content/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[4]/img")
     private WebElement handIconForHold;
 
     String voidBtn = "//linga-icon/../div[contains(.,'Void')]";
@@ -231,7 +231,7 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//button[contains(.,' Ordered Wrongly ')]")
     private WebElement orderedWronglyReason;
 
-    @FindBy(xpath = "/html/body/div/div[2]/div/mat-dialog-container/app-voidreason/ion-footer/div[2]/button[2]")
+    @FindBy(xpath = "//span[.=' Add ']")
     private WebElement addVoidReasonBtn;
 
     @FindBy(xpath = "(//button[contains(.,' Add ')])[1]")
@@ -468,8 +468,8 @@ private WebElement QSRCombo;
         elementClick("//button[contains(.,' + Add customer ')]","Selected Add Customer");
     }
 
-    public void selectCustomerNameToAddToTheTable(String customerName){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+    public void selectCustomerNameToAddToTheTable(String customerName) throws InterruptedException {
+        Thread.sleep(2000);
         WebElement customer = driver.findElement(By.xpath("(//span[contains(.,'"+customerName+"')])[1]"));
         elementClick(customer,"Tapped Customer - "+customerName);
     }
@@ -515,7 +515,8 @@ private WebElement QSRCombo;
         elementClick(seat,"Selected Seat - "+seat.getText());
     }
 
-    public void selectQSRCombo(){
+    public void selectQSRCombo() throws InterruptedException {
+        Thread.sleep(1000);
         elementClick(QSRCombo, "Order type combo is pressed");
     }
 
@@ -670,7 +671,7 @@ private WebElement QSRCombo;
         Thread.sleep(2000);
         pressArrowDown2();
         Thread.sleep(1500);
-        cate =  driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[contains(.,'"+category+"')]"));
+        cate =  driver.findElement(By.xpath("//div[contains(@class,'center-name category-container')]/div[.='"+category+"']"));
         elementClick(cate,"Selected - "+cate.getText());
     }
 String xpath = "//XCUIElementTypeStaticText[@name=\"{0}\"]";
@@ -697,7 +698,7 @@ public  void selectCategory (String value) throws Exception {
 
     public void selectFoodCategory() throws InterruptedException {
         pressArrowDown2();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         elementClick(foodCategoryBtn, "Food Category selected");
     }
 
@@ -2473,8 +2474,8 @@ public  void selectCategory (String value) throws Exception {
                         Thread.sleep(1000);
                         elementClick(checkNumberrr, "Selected Check Number - " + checkNumberrr.getText());
                         Thread.sleep(1000);
-//                        WebElement x =  driver.findElement(By.xpath("//*[@id=\"multiple-Check\"]/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
-//                        elementClick(x, "Tapped X Button");
+                        WebElement x =  driver.findElement(By.xpath("//*[@id=\"multiple-Check\"]/app-table-multiple-checks/ion-header/ion-toolbar/button/span[1]/linga-icon"));
+                        elementClick(x, "Tapped X Button");
                     } else {
 
                     }

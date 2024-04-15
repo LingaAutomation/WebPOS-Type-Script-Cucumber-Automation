@@ -206,7 +206,8 @@ public class AskSeatNumber extends BasePage {
         }
     }
 
-    public void verifyBalanceDueAmountAs(String value) {
+    public void verifyBalanceDueAmountAs(String value) throws InterruptedException {
+        Thread.sleep(1000);
         WebElement balanceDueAmount =  driver.findElement(By.xpath("//div[@class='balance ng-star-inserted']//label[2]"));
         utils.log().info("Balance Due Amount Same  - "+ balanceDueAmount.getText());
         String totalAmountTxt = balanceDueAmount.getText().replaceAll("[$A-Z .]","");
@@ -234,4 +235,6 @@ public class AskSeatNumber extends BasePage {
         WebElement lingaCloseBtn =  driver.findElement(By.xpath("//linga-icon[@symbol='closeButton']"));
         elementClick(lingaCloseBtn,"Selected - "+"Linga Close");
     }
+
+
 }

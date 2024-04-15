@@ -78,7 +78,7 @@ Feature: Order Types
    # When I click Done button to select the order type
    # Then I should see the Customer Profile page with title "<title>"
     #And I select search
-    #And I enter an existing customer's name "<customer_name>"
+    #And I click the customer name on the order screen
     #And I select the customer
     #And I click the Save button
     And I select order type as "<order_type>" method
@@ -91,12 +91,12 @@ Feature: Order Types
    # When I click Done button to select the order type
     #Then I should see the Customer Profile page with title "<title>"
     #And I select search
-    #And I enter an existing customer's name "<customer_name>"
+    #And I click the customer name on the order screen
     #And I select the customer
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
     And I click the Save button
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
     And I click the Save button
     And I select order type as "<order_type>" method
     And I select order type as "<order_type1>"
@@ -109,7 +109,7 @@ Feature: Order Types
    #When I click Done button to select the order type
     #Then I should see the Customer Profile page with title "<title>"
     #And I select search
-    #And I enter an existing customer's name "<customer_name>"
+    #And I click the customer name on the order screen
     #And I select the customer
     #And I click the Save button
     And I select order type as "<order_type>" method
@@ -123,12 +123,12 @@ Feature: Order Types
   #  When I click Done button to select the order type
    # Then I should see the Customer Profile page with title "<title>"
     #And I select search
-    #And I enter an existing customer's name "<customer_name>"
+    #And I click the customer name on the order screen
     #And I select the customer
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
     And I click the Save button
-    And I enter an existing customer's name "<customer_name>"
+    And I click the customer name on the order screen
     And I click the Save button
     And I select order type as "<order_type>" method
     And I select order type as "<order_type1>"
@@ -141,7 +141,7 @@ Feature: Order Types
       | DINE IN | QSR          | Customer Profile |Auto ragav|
 
 #4
-
+  @NK1
   Scenario Outline:Selecting QSR order type from combo and placing an order
     Given I'm logged in
     And I close the order type window
@@ -180,7 +180,8 @@ Feature: Order Types
     And I click Done button on the Popup
     When I click Finish button
     Then I should get back to the Table Layout tab and see the table as seated by one
-    And I select table as "<table_no>"
+    And I click the check from the table layout for merged
+#    And I select table as "<table_no>"
     Then I Should get back to the Order Screen
     And I click Void button on order management screen
     Then I should see the void reason popup
@@ -444,7 +445,7 @@ Feature: Order Types
       | FORHERE   | T13      |1                | French Friese    | Steak   | Auto ragav | Auto r |
 
   #9
-
+@NK11
   Scenario Outline: Service Type changing ToGo To For Here screen
     Given I'm logged in
     And I select the "TOGO" order type popup
@@ -751,7 +752,7 @@ Feature: Order Types
       | FORHERE  | Garlic Bread | 4 BBQ | Auto ragav      | Auto r   |French Friese | Steak   |
 
   #10
-  @Ordertype0123
+  @Ordertype012343
   Scenario Outline:Verify whether application TOGO menu items print the check order from Phone order screen
     Given I'm logged in
     And I select the "TOGO" order type popup
@@ -1473,7 +1474,7 @@ Feature: Order Types
 #   # When I click Done button to select the order type
 #   # Then I should see the customer profile window
 #   # And I select search
-#   # And I enter an existing customer's name "<customer_name>"
+#   # And I click the customer name on the order screen
 #   # And I select the customer
 #   # And I click the Save button
 #   # Then I Should get back to the Order Screen
@@ -1672,7 +1673,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -1723,7 +1724,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -1774,7 +1775,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -1814,7 +1815,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -1856,7 +1857,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -1897,7 +1898,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -1942,7 +1943,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -1988,7 +1989,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2022,7 +2023,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2086,7 +2087,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2132,7 +2133,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2159,7 +2160,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2191,7 +2192,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2232,7 +2233,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2288,7 +2289,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2354,7 +2355,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2412,7 +2413,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2458,7 +2459,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2506,7 +2507,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2554,7 +2555,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2604,7 +2605,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2655,7 +2656,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2695,7 +2696,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2763,7 +2764,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2814,7 +2815,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2856,7 +2857,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2898,7 +2899,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2939,7 +2940,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -2978,7 +2979,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -3019,7 +3020,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -3064,7 +3065,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -3112,7 +3113,7 @@ Feature: Order Types
 #    When I click Done button to select the order type
 #    Then I should see the customer profile window
 #    And I select search
-#    And I enter an existing customer's name "<customer_name>"
+#    And I click the customer name on the order screen
 #    And I select the customer
 #    And I click the Save button
 #    Then I Should get back to the Order Screen
@@ -3208,7 +3209,7 @@ Feature: Order Types
     #When I click Done button to select the order type
     #Then I should see the customer profile window
     #And I select search
-    #And I enter an existing customer's name "<customer_name>"
+    #And I click the customer name on the order screen
     #And I select the customer
     #And I click the Save button
     #Then I Should get back to the Order Screen
@@ -3232,7 +3233,7 @@ Feature: Order Types
     #When I click Done button to select the order type
     #Then I should see the customer profile window
     #And I select search
-    #And I enter an existing customer's name "<customer_name>"
+    #And I click the customer name on the order screen
     #And I select the customer
     #And I click the Save button
     #Then I Should get back to the Order Screen

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basicvalidaitonsuite-doller-store-timeclock-3" />
+        <module name="WebPOS TypeScript 3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
