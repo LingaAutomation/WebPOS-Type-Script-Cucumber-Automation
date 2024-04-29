@@ -1,4 +1,4 @@
-@Regression
+@RegressionQSR
 Feature: QSR feature
 
   Background:
@@ -555,7 +555,7 @@ Feature: QSR feature
       | order_type | Menu_Item | Modifier |Discount                | SubTotal    | Tax       | txtDiscount |Total        | Menu_Item1|Discount1                | SubTotal1   | Tax1      | txtDiscount1 |Total1       |
       | QSR        |  Ravioli  | Butter   |CB-BeforeTax-Amount1000 | $ 28.00     | $ 2.70    | $ 1.00      | $ 29.70     | cake      |CB-BeforeTax-SetPrice1000| $ 16.00     | $ 1.00    | $ 6.00       | $ 11.00     |
 
-
+@MS
   Scenario Outline: qsr - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -619,7 +619,7 @@ Feature: QSR feature
     And I click Enter Button on the cash pop-up
 #    Then I should see the order type window
     And I closed the order type window
-    #Check with open item discount as Percentage (After Tax)
+#    Scenario Outline: Check with open item discount as Percentage (After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
     And I select menu item as "<Menu_Item>"
@@ -653,7 +653,7 @@ Feature: QSR feature
       |order_type |Menu_Item|course_name |open_Item | SubTotal | Tax       | Discount | Total   | Discount1 |Discount2|course_name1|Total2  |SubTotal3  | Tax3      | Discount3 | Total3     |
       | QSR       |Dosa     |  SALAD     |onion     | $ 51.00  | $ 5.10    | $ 20.50  | $ 35.60 | After     |$ 0.50   |DESSERT     |$ 55.60 |$ 51.00    | $ 5.10    | $ 20.00   | $ 36.10    |
 
-
+  @MS
   Scenario Outline: qsr Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1097,7 +1097,7 @@ Feature: QSR feature
       |order_type |Menu_Item    | Menu_Item1          | price |price1| SubTotal    | Tax       | Discount   | Total        | Discount1                 | expensive |
       | QSR       | Cheesecake  | Pumpkin Cheese Cake |15.00  |11.00 | $ 26.00     |$ 2.05     |$ 5.50      | $ 22.55      | CheckMixMatchSPerL(Befor) | Least     |
 
-
+  @MS
   Scenario Outline: qsr Check with vary gratuity
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -1169,7 +1169,7 @@ Feature: QSR feature
       | order_type | Modifier | Tax    | SubTotal | Total    |
       |QSR         | Butter   | $ 1.40 | $ 14.00  | $ 15.40  |
 
-@23
+  @MS
   Scenario Outline: qsr Check with tax exempt with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1320,7 +1320,7 @@ Feature: QSR feature
       | order_type | Menu_Item          | Modifier     | amount   |
       | QSR        |  Fried Crab Cakes  | White Bread  | $ 18.50  |
 
-
+  @MS
   Scenario Outline: qsr check payment by HA for New created customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1369,7 +1369,7 @@ Feature: QSR feature
       | order_type | customer_name | Menu_Item      | Modifier   | SubTotal |  Total  |
       | QSR        |  Auto ragav   |  French Friese | Steak      | $ 15.00  | $ 15.00 |
 
-
+  @MS
   Scenario Outline: qsr Void HA payment check and again add menu item & Payment through HA
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -1908,7 +1908,7 @@ Feature: QSR feature
       | order_type |Menu_Item2 | Modifier2 |Discount11                | SubTotal1    | Tax1       | Discount1 |Total1       |Discount22               |Tax2       | Discount2 |Total2       | Menu_Item3 |Discount33               | SubTotal3   | Tax3      | Discount3 |Total3       |Menu_Item4     |Discount44             | SubTotal4    | Tax4       | Total4       |
       | QSR        | Ravioli   | Butter    |CB-BeforeTax-Percentage10 | $ 28.00      | $ 2.52     | $ 2.80    | $ 27.72     | CB-BeforeTax-Amount1000 | $ 2.70    | $ 1.00    | $ 29.70     | cake       |CB-BeforeTax-SetPrice1000| $ 16.00     | $ 1.00    | $ 6.00    | $ 11.00     | Cheesecake    |  CB-BeforeTax-Free300 | $ 17.00      | $ 1.70     | $ 18.70      |
 
-
+  @MS
   Scenario Outline: qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Whole Value as 20 (After Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2006,7 +2006,7 @@ Feature: QSR feature
       |order_type |Menu_Item|course_name |open_Item | SubTotal | Tax       | Discount | Total   | Discount1 |course_name1  |Discount2 | Total1    | SubTotal3 | Tax3     | Discounttxt | Total3     |
       | QSR       |Dosa     |  SALAD     |onion     | $ 51.00  | $ 5.10    | $ 20.50  | $ 35.60 | After     |DESSERT       |$ 0.50    | $ 55.60   |$ 51.00    | $ 5.10   | $ 20.00     | $ 36.10    |
 
-
+  @MS
   Scenario Outline: qsr Check Payment through Other Payment - Check with open item discount as amount and safety limit in Decimal Value as 20.50(Before Tax)
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2433,7 +2433,7 @@ Feature: QSR feature
       |order_type |Menu_Item | Menu_Item1           | Menu | Menu1 |expensive| SubTotal    | Tax       | Discount   | Total        | Discount1                 |Menu_Item2 | Menu_Item3  |Menu2    |Menu3    |  SubTotal2  | Tax2      | Discount2  | Total2      | Discount11                | expensive1 |
       | QSR     | Cheesecake  | Pumpkin Cheese Cake |15.00 |11.00  |Least    | $ 26.00     | $ 2.05    | $ 5.50     | $ 22.55      | CheckMixMatchSPerL(Befor)  |cake       | Halwa       |8.00     |10.00    | $ 18.00     | $ 1.30    | $ 5.00     | $ 14.30     | CheckMixMatchSPerM(Befor) |Most        |
 
-
+  @MS
   Scenario Outline: qsr -Check with vary gratuity - other payment
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
@@ -2479,7 +2479,7 @@ Feature: QSR feature
       |order_type| Menu_Item   | Percentage | SubTotal   |    Tax    | Gratuity     | Total   |Gratuity1 | Total1  |
       | QSR       | Halwa       | 8         | $ 10.00    | $ 1.00    |  $ 0.80      | $ 11.80 | $ 1.00   | $ 12.00 |
 
-  @23
+  @MS
   Scenario Outline:Qsr- Check Payment through other payment - Check with tax exempt and with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -4226,7 +4226,7 @@ Feature: QSR feature
 #      |order_type | Menu_Item          | Modifier     | Total   |  card_number     | expire_date | card_name | total      |
 #      | QSR       |  Fried Crab Cakes  | White Bread  | $ 20.35 | 3530111333300000 | 1224        | JCB       | $ 30.35    |
 
-
+  @MS
   Scenario Outline: qsr Modify with option
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -4268,7 +4268,7 @@ Feature: QSR feature
       | order_type |menu_Item            | Serving_Size | Modifier_1   | Modifier_2     |
       | QSR        | Pizza Rucola 12inch | DOUBLE       | Add Steak    | Add Chicken    |
 
-
+  @MS
   Scenario Outline: Application showing the service type in Order Screen,Verify menu categories,Verify add new seat button,When User click add new customer icon,Delete any seat,Verify select Upcharge MenuItems,Verify select Upcharge MenuItems with Modifiers,Verify Reopen Upcharge Order.
 
     Then I should see service type as "QSR"
@@ -4503,7 +4503,7 @@ Feature: QSR feature
     And I click power button
 
 #  @1
-
+  @MS
   Scenario Outline: Void Normal Check — Select from CheckStatus/Closed Check
     Given User click setting icon in void screen
     And User verify setting options in void screen
@@ -4687,7 +4687,7 @@ Feature: QSR feature
 #    And I click "Hide keyboard" button in the keyboard "Click Back"
 #    When USer click log off button
 
-
+  @MS
   Scenario Outline: Settings Icon on Order Screen,Sync Icon on Order Screen,Application allow user to sync the change through order screen sync button,Add Customer' Icon,Application don't allow user to do "Log off","Operation","Till Management","Sync Icon","All" button process during a sale
     When User click setting icon
     Then User verify setting options
@@ -4895,7 +4895,7 @@ Feature: QSR feature
     Then User click cancel button
     When USer click log off button
 
-
+  @MS
   Scenario: Normal check with Fast cash payment and Service Charge,Normal check with cash payment and Service Charge
     Given User click setting icon
     And User verify setting options
@@ -4931,7 +4931,7 @@ Feature: QSR feature
     And I closed the order type window
     When USer click log off button
 
-
+  @MS
   Scenario: Normal Check Cancel - Cancel “Enter Customer Name” popup todo
     Given User click setting icon
     And User verify setting options
@@ -4963,7 +4963,7 @@ Feature: QSR feature
     And I closed the order type window
     When USer click log off button
 
-
+  @MS
   Scenario: Normal check with Side CC payment
     Given User click setting icon
     And User verify setting options
@@ -5038,7 +5038,7 @@ Feature: QSR feature
     When USer click log off button
 
 
-
+  @MS
   Scenario Outline: Check Discount for item based
     #Check Discount for item based
     # Application display enter the menu item discount
@@ -5123,7 +5123,7 @@ Feature: QSR feature
       |btnVoid|     btnWrong         |btnAdd|btnCancel |btnDiscount |optItemBasedDiscount|btnLogOff|btnDone|
       |Void   |   Wrong Item Ordered |Add   |Cancel    |Discount    |Item-Based Discount |logOff   |Done   |
 
-
+  @MS
   Scenario Outline: Check with discount(Check based - After tax) as Amount
 ##    Given User select QSR mode on menu item page
     And I select category as "FOOD"
@@ -5213,7 +5213,7 @@ Feature: QSR feature
 
  #todo done
  #  @RegressionTest @SmokeTest
-
+  @MS
   Scenario Outline: Check with discount(item based - After tax) as amount
     And I select menu item as "SANDWICHES"
     And I select menu item as "SANDWICHES"
@@ -5280,7 +5280,7 @@ Feature: QSR feature
 
 #todo Done
 #  @RegressionTest @SmokeTest
-
+  @MS
   Scenario Outline: Not allows to Remove the Auto Discount
 #    Given User select QSR mode on menu item page
     And I select category as "CIFOOD"
@@ -5336,7 +5336,7 @@ Feature: QSR feature
 
 #todo done
 #  @RegressionTest
-
+  @MS
   Scenario Outline: Verify item based discount after tax
 #    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
@@ -5467,7 +5467,7 @@ Feature: QSR feature
 
 #todo inprogress
 #  @SmokeTest @RegressionTest
-
+  @MS
   Scenario Outline: Verify check based discount after tax
 #    Given User select QSR mode on menu item page
     And I select category as "PIZZA"
@@ -5518,7 +5518,7 @@ Feature: QSR feature
 
 #todo done
 #  @d1
-
+  @MS
   Scenario Outline: Verify check based discount after tax with open item (amount only)
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -5771,7 +5771,7 @@ Feature: QSR feature
 
 #todo done
 #  @SmokeTest
-
+  @MS
   Scenario Outline: Verify check with fix gratuity on Bar Tab
     Given User click setting icon
     And User verify setting options
@@ -5841,7 +5841,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnPos |btnExit|pin1|pin5|pin0|pinPoint|btnApply |btnContinue|btnLogOff|
       |QSR   |Cancel   |POS    |Exit   | 1  |5   |0   |.       |Apply    |Continue   |logOff   |
 
-
+  @MS
   Scenario Outline: Verify check with tax exempt and with customer
     Given User click setting icon
     And User verify setting options
@@ -5898,7 +5898,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |POS   |Exit   |logOff   |
 
-
+  @MS
   Scenario Outline: Verify check with vary gratuity through Payment screen
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -5938,7 +5938,7 @@ Feature: QSR feature
       |giftCardNumber| btnProcess| btnOk|btnQsr|btnCancel|pin1|pin5|pin0|pinPoint|btnContinue|btnApply|btnManual|Back|btnLogOff|
       |12345      |Process    |OK    |QSR   |Cancel   |1   |5   |0   |.       |Continue   |Apply   |Manual   |Hide keyboard|logOff|
 
-
+  @MS
   Scenario Outline: Verify Check Payment through CC Side with Item Based Discount - After Tax as percentage and with tip
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
@@ -6104,7 +6104,7 @@ Feature: QSR feature
       |btnLogOff|
       |logOff   |
 
-
+  @MS
   Scenario Outline: Verify Check Payment through CC Side with Check Based Discount - After Tax as percentage and with tip# Given User click setting icon
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6256,7 +6256,7 @@ Feature: QSR feature
       |btnCancel|btnDiscount  |btnLogOff|
       |Cancel   | Discount    |logOff   |
 
-
+  @MS
   Scenario Outline: Verify Check Payment through CC Side with Open item Discount- After Tax as percentage and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6412,7 +6412,7 @@ Feature: QSR feature
 #      |btnCancel|btnDiscount|pin1|pin0|btnContinue|btnLogOff|
 #      |Cancel   |Discount   |1   |0   |Continue   |logOff   |
 
-
+  @MS
   Scenario Outline: Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - After Tax as Percentage and with Tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6555,7 +6555,7 @@ Feature: QSR feature
       |btnCancel|btnDiscount|btnLogOff|
       |Cancel   |Discount   |logOff   |
 
-
+  @MS
   Scenario Outline: Discount - Item Based After Tax on BarTab and Pay with Fast Cash as Percentage
     Given User click setting icon
     And User verify setting options
@@ -6691,7 +6691,7 @@ Feature: QSR feature
     Examples:
       |btnQsr|btnCancel|btnDiscount|btnDropDown|category |btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |Discount   |arrow down |Appetizers|POS  |Exit   |logOff   |
-
+  @MS
     Scenario Outline: Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
       Given User click setting icon
       And User verify setting options
@@ -6788,7 +6788,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnDiscount|btnDropDown|category |btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |Discount   |arrow down |Appetizers|POS  |Exit   |logOff   |
 
-
+  @MS
   Scenario Outline: Discount - Check Based with After Tax on BarTab and Pay with Fast Cash as Percentage
     Given User click setting icon
     And User verify setting options
@@ -6885,7 +6885,7 @@ Feature: QSR feature
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |
 
 
-
+  @MS
     Scenario Outline: Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
     Given User click setting icon
     And User verify setting options
@@ -6979,7 +6979,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnDropDown|category |btnExit|btnDiscount|btnLogOff|btnPos|
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |
 
-
+  @MS
   Scenario Outline: Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
     And I select category as "Appetizers"
     When I select menu item as "BRUSHETTA"
@@ -7122,7 +7122,7 @@ Feature: QSR feature
       |course_name|btnCancel|  btnCBDiscount      | text|btnDropDown|category|btnDiscount|pin1|pin5|pin0|btnContinue |btnDone|btnLogOff|
       |ENTREE     |Cancel   |CB-PercentageAfterTax|TL 101,50|arrow down |Appetizers |Discount|1   |5   |0   |Continue    |Done   |logOff|
 
-
+  @MS
   Scenario: Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
     When User click QSR on Menu Item page
     Given User select DineIn mode
@@ -7146,7 +7146,7 @@ Feature: QSR feature
     When User select QSR order typ
     When USer click log off button
 
-
+  @MS
   Scenario Outline: Open Gratuity Page
     When I select menu item as "SANDWICHES"
     Then User click Option Tab
@@ -7208,7 +7208,7 @@ Feature: QSR feature
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
       |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |
 
-
+  @MS
   Scenario Outline: Reduce Gratuity
     When I get check number
     When I select menu item as "SANDWICHES"
@@ -7264,7 +7264,7 @@ Feature: QSR feature
     Examples:
       |btnLogOff|
       |logOff   |
-
+  @MS
   Scenario Outline: Verify Check Payment through CC with Gratuity(Varying) and with tips
     Then User click food category
     When User select Sandwiches menu item
@@ -7330,7 +7330,7 @@ Feature: QSR feature
       |Void   |1/2 Romano|Option   |Modify   |Add Veggies|logOff |Done   |
 
 
-
+  @MS
   Scenario Outline: Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers
     When User select menu item with modifier
     Then User add modifiers over maximum count

@@ -488,9 +488,9 @@ public class PaymentWindow extends OrderManagementScreen{
     public void selectCustomTipAdjust(){
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
         elementClick(customTL,"Tapped Custom Tl Button");
-        elementClick("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'1')]","1 Tapped");
-        elementClick("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'0')]","0 Tapped");
-        elementClick("//ion-col[@class='quantity_grid-row-col ng-star-inserted md hydrated']//span[contains(.,'00')]","00 Tapped");
+        elementClick("//button[@id='npad-1']","1 Tapped");
+        elementClick("//button[(.='0')]","0 Tapped");
+        elementClick("//button[(.='00')]","00 Tapped");
         elementClick("//span[contains(.,' Continue ')]","Tapped Apply Tip");
     }
 //    public void selectCustomTipAdjust(){       //Nov 16

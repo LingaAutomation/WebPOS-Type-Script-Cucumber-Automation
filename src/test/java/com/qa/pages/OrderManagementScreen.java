@@ -116,7 +116,7 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//p[contains(.,'No More payments Needed')]")
     private WebElement noMorePaymentNeed1;
 
-    @FindBy(xpath = "(//p[.='You need to order before paying'])")
+    @FindBy(xpath = "(//h2[.='You need to order before paying'])")
     private WebElement youNeedToOrderBeforeYouPay;
 
     @FindBy(xpath = "//p[contains(.,' Void Reason ')]")
@@ -204,11 +204,20 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//button[contains(.,'Payment')]")
     private WebElement paymentBtn;
 
-    @FindBy(xpath = "//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Walkin')]")
+    @FindBy(xpath = "//h2[contains(.,'Payment(s) made on this Check, Kindly delete the payment to void the Menu item')]")
     private WebElement paymentMadeOnThisCheckPopup;
 
-    @FindBy(xpath ="//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Test Automation')]")
+
+    @FindBy(xpath ="//h2[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Test Automation')]")
     private WebElement paymentMadeOnThisCheckPopup1;
+
+
+
+//    @FindBy(xpath = "//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Walkin')]")
+//    private WebElement paymentMadeOnThisCheckPopup;
+//
+//    @FindBy(xpath ="//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Test Automation')]")
+//    private WebElement paymentMadeOnThisCheckPopup1;
 
     @FindBy(xpath = "//p[.='Payment(s) made on this Check, Can you return this to Walkin Auto ragav']")
     private WebElement paymentMadeOnThisCheckPopupForHouseAccount;
@@ -221,7 +230,7 @@ private WebElement QSRCombo;
 
     String voidBtn = "//linga-icon/../div[contains(.,'Void')]";
 
-    String allOrdersAreVoided = "//p[contains(.,'All Orders Are Voided')]";
+    String allOrdersAreVoided = "//h2[contains(.,'All orders are voided')]";
    // @FindBy (xpath = "All orders are voided")
    // private WebElement allOrdersAreVoided;
 
@@ -324,9 +333,10 @@ private WebElement QSRCombo;
 
     String seat2Del = "/html/body/div/div[2]/div/div/div/div/ion-grid/ion-row/div/button[2]/span[1]/div";
 
-    String  closeYourSaleTxt = "//mat-dialog-content[contains(.,'Close Your Sale')]";
-
-    String  closeTheSaleTxt = "//mat-dialog-content[contains(.,'close the sale')]";
+//    String  closeYourSaleTxt = "//mat-dialog-content[contains(.,'Close Your Sale')]";
+String  closeYourSaleTxt = "//h2[contains(.,'close your sale')]";
+//    String  closeTheSaleTxt = "//mat-dialog-content[contains(.,'close the sale')]";
+String  closeTheSaleTxt = "//h2[contains(.,'close the sale')]";
 
     String logOffBtn = "//button[@id='os_logOff']";
 
@@ -1515,6 +1525,7 @@ public  void selectCategory (String value) throws Exception {
     }
 
     public String getPaymentMadeOnThisCheck(){
+       utils.log().info(paymentMadeOnThisCheckPopup.getText());
         return getText(paymentMadeOnThisCheckPopup,"Payment made on this check is Displayed - ");
     }
 

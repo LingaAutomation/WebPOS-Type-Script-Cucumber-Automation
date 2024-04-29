@@ -1428,7 +1428,7 @@ public class TGglobalElement {
 //    String entreeTitleOnMenuItemPage = "ENTREE";
 
 
-    String emptyCheckPopup = "//p[contains(.,'You need to order before paying')]";
+    String emptyCheckPopup = "//h2[contains(.,'Order Item Before Paying')]";
 
     String emptyCheckDoneButton = "//button[contains(.,'Done')]";
 //    String emptyCheckDoneButton = "//XCUIElementTypeStaticText[@name=\"Done\"]";
@@ -1762,7 +1762,7 @@ public class TGglobalElement {
     String firstModifierForSecondMenuItem = "//span[contains(.,'RYE BREAD')]";
 //    String firstModifierForSecondMenuItem = "//XCUIElementTypeStaticText[@name=\"RYE BREAD\"]";
 
-    String addVoidReasonButton = "(//button[contains(.,' Add ')])[2]";
+    String addVoidReasonButton = "//span[.=' Add ']";
 //    String addVoidReasonButton = "//XCUIElementTypeStaticText[@name=\"Add\"]";
 
     String voidReceiptPrinterDoneButton = "Done";

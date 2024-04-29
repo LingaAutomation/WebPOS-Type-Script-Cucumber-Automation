@@ -99,7 +99,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see close your sale$")
     public void iShouldSeeCloseYourSale() throws InterruptedException {
-        Assert.assertEquals(new OrderManagementScreen().verifyCloseSale(),"Close Your Sale");
+        Assert.assertEquals(new OrderManagementScreen().verifyCloseSale(),"close your sale");
     }
 
     @And ("^I should see close the sale$")
@@ -1385,7 +1385,7 @@ public class TableOrderOperationsStepDef {
     }
     @Then ("^I should see table layout Screen$")
     public void iShouldSeeTableLayoutScreen() throws InterruptedException {
-        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table layout");
+        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table Layout");
     }
     @Then ("^I should see seated status is not change$")
     public void iShouldSeeSeatedStatusIsNotChange(){
@@ -1553,7 +1553,7 @@ public class TableOrderOperationsStepDef {
     @Then ("^I should see payment made on this check popup message$")
     public void iShouldSeePaymentMadeOnThisCheckPopupMessage(){
 //        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin");
-        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin Walkin");
+        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Kindly delete the payment to void the Menu item");
     }
 
     @Then ("^I should see payment made on this check popup message1$")
@@ -1569,8 +1569,9 @@ public class TableOrderOperationsStepDef {
 
 
     @Then ("^I should see All orders are voided$")
-    public void iShouldSeeAllOrdersAreVoided(){
-        Assert.assertEquals(new OrderManagementScreen().getAllOrdersAreVoidedMsg(),"All Orders Are Voided");
+    public void iShouldSeeAllOrdersAreVoided() throws InterruptedException {
+        Thread.sleep(1000);
+        Assert.assertEquals(new OrderManagementScreen().getAllOrdersAreVoidedMsg(),"All orders are voided");
     }
 
     @Then ("^I should see the void reason popup$")

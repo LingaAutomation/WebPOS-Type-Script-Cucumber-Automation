@@ -94,7 +94,7 @@ public class TGVoidPage extends BasePage {
     public void verifyVoidItem(){
         WebElement element = mergeAndFindMobileElement(emptyCheck);
         String actualName = elementGetText(element,"Verify Void Item");
-        String expectedName = "No order to display";
+        String expectedName = "No Orders To Display";
 
         Assert.assertEquals(actualName,expectedName);
     }

@@ -128,11 +128,11 @@ public class ClockInScreen extends UserLoginScreen{
         elementClick(pin5, "Tapped pin5");
     }
     public void pressPin5Open() {
-        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'5')]", "Tapped pin 5");
+        elementClick("//mat-dialog-container[@id='quantity-dialog']//div//button[.=' 5 ']", "Tapped pin 5");
     }
 
     public void pressPin3Open() {
-        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'3')]", "Tapped pin 3");
+        elementClick("//mat-dialog-container[@id='quantity-dialog']//div//button[.=' 3 ']", "Tapped pin 3");
     }
 
     public void pressPin6() {

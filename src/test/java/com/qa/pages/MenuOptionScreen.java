@@ -127,8 +127,8 @@ public class MenuOptionScreen extends ClockInScreen{
 
     String syncBtn = "//button[@class='mat-focus-indicator ion-text-center mat-button mat-button-base _mat-animation-noopable ng-star-inserted'][1]";
 
-    String pleaseCloseTheSaleToSyncTheData = "//p[contains(.,'Please close the sale to sync the data')]";
-
+//    String pleaseCloseTheSaleToSyncTheData = "//p[contains(.,'Please close the sale to sync the data')]";
+String pleaseCloseTheSaleToSyncTheData = "//h2[contains(.,'Please close the sale to sync the data')]";
     @FindBy(xpath = "//p[contains(.,'Open Item')]")
     private WebElement openItemScreen;
 
@@ -362,10 +362,10 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         Thread.sleep(500);
         click(enterAmountField,"Tapped amount field");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+        elementClick("//div//button[.=' 2 ']","Selected - 2");
+        elementClick("//div//button[.='0']","Tapped pin 0");
+        elementClick("//div//button[.='0']","Tapped in 0");
+        elementClick("//div//button[.='0']","Tapped in 0");
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
 //        elementClick(hideKeyboardButton,"Hide Keyboard");
@@ -380,10 +380,16 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         Thread.sleep(500);
         click(enterAmountField,"Tapped amount field");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+
+        elementClick("//div//button[.=' 2 ']","Selected - 2");
+        elementClick("//div//button[.='0']","Tapped pin 0");
+        elementClick("//div//button[.='0']","Tapped in 5");
+        elementClick("//div//button[.='0']","Tapped in 0");
+
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
 //        elementClick(hideKeyboardButton,"Hide Keyboard");
@@ -398,10 +404,14 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         Thread.sleep(500);
         click(enterAmountField,"Tapped amount field");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'5')])","Tapped in 5");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+        elementClick("//div//button[.=' 2 ']","Selected - 2");
+        elementClick("//div//button[.='0']","Tapped pin 0");
+        elementClick("//div//button[.=' 5 ']","Tapped in 5");
+        elementClick("//div//button[.='0']","Tapped in 0");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'5')])","Tapped in 5");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
 
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
@@ -416,10 +426,16 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         Thread.sleep(500);
         click(enterAmountField,"Tapped amount field");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'5')])","Tapped in 5");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+
+        elementClick("//div//button[.=' 2 ']","Selected - 2");
+        elementClick("//div//button[.='0']","Tapped pin 0");
+        elementClick("//div//button[.=' 5 ']","Tapped in 5");
+        elementClick("//div//button[.='0']","Tapped in 0");
+
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped pin 0");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'5')])","Tapped in 5");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
 
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");
@@ -453,10 +469,15 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         elementClick(percentageCheckOption,"Tapped Percentage Button");
         click(enterAmountField,"Tapped amount field");
+
+//        elementClick("//div//button[.=' 2 ']","Selected - 2");
+        elementClick("//div//button[@id='npad-1']","Tapped pin 0");
+        elementClick("//div//button[.='0']","Tapped in 5");
+        elementClick("//div//button[.='0']","Tapped in 0");
 //        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'2')])","Selected - 2");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'1')])","Tapped pin 0");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 5");
-        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'1')])","Tapped pin 0");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 5");
+//        elementClick("(//ion-col[contains(@class,'quantity_grid-row-col md hydrated')]//span[contains(.,'0')])","Tapped in 0");
 
         elementClick(continueButtonOpenDiscount,"Tapped continue button for Open Discount");
         txtFieldForReasonOPenDiscount.sendKeys("Open Item");

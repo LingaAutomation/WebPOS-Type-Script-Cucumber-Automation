@@ -117,10 +117,10 @@ public class CheckOptions extends OrderManagementScreen {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         elementClick(passPercentageValue, "Pass percentage value field is clicked.");
-        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'C')]", "Tapped Pin C");
-        WebElement el2 =  driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'"+number+"')]"));
+        elementClick("//button[.='C']", "Tapped Pin C");
+        WebElement el2 =  driver.findElement(By.xpath("//button[.=' "+number+" ']"));
         elementClick(el2, "Tapped number as - " + number);
-        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'00')]", "Tapped Pin 00");
+        elementClick("//button[.='00']", "Tapped Pin 00");
         WebElement el5 =  driver.findElement(By.xpath("//span[contains(.,'Continue')]"));
         elementClick(el5, "Tapped continue Button ");
 
@@ -581,13 +581,13 @@ public class CheckOptions extends OrderManagementScreen {
         elementClick( price4, "4 is selected ");
     }
 
-    @FindBy(xpath = "//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'00')]")
+    @FindBy(xpath = "//button[.='00']")
     WebElement price00;
     public void press00(){
         elementClick( price00, "00 is selected - ");
     }
 
-    @FindBy(xpath = "(//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'0')])[2]")
+    @FindBy(xpath = "//button[.='0']")
     WebElement price0;
     public void press0(){
         elementClick( price0, "00 is selected - ");
