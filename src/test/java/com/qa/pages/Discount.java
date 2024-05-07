@@ -82,8 +82,9 @@ public class Discount extends BasePage{
     }
 
     public void verifyMenuItemPrizeIsDisplayed(String value) throws InterruptedException {
-        WebElement e11 = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
         Thread.sleep(1000);
+        WebElement e11 = driver.findElement(By.xpath("//div[@id='os_subTotalStr']//input"));
+
         if(e11.isDisplayed()){
             utils.log().info("SubTotal of Menu Item - "+ e11.getAttribute("value"));
             Assert.assertEquals(e11.getAttribute("value"),value);

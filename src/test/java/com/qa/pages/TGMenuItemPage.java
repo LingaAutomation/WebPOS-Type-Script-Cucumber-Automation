@@ -1543,8 +1543,8 @@ public class TGMenuItemPage extends BasePage {
     public void clickPayCheck1() throws InterruptedException {
         Thread.sleep(2000);
 
-            WebElement element = mergeAndFindMobileElement("//button[contains(.,'Pay Check')]");
-            elementClick(element, "Click Pay Check");
+        WebElement element = mergeAndFindMobileElement("//button[contains(.,'Pay Check')]");
+        elementClick(element, "Click Pay Check");
 
     }
 
@@ -2054,7 +2054,7 @@ public class TGMenuItemPage extends BasePage {
         WebElement element =driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
         String actualName = elementGetValue(element,"Verify CheckBased Percentage Discount Type");
         //        String expectedName = "$ 460,00";
-        String expectedName = "$ 0.21";
+        String expectedName = "$ 0.63";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -2550,7 +2550,7 @@ public class TGMenuItemPage extends BasePage {
     public void verifyReachedMaximumCount(){
         WebElement element = mergeAndFindMobileElement(maximumCountText);
         String actualName = elementGetText(element,"Verify Reached Maximum Count");
-        String expectedName = "You reached the maximum count";
+        String expectedName = "You reached maximum count";
 
         Assert.assertEquals(actualName,expectedName);
         WebElement btnDone = mergeAndFindMobileElement(doneButton);

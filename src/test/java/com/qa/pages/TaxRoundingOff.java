@@ -1944,9 +1944,9 @@ public class TaxRoundingOff extends ClockInScreen{
     }
 
     public void iSelectedTheQuantity(String quantity) throws InterruptedException {
-        WebElement quantityBtnn =  driver.findElement(By.xpath("/html/body/app-root/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[3]"));
+        WebElement quantityBtnn =  driver.findElement(By.xpath("/html/body/app-root/ion-app/ion-content/app-dashboard-container/ion-app/ion-content/ion-grid/ion-row/ion-col[1]/app-order-list-container/ion-app/ion-content/div/app-ordered-list/ion-app/ion-content/div/div/div/div[2]/div/div/div[3]"));
         elementClick(quantityBtnn, "Selected QTY");
-        WebElement quantityValue =  driver.findElement(By.xpath("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'"+quantity+"')]"));
+        WebElement quantityValue =  driver.findElement(By.xpath("//button[.=' "+quantity+" ']"));
         elementClick(quantityValue, "Entered the quantity");
 
         elementClick(ContinueBtn, "Selected continue button");

@@ -1,0 +1,6446 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Tax in Scenarios</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>03 May 2024, 02:14</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Tax in Scenarios</td>
+          <td      class="passed"    >106</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >110</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">218</td>
+
+          <td >0</td>
+          <td  class="failed"    >2</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="191843364000">3:11.843</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3500661144.html">@TaxfeaturePayments1</a>
+       <a href="report-tag_302745582.html">@Regressionp</a>
+       <a href="report-tag_2896167332.html">@Paymens</a>
+       <a href="report-tag_595977256.html">@VerificationForUSDStore123</a>
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Tax in Scenarios</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3500661144.html">@TaxfeaturePayments1</a>
+       <a href="report-tag_302745582.html">@Regressionp</a>
+       <a href="report-tag_2896167332.html">@Paymens</a>
+       <a href="report-tag_595977256.html">@VerificationForUSDStore123</a>
+</div>
+
+
+  <span class="lead-duration duration">42.949</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Item Based and Check based Taxes</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">1:8.398</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I'm logged in</span>
+
+  <span class="lead-duration duration">0.429</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I close the order type window</span>
+
+  <span class="lead-duration duration">2.113</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click All</span>
+
+  <span class="lead-duration duration">0.093</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">1.441</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.098</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T10</span>&quot;</span>
+
+  <span class="lead-duration duration">0.075</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.074</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I get check number</span>
+
+  <span class="lead-duration duration">0.098</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Menu</span>&quot;</span>
+
+  <span class="lead-duration duration">4.692</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Burger</span>&quot;</span>
+
+  <span class="lead-duration duration">4.148</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should verify subtotal value as &quot;<span class="argument">$ 7.58</span>&quot;</span>
+
+  <span class="lead-duration duration">1.045</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should verify tax value as &quot;<span class="argument">$ 1.78</span>&quot;</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should verify total value as &quot;<span class="argument">$ 9.36</span>&quot;</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.071</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">1.377</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T10</span>&quot;</span>
+
+  <span class="lead-duration duration">0.047</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.043</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.055</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I get check number</span>
+
+  <span class="lead-duration duration">0.079</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Menu</span>&quot;</span>
+
+  <span class="lead-duration duration">4.661</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Default Menu</span>&quot;</span>
+
+  <span class="lead-duration duration">4.139</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should verify subtotal value as &quot;<span class="argument">$ 4.88</span>&quot;</span>
+
+  <span class="lead-duration duration">1.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should verify tax value as &quot;<span class="argument">$ 0.37</span>&quot;</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should verify total value as &quot;<span class="argument">$ 5.25</span>&quot;</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.058</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.061</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">1.361</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.052</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T7</span>&quot;</span>
+
+  <span class="lead-duration duration">0.058</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.053</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Appetizers</span>&quot;</span>
+
+  <span class="lead-duration duration">4.645</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">RAPINI</span>&quot;</span>
+
+  <span class="lead-duration duration">4.107</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 13.00</span>&quot;</span>
+
+  <span class="lead-duration duration">1.048</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 0.65</span>&quot;</span>
+
+  <span class="lead-duration duration">1.043</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 13.65</span>&quot;</span>
+
+  <span class="lead-duration duration">1.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">I change the Quantity of menu Item as &quot;<span class="argument">5</span>&quot;</span>
+
+  <span class="lead-duration duration">3.161</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ion-col[contains(@class,'quantity_grid-row-col')]//span[contains(.,'5')]&quot;}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ed50aa63ab60a779ba449a357bceb64, findElement {using=xpath, value=//ion-col[contains(@class,'quantity_grid-row-col')]//span[contains(.,'5')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: /var/folders/k7/rsb9tdls2y5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54771/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ed50aa63ab60a779ba449a357bceb64
+	at jdk.internal.reflect.GeneratedConstructorAccessor35.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.qa.pages.OrderManagementScreen.enterMenuQuantity(OrderManagementScreen.java:1622)
+	at com.qa.stepdef.CheckBasedDiscountStepDef.iChangeTheQuantityOfMenuItemAs(CheckBasedDiscountStepDef.java:70)
+	at &#10045;.I change the Quantity of menu Item as &quot;5&quot;(file:///Users/SappanimuthuB-QA-MAC-IN/Downloads/WebPOS%20TypeScript%203/src/test/resources/Tax.feature:60)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 65.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 6.50</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 71.50</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I change the Quantity of menu Item as &quot;<span class="argument">8</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 104.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 15.60</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 119.60</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T8</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Pasta</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as RavioliPesto for Item Based Inclusive Tax</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Butter</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done to get back</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 15.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 1.36</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 15.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T9</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Arab Biriyani</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">sambar</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I change the Quantity of menu Item1 as &quot;<span class="argument">11</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 1,100.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 0.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 1,100.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T10</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Arab Biriyani</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">sambar</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I change the Quantity of menu Item1 as &quot;<span class="argument">12</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 1,200.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 105.35</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 1,305.35</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T11</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Pasta</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as Ling Meatballs for Tax on Item Tax</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select modifier as &quot;<span class="argument">Butter</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done to get back</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 4.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 0.44</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 4.44</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Table Layout tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click new check button on the Table layout screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select table as &quot;<span class="argument">T8</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the number of seats as &quot;<span class="argument">1</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap Continue to finish selecting the number of seats</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">Menu</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Halwa</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I change the Quantity of menu Item as &quot;<span class="argument">8</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item prize as &quot;<span class="argument">$ 80.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the tax amount reflected to the check as &quot;<span class="argument">$ 8.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see orderscreen with menu item Total without Discount or Tax as &quot;<span class="argument">$ 88.00</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Void button on order management screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click All</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should get back to the Table Layout tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click power button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-5" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.546</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_-716561311.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-716561311.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3500661144.html">@TaxfeaturePayments1</a>
+       <a href="report-tag_302745582.html">@Regressionp</a>
+       <a href="report-tag_2896167332.html">@Paymens</a>
+       <a href="report-tag_595977256.html">@VerificationForUSDStore123</a>
+</div>
+
+
+  <span class="lead-duration duration">2:28.893</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Item Based Inclusive Tax</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-8" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.qa.stepdef.Hooks.initialize(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">1:9.799</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I'm logged in</span>
+
+  <span class="lead-duration duration">0.407</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I closed the order type window</span>
+
+  <span class="lead-duration duration">2.078</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">FOOD</span>&quot;</span>
+
+  <span class="lead-duration duration">4.704</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">SANDWICHES</span>&quot;</span>
+
+  <span class="lead-duration duration">4.120</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify added inclusive tax rate</span>
+
+  <span class="lead-duration duration">0.034</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify added exclusive tax rate</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Add Customer Button</span>
+
+  <span class="lead-duration duration">0.085</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I search for &quot;<span class="argument">thomas a</span>&quot;</span>
+
+  <span class="lead-duration duration">0.161</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click &quot;<span class="argument">thomas a</span>&quot; to select customer for the seat</span>
+
+  <span class="lead-duration duration">2.109</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User verify added quantity tax rate</span>
+
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on the Order Button</span>
+
+  <span class="lead-duration duration">0.048</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Void button on order management screen</span>
+
+  <span class="lead-duration duration">2.081</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the void reason popup</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click void Reason on the void popup</span>
+
+  <span class="lead-duration duration">0.060</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Add Button on the void reason popup</span>
+
+  <span class="lead-duration duration">2.111</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I closed the order type window</span>
+
+  <span class="lead-duration duration">2.061</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click pizza category</span>
+
+  <span class="lead-duration duration">5.104</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User select PizzaMel menu item of pizza category</span>
+
+  <span class="lead-duration duration">0.190</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">12.566</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify default tax on PizzaMel</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click void button</span>
+
+  <span class="lead-duration duration">0.073</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">FOOD</span>&quot;</span>
+
+  <span class="lead-duration duration">4.695</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Onion Rings</span>&quot;</span>
+
+  <span class="lead-duration duration">4.112</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify quantity based tax on OnionRings</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click void button</span>
+
+  <span class="lead-duration duration">0.060</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">1.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.086</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click pizza category</span>
+
+  <span class="lead-duration duration">5.105</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Cheese Pizza</span>&quot;</span>
+
+  <span class="lead-duration duration">4.145</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click &quot;<span class="argument">New York</span>&quot; in the Modifier page1 &quot;<span class="argument">click modifier</span>&quot;</span>
+
+  <span class="lead-duration duration">2.102</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.080</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify inclusive tax on Cheese Pizza</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click void button</span>
+
+  <span class="lead-duration duration">0.059</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">1.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.064</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click pizza category</span>
+
+  <span class="lead-duration duration">5.102</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User select PizzaMel menu item of pizza category</span>
+
+  <span class="lead-duration duration">0.198</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">12.604</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify check based tax without subtotal on Margarita</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click void button</span>
+
+  <span class="lead-duration duration">0.059</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">1.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.089</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click pizza category</span>
+
+  <span class="lead-duration duration">5.152</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Pizza Rucola</span>&quot;</span>
+
+  <span class="lead-duration duration">4.136</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.072</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify check based tax with subtotal on PizzaTomBasil</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click void button</span>
+
+  <span class="lead-duration duration">0.060</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">1.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.072</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click pizza category</span>
+
+  <span class="lead-duration duration">5.657</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">California Pizza</span>&quot;</span>
+
+  <span class="lead-duration duration">4.129</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify tax on item tax for inclusive tax on PizzaTomBasil</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click void button</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">1.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click pizza category</span>
+
+  <span class="lead-duration duration">5.102</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Neapolitan Pizza</span>&quot;</span>
+
+  <span class="lead-duration duration">4.118</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify tax on item tax for inclusive tax on NeapolitanPizza</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User click void button</span>
+
+  <span class="lead-duration duration">0.061</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see All orders are voided</span>
+
+  <span class="lead-duration duration">1.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">2.067</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Settings button</span>
+
+  <span class="lead-duration duration">0.102</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click POS Option</span>
+
+  <span class="lead-duration duration">0.167</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User open ask customer name option if disable in void screen</span>
+
+  <span class="lead-duration duration">8.656</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Toggle Icon button</span>
+
+  <span class="lead-duration duration">10.176</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>org.openqa.selenium.TimeoutException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on mac (616ba962ae978180e98973ed2465aad1)] -&gt; xpath: //linga-icon[@symbol='menuIcon']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: /var/folders/k7/rsb9tdls2y5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55336/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 616ba962ae978180e98973ed2465aad1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qa.pages.BasePage.elementClick(BasePage.java:277)
+	at com.qa.pages.BarTabScreen.pressToggleBtn(BarTabScreen.java:124)
+	at com.qa.stepdef.OrderTypesStepDef.iClickTheToggleIconButton(OrderTypesStepDef.java:226)
+	at &#10045;.I click the Toggle Icon button(file:///Users/SappanimuthuB-QA-MAC-IN/Downloads/WebPOS%20TypeScript%203/src/test/resources/Tax.feature:255)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click POS Icon from Toggle</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User click cancel button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click All</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click BarTab Layout</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click New Tab in the Bar Tab Screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Exit to close the preauth window</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User enter customer name for bar tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">CIFOOD</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">Bacon Omelet Senior</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">User verify exclusive tax amount for Bacon Omelet Senior</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click New Tab in the Bar Tab Screen</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Exit to close the preauth window</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User enter customer name for bar tab</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select category as &quot;<span class="argument">FOOD</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select menu item as &quot;<span class="argument">MANTI</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Done button on the Popup</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">User verify inclusive tax amount for Mant&#305;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Cash button for Complete Sale</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Exact button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click Enter Button on the cash pop-up</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click power button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.542</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_-875069498.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-875069498.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

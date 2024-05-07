@@ -1,4 +1,4 @@
-@Regression
+@Ches
 
 Feature: Check Options screen operations
 
@@ -118,8 +118,6 @@ Feature: Check Options screen operations
 #      | table_no | number_of_seats |  Menu_Item     | Modifier |   card_number      | expire_date | card_name | Total    |
 #      | T14      |1                |  French Friese | Steak    |  3530111333300000  | 1224        | JCB       | $ 15.00  |
 
-
-@MKKKK
   Scenario Outline: Create House account for new customers
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -261,6 +259,7 @@ Feature: Check Options screen operations
       | T20      | 1               | CAESAR    | Anchovy   |
 
 
+  @s1
   Scenario Outline: Hold AutoMatic/Manual Payment - Confirm Send Kitchen On Order Management Screen(Manual Hold)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -346,7 +345,7 @@ Feature: Check Options screen operations
       | table_no | number_of_seats | Menu_Item  | Modifier |Menu_Item3  |Menu_Item1  |Modifier1 |Menu_Item2    |Modifier2|
       | T21      | 1               | MINESTRONE | Butter   |Onion Rings | Tuna Tacos | Croutons | Garlic Bread | 4 BBQ   |
 
-
+  @s2
   Scenario Outline: On Hold to Check Down - Do you want send Hold menu to Kitchen popup
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -396,23 +395,22 @@ Feature: Check Options screen operations
     And I click No button on send to kitchen popup
     And I click Exit to return to Order Management Screen
     When I click Print
-#    Then I should see the send to kitchen warning popup
-#    And I click Yes button on send to kitchen popup
-#    Then I should see Receipt Printer popup
-#    And I click Done button on the Popup
+    #Then I should see the send to kitchen warning popup
+    #And I click Yes button on send to kitchen popup
+    #Then I should see Receipt Printer popup
+    #And I click Done button on the Popup
     When I click Finish button
     Then I should get back to the Table Layout tab
     Then I should see check down is increased
     When I click the check from the table layout
     Then I Should get back to the Order Screen
     And I click Payment button in the Order Management Screen
-
     And I click Submit button on the Payment Window
     Then I should see hold item need to send to kitchen popup
     And I click Done button on the Popup
-#    Then I should see the print or send receipt
-#    And I click No thanks Button on the print receipt
-#    Then I should get back to the Table Layout tab
+    #Then I should see the print or send receipt
+    #And I click No thanks Button on the print receipt
+    #Then I should get back to the Table Layout tab
     And I click payment in the payment window
     And I click Delete button on the payment window
     And I click Exit to return to Order Management Screen
@@ -567,7 +565,7 @@ Feature: Check Options screen operations
       | table_no | number_of_seats | Menu_Item_1 | Menu_Item_2 | Modifier |table_no1|
       | T22      | 1               | Onion Rings | Tuna Tacos  | Croutons |T23      |
 
-
+  @tex
   Scenario Outline:Tax exempt should be cancelled when a customer is chosen
     #To Exempt a check from tax
     #Tax Exempt- From Order Screen/Payment Screen
@@ -578,19 +576,16 @@ Feature: Check Options screen operations
     And I select Salad as category
     And I select menu item as "<Menu_Item>"
     And I select modifier as "<Modifier>"
-
     Then I should see the tax amount reflected to the check as "<Tax>"
     Then I should see orderscreen with menu item prize as "<SubTotal>"
     Then I should see orderscreen with menu item Total without Discount or Tax as "<Total>"
-
     And I click Options button
     And I click Tax Exempt Button
     Then I should not see tax on the order screen
-#    Then I should see tax exempt reasons
-#    And  I select School as reason
-#    And I should return back to the order management screen and I should not see the tax amount
-
-#    Then I should see the tax reflected to the check
+    #hen I should see tax exempt reasons
+    #And  I select School as reason
+    #And I should return back to the order management screen and I should not see the tax amount
+    #Then I should see the tax reflected to the check
     Then I should see orderscreen with menu item prize as "<SubTotal1>"
     Then I should see orderscreen with menu item Total without Tax Exempt as "<Total1>"
     #Tax exempt should be cancelled when a customer is chosen
@@ -602,7 +597,7 @@ Feature: Check Options screen operations
     And I click Payment button in the Order Management Screen
     And I click cash button from the payment method popup
     And I click Submit button on the Payment Window
-#    Then I should see the print or send receipt
+    #Then I should see the print or send receipt
 #    And I click No thanks Button on the print receipt
     Then I should get back to the Table Layout tab
     And I click Table Layout tab
@@ -678,7 +673,6 @@ Feature: Check Options screen operations
 #      | table_no | number_of_seats | Menu_Item | Modifier | Tax     |   SubTotal | Total      |  SubTotal1  | Total1    |
 #      | T15      | 1               | CAESAR    | Anchovy  |$ 1.40   | $ 7.00     |$ 8.40      | $ 7.00      | $ 7.00    |
 
-
   Scenario Outline: Tax Exempt- From Order Screen/Payment Screen - Paid amount Exceeding sale amount
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -717,8 +711,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats | Menu_Item | Modifier | Tax     |   SubTotal | Total      |
       | T15      | 1               | CAESAR    | Anchovy  |$ 1.40   | $ 7.00     |$ 8.40      |
-
-
+@Remove
   Scenario Outline: Remove- Tax Exempt from Order Screen/Payment Screen.
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -784,8 +777,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats | Menu_Item | Modifier |
       | T15      | 1               | CAESAR    | Anchovy  |
-
-
+  @Remove
   Scenario Outline: Adding an open item to an existing check
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -813,7 +805,7 @@ Feature: Check Options screen operations
     And I swipe to "<course_name>" as Coursing Name
     And I enter course name as "<open_Item>" for check based open item
     And I tap Price text field
-    And I enter the percentage1 as "10000"
+    And I enter the percentage1 as "10"
     And I select the Tax
     And I click Done button on the open item window
 #    When I click Back button on Check Options Screen
@@ -846,8 +838,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats |open_Item | course_name |Menu_Item           |Serving_Size|Modifier_1  |Modifier_2     |
       | T13      | 1               | Tiramisu |DESSERT      |Pizza Rucola 12inch |DOUBLE      |Add Steak   |Add Chicken    |
-
-
+  @Remove
   Scenario Outline: Gratuity - Should available based on the BO
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1021,7 +1012,7 @@ Feature: Check Options screen operations
       | table_no    | number_of_seats | Menu_Item      | Modifier |Percentage|Percentage1 |Menu_Item1|   SubTotal  | Tax      | Gratuity   |Total       |    SubTotal1  | Tax1      | Gratuity1   |Total1       |
       | T23         |1                |  French Friese | Steak    |8         |3           | Halwa    | $ 10.00     | $ 1.00   |  $ 0.80    | $ 11.80    | $ 10.00       | $ 1.00    |  $ 1.00     | $ 12.00     |
 
-
+  @Remove
   Scenario Outline: Check - Reduce Gratuity
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1059,8 +1050,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats | Menu_Item      | Modifier | Percentage |
       | T9       |1                |  French Friese | Steak    | 8          |
-
-
+  @Remove1
   Scenario Outline: Modify Cancel,Fire Coursing
      # Fire Coursing
     And I click new check button on the Table layout screen
@@ -1162,8 +1152,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats | Menu_Item     | modifier | modifier1   |Course|
       | T10      |1                | French Friese | Steak    | Anchoives   |ENTREE|
-
-
+  @Remove1
   Scenario Outline: Verify whether application can allow to remove the applied Discount for the check when user click appliedDiscount from discount screen
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1196,8 +1185,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats | Menu_Item  | Discount           |
       | T10      |1                | Halwa      | Check Based Amount |
-
-
+  @Remove1
   Scenario Outline: Check with discount(item based - Before tax) as percentage
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1293,8 +1281,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats  |Menu_Item   | Modifier |Discount                 |Discount1  | SubTotal    | Tax       | Total   |Discount2               |txtDiscount2|  SubTotal1    |    Tax1  |Total1      |         Discount3          |txtDiscount3 |SubTotal2    |Tax2       |Total2       |Discount4           |txtDiscount4|  SubTotal3  |Tax3       |Total3      |
       | T12      |1                 | Ravioli    | Butter   | IB-BeforeTax-Percentage |$ 1.40     | $ 14.00     | $ 1.26    | $ 13.86 | IB-AfterTax-Percentage |$ 1.40      | $ 14.00       | $ 1.40   | $ 14.00    |   IB-AfterTax-Amount       |$ 1.00       | $ 14.00     | $ 1.40    | $ 14.40     |IB-BeforeTax-Amount |$ 1.00      | $ 14.00     | $ 1.30    | $ 14.30    |
-
-
+  @Remove1
   Scenario Outline: Check with discount(item based - After tax) as Set Price 500
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1429,8 +1416,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats  |Menu_Item   | Modifier | Modifier1|Discount                |Discount1  | SubTotal    | Tax       | Total       |Discount2                 |txtDiscount2  | SubTotal1    | Tax1   | Total1    |Discount3               | SubTotal2   | Tax2       | Total2      |Discount4              | SubTotal3   | Tax3       | Total3      |Discount5                   | SubTotal4  | Tax4      | Total4       |Discount6                 | SubTotal5   | Tax5      | Total5      |
       | T12      |1                 | Ravioli    | Butter   | Penne    |IB-AfterTax-SetPrice500 |$ 12.50    | $ 14.00     | $ 1.40    | $ 2.90      | IB-BeforeTax-SetPrice500 |$ 13.00       | $ 14.00      | $ 0.10 | $ 1.10    |IB-BeforeTax-AsFreeItem | $ 15.00     | $ 1.50     | $ 16.50     |IB-AfterTax-AsFreeItem | $ 15.00     | $ 1.50     | $ 16.50     | IB-AfterTax-AsFreeAutoDis  | $ 103.00   | $ 10.30   | $ 113.30     |IB-BeforTax-AsFreeAutoDis | $ 105.00    | $ 10.50   | $ 115.50    |
-
-
+  @Remove1
   Scenario Outline: Check Based After Tax Discount as Percentage
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1524,8 +1510,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats | Menu_Item | Modifier |Menu_Item1|Menu_Item2|Discount                 | SubTotal    | Tax       | Discount1 |Total     |Discount2                 | SubTotal2    | Tax2      | txtDiscount2 |Total2       |  Discount3               | SubTotal3   | Tax3      | txtDiscount3   |Total3    |  Discount4              | SubTotal4   | Tax4   |Total4   |
       | T12      | 1               | Ravioli | Butter     |cake      |Cheesecake|CB-AfterTax-Percentage10 | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00  |CB-AfterTax-Amount1000    | $ 16.00      | $ 1.60    | $ 1.00       | $ 16.60     | CB-AfterTaxSetPrice2500  | $ 16.00     | $ 1.60    | $ 0.55         | $ 17.05  |CB-AfterTax-Free300      | $ 17.00     | $ 1.70 | $ 18.70 |
-
-
+  @Remove1
   Scenario Outline: Check Based Before Tax Discount as Percentage
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1772,8 +1757,7 @@ Feature: Check Options screen operations
 #    Examples:
 #      |table_no| number_of_seats |Menu_Item|  SubTotal | Tax      | Discount | Total      | Discount1 |SubTotal2  | Tax2     | txtDiscount2 | Total2   | Discount2 |SubTotal3  | Tax3     | txtDiscount3 | Total3       | Discount3 | SubTotal4 | Tax4    | txtDiscount4 | Total4  | Discount4 | SubTotal5 | Tax5     | txtDiscount5 | Total5   | Discount5 |SubTotal6  | Tax6     | txtDiscount6 | Total6  | Discount6 |
 #      | T15     |1               |Halwa    |  $ 70.00  | $ 7.00   | $ 20.00  | $ 57.00    | After     |  $ 70.00  | $ 7.00   | $ 20.50      | $ 56.50  | After     |  $ 70.00  | $ 7.00   | $ 14.00      | $ 63.00      | After     |  $ 70.00  | $ 4.95  | $ 20.50      | $ 54.45 | Before    |  $ 70.00  | $ 5.00   | $ 20.00      | $ 55.00  | Before    |  $ 70.00  | $ 5.60   | $ 14.00      | $ 61.60 | Before    |
-
-
+  @Remove1
   Scenario Outline: Check with Mix&Match discount as Set Price as 600(After Tax)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1863,7 +1847,7 @@ Feature: Check Options screen operations
       |table_no| number_of_seats |Menu_Item| Menu_Item1 | Menu_Ite2  |Menu_Item3         |SubTotal  | Tax       | Discount | Total     |    Discount1           |SubTotal2 | Tax2      | txtDiscount2 | Total2    | Discount2                |price  |price1  | SubTotal3 | Tax3      | txtDiscount3   | Total3    | Discount3                    | expensive|price2 |price3|  SubTotal4  | Tax4      | txtDiscount4 | Total4    | Discount4                 | expensive1|
       | T15    |1                |  Halwa  | cake       | Cheesecake |Pumpkin Cheese Cake| $ 20.00  | $ 2.00    | $ 8.00   | $ 14.00   | CheckMixMatchSP(After) | $ 20.00  | $ 2.00    | $ 2.00       | $ 20.00   | CheckMixMatchSEIP(After) |10.00  |8.00    | $ 18.00   | $ 1.80    | $ 5.00         | $ 14.80   | CheckMixMatchSPerM(After)    |Most      |15.00  |11.00 | $ 26.00     | $ 2.60    | $ 5.50       | $ 23.10   | CheckMixMatchSPerL(After) | Least    |
 
-
+  @Remove2
   Scenario Outline: Check with Mix&Match discount as Set Price as 500(Before tax)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1952,8 +1936,7 @@ Feature: Check Options screen operations
     Examples:
       |table_no| number_of_seats |Menu_Item | Menu_Item1 |  SubTotal  | Tax      | Discount  | Total   | Discount1               | SubTotal2   | Tax2      | txtDiscount2 | Total2   |    Discount2             | Menu_Item2 | Menu_Item3          |price |price1| SubTotal3  | Tax3     | txtDiscount3 | Total3    | Discount3                | expensive |price2 |price3| SubTotal4  | Tax4     | txtDiscount4 | Total4   | Discount4                | expensive1 |
       | T16    |1                | cake     | Halwa      |  $ 18.00   | $ 1.00   | $ 8.00    | $ 11.00 | CheckMixMatchSP(Before) |  $ 18.00    | $ 1.60    | $ 2.00       | $ 17.60  | CheckMixMatchSEIP(Before)|Cheesecake  | Pumpkin Cheese Cake |15.00 |11.00 |  $ 26.00   | $ 1.85   | $ 7.50       | $ 20.35   | CheckMixMatchSPerM(Befor)|Most       |15.00  |11.00 |  $ 26.00   | $ 2.05   | $ 5.50       | $ 22.55  | CheckMixMatchSPerL(Befor)| Least     |
-
-
+  @Remove20
   Scenario Outline: Check with tax exempt with customer
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1962,11 +1945,11 @@ Feature: Check Options screen operations
     And I click Add Customer Button
     And I search for "<customer_name>"
     When I click "<customer_name>" to select customer for the seat
-#    And I click the customer name on the order screen
-#    Then I should see the customer profile window
+    And I click the customer name on the order screen
+    Then I should see the customer profile window
 #    And I select tax exempt on customer profile screen
-#    And I not select tax exempt on customer profile screen
-#    And I click the Save button
+    And I not select tax exempt on customer profile screen
+    And I click the Save button
     And I select Menu as category
     And I select menu item as "<Menu_Item>"
     Then I should see orderscreen with menu item prize as "<SubTotal>"
@@ -2108,8 +2091,7 @@ Feature: Check Options screen operations
 #    Examples:
 #      | table_no | number_of_seats | Menu_Item   | SubTotal  | Tax       | Gratuity   |Total       |
 #      | T9       |1                | Halwa       | $ 10.00   | $ 1.00    | $ 0.80     |$ 11.80     |
-
-
+  @Remove2
   Scenario Outline: Check With upcharge
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -2947,8 +2929,7 @@ Feature: Check Options screen operations
 #    Examples:
 #      | table_no | number_of_seats | Menu_Item |  SubTotal   | Tax       | Gratuity   | Total       |  card_number     | expire_date | card_name | total      |     Gratuity1     | Total1        | total1      |Percentage |
 #      | T9         |1              |  Halwa    | $ 10.00     | $ 1.00    |  $ 1.00    | $ 12.00     | 3530111333300000 | 1224        | JCB       |$ 22.00     |     $ 0.80        | $ 11.80       |$ 21.80      |8          |
-
-
+  @Remove2
   Scenario Outline: Check Payment through Other payment - Check with discount(item based - After tax) as amount 10
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3045,8 +3026,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount            |Discount1  | SubTotal    | Tax       | Total       |Discount2                |txtDiscount2  | SubTotal2    | Tax2       | Total2       |    Discount3           | SubTotal3    | Tax3       | Total3        |Discount4               |txtDiscount4  | SubTotal4    | Tax4      | Total4       |
       | T12      |1                 | Ravioli  | Butter   | IB-AfterTax-Amount |$ 1.00     | $ 14.00     | $ 1.40    | $ 14.40     | IB-AfterTax-SetPrice500 |$ 12.50       | $ 14.00      | $ 1.40     | $ 2.90       | IB-AfterTax-AsFreeItem | $ 15.00      | $ 1.50     | $ 16.50       | IB-AfterTax-Percentage |$ 1.40        | $ 14.00      | $ 1.40    | $ 14.00      |
-
-
+  @Remove2
   Scenario Outline: Check Payment through others payment - Check with discount(Item based - Before tax) as Percentage
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3136,8 +3116,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats  |Menu_Item | Modifier |Discount                 |Discount1  | SubTotal    | Tax       | Total       |Discount2            |txtDiscount2  | SubTotal2    | Tax2    | Total2      |Discount3                  |txtDiscount3  | SubTotal3    | Tax3    | Total3    |Discount4                  | SubTotal4   | Tax4       | Total4       |
       | T12      |1                 | Ravioli  | Butter   | IB-BeforeTax-Percentage |$ 1.40     | $ 14.00     | $ 1.26    | $ 13.86     |IB-BeforeTax-Amount  |$ 1.00        | $ 14.00      | $ 1.30  | $ 14.30     |IB-BeforeTax-SetPrice500   |$ 13.00       | $ 14.00      | $ 0.10  | $ 1.10    | IB-BeforeTax-AsFreeItem   | $ 15.00     | $ 1.50     | $ 16.50      |
-
-
+  @Remove2
   Scenario Outline: Check Payment through Other payment - Check with discount(check based - After tax) as percentage
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3226,8 +3205,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats | Menu_Item | Modifier |Discount                  | SubTotal    | Tax       | Discount1 |Total        |   Menu_Item1   |Discount2              | SubTotal2   | Tax2      | txtDiscount2 |Total2         |Discount3               | SubTotal3   | Tax3     | txtDiscount3 |Total3       |  Menu_Item2      |Discount4            | SubTotal4    | Tax4       | Total4    |
       | T12      | 1               | Ravioli   | Butter   |CB-AfterTax-Percentage10  | $ 28.00     | $ 2.80    | $ 2.80    | $ 28.00     | cake           |CB-AfterTax-Amount1000 | $ 16.00     | $ 1.60    | $ 1.00       | $ 16.60       |CB-AfterTaxSetPrice2500 | $ 16.00     | $ 1.60   | $ 0.55       | $ 17.05     |  Cheesecake      | CB-AfterTax-Free300 | $ 17.00      | $ 1.70     | $ 18.70   |
-
-
+  @Remove2
   Scenario Outline: Check Payment through Other payment - Check with discount(check based - Before tax) as Percentage
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3471,8 +3449,7 @@ Feature: Check Options screen operations
 #    Examples:
 #      |table_no| number_of_seats |Menu_Item|  SubTotal  | Tax        | Discount  | Total       | Discount1 |  Tax2     | txtDiscount2 | Total2        |  Tax3     | txtDiscount3 | Total3  |
 #      | T15     |1               |Halwa    |   $ 70.00  | $ 4.95     | $ 20.50   | $ 54.45     | Before    |$ 5.00     | $ 20.00      | $ 55.00       |  $ 5.60   | $ 14.00      | $ 61.60 |
-
-
+  @Remove2
   Scenario Outline: Check Payment through Other payment - Check with Mix&Match discount as Set Price(After Tax)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3559,9 +3536,8 @@ Feature: Check Options screen operations
     Examples:
       |table_no| number_of_seats |Menu_Item|  SubTotal   | Tax       | Discount | Total   | Discount1              | SubTotal2  | Tax2     | txtDiscount2  | Total2        | Discount2                |  Menu_Item1 |Menu      |Menu1    |  SubTotal3     | Tax3       | txtDiscount3   | Total3       | Discount3                  | expensive |   Menu_Item2   |Menu_Item3         |Menu2   |Menu3 |  SubTotal4    | Tax4       | txtDiscount4   | Total4     | Discount4                 | expensive1 |
       | T15    |1                |  Halwa  |   $ 20.00   | $ 2.00    | $ 8.00   | $ 14.00 | CheckMixMatchSP(After) | $ 20.00    | $ 2.00   | $ 2.00        | $ 20.00       | CheckMixMatchSEIP(After) |  cake       |10.00     |8.00     | $ 18.00        | $ 1.80     | $ 5.00         | $ 14.80      | CheckMixMatchSPerM(After)   |Most      | Cheesecake     |Pumpkin Cheese Cake|  15.00 |11.00 |$ 26.00        | $ 2.60     | $ 5.50         | $ 23.10    | CheckMixMatchSPerL(After) |Least       |
-
-
- Scenario Outline: Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
+  @Remove2
+  Scenario Outline: Check Payment through Other payment - Check with Mix&Match discount as Set Price as 500(Before tax)
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
     And I select the number of seats as "<number_of_seats>"
@@ -3651,8 +3627,7 @@ Feature: Check Options screen operations
     Examples:
       |table_no| number_of_seats |Menu_Item | Menu_Item1|  SubTotal    | Tax       | Discount   | Total       | Discount1               |SubTotal2      | Tax2       | txtDiscount2   | Total2  | Discount2                 |  Menu     |Menu1      |  SubTotal3 | Tax3   | txtDiscount3 | Total3    | Discount3                  | expensive |Menu_Item2   | Menu_Item3          | Menu2 | Menu3 |expensive1| SubTotal4    | Tax4       | txtDiscount4   | Total4     | Discount4                 |
       | T16    |1                | cake     | Halwa     |  $ 18.00     | $ 1.00    | $ 8.00     | $ 11.00     | CheckMixMatchSP(Before) |  $ 18.00      | $ 1.60     | $ 2.00         | $ 17.60 | CheckMixMatchSEIP(Before) |    8.00  |10.00       | $ 18.00    | $ 1.30 | $ 5.00       | $ 14.30   | CheckMixMatchSPerM(Befor)  |Most       | Cheesecake  | Pumpkin Cheese Cake |15.00  |11.00  |Least    |  $ 26.00     | $ 2.05     | $ 5.50         | $ 22.55    | CheckMixMatchSPerL(Befor) |
-
-
+  @Remove2
   Scenario Outline: Check Payment through Other payment - Check with Exclusive Tax
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3674,7 +3649,7 @@ Feature: Check Options screen operations
       | table_no | number_of_seats | Modifier | Tax      | SubTotal | Total   |
       | T18      |1                | Butter   | $ 1.40   | $ 14.00  | $ 15.40 |
 
-
+  @Remove20
   Scenario Outline: Check Payment through other payment - Check with tax exempt and with customer
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3819,8 +3794,7 @@ Feature: Check Options screen operations
 #    Examples:
 #      | table_no | number_of_seats | Menu_Item   | SubTotal  | Tax      | Gratuity   |Total    |
 #      | T9       |1                | Halwa       |$ 10.00    | $ 1.00   | $ 0.80     |$ 11.80  |
-
-
+  @Remove2
   Scenario Outline: Check Payment through side CC and customer & Merchant copy enabled without tips
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3864,8 +3838,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats |  Menu_Item     | Modifier |
       | T15      |1                |  French Friese | Steak    |
-
-
+  @Remove2
   Scenario Outline: Check Payment through Side CC and customer & Merchant copy enabled tips
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -3912,8 +3885,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats |  Menu_Item     | Modifier |Total     |total   |
       | T16      |1                |  French Friese | Steak    |  $ 15.00 |$ 25.00 |
-
-
+  @Remove2
   Scenario Outline: Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
     #Verify the check in Batch/Tip Adjustment for Check Payment through Side CC enabled with tips
       #Verify merchant copy bill printout of side CC payment with sign
@@ -3939,8 +3911,7 @@ Feature: Check Options screen operations
     Examples:
       | table_no | number_of_seats |  Menu_Item    | Modifier |  Total    | total     |
       | T17      |1                | French Friese | Steak    |  $ 15.00  |  $ 25.00  |
-
-
+  @Remove2
   Scenario Outline:  Check Payment through Side CC with discount(item based - After tax/Before) as percentage and with tip
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4008,7 +3979,7 @@ Feature: Check Options screen operations
       | table_no | number_of_seats |Menu_Item   | Modifier |Discount                |  Discount1            |Discount2  | SubTotal    | Tax       | Total       |   total     |    Discount3           |Discount4          |txtDiscount3 | SubTotal3    | Tax3       | Total3         |  total3      |
       | T12      |1                | Ravioli    | Butter   | IB-AfterTax-Percentage |IB-BeforeTax-Percentage|$ 2.66     | $ 14.00     | $ 1.13    | $ 12.47     | $ 22.47     | IB-AfterTax-Amount     |IB-BeforeTax-Amount|$ 2.00       | $ 14.00      | $ 1.20     | $ 13.20        |  $ 23.20     |
 
-
+  @Remove2
   Scenario Outline: Check Payment through side CC with discount(item based - After tax/Before) as set price and with tip
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4076,7 +4047,7 @@ Feature: Check Options screen operations
       | table_no | number_of_seats|Menu_Item | Modifier |     Discount            |  Discount1               |Discount2    | SubTotal    | Tax       | Total      |  total     |   Discount3               |Discount4              | SubTotal3    | Tax3       | Total3    | total3     |
       | T14       |1              | Ravioli  | Butter   | IB-AfterTax-SetPrice500 |IB-BeforeTax-SetPrice500  |$ 13.00      | $ 14.00     | $ 0.10    | $ 1.10     |  $ 11.10   |   IB-AfterTax-AsFreeItem |IB-BeforeTax-AsFreeItem | $ 16.00      | $ 1.60     | $ 17.60   |  $ 27.60   |
 
-
+  @Remove2
   Scenario Outline: Check Payment through side CC with discount(Check based - After tax/Before) as percentage and with tip
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4151,7 +4122,7 @@ Feature: Check Options screen operations
       | table_no | number_of_seats | Menu_Item | Modifier |Discount                 |Discount1                 | SubTotal    | Tax       | Discount2  |Total        | total      |     Discount3              |Discount4               | SubTotal3    | Tax3       | txtDiscount3   | Total3     | total3    |
       | T12      | 1               |  Ravioli  | Butter   |CB-AfterTax-Percentage10 |CB-BeforeTax-Percentage10 | $ 28.00     | $ 2.27    | $ 5.32     | $ 24.95     |  $ 34.95   |     CB-AfterTax-Amount1000 |CB-BeforeTax-Amount1000 | $ 28.00      | $ 2.60     | $ 2.00         | $ 28.60    | $ 38.60   |
 
-
+  @Remove2
   Scenario Outline: Check Payment through side CC with discount(Check based - After tax/Before) as set price and with tip
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4309,7 +4280,7 @@ Feature: Check Options screen operations
 #      |table_no| number_of_seats |Menu_Item|  SubTotal   | Tax         | Discount   | Total     | Discount1 |  total     | SubTotal2  | Tax2     | txtDiscount2  | Total2    | Discount2   |   total2  |     SubTotal3  | Tax3         | txtDiscount3  | Total3    | Discount3  | total3   |
 #      | T15     |1               |Halwa    | $ 70.00     | $ 7.00      | $ 14.00    | $ 63.00   | After     |  $ 73.00   |  $ 70.00   | $ 7.00   | $ 20.50       | $ 56.50   | After       | $ 66.50   |     $ 70.00    | $ 7.00       | $ 20.00       | $ 57.00   | After      | $ 67.00  |
 #
-
+  @Remove20
   Scenario Outline: Check Payment through Side CC with discount(Mix&Match - After/before tax) as set price and with tip
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4373,8 +4344,9 @@ Feature: Check Options screen operations
     And I click power button
     Examples:
       |table_no| number_of_seats |Menu_Item|  SubTotal   | Tax      | Discount  | Total  | Discount1              |Discount2              | total    |  SubTotal3  | Tax3    | txtDiscount3 | Total3    | Discount3                |Discount4                 |  total3    |
-      | T15     |1               |  Halwa  |   $ 20.00   | $ 1.00   | $ 18.00   | $ 3.00 | CheckMixMatchSP(After) |CheckMixMatchSP(Before)| $ 12.20  |    $ 20.00  | $ 1.40  | $ 6.00       | $ 15.40   | CheckMixMatchSEIP(After) |CheckMixMatchSEIP(Before) |$ 25.40     |
+      | T15     |1               |  Halwa  |   $ 20.00   | $ 0.20   | $ 18.00   | $ 2.20 | CheckMixMatchSP(After) |CheckMixMatchSP(Before)| $ 12.20  |    $ 20.00  | $ 1.40  | $ 6.00       | $ 15.40   | CheckMixMatchSEIP(After) |CheckMixMatchSEIP(Before) |$ 25.40     |
 
+  @Remove2
   Scenario Outline: Check Payment through side CC with discount(Mix&Match - After/before tax) as set price(Most Expensive) and with tip
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -4445,7 +4417,7 @@ Feature: Check Options screen operations
       |table_no| number_of_seats |Menu_Item|Menu_Item1 |price    |price1  |  SubTotal | Tax    | Discount  | Total  | Discount1                 |Discount2                 | total   | expensive|  Menu_Item2   |Menu_Item3         | price2   |price3   | SubTotal3    | Tax3    | txtDiscount3 | Total3  | Discount3                 | Discount4                  |  total3      | expensive1 |
       | T15     |1               |  Halwa  |cake       | 10.00   |8.00    |  $ 18.00  | $ 1.05 | $ 7.50   | $ 11.55 | CheckMixMatchSPerM(After) | CheckMixMatchSPerM(Befor)|$ 21.55  |Most      |   Cheesecake  |Pumpkin Cheese Cake|15.00     |11.00    |  $ 26.00     | $ 1.78  | $ 8.25      | $ 19.53 | CheckMixMatchSPerL(After) | CheckMixMatchSPerL(Befor)  | $ 29.53      |Least      |
 
-
+  @Remove2
   Scenario Outline: Check Payment through Side CC with Gratuity(Fixed) and with tips
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -5626,7 +5598,7 @@ Feature: Check Options screen operations
 #      | T10         |1             |Halwa       | $ 10.00     | $ 1.00    | $ 11.00     | $ 10.00  |$ 21.00     | auto test     |$ 20.00|
 
 
-
+  @Remove2
   Scenario Outline: Check Payment through side CC with tax Exempt(Not select customer) and also with tip
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"

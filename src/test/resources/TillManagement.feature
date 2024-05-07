@@ -10,7 +10,7 @@ Feature: Till management operations
     When I verify till is available or not if available closed the till
     Then I should see the Open Till Window with title "<title>"
     And I click power button1
-  #Scenario Outline: Opening a till
+#  Scenario Outline: Opening a till
     Given I'm displaying Open Till window
     And I press first number of the total
     And I press second number of the total

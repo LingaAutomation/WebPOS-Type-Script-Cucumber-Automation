@@ -1,29 +1,29 @@
-@Regression
+@btab1
 Feature: Bar Tab
 
   Background:
     Given I'm logged in
     And I closed the order type window
 
-
+  @btd
   Scenario: Verify Bar Tab to Split
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
     When User click All button
     And I click BarTab Layout
     When User click new tab on Bar tab
 #    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I select category as "FOOD"
     And I get check number
     And User take an order as "SANDWICHES"
@@ -59,18 +59,18 @@ Feature: Bar Tab
 #    When User select QSR order typ
     And I click log off button in order screen
 
-
+  @btd
   Scenario: Verify Merge with Discount on Bar Tab
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab
     And I get check number
@@ -101,7 +101,7 @@ Feature: Bar Tab
     And I click New Tab in the Bar Tab Screen
 
     And I click the Exit to close the preauth window
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I get check number1
     And I select category as "FOOD"
     And User take an order as "SANDWICHES"
@@ -154,18 +154,17 @@ Feature: Bar Tab
     And I click BarTab Layout
     And I click power button
 
-
   Scenario: Verify search option with check number on Bar Tab
-        Given User click setting icon
+    Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab
     When User click All button
@@ -173,7 +172,7 @@ Feature: Bar Tab
     When User click new tab on Bar tab
 
     And I click the Exit to close the preauth window
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I get check number
 #    And User enter customer name for bar tab
     And I select category as "FOOD"
@@ -187,24 +186,23 @@ Feature: Bar Tab
 #    Then User click finish button
     #Verify search option with customer name on Bar Tab
 #    Then User enter customer name on bar tab search textfield
-    And User verify searched customer name
+#    And User verify searched customer name
     #Application allow the user to change the service
 #    When User click QSR on Check Status page
 #    And User click cancel button
     And I click power button
 
-
   Scenario: Application display the entered name or updated name
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab
     When User click All button
@@ -212,14 +210,14 @@ Feature: Bar Tab
     When User click new tab on Bar tab
 #    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I get check number
     And I select category as "FOOD"
 
     And User take an order as "SANDWICHES"
     Then User click finish button
     Then I should see closed check in barTab
-    And User verify searched customer name
+#    And User verify searched customer name
     And I click clear text button
     And I click closed check in bar tab
 #    And User verify last customer name as floating on bar tab
@@ -244,14 +242,14 @@ Feature: Bar Tab
   Scenario: Application display the check in blue color  - on hold
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab
     Then User click food category
@@ -273,16 +271,16 @@ Feature: Bar Tab
 
 
   Scenario: Application can sort customer name  also bar tab check from A to Z
-    Given User click setting icon
-    And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
-    And I click POS Icon from Toggle
-    And User click cancel button
+#    Given User click setting icon
+#    And User verify setting options
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
+#    And I click POS Icon from Toggle
+#    And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab
     Then User click food category
@@ -297,19 +295,18 @@ Feature: Bar Tab
     When I click QSR tab
     Then User click cancel button
     And I click log off button in order screen
-
-
+@b
   Scenario: Application should ask customer name enable Ask customer name option
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab
     #Check with vary gratuity through Payment screen - BarTab
@@ -326,19 +323,17 @@ Feature: Bar Tab
     Then User click finish button
     And I click power button
 
-
-
   Scenario: Split without Selected Item
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
     And I get check number
     And I add a new seat
@@ -361,7 +356,6 @@ Feature: Bar Tab
     Then I Should get back to the Order Screen
     Then User click finish button in split screen
     And I click power button
-
 
   Scenario: Split Evenly
     Given User click QSR on Menu Item page in split screen
@@ -449,7 +443,6 @@ Feature: Bar Tab
 #    And I click "OK" in the receipt printer popup in split screen "Click ok button in the popup"
     And I click power button
 
-
   Scenario: Split from Order Screen
     Given User click QSR on Menu Item page in split screen
     Given User select DineIn mode in split screen
@@ -479,7 +472,6 @@ Feature: Bar Tab
 #    And User click submit button in split screen
 #    And I click power button
 
-
   Scenario: Application allows the user to navigate the split seat screen
     Given User click QSR on Menu Item page in split screen
     Given User select DineIn mode in split screen
@@ -494,18 +486,17 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
-
   Scenario: Split By Seat on BarTab with Add Button
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab in split screen
     And I select Pizza as Category
@@ -524,18 +515,18 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
-
+  @btda
   Scenario: Split By Seat on BarTab with Split By Seat Button  -- SEAT DÜZENLENECEK
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab in split screen
     When I add a new seat
@@ -554,17 +545,18 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
+  @btda1
   Scenario: Split By Seat - Separate Item on Bar Tab
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab in split screen
     When I add a new seat
@@ -590,17 +582,18 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
+  @btda
   Scenario: Split By Seat - Split Evenly on Bar Tab - with Add Button
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab in split screen
 ##    When User click food category in split screen
@@ -621,17 +614,18 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
+  @btda
   Scenario: Split By Seat - Split Evenly on Bar Tab - with More Than One Seat
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab in split screen
     When I add a new seat
@@ -653,17 +647,18 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
+  @btda
   Scenario: Split By Seat - Group Seat on Bar Tab
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    And User enter customer name for bar tab in split screen
     When I add a new seat
@@ -697,19 +692,19 @@ Feature: Bar Tab
     And User click enter button in split screen
     And I click power button
 
-  @BarTab1
+  @bv
   Scenario: Transfer Check To Another Server
 #
     Given User click setting icon
     And User verify setting options
-    When User select POS Settings tab
-    Then User open ask customer name option if disable in void screen
-    And I click the Toggle Icon button
+#    When User select POS Settings tab
+#    Then User open ask customer name option if disable in void screen
+#    And I click the Toggle Icon button
     And I click POS Icon from Toggle
     And User click cancel button
     When User click QSR on Menu Item page
     Then User select Bar Tab in order types
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I click the Exit to close the preauth window
 #    Then User click cancel button
     And I get check number
@@ -718,7 +713,7 @@ Feature: Bar Tab
     And User click finish button
     When User click new tab on Bar tab
     And I click the Exit to close the preauth window
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
 #    Then User click cancel button
     And I get check number1
     And Get the Server Name from The required Table
@@ -789,7 +784,7 @@ Feature: Bar Tab
 
     Then User click new tab on Bar tab
     And I click the Exit to close the preauth window
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I get check number1
     And I select category as "FOOD"
     And User take an order as "SANDWICHES"
@@ -813,7 +808,7 @@ Feature: Bar Tab
 #    And User select server which transfer to
 #    And User continue if server closed
     And I click Done button on the Popup
-   And I should see transfer successful pop-up
+    And I should see transfer successful pop-up
     And I click Done button on the Popup
     Then User click Merge button in the table layout screen
     And I click closed check in bar tab
@@ -835,7 +830,7 @@ Feature: Bar Tab
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
     And I click the Exit to close the preauth window
-    Then User click cancel button
+#    Then User click cancel button
     And I get check number
 #    When User click pizza category
     And I select category as "PIZZA"
@@ -844,7 +839,7 @@ Feature: Bar Tab
     And User click finish button
     Then User click new tab on Bar tab
     And I click the Exit to close the preauth window
-    And User enter customer name for bar tab
+#    And User enter customer name for bar tab
     And I get check number1
     And I select category as "FOOD"
     And User take an order as "SANDWICHES"
@@ -884,7 +879,7 @@ Feature: Bar Tab
     When User click Bar Tab on Check Status page
     Then User click new tab on Bar tab
     And I click the Exit to close the preauth window
-    Then User click cancel button for customer name popup
+#    Then User click cancel button for customer name popup
     And I get check number
     And I select category as "FOOD"
     And User take an order as "SANDWICHES"

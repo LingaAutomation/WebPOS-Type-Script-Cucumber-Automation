@@ -99,7 +99,7 @@ public class TableOrderOperationsStepDef {
 
     @Then ("^I should see close your sale$")
     public void iShouldSeeCloseYourSale() throws InterruptedException {
-        Assert.assertEquals(new OrderManagementScreen().verifyCloseSale(),"close your sale");
+        Assert.assertEquals(new OrderManagementScreen().verifyCloseSale(),"Close Your Sale");
     }
 
     @And ("^I should see close the sale$")
@@ -126,10 +126,33 @@ public class TableOrderOperationsStepDef {
     public void iSelectTheNumberOfSeatsAs(String noOfSeats) {
         new TableLayOutScreen().selectSeatNo(noOfSeats);
     }
-
+    @And("^I select the number of seats1 as \"([^\"]*)\"$")
+    public void iSelectTheNumberOfSeats1As(String noOfSeats) {
+        new TableLayOutScreen().selectSeatNo1(noOfSeats);
+    }
     @And("^I tap Continue to finish selecting the number of seats$")
     public void iTapContinueToFinishSelectingTheNumberOfSeats() {
         new TableLayOutScreen().pressContinueBtn();
+    }
+
+    @And("I get check number two")
+    public void iGetCheckNumberTwo() {
+        new OrderManagementScreen().getCheckNumberTxttwo();
+    }
+
+    @And("I get check number Three")
+    public void iGetCheckNumberThree() {
+        new OrderManagementScreen().getCheckNumberTxtthree();
+    }
+
+    @And("I get check number four")
+    public void iGetCheckNumberFour() {
+        new OrderManagementScreen().getCheckNumberTxtfour();
+    }
+
+    @And("I get check number five")
+    public void iGetCheckNumberFive() {
+        new OrderManagementScreen().getCheckNumberTxtfive();
     }
 
     @And("^I should see numbers of seats as \"([^\"]*)\"$")
@@ -270,6 +293,27 @@ public class TableOrderOperationsStepDef {
         new TableLayOutScreen().selectTable(firstTableToMerge);
     }
 
+    @And("I select a table to be merged as two {string}")
+    public void iSelectATableToBeMergedAsTwo(String firstTableToMerge) {
+        new TableLayOutScreen().selectTableTwo(firstTableToMerge);
+    }
+
+    @And("I select a table to be merged as Three {string}")
+    public void iSelectATableToBeMergedAsThree(String firstTableToMerge) {
+        new TableLayOutScreen().selectTableThree(firstTableToMerge);
+    }
+
+
+    @And("I select a table to be merged as Four {string}")
+    public void iSelectATableToBeMergedAsFour(String firstTableToMerge) {
+        new TableLayOutScreen().selectTablefour(firstTableToMerge);
+    }
+
+    @And("I select a table to be merged as Five {string}")
+    public void iSelectATableToBeMergedAsFive(String firstTableToMerge) {
+        new TableLayOutScreen().selectTablefive(firstTableToMerge);
+    }
+
     @And("^I click already selected table as \"([^\"]*)\"$")
     public void iClickAlreadySelectedTableAs(String firstTableToMerge) {
         new TableLayOutScreen().selectTable(firstTableToMerge);
@@ -290,7 +334,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @Then ("^I should see the merged popup after merge$")
-    public void iShouldSeetheMergedPopupAfterMerge(){
+    public void iShouldSeetheMergedPopupAfterMerge() throws InterruptedException {
         new TableLayOutScreen().verifyMergedPopupAfterMerge();
     }
 
@@ -1165,7 +1209,7 @@ public class TableOrderOperationsStepDef {
     }
 
     @And ("^I select the number of split item \"([^\"]*)\" for Split check$")
-    public void iSelectTheNumberOfSplitItemForSplitCheck(String number){
+    public void iSelectTheNumberOfSplitItemForSplitCheck(String number) throws InterruptedException {
         new TableLayOutScreen().selectTheNumberOfSplitItem(number);
     }
     @And ("^I click the Back button on Split Screen$")
@@ -1385,7 +1429,7 @@ public class TableOrderOperationsStepDef {
     }
     @Then ("^I should see table layout Screen$")
     public void iShouldSeeTableLayoutScreen() throws InterruptedException {
-        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table Layout");
+        Assert.assertEquals(new OrdersAndDriversListScreen().verifyTableLayoutTab(),"Table layout");
     }
     @Then ("^I should see seated status is not change$")
     public void iShouldSeeSeatedStatusIsNotChange(){
@@ -1559,19 +1603,19 @@ public class TableOrderOperationsStepDef {
     @Then ("^I should see payment made on this check popup message1$")
     public void iShouldSeePaymentMadeOnThisCheckPopupMessage1(){
 //        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck(),"Payment(s) made on this Check, Can you return this to Walkin");
-        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck1(),"Payment(s) made on this Check, Can you return this to Walkin Test Automation");
+        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheck1(),"Payment(s) made on this Check, Kindly delete the payment to void the Menu item");
     }
 
     @Then ("^I should see payment made on this check popup message for house account$")
     public void iShouldSeePaymentMadeOnThisCheckPopupMessageForHouseAccount(){
-        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheckHouseAccount(),"Payment(s) made on this Check, Can you return this to Walkin Auto ragav");
+        Assert.assertEquals(new OrderManagementScreen().getPaymentMadeOnThisCheckHouseAccount(),"Payment(s) made on this Check, Kindly delete the payment to void the Menu item");
     }
 
 
     @Then ("^I should see All orders are voided$")
     public void iShouldSeeAllOrdersAreVoided() throws InterruptedException {
         Thread.sleep(1000);
-        Assert.assertEquals(new OrderManagementScreen().getAllOrdersAreVoidedMsg(),"All orders are voided");
+        Assert.assertEquals(new OrderManagementScreen().getAllOrdersAreVoidedMsg(),"All Orders Are Voided");
     }
 
     @Then ("^I should see the void reason popup$")
@@ -1753,7 +1797,7 @@ public class TableOrderOperationsStepDef {
         new ClockInScreen().priceFrenchFries();
     }
     @And ("^I click partial amount from the payment window$")
-    public void iClickPartialAmountFromThePaymentWindow(){
+    public void iClickPartialAmountFromThePaymentWindow() throws InterruptedException {
         new PaymentWindow().pressTl10();
     }
     @Then ("^I should see please pay amount$")

@@ -109,7 +109,7 @@ public class TGGiftCard extends BasePage{
         Assert.assertEquals(actualName,expectedName);
 
         try{
-            WebElement element2 = driver.findElement(By.xpath("(//button[contains(.,' Done ')])[2]"));
+            WebElement element2 = driver.findElement(By.xpath("//button[.='Done']"));
             element2.click();
             utils.log().info("Done Button");
         }catch (Exception w){
@@ -428,8 +428,9 @@ public class TGGiftCard extends BasePage{
         elementClick(element1, "click warningPopupDoneButton ");
     }
 
-    public void giftCardChargeAmount(){
+    public void giftCardChargeAmount() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath(giftCardChargeAmountText));
         elementClick(element, "click giftCardChargeAmountText ");
 

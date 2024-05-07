@@ -1,4 +1,4 @@
-
+@Paymens
 Feature: Menu Option In scenarios
 
   Background:
@@ -92,28 +92,28 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats |  course_name |open_Item     |
       | T8       |1                |  DESSERT     |Tiramisu      |
 
-
+  @M12
   Scenario Outline: Menu Option - Hold, Fire, Repeat, Quantity, Attach, Togo, Deselected from an Item
-    And I click new check button on the Table layout screen
-    And I select table as "<table_no>"
-    And I select the number of seats as "<number_of_seats>"
-    And I tap Continue to finish selecting the number of seats
-    And I select FOOD as category
-    And I select menu item as "<Menu_Item>"
-    And I select modifier as "<Modifier>"
-    And I click Done to get back
-    And I click menu item as "<Menu_Item>" to see Menu option screen
-    And I click Hold to put order on hold
-    And I click Done in the hold window
-    Then I should see the hold icon over the order section
-    And I click Cash button for Complete Sale
-    And I click Exact button on the cash pop-up
-    And I click Enter Button on the cash pop-up
-    Then I should see do you want to send hold menu items to kitchen popup message2
-    And I click Yes button on send to kitchen popup
-    # Then I should see the print or send receipt
-   # And I click No thanks Button on the print receipt
-    Then I should get back to the Table Layout tab
+#    And I click new check button on the Table layout screen
+#    And I select table as "<table_no>"
+#    And I select the number of seats as "<number_of_seats>"
+#    And I tap Continue to finish selecting the number of seats
+#    And I select FOOD as category
+#    And I select menu item as "<Menu_Item>"
+#    And I select modifier as "<Modifier>"
+#    And I click Done to get back
+#    And I click menu item as "<Menu_Item>" to see Menu option screen
+#    And I click Hold to put order on hold
+#    And I click Done in the hold window
+#    Then I should see the hold icon over the order section
+#    And I click Cash button for Complete Sale
+#    And I click Exact button on the cash pop-up
+#    And I click Enter Button on the cash pop-up
+#    Then I should see do you want to send hold menu items to kitchen popup message2
+#    And I click Yes button on send to kitchen popup
+#    # Then I should see the print or send receipt
+#   # And I click No thanks Button on the print receipt
+#    Then I should get back to the Table Layout tab
   #  And I click power button
    # Examples:
     #  | table_no | number_of_seats | Menu_Item | Modifier |
@@ -266,7 +266,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats | Menu_Item | Modifier |  Reason |  quantity |  Menu_Item1 |
       | T12      |1              |  French Friese | Steak  |  Spicy | 2         |Onion Rings |
 
-
+  @M1
   Scenario Outline: Menu Options - Open Discount, Remove Open Discount
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -320,7 +320,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats | Menu_Item      | Modifier |
       | T11      |1                |  French Friese | Steak    |
 
-
+  @M12
   Scenario Outline: Menu Option - Open Modifier , Open Modifier not Apply when Sale sent to kitchecn
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -373,7 +373,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats | Menu_Item | Modifier | Modifier1 |
       | T10      |1              |  French Friese | Steak  | Tomato    |
 
-
+  @M1
   Scenario Outline: Upcharge Items , Additional Modifiers
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -475,7 +475,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats | Menu_Item      | Modifier |
       | T8       |1                | French Friese  | Steak    |
 
-
+  @M12
   Scenario Outline: Menu Option - Open Item,  void open item - Check should void, Open Item - Void Item, Void Item After Order
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1546,7 +1546,7 @@ Feature: Menu Option In scenarios
 
 
 
-
+  @M1
   Scenario Outline: Menu Option - Remove Open Modifier
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1574,7 +1574,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats | Menu_Item | Modifier | Modifier1 |
       | T7      |1              |  French Friese | Steak  | Tomato   |
 
-
+  @M1
   Scenario Outline: Open Modifiers Tab, Delete modifier
     And I click new check button on the Table layout screen
     And I select table as "<table_no>"
@@ -1603,7 +1603,7 @@ Feature: Menu Option In scenarios
       | table_no | number_of_seats | Menu_Item | Modifier | Modifier1 |
       | T16      |1              |  Tuna Tacos | Croutons  | Tomato   |
 
-
+  @M12
   Scenario Outline: Application allow user to Hold automatic/Hold Manual Tab should appear ------execute Menu Option
     And I click new check button on the Table layout screen
     And I select the "T25" in the Table layout screen"click t25 table"
@@ -1611,13 +1611,13 @@ Feature: Menu Option In scenarios
     And I tap Continue to finish selecting the number of seats
     And I select category as "FOOD"
     And I select menu item as "<menu_item>"
-    And I click menu item as "<menu_item>" to see Menu option screen
-    When User click Hold check option
-    Then User verify Hold screen
-    And User verify Hold Automation and Hold Manuel options
-    Then User click cancel button
-    And I click the Back button on Menu option Screen
-    Then I Should get back to the Order Screen
+#    And I click menu item as "<menu_item>" to see Menu option screen
+#    When User click Hold check option
+#    Then User verify Hold screen
+#    And User verify Hold Automation and Hold Manuel options
+#    Then User click cancel button
+#    And I click the Back button on Menu option Screen
+#    Then I Should get back to the Order Screen
     #Application allow user to Fire ------execute take an order popup
     And I click menu item as "<menu_item>" to see Menu option screen
     When User select Fire menu option

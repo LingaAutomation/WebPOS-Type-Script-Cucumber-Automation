@@ -52,19 +52,19 @@ public class TGCheckOptionPage extends BasePage {
         elementClick(btnVaryingApplyButton,"click varyingApplyButton ");
 
     }
-    String firstBarTabOrderSortedAToZ = "(//p[.='goknur bati'])[1]";
-    String firstBarTabOrderSortedZToA = "(//p[.='goknur bati'])[1]";
+
     public void selectHoldCheckOption(){
         WebElement btnHoldCheckOption=mergeAndFindMobileElement(holdCheckOption);
         elementClick(btnHoldCheckOption,"click holdCheckOption ");
     }
-
+    String firstBarTabOrderSortedAToZ = "//button[@id='bar-check']//p[.='Admin u']";
+    String firstBarTabOrderSortedZToA = "//button[@id='bar-check']//p[.='Admin u']";
 
     public void verifyBarTabOrdersSortedFromAToZ() throws InterruptedException {
         Thread.sleep(2000);
         WebElement sortedFromAToZ = driver.findElement(By.xpath(firstBarTabOrderSortedAToZ));
         String actualName = elementGetText(sortedFromAToZ,"Verify BarTab Orders Sorted From AToZ");
-        String expectedName = "goknur bati";
+        String expectedName = "Admin u";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -72,7 +72,7 @@ public class TGCheckOptionPage extends BasePage {
         Thread.sleep(2000);
         WebElement sortedFromZToA = mergeAndFindMobileElement(firstBarTabOrderSortedZToA);
         String actualName = elementGetText(sortedFromZToA,"Verify BarTab Orders Sorted From ZToA");
-        String expectedName = "goknur bati";
+        String expectedName = "Admin u";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -301,13 +301,13 @@ public class TGCheckOptionPage extends BasePage {
 
     public void shouldSeePleaseSendAlltheMenuItems(){
 
-        WebElement element = driver.findElement(By.xpath("//p[contains(.,'Please send all the menu items to kitchen')]"));
+        WebElement element = driver.findElement(By.xpath("//h2[contains(.,'Please send all the menu items to kitchen')]"));
         Assert.assertEquals(element.getText(),"Please send all the menu items to kitchen");
         utils.log().info("Displayed - "+element.getText());
     }
 
     public void shouldSeePleaseOrderTheMenuPopup(){
-        WebElement element = driver.findElement(By.xpath("//p[contains(.,'Please order a menu item')]"));
+        WebElement element = driver.findElement(By.xpath("//h2[contains(.,'Please order a menu item')]"));
         Assert.assertEquals(element.getText(),"Please order a menu item");
         utils.log().info("Displayed - "+element.getText());
     }

@@ -130,7 +130,7 @@ public class PhoneOrderStepDef {
 
     @Then ("^I should see payment made on this check popup message for Phone order$")
     public void iShouldSeePaymentMadeOnThisCheckPopupMessageForPhoneOrder(){
-        Assert.assertEquals(new PhoneOrderScreen().verifyPaymentMadePopup(),"Payment(s) made on this Check, Can you return this to Walkin Auto r");
+        Assert.assertEquals(new PhoneOrderScreen().verifyPaymentMadePopup(),"Payment(s) made on this Check, Kindly delete the payment to void the Menu item");
     }
 
     @Then ("^I should see closed check in complete tab$")

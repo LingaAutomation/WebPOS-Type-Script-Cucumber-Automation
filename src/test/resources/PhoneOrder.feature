@@ -1,4 +1,4 @@
-
+@phoneOrderPayments
 Feature: Order Types
 
 #1
@@ -141,7 +141,7 @@ Feature: Order Types
       | DINE IN | QSR          | Customer Profile |Auto ragav|
 
 #4
-  @NK1
+  @OrdertypeFailedCorrection
   Scenario Outline:Selecting QSR order type from combo and placing an order
     Given I'm logged in
     And I close the order type window
@@ -173,6 +173,7 @@ Feature: Order Types
     And I select menu item as "<menu_item>"
     And I select modifier as "<modifier>"
     And I click Done to get back
+    And I get check number
     And I should see that "<menu_item>" and "<modifier>" are added to the check
     And I click Order button in the order management screen
     And I click modifier as "<modifier>" on the order screen
@@ -445,7 +446,7 @@ Feature: Order Types
       | FORHERE   | T13      |1                | French Friese    | Steak   | Auto ragav | Auto r |
 
   #9
-@NK11
+  @NK11
   Scenario Outline: Service Type changing ToGo To For Here screen
     Given I'm logged in
     And I select the "TOGO" order type popup
@@ -752,7 +753,7 @@ Feature: Order Types
       | FORHERE  | Garlic Bread | 4 BBQ | Auto ragav      | Auto r   |French Friese | Steak   |
 
   #10
-  @Ordertype012343
+  @OrdertypeFailedCorrection01
   Scenario Outline:Verify whether application TOGO menu items print the check order from Phone order screen
     Given I'm logged in
     And I select the "TOGO" order type popup

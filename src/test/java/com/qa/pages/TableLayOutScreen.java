@@ -212,19 +212,19 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "Auto r")
     private WebElement customerName;
 
-    @FindBy(xpath = "//p[.='Transferred Successfully']")
+    @FindBy(xpath = "//h2[.='Transferred Successfully']")
     private WebElement transferSuccessfulMsg;
 
-    @FindBy(xpath = "//p[.='Transferred item success']")
+    @FindBy(xpath = "//h2[.='Transferred item success']")
     private WebElement itemTransferSuccessfulMsg;
 
-    @FindBy(xpath = "//button[.=' Done ']")
+    @FindBy(xpath = "//button[.='Done']")
     private WebElement itemTransferDone;
 
-    @FindBy(xpath = "//p[contains(.,'Check already added')]")
+    @FindBy(xpath = "//h2[contains(.,'Check already added')]")
     private WebElement checkAlreadyAddedTxt;
 
-    @FindBy(xpath = "//p[contains(.,'Select at least 2 checks')]")
+    @FindBy(xpath = "//h2[contains(.,'Select at least 2 checks')]")
     private WebElement SelectAtleast2CheckTxt;
 
     @FindBy(xpath = "//button[contains(.,' Cancel ')]")
@@ -251,7 +251,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "(//button[.='Back'])")
     private WebElement BackBtn;
 
-    @FindBy(xpath = "(//p[.='Changes made in split, save and close'])")
+    @FindBy(xpath = "(//h2[.='Changes made in split, save and close'])")
     private WebElement SplitPopup;
 
     @FindBy(xpath = "(//button[.=' Done '])")
@@ -266,8 +266,12 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//div[.='Split Evenly']")
     private WebElement splitEvent;
 
-    @FindBy(xpath = "//p[.='Select the order to proceed']")
+
+    @FindBy(xpath = "//h2[.='Select the order to proceed']")
     private WebElement selectOrder;
+
+    @FindBy(xpath = "//h2[.='Select the seats to merge']")
+    private WebElement popupSelectTheSeatsToMerge;
 
     @FindBy(xpath = "//span[.=' Add ']")
     public WebElement AddBtn;
@@ -312,8 +316,6 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//div[.='Group Seats']")
     private WebElement GroupSeat;
 
-    @FindBy(xpath = "//p[.='Select the seats to merge']")
-    private WebElement popupSelectTheSeatsToMerge;
 
     @FindBy(xpath = "//button[.=' Start Over ']")
     private WebElement startOver;
@@ -321,13 +323,13 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//ion-col[@class='ion-text-center md hydrated']//span[.='Print']")
     private WebElement printSplitSeat;
 
-    @FindBy(xpath = "//p[.='Select the seat to print']")
+    @FindBy(xpath = "//h2[.='Select the seat to print']")
     private WebElement PopupSelectTheSeatToPrint;
 
     @FindBy(xpath = "Receipt Printer")
     private WebElement receiptPrinter;
 
-    @FindBy(xpath = "//p[.='Select any one seat/check for print']")
+    @FindBy(xpath = "//h2[.='Select any one seat/check for print']")
     private WebElement selectAnyOneSeatForPrint;
 
     @FindBy(xpath = "//div[.='Print All']")
@@ -336,16 +338,16 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//div[.='Pay']")
     private WebElement paySplitSeat;
 
-    @FindBy(xpath = "//p[.='Select the seat to Pay']")
+    @FindBy(xpath = "//h2[.='Select the seat to Pay']")
     private WebElement selectTheSeatToPay;
 
-    @FindBy(xpath = "//mat-dialog-content[@id='alert-done-popup']")
+    @FindBy(xpath = "//h2[.='select any one seat/check for payment']")
     private WebElement selectAnyoneSeatCheckForPayment;
 
-    @FindBy(xpath = "//p[.='Split is not allowed, no order(s) in this check']")
+    @FindBy(xpath = "//h2[.='Split is not allowed, no order(s) in this check']")
     private WebElement splitIsNotAllowedNoOrderInThisCheck;
 
-    @FindBy(xpath = "//p[.='Split is not allowed, payment(s) has been made in this check']")
+    @FindBy(xpath = "//h2[.='Split is not allowed, payment(s) has been made in this check']")
     private WebElement SplitIsNotAllowedPaymentInThisCheck;
 
     @FindBy(xpath = "//button[@id='os_split']")
@@ -389,7 +391,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//span[.=' New Check ']")
     private WebElement newCheck;
 
-    @FindBy(xpath = "//p[.='Item(s) has to be sent to kitchen']")
+    @FindBy(xpath = "//h2[.='Item(s) has to be sent to kitchen']")
     private WebElement menuItemHasToBeSentToKitchen;
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
@@ -398,7 +400,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther")
     private WebElement check2OpenForCompleteSale;
 
-    @FindBy(xpath = "//p[.='Item(s) has to be sent to kitchen']")
+    @FindBy(xpath = "//h2[.='Item(s) has to be sent to kitchen']")
     private WebElement itemNeedToSendToKitchen;
 
     @FindBy(xpath = "//button[.=' Cancel ']")
@@ -446,10 +448,10 @@ public class TableLayOutScreen extends OrderManagementScreen {
     @FindBy(xpath = "//ion-col[.='Paid']")
     private WebElement paidTxt;
 
-    @FindBy(xpath = "//p[.='Order cannot be moved, Payment(s) has been made in seat - 1']")
+    @FindBy(xpath = "//h2[.='Order cannot be moved, Payment(s) has been made in seat - 1']")
     private WebElement orderCannotMovedTxt;
 
-    @FindBy(xpath = "//p[.='Order cannot be moved, Payment(s) has been made in seat - 2']")
+    @FindBy(xpath = "//h2[.='Order cannot be moved, Payment(s) has been made in seat - 2']")
     private WebElement orderCannotMovedTxt1;
 
     @FindBy(xpath = "Subtotal")
@@ -504,14 +506,20 @@ public class TableLayOutScreen extends OrderManagementScreen {
     }
 
     public void selectSeatNo(String numberOfSeats) {
-        WebElement e = driver.findElement(By.xpath("//span[.='"+numberOfSeats+"']"));
+        WebElement e = driver.findElement(By.xpath("//button[.=' "+numberOfSeats+" ']"));
+        elementClick(e, numberOfSeats + " selected");
+        TestUtils.seatNumber = numberOfSeats;
+    }
+
+    public void selectSeatNo1(String numberOfSeats) {
+        WebElement e = driver.findElement(By.xpath("//button[.='"+numberOfSeats+"']"));
         elementClick(e, numberOfSeats + " selected");
         TestUtils.seatNumber = numberOfSeats;
     }
 
     public void selectSplit(String numberOfSplit) throws InterruptedException {
-         Thread.sleep(1000);
-        WebElement e = driver.findElement(By.xpath("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'"+numberOfSplit+"')]"));
+        Thread.sleep(1000);
+        WebElement e = driver.findElement(By.xpath("//button[@id='npad-"+numberOfSplit+"']"));
         elementClick(e, numberOfSplit + " selected");
     }
 
@@ -647,10 +655,11 @@ public class TableLayOutScreen extends OrderManagementScreen {
         Thread.sleep(5000);
     }
 
-    public void verifyMergedPopupAfterMerge(){
+    public void verifyMergedPopupAfterMerge() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+        Thread.sleep(1000);
         //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextView
-        WebElement mergedPopup =  driver.findElement(By.xpath("//mat-dialog-content[@id='alert-done-popup']//p"));
+        WebElement mergedPopup =  driver.findElement(By.xpath("//h2[@id='alert-3-sub-hdr']"));
         String mergePopupTxt = mergedPopup.getText();
         utils.log().info("Displayed popup as - "+mergePopupTxt);
     }
@@ -681,7 +690,7 @@ public class TableLayOutScreen extends OrderManagementScreen {
         }
     }
     public void shouldSeePleaseEnterValidNumberPopup(){
-        WebElement askSeatNumber = driver.findElement(By.xpath("//p[.='Please enter valid number']"));
+        WebElement askSeatNumber = driver.findElement(By.xpath("//h2[.='Please enter valid number']"));
         if(askSeatNumber.isDisplayed()){
             utils.log().info("Displayed Ask Seat Number Window");
         }else{
@@ -1186,7 +1195,7 @@ Thread.sleep(2000);
     public void pressSplitEvenly() {
         elementClick(SplitEvenly, "Tapped Split Evenly in the Split Seat");
     }
-    @FindBy(xpath = "//p[.='Cannot split as payment(s) has been made in seats - 2']")
+    @FindBy(xpath = "//h2[.='Cannot split as payment(s) has been made in seats - 2']")
     WebElement cannotSplitAsPayment;
     public void verifyCannotSplitAsPayments(){
         Assert.assertEquals(cannotSplitAsPayment.getText(),"Cannot split as payment(s) has been made in seats - 2");
@@ -1589,7 +1598,7 @@ Thread.sleep(2000);
         return elementGetText(itemNeedToSendToKitchen, "items need to send to kitchen txt is dispalayed - ");
     }
 
-    @FindBy(xpath = "//p[.='Please save all the changes to print. Do you wish to save the changes?']")
+    @FindBy(xpath = "//h2[.='Please save all the changes to print. Do you wish to save the changes?']")
     WebElement pleaseSaveAllTheChangesPopup;
     public void clickNewCheckOnTheSplitCheckScreen() throws InterruptedException {
         Thread.sleep(1000);
@@ -1621,7 +1630,7 @@ Thread.sleep(2000);
 
 
 //            utils.log().info(String.valueOf(itemToSelect));
-        WebElement seat =  driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']"));
+        WebElement seat =  driver.findElement(By.xpath("//button[.=' 1 ']"));
         seatNumber = seat.getText();
         elementClick(seat, "Tapped seat Number");
         TestUtils.seatNumber = seatNumber;
@@ -2205,8 +2214,9 @@ Assert.assertEquals(menu.getText(),money);
 
     }
 
-    public void selectTheNumberOfSplitItem(String numb) {
-        WebElement e = driver.findElement(By.xpath("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'"+numb+"')]"));
+    public void selectTheNumberOfSplitItem(String numb) throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement e = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.=' "+numb+" ']"));
         elementClick(e, numb + " selected");
     }
 
@@ -2240,7 +2250,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void verifySplittedCheckAvailableInActiveCheck() {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        WebElement searchTab = driver.findElement(By.xpath("//input[@data-placeholder='Check No']"));
+        WebElement searchTab = driver.findElement(By.xpath("//input[@placeholder='Check No']"));
         // String checkNumber = TestUtils.globalCheckNumber1;
         searchTab.sendKeys(TestUtils.globalCheckNumber1);
         WebElement phoneOrders = driver.findElement(By.xpath("//table[@id='checkTables']//div[contains(@class,'table')]//tr//td[.='"+TestUtils.globalCheckNumber1+"']"));
@@ -2559,7 +2569,7 @@ Assert.assertEquals(menu.getText(),money);
 
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         //Click the required number seat from numpad
-        driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+        driver.findElement(By.xpath("//button[.=' 1 ']")).click();
 
         //Click the Continue button
         driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
@@ -2690,6 +2700,68 @@ Assert.assertEquals(menu.getText(),money);
         utils.log().info("TOTAL is SAME After Group Seats Done - " + Total1);
 
     }
+
+
+    public void selectTableTwo(String tableNo) {
+
+        WebElement e = driver.findElement(By.xpath("(//label[.='"+tableNo+"'])[1]"));
+        TestUtils.tableNumberof = tableNo;
+        elementClick(e, tableNo + " selected");
+        try {
+            if (driver.findElement(By.xpath("//ion-title[.='Checks']")).isDisplayed()) {
+                String Check = TestUtils.globalCheckNumber2;
+                driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+Check+"']")).click();
+                driver.findElement(By.xpath("//ion-header//linga-icon[@symbol='closeButton']")).click();
+            }
+        }catch (Exception t) {
+        }
+    }
+
+    public void selectTableThree(String tableNo) {
+
+        WebElement e = driver.findElement(By.xpath("(//label[.='"+tableNo+"'])[1]"));
+        TestUtils.tableNumberof = tableNo;
+        elementClick(e, tableNo + " selected");
+        try {
+            if (driver.findElement(By.xpath("//ion-title[.='Checks']")).isDisplayed()) {
+                String Check = TestUtils.globalCheckNumber3;
+                driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+Check+"']")).click();
+                driver.findElement(By.xpath("//ion-header//linga-icon[@symbol='closeButton']")).click();
+            }
+        }catch (Exception t) {
+        }
+    }
+
+    public void selectTablefour(String tableNo) {
+
+        WebElement e = driver.findElement(By.xpath("(//label[.='"+tableNo+"'])[1]"));
+        TestUtils.tableNumberof = tableNo;
+        elementClick(e, tableNo + " selected");
+        try {
+            if (driver.findElement(By.xpath("//ion-title[.='Checks']")).isDisplayed()) {
+                String Check = TestUtils.globalCheckNumber4;
+                driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+Check+"']")).click();
+                driver.findElement(By.xpath("//ion-header//linga-icon[@symbol='closeButton']")).click();
+            }
+        }catch (Exception t) {
+        }
+    }
+
+    public void selectTablefive(String tableNo) {
+
+        WebElement e = driver.findElement(By.xpath("(//label[.='"+tableNo+"'])[1]"));
+        TestUtils.tableNumberof = tableNo;
+        elementClick(e, tableNo + " selected");
+        try {
+            if (driver.findElement(By.xpath("//ion-title[.='Checks']")).isDisplayed()) {
+                String Check = TestUtils.globalCheckNumber5;
+                driver.findElement(By.xpath("//ion-content[contains(@class,'table-multiple-checks')]//div//p[.='"+Check+"']")).click();
+                driver.findElement(By.xpath("//ion-header//linga-icon[@symbol='closeButton']")).click();
+            }
+        }catch (Exception t) {
+        }
+    }
+
 
     public void verifySplitSeatPrizeWithOrderScreenPrize() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -2868,7 +2940,7 @@ Assert.assertEquals(menu.getText(),money);
 
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         //Click the required number seat from numpad
-        driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='1']")).click();
+        driver.findElement(By.xpath("//button[@id='npad-1']")).click();
 
         //Click the Continue button
         driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
@@ -3023,7 +3095,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void shouldSeeDoYouWantToCloseTheDayPopup() throws InterruptedException {
         Thread.sleep(2000);
-        WebElement element1 = driver.findElement(By.xpath("//p[.='Do you want to close the day']"));
+        WebElement element1 = driver.findElement(By.xpath("//h2[.='Do you want to close the day']"));
         Assert.assertEquals(element1.getText(),"Do you want to close the day");
     }
 
@@ -3043,7 +3115,7 @@ Assert.assertEquals(menu.getText(),money);
 
     public void shouldSeeCloseDayPerformedSuccessPopup() throws InterruptedException {
         Thread.sleep(7000);
-        WebElement element1 = driver.findElement(By.xpath("//p[.='Close Day performed successfully ']"));
+        WebElement element1 = driver.findElement(By.xpath("//h2[.='Close Day performed successfully ']"));
         Assert.assertEquals(element1.getText(),"Close Day performed successfully");
     }
 }

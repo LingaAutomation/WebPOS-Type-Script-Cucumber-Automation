@@ -210,7 +210,7 @@ public class CIWaitListPage extends BasePage {
         }
     }
 
-    @FindBy(xpath = "//input[@data-placeholder='Check No']")
+    @FindBy(xpath = "//input[@placeholder='Check No']")
     private WebElement searchTabClosedTab;
 
     public void passCheckNumber() throws Exception{

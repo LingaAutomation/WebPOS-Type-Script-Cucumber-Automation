@@ -25,19 +25,19 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy(xpath = "//ion-row[contains(@class,'payment-types')]//ion-col//button//span[contains(.,'Cash')]")
     WebElement cashPaymentBtn;
 
-    @FindBy(xpath = "//button[.=' Yes ']")
+    @FindBy(xpath = "//button[.='Yes']")
     WebElement yesSendToKitchenBtn;
 
-    @FindBy(xpath = "//button[.=' No ']")
+    @FindBy(xpath = "//button[.='No']")
     WebElement noSendToKitchenBtn;
 
     @FindBy(xpath = "//span[contains(.,'Payment methods')]")
     WebElement paymentWindowTitle;
 
-    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen ?']")
+    @FindBy(xpath = "//h2[.='Do you want to send hold item(s) to kitchen ?']")
     WebElement sendToKitchenPopUpTxt;
 
-    @FindBy(xpath = "//p[.='Hold item(s) has to be sent to kitchen']")
+    @FindBy(xpath = "//h2[.='Hold item(s) has to be sent to kitchen']")
     WebElement holdItemSendToKitchen;
 
     @FindBy(xpath = "//button[contains(@id,'ps_exit')]")
@@ -81,10 +81,10 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy (xpath = "//button[contains(.,'$100')]")
     private WebElement hugeAmount;
 
-    @FindBy (xpath = "//p[contains(.,'Change Due')]")
+    @FindBy (xpath = "//h2[contains(.,'Change Due')]")
     private WebElement changeDue;
 
-    @FindBy (xpath = "//p[.='Select a payment and try again!']")
+    @FindBy (xpath = "//h2[.='Select a payment and try again!']")
     private WebElement selectAPaymentAndTryAgain;
 
     @FindBy (xpath = "//label[.='Balance Due:']")
@@ -99,10 +99,10 @@ public class PaymentWindow extends OrderManagementScreen{
     @FindBy (xpath = "//span[.=' $10.00 ']")
     private WebElement Tl10;
 
-    @FindBy (xpath = "//p[.='Please pay $ 5.00']")
+    @FindBy (xpath = "//h2[.='Please pay $ 5.00']")
     private WebElement pleasePayTl;
 
-    @FindBy (xpath = "//p[.='Please pay $ 15.00']")
+    @FindBy (xpath = "//h2[.='Please pay $ 15.00']")
     private WebElement pleasePayTl1;
 
     @FindBy (xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton[1]")
@@ -311,7 +311,8 @@ public class PaymentWindow extends OrderManagementScreen{
             int w = 1/0;
         }
     }
-    public void pressTl10(){
+    public void pressTl10() throws InterruptedException {
+        Thread.sleep(1500);
         elementClick(Tl10,"Tapped TL 10 Button");
     }
 

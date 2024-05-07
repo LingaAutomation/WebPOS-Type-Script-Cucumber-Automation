@@ -87,7 +87,7 @@ public class CapabilitiesManager {
         //Clear the text from the user name text box
         driver.findElement(By.xpath("//input[@name='email']")).clear();
         //Enter the user name
-        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumstagingstore@mail.com");
+        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
 //        driver.findElement(By.xpath("//input[@name='email']")).sendKeys("appiumusdstore1@mail.com");
 
         //Clear the password from the password text box
@@ -95,7 +95,7 @@ public class CapabilitiesManager {
 //        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
 
         //Enter the password
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto123");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("auto1234");
         Thread.sleep(5000);
         //Click the login button
         driver.findElement(By.xpath("//button[@type='submit']")).click();

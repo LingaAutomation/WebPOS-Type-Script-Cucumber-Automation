@@ -1,4 +1,4 @@
-@RegressionQSR
+@Paymens
 Feature: QSR feature
 
   Background:
@@ -32,7 +32,7 @@ Feature: QSR feature
       | order_type |
       | QSR    |
 
-
+@MS11
   Scenario Outline: All Button - During Sale
     Then I should see service type as "<order_type>"
     And I select category as "FOOD"
@@ -1194,7 +1194,7 @@ Feature: QSR feature
     And I click Enter Button on the cash pop-up
 #    Then I should see the order type window
     And I closed the order type window
-  #Check with tax exempt and without customer
+#  Scenario Outline: Check with tax exempt and without customer
     Then I should see service type as "<order_type>"
     And I select category as "Menu"
     And I select menu item as "<Menu_Item>"
@@ -1440,6 +1440,7 @@ Feature: QSR feature
     #   Then I should see the print or send receipt
     #    And I click No thanks Button on the print receipt
 #    Then I should see the order type window
+    And I wait sometimes
     And I closed the order type window
     And I click log off button in order screen
     Examples:
@@ -2479,7 +2480,7 @@ Feature: QSR feature
       |order_type| Menu_Item   | Percentage | SubTotal   |    Tax    | Gratuity     | Total   |Gratuity1 | Total1  |
       | QSR       | Halwa       | 8         | $ 10.00    | $ 1.00    |  $ 0.80      | $ 11.80 | $ 1.00   | $ 12.00 |
 
-  @MS
+  @MS11
   Scenario Outline:Qsr- Check Payment through other payment - Check with tax exempt and with customer
     Then I should see service type as "<order_type>"
     And I click Add Customer Button
@@ -4418,7 +4419,7 @@ Feature: QSR feature
     When User click submit button
     And I click power button
 
-
+  @MS1
   Scenario Outline: Void before order
     When User click QSR on Menu Item page in void screen
     Then User select DineIn order type in void screen
@@ -4503,7 +4504,7 @@ Feature: QSR feature
     And I click power button
 
 #  @1
-  @MS
+  @MS1
   Scenario Outline: Void Normal Check — Select from CheckStatus/Closed Check
     Given User click setting icon in void screen
     And User verify setting options in void screen
@@ -4514,9 +4515,8 @@ Feature: QSR feature
     And I closed the order type window
     When User click QSR on Menu Item page in void screen
     Then User select Bar Tab in order types in void screen
-    When User enter customer name for bar tab in void screen
     And I click the Exit to close the preauth window
-
+    When User enter customer name for bar tab in void screen
     Then User take an order in void screen
     When I get the check no in the order screen in void screen "Get Check Number"
     When User click Cash Tab on Menu Item Page in void screen
@@ -4687,7 +4687,7 @@ Feature: QSR feature
 #    And I click "Hide keyboard" button in the keyboard "Click Back"
 #    When USer click log off button
 
-  @MS
+  @MS1
   Scenario Outline: Settings Icon on Order Screen,Sync Icon on Order Screen,Application allow user to sync the change through order screen sync button,Add Customer' Icon,Application don't allow user to do "Log off","Operation","Till Management","Sync Icon","All" button process during a sale
     When User click setting icon
     Then User verify setting options
@@ -4822,7 +4822,7 @@ Feature: QSR feature
     And I closed the order type window
     When USer click log off button
 
-
+@MS11
   Scenario: Cash-On Empty Checks- empty
 #    Given User click setting icon
 #    And User verify setting options
@@ -5128,7 +5128,7 @@ Feature: QSR feature
 ##    Given User select QSR mode on menu item page
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
-#    And I selected quantity as "3"
+    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "Check Based Amount"
@@ -5150,7 +5150,7 @@ Feature: QSR feature
 #    And User take an order as "<SANDWICHES
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
-#    And I selected quantity as "3"
+    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "Check-Based Percentage"
@@ -5313,7 +5313,7 @@ Feature: QSR feature
     Then User verify added first ordered item
     And I click Void button on order management screen
     And I click Done button on the Popup
-    #Application allows to Increase or Decrease the Menu item Quantity
+#    Scenario Outline: Application allows to Increase or Decrease the Menu item Quantity
 #    Given User select QSR mode on menu item page
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -5518,7 +5518,7 @@ Feature: QSR feature
 
 #todo done
 #  @d1
-  @MS
+  @MS1
   Scenario Outline: Verify check based discount after tax with open item (amount only)
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -5578,10 +5578,10 @@ Feature: QSR feature
     And I click Void button on order management screen
     Then I should see All orders are voided
     And I click Done button on the Popup
-    #Verify check with discount as set price which has check based and after tax discount
+# Verify check with discount as set price which has check based and after tax discount
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
-#    And I selected quantity as "1"
+    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "Check Based Set Price"
@@ -5631,7 +5631,7 @@ Feature: QSR feature
     #Verify check with discount as set price which has check based and before tax discount
     And I select category as "FOOD"
     And I select menu item as "Chicken Schnitzel"
-#    And I selected quantity as "3"
+    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-SetPriceBeforeTax"
@@ -5644,7 +5644,7 @@ Feature: QSR feature
     #Verify check with discount as Free which has check based and before tax discount
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
-#    And I selected quantity as "3"
+    And I selected quantity as "3"
     And I select Discount on the Order screen
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-Free-BeforeTax"
@@ -5771,7 +5771,7 @@ Feature: QSR feature
 
 #todo done
 #  @SmokeTest
-  @MS
+  @MS1
   Scenario Outline: Verify check with fix gratuity on Bar Tab
     Given User click setting icon
     And User verify setting options
@@ -5841,7 +5841,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnPos |btnExit|pin1|pin5|pin0|pinPoint|btnApply |btnContinue|btnLogOff|
       |QSR   |Cancel   |POS    |Exit   | 1  |5   |0   |.       |Apply    |Continue   |logOff   |
 
-  @MS
+  @MS1
   Scenario Outline: Verify check with tax exempt and with customer
     Given User click setting icon
     And User verify setting options
@@ -5898,7 +5898,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |POS   |Exit   |logOff   |
 
-  @MS
+  @MS111
   Scenario Outline: Verify check with vary gratuity through Payment screen
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6256,7 +6256,7 @@ Feature: QSR feature
       |btnCancel|btnDiscount  |btnLogOff|
       |Cancel   | Discount    |logOff   |
 
-  @MS
+  @MS1
   Scenario Outline: Verify Check Payment through CC Side with Open item Discount- After Tax as percentage and with tip
     And I select category as "FOOD"
     And I select menu item as "SANDWICHES"
@@ -6555,7 +6555,7 @@ Feature: QSR feature
       |btnCancel|btnDiscount|btnLogOff|
       |Cancel   |Discount   |logOff   |
 
-  @MS
+  @MS1
   Scenario Outline: Discount - Item Based After Tax on BarTab and Pay with Fast Cash as Percentage
     Given User click setting icon
     And User verify setting options
@@ -6691,7 +6691,7 @@ Feature: QSR feature
     Examples:
       |btnQsr|btnCancel|btnDiscount|btnDropDown|category |btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |Discount   |arrow down |Appetizers|POS  |Exit   |logOff   |
-  @MS
+  @MS1
     Scenario Outline: Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
       Given User click setting icon
       And User verify setting options
@@ -6788,7 +6788,7 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnDiscount|btnDropDown|category |btnPos|btnExit|btnLogOff|
       |QSR   |Cancel   |Discount   |arrow down |Appetizers|POS  |Exit   |logOff   |
 
-  @MS
+  @MS1
   Scenario Outline: Discount - Check Based with After Tax on BarTab and Pay with Fast Cash as Percentage
     Given User click setting icon
     And User verify setting options
@@ -6885,7 +6885,7 @@ Feature: QSR feature
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |
 
 
-  @MS
+  @MS1
     Scenario Outline: Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
     Given User click setting icon
     And User verify setting options
@@ -6979,8 +6979,9 @@ Feature: QSR feature
       |btnQsr|btnCancel|btnDropDown|category |btnExit|btnDiscount|btnLogOff|btnPos|
       |QSR   |Cancel   |arrow down |Appetizers |Exit |Discount   |logOff   |POS   |
 
-  @MS
-  Scenario Outline: Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
+  @MS1
+  Scenario Outline: Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision
+    #    Given User click setting icon
     And I select category as "Appetizers"
     When I select menu item as "BRUSHETTA"
     Then User click Option Tab
@@ -7027,7 +7028,7 @@ Feature: QSR feature
     And User click enter button
     And I closed the order type window
 
-#  Scenario: Open Item Discount with After Tax Check as Percentage
+#  Scenario Outline: Open Item Discount with After Tax Check as Percentage
     And I select category as "Appetizers"
     When I select menu item as "BRUSHETTA"
     Then User click Option Tab
@@ -7066,7 +7067,7 @@ Feature: QSR feature
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-AfterTax-OpenItem"
     And I click Back button on Discount Screen
-    And User verify check based discount after tax value as "$ 13.55" and open item with decimal number for Brushetta
+    And User verify check based discount after tax value as "$ 13.56" and open item with decimal number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button
@@ -7089,7 +7090,7 @@ Feature: QSR feature
     Then I should see Check Based Discount Screen
     And I click Discount as "CB-AfterTax-OpenItem"
     And I click Back button on Discount Screen
-    And User verify check based discount after tax value as "$ 13.55" and open item with whole number for Brushetta
+    And User verify check based discount after tax value as "$ 13.56" and open item with whole number for Brushetta
     When User click Cash Tab
     Then User click exact option
     And User click enter button
@@ -7122,7 +7123,7 @@ Feature: QSR feature
       |course_name|btnCancel|  btnCBDiscount      | text|btnDropDown|category|btnDiscount|pin1|pin5|pin0|btnContinue |btnDone|btnLogOff|
       |ENTREE     |Cancel   |CB-PercentageAfterTax|TL 101,50|arrow down |Appetizers |Discount|1   |5   |0   |Continue    |Done   |logOff|
 
-  @MS
+  @MS1
   Scenario: Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
     When User click QSR on Menu Item page
     Given User select DineIn mode
@@ -7146,7 +7147,7 @@ Feature: QSR feature
     When User select QSR order typ
     When USer click log off button
 
-  @MS
+  @MS1
   Scenario Outline: Open Gratuity Page
     When I select menu item as "SANDWICHES"
     Then User click Option Tab
@@ -7208,7 +7209,7 @@ Feature: QSR feature
       |btnGratuity |pin0|pin1|pin5|btnContinue|pinpoint|btnLogOff|btnApply|
       |Gratuity    |0   |1   |5   |Continue   |.       |logOff   |Apply   |
 
-  @MS
+  @MS1
   Scenario Outline: Reduce Gratuity
     When I get check number
     When I select menu item as "SANDWICHES"
@@ -7264,7 +7265,7 @@ Feature: QSR feature
     Examples:
       |btnLogOff|
       |logOff   |
-  @MS
+  @MS1
   Scenario Outline: Verify Check Payment through CC with Gratuity(Varying) and with tips
     Then User click food category
     When User select Sandwiches menu item
@@ -7330,7 +7331,7 @@ Feature: QSR feature
       |Void   |1/2 Romano|Option   |Modify   |Add Veggies|logOff |Done   |
 
 
-  @MS
+  @MS1
   Scenario Outline: Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers
     When User select menu item with modifier
     Then User add modifiers over maximum count

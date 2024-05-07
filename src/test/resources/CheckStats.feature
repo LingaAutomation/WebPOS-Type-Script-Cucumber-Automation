@@ -1,5 +1,5 @@
 
-@CheckStats
+@Paymens
 Feature: Check Stats
 
 

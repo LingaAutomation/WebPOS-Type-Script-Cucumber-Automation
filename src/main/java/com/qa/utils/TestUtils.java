@@ -26,6 +26,10 @@ public class TestUtils {
     public static final long WAIT = 5;
     public static String serverName = " ";
     public static String globalCheckNumber=" ";
+    public static String globalCheckNumber2=" ";
+    public static String globalCheckNumber3=" ";
+    public static String globalCheckNumber4=" ";
+    public static String globalCheckNumber5=" ";
     public static String menu =" ";
     public static ArrayList<String> menuName;
     public static int countOfMenuSeat1;

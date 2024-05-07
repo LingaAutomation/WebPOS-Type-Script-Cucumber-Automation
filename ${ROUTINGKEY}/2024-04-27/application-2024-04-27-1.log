@@ -1,0 +1,71 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:00:05.184 Hooks:58 - Failed Scenario Name : Check through CC Side Payment with Tax Exempt After that Apply  Discount Check based - After Tax as Percentage and with Tip
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:01:13.992 Hooks:46 - Start Scenario Name : Discount - Item Based After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:01:14.057 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:01:14.097 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:01:14.135 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:01:14.182 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:01:14.231 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:01:26.341 Hooks:58 - Failed Scenario Name : Discount - Item Based After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:02:34.758 Hooks:46 - Start Scenario Name : Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:02:34.815 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:02:34.859 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:02:34.893 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:02:34.941 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:02:34.976 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:02:47.073 Hooks:58 - Failed Scenario Name : Discount - Item Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:03:55.437 Hooks:46 - Start Scenario Name : Discount - Check Based with After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:03:55.480 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:03:55.521 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:03:55.549 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:03:55.601 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:03:55.638 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:04:07.723 Hooks:58 - Failed Scenario Name : Discount - Check Based with After Tax on BarTab and Pay with Fast Cash as Percentage
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:05:16.189 Hooks:46 - Start Scenario Name : Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:05:16.231 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:05:16.269 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:05:16.317 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:05:16.374 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:05:16.411 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:05:28.501 Hooks:58 - Failed Scenario Name : Discount - Check Based with Before Tax as Percentage on BarTab and Pay with Fast Cash
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:06:36.834 Hooks:46 - Start Scenario Name : Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:06:36.884 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:06:36.923 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:06:36.969 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:06:37.029 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:06:37.063 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:06:49.158 Hooks:58 - Failed Scenario Name : Open Item Discount with After Tax Check as Amount and Safety Limit in Decimal Precision#    Given User click setting icon
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:07:57.516 Hooks:46 - Start Scenario Name : Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:07:57.561 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:07:57.605 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:07:57.655 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:07:57.714 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:07:57.743 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:08:09.843 Hooks:58 - Failed Scenario Name : Fire Coursing with DineIn Order,Fire Coursing without Sent To Kitchen
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:09:18.080 Hooks:46 - Start Scenario Name : Open Gratuity Page
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:09:18.140 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:09:18.177 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:09:18.220 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:09:18.247 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:09:18.288 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:09:30.392 Hooks:58 - Failed Scenario Name : Open Gratuity Page
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:10:38.877 Hooks:46 - Start Scenario Name : Reduce Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:10:38.922 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:10:38.959 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:10:38.989 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:10:39.022 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:10:39.058 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:10:51.130 Hooks:58 - Failed Scenario Name : Reduce Gratuity
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:12:00.544 Hooks:46 - Start Scenario Name : Verify Check Payment through CC with Gratuity(Varying) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:12:00.608 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:12:00.643 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:12:00.679 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:12:00.706 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:12:00.732 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:12:12.854 Hooks:58 - Failed Scenario Name : Verify Check Payment through CC with Gratuity(Varying) and with tips
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:13:21.214 Hooks:46 - Start Scenario Name : Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:13:21.254 BasePage:278 - Tapped pin 1
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:13:21.297 BasePage:258 - Tapped pin 2
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:13:21.339 BasePage:258 - Tapped pin 3
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:13:21.377 BasePage:258 - Tapped pin 4
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:13:21.411 BasePage:258 - Tapped Login.
+[${ctx:ROUTINGKEY} INFO ] 2024-04-27 00:13:33.513 Hooks:58 - Failed Scenario Name : Application should allow to add modifiers at its maximum qty per item,Verify delete modifiers

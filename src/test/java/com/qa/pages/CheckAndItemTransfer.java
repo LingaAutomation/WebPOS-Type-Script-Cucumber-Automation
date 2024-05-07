@@ -251,7 +251,7 @@ public class CheckAndItemTransfer extends BasePage{
         }catch (Exception w){
             utils.log().info("Not Displayed Yes");
         }
-        WebElement ele = driver.findElement(By.xpath("//p[contains(.,'Transferred item success')]"));
+        WebElement ele = driver.findElement(By.xpath("//h2[contains(.,'Transferred item success')]"));
         return getText(ele,"Text");
     }
 
@@ -576,7 +576,7 @@ WebElement searchField;
         String m = (TestUtils.Transfertable).replaceAll("[- ]","");
 
 //        utils.log().info("m - "+m);
-        WebElement tableSelect = (WebElement) driver.findElement(By.xpath("//p[@id='tableNameId']//label[contains(.,'"+m+"')]"));
+        WebElement tableSelect =  driver.findElement(By.xpath("(//p[@id='tableNameId']//label[contains(.,'"+m+"')])[1]"));
         if (tableSelect.isDisplayed()) {                                                                     //XCUIElementTypeApplication[@name="Linga POS"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeButton[15]
 
             Thread.sleep(100);

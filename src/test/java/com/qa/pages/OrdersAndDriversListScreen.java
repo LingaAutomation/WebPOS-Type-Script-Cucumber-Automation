@@ -32,7 +32,7 @@ public class OrdersAndDriversListScreen extends BasePage {
     String TableLayout = "//button//span[text()=' Table layout ']";
 
 
-    String TableLayout1 = "//button//span[text()=' Table Layout ']";
+    String TableLayout1 = "//button//span[text()=' Table layout ']";
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"T1\"])")
     private WebElement closeCheckTableNo;

@@ -130,12 +130,12 @@ public class CIEightySixListScreen extends BasePage {
     public String getQuantityTextField(String Qty) throws InterruptedException {
         Thread.sleep(2000);
         WebElement element=driver.findElement(By.xpath("//table[@class='list86Component-86list-menuList-table ng-star-inserted']/tr/td/div[.=' "+Qty+" ']"));
-       if(element.isDisplayed()) {
-           utils.log().info("Displayed QTY - "+Qty);
-       }else {
-           utils.log().info("Not Displayed QTY - "+Qty);
-           int w = 1/0;
-       }
+        if(element.isDisplayed()) {
+            utils.log().info("Displayed QTY - "+Qty);
+        }else {
+            utils.log().info("Not Displayed QTY - "+Qty);
+            int w = 1/0;
+        }
 
         return Qty;
     }
@@ -187,7 +187,7 @@ public class CIEightySixListScreen extends BasePage {
     }
 
     public String getInsufficientPopUp(String popUp,String msg){
-        WebElement element =driver.findElement(By.xpath("//p[.='"+popUp+"']"));
+        WebElement element =driver.findElement(By.xpath("//h2[.='Quantity is not enough.']"));
         return element.getText();
     }
 
@@ -274,18 +274,17 @@ public class CIEightySixListScreen extends BasePage {
 
         try {
             WebElement elementEmptyList = driver.findElement(By.xpath("//ion-grid[@class='list86Component-menuList-pinContainer md hydrated']//tr[.='Chicken Biriyani']"));
-          if(elementEmptyList.isDisplayed()){
-              utils.log().info("Displayed Eight Six");
-              Assert.assertEquals(elementEmptyList.getText(),"Chicken Biriyani");
+            if(elementEmptyList.isDisplayed()){
+                utils.log().info("Displayed Eight Six");
+                Assert.assertEquals(elementEmptyList.getText(),"Chicken Biriyani");
 
-          }
+            }
         }catch (Exception w){
-          utils.log().info("Not Displayed");
-          Thread.sleep(1000);
-          driver.findElement(By.xpath("//div[@class='list86Component-86list-searchField']//button[@aria-label='reset']")).click();
+            utils.log().info("Not Displayed");
+            Thread.sleep(1000);
+            driver.findElement(By.xpath("//div[@class='list86Component-86list-searchField']//button[@aria-label='reset']")).click();
 
         }
-
     }
 
     public void getEmptyList1(String menu) throws InterruptedException {

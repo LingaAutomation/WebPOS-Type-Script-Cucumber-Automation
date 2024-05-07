@@ -364,17 +364,17 @@ Thread.sleep(2000);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 
         String number = (value.replaceAll("$., ",""));
-        elementClick("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'C')]", "Tapped Pin C");
+        elementClick("//button[.='C']", "Tapped Pin C");
          utils.log().info(number);
         for(int i =0;i<number.length();i++) {
             char ch = number.charAt(i);
             utils.log().info(ch);
             WebElement el2;
             if(ch == '0'){
-                el2 = driver.findElement(By.xpath("(//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'" + ch + "')])[2]"));
+                el2 = driver.findElement(By.xpath("//button[.='"+ch+"']"));
                 utils.log().info(el2.getText());
             }else{
-                el2 = driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'" + ch + "')]"));
+                el2 = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.=' "+ch+" ']"));
                 utils.log().info(el2.getText());
             }
             elementClick(el2, "Tapped number as - " + ch);
@@ -400,16 +400,28 @@ Thread.sleep(2000);
         String number = (value.replaceAll("$., ",""));
         elementClick("//button[.='C']", "Tapped Pin C");
         utils.log().info(number);
-        for(int i =0;i<number.length();i++) {
-            char ch = number.charAt(i);
-            utils.log().info(ch);
-            WebElement el2=driver.findElement(By.xpath("//button[.='"+ch+"']"));
-            elementClick(el2, "Tapped number as - " + ch);
 
-            Thread.sleep(1500);
+        char m;
+
+        for (int i = 0; i < number.length() ; i++) {
+
+            m = number.charAt(i);
+            String values = String.valueOf(m);
+            if (values.equals("0")) {
+                WebElement element = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.='" + values + "']"));
+                element.click();
+            } else if (values.equals("9")) {
+                WebElement element = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.='" + values + "']"));
+                element.click();
+            } else {
+                WebElement element = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.=' " + values + " ']"));
+                utils.log().info(element);
+                element.click();
+            }
         }
         WebElement el5 = driver.findElement(By.xpath("//span[contains(.,'Continue')]"));
         elementClick(el5, "Tapped continue Button ");
+//        elementClick(applyBtn, "Tapped Apply button");
 //        elementClick(applyBtn, "Tapped Apply button");
     }
 

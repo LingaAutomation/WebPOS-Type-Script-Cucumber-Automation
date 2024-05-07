@@ -26,7 +26,7 @@ public class OpenItemWindow extends OrderManagementScreen{
 
 
 
-    @FindBy( xpath = "//button[.='1']")
+    @FindBy( xpath = "//button[@id='npad-1']")
     WebElement price1Check;
 
     @FindBy(xpath = "//button[.='0']")

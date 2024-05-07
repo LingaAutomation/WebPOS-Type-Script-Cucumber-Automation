@@ -74,7 +74,7 @@ public class CheckOptions extends OrderManagementScreen {
 
         }
     }
-    @FindBy(xpath = "//p[.='Please enter value from 5.0 - 15.0']")
+    @FindBy(xpath = "//h2[.='Please enter value from 5.0 - 15.0']")
     WebElement enterValue;
     public String enterValueAccordingBo() {
         return elementGetText(enterValue, "Enter value txt is displayed - ");
@@ -117,10 +117,10 @@ public class CheckOptions extends OrderManagementScreen {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         elementClick(passPercentageValue, "Pass percentage value field is clicked.");
-        elementClick("//button[.='C']", "Tapped Pin C");
-        WebElement el2 =  driver.findElement(By.xpath("//button[.=' "+number+" ']"));
+        elementClick("//button[contains(@class,'quantity_numberrow-btn')]//span[.='C']", "Tapped Pin C");
+        WebElement el2 =  driver.findElement(By.xpath("//button[@id='npad-"+number+"']"));
         elementClick(el2, "Tapped number as - " + number);
-        elementClick("//button[.='00']", "Tapped Pin 00");
+        elementClick("//button[contains(@class,'quantity_numberrow-btn')]//span[.='00']", "Tapped Pin 00");
         WebElement el5 =  driver.findElement(By.xpath("//span[contains(.,'Continue')]"));
         elementClick(el5, "Tapped continue Button ");
 
@@ -185,6 +185,8 @@ public class CheckOptions extends OrderManagementScreen {
         WebElement New = driver.findElement(By.xpath("//div[contains(.,'New Check')]"));
         elementClick(New, "Tapped New");
         Select_RandomTable();
+
+//        driver.findElement(By.xpath("(//label[.='T23'])[1]")).click();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         try
         {
@@ -200,8 +202,8 @@ public class CheckOptions extends OrderManagementScreen {
 
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         //Click the required number seat from numpad
-        String seatcount = driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='2']")).getText();
-        driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='2']")).click();
+        String seatcount = driver.findElement(By.xpath("//button[.=' 2 ']")).getText();
+        driver.findElement(By.xpath("//button[.=' 2 ']")).click();
         TestUtils.seatNumber = seatcount;
         //Click the Continue button
         driver.findElement(By.xpath("//span[contains(.,'Continue')]")).click();
@@ -376,9 +378,9 @@ public class CheckOptions extends OrderManagementScreen {
     }
 
 
-    @FindBy(xpath = "//p[.='Paid Amount exceeding Sale Amount']") //Changed to xpath by Engin...
+    @FindBy(xpath = "//h2[.='Paid Amount exceeding Sale Amount']") //Changed to xpath by Engin...
     WebElement paidAmountExceedsTxt1;
-    @FindBy(xpath = "//p[(.='Paid amount exceeds the sale amount')]") //Changed to xpath by Engin...
+    @FindBy(xpath = "//h2[(.='Paid amount exceeds the sale amount')]") //Changed to xpath by Engin...
     WebElement paidAmountExceedsTxt;
     public void verifyPaidAmountExceeds() {
         if (paidAmountExceedsTxt.isDisplayed()) {

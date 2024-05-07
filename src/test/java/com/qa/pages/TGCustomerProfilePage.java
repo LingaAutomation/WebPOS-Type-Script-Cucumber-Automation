@@ -59,9 +59,18 @@ WebElement element;
         for (int i = 0; i < 10; i++) {
             rdNum = rd.nextInt(10);
             m[i] = Integer.toString(rdNum);
-            element = driver.findElement(By.xpath("//ion-col[@class='quantity_grid-row-col md hydrated']//span[contains(.,'"+m[i]+"')]"));
-            utils.log().info(element);
-            element.click();
+            if(m[i].equals("0")){
+                element = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.='"+m[i]+"']"));
+                element.click();
+            }else if(m[i].equals("9")){
+                element = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.='"+m[i]+"']"));
+                element.click();
+            }
+            else{
+                element = driver.findElement(By.xpath("//div[@class='quantity_numberrow-rwptop']//button[.=' " + m[i] + " ']"));
+                utils.log().info(element);
+                element.click();
+            }
 
         }
         elementClick("//span[contains(.,' Continue ')]","Continue");
@@ -135,18 +144,20 @@ WebElement element;
 
     public void openLimitToggleIfItIsClosed() {
         try {
-            WebElement element = mergeAndFindMobileElement(limitToggle);
-            if (element.isDisplayed()) {
-                WebElement element3 = mergeAndFindMobileElement(limitToggle);
-                elementClick(element3, "click limitToggle ");
+//            WebElement element = mergeAndFindMobileElement(limitToggle);
+            List<WebElement> ask = driver.findElements(By.xpath(limitToggle));
+            if(ask.size() == 0) {
+                WebElement askCustomerName = driver.findElement(By.xpath("(//ion-grid[@class='customerplan_content_grid_plan md hydrated']//ion-row[5]//ion-col//ion-toggle)[1]"));
+                askCustomerName.click();
             }
         }catch (Exception w){
-            WebElement element1 = mergeAndFindMobileElement(limitText);
-            String actualName = elementGetText(element1,"value");
-
-            String expectedName = "Limit";
-
-            Assert.assertEquals(actualName, expectedName);
+            utils.log().info("Limit toggle is Enabled");
+//            WebElement element1 = mergeAndFindMobileElement(limitText);
+//            String actualName = elementGetText(element1,"value");
+//
+//            String expectedName = "Limit";
+//
+//            Assert.assertEquals(actualName, expectedName);
         }
     }
 

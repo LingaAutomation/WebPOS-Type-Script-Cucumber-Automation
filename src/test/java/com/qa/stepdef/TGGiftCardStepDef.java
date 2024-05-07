@@ -34,7 +34,7 @@ public class TGGiftCardStepDef {
     }
 
     @Then("User enter gift card charge amount")
-    public void userEnterGiftCardChargeAmount() {
+    public void userEnterGiftCardChargeAmount() throws InterruptedException {
         new TGGiftCard().giftCardChargeAmount();
     }
 

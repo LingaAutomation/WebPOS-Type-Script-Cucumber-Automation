@@ -60,8 +60,8 @@ public class CheckOptionsScreen extends TableLayOutScreen{
 
 
     // @FindBy(xpath ="//XCUIElementTypeTextView[@name=\"Can't Hold on this time\"]") //Changed to xpath by Engin...
-    @FindBy(xpath = "/html/body/div[1]/div[4]/div/mat-dialog-container/app-alertcontent/mat-dialog-content")
-    WebElement cantHoldOnThisTimeTxt;                                                   //because the text couldn't be found with xpath = id (why!?)
+    @FindBy(xpath = "//h2[contains(.,'t Hold on this time')]")
+    WebElement cantHoldOnThisTimeTxt;                                                     //because the text couldn't be found with xpath = id (why!?)
 
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextField[1]")
     WebElement coursingNameTxt;

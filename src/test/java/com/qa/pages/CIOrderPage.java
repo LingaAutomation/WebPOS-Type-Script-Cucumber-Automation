@@ -78,16 +78,16 @@ public class CIOrderPage  extends BasePage {
     // Enter partial payment amount as 10500
     public void pressPaymentPin(String paymentPin1XPath, String paymentPin0XPath,
                                 String paymentPin5XPath, String paymentPin00XPath) {
-        WebElement elementPin1 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin1XPath+" ']"));
+        WebElement elementPin1 = driver.findElement(By.xpath("//div[@class='calculator-pad-row']//button[.=' "+paymentPin1XPath+" ']"));
         click(elementPin1, paymentPin1XPath);
 
-        WebElement elementPin0 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin0XPath+" ']"));
+        WebElement elementPin0 = driver.findElement(By.xpath("//div[@class='calculator-pad-row']//button[.=' "+paymentPin0XPath+" ']"));
         click(elementPin0, paymentPin0XPath);
 
-        WebElement elementPin5 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin5XPath+" ']"));
+        WebElement elementPin5 = driver.findElement(By.xpath("//div[@class='calculator-pad-row']//button[.=' "+paymentPin5XPath+" ']"));
         click(elementPin5, paymentPin5XPath);
 
-        WebElement elementPin00 = driver.findElement(By.xpath("//ion-row[@class='payment-numberpad-grid-button md hydrated']//button[.=' "+paymentPin00XPath+" ']"));
+        WebElement elementPin00 = driver.findElement(By.xpath("//div[@class='calculator-pad-row']//button[.=' "+paymentPin00XPath+" ']"));
         click(elementPin00, paymentPin00XPath);
 //        findandclick(btnPaymentPin1, paymentPin1XPath,TestUtils.XPath);
 //        findandclick(btnPaymentPin1, paymentPin0XPath,TestUtils.XPath);

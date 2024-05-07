@@ -130,6 +130,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     @FindBy(xpath = "//ion-title[contains(.,'Loyalty Balance')]")
     private WebElement loyaltyBalanceScreen;
 
+
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell")
     private WebElement verifyLoyalty;
 
@@ -343,8 +344,14 @@ public class CustomerProfileWindow extends OrderTypeWindow{
         elementClick(saveBtn, "pressed Save button");
     }
     public void selectTaxExemptCustomerProfile() throws InterruptedException {
-        WebElement element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/mat-dialog-container/app-customers/ion-content/ion-grid/ion-row/ion-col[2]/ion-row[2]/form/ion-row/ion-col[2]/ion-row/ion-row/ion-col/div[1]/mat-slide-toggle/label/span[1]"));
-      elementClick(element,"Selected Tax exempt");
+        try{
+            Thread.sleep(2000);
+        WebElement element = driver.findElement(By.xpath("//ion-toggle[@formcontrolname=\"taxExempt\"]"));
+            elementClick (element, "Selected Tax exempt");
+
+        }catch (Exception w){
+            utils.log().info("Already Enabled");
+        }
 //        try {
 //            WebElement element = driver.findElement(By.xpath("//ion-col[@class='customer_grid_form-row-col md hydrated']//mat-slide-toggle//input[@aria-checked='false']"));
 //            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
@@ -363,7 +370,7 @@ public class CustomerProfileWindow extends OrderTypeWindow{
     public void selectTaxExemptCustomerProfile1() throws InterruptedException {
         Thread.sleep(3000);
         try {
-            WebElement element = driver.findElement(By.xpath("//ion-col[@class='customer_grid_form-row-col md hydrated']//mat-slide-toggle//input[@aria-checked='true']"));
+            WebElement element = driver.findElement(By.xpath("//ion-toggle[contains(@class,'checked')]"));
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
             if (element.isDisplayed()) {
                 Thread.sleep(2000);

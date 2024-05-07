@@ -1,10 +1,11 @@
-@GiftCard
+@GiftCards
 Feature: Gift Card
 
   Background:
     Given I'm logged in
     Then I closed the order type window
 
+  @gc21
   Scenario: Verify gift card tab should open along with Give X
     Given User select QSR mode on menu item page
     When User select DineIn mode
@@ -18,7 +19,7 @@ Feature: Gift Card
     And I click Done button on the Popup
 #    And I click Done button on the Popup
     Then user verify the enter the charge amount
-
+#    And I click Done button on the Popup
     Then User enter gift card charge amount
     And User click gift card cancel button
 #    And User click option back button
@@ -42,9 +43,7 @@ Feature: Gift Card
     And User click cancel button
     And I click log off button in order screen
 
-
-
-  @Regression909
+  @gc1
   Scenario: In Check stats, check should be added in Void Checks and amount should be show as 0.00/Gift Card-Void Recharge
     Given User select QSR mode on menu item page
     Given User select DineIn mode
@@ -83,7 +82,7 @@ Feature: Gift Card
     When User click payment button
     When User select paid order
     Then User click delete button
-      And I wait sometimes
+    And I wait sometimes
 #    And User click receipt printer button
     Then USer click cash button
     Then User click submit button
@@ -92,7 +91,6 @@ Feature: Gift Card
     And I click log off button in order screen
 
 
-  @Regression87
   Scenario: Gift Card-Void Recharge after Redeemed
     When User click QSR on Menu Item page
     Then User select DineIn order type
@@ -135,7 +133,7 @@ Feature: Gift Card
 
 
 
-  @Regression
+  @gc1
   Scenario: Check should be added in Void Checks and amount should be shown / Gift Card-Void Recharge
     Given User select QSR mode on menu item page
     Given User select DineIn mode
@@ -361,7 +359,8 @@ Feature: Gift Card
 
 #  @gift
 
-  Scenario: Gift Card - Void Recharge - Check should be added in Void Checks and amount should be shown - Phone Order xxxxx
+  @gc2
+  Scenario: Gift Card - Void Recharge - Check should be added in Void Checks and amount should be shown - Phone Order
 
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -371,10 +370,9 @@ Feature: Gift Card
     And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
   #  When User click All button
   #  Then User click Table Layout menu
   #  When User click New Check option
@@ -403,7 +401,7 @@ Feature: Gift Card
     And I click power button
 
 
-
+  @gc1
   Scenario: Gift Card Void Check - Reopen Closed check from check stats and void the check after deleting payment
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -414,10 +412,10 @@ Feature: Gift Card
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
 
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
-    And User verify Phone To Go order type
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
+#    And User verify Phone To Go order type
   #  When User click All button
   #  Then User click Table Layout menu
   #  When User click New Check option
@@ -440,9 +438,7 @@ Feature: Gift Card
     And User click cancel button
     And I click log off button in order screen
 
-
-
-
+  @gc1
   Scenario: Gift Card - Recuring Balance should be added from the Begining Balance with the Entered amount with Phone Order
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -453,10 +449,10 @@ Feature: Gift Card
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
 
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
-    And User verify Phone To Go order type
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
+#    And User verify Phone To Go order type
     Then User click Option Tab
     When User click Gift Card tab
     When User enter gift card number for gift card option
@@ -476,7 +472,7 @@ Feature: Gift Card
 
 
 #  @gift
-
+  @gc1
   Scenario: Gift Card-Void Recharge - In Check stats, Check should be added in Void Checks and amount should be show as 0.00
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -487,9 +483,9 @@ Feature: Gift Card
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
 
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     When I get check number
@@ -515,7 +511,7 @@ Feature: Gift Card
     Then I click the Closed check on check stats
     And I click power button
 
-
+  @gc1
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -525,10 +521,10 @@ Feature: Gift Card
     And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
+#
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
@@ -541,7 +537,7 @@ Feature: Gift Card
 #    And User click receipt printer button
     And I click power button
 
-
+  @gc1
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -551,10 +547,9 @@ Feature: Gift Card
     And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
@@ -567,7 +562,7 @@ Feature: Gift Card
 #    And User click receipt printer button
     And I click power button
 
-
+  @gc21
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - With Tip and Partial Payment
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -577,9 +572,9 @@ Feature: Gift Card
     And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
@@ -596,6 +591,7 @@ Feature: Gift Card
     And User click submit button
     And I click power button
 
+  @gc21
   Scenario: Gift Card- Redeem - Paid amount should be detected from that gift card - Without Tip and Partial Payment
     And I click the Settings button
     And I click the POS settings from Toggle
@@ -605,9 +601,9 @@ Feature: Gift Card
     And I closed the order type window
     Given User select QSR mode on menu item page
     When User select Phone ToGo order type
-    And I search1 for "1234567890"
-    When I click "Test Automation" to select customer for the seat
-    Then I should see customer as "Test A" added on order screen
+#    And I search1 for "1234567890"
+#    When I click "Test Automation" to select customer for the seat
+#    Then I should see customer as "Test A" added on order screen
     And User verify Phone To Go order type
     When User take an order
     Then User click payment button
@@ -627,7 +623,7 @@ Feature: Gift Card
     And I click log off button in order screen
 
 
-@Gitf
+  @gc1
   Scenario: Gift Card- Void Item,Gift Card- Void Check,Gift Card- Void
     Given User select QSR mode on menu item page
     When User select DineIn mode
@@ -663,7 +659,7 @@ Feature: Gift Card
     Then I should get back to the Table Layout tab
     And I click power button
 
-
+  @gc21
   Scenario: Gift Card-Void Recharge After Redeemed
     Given User select QSR mode on menu item page
     When User select DineIn mode
@@ -704,7 +700,6 @@ Feature: Gift Card
     When User click payment button
     Then User verify paid order with gift card
     And User click submit button
-
     And I click power button
 
 

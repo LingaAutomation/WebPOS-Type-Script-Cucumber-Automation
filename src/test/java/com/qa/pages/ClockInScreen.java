@@ -41,16 +41,16 @@ public class ClockInScreen extends UserLoginScreen{
     @FindBy(xpath = "//button[.='0']")
     WebElement pin0;
 
-    @FindBy (xpath = "//button[.='1']")
+    @FindBy (xpath = "//button[.=' 1 ']")
     WebElement pin1;
 
-    @FindBy (xpath = "//button[.='2']")
+    @FindBy (xpath = "//button[.=' 2 ']")
     WebElement pin2;
 
-    @FindBy (xpath = "//button[.='3']")
+    @FindBy (xpath = "//button[.=' 3 ']")
     WebElement pin3;
 
-    @FindBy (xpath = "//button[.='4']")
+    @FindBy (xpath = "//button[.=' 4 ']")
     WebElement pin4;
 
     @FindBy (name = "//ion-col[contains(@class,'quantity_grid-row-col')]//button[contains(.,'5')]")
@@ -225,10 +225,10 @@ public class ClockInScreen extends UserLoginScreen{
 //    }
 
     public void clockinPin(){
-        pressPin1();
-        pressPin2();
-        pressPin3();
-        pressPin4();
+        pressPin1Time();
+        pressPin2Time();
+        pressPin3Time();
+        pressPin4Time();
     }
 
     public void clockInPinForServerRole(){
@@ -368,10 +368,10 @@ public class ClockInScreen extends UserLoginScreen{
     }
 
     public ClockInScreen ClockInForBarTabUsingBarTabButton(){
-        pressPin1();
-        pressPin2();
-        pressPin3();
-        pressPin4();
+        pressPin1Time();
+        pressPin2Time();
+        pressPin3Time();
+        pressPin4Time();
         return new ClockInScreen();
     }
 

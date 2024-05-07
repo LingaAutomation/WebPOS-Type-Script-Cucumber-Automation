@@ -96,24 +96,24 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Linga POS\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[4]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeImage[2]")
     private WebElement holdIcon;
 
-    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen']")
+    @FindBy(xpath = "//h2[.='Do you want to send hold item(s) to kitchen']")
     private WebElement doYouWantToSendHoldMenuItemToKitchen;
 
-    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen ?']")
+    @FindBy(xpath = "//h2[.='Do you want to send hold item(s) to kitchen ?']")
     private WebElement doYouWantToSendHoldMenuItemToKitchen2;
 
-    @FindBy(xpath = "//p[.='Do you want to send hold item(s) to kitchen ?']")
+    @FindBy(xpath = "//h2[.='Do you want to send hold item(s) to kitchen ?']")
     private WebElement doYouWantToSendHoldMenuItemToKitchen3;
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div/mat-dialog-container/app-alertcontent/mat-dialog-content")
     private WebElement doYouWantToSendHoldMenuItemToKitchen1;
-    @FindBy(xpath = "//button[.=' Yes ']")
+    @FindBy(xpath = "//button[@id='alrt-yes']")
     private WebElement yesForHold;
 
-    @FindBy(xpath = "//p[contains(.,'No More payments Needed')]")
+    @FindBy(xpath = "//h2[contains(.,'No More payments Needed')]")
     private WebElement noMorePaymentNeed;
 
-    @FindBy(xpath = "//p[contains(.,'No More payments Needed')]")
+    @FindBy(xpath = "//h2[contains(.,'No More payments Needed')]")
     private WebElement noMorePaymentNeed1;
 
     @FindBy(xpath = "(//h2[.='You need to order before paying'])")
@@ -195,7 +195,7 @@ private WebElement QSRCombo;
     @FindBy(xpath = "//ion-row/button[contains(.,'Order')]")
     private WebElement orderBtn;
 
-    @FindBy(xpath = "//p[.='Already sent to Kitchen']")
+    @FindBy(xpath = "//h2[.='Already sent to Kitchen']")
     private WebElement alreadySentToKitchenTxt;
 
     @FindBy(xpath = "//button[.=' Done ']")
@@ -208,7 +208,7 @@ private WebElement QSRCombo;
     private WebElement paymentMadeOnThisCheckPopup;
 
 
-    @FindBy(xpath ="//h2[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Test Automation')]")
+    @FindBy(xpath ="//h2[contains(.,'Payment(s) made on this Check, Kindly delete the payment to void the Menu item')]")
     private WebElement paymentMadeOnThisCheckPopup1;
 
 
@@ -219,7 +219,7 @@ private WebElement QSRCombo;
 //    @FindBy(xpath ="//p[contains(.,'Payment(s) made on this Check, Can you return this to Walkin Test Automation')]")
 //    private WebElement paymentMadeOnThisCheckPopup1;
 
-    @FindBy(xpath = "//p[.='Payment(s) made on this Check, Can you return this to Walkin Auto ragav']")
+    @FindBy(xpath = "//h2[contains(.,'Payment(s) made on this Check, Kindly delete the payment to void the Menu item')]")
     private WebElement paymentMadeOnThisCheckPopupForHouseAccount;
 
     @FindBy(xpath = "//button//div[contains(.,'Print')]")
@@ -230,7 +230,7 @@ private WebElement QSRCombo;
 
     String voidBtn = "//linga-icon/../div[contains(.,'Void')]";
 
-    String allOrdersAreVoided = "//h2[contains(.,'All orders are voided')]";
+    String allOrdersAreVoided = "//h2[contains(.,'All Orders Are Voided')]";
    // @FindBy (xpath = "All orders are voided")
    // private WebElement allOrdersAreVoided;
 
@@ -334,7 +334,7 @@ private WebElement QSRCombo;
     String seat2Del = "/html/body/div/div[2]/div/div/div/div/ion-grid/ion-row/div/button[2]/span[1]/div";
 
 //    String  closeYourSaleTxt = "//mat-dialog-content[contains(.,'Close Your Sale')]";
-String  closeYourSaleTxt = "//h2[contains(.,'close your sale')]";
+String  closeYourSaleTxt = "//h2[contains(.,'Close Your Sale')]";
 //    String  closeTheSaleTxt = "//mat-dialog-content[contains(.,'close the sale')]";
 String  closeTheSaleTxt = "//h2[contains(.,'close the sale')]";
 
@@ -383,10 +383,10 @@ String  closeTheSaleTxt = "//h2[contains(.,'close the sale')]";
     @FindBy(xpath = "//button[.=' Revert ']")
     private WebElement revertBtn;
 
-    @FindBy(xpath = "//p[.='Cannot remove customer for Delivery']")
+    @FindBy(xpath = "//h2[.='Cannot remove customer for Delivery']")
     private WebElement cannotRemoveCustomerForDelivery;
 
-    @FindBy (xpath = "//p[.='You need to pick atleast 1 mandatory modifiers from this Add Meats Group']")
+    @FindBy (xpath = "//h2[.='You need to pick atleast 1 mandatory modifiers from this Add Meats Group']")
     private WebElement youNeedToPickAtLeast1ModifiersFromThisGroup;
 
 
@@ -977,6 +977,37 @@ public  void selectCategory (String value) throws Exception {
         }
 
     }
+    public String getCheckNumberTxttwo(){
+        WebElement checkNum=driver.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
+        checkNumber=checkNum.getText();
+        TestUtils.globalCheckNumber2=checkNumber;
+        utils.log().info(checkNumber);
+        return checkNumber;
+    }
+
+    public String getCheckNumberTxtthree(){
+        WebElement checkNum=driver.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
+        checkNumber=checkNum.getText();
+        TestUtils.globalCheckNumber3=checkNumber;
+        utils.log().info(checkNumber);
+        return checkNumber;
+    }
+
+    public String getCheckNumberTxtfour(){
+        WebElement checkNum=driver.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
+        checkNumber=checkNum.getText();
+        TestUtils.globalCheckNumber4=checkNumber;
+        utils.log().info(checkNumber);
+        return checkNumber;
+    }
+
+    public String getCheckNumberTxtfive(){
+        WebElement checkNum=driver.findElement(By.xpath("(//p[contains(@class,'order-header-checkno')])"));
+        checkNumber=checkNum.getText();
+        TestUtils.globalCheckNumber5=checkNumber;
+        utils.log().info(checkNumber);
+        return checkNumber;
+    }
 
     public void verifyDiscountValueAs(String Amount) throws InterruptedException {
         WebElement discount = driver.findElement(By.xpath("//div[@id='os_discountAmountStr']//input"));
@@ -1424,7 +1455,7 @@ public  void selectCategory (String value) throws Exception {
 
            }
        }catch (Exception w){
-           utils.log().info("Tax is Exempted ");
+           utils.log().info("Tax is Exempted -  "+element.getText());
            Assert.assertEquals(element.getText(),"Tax1");
            utils.log().info("Tax is Exempted - "+element.getText());
        }
@@ -1618,9 +1649,10 @@ public  void selectCategory (String value) throws Exception {
         Thread.sleep(1000);
         WebElement el1 = driver.findElement(By.xpath("//div[contains(@class,'p-col-2 orderlist-qty')]"));
         el1.click();
-            WebElement el2 = driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row-col')]//span[contains(.,'"+Number+"')]"));
+            WebElement el2 = driver.findElement(By.xpath("//button[.=' "+Number+" ']"));
             elementClick(el2, Number + " selected");
             elementClick(continueButton, "Tapped Continue");
+        Thread.sleep(1000);
     }
 
     public void enterMenuQuantity$Store(String Number) throws InterruptedException {
@@ -1634,15 +1666,14 @@ public  void selectCategory (String value) throws Exception {
             String ch = String.valueOf(c);
 //            utils.log().info("i " + c);
             if (ch.equals("1")) {
-                WebElement e1 = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='"+ch+"']"));
+                WebElement e1 = (WebElement) driver.findElement(By.xpath("//button[@id='npad-"+ch+"']"));
                 elementClick(e1,"Selected - "+e1);
             } else {
-                WebElement el21 = (WebElement) driver.findElement(By.xpath("//ion-col[contains(@class,'quantity_grid-row')]//button//span[.='"+ch+"']"));
+                WebElement el21 = (WebElement) driver.findElement(By.xpath("//button[@id='npad-"+ch+"']"));
                 elementClick(el21, c + " selected");
             }
         }
         elementClick(continueButton, "Tapped Continue");
-
     }
     public void enterMenuQty(String number){
 

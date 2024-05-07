@@ -94,7 +94,7 @@ public class TGVoidPage extends BasePage {
     public void verifyVoidItem(){
         WebElement element = mergeAndFindMobileElement(emptyCheck);
         String actualName = elementGetText(element,"Verify Void Item");
-        String expectedName = "No Orders To Display";
+        String expectedName = "No order to display";
 
         Assert.assertEquals(actualName,expectedName);
     }
@@ -333,19 +333,28 @@ public class TGVoidPage extends BasePage {
 
         Assert.assertEquals(actualName, expectedName);
 
-       Thread.sleep(1500);
-try {
-    WebElement askCustomerName = driver.findElement(By.xpath("(//ion-list)[4]//ion-item[6]//ion-toggle[@aria-checked='false']"));
+        Thread.sleep(1500);
+        try {
+            List<WebElement> ask = driver.findElements(By.xpath("(//ion-list)[5]//ion-item[6]//ion-toggle[contains(@class,'checked')]"));
+            WebElement askCustomerName = driver.findElement(By.xpath("(//ion-list)[5]//ion-item[6]//ion-toggle"));
 
-    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
-    if (askCustomerName.isDisplayed()) {
-        Thread.sleep(2000);
-        askCustomerName.click();
-        Thread.sleep(2000);
-    }
-}catch (Exception w){
-    utils.log().info("Already Enabled");
-}
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askCustomerName);
+//    if (askCustomerName.isDisplayed()) {
+//        Thread.sleep(2000);
+//        askCustomerName.click();
+//        Thread.sleep(2000);
+//    }
+            if(ask.size()==0){
+                Thread.sleep(2000);
+                askCustomerName.click();
+            }
+            if(ask.size()==1){
+                Thread.sleep(2000);
+                askCustomerName.click();
+            }
+        }catch (Exception w){
+            utils.log().info("Already Enabled");
+        }
     }
 
     public void swipeUntilSaveChangesButton(String direction) throws Exception {
@@ -389,6 +398,7 @@ try {
     }
 
     public void enterCustomerNameForBarTab() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement element = mergeAndFindMobileElement(BarTabCustomerNameTitle);
         String actualName = elementGetText(element,"Verify Enter the Customer Name");
         String expectedName = "Enter the Customer Name";

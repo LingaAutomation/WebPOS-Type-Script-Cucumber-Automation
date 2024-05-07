@@ -1009,7 +1009,7 @@ Assert.assertEquals(element.getText(),txtXpath);
     }
 
     public void passNumber(String number) {
-        WebElement element = driver.findElement(By.xpath("//input[contains(@class,'quantity_grid-inputrow')]"));
+        WebElement element = driver.findElement(By.xpath("//input[contains(@class,'quantity_numberrow')]"));
         element.sendKeys(new TestUtils().dateTime()+ " - "+number );
 //        findandclick_Skeys(txtNumberTextField,"", TestUtils.XPath,"SKeys",new TestUtils().dateTime()+ " - "+number);
     }

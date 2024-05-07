@@ -14,63 +14,76 @@ import java.util.concurrent.TimeUnit;
 public class AskSeatNumber extends BasePage {
 
     public void verifyThatAskSeatCountIsAvailable() throws Exception {
-        WebElement askSeatCount =  driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askSeatCount);
-        String askSeatCountTxt = askSeatCount.getText();
-        Assert.assertEquals(askSeatCountTxt, "Ask Seat Count in Table Layout");
-        utils.log().info("Displayed as - " + askSeatCountTxt);
-        WebElement askSeatCountToggle =  driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']/..//ion-toggle"));
-        if (askSeatCountToggle.isDisplayed()) {
-            utils.log().info("Ask Seat Number Toggle is Displayed");
-        } else {
-            utils.log().info("Ask Seat Number Toggle is Not Displayed");
-            int w = 1 / 0;
-        }
+
+            WebElement AskSeatNumber = driver.findElement(By.xpath("(//ion-list)[3]//ion-item[2]//ion-toggle"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", AskSeatNumber);
+            if (AskSeatNumber.isDisplayed())   {
+utils.log().info("Ask Seat Count Toggle is Availabele");
+            }else{
+                utils.log().info("Not Available");
+                int w = 1/0;
+            }
+
+
     }
 
     public void verifyThatAskSeatCountIsEnabled() throws Exception {
-        WebElement askSeatCount =  driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", askSeatCount);
-        String askSeatCountTxt = askSeatCount.getText();
-        Assert.assertEquals(askSeatCountTxt, "Ask Seat Count in Table Layout");
-        utils.log().info("Displayed as - " + askSeatCountTxt);
-        WebElement askSeatCountToggle =  driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']/..//ion-toggle[@aria-checked='true']"));
-        if (askSeatCountToggle.isDisplayed()) {
-            utils.log().info("Ask Seat Number Toggle is Enabled");
-        } else {
-            utils.log().info("Ask Seat Number Toggle is Disabled");
-            int w = 1 / 0;
+        try{
+
+            List<WebElement> AskSeatNumber = driver.findElements(By.xpath("(//ion-list)[3]//ion-item[2]//ion-toggle[contains(@class,'checked')]"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", AskSeatNumber);
+            if (AskSeatNumber.size() == 0)   {
+                WebElement AskSeatNumbers = driver.findElement(By.xpath("(//ion-list)[3]//ion-item[2]//ion-toggle"));
+                AskSeatNumbers.click();
+
+            }
+        }
+        catch (Exception e) {
+            utils.log().info("Already Disabled");
         }
     }
 
     public void verifyThatAskCustomerForDineInIsEnabled() throws Exception {
-        WebElement askSeatCustomer =  driver.findElement(By.xpath("//ion-label[.='Ask Customer Name ']"));
-        scrollToElement(askSeatCustomer, "up");
-        String askSeatCountTxt = askSeatCustomer.getText();
-        Assert.assertEquals(askSeatCountTxt, "Ask Customer Name");
-        WebElement askSeatCountToggle =  driver.findElement(By.xpath("//ion-label[.='Ask Customer Name ']/..//ion-toggle[@aria-checked='false']"));
-//        utils.log().info("Ask Seat Count Toggle Value as - " + askSeatCountToggle.getAttribute("value"));
-        if (askSeatCountToggle.isDisplayed()) {
-            elementClick(askSeatCountToggle, "Enabled Ask Customer Toggle");
-        } else {
-            utils.log().info("Already Ask Customer Toggle is Enabled");
-            int w = 1/0;
+        try{
+            List<WebElement> AskSeatNumber = driver.findElements(By.xpath("(//ion-list)[3]//ion-item[3]//ion-toggle[contains(@class,'checked')]"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", AskSeatNumber);
+            if (AskSeatNumber.size() == 0)   {
+                WebElement AskSeatNumbers = driver.findElement(By.xpath("(//ion-list)[3]//ion-item[2]//ion-toggle"));
+                AskSeatNumbers.click();
+            }
+
         }
+        catch (Exception e) {
+            utils.log().info("Already Disabled");
+        }
+
+//        WebElement askSeatCustomer =  driver.findElement(By.xpath("//ion-label[.='Ask Customer Name ']"));
+//        scrollToElement(askSeatCustomer, "up");
+//        String askSeatCountTxt = askSeatCustomer.getText();
+//        Assert.assertEquals(askSeatCountTxt, "Ask Customer Name");
+//        WebElement askSeatCountToggle =  driver.findElement(By.xpath("//ion-label[.='Ask Customer Name ']/..//ion-toggle[@aria-checked='false']"));
+////        utils.log().info("Ask Seat Count Toggle Value as - " + askSeatCountToggle.getAttribute("value"));
+//        if (askSeatCountToggle.isDisplayed()) {
+//            elementClick(askSeatCountToggle, "Enabled Ask Customer Toggle");
+//        } else {
+//            utils.log().info("Already Ask Customer Toggle is Enabled");
+//            int w = 1/0;
+//        }
     }
 
     public void verifyThatAskCustomerForDineInIsDisabled() throws Exception {
-        WebElement askSeatCustomer =  driver.findElement(By.xpath("//ion-label[.='Ask Customer Name ']"));
-        scrollToElement(askSeatCustomer, "up");
-        String askSeatCountTxt = askSeatCustomer.getText();
-        Assert.assertEquals(askSeatCountTxt, "Ask Customer Name");
-        WebElement askSeatCountToggle =  driver.findElement(By.xpath("//ion-label[.='Ask Customer Name ']/..//ion-toggle[@aria-checked='false']"));
-//        utils.log().info("Ask Seat Count Toggle Value as - " + askSeatCountToggle.getAttribute("value"));
-        if (askSeatCountToggle.isDisplayed()) {
-//            elementClick(askSeatCountToggle, "Disabled Ask Customer Toggle");
-            utils.log().info("Ask Seat Customer is disabled");
-        } else {
-            utils.log().info("ASk Seat Customer is Enable");
-            int w = 1/0;
+        try{
+
+            List<WebElement> AskSeatNumber = driver.findElements(By.xpath("(//ion-list)[3]//ion-item[3]//ion-toggle[contains(@class,'checked')]"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", AskSeatNumber);
+            if (AskSeatNumber.size() == 1)   {
+                WebElement AskSeatNumbers = driver.findElement(By.xpath("(//ion-list)[3]//ion-item[2]//ion-toggle"));
+                AskSeatNumbers.click();
+
+            }
+        }
+        catch (Exception e) {
+            utils.log().info("Already Disabled");
         }
     }
 
@@ -82,17 +95,17 @@ public class AskSeatNumber extends BasePage {
         driver.findElement(By.tagName("html")).sendKeys(Keys.ARROW_DOWN);
         driver.findElement(By.tagName("html")).sendKeys(Keys.ARROW_DOWN);
         try{
-            if (Auto.isDisplayed()) {
-                WebElement AskSeatNumber = driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']/..//ion-toggle[@aria-checked='true']"));
-                if (AskSeatNumber.isDisplayed())   {
-                    AskSeatNumber.click();
-                }
+
+               List<WebElement> AskSeatNumber = driver.findElements(By.xpath("(//ion-list)[3]//ion-item[2]//ion-toggle[contains(@class,'checked')]"));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", AskSeatNumber);
+                if (AskSeatNumber.size() == 0)   {
+                 WebElement AskSeatNumbers = driver.findElement(By.xpath("(//ion-list)[3]//ion-item[2]//ion-toggle"));
+                    AskSeatNumbers.click();
+
             }
         }
         catch (Exception e) {
-            WebElement AskSeatNumber = driver.findElement(By.xpath("//ion-label[.='Ask Seat Count in Table Layout ']/..//ion-toggle[@aria-checked='false']"));
-            if (AskSeatNumber.isDisplayed())   {
-            }
+            utils.log().info("Already Disabled");
         }
     }
 

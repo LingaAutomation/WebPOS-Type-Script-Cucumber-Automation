@@ -51,7 +51,7 @@ public class MenuOptionScreen extends ClockInScreen{
 //    @FindBy(xpath = "//input[@id='mat-input-22']")
 //    private WebElement enterAmountField2;
 
-    @FindBy(xpath = "//button[.='1']")
+    @FindBy(xpath = "//button[@id='npad-1']")
     private WebElement pin1ForOpenDiscount;
 
     @FindBy(xpath = "//button[.='00']")
@@ -60,7 +60,7 @@ public class MenuOptionScreen extends ClockInScreen{
     @FindBy(xpath = "//button[.='0']")
     private WebElement pin0ForOpenDiscount;
 
-    @FindBy(xpath = "//button[.='9']")
+    @FindBy(xpath = "//button[.=' 9 ']")
     private WebElement pin9ForOpenDiscount;
 
     @FindBy(xpath = "(//ion-col//button[contains(@class,'mat-focus-indicator')]//span[contains(.,'1')])[7]")
@@ -194,7 +194,7 @@ String pleaseCloseTheSaleToSyncTheData = "//h2[contains(.,'Please close the sale
 
     public void pressQuantityNumber(String num) throws InterruptedException {
         Thread.sleep(2000);
-        WebElement el3 =driver.findElement(By.xpath("//button[.='"+num+"']"));
+        WebElement el3 =driver.findElement(By.xpath("//button[.=' "+num+" ']"));
         elementClick(el3,num +"selected");
     }
 

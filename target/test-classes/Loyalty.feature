@@ -1,4 +1,4 @@
-@Payment0910
+@Paymens
 Feature: Loyalty
 
 

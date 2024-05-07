@@ -1,4 +1,4 @@
-@Payments1  @Regressionp          @VerificationForUSDStore123
+@TaxfeaturePayments1  @Regressionp     @Paymens     @VerificationForUSDStore123
 Feature:Tax in Scenarios
 
 #  Background:
@@ -47,6 +47,8 @@ Feature:Tax in Scenarios
     And I click Table Layout tab
 
 #########  Quantity based tax  ########
+#    Scenario Outline: qu
+
     And I click new check button on the Table layout screen
     And I select table as "T7"
     And I select the number of seats as "1"
@@ -170,6 +172,7 @@ Feature:Tax in Scenarios
     Examples:
       | btnAll | TaxQty1 | SubTotalQty1 | TotalQty1 | TaxQty5   | SubTotalQty5 | TotalQty5 |TaxQty8  | TotalQty8 | SubTotalQty8 |
       |All     |$ 1.50   | $ 15.00      | $ 16.50   | $ 7.50    | $ 75.00      | $ 82.50   | $ 12.00 | $ 132.00  | $ 120.00     |
+
 
 
   Scenario Outline: Item Based Inclusive Tax
