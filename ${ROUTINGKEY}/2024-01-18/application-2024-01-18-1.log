@@ -1,0 +1,89 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 15:23:07.151 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 16:09:43.060 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 16:11:27.444 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 16:14:44.285 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 16:22:14.179 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 16:23:54.183 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 16:48:32.626 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:25:46.942 Hooks:54 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:28:31.459 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:29:27.496 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:41:25.687 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:42:03.753 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:50:51.213 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:53:52.372 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:54:51.852 Hooks:43 - Start Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 17:59:39.989 Hooks:39 - Start Scenario Name1 : io.cucumber.java.Scenario@77010a30
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 18:01:32.730 Hooks:42 - Start Scenario Name1 : io.cucumber.java.Scenario@4b960b5b
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 18:12:37.157 Hooks:42 - Start Scenario Name1 : io.cucumber.java.Scenario@5416f8db
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 18:32:58.474 Hooks:42 - Start Scenario Name1 : io.cucumber.java.Scenario@3a7e365
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 18:32:59.703 Hooks:50 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 18:39:05.852 Hooks:42 - Start Scenario Name1 : io.cucumber.java.Scenario@2ceee4b6
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 18:42:06.385 Hooks:42 - Start Scenario Name1 : io.cucumber.java.Scenario@5568c66f
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:06.632 Hooks:42 - Start Scenario Name1 : io.cucumber.java.Scenario@294f9d50
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:10.353 SyncClass:57 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:10.393 SyncClass:57 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:10.418 SyncClass:57 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:10.444 SyncClass:57 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:10.471 SyncClass:57 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:14.148 SyncClass:71 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:14.181 SyncClass:71 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:14.206 SyncClass:71 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:14.231 SyncClass:71 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:14.256 SyncClass:71 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:16.358 SyncClass:57 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:16.403 SyncClass:78 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:48:17.476 Hooks:50 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:40.453 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@4dde8976
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:44.194 SyncClass:57 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:44.228 SyncClass:57 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:44.254 SyncClass:57 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:44.279 SyncClass:57 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:44.306 SyncClass:57 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:47.983 SyncClass:71 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:48.015 SyncClass:71 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:48.040 SyncClass:71 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:48.065 SyncClass:71 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:48.090 SyncClass:71 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:50.192 SyncClass:57 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:50.243 SyncClass:78 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:54:51.339 Hooks:49 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:28.460 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@759de304
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:34.230 SyncClass:57 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:34.274 SyncClass:57 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:34.298 SyncClass:57 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:34.325 SyncClass:57 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:34.350 SyncClass:57 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:40.027 SyncClass:71 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:40.058 SyncClass:71 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:40.082 SyncClass:71 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:40.107 SyncClass:71 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:40.132 SyncClass:71 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:43.236 SyncClass:71 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:43.280 SyncClass:78 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:43.342 SyncClass:78 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:58:51.983 SyncClass:57 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 19:59:52.157 Hooks:49 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:06.851 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@5649d11a
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:12.594 SyncClass:57 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:12.634 SyncClass:57 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:12.660 SyncClass:57 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:12.685 SyncClass:57 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:12.709 SyncClass:57 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:18.391 SyncClass:71 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:18.424 SyncClass:71 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:18.448 SyncClass:71 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:18.472 SyncClass:71 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:18.499 SyncClass:71 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:21.600 SyncClass:71 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:21.644 SyncClass:78 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:21.703 SyncClass:78 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:04:30.361 SyncClass:57 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:05:32.509 Hooks:49 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:07:47.399 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@f0020b1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:07:53.127 SyncClass:57 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:07:53.158 SyncClass:57 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:07:53.183 SyncClass:57 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:07:53.207 SyncClass:57 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:07:53.232 SyncClass:57 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-01-18 20:08:55.417 Hooks:49 - Failed Scenario Name : Merge With Direct Menu

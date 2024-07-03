@@ -1,0 +1,182 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:45.764 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@889a8a8
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:51.568 SyncClass1:51 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:51.609 SyncClass1:51 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:51.636 SyncClass1:51 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:51.661 SyncClass1:51 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:51.686 SyncClass1:51 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:54.779 SyncClass1:51 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:54.822 SyncClass1:51 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:34:54.875 SyncClass1:51 - Table layout Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:04.038 SyncClass2:41 - Window 2 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:04.071 SyncClass2:41 - Window 2 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:04.096 SyncClass2:41 - Window 2 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:04.120 SyncClass2:41 - Window 2 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:04.145 SyncClass2:41 - Window 2 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:07.245 SyncClass2:41 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:07.282 SyncClass2:41 - All Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:07.334 SyncClass2:41 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.492 SyncClass1:58 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.525 Regression:896 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.526 Regression:908 - 9
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.537 Regression:910 - T9
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.543 SyncClass1:58 - Tapped Table 9
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.585 SyncClass1:58 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.612 SyncClass1:58 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.698 Regression:1210 - Server Name - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.698 Regression:1214 - Server NAme - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.711 SyncClass1:58 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.760 SyncClass1:58 - Tapped category - North Indian dish
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.787 Regression:1228 - 2 - Selected - T9
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.795 Regression:814 - 85-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.809 Regression:1246 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.827 SyncClass1:58 - Tapped Menu - Bhel Poori
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.887 SyncClass1:58 - masala - Tapped Main Modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.921 SyncClass1:58 - 1 - Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.939 Regression:1246 - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:13.963 SyncClass1:58 - Tapped Menu - Kara vadai
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:14.021 SyncClass1:58 - salty - Tapped Main Modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:14.050 SyncClass1:58 - 1 - Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:14.077 SyncClass1:58 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.167 SyncClass1:58 - Tapped New
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.194 Regression:896 - Total Count of the Table - 30
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.195 Regression:908 - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.204 Regression:910 - T3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.212 SyncClass1:58 - Tapped Table 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.244 SyncClass1:58 - Tapped seat Number
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.266 SyncClass1:58 - Tapped continue
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.341 Regression:1210 - Server Name - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.341 Regression:1214 - Server NAme - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.352 SyncClass1:58 - Arrow Done
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.382 SyncClass1:58 - Tapped category - North Indian dish
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.405 Regression:1228 - 2 - Selected - T3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.413 Regression:814 - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.424 Regression:1246 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.442 SyncClass1:58 - Tapped Menu - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.488 SyncClass1:58 - salty - Tapped Main Modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.530 SyncClass1:58 - 1 - Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.546 Regression:1246 - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.563 SyncClass1:58 - Tapped Menu - Bhel Poori
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.610 SyncClass1:58 - salty - Tapped Main Modifier
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:18.638 SyncClass1:58 - 1 - Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.666 SyncClass1:1147 - 1 - orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.678 SyncClass1:1153 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.689 SyncClass1:1158 - 26.39
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.689 SyncClass1:1161 - iPad -1 Order Screen Menu SAME with iPad-2 Menu - [Bhaw pajji] Prize [26.39]
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.690 SyncClass1:1188 - Menu name - [Bhaw pajji]
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.690 SyncClass1:1189 - Menu Prize - [26.39]
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.690 SyncClass1:1190 - Modifier name - []
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:19.690 SyncClass1:1191 - Modifier Prize - []
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:20.717 SyncClass1:1197 - Server Name Window 1 - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:20.738 SyncClass1:1225 - SubTotal Amount - $ 69.45
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:20.751 SyncClass1:1230 - Tax - $ 5.56
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:20.761 SyncClass1:1235 - Total Amount - $ 75.01
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:20.770 SyncClass1:1240 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:20.780 SyncClass1:58 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:26.413 SyncClass1:58 - Selected Check Status
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:28.483 SyncClass2:41 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:30.588 SyncClass2:189 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:30.599 SyncClass2:41 - Tapped Active Check in closed tab - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:30.625 SyncClass2:62 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:33.662 SyncClass2:205 - Seat Count - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:33.683 SyncClass2:214 - Window 2 Seat Numbers on the order screen = 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:33.694 Regression:3002 - 1 - Selected - T3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:33.702 SyncClass2:62 - Selected - T3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:35.751 SyncClass2:952 - SubTotal Amount - $ 69.45
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:35.766 SyncClass2:957 - Tax - $ 5.56
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:35.777 SyncClass2:962 - Total Amount - $ 75.01
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:35.786 SyncClass2:968 - Paid Amount - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:36.824 SyncClass1:58 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:36.893 SyncClass2:41 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:36.948 SyncClass2:62 - Transfer Button selected in iPad-2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:36.990 SyncClass1:58 - Transfer to Table Button selected in iPad-2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:40.026 Regression:3311 - T3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:42.119 SyncClass2:62 - click tableWillBeTransferFrom
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:46.208 Regression:3330 - Selected Check is SAME - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:46.221 SyncClass2:62 - selected - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:47.268 Regression:3343 - Floor - Floor 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:47.268 Regression:3344 - Table - T2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:47.295 Regression:3348 - Floor 1-T2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:49.301 Regression:3350 - Transfer To table - T2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:49.302 Regression:3352 - Transfer To Floor - Floor 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:49.333 SyncClass2:62 - Transfer Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:49.949 Regression:3359 - Displayed as - Transferred Successfully
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:49.961 SyncClass2:62 - Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:50.982 Regression:3373 - M2 - T2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:35:53.032 SyncClass2:62 - 2 - Selected Table - T2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.134 Regression:3495 -  21 orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.157 Regression:3500 - 1 Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.172 Regression:3504 - 1 26.39
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.182 Regression:3508 - Verified -  Bhaw pajji Prize 26.39
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.202 Regression:3500 - 2 Bhel Poori
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.212 Regression:3504 - 2 20.15
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.221 Regression:3508 - Verified -  Bhel Poori Prize 20.15
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.237 Regression:3551 - SubTotal Amount is SAME with Both iPad - $ 69.45
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.246 Regression:3556 - Tax is SAME with Both iPad - $ 5.56
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.254 Regression:3561 - Total Amount is SAME with Both iPad - $ 75.01
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.262 Regression:3566 - Paid Amount is SAME with Both iPad - $ 0.00
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:26.273 SyncClass2:62 - Finish Selected in iPad2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:28.349 Regression:3036 - Get Floor Number - Floor 1 on iPad1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:28.371 SyncClass2:62 - Transfer Button selected in iPad-2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:28.409 SyncClass2:62 - Transfer to Item Button selected in iPad-2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:32.533 Regression:3056 - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:33.537 Regression:3059 - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:33.556 SyncClass2:62 - click barTabOrderForTransfer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:33.598 Regression:3063 - Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:33.609 SyncClass2:62 - click menuItemForTransfer 
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:33.633 Regression:3069 - 85-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:34.679 Regression:3073 - 85-001 - T9
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:36.715 SyncClass2:62 - click doneButton
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:40.778 Regression:3090 - Transferred Item Success
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:42.810 SyncClass2:41 - Tapped Done Button on the Popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:44.838 Regression:3156 - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:44.839 Regression:3158 - 85-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:44.869 SyncClass2:41 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:46.981 Regression:3165 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:46.993 SyncClass2:41 - Tapped Active Check in closed tab - 85-001
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:47.018 SyncClass2:62 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:49.053 Regression:3121 - orderMenu.size - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:49.076 Regression:3125 - 3 Bhaw pajji
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:49.102 Regression:3129 - 3 26.39
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:49.112 Regression:3133 - Verified -  Bhaw pajji Prize 26.39
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:50.155 SyncClass1:58 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:52.228 SyncClass2:41 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:54.314 Regression:970 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:54.324 SyncClass2:41 - Tapped Active Check in closed tab - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:54.344 SyncClass2:62 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:56.376 Regression:3112 - orderMenu.size - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:56.376 Regression:3113 - Previous orderMenu.size - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:56.376 Regression:3115 - Menu Qty is same - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:57.407 SyncClass1:58 - Finish Order selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:57.475 SyncClass2:41 - Table layout Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:57.521 SyncClass2:62 - Transfer Button selected in iPad-1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:57.558 SyncClass2:62 - Transfer to Server Button selected in iPad-1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:57.608 Regression:3182 - Entered check number - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:57.633 SyncClass2:41 - Selected - Admin u
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:57.985 SyncClass2:62 - Selected Check - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:36:58.006 Regression:3198 - Server Check Is Same - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:00.032 Regression:3228 - Count of Transfer To - 18
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:00.032 Regression:3239 - itemToSelect - 12
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:02.060 Regression:3243 - transferToServer - Appium l
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:02.071 SyncClass2:62 - Server Selected - Appium l
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:02.100 Regression:3254 - Transfer To Serer - Appium l
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:04.149 SyncClass2:62 - Yes Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:04.176 SyncClass2:62 - Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:04.839 Regression:3274 - Displayed as - Transferred Successfully
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:04.853 SyncClass2:62 - Done Selected
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:04.876 SyncClass2:41 - check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:04.947 Regression:3293 - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:04.957 SyncClass2:41 - Tapped Active Check in closed tab - 85-002
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:07.998 Regression:3024 - Server Name IS SAME with - Appium l
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:08.005 Regression:3026 - Server Name IS SAME with - Appium l
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:08.018 SyncClass2:62 - Selected - Open Check
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:08.096 Regression:3413 - orderMenu.size - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 00:37:08.112 Hooks:49 - Failed Scenario Name : Transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:27.674 Hooks:41 - Start Scenario Name1 : io.cucumber.java.Scenario@f29353f
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:33.621 SyncClass1:51 - Window 1 - Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:33.667 SyncClass1:51 - Window 1 - Selected - 2
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:33.693 SyncClass1:51 - Window 1 - Selected - 3
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:33.717 SyncClass1:51 - Window 1 - Selected - 4
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:33.743 SyncClass1:51 - Window 1 - Login
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:36.849 SyncClass1:51 - Order type selection is cancelled.
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:36.883 SyncClass1:51 - All Selected - 1
+[${ctx:ROUTINGKEY} INFO ] 2024-02-07 15:24:36.940 SyncClass1:51 - Table layout Selected - 1

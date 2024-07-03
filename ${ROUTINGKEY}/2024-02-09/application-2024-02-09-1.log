@@ -1,0 +1,13 @@
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.831 Hooks:49 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.864 Hooks:49 - Failed Scenario Name : Merge With Randomw Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.880 Hooks:49 - Failed Scenario Name : Split with Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.889 Hooks:49 - Failed Scenario Name : Split With Random Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.901 Hooks:49 - Failed Scenario Name : LIN-22847 - Deleted seats & newly added menu items are not get updating after split
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.914 Hooks:49 - Failed Scenario Name : open the Phone order check got "You need to order before paying" popup
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.923 Hooks:49 - Failed Scenario Name : Paid amount not displaying/missing in the seat wise payment
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.937 Hooks:49 - Failed Scenario Name : Selected item not getting repeated while choose repeat option
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:34:00.947 Hooks:49 - Failed Scenario Name : Transfer
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:42:37.798 Hooks:49 - Failed Scenario Name : Merge With Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:43:17.092 Hooks:49 - Failed Scenario Name : Merge With Randomw Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:43:56.121 Hooks:49 - Failed Scenario Name : Split with Direct Menu
+[${ctx:ROUTINGKEY} INFO ] 2024-02-09 16:44:04.289 Hooks:49 - Failed Scenario Name : Split With Random Menu
